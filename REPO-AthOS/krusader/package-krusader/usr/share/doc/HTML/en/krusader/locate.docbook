@@ -1,0 +1,119 @@
+<!--
+    SPDX-FileCopyrightText: 2000-2003 Shie Erlich <erlich@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2000-2003 Rafi Yanai <yanai@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2004-2010 Frank Schoolmeesters <codeknight@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2000-2022 Krusader Krew <https://krusader.org>
+-->
+<sect1 id="locate">
+  <title>Locate &GUI; Frontend</title>
+  <indexterm>
+    <primary>Locate</primary>
+  </indexterm>
+  <para>&krusader; has a &GUI; front end for
+  the 
+  <command>locate</command> command (findutils). Locate is used for
+  fast file searching not from a folder but a database. The
+  package contains among other files, 
+  <command>locate</command> and 
+  <command>updatedb</command>. <command>updatedb</command> goes through the local
+  file system and stores the file entries in the database. 
+  <command>cron</command> often calls 
+  <command>updatedb</command> every night (set with <application>KCron</application>). Choose 
+    <menuchoice>
+      <guimenu>Tools</guimenu>
+      <guimenuitem>Locate...</guimenuitem>
+    </menuchoice>
+  or 
+  <keycombo action="simul">&Ctrl;&Shift;
+  <keycap>L</keycap></keycombo> to start this feature. 
+  <link linkend="konfig-advanced">Konfigurator</link> can set
+  additional arguments for 
+  <command>updatedb</command>.</para>
+  <para>Checkbox Options 
+  <itemizedlist>
+    <listitem>
+      <para>
+      <guilabel>Show only the existing files</guilabel>: if the
+      database contains entries which no longer exist any more
+      (deleted, moved since the last 
+      <command>updatedb</command>), 
+      <command>locate</command> does not list them. It checks the
+      existence of each file before the listing in the results
+      window (slow).</para>
+    </listitem>
+    <listitem>
+      <para>
+      <guilabel>Case Sensitive</guilabel>: unchecking it allows
+      lower and upper case search.</para>
+    </listitem>
+  </itemizedlist></para>
+  <para>Action buttons 
+  <itemizedlist>
+    <listitem>
+      <para>
+      <guibutton>Locate</guibutton>: executes 
+      <command>locate 
+      <replaceable>foo foo</replaceable></command> and places its
+      output into the results window.</para>
+    </listitem>
+    <listitem>
+      <para>
+      <guibutton>Stop</guibutton>: stops the locating
+      process.</para>
+    </listitem>
+    <listitem>
+      <para>
+      <guibutton>UpdateDB</guibutton>: starts 
+      <command>updatedb</command> for updating the locate database
+      after entering the root password.</para>
+    </listitem>
+    <listitem>
+      <para>
+      <guibutton>Close</guibutton>: closes the locate
+      window.</para>
+    </listitem>
+  </itemizedlist></para>
+  <para>Results window 
+  <itemizedlist>
+    <listitem>
+      <para>Double-click on an item: steps to its folder, makes
+      the item visible and closes the locate dialog.</para>
+    </listitem>
+    <listitem>
+      <para>Right click: edits/views/finds the menu. 
+      <itemizedlist>
+        <listitem>
+          <para>
+          <keycap>F3</keycap>: views the current item.</para>
+        </listitem>
+        <listitem>
+          <para>
+          <keycap>F4</keycap>: edits the current item.</para>
+        </listitem>
+        <listitem>
+          <para>
+          <keycombo action="simul">&Ctrl;
+          <keycap>F</keycap></keycombo>: finds files in the results
+          window.</para>
+        </listitem>
+        <listitem>
+          <para>
+          <keycombo action="simul">&Ctrl;
+          <keycap>N</keycap></keycombo>: shows the next search
+          result.</para>
+        </listitem>
+        <listitem>
+          <para>
+          <keycombo action="simul">&Ctrl;
+          <keycap>P</keycap></keycombo>: shows the previous search
+          result.</para>
+        </listitem>
+      </itemizedlist></para>
+    </listitem>
+        <listitem>
+          <para>
+          The results window supports dragging items to other windows 
+          and copy to clipboard (<keycombo action="simul">&Ctrl;<keycap>C</keycap></keycombo>).</para>
+        </listitem>
+  </itemizedlist></para>
+</sect1>

@@ -1,0 +1,38 @@
+<!DOCTYPE rkpluginmap>
+<!--- This file is part of the RKWard project.
+SPDX-FileCopyrightText: by Thomas Friedrichsmeier <thomas.friedrichsmeier@kdemail.net>
+SPDX-FileContributor: The RKWard Team <rkward-devel@kde.org>
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+
+<document base_prefix="" namespace="rkward" id="data" po_id="data" priority="medium">
+	<include file="pluginmap_meta.inc"/>
+	<about
+		name="Data transformation and conversion"
+		shortinfo="Plugins for transforming, subsetting, recoding, etc. of data. Part of the official RKWard distribution"
+		version="0.8.0"
+		license="GPL"
+		url="https://rkward.kde.org">
+		<insert snippet="author_rkward_team"/>
+	</about>
+	<insert snippet="rkward_version_guard"/>
+
+	<require file="menu.pluginmap"/>
+	<require file="embedded.pluginmap"/>
+
+	<components>
+		<component type="standard" id="generate_random" file="data/generate_random.xml" label="Generate random data" />
+		<component type="standard" id="sort_data" file="data/sort.xml" label="Sort data" />
+		<component type="standard" id="subset_dataframe" file="data/subset_dataframe.xml" label="Subset data.frame" />
+		<component type="standard" id="recode_categorical" file="data/recode_categorical.xml" label="Recode categorical data" />
+	</components>
+
+	<hierarchy>
+		<menu id="data" label="Data">
+			<entry component="generate_random"/>
+			<entry component="recode_categorical"/>
+			<entry component="sort_data"/>
+			<entry component="subset_dataframe"/>
+		</menu>
+	</hierarchy>
+</document>

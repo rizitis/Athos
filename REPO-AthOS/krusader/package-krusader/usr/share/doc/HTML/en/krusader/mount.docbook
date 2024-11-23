@@ -1,0 +1,77 @@
+<!--
+    SPDX-FileCopyrightText: 2000-2003 Shie Erlich <erlich@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2000-2003 Rafi Yanai <yanai@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2004-2010 Frank Schoolmeesters <codeknight@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2000-2022 Krusader Krew <https://krusader.org>
+-->
+<sect1 id="mount-man">
+  <title>MountMan: work with your mounted file systems</title>
+  <indexterm>
+    <primary>Mount</primary>
+  </indexterm>
+  <para>MountMan is a tool which helps you manage your mounted file systems. Once
+  invoked, it displays a list of every mounted file system. For each file system,
+  MountMan displays its name (which is the actual device name - &ie; <filename
+  class="directory">/dev/sda1</filename> for a first partition on first
+  <hardware>HDD</hardware>), its type (ext4, ext3, ntfs, vfat, ReiserFS...)
+  and its mount point on your system (the folder on which the file system
+  is mounted).</para>
+  <para>If you want filter out non-removable devices from the list,
+  just check the item <guilabel>Show only removable devices</guilabel>
+  at the left of the device list.
+  </para>
+  <figure id="screenshot-mountman" float="1">
+    <title>MountMan</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="mountman.png"></imagedata>
+      </imageobject>
+      <textobject>
+        <phrase>MountMan</phrase>
+      </textobject>
+    </mediaobject>
+  </figure>
+  <para>MountMan also displays usage information using total size,
+  free size, and percentage of available space free. If those
+  numbers say 
+  <guilabel>N/A</guilabel>, that usually means that the file system
+  is not mounted. Left clicking on a file system displays a pie chart
+  on the left of the window, graphically displaying the usage
+  information for the file system. Clicking on a non-mounted
+  file system will display 
+  <guilabel>not mounted</guilabel> instead of the graph.</para>
+  <itemizedlist>
+    <listitem>
+      <para>
+      <keycap>Double-clicking</keycap> on a file system will close
+      MountMan and open that file system inside
+      &krusader;'s active panel.</para>
+    </listitem>
+    <listitem>
+      <para>
+      <keycap>Right-clicking</keycap> on a file system will open a
+      small menu which displays what actions can be performed on
+      that file system. At the moment, you can only mount, unmount
+      and eject (if clicking on a removable file system, &eg;, a 
+      &CD-ROM;).</para>
+    </listitem>
+  </itemizedlist>
+  <note>
+    <para>We plan to expand MountMan in the next evolution of &krusader;. It will be able
+    to format partitions, edit <filename>/etc/fstab</filename>,
+    create new file systems and more.... By the way, we have started working on it,
+    see <quote>Quickmode for MountMan</quote>.</para>
+  </note>
+  <para>
+    <emphasis role="bold">Quickmode for MountMan</emphasis>
+  </para>
+  <para>To activate Quickmode for MountMan, click lateral button with arrow on the
+  MountMan button on the <link linkend="mainwindow">Main Toolbar</link>.</para>
+  <para>General idea: display a list of all possible mount points.
+  Each time the menu is displayed, it determines if a mount point is
+  mounted or not and associates the correct action (mount or
+  umount). This offers a quick interface to MountMan. It is
+  working, and currently uses KMountMan::mount and unmount. It uses
+  the new &kf5-full; services for fstab-reading and this will
+  enable us to remove a lot of code from the <quote>old</quote> MountMan.</para>
+</sect1>

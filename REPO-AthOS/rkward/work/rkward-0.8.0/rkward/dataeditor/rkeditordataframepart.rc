@@ -1,0 +1,56 @@
+<!DOCTYPE kpartgui>
+<!--- This file is part of the RKWard project (https://rkward.kde.org).
+SPDX-FileCopyrightText: by Thomas Friedrichsmeier <thomas.friedrichsmeier@kdemail.net>
+SPDX-FileContributor: The RKWard Team <rkward-devel@kde.org>
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+<kpartgui name="rkeditordataframepart" version="640">
+	<MenuBar>
+		<Menu name="edit"><text>&amp;Edit</text>
+			<Action name="cut"/>
+			<Action name="copy"/>
+			<Action name="paste"/>
+			<Action name="paste_to_selection"/>
+			<Action name="paste_to_table"/>
+			<Separator/>
+			<Action name="show_rownames"/>
+			<Action name="enable_editing"/>
+		</Menu>
+	</MenuBar>
+	<Menu name="top_header_menu">
+		<Action name="insert_col_left"/>
+		<Action name="delete_col"/>
+		<Separator/>
+		<Action name="show_rownames"/>
+		<Action name="enable_editing"/>
+	</Menu>
+	<Menu name="left_header_menu">
+		<Action name="insert_row_above"/>
+		<Action name="delete_row"/>
+		<Action name="delete_rows"/>
+		<Separator/>
+		<Action name="show_rownames"/>
+		<Action name="enable_editing"/>
+	</Menu>
+	<Menu name="general_context_menu">
+		<Action name="cut"/>
+		<Action name="copy"/>
+		<Action name="paste"/>
+		<Action name="paste_to_selection"/>
+		<Action name="paste_to_table"/>
+		<Separator/>
+		<Action name="show_rownames"/>
+		<Action name="enable_editing"/>
+	</Menu>
+	<ToolBar fullWidth="true" name="mainToolBar">
+		<Action name="cut"/>
+		<Action name="copy"/>
+		<Action name="paste"/>
+		<Separator/>
+		<Action name="paste_to_selection"/>
+		<Action name="paste_to_table"/>
+		<Separator/>
+		<Action name="lock_editing"/>
+		<Action name="unlock_editing"/>
+	</ToolBar>
+</kpartgui>

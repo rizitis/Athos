@@ -1,0 +1,57 @@
+From 7e05872d3fcbab53123fe2b46e0697d0031b2464 Mon Sep 17 00:00:00 2001
+From: Sanford Rockowitz <rockowitz@minsoft.com>
+Date: Wed, 4 Sep 2024 03:59:34 -0400
+Subject: [PATCH] formatted_epoch_time_t(): make argument epoch_seconds type
+ time_t, not long
+
+passed as argument to localtime_r()
+
+error when building on armel, armhf
+---
+ src/util/timestamp.c | 4 ++--
+ src/util/timestamp.h | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/src/util/timestamp.c b/src/util/timestamp.c
+index c212f2fea..4aa3b103e 100644
+--- a/src/util/timestamp.c
++++ b/src/util/timestamp.c
+@@ -3,7 +3,7 @@
+  *  Timestamp management
+  */
+ 
+-// Copyright (C) 2014-2023 Sanford Rockowitz <rockowitz@minsoft.com>
++// Copyright (C) 2014-2024 Sanford Rockowitz <rockowitz@minsoft.com>
+ // SPDX-License-Identifier: GPL-2.0-or-later
+ 
+ #define _GNU_SOURCE
+@@ -209,7 +209,7 @@ char *   formatted_time_t(uint64_t nanos) {
+  *  \param  epoch_time
+  *  \return string representation
+  */
+-char * formatted_epoch_time_t(long epoch_seconds) {
++char * formatted_epoch_time_t(time_t epoch_seconds) {
+    static GPrivate  formatted_epoch_time_key = G_PRIVATE_INIT(g_free);
+    char * buf = get_thread_fixed_buffer(&formatted_epoch_time_key, 40);
+ 
+diff --git a/src/util/timestamp.h b/src/util/timestamp.h
+index b4515c56c..4f9318eb9 100644
+--- a/src/util/timestamp.h
++++ b/src/util/timestamp.h
+@@ -3,7 +3,7 @@
+  *  Timestamp management
+  */
+ 
+-// Copyright (C) 2014-2023 Sanford Rockowitz <rockowitz@minsoft.com>
++// Copyright (C) 2014-2024 Sanford Rockowitz <rockowitz@minsoft.com>
+ // SPDX-License-Identifier: GPL-2.0-or-later
+ 
+ #ifndef TIMESTAMP_H_
+@@ -21,6 +21,6 @@ void     show_timestamp_history(); // For debugging
+ uint64_t elapsed_time_nanosec();   // nanoseconds since start of program, first call initializes
+ char *   formatted_elapsed_time_t(guint precision); // printable elapsed time
+ char *   formatted_time_t(uint64_t nanos);
+-char *   formatted_epoch_time_t(long epoch_seconds);
++char *   formatted_epoch_time_t(time_t epoch_seconds);
+ 
+ #endif /* TIMESTAMP_H_ */

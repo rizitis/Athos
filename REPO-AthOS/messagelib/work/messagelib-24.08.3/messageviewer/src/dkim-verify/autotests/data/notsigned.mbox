@@ -1,0 +1,77 @@
+From richard@weickelt.de Wed Sep 25 08:38:59 2019
+Return-Path: <development-bounces@qt-project.org>
+Received: from localhost (HELO queue) (127.0.0.1)
+	by localhost with SMTP; 25 Sep 2019 10:39:27 +0200
+Received: from unknown (HELO output45.mail.ovh.net) (10.108.115.181)
+  by mail666.ha.ovh.net with AES256-GCM-SHA384 encrypted SMTP; 25 Sep 2019 10:39:27 +0200
+Received-SPF: Softfail (mailfrom) identity=mailfrom; client-ip=46.43.1.242; helo=letterbox.kde.org; envelope-from=development-bounces@qt-project.org; receiver=<UNKNOWN> 
+Authentication-Results: in19.mail.ovh.net; dkim=none; dkim-atps=neutral
+Received: from mx.qt-project.org (mx.qt-project.org [193.209.87.4])
+	by letterbox.kde.org (Postfix) with ESMTPS id 9C5A4282B85
+	for <montel@kde.org>; Wed, 25 Sep 2019 09:39:19 +0100 (BST)
+Authentication-Results: letterbox.kde.org; dmarc=none (p=none dis=none) header.from=weickelt.de
+Authentication-Results: letterbox.kde.org; spf=pass smtp.mailfrom=development-bounces@qt-project.org
+Received: by mx.qt-project.org (Postfix, from userid 110)
+	id 475BD408F1; Wed, 25 Sep 2019 10:39:11 +0200 (CEST)
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on mx.qt-project.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,MAILING_LIST_MULTI,
+	SPF_HELO_NONE,URIBL_BLOCKED autolearn=unavailable autolearn_force=no
+	version=3.4.0
+Received: from mx.qt-project.org (localhost [127.0.0.1])
+	by mx.qt-project.org (Postfix) with ESMTP id 2E80B40F3F;
+	Wed, 25 Sep 2019 10:39:02 +0200 (CEST)
+X-Original-To: development@qt-project.org
+Delivered-To: development@qt-project.org
+Received: by mx.qt-project.org (Postfix, from userid 110)
+ id 25ABF4116E; Wed, 25 Sep 2019 10:39:01 +0200 (CEST)
+Received: from dd18702.kasserver.com (dd18702.kasserver.com [85.13.139.38])
+ by mx.qt-project.org (Postfix) with ESMTPS id E94CD4031F
+ for <development@qt-project.org>; Wed, 25 Sep 2019 10:38:59 +0200 (CEST)
+Received: from dd18702.kasserver.com (dd0802.kasserver.com [85.13.143.1])
+ by dd18702.kasserver.com (Postfix) with ESMTPSA id 7FCEE3021A4;
+ Wed, 25 Sep 2019 10:38:59 +0200 (CEST)
+MIME-Version: 1.0
+X-SenderIP: 192.91.60.15
+User-Agent: ALL-INKL Webmail 2.11
+In-Reply-To: <HE1PR0201MB232908E17E69D3A50EAA8DAB9DB60@HE1PR0201MB2329.eurprd02.prod.outlook.com>
+References: <20190909141331.C89AD3001A3@dd18702.kasserver.com><HE1PR0201MB232908E17E69D3A50EAA8DAB9DB60@HE1PR0201MB2329.eurprd02.prod.outlook.com>
+From: "Richard Weickelt" <richard@weickelt.de>
+To: development@qt-project.org, jani.heikkinen@qt.io
+Message-Id: <20190925083859.7FCEE3021A4@dd18702.kasserver.com>
+Date: Wed, 25 Sep 2019 10:38:59 +0200 (CEST)
+Subject: Re: [Development] Where to find development snapshots of Qt
+X-BeenThere: development@qt-project.org
+X-Mailman-Version: 2.1.18
+Precedence: list
+List-Id: List for developers _of_ Qt <development.qt-project.org>
+List-Unsubscribe: <https://lists.qt-project.org/options/development>,
+ <mailto:development-request@qt-project.org?subject=unsubscribe>
+List-Archive: <http://lists.qt-project.org/pipermail/development/>
+List-Post: <mailto:development@qt-project.org>
+List-Help: <mailto:development-request@qt-project.org?subject=help>
+List-Subscribe: <https://lists.qt-project.org/listinfo/development>,
+ <mailto:development-request@qt-project.org?subject=subscribe>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+Errors-To: development-bounces@qt-project.org
+Sender: "Development" <development-bounces@qt-project.org>
+X-Scanned-By: MIMEDefang 2.83 on 46.43.1.242
+X-Ovh-Remote: 46.43.1.242 (letterbox.kde.org)
+X-Ovh-Tracer-Id: 2863726414626201299
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 0
+X-VR-SPAMCAUSE: gggruggvucftvghtrhhoucdtuddrgedufedrfedvgddtiecutefuodetggdotefrodftvfcurfhrohhfihhlvgemucfqggfjpdevjffgvefmvefgnecuuegrihhlohhuthemucehtddtnecu
+X-Ovh-Spam-Status: OK
+X-Ovh-Spam-Reason: vr: OK; dkim: disabled; spf: disabled
+X-Ovh-Message-Type: OK
+
+PiBZb3UgY2FuIGRvd25sb2FkIHNuYXBzaG90IHZpYSBvbmxpbmUgaW5zdGFsbGVyLiBBdCB0aGUg
+bW9tZW50IHdlIGRvbid0IHB1Ymxpc2gKPiBzZXBhcmF0ZSBzcmMgcGFja2FnZXMgdG8gZG93bmxv
+YWQucXQuaW8KClRoYW5rcywgYnV0IEkgY2FuJ3Qgc2VlIGFueSBRdCBzbmFwc2hvdHMgaW4gdGhl
+IG9ubGluZSBpbnN0YWxsZXIuIFNvbWUgb2YgdGhlICJwcmV2aWV3IiBwYWNrYWdlcyB0aGVyZSBh
+cmUgZXZlbiBvdXRkYXRlZC4KVGhpcyBpcyB3aGF0IEkgc2VlOiBodHRwczovL3Bhc3RlYm9hcmQu
+Y28vSXoxNkV4cC5wbmcKX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX18KRGV2ZWxvcG1lbnQgbWFpbGluZyBsaXN0CkRldmVsb3BtZW50QHF0LXByb2plY3Qub3Jn
+Cmh0dHBzOi8vbGlzdHMucXQtcHJvamVjdC5vcmcvbGlzdGluZm8vZGV2ZWxvcG1lbnQK
+

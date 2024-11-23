@@ -1,0 +1,31 @@
+{% if block.isAttachment %}
+<a name="att{{block.attachmentIndex}}"></a>
+<div id="attachmentDiv{{block.attachmentIndex}}">
+{% endif %}
+{% if not showOnlyOneMimePart and not block.isFirstTextPart and block.hasLabel %}
+    <table cellspacing="1" class="textAtm">
+        <tr class="textAtmH">
+            <td dir="{{global.dir}}">
+            {% if block.showLink %}
+                <a href="{{block.link}}">{{ block.label }}</a>
+            {% else %}
+                {{ block.label }}
+            {% endif %}
+            {% if block.comment %}
+                <br/>
+                {{ block.comment }}
+            {% endif %}
+            </td>
+        </tr>
+        <tr class="textAtmB">
+            <td>
+                {% callback content %}
+            </td>
+        </tr>
+    </table>
+{% else %}
+    {% callback content %}
+{% endif %}
+{% if block.isAttachment %}
+</div>
+{% endif %}

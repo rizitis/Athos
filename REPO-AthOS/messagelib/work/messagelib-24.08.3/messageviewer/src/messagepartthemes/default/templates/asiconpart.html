@@ -1,0 +1,21 @@
+{% if block.isAttachment %}
+<a name="att{{block.attachmentIndex}}"></a>
+<div id="attachmentDiv{{block.attachmentIndex}}">
+{% endif %}
+<hr/>
+{% if block.inline %}
+     <div>
+        <a href="{{block.link}}"><img align="center" src="{{block.iconPath}}" border="0" style="max-width: 100%"/></a>
+    </div>
+    <div>
+        <a href="{{block.link}}">{{block.label}}</a>
+    </div>
+{% else %}
+    <div>
+        <a href="{{block.link}}"><img align="center" height="{{global.iconSize}}" width="{{global.iconSize}}" src="{{block.iconPath}}" border="0" style="max-width: 100%" alt=""/>{{block.label}}</a>
+    </div>
+{% endif %}
+<div>{{block.comment}}</div>
+{% if block.isAttachment %}
+</div>
+{% endif %}

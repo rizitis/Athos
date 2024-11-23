@@ -1,0 +1,46 @@
+{
+    "id": "org.kde.phonebook",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.6-kf6preview",
+    "sdk": "org.kde.Sdk",
+    "command": "plasma-phonebook",
+    "tags": ["nightly"],
+    "desktop-file-name-suffix": " (Nightly)",
+    "finish-args": [
+        "--share=ipc",
+        "--share=network",
+        "--socket=wayland",
+        "--socket=fallback-x11",    
+        "--device=dri"
+    ],
+    "separate-locales": false,
+    "cleanup": [
+        "/include",
+        "/lib/cmake"
+    ],
+    "modules": [
+        {
+            "name": "kpeople",
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kpeople.git", "tag": "v5.248.0" } ]
+        },
+        {
+            "name": "kpeoplevcard",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [ "-DBUILD_WITH_QT6=ON", "-DQT_MAJOR_VERSION=6" ],
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/pim/kpeoplevcard.git", "branch": "master" } ]
+        },
+        {
+            "name": "kirigamiaddons",
+            "config-opts": [ "-DBUILD_TESTING=OFF" ],
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/libraries/kirigami-addons.git", "branch": "master" } ]
+        },
+        {
+            "name": "plasma-phonebook",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]
+        }
+    ]
+}

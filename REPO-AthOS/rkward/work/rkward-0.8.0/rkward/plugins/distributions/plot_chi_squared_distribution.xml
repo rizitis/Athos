@@ -1,0 +1,32 @@
+<!DOCTYPE rkplugin>
+<!--- This file is part of the RKWard project (https://rkward.kde.org).
+SPDX-FileCopyrightText: by Thomas Friedrichsmeier <thomas.friedrichsmeier@kdemail.net>
+SPDX-FileContributor: The RKWard Team <rkward-devel@kde.org>
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+<document>
+	<code file="plot_chi_squared_distribution.js" />
+	<help file="plot_chi_squared_distribution.rkh" />
+	<logic>
+		<insert snippet="common_logic"/>
+	</logic>
+	<snippets>
+		<snippet id="range_options">
+			<insert snippet="num_observations"/>
+			<frame label="Range" >
+				<spinbox default_precision="2" type="real" id="min" min="0" initial="0.30" label="Lower quantile" />
+				<spinbox default_precision="2" type="real" id="max" min="0" initial="24.10" label="Upper quantile" />
+			</frame>
+		</snippet>
+		<snippet id="dist_options">
+			<frame label="Parameters">
+				<spinbox default_precision="2" type="real" min="0.01" id="df" initial="4.0" label="Degrees of freedom" />
+				<spinbox default_precision="2" type="real" min="0" id="ncp" initial="0" label="Non-centrality parameter" />
+			</frame>
+		</snippet>
+		<include file="plot_dist_common_snippets.xml"/>
+	</snippets>
+	<dialog label="Plot Chi-squared probabilities" >
+		<insert snippet="dialog_layout"/>
+	</dialog>
+</document>

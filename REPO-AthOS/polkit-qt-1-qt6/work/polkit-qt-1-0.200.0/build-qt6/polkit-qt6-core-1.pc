@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include/polkit-qt6-1
+
+Name: polkit-qt6-core-1
+Description: Convenience library for using polkit with a Qt-styled API, non-GUI classes
+Version: 0.200.0
+Requires: Qt6Core
+Libs: -L${libdir} -lpolkit-qt6-core-1
+Cflags: -I${includedir}

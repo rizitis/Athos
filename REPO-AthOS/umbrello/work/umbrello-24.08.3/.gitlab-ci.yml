@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: None
+# SPDX-License-Identifier: CC0-1.0
+
+include:
+  - project: sysadmin/ci-utilities
+    file:
+      - /gitlab-templates/linux.yml
+      - /gitlab-templates/freebsd.yml
+      - /gitlab-templates/windows.yml
+      - /gitlab-templates/flatpak.yml
+      - /gitlab-templates/craft-windows-mingw64.yml
+suse_tumbleweed_qt515:
+  except:
+    - qt4.8.6-kdelibs4.14.9
+freebsd14_qt515:
+  except:
+    - qt4.8.6-kdelibs4.14.9

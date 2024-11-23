@@ -1,0 +1,164 @@
+<!--- This file is part of the RKWard project (https://rkward.kde.org).
+SPDX-FileCopyrightText: by Stefan Rödiger <stefan_roediger@gmx.de>
+SPDX-FileContributor: The RKWard Team <rkward-devel@kde.org>
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+<snippets name="R (RKWard)" filetypes="R" authors="RKWard Team" namespace="SnippetsR" license="BSD">
+  <script>require("range.js")
+require("cursor.js")
+require("document.js")
+require("view.js")
+
+function fileName() { return document.fileName(); }
+function encoding() { return document.encoding(); }
+function year() { return new Date().getFullYear(); }
+function upper(x) { return x.toUpperCase(); }
+function lower(x) { return x.toLowerCase(); }
+function braces(text) { return "{" + text + "}"; }
+function lineCommand(command, replaces="", label_if_empty="Heading") {
+    let c = view.cursorPosition();
+    // NOTE: snippet scripts work by 1. inserting the raw snippet as a raw "template" 2. evaluating any commands inside the template 3. replacing the template with the evaluated template. As a result, when this function gets called, it contains the call to itself...
+    let line = document.line(c.line).replace(/\$\{lineCommand\s*\([^\}]*\}/g, "");
+    line = line.replace(new RegExp(replaces), "");
+    if (line == "") line = label_if_empty;
+    else document.removeLine(c.line);
+    return command + " " + line + "\n";
+}
+
+function rangeCommand(command, def) {
+    if (view.selectedText().length > 0) {
+        return command.replace("%%1", view.selectedText());
+    } else {
+        return command.replace("%%1", def);
+    }
+}
+</script>
+ <item>
+  <match>Figure as PDF</match>
+  <fillin>
+pdf(fi­le­="my­plo­t.p­df", width=5, height=5)
+plot(rnorm(100))
+dev.off()
+
+</fillin>
+ </item>
+ <item>
+  <match>Plotting area (3x3 array)</match>
+  <fillin># Plotting area (3x3 array) with 3 rows and 3 columns
+par(mf­row­=c(­3,3))
+  </fillin>
+ </item>
+ <item>
+  <match>Matrix multip­lic­ation</match>
+  <fillin>
+%*%
+  </fillin>
+ </item>
+ <item>
+  <match>Function</match>
+  <fillin>
+f &lt;- function(x) sqrt(x%*%x)
+# To test the function run
+# f(1:4)
+  </fillin>
+ </item>
+ <item>
+  <match>Determines an object's base type</match>
+  <fillin>
+  <fillin>${rangeCommand("typeof(%%1)", "Object")}</fillin>
+  </fillin>
+ </item>
+ <item>
+  <match>pipe (native)</match>
+  <fillin>
+    <fillin> |> </fillin>
+  </fillin>
+ </item>
+ <item>
+  <match>pipe (pseudo)</match>
+  <fillin>
+    <fillin> ->.; </fillin>
+  </fillin>
+ </item>
+ <item>
+  <match>Concat­enate character vectors</match>
+  <fillin>
+paste(${cursor}, sep = " ", collapse = NULL)
+  </fillin>
+ </item>
+ <item>
+  <match>for loop (indexed)</match>
+  <fillin>
+# Print for 10 capital LETTERS
+for(i in 1:10) {
+    print(LETTERS[i])
+}
+  </fillin>
+ </item>
+ <item>
+  <match>for loop (vector based)</match>
+  <fillin>
+# Print for 10 capital LETTERS
+for(l in LETTERS[1:10]) {
+    print(l)
+}
+  </fillin>
+ </item>
+ <item>
+  <match>while loop</match>
+  <fillin>
+while (condi­tion) {
+    Do something
+}
+  </fillin>
+ </item>
+ <item>
+  <match>if/else statement</match>
+  <fillin>
+if (condi­tion) {
+    Do something
+} else {
+    Do something different
+}
+  </fillin>
+ </item>
+ <item>
+ <match>data.frame</match>
+  <fillin>${rangeCommand("data.frame(%%1, row.names = NULL, check.rows = FALSE, check.names = TRUE, fix.empty.names = TRUE, stringsAsFactors = FALSE)", "Data object")}
+  </fillin>
+ </item>
+ <item>
+  <match>Combine Values into a Vector or List</match>
+  <fillin>${rangeCommand("c(%%1, recursive = FALSE, use.names = TRUE)", "Objects to be concatenated")}</fillin>
+ </item>
+ <item>
+  <match>Two plots (in row)</match>
+  <fillin># Two plots in a row
+# style of axis labels changed
+par(mfrow = c(1, 2), las = 1)
+
+# First plot (stripchart)
+stripchart(rnorm(10), method = "jitter", main = "Stripchart")
+mtext("A", cex = 1.2, side = 3, adj = 0, font = 2)
+
+# Second plot (Histogram)
+hist(rnorm(10), main = "Histogram")
+mtext("B", cex = 1.2, side = 3, adj = 0, font = 2)
+</fillin>
+ </item>
+ <item>
+  <match>Plots (multiple in matrix layout)</match>
+  <fillin># Layout of three plots (1, 2, 3) in two rows and 3 columns
+layout(matrix(c(1, 2, 2, 3, 3, 3), nrow = 2, ncol = 3, byrow = TRUE))
+# Dummy histogram
+hist(rnorm(100))
+mtext("A", cex = 1.2, side = 3, adj = 0, font = 2)
+# Dummy stripchart
+stripchart(rlnorm(100), method = "jitter", xlab = "data")
+mtext("B", cex = 1.2, side = 3, adj = 0, font = 2)
+# Dummy barplot
+barplot(table(rpois(100, 10)), xlab = "data", ylab = "Frequency")
+mtext("C", cex = 1.2, side = 3, adj = 0, font = 2)
+</fillin>
+ </item>
+ </snippets>

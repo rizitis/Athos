@@ -1,0 +1,53 @@
+<!-- Snippets for the distribution calculator plugins -->
+<!--- This file is part of the RKWard project (https://rkward.kde.org).
+SPDX-FileCopyrightText: by Thomas Friedrichsmeier <thomas.friedrichsmeier@kdemail.net>
+SPDX-FileContributor: The RKWard Team <rkward-devel@kde.org>
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+<document>
+	<snippet id="dialog_logic">
+		<convert id="do_d" mode="equals" sources="mode.string" standard="d"/>
+		<convert id="do_q" mode="equals" sources="mode.string" standard="q"/>
+
+		<connect client="lower.enabled" governor="do_d.not"/>
+		<connect client="logp.visible" governor="do_d.not"/>
+		<connect client="logd.visible" governor="do_d"/>
+		<connect client="q.visible" governor="do_q.not"/>
+		<connect client="n_quantiles.visible" governor="do_q.not"/>
+		<connect client="p.visible" governor="do_q"/>
+		<connect client="n_probabilities.visible" governor="do_q"/>
+
+		<convert id="have_ui_note" mode="notequals" sources="ui_note.text" standard=""/>
+		<connect client="ui_note.visible" governor="have_ui_note"/>
+	</snippet>
+	<snippet id="dialog_layout">
+		<dropdown id="mode" label="Mode">
+			<option value="p" label="Calculate probabilities for given quantiles"/>
+			<option value="d" id="d" label="Calculate densities at given quantiles"/>
+			<option value="q" label="Calculate quantiles for given probabilities"/>
+		</dropdown>
+			<row>
+				<frame>
+					<column>
+						<spinbox required="true" type="integer" min="1" id="n_quantiles" initial="20" label="Number of quantiles"/>
+						<spinbox required="true" type="integer" min="1" id="n_probabilities" initial="20" label="Number of probabilities"/>
+						<text>- or -</text>
+						<matrix columns="1" allow_user_resize_columns="false" required="true" mode="real" fixed_width="true" min="0" id="q" label="Specify Quantiles (optional)"/>
+						<matrix columns="1" allow_user_resize_columns="false" required="true" mode="real" fixed_width="true" id="p" label="Specify Probabilities (optional)"/>
+						<checkbox id="logp" label="Logarithmic probabilities" />
+						<checkbox id="logd" label="Logarithmic densities" />
+						<checkbox id="lower" label="Lower tail" checked="true" />
+						<stretch/>
+					</column>
+				</frame>
+				<frame>
+					<column>
+						<insert snippet="dist_options"/>
+						<stretch/>
+					</column>
+				</frame>
+			</row>
+			<text id="ui_note"/>
+			<preview id="preview" mode="output"/>
+	</snippet>
+</document>

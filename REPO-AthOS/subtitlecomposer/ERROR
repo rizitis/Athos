@@ -1,0 +1,89 @@
+FAILED: src/CMakeFiles/subtitlecomposer-lib.dir/streamprocessor/streamprocessor.cpp.o 
+/usr/bin/c++ -DKCOREADDONS_LIB -DQT_CORE5COMPAT_LIB -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB -D_DEFAULT_SOURCE -D_GNU_SOURCE -D_LARGEFILE64_SOURCE -I/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/build/src -I/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src -I/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/build/src/subtitlecomposer-lib_autogen/include -I/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/widgets -I/usr/include/qt6/QtDBus/6.8.0 -I/usr/include/qt6/QtDBus/6.8.0/QtDBus -I/usr/include/AL -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtWidgets/6.8.0 -isystem /usr/include/qt6/QtWidgets/6.8.0/QtWidgets -isystem /usr/include/qt6/QtCore/6.8.0 -isystem /usr/include/qt6/QtCore/6.8.0/QtCore -isystem /usr/include/qt6/QtGui/6.8.0 -isystem /usr/include/qt6/QtGui/6.8.0/QtGui -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/KF6/KCoreAddons -isystem /usr/include/KF6/KWidgetsAddons -isystem /usr/include/KF6/KTextWidgets -isystem /usr/include/KF6/SonnetUi -isystem /usr/include/KF6/Sonnet -isystem /usr/include/KF6/KI18n -isystem /usr/include/KF6/KCodecs -isystem /usr/include/KF6/SonnetCore -isystem /usr/include/KF6/KIOCore -isystem /usr/include/KF6/KIO -isystem /usr/include/KF6/KIOFileWidgets -isystem /usr/include/KF6/KIOWidgets -isystem /usr/include/KF6/KIOGui -isystem /usr/include/KF6/KConfig -isystem /usr/include/KF6/KConfigCore -isystem /usr/include/KF6/KService -isystem /usr/include/KF6/KJobWidgets -isystem /usr/include/KF6/Solid -isystem /usr/include/KF6/KCompletion -isystem /usr/include/KF6/KBookmarks -isystem /usr/include/qt6/QtXml -isystem /usr/include/KF6/KItemViews -isystem /usr/include/KF6/KXmlGui -isystem /usr/include/KF6/KConfigWidgets -isystem /usr/include/KF6/KConfigGui -isystem /usr/include/KF6/KColorScheme -isystem /usr/include/qt6/QtOpenGLWidgets -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtCore5Compat -fno-operator-names -fno-exceptions -Wall -Wextra -Wcast-align -Wchar-subscripts -Wformat-security -Wno-long-long -Wpointer-arith -Wundef -Wnon-virtual-dtor -Woverloaded-virtual -Werror=return-type -Werror=init-self -Wvla -Wdate-time -Wsuggest-override -Wlogical-op -fdiagnostics-color=always -Os -DNDEBUG -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -mno-direct-extern-access -MD -MT src/CMakeFiles/subtitlecomposer-lib.dir/streamprocessor/streamprocessor.cpp.o -MF src/CMakeFiles/subtitlecomposer-lib.dir/streamprocessor/streamprocessor.cpp.o.d -o src/CMakeFiles/subtitlecomposer-lib.dir/streamprocessor/streamprocessor.cpp.o -c /root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp: In member function ‘bool SubtitleComposer::StreamProcessor::initAudio(int, const WaveFormat&)’:
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:277:25: error: ‘AVCodecContext’ {aka ‘struct AVCodecContext’} has no member named ‘channel_layout’; did you mean ‘ch_layout’?
+  277 |         if(!m_codecCtx->channel_layout)
+      |                         ^~~~~~~~~~~~~~
+      |                         ch_layout
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:278:29: error: ‘AVCodecContext’ {aka ‘struct AVCodecContext’} has no member named ‘channel_layout’; did you mean ‘ch_layout’?
+  278 |                 m_codecCtx->channel_layout = av_get_default_channel_layout(m_codecCtx->channels);;
+      |                             ^~~~~~~~~~~~~~
+      |                             ch_layout
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:278:88: error: ‘AVCodecContext’ {aka ‘struct AVCodecContext’} has no member named ‘channels’
+  278 |                 m_codecCtx->channel_layout = av_get_default_channel_layout(m_codecCtx->channels);;
+      |                                                                                        ^~~~~~~~
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:278:46: error: ‘av_get_default_channel_layout’ was not declared in this scope
+  278 |                 m_codecCtx->channel_layout = av_get_default_channel_layout(m_codecCtx->channels);;
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:281:61: error: ‘AVCodecContext’ {aka ‘struct AVCodecContext’} has no member named ‘channels’
+  281 |                 m_audioStreamFormat.setChannels(m_codecCtx->channels);
+      |                                                             ^~~~~~~~
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:282:52: error: ‘AVCodecContext’ {aka ‘struct AVCodecContext’} has no member named ‘channel_layout’; did you mean ‘ch_layout’?
+  282 |                 m_audioChannelLayout = m_codecCtx->channel_layout;
+      |                                                    ^~~~~~~~~~~~~~
+      |                                                    ch_layout
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:284:40: error: ‘av_get_default_channel_layout’ was not declared in this scope
+  284 |                 m_audioChannelLayout = av_get_default_channel_layout(m_audioStreamFormat.channels());
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:288:47: error: ‘AVCodecContext’ {aka ‘struct AVCodecContext’} has no member named ‘channel_layout’; did you mean ‘ch_layout’?
+  288 |         const bool convChannels = m_codecCtx->channel_layout != m_audioChannelLayout;
+      |                                               ^~~~~~~~~~~~~~
+      |                                               ch_layout
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:294:37: error: ‘AVCodecContext’ {aka ‘struct AVCodecContext’} has no member named ‘channel_layout’; did you mean ‘ch_layout’?
+  294 |                         m_codecCtx->channel_layout, m_codecCtx->sample_fmt, m_codecCtx->sample_rate,
+      |                                     ^~~~~~~~~~~~~~
+      |                                     ch_layout
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:292:32: error: ‘swr_alloc_set_opts’ was not declared in this scope; did you mean ‘swr_alloc_set_opts2’?
+  292 |                 m_swResample = swr_alloc_set_opts(nullptr,
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                swr_alloc_set_opts2
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp: In member function ‘void SubtitleComposer::StreamProcessor::processAudio()’:
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:366:33: error: ‘AVFrame’ {aka ‘struct AVFrame’} has no member named ‘channel_layout’; did you mean ‘ch_layout’?
+  366 |                 frameResampled->channel_layout = m_audioChannelLayout;
+      |                                 ^~~~~~~~~~~~~~
+      |                                 ch_layout
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:434:59: error: ‘AVFrame’ {aka ‘struct AVFrame’} has no member named ‘pkt_duration’; did you mean ‘duration’?
+  434 |                                                 if(frame->pkt_duration)
+      |                                                           ^~~~~~~~~~~~
+      |                                                           duration
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:435:84: error: ‘AVFrame’ {aka ‘struct AVFrame’} has no member named ‘pkt_duration’; did you mean ‘duration’?
+  435 |                                                         timeFrameDuration = frame->pkt_duration * 1000 * m_avStream->time_base.num / m_avStream->time_base.den;
+      |                                                                                    ^~~~~~~~~~~~
+      |                                                                                    duration
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:451:133: error: ‘AVFrame’ {aka ‘struct AVFrame’} has no member named ‘channels’
+  451 |                                                 emit audioDataAvailable(frameResampled->data[0], qint32(frameSize * frameResampled->channels),
+      |                                                                                                                                     ^~~~~~~~
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/streamprocessor/streamprocessor.cpp:456:115: error: ‘AVFrame’ {aka ‘struct AVFrame’} has no member named ‘channels’
+  456 |                                                 emit audioDataAvailable(frame->data[0], qint32(frameSize * frame->channels),
+      |                                                                                                                   ^~~~~~~~
+[112/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/scripting/scriptsmanager.cpp.o
+[113/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/scripting/scripting_subtitle.cpp.o
+[114/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/translate/translateengine.cpp.o
+[115/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/scripting/scripting_subtitleline.cpp.o
+[116/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/translate/translatedialog.cpp.o
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/translate/translatedialog.cpp: In constructor ‘SubtitleComposer::TranslateDialog::TranslateDialog(QWidget*)’:
+/root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/translate/translatedialog.cpp:34:47: warning: ‘constexpr typename std::add_const<_Tp>::type& qAsConst(T&) [with T = QList<SubtitleComposer::TranslateEngine*>; typename std::add_const<_Tp>::type = const QList<SubtitleComposer::TranslateEngine*>]’ is deprecated: Use std::as_const() instead. [-Wdeprecated-declarations]
+   34 |         for(const TranslateEngine *e: qAsConst(m_engines))
+      |                                       ~~~~~~~~^~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qforeach.h:11,
+                 from /usr/include/qt6/QtCore/qglobal.h:57,
+                 from /usr/include/qt6/QtGui/qtguiglobal.h:7,
+                 from /usr/include/qt6/QtWidgets/qtwidgetsglobal.h:7,
+                 from /usr/include/qt6/QtWidgets/qdialog.h:7,
+                 from /usr/include/qt6/QtWidgets/QDialog:1,
+                 from /root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/dialogs/actiondialog.h:11,
+                 from /root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/dialogs/actionwithtargetdialog.h:11,
+                 from /root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/translate/translatedialog.h:10,
+                 from /root/Desktop/AthOS/REPO-AthOS/subtitlecomposer/work/subtitlecomposer-0.8.0/src/translate/translatedialog.cpp:7:
+/usr/include/qt6/QtCore/qttypetraits.h:36:45: note: declared here
+   36 | constexpr typename std::add_const<T>::type &qAsConst(T &t) noexcept { return t; }
+      |                                             ^~~~~~~~
+[117/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/videoplayer/videowidget.cpp.o
+[118/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/utils/finder.cpp.o
+[119/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/translate/deeplengine.cpp.o
+[120/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/utils/replacer.cpp.o
+[121/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/speechprocessor/speechprocessor.cpp.o
+[122/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/utils/speller.cpp.o
+[123/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/translate/googlecloudengine.cpp.o
+[124/185] Building CXX object src/CMakeFiles/subtitlecomposer-lib.dir/videoplayer/videoplayer.cpp.o
+ninja: build stopped: subcommand failed.

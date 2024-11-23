@@ -1,0 +1,37 @@
+<!DOCTYPE rkhelp>
+<!--- This file is part of the RKWard project (https://rkward.kde.org).
+SPDX-FileCopyrightText: by Thomas Friedrichsmeier <thomas.friedrichsmeier@kdemail.net>
+SPDX-FileContributor: The RKWard Team <rkward-devel@kde.org>
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+<document>
+	<summary>
+Import a sheet of a Microsoft Excel file into a data frame.
+	</summary>
+
+	<usage>
+Choose the Microsoft Excel file to import a sheet from. An R object containing the data will be created. This method of importing Excel sheets is based on R package "gdata",
+and requires a working Perl setup. In case this does not work on your system, or does not produce the expected results, you may want to try the Java-based alternative
+<link href="rkward://component/import_xls_xlconnect"/>.
+	</usage>
+
+	<settings>
+		<caption id="tab_general"/>
+		<setting id="file">The filename of the file to import</setting>
+		<setting id="sheetname">The name of an R object to store the imported data in. If you choose an existing symbol name, you will be prompted, whether to overwrite this object.</setting>
+		<setting id="sheetname">Specifies the sheet to be imported</setting>
+		<setting id="verbose">Print details as the file is processed. This may be helpful in troubleshooting.</setting>
+		<setting id="skip">Number of rows to skip at the top</setting>
+		<setting id="nrows">Maximum number of rows to import</setting>
+		<setting id="doedit">Whether the object should be opened for editing after it was imported</setting>		
+		<setting id="header">Whether the first row of the file should be interpreted as column names</setting>
+	</settings>
+	<related>
+		<ul>
+			<li><link href="rkward://rhelp/read.xls"/></li>
+			<li><link href="rkward://component/import_xls_xlconnect"/></li>
+			<li><link href="rkward://component/import_csv"/></li>
+			<li><link href="rkward://rhelp/read.table"/></li>
+		</ul>
+	</related>
+</document>

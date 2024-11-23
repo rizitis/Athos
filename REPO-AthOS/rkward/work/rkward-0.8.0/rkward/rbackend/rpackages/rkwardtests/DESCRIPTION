@@ -1,0 +1,34 @@
+Package: rkwardtests
+Type: Package
+Title: RKWard Plugin Test Suite Framework
+Author: Thomas Friedrichsmeier, Meik Michalke
+Maintainer: Thomas Friedrichsmeier <thomas.friedrichsmeier@kdemail.net>,
+    Meik Michalke <meik.michalke@uni-duesseldorf.de>
+Depends:
+    R (>= 2.9.0),methods
+Description: A set of functions, classes and methods to test plugins that were
+    written for RKWard.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://rkward.kde.org
+Authors@R: c(person(given="Thomas", family="Friedrichsmeier",
+    email="thomas.friedrichsmeier@kdemail.net", role=c("aut", "cre")),
+    person(given="Meik", family="Michalke", email="meik.michalke@hhu.de",
+    role=c("aut", "cre")))
+Version: 0.7.5
+Date: 2022-05-26
+Collate:
+    'RKTest-class.R'
+    'rktest.getTempDir.R'
+    'rktest.makeplugintests.R'
+    'rktest.replaceRunAgainLink.R'
+    'RKTestResult-class.R'
+    'rktest.runRKTestSuite.R'
+    'rktest.expectError.R'
+    'rktest.setSuiteStandards.R'
+    'RKTestSuite-class.R'
+    'rkwardtests-internal.R'
+    'rkwardtests-package.R'
+    'show-method.R'
+RoxygenNote: 7.3.2

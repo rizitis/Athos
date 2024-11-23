@@ -1,0 +1,631 @@
+<!--- This file is part of the RKWard project (https://rkward.kde.org).
+SPDX-FileCopyrightText: by Stefan Rödiger <stefan_roediger@gmx.de>
+SPDX-FileContributor: The RKWard Team <rkward-devel@kde.org>
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+<snippets name="R Markdown (RKWard)" filetypes="R Markdown" authors="RKWard Team" namespace="SnippetsRmd" license="BSD">
+  <script>require("range.js")
+require("cursor.js")
+require("document.js")
+require("view.js")
+
+function fileName() { return document.fileName(); }
+function encoding() { return document.encoding(); }
+function year() { return new Date().getFullYear(); }
+function upper(x) { return x.toUpperCase(); }
+function lower(x) { return x.toLowerCase(); }
+function braces(text) { return "{" + text + "}"; }
+function lineCommand(command, replaces="", label_if_empty="Heading") {
+    let c = view.cursorPosition();
+    // NOTE: snippet scripts work by 1. inserting the raw snippet as a raw "template" 2. evaluating any commands inside the template 3. replacing the template with the evaluated template. As a result, when this function gets called, it contains the call to itself...
+    let line = document.line(c.line).replace(/\$\{lineCommand\s*\([^\}]*\}/g, "");
+    line = line.replace(new RegExp(replaces), "");
+    if (line == "") line = label_if_empty;
+    else document.removeLine(c.line);
+    return command + " " + line + "\n";
+}
+
+function rangeCommand(command, def) {
+    if (view.selectedText().length > 0) {
+        return command.replace("%%1", view.selectedText());
+    } else {
+        return command.replace("%%1", def);
+    }
+}
+</script>
+ <item>
+  <match>Heading1</match>
+  <fillin>${lineCommand("#", "^#+ ", "Heading")}</fillin>
+ </item>
+ <item>
+  <match>Heading2</match>
+  <fillin>${lineCommand("##", "^#+ ", "Heading")}</fillin>
+ </item>
+ <item>
+  <match>Heading3</match>
+  <fillin>${lineCommand("###", "^#+ ", "Heading")}</fillin>
+ </item>
+ <item>
+  <match>List (Unordered)</match>
+  <fillin>${rangeCommand("\n- A\n- B\n- C\n\n")}</fillin>
+ </item>
+ <item>
+  <match>List (Ordered)</match>
+  <fillin>${rangeCommand("\n1. A\n2. B\n3. C\n\n")}</fillin>
+ </item>
+ <item>
+  <match>List (Unordered &amp; Nested)</match>
+  <fillin>${rangeCommand("\n- A\n  - a\n- B\n  - b\n- C\n  - c\n\n")}</fillin>
+ </item>
+ <item>
+  <match>Check List</match>
+<fillin>
+- [x] A
+- [ ] B
+  - [x] b
+- [ ] C
+  - [x] c
+    - [x] cc
+</fillin>
+ </item>
+ <item>
+  <match>Bold</match>
+  <fillin>${rangeCommand("**%%1**", "Bold")}</fillin>
+ </item>
+ <item>
+  <match>Text comment (HTML)</match>
+  <fillin>${rangeCommand("&lt;!-- %%1 --&gt;", "Text")}</fillin>
+ </item>
+ <item>
+  <match>Image</match>
+  <fillin>${rangeCommand("![title](%%1)", "\"/path/to/image.png\"")}</fillin>
+ </item>
+ <item>
+  <match>Image (knitr)</match>
+  <fillin>${rangeCommand("knitr::include_graphics(%%1)", "\"/path/to/image.png\"")}</fillin>
+ </item>
+ <item>
+  <match>Image (knitr and here)</match>
+  <fillin>knitr::include_graphics(here::here("path", "to", "image.png")</fillin>
+ </item>
+ <item>
+  <match>Italics</match>
+  <fillin>${rangeCommand("*%%1*", "Italics")}</fillin>
+ </item>
+ <item>
+  <match>Superscript</match>
+  <fillin>${rangeCommand("\n$A^2^$\n")}</fillin>
+ </item>
+ <item>
+  <match>Subscript</match>
+  <fillin>${rangeCommand("\n$H~2~O$\n")}</fillin>
+ </item>
+ <item>
+  <match>En dash</match>
+  <fillin>--</fillin>
+ </item>
+ <item>
+  <match>Em dash</match>
+  <fillin>---</fillin>
+ </item>
+ <item>
+  <match>Equation (inline)</match>
+  <fillin>
+$e^${braces("i\\pi")} + 1$
+</fillin>
+ </item>
+ <item>
+  <match>Equation (block)</match>
+  <fillin>
+$$e^${braces("i\\pi")} + 1$$
+</fillin>
+ </item>
+ <item>
+  <match>Strikethrough</match>
+  <fillin>${rangeCommand("~~%%1~~", "Strikethrough")}</fillin>
+ </item>
+ <item>
+  <match>Link</match>
+  <fillin>${rangeCommand("[title](%%1)", "URL")}</fillin>
+ </item>
+ <item>
+  <match>rmarkdown::render()</match>
+  <fillin>rmarkdown::render("/path/to/your_rmarkdown_file.Rmd"${cursor})</fillin>
+ </item>
+ <item>
+  <match>Code (inline)</match>
+  <fillin>${rangeCommand("`r %%1`", "paste(\"The sum of 1 to 1000 is\", sum(1L:1000))")}</fillin>
+ </item>
+  <item>
+  <match>Code (simple chunk)</match>
+  <fillin>${rangeCommand("\n```"+ braces("r") +"\n%%1\n```\n", "x &lt;- 1 # Mark the code to be put in a Chunk\n")}</fillin>
+ </item>
+ <item>
+  <match>Quote</match>
+  <fillin>${rangeCommand("> %%1", "Text")}</fillin>
+ </item>
+ <item>
+  <match>Generate Rmd source</match>
+  <fillin>
+knitr::knit_expand(
+  text = "This is RKWard using `R` version {{R_version}} with the `rkward` package {{rkward_version}}.",
+  R_version = getRversion(),
+  rkward_version = packageVersion("rkward"))
+</fillin>
+ </item>
+ <item>
+  <match>Separator \-</match>
+  <fillin> &amp;shy; </fillin>
+ </item>
+ <item>
+  <match>Heading (Omit heading in table of contents)</match>
+  <fillin># Heading {.unlisted .unnumbered}</fillin>
+ </item>
+ <item>
+  <match>Halfspace \,</match>
+  <fillin> &amp;#8239; </fillin>
+ </item>
+ <item>
+  <match>Read external scripts into a chunk</match>
+  <fillin>
+```{r, file=c(${cursor}'one.R', 'two.R'), echo = FALSE, eval = TRUE, include = FALSE, message = FALSE, warning = FALSE"}
+# One or more external scripts can be read via the file option of a chunk
+```
+</fillin>
+ </item>
+ <item>
+  <match>Write raw LaTeX code</match>
+<fillin>
+```{=latex}
+\begin{tabular}{ll}
+A &amp; B \\
+A &amp; B \\
+\end{tabular}
+```
+</fillin>
+ </item>
+ <item>
+  <match>Code (chunk with defaults)</match>
+  <fillin>${rangeCommand("```"+ braces("r, chunk-label, echo = FALSE, eval = TRUE, fig.show = \"asis\", include = TRUE, message = FALSE, results = \"asis\", warning = FALSE") +"\n%%1 \n```\n", "x &lt;- 1 # Mark the code to be put in a Chunk\n")}</fillin>
+ </item>
+ <item>
+  <match>Table (Markdown with caption)</match>
+<fillin>| Right  | Left  | Default   | Center    |
+|-------:|:------|-----------|:---------:|
+| 12     | 12    | 12        | 12        |
+| 123    | 123   | 123       | 123       |
+| 1      | 1     | 1         | 1         |
+:Caption text</fillin>
+ </item>
+ <item>
+  <match>Table (knitr)</match>
+  <fillin>${rangeCommand("```"+ braces("r, chunk-label, echo = FALSE, eval = TRUE, include = TRUE, message = FALSE, results = \"asis\", warning = FALSE") +"\nknitr::kable(%%1, caption = \"Table caption text.\")\n```", "data")}
+  </fillin>
+ </item>
+ <item>
+  <match>Table (xtable)</match>
+  <fillin>${rangeCommand("```"+ braces("r, chunk-label, echo = FALSE, eval = TRUE, include = TRUE, message = FALSE, results = \"asis\", warning = FALSE") +"\nprint(xtable::xtable(%%1), comment = FALSE)\n```", "data")}</fillin>
+ </item>
+ <item>
+  <match>YAML header</match>
+<fillin>---
+title: "Example R Markdown in RKWard with R version `r getRversion()`"
+author: "Author Name"
+date: "`r Sys.Date()`"
+output:
+    html_document:
+      fig_caption: yes
+      highlight: kate
+      number_sections: yes
+      toc: yes
+urlcolor: blue
+linkcolor: red
+---
+
+```{r, echo=TRUE}
+# Defaults to suppress warnings and messages
+# Figure height and width are set to 7 inches
+# See more options by running str(knitr::opts_chunk$get())
+knitr::opts_chunk$set(
+  echo = FALSE, error = FALSE, warnings = FALSE, message = FALSE,
+  collapse = FALSE, fig.width = 7, fig.height = 7
+)
+```
+</fillin>
+ </item>
+ <item>
+  <match>Footnote</match>
+  <fillin>^[${cursor}This is a footnote.]</fillin>
+ </item>
+ <item>
+   <match>R Markdown HTML template</match>
+   <fillin>---
+title: "Example R Markdown in RKWard with R version `r getRversion()`"
+author: "The RKWard Team"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+    html_document:
+      fig_caption: yes
+      highlight: kate
+      number_sections: yes
+      toc: yes
+      toc_float: true
+      toc_collapsed: true
+number_sections: true
+urlcolor: blue
+linkcolor: red
+lang: en
+---
+
+&lt;!--
+This is an example how to create an R Markdown document in RKWard.
+
+Please save this file as "your_rmarkdown_file.Rmd" (select an appropriate name).
+
+The structure of such documents is always the same.
+1. The YAML header between the  ---
+2. An optional Global Settings chunck
+3. The main text containing markdown, LaTeX, R (even other languages like python), HTML and other elements
+
+In this template we show main concept of markdown like
+- heading
+- emphasis (*italic*, **bold**, ~~Strikethrough~~)
+- checklist
+- footnotes
+- links
+- equations
+- lists (ordered, unordered, nested)
+- plots and
+- tables
+Please feel free to adjust it to your needs.
+
+The HTML file is rendered via rmarkdown::render("/path/to/your_rmarkdown_file.Rmd").
+--&gt;
+
+```{r, echo=FALSE, include=FALSE}
+# Defaults to suppress warnings and messages
+# Figure height and width are set to 7 inches
+# See more options by running str(knitr::opts_chunk$get())
+
+knitr::opts_chunk$set(
+  echo = FALSE, error = FALSE, warnings = FALSE, message = FALSE,
+  collapse = FALSE, fig.width = 4, fig.height = 4
+)
+```
+
+# The RKWard IDE and GUI
+
+RKWard is an *easy to use* and **easily extensible** IDE/GUI^[IDE: Integrated Development Environment. GUI: Graphical User Interface] for [R](https://www.r-project.org/). It aims to combine the power of the R-language with the ease of use of commercial statistics tools.
+
+RKWard is ~~not~~ free of charge.
+
+## Features of RKWard
+
+RKWard’s features include:
+
+- Spreadsheet-like data editor
+- Syntax highlighting, code folding and code completion
+- Data import (e.g. SPSS, Stata and CSV)
+- Plot preview and browsable history
+- R package management
+- Workspace browser
+- GUI dialogs for all kinds of statistics and plots
+- Developer tools integration via kateparts
+  - git
+  - terminal tool view (Linux only)
+  - Text filter
+
+and many more features.
+
+## Data handling
+
+RKWard can handle all kinds of data from simple to complex. Here is an example where a part of the iris data is shown as table.
+
+```{r}
+data &lt;- iris[1:4, ]
+knitr::kable(data, caption = "Table caption text.")
+```
+
+It is also possible to make tables by hand as shown next.
+
+
+| Right  | Left  | Default   | Center    |
+|-------:|:------|-----------|:---------:|
+| 12     | 12    | 12        | 12        |
+| 123    | 123   | 123       | 123       |
+| 1      | 1     | 1         | 1         |
+:Example for a handmade table (pure `markdown`)
+
+
+### Plotting in RKWard
+
+There many ways to to plots in RKWard. These are for example:
+
+1. via the GUI menus (e.g., barplot, boxplot, ...)
+2. via the R script and the preview or
+3. in a R Markdown document as shown next.
+
+Let us take a simple code to make four plots of random data in a single row, for example:
+
+
+```
+# Set graphical parameter
+par(mfrow = c(2, 2))
+
+# for loop to make four plots
+
+for (i in 1:4) {
+ plot(rnorm(10), col = i, pch = 19, main = paste("Scatter plot", LETTERS[i]))
+}
+```
+
+If we put the code in the following R Markdown chunk (note the 'r' in the curly braces) the scatter plots look as follows (note the syntax highlighting):
+
+```{r, echo = TRUE, fig.cap = "Four plots of random data."}
+# Set graphical parameter
+par(mfrow = c(2, 2))
+
+# for loop to make four plots
+
+for (i in 1:4) {
+  plot(rnorm(10), col = i, pch = 19, main = paste("Scatter plot", LETTERS[i]))
+}
+```
+
+# Conclusion
+
+RKWard is a useful tool. This RKWard version is used with the R version `r  getRversion()`.
+
+In the template following R Markdown elements were shown
+
+- [x] Headings
+- [x] emphasis of text
+  - [x] bold
+  - [x] italic
+  - [x] strikethrough
+  - [ ] underlined
+- [x] Links
+- [x] Equations
+- [x] Code
+- [ ] Citations via bibtex
+- [x] Checklist
+
+and many more.
+
+If you like RKWard consider to donate. Some small amount for a cup of coffee or a cup of H~2~O is totally fine.
+</fillin>
+ </item>
+ <item>
+   <match>R Markdown PDF template</match>
+<fillin>---
+title: "Example R Markdown in RKWard with R version `r getRversion()`"
+author: "The RKWard Team"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+    pdf_document:
+      fig_caption: yes
+      highlight: kate
+      number_sections: true
+      toc: yes
+urlcolor: blue
+linkcolor: red
+lang: en
+---
+
+&lt;!--
+This is an example how to create an R Markdown document in RKWard.
+
+Please save this file as "your_rmarkdown_file.Rmd" (select an appropriate name).
+
+The output format is a file in Portable Document Format (PDF).
+
+To create a PDF is a LaTeX distribution mandatory. The command tinytex::install_tinytex()
+downloads and installs TinyTeX, a custom LaTeX distribution based on TeX Live.
+
+The structure of such documents is always the same.
+1. The YAML header between the  ---
+2. An optional Global Settings chunck
+3. The main text containing markdown, LaTeX, R (even other languages like python), HTML and other elements
+
+In this template we show main concept of markdown like
+- heading
+- emphasis (*italic*, **bold**, ~~Strikethrough~~)
+- checklist
+- footnotes
+- links
+- equations
+- lists (ordered, unordered, nested)
+- plots and
+- tables
+
+The pdf file is rendered via rmarkdown::render("/path/to/your_rmarkdown_file.Rmd").
+
+Please feel free to adjust it to your needs.
+--&gt;
+
+\pagebreak
+
+```{r, echo=FALSE, include=FALSE}
+# Defaults to suppress warnings and messages
+# Figure height and width are set to 7 inches
+# See more options by running str(knitr::opts_chunk$get())
+
+knitr::opts_chunk$set(
+  echo = FALSE, error = FALSE, warnings = FALSE, message = FALSE,
+  collapse = FALSE, fig.width = 4, fig.height = 4
+)
+```
+
+
+# The RKWard IDE and GUI
+
+RKWard is an *easy to use* and **easily extensible** IDE/GUI^[IDE: Integrated Development Environment. GUI: Graphical User Interface] for [R](https://www.r-project.org/). It aims to combine the power of the R-language with the ease of use of commercial statistics tools.
+
+RKWard is ~~not~~ free of charge.
+
+## Features of RKWard
+
+RKWard’s features include:
+
+- Spreadsheet-like data editor
+- Syntax highlighting, code folding and code completion
+- Data import (e.g. SPSS, Stata and CSV)
+- Plot preview and browsable history
+- R package management
+- Workspace browser
+- GUI dialogs for all kinds of statistics and plots
+- Developer tools integration via kateparts
+  - git
+  - terminal tool view (Linux only)
+  - Text filter
+
+and many more features.
+
+## Data handling
+
+RKWard can handle all kinds of data from simple to complex. Here is an example where a part of the iris data is shown as table.
+
+```{r}
+data &lt;- iris[1:4, ]
+knitr::kable(data, caption = "Table caption text.")
+```
+
+It is also possible to make tables by hand as shown next.
+
+
+| Right  | Left  | Default   | Center    |
+|-------:|:------|-----------|:---------:|
+| 12     | 12    | 12        | 12        |
+| 123    | 123   | 123       | 123       |
+| 1      | 1     | 1         | 1         |
+:Example for a handmade table (pure `markdown`)
+
+
+### Plotting in RKWard
+
+There many ways to to plots in RKWard. These are for example:
+
+1. via the GUI menus (e.g., barplot, boxplot, ...)
+2. via the R script and the preview or
+3. in a R Markdown document as shown next.
+
+Let us take a simple code to make four plots of random data in a single row, for example:
+
+
+```
+# Set graphical parameter
+par(mfrow = c(2,2))
+
+# for loop to make four plots
+
+for (i in 1:4) {
+  plot(rnorm(10), col = i, pch = 19, main = paste("Scatter plot", LETTERS[i]))
+}
+```
+
+If we put the code in the following R Markdown chunk (note the 'r' in the curly braces) the scatter plots (Figure 1) look as follows (note the syntax highlighting):
+
+```{r, echo = TRUE, fig.cap = "Four plots of random data."}
+# Set graphical parameter
+par(mfrow = c(2,2))
+
+# for loop to make four plots
+
+for (i in 1:4) {
+  plot(rnorm(10), col = i, pch = 19, main = paste("Scatter plot", LETTERS[i]))
+}
+```
+
+# Conclusion
+
+RKWard is ~~not~~ a useful tool. This RKWard version is used with the R version `r  getRversion()`.
+
+In the template following R Markdown elements were shown
+
+- [x] Headings
+- [x] emphasis of text
+  - [x] bold
+  - [x] italic
+  - [x] strikethrough
+  - [ ] underlined
+- [x] Links
+- [x] Equations
+- [x] Code
+- [ ] Citations via bibtex
+- [x] Checklist
+
+and many more.
+
+If you like RKWard consider to donate. Some small amount for a cup of coffee or a cup of H~2~O is totally fine.
+</fillin>
+ </item>
+ <item>
+  <match>Bibliographies and citations</match>
+    <fillin>---
+output: html_document
+bibliography: references.bib
+csl: biomed-central.csl
+---
+
+&lt;!--
+The BibTeX database (e.g. references.bib) is a plain-text file with the *.bib extension that consists of
+bibliography entries like this:
+
+@Manual{R-base,
+title = {R: A Language and Environment for Statistical Computing},
+author = {{R Core Team}},
+organization = {R Foundation for Statistical Computing},
+address = {Vienna, Austria},
+year = {2022},
+url = {https://www.R-project.org},
+}
+
+Pandoc will use a Chicago author-date format for citations and references. To use
+another style (see https://www.zotero.org/styles), you will need to specify a CSL (e.g., biomed-central.csl).
+--&gt;
+</fillin>
+ </item>
+ <item>
+  <match>R package citations</match>
+  <fillin>${rangeCommand("toBibtex(citation(\"%%1\"))", "rkward")}</fillin>
+ </item>
+ <item>
+  <match>Multiple authors in a document</match>
+    <fillin>---
+ - John Doe^[Institution One, john@example.org]
+ - Jane Doe^[Institution Two, jane@example.org]
+---
+</fillin>
+ </item>
+ <item>
+  <match>R Markdown with two columns</match>
+    <fillin>---
+title: "Example R Markdown with two columns in RKWard with R version `r getRversion()`"
+author: "The RKWard Team"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+::: columns
+::: column
+This is the first column.
+
+```{r}
+plot(rnorm(199))
+```
+
+:::
+
+::: column
+
+This is the second column.
+
+```{r}
+hist(rnorm(199))
+```
+
+:::
+:::
+</fillin>
+ </item>
+</snippets>

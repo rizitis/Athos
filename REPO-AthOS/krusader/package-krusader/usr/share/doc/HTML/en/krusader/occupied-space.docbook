@@ -1,0 +1,48 @@
+<!--
+    SPDX-FileCopyrightText: 2000-2003 Shie Erlich <erlich@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2000-2003 Rafi Yanai <yanai@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2004-2010 Frank Schoolmeesters <codeknight@users.sourceforge.net>
+    SPDX-FileCopyrightText: 2000-2022 Krusader Krew <https://krusader.org>
+-->
+<sect1 id="calculate">
+  <title>Calculate Occupied Space</title>
+  <indexterm>
+    <primary>Occupied Space</primary>
+  </indexterm>
+  <!-- Thanks to Heiner Eichmann -->
+  <para>There are two ways to calculate the occupied space of
+  files/folders.</para>
+  <itemizedlist>
+    <listitem>
+      <para>Pressing the 
+      configurable shortcut for the <guilabel>Calculate occupied space</guilabel> on a folder under the cursor
+      instantly calculates the occupied size.</para>
+    </listitem>
+    <listitem>
+      <para>To calculate how much disk space is occupied by the
+      selected files and folders in the active panel select 
+        <menuchoice>
+          <guimenu>Edit</guimenu>
+          <guimenuitem>Calculate Occupied Space</guimenuitem>
+        </menuchoice>.
+      After a small delay, a dialog box will be
+      displayed with total occupied space and the number of files
+      and folders you selected. The space occupied by every
+      selected folder will be shown as if the user just pressed 
+      configurable shortcut on those folders. If the active
+      panel is browsing an archive, the numbers will apply to the
+      unpacked size of the selected files and folders, not
+      their compressed size. After the calculation the selection
+      state will be toggled and the cursor will move one step
+      downwards.</para>
+    </listitem>
+  </itemizedlist>
+  <para>Calculating the occupied space on remote
+  file systems is supported.
+  <note>
+    <para>Performing this operation on a very large file system
+    (thousands of files) may be time-consuming. You can cancel the
+    calculation process at any time by clicking the 
+    <guibutton>Cancel</guibutton> button.</para>
+  </note></para>
+</sect1>

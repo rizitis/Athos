@@ -1,0 +1,8 @@
+add_subdirectory(calligra)
+if(SHOULD_BUILD_STAGE)
+    add_subdirectory(stage)
+endif()
+if(SHOULD_BUILD_SHEETS)
+    add_subdirectory(sheets)
+endif()
+install(FILES   calligra.desktop DESTINATION ${KDE_INSTALL_APPDIR})

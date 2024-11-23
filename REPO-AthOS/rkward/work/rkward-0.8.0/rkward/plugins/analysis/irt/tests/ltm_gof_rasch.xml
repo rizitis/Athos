@@ -1,0 +1,32 @@
+<!DOCTYPE rkplugin>
+<!--- This file is part of the RKWard project (https://rkward.kde.org).
+SPDX-FileCopyrightText: by Meik Michalke <meik.michalke@hhu.de>
+SPDX-FileContributor: The RKWard Team <rkward-devel@kde.org>
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
+<document>
+  <code file="ltm_gof_rasch.js" />
+  <!--<help file="ltm_gof_rasch.rkh" />-->
+
+  <logic>
+  </logic>
+
+  <dialog label="Goodness of Fit (Rasch model)">
+    <tabbook>
+      <tab id="tab_var_options" label="Data">
+        <row id="row_vars">
+          <varselector id="vars" />
+          <column>
+            <varslot types="numeric" id="x" classes="rasch" source="vars" required="true" label="Choose fitted model to examine:"/>
+            <text>Only objects of class rasch are valid!</text>
+            <stretch />
+            <frame label="Bootstrap options">
+              <spinbox id="spin_samples" label="Number of samples" type="integer" initial="49" min="1" size="small" />
+            </frame>
+            <preview id="preview" mode="output"/>
+          </column>
+        </row>
+      </tab>
+    </tabbook>
+  </dialog>
+</document>
