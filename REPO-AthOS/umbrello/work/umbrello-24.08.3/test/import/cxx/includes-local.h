@@ -1,2 +1,0 @@
-
-class includes_local {};

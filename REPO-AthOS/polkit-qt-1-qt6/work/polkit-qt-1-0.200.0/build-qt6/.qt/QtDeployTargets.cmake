@@ -1,6 +1,0 @@
-set(__QT_DEPLOY_TARGET_polkit-qt6-core-1_FILE /root/Desktop/AthOS/REPO-AthOS/polkit-qt-1-qt6/work/polkit-qt-1-0.200.0/build-qt6/core/libpolkit-qt6-core-1.so.1.200.0)
-set(__QT_DEPLOY_TARGET_polkit-qt6-core-1_TYPE SHARED_LIBRARY)
-set(__QT_DEPLOY_TARGET_polkit-qt6-gui-1_FILE /root/Desktop/AthOS/REPO-AthOS/polkit-qt-1-qt6/work/polkit-qt-1-0.200.0/build-qt6/gui/libpolkit-qt6-gui-1.so.1.200.0)
-set(__QT_DEPLOY_TARGET_polkit-qt6-gui-1_TYPE SHARED_LIBRARY)
-set(__QT_DEPLOY_TARGET_polkit-qt6-agent-1_FILE /root/Desktop/AthOS/REPO-AthOS/polkit-qt-1-qt6/work/polkit-qt-1-0.200.0/build-qt6/agent/libpolkit-qt6-agent-1.so.1.200.0)
-set(__QT_DEPLOY_TARGET_polkit-qt6-agent-1_TYPE SHARED_LIBRARY)

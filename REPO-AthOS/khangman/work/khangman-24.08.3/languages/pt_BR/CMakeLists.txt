@@ -1,1 +1,0 @@
-install(FILES pt_BR.txt DESTINATION ${KDE_INSTALL_DATADIR}/khangman)

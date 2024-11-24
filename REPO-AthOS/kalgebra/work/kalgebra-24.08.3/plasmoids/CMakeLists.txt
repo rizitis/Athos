@@ -1,1 +1,0 @@
-plasma_install_package(graphsplasmoid org.kde.graphsplasmoid)

@@ -1,8 +1,0 @@
-install(FILES btdb.in/opensearch.xml DESTINATION ${KDE_INSTALL_DATAROOTDIR}/ktorrent/opensearch/btdb.in )
-install(FILES btdb.in/favicon.ico DESTINATION ${KDE_INSTALL_DATAROOTDIR}/ktorrent/opensearch/btdb.in )
-install(FILES btdig.com/opensearch.xml DESTINATION ${KDE_INSTALL_DATAROOTDIR}/ktorrent/opensearch/btdig.com )
-install(FILES btdig.com/favicon.ico DESTINATION ${KDE_INSTALL_DATAROOTDIR}/ktorrent/opensearch/btdig.com )
-install(FILES duckduckgo.com/opensearch.xml DESTINATION ${KDE_INSTALL_DATAROOTDIR}/ktorrent/opensearch/duckduckgo.com )
-install(FILES duckduckgo.com/favicon.ico DESTINATION ${KDE_INSTALL_DATAROOTDIR}/ktorrent/opensearch/duckduckgo.com )
-install(FILES torrentproject.se/opensearch.xml DESTINATION ${KDE_INSTALL_DATAROOTDIR}/ktorrent/opensearch/torrentproject.se )
-install(FILES torrentproject.se/favicon.ico DESTINATION ${KDE_INSTALL_DATAROOTDIR}/ktorrent/opensearch/torrentproject.se )
