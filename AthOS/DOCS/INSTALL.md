@@ -1,6 +1,6 @@
 ## Installation
 
-1. `git clone https://github.com/rizitis/PLASMA_WORLD`
+1. `git clone https://github.com/rizitis/PLASMA_WORLD.git`
 2. `cd PLASMA_WORLD/AthOS && sudo bash setup.sh`
   
 
