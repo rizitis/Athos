@@ -1,4 +1,4 @@
-**Here is my way for a Plasma6. It is not a fork of anyone but a work from scratch.** <br>
+**Here is my way for a Plasma6. It is not a fork of anyone but a work from scratch and still in progress.** <br>
 
 `If it is not understood do not ask and do not open an issue,` *but if you have to offer code because you want to.* **Welcome to the PR**<br>
 
