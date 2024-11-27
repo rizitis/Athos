@@ -1,5 +1,26 @@
 **Here is my way for a Plasma6. It is not a fork of anyone but a work from scratch and still in progress.** <br>
 
+0. Read **README-AthOS.md**
+1. `sudo bash setup.sh` to install athos.
+Now you are ready to build Plasma 6 and every other package you will create.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 `If it is not understood do not ask and do not open an issue,` *but if you have to offer code because you want to.* **Welcome to the PR**<br>
 
 **Anyway The license allows you to do whatever you like...**<br>
