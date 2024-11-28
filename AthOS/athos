@@ -32,6 +32,7 @@ elif [ "$2" = "mkbuild" ]; then
     echo "Creating new project for $package..."
     mkdir -p "$W_DIR"/"$package"
     cd "$A_HOME" || exit
+    cp "$W_DIR"/"$package"/"$package".ini "$W_DIR"/"$package"/"$package".ini.bak || true
     cat /usr/share/"$APPL"/TEMPLATES/TEMPLATE.ini > "$W_DIR"/"$package"/"$package".ini
     echo "Created new project $package/$package.ini"
     ls "$W_DIR"/"$package"

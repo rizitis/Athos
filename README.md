@@ -1,22 +1,22 @@
 **Here is my way for a Plasma6. It is not a fork of anyone but a work from scratch and still in progress.** <br>
 
-0. Read **README-AthOS.md**
+## HowTO
+
+0. Read **README-AthOS.md** and then install all deps needed from Ponce-Alien repos and pip.
 1. `sudo bash setup.sh` to install athos.
-Now you are ready to build Plasma 6 and every other package you will create.
+Now you are ready to build Plasma 6 and **every other package** you will create
 
 
+## Build Plasma6
 
+1. `athos frameworks6-meta`
+2. `athos plasma-workspace`
+3. `athos plasma-desktop-meta` for PC or `athos plasma-mobile` for Mobile-Tablets etc..
 
+Now you can install anything else exist in repo and you need by command: `athos package-name` <br>
 
-
-
-
-
-
-
-
-
-
+If you want to build **EVERYTHING** then `cd dev-stuff` and always as root command: `bash FULL_UPGRADE_ALL.sh`<br>
+You may now have your holidays and when come back Plasma6 will be there... 
 
 
 

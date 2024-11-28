@@ -41,3 +41,10 @@ Usage:
   athos package_name mklog # To view PackageBuild.log
   
 ```
+
+In dev-stuff are some scripts that help me to maintain athos for plasma6 something that you might need is the <br>
+`edit-ini-files-for-new-versions.sh`, this script read `CURRENT-VERSIONS.env` and `NEW-VERSIONS.env` and execute a sed -i command for update versions to all ini files when needed.<br>
+**Example:**<br>
+1. assume plasma next month new version is `6.2.5` just edit `NEW-VERSIONS.env` and make line NEW_PLASMA=6.2.`5`
+2. `sudo bash edit-ini-files-for-new-versions.sh` and check everything is ok, so far no edits happens for real, you can check in terminal output or read `file_list.log` to confirm.
+3. If everyhting is ok then you can execute again script `sudo bash edit-ini-files-for-new-versions.sh --edit` to edit files. Now your scripts are in focussed in new versions.
