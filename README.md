@@ -21,7 +21,7 @@ Now you can install anything else exist in repo and you need by command: `athos 
 If you want to build **EVERYTHING** then `cd dev-stuff` and always as root command: `bash FULL_UPGRADE_ALL.sh`<br>
 You may now have your holidays and when come back Plasma6 will be there... 
 
-
+---
 
 
 `If it is not understood do not ask and do not open an issue,` *but if you have to offer code because you want to.* **Welcome to the PR**<br>
