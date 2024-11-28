@@ -1,5 +1,8 @@
 **Here is my way for a Plasma6. It is not a fork of anyone but a work from scratch and still in progress.** <br>
 
+
+![plasma6-slackware64-current](./slack.png)
+
 ## HowTO
 
 0. Read **README-AthOS.md** and then install all deps needed from [Ponce-Alien repos and pip](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DEPS-BEFORE-BUILD).
