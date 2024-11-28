@@ -35,7 +35,7 @@ More informations you can find in [HOWTO.md][1], [INSTALL.md][2], [required.md][
 
 ```
 Usage:
-  athos package_name        # To build an existing package
+  athos package_name        # To build and install package
   athos package_name mkbuild # To create a new package build template
   athos package_name mkedit # To edit package ini file
   athos package_name mklog # To view PackageBuild.log
