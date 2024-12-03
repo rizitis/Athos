@@ -48,6 +48,10 @@ elif [ "$2" = "mkopen-dir" ]; then
     # open default file manager folder
     xdg-open "$W_DIR"/"$package" &
     exit
+elif [ "$2" = "mkcat" ]; then
+    # open default file manager folder
+    cat "$W_DIR"/"$package"/"$package".ini &
+    exit
 else
     echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n    athos package_name mkbuild        # To create a new package build template\n     athos package_name mkedit        # To edit package ini file\n      athos package_name mklog        # To view PackageBuild.log\n   athos packane_name mkopen-dir        # To open package folder"
     exit 1
@@ -571,6 +575,8 @@ if [[ "$VERSION" != "$AUTO_UPD" ]]; then
    wget -c $SRCURL
  elif [[ $COMPRESS == "rpm" ]]; then
    wget -c $SRCURL
+ elif [[ $COMPRESS == "snap" ]]; then
+   wget -c $SRCURL
  else
    wget -O "$SRCNAM"-"$VERSION"."$COMPRESS" "$SRCURL"
  fi
@@ -712,7 +718,7 @@ prepare_build(){
 
 
 cd "$TMP" || exit
-if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" && $COMPRESS != "rpm" && $COMPRESS != "deb" && $COMPRESS != "AppImage" ]]; then
+if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" && $COMPRESS != "rpm" && $COMPRESS != "deb" && $COMPRESS != "AppImage" && $COMPRESS != "snap" ]]; then
 get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || get_out "$CWD"/"$SRCNAM"."$COMPRESS" || exit
 if [[ $BIN_PKG != "YES" ]]; then
   cd $SRCNAM-"$VERSION" || cd $PRGNAM-"$VERSION" || cd $SRCNAM || exit
@@ -730,6 +736,11 @@ elif
  [[ $COMPRESS == "AppImage" ]]; then
  echo "$COMPRESS="AppImage""
  mv "$CWD"/"$SRCNAM" "$TMP"
+elif
+ [[ $COMPRESS == "snap" ]]; then
+ echo "COMPRESS="snap""
+ unsquashfs -d "$TMP" "$CWD"/"$SRCNAM"."$COMPRESS"
+ cd  "$TMP" || exit
 elif
  [[ $COMPRESS = "rpm" ]]; then
  cd "$CWD"
@@ -749,10 +760,14 @@ fi
 
 check_deps
 opt_deps
-download_src
+#download_src
 prepare_build
 patch_build
+if [[ $COMPRESS == snap ]]; then
+echo "no chroot for $COMPRESS"
+else
 chrooting
+fi
 set -e
 slackbuild
 
