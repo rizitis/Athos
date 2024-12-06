@@ -41,7 +41,8 @@ PS. It is public for 2 reasons:
 - because ...
 
 ---
-**NOTE** that since I like the way athos building I use it everyday. So from time to time adding more build.ini...not only Plasma6.
+**NOTE** that since I like the way athos building I use it everyday. So from time to time adding more build.ini...not only Plasma6**.<br>
+All builds listed in file [BUILDS](./BUILDS)
 
  <p></p> Have fun.!</p>
 -r
