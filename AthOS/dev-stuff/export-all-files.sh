@@ -10,5 +10,8 @@ folders=$(ls -d "$directory"*/ 2>/dev/null | xargs -n 1 basename)
 if [ -z "$folders" ]; then
     echo "No folders found in $directory"
 else
-    echo "$folders"
+DATE=$(date)
+    echo "# $DATE" > ../../BUILDS
+    echo "" >> ../../BUILDS
+    echo "$folders" >> ../../BUILDS
 fi
