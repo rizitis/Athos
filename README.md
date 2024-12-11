@@ -44,7 +44,7 @@ PS. It is public for 2 reasons:
 **NOTE** that:
 - since I like the way athos is building, I use it everyday. So from time to time am adding more build.ini...**not only Plasma6**.<br>
 - if depentencies from **ponce** repo or **conraid** are ok for build a package then I use those repos, so when you missing a dep and its not here then you must install it from there.
-- if you need to build a package from here because you dont find it in SBo or else BUT you dont like athos, just copy the slackbuild function fron ini file and patches. Then you can make a traditional SlacBuild ;)
+- if you need to build a package from here because you dont find it in SBo or else, BUT you dont like how athos is building, just copy the slackbuild function from here ini file and patches if needed. Then you can make a traditional SlacBuild ;)
 <br>All builds names listed in file [BUILDS](./BUILDS)
 
  <p></p> Have fun.!</p>
