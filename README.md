@@ -49,3 +49,5 @@ PS. It is public for 2 reasons:
 
  <p></p> Have fun.!</p>
 -r
+
+![S](./S.svg)
