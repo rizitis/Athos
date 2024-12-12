@@ -1,0 +1,335 @@
+asterisk Modular Open Source PBX System
+
+Required that non exist here are in ponce or conraid repos.
+This is a basic setup.Feel free to modify it and enable/disable things as for your needs...
+
+
+To start sever:
+/etc/rc.d/rc.asterisk  start
+
+To start using:
+sudo asterisk -rvvv
+
+In cli type help:
+*CLI> help
+
+!                              -- Execute a shell command
+acl show                       -- Show a named ACL or list all named ACLs
+aeap show client               -- Show AEAP client configuration by id
+aeap show clients              -- Show all AEAP client configurations
+ael reload                     -- Reload AEL configuration
+ael set debug {read|tokens|macros|contexts|off} -- Enable AEL debugging flags
+agent logoff                   -- Sets an agent offline
+agent show all                 -- Show status of all agents
+agent show online              -- Show status of online agents
+agent show                     -- Show information about an agent
+agi dump html                  -- Dumps a list of AGI commands in HTML format
+agi exec                       -- Add AGI command to a channel in Async AGI
+agi set debug [on|off]         -- Enable/Disable AGI debugging
+agi show commands [topic]      -- List AGI commands or specific help
+aoc set debug                  -- enable cli debugging of AOC messages
+ari mkpasswd                   -- Encrypts a password
+ari set debug                  -- Enable/disable debugging of an ARI application
+ari show apps                  -- List registered ARI applications
+ari show app                   -- Display details of a registered ARI application
+ari show status                -- Show ARI settings
+ari show users                 -- List ARI users
+ari show user                  -- List single ARI user
+bridge kick                    -- Kick a channel from a bridge
+bridge show all                -- List all bridges
+bridge show                    -- Show information about a bridge
+bridge technology show         -- List registered bridge technologies
+bridge technology {suspend|unsuspend} -- Suspend/unsuspend a bridge technology
+calendar dump sched            -- Dump calendar sched context
+calendar show calendar         -- Display information about a calendar
+calendar show calendars        -- Show registered calendars
+calendar show types            -- Show all calendar types loaded
+cc cancel [core|all]           -- Kill a CC transaction
+cc report status               -- Reports CC stats
+cdr set debug [on|off]         -- Enable debugging in the CDR engine
+cdr show active                -- Display active CDRs for channels
+cdr show status                -- Display the CDR status
+cdr submit                     -- Posts all pending batched CDR data
+cel show status                -- Display the CEL status
+channel dump frames            -- Display frames queued on a specific channel
+channel originate              -- Originate a call
+channel redirect               -- Redirect a call
+channel request hangup         -- Request a hangup on a given channel
+cli check permissions          -- Try a permissions config for a user
+cli reload permissions         -- Reload CLI permissions config
+cli show aliases               -- Show CLI command aliases
+cli show permissions           -- Show CLI permissions
+confbridge kick                -- Kick participants out of conference bridges.
+confbridge list                -- List conference bridges and participants.
+confbridge lock                -- Lock a conference.
+confbridge mute                -- Mute participants.
+confbridge record start        -- Start recording a conference
+confbridge record stop         -- Stop recording a conference.
+confbridge show menu           -- Show a conference menu
+confbridge show menus          -- Show a list of conference menus
+confbridge show profile bridge -- Show a conference bridge profile.
+confbridge show profile bridges -- Show a list of conference bridge profiles.
+confbridge show profile user   -- Show a conference user profile.
+confbridge show profile users  -- Show a list of conference user profiles.
+confbridge unlock              -- Unlock a conference.
+confbridge unmute              -- Unmute participants.
+config list                    -- Show all files that have loaded a configuration file
+config reload                  -- Force a reload on modules using a particular configuration file
+console answer                 -- Answer an incoming console call
+console dial                   -- Dial an extension from the console
+console flash                  -- Send a flash to the connected party
+console hangup                 -- Hangup a call on the console
+console {mute|unmute}          -- Disable/Enable mic input
+console list available         -- List available devices
+console list devices           -- List configured devices
+console send text              -- Send text to a connected party
+console {set|show} autoanswer [on|off] -- Turn autoanswer on or off
+console {set|show} active      -- View or Set the active console device
+core abort shutdown            -- Cancel a running shutdown
+core clear profile             -- Clear profiling info
+core ping taskprocessor        -- Ping a named task processor
+core reload                    -- Global reload
+core reset taskprocessor       -- Reset a named task processor's stats
+core reset taskprocessors      -- Reset all task processors' stats
+core restart gracefully        -- Restart Asterisk gracefully
+core restart now               -- Restart Asterisk immediately
+core restart when convenient   -- Restart Asterisk at empty call volume
+core set debug category        -- Enable/disable debugging categories
+core set debug                 -- Set level of debug chattiness
+core set debug channel         -- Enable/disable debugging on a channel
+core set trace                 -- Set level of trace chattiness
+core set verbose               -- Set level of verbose chattiness
+core show applications [like|describing] -- Shows registered dialplan applications
+core show application          -- Describe a specific dialplan application
+core show calls [uptime]       -- Display information on calls
+core show channels [concise|verbose|count] -- Display information on channels
+core show channeltypes         -- List available channel types
+core show channeltype          -- Give more details on that channel type
+core show channel              -- Display information on a specific channel
+core show codecs [audio|video|image|text] -- Displays a list of registered codecs
+core show codec                -- Shows a specific codec
+core show config mappings      -- Display config mappings (file names to config engines)
+core show file formats         -- Displays file formats
+core show functions [like]     -- Shows registered dialplan functions
+core show function             -- Describe a specific dialplan function
+core show hanguphandlers all   -- Show hangup handlers of all channels
+core show hanguphandlers       -- Show hangup handlers of a specified channel
+core show help                 -- Display help list, or specific help on a command
+core show hints                -- Show dialplan hints
+core show hint                 -- Show dialplan hint
+core show image formats        -- Displays image formats
+core show license              -- Show the license(s) for this copy of Asterisk
+core show profile              -- Display profiling info
+core show settings             -- Show some core settings
+core show sounds               -- Shows available sounds
+core show sound                -- Shows details about a specific sound
+core show switches             -- Show alternative switches
+core show sysinfo              -- Show System Information
+core show taskprocessor alerted subsystems -- List task processor subsystems in alert
+core show taskprocessors [like] -- List instantiated task processors and statistics
+core show threads              -- Show running threads
+core show translation          -- Display translation matrix
+core show uptime [seconds]     -- Show uptime information
+core show version              -- Display version info
+core show warranty             -- Show the warranty (if any) for this copy of Asterisk
+core stop gracefully           -- Gracefully shut down Asterisk
+core stop now                  -- Shut down Asterisk immediately
+core stop when convenient      -- Shut down Asterisk at empty call volume
+core waitfullybooted           -- Wait for Asterisk to be fully booted
+database del                   -- Removes database key/value
+database deltree               -- Removes database keytree/values
+database get                   -- Gets database value
+database put                   -- Adds/updates database value
+database query                 -- Run a user-specified query on the astdb
+database show                  -- Shows database contents
+database showkey               -- Shows database contents
+devstate change                -- Change a custom device state
+devstate list                  -- List currently known custom device states
+dialplan add extension         -- Add new extension into context
+dialplan add ignorepat         -- Add new ignore pattern
+dialplan add include           -- Include context in other context
+dialplan debug                 -- Show fast extension pattern matching data structures
+dialplan eval function         -- Evaluate dialplan function
+dialplan locks show            -- List func_lock locks.
+dialplan reload                -- Reload extensions and *only* extensions
+dialplan remove context        -- Remove a specified context
+dialplan remove extension      -- Remove a specified extension
+dialplan remove ignorepat      -- Remove ignore pattern from context
+dialplan remove include        -- Remove a specified include from context
+dialplan save                  -- Save current dialplan into a file
+dialplan set chanvar           -- Set a channel variable
+dialplan set extenpatternmatchnew false -- Use the Old extension pattern matching algorithm.
+dialplan set extenpatternmatchnew true -- Use the New extension pattern matching algorithm.
+dialplan set global            -- Set global dialplan variable
+dialplan show                  -- Show dialplan
+dialplan show chanvar          -- Show channel variables
+dialplan show globals          -- Show global dialplan variables
+dnsmgr refresh                 -- Performs an immediate refresh
+dnsmgr reload                  -- Reloads the DNS manager configuration
+dnsmgr status                  -- Display the DNS manager status
+dundi flush [stats]            -- Flush DUNDi cache
+dundi lookup                   -- Lookup a number in DUNDi
+dundi precache                 -- Precache a number in DUNDi
+dundi query                    -- Query a DUNDi EID
+dundi set debug {on|off}       -- Enable/Disable DUNDi debugging
+dundi show cache               -- Show DUNDi cache
+dundi show entityid            -- Display Global Entity ID
+dundi show hints               -- Show DUNDi hints in the cache
+dundi show mappings            -- Show DUNDi mappings
+dundi show peers [registered|include|exclude|begin] -- Show defined DUNDi peers
+dundi show peer                -- Show info on a specific DUNDi peer
+dundi show precache            -- Show DUNDi precache
+dundi show requests            -- Show DUNDi requests
+dundi show trans               -- Show active DUNDi transactions
+dundi store history {on|off}   -- Enable/Disable DUNDi historic records
+fax set debug {on|off}         -- Enable/Disable FAX debugging on new FAX sessions
+fax show capabilities          -- Show the capabilities of the registered FAX technology modules
+fax show session               -- Show the status of the named FAX sessions
+fax show sessions              -- Show the current FAX sessions
+fax show settings              -- Show the global settings and defaults of both the FAX core and technology modules
+fax show stats                 -- Summarize FAX session history
+fax show version               -- Show versions of FAX For Asterisk components
+features show                  -- Lists configured features
+file convert                   -- Convert audio file
+geoloc list locations          -- List Geolocation Location Objects
+geoloc list profiles           -- List Geolocation Profile Objects
+geoloc reload                  -- Reload Geolocation Configuration
+geoloc show gml_shape_defs     -- Show the GML Shape definitions
+geoloc show profiles           -- Show Geolocation Profile Objects
+group show channels            -- Display active channels with group(s)
+hangup request                 -- <no description available>
+help                           -- <no description available>
+http show status               -- Display HTTP server status
+iax2 provision                 -- Provision an IAX device
+iax2 prune realtime            -- Prune a cached realtime lookup
+iax2 reload                    -- Reload IAX configuration
+iax2 set debug {on|off|peer}   -- Enable/Disable IAX debugging
+iax2 set debug jb {on|off}     -- Enable/Disable IAX jitterbuffer debugging
+iax2 set debug trunk {on|off}  -- Enable/Disable IAX trunk debugging
+iax2 set mtu                   -- Set the IAX systemwide trunking MTU
+iax2 show cache                -- Display IAX cached dialplan
+iax2 show callnumber usage     -- Show current entries in IP call number limit table
+iax2 show channels             -- List active IAX channels
+iax2 show firmware             -- List available IAX firmware
+iax2 show netstats             -- List active IAX channel netstats
+iax2 show peer                 -- Show details on specific IAX peer
+iax2 show peers                -- List defined IAX peers
+iax2 show provisioning         -- Display iax provisioning
+iax2 show registry             -- Display IAX registration status
+iax2 show stats                -- Display IAX statistics
+iax2 show threads              -- Display IAX helper thread info
+iax2 show users [like]         -- List defined IAX users
+iax2 test losspct              -- Set IAX2 incoming frame loss percentage
+iax2 unregister                -- Unregister (force expiration) an IAX2 peer from the registry
+indication add                 -- Add the given indication to the country
+indication remove              -- Remove the given indication from the country
+indication show                -- Display a list of all countries/indications
+keys init                      -- Initialize RSA key passcodes
+keys show                      -- Displays RSA key information
+local show channels            -- List status of local channels
+logger add channel             -- Adds a new logging channel
+logger filter changroup        -- Filter PBX logs by channel log group
+logger filter reset            -- Reset PBX channel filtering
+logger filter show             -- Show current PBX channel filtering
+logger mute                    -- Toggle logging output to a console
+logger reload                  -- Reopens the log files
+logger remove channel          -- Removes a logging channel
+logger rotate                  -- Rotates and reopens the log files
+logger set level {DEBUG|TRACE|NOTICE|WARNING|ERROR|VERBOSE|DTMF} {on|off} -- Enables/Disables a specific logging level for this console
+logger show channels           -- List configured log channels
+logger show levels             -- List configured log levels
+malloc trim                    -- Return excess memory to the OS
+manager kick session           -- Kick a connected manager interface connection
+manager reload                 -- Reload manager configurations
+manager set debug [on|off]     -- Show, enable, disable debugging of the manager code
+manager show command           -- Show a manager interface command
+manager show commands          -- List manager interface commands
+manager show connected         -- List connected manager interface users
+manager show eventq            -- List manager interface queued events
+manager show settings          -- Show manager global settings
+manager show users             -- List configured manager users
+manager show user              -- Display information on a specific manager user
+media cache create             -- Create an item in the media cache
+media cache delete             -- Remove an item from the media cache
+media cache refresh            -- Refresh an item in the media cache
+media cache show all           -- Show all items in the media cache
+media cache show               -- Show a single item in the media cache
+minivm list accounts [for]     -- List defined mini-voicemail boxes
+minivm list templates          -- List message templates
+minivm list zones              -- List zone message formats
+minivm reload                  -- Reload Mini-voicemail configuration
+minivm show settings           -- Show mini-voicemail general settings
+minivm show stats              -- Show some mini-voicemail statistics
+mixmonitor {start|stop|list}   -- Execute a MixMonitor command
+module load                    -- Load a module by name
+module refresh                 -- Completely unloads and loads a module by name
+module reload                  -- Reload configuration for a module
+module show [like]             -- List modules and info
+module unload                  -- Unload a module by name
+moh reload                     -- Reload MusicOnHold
+moh show classes               -- List MusicOnHold classes
+moh show files                 -- List MusicOnHold file-based classes
+moh unregister class           -- Unregister realtime MusicOnHold class
+no debug channel               -- Disable debugging on channel(s)
+odbc read                      -- Test reading a func_odbc function
+odbc show                      -- List ODBC DSN(s)
+odbc write                     -- Test setting a func_odbc function
+opus show                      -- Display Opus codec utilization.
+originate                      -- <no description available>
+parking show                   -- Show a parking lot or a list of all parking lots.
+phoneprov show routes          -- Show registered phoneprov http routes
+pjsip reload                   -- <no description available>
+presencestate change           -- Change a custom presence state
+presencestate list             -- List currently know custom presence states
+pri intense debug span         -- <no description available>
+prometheus show metrics        -- Display the current metrics and their values
+prometheus show status         -- Display the status of Prometheus metrics collection
+queue add member               -- Add a channel to a specified queue
+queue priority caller          -- Change priority caller on queue
+queue reload {parameters|members|rules|all} -- Reload queues, members, queue rules, or parameters
+queue remove member            -- Removes a channel from a specified queue
+queue reset stats              -- Reset statistics for a queue
+queue set penalty              -- Set penalty for a channel of a specified queue
+queue set ringinuse            -- Set ringinuse for a channel of a specified queue
+queue show                     -- Show status of a specified queue
+queue show rules               -- Show the rules defined in queuerules.conf
+queue {pause|unpause} member   -- Pause or unpause a queue member
+realtime destroy               -- Delete a row from a RealTime database
+realtime load                  -- Used to print out RealTime variables.
+realtime show pgsql cache      -- Shows cached tables within the PostgreSQL realtime driver
+realtime show pgsql status     -- Shows connection information for the PostgreSQL RealTime driver
+realtime store                 -- Store a new row into a RealTime database
+realtime update                -- Used to update RealTime variables.
+realtime update2               -- Used to test the RealTime update2 method
+reload                         -- <no description available>
+rtcp set debug {on|off|ip}     -- Enable/Disable RTCP debugging
+rtcp set stats {on|off}        -- Enable/Disable RTCP stats
+rtp set debug {on|off|ip}      -- Enable/Disable RTP debugging
+rtp show settings              -- Display RTP settings
+say load [new|old]             -- Set or show the say mode
+sorcery memory cache dump      -- Dump all objects within a sorcery memory cache
+sorcery memory cache expire    -- Expire a specific object or ALL objects within a sorcery memory cache
+sorcery memory cache populate  -- Clear and populate the sorcery memory cache with objects from the backend
+sorcery memory cache show      -- Show sorcery memory cache information
+sorcery memory cache stale     -- Mark a specific object or ALL objects as stale within a sorcery memory cache
+stasis show topics             -- Show all topics
+stasis show topic              -- Show topic
+stun set debug {on|off}        -- Enable/Disable STUN debugging
+stun show status               -- Show STUN servers and statuses
+timing test                    -- Run a timing test
+udptl set debug {on|off|ip}    -- Enable/Disable UDPTL debugging
+udptl show config              -- Show UDPTL config options
+ulimit                         -- Set or show process resource limits
+unistim reload                 -- Reload UNISTIM configuration
+unistim send packet            -- Send packet (for reverse engineering)
+unistim set debug {on|off}     -- Toggle UNITSTIM debugging
+unistim show devices           -- Show UNISTIM devices
+unistim show info              -- Show UNISTIM info
+voicemail forward              -- Forward message to another folder
+voicemail move                 -- Move message to another folder
+voicemail reload               -- Reload voicemail configuration
+voicemail remove               -- Remove message
+voicemail show aliases         -- List mailbox aliases
+voicemail show mailbox         -- Display a mailbox's content details
+voicemail show users [for]     -- List defined voicemail boxes
+voicemail show zones           -- List zone message formats

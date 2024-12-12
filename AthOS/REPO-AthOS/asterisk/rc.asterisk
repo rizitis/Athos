@@ -1,0 +1,63 @@
+#!/bin/sh
+# /etc/rc.d/rc.asterisk
+# Simple Slackware-style script for starting Asterisk
+
+SERVICE="asterisk"
+DAEMON="/usr/sbin/asterisk"
+PIDFILE="/var/run/asterisk/asterisk.pid"
+
+# Check if Asterisk is running
+is_running() {
+    if [ -f "$PIDFILE" ] && kill -0 "$(cat "$PIDFILE")" > /dev/null 2>&1; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# Start Asterisk if it's not already running
+start_asterisk() {
+    if is_running; then
+        echo "$SERVICE is already running."
+        return 0
+    fi
+
+    echo "Starting $SERVICE..."
+    $DAEMON -f &  # Start Asterisk in the foreground to keep the process running
+}
+
+# Stop Asterisk if it's running
+stop_asterisk() {
+    if ! is_running; then
+        echo "$SERVICE is not running."
+        return 0
+    fi
+
+    echo "Stopping $SERVICE..."
+    kill "$(cat $PIDFILE)"  # Kill the process using the PID in the PID file
+}
+
+# Main execution
+case "$1" in
+    start)
+        start_asterisk
+        ;;
+    stop)
+        stop_asterisk
+        ;;
+    restart)
+        stop_asterisk
+        start_asterisk
+        ;;
+    status)
+        if is_running; then
+            echo "$SERVICE is running."
+        else
+            echo "$SERVICE is not running."
+        fi
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|status}"
+        exit 1
+        ;;
+esac
