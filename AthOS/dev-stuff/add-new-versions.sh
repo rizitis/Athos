@@ -18,7 +18,7 @@ fi
 
 # Generate the file list log
 echo "Scanning for .ini files in $CWD..."
-find "$CWD" -type f -name "*.ini" -not -path "*/.*" > "$LOG_FILE"
+find $CWD -type f -name "*.ini" -not -path "*/.*" > "$LOG_FILE"
 
 # Inform the user
 echo "The following .ini files will be processed with these simulated changes:"

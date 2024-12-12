@@ -1,0 +1,82 @@
+APPS_KDE="accessibility-inspector akonadi alligator analitza angelfish arianna ark artikulate audex audiocd-kio baloo-widgets blinken bomber bovo  calindori cantor cervisia colord-kde dolphin dolphin-plugins dragon elisa falkon ffmpegthumbs filelight francis ghostwriter granatier grantleetheme gwenview isoimagewriter itinerary juk k3b kaccounts-integration kalgebra kalk kalm kalzium kamera kamoso kanagram kapman kapptemplate kasts kate katomic kbackup kblackbox kblocks kbounce kbreakout kbruch kcachegrind kcalc kcharselect kclock kcolorchooser kcron kde-dev-scripts kde-dev-utils kde-inotify-survey kdebugsettings kdeconnect kdeedu-data kdegraphics-mobipocket kdegraphics-thumbnailers kdenetwork-filesharing kdenlive kdesdk-kio kdesdk-thumbnailers kdf kdialog kdiamond keditbookmarks keysmith kfind  kgeography kget kgoldrunner kgpg khangman khealthcertificate khelpcenter kig kigo killbots kimagemapeditor kio-admin kio-extras kio-zeroconf kirigami-gallery kiriki kiten kitinerary kjumpingcube kldap klettres klickety klines kmag kmahjongg kmime kmines kmix kmousetool kmouth kmplot knavalbattle knetwalk knights koko kolf kollision kolourpaint kompare kongress konqueror konquest konsole kontact interface kontrast konversation kopeninghours kosmindoormap kpat kpimtextedit kpkpass kpmcore kpublictransport kqtquickcharts krdc krfb kruler ksanecore ksirk ksmtp ksystemlog kteatime ktimer ktorrent ktouch ktrip kturtle kwalletmanager kwave kweather kwordquiz kwrite libkcddb libkcompactdisc libkdcraw libkdegames libkdepim libkeduvocdocument libkexiv2 libkgapi libkleo libkmahjongg libkomparediff2 libksane libktorrent lokalize marble minuet okular parley partitionmanager plasmatube poxml qmlkonsole rocs skanlite spectacle step svgpart sweeper telly-skout tokodon yakuake"
+
+for i in $APPS_KDE; do
+echo "###################"
+echo "|Building $i  |"
+echo "###################"
+athos $i
+done
+
+
+APPS_KDE2="akonadi-contacts \
+akonadi-mime \
+akonadi-search \
+kfourinline \
+kidentitymanagement \
+kimap \
+kio-gdrive \
+kmailtransport \
+kmbox \
+libgravatar \
+mimetreeparser \
+pimcommon"
+
+for name in $APPS_KDE2; do
+echo "###################"
+echo "|Building $name  |"
+echo "###################"
+#athos $name
+done
+
+APPS_KDE3="libgravatar \
+libksieve \
+mailimporter \
+messagelib \
+pim-sieve-editor \
+akregator \
+grantlee-editor \
+kitinerary \
+kaddressbook \
+kcalutils \
+kleopatra \
+kmail-account-wizard \
+kontact \
+ktnef"
+
+for pkg in $APPS_KDE3; do
+echo "###################"
+echo "|Building $pkg  |"
+echo "###################"
+#athos $pkg
+done
+
+APPS_KDE4="mailcommon \
+akonadi-calendar \
+akonadi-import-wizard \
+calendarsupport \
+eventviews \
+incidenceeditor \
+kalarm \
+kdepim-addons \
+kdepim-runtime \
+kmail \
+korganizer \
+merkuro \
+zanshin"
+
+for package in $APPS_KDE4; do
+echo "###################"
+echo "|Building $package  |"
+echo "###################"
+#athos $package
+done
+
+APPS_KDE5="akonadi-calendar-tools akonadi-notes akonadiconsole neochat"
+
+for pak in $APPS_KDE5; do
+echo "###################"
+echo "|Building $pak  |"
+echo "###################"
+athos $pak
+done
+
