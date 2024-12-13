@@ -1,0 +1,53 @@
+FRAMES="extra-cmake-modules kapidox karchive kcalendarcore kcodecs kconfig kcoreaddons kcrash kdbusaddons kdnssd kdoctools kglobalaccel kguiaddons kholidays ki18n kidletime kimageformats kirigami kitemmodels kitemviews knotifications kpackage kplotting kpty kquickcharts krunner kservice ktexttemplate kunitconversion kuserfeedback kwidgetsaddons kwindowsystem modemmanager-qt networkmanager-qt prison qqc2-desktop-style solid sonnet syndication syntax-highlighting threadweaver"
+
+for frame in $FRAMES; do
+echo "======== $frame ========"
+athos "$frame"
+done
+
+FRAMES2="attica \
+bluez-qt \
+breeze-icons \
+kauth \
+kbookmarks \
+kcolorscheme \
+kcompletion \
+kconfigwidgets \
+kcontacts \
+kdeclarative \
+kded \
+kdesu \
+kfilemetadata \
+kiconthemes \
+kjobwidgets \
+knewstuff \
+kpeople \
+kstatusnotifieritem \
+ksvg \
+ktextwidgets \
+kwallet \
+kxmlgui"
+
+for fram in $FRAMES2; do
+echo "======== $fram ========"
+athos "$fram"
+done
+
+FRAMES3="frameworkintegration \
+kio \
+knotifyconfig \
+kparts \
+ktexteditor \
+purpose"
+
+for fra in $FRAMES3; do
+echo "======== $fra ========"
+athos "$fra"
+done
+
+FRAMES4="baloo kcmutils kdav"
+
+for fr in $FRAMES4; do
+echo "======== $fr======== "
+athos "$fr"
+done

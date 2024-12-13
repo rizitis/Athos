@@ -27,6 +27,7 @@ while read -r file; do
   echo "File: $file" >> "$LOG_FILE"
   echo "----" >> "$LOG_FILE"
   sed "s/$OLD_FRAMEv/$NEW_FRAMEv/g" "$file" >> "$LOG_FILE"
+  wait
   sed "s/$OLD_FRAME/$NEW_FRAME/g" "$file" >> "$LOG_FILE"
   sed "s/$OLD_PLASMA/$NEW_PLASMA/g" "$file" >> "$LOG_FILE"
   sed "s/$OLD_APPS/$NEW_APPS/g" "$file" >> "$LOG_FILE"
