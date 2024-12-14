@@ -22,7 +22,9 @@ If you want to build **EVERYTHING** then `cd dev-stuff` and always as root comma
 You may now have your holidays and when come back Plasma6 will be there... 
 
 ---
+![](./system-plasma.png)
 
+---
 
 `If it is not understood do not ask and do not open an issue,` *but if you have to offer code because you want to.* **Welcome to the PR**<br>
 
