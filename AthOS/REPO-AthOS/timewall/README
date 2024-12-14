@@ -1,0 +1,32 @@
+After installation finish if you intend to use sun position based wallpapers, you need to provide timewall with your approximate location.
+as user create:
+
+mkdir -p ~/.config/timewall/
+touch ~/.config/timewall/config.toml
+
+And in toml file add your locations:
+
+[location]
+lat = 35.51 # replace it with yours
+lon = 24.01 # replace it with yours
+
+To set the wallpaper just run as user:
+timewall set /path/to/wallpaper.heif
+
+To download heif wallpapers:
+https://github.com/bcyran/timewall?tab=readme-ov-file#where-to-find-the-dynamic-wallpapers
+
+To preview the wallpaper, run:
+
+timewall preview path/to/wallpaper.heif
+
+To have timewall running on startup cp from /usr/doc/$PRGNAM-$VERSION/run_timewall.desktop ~/.config/autostart/ the desktop entry.
+You can modify as for your needs...
+
+If you have a folder with varius *.heic images and you want to have random wallpapers you can run a cyclic_wallpapers script.
+One example might be something like this:
+https://github.com/bcyran/timewall/issues/116#issuecomment-2356654516
+But thats hacks it might not work properly if you dont know exaclty how to do it...
+
+
+More infos: https://github.com/bcyran/timewall?tab=readme-ov-file
