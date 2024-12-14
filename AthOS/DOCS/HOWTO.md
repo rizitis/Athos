@@ -132,7 +132,7 @@ For now there is an auto-track and auto-build for deps. <br>
 Because its very easy to make it **but** there is one small problem. Every dep must also be included in the **REPO-AthOS**. That said, I mention that athos is not provided as an alternative of SBo (respect) and **AthOS is not a package manager**. <br>
 So if you really want to create a complete rersonal repo for you or share it to others then its fine as log as all deps included in repo.
 ```
-REQUIRED=(foo1 foo2 foo3)
+REQUIRED="foo1 foo2 foo3"
 ```
 That means:<br>
 17. REQUIRED=(foo1 foo2 foo3) every foo is a folder which inclued a foo.ini<br>

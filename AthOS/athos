@@ -753,7 +753,12 @@ fi
 fi
 }
 
-
+write_deps() {
+#for i in
+echo "" >> "$PKG"/install/doinst.sh
+echo "echo REQUIRED: $REQUIRED  >> /var/lib/pkgtools/packages/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG" >> "$PKG"/install/doinst.sh
+echo "" >> "$PKG"/install/doinst.sh
+}
 # Main athos build functions.
 #set -e
 
@@ -772,6 +777,8 @@ set -e
 slackbuild
 
 after_build
+
+write_deps
 
 package_build
 
