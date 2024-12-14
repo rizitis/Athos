@@ -5,7 +5,7 @@
 
 ## HowTO
 
-0. Read **README-AthOS.md** and then install all deps needed from [Ponce-Alien repos and pip](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DEPS-BEFORE-BUILD).
+0. Read [README-AthOS.md](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS) and then install all deps needed from [Ponce-Alien repos and pip](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DEPS-BEFORE-BUILD).
 1. `sudo bash setup.sh` to install athos.
 Now you are ready to build Plasma 6 and **every other package** you will create
 
