@@ -48,3 +48,17 @@ In dev-stuff are some scripts that help me to maintain athos for plasma6 somethi
 1. assume plasma next month new version is `6.2.5` just edit `NEW-VERSIONS.env` and make line NEW_PLASMA=6.2.`5`
 2. `sudo bash edit-ini-files-for-new-versions.sh` and check everything is ok, so far no edits happens for real, you can check in terminal output or read `file_list.log` to confirm.
 3. If everyhting is ok then you can execute again script `sudo bash edit-ini-files-for-new-versions.sh --edit` to edit files. Now your scripts are in focussed in new versions.
+
+---
+
+#### Captain-Slack
+The way athos build packages also include in `/val/lib/pkgtools/packages/`<br>
+the information about REQUIRED: for every pkg we build and install in Slackware system.<br>
+So if you have [Cpatain-Slack](https://github.com/rizitis/captain-slack) installed, it will print this information.<br>
+<br>
+**EXAMPLE**<br>
+
+![cptn](./cptn.png)
+
+
+
