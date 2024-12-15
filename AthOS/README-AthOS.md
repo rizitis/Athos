@@ -52,10 +52,18 @@ In dev-stuff are some scripts that help me to maintain athos for plasma6 somethi
 ---
 
 #### Captain-Slack
-The way athos build packages also include in `/val/lib/pkgtools/packages/`<br>
-the information about REQUIRED: for every pkg we build and install in Slackware system.<br>
-So if you have [Cpatain-Slack](https://github.com/rizitis/captain-slack) installed, it will print this information.<br>
-<br>
+The way athos build packages also include in `/usr/doc/$PRGNAM-$VERSION/slack-required`<br>
+all information about REQUIRED: for every pkg it build and install in a Slackware system.<br>
+So if you have [Cpatain-Slack](https://github.com/rizitis/captain-slack) installed, it will also print this information.<br>
+This was a suggestions of [conraid](https://github.com/conraid/SlackBuilds/issues/37) and he also started budling his packages<br>
+copying requitments in the same file.<br>
+So Captain-Slack will work with his packages also!.<br>
+That said, I want to mention that reason for this is **not** a new package manager for dependency resolution.<br>
+There very good package managers out there for this job already. The main goal is that dependency information for every unofficial build is very, very good to exist in the system after package installation for a lot of reasons. It would be for official packages also but our BDFL has different opinion.<br>
+> *I hope more people adopt this so we can finally have a nice data base localy for every file...*
+
+---
+
 **EXAMPLE**<br>
 
 ![cptn](./cptn.png)
