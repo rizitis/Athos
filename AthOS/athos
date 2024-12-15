@@ -754,6 +754,8 @@ fi
 }
 
 write_deps() {
+# If you have ready slack-required files for every package just make your life easyer here...
+# But some day you must discribe deps in ini file also... :D
 INPUT_FILE="$CWD"/"$PRGNAM".info
 OUTPUT_FILE="$PKG"/usr/doc/"$PRGNAM-$VERSION"/slack-required
 mkdir -p "$PKG"/usr/doc/"$PRGNAM-$VERSION"
@@ -764,19 +766,9 @@ if [ -f "$CWD/slack-required" ]; then
 else
     # Process REQUIRES= line if it exists in INPUT_FILE
     if grep -q "^REQUIRES=" "$INPUT_FILE"; then
-        awk -F= '/^REQUIRES=/ {
-            if ($2 == "") {
-                # Handle empty REQUIRES=
-                print "" > "'"$OUTPUT_FILE"'";
-                exit
-            }
-            # Remove quotes and split dependencies into lines
-            gsub(/"/, "", $2);
-            gsub(/ /, "\n", $2);
-            print $2;
-        }' "$INPUT_FILE" > "$OUTPUT_FILE"
+        grep "^REQUIRES=" $CWD/$PRGNAM.info | sed 's/^REQUIRES="//;s/"$//' | tr ' ' '\n' > "$OUTPUT_FILE"
     else
-        # Process REQUIRED= line (assuming REQUIRED is defined earlier in the script)
+        # Process REQUIRED= line from athos ini file.
         for i in $REQUIRED; do
             echo "$i"
             echo "$i" >> "$OUTPUT_FILE"
