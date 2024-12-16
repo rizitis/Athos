@@ -252,13 +252,14 @@ check_deps() {
 # The same as check_deps but for optional deps first ask to build install or not...
 opt_deps() {
     if [ -n "$OPTDEPS" ]; then
-        echo "Found $OPTDEPS"
+        echo "Found optional dependencies: $OPTDEPS"
         read -p "Should check and build optional deps if not installed? (yes/no): " answer
         answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
         if [[ "$answer" =~ ^(yes|y)$ ]]; then
-            for buildopt in "${OPTDEPS[@]}"; do
-                if [ -z "$(ls /var/adm/packages | grep ^$buildopt-[0-9])" ]; then
+            # Handle both array and string definitions of OPTDEPS
+            for buildopt in $OPTDEPS; do
+                if ! find /var/adm/packages -maxdepth 1 -name "${buildopt}-[0-9]*" | grep -q .; then
                     echo "Building optional dep $buildopt..."
                     athos "$buildopt"
                 else
@@ -274,6 +275,7 @@ opt_deps() {
         echo "No optional dependencies found."
     fi
 }
+
 
 # After slackbuild finish create docs , slackdesk, doinst etc...
 after_build(){
