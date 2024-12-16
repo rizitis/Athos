@@ -235,10 +235,10 @@ esac
 # Check for required deps pkg.ini, scan system if installed if not try to find them in $W_DIR for build install.
 check_deps() {
     if [ -n "$REQUIRED" ]; then
-        echo "Required dependencies: ${REQUIRED[@]}"
+        echo "Required dependencies: $REQUIRED"
 
-        for buildpkg in "${REQUIRED[@]}"; do
-            if [ -z "$(ls /var/adm/packages | grep ^$buildpkg-[0-9] | grep $TAG)" ]; then
+        for buildpkg in $REQUIRED; do
+            if ! find /var/lib/pkgtools/packages -maxdepth 1 -name "${buildpkg}-[0-9]*" | grep -q .; then
                 echo "Building dep $buildpkg..."
                 athos "$buildpkg"
             else
@@ -249,7 +249,6 @@ check_deps() {
         echo "No required dependencies specified."
     fi
 }
-
 # The same as check_deps but for optional deps first ask to build install or not...
 opt_deps() {
     if [ -n "$OPTDEPS" ]; then
@@ -374,10 +373,12 @@ fi
 
 	if [ -f "$CWD"/slack-suggests ]; then
 	  cat "$CWD"/slack-suggests > "$PKG"/install/slack-suggests
+	  cat "$CWD"/slack-suggests > "$PKG"/usr/doc/"$PRGNAM-$VERSION"/slack-suggests
 	fi
 
 	if [ -f "$CWD"/slack-conflicts ]; then
 	  cat "$CWD"/slack-conflicts > "$PKG"/install/slack-conflicts
+	  cat "$CWD"/slack-conflicts > "$PKG"/usr/doc/"$PRGNAM-$VERSION"/slack-conflicts
 	fi
 
 	if [ -d "$PKG"/usr/man ]; then
@@ -480,10 +481,12 @@ fi
 
 	if [ -f "$CWD"/slack-suggests ]; then
 	  cat "$CWD"/slack-suggests > "$PKG"/install/slack-suggests
+	  cat "$CWD"/slack-suggests > "$PKG"/usr/doc/"$PRGNAM-$VERSION"/slack-suggests
 	fi
 
 	if [ -f "$CWD"/slack-conflicts ]; then
 	  cat "$CWD"/slack-conflicts > "$PKG"/install/slack-conflicts
+	  cat "$CWD"/slack-conflicts > "$PKG"/usr/doc/"$PRGNAM-$VERSION"/slack-conflicts
 	fi
 fi
 }
@@ -710,6 +713,7 @@ prepare_build(){
    # shellcheck disable=SC2188
    > "$CWD/README"
    echo "$PRGNAM $SortDesc" > "$CWD/README"
+   echo "$PRGNAM $LongDesc" >> "$CWD/README"
  else
  pwd
    echo "README or README.md already exists, skipping creation."
