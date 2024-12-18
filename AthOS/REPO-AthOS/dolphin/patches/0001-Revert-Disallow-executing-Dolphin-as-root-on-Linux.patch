@@ -1,0 +1,37 @@
+From ba74d639178916221c748b0d5d89f7ac4f5ed669 Mon Sep 17 00:00:00 2001
+From: Fabian Vogt <fabian@ritter-vogt.de>
+Date: Sat, 22 Apr 2017 14:00:33 +0200
+Subject: [PATCH] Revert "Disallow executing Dolphin as root on Linux"
+
+This reverts commit 0bdd8e0b0516555c6233fdc7901e9b417cf89791.
+We ship a desktop file to open dolphin as root and we allow YaST on the
+desktop. So this patch is absolutely pointless for us.
+---
+ src/main.cpp | 11 -------------
+ 1 file changed, 11 deletions(-)
+
+Index: dolphin-24.01.80git.20240701T140601~e2f316578/src/main.cpp
+===================================================================
+--- dolphin-24.01.80git.20240701T140601~e2f316578.orig/src/main.cpp	2024-07-01 16:06:01.000000000 +0200
++++ dolphin-24.01.80git.20240701T140601~e2f316578/src/main.cpp	2024-07-01 22:12:17.154311426 +0200
+@@ -59,20 +59,6 @@
+ 
+ int main(int argc, char **argv)
+ {
+-#ifndef Q_OS_WIN
+-    // Prohibit using sudo or kdesu (but allow using the root user directly)
+-    if (getuid() == 0 && (!qEnvironmentVariableIsEmpty("SUDO_USER") || !qEnvironmentVariableIsEmpty("KDESU_USER"))) {
+-        QCoreApplication app(argc, argv); // Needed for the xi18ndc() call below.
+-        std::cout << qPrintable(
+-            xi18ndc(dolphinTranslationDomain,
+-                    "@info:shell %1 is a terminal command",
+-                    "Running <application>Dolphin</application> with <command>sudo</command> is discouraged. Please run <icode>%1</icode> instead.",
+-                    QStringLiteral("dolphin --sudo")))
+-                  << std::endl;
+-        // We could perform a privilege de-escalation here and continue as normal. It is a bit safer though to simply let the user restart without sudo.
+-        return EXIT_FAILURE;
+-    }
+-#endif
+ 
+     /**
+      * trigger initialisation of proper icon theme
