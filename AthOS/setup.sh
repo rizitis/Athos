@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# shellcheck disable=SC2129
 APPL=AthOS
 
 # track AthOS HOME DIR
