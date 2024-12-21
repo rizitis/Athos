@@ -42,6 +42,20 @@ Usage:
   
 ```
 
+To replace my name for Packager in all ini files open a terminal here in this folder and command:
+```
+find ./ -type f -name "*.ini" -exec sed -i 's/Packager="Anagnostakis Ioannis <rizitis@gmail.com>"/Packager="New Name <newemail@example.com>"/g' {} +
+
+```
+Edit above command as needed for your name and email... `New Name <newemail@example.com>`
+
+To change my $TAG `_rtz` with yours: 
+```
+find ./ -type f -name "*.ini" -exec sed -i 's/_rtz/_newtag"/g' {} +
+```
+Also edit `_newtag` with your in cli^
+---
+
 In dev-stuff are some scripts that help me to maintain athos for plasma6 something that you might need is the <br>
 `edit-ini-files-for-new-versions.sh`, this script read `CURRENT-VERSIONS.env` and `NEW-VERSIONS.env` and execute a sed -i command for update versions to all ini files when needed.<br>
 **Example:**<br>
