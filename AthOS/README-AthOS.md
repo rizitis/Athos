@@ -54,6 +54,7 @@ To change my $TAG `_rtz` with yours:
 find ./ -type f -name "*.ini" -exec sed -i 's/_rtz/_newtag"/g' {} +
 ```
 Also edit `_newtag` with your in cli^
+
 ---
 
 In dev-stuff are some scripts that help me to maintain athos for plasma6 something that you might need is the <br>
