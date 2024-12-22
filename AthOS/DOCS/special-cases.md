@@ -35,7 +35,7 @@ EOF
 }
 desktop_entry
 ```
-
+6. `CHROOT=NO` Some times we cant chroot for build a package or we dont want or not needed.
 
 ---
 ====================================================

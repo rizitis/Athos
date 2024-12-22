@@ -530,10 +530,10 @@ sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$B
 clean_src(){
 	cd "$CWD" || exit
 if [[ "$COMPRESS" == "git" ]]; then
-	rm -r package-"$PRGNAM" work
+sudo	rm -r package-"$PRGNAM" work
 else
 # shellcheck disable=SC2035
-rm -r package-"$PRGNAM" work *.$COMPRESS *.tar.?z* || true
+sudo rm -r package-"$PRGNAM" work *.$COMPRESS *.tar.?z* || true
 fi
 }
 
@@ -792,6 +792,8 @@ prepare_build
 patch_build
 if [[ $COMPRESS == snap ]]; then
 echo "no chroot for $COMPRESS"
+elif [[ $CHROOT == NO ]]; then
+echo "chroot = $CHROOT skip chrooting..."
 else
 chrooting
 fi
