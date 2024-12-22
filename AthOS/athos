@@ -69,8 +69,7 @@ LOGFILE=/tmp/"$package"-build.log
 rm $LOGFILE || true
 exec > >(tee -a "$LOGFILE") 2>&1
 
-
-NUMJOBS=${NUMJOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
+JOBS=${JOBS:-"-j$(getconf _NPROCESSORS_ONLN)"}
 # This is for slackdesk app. If not installed then a slack-desc must exist in package folder as usually.
 mkdesc="$(which slackdesc)" || true
 
