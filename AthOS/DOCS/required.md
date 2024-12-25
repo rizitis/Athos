@@ -26,5 +26,5 @@ EOF
 ### patches
 
 If patches needed then you must create a folder named **patches** and put them in. athos will find them and apply to src.<br>
-Just be sure that folder is named **patches** and not `patch` or `patche` etc...
+Just be sure that folder is named **patches** and not `patch` or `patche` also all diles **must** have the extension *.`patch`  etc...
 
