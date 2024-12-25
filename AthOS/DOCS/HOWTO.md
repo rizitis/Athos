@@ -135,8 +135,8 @@ So if you really want to create a complete rersonal repo for you or share it to 
 REQUIRED="foo1 foo2 foo3"
 ```
 That means:<br>
-17. REQUIRED=(foo1 foo2 foo3) every foo is a folder which inclued a foo.ini<br>
-18. OPTDEP=(zong zong1 zong2) if you have otpional deps just add one more line like this<br>
+17. REQUIRED="foo1 foo2 foo3" every foo is a folder which inclued a foo.ini if pkg its not already installed.<br>
+18. OPTDEP="zong zong1 zong2" if you have otpional deps just add one more line like this<br>
   
  **NOTE**
  The reason of AthOS is to make slackbuilds easy for personal packaging **in case you need a package that not exist in the usual trusted repos...**<br>
