@@ -13,7 +13,14 @@ You can always skip or rm  slackdesk script from your system and continue creati
 ### doinst
 
 If your build need a usual doinst.sh then **you dont** have to create it, athos is prepare for that also. <br>
-Only in very rare special cases that a specific doinst.sh must ran after installation then you can create one manually before build and athos will respect your choise. <br>
+Only in very rare special cases that a specific doinst.sh must ran after installation then you can create one manually before build and athos will respect your choise. Or create one in slackbuild() function.<br>
+```
+mkdir -p "$PKG"/install
+cat <<EOF > "$PKG"/install/doinst.sh
+( add your commands )
+( here line by line )
+EOF
+```
 
 
 ### patches
