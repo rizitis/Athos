@@ -667,10 +667,11 @@ chrooting(){
 
 # Prepare the build system and extract source code in work dir or directly in $PKG if needed...
 prepare_build(){
+set -e
 	rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
 	rm -rf "$TMP"/$PRGNAM-"$VERSION"
-
+set +e
 	get_out() {
  if [ -f "$1" ] ; then
      case "$1" in
@@ -768,18 +769,27 @@ touch "$OUTPUT_FILE"
 if [ -f "$CWD/slack-required" ]; then
     # If the file "slack-required" exists, copy its content to OUTPUT_FILE
     cat "$CWD/slack-required" > "$OUTPUT_FILE"
+    sudo cat "$CWD/slack-required" > "$OUTPUT"/"$PRGNAM".dep
 else
     # Process REQUIRES= line if it exists in INPUT_FILE
     if grep -q "^REQUIRES=" "$INPUT_FILE"; then
         grep "^REQUIRES=" $CWD/$PRGNAM.info | sed 's/^REQUIRES="//;s/"$//' | tr ' ' '\n' > "$OUTPUT_FILE"
+        sudo grep "^REQUIRES=" $CWD/$PRGNAM.info | sed 's/^REQUIRES="//;s/"$//' | tr ' ' '\n' > "$OUTPUT"/"$PRGNAM".dep
     else
         # Process REQUIRED= line from athos ini file.
         for i in $REQUIRED; do
             echo "$i"
             echo "$i" >> "$OUTPUT_FILE"
+            touch "$OUTPUT"/"$PRGNAM".dep
+            echo "$i" >> "$OUTPUT"/"$PRGNAM".dep
         done
     fi
 fi
+}
+
+apk_help() {
+cd "$OUTPUT" || exit
+echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE" > BIN_NAME
 }
 # Main athos build functions.
 #set -e
@@ -793,6 +803,12 @@ patch_build
 if [[ $COMPRESS == snap ]]; then
 echo "no chroot for $COMPRESS"
 elif [[ $CHROOT == NO ]]; then
+if [ "$EUID" -eq 0 ]; then
+    echo "You are root. You cant skip chroot when you build as root."
+    echo "Either build with chroot or run athos as reqular user if use 'CHROOT == NO'"
+    echo "Exiting..."
+    exit 1
+fi
 echo "chroot = $CHROOT skip chrooting..."
 else
 chrooting
@@ -805,6 +821,8 @@ after_build
 write_deps
 
 package_build
+
+apk_help
 
 pkg_install
 #sig_package
