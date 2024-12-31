@@ -1,0 +1,18 @@
+#!/bin/bash
+
+CWD=$(pwd)
+echo $CWD
+
+pushd ./AthOS/dev-stuff || exit
+bash ./export-all-files.sh
+cd ./VERSIONS-META-CREATOR || exit
+bash ./teaming-files.sh
+popd || exit
+git pull
+git add .
+
+read -p "Enter commit message: " MSG
+git commit -s -m "$MSG"
+
+git push
+
