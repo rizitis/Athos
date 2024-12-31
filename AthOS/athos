@@ -519,7 +519,8 @@ sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$B
 	  md5sum $PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" > $PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".md5
 	  # shellcheck disable=SC2002
 	  cat "$PKG"/install/slack-desc | grep "^${PRGNAM}" > $PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt
-	  cat $PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt > README
+	  echo "$PRGNAM $SortDesc" > README || true
+      echo "$LongDesc" >> README || true
 	if [ -f "$PKG"/install/slack-required ]; then
 	  # shellcheck disable=SC2086
 	  cat "$PKG"/install/slack-required > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG".dep
