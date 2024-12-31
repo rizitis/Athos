@@ -810,6 +810,7 @@ download_src
 prepare_build
 patch_build
 if [[ $COMPRESS == snap ]]; then
+# NEVER try to chroot in snap pkg it might break for real libexec...
 echo "no chroot for $COMPRESS"
 elif [[ $CHROOT == NO ]]; then
 if [ "$EUID" -eq 0 ]; then
