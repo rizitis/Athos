@@ -791,6 +791,14 @@ apk_help() {
 cd "$OUTPUT" || exit
 echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE" > BIN_NAME
 }
+
+compress_all() {
+pushd "$OUTPUT" || exit
+cd .. || exit
+tar --use-compress-program=lz4 -cf "$PRGNAM".tar.lz4 "$PRGNAM"
+sha256sum "$PRGNAM".tar.lz4 > "$PRGNAM".sha256sum
+popd
+}
 # Main athos build functions.
 #set -e
 
@@ -823,6 +831,8 @@ write_deps
 package_build
 
 apk_help
+
+compress_all
 
 pkg_install
 #sig_package
