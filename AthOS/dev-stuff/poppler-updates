@@ -1,0 +1,24 @@
+LIST="okular labplot kitinerary kile kfilemetadata kfilemetadata5 cantor calligra marble"
+
+echo "REBUILDING FOR POPPLER UPDATE..."
+read -p "Do you want to clen and reboot first? (y/n): " answer
+answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
+if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
+    echo "You chose yes"
+    rm -r /tmp/*
+    wait
+    reboot
+elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
+    echo "Skip clean /tmp , keep going for build..."
+else
+    echo "Invalid input. Please enter 'y' or 'n'."
+fi
+
+for i in $LIST; do
+echo "###################"
+echo "|Building $i  |"
+echo "###################"
+athos $i
+done
+
+ls /tmp

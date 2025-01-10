@@ -799,6 +799,7 @@ cd .. || exit
 tar --use-compress-program=lz4 -cf "$PRGNAM".tar.lz4 "$PRGNAM"
 sha256sum "$PRGNAM".tar.lz4 > "$PRGNAM".sha256sum
 popd
+ls "$OUTPUT"/
 }
 # Main athos build functions.
 #set -e

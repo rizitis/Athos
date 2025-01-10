@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# PROTIMO TO ALLO #
+
 # Get the current working directory
 CWD=$(pwd)
 

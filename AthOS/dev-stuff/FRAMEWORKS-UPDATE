@@ -9,7 +9,6 @@ if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
     rm -r /tmp/*
     wait
     reboot
-    # Add your code to proceed here
 elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
     echo "Skip clean /tmp , keep going for build..."
 else
@@ -64,6 +63,6 @@ done
 FRAMES4="baloo kcmutils kdav"
 
 for fr in $FRAMES4; do
-echo "======== $fr======== "
+echo "======== $fr ======== "
 athos "$fr"
 done
