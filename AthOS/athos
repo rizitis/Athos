@@ -753,6 +753,8 @@ elif
  cd "$CWD"
  rpm -Kv "$SRCNAM.$COMPRESS"
  rpm2cpio "$SRCNAM"."$COMPRESS" > "$TMP"/"$SRCNAM"."$COMPRESS".cpio
+ pushd $PKG || exit
+ cpio -idv < "$TMP"/"$SRCNAM"."$COMPRESS".cpio
 else
 mv "$CWD"/"$SRCNAM" "$TMP"
 cd $SRCNAM || cd $PRGNAM ||exit
