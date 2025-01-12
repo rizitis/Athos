@@ -795,6 +795,55 @@ cd "$OUTPUT" || exit
 echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE" > BIN_NAME
 }
 
+sofiles() {
+cd "$OUTPUT" || exit
+package-libs() {
+#https://www.linuxquestions.org/questions/slackware-14/slackware-metadata-on-packages-for-15-1-why-not-4175744763/#post6542318
+#
+#Petri Kaukasoina
+[ $# -lt 1 ] && echo 'Usage: ' $0 ' filename_of_package' && exit 1
+EXPLODEDIR=$(mktemp -d)
+trap 'rm -rf $EXPLODEDIR' EXIT
+tar -C $EXPLODEDIR -xf "$1"
+find $EXPLODEDIR -type f -executable -exec objdump -p "{}" 2>/dev/null \; |\
+grep NEEDED | sed 's/ *NEEDED *\(l.*\)/\1/' | sort -u
+}
+SEARCH_PATH="$OUTPUT"
+OUTPUT_PATH="$OUTPUT"
+
+# Check if the search path exists
+if [ ! -d "$SEARCH_PATH" ]; then
+    echo "Error: Search path '$SEARCH_PATH' does not exist."
+    exit 1
+fi
+
+# Check if the output path exists
+if [ ! -d "$OUTPUT_PATH" ]; then
+    echo "Error: Output path '$OUTPUT_PATH' does not exist."
+    exit 1
+fi
+
+  # Search for *.t?z files in the provided path and its subdirectories
+    find "$SEARCH_PATH" -type f -name "*.t?z" | while read -r file; do
+    # Extract the package name without extension
+    package_name=$(cat ./BIN_NAME)
+
+    # Construct the output .so.file path
+    so_file="$OUTPUT_PATH/$package_name.so.file"
+
+    # Execute the package-libs command
+    echo "Creating $so_file using $file"
+package-libs "$file" > "$so_file"
+
+    # Check if the command was successful
+    if [ $? -eq 0 ]; then
+        echo "Successfully created $so_file"
+    else
+        echo "Failed to create $so_file for $file"
+    fi
+done
+}
+
 compress_all() {
 pushd "$OUTPUT" || exit
 cd .. || exit
@@ -836,6 +885,8 @@ write_deps
 package_build
 
 apk_help
+
+sofiles
 
 compress_all
 
