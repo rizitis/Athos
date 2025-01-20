@@ -738,7 +738,10 @@ if [[ $COMPRESS = "deb" ]]; then
  cd "$CWD"
  ar x $SRCNAM.$COMPRESS
 	rm debian-binary control.tar.?z
-	tar -xJf data.tar.?z -C "$PKG"
+	tar -xJf data.tar.xz -C "$PKG" 2>/dev/null || \
+    tar --use-compress-program=unzstd -xf data.tar.zst -C "$PKG" 2>/dev/null || \
+    tar -xzf data.tar.gz -C "$PKG" 2>/dev/null || \
+    { echo "No valid archive found!"; exit 1; }
 elif
  [[ $COMPRESS == "AppImage" ]]; then
  echo "$COMPRESS="AppImage""
