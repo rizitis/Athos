@@ -1,0 +1,18 @@
+Before build create group and user for apt:
+
+1. Add the _apt group
+
+groupadd -r _apt
+
+    The -r flag creates a system group (UID/GID < 1000).
+
+2. Add the _apt user
+
+useradd -r -M -d /var/lib/apt -s /sbin/nologin -g _apt -c "APT account for owning persistent & cache data" _apt
+
+    -r → Creates a system user.
+    -M → Does not create a home directory.
+    -d /var/lib/apt → Sets the home directory to /var/lib/apt (but doesn't create it).
+    -s /sbin/nologin → Prevents the user from logging in.
+    -g _apt → Assigns the user to the _apt group.
+    -c → Adds a description ("APT account for owning persistent & cache data").
