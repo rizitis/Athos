@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if the script is being run as root
+if [ "$(id -u)" -eq 0 ]; then
+  # Display a notification and exit if run as root
+  notify-send "Error" "❌ Please do not run this script as root." --urgency=critical
+  echo "❌ Please do not run this script as root."
+  exit 1
+fi
+
+# Set the working directory to where your project is located
+PROJECT_DIR="/usr/share/mikumikubeam"
+
+xdg-open http://localhost:5173
+# Navigate to the project directory
+cd "$PROJECT_DIR" || exit
+
+# Start the application with 'npm run dev'
+/usr/bin/npm run dev
+
+

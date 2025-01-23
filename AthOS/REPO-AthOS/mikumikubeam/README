@@ -1,0 +1,17 @@
+List of proxies are example free proxies please test if work and then replace them with yours.
+All files stored in /usr/share/mikumikubeam/proxies.txt
+Same way you can also replace uas.txt with your agents...
+
+CMD: mikumikubeam
+will start server which run on port 3000 by default.
+The frontend (usually accessible at http://localhost:5173), where you can configure and visualize your attacks.
+same time xdg-open will load your default network browser to http://localhost:5173,
+if you dont like this you can edit /usr/local/bin/mikumikubeam or delete it!
+To run server from terminal: cd /usr/share/mikumikubeam && npm run dev
+then open browser in http://localhost:5173
+
+Note server is missing for now npm stop so it close only by Ctl+c
+in case you messed up:
+lsof -i :3000
+and kill -9 PIDs
+
