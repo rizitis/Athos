@@ -510,9 +510,16 @@ cd "$PKG" || exit 66
 	  | xargs rm -f
 
 	  cd "$PKG" || exit
+if [ -z "$MAKEPKG_FLAGS" ]; then
+    echo "MAKEPKG_FLAGS is empty or unset, using default"
 # add sudo here in case you build as user , else makepkg stop...
-sudo  makepkg --remove-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
+sudo  makepkg --remove-tmp-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
 	  echo "$DATE $Packager" | sed -e '1r /dev/stdin' "$OUTPUT/makepkg-${PRGNAM}.log" > "$OUTPUT/makepkg-${PRGNAM}.log.tmp" && mv "$OUTPUT/makepkg-${PRGNAM}.log.tmp" "$OUTPUT/makepkg-${PRGNAM}.log"
+else
+    echo "MAKEPKG_FLAGS is set, $MAKEPKG_FLAGS"
+sudo  makepkg "$MAKEPKG_FLAGS" "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE" 2>&1 | tee "$OUTPUT"/makepkg-${PRGNAM}.log
+	  echo "$DATE $Packager" | sed -e '1r /dev/stdin' "$OUTPUT/makepkg-${PRGNAM}.log" > "$OUTPUT/makepkg-${PRGNAM}.log.tmp" && mv "$OUTPUT/makepkg-${PRGNAM}.log.tmp" "$OUTPUT/makepkg-${PRGNAM}.log"
+fi
 
 
 	  cd "$OUTPUT" || exit

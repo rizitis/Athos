@@ -1,0 +1,44 @@
+OPTIONS
+
+−l, --linkadd y|n
+
+If y, add any symbolic links found to the install script (doinst.sh) and delete them. This is the recommended action. If this option is not used, makepkg will prompt if symbolic links are found.
+
+−p, --prepend
+
+If this option is given, then any symbolic links added to doinst.sh will be prepended to the existing script. This is useful for packages that contain shared libraries that need to be linked first because programs will use them later in the doinst.sh script.
+
+−c, --chown y|n
+
+If y, makepkg will reset all directory permissions to 755 and ownership to root:root. In general, you should have the permissions and ownerships worked out yourself, so relying on setting this option to y is somewhat sloppy. It is not the default. If an option is not provided, makepkg will prompt.
+
+--threads <number>
+
+For xz/plzip compressed packages, set the maximum number of threads to be used for compression. Only has an effect on large packages. For plzip the default is the number of CPU threads available. For xz the default is to let xz decide how many threads to use, except on 32-bit platforms where the default number of threads is 2.
+
+--compress <option>
+
+Supply a custom option to the compressor. This will be used in place of the default, which is: -9
+
+
+--acls
+
+
+Support storing POSIX ACLs in the package. The resulting package will not be compatible with pkgtools version < 15.0.
+
+--xattrs
+
+Support storing extended attributes in the package. The resulting package will not be compatible with pkgtools version < 15.0.
+
+--remove-rpaths
+
+Remove all rpaths from ELF objects. By default, makepkg will warn if any are found.
+
+--remove-tmp-rpaths
+
+Remove all rpaths from ELF objects containing an rpath wih the /tmp directory in it. Such rpaths could be a security hole.
+
+
+
+MAKEPKG_FLAGS=""
+if its empty or unset default="--remove-tmp-rpaths -l y -c n"
