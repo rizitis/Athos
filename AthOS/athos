@@ -493,8 +493,15 @@ fi
 }
 
 
-# after slackbuild function finish, remove la files , prellocal.pod etc... then call makepkg and remove rpaths if needed before create binary on /tmp/
+# after slackbuild function finish, create dounist.sh if needed, remove .la files , prellocal.pod etc... then call makepkg and remove rpaths if needed before create binary on /tmp/
 package_build() {
+  if [ -f "$CWD"/douninst.sh ] ; then
+    mkdir -p "$PKG"/var/lib/pkgtools/douninst.sh
+    touch "$PKG/var/lib/pkgtools/douninst.sh/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG"
+    cat "$CWD"/douninst.sh > "$PKG/var/lib/pkgtools/douninst.sh/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG"
+    chmod +x "$PKG/var/lib/pkgtools/douninst.sh/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG"
+  fi
+
 cd "$PKG" || exit 66
 	  rm -f "$PKG"/{,usr/}lib${LIBDIRSUFFIX}/*.la
        rm -f "$PKG"/usr/lib/*.la || true
