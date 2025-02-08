@@ -1,4 +1,4 @@
-**Here is my way for a Plasma6. It is not a fork of anyone but a work from scratch and still in progress.** <br>
+**Here is my way for a Plasma6. It is not a fork of anyone but a work from scratch.** <br>
 
 
 ![plasma6-slackware64-current](./slack.png)
