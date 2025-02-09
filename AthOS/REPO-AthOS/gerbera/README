@@ -1,0 +1,19 @@
+1) Before build/install as root:
+# sh gerbera-preinstall.sh
+
+2) After build and install as root:
+# sh gerbera-postinstall.sh
+
+3) YOU MUST open in any case /etc/gerbera/config.xml
+and be sure (edit if needed) that:
+<home>/etc/gerbera</home>
+
+4) Also I think its good idea to:
+cd /etc/gerbera && ls -s /var/lib/gerbera/* .
+
+
+5) To start-stop:
+/etc/rc.d/rc.gerbera {start,stop}
+
+6) After server start, open web-browser:
+/etc/gerbera/gerbera.html
