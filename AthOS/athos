@@ -759,7 +759,12 @@ if [[ $COMPRESS = "deb" ]]; then
 elif
  [[ $COMPRESS == "AppImage" ]]; then
  echo "$COMPRESS="AppImage""
- mv "$CWD"/"$SRCNAM" "$TMP"
+ mv "$CWD"/"$SRCNAM"*."$COMPRESS" "$TMP"/"$SRCNAM-$VERSION"."$COMPRESS"
+ chmod +x "$TMP"/"$SRCNAM-$VERSION"."$COMPRESS"
+ pushd "$TMP"
+ ./"$SRCNAM-$VERSION"."$COMPRESS" --appimage-extract
+ popd
+ mv "$TMP"/squashfs-root "$TMP"/"$PRGNAM-$VERSION"
 elif
  [[ $COMPRESS == "snap" ]]; then
  echo "COMPRESS="snap""
