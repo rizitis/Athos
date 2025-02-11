@@ -24,6 +24,8 @@ You may now have your holidays and when come back Plasma6 will be there...
 ---
 ![](./system-plasma.png)
 
+![](./6.3.0.png)
+
 ---
 
 `If it is not understood do not ask and do not open an issue,` *but if you have to offer code because you want to.* **Welcome to the PR**<br>
