@@ -31,7 +31,7 @@ You may now have your holidays and when come back Plasma6 will be there...
 `If it is not understood do not ask and do not open an issue,` *but if you have to offer code because you want to.* **Welcome to the PR**<br>
 
 **Anyway The license allows you to do whatever you like...**<br>
-Also a video of how it works is [here](https://www.youtube.com/watch?v=3y7ZFGxRub4)
+Also a video of how it works is [here](https://youtu.be/3y7ZFGxRub4?si=vKJ8OYqjzEoD9Zli)
 
 
 ---
