@@ -1,5 +1,5 @@
 #!/bin/bash
-# shellcheck disable=SC2046,SC2086,SC2140,SC1090,SC2034,SC2154
+# shellcheck disable=SC2046,SC2086,SC2140,SC1090,SC2034,SC2154,SC2181
 
 APPL=AthOS
 
@@ -363,7 +363,7 @@ fi
 	  echo " "
 	  echo "Not slack-desc found or created   :-("
 	  echo "You must have a slack-desc in $CWD"
-	  echo "Or you must create one. Please read lines: 25-33 of $PRGNAM.ini"
+	  echo "Or you must create one in $PRGNAM.ini ."
 	  echo " "
 	  exit 1
 	fi
@@ -495,7 +495,7 @@ fi
 }
 
 
-# after slackbuild function finish, create dounist.sh if needed, remove .la files , prellocal.pod etc... then call makepkg and remove rpaths if needed before create binary on /tmp/
+# after slackbuild function finish, copy dounist.sh if exist, remove .la files , prellocal.pod etc... then call makepkg and remove rpaths if needed before create binary on /tmp/
 package_build() {
   if [ -f "$CWD"/douninst.sh ] ; then
     mkdir -p "$PKG"/var/lib/pkgtools/douninst.sh
@@ -598,6 +598,8 @@ if [[ "$VERSION" != "$AUTO_UPD" ]]; then
    wget -c $SRCURL
  elif [[ $COMPRESS == "snap" ]]; then
    wget -c $SRCURL
+ elif [[ $COMPRESS == "data.tar.zst" ]]; then
+   wget -c $SRCURL
  else
    wget -O "$SRCNAM"-"$VERSION"."$COMPRESS" "$SRCURL"
  fi
@@ -695,6 +697,7 @@ set +e
          *.tar.bz2)  tar xvjf "$1" ;;
          *.tar.gz)   tar xvzf "$1" ;;
          *.tar.xz)   tar xvJf "$1" ;;
+         *.tar.lz4)  tar --use-compress-program=lz4 -xvf "$1" ;;
          *.bz2)      bunzip2 "$1"  ;;
          *.rar)      rar x "$1"    ;;
          *.gz)       gunzip "$1"   ;;
@@ -711,6 +714,7 @@ set +e
          *.tar.bz2)  tar xvjf "$SRCNAM-$VERSION" ;;
          *.tar.gz)   tar xvzf "$SRCNAM-$VERSION" ;;
          *.tar.xz)   tar xvJf "$SRCNAM-$VERSION" ;;
+         *.tar.lz4)  tar --use-compress-program=lz4 -xvf "$SRCNAM-$VERSION" ;;
          *.bz2)      bunzip2 "$SRCNAM-$VERSION"  ;;
          *.rar)      rar x "$SRCNAM-$VERSION"    ;;
          *.gz)       gunzip "$SRCNAM-$VERSION"   ;;
@@ -883,7 +887,7 @@ sha256sum "$PRGNAM".tar.lz4 > "$PRGNAM".sha256sum
 popd
 ls "$OUTPUT"/
 }
-# Main athos build functions.
+# Main athos build-install functions order.
 #set -e
 
 
