@@ -353,6 +353,11 @@ cat <<MKINS >> "$PKG"/install/doinst.sh
        chroot . /usr/bin/update-mime-database usr/share/mime >/dev/null 2>&1
      fi
 
+     if [ -d /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders ]; then
+        /usr/bin/update-gdk-pixbuf-loaders
+     fi
+
+
 MKINS
 fi
 	if [ -f "$CWD"/slack-desc ]; then
@@ -461,6 +466,10 @@ cat <<MKINS >> "$PKG"/install/doinst.sh
 
   if [ -x usr/bin/update-mime-database ]; then
     chroot . /usr/bin/update-mime-database usr/share/mime >/dev/null 2>&1
+  fi
+
+  if [ -d /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders ]; then
+        /usr/bin/update-gdk-pixbuf-loaders
   fi
 
 MKINS
