@@ -278,7 +278,7 @@ opt_deps() {
 
 # After slackbuild finish create docs , slackdesk, doinst etc...
 after_build(){
-if [[ $COMPRESS != "rpm" && $COMPRESS != "deb" ]]; then
+if [[ $COMPRESS != "rpm" && $COMPRESS != "deb" && $COMPRESS != "pkg.tar.zst" ]]; then
 	  mkdir -p "$PKG"/usr/doc/$PRGNAM-"$VERSION"
 
 # files...
@@ -396,8 +396,10 @@ fi
 	  rm -f "$PKG"/usr/info/dir
 	fi
 else
+# make rpm deb and pkg.tar.zst packages more slackwareness...
 mkdir -p "$PKG"/usr/doc/"$PRGNAM"-"$VERSION"
 mv "$PKG"/usr/share/doc/"$PRGNAM" "$PKG"/usr/doc/"$PRGNAM"-"$VERSION"/ || true
+mv "$PKG"/usr/share/man "$PKG"/usr/ || true
 mv "$PKG"/usr/share/{licenses,LICENSE} "$PKG"/usr/doc/"$PRGNAM"-"$VERSION"/ || true
 cat "$CWD"/"$PRGNAM".ini > "$PKG"/usr/doc/"$PRGNAM"-"$VERSION"/"$PRGNAM".ini
 	  find "$PKG"/usr/doc/"$PRGNAM"-"$VERSION" -type f -exec chmod 644 {} \;
@@ -559,7 +561,7 @@ sudo upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"
 }
 
 
-# Not used its for developers only... but its ok to be here for all.
+# Not used its for developers only... but since there is no developer to use athos, its ok to be here for all :P
 sig_package(){
 #  Add you id_rsa, example:
  prikey_path="/root/id_rsa"
@@ -739,7 +741,7 @@ set +e
 
 
 cd "$TMP" || exit
-if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" && $COMPRESS != "rpm" && $COMPRESS != "deb" && $COMPRESS != "AppImage" && $COMPRESS != "snap" ]]; then
+if [[ $COMPRESS != "git" && $COMPRESS != "svn" && $COMPRESS != "cvs" && $COMPRESS != "lftp" && $COMPRESS != "rpm" && $COMPRESS != "deb" && $COMPRESS != "AppImage" && $COMPRESS != "snap" && $COMPRESS != "pkg.tar.zst" ]]; then
 get_out "$CWD"/"$SRCNAM"-"$VERSION"."$COMPRESS" || get_out "$CWD"/"$SRCNAM"."$COMPRESS" || exit
 if [[ $BIN_PKG != "YES" ]]; then
   cd $SRCNAM-"$VERSION" || cd $PRGNAM-"$VERSION" || cd $SRCNAM || exit
@@ -756,6 +758,13 @@ if [[ $COMPRESS = "deb" ]]; then
     tar --use-compress-program=unzstd -xf data.tar.zst -C "$PKG" 2>/dev/null || \
     tar -xzf data.tar.gz -C "$PKG" 2>/dev/null || \
     { echo "No valid archive found!"; exit 1; }
+elif
+[[ $COMPRESS = "pkg.tar.zst" ]]; then
+echo "Hm.. Arch Linux Package found..."
+ cd "$CWD"
+tar --use-compress-program=unzstd -xf *.$COMPRESS -C "$PKG" || tar -I unzstd -xf *.$COMPRESS -C "$PKG" 2>/dev/null || \
+    { echo "No valid archive found!"; exit 1; }
+echo "Extracted to $PKG the rest is SlackBuild job..."
 elif
  [[ $COMPRESS == "AppImage" ]]; then
  echo "$COMPRESS="AppImage""
@@ -889,7 +898,7 @@ echo "no chroot for $COMPRESS"
 elif [[ $CHROOT == NO ]]; then
 if [ "$EUID" -eq 0 ]; then
     echo "You are root. You cant skip chroot when you build as root."
-    echo "Either build with chroot or run athos as reqular user if use 'CHROOT == NO'"
+    echo "Either build with chroot OR run athos as reqular user. Then you can use 'CHR00T=N0' in PKG.ini file..."
     echo "Exiting..."
     exit 1
 fi
