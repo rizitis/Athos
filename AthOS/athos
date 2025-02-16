@@ -579,6 +579,12 @@ sig_package(){
 
 
 download_src() {
+if [[ $LOCAL_FILE == YES ]]; then
+echo "LOCAL_FILE = YES skip downloading"
+echo "Assume you have $SRCNAM.$COMPRESS in same directory with $PRGNAM.ini"
+echo "Usually this happens for LICENSE reasons: LicenseRef-Commercial etc..."
+echo "Procced to extract $SRCNAM.$COMPRESS "
+else
 if [[ $AGENT == ON ]]; then
 # Use eval to construct and run the download command
  DOWNLOAD_AGENT
@@ -628,7 +634,7 @@ else
  exit 8
 fi
 fi
-
+fi
 # Possible filenames to check
 possible_files=(
 "$PRGNAM-$VERSION.$COMPRESS"
