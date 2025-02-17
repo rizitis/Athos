@@ -278,6 +278,7 @@ opt_deps() {
 
 # After slackbuild finish create docs , slackdesk, doinst etc...
 after_build(){
+echo "The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc.."
 if [[ $COMPRESS != "rpm" && $COMPRESS != "deb" && $COMPRESS != "pkg.tar.zst" ]]; then
 	  mkdir -p "$PKG"/usr/doc/$PRGNAM-"$VERSION"
 
@@ -506,6 +507,7 @@ fi
 
 # after slackbuild function finish, copy dounist.sh if exist, remove .la files , prellocal.pod etc... then call makepkg and remove rpaths if needed before create binary on /tmp/
 package_build() {
+echo "Packaging compiled for slackware installation..."
   if [ -f "$CWD"/douninst.sh ] ; then
     mkdir -p "$PKG"/var/lib/pkgtools/douninst.sh
     touch "$PKG/var/lib/pkgtools/douninst.sh/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG"
@@ -554,6 +556,7 @@ fi
 
 # clean all src files and working Dirs.
 clean_src(){
+echo "Cleaning environmet: Removing source code, and work-space..."
 	cd "$CWD" || exit
 if [[ "$COMPRESS" == "git" ]]; then
 sudo	rm -r package-"$PRGNAM" work
@@ -566,7 +569,12 @@ fi
 
 # Install the output or upgrade.
 pkg_install(){
+if [[ $SKIP_INSTALL == YES ]]; then
+echo "SKIP_INSTALL = $SKIP_INSTALL skip $PRGNAM installation..."
+else
+echo "$PRGNAM build finished. Procced to installation..."
 sudo upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
+fi
 }
 
 
@@ -579,9 +587,10 @@ sig_package(){
 
 
 download_src() {
+echo "Downloading source code $COMPRESS file"
 if [[ $LOCAL_FILE == YES ]]; then
 echo "LOCAL_FILE = YES skip downloading"
-echo "Assume you have $SRCNAM.$COMPRESS in same directory with $PRGNAM.ini"
+echo "Assume you already have $SRCNAM.$COMPRESS in same directory with $PRGNAM.ini"
 echo "Usually this happens for LICENSE reasons: LicenseRef-Commercial etc..."
 echo "Procced to extract $SRCNAM.$COMPRESS "
 else
@@ -689,6 +698,7 @@ fi
 
 # chroot for build package
 chrooting(){
+echo "Chrooting..."
 	chown -R root:root .
 	find -L . \
 	  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -701,6 +711,7 @@ chrooting(){
 
 # Prepare the build system and extract source code in work dir or directly in $PKG if needed...
 prepare_build(){
+echo "Creating working directories and exporting source code in..."
 set -e
 	rm -rf "$PKG" "$OUTPUT" "$COMPRESS"
 	mkdir -p "$TMP" "$PKG" "$OUTPUT"
@@ -846,6 +857,7 @@ echo "$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE" > BIN_NAME
 }
 
 sofiles() {
+echo "Create shared object file for $PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
 cd "$OUTPUT" || exit
 package-libs() {
 #https://www.linuxquestions.org/questions/slackware-14/slackware-metadata-on-packages-for-15-1-why-not-4175744763/#post6542318
@@ -895,6 +907,7 @@ done
 }
 
 compress_all() {
+echo "Packaging of executable and meta-data in $PRGNAM.tar.lz4 format."
 pushd "$OUTPUT" || exit
 cd .. || exit
 tar --use-compress-program=lz4 -cf "$PRGNAM".tar.lz4 "$PRGNAM"
