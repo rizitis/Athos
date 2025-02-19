@@ -654,46 +654,68 @@ possible_files=(
 "$SRCNAM"
 )
 
-# Check if MDSCHK is provided
-if [ -n "$MDSCHK" ]; then
-# MDSCHK is not empty, so proceed with checksum verification
+# Function to delete all possible files and re-download
+delete_and_redownload() {
+  echo "Deleting existing files and re-downloading..."
+  for file in "${possible_files[@]}"; do
+    rm -rf "$file"
+  done
+  download_src
+}
 
-# Search for the first existing file
-found_file=""
-for file in "${possible_files[@]}"; do
- if [[ -f "$file" ]]; then
-   found_file="$file"
-   break  # Stop as soon as we find an existing file
- fi
-done
+# Check SHA512SUM
+if [ -n "$SHA512" ]; then
+  found_file=""
+  for file in "${possible_files[@]}"; do
+    if [[ -f "$file" ]]; then
+      found_file="$file"
+      break  # Stop as soon as we find an existing file
+    fi
+  done
 
-# If a file was found, check its checksum
-if [[ -n "$found_file" ]]; then
- echo "Found file: $found_file. Checking MD5 checksum..."
- if echo "$MDSCHK  $found_file" | md5sum -c -; then
-   echo "Checksum matches for $found_file. Proceeding..."
- else
-   echo "Checksum verification failed for $found_file. Preparing to re-download."
-   # Delete all possible files and re-download if checksum fails or no file found
-echo "Deleting existing files and re-downloading..."
-for file in "${possible_files[@]}"; do
- rm -rf "$file"
-done
-download_src
- fi
+  # If a file was found, check its checksum
+  if [[ -n "$found_file" ]]; then
+    echo "Found file: $found_file. Checking SHA512 checksum..."
+    if echo "$SHA512  $found_file" | sha512sum -c --quiet -; then
+      echo "Checksum matches for $found_file. Proceeding..."
+    else
+      echo "Checksum verification failed for $found_file. Preparing to re-download."
+      delete_and_redownload
+    fi
+  else
+    echo "No file found to verify. Proceeding to re-download."
+    delete_and_redownload
+  fi
+
+# If SHA512 is not provided, check MDSCHK
+elif [ -n "$MDSCHK" ]; then
+  found_file=""
+  for file in "${possible_files[@]}"; do
+    if [[ -f "$file" ]]; then
+      found_file="$file"
+      break
+    fi
+  done
+
+  # If a file was found, check its checksum
+  if [[ -n "$found_file" ]]; then
+    echo "Found file: $found_file. Checking MD5 checksum..."
+    if echo "$MDSCHK  $found_file" | md5sum -c --quiet -; then
+      echo "Checksum matches for $found_file. Proceeding..."
+    else
+      echo "Checksum verification failed for $found_file. Preparing to re-download."
+      delete_and_redownload
+    fi
+  else
+    echo "No file found to verify. Proceeding to re-download."
+    delete_and_redownload
+  fi
+
 else
- echo "No file found to verify. Proceeding to re-download."
- # Delete all possible files and re-download if checksum fails or no file found
-echo "Deleting existing files and re-downloading..."
-for file in "${possible_files[@]}"; do
- rm -rf "$file"
-download_src
-done
+  # No SHA512 or MDSCHK provided
+  echo "No SHA512 or MDSCHK provided. Skipping checksum verification and proceeding without re-downloading."
 fi
-else
-# MDSCHK is empty, so we skip checksum verification and proceed without re-downloading
-echo "No MDSCHK provided. Skipping checksum verification and proceeding without re-downloading."
-fi
+
 }
 
 # chroot for build package
