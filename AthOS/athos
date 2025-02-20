@@ -658,9 +658,20 @@ possible_files=(
   "$SRCNAM"
 )
 
-# Function to delete all possible files and re-download
+# If checksum fails 3 tries are enough...
+delete_count=0
+max_deletes=3
+
+# Function to delete all possible files and re-download 3 times maximum if check sums fails...
 delete_and_redownload() {
-  echo "Deleting existing files and re-downloading..."
+  if (( delete_count >= max_deletes )); then
+    echo "Error: Function has already been executed $max_deletes times in this session."
+    return 1
+  fi
+
+  ((delete_count++))  # Increment the counter
+
+  echo "Attempt #$delete_count: Deleting existing files and re-downloading..."
   for file in "${possible_files[@]}"; do
     rm -rf "$file"
   done
