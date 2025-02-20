@@ -38,26 +38,21 @@ elif [ "$2" = "mkbuild" ]; then
     ls "$W_DIR"/"$package"
     exit 0
 elif [ "$2" = "mkedit" ]; then
-    # open default text editor to edit ini
     xdg-open "$W_DIR"/"$package"/"$package".ini &
     exit
 elif [ "$2" = "mklog" ]; then
     xdg-open /tmp/"$package"-build.log &
     exit
 elif [ "$2" = "mkopen-dir" ]; then
-    # open default file manager folder
     xdg-open "$W_DIR"/"$package" &
     exit
 elif [ "$2" = "mkcat" ]; then
-    # open default file manager folder
     cat "$W_DIR"/"$package"/"$package".ini &
     exit
 elif [ "$2" = "mkdel-dir" ]; then
-    # open default file manager folder
     rm -rf "$W_DIR"/"$package"/ &
     exit
 elif [ "$2" = "mkls" ]; then
-    # open default file manager folder
     ls -a "$W_DIR"/"$package"/ &
     exit
 else
