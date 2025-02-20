@@ -63,6 +63,51 @@ fi
 # we unset it for now but set it again later before we call build functions and start building.
 set +e
 
+## Print messages ##
+
+## Passing multiple arguments, each will be treated as a separate line
+#amsg "Line 1" "Line 2" "Line 3"
+
+## Multiline ASCII message passed as a single argument with actual line breaks
+#amsg "This is the first line
+#This is the second line
+#This is the third line"
+
+## If you pass multiple lines and add "--no-newline" at the start
+#amsg "--no-newline This is the first line
+#This is the second line
+#This is the third line"
+
+## Redirection to a file (multiple lines)
+#amsg "Line 1" "Line 2" >> my_log.txt
+#amsg "Line 3" >> my_log.txt
+
+amsg() {
+    local newline=true
+    local message=""
+
+    # Check if the first argument is "--no-newline"
+    if [[ "$1" == "--no-newline" ]]; then
+        newline=false
+        shift  # Remove the --no-newline option from the arguments
+    fi
+
+    # Combine all arguments into a single message
+    for line in "$@"; do
+        message+="$line"
+        # Add a space between lines if necessary
+        message+=$'\n'
+    done
+
+    # Print message with or without newline
+    if [ "$newline" = true ]; then
+        echo -e "$message"
+    else
+        echo -n -e "$message"
+    fi
+}
+
+
 cd "$W_DIR"/"$package" || exit 1
 CWD=$(pwd)
 DATE="$(date)"

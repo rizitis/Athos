@@ -1,0 +1,16 @@
+# Passing multiple arguments, each will be treated as a separate line
+amsg "Line 1" "Line 2" "Line 3"
+
+# Multiline ASCII message passed as a single argument with actual line breaks
+amsg "This is the first line
+This is the second line
+This is the third line"
+
+# If you pass multiple lines and add "--no-newline" at the start
+amsg "--no-newline This is the first line
+This is the second line
+This is the third line"
+
+# Redirection to a file (multiple lines)
+amsg "Line 1" "Line 2" >> my_log.txt
+amsg "Line 3" >> my_log.txt
