@@ -647,14 +647,15 @@ else
 fi
 fi
 fi
+
 # Possible filenames to check
 possible_files=(
-"$PRGNAM-$VERSION.$COMPRESS"
-"$SRCNAM-$VERSION.$COMPRESS"
-"$PRGNAM.$COMPRESS"
-"$SRCNAM.$COMPRESS"
-"$PRGNAM"
-"$SRCNAM"
+  "$PRGNAM-$VERSION.$COMPRESS"
+  "$SRCNAM-$VERSION.$COMPRESS"
+  "$PRGNAM.$COMPRESS"
+  "$SRCNAM.$COMPRESS"
+  "$PRGNAM"
+  "$SRCNAM"
 )
 
 # Function to delete all possible files and re-download
@@ -666,57 +667,62 @@ delete_and_redownload() {
   download_src
 }
 
-# Check SHA512SUM
-if [ -n "$SHA512" ]; then
-  found_file=""
-  for file in "${possible_files[@]}"; do
-    if [[ -f "$file" ]]; then
-      found_file="$file"
-      break  # Stop as soon as we find an existing file
-    fi
-  done
+# Function to check a file's checksum
+check_checksum() {
+  local file="$1"
+  local expected_hash="$2"
+  local hash_cmd="$3"
 
-  # If a file was found, check its checksum
-  if [[ -n "$found_file" ]]; then
-    echo "Found file: $found_file. Checking SHA512 checksum..."
-    if echo "$SHA512  $found_file" | sha512sum -c --quiet -; then
-      echo "Checksum matches for $found_file. Proceeding..."
-    else
-      echo "Checksum verification failed for $found_file. Preparing to re-download."
-      delete_and_redownload
-    fi
+  echo "Checking $hash_cmd checksum for $file..."
+  if echo "$expected_hash  $file" | $hash_cmd -c --quiet -; then
+    echo "Checksum matches for $file. Proceeding..."
+    return 0  # Success, return but DO NOT exit script
   else
-    echo "No file found to verify. Proceeding to re-download."
-    delete_and_redownload
+    echo "Checksum verification failed for $file."
+    return 1  # Failure, continue checking other hashes
   fi
+}
 
-# If SHA512 is not provided, check MDSCHK
-elif [ -n "$MDSCHK" ]; then
-  found_file=""
-  for file in "${possible_files[@]}"; do
-    if [[ -f "$file" ]]; then
-      found_file="$file"
-      break
-    fi
-  done
+# Find the first existing file
+found_file=""
+for file in "${possible_files[@]}"; do
+  if [[ -f "$file" ]]; then
+    found_file="$file"
+    break  # Stop as soon as we find an existing file
+  fi
+done
 
-  # If a file was found, check its checksum
-  if [[ -n "$found_file" ]]; then
-    echo "Found file: $found_file. Checking MD5 checksum..."
-    if echo "$MDSCHK  $found_file" | md5sum -c --quiet -; then
-      echo "Checksum matches for $found_file. Proceeding..."
-    else
-      echo "Checksum verification failed for $found_file. Preparing to re-download."
-      delete_and_redownload
+# If a file is found, verify checksum (if provided)
+if [[ -n "$found_file" ]]; then
+  echo "Found file: $found_file"
+
+  # Check if at least one checksum is provided
+  if [[ -n "$SHA512SUM" || -n "$SHA256SUM" || -n "$MDSCHK" ]]; then
+    # Check SHA-512
+    if [[ -n "$SHA512SUM" ]] && check_checksum "$found_file" "$SHA512SUM" "sha512sum"; then
+      return 0  # Stop checking other hashes and continue script
     fi
-  else
-    echo "No file found to verify. Proceeding to re-download."
+
+    # Check SHA-256
+    if [[ -n "$SHA256SUM" ]] && check_checksum "$found_file" "$SHA256SUM" "sha256sum"; then
+      return 0  # Stop checking other hashes and continue script
+    fi
+
+    # Check MD5
+    if [[ -n "$MDSCHK" ]] && check_checksum "$found_file" "$MDSCHK" "md5sum"; then
+      return 0  # Stop checking other hashes and continue script
+    fi
+
+    # If all provided checksums fail, re-download
+    echo "All provided checksums failed. Re-downloading..."
     delete_and_redownload
+  else
+    echo "No checksum provided. Skipping checksum verification and proceeding..."
   fi
 
 else
-  # No SHA512 or MDSCHK provided
-  echo "No SHA512 or MDSCHK provided. Skipping checksum verification and proceeding without re-downloading."
+  echo "No file found to verify. Proceeding to re-download."
+  delete_and_redownload
 fi
 
 }
