@@ -700,6 +700,9 @@ max_deletes=3
 
 # Function to delete all possible files and re-download 3 times maximum if check sums fails...
 delete_and_redownload() {
+if [[ $COMPRESS == git ]]; then
+echo "Skip checksums for git anyway"
+else
   if (( delete_count >= max_deletes )); then
     echo "Error: Function has already been executed $max_deletes times in this session."
     return 1
@@ -712,6 +715,7 @@ delete_and_redownload() {
     rm -rf "$file"
   done
   download_src
+fi
 }
 
 # Function to check a file's checksum
@@ -739,6 +743,9 @@ for file in "${possible_files[@]}"; do
   fi
 done
 
+if [[ $COMPRESS == git ]]; then
+echo "Skip checksums for git anyway2"
+else
 # If a file is found, verify checksum (if provided)
 if [[ -n "$found_file" ]]; then
   echo "Found file: $found_file"
@@ -771,7 +778,7 @@ else
   echo "No file found to verify. Proceeding to re-download."
   delete_and_redownload
 fi
-
+fi
 }
 
 # chroot for build package
