@@ -14,3 +14,14 @@ This is the third line"
 # Redirection to a file (multiple lines)
 amsg "Line 1" "Line 2" >> my_log.txt
 amsg "Line 3" >> my_log.txt
+
+Output:
+
+    Multiple arguments: Each argument will be printed on a new line.
+    Multiline strings: The line breaks (\n) in the input will be preserved and printed on separate lines.
+    No Newline: If you use --no-newline, the message will print without a trailing newline.
+
+Key Features:
+
+    Supports ASCII multiline: Whether you are passing multiline strings or multiple arguments, the line breaks will be respected and rendered correctly.
+    Redirection: You can still use redirection (>, >>) to save the output into files or pass it along through pipes.
