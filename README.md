@@ -14,7 +14,8 @@ Now you are ready to build Plasma 6 and **every other package** you will create
 
 1. `athos frameworks6-meta`
 2. `athos plasma-workspace`
-3. `athos plasma-desktop-meta` for PC or `athos plasma-mobile` for Mobile-Tablets etc..
+3. `athos plasma-desktop-meta` for PC and `athos plasma-mobile` for Mobile-Tablets etc..
+4. `athos plasma-desktop-meta` 
 
 Now you can install anything else exist in repo and you need by command: `athos package-name` <br>
 
