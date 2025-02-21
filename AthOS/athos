@@ -63,41 +63,31 @@ fi
 # we unset it for now but set it again later before we call build functions and start building.
 set +e
 
-## Print messages ##
-
-## Passing multiple arguments, each will be treated as a separate line
-#amsg "Line 1" "Line 2" "Line 3"
-
-## Multiline ASCII message passed as a single argument with actual line breaks
-#amsg "This is the first line
-#This is the second line
-#This is the third line"
-
-## If you pass multiple lines and add "--no-newline" at the start
-#amsg "--no-newline This is the first line
-#This is the second line
-#This is the third line"
-
-## Redirection to a file (multiple lines)
-#amsg "Line 1" "Line 2" >> my_log.txt
-#amsg "Line 3" >> my_log.txt
-
 amsg() {
+    local color=false
     local newline=true
     local message=""
+
+    # Check if the first argument is "--color"
+    if [[ "$1" == "--color" ]]; then
+        color=true
+        shift  # Remove the --color option
+    fi
 
     # Check if the first argument is "--no-newline"
     if [[ "$1" == "--no-newline" ]]; then
         newline=false
-        shift  # Remove the --no-newline option from the arguments
+        shift  # Remove the --no-newline option
     fi
 
-    # Combine all arguments into a single message
-    for line in "$@"; do
-        message+="$line"
-        # Add a space between lines if necessary
-        message+=$'\n'
-    done
+    # Combine all arguments into a single message (preserving spaces and newlines)
+    message="$*"
+
+    # If --color flag is set, add color to the message (example: green)
+    if [ "$color" = true ]; then
+        # Apply green color: \033[32m for green and \033[0m to reset color
+        message="\033[32m$message\033[0m"
+    fi
 
     # Print message with or without newline
     if [ "$newline" = true ]; then
@@ -106,6 +96,7 @@ amsg() {
         echo -n -e "$message"
     fi
 }
+
 
 
 cd "$W_DIR"/"$package" || exit 1
@@ -785,13 +776,25 @@ fi
 
 # chroot for build package
 chrooting(){
-echo "Chrooting..."
+if [[ $COMPRESS == snap ]]; then
+# NEVER try to chroot in snap pkg it might break for real libexec...
+echo "no chroot for $COMPRESS"
+elif [[ $CHROOT == NO ]]; then
+if [ "$EUID" -eq 0 ]; then
+    echo "You are root. You cant skip chroot when you build as root."
+    echo "Either build with chroot OR run athos as reqular user. Then you can use 'CHR00T=N0' in PKG.ini file..."
+    echo "Exiting..."
+    exit 1
+fi
+echo "chroot = $CHROOT skip chrooting..."
+else
 	chown -R root:root .
 	find -L . \
 	  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
 	  -o -perm 511 \) -exec chmod 755 {} \; -o \
 	  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
 	  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+fi
 }
 
 
@@ -1008,23 +1011,16 @@ ls "$OUTPUT"/
 
 check_deps
 opt_deps
+if [[ $META_PKG == YES ]]; then
+amsg --color --no-newline "META PKG SUCCESS!!!
+Installed:"
+amsg " $REQUIRED"
+else
 download_src
 prepare_build
 patch_build
-if [[ $COMPRESS == snap ]]; then
-# NEVER try to chroot in snap pkg it might break for real libexec...
-echo "no chroot for $COMPRESS"
-elif [[ $CHROOT == NO ]]; then
-if [ "$EUID" -eq 0 ]; then
-    echo "You are root. You cant skip chroot when you build as root."
-    echo "Either build with chroot OR run athos as reqular user. Then you can use 'CHR00T=N0' in PKG.ini file..."
-    echo "Exiting..."
-    exit 1
-fi
-echo "chroot = $CHROOT skip chrooting..."
-else
 chrooting
-fi
+
 set -e
 slackbuild
 
@@ -1043,7 +1039,7 @@ compress_all
 pkg_install
 #sig_package
 clean_src
-
+fi
 
 # Calculate and display build time
 end_time=$(date +%s)
