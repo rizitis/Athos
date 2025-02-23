@@ -13,11 +13,12 @@ Now you are ready to build Plasma 6 and **every other package** you will create
 ## Build Plasma6
 
 1. `athos frameworks6-meta`
-2. `athos plasma-workspace`
-3. `athos plasma-desktop-meta` for PC and `athos plasma-mobile` for Mobile-Tablets etc..
-4. `athos plasma-desktop-meta` 
+2. `athos plasma6-meta`
+3. `athos kde6-meta`
+4. `athos kde5-meta`
+5. `athos kde-orphans-meta` 
 
-Now you can install anything else exist in repo and you need by command: `athos package-name` <br>
+Now you can install anything else exist in repo and you need it by command: `athos package-name` <br>
 
 If you want to build **EVERYTHING** then `cd dev-stuff` and always as root command: `bash FULL_UPGRADE_ALL.sh`<br>
 You may now have your holidays and when come back Plasma6 will be there... 
