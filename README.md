@@ -5,12 +5,17 @@
 
 ## HowTO
 
-0. Read [README.md](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/README.md) and then install all deps needed from [Ponce-Alien-Conraid repos and pip](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DEPS-BEFORE-BUILD).
-1. `sudo bash setup.sh` to install athos.
-Now you are ready to build Plasma 6 and **every other package** you will create
+The tool I use for building and install local packages in my Slackware64-current system is `athos`.
+
+IF you want to use it:<br>
+
+0. clone repo.
+1. Read [README.md](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/README.md) and then install all deps needed from [Ponce-Alien-Conraid repos and some pip also](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DEPS-BEFORE-BUILD).
+2. `sudo bash setup.sh` to install athos.
+Now you are ready to build Plasma 6 and **every other package** you will create as log as you dont remove clone folder from its place.
 
 
-## Build Plasma6
+## TO Build Plasma6
 
 1. `athos frameworks6-meta`
 2. `athos plasma6-meta`
@@ -20,14 +25,7 @@ Now you are ready to build Plasma 6 and **every other package** you will create
 
 Now you can install anything else exist in repo and you need it by command: `athos package-name` <br>
 
-If you want to build **EVERYTHING** then `cd dev-stuff` and always as root command: `bash FULL_UPGRADE_ALL.sh`<br>
-You may now have your holidays and when come back Plasma6 will be there... 
-
----
-![](./system-plasma.png)
-
-![](./6.3.0.png)
-
+If you want to take updates just a `git pull` is enough.
 ---
 
 `If it is not understood do not ask and do not open an issue,` *but if you have to offer code because you want to.* **Welcome to the PR**<br>
