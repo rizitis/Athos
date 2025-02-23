@@ -768,14 +768,16 @@ if [[ -n "$found_file" ]]; then
     fi
 
     # If all provided checksums fail, re-download
-    echo "All provided checksums failed. Re-downloading..."
-    delete_and_redownload
+    echo "OOOPS! All provided checksums failed. Please check $SRCURL and ($MDSCHK $SHA256SUM $SHA512SUM)..."
+    exit 1
   else
     echo "No checksum provided. Skipping checksum verification and proceeding..."
   fi
 
 else
-  echo "No file found to verify. Proceeding to re-download."
+  amsg "No file found to verify. Proceeding to re-download.
+  If fail again hit ctrl+c and check:
+  $SRCURL"
   delete_and_redownload
 fi
 fi
