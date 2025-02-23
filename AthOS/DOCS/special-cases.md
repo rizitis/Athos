@@ -39,8 +39,9 @@ desktop_entry
 6. `META_PKG=YES` This is a fake package-meta.ini that only build requireds and exist. See plasma6-meta kde6-meta etc...
 7. `CHROOT=NO` Some times no chroot needed, use this in ini file. Note that means you also run athos as user no root.
 8. Accepted sums are: `SHA512SUM=xxxxxxxxx`, `SHA256SUM=xxxxxxx` and `MDSCHK=xxxxx` or EMPTY for skip checksum
-9. `SKIP_INSTALL=YES` if you only want to build but not install. 
-
+9. `SKIP_INSTALL=YES` if you only want to build but not install.
+10. `MAKEPKG_FLAGS` if its not set by default use: `makepkg --remove-tmp-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"`  
+<br> If you want to set other `MAKEPKG_FLAGS= ` please [READ](https://github.com/rizitis/PLASMA_WORLD/blob/main/AthOS/DOCS/MAKEPKG_FLAGS) . Example `MAKEPKG_FLAGS="-l y -c n"` or `MAKEPKG_FLAGS="--remove-rpaths"` etc..
 ---
 ====================================================
 ---
