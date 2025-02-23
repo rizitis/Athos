@@ -13,10 +13,7 @@ athos can face most of these cases, but in order to do it pkg.ini has to mention
 3. For deb, rpm etc mention in `COMPRESS="deb"` and if needed also add one line `BIN_PKG=YES`
 4. `BIN_PKG=YES` needed for sure when try build a package which `source.tar.?z*` after extracted  output provide directly the files/folders of source.
 5. For package.desktop things are very simple just create a desktop_entry function and call it in pkg build, example:
-6. `META_PKG=YES` This is a fake package-meta.ini that only build requireds and exist. See plasma6-meta kde6-meta etc...
-7. `CHROOT=NO` Some times no chroot needed, use this in ini file. Note that means you also run athos as user no root.
-8. Accepted sums are: `SHA512SUM=xxxxxxxxx`, `SHA256SUM=xxxxxxx` and `MDSCHK=xxxxx` or EMPTY for skip checksum
-9. `SKIP_INSTALL=YES` if you only want to build but not install. 
+
 ```
 desktop_entry() {
 mkdir -p "$PKG"/usr/share/applications
@@ -39,7 +36,10 @@ EOF
 }
 desktop_entry
 ```
-6. `CHROOT=NO` Some times we cant chroot for build a package or we dont want or not needed.
+6. `META_PKG=YES` This is a fake package-meta.ini that only build requireds and exist. See plasma6-meta kde6-meta etc...
+7. `CHROOT=NO` Some times no chroot needed, use this in ini file. Note that means you also run athos as user no root.
+8. Accepted sums are: `SHA512SUM=xxxxxxxxx`, `SHA256SUM=xxxxxxx` and `MDSCHK=xxxxx` or EMPTY for skip checksum
+9. `SKIP_INSTALL=YES` if you only want to build but not install. 
 
 ---
 ====================================================
