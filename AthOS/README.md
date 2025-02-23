@@ -17,10 +17,7 @@ AthOS **is**:
 
 #### HELP FILES
 
-More informations you can find in [HOWTO.md](./DOCS/HOWTO.md "HOWTO.md"), 
-[INSTALL.md](./DOCS/INSTALL.md "INSTALL.md"), 
-[required.md](./DOCS/required.md "required.md") and 
-[special-cases.md](./DOCS/special-cases.md "special-cases.md")
+More informations you can find in [DOCS](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DOCS)
 
 - - -
 ##### Commands
