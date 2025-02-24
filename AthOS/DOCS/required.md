@@ -10,7 +10,7 @@ If this tool is installed then no separate slack-desc files needed for your buil
 You can always skip or rm  slackdesk script from your system and continue creatings slack-desk manually, athos will work with them.<br>
 
 
-### doinst
+### doinst.sh
 
 If your build need a usual doinst.sh then **you dont** have to create it, athos is prepare for that also. <br>
 Only in very rare special cases that a specific doinst.sh must ran after installation then you can create one manually before build and athos will respect your choise. Or create one in slackbuild() function.<br>
@@ -23,6 +23,8 @@ cat <<EOF > "$PKG"/install/doinst.sh
 EOF
 ```
 
+### dounist.sh
+If you need a dounist.sh create one in $CWD/dounist.sh and athos know what to do...
 
 ### patches
 
