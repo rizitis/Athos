@@ -19,6 +19,7 @@ mkdir -p "$PKG"/install
 cat <<EOF > "$PKG"/install/doinst.sh
 ( add your commands )
 ( here line by line )
+(leave an empty line at the end)
 EOF
 ```
 
