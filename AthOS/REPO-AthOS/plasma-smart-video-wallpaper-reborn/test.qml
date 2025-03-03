@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import QtQuick
 import QtQuick.Controls
 import QtMultimedia
