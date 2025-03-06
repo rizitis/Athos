@@ -16,6 +16,8 @@ echo "==="
 cat need-update-github.txt
 echo ""
 
+python NEW_RELEASE_FINDER.py
+
 echo "Gitlab"
 echo "==="
 cat need-update-gitlab.txt
