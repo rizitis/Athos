@@ -1054,12 +1054,4 @@ fi
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
 echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
-# shellcheck disable=SC2043
-for item in "$W_DIR"/"$package"; do
-  if [ -f "$item" ]; then
-    chmod 0644 "$item"
-  elif [ -d "$item" ]; then
-    chmod 0755  "$item"
-  fi
-done
 chmod -R 775 "$W_DIR"/"$package"
