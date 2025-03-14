@@ -8,6 +8,13 @@ echo ""
 cat kde_update_output.txt
 echo ""
 
+python plasma_stable_checker.py
+
+wait
+echo ""
+cat plasma_update_output.txt
+echo ""
+
 echo "Looking git{hub,lab}"
 python GIT_FINDER.py
 
