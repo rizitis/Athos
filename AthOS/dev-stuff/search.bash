@@ -15,6 +15,13 @@ echo ""
 cat plasma_update_output.txt
 echo ""
 
+python framework_stable_checker.py
+
+wait
+echo ""
+cat framework_update_output.txt
+echo ""
+
 echo "Looking git{hub,lab}"
 python GIT_FINDER.py
 
