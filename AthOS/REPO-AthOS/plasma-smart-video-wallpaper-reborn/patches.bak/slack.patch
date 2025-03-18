@@ -1,0 +1,30 @@
+--- CMakeLists.txt	2025-03-16 11:59:24.000000000 +0200
++++ CMakeLists.txt.new	2025-03-17 21:11:24.774039604 +0200
+@@ -19,12 +19,26 @@
+ message("Version: ${CUR_VERSION}")
+ 
+ if(INSTALL_WALLPAPER)
++    # Install Plasma dependencies
+     find_package(Plasma ${PROJECT_DEP_VERSION} REQUIRED)
+     plasma_install_package(package ${PLUGIN_ID} wallpapers)
++
++    # Commented out the line that installs contents/ui
++    # install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/contents/ui/
++    #         DESTINATION ${CMAKE_INSTALL_PREFIX}/share/plasma/wallpapers/${PLUGIN_ID}/contents/ui)
++
++    # Install translations (if any)
++    install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/package/translate/
++            DESTINATION ${CMAKE_INSTALL_PREFIX}/share/plasma/wallpapers/${PLUGIN_ID}/translate)
++
++    # Install metadata and other essential files
++    install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/package/
++            DESTINATION ${CMAKE_INSTALL_PREFIX}/share/plasma/wallpapers/${PLUGIN_ID}/
++            FILES_MATCHING PATTERN "metadata.json")
+ endif()
+ 
+ if(PACKAGE_WALLPAPER)
+-    # generate wallpaper package
++    # Generate wallpaper package as a zip file
+     set(WALLPAPER_FILE "${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}-v${CUR_VERSION}.zip")
+     add_custom_target(wallpaper ALL
+         COMMAND rm -rf "${WALLPAPER_FILE}"
