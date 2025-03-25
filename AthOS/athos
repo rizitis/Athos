@@ -29,7 +29,7 @@ fi
 # Check if a package name was provided
 if [ -z "$package" ]; then
     echo "Error: No package name provided."
-    echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n  athos package_name mkbuild # To create a new package build template\n  athos package_name mkedit # To edit package ini file\n  athos package_name mklog # To view PackageBuild.log\n  athos packane_name mkopen-dir        # To open package folder\n    athos package_name mkdel-dir      # To delete package folder\n   athos package_name mkls   # To view package folder contents"
+    echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n  athos package_name mkbuild # To create a new package build template\n  athos package_name mkedit # To edit package ini file\n  athos package_name mklog # To view PackageBuild.log\n  athos packane_name mkopen-dir        # To open package folder\n  athos package_name mkdel-dir      # To delete package folder\n  athos update  # To update your local repository\n  athos package_name mkls   # To view package folder contents"
     exit 1
 fi
 
@@ -71,7 +71,7 @@ elif [ "$2" = "mkls" ]; then
     ls -a "$W_DIR"/"$package"/ &
     exit
 else
-    echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n    athos package_name mkbuild        # To create a new package build template\n     athos package_name mkedit        # To edit package ini file\n      athos package_name mklog        # To view PackageBuild.log\n   athos packane_name mkopen-dir        # To open package folder\n    athos package_name mkdel-dir      # To delete package folder\n   athos package_name mkls   # To view package folder contents"
+    echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n    athos package_name mkbuild        # To create a new package build template\n     athos package_name mkedit        # To edit package ini file\n      athos package_name mklog        # To view PackageBuild.log\n   athos packane_name mkopen-dir        # To open package folder\n athos package_name mkdel-dir      # To delete package folder\n  athos update  # To update your local repository\n athos package_name mkls   # To view package folder contents"
     exit 1
 fi
 
