@@ -25,7 +25,7 @@ Now you are ready to build Plasma 6 and **every other package** you will create 
 
 Now you can install anything else exist in repo and you need it by command: `athos package-name` <br>
 
-If you want to take updates just a `git pull` is enough.
+If you want to take updates just a `athos update` is enough.
 ---
 
 `If it is not understood do not ask and do not open an issue,` *but if you have to offer code because you want to.* **Welcome to the PR**<br>

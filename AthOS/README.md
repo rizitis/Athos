@@ -24,13 +24,14 @@ More informations you can find in [DOCS](https://github.com/rizitis/PLASMA_WORLD
 
 ```
 Usage:
-  athos package_name        # To build an existing package
-  athos package_name mkbuild # To create a new package build template
-  athos package_name mkedit # To edit package ini file
-  athos package_name mklog # To view PackageBuild.log
-  athos packane_name mkopen-dir        # To open package folder
-  athos package_name mkdel-dir      # To delete package folder
-  athos package_name mkls   # To view package folder contents
+  athos package_name             # To build an existing package
+  athos package_name mkbuild     # To create a new package build template
+  athos package_name mkedit      # To edit package ini file
+  athos package_name mklog       # To view PackageBuild.log
+  athos packane_name mkopen-dir  # To open package folder
+  athos package_name mkdel-dir   # To delete package folder
+  athos package_name mkls        # To view package folder contents
+  athos update                   # To update your local repository
 
   
 ```
