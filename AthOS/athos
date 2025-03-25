@@ -11,6 +11,21 @@ set -e
 # package name for build
 package="$1"
 
+if [[ $package == update ]]; then
+    cd "$(dirname "$(readlink -f $(command -v athos))")/.." || { echo "Failed to change directory"; exit 1; }
+    REALPATH=$(basename "$(pwd)")
+
+    if [[ "$REALPATH" == "PLASMA_WORLD" ]]; then
+        git pull
+        wait
+        exit
+    else
+        echo "Failed to update athos"; exit 1
+    fi
+else
+    echo "$package $2"
+fi
+
 # Check if a package name was provided
 if [ -z "$package" ]; then
     echo "Error: No package name provided."
