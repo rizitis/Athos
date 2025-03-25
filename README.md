@@ -1,3 +1,7 @@
+![](./Commitsovertime.png)
+
+---
+
 **Here is my way for a Plasma6 and more... It is not a fork of anyone but a work from scratch.** <br>
 
 
