@@ -1,13 +1,10 @@
 ORBit2
 R
-cargo-c
-cmark
 dirac
 faad2
 flatpak
 gnome-mime-data
 gnome-vfs
-gtest
 imlib2
 jack
 javacc
@@ -28,7 +25,6 @@ libreplaygain
 libsidplay2
 libsrtp
 libsrtp2
-libvdpau-va-gl
 live555
 luaexpat
 musepack-tools
@@ -39,14 +35,13 @@ python3-pythondialog
 python3-tomlkit
 qt-heif-image-plugin
 rav1e
-refle
+reflex
 rtmpdump
 schroedinger
 soxr
 srt
 svt-av1
 vcdimager
-wayland-utils
 x264
 x265
 xvidcore
