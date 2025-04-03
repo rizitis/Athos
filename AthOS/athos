@@ -1065,8 +1065,10 @@ pkg_install
 clean_src
 fi
 
+# fix permissions
+find "$W_DIR"/"$package" -type f -exec chmod 0644 {} \; && find "$W_DIR"/"$package" -type d -exec chmod 0775 {} \;
+
 # Calculate and display build time
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))
 echo "Build process completed in $((elapsed_time / 60)) minutes and $((elapsed_time % 60)) seconds."
-chmod -R 775 "$W_DIR"/"$package"
