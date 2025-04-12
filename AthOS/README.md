@@ -2,6 +2,8 @@
 
 > We're living the future so the present is our past.
 
+![](../system-info.png)
+
 ## What is AthOS
 
 AthOS is **not**:
@@ -18,6 +20,8 @@ AthOS **is**:
 #### HELP FILES
 
 More informations you can find in [DOCS](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DOCS)
+
+![](../plasma.png)
 
 - - -
 ##### Commands
