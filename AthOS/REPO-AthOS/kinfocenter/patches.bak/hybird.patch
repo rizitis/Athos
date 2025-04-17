@@ -1,0 +1,166 @@
+diff -Naupr orig/kinfocenter-v6.3.4/kcms/about-distro/src/CMakeLists.txt new/kinfocenter-v6.3.4/kcms/about-distro/src/CMakeLists.txt
+--- orig/kinfocenter-v6.3.4/kcms/about-distro/src/CMakeLists.txt	2025-04-02 06:23:43.000000000 +0300
++++ new/kinfocenter-v6.3.4/kcms/about-distro/src/CMakeLists.txt	2025-04-16 23:29:47.662264973 +0300
+@@ -2,6 +2,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DI
+ include_directories(${CMAKE_CURRENT_BINARY_DIR})
+ 
+ add_subdirectory(opengl-helper)
++add_subdirectory(vulkan-helper)
+ 
+ set(kcm_SRCS
+     CPUEntry.cpp
+@@ -43,6 +44,11 @@ target_link_libraries(kcm_about-distro
+     PkgConfig::libdrm
+ )
+ 
++if(UDev_FOUND)
++    target_link_libraries(kcm_about-distro PRIVATE UDev::UDev)
++    target_compile_definitions(kcm_about-distro PRIVATE UDEV_FOUND)
++endif()
++
+ cmake_path(RELATIVE_PATH KDE_INSTALL_FULL_LIBEXECDIR BASE_DIRECTORY "${KDE_INSTALL_FULL_PLUGINDIR}/plasma/kcms/" OUTPUT_VARIABLE LIBEXECDIR_FROM_KCM)
+ 
+ target_compile_options(
+diff -Naupr orig/kinfocenter-v6.3.4/kcms/about-distro/src/GPUEntryFactory.cpp new/kinfocenter-v6.3.4/kcms/about-distro/src/GPUEntryFactory.cpp
+--- orig/kinfocenter-v6.3.4/kcms/about-distro/src/GPUEntryFactory.cpp	2025-04-02 06:23:43.000000000 +0300
++++ new/kinfocenter-v6.3.4/kcms/about-distro/src/GPUEntryFactory.cpp	2025-04-16 23:32:27.769269859 +0300
+@@ -121,47 +121,29 @@ std::vector<GPUEntry::Device> vulkanDevi
+         };
+     }
+ 
+-    QVulkanInstance instance;
+-    if (!instance.create()) {
+-        qWarning() << "Failed to create vulkan instance";
+-        return {};
+-    }
+-    auto functions = instance.functions();
++    auto vulkanHelperExecutable = QStandardPaths::findExecutable("kinfocenter-vulkan-helper", searchPaths());
++    qDebug() << "Looking at" << searchPaths() << vulkanHelperExecutable;
+ 
+-    uint32_t count = 0;
+-    functions->vkEnumeratePhysicalDevices(instance.vkInstance(), &count, nullptr);
+-    if (count == 0) {
+-        qWarning("No vulkan devices");
+-        return {};
+-    }
+-
+-    QVarLengthArray<VkPhysicalDevice, 4> devices(count);
+-    VkResult error = functions->vkEnumeratePhysicalDevices(instance.vkInstance(), &count, devices.data());
+-    if (error != VK_SUCCESS || count == 0) {
+-        qWarning("Failed to enumerate vulkan devices: %d", error);
++    QJsonDocument document = readFromProcess(vulkanHelperExecutable, 0);
++    if (!document.isArray()) {
++        qWarning() << "Failed to read GPU info from vulkan helper";
+         return {};
+     }
+ 
++    const QJsonArray array = document.array();
+     std::vector<GPUEntry::Device> deviceList;
+-    deviceList.reserve(devices.count());
+-    for (const auto &device : devices) {
+-        VkPhysicalDeviceProperties properties;
+-        functions->vkGetPhysicalDeviceProperties(device, &properties);
+-        qDebug("Physical device %d: '%s' %d.%d.%d (api %d.%d.%d vendor 0x%X device 0x%X type %d)",
+-               0,
+-               properties.deviceName,
+-               VK_VERSION_MAJOR(properties.driverVersion),
+-               VK_VERSION_MINOR(properties.driverVersion),
+-               VK_VERSION_PATCH(properties.driverVersion),
+-               VK_VERSION_MAJOR(properties.apiVersion),
+-               VK_VERSION_MINOR(properties.apiVersion),
+-               VK_VERSION_PATCH(properties.apiVersion),
+-               properties.vendorID,
+-               properties.deviceID,
+-               properties.deviceType);
+-
+-        deviceList.emplace_back(QString::fromUtf8(properties.deviceName), properties.deviceType);
++    deviceList.reserve(array.size());
++    for (const auto &device : array) {
++        const auto obj = device.toObject();
++        const QString name = FancyString::fromRenderer(obj.value("name").toString());
++        if (name.isEmpty()) {
++            qWarning() << "Empty name for device";
++            return {};
++        }
++        const VkPhysicalDeviceType type = static_cast<VkPhysicalDeviceType>(obj.value("type").toInt(VK_PHYSICAL_DEVICE_TYPE_OTHER));
++        deviceList.emplace_back(GPUEntry::Device{name, type});
+     }
++
+     return deviceList;
+ }
+ 
+diff -Naupr orig/kinfocenter-v6.3.4/kcms/about-distro/src/vulkan-helper/CMakeLists.txt new/kinfocenter-v6.3.4/kcms/about-distro/src/vulkan-helper/CMakeLists.txt
+--- orig/kinfocenter-v6.3.4/kcms/about-distro/src/vulkan-helper/CMakeLists.txt	1970-01-01 02:00:00.000000000 +0200
++++ new/kinfocenter-v6.3.4/kcms/about-distro/src/vulkan-helper/CMakeLists.txt	2025-04-16 23:34:48.233274146 +0300
+@@ -0,0 +1,3 @@
++add_executable(kinfocenter-vulkan-helper main.cpp)
++target_link_libraries(kinfocenter-vulkan-helper Qt::Gui)
++install(TARGETS kinfocenter-vulkan-helper DESTINATION ${KDE_INSTALL_LIBEXECDIR})
+diff -Naupr orig/kinfocenter-v6.3.4/kcms/about-distro/src/vulkan-helper/main.cpp new/kinfocenter-v6.3.4/kcms/about-distro/src/vulkan-helper/main.cpp
+--- orig/kinfocenter-v6.3.4/kcms/about-distro/src/vulkan-helper/main.cpp	1970-01-01 02:00:00.000000000 +0200
++++ new/kinfocenter-v6.3.4/kcms/about-distro/src/vulkan-helper/main.cpp	2025-04-16 23:35:56.379276226 +0300
+@@ -0,0 +1,64 @@
++#include <iostream>
++
++#include <QGuiApplication>
++#include <QJsonArray>
++#include <QJsonDocument>
++#include <QJsonObject>
++#include <QVulkanInstance>
++#include <QVulkanFunctions>
++
++using namespace Qt::StringLiterals;
++
++int main(int argc, char *argv[])
++{
++    QGuiApplication app(argc, argv);
++
++    QVulkanInstance instance;
++    if (!instance.create()) {
++        qWarning("Failed to create Vulkan instance");
++        return 1;
++    }
++
++    QJsonArray devicesArray;
++    auto *functions = instance.functions();
++
++    uint32_t count = 0;
++    functions->vkEnumeratePhysicalDevices(instance.vkInstance(), &count, nullptr);
++    if (count == 0) {
++        qWarning("No Vulkan devices found");
++        return 0;
++    }
++
++    QVarLengthArray<VkPhysicalDevice, 4> devices(count);
++    VkResult result = functions->vkEnumeratePhysicalDevices(instance.vkInstance(), &count, devices.data());
++    if (result != VK_SUCCESS) {
++        qWarning("Failed to enumerate Vulkan devices: %d", result);
++        return 1;
++    }
++
++    for (const auto &device : devices) {
++        VkPhysicalDeviceProperties properties;
++        functions->vkGetPhysicalDeviceProperties(device, &properties);
++
++        qDebug("Physical device %d: '%s' %d.%d.%d (api %d.%d.%d vendor 0x%X device 0x%X type %d)",
++               0,
++               properties.deviceName,
++               VK_VERSION_MAJOR(properties.driverVersion),
++               VK_VERSION_MINOR(properties.driverVersion),
++               VK_VERSION_PATCH(properties.driverVersion),
++               VK_VERSION_MAJOR(properties.apiVersion),
++               VK_VERSION_MINOR(properties.apiVersion),
++               VK_VERSION_PATCH(properties.apiVersion),
++               properties.vendorID,
++               properties.deviceID,
++               properties.deviceType);
++
++        QJsonObject obj;
++        obj["name"] = QString::fromUtf8(properties.deviceName);
++        obj["type"] = static_cast<int>(properties.deviceType);
++        devicesArray.append(obj);
++    }
++
++    std::cout << QJsonDocument(devicesArray).toJson(QJsonDocument::Compact).toStdString() << '\n';
++    return 0;
++}
