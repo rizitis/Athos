@@ -564,9 +564,10 @@ package_build() {
 echo "Packaging compiled for slackware installation..."
   if [ -f "$CWD"/douninst.sh ] ; then
     mkdir -p "$PKG"/var/lib/pkgtools/douninst.sh
+    chmod 755 "$PKG"/var/lib/pkgtools/douninst.sh
     touch "$PKG/var/lib/pkgtools/douninst.sh/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG"
     cat "$CWD"/douninst.sh > "$PKG/var/lib/pkgtools/douninst.sh/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG"
-    chmod +x "$PKG/var/lib/pkgtools/douninst.sh/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG"
+    chmod 755 "$PKG/var/lib/pkgtools/douninst.sh/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG"
   fi
 
 cd "$PKG" || exit 66
