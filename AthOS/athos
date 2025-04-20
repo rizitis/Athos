@@ -847,7 +847,7 @@ set +e
          *.zip)      unzip "$1"    ;;
          *.Z)        uncompress "$1" ;;
          *.7z)       7z x "$1"     ;;
-         *)          echo "Error: Don't know how to extract '$1'." ;;
+         *)          tar --auto-compress -xvf $1 ;;
      esac
  elif [ -n "$SRCNAM" ] && [ -n "$VERSION" ] && [ -f "$SRCNAM-$VERSION" ]; then
      case "$SRCNAM-$VERSION" in
@@ -864,11 +864,17 @@ set +e
          *.zip)      unzip "$SRCNAM-$VERSION"    ;;
          *.Z)        uncompress "$SRCNAM-$VERSION" ;;
          *.7z)       7z x "$SRCNAM-$VERSION"     ;;
-         *)          echo "Error: Don't know how to extract '$SRCNAM-$VERSION'." ;;
+         *)          tar --auto-compress -xvf $SRCNAM-$VERSION ;;
      esac
  else
-     echo "Error: '$1' is not a valid file!"
- fi
+    if [ -f "$SRCNAM-$VERSION" ]; then
+        file "$SRCNAM-$VERSION"
+    elif [ -f "$1" ]; then
+        file "$1"
+    else
+        echo "Error: '$1' is not a valid file!"
+    fi
+fi
 
  if [[ ! -e "$CWD/README" && ! -e "$CWD/README.md" ]]; then
    # If neither file exists, create README
