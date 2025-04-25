@@ -428,7 +428,7 @@ fi
 	  exit 1
 	fi
 
-	if [ -f "$CWD"/slack-required ]; then
+	if [ -s "$CWD"/slack-required ]; then
 	  cat "$CWD"/slack-required > "$PKG"/install/slack-required
 	fi
 
@@ -542,7 +542,7 @@ fi
 	  exit 1
 	fi
 
-	if [ -f "$CWD"/slack-required ]; then
+	if [ -s "$CWD"/slack-required ]; then
 	  cat "$CWD"/slack-required > "$PKG"/install/slack-required
 	fi
 
@@ -585,6 +585,9 @@ cd "$PKG" || exit 66
 	  | xargs rm -f
 
 	  cd "$PKG" || exit
+
+# Dont ship empty slack-required in PKG...
+[ ! -s "$PKG"/usr/doc/"$PRGNAM-$VERSION"/slack-required ] && rm "$PKG"/usr/doc/"$PRGNAM-$VERSION"/slack-required
 if [ -z "$MAKEPKG_FLAGS" ]; then
     echo "MAKEPKG_FLAGS is empty or unset, using default"
 # add sudo here in case you build as user , else makepkg stop...
@@ -603,7 +606,7 @@ fi
 	  cat "$PKG"/install/slack-desc | grep "^${PRGNAM}" > $PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE".txt
 	  echo "$PRGNAM $SortDesc" > README || true
       echo "$LongDesc" >> README || true
-	if [ -f "$PKG"/install/slack-required ]; then
+	if [ -s "$PKG"/install/slack-required ]; then
 	  # shellcheck disable=SC2086
 	  cat "$PKG"/install/slack-required > $PRGNAM-$VERSION-"$ARCH"-"$BUILD""$TAG".dep
 	fi
@@ -951,8 +954,8 @@ INPUT_FILE="$CWD"/"$PRGNAM".info
 OUTPUT_FILE="$PKG"/usr/doc/"$PRGNAM-$VERSION"/slack-required
 mkdir -p "$PKG"/usr/doc/"$PRGNAM-$VERSION"
 touch "$OUTPUT_FILE"
-if [ -f "$CWD/slack-required" ]; then
-    # If the file "slack-required" exists, copy its content to OUTPUT_FILE
+if [ -s "$CWD/slack-required" ]; then
+    # If the file "slack-required" exists and not empty, copy its content to OUTPUT_FILE
     cat "$CWD/slack-required" > "$OUTPUT_FILE"
     sudo cat "$CWD/slack-required" > "$OUTPUT"/"$PRGNAM".dep
 else
