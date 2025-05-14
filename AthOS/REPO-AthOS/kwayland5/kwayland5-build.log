@@ -1,0 +1,1223 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules plasma-wayland-protocols
+doxygen is already installed!
+extra-cmake-modules is already installed!
+plasma-wayland-protocols is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-14 23:52:24--  https://download.kde.org/stable/frameworks/5.116/kwayland-5.116.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kwayland-5.116.0.tar.xz [following]
+--2025-05-14 23:52:24--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kwayland-5.116.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 337540 (330K) [application/octet-stream]
+Saving to: ‘kwayland-5.116.0.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 15% 1.33M 0s
+    50K .......... .......... .......... .......... .......... 30% 1.45M 0s
+   100K .......... .......... .......... .......... .......... 45% 5.18M 0s
+   150K .......... .......... .......... .......... .......... 60% 1.95M 0s
+   200K .......... .......... .......... .......... .......... 75% 6.84M 0s
+   250K .......... .......... .......... .......... .......... 91% 6.72M 0s
+   300K .......... .......... .........                       100% 6.42M=0.1s
+
+2025-05-14 23:52:25 (2.60 MB/s) - ‘kwayland-5.116.0.tar.xz’ saved [337540/337540]
+
+Found file: kwayland-5.116.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kwayland-5.116.0/
+kwayland-5.116.0/cmake/
+kwayland-5.116.0/cmake/Modules/
+kwayland-5.116.0/cmake/Modules/FindWaylandProtocols.cmake
+kwayland-5.116.0/README.md
+kwayland-5.116.0/LICENSES/
+kwayland-5.116.0/LICENSES/MIT.txt
+kwayland-5.116.0/LICENSES/BSD-3-Clause.txt
+kwayland-5.116.0/LICENSES/LGPL-3.0-only.txt
+kwayland-5.116.0/LICENSES/LGPL-2.1-only.txt
+kwayland-5.116.0/LICENSES/CC0-1.0.txt
+kwayland-5.116.0/LICENSES/MIT-CMU.txt
+kwayland-5.116.0/LICENSES/LGPL-2.1-or-later.txt
+kwayland-5.116.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+kwayland-5.116.0/.gitlab-ci.yml
+kwayland-5.116.0/tests/
+kwayland-5.116.0/tests/touchclienttest.cpp
+kwayland-5.116.0/tests/qtwaylandintegrationtest.h
+kwayland-5.116.0/tests/shadowtest.cpp
+kwayland-5.116.0/tests/qtwaylandintegrationtest.cpp
+kwayland-5.116.0/tests/copyclient.cpp
+kwayland-5.116.0/tests/renderingservertest.cpp
+kwayland-5.116.0/tests/xdgtest.cpp
+kwayland-5.116.0/tests/waylandservertest.cpp
+kwayland-5.116.0/tests/touchclienttest.h
+kwayland-5.116.0/tests/plasmasurfacetest.cpp
+kwayland-5.116.0/tests/dpmstest.cpp
+kwayland-5.116.0/tests/subsurfacetest.cpp
+kwayland-5.116.0/tests/xdgforeigntest.cpp
+kwayland-5.116.0/tests/pasteclient.cpp
+kwayland-5.116.0/tests/CMakeLists.txt
+kwayland-5.116.0/tests/paneltest.cpp
+kwayland-5.116.0/.git-blame-ignore-revs
+kwayland-5.116.0/.kde-ci.yml
+kwayland-5.116.0/KF5WaylandConfig.cmake.in
+kwayland-5.116.0/docs/
+kwayland-5.116.0/docs/Doxyfile.local
+kwayland-5.116.0/autotests/
+kwayland-5.116.0/autotests/server/
+kwayland-5.116.0/autotests/server/test_display.cpp
+kwayland-5.116.0/autotests/server/test_no_xdg_runtime_dir.cpp
+kwayland-5.116.0/autotests/server/test_tablet_interface.cpp
+kwayland-5.116.0/autotests/server/test_qt_surface_extension.cpp
+kwayland-5.116.0/autotests/server/test_seat.cpp
+kwayland-5.116.0/autotests/server/surfaceextension_helper.cpp
+kwayland-5.116.0/autotests/server/CMakeLists.txt
+kwayland-5.116.0/autotests/client/
+kwayland-5.116.0/autotests/client/test_wayland_registry.cpp
+kwayland-5.116.0/autotests/client/test_error.cpp
+kwayland-5.116.0/autotests/client/test_wayland_surface.cpp
+kwayland-5.116.0/autotests/client/test_xdg_shell.h
+kwayland-5.116.0/autotests/client/test_xdg_decoration.cpp
+kwayland-5.116.0/autotests/client/test_wayland_connection_thread.cpp
+kwayland-5.116.0/autotests/client/test_xdg_shell_v6.cpp
+kwayland-5.116.0/autotests/client/test_wayland_output.cpp
+kwayland-5.116.0/autotests/client/test_shadow.cpp
+kwayland-5.116.0/autotests/client/test_plasma_window_model.cpp
+kwayland-5.116.0/autotests/client/test_selection.cpp
+kwayland-5.116.0/autotests/client/test_compositor.cpp
+kwayland-5.116.0/autotests/client/test_wayland_subsurface.cpp
+kwayland-5.116.0/autotests/client/test_datadevice.cpp
+kwayland-5.116.0/autotests/client/test_wayland_slide.cpp
+kwayland-5.116.0/autotests/client/test_wayland_outputmanagement.cpp
+kwayland-5.116.0/autotests/client/test_xdg_shell_stable.cpp
+kwayland-5.116.0/autotests/client/test_datasource.cpp
+kwayland-5.116.0/autotests/client/test_fake_input.cpp
+kwayland-5.116.0/autotests/client/test_plasma_virtual_desktop.cpp
+kwayland-5.116.0/autotests/client/test_xdg_output.cpp
+kwayland-5.116.0/autotests/client/test_xdg_foreign.cpp
+kwayland-5.116.0/autotests/client/test_wayland_appmenu.cpp
+kwayland-5.116.0/autotests/client/test_pointer_constraints.cpp
+kwayland-5.116.0/autotests/client/test_wayland_seat.cpp
+kwayland-5.116.0/autotests/client/test_xdg_shell_v5.cpp
+kwayland-5.116.0/autotests/client/test_wayland_outputdevice.cpp
+kwayland-5.116.0/autotests/client/test_plasmashell.cpp
+kwayland-5.116.0/autotests/client/test_wayland_filter.cpp
+kwayland-5.116.0/autotests/client/test_server_side_decoration.cpp
+kwayland-5.116.0/autotests/client/test_server_side_decoration_palette.cpp
+kwayland-5.116.0/autotests/client/test_drag_drop.cpp
+kwayland-5.116.0/autotests/client/test_wayland_contrast.cpp
+kwayland-5.116.0/autotests/client/test_wayland_region.cpp
+kwayland-5.116.0/autotests/client/test_wayland_shell.cpp
+kwayland-5.116.0/autotests/client/test_xdg_shell.cpp
+kwayland-5.116.0/autotests/client/test_shm_pool.cpp
+kwayland-5.116.0/autotests/client/test_remote_access.cpp
+kwayland-5.116.0/autotests/client/test_wayland_windowmanagement.cpp
+kwayland-5.116.0/autotests/client/test_wayland_subcompositor.cpp
+kwayland-5.116.0/autotests/client/CMakeLists.txt
+kwayland-5.116.0/autotests/client/test_wayland_blur.cpp
+kwayland-5.116.0/autotests/client/test_idle.cpp
+kwayland-5.116.0/autotests/client/test_wayland_fullscreen_shell.cpp
+kwayland-5.116.0/autotests/client/test_text_input.cpp
+kwayland-5.116.0/autotests/CMakeLists.txt
+kwayland-5.116.0/CMakeLists.txt
+kwayland-5.116.0/src/
+kwayland-5.116.0/src/.krazy
+kwayland-5.116.0/src/compat/
+kwayland-5.116.0/src/compat/wayland-xdg-shell-v5-protocol.c
+kwayland-5.116.0/src/compat/wayland-xdg-shell-v5-client-protocol.h
+kwayland-5.116.0/src/compat/wayland-xdg-shell-v5-server-protocol.h
+kwayland-5.116.0/src/tools/
+kwayland-5.116.0/src/tools/mapping.txt
+kwayland-5.116.0/src/tools/generator.cpp
+kwayland-5.116.0/src/tools/testserver/
+kwayland-5.116.0/src/tools/testserver/testserver.cpp
+kwayland-5.116.0/src/tools/testserver/main.cpp
+kwayland-5.116.0/src/tools/testserver/testserver.h
+kwayland-5.116.0/src/tools/testserver/CMakeLists.txt
+kwayland-5.116.0/src/tools/CMakeLists.txt
+kwayland-5.116.0/src/tools/generator.h
+kwayland-5.116.0/src/server/
+kwayland-5.116.0/src/server/linuxdmabuf_v1_interface.cpp
+kwayland-5.116.0/src/server/resource.cpp
+kwayland-5.116.0/src/server/shadow_interface.cpp
+kwayland-5.116.0/src/server/surfacerole_p.h
+kwayland-5.116.0/src/server/keyboard_interface.cpp
+kwayland-5.116.0/src/server/generic_shell_surface_p.h
+kwayland-5.116.0/src/server/keyboard_interface.h
+kwayland-5.116.0/src/server/buffer_interface.cpp
+kwayland-5.116.0/src/server/contrast_interface.cpp
+kwayland-5.116.0/src/server/remote_access_interface.cpp
+kwayland-5.116.0/src/server/global.h
+kwayland-5.116.0/src/server/datadevice_interface.cpp
+kwayland-5.116.0/src/server/plasmavirtualdesktop_interface.h
+kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h
+kwayland-5.116.0/src/server/linuxdmabuf_v1_interface.h
+kwayland-5.116.0/src/server/datadevice_interface.h
+kwayland-5.116.0/src/server/tablet_interface.h
+kwayland-5.116.0/src/server/subcompositor_interface.cpp
+kwayland-5.116.0/src/server/xdgforeign_v2_interface.cpp
+kwayland-5.116.0/src/server/eglstream_controller_interface.h
+kwayland-5.116.0/src/server/shadow_interface.h
+kwayland-5.116.0/src/server/xdgshell_v6_interface.cpp
+kwayland-5.116.0/src/server/contrast_interface.h
+kwayland-5.116.0/src/server/xdgshell_v6_interface_p.h
+kwayland-5.116.0/src/server/subcompositor_interface.h
+kwayland-5.116.0/src/server/idleinhibit_interface.h
+kwayland-5.116.0/src/server/compositor_interface.h
+kwayland-5.116.0/src/server/xdgshell_v5_interface.cpp
+kwayland-5.116.0/src/server/xdgoutput_interface.h
+kwayland-5.116.0/src/server/appmenu_interface.cpp
+kwayland-5.116.0/src/server/outputconfiguration_interface.h
+kwayland-5.116.0/src/server/xdgforeign_interface.cpp
+kwayland-5.116.0/src/server/textinput_interface_v2.cpp
+kwayland-5.116.0/src/server/pointerconstraints_interface_p.h
+kwayland-5.116.0/src/server/outputconfiguration_interface.cpp
+kwayland-5.116.0/src/server/idle_interface.cpp
+kwayland-5.116.0/src/server/pointer_interface_p.h
+kwayland-5.116.0/src/server/plasmashell_interface.cpp
+kwayland-5.116.0/src/server/xdgforeign_v2_interface_p.h
+kwayland-5.116.0/src/server/xdgdecoration_interface.cpp
+kwayland-5.116.0/src/server/xdgshell_interface.cpp
+kwayland-5.116.0/src/server/pointergestures_interface.cpp
+kwayland-5.116.0/src/server/resource_p.h
+kwayland-5.116.0/src/server/pointergestures_interface_v1.cpp
+kwayland-5.116.0/src/server/output_interface.cpp
+kwayland-5.116.0/src/server/relativepointer_interface_v1.cpp
+kwayland-5.116.0/src/server/idleinhibit_interface_v1.cpp
+kwayland-5.116.0/src/server/eglstream_controller_interface_p.h
+kwayland-5.116.0/src/server/xdgshell_stable_interface.cpp
+kwayland-5.116.0/src/server/global.cpp
+kwayland-5.116.0/src/server/fakeinput_interface.h
+kwayland-5.116.0/src/server/blur_interface.h
+kwayland-5.116.0/src/server/plasmavirtualdesktop_interface.cpp
+kwayland-5.116.0/src/server/dpms_interface_p.h
+kwayland-5.116.0/src/server/output_interface.h
+kwayland-5.116.0/src/server/seat_interface.cpp
+kwayland-5.116.0/src/server/datasource_interface.h
+kwayland-5.116.0/src/server/pointerconstraints_interface_v1.cpp
+kwayland-5.116.0/src/server/server_decoration_interface.h
+kwayland-5.116.0/src/server/dpms_interface.h
+kwayland-5.116.0/src/server/server_decoration_palette_interface.cpp
+kwayland-5.116.0/src/server/seat_interface.h
+kwayland-5.116.0/src/server/xdgshell_interface_p.h
+kwayland-5.116.0/src/server/region_interface.h
+kwayland-5.116.0/src/server/pointerconstraints_interface.cpp
+kwayland-5.116.0/src/server/region_interface.cpp
+kwayland-5.116.0/src/server/surface_interface.h
+kwayland-5.116.0/src/server/seat_interface_p.h
+kwayland-5.116.0/src/server/filtered_display.cpp
+kwayland-5.116.0/src/server/display.cpp
+kwayland-5.116.0/src/server/textinput_interface.h
+kwayland-5.116.0/src/server/fakeinput_interface.cpp
+kwayland-5.116.0/src/server/appmenu_interface.h
+kwayland-5.116.0/src/server/idleinhibit_interface.cpp
+kwayland-5.116.0/src/server/relativepointer_interface.cpp
+kwayland-5.116.0/src/server/plasmashell_interface.h
+kwayland-5.116.0/src/server/outputmanagement_interface.cpp
+kwayland-5.116.0/src/server/remote_access_interface.h
+kwayland-5.116.0/src/server/dataoffer_interface.cpp
+kwayland-5.116.0/src/server/keystate_interface.h
+kwayland-5.116.0/src/server/surface_interface_p.h
+kwayland-5.116.0/src/server/textinput_interface_v0.cpp
+kwayland-5.116.0/src/server/xdgshell_v5_interface_p.h
+kwayland-5.116.0/src/server/remote_access_interface_p.h
+kwayland-5.116.0/src/server/touch_interface.cpp
+kwayland-5.116.0/src/server/datadevicemanager_interface.h
+kwayland-5.116.0/src/server/drm_fourcc.h
+kwayland-5.116.0/src/server/touch_interface.h
+kwayland-5.116.0/src/server/outputdevice_interface.cpp
+kwayland-5.116.0/src/server/buffer_interface.h
+kwayland-5.116.0/src/server/display.h
+kwayland-5.116.0/src/server/qtsurfaceextension_interface.h
+kwayland-5.116.0/src/server/pointer_interface.cpp
+kwayland-5.116.0/src/server/idleinhibit_interface_p.h
+kwayland-5.116.0/src/server/subsurface_interface_p.h
+kwayland-5.116.0/src/server/outputchangeset.cpp
+kwayland-5.116.0/src/server/xdgforeign_interface.h
+kwayland-5.116.0/src/server/pointerconstraints_interface.h
+kwayland-5.116.0/src/server/filtered_display.h
+kwayland-5.116.0/src/server/outputchangeset_p.h
+kwayland-5.116.0/src/server/dpms_interface.cpp
+kwayland-5.116.0/src/server/resource.h
+kwayland-5.116.0/src/server/xdgoutput_interface.cpp
+kwayland-5.116.0/src/server/idle_interface.h
+kwayland-5.116.0/src/server/pointergestures_interface_p.h
+kwayland-5.116.0/src/server/relativepointer_interface.h
+kwayland-5.116.0/src/server/compositor_interface.cpp
+kwayland-5.116.0/src/server/surfacerole.cpp
+kwayland-5.116.0/src/server/server_decoration_interface.cpp
+kwayland-5.116.0/src/server/clientconnection.cpp
+kwayland-5.116.0/src/server/dataoffer_interface_p.h
+kwayland-5.116.0/src/server/shell_interface.h
+kwayland-5.116.0/src/server/outputchangeset.h
+kwayland-5.116.0/src/server/relativepointer_interface_p.h
+kwayland-5.116.0/src/server/qtsurfaceextension_interface.cpp
+kwayland-5.116.0/src/server/eglstream_controller_interface.cpp
+kwayland-5.116.0/src/server/clientconnection.h
+kwayland-5.116.0/src/server/server_decoration_palette_interface.h
+kwayland-5.116.0/src/server/outputmanagement_interface.h
+kwayland-5.116.0/src/server/tablet_interface.cpp
+kwayland-5.116.0/src/server/slide_interface.h
+kwayland-5.116.0/src/server/keyboard_interface_p.h
+kwayland-5.116.0/src/server/datadevicemanager_interface.cpp
+kwayland-5.116.0/src/server/textinput_interface_p.h
+kwayland-5.116.0/src/server/shell_interface.cpp
+kwayland-5.116.0/src/server/slide_interface.cpp
+kwayland-5.116.0/src/server/dataoffer_interface.h
+kwayland-5.116.0/src/server/keystate_interface.cpp
+kwayland-5.116.0/src/server/plasmawindowmanagement_interface.cpp
+kwayland-5.116.0/src/server/global_p.h
+kwayland-5.116.0/src/server/pointer_interface.h
+kwayland-5.116.0/src/server/CMakeLists.txt
+kwayland-5.116.0/src/server/pointergestures_interface.h
+kwayland-5.116.0/src/server/surface_interface.cpp
+kwayland-5.116.0/src/server/blur_interface.cpp
+kwayland-5.116.0/src/server/textinput_interface.cpp
+kwayland-5.116.0/src/server/outputdevice_interface.h
+kwayland-5.116.0/src/server/xdgshell_interface.h
+kwayland-5.116.0/src/server/datasource_interface.cpp
+kwayland-5.116.0/src/server/xdgshell_stable_interface_p.h
+kwayland-5.116.0/src/server/xdgdecoration_interface.h
+kwayland-5.116.0/src/client/
+kwayland-5.116.0/src/client/subsurface.cpp
+kwayland-5.116.0/src/client/xdgshell.h
+kwayland-5.116.0/src/client/fullscreen_shell.h
+kwayland-5.116.0/src/client/xdgforeign_p.h
+kwayland-5.116.0/src/client/idle.h
+kwayland-5.116.0/src/client/region.cpp
+kwayland-5.116.0/src/client/dataoffer.cpp
+kwayland-5.116.0/src/client/idle.cpp
+kwayland-5.116.0/src/client/shm_pool.h
+kwayland-5.116.0/src/client/buffer.h
+kwayland-5.116.0/src/client/appmenu.h
+kwayland-5.116.0/src/client/surface_p.h
+kwayland-5.116.0/src/client/pointer.h
+kwayland-5.116.0/src/client/server_decoration_palette.cpp
+kwayland-5.116.0/src/client/plasmawindowmanagement.h
+kwayland-5.116.0/src/client/outputconfiguration.cpp
+kwayland-5.116.0/src/client/pointergestures.cpp
+kwayland-5.116.0/src/client/keystate.cpp
+kwayland-5.116.0/src/client/shadow.cpp
+kwayland-5.116.0/src/client/datadevicemanager.h
+kwayland-5.116.0/src/client/surface.h
+kwayland-5.116.0/src/client/fullscreen_shell.cpp
+kwayland-5.116.0/src/client/event_queue.cpp
+kwayland-5.116.0/src/client/plasmavirtualdesktop.h
+kwayland-5.116.0/src/client/fakeinput.cpp
+kwayland-5.116.0/src/client/plasmawindowmanagement.cpp
+kwayland-5.116.0/src/client/output.cpp
+kwayland-5.116.0/src/client/subsurface.h
+kwayland-5.116.0/src/client/dataoffer.h
+kwayland-5.116.0/src/client/datasource.cpp
+kwayland-5.116.0/src/client/buffer_p.h
+kwayland-5.116.0/src/client/fakeinput.h
+kwayland-5.116.0/src/client/server_decoration_palette.h
+kwayland-5.116.0/src/client/connection_thread.h
+kwayland-5.116.0/src/client/xdgshell_v5.cpp
+kwayland-5.116.0/src/client/event_queue.h
+kwayland-5.116.0/src/client/surface_p.cpp
+kwayland-5.116.0/src/client/server_decoration.h
+kwayland-5.116.0/src/client/keyboard.cpp
+kwayland-5.116.0/src/client/relativepointer.h
+kwayland-5.116.0/src/client/remote_access.cpp
+kwayland-5.116.0/src/client/server_decoration.cpp
+kwayland-5.116.0/src/client/shm_pool.cpp
+kwayland-5.116.0/src/client/textinput.cpp
+kwayland-5.116.0/src/client/datadevicemanager.cpp
+kwayland-5.116.0/src/client/idleinhibit.cpp
+kwayland-5.116.0/src/client/textinput_v0.cpp
+kwayland-5.116.0/src/client/wayland_pointer_p.h
+kwayland-5.116.0/src/client/contrast.h
+kwayland-5.116.0/src/client/surface.cpp
+kwayland-5.116.0/src/client/compositor.h
+kwayland-5.116.0/src/client/shadow.h
+kwayland-5.116.0/src/client/xdgforeign_v2.cpp
+kwayland-5.116.0/src/client/subcompositor.cpp
+kwayland-5.116.0/src/client/xdgshell.cpp
+kwayland-5.116.0/src/client/datasource.h
+kwayland-5.116.0/src/client/xdgforeign_v2.h
+kwayland-5.116.0/src/client/region.h
+kwayland-5.116.0/src/client/textinput_v2.cpp
+kwayland-5.116.0/src/client/pointergestures.h
+kwayland-5.116.0/src/client/blur.h
+kwayland-5.116.0/src/client/plasmavirtualdesktop.cpp
+kwayland-5.116.0/src/client/textinput_p.h
+kwayland-5.116.0/src/client/output.h
+kwayland-5.116.0/src/client/plasmawindowmodel.h
+kwayland-5.116.0/src/client/plasmashell.cpp
+kwayland-5.116.0/src/client/dpms.cpp
+kwayland-5.116.0/src/client/xdgoutput.cpp
+kwayland-5.116.0/src/client/datadevice.h
+kwayland-5.116.0/src/client/registry.h
+kwayland-5.116.0/src/client/xdgdecoration.h
+kwayland-5.116.0/src/client/registry.cpp
+kwayland-5.116.0/src/client/xdgoutput.h
+kwayland-5.116.0/src/client/shell.h
+kwayland-5.116.0/src/client/textinput.h
+kwayland-5.116.0/src/client/keyboard.h
+kwayland-5.116.0/src/client/subcompositor.h
+kwayland-5.116.0/src/client/appmenu.cpp
+kwayland-5.116.0/src/client/touch.cpp
+kwayland-5.116.0/src/client/blur.cpp
+kwayland-5.116.0/src/client/protocols/
+kwayland-5.116.0/src/client/protocols/outputdevice.xml
+kwayland-5.116.0/src/client/protocols/output-management.xml
+kwayland-5.116.0/src/client/xdgdecoration.cpp
+kwayland-5.116.0/src/client/outputdevice.h
+kwayland-5.116.0/src/client/plasmashell.h
+kwayland-5.116.0/src/client/contrast.cpp
+kwayland-5.116.0/src/client/remote_access.h
+kwayland-5.116.0/src/client/seat.h
+kwayland-5.116.0/src/client/xdgshell_p.h
+kwayland-5.116.0/src/client/plasmawindowmodel.cpp
+kwayland-5.116.0/src/client/compositor.cpp
+kwayland-5.116.0/src/client/outputmanagement.h
+kwayland-5.116.0/src/client/keystate.h
+kwayland-5.116.0/src/client/touch.h
+kwayland-5.116.0/src/client/connection_thread.cpp
+kwayland-5.116.0/src/client/datadevice.cpp
+kwayland-5.116.0/src/client/CMakeLists.txt
+kwayland-5.116.0/src/client/shell.cpp
+kwayland-5.116.0/src/client/seat.cpp
+kwayland-5.116.0/src/client/xdgforeign.h
+kwayland-5.116.0/src/client/outputdevice.cpp
+kwayland-5.116.0/src/client/pointerconstraints.h
+kwayland-5.116.0/src/client/pointer.cpp
+kwayland-5.116.0/src/client/xdgshell_v6.cpp
+kwayland-5.116.0/src/client/xdgforeign.cpp
+kwayland-5.116.0/src/client/xdgshell_stable.cpp
+kwayland-5.116.0/src/client/outputconfiguration.h
+kwayland-5.116.0/src/client/idleinhibit.h
+kwayland-5.116.0/src/client/slide.h
+kwayland-5.116.0/src/client/slide.cpp
+kwayland-5.116.0/src/client/dpms.h
+kwayland-5.116.0/src/client/buffer.cpp
+kwayland-5.116.0/src/client/outputmanagement.cpp
+kwayland-5.116.0/src/client/pointerconstraints.cpp
+kwayland-5.116.0/src/client/relativepointer.cpp
+kwayland-5.116.0/src/CMakeLists.txt
+kwayland-5.116.0/.gitignore
+kwayland-5.116.0/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- 
+
+CMake Warning (dev) at CMakeLists.txt:26 (include):
+  Policy CMP0173 is not set: The CMakeFindFrameworks module is removed.  Run
+  "cmake --help-policy CMP0173" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/cmake-4.0/Modules/CMakeFindFrameworks.cmake:29 (message):
+  CMakeFindFrameworks.cmake is not maintained and lacks support for more
+  recent framework handling.  It will be removed in a future version of
+  CMake.  Update the code to use find_library() instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:26 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found QHelpGenerator executable: /usr/lib64/qt5/bin/qhelpgenerator
+-- No such target Qt5Gui_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/build/src/KF5Wayland_ECMQchDoxygen.config' updated.
+
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.116.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt5Gui (required version >= 5.15.2)
+ * Qt5Concurrent
+ * Qt5 (required version >= 5.15.2)
+ * Qt5WaylandClient (required version >= 5.15.2)
+ * QtWaylandScanner, Executable that converts XML protocol files to C++ code, <https://qt.io/>
+ * Threads
+ * Qt5XkbCommonSupport
+ * Wayland (required version >= 1.15), C library implementation of the Wayland protocol: a protocol for a compositor to talk to its clients, <https://wayland.freedesktop.org/>
+ * WaylandProtocols (required version >= 1.15), Specifications of extended Wayland protocols, <https://wayland.freedesktop.org/>
+ * PkgConfig
+ * EGL, A platform-agnostic mechanism for creating rendering surfaces for use with other graphics libraries, such as OpenGL|ES and OpenVG., <https://www.khronos.org/egl/>
+ * PlasmaWaylandProtocols (required version >= 1.9.0)
+ * WaylandScanner, Executable that converts XML protocol files to C code, <https://wayland.freedesktop.org/>
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * QHelpGenerator, Part of Qt5 tools
+   Needed for API dox QCH file generation
+
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/build
+[1/260] Automatic MOC for target KF5WaylandClient
+[2/260] Generating wayland-fullscreen-shell-protocol.c
+[3/260] Generating wayland-output-management-protocol.c
+[4/260] Generating wayland-org_kde_kwin_outputdevice-protocol.c
+[5/260] Generating wayland-plasma-shell-protocol.c
+[6/260] Generating wayland-plasma-virtual-desktop-protocol.c
+[7/260] Generating wayland-idle-protocol.c
+[8/260] Generating wayland-fake-input-protocol.c
+[9/260] Generating wayland-blur-protocol.c
+[10/260] Generating wayland-dpms-protocol.c
+[11/260] Generating wayland-server-decoration-protocol.c
+[12/260] Generating wayland-plasma-window-management-protocol.c
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
+
+[13/260] Generating wayland-shadow-protocol.c
+[14/260] Generating wayland-contrast-protocol.c
+[15/260] Generating wayland-slide-protocol.c
+[16/260] Generating wayland-text-input-v0-protocol.c
+[17/260] Generating wayland-text-input-v2-protocol.c
+[18/260] Generating wayland-xdg-shell-v6-protocol.c
+[19/260] Generating wayland-relativepointer-unstable-v1-protocol.c
+[20/260] Generating wayland-pointer-gestures-unstable-v1-protocol.c
+[21/260] Generating wayland-pointer-constraints-unstable-v1-protocol.c
+[22/260] Generating wayland-xdg-foreign-unstable-v2-protocol.c
+[23/260] Generating wayland-idle-inhibit-unstable-v1-protocol.c
+[24/260] Generating wayland-appmenu-protocol.c
+[25/260] Generating wayland-server-decoration-palette-protocol.c
+[26/260] Generating wayland-xdg-output-unstable-v1-protocol.c
+[27/260] Generating wayland-xdg-shell-protocol.c
+[28/260] Generating wayland-xdg-decoration-unstable-v1-protocol.c
+[29/260] Generating wayland-remote-access-protocol.c
+[30/260] Generating wayland-keystate-protocol.c
+[31/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/KF5WaylandClient_autogen/mocs_compilation.cpp.o
+[32/260] Automatic MOC for target KF5WaylandServer
+[33/260] Generating wayland-output-management-protocol.c
+[34/260] Generating wayland-org_kde_kwin_outputdevice-protocol.c
+[35/260] Generating wayland-plasma-shell-protocol.c
+[36/260] Generating wayland-plasma-virtual-desktop-protocol.c
+[37/260] Generating wayland-plasma-window-management-protocol.c
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
+
+[38/260] Generating wayland-qt-surface-extension-protocol.c
+[39/260] Generating wayland-idle-protocol.c
+[40/260] Generating wayland-fake-input-protocol.c
+[41/260] Generating wayland-shadow-protocol.c
+[42/260] Generating wayland-dpms-protocol.c
+[43/260] Generating wayland-blur-protocol.c
+[44/260] Generating wayland-contrast-protocol.c
+[45/260] Generating wayland-relativepointer-unstable-v1-protocol.c
+[46/260] Generating wayland-slide-protocol.c
+[47/260] Generating wayland-server_decoration-protocol.c
+[48/260] Generating wayland-text-protocol.c
+[49/260] Generating wayland-text-input-unstable-v2-protocol.c
+[50/260] Generating wayland-xdg-shell-v6-protocol.c
+[51/260] Generating wayland-pointer-gestures-unstable-v1-protocol.c
+[52/260] Generating wayland-pointer-constraints-unstable-v1-protocol.c
+[53/260] Generating wayland-xdg-foreign-unstable-v2-protocol.c
+[54/260] Generating wayland-idle-inhibit-unstable-v1-protocol.c
+[55/260] Generating wayland-appmenu-protocol.c
+[56/260] Generating wayland-server_decoration_palette-protocol.c
+[57/260] Generating wayland-remote-access-protocol.c
+[58/260] Generating wayland-xdg-output-protocol.c
+[59/260] Generating wayland-xdg-shell-protocol.c
+[60/260] Generating wayland-xdg-decoration-protocol.c
+[61/260] Generating wayland-eglstream-controller-protocol.c
+[62/260] Generating wayland-keystate-protocol.c
+[63/260] Generating wayland-linux-dmabuf-unstable-v1-protocol.c
+[64/260] Generating wayland-tablet-unstable-v2-protocol.c
+[65/260] Generating qwayland-server-tablet-unstable-v2.cpp
+[66/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/KF5WaylandServer_autogen/mocs_compilation.cpp.o
+[67/260] Generating src/KF5Wayland.qch, src/KF5Wayland.tags
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[68/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/dataoffer.cpp.o
+[69/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/idleinhibit.cpp.o
+[70/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/fakeinput.cpp.o
+[71/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/event_queue.cpp.o
+[72/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/remote_access.cpp.o
+[73/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/buffer.cpp.o
+[74/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/contrast.cpp.o
+[75/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/blur.cpp.o
+[76/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/idle.cpp.o
+[77/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/slide.cpp.o
+[78/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/compositor.cpp.o
+[79/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/blur_interface.cpp.o
+[80/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datadevicemanager.cpp.o
+[81/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/dpms.cpp.o
+[82/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/appmenu.cpp.o
+[83/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/keystate.cpp.o
+[84/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datasource.cpp.o
+[85/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/connection_thread.cpp.o
+[86/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/fullscreen_shell.cpp.o
+[87/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/keyboard.cpp.o
+[88/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datadevice.cpp.o
+[89/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/appmenu_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/appmenu_interface.cpp:47:116: warning: missing field 'release' initializer [-Wmissing-field-initializers]
+   47 | const struct org_kde_kwin_appmenu_manager_interface AppMenuManagerInterface::Private::s_interface = {createCallback};
+      |                                                                                                                    ^
+1 warning generated.
+[90/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/clientconnection.cpp.o
+[91/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/dataoffer_interface.cpp.o
+[92/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/compositor_interface.cpp.o
+[93/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/buffer_interface.cpp.o
+[94/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datasource_interface.cpp.o
+[95/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/global.cpp.o
+[96/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/contrast_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/contrast_interface.cpp:154:132: warning: missing field 'set_frost' initializer [-Wmissing-field-initializers]
+  154 |     {commitCallback, setRegionCallback, setContrastCallback, setIntensityCallback, setSaturationCallback, resourceDestroyedCallback};
+      |                                                                                                                                    ^
+1 warning generated.
+[97/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/fakeinput_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/fakeinput_interface.cpp:76:111: warning: missing field 'destroy' initializer [-Wmissing-field-initializers]
+   76 |                                                                                            keyboardKeyCallback};
+      |                                                                                                               ^
+1 warning generated.
+[98/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/filtered_display.cpp.o
+[99/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/dpms_interface.cpp.o
+[100/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datadevicemanager_interface.cpp.o
+[101/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idleinhibit_interface_v1.cpp.o
+[102/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idleinhibit_interface.cpp.o
+[103/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/keystate_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/keystate_interface.cpp:70:108: warning: missing field 'destroy' initializer [-Wmissing-field-initializers]
+   70 | const struct org_kde_kwin_keystate_interface KeyStateInterface::Private::s_interface = {fetchStatesCallback};
+      |                                                                                                            ^
+1 warning generated.
+[104/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/eglstream_controller_interface.cpp.o
+[105/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/linuxdmabuf_v1_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/linuxdmabuf_v1_interface.cpp:175:102: warning: missing field 'get_default_feedback' initializer [-Wmissing-field-initializers]
+  175 |                                                                                  createParamsCallback};
+      |                                                                                                      ^
+1 warning generated.
+[106/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/keyboard_interface.cpp.o
+[107/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datadevice_interface.cpp.o
+[108/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idle_interface.cpp.o
+[109/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputchangeset.cpp.o
+[110/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmashell_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmashell_interface.cpp:152:123: warning: missing field 'open_under_cursor' initializer [-Wmissing-field-initializers]
+  152 |                                                                                                    setSkipSwitcherCallback};
+      |                                                                                                                           ^
+1 warning generated.
+[111/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputmanagement_interface.cpp.o
+[112/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/relativepointer_interface.cpp.o
+[113/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputconfiguration_interface.cpp.o
+[114/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmavirtualdesktop_interface.cpp.o
+[115/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointerconstraints_interface_v1.cpp.o
+[116/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointerconstraints_interface.cpp.o
+[117/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/output_interface.cpp.o
+[118/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointergestures_interface.cpp.o
+[119/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/qtsurfaceextension_interface.cpp.o
+[120/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/region_interface.cpp.o
+[121/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/display.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/display.cpp:27:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h:36:5: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+   36 |     PlasmaWindowManagementInterface() = default;
+      |     ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h:31:63: note: default constructor of 'PlasmaWindowManagementInterface' is implicitly deleted because base class 'Global' has no default constructor
+   31 | class KWAYLANDSERVER_EXPORT PlasmaWindowManagementInterface : public Global
+      |                                                               ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h:36:41: note: replace 'default' with 'delete'
+   36 |     PlasmaWindowManagementInterface() = default;
+      |                                         ^~~~~~~
+      |                                         delete
+1 warning generated.
+[122/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/resource.cpp.o
+[123/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/relativepointer_interface_v1.cpp.o
+[124/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointergestures_interface_v1.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/pointergestures_interface_v1.cpp:44:156: warning: missing field 'release' initializer [-Wmissing-field-initializers]
+   44 | const struct zwp_pointer_gestures_v1_interface PointerGesturesUnstableV1Interface::Private::s_interface = {getSwipeGestureCallback, getPinchGestureCallback};
+      |                                                                                                                                                            ^
+1 warning generated.
+[125/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointer_interface.cpp.o
+[126/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputdevice_interface.cpp.o
+[127/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/server_decoration_interface.cpp.o
+[128/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmawindowmanagement_interface.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h:36:5: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+   36 |     PlasmaWindowManagementInterface() = default;
+      |     ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h:31:63: note: default constructor of 'PlasmaWindowManagementInterface' is implicitly deleted because base class 'Global' has no default constructor
+   31 | class KWAYLANDSERVER_EXPORT PlasmaWindowManagementInterface : public Global
+      |                                                               ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h:36:41: note: replace 'default' with 'delete'
+   36 |     PlasmaWindowManagementInterface() = default;
+      |                                         ^~~~~~~
+      |                                         delete
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.cpp:132:137: warning: missing field 'get_stacking_order' initializer [-Wmissing-field-initializers]
+  132 |                                                                                                                  getWindowByUuidCallback};
+      |                                                                                                                                         ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.cpp:344:127: warning: missing field 'request_enter_activity' initializer [-Wmissing-field-initializers]
+  344 |                                                                                             requestLeaveVirtualDesktopCallback};
+      |                                                                                                                               ^
+3 warnings generated.
+[129/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/slide_interface.cpp.o
+[130/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/remote_access_interface.cpp.o
+[131/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-output-management-protocol.c.o
+[132/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-org_kde_kwin_outputdevice-protocol.c.o
+[133/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-shell-protocol.c.o
+[134/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/surfacerole.cpp.o
+[135/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/server_decoration_palette_interface.cpp.o
+[136/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/shell_interface.cpp.o
+[137/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-virtual-desktop-protocol.c.o
+[138/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-window-management-protocol.c.o
+[139/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-idle-protocol.c.o
+[140/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/subcompositor_interface.cpp.o
+[141/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-qt-surface-extension-protocol.c.o
+[142/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-fake-input-protocol.c.o
+[143/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-blur-protocol.c.o
+[144/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-shadow-protocol.c.o
+[145/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-contrast-protocol.c.o
+[146/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface.cpp.o
+[147/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgdecoration_interface.cpp.o
+[148/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-slide-protocol.c.o
+[149/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-relativepointer-unstable-v1-protocol.c.o
+[150/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-server_decoration-protocol.c.o
+[151/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-dpms-protocol.c.o
+[152/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-text-protocol.c.o
+[153/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/shadow_interface.cpp.o
+[154/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-text-input-unstable-v2-protocol.c.o
+[155/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o
+[156/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-shell-v6-protocol.c.o
+[157/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-appmenu-protocol.c.o
+[158/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o
+[159/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o
+[160/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o
+[161/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-server_decoration_palette-protocol.c.o
+[162/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/touch_interface.cpp.o
+[163/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-remote-access-protocol.c.o
+[164/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-eglstream-controller-protocol.c.o
+[165/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface_v0.cpp.o
+[166/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-output-protocol.c.o
+[167/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-decoration-protocol.c.o
+[168/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-tablet-unstable-v2-protocol.c.o
+[169/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-keystate-protocol.c.o
+[170/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-linux-dmabuf-unstable-v1-protocol.c.o
+[171/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-shell-protocol.c.o
+[172/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface_v2.cpp.o
+[173/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/tablet_interface.cpp.o
+[174/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/logging.cpp.o
+[175/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgoutput_interface.cpp.o
+[176/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/seat_interface.cpp.o
+[177/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgforeign_interface.cpp.o
+[178/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/surface_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/surface_interface.cpp:255:97: warning: missing field 'offset' initializer [-Wmissing-field-initializers]
+  255 |                                                                             damageBufferCallback};
+      |                                                                                                 ^
+1 warning generated.
+[179/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_v5_interface.cpp.o
+[180/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgforeign_v2_interface.cpp.o
+[181/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_interface.cpp.o
+[182/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_stable_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/xdgshell_stable_interface.cpp:608:110: warning: missing field 'set_reactive' initializer [-Wmissing-field-initializers]
+  608 |                                                                                             setOffsetCallback};
+      |                                                                                                              ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/xdgshell_stable_interface.cpp:924:122: warning: missing field 'reposition' initializer [-Wmissing-field-initializers]
+  924 | const struct xdg_popup_interface XdgPopupStableInterface::Private::s_interface = {resourceDestroyedCallback, grabCallback};
+      |                                                                                                                          ^
+2 warnings generated.
+[183/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/relativepointer.cpp.o
+[184/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmashell.cpp.o
+[185/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointer.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/pointer.cpp:72:155: warning: missing field 'axis_value120' initializer [-Wmissing-field-initializers]
+   72 |     {enterCallback, leaveCallback, motionCallback, buttonCallback, axisCallback, frameCallback, axisSourceCallback, axisStopCallback, axisDiscreteCallback};
+      |                                                                                                                                                           ^
+1 warning generated.
+[186/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputmanagement.cpp.o
+[187/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/output.cpp.o
+[188/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointerconstraints.cpp.o
+[189/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputconfiguration.cpp.o
+[190/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/region.cpp.o
+[191/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputdevice.cpp.o
+[192/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmavirtualdesktop.cpp.o
+[193/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_v6_interface.cpp.o
+[194/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmawindowmodel.cpp.o
+[195/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/seat.cpp.o
+[196/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/qwayland-server-tablet-unstable-v2.cpp.o
+[197/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/server_decoration_palette.cpp.o
+[198/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointergestures.cpp.o
+[199/260] Linking CXX shared library bin/libKF5WaylandServer.so.5.116.0
+[200/260] Creating library symlink bin/libKF5WaylandServer.so.5 bin/libKF5WaylandServer.so
+[201/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/__/compat/wayland-xdg-shell-v5-protocol.c.o
+[202/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shadow.cpp.o
+[203/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-fullscreen-shell-protocol.c.o
+[204/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-output-management-protocol.c.o
+[205/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-org_kde_kwin_outputdevice-protocol.c.o
+[206/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-shell-protocol.c.o
+[207/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-virtual-desktop-protocol.c.o
+[208/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput.cpp.o
+[209/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmawindowmanagement.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/plasmawindowmanagement.cpp:159:1: warning: missing field 'stacking_order_changed_2' initializer [-Wmissing-field-initializers]
+  159 | };
+      | ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/plasmawindowmanagement.cpp:442:1: warning: missing field 'client_geometry' initializer [-Wmissing-field-initializers]
+  442 | };
+      | ^
+2 warnings generated.
+[210/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/subcompositor.cpp.o
+[211/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-window-management-protocol.c.o
+[212/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-fake-input-protocol.c.o
+[213/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/server_decoration.cpp.o
+[214/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-shadow-protocol.c.o
+[215/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-idle-protocol.c.o
+[216/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-blur-protocol.c.o
+[217/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-contrast-protocol.c.o
+[218/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-dpms-protocol.c.o
+[219/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/subsurface.cpp.o
+[220/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-server-decoration-protocol.c.o
+[221/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-slide-protocol.c.o
+[222/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-shell-v6-protocol.c.o
+[223/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-text-input-v0-protocol.c.o
+[224/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-text-input-v2-protocol.c.o
+[225/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-relativepointer-unstable-v1-protocol.c.o
+[226/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o
+[227/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o
+[228/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o
+[229/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-appmenu-protocol.c.o
+[230/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shm_pool.cpp.o
+[231/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o
+[232/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/touch.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/touch.cpp:127:126: warning: missing field 'shape' initializer [-Wmissing-field-initializers]
+  127 | const wl_touch_listener Touch::Private::s_listener = {downCallback, upCallback, motionCallback, frameCallback, cancelCallback};
+      |                                                                                                                              ^
+1 warning generated.
+[233/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-server-decoration-palette-protocol.c.o
+[234/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-shell-protocol.c.o
+[235/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-decoration-unstable-v1-protocol.c.o
+[236/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-keystate-protocol.c.o
+[237/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-remote-access-protocol.c.o
+[238/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-output-unstable-v1-protocol.c.o
+[239/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgforeign_v2.cpp.o
+[240/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/surface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/surface.cpp:86:101: warning: missing field 'preferred_buffer_scale' initializer [-Wmissing-field-initializers]
+   86 | const struct wl_surface_listener Surface::Private::s_surfaceListener = {enterCallback, leaveCallback};
+      |                                                                                                     ^
+1 warning generated.
+[241/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shell.cpp.o
+[242/260] Automatic MOC for target org-kde-kf5-kwayland-testserver
+[243/260] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/org-kde-kf5-kwayland-testserver_autogen/mocs_compilation.cpp.o
+[244/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput_v2.cpp.o
+[245/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_v5.cpp.o
+[246/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgforeign.cpp.o
+[247/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput_v0.cpp.o
+[248/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/logging.cpp.o
+[249/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell.cpp.o
+[250/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_stable.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/xdgshell_stable.cpp:288:118: warning: missing field 'configure_bounds' initializer [-Wmissing-field-initializers]
+  288 | const struct xdg_toplevel_listener XdgTopLevelStable::Private::s_toplevelListener = {configureCallback, closeCallback};
+      |                                                                                                                      ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/xdgshell_stable.cpp:527:118: warning: missing field 'repositioned' initializer [-Wmissing-field-initializers]
+  527 | const struct xdg_popup_listener XdgShellPopupStable::Private::s_popupListener = {configureCallback, popupDoneCallback};
+      |                                                                                                                      ^
+2 warnings generated.
+[251/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgdecoration.cpp.o
+[252/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgoutput.cpp.o
+[253/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_v6.cpp.o
+[254/260] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/main.cpp.o
+[255/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/surface_p.cpp.o
+[256/260] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/testserver.cpp.o
+[257/260] Linking CXX executable bin/org-kde-kf5-kwayland-testserver
+[258/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/registry.cpp.o
+[259/260] Linking CXX shared library bin/libKF5WaylandClient.so.5.116.0
+[260/260] Creating library symlink bin/libKF5WaylandClient.so.5 bin/libKF5WaylandClient.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libKF5WaylandClient.so.5.116.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libKF5WaylandClient.so.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libKF5WaylandClient.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/kwaylandclient_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/appmenu.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/blur.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/buffer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/compositor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/connection_thread.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/contrast.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/event_queue.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/datadevice.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/datadevicemanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/dataoffer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/datasource.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/dpms.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/fakeinput.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/fullscreen_shell.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/idle.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/idleinhibit.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/keyboard.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/keystate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/remote_access.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/outputconfiguration.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/outputmanagement.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/outputdevice.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/output.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/pointer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/pointerconstraints.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/plasmashell.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/plasmavirtualdesktop.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/plasmawindowmanagement.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/plasmawindowmodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/pointergestures.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/region.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/registry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/relativepointer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/seat.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/server_decoration.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/server_decoration_palette.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/shadow.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/shell.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/shm_pool.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/slide.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/subcompositor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/subsurface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/surface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/touch.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/textinput.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/xdgdecoration.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/xdgshell.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/xdgforeign.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/KWayland/Client/xdgoutput.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/qt5/mkspecs/modules/qt_KWaylandClient.pri
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libKF5WaylandServer.so.5.116.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libKF5WaylandServer.so.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libKF5WaylandServer.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/kwaylandserver_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/appmenu_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/blur_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/buffer_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/clientconnection.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/compositor_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/contrast_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/datadevice_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/datadevicemanager_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/dataoffer_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/datasource_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/display.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/dpms_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/eglstream_controller_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/fakeinput_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/filtered_display.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/global.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/idle_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/idleinhibit_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/keyboard_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/keystate_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/linuxdmabuf_v1_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/output_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/outputchangeset.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/outputconfiguration_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/outputdevice_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/outputmanagement_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/plasmashell_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/plasmavirtualdesktop_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/plasmawindowmanagement_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/pointer_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/pointerconstraints_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/pointergestures_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/qtsurfaceextension_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/region_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/relativepointer_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/remote_access_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/resource.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/seat_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/server_decoration_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/server_decoration_palette_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/shadow_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/shell_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/slide_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/subcompositor_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/surface_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/tablet_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/textinput_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/touch_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/xdgdecoration_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/xdgforeign_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/xdgoutput_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/Server/xdgshell_interface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/qt5/mkspecs/modules/qt_KWaylandServer.pri
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libexec/org-kde-kf5-kwayland-testserver
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libexec/org-kde-kf5-kwayland-testserver" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/share/qlogging-categories5/kwayland.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/share/qlogging-categories5/kwayland.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Wayland.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Wayland.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/cmake/KF5Wayland/KF5WaylandQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/cmake/KF5Wayland/KF5WaylandConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/cmake/KF5Wayland/KF5WaylandConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/cmake/KF5Wayland/KF5WaylandTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/cmake/KF5Wayland/KF5WaylandTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/include/KF5/KWayland/kwayland_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/pkgconfig/KF5WaylandClient.pc
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/kwayland5.info: No such file or directory
+doxygen
+extra-cmake-modules
+plasma-wayland-protocols
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKF5WaylandClient.so	libKF5WaylandClient.so.5
+usr/lib64/libKF5WaylandClient.so.5	libKF5WaylandClient.so.5.116.0
+usr/lib64/libKF5WaylandServer.so	libKF5WaylandServer.so.5
+usr/lib64/libKF5WaylandServer.so.5	libKF5WaylandServer.so.5.116.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKF5WaylandClient.so )
+( cd usr/lib64 ; ln -sf libKF5WaylandClient.so.5 libKF5WaylandClient.so )
+( cd usr/lib64 ; rm -rf libKF5WaylandClient.so.5 )
+( cd usr/lib64 ; ln -sf libKF5WaylandClient.so.5.116.0 libKF5WaylandClient.so.5 )
+( cd usr/lib64 ; rm -rf libKF5WaylandServer.so )
+( cd usr/lib64 ; ln -sf libKF5WaylandServer.so.5 libKF5WaylandServer.so )
+( cd usr/lib64 ; rm -rf libKF5WaylandServer.so.5 )
+( cd usr/lib64 ; ln -sf libKF5WaylandServer.so.5.116.0 libKF5WaylandServer.so.5 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKF5WaylandClient.so.5'
+removed './usr/lib64/libKF5WaylandClient.so'
+removed './usr/lib64/libKF5WaylandServer.so'
+removed './usr/lib64/libKF5WaylandServer.so.5'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kwayland5/kwayland5-5.116.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kwayland5-5.116.0/
+usr/doc/kwayland5-5.116.0/README.md
+usr/doc/kwayland5-5.116.0/docs/
+usr/doc/kwayland5-5.116.0/docs/Doxyfile.local
+usr/doc/kwayland5-5.116.0/kwayland5.ini
+usr/doc/kwayland5-5.116.0/slack-required
+usr/doc/qt5-5.15.16_20250408_6cb26397/
+usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Wayland.qch
+usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Wayland.tags
+usr/include/
+usr/include/KF5/
+usr/include/KF5/KWayland/
+usr/include/KF5/KWayland/KWayland/
+usr/include/KF5/KWayland/KWayland/Client/
+usr/include/KF5/KWayland/KWayland/Client/appmenu.h
+usr/include/KF5/KWayland/KWayland/Client/blur.h
+usr/include/KF5/KWayland/KWayland/Client/buffer.h
+usr/include/KF5/KWayland/KWayland/Client/compositor.h
+usr/include/KF5/KWayland/KWayland/Client/connection_thread.h
+usr/include/KF5/KWayland/KWayland/Client/contrast.h
+usr/include/KF5/KWayland/KWayland/Client/datadevice.h
+usr/include/KF5/KWayland/KWayland/Client/datadevicemanager.h
+usr/include/KF5/KWayland/KWayland/Client/dataoffer.h
+usr/include/KF5/KWayland/KWayland/Client/datasource.h
+usr/include/KF5/KWayland/KWayland/Client/dpms.h
+usr/include/KF5/KWayland/KWayland/Client/event_queue.h
+usr/include/KF5/KWayland/KWayland/Client/fakeinput.h
+usr/include/KF5/KWayland/KWayland/Client/fullscreen_shell.h
+usr/include/KF5/KWayland/KWayland/Client/idle.h
+usr/include/KF5/KWayland/KWayland/Client/idleinhibit.h
+usr/include/KF5/KWayland/KWayland/Client/keyboard.h
+usr/include/KF5/KWayland/KWayland/Client/keystate.h
+usr/include/KF5/KWayland/KWayland/Client/kwaylandclient_export.h
+usr/include/KF5/KWayland/KWayland/Client/output.h
+usr/include/KF5/KWayland/KWayland/Client/outputconfiguration.h
+usr/include/KF5/KWayland/KWayland/Client/outputdevice.h
+usr/include/KF5/KWayland/KWayland/Client/outputmanagement.h
+usr/include/KF5/KWayland/KWayland/Client/plasmashell.h
+usr/include/KF5/KWayland/KWayland/Client/plasmavirtualdesktop.h
+usr/include/KF5/KWayland/KWayland/Client/plasmawindowmanagement.h
+usr/include/KF5/KWayland/KWayland/Client/plasmawindowmodel.h
+usr/include/KF5/KWayland/KWayland/Client/pointer.h
+usr/include/KF5/KWayland/KWayland/Client/pointerconstraints.h
+usr/include/KF5/KWayland/KWayland/Client/pointergestures.h
+usr/include/KF5/KWayland/KWayland/Client/region.h
+usr/include/KF5/KWayland/KWayland/Client/registry.h
+usr/include/KF5/KWayland/KWayland/Client/relativepointer.h
+usr/include/KF5/KWayland/KWayland/Client/remote_access.h
+usr/include/KF5/KWayland/KWayland/Client/seat.h
+usr/include/KF5/KWayland/KWayland/Client/server_decoration.h
+usr/include/KF5/KWayland/KWayland/Client/server_decoration_palette.h
+usr/include/KF5/KWayland/KWayland/Client/shadow.h
+usr/include/KF5/KWayland/KWayland/Client/shell.h
+usr/include/KF5/KWayland/KWayland/Client/shm_pool.h
+usr/include/KF5/KWayland/KWayland/Client/slide.h
+usr/include/KF5/KWayland/KWayland/Client/subcompositor.h
+usr/include/KF5/KWayland/KWayland/Client/subsurface.h
+usr/include/KF5/KWayland/KWayland/Client/surface.h
+usr/include/KF5/KWayland/KWayland/Client/textinput.h
+usr/include/KF5/KWayland/KWayland/Client/touch.h
+usr/include/KF5/KWayland/KWayland/Client/xdgdecoration.h
+usr/include/KF5/KWayland/KWayland/Client/xdgforeign.h
+usr/include/KF5/KWayland/KWayland/Client/xdgoutput.h
+usr/include/KF5/KWayland/KWayland/Client/xdgshell.h
+usr/include/KF5/KWayland/Server/
+usr/include/KF5/KWayland/Server/appmenu_interface.h
+usr/include/KF5/KWayland/Server/blur_interface.h
+usr/include/KF5/KWayland/Server/buffer_interface.h
+usr/include/KF5/KWayland/Server/clientconnection.h
+usr/include/KF5/KWayland/Server/compositor_interface.h
+usr/include/KF5/KWayland/Server/contrast_interface.h
+usr/include/KF5/KWayland/Server/datadevice_interface.h
+usr/include/KF5/KWayland/Server/datadevicemanager_interface.h
+usr/include/KF5/KWayland/Server/dataoffer_interface.h
+usr/include/KF5/KWayland/Server/datasource_interface.h
+usr/include/KF5/KWayland/Server/display.h
+usr/include/KF5/KWayland/Server/dpms_interface.h
+usr/include/KF5/KWayland/Server/eglstream_controller_interface.h
+usr/include/KF5/KWayland/Server/fakeinput_interface.h
+usr/include/KF5/KWayland/Server/filtered_display.h
+usr/include/KF5/KWayland/Server/global.h
+usr/include/KF5/KWayland/Server/idle_interface.h
+usr/include/KF5/KWayland/Server/idleinhibit_interface.h
+usr/include/KF5/KWayland/Server/keyboard_interface.h
+usr/include/KF5/KWayland/Server/keystate_interface.h
+usr/include/KF5/KWayland/Server/kwaylandserver_export.h
+usr/include/KF5/KWayland/Server/linuxdmabuf_v1_interface.h
+usr/include/KF5/KWayland/Server/output_interface.h
+usr/include/KF5/KWayland/Server/outputchangeset.h
+usr/include/KF5/KWayland/Server/outputconfiguration_interface.h
+usr/include/KF5/KWayland/Server/outputdevice_interface.h
+usr/include/KF5/KWayland/Server/outputmanagement_interface.h
+usr/include/KF5/KWayland/Server/plasmashell_interface.h
+usr/include/KF5/KWayland/Server/plasmavirtualdesktop_interface.h
+usr/include/KF5/KWayland/Server/plasmawindowmanagement_interface.h
+usr/include/KF5/KWayland/Server/pointer_interface.h
+usr/include/KF5/KWayland/Server/pointerconstraints_interface.h
+usr/include/KF5/KWayland/Server/pointergestures_interface.h
+usr/include/KF5/KWayland/Server/qtsurfaceextension_interface.h
+usr/include/KF5/KWayland/Server/region_interface.h
+usr/include/KF5/KWayland/Server/relativepointer_interface.h
+usr/include/KF5/KWayland/Server/remote_access_interface.h
+usr/include/KF5/KWayland/Server/resource.h
+usr/include/KF5/KWayland/Server/seat_interface.h
+usr/include/KF5/KWayland/Server/server_decoration_interface.h
+usr/include/KF5/KWayland/Server/server_decoration_palette_interface.h
+usr/include/KF5/KWayland/Server/shadow_interface.h
+usr/include/KF5/KWayland/Server/shell_interface.h
+usr/include/KF5/KWayland/Server/slide_interface.h
+usr/include/KF5/KWayland/Server/subcompositor_interface.h
+usr/include/KF5/KWayland/Server/surface_interface.h
+usr/include/KF5/KWayland/Server/tablet_interface.h
+usr/include/KF5/KWayland/Server/textinput_interface.h
+usr/include/KF5/KWayland/Server/touch_interface.h
+usr/include/KF5/KWayland/Server/xdgdecoration_interface.h
+usr/include/KF5/KWayland/Server/xdgforeign_interface.h
+usr/include/KF5/KWayland/Server/xdgoutput_interface.h
+usr/include/KF5/KWayland/Server/xdgshell_interface.h
+usr/include/KF5/KWayland/kwayland_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5Wayland/
+usr/lib64/cmake/KF5Wayland/KF5WaylandConfig.cmake
+usr/lib64/cmake/KF5Wayland/KF5WaylandConfigVersion.cmake
+usr/lib64/cmake/KF5Wayland/KF5WaylandQchTargets.cmake
+usr/lib64/cmake/KF5Wayland/KF5WaylandTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KF5Wayland/KF5WaylandTargets.cmake
+usr/lib64/libKF5WaylandClient.so.5.116.0
+usr/lib64/libKF5WaylandServer.so.5.116.0
+usr/lib64/libexec/
+usr/lib64/libexec/org-kde-kf5-kwayland-testserver
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/KF5WaylandClient.pc
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_KWaylandClient.pri
+usr/lib64/qt5/mkspecs/modules/qt_KWaylandServer.pri
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/kwayland.categories
+usr/share/qlogging-categories5/kwayland.renamecategories
+
+Slackware package /tmp/kwayland5/kwayland5-5.116.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for kwayland5-5.116.0-x86_64-1_rtz.tlz
+Creating /tmp/kwayland5/kwayland5-5.116.0-x86_64-1_rtz.tlz.so.file using /tmp/kwayland5/kwayland5-5.116.0-x86_64-1_rtz.tlz
+Successfully created /tmp/kwayland5/kwayland5-5.116.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kwayland5.tar.lz4 format.
+/tmp/kwayland5 /tmp/kwayland5
+/tmp/kwayland5
+BIN_NAME
+README
+kwayland5-5.116.0-x86_64-1_rtz.tlz
+kwayland5-5.116.0-x86_64-1_rtz.tlz.md5
+kwayland5-5.116.0-x86_64-1_rtz.tlz.so.file
+kwayland5-5.116.0-x86_64-1_rtz.tlz.txt
+kwayland5.dep
+makepkg-kwayland5.log
+kwayland5 build finished. Procced to installation...
+
++==========================================================================================================+
+| Upgrading kwayland5-5.116.0-x86_64-1_rtz package using /tmp/kwayland5/kwayland5-5.116.0-x86_64-1_rtz.tlz |
++==========================================================================================================+
+
+Pre-installing package kwayland5-5.116.0-x86_64-1_rtz...
+Removing package: kwayland5-5.116.0-x86_64-1_rtz-upgraded-2025-05-14,23:52:47
+Installing package kwayland5-5.116.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kwayland5 (Client and Server library wrapper)
+#
+# Qt-style Client and Server library wrapper for the Wayland libraries
+#
+# https://www.kde.org
+Executing install script for kwayland5-5.116.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kwayland5-5.116.0-x86_64-1_rtz.tlz installed.
+Package kwayland5-5.116.0-x86_64-1_rtz upgraded with new package /tmp/kwayland5/kwayland5-5.116.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kwayland-5.116.0.tar.xz': No such file or directory
