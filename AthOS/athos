@@ -1039,6 +1039,11 @@ sha256sum "$PRGNAM".tar.lz4 > "$PRGNAM".sha256sum
 popd
 ls "$OUTPUT"/
 }
+
+copy_build_log(){
+cat /tmp/"$PRGNAM"-build.log > "$W_DIR"/"$PRGNAM"/"$PRGNAM"-build.log
+}
+
 # Main athos build-install functions order.
 #set -e
 
@@ -1073,6 +1078,8 @@ compress_all
 pkg_install
 #sig_package
 clean_src
+
+copy_build_log
 fi
 
 # fix permissions

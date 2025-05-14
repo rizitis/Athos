@@ -1,0 +1,348 @@
+Starting build process...
+Detected architecture: x86_64
+No required dependencies specified.
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-14 21:32:39--  https://fc-solve.shlomifish.org/downloads/fc-solve/black-hole-solver-1.14.0.tar.xz
+Resolving fc-solve.shlomifish.org (fc-solve.shlomifish.org)... 192.185.16.194
+Connecting to fc-solve.shlomifish.org (fc-solve.shlomifish.org)|192.185.16.194|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://downloads.sourceforge.net/fc-solve/fc-solve/black-hole-solver-1.14.0.tar.xz [following]
+--2025-05-14 21:32:39--  https://downloads.sourceforge.net/fc-solve/fc-solve/black-hole-solver-1.14.0.tar.xz
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 104.18.12.149, 104.18.13.149, 2606:4700::6812:d95, ...
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|104.18.12.149|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://phoenixnap.dl.sourceforge.net/project/fc-solve/fc-solve/black-hole-solver-1.14.0.tar.xz?viasf=1 [following]
+--2025-05-14 21:32:40--  https://phoenixnap.dl.sourceforge.net/project/fc-solve/fc-solve/black-hole-solver-1.14.0.tar.xz?viasf=1
+Resolving phoenixnap.dl.sourceforge.net (phoenixnap.dl.sourceforge.net)... 184.164.141.26
+Connecting to phoenixnap.dl.sourceforge.net (phoenixnap.dl.sourceforge.net)|184.164.141.26|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 100012 (98K) [application/octet-stream]
+Saving to: ‘black-hole-solver-1.14.0.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 51%  247K 0s
+    50K .......... .......... .......... .......... .......   100% 5.09M=0.2s
+
+2025-05-14 21:32:42 (462 KB/s) - ‘black-hole-solver-1.14.0.tar.xz’ saved [100012/100012]
+
+Found file: black-hole-solver-1.14.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+black-hole-solver-1.14.0/config.h.in
+black-hole-solver-1.14.0/cmake/
+black-hole-solver-1.14.0/cmake/pod2man-wrapper.pl
+black-hole-solver-1.14.0/cmake/xxhash_wrapper_bootstrap.cmake
+black-hole-solver-1.14.0/cmake/Shlomif_Common.cmake
+black-hole-solver-1.14.0/cmake/rinutils_bootstrap.cmake
+black-hole-solver-1.14.0/cmake/shlomif_common_bootstrap.cmake
+black-hole-solver-1.14.0/multi_solver_stats.c
+black-hole-solver-1.14.0/rank_reach_prune.c
+black-hole-solver-1.14.0/TODO.quicktask
+black-hole-solver-1.14.0/t/
+black-hole-solver-1.14.0/t/black-hole-output.t
+black-hole-solver-1.14.0/t/style-trailing-space.t
+black-hole-solver-1.14.0/t/perltidy.t
+black-hole-solver-1.14.0/t/rank-reachability-prune.t
+black-hole-solver-1.14.0/t/clang-format.t
+black-hole-solver-1.14.0/t/lib/
+black-hole-solver-1.14.0/t/lib/BHsolver/
+black-hole-solver-1.14.0/t/lib/BHsolver/Paths.pm
+black-hole-solver-1.14.0/t/lib/BHsolver/InlineWrap.pm
+black-hole-solver-1.14.0/t/lib/Games/
+black-hole-solver-1.14.0/t/lib/Games/Solitaire/
+black-hole-solver-1.14.0/t/lib/Games/Solitaire/BlackHole/
+black-hole-solver-1.14.0/t/lib/Games/Solitaire/BlackHole/Test.pm
+black-hole-solver-1.14.0/t/lib/Games/Solitaire/BlackHole/RankReachPrune/
+black-hole-solver-1.14.0/t/lib/Games/Solitaire/BlackHole/RankReachPrune/XS.pm
+black-hole-solver-1.14.0/t/lib/Games/Solitaire/BlackHole/RankReachPrune/PP.pm
+black-hole-solver-1.14.0/t/data/
+black-hole-solver-1.14.0/t/data/24.all_in_a_row.board.txt
+black-hole-solver-1.14.0/t/data/2.golf.board.txt
+black-hole-solver-1.14.0/t/data/906.golf.board.txt
+black-hole-solver-1.14.0/t/data/26464608654870335080.bh.board.txt
+black-hole-solver-1.14.0/t/data/texts/
+black-hole-solver-1.14.0/t/data/texts/list.txt
+black-hole-solver-1.14.0/t/data/texts/texts/
+black-hole-solver-1.14.0/t/data/texts/texts/26464608654870335080-disp-boards.bh.sol.txt
+black-hole-solver-1.14.0/t/data/texts/texts/24.all_in_a_row.sol.txt
+black-hole-solver-1.14.0/t/data/texts/texts/26464608654870335080-iters-step-1100.bh.sol.txt
+black-hole-solver-1.14.0/t/data/texts/texts/golf14.board
+black-hole-solver-1.14.0/t/data/texts/texts/906.golf.solution.txt
+black-hole-solver-1.14.0/t/data/texts/texts/black_hole_27.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf10.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf13.board
+black-hole-solver-1.14.0/t/data/texts/texts/26464608654870335080-iters-step.bh.sol.txt
+black-hole-solver-1.14.0/t/data/texts/texts/golf-1to20.sol.txt
+black-hole-solver-1.14.0/t/data/texts/texts/golf5.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf15.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf19.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf9.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf7.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf18.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf4.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf16.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf11.board
+black-hole-solver-1.14.0/t/data/texts/texts/26464608654870335080.bh.sol.txt
+black-hole-solver-1.14.0/t/data/texts/texts/golf3.board
+black-hole-solver-1.14.0/t/data/texts/texts/24.all_in_a_row.sol-with-display-boards.txt
+black-hole-solver-1.14.0/t/data/texts/texts/golf8.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf2.board
+black-hole-solver-1.14.0/t/data/texts/texts/26464608654870335080.bh-sol-with-display-boards.txt
+black-hole-solver-1.14.0/t/data/texts/texts/2.golf.sol.txt
+black-hole-solver-1.14.0/t/data/texts/texts/golf1.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf12.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf20.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf6.board
+black-hole-solver-1.14.0/t/data/texts/texts/golf17.board
+black-hole-solver-1.14.0/t/data/1.bh.board.txt
+black-hole-solver-1.14.0/t/all-in-a-row-output.t
+black-hole-solver-1.14.0/t/unit-max-num-cards-overflow.t
+black-hole-solver-1.14.0/t/valgrind.t
+black-hole-solver-1.14.0/t/build-process.t
+black-hole-solver-1.14.0/run-tests.pl
+black-hole-solver-1.14.0/black-hole-solver.spec
+black-hole-solver-1.14.0/.perltidyrc
+black-hole-solver-1.14.0/CMakeLists.txt
+black-hole-solver-1.14.0/fcs_hash.h
+black-hole-solver-1.14.0/INSTALL
+black-hole-solver-1.14.0/google_hash.cpp
+black-hole-solver-1.14.0/libblack-hole-solver.pc.in
+black-hole-solver-1.14.0/include/
+black-hole-solver-1.14.0/include/black-hole-solver/
+black-hole-solver-1.14.0/include/black-hole-solver/bool.h
+black-hole-solver-1.14.0/include/black-hole-solver/black_hole_solver.h
+black-hole-solver-1.14.0/include/black-hole-solver/fcs_dllexport.h
+black-hole-solver-1.14.0/man/
+black-hole-solver-1.14.0/man/CMakeLists.txt
+black-hole-solver-1.14.0/man/black-hole-solve.pod
+black-hole-solver-1.14.0/fcs_hash.c
+black-hole-solver-1.14.0/meta_alloc.h
+black-hole-solver-1.14.0/meta_alloc.c
+black-hole-solver-1.14.0/rank_reach_prune.h
+black-hole-solver-1.14.0/COPYING
+black-hole-solver-1.14.0/lib.c
+black-hole-solver-1.14.0/google_hash.h
+black-hole-solver-1.14.0/tokyo_cab_hash.h
+black-hole-solver-1.14.0/black-hole-solver.spec.in
+black-hole-solver-1.14.0/.clang-format
+black-hole-solver-1.14.0/solver_run.h
+black-hole-solver-1.14.0/NEWS.asciidoc
+black-hole-solver-1.14.0/state.h
+black-hole-solver-1.14.0/docs/
+black-hole-solver-1.14.0/docs/Proposed-Prune-for-Black-Hole-Solitaire-and-All-in-a-Row-Solitaire.txt
+black-hole-solver-1.14.0/multi_solver.c
+black-hole-solver-1.14.0/solver_common.h
+black-hole-solver-1.14.0/ver.txt
+black-hole-solver-1.14.0/.tidyallrc
+black-hole-solver-1.14.0/xxHash-wrapper/
+black-hole-solver-1.14.0/xxHash-wrapper/xxhash_wrapper.cmake
+black-hole-solver-1.14.0/xxHash-wrapper/wrap_xxhash.h
+black-hole-solver-1.14.0/xxHash-wrapper/LICENSE
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/xxhash.h
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/xxh3.h
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/.gitignore
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/xxhash.c
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/.travis.yml
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/LICENSE
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/.gitattributes
+black-hole-solver-1.14.0/xxHash-wrapper/xxHash-0.8.1/README.md
+black-hole-solver-1.14.0/xxHash-wrapper/README.md
+black-hole-solver-1.14.0/scripts/
+black-hole-solver-1.14.0/scripts/source_filter.py
+black-hole-solver-1.14.0/scripts/gen-c-lookup-files.pl
+black-hole-solver-1.14.0/single_board_main.c
+black-hole-solver-1.14.0/README.md
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Perl: /usr/bin/perl (found version "5.40.2")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Performing Test FLAG_EXISTS_1
+-- Performing Test FLAG_EXISTS_1 - Success
+-- Performing Test FLAG_EXISTS_2
+-- Performing Test FLAG_EXISTS_2 - Success
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of int
+-- Check size of int - done
+-- Check size of void*
+-- Check size of void* - done
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/work/black-hole-solver-1.14.0/build
+[1/16] Generating can_move.c, can_move.h
+[2/16] Generating generated/lib.c, generated/solver_common.h, generated/include/black-hole-solver/black_hole_solver.h
+[3/16] Building C object CMakeFiles/bhs_rank_reach_prune.dir/rank_reach_prune.c.o
+[4/16] Building C object CMakeFiles/black_hole_solver.dir/can_move.c.o
+[5/16] Linking C shared library libbhs_rank_reach_prune.so
+[6/16] Building C object CMakeFiles/black_hole_solver.dir/rank_reach_prune.c.o
+[7/16] Building C object CMakeFiles/black_hole_solver.dir/meta_alloc.c.o
+[8/16] Generating black-hole-solve.6
+[9/16] Building C object CMakeFiles/black-hole-solve.dir/single_board_main.c.o
+[10/16] Building C object CMakeFiles/multi-bhs-solver.dir/multi_solver.c.o
+[11/16] Building C object CMakeFiles/black_hole_solver.dir/fcs_hash.c.o
+[12/16] Building C object CMakeFiles/black_hole_solver.dir/generated/lib.c.o
+[13/16] Linking C shared library libblack_hole_solver.so.1.0.2
+[14/16] Creating library symlink libblack_hole_solver.so.1 libblack_hole_solver.so
+[15/16] Linking C executable black-hole-solve
+[16/16] Linking C executable multi-bhs-solver
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/lib64/libblack_hole_solver.so.1.0.2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/lib64/libblack_hole_solver.so.1
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/lib64/libblack_hole_solver.so.1.0.2" to "/usr/lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/lib64/libblack_hole_solver.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/bin/black-hole-solve
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/bin/black-hole-solve" to "/usr/lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/include/black-hole-solver/black_hole_solver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/include/black-hole-solver/bool.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/include/black-hole-solver/fcs_dllexport.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/lib64/pkgconfig/libblack-hole-solver.pc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/package-black-hole-solver/usr/share/man/man6/black-hole-solve.6
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/black-hole-solver/black-hole-solver.info: No such file or directory
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libblack_hole_solver.so	libblack_hole_solver.so.1
+usr/lib64/libblack_hole_solver.so.1	libblack_hole_solver.so.1.0.2
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libblack_hole_solver.so )
+( cd usr/lib64 ; ln -sf libblack_hole_solver.so.1 libblack_hole_solver.so )
+( cd usr/lib64 ; rm -rf libblack_hole_solver.so.1 )
+( cd usr/lib64 ; ln -sf libblack_hole_solver.so.1.0.2 libblack_hole_solver.so.1 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libblack_hole_solver.so.1'
+removed './usr/lib64/libblack_hole_solver.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/black-hole-solver/black-hole-solver-1.14.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/black-hole-solve
+usr/doc/
+usr/doc/black-hole-solver-1.14.0/
+usr/doc/black-hole-solver-1.14.0/COPYING
+usr/doc/black-hole-solver-1.14.0/README.md
+usr/doc/black-hole-solver-1.14.0/black-hole-solver.ini
+usr/doc/black-hole-solver-1.14.0/docs/
+usr/doc/black-hole-solver-1.14.0/docs/Proposed-Prune-for-Black-Hole-Solitaire-and-All-in-a-Row-Solitaire.txt
+usr/include/
+usr/include/black-hole-solver/
+usr/include/black-hole-solver/black_hole_solver.h
+usr/include/black-hole-solver/bool.h
+usr/include/black-hole-solver/fcs_dllexport.h
+usr/lib64/
+usr/lib64/libblack_hole_solver.so.1.0.2
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libblack-hole-solver.pc
+usr/share/
+usr/share/man/
+usr/share/man/man6/
+usr/share/man/man6/black-hole-solve.6
+WARNING:  /usr/share/man (with possibly not gzipped man pages) detected
+
+Slackware package /tmp/black-hole-solver/black-hole-solver-1.14.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for black-hole-solver-1.14.0-x86_64-1_rtz.tlz
+Creating /tmp/black-hole-solver/black-hole-solver-1.14.0-x86_64-1_rtz.tlz.so.file using /tmp/black-hole-solver/black-hole-solver-1.14.0-x86_64-1_rtz.tlz
+Successfully created /tmp/black-hole-solver/black-hole-solver-1.14.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in black-hole-solver.tar.lz4 format.
+/tmp/black-hole-solver /tmp/black-hole-solver
+/tmp/black-hole-solver
+BIN_NAME
+README
+black-hole-solver-1.14.0-x86_64-1_rtz.tlz
+black-hole-solver-1.14.0-x86_64-1_rtz.tlz.md5
+black-hole-solver-1.14.0-x86_64-1_rtz.tlz.so.file
+black-hole-solver-1.14.0-x86_64-1_rtz.tlz.txt
+makepkg-black-hole-solver.log
+black-hole-solver build finished. Procced to installation...
+
++================================================================================================================================+
+| Upgrading black-hole-solver-1.12.0-x86_64-1_rtz package using /tmp/black-hole-solver/black-hole-solver-1.14.0-x86_64-1_rtz.tlz |
++================================================================================================================================+
+
+Pre-installing package black-hole-solver-1.14.0-x86_64-1_rtz...
+Removing package: black-hole-solver-1.12.0-x86_64-1_rtz-upgraded-2025-05-14,21:32:44
+Installing package black-hole-solver-1.14.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# black-hole-solver (Solvers,statistics for 'Golf' solitaire)
+#
+# https://www.shlomifish.org/open-source/
+# projects/black-hole-solitaire-solver/
+#
+Executing install script for black-hole-solver-1.14.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package black-hole-solver-1.14.0-x86_64-1_rtz.tlz installed.
+Package black-hole-solver-1.12.0-x86_64-1_rtz upgraded with new package /tmp/black-hole-solver/black-hole-solver-1.14.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'black-hole-solver-1.14.0.tar.xz': No such file or directory
