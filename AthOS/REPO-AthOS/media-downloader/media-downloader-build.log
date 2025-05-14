@@ -1,0 +1,3521 @@
+Starting build process...
+Detected architecture: x86_64
+No required dependencies specified.
+Found optional dependencies: aria2
+Should check and build optional deps if not installed? (yes/no): Building optional dep aria2...
+aria2 
+rm: cannot remove '/tmp/aria2-build.log': No such file or directory
+Starting build process...
+Detected architecture: x86_64
+No required dependencies specified.
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-12 16:15:13--  https://github.com/tatsuhiro-t/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz [following]
+--2025-05-12 16:15:13--  https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/1116542/bb94b2dd-46b4-4073-8244-80480d9ee7a8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250512%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250512T131412Z&X-Amz-Expires=300&X-Amz-Signature=cc315ef017f7d2bb9b221ba0163c914b5f9423d93740b2077d2c9c732755358e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Daria2-1.37.0.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2025-05-12 16:15:13--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/1116542/bb94b2dd-46b4-4073-8244-80480d9ee7a8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250512%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250512T131412Z&X-Amz-Expires=300&X-Amz-Signature=cc315ef017f7d2bb9b221ba0163c914b5f9423d93740b2077d2c9c732755358e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Daria2-1.37.0.tar.xz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1705256 (1.6M) [application/octet-stream]
+Saving to: ‘aria2-1.37.0.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  3%  779K 2s
+    50K .......... .......... .......... .......... ..........  6%  830K 2s
+   100K .......... .......... .......... .......... ..........  9% 3.16M 1s
+   150K .......... .......... .......... .......... .......... 12% 1.46M 1s
+   200K .......... .......... .......... .......... .......... 15% 4.82M 1s
+   250K .......... .......... .......... .......... .......... 18% 7.18M 1s
+   300K .......... .......... .......... .......... .......... 21% 3.93M 1s
+   350K .......... .......... .......... .......... .......... 24% 5.34M 1s
+   400K .......... .......... .......... .......... .......... 27% 2.57M 1s
+   450K .......... .......... .......... .......... .......... 30% 4.97M 1s
+   500K .......... .......... .......... .......... .......... 33% 6.43M 1s
+   550K .......... .......... .......... .......... .......... 36% 6.94M 0s
+   600K .......... .......... .......... .......... .......... 39%  615K 1s
+   650K .......... .......... .......... .......... .......... 42% 10.2M 0s
+   700K .......... .......... .......... .......... .......... 45% 10.3M 0s
+   750K .......... .......... .......... .......... .......... 48% 19.2M 0s
+   800K .......... .......... .......... .......... .......... 51% 9.31M 0s
+   850K .......... .......... .......... .......... .......... 54% 10.6M 0s
+   900K .......... .......... .......... .......... .......... 57% 21.0M 0s
+   950K .......... .......... .......... .......... .......... 60%  397M 0s
+  1000K .......... .......... .......... .......... .......... 63%  301M 0s
+  1050K .......... .......... .......... .......... .......... 66% 2.39M 0s
+  1100K .......... .......... .......... .......... .......... 69% 6.46M 0s
+  1150K .......... .......... .......... .......... .......... 72% 6.77M 0s
+  1200K .......... .......... .......... .......... .......... 75% 6.63M 0s
+  1250K .......... .......... .......... .......... .......... 78% 10.5M 0s
+  1300K .......... .......... .......... .......... .......... 81%  863K 0s
+  1350K .......... .......... .......... .......... .......... 84%  236M 0s
+  1400K .......... .......... .......... .......... .......... 87%  183M 0s
+  1450K .......... .......... .......... .......... .......... 90% 7.27M 0s
+  1500K .......... .......... .......... .......... .......... 93% 8.92M 0s
+  1550K .......... .......... .......... .......... .......... 96% 12.6M 0s
+  1600K .......... .......... .......... .......... .......... 99% 7.65M 0s
+  1650K .......... .....                                      100%  137M=0.5s
+
+2025-05-12 16:15:15 (3.32 MB/s) - ‘aria2-1.37.0.tar.xz’ saved [1705256/1705256]
+
+Found file: aria2-1.37.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+aria2-1.37.0/
+aria2-1.37.0/test-driver
+aria2-1.37.0/test/
+aria2-1.37.0/test/local-metaurl.meta4
+aria2-1.37.0/test/base_uri.xml
+aria2-1.37.0/test/metalink4-dosdirtraversal.xml
+aria2-1.37.0/test/serialize_session.meta4
+aria2-1.37.0/test/metalink4-groupbymetaurl.xml
+aria2-1.37.0/test/metalink3-dirtraversal.xml
+aria2-1.37.0/test/metalink4.xml
+aria2-1.37.0/test/utf8.torrent
+aria2-1.37.0/test/2files.metalink
+aria2-1.37.0/test/input_uris.txt
+aria2-1.37.0/test/url-list-singleFileEndsWithSlash.torrent
+aria2-1.37.0/test/url-list-singleFile.torrent
+aria2-1.37.0/test/url-list-multiFile.torrent
+aria2-1.37.0/test/test.xml
+aria2-1.37.0/test/test.torrent
+aria2-1.37.0/test/single.torrent
+aria2-1.37.0/test/sample.netrc
+aria2-1.37.0/test/nscookietest.txt
+aria2-1.37.0/test/malformed.netrc
+aria2-1.37.0/test/load-v0001.aria2
+aria2-1.37.0/test/load.aria2
+aria2-1.37.0/test/load-nonBt-v0001.aria2
+aria2-1.37.0/test/load-nonBt.aria2
+aria2-1.37.0/test/gzip_decode_test.gz
+aria2-1.37.0/test/filelist2.txt
+aria2-1.37.0/test/filelist1.txt
+aria2-1.37.0/test/file3r.txt
+aria2-1.37.0/test/file2r.txt
+aria2-1.37.0/test/file1r.txt
+aria2-1.37.0/test/emptyfile
+aria2-1.37.0/test/chromium_cookies.sqlite
+aria2-1.37.0/test/cookies.sqlite
+aria2-1.37.0/test/chunkChecksumTestFile250.txt
+aria2-1.37.0/test/4096chunk.txt
+aria2-1.37.0/test/Aria2ApiTest.cc
+aria2-1.37.0/test/TimegmTest.cc
+aria2-1.37.0/test/AsyncNameResolverTest.cc
+aria2-1.37.0/test/MetalinkProcessorTest.cc
+aria2-1.37.0/test/MetalinkParserControllerTest.cc
+aria2-1.37.0/test/MetalinkHelperTest.cc
+aria2-1.37.0/test/MetalinkPostDownloadHandlerTest.cc
+aria2-1.37.0/test/Metalink2RequestGroupTest.cc
+aria2-1.37.0/test/MetalinkEntryTest.cc
+aria2-1.37.0/test/MetalinkerTest.cc
+aria2-1.37.0/test/UDPTrackerClientTest.cc
+aria2-1.37.0/test/ExtensionMessageRegistryTest.cc
+aria2-1.37.0/test/ValueBaseBencodeParserTest.cc
+aria2-1.37.0/test/PeerConnectionTest.cc
+aria2-1.37.0/test/Bencode2Test.cc
+aria2-1.37.0/test/LpdMessageReceiverTest.cc
+aria2-1.37.0/test/LpdMessageDispatcherTest.cc
+aria2-1.37.0/test/extension_message_test_helper.h
+aria2-1.37.0/test/MockPieceSelector.h
+aria2-1.37.0/test/PriorityPieceSelectorTest.cc
+aria2-1.37.0/test/BittorrentHelperTest.cc
+aria2-1.37.0/test/MockPieceStorage.h
+aria2-1.37.0/test/MockExtensionMessageFactory.h
+aria2-1.37.0/test/MockExtensionMessage.h
+aria2-1.37.0/test/MockDHTTaskQueue.h
+aria2-1.37.0/test/MockDHTTaskFactory.h
+aria2-1.37.0/test/MockDHTTask.h
+aria2-1.37.0/test/MockDHTMessageFactory.h
+aria2-1.37.0/test/MockDHTMessageDispatcher.h
+aria2-1.37.0/test/MockDHTMessageCallback.h
+aria2-1.37.0/test/MockDHTMessage.h
+aria2-1.37.0/test/MockBtRequestFactory.h
+aria2-1.37.0/test/MockBtProgressInfoFile.h
+aria2-1.37.0/test/MockBtAnnounce.h
+aria2-1.37.0/test/MSEHandshakeTest.cc
+aria2-1.37.0/test/ARC4Test.cc
+aria2-1.37.0/test/DHKeyExchangeTest.cc
+aria2-1.37.0/test/DHTTaskExecutorTest.cc
+aria2-1.37.0/test/DHTRoutingTableDeserializerTest.cc
+aria2-1.37.0/test/DHTRoutingTableSerializerTest.cc
+aria2-1.37.0/test/DHTIDCloserTest.cc
+aria2-1.37.0/test/XORCloserTest.cc
+aria2-1.37.0/test/DHTTokenTrackerTest.cc
+aria2-1.37.0/test/DHTPeerAnnounceStorageTest.cc
+aria2-1.37.0/test/DHTPeerAnnounceEntryTest.cc
+aria2-1.37.0/test/DHTBucketTreeTest.cc
+aria2-1.37.0/test/DHTMessageFactoryImplTest.cc
+aria2-1.37.0/test/DHTUnknownMessageTest.cc
+aria2-1.37.0/test/DHTAnnouncePeerReplyMessageTest.cc
+aria2-1.37.0/test/DHTAnnouncePeerMessageTest.cc
+aria2-1.37.0/test/DHTGetPeersReplyMessageTest.cc
+aria2-1.37.0/test/DHTGetPeersMessageTest.cc
+aria2-1.37.0/test/DHTFindNodeReplyMessageTest.cc
+aria2-1.37.0/test/DHTFindNodeMessageTest.cc
+aria2-1.37.0/test/DHTPingReplyMessageTest.cc
+aria2-1.37.0/test/DHTPingMessageTest.cc
+aria2-1.37.0/test/DHTConnectionImplTest.cc
+aria2-1.37.0/test/DHTMessageTrackerTest.cc
+aria2-1.37.0/test/DHTMessageTrackerEntryTest.cc
+aria2-1.37.0/test/DHTRoutingTableTest.cc
+aria2-1.37.0/test/DHTBucketTest.cc
+aria2-1.37.0/test/DHTNodeTest.cc
+aria2-1.37.0/test/DefaultExtensionMessageFactoryTest.cc
+aria2-1.37.0/test/DefaultBtMessageFactoryTest.cc
+aria2-1.37.0/test/MagnetTest.cc
+aria2-1.37.0/test/UTMetadataPostDownloadHandlerTest.cc
+aria2-1.37.0/test/UTMetadataRequestFactoryTest.cc
+aria2-1.37.0/test/UTMetadataRequestTrackerTest.cc
+aria2-1.37.0/test/UTMetadataRejectExtensionMessageTest.cc
+aria2-1.37.0/test/UTMetadataDataExtensionMessageTest.cc
+aria2-1.37.0/test/UTMetadataRequestExtensionMessageTest.cc
+aria2-1.37.0/test/UTPexExtensionMessageTest.cc
+aria2-1.37.0/test/HandshakeExtensionMessageTest.cc
+aria2-1.37.0/test/BtExtendedMessageTest.cc
+aria2-1.37.0/test/TimeSeedCriteriaTest.cc
+aria2-1.37.0/test/BtPostDownloadHandlerTest.cc
+aria2-1.37.0/test/BtDependencyTest.cc
+aria2-1.37.0/test/BtRegistryTest.cc
+aria2-1.37.0/test/ShareRatioSeedCriteriaTest.cc
+aria2-1.37.0/test/PeerSessionResourceTest.cc
+aria2-1.37.0/test/PeerTest.cc
+aria2-1.37.0/test/ByteArrayDiskWriterTest.cc
+aria2-1.37.0/test/MockPeerStorage.h
+aria2-1.37.0/test/DefaultPeerStorageTest.cc
+aria2-1.37.0/test/AnnounceListTest.cc
+aria2-1.37.0/test/MockBtMessageFactory.h
+aria2-1.37.0/test/MockBtMessageDispatcher.h
+aria2-1.37.0/test/MockBtMessage.h
+aria2-1.37.0/test/DefaultBtRequestFactoryTest.cc
+aria2-1.37.0/test/DefaultBtMessageDispatcherTest.cc
+aria2-1.37.0/test/DefaultBtAnnounceTest.cc
+aria2-1.37.0/test/DefaultPieceStorageTest.cc
+aria2-1.37.0/test/BtUnchokeMessageTest.cc
+aria2-1.37.0/test/BtSuggestPieceMessageTest.cc
+aria2-1.37.0/test/BtRequestMessageTest.cc
+aria2-1.37.0/test/BtRejectMessageTest.cc
+aria2-1.37.0/test/BtPortMessageTest.cc
+aria2-1.37.0/test/BtPieceMessageTest.cc
+aria2-1.37.0/test/BtNotInterestedMessageTest.cc
+aria2-1.37.0/test/BtKeepAliveMessageTest.cc
+aria2-1.37.0/test/BtInterestedMessageTest.cc
+aria2-1.37.0/test/BtHaveNoneMessageTest.cc
+aria2-1.37.0/test/BtHaveMessageTest.cc
+aria2-1.37.0/test/BtHaveAllMessageTest.cc
+aria2-1.37.0/test/BtHandshakeMessageTest.cc
+aria2-1.37.0/test/BtChokeMessageTest.cc
+aria2-1.37.0/test/BtCancelMessageTest.cc
+aria2-1.37.0/test/BtBitfieldMessageTest.cc
+aria2-1.37.0/test/BtAllowedFastMessageTest.cc
+aria2-1.37.0/test/MessageDigestTest.cc
+aria2-1.37.0/test/IteratableChecksumValidatorTest.cc
+aria2-1.37.0/test/IteratableChunkChecksumValidatorTest.cc
+aria2-1.37.0/test/MessageDigestHelperTest.cc
+aria2-1.37.0/test/Sqlite3CookieParserTest.cc
+aria2-1.37.0/test/GZipFileTest.cc
+aria2-1.37.0/test/GZipDecodingStreamFilterTest.cc
+aria2-1.37.0/test/GZipEncoderTest.cc
+aria2-1.37.0/test/GZipDecoderTest.cc
+aria2-1.37.0/test/GZipDecoder.h
+aria2-1.37.0/test/GZipDecoder.cc
+aria2-1.37.0/test/FallocFileAllocationIteratorTest.cc
+aria2-1.37.0/test/XmlRpcRequestParserControllerTest.cc
+aria2-1.37.0/test/SimpleRandomizerTest.cc
+aria2-1.37.0/test/IndexedListTest.cc
+aria2-1.37.0/test/GroupIdTest.cc
+aria2-1.37.0/test/WrDiskCacheEntryTest.cc
+aria2-1.37.0/test/WrDiskCacheTest.cc
+aria2-1.37.0/test/SinkStreamFilterTest.cc
+aria2-1.37.0/test/AbstractCommandTest.cc
+aria2-1.37.0/test/RpcHelperTest.cc
+aria2-1.37.0/test/ParamedStringTest.cc
+aria2-1.37.0/test/SegListTest.cc
+aria2-1.37.0/test/GeomStreamPieceSelectorTest.cc
+aria2-1.37.0/test/BufferedFileTest.cc
+aria2-1.37.0/test/HttpServerTest.cc
+aria2-1.37.0/test/RpcMethodTest.cc
+aria2-1.37.0/test/RpcResponseTest.cc
+aria2-1.37.0/test/ValueBaseJsonParserTest.cc
+aria2-1.37.0/test/JsonTest.cc
+aria2-1.37.0/test/CookieHelperTest.cc
+aria2-1.37.0/test/MockSegment.h
+aria2-1.37.0/test/UriSplitTest.cc
+aria2-1.37.0/test/UriTest.cc
+aria2-1.37.0/test/ChunkedDecodingStreamFilterTest.cc
+aria2-1.37.0/test/ValueBaseTest.cc
+aria2-1.37.0/test/SessionSerializerTest.cc
+aria2-1.37.0/test/DownloadContextTest.cc
+aria2-1.37.0/test/bitfieldTest.cc
+aria2-1.37.0/test/a2algoTest.cc
+aria2-1.37.0/test/LongestSequencePieceSelectorTest.cc
+aria2-1.37.0/test/InorderPieceSelector.h
+aria2-1.37.0/test/PieceStatManTest.cc
+aria2-1.37.0/test/RarestPieceSelectorTest.cc
+aria2-1.37.0/test/SequentialPickerTest.cc
+aria2-1.37.0/test/DownloadHelperTest.cc
+aria2-1.37.0/test/DNSCacheTest.cc
+aria2-1.37.0/test/OptionParserTest.cc
+aria2-1.37.0/test/FtpConnectionTest.cc
+aria2-1.37.0/test/TimeTest.cc
+aria2-1.37.0/test/CookieStorageTest.cc
+aria2-1.37.0/test/CookieTest.cc
+aria2-1.37.0/test/DirectDiskAdaptorTest.cc
+aria2-1.37.0/test/NsCookieParserTest.cc
+aria2-1.37.0/test/ServerStatTest.cc
+aria2-1.37.0/test/InorderURISelectorTest.cc
+aria2-1.37.0/test/FeedbackURISelectorTest.cc
+aria2-1.37.0/test/ServerStatManTest.cc
+aria2-1.37.0/test/SignatureTest.cc
+aria2-1.37.0/test/DownloadHandlersTest.cc
+aria2-1.37.0/test/FmtTest.cc
+aria2-1.37.0/test/ExceptionTest.cc
+aria2-1.37.0/test/ProtocolDetectorTest.cc
+aria2-1.37.0/test/FixedNumberRandomizer.h
+aria2-1.37.0/test/MultiFileAllocationIteratorTest.cc
+aria2-1.37.0/test/MultiDiskAdaptorTest.cc
+aria2-1.37.0/test/SpeedCalcTest.cc
+aria2-1.37.0/test/FeatureConfigTest.cc
+aria2-1.37.0/test/DefaultDiskWriterTest.cc
+aria2-1.37.0/test/OptionTest.cc
+aria2-1.37.0/test/FileTest.cc
+aria2-1.37.0/test/HttpResponseTest.cc
+aria2-1.37.0/test/HttpHeaderTest.cc
+aria2-1.37.0/test/SingletonHolderTest.cc
+aria2-1.37.0/test/NetrcTest.cc
+aria2-1.37.0/test/BitfieldManTest.cc
+aria2-1.37.0/test/SegmentManTest.cc
+aria2-1.37.0/test/OptionHandlerTest.cc
+aria2-1.37.0/test/DefaultAuthResolverTest.cc
+aria2-1.37.0/test/NetrcAuthResolverTest.cc
+aria2-1.37.0/test/AuthConfigFactoryTest.cc
+aria2-1.37.0/test/RequestGroupManTest.cc
+aria2-1.37.0/test/HttpRequestTest.cc
+aria2-1.37.0/test/RequestTest.cc
+aria2-1.37.0/test/HttpHeaderProcessorTest.cc
+aria2-1.37.0/test/UriListParserTest.cc
+aria2-1.37.0/test/UtilSecurityTest.cc
+aria2-1.37.0/test/UtilTest2.cc
+aria2-1.37.0/test/UtilTest1.cc
+aria2-1.37.0/test/RequestGroupTest.cc
+aria2-1.37.0/test/DefaultBtProgressInfoFileTest.cc
+aria2-1.37.0/test/SingleFileAllocationIteratorTest.cc
+aria2-1.37.0/test/GrowSegmentTest.cc
+aria2-1.37.0/test/SegmentTest.cc
+aria2-1.37.0/test/PieceTest.cc
+aria2-1.37.0/test/FileEntryTest.cc
+aria2-1.37.0/test/a2functionalTest.cc
+aria2-1.37.0/test/Base32Test.cc
+aria2-1.37.0/test/Base64Test.cc
+aria2-1.37.0/test/array_funTest.cc
+aria2-1.37.0/test/SocketCoreTest.cc
+aria2-1.37.0/test/TestUtil.h
+aria2-1.37.0/test/TestUtil.cc
+aria2-1.37.0/test/AllTest.cc
+aria2-1.37.0/test/Makefile.in
+aria2-1.37.0/test/Makefile.am
+aria2-1.37.0/doc/
+aria2-1.37.0/doc/manual-src/
+aria2-1.37.0/doc/manual-src/pt/
+aria2-1.37.0/doc/manual-src/pt/README.rst
+aria2-1.37.0/doc/manual-src/pt/index.rst
+aria2-1.37.0/doc/manual-src/pt/aria2c.rst
+aria2-1.37.0/doc/manual-src/pt/conf.py.in
+aria2-1.37.0/doc/manual-src/pt/Makefile.in
+aria2-1.37.0/doc/manual-src/pt/Makefile.am
+aria2-1.37.0/doc/manual-src/pt/_build/
+aria2-1.37.0/doc/manual-src/pt/_build/man/
+aria2-1.37.0/doc/manual-src/pt/_build/man/aria2c.1
+aria2-1.37.0/doc/manual-src/ru/
+aria2-1.37.0/doc/manual-src/ru/index.rst
+aria2-1.37.0/doc/manual-src/ru/aria2c.rst
+aria2-1.37.0/doc/manual-src/ru/conf.py.in
+aria2-1.37.0/doc/manual-src/ru/Makefile.in
+aria2-1.37.0/doc/manual-src/ru/Makefile.am
+aria2-1.37.0/doc/manual-src/ru/_build/
+aria2-1.37.0/doc/manual-src/ru/_build/man/
+aria2-1.37.0/doc/manual-src/ru/_build/man/aria2c.1
+aria2-1.37.0/doc/manual-src/en/
+aria2-1.37.0/doc/manual-src/en/mkapiref.py
+aria2-1.37.0/doc/manual-src/en/technical-notes.rst
+aria2-1.37.0/doc/manual-src/en/README.rst
+aria2-1.37.0/doc/manual-src/en/index.rst
+aria2-1.37.0/doc/manual-src/en/libaria2.rst
+aria2-1.37.0/doc/manual-src/en/aria2c.rst
+aria2-1.37.0/doc/manual-src/en/conf.py.in
+aria2-1.37.0/doc/manual-src/en/Makefile.in
+aria2-1.37.0/doc/manual-src/en/Makefile.am
+aria2-1.37.0/doc/manual-src/en/_build/
+aria2-1.37.0/doc/manual-src/en/_build/man/
+aria2-1.37.0/doc/manual-src/en/_build/man/aria2c.1
+aria2-1.37.0/doc/manual-src/Makefile.in
+aria2-1.37.0/doc/manual-src/Makefile.am
+aria2-1.37.0/doc/Makefile.in
+aria2-1.37.0/doc/Makefile.am
+aria2-1.37.0/doc/xmlrpc/
+aria2-1.37.0/doc/xmlrpc/README.txt
+aria2-1.37.0/doc/xmlrpc/aria2rpc
+aria2-1.37.0/doc/xmlrpc/aria2mon
+aria2-1.37.0/doc/bash_completion/
+aria2-1.37.0/doc/bash_completion/aria2c
+aria2-1.37.0/doc/bash_completion/README.txt
+aria2-1.37.0/src/
+aria2-1.37.0/src/includes/
+aria2-1.37.0/src/includes/Makefile.in
+aria2-1.37.0/src/includes/Makefile.am
+aria2-1.37.0/src/includes/aria2/
+aria2-1.37.0/src/includes/aria2/aria2.h
+aria2-1.37.0/src/main.cc
+aria2-1.37.0/src/KeepRunningCommand.h
+aria2-1.37.0/src/KeepRunningCommand.cc
+aria2-1.37.0/src/aria2api.h
+aria2-1.37.0/src/aria2api.cc
+aria2-1.37.0/src/ApiCallbackDownloadEventListener.h
+aria2-1.37.0/src/ApiCallbackDownloadEventListener.cc
+aria2-1.37.0/src/LibuvEventPoll.h
+aria2-1.37.0/src/LibuvEventPoll.cc
+aria2-1.37.0/src/KqueueEventPoll.h
+aria2-1.37.0/src/KqueueEventPoll.cc
+aria2-1.37.0/src/PortEventPoll.h
+aria2-1.37.0/src/PortEventPoll.cc
+aria2-1.37.0/src/PollEventPoll.h
+aria2-1.37.0/src/PollEventPoll.cc
+aria2-1.37.0/src/daemon.h
+aria2-1.37.0/src/daemon.cc
+aria2-1.37.0/src/timegm.h
+aria2-1.37.0/src/timegm.c
+aria2-1.37.0/src/strptime.h
+aria2-1.37.0/src/strptime.c
+aria2-1.37.0/src/localtime_r.h
+aria2-1.37.0/src/localtime_r.c
+aria2-1.37.0/src/gettimeofday.h
+aria2-1.37.0/src/gettimeofday.c
+aria2-1.37.0/src/gai_strerror.h
+aria2-1.37.0/src/gai_strerror.c
+aria2-1.37.0/src/getaddrinfo.h
+aria2-1.37.0/src/getaddrinfo.c
+aria2-1.37.0/src/libgen.h
+aria2-1.37.0/src/libgen.c
+aria2-1.37.0/src/asctime_r.h
+aria2-1.37.0/src/asctime_r.c
+aria2-1.37.0/src/metalink_helper.h
+aria2-1.37.0/src/metalink_helper.cc
+aria2-1.37.0/src/MetalinkResource.h
+aria2-1.37.0/src/MetalinkResource.cc
+aria2-1.37.0/src/MetalinkPostDownloadHandler.h
+aria2-1.37.0/src/MetalinkPostDownloadHandler.cc
+aria2-1.37.0/src/MetalinkParserStateV4Impl.h
+aria2-1.37.0/src/MetalinkParserStateV4Impl.cc
+aria2-1.37.0/src/MetalinkParserStateV3Impl.h
+aria2-1.37.0/src/MetalinkParserStateV3Impl.cc
+aria2-1.37.0/src/MetalinkParserStateMachine.h
+aria2-1.37.0/src/MetalinkParserStateMachine.cc
+aria2-1.37.0/src/MetalinkParserStateImpl.h
+aria2-1.37.0/src/MetalinkParserStateImpl.cc
+aria2-1.37.0/src/MetalinkParserState.h
+aria2-1.37.0/src/MetalinkParserState.cc
+aria2-1.37.0/src/MetalinkParserController.h
+aria2-1.37.0/src/MetalinkParserController.cc
+aria2-1.37.0/src/MetalinkMetaurl.h
+aria2-1.37.0/src/MetalinkMetaurl.cc
+aria2-1.37.0/src/Metalinker.h
+aria2-1.37.0/src/Metalinker.cc
+aria2-1.37.0/src/MetalinkEntry.h
+aria2-1.37.0/src/MetalinkEntry.cc
+aria2-1.37.0/src/Metalink2RequestGroup.h
+aria2-1.37.0/src/Metalink2RequestGroup.cc
+aria2-1.37.0/src/ZeroBtMessage.h
+aria2-1.37.0/src/ZeroBtMessage.cc
+aria2-1.37.0/src/XORCloser.h
+aria2-1.37.0/src/ValueBaseBencodeParser.h
+aria2-1.37.0/src/UTPexExtensionMessage.h
+aria2-1.37.0/src/UTPexExtensionMessage.cc
+aria2-1.37.0/src/UTMetadataRequestTracker.h
+aria2-1.37.0/src/UTMetadataRequestTracker.cc
+aria2-1.37.0/src/UTMetadataRequestFactory.h
+aria2-1.37.0/src/UTMetadataRequestFactory.cc
+aria2-1.37.0/src/UTMetadataRequestExtensionMessage.h
+aria2-1.37.0/src/UTMetadataRequestExtensionMessage.cc
+aria2-1.37.0/src/UTMetadataRejectExtensionMessage.h
+aria2-1.37.0/src/UTMetadataRejectExtensionMessage.cc
+aria2-1.37.0/src/UTMetadataPostDownloadHandler.h
+aria2-1.37.0/src/UTMetadataPostDownloadHandler.cc
+aria2-1.37.0/src/UTMetadataExtensionMessage.h
+aria2-1.37.0/src/UTMetadataExtensionMessage.cc
+aria2-1.37.0/src/UTMetadataDataExtensionMessage.h
+aria2-1.37.0/src/UTMetadataDataExtensionMessage.cc
+aria2-1.37.0/src/UnionSeedCriteria.h
+aria2-1.37.0/src/UnionSeedCriteria.cc
+aria2-1.37.0/src/UDPTrackerRequest.h
+aria2-1.37.0/src/UDPTrackerRequest.cc
+aria2-1.37.0/src/UDPTrackerClient.h
+aria2-1.37.0/src/UDPTrackerClient.cc
+aria2-1.37.0/src/TrackerWatcherCommand.h
+aria2-1.37.0/src/TrackerWatcherCommand.cc
+aria2-1.37.0/src/TimeSeedCriteria.h
+aria2-1.37.0/src/TimeSeedCriteria.cc
+aria2-1.37.0/src/SimpleBtMessage.h
+aria2-1.37.0/src/SimpleBtMessage.cc
+aria2-1.37.0/src/ShareRatioSeedCriteria.h
+aria2-1.37.0/src/ShareRatioSeedCriteria.cc
+aria2-1.37.0/src/SeedCriteria.h
+aria2-1.37.0/src/SeedCheckCommand.h
+aria2-1.37.0/src/SeedCheckCommand.cc
+aria2-1.37.0/src/RequestSlot.h
+aria2-1.37.0/src/RequestSlot.cc
+aria2-1.37.0/src/ReceiverMSEHandshakeCommand.h
+aria2-1.37.0/src/ReceiverMSEHandshakeCommand.cc
+aria2-1.37.0/src/RangeBtMessageValidator.h
+aria2-1.37.0/src/RangeBtMessageValidator.cc
+aria2-1.37.0/src/RangeBtMessage.h
+aria2-1.37.0/src/RangeBtMessage.cc
+aria2-1.37.0/src/PriorityPieceSelector.h
+aria2-1.37.0/src/PriorityPieceSelector.cc
+aria2-1.37.0/src/PeerStorage.h
+aria2-1.37.0/src/PeerSessionResource.h
+aria2-1.37.0/src/PeerSessionResource.cc
+aria2-1.37.0/src/PeerReceiveHandshakeCommand.h
+aria2-1.37.0/src/PeerReceiveHandshakeCommand.cc
+aria2-1.37.0/src/PeerListenCommand.h
+aria2-1.37.0/src/PeerListenCommand.cc
+aria2-1.37.0/src/PeerInteractionCommand.h
+aria2-1.37.0/src/PeerInteractionCommand.cc
+aria2-1.37.0/src/PeerInitiateConnectionCommand.h
+aria2-1.37.0/src/PeerInitiateConnectionCommand.cc
+aria2-1.37.0/src/PeerConnection.h
+aria2-1.37.0/src/PeerConnection.cc
+aria2-1.37.0/src/PeerChokeCommand.h
+aria2-1.37.0/src/PeerChokeCommand.cc
+aria2-1.37.0/src/PeerAddrEntry.h
+aria2-1.37.0/src/PeerAddrEntry.cc
+aria2-1.37.0/src/PeerAbstractCommand.h
+aria2-1.37.0/src/PeerAbstractCommand.cc
+aria2-1.37.0/src/Peer.h
+aria2-1.37.0/src/Peer.cc
+aria2-1.37.0/src/NameResolveCommand.h
+aria2-1.37.0/src/NameResolveCommand.cc
+aria2-1.37.0/src/MSEHandshake.h
+aria2-1.37.0/src/MSEHandshake.cc
+aria2-1.37.0/src/MemoryBencodePreDownloadHandler.h
+aria2-1.37.0/src/magnet.h
+aria2-1.37.0/src/magnet.cc
+aria2-1.37.0/src/LpdReceiveMessageCommand.h
+aria2-1.37.0/src/LpdReceiveMessageCommand.cc
+aria2-1.37.0/src/LpdMessageReceiver.h
+aria2-1.37.0/src/LpdMessageReceiver.cc
+aria2-1.37.0/src/LpdMessageDispatcher.h
+aria2-1.37.0/src/LpdMessageDispatcher.cc
+aria2-1.37.0/src/LpdMessage.h
+aria2-1.37.0/src/LpdMessage.cc
+aria2-1.37.0/src/LpdDispatchMessageCommand.h
+aria2-1.37.0/src/LpdDispatchMessageCommand.cc
+aria2-1.37.0/src/InitiatorMSEHandshakeCommand.h
+aria2-1.37.0/src/InitiatorMSEHandshakeCommand.cc
+aria2-1.37.0/src/IndexBtMessageValidator.h
+aria2-1.37.0/src/IndexBtMessageValidator.cc
+aria2-1.37.0/src/IndexBtMessage.h
+aria2-1.37.0/src/IndexBtMessage.cc
+aria2-1.37.0/src/HandshakeExtensionMessage.h
+aria2-1.37.0/src/HandshakeExtensionMessage.cc
+aria2-1.37.0/src/ExtensionMessageRegistry.h
+aria2-1.37.0/src/ExtensionMessageRegistry.cc
+aria2-1.37.0/src/ExtensionMessageFactory.h
+aria2-1.37.0/src/ExtensionMessage.h
+aria2-1.37.0/src/DHTUnknownMessage.h
+aria2-1.37.0/src/DHTUnknownMessage.cc
+aria2-1.37.0/src/DHTTokenUpdateCommand.h
+aria2-1.37.0/src/DHTTokenUpdateCommand.cc
+aria2-1.37.0/src/DHTTokenTracker.h
+aria2-1.37.0/src/DHTTokenTracker.cc
+aria2-1.37.0/src/DHTTaskQueueImpl.h
+aria2-1.37.0/src/DHTTaskQueueImpl.cc
+aria2-1.37.0/src/DHTTaskQueue.h
+aria2-1.37.0/src/DHTTaskFactoryImpl.h
+aria2-1.37.0/src/DHTTaskFactoryImpl.cc
+aria2-1.37.0/src/DHTTaskFactory.h
+aria2-1.37.0/src/DHTTaskExecutor.h
+aria2-1.37.0/src/DHTTaskExecutor.cc
+aria2-1.37.0/src/DHTTask.h
+aria2-1.37.0/src/DHTSetup.h
+aria2-1.37.0/src/DHTSetup.cc
+aria2-1.37.0/src/DHTRoutingTableSerializer.h
+aria2-1.37.0/src/DHTRoutingTableSerializer.cc
+aria2-1.37.0/src/DHTRoutingTableDeserializer.h
+aria2-1.37.0/src/DHTRoutingTableDeserializer.cc
+aria2-1.37.0/src/DHTRoutingTable.h
+aria2-1.37.0/src/DHTRoutingTable.cc
+aria2-1.37.0/src/DHTResponseMessage.h
+aria2-1.37.0/src/DHTResponseMessage.cc
+aria2-1.37.0/src/DHTReplaceNodeTask.h
+aria2-1.37.0/src/DHTReplaceNodeTask.cc
+aria2-1.37.0/src/DHTRegistry.h
+aria2-1.37.0/src/DHTRegistry.cc
+aria2-1.37.0/src/DHTQueryMessage.h
+aria2-1.37.0/src/DHTQueryMessage.cc
+aria2-1.37.0/src/DHTPingTask.h
+aria2-1.37.0/src/DHTPingTask.cc
+aria2-1.37.0/src/DHTPingReplyMessageCallback.h
+aria2-1.37.0/src/DHTPingReplyMessage.h
+aria2-1.37.0/src/DHTPingReplyMessage.cc
+aria2-1.37.0/src/DHTPingMessage.h
+aria2-1.37.0/src/DHTPingMessage.cc
+aria2-1.37.0/src/DHTPeerLookupTaskCallback.h
+aria2-1.37.0/src/DHTPeerLookupTaskCallback.cc
+aria2-1.37.0/src/DHTPeerLookupTask.h
+aria2-1.37.0/src/DHTPeerLookupTask.cc
+aria2-1.37.0/src/DHTPeerAnnounceStorage.h
+aria2-1.37.0/src/DHTPeerAnnounceStorage.cc
+aria2-1.37.0/src/DHTPeerAnnounceEntry.h
+aria2-1.37.0/src/DHTPeerAnnounceEntry.cc
+aria2-1.37.0/src/DHTPeerAnnounceCommand.h
+aria2-1.37.0/src/DHTPeerAnnounceCommand.cc
+aria2-1.37.0/src/DHTNodeLookupTaskCallback.h
+aria2-1.37.0/src/DHTNodeLookupTaskCallback.cc
+aria2-1.37.0/src/DHTNodeLookupTask.h
+aria2-1.37.0/src/DHTNodeLookupTask.cc
+aria2-1.37.0/src/DHTNodeLookupEntry.h
+aria2-1.37.0/src/DHTNodeLookupEntry.cc
+aria2-1.37.0/src/DHTNode.h
+aria2-1.37.0/src/DHTNode.cc
+aria2-1.37.0/src/DHTMessageTrackerEntry.h
+aria2-1.37.0/src/DHTMessageTrackerEntry.cc
+aria2-1.37.0/src/DHTMessageTracker.h
+aria2-1.37.0/src/DHTMessageTracker.cc
+aria2-1.37.0/src/DHTMessageReceiver.h
+aria2-1.37.0/src/DHTMessageReceiver.cc
+aria2-1.37.0/src/DHTMessageFactoryImpl.h
+aria2-1.37.0/src/DHTMessageFactoryImpl.cc
+aria2-1.37.0/src/DHTMessageFactory.h
+aria2-1.37.0/src/DHTMessageEntry.h
+aria2-1.37.0/src/DHTMessageEntry.cc
+aria2-1.37.0/src/DHTMessageDispatcherImpl.h
+aria2-1.37.0/src/DHTMessageDispatcherImpl.cc
+aria2-1.37.0/src/DHTMessageDispatcher.h
+aria2-1.37.0/src/DHTMessageCallback.h
+aria2-1.37.0/src/DHTMessage.h
+aria2-1.37.0/src/DHTMessage.cc
+aria2-1.37.0/src/DHTInteractionCommand.h
+aria2-1.37.0/src/DHTInteractionCommand.cc
+aria2-1.37.0/src/DHTIDCloser.h
+aria2-1.37.0/src/DHTGetPeersReplyMessage.h
+aria2-1.37.0/src/DHTGetPeersReplyMessage.cc
+aria2-1.37.0/src/DHTGetPeersMessage.h
+aria2-1.37.0/src/DHTGetPeersMessage.cc
+aria2-1.37.0/src/DHTGetPeersCommand.h
+aria2-1.37.0/src/DHTGetPeersCommand.cc
+aria2-1.37.0/src/DHTFindNodeReplyMessage.h
+aria2-1.37.0/src/DHTFindNodeReplyMessage.cc
+aria2-1.37.0/src/DHTFindNodeMessage.h
+aria2-1.37.0/src/DHTFindNodeMessage.cc
+aria2-1.37.0/src/DHTEntryPointNameResolveCommand.h
+aria2-1.37.0/src/DHTEntryPointNameResolveCommand.cc
+aria2-1.37.0/src/DHTConstants.h
+aria2-1.37.0/src/DHTConnectionImpl.h
+aria2-1.37.0/src/DHTConnectionImpl.cc
+aria2-1.37.0/src/DHTConnection.h
+aria2-1.37.0/src/DHTBucketTree.h
+aria2-1.37.0/src/DHTBucketTree.cc
+aria2-1.37.0/src/DHTBucketRefreshTask.h
+aria2-1.37.0/src/DHTBucketRefreshTask.cc
+aria2-1.37.0/src/DHTBucketRefreshCommand.h
+aria2-1.37.0/src/DHTBucketRefreshCommand.cc
+aria2-1.37.0/src/DHTBucket.h
+aria2-1.37.0/src/DHTBucket.cc
+aria2-1.37.0/src/DHTAutoSaveCommand.h
+aria2-1.37.0/src/DHTAutoSaveCommand.cc
+aria2-1.37.0/src/DHTAnnouncePeerReplyMessage.h
+aria2-1.37.0/src/DHTAnnouncePeerReplyMessage.cc
+aria2-1.37.0/src/DHTAnnouncePeerMessage.h
+aria2-1.37.0/src/DHTAnnouncePeerMessage.cc
+aria2-1.37.0/src/DHTAbstractTask.h
+aria2-1.37.0/src/DHTAbstractTask.cc
+aria2-1.37.0/src/DHTAbstractNodeLookupTask.h
+aria2-1.37.0/src/DHTAbstractMessage.h
+aria2-1.37.0/src/DHTAbstractMessage.cc
+aria2-1.37.0/src/DHKeyExchange.h
+aria2-1.37.0/src/DefaultPeerStorage.h
+aria2-1.37.0/src/DefaultPeerStorage.cc
+aria2-1.37.0/src/DefaultExtensionMessageFactory.h
+aria2-1.37.0/src/DefaultExtensionMessageFactory.cc
+aria2-1.37.0/src/DefaultBtRequestFactory.h
+aria2-1.37.0/src/DefaultBtRequestFactory.cc
+aria2-1.37.0/src/DefaultBtMessageReceiver.h
+aria2-1.37.0/src/DefaultBtMessageReceiver.cc
+aria2-1.37.0/src/DefaultBtMessageFactory.h
+aria2-1.37.0/src/DefaultBtMessageFactory.cc
+aria2-1.37.0/src/DefaultBtMessageDispatcher.h
+aria2-1.37.0/src/DefaultBtMessageDispatcher.cc
+aria2-1.37.0/src/DefaultBtInteractive.h
+aria2-1.37.0/src/DefaultBtInteractive.cc
+aria2-1.37.0/src/DefaultBtAnnounce.h
+aria2-1.37.0/src/DefaultBtAnnounce.cc
+aria2-1.37.0/src/BtUnchokeMessage.h
+aria2-1.37.0/src/BtUnchokeMessage.cc
+aria2-1.37.0/src/BtSuggestPieceMessage.h
+aria2-1.37.0/src/BtSuggestPieceMessage.cc
+aria2-1.37.0/src/BtStopDownloadCommand.h
+aria2-1.37.0/src/BtStopDownloadCommand.cc
+aria2-1.37.0/src/BtSetup.h
+aria2-1.37.0/src/BtSetup.cc
+aria2-1.37.0/src/BtSeederStateChoke.h
+aria2-1.37.0/src/BtSeederStateChoke.cc
+aria2-1.37.0/src/BtRuntime.h
+aria2-1.37.0/src/BtRuntime.cc
+aria2-1.37.0/src/BtRequestMessage.h
+aria2-1.37.0/src/BtRequestMessage.cc
+aria2-1.37.0/src/BtRequestFactory.h
+aria2-1.37.0/src/BtRejectMessage.h
+aria2-1.37.0/src/BtRejectMessage.cc
+aria2-1.37.0/src/BtRegistry.h
+aria2-1.37.0/src/BtRegistry.cc
+aria2-1.37.0/src/BtPostDownloadHandler.h
+aria2-1.37.0/src/BtPostDownloadHandler.cc
+aria2-1.37.0/src/BtPortMessage.h
+aria2-1.37.0/src/BtPortMessage.cc
+aria2-1.37.0/src/BtPieceMessageValidator.h
+aria2-1.37.0/src/BtPieceMessageValidator.cc
+aria2-1.37.0/src/BtPieceMessage.h
+aria2-1.37.0/src/BtPieceMessage.cc
+aria2-1.37.0/src/BtNotInterestedMessage.h
+aria2-1.37.0/src/BtNotInterestedMessage.cc
+aria2-1.37.0/src/BtMessageValidator.h
+aria2-1.37.0/src/BtMessageReceiver.h
+aria2-1.37.0/src/BtMessageFactory.h
+aria2-1.37.0/src/BtMessageDispatcher.h
+aria2-1.37.0/src/BtMessage.h
+aria2-1.37.0/src/BtLeecherStateChoke.h
+aria2-1.37.0/src/BtLeecherStateChoke.cc
+aria2-1.37.0/src/BtKeepAliveMessage.h
+aria2-1.37.0/src/BtKeepAliveMessage.cc
+aria2-1.37.0/src/BtInterestedMessage.h
+aria2-1.37.0/src/BtInterestedMessage.cc
+aria2-1.37.0/src/BtInteractive.h
+aria2-1.37.0/src/BtHaveNoneMessage.h
+aria2-1.37.0/src/BtHaveNoneMessage.cc
+aria2-1.37.0/src/BtHaveMessage.h
+aria2-1.37.0/src/BtHaveMessage.cc
+aria2-1.37.0/src/BtHaveAllMessage.h
+aria2-1.37.0/src/BtHaveAllMessage.cc
+aria2-1.37.0/src/BtHandshakeMessageValidator.h
+aria2-1.37.0/src/BtHandshakeMessageValidator.cc
+aria2-1.37.0/src/BtHandshakeMessage.h
+aria2-1.37.0/src/BtHandshakeMessage.cc
+aria2-1.37.0/src/BtFileAllocationEntry.h
+aria2-1.37.0/src/BtFileAllocationEntry.cc
+aria2-1.37.0/src/BtExtendedMessage.h
+aria2-1.37.0/src/BtExtendedMessage.cc
+aria2-1.37.0/src/BtDependency.h
+aria2-1.37.0/src/BtDependency.cc
+aria2-1.37.0/src/BtConstants.h
+aria2-1.37.0/src/BtChokingEvent.h
+aria2-1.37.0/src/BtChokeMessage.h
+aria2-1.37.0/src/BtChokeMessage.cc
+aria2-1.37.0/src/BtCheckIntegrityEntry.h
+aria2-1.37.0/src/BtCheckIntegrityEntry.cc
+aria2-1.37.0/src/BtCancelSendingPieceEvent.h
+aria2-1.37.0/src/BtCancelMessage.h
+aria2-1.37.0/src/BtCancelMessage.cc
+aria2-1.37.0/src/BtBitfieldMessageValidator.h
+aria2-1.37.0/src/BtBitfieldMessageValidator.cc
+aria2-1.37.0/src/BtBitfieldMessage.h
+aria2-1.37.0/src/BtBitfieldMessage.cc
+aria2-1.37.0/src/BtAnnounce.h
+aria2-1.37.0/src/BtAnnounce.cc
+aria2-1.37.0/src/BtAllowedFastMessage.h
+aria2-1.37.0/src/BtAllowedFastMessage.cc
+aria2-1.37.0/src/BtAbortOutstandingRequestEvent.h
+aria2-1.37.0/src/BtAbortOutstandingRequestEvent.cc
+aria2-1.37.0/src/bittorrent_helper.h
+aria2-1.37.0/src/bittorrent_helper.cc
+aria2-1.37.0/src/BencodeParser.h
+aria2-1.37.0/src/BencodeParser.cc
+aria2-1.37.0/src/BencodeDiskWriterFactory.h
+aria2-1.37.0/src/BencodeDiskWriter.h
+aria2-1.37.0/src/bencode2.h
+aria2-1.37.0/src/bencode2.cc
+aria2-1.37.0/src/ARC4Encryptor.h
+aria2-1.37.0/src/AnnounceTier.h
+aria2-1.37.0/src/AnnounceTier.cc
+aria2-1.37.0/src/AnnounceList.cc
+aria2-1.37.0/src/AnnounceList.h
+aria2-1.37.0/src/ActivePeerConnectionCommand.h
+aria2-1.37.0/src/ActivePeerConnectionCommand.cc
+aria2-1.37.0/src/AbstractBtMessage.h
+aria2-1.37.0/src/AbstractBtMessage.cc
+aria2-1.37.0/src/AsyncNameResolverMan.h
+aria2-1.37.0/src/AsyncNameResolverMan.cc
+aria2-1.37.0/src/AsyncNameResolver.h
+aria2-1.37.0/src/AsyncNameResolver.cc
+aria2-1.37.0/src/SftpFinishDownloadCommand.h
+aria2-1.37.0/src/SftpFinishDownloadCommand.cc
+aria2-1.37.0/src/SftpDownloadCommand.h
+aria2-1.37.0/src/SftpDownloadCommand.cc
+aria2-1.37.0/src/SftpNegotiationConnectChain.h
+aria2-1.37.0/src/SftpNegotiationCommand.h
+aria2-1.37.0/src/SftpNegotiationCommand.cc
+aria2-1.37.0/src/SSHSession.h
+aria2-1.37.0/src/SSHSession.cc
+aria2-1.37.0/src/Sqlite3CookieParserImpl.h
+aria2-1.37.0/src/Sqlite3CookieParserImpl.cc
+aria2-1.37.0/src/Sqlite3CookieParser.h
+aria2-1.37.0/src/Sqlite3CookieParser.cc
+aria2-1.37.0/src/Adler32MessageDigestImpl.h
+aria2-1.37.0/src/Adler32MessageDigestImpl.cc
+aria2-1.37.0/src/GZipFile.h
+aria2-1.37.0/src/GZipFile.cc
+aria2-1.37.0/src/GZipEncoder.h
+aria2-1.37.0/src/GZipEncoder.cc
+aria2-1.37.0/src/GZipDecodingStreamFilter.h
+aria2-1.37.0/src/GZipDecodingStreamFilter.cc
+aria2-1.37.0/src/LibsslMessageDigestImpl.cc
+aria2-1.37.0/src/LibsslTLSSession.h
+aria2-1.37.0/src/LibsslTLSSession.cc
+aria2-1.37.0/src/LibsslTLSContext.h
+aria2-1.37.0/src/LibsslTLSContext.cc
+aria2-1.37.0/src/LibsslDHKeyExchange.h
+aria2-1.37.0/src/LibsslDHKeyExchange.cc
+aria2-1.37.0/src/LibsslARC4Encryptor.h
+aria2-1.37.0/src/LibsslARC4Encryptor.cc
+aria2-1.37.0/src/LibgmpDHKeyExchange.h
+aria2-1.37.0/src/LibgmpDHKeyExchange.cc
+aria2-1.37.0/src/a2gmp.h
+aria2-1.37.0/src/a2gmp.cc
+aria2-1.37.0/src/LibnettleMessageDigestImpl.cc
+aria2-1.37.0/src/LibnettleARC4Encryptor.h
+aria2-1.37.0/src/LibnettleARC4Encryptor.cc
+aria2-1.37.0/src/LibgcryptMessageDigestImpl.cc
+aria2-1.37.0/src/LibgcryptDHKeyExchange.h
+aria2-1.37.0/src/LibgcryptDHKeyExchange.cc
+aria2-1.37.0/src/LibgcryptARC4Encryptor.h
+aria2-1.37.0/src/LibgcryptARC4Encryptor.cc
+aria2-1.37.0/src/LibgnutlsTLSSession.h
+aria2-1.37.0/src/LibgnutlsTLSSession.cc
+aria2-1.37.0/src/LibgnutlsTLSContext.h
+aria2-1.37.0/src/LibgnutlsTLSContext.cc
+aria2-1.37.0/src/crypto_hash.h
+aria2-1.37.0/src/crypto_hash.cc
+aria2-1.37.0/src/InternalMessageDigestImpl.cc
+aria2-1.37.0/src/InternalARC4Encryptor.h
+aria2-1.37.0/src/InternalARC4Encryptor.cc
+aria2-1.37.0/src/InternalDHKeyExchange.h
+aria2-1.37.0/src/InternalDHKeyExchange.cc
+aria2-1.37.0/src/bignum.h
+aria2-1.37.0/src/WinTLSSession.h
+aria2-1.37.0/src/WinTLSSession.cc
+aria2-1.37.0/src/WinTLSContext.h
+aria2-1.37.0/src/WinTLSContext.cc
+aria2-1.37.0/src/AppleTLSSession.h
+aria2-1.37.0/src/AppleTLSSession.cc
+aria2-1.37.0/src/AppleTLSContext.h
+aria2-1.37.0/src/AppleTLSContext.cc
+aria2-1.37.0/src/AppleMessageDigestImpl.cc
+aria2-1.37.0/src/TLSSession.h
+aria2-1.37.0/src/TLSContext.h
+aria2-1.37.0/src/EpollEventPoll.h
+aria2-1.37.0/src/EpollEventPoll.cc
+aria2-1.37.0/src/FallocFileAllocationIterator.h
+aria2-1.37.0/src/FallocFileAllocationIterator.cc
+aria2-1.37.0/src/XmlRpcRequestParserStateMachine.h
+aria2-1.37.0/src/XmlRpcRequestParserStateMachine.cc
+aria2-1.37.0/src/XmlRpcRequestParserStateImpl.h
+aria2-1.37.0/src/XmlRpcRequestParserStateImpl.cc
+aria2-1.37.0/src/XmlRpcRequestParserState.h
+aria2-1.37.0/src/XmlRpcDiskWriter.h
+aria2-1.37.0/src/XmlRpcDiskWriter.cc
+aria2-1.37.0/src/ExpatXmlParser.h
+aria2-1.37.0/src/ExpatXmlParser.cc
+aria2-1.37.0/src/Xml2XmlParser.h
+aria2-1.37.0/src/Xml2XmlParser.cc
+aria2-1.37.0/src/XmlParser.h
+aria2-1.37.0/src/XmlParser.cc
+aria2-1.37.0/src/XmlAttr.h
+aria2-1.37.0/src/XmlAttr.cc
+aria2-1.37.0/src/ParserStateMachine.h
+aria2-1.37.0/src/NullWebSocketSessionMan.h
+aria2-1.37.0/src/WebSocketSessionMan.h
+aria2-1.37.0/src/WebSocketSessionMan.cc
+aria2-1.37.0/src/WebSocketSession.h
+aria2-1.37.0/src/WebSocketSession.cc
+aria2-1.37.0/src/WebSocketResponseCommand.h
+aria2-1.37.0/src/WebSocketResponseCommand.cc
+aria2-1.37.0/src/WebSocketInteractionCommand.h
+aria2-1.37.0/src/WebSocketInteractionCommand.cc
+aria2-1.37.0/src/WinConsoleFile.h
+aria2-1.37.0/src/WinConsoleFile.cc
+aria2-1.37.0/src/libssl_compat.h
+aria2-1.37.0/src/EvictSocketPoolCommand.h
+aria2-1.37.0/src/EvictSocketPoolCommand.cc
+aria2-1.37.0/src/SHA1IOFile.h
+aria2-1.37.0/src/SHA1IOFile.cc
+aria2-1.37.0/src/OpenedFileCounter.h
+aria2-1.37.0/src/OpenedFileCounter.cc
+aria2-1.37.0/src/XmlRpcRequestParserController.h
+aria2-1.37.0/src/XmlRpcRequestParserController.cc
+aria2-1.37.0/src/WrDiskCacheEntry.h
+aria2-1.37.0/src/WrDiskCacheEntry.cc
+aria2-1.37.0/src/WrDiskCache.h
+aria2-1.37.0/src/WrDiskCache.cc
+aria2-1.37.0/src/WatchProcessCommand.h
+aria2-1.37.0/src/WatchProcessCommand.cc
+aria2-1.37.0/src/wallclock.h
+aria2-1.37.0/src/wallclock.cc
+aria2-1.37.0/src/version_usage.cc
+aria2-1.37.0/src/ValueBaseStructParserStateMachine.h
+aria2-1.37.0/src/ValueBaseStructParserStateMachine.cc
+aria2-1.37.0/src/ValueBaseStructParserStateImpl.h
+aria2-1.37.0/src/ValueBaseStructParserStateImpl.cc
+aria2-1.37.0/src/ValueBaseStructParserState.h
+aria2-1.37.0/src/ValueBaseJsonParser.h
+aria2-1.37.0/src/ValueBaseDiskWriter.h
+aria2-1.37.0/src/ValueBase.h
+aria2-1.37.0/src/ValueBase.cc
+aria2-1.37.0/src/util_security.h
+aria2-1.37.0/src/util_security.cc
+aria2-1.37.0/src/util.h
+aria2-1.37.0/src/util.cc
+aria2-1.37.0/src/usage_text.h
+aria2-1.37.0/src/uri_split.h
+aria2-1.37.0/src/uri_split.c
+aria2-1.37.0/src/URISelector.h
+aria2-1.37.0/src/URIResult.h
+aria2-1.37.0/src/URIResult.cc
+aria2-1.37.0/src/UriListParser.h
+aria2-1.37.0/src/UriListParser.cc
+aria2-1.37.0/src/uri.h
+aria2-1.37.0/src/uri.cc
+aria2-1.37.0/src/UnknownOptionException.h
+aria2-1.37.0/src/UnknownOptionException.cc
+aria2-1.37.0/src/UnknownLengthPieceStorage.h
+aria2-1.37.0/src/UnknownLengthPieceStorage.cc
+aria2-1.37.0/src/TruncFileAllocationIterator.h
+aria2-1.37.0/src/TruncFileAllocationIterator.cc
+aria2-1.37.0/src/TransferStat.h
+aria2-1.37.0/src/TransferStat.cc
+aria2-1.37.0/src/TorrentAttribute.h
+aria2-1.37.0/src/TorrentAttribute.cc
+aria2-1.37.0/src/timespec.h
+aria2-1.37.0/src/TimerA2.h
+aria2-1.37.0/src/TimerA2.cc
+aria2-1.37.0/src/TimedHaltCommand.h
+aria2-1.37.0/src/TimedHaltCommand.cc
+aria2-1.37.0/src/TimeBasedCommand.h
+aria2-1.37.0/src/TimeBasedCommand.cc
+aria2-1.37.0/src/TimeA2.h
+aria2-1.37.0/src/TimeA2.cc
+aria2-1.37.0/src/StructParserStateMachine.h
+aria2-1.37.0/src/StreamPieceSelector.h
+aria2-1.37.0/src/StreamFilter.h
+aria2-1.37.0/src/StreamFilter.cc
+aria2-1.37.0/src/StreamFileAllocationEntry.h
+aria2-1.37.0/src/StreamFileAllocationEntry.cc
+aria2-1.37.0/src/StreamCheckIntegrityEntry.h
+aria2-1.37.0/src/StreamCheckIntegrityEntry.cc
+aria2-1.37.0/src/StatCalc.h
+aria2-1.37.0/src/SpeedCalc.h
+aria2-1.37.0/src/SpeedCalc.cc
+aria2-1.37.0/src/SocketRecvBuffer.h
+aria2-1.37.0/src/SocketRecvBuffer.cc
+aria2-1.37.0/src/SocketCore.h
+aria2-1.37.0/src/SocketCore.cc
+aria2-1.37.0/src/SocketBuffer.h
+aria2-1.37.0/src/SocketBuffer.cc
+aria2-1.37.0/src/SinkStreamFilter.h
+aria2-1.37.0/src/SinkStreamFilter.cc
+aria2-1.37.0/src/SingletonHolder.h
+aria2-1.37.0/src/SingleFileAllocationIterator.h
+aria2-1.37.0/src/SingleFileAllocationIterator.cc
+aria2-1.37.0/src/SimpleRandomizer.h
+aria2-1.37.0/src/SimpleRandomizer.cc
+aria2-1.37.0/src/Signature.h
+aria2-1.37.0/src/Signature.cc
+aria2-1.37.0/src/SessionSerializer.h
+aria2-1.37.0/src/SessionSerializer.cc
+aria2-1.37.0/src/ServerStatMan.h
+aria2-1.37.0/src/ServerStatMan.cc
+aria2-1.37.0/src/ServerStat.h
+aria2-1.37.0/src/ServerStat.cc
+aria2-1.37.0/src/SequentialPicker.h
+aria2-1.37.0/src/SequentialDispatcherCommand.h
+aria2-1.37.0/src/SelectEventPoll.h
+aria2-1.37.0/src/SelectEventPoll.cc
+aria2-1.37.0/src/SegmentMan.h
+aria2-1.37.0/src/SegmentMan.cc
+aria2-1.37.0/src/Segment.h
+aria2-1.37.0/src/SegList.h
+aria2-1.37.0/src/SaveSessionCommand.cc
+aria2-1.37.0/src/SaveSessionCommand.h
+aria2-1.37.0/src/rpc_helper.h
+aria2-1.37.0/src/rpc_helper.cc
+aria2-1.37.0/src/RpcResponse.h
+aria2-1.37.0/src/RpcResponse.cc
+aria2-1.37.0/src/RpcRequest.h
+aria2-1.37.0/src/RpcRequest.cc
+aria2-1.37.0/src/RpcMethodImpl.h
+aria2-1.37.0/src/RpcMethodImpl.cc
+aria2-1.37.0/src/RpcMethodFactory.h
+aria2-1.37.0/src/RpcMethodFactory.cc
+aria2-1.37.0/src/RpcMethod.h
+aria2-1.37.0/src/RpcMethod.cc
+aria2-1.37.0/src/RequestGroupMan.h
+aria2-1.37.0/src/RequestGroupMan.cc
+aria2-1.37.0/src/RequestGroupEntry.h
+aria2-1.37.0/src/RequestGroupEntry.cc
+aria2-1.37.0/src/RequestGroupCriteria.h
+aria2-1.37.0/src/RequestGroup.h
+aria2-1.37.0/src/RequestGroup.cc
+aria2-1.37.0/src/Request.h
+aria2-1.37.0/src/Request.cc
+aria2-1.37.0/src/RecoverableException.h
+aria2-1.37.0/src/RecoverableException.cc
+aria2-1.37.0/src/RealtimeCommand.h
+aria2-1.37.0/src/RealtimeCommand.cc
+aria2-1.37.0/src/RarestPieceSelector.h
+aria2-1.37.0/src/RarestPieceSelector.cc
+aria2-1.37.0/src/Range.h
+aria2-1.37.0/src/Range.cc
+aria2-1.37.0/src/Randomizer.h
+aria2-1.37.0/src/ProtocolDetector.h
+aria2-1.37.0/src/ProtocolDetector.cc
+aria2-1.37.0/src/ProgressAwareEntry.h
+aria2-1.37.0/src/prefs.h
+aria2-1.37.0/src/prefs.cc
+aria2-1.37.0/src/PreDownloadHandler.h
+aria2-1.37.0/src/PostDownloadHandler.h
+aria2-1.37.0/src/Platform.h
+aria2-1.37.0/src/Platform.cc
+aria2-1.37.0/src/PieceStorage.h
+aria2-1.37.0/src/PieceStatMan.h
+aria2-1.37.0/src/PieceStatMan.cc
+aria2-1.37.0/src/PieceSelector.h
+aria2-1.37.0/src/PieceHashCheckIntegrityEntry.h
+aria2-1.37.0/src/PieceHashCheckIntegrityEntry.cc
+aria2-1.37.0/src/PiecedSegment.h
+aria2-1.37.0/src/PiecedSegment.cc
+aria2-1.37.0/src/Piece.h
+aria2-1.37.0/src/Piece.cc
+aria2-1.37.0/src/PeerStat.h
+aria2-1.37.0/src/PeerStat.cc
+aria2-1.37.0/src/paramed_string.h
+aria2-1.37.0/src/paramed_string.cc
+aria2-1.37.0/src/OutputFile.h
+aria2-1.37.0/src/option_processing.cc
+aria2-1.37.0/src/OptionParser.h
+aria2-1.37.0/src/OptionParser.cc
+aria2-1.37.0/src/OptionHandlerImpl.h
+aria2-1.37.0/src/OptionHandlerImpl.cc
+aria2-1.37.0/src/OptionHandlerFactory.h
+aria2-1.37.0/src/OptionHandlerFactory.cc
+aria2-1.37.0/src/OptionHandlerException.h
+aria2-1.37.0/src/OptionHandlerException.cc
+aria2-1.37.0/src/OptionHandler.h
+aria2-1.37.0/src/OptionHandler.cc
+aria2-1.37.0/src/Option.h
+aria2-1.37.0/src/Option.cc
+aria2-1.37.0/src/NullStatCalc.h
+aria2-1.37.0/src/NullSinkStreamFilter.h
+aria2-1.37.0/src/NullSinkStreamFilter.cc
+aria2-1.37.0/src/NullProgressInfoFile.h
+aria2-1.37.0/src/NullOutputFile.h
+aria2-1.37.0/src/NullHandle.h
+aria2-1.37.0/src/NsCookieParser.h
+aria2-1.37.0/src/NsCookieParser.cc
+aria2-1.37.0/src/Notifier.h
+aria2-1.37.0/src/Notifier.cc
+aria2-1.37.0/src/NetStat.h
+aria2-1.37.0/src/NetStat.cc
+aria2-1.37.0/src/NetrcAuthResolver.h
+aria2-1.37.0/src/NetrcAuthResolver.cc
+aria2-1.37.0/src/Netrc.h
+aria2-1.37.0/src/Netrc.cc
+aria2-1.37.0/src/NameResolver.h
+aria2-1.37.0/src/NameResolver.cc
+aria2-1.37.0/src/MultiUrlRequestInfo.h
+aria2-1.37.0/src/MultiUrlRequestInfo.cc
+aria2-1.37.0/src/MultiFileAllocationIterator.h
+aria2-1.37.0/src/MultiFileAllocationIterator.cc
+aria2-1.37.0/src/MultiDiskAdaptor.h
+aria2-1.37.0/src/MultiDiskAdaptor.cc
+aria2-1.37.0/src/MetalinkHttpEntry.h
+aria2-1.37.0/src/MetalinkHttpEntry.cc
+aria2-1.37.0/src/MetadataInfo.h
+aria2-1.37.0/src/MetadataInfo.cc
+aria2-1.37.0/src/message_digest_helper.h
+aria2-1.37.0/src/message_digest_helper.cc
+aria2-1.37.0/src/MessageDigestImpl.h
+aria2-1.37.0/src/MessageDigest.h
+aria2-1.37.0/src/MessageDigest.cc
+aria2-1.37.0/src/message.h
+aria2-1.37.0/src/MemoryPreDownloadHandler.h
+aria2-1.37.0/src/MemoryBufferPreDownloadHandler.h
+aria2-1.37.0/src/LongestSequencePieceSelector.h
+aria2-1.37.0/src/LongestSequencePieceSelector.cc
+aria2-1.37.0/src/Logger.h
+aria2-1.37.0/src/Logger.cc
+aria2-1.37.0/src/LogFactory.h
+aria2-1.37.0/src/LogFactory.cc
+aria2-1.37.0/src/Lock.h
+aria2-1.37.0/src/JsonParser.h
+aria2-1.37.0/src/JsonParser.cc
+aria2-1.37.0/src/JsonDiskWriter.h
+aria2-1.37.0/src/json.h
+aria2-1.37.0/src/json.cc
+aria2-1.37.0/src/IteratableValidator.h
+aria2-1.37.0/src/IteratableChunkChecksumValidator.h
+aria2-1.37.0/src/IteratableChunkChecksumValidator.cc
+aria2-1.37.0/src/IteratableChecksumValidator.h
+aria2-1.37.0/src/IteratableChecksumValidator.cc
+aria2-1.37.0/src/IOFile.h
+aria2-1.37.0/src/IOFile.cc
+aria2-1.37.0/src/InorderURISelector.h
+aria2-1.37.0/src/InorderURISelector.cc
+aria2-1.37.0/src/RandomStreamPieceSelector.h
+aria2-1.37.0/src/RandomStreamPieceSelector.cc
+aria2-1.37.0/src/InorderStreamPieceSelector.h
+aria2-1.37.0/src/InorderStreamPieceSelector.cc
+aria2-1.37.0/src/InitiateConnectionCommandFactory.h
+aria2-1.37.0/src/InitiateConnectionCommandFactory.cc
+aria2-1.37.0/src/InitiateConnectionCommand.h
+aria2-1.37.0/src/InitiateConnectionCommand.cc
+aria2-1.37.0/src/IndexedList.h
+aria2-1.37.0/src/HttpSkipResponseCommand.h
+aria2-1.37.0/src/HttpSkipResponseCommand.cc
+aria2-1.37.0/src/HttpServerResponseCommand.h
+aria2-1.37.0/src/HttpServerResponseCommand.cc
+aria2-1.37.0/src/HttpServerCommand.h
+aria2-1.37.0/src/HttpServerCommand.cc
+aria2-1.37.0/src/HttpServerBodyCommand.h
+aria2-1.37.0/src/HttpServerBodyCommand.cc
+aria2-1.37.0/src/HttpServer.h
+aria2-1.37.0/src/HttpServer.cc
+aria2-1.37.0/src/HttpResponseCommand.h
+aria2-1.37.0/src/HttpResponseCommand.cc
+aria2-1.37.0/src/HttpResponse.h
+aria2-1.37.0/src/HttpResponse.cc
+aria2-1.37.0/src/HttpRequestConnectChain.h
+aria2-1.37.0/src/HttpRequestCommand.h
+aria2-1.37.0/src/HttpRequestCommand.cc
+aria2-1.37.0/src/HttpRequest.h
+aria2-1.37.0/src/HttpRequest.cc
+aria2-1.37.0/src/HttpProxyResponseCommand.h
+aria2-1.37.0/src/HttpProxyResponseCommand.cc
+aria2-1.37.0/src/HttpProxyRequestConnectChain.h
+aria2-1.37.0/src/HttpProxyRequestCommand.h
+aria2-1.37.0/src/HttpProxyRequestCommand.cc
+aria2-1.37.0/src/HttpListenCommand.h
+aria2-1.37.0/src/HttpListenCommand.cc
+aria2-1.37.0/src/HttpInitiateConnectionCommand.h
+aria2-1.37.0/src/HttpInitiateConnectionCommand.cc
+aria2-1.37.0/src/HttpHeaderProcessor.h
+aria2-1.37.0/src/HttpHeaderProcessor.cc
+aria2-1.37.0/src/HttpHeader.h
+aria2-1.37.0/src/HttpHeader.cc
+aria2-1.37.0/src/HttpDownloadCommand.h
+aria2-1.37.0/src/HttpDownloadCommand.cc
+aria2-1.37.0/src/HttpConnection.h
+aria2-1.37.0/src/HttpConnection.cc
+aria2-1.37.0/src/help_tags.h
+aria2-1.37.0/src/help_tags.cc
+aria2-1.37.0/src/HaveEraseCommand.h
+aria2-1.37.0/src/HaveEraseCommand.cc
+aria2-1.37.0/src/HashFuncEntry.h
+aria2-1.37.0/src/GrowSegment.h
+aria2-1.37.0/src/GrowSegment.cc
+aria2-1.37.0/src/GroupId.h
+aria2-1.37.0/src/GroupId.cc
+aria2-1.37.0/src/GeomStreamPieceSelector.h
+aria2-1.37.0/src/GeomStreamPieceSelector.cc
+aria2-1.37.0/src/GenericParser.h
+aria2-1.37.0/src/FtpTunnelResponseCommand.h
+aria2-1.37.0/src/FtpTunnelResponseCommand.cc
+aria2-1.37.0/src/FtpTunnelRequestConnectChain.h
+aria2-1.37.0/src/FtpTunnelRequestCommand.h
+aria2-1.37.0/src/FtpTunnelRequestCommand.cc
+aria2-1.37.0/src/FtpNegotiationConnectChain.h
+aria2-1.37.0/src/FtpNegotiationCommand.h
+aria2-1.37.0/src/FtpNegotiationCommand.cc
+aria2-1.37.0/src/FtpInitiateConnectionCommand.h
+aria2-1.37.0/src/FtpInitiateConnectionCommand.cc
+aria2-1.37.0/src/FtpFinishDownloadCommand.h
+aria2-1.37.0/src/FtpFinishDownloadCommand.cc
+aria2-1.37.0/src/FtpDownloadCommand.h
+aria2-1.37.0/src/FtpDownloadCommand.cc
+aria2-1.37.0/src/FtpConnection.h
+aria2-1.37.0/src/FtpConnection.cc
+aria2-1.37.0/src/fmt.h
+aria2-1.37.0/src/fmt.cc
+aria2-1.37.0/src/FillRequestGroupCommand.h
+aria2-1.37.0/src/FillRequestGroupCommand.cc
+aria2-1.37.0/src/FileEntry.h
+aria2-1.37.0/src/FileEntry.cc
+aria2-1.37.0/src/FileAllocationMan.h
+aria2-1.37.0/src/FileAllocationIterator.h
+aria2-1.37.0/src/FileAllocationEntry.h
+aria2-1.37.0/src/FileAllocationEntry.cc
+aria2-1.37.0/src/FileAllocationDispatcherCommand.h
+aria2-1.37.0/src/FileAllocationDispatcherCommand.cc
+aria2-1.37.0/src/FileAllocationCommand.h
+aria2-1.37.0/src/FileAllocationCommand.cc
+aria2-1.37.0/src/File.h
+aria2-1.37.0/src/File.cc
+aria2-1.37.0/src/FeedbackURISelector.h
+aria2-1.37.0/src/FeedbackURISelector.cc
+aria2-1.37.0/src/FeatureConfig.h
+aria2-1.37.0/src/FeatureConfig.cc
+aria2-1.37.0/src/FatalException.h
+aria2-1.37.0/src/FatalException.cc
+aria2-1.37.0/src/Exception.h
+aria2-1.37.0/src/Exception.cc
+aria2-1.37.0/src/EventPoll.h
+aria2-1.37.0/src/Event.h
+aria2-1.37.0/src/error_code.h
+aria2-1.37.0/src/download_helper.h
+aria2-1.37.0/src/download_helper.cc
+aria2-1.37.0/src/download_handlers.h
+aria2-1.37.0/src/download_handlers.cc
+aria2-1.37.0/src/DownloadResult.h
+aria2-1.37.0/src/DownloadResult.cc
+aria2-1.37.0/src/DownloadHandlerConstants.h
+aria2-1.37.0/src/DownloadHandlerConstants.cc
+aria2-1.37.0/src/DownloadHandler.h
+aria2-1.37.0/src/DownloadHandler.cc
+aria2-1.37.0/src/DownloadFailureException.h
+aria2-1.37.0/src/DownloadFailureException.cc
+aria2-1.37.0/src/DownloadEngineFactory.h
+aria2-1.37.0/src/DownloadEngineFactory.cc
+aria2-1.37.0/src/DownloadEngine.h
+aria2-1.37.0/src/DownloadEngine.cc
+aria2-1.37.0/src/DownloadContext.h
+aria2-1.37.0/src/DownloadContext.cc
+aria2-1.37.0/src/DownloadCommand.h
+aria2-1.37.0/src/DownloadCommand.cc
+aria2-1.37.0/src/DNSCache.h
+aria2-1.37.0/src/DNSCache.cc
+aria2-1.37.0/src/DlRetryEx.h
+aria2-1.37.0/src/DlRetryEx.cc
+aria2-1.37.0/src/DlAbortEx.h
+aria2-1.37.0/src/DlAbortEx.cc
+aria2-1.37.0/src/DiskWriterFactory.h
+aria2-1.37.0/src/DiskWriter.h
+aria2-1.37.0/src/DiskAdaptor.h
+aria2-1.37.0/src/DiskAdaptor.cc
+aria2-1.37.0/src/DirectDiskAdaptor.h
+aria2-1.37.0/src/DirectDiskAdaptor.cc
+aria2-1.37.0/src/Dependency.h
+aria2-1.37.0/src/DelayedCommand.h
+aria2-1.37.0/src/DefaultStreamPieceSelector.h
+aria2-1.37.0/src/DefaultStreamPieceSelector.cc
+aria2-1.37.0/src/DefaultPieceStorage.h
+aria2-1.37.0/src/DefaultPieceStorage.cc
+aria2-1.37.0/src/DefaultDiskWriterFactory.h
+aria2-1.37.0/src/DefaultDiskWriterFactory.cc
+aria2-1.37.0/src/DefaultDiskWriter.h
+aria2-1.37.0/src/DefaultDiskWriter.cc
+aria2-1.37.0/src/DefaultBtProgressInfoFile.h
+aria2-1.37.0/src/DefaultBtProgressInfoFile.cc
+aria2-1.37.0/src/DefaultAuthResolver.h
+aria2-1.37.0/src/DefaultAuthResolver.cc
+aria2-1.37.0/src/CUIDCounter.h
+aria2-1.37.0/src/CUIDCounter.cc
+aria2-1.37.0/src/crypto_endian.h
+aria2-1.37.0/src/CreateRequestCommand.h
+aria2-1.37.0/src/CreateRequestCommand.cc
+aria2-1.37.0/src/cookie_helper.h
+aria2-1.37.0/src/cookie_helper.cc
+aria2-1.37.0/src/CookieStorage.h
+aria2-1.37.0/src/CookieStorage.cc
+aria2-1.37.0/src/Cookie.h
+aria2-1.37.0/src/Cookie.cc
+aria2-1.37.0/src/ControlChain.h
+aria2-1.37.0/src/ContextAttribute.h
+aria2-1.37.0/src/ContextAttribute.cc
+aria2-1.37.0/src/Context.h
+aria2-1.37.0/src/Context.cc
+aria2-1.37.0/src/ContentTypeRequestGroupCriteria.h
+aria2-1.37.0/src/ContentTypeRequestGroupCriteria.cc
+aria2-1.37.0/src/ConsoleStatCalc.h
+aria2-1.37.0/src/ConsoleStatCalc.cc
+aria2-1.37.0/src/console.h
+aria2-1.37.0/src/console.cc
+aria2-1.37.0/src/ConnectCommand.h
+aria2-1.37.0/src/ConnectCommand.cc
+aria2-1.37.0/src/common.h
+aria2-1.37.0/src/Command.h
+aria2-1.37.0/src/Command.cc
+aria2-1.37.0/src/ColorizedStream.h
+aria2-1.37.0/src/ColorizedStream.cc
+aria2-1.37.0/src/ChunkedDecodingStreamFilter.h
+aria2-1.37.0/src/ChunkedDecodingStreamFilter.cc
+aria2-1.37.0/src/ChunkChecksum.h
+aria2-1.37.0/src/ChunkChecksum.cc
+aria2-1.37.0/src/ChecksumCheckIntegrityEntry.h
+aria2-1.37.0/src/ChecksumCheckIntegrityEntry.cc
+aria2-1.37.0/src/Checksum.h
+aria2-1.37.0/src/Checksum.cc
+aria2-1.37.0/src/CheckIntegrityMan.h
+aria2-1.37.0/src/CheckIntegrityEntry.h
+aria2-1.37.0/src/CheckIntegrityEntry.cc
+aria2-1.37.0/src/CheckIntegrityDispatcherCommand.h
+aria2-1.37.0/src/CheckIntegrityDispatcherCommand.cc
+aria2-1.37.0/src/CheckIntegrityCommand.h
+aria2-1.37.0/src/CheckIntegrityCommand.cc
+aria2-1.37.0/src/ByteArrayDiskWriterFactory.h
+aria2-1.37.0/src/ByteArrayDiskWriter.h
+aria2-1.37.0/src/ByteArrayDiskWriter.cc
+aria2-1.37.0/src/BufferedFile.h
+aria2-1.37.0/src/BufferedFile.cc
+aria2-1.37.0/src/BtProgressInfoFile.h
+aria2-1.37.0/src/BitfieldMan.h
+aria2-1.37.0/src/BitfieldMan.cc
+aria2-1.37.0/src/bitfield.h
+aria2-1.37.0/src/bitfield.cc
+aria2-1.37.0/src/BinaryStream.h
+aria2-1.37.0/src/base64.h
+aria2-1.37.0/src/base32.h
+aria2-1.37.0/src/base32.cc
+aria2-1.37.0/src/BackupIPv4ConnectCommand.cc
+aria2-1.37.0/src/BackupIPv4ConnectCommand.h
+aria2-1.37.0/src/AutoSaveCommand.h
+aria2-1.37.0/src/AutoSaveCommand.cc
+aria2-1.37.0/src/AuthResolver.h
+aria2-1.37.0/src/AuthConfigFactory.h
+aria2-1.37.0/src/AuthConfigFactory.cc
+aria2-1.37.0/src/AuthConfig.h
+aria2-1.37.0/src/AuthConfig.cc
+aria2-1.37.0/src/array_fun.h
+aria2-1.37.0/src/AnonDiskWriterFactory.h
+aria2-1.37.0/src/AdaptiveURISelector.h
+aria2-1.37.0/src/AdaptiveURISelector.cc
+aria2-1.37.0/src/AdaptiveFileAllocationIterator.h
+aria2-1.37.0/src/AdaptiveFileAllocationIterator.cc
+aria2-1.37.0/src/AbstractSingleDiskAdaptor.h
+aria2-1.37.0/src/AbstractSingleDiskAdaptor.cc
+aria2-1.37.0/src/AbstractProxyResponseCommand.h
+aria2-1.37.0/src/AbstractProxyResponseCommand.cc
+aria2-1.37.0/src/AbstractProxyRequestCommand.h
+aria2-1.37.0/src/AbstractProxyRequestCommand.cc
+aria2-1.37.0/src/AbstractOptionHandler.h
+aria2-1.37.0/src/AbstractOptionHandler.cc
+aria2-1.37.0/src/AbstractHttpServerResponseCommand.h
+aria2-1.37.0/src/AbstractHttpServerResponseCommand.cc
+aria2-1.37.0/src/AbstractDiskWriter.h
+aria2-1.37.0/src/AbstractDiskWriter.cc
+aria2-1.37.0/src/AbstractCommand.h
+aria2-1.37.0/src/AbstractCommand.cc
+aria2-1.37.0/src/AbstractAuthResolver.h
+aria2-1.37.0/src/AbstractAuthResolver.cc
+aria2-1.37.0/src/a2time.h
+aria2-1.37.0/src/A2STR.h
+aria2-1.37.0/src/A2STR.cc
+aria2-1.37.0/src/a2netcompat.h
+aria2-1.37.0/src/a2iterator.h
+aria2-1.37.0/src/a2io.h
+aria2-1.37.0/src/a2functional.h
+aria2-1.37.0/src/a2algo.h
+aria2-1.37.0/src/alloca.c
+aria2-1.37.0/src/libaria2.pc.in
+aria2-1.37.0/src/Makefile.in
+aria2-1.37.0/src/Makefile.am
+aria2-1.37.0/deps/
+aria2-1.37.0/deps/wslay/
+aria2-1.37.0/deps/wslay/test-driver
+aria2-1.37.0/deps/wslay/tests/
+aria2-1.37.0/deps/wslay/tests/wslay_queue_test.c
+aria2-1.37.0/deps/wslay/tests/wslay_event_test.c
+aria2-1.37.0/deps/wslay/tests/wslay_frame_test.c
+aria2-1.37.0/deps/wslay/tests/main.c
+aria2-1.37.0/deps/wslay/tests/wslay_queue_test.h
+aria2-1.37.0/deps/wslay/tests/wslay_event_test.h
+aria2-1.37.0/deps/wslay/tests/wslay_frame_test.h
+aria2-1.37.0/deps/wslay/tests/wslay_session_test.h
+aria2-1.37.0/deps/wslay/tests/Makefile.in
+aria2-1.37.0/deps/wslay/tests/Makefile.am
+aria2-1.37.0/deps/wslay/missing
+aria2-1.37.0/deps/wslay/ltmain.sh
+aria2-1.37.0/deps/wslay/install-sh
+aria2-1.37.0/deps/wslay/depcomp
+aria2-1.37.0/deps/wslay/config.sub
+aria2-1.37.0/deps/wslay/config.guess
+aria2-1.37.0/deps/wslay/compile
+aria2-1.37.0/deps/wslay/README
+aria2-1.37.0/deps/wslay/NEWS
+aria2-1.37.0/deps/wslay/INSTALL
+aria2-1.37.0/deps/wslay/ChangeLog
+aria2-1.37.0/deps/wslay/COPYING
+aria2-1.37.0/deps/wslay/AUTHORS
+aria2-1.37.0/deps/wslay/config.h.in
+aria2-1.37.0/deps/wslay/Makefile.in
+aria2-1.37.0/deps/wslay/aclocal.m4
+aria2-1.37.0/deps/wslay/configure.ac
+aria2-1.37.0/deps/wslay/configure
+aria2-1.37.0/deps/wslay/Makefile.am
+aria2-1.37.0/deps/wslay/m4/
+aria2-1.37.0/deps/wslay/m4/lt~obsolete.m4
+aria2-1.37.0/deps/wslay/m4/ltversion.m4
+aria2-1.37.0/deps/wslay/m4/ltsugar.m4
+aria2-1.37.0/deps/wslay/m4/ltoptions.m4
+aria2-1.37.0/deps/wslay/m4/libtool.m4
+aria2-1.37.0/deps/wslay/lib/
+aria2-1.37.0/deps/wslay/lib/wslay_net.c
+aria2-1.37.0/deps/wslay/lib/wslay_queue.c
+aria2-1.37.0/deps/wslay/lib/wslay_event.c
+aria2-1.37.0/deps/wslay/lib/wslay_frame.c
+aria2-1.37.0/deps/wslay/lib/wslay_macro.h
+aria2-1.37.0/deps/wslay/lib/wslay_net.h
+aria2-1.37.0/deps/wslay/lib/wslay_queue.h
+aria2-1.37.0/deps/wslay/lib/wslay_event.h
+aria2-1.37.0/deps/wslay/lib/wslay_frame.h
+aria2-1.37.0/deps/wslay/lib/libwslay.pc.in
+aria2-1.37.0/deps/wslay/lib/Makefile.in
+aria2-1.37.0/deps/wslay/lib/Makefile.am
+aria2-1.37.0/deps/wslay/lib/includes/
+aria2-1.37.0/deps/wslay/lib/includes/Makefile.in
+aria2-1.37.0/deps/wslay/lib/includes/Makefile.am
+aria2-1.37.0/deps/wslay/lib/includes/wslay/
+aria2-1.37.0/deps/wslay/lib/includes/wslay/wslayver.h
+aria2-1.37.0/deps/wslay/lib/includes/wslay/wslay.h
+aria2-1.37.0/deps/wslay/lib/includes/wslay/wslayver.h.in
+aria2-1.37.0/deps/Makefile.in
+aria2-1.37.0/deps/Makefile.am
+aria2-1.37.0/lib/
+aria2-1.37.0/lib/gettext.h
+aria2-1.37.0/lib/Makefile.in
+aria2-1.37.0/lib/Makefile.am
+aria2-1.37.0/po/
+aria2-1.37.0/po/LINGUAS
+aria2-1.37.0/po/stamp-po
+aria2-1.37.0/po/aria2.pot
+aria2-1.37.0/po/zh_TW.gmo
+aria2-1.37.0/po/zh_HK.gmo
+aria2-1.37.0/po/zh_CN.gmo
+aria2-1.37.0/po/vi.gmo
+aria2-1.37.0/po/uk.gmo
+aria2-1.37.0/po/tr.gmo
+aria2-1.37.0/po/th.gmo
+aria2-1.37.0/po/sv.gmo
+aria2-1.37.0/po/sr.gmo
+aria2-1.37.0/po/sk.gmo
+aria2-1.37.0/po/ru.gmo
+aria2-1.37.0/po/ro.gmo
+aria2-1.37.0/po/pt_BR.gmo
+aria2-1.37.0/po/pt.gmo
+aria2-1.37.0/po/pl.gmo
+aria2-1.37.0/po/oc.gmo
+aria2-1.37.0/po/nn.gmo
+aria2-1.37.0/po/nl.gmo
+aria2-1.37.0/po/nb.gmo
+aria2-1.37.0/po/ms.gmo
+aria2-1.37.0/po/ko.gmo
+aria2-1.37.0/po/kk.gmo
+aria2-1.37.0/po/ja.gmo
+aria2-1.37.0/po/it.gmo
+aria2-1.37.0/po/id.gmo
+aria2-1.37.0/po/hu.gmo
+aria2-1.37.0/po/hr.gmo
+aria2-1.37.0/po/he.gmo
+aria2-1.37.0/po/fr.gmo
+aria2-1.37.0/po/fil.gmo
+aria2-1.37.0/po/fi.gmo
+aria2-1.37.0/po/fa.gmo
+aria2-1.37.0/po/es.gmo
+aria2-1.37.0/po/el.gmo
+aria2-1.37.0/po/de.gmo
+aria2-1.37.0/po/da.gmo
+aria2-1.37.0/po/ca.gmo
+aria2-1.37.0/po/bn.gmo
+aria2-1.37.0/po/bg.gmo
+aria2-1.37.0/po/ar.gmo
+aria2-1.37.0/po/en@boldquot.gmo
+aria2-1.37.0/po/en@quot.gmo
+aria2-1.37.0/po/zh_TW.po
+aria2-1.37.0/po/zh_HK.po
+aria2-1.37.0/po/zh_CN.po
+aria2-1.37.0/po/vi.po
+aria2-1.37.0/po/uk.po
+aria2-1.37.0/po/tr.po
+aria2-1.37.0/po/th.po
+aria2-1.37.0/po/sv.po
+aria2-1.37.0/po/sr.po
+aria2-1.37.0/po/sk.po
+aria2-1.37.0/po/ru.po
+aria2-1.37.0/po/ro.po
+aria2-1.37.0/po/pt_BR.po
+aria2-1.37.0/po/pt.po
+aria2-1.37.0/po/pl.po
+aria2-1.37.0/po/oc.po
+aria2-1.37.0/po/nn.po
+aria2-1.37.0/po/nl.po
+aria2-1.37.0/po/nb.po
+aria2-1.37.0/po/ms.po
+aria2-1.37.0/po/ko.po
+aria2-1.37.0/po/kk.po
+aria2-1.37.0/po/ja.po
+aria2-1.37.0/po/it.po
+aria2-1.37.0/po/id.po
+aria2-1.37.0/po/hu.po
+aria2-1.37.0/po/hr.po
+aria2-1.37.0/po/he.po
+aria2-1.37.0/po/fr.po
+aria2-1.37.0/po/fil.po
+aria2-1.37.0/po/fi.po
+aria2-1.37.0/po/fa.po
+aria2-1.37.0/po/es.po
+aria2-1.37.0/po/el.po
+aria2-1.37.0/po/de.po
+aria2-1.37.0/po/da.po
+aria2-1.37.0/po/ca.po
+aria2-1.37.0/po/bn.po
+aria2-1.37.0/po/bg.po
+aria2-1.37.0/po/ar.po
+aria2-1.37.0/po/en@boldquot.po
+aria2-1.37.0/po/en@quot.po
+aria2-1.37.0/po/POTFILES.in
+aria2-1.37.0/po/Makevars
+aria2-1.37.0/po/Rules-quot
+aria2-1.37.0/po/insert-header.sin
+aria2-1.37.0/po/en@boldquot.header
+aria2-1.37.0/po/en@quot.header
+aria2-1.37.0/po/boldquot.sed
+aria2-1.37.0/po/quot.sed
+aria2-1.37.0/po/remove-potcdate.sin
+aria2-1.37.0/po/Makefile.in.in
+aria2-1.37.0/Dockerfile.raspberrypi
+aria2-1.37.0/Dockerfile.mingw
+aria2-1.37.0/makerelease-osx.mk
+aria2-1.37.0/android-config
+aria2-1.37.0/mingw-build-memo
+aria2-1.37.0/mingw-release
+aria2-1.37.0/mingw-config
+aria2-1.37.0/makerelease
+aria2-1.37.0/script-helper
+aria2-1.37.0/missing
+aria2-1.37.0/ltmain.sh
+aria2-1.37.0/install-sh
+aria2-1.37.0/depcomp
+aria2-1.37.0/config.sub
+aria2-1.37.0/config.rpath
+aria2-1.37.0/config.guess
+aria2-1.37.0/compile
+aria2-1.37.0/NEWS
+aria2-1.37.0/INSTALL
+aria2-1.37.0/ChangeLog
+aria2-1.37.0/COPYING
+aria2-1.37.0/AUTHORS
+aria2-1.37.0/ABOUT-NLS
+aria2-1.37.0/config.h.in
+aria2-1.37.0/Makefile.in
+aria2-1.37.0/LICENSE.OpenSSL
+aria2-1.37.0/README.html
+aria2-1.37.0/README.rst
+aria2-1.37.0/README
+aria2-1.37.0/aclocal.m4
+aria2-1.37.0/configure.ac
+aria2-1.37.0/configure
+aria2-1.37.0/Makefile.am
+aria2-1.37.0/osx-package/
+aria2-1.37.0/osx-package/DS_Store
+aria2-1.37.0/osx-package/etc/
+aria2-1.37.0/osx-package/etc/paths.d/
+aria2-1.37.0/osx-package/etc/paths.d/aria2c
+aria2-1.37.0/osx-package/etc/manpaths.d/
+aria2-1.37.0/osx-package/etc/manpaths.d/aria2
+aria2-1.37.0/m4/
+aria2-1.37.0/m4/progtest.m4
+aria2-1.37.0/m4/po.m4
+aria2-1.37.0/m4/pkg.m4
+aria2-1.37.0/m4/nls.m4
+aria2-1.37.0/m4/lt~obsolete.m4
+aria2-1.37.0/m4/ltversion.m4
+aria2-1.37.0/m4/ltsugar.m4
+aria2-1.37.0/m4/ltoptions.m4
+aria2-1.37.0/m4/libtool.m4
+aria2-1.37.0/m4/libgcrypt.m4
+aria2-1.37.0/m4/lib-prefix.m4
+aria2-1.37.0/m4/lib-link.m4
+aria2-1.37.0/m4/lib-ld.m4
+aria2-1.37.0/m4/intlmacosx.m4
+aria2-1.37.0/m4/iconv.m4
+aria2-1.37.0/m4/gettext.m4
+aria2-1.37.0/m4/fallocate.m4
+aria2-1.37.0/m4/ax_cxx_compile_stdcxx.m4
+aria2-1.37.0/m4/ax_check_compile_flag.m4
+aria2-1.37.0/m4/aria2_arg.m4
+aria2-1.37.0/examples/
+aria2-1.37.0/examples/libaria2wx.cc
+aria2-1.37.0/examples/libaria2ex.cc
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+checking build system type... x86_64-slackware-linux-gnu
+checking host system type... x86_64-slackware-linux-gnu
+checking target system type... x86_64-slackware-linux-gnu
+checking for a BSD-compatible install... /usr/bin/ginstall -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-slackware-linux-gcc... x86_64-slackware-linux-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-slackware-linux-gcc accepts -g... yes
+checking for x86_64-slackware-linux-gcc option to enable C11 features... none needed
+checking whether x86_64-slackware-linux-gcc understands -c and -o together... yes
+checking dependency style of x86_64-slackware-linux-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-slackware-linux-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-slackware-linux-gnu file names to x86_64-slackware-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-slackware-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-slackware-linux-file... no
+checking for file... file
+checking for x86_64-slackware-linux-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-slackware-linux-dlltool... no
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-slackware-linux-ar... no
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for x86_64-slackware-linux-strip... no
+checking for strip... strip
+checking for x86_64-slackware-linux-ranlib... no
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from x86_64-slackware-linux-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-slackware-linux-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-slackware-linux-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-slackware-linux-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-slackware-linux-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-slackware-linux-gcc static flag -static works... yes
+checking if x86_64-slackware-linux-gcc supports -c -o file.o... yes
+checking if x86_64-slackware-linux-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-slackware-linux-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for x86_64-slackware-linux-g++... x86_64-slackware-linux-g++
+checking whether the compiler supports GNU C++... yes
+checking whether x86_64-slackware-linux-g++ accepts -g... yes
+checking for x86_64-slackware-linux-g++ option to enable C++11 features... none needed
+checking dependency style of x86_64-slackware-linux-g++... gcc3
+checking how to run the C++ preprocessor... x86_64-slackware-linux-g++ -E
+checking for ld used by x86_64-slackware-linux-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-slackware-linux-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for x86_64-slackware-linux-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-slackware-linux-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-slackware-linux-g++ static flag -static works... yes
+checking if x86_64-slackware-linux-g++ supports -c -o file.o... yes
+checking if x86_64-slackware-linux-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-slackware-linux-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for x86_64-slackware-linux-gcc... (cached) x86_64-slackware-linux-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-slackware-linux-gcc accepts -g... (cached) yes
+checking for x86_64-slackware-linux-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-slackware-linux-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-slackware-linux-gcc... (cached) gcc3
+checking for bison... bison -y
+checking dependency style of x86_64-slackware-linux-gcc... gcc3
+checking for x86_64-slackware-linux-ar... ar
+checking for sphinx-build... /usr/bin/sphinx-build
+checking for rst2html.py... no
+checking for rst2html... /usr/bin/rst2html
+checking for x86_64-slackware-linux-pkg-config... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking whether x86_64-slackware-linux-g++ supports C++11 features by default... yes
+checking whether the c++ compiler supports nullptr... checking whether the C++ compiler supports `override` keyword... yes
+checking for cppunit >= 1.10.2... no
+configure: WARNING: No package 'cppunit' found
+checking for zlib >= 1.2.3... yes
+checking for gzbuffer... yes
+checking for gzsetparams... yes
+checking for libuv >= 1.13... yes
+checking for libxml-2.0 >= 2.6.24... yes
+checking for sqlite3... yes
+checking for sqlite3_open_v2... yes
+checking whether to enable Mac OS X native SSL/TLS... no
+checking for main in -lcrypt32... no
+checking for main in -lsecur32... no
+checking for main in -ladvapi32... no
+checking for wincrypt.h... no
+checking for security.h... no
+checking for gnutls >= 2.2.0... yes
+checking for gnutls_certificate_set_x509_system_trust... yes
+checking for nettle... yes
+checking for __gmpz_init in -lgmp... yes
+checking for __gmpz_powm_sec... yes
+checking for libssh2... yes
+checking for libcares >= 1.7.0... yes
+checking for ares_addr_node... yes
+checking for ares_set_servers... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for egrep... (cached) /usr/bin/grep -E
+checking for argz.h... yes
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for inttypes.h... (cached) yes
+checking for langinfo.h... yes
+checking for libintl.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for malloc.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for netinet/tcp.h... yes
+checking for poll.h... yes
+checking for port.h... no
+checking for signal.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdio_ext.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/resource.h... yes
+checking for sys/signal.h... yes
+checking for sys/socket.h... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/uio.h... yes
+checking for sys/utsname.h... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking for utime.h... yes
+checking for wchar.h... (cached) yes
+checking for ifaddrs.h... yes
+checking for pwd.h... yes
+checking for _Bool... no
+checking for stdbool.h that conforms to C99... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for int8_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for size_t... (cached) yes
+checking for ssize_t... yes
+checking for sys/time.h... (cached) yes
+checking for sys/select.h... yes
+checking for sys/socket.h... (cached) yes
+checking for vfork.h... no
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking for pid_t... yes
+checking for working volatile... yes
+checking for ptrdiff_t... yes
+checking for struct timespec... yes
+checking whether byte ordering is bigendian... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for error_at_line... yes
+checking whether x86_64-slackware-linux-gcc needs -traditional... no
+checking for working memcmp... yes
+checking for alarm... yes
+checking for vprintf... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working mktime... yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking for strftime... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for working strtod... yes
+checking for __argz_count... yes
+checking for __argz_next... yes
+checking for __argz_stringify... yes
+checking for atexit... yes
+checking for ftruncate... yes
+checking for getcwd... yes
+checking for getentropy... yes
+checking for gethostbyaddr... yes
+checking for gethostbyname... yes
+checking for getifaddrs... yes
+checking for getpagesize... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for mempcpy... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mmap... yes
+checking for munmap... yes
+checking for nl_langinfo... yes
+checking for posix_fadvise... yes
+checking for posix_memalign... yes
+checking for pow... yes
+checking for putenv... yes
+checking for rmdir... yes
+checking for select... yes
+checking for setlocale... yes
+checking for sigaction... yes
+checking for sleep... yes
+checking for socket... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for strtoull... yes
+checking for tzset... yes
+checking for unsetenv... yes
+checking for usleep... yes
+checking for utime... yes
+checking for utimes... yes
+checking for epoll_create... yes
+checking for posix_fallocate... yes
+checking for fallocate... yes
+checking for asctime_r... yes
+checking for localtime_r... yes
+checking for basename... yes
+checking for gai_strerror... yes
+checking for getaddrinfo... yes
+checking for gettimeofday... yes
+checking for strptime... yes
+checking for daemon... yes
+checking for poll... yes
+checking for timegm... yes
+checking for port_associate... no
+checking for kqueue... no
+checking for struct sockaddr_in.sin_len... no
+checking for struct sockaddr_in6.sin6_len... no
+checking whether struct option.name is assignable from const char*... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/libaria2.pc
+config.status: creating src/includes/Makefile
+config.status: creating test/Makefile
+config.status: creating po/Makefile.in
+config.status: creating lib/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/manual-src/Makefile
+config.status: creating doc/manual-src/en/Makefile
+config.status: creating doc/manual-src/en/conf.py
+config.status: creating doc/manual-src/ru/Makefile
+config.status: creating doc/manual-src/ru/conf.py
+config.status: creating doc/manual-src/pt/Makefile
+config.status: creating doc/manual-src/pt/conf.py
+config.status: creating deps/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+=== configuring in deps/wslay (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  '--libdir=/usr/lib64' '--sysconfdir=/etc' '--localstatedir=/var' '--mandir=/usr/man' '--infodir=/usr/info' '--docdir=/usr/doc/-1.37.0' '--enable-static=no' '--enable-shared=yes' '--with-ca-bundle=/etc/ssl/certs/ca-certificates.crt' '--with-libuv' '--with-bashcompletiondir=/usr/share/bash-completion/completions' '--host=x86_64-slackware-linux' '--build=x86_64-slackware-linux' 'build_alias=x86_64-slackware-linux' 'host_alias=x86_64-slackware-linux' 'CFLAGS=-O2 -march=x86-64 -mtune=generic -fPIC' 'CXXFLAGS=-O2 -march=x86-64 -mtune=generic -fPIC' --cache-file=/dev/null --srcdir=.
+checking build system type... x86_64-slackware-linux-gnu
+checking host system type... x86_64-slackware-linux-gnu
+checking how to print strings... printf
+checking for x86_64-slackware-linux-gcc... x86_64-slackware-linux-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-slackware-linux-gcc accepts -g... yes
+checking for x86_64-slackware-linux-gcc option to enable C11 features... none needed
+checking whether x86_64-slackware-linux-gcc understands -c and -o together... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-slackware-linux-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-slackware-linux-gnu file names to x86_64-slackware-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-slackware-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-slackware-linux-file... no
+checking for file... file
+checking for x86_64-slackware-linux-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-slackware-linux-dlltool... no
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-slackware-linux-ar... no
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for x86_64-slackware-linux-strip... no
+checking for strip... strip
+checking for x86_64-slackware-linux-ranlib... no
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from x86_64-slackware-linux-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-slackware-linux-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-slackware-linux-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-slackware-linux-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-slackware-linux-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-slackware-linux-gcc static flag -static works... yes
+checking if x86_64-slackware-linux-gcc supports -c -o file.o... yes
+checking if x86_64-slackware-linux-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-slackware-linux-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking target system type... x86_64-slackware-linux-gnu
+checking for a BSD-compatible install... /usr/bin/ginstall -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of x86_64-slackware-linux-gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-slackware-linux-gcc... (cached) x86_64-slackware-linux-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-slackware-linux-gcc accepts -g... (cached) yes
+checking for x86_64-slackware-linux-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-slackware-linux-gcc understands -c and -o together... (cached) yes
+checking for x86_64-slackware-linux-g++... x86_64-slackware-linux-g++
+checking whether the compiler supports GNU C++... yes
+checking whether x86_64-slackware-linux-g++ accepts -g... yes
+checking for x86_64-slackware-linux-g++ option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... x86_64-slackware-linux-g++ -E
+checking for ld used by x86_64-slackware-linux-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-slackware-linux-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for x86_64-slackware-linux-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-slackware-linux-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-slackware-linux-g++ static flag -static works... yes
+checking if x86_64-slackware-linux-g++ supports -c -o file.o... yes
+checking if x86_64-slackware-linux-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-slackware-linux-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking dependency style of x86_64-slackware-linux-g++... gcc3
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for x86_64-slackware-linux-pkg-config... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for sphinx-build... /usr/bin/sphinx-build
+checking for nettle >= 2.4... yes
+checking for CU_initialize_registry in -lcunit... no
+checking for arpa/inet.h... yes
+checking for netinet/in.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for ptrdiff_t... yes
+checking whether byte ordering is bigendian... no
+checking for memmove... yes
+checking for memset... yes
+checking for ntohl... yes
+checking for ntohs... yes
+checking for htons... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating lib/libwslay.pc
+config.status: creating lib/includes/Makefile
+config.status: creating lib/includes/wslay/wslayver.h
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+configure: summary of build options:
+
+    version:        1.1.1 shared 1:1:1
+    Host type:      x86_64-slackware-linux-gnu
+    Install prefix: /usr
+    C compiler:     x86_64-slackware-linux-gcc
+    CFlags:         -O2 -march=x86-64 -mtune=generic -fPIC
+    Library types:  Shared=yes, Static=no
+    CUnit:          no
+    Nettle:         yes
+    Build examples: yes
+
+configure: summary of build options:
+
+Build:          x86_64-slackware-linux-gnu
+Host:           x86_64-slackware-linux-gnu
+Target:         x86_64-slackware-linux-gnu
+Install prefix: /usr
+CC:             x86_64-slackware-linux-gcc
+CXX:            x86_64-slackware-linux-g++
+CPP:            
+CXXFLAGS:       -O2 -march=x86-64 -mtune=generic -fPIC
+CFLAGS:         -O2 -march=x86-64 -mtune=generic -fPIC
+CPPFLAGS:       
+LDFLAGS:        
+LIBS:           
+DEFS:           -DHAVE_CONFIG_H
+CXX1XCXXFLAGS:  
+EXTRACXXFLAGS:   -pipe
+EXTRACFLAGS:     -pipe
+EXTRACPPFLAGS:  
+EXTRALDFLAGS:   
+EXTRALIBS:      
+WARNCXXFLAGS:   
+LibUV:          yes (CFLAGS='' LIBS='-luv')
+SQLite3:        yes (CFLAGS='' LIBS='-lsqlite3 -ldl')
+SSL Support:    yes
+AppleTLS:       no (LDFLAGS='')
+WinTLS:         no (LIBS='')
+GnuTLS:         yes (CFLAGS='-I/usr/include/p11-kit-1' LIBS='-lgnutls')
+OpenSSL:        no (CFLAGS='' LIBS='')
+CA Bundle:      /etc/ssl/certs/ca-certificates.crt
+LibNettle:      yes (CFLAGS='' LIBS='-lnettle')
+LibGmp:         yes (CFLAGS='' LIBS='-lgmp')
+LibGcrypt:      no (CFLAGS='' LIBS='')
+LibXML2:        yes (CFLAGS='-I/usr/include/libxml2' LIBS='-lxml2')
+LibExpat:       no (CFLAGS='' LIBS='')
+LibCares:       yes (CFLAGS='' LIBS='-lcares')
+Zlib:           yes (CFLAGS='' LIBS='-lz')
+Libssh2:        yes (CFLAGS='' LIBS='-lssh2')
+Tcmalloc:       no (CFLAGS='' LIBS='')
+Jemalloc:       no (CFLAGS='' LIBS='')
+Epoll:          yes
+Bittorrent:     yes
+Metalink:       yes
+XML-RPC:        yes
+Message Digest: libnettle
+WebSocket:      yes (CFLAGS='-I$(top_builddir)/deps/wslay/lib/includes -I$(top_srcdir)/deps/wslay/lib/includes' LIBS='$(top_builddir)/deps/wslay/lib/libwslay.la')
+Libaria2:       no (shared=yes static=no)
+bash_completion dir: /usr/share/bash-completion/completions
+Static build:   no
+
+make  all-recursive
+make[1]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0'
+Making all in po
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/po'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/po'
+Making all in lib
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/lib'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/lib'
+Making all in deps
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+Making all in wslay
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make  all-recursive
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+Making all in lib
+make[5]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+Making all in includes
+make[6]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib/includes'
+make[6]: Nothing to be done for 'all'.
+make[6]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib/includes'
+make[6]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+  CC       wslay_frame.lo
+  CC       wslay_event.lo
+  CC       wslay_queue.lo
+  CC       wslay_net.lo
+  CCLD     libwslay.la
+libtool: warning: '-version-info/-version-number' is ignored for convenience libraries
+make[6]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+make[5]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+Making all in tests
+make[5]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/tests'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/tests'
+make[5]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[5]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+Making all in src
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+Making all in includes
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src/includes'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src/includes'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+  CXX      main.o
+  CXX      A2STR.lo
+  CXX      AbstractAuthResolver.lo
+  CXX      AbstractCommand.lo
+  CXX      AbstractDiskWriter.lo
+  CXX      AbstractHttpServerResponseCommand.lo
+  CXX      AbstractOptionHandler.lo
+  CXX      AbstractProxyRequestCommand.lo
+  CXX      AbstractProxyResponseCommand.lo
+  CXX      AbstractSingleDiskAdaptor.lo
+  CXX      AdaptiveFileAllocationIterator.lo
+  CXX      AdaptiveURISelector.lo
+  CXX      AuthConfig.lo
+  CXX      AuthConfigFactory.lo
+  CXX      AutoSaveCommand.lo
+  CXX      BackupIPv4ConnectCommand.lo
+  CXX      base32.lo
+  CXX      bitfield.lo
+  CXX      BitfieldMan.lo
+  CXX      BufferedFile.lo
+  CXX      ByteArrayDiskWriter.lo
+  CXX      CheckIntegrityCommand.lo
+  CXX      CheckIntegrityDispatcherCommand.lo
+  CXX      CheckIntegrityEntry.lo
+  CXX      Checksum.lo
+  CXX      ChecksumCheckIntegrityEntry.lo
+  CXX      ChunkChecksum.lo
+  CXX      ChunkedDecodingStreamFilter.lo
+  CXX      ColorizedStream.lo
+  CXX      Command.lo
+  CXX      ConnectCommand.lo
+  CXX      console.lo
+  CXX      ConsoleStatCalc.lo
+  CXX      ContentTypeRequestGroupCriteria.lo
+  CXX      Context.lo
+  CXX      ContextAttribute.lo
+  CXX      Cookie.lo
+  CXX      CookieStorage.lo
+  CXX      cookie_helper.lo
+  CXX      CreateRequestCommand.lo
+  CXX      CUIDCounter.lo
+  CXX      DefaultAuthResolver.lo
+  CXX      DefaultBtProgressInfoFile.lo
+  CXX      DefaultDiskWriter.lo
+  CXX      DefaultDiskWriterFactory.lo
+  CXX      DefaultPieceStorage.lo
+  CXX      DefaultStreamPieceSelector.lo
+  CXX      DirectDiskAdaptor.lo
+  CXX      DiskAdaptor.lo
+  CXX      DlAbortEx.lo
+  CXX      DlRetryEx.lo
+  CXX      DNSCache.lo
+  CXX      DownloadCommand.lo
+  CXX      DownloadContext.lo
+  CXX      DownloadEngine.lo
+  CXX      DownloadEngineFactory.lo
+  CXX      DownloadFailureException.lo
+  CXX      DownloadHandler.lo
+  CXX      DownloadHandlerConstants.lo
+  CXX      DownloadResult.lo
+  CXX      download_handlers.lo
+  CXX      download_helper.lo
+  CXX      Exception.lo
+  CXX      FatalException.lo
+  CXX      FeatureConfig.lo
+  CXX      FeedbackURISelector.lo
+  CXX      File.lo
+  CXX      FileAllocationCommand.lo
+  CXX      FileAllocationDispatcherCommand.lo
+  CXX      FileAllocationEntry.lo
+  CXX      FileEntry.lo
+  CXX      FillRequestGroupCommand.lo
+  CXX      fmt.lo
+  CXX      FtpConnection.lo
+  CXX      FtpDownloadCommand.lo
+  CXX      FtpFinishDownloadCommand.lo
+  CXX      FtpInitiateConnectionCommand.lo
+  CXX      FtpNegotiationCommand.lo
+  CXX      FtpTunnelRequestCommand.lo
+  CXX      FtpTunnelResponseCommand.lo
+  CXX      GeomStreamPieceSelector.lo
+  CXX      GroupId.lo
+  CXX      GrowSegment.lo
+  CXX      HaveEraseCommand.lo
+  CXX      help_tags.lo
+  CXX      HttpConnection.lo
+  CXX      HttpDownloadCommand.lo
+  CXX      HttpHeader.lo
+  CXX      HttpHeaderProcessor.lo
+  CXX      HttpInitiateConnectionCommand.lo
+  CXX      HttpListenCommand.lo
+  CXX      HttpProxyRequestCommand.lo
+  CXX      HttpProxyResponseCommand.lo
+  CXX      HttpRequest.lo
+  CXX      HttpRequestCommand.lo
+  CXX      HttpResponse.lo
+  CXX      HttpResponseCommand.lo
+  CXX      HttpServer.lo
+  CXX      HttpServerBodyCommand.lo
+  CXX      HttpServerCommand.lo
+  CXX      HttpServerResponseCommand.lo
+  CXX      HttpSkipResponseCommand.lo
+  CXX      InitiateConnectionCommand.lo
+  CXX      InitiateConnectionCommandFactory.lo
+  CXX      InorderStreamPieceSelector.lo
+  CXX      RandomStreamPieceSelector.lo
+  CXX      InorderURISelector.lo
+  CXX      IOFile.lo
+  CXX      IteratableChecksumValidator.lo
+  CXX      IteratableChunkChecksumValidator.lo
+  CXX      json.lo
+  CXX      JsonParser.lo
+  CXX      LogFactory.lo
+  CXX      Logger.lo
+  CXX      LongestSequencePieceSelector.lo
+  CXX      MessageDigest.lo
+  CXX      message_digest_helper.lo
+  CXX      MetadataInfo.lo
+  CXX      MetalinkHttpEntry.lo
+  CXX      MultiDiskAdaptor.lo
+  CXX      MultiFileAllocationIterator.lo
+  CXX      MultiUrlRequestInfo.lo
+  CXX      NameResolver.lo
+  CXX      Netrc.lo
+  CXX      NetrcAuthResolver.lo
+  CXX      NetStat.lo
+  CXX      Notifier.lo
+  CXX      NsCookieParser.lo
+  CXX      NullSinkStreamFilter.lo
+  CXX      Option.lo
+  CXX      OptionHandler.lo
+  CXX      OptionHandlerException.lo
+  CXX      OptionHandlerFactory.lo
+  CXX      OptionHandlerImpl.lo
+  CXX      OptionParser.lo
+  CXX      option_processing.lo
+  CXX      paramed_string.lo
+  CXX      PeerStat.lo
+  CXX      Piece.lo
+  CXX      PiecedSegment.lo
+  CXX      PieceHashCheckIntegrityEntry.lo
+  CXX      PieceStatMan.lo
+  CXX      Platform.lo
+  CXX      prefs.lo
+  CXX      ProtocolDetector.lo
+  CXX      Range.lo
+  CXX      RarestPieceSelector.lo
+  CXX      RealtimeCommand.lo
+  CXX      RecoverableException.lo
+  CXX      Request.lo
+  CXX      RequestGroup.lo
+  CXX      RequestGroupEntry.lo
+  CXX      RequestGroupMan.lo
+  CXX      RpcMethod.lo
+  CXX      RpcMethodFactory.lo
+  CXX      RpcMethodImpl.lo
+  CXX      RpcRequest.lo
+  CXX      RpcResponse.lo
+  CXX      rpc_helper.lo
+  CXX      SaveSessionCommand.lo
+  CXX      SegmentMan.lo
+  CXX      SelectEventPoll.lo
+  CXX      ServerStat.lo
+  CXX      ServerStatMan.lo
+  CXX      SessionSerializer.lo
+  CXX      Signature.lo
+  CXX      SimpleRandomizer.lo
+  CXX      SingleFileAllocationIterator.lo
+  CXX      SinkStreamFilter.lo
+  CXX      SocketBuffer.lo
+  CXX      SocketCore.lo
+  CXX      SocketRecvBuffer.lo
+  CXX      SpeedCalc.lo
+  CXX      StreamCheckIntegrityEntry.lo
+  CXX      StreamFileAllocationEntry.lo
+  CXX      StreamFilter.lo
+  CXX      TimeA2.lo
+  CXX      TimeBasedCommand.lo
+  CXX      TimedHaltCommand.lo
+  CXX      TimerA2.lo
+  CXX      TorrentAttribute.lo
+  CXX      TransferStat.lo
+  CXX      TruncFileAllocationIterator.lo
+  CXX      UnknownLengthPieceStorage.lo
+  CXX      UnknownOptionException.lo
+  CXX      uri.lo
+  CXX      UriListParser.lo
+  CXX      URIResult.lo
+  CC       uri_split.lo
+  CXX      util.lo
+  CXX      util_security.lo
+  CXX      ValueBase.lo
+  CXX      ValueBaseStructParserStateImpl.lo
+  CXX      ValueBaseStructParserStateMachine.lo
+  CXX      version_usage.lo
+  CXX      wallclock.lo
+  CXX      WatchProcessCommand.lo
+  CXX      WrDiskCache.lo
+  CXX      WrDiskCacheEntry.lo
+  CXX      XmlRpcRequestParserController.lo
+  CXX      OpenedFileCounter.lo
+  CXX      SHA1IOFile.lo
+  CXX      EvictSocketPoolCommand.lo
+  CXX      WebSocketInteractionCommand.lo
+  CXX      WebSocketResponseCommand.lo
+  CXX      WebSocketSession.lo
+  CXX      WebSocketSessionMan.lo
+  CXX      XmlAttr.lo
+  CXX      XmlParser.lo
+  CXX      Xml2XmlParser.lo
+  CXX      XmlRpcDiskWriter.lo
+  CXX      XmlRpcRequestParserStateImpl.lo
+  CXX      XmlRpcRequestParserStateMachine.lo
+  CXX      FallocFileAllocationIterator.lo
+  CXX      EpollEventPoll.lo
+  CXX      LibgnutlsTLSContext.lo
+  CXX      LibgnutlsTLSSession.lo
+  CXX      LibnettleARC4Encryptor.lo
+  CXX      LibnettleMessageDigestImpl.lo
+  CXX      a2gmp.lo
+  CXX      LibgmpDHKeyExchange.lo
+  CXX      GZipDecodingStreamFilter.lo
+  CXX      GZipEncoder.lo
+  CXX      GZipFile.lo
+  CXX      Adler32MessageDigestImpl.lo
+  CXX      Sqlite3CookieParser.lo
+  CXX      Sqlite3CookieParserImpl.lo
+  CXX      SSHSession.lo
+  CXX      SftpNegotiationCommand.lo
+  CXX      SftpDownloadCommand.lo
+  CXX      SftpFinishDownloadCommand.lo
+  CXX      AsyncNameResolver.lo
+AsyncNameResolver.cc: In constructor 'aria2::AsyncNameResolver::AsyncNameResolver(int, ares_addr_node*)':
+AsyncNameResolver.cc:78:12: warning: 'int ares_init(ares_channel_t**)' is deprecated: Use ares_init_options instead [-Wdeprecated-declarations]
+   78 |   ares_init(&channel_);
+      |   ~~~~~~~~~^~~~~~~~~~~
+In file included from AsyncNameResolver.h:43,
+                 from AsyncNameResolver.cc:35:
+/usr/include/ares.h:487:70: note: declared here
+  487 | CARES_EXTERN             CARES_DEPRECATED_FOR(ares_init_options) int ares_init(
+      |                                                                      ^~~~~~~~~
+AsyncNameResolver.cc:82:25: warning: 'int ares_set_servers(ares_channel_t*, const ares_addr_node*)' is deprecated: Use ares_set_servers_csv instead [-Wdeprecated-declarations]
+   82 |     if (ares_set_servers(channel_, servers) != ARES_SUCCESS) {
+      |         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/usr/include/ares.h:1168:61: note: declared here
+ 1168 | CARES_EXTERN CARES_DEPRECATED_FOR(ares_set_servers_csv) int ares_set_servers(
+      |                                                             ^~~~~~~~~~~~~~~~
+AsyncNameResolver.cc: In member function 'void aria2::AsyncNameResolver::resolve(const std::string&)':
+AsyncNameResolver.cc:95:21: warning: 'void ares_gethostbyname(ares_channel_t*, const char*, int, ares_host_callback, void*)' is deprecated: Use ares_getaddrinfo instead [-Wdeprecated-declarations]
+   95 |   ares_gethostbyname(channel_, name.c_str(), family_, callback, this);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ares.h:879:58: note: declared here
+  879 | CARES_EXTERN CARES_DEPRECATED_FOR(ares_getaddrinfo) void ares_gethostbyname(
+      |                                                          ^~~~~~~~~~~~~~~~~~
+AsyncNameResolver.cc: In member function 'int aria2::AsyncNameResolver::getFds(fd_set*, fd_set*) const':
+AsyncNameResolver.cc:100:18: warning: 'int ares_fds(const ares_channel_t*, fd_set*, fd_set*)' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+  100 |   return ares_fds(channel_, rfdsPtr, wfdsPtr);
+      |          ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ares.h:898:31: note: declared here
+  898 |   ARES_OPT_SOCK_STATE_CB) int ares_fds(const ares_channel_t *channel,
+      |                               ^~~~~~~~
+AsyncNameResolver.cc: In member function 'void aria2::AsyncNameResolver::process(fd_set*, fd_set*)':
+AsyncNameResolver.cc:105:15: warning: 'void ares_process(ares_channel_t*, fd_set*, fd_set*)' is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+  105 |   ares_process(channel_, rfdsPtr, wfdsPtr);
+      |   ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ares.h:910:58: note: declared here
+  910 | CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+      |                                                          ^~~~~~~~~~~~
+AsyncNameResolver.cc: In member function 'int aria2::AsyncNameResolver::getsock(int*) const':
+AsyncNameResolver.cc:112:22: warning: 'int ares_getsock(const ares_channel_t*, ares_socket_t*, int)' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+  112 |   return ares_getsock(channel_, reinterpret_cast<ares_socket_t*>(sockets),
+      |          ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  113 |                       ARES_GETSOCK_MAXNUM);
+      |                       ~~~~~~~~~~~~~~~~~~~~
+/usr/include/ares.h:903:31: note: declared here
+  903 |   ARES_OPT_SOCK_STATE_CB) int ares_getsock(const ares_channel_t *channel,
+      |                               ^~~~~~~~~~~~
+AsyncNameResolver.cc: In member function 'void aria2::AsyncNameResolver::reset()':
+AsyncNameResolver.cc:135:12: warning: 'int ares_init(ares_channel_t**)' is deprecated: Use ares_init_options instead [-Wdeprecated-declarations]
+  135 |   ares_init(&channel_);
+      |   ~~~~~~~~~^~~~~~~~~~~
+/usr/include/ares.h:487:70: note: declared here
+  487 | CARES_EXTERN             CARES_DEPRECATED_FOR(ares_init_options) int ares_init(
+      |                                                                      ^~~~~~~~~
+  CXX      AsyncNameResolverMan.lo
+  CXX      AbstractBtMessage.lo
+  CXX      ActivePeerConnectionCommand.lo
+  CXX      AnnounceList.lo
+  CXX      AnnounceTier.lo
+  CXX      bencode2.lo
+  CXX      BencodeParser.lo
+  CXX      bittorrent_helper.lo
+  CXX      BtAbortOutstandingRequestEvent.lo
+  CXX      BtAllowedFastMessage.lo
+  CXX      BtAnnounce.lo
+  CXX      BtBitfieldMessage.lo
+  CXX      BtBitfieldMessageValidator.lo
+  CXX      BtCancelMessage.lo
+  CXX      BtCheckIntegrityEntry.lo
+  CXX      BtChokeMessage.lo
+  CXX      BtDependency.lo
+  CXX      BtExtendedMessage.lo
+  CXX      BtFileAllocationEntry.lo
+  CXX      BtHandshakeMessage.lo
+  CXX      BtHandshakeMessageValidator.lo
+  CXX      BtHaveAllMessage.lo
+  CXX      BtHaveMessage.lo
+  CXX      BtHaveNoneMessage.lo
+  CXX      BtInterestedMessage.lo
+  CXX      BtKeepAliveMessage.lo
+  CXX      BtLeecherStateChoke.lo
+  CXX      BtNotInterestedMessage.lo
+  CXX      BtPieceMessage.lo
+  CXX      BtPieceMessageValidator.lo
+  CXX      BtPortMessage.lo
+  CXX      BtPostDownloadHandler.lo
+  CXX      BtRegistry.lo
+  CXX      BtRejectMessage.lo
+  CXX      BtRequestMessage.lo
+  CXX      BtRuntime.lo
+  CXX      BtSeederStateChoke.lo
+  CXX      BtSetup.lo
+  CXX      BtStopDownloadCommand.lo
+  CXX      BtSuggestPieceMessage.lo
+  CXX      BtUnchokeMessage.lo
+  CXX      DefaultBtAnnounce.lo
+  CXX      DefaultBtInteractive.lo
+  CXX      DefaultBtMessageDispatcher.lo
+  CXX      DefaultBtMessageFactory.lo
+  CXX      DefaultBtMessageReceiver.lo
+  CXX      DefaultBtRequestFactory.lo
+  CXX      DefaultExtensionMessageFactory.lo
+  CXX      DefaultPeerStorage.lo
+  CXX      DHTAbstractMessage.lo
+  CXX      DHTAbstractTask.lo
+  CXX      DHTAnnouncePeerMessage.lo
+  CXX      DHTAnnouncePeerReplyMessage.lo
+  CXX      DHTAutoSaveCommand.lo
+  CXX      DHTBucket.lo
+  CXX      DHTBucketRefreshCommand.lo
+  CXX      DHTBucketRefreshTask.lo
+  CXX      DHTBucketTree.lo
+  CXX      DHTConnectionImpl.lo
+  CXX      DHTEntryPointNameResolveCommand.lo
+  CXX      DHTFindNodeMessage.lo
+  CXX      DHTFindNodeReplyMessage.lo
+  CXX      DHTGetPeersCommand.lo
+  CXX      DHTGetPeersMessage.lo
+  CXX      DHTGetPeersReplyMessage.lo
+  CXX      DHTInteractionCommand.lo
+  CXX      DHTMessage.lo
+  CXX      DHTMessageDispatcherImpl.lo
+  CXX      DHTMessageEntry.lo
+  CXX      DHTMessageFactoryImpl.lo
+  CXX      DHTMessageReceiver.lo
+  CXX      DHTMessageTracker.lo
+  CXX      DHTMessageTrackerEntry.lo
+  CXX      DHTNode.lo
+  CXX      DHTNodeLookupEntry.lo
+  CXX      DHTNodeLookupTask.lo
+  CXX      DHTNodeLookupTaskCallback.lo
+  CXX      DHTPeerAnnounceCommand.lo
+  CXX      DHTPeerAnnounceEntry.lo
+  CXX      DHTPeerAnnounceStorage.lo
+  CXX      DHTPeerLookupTask.lo
+  CXX      DHTPeerLookupTaskCallback.lo
+  CXX      DHTPingMessage.lo
+  CXX      DHTPingReplyMessage.lo
+  CXX      DHTPingTask.lo
+  CXX      DHTQueryMessage.lo
+  CXX      DHTRegistry.lo
+  CXX      DHTReplaceNodeTask.lo
+  CXX      DHTResponseMessage.lo
+  CXX      DHTRoutingTable.lo
+  CXX      DHTRoutingTableDeserializer.lo
+  CXX      DHTRoutingTableSerializer.lo
+  CXX      DHTSetup.lo
+  CXX      DHTTaskExecutor.lo
+  CXX      DHTTaskFactoryImpl.lo
+  CXX      DHTTaskQueueImpl.lo
+  CXX      DHTTokenTracker.lo
+  CXX      DHTTokenUpdateCommand.lo
+  CXX      DHTUnknownMessage.lo
+  CXX      ExtensionMessageRegistry.lo
+  CXX      HandshakeExtensionMessage.lo
+  CXX      IndexBtMessage.lo
+  CXX      IndexBtMessageValidator.lo
+  CXX      InitiatorMSEHandshakeCommand.lo
+  CXX      LpdDispatchMessageCommand.lo
+  CXX      LpdMessage.lo
+  CXX      LpdMessageDispatcher.lo
+  CXX      LpdMessageReceiver.lo
+  CXX      LpdReceiveMessageCommand.lo
+  CXX      magnet.lo
+  CXX      MSEHandshake.lo
+  CXX      NameResolveCommand.lo
+  CXX      Peer.lo
+  CXX      PeerAbstractCommand.lo
+  CXX      PeerAddrEntry.lo
+  CXX      PeerChokeCommand.lo
+  CXX      PeerConnection.lo
+  CXX      PeerInitiateConnectionCommand.lo
+  CXX      PeerInteractionCommand.lo
+  CXX      PeerListenCommand.lo
+  CXX      PeerReceiveHandshakeCommand.lo
+  CXX      PeerSessionResource.lo
+  CXX      PriorityPieceSelector.lo
+  CXX      RangeBtMessage.lo
+  CXX      RangeBtMessageValidator.lo
+  CXX      ReceiverMSEHandshakeCommand.lo
+  CXX      RequestSlot.lo
+  CXX      SeedCheckCommand.lo
+  CXX      ShareRatioSeedCriteria.lo
+  CXX      SimpleBtMessage.lo
+  CXX      TimeSeedCriteria.lo
+  CXX      TrackerWatcherCommand.lo
+  CXX      UDPTrackerClient.lo
+  CXX      UDPTrackerRequest.lo
+  CXX      UnionSeedCriteria.lo
+  CXX      UTMetadataDataExtensionMessage.lo
+  CXX      UTMetadataExtensionMessage.lo
+  CXX      UTMetadataPostDownloadHandler.lo
+  CXX      UTMetadataRejectExtensionMessage.lo
+  CXX      UTMetadataRequestExtensionMessage.lo
+  CXX      UTMetadataRequestFactory.lo
+  CXX      UTMetadataRequestTracker.lo
+  CXX      UTPexExtensionMessage.lo
+  CXX      ZeroBtMessage.lo
+  CXX      Metalink2RequestGroup.lo
+  CXX      MetalinkEntry.lo
+  CXX      Metalinker.lo
+  CXX      MetalinkMetaurl.lo
+  CXX      MetalinkParserController.lo
+  CXX      MetalinkParserState.lo
+  CXX      MetalinkParserStateImpl.lo
+  CXX      MetalinkParserStateMachine.lo
+  CXX      MetalinkParserStateV3Impl.lo
+  CXX      MetalinkParserStateV4Impl.lo
+  CXX      MetalinkPostDownloadHandler.lo
+  CXX      MetalinkResource.lo
+  CXX      metalink_helper.lo
+  CXX      PollEventPoll.lo
+  CXX      LibuvEventPoll.lo
+  CXXLD    libaria2.la
+  CXXLD    aria2c
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+Making all in doc
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+Making all in manual-src
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+Making all in en
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/en'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/en'
+Making all in ru
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/ru'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/ru'
+Making all in pt
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/pt'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/pt'
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+Making all in test
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/test'
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0'
+make[1]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0'
+Making install in po
+make[1]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/po'
+installing en@quot.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/en@quot/LC_MESSAGES/aria2.mo
+installing en@boldquot.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/en@boldquot/LC_MESSAGES/aria2.mo
+installing ar.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/ar/LC_MESSAGES/aria2.mo
+installing bg.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/bg/LC_MESSAGES/aria2.mo
+installing bn.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/bn/LC_MESSAGES/aria2.mo
+installing ca.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/ca/LC_MESSAGES/aria2.mo
+installing da.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/da/LC_MESSAGES/aria2.mo
+installing de.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/de/LC_MESSAGES/aria2.mo
+installing el.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/el/LC_MESSAGES/aria2.mo
+installing es.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/es/LC_MESSAGES/aria2.mo
+installing fa.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/fa/LC_MESSAGES/aria2.mo
+installing fi.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/fi/LC_MESSAGES/aria2.mo
+installing fil.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/fil/LC_MESSAGES/aria2.mo
+installing fr.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/fr/LC_MESSAGES/aria2.mo
+installing he.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/he/LC_MESSAGES/aria2.mo
+installing hr.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/hr/LC_MESSAGES/aria2.mo
+installing hu.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/hu/LC_MESSAGES/aria2.mo
+installing id.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/id/LC_MESSAGES/aria2.mo
+installing it.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/it/LC_MESSAGES/aria2.mo
+installing ja.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/ja/LC_MESSAGES/aria2.mo
+installing kk.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/kk/LC_MESSAGES/aria2.mo
+installing ko.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/ko/LC_MESSAGES/aria2.mo
+installing ms.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/ms/LC_MESSAGES/aria2.mo
+installing nb.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/nb/LC_MESSAGES/aria2.mo
+installing nl.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/nl/LC_MESSAGES/aria2.mo
+installing nn.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/nn/LC_MESSAGES/aria2.mo
+installing oc.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/oc/LC_MESSAGES/aria2.mo
+installing pl.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/pl/LC_MESSAGES/aria2.mo
+installing pt.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/pt/LC_MESSAGES/aria2.mo
+installing pt_BR.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/pt_BR/LC_MESSAGES/aria2.mo
+installing ro.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/ro/LC_MESSAGES/aria2.mo
+installing ru.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/ru/LC_MESSAGES/aria2.mo
+installing sk.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/sk/LC_MESSAGES/aria2.mo
+installing sr.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/sr/LC_MESSAGES/aria2.mo
+installing sv.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/sv/LC_MESSAGES/aria2.mo
+installing th.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/th/LC_MESSAGES/aria2.mo
+installing tr.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/tr/LC_MESSAGES/aria2.mo
+installing uk.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/uk/LC_MESSAGES/aria2.mo
+installing vi.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/vi/LC_MESSAGES/aria2.mo
+installing zh_CN.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/zh_CN/LC_MESSAGES/aria2.mo
+installing zh_HK.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/zh_HK/LC_MESSAGES/aria2.mo
+installing zh_TW.gmo as /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/locale/zh_TW/LC_MESSAGES/aria2.mo
+if test "aria2" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/ginstall -c -m 644 ./$file \
+		    /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/po'
+Making install in lib
+make[1]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/lib'
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/lib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/lib'
+make[1]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/lib'
+Making install in deps
+make[1]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+Making install in wslay
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+Making install in lib
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+Making install in includes
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib/includes'
+make[5]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib/includes'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib/includes'
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib/includes'
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+make[5]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/lib'
+Making install in tests
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/tests'
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/tests'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay/tests'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps/wslay'
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+make[1]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/deps'
+Making install in src
+make[1]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+Making install in includes
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src/includes'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src/includes'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src/includes'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src/includes'
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+ /usr/bin/mkdir -p '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/ginstall -c aria2c '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/bin'
+libtool: install: /usr/bin/ginstall -c aria2c /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/bin/aria2c
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+make[1]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/src'
+Making install in doc
+make[1]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+Making install in manual-src
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+Making install in en
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/en'
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/en'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/man/man1'
+ /usr/bin/ginstall -c -m 644 _build/man/aria2c.1 '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/man/man1'
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/en'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/en'
+Making install in ru
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/ru'
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/ru'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/man/ru/man1'
+ /usr/bin/ginstall -c -m 644 _build/man/aria2c.1 '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/man/ru/man1'
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/ru'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/ru'
+Making install in pt
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/pt'
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/pt'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/man/pt/man1'
+ /usr/bin/ginstall -c -m 644 _build/man/aria2c.1 '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/man/pt/man1'
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/pt'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src/pt'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+make[4]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc/manual-src'
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+make[3]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/doc/-1.37.0/bash_completion'
+ /usr/bin/ginstall -c -m 644 bash_completion/README.txt '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/doc/-1.37.0/bash_completion'
+ /usr/bin/mkdir -p '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/bash-completion/completions'
+ /usr/bin/ginstall -c -m 644 bash_completion/aria2c '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/share/bash-completion/completions'
+ /usr/bin/mkdir -p '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/doc/-1.37.0/xmlrpc'
+ /usr/bin/ginstall -c -m 644 xmlrpc/aria2mon xmlrpc/aria2rpc xmlrpc/README.txt '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/doc/-1.37.0/xmlrpc'
+make[3]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+make[1]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/doc'
+Making install in test
+make[1]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/test'
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/test'
+make[1]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0/test'
+make[1]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0'
+make[2]: Entering directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/doc/-1.37.0'
+ /usr/bin/ginstall -c -m 644 README README.rst README.html '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/package-aria2/usr/doc/-1.37.0'
+make[2]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0'
+make[1]: Leaving directory '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/work/aria2-1.37.0'
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/aria2/aria2.info: No such file or directory
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/aria2/aria2-1.37.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/aria2c
+usr/doc/
+usr/doc/-1.37.0/
+usr/doc/-1.37.0/README
+usr/doc/-1.37.0/README.html
+usr/doc/-1.37.0/README.rst
+usr/doc/-1.37.0/bash_completion/
+usr/doc/-1.37.0/bash_completion/README.txt
+usr/doc/-1.37.0/xmlrpc/
+usr/doc/-1.37.0/xmlrpc/README.txt
+usr/doc/-1.37.0/xmlrpc/aria2mon
+usr/doc/-1.37.0/xmlrpc/aria2rpc
+usr/doc/aria2-1.37.0/
+usr/doc/aria2-1.37.0/AUTHORS
+usr/doc/aria2-1.37.0/COPYING
+usr/doc/aria2-1.37.0/ChangeLog
+usr/doc/aria2-1.37.0/NEWS
+usr/doc/aria2-1.37.0/README
+usr/doc/aria2-1.37.0/README.html
+usr/doc/aria2-1.37.0/README.rst
+usr/doc/aria2-1.37.0/aria2.ini
+usr/man/
+usr/man/man1/
+usr/man/man1/aria2c.1.gz
+usr/man/pt/
+usr/man/pt/man1/
+usr/man/pt/man1/aria2c.1.gz
+usr/man/ru/
+usr/man/ru/man1/
+usr/man/ru/man1/aria2c.1.gz
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/aria2c
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/aria2.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/aria2.mo
+usr/share/locale/bn/
+usr/share/locale/bn/LC_MESSAGES/
+usr/share/locale/bn/LC_MESSAGES/aria2.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/aria2.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/aria2.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/aria2.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/aria2.mo
+usr/share/locale/en@boldquot/
+usr/share/locale/en@boldquot/LC_MESSAGES/
+usr/share/locale/en@boldquot/LC_MESSAGES/aria2.mo
+usr/share/locale/en@quot/
+usr/share/locale/en@quot/LC_MESSAGES/
+usr/share/locale/en@quot/LC_MESSAGES/aria2.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/aria2.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/aria2.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/aria2.mo
+usr/share/locale/fil/
+usr/share/locale/fil/LC_MESSAGES/
+usr/share/locale/fil/LC_MESSAGES/aria2.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/aria2.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/aria2.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/aria2.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/aria2.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/aria2.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/aria2.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/aria2.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/aria2.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/aria2.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/aria2.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/aria2.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/aria2.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/aria2.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/aria2.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/aria2.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/aria2.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/aria2.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/aria2.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/aria2.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/aria2.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/aria2.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/aria2.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/aria2.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/aria2.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/aria2.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/aria2.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/aria2.mo
+usr/share/locale/zh_HK/
+usr/share/locale/zh_HK/LC_MESSAGES/
+usr/share/locale/zh_HK/LC_MESSAGES/aria2.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/aria2.mo
+
+Slackware package /tmp/aria2/aria2-1.37.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for aria2-1.37.0-x86_64-1_rtz.tlz
+Creating /tmp/aria2/aria2-1.37.0-x86_64-1_rtz.tlz.so.file using /tmp/aria2/aria2-1.37.0-x86_64-1_rtz.tlz
+Successfully created /tmp/aria2/aria2-1.37.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in aria2.tar.lz4 format.
+/tmp/aria2 /tmp/aria2
+/tmp/aria2
+BIN_NAME
+README
+aria2-1.37.0-x86_64-1_rtz.tlz
+aria2-1.37.0-x86_64-1_rtz.tlz.md5
+aria2-1.37.0-x86_64-1_rtz.tlz.so.file
+aria2-1.37.0-x86_64-1_rtz.tlz.txt
+makepkg-aria2.log
+aria2 build finished. Procced to installation...
+
++============================================================================================+
+| Upgrading aria2-1.37.0-x86_64-1_rtz package using /tmp/aria2/aria2-1.37.0-x86_64-1_rtz.tlz |
++============================================================================================+
+
+Pre-installing package aria2-1.37.0-x86_64-1_rtz...
+Removing package: aria2-1.37.0-x86_64-1_rtz-upgraded-2025-05-12,16:18:59
+Installing package aria2-1.37.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# aria2 (CLI Metalink/BiTorrent client)
+#
+# aria2 is a utility for downloading files. The supported protocols
+# are HTTP(S), FTP, BitTorrent, Metalink. It can download a file from
+# multiple sources/protocols and tries to utilize maximum download
+# bandwidth.
+#
+# https://aria2.github.io
+Executing install script for aria2-1.37.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package aria2-1.37.0-x86_64-1_rtz.tlz installed.
+Package aria2-1.37.0-x86_64-1_rtz upgraded with new package /tmp/aria2/aria2-1.37.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'aria2-1.37.0.tar.xz': No such file or directory
+Build process completed in 3 minutes and 52 seconds.
+Downloading source code tar.xz file
+--2025-05-12 16:19:04--  https://github.com/mhogomchungu/media-downloader/releases/download/5.3.2/media-downloader-5.3.2.tar.xz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/330576649/d9042196-21fc-4d6a-8a05-1e2c0afa609f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250512%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250512T131803Z&X-Amz-Expires=300&X-Amz-Signature=164529649ae9fbcbea1de672b5a0086e6107bc0224e3a9418786c2d154136247&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dmedia-downloader-5.3.2.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2025-05-12 16:19:04--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/330576649/d9042196-21fc-4d6a-8a05-1e2c0afa609f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250512%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250512T131803Z&X-Amz-Expires=300&X-Amz-Signature=164529649ae9fbcbea1de672b5a0086e6107bc0224e3a9418786c2d154136247&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dmedia-downloader-5.3.2.tar.xz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3480104 (3.3M) [application/octet-stream]
+Saving to: ‘media-downloader-5.3.2.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  1%  778K 4s
+    50K .......... .......... .......... .......... ..........  2%  810K 4s
+   100K .......... .......... .......... .......... ..........  4% 4.07M 3s
+   150K .......... .......... .......... .......... ..........  5% 1.33M 3s
+   200K .......... .......... .......... .......... ..........  7% 6.63M 2s
+   250K .......... .......... .......... .......... ..........  8% 4.53M 2s
+   300K .......... .......... .......... .......... .......... 10% 5.42M 2s
+   350K .......... .......... .......... .......... .......... 11% 5.02M 2s
+   400K .......... .......... .......... .......... .......... 13% 2.10M 2s
+   450K .......... .......... .......... .......... .......... 14% 6.57M 1s
+   500K .......... .......... .......... .......... .......... 16% 5.13M 1s
+   550K .......... .......... .......... .......... .......... 17% 7.22M 1s
+   600K .......... .......... .......... .......... .......... 19%  626K 1s
+   650K .......... .......... .......... .......... .......... 20% 10.9M 1s
+   700K .......... .......... .......... .......... .......... 22% 18.7M 1s
+   750K .......... .......... .......... .......... .......... 23% 7.05M 1s
+   800K .......... .......... .......... .......... .......... 25% 10.8M 1s
+   850K .......... .......... .......... .......... .......... 26% 9.90M 1s
+   900K .......... .......... .......... .......... .......... 27%  446M 1s
+   950K .......... .......... .......... .......... .......... 29%  496M 1s
+  1000K .......... .......... .......... .......... .......... 30%  489M 1s
+  1050K .......... .......... .......... .......... .......... 32% 2.28M 1s
+  1100K .......... .......... .......... .......... .......... 33% 5.08M 1s
+  1150K .......... .......... .......... .......... .......... 35% 5.41M 1s
+  1200K .......... .......... .......... .......... .......... 36% 17.7M 1s
+  1250K .......... .......... .......... .......... .......... 38%  664K 1s
+  1300K .......... .......... .......... .......... .......... 39%  379M 1s
+  1350K .......... .......... .......... .......... .......... 41%  478M 1s
+  1400K .......... .......... .......... .......... .......... 42%  454M 1s
+  1450K .......... .......... .......... .......... .......... 44% 11.1M 1s
+  1500K .......... .......... .......... .......... .......... 45% 6.53M 1s
+  1550K .......... .......... .......... .......... .......... 47% 9.58M 1s
+  1600K .......... .......... .......... .......... .......... 48% 6.33M 1s
+  1650K .......... .......... .......... .......... .......... 50%  438M 1s
+  1700K .......... .......... .......... .......... .......... 51%  481M 0s
+  1750K .......... .......... .......... .......... .......... 52% 2.12M 0s
+  1800K .......... .......... .......... .......... .......... 54% 5.27M 0s
+  1850K .......... .......... .......... .......... .......... 55%  426M 0s
+  1900K .......... .......... .......... .......... .......... 57% 5.23M 0s
+  1950K .......... .......... .......... .......... .......... 58%  353M 0s
+  2000K .......... .......... .......... .......... .......... 60%  481M 0s
+  2050K .......... .......... .......... .......... .......... 61%  490M 0s
+  2100K .......... .......... .......... .......... .......... 63%  409M 0s
+  2150K .......... .......... .......... .......... .......... 64%  471M 0s
+  2200K .......... .......... .......... .......... .......... 66% 12.7M 0s
+  2250K .......... .......... .......... .......... .......... 67% 7.18M 0s
+  2300K .......... .......... .......... .......... .......... 69% 4.84M 0s
+  2350K .......... .......... .......... .......... .......... 70% 4.16M 0s
+  2400K .......... .......... .......... .......... .......... 72% 5.58M 0s
+  2450K .......... .......... .......... .......... .......... 73% 6.53M 0s
+  2500K .......... .......... .......... .......... .......... 75% 5.15M 0s
+  2550K .......... .......... .......... .......... .......... 76% 5.08M 0s
+  2600K .......... .......... .......... .......... .......... 77% 6.15M 0s
+  2650K .......... .......... .......... .......... .......... 79% 5.77M 0s
+  2700K .......... .......... .......... .......... .......... 80% 6.99M 0s
+  2750K .......... .......... .......... .......... .......... 82% 4.29M 0s
+  2800K .......... .......... .......... .......... .......... 83% 5.17M 0s
+  2850K .......... .......... .......... .......... .......... 85% 6.78M 0s
+  2900K .......... .......... .......... .......... .......... 86% 4.99M 0s
+  2950K .......... .......... .......... .......... .......... 88% 5.41M 0s
+  3000K .......... .......... .......... .......... .......... 89% 7.16M 0s
+  3050K .......... .......... .......... .......... .......... 91% 5.29M 0s
+  3100K .......... .......... .......... .......... .......... 92% 5.26M 0s
+  3150K .......... .......... .......... .......... .......... 94% 4.77M 0s
+  3200K .......... .......... .......... .......... .......... 95% 5.29M 0s
+  3250K .......... .......... .......... .......... .......... 97% 5.34M 0s
+  3300K .......... .......... .......... .......... .......... 98% 6.61M 0s
+  3350K .......... .......... .......... .......... ........  100% 6.50M=0.8s
+
+2025-05-12 16:19:06 (4.40 MB/s) - ‘media-downloader-5.3.2.tar.xz’ saved [3480104/3480104]
+
+Found file: media-downloader-5.3.2.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+media-downloader-5.3.2/
+media-downloader-5.3.2/GPLv2
+media-downloader-5.3.2/cmake_uninstall.cmake.in
+media-downloader-5.3.2/README.md
+media-downloader-5.3.2/LICENSE
+media-downloader-5.3.2/translations/
+media-downloader-5.3.2/translations/nl_NL.ts
+media-downloader-5.3.2/translations/fr_FR.qm
+media-downloader-5.3.2/translations/fr_FR.ts
+media-downloader-5.3.2/translations/en_US.qm
+media-downloader-5.3.2/translations/pt_BR.ts
+media-downloader-5.3.2/translations/tr_TR.qm
+media-downloader-5.3.2/translations/pl_PL.qm
+media-downloader-5.3.2/translations/ar.ts
+media-downloader-5.3.2/translations/de_DE.qm
+media-downloader-5.3.2/translations/sv_SE.qm
+media-downloader-5.3.2/translations/ar.qm
+media-downloader-5.3.2/translations/zh_CN.qm
+media-downloader-5.3.2/translations/it_IT.ts
+media-downloader-5.3.2/translations/zh_CN.ts
+media-downloader-5.3.2/translations/ja_JP.ts
+media-downloader-5.3.2/translations/sv_SE.ts
+media-downloader-5.3.2/translations/nl_NL.qm
+media-downloader-5.3.2/translations/pt_BR.qm
+media-downloader-5.3.2/translations/es.ts
+media-downloader-5.3.2/translations/de_DE.ts
+media-downloader-5.3.2/translations/el_GR.ts
+media-downloader-5.3.2/translations/ko_KR.qm
+media-downloader-5.3.2/translations/ru_RU.qm
+media-downloader-5.3.2/translations/ko_KR.ts
+media-downloader-5.3.2/translations/it_IT.qm
+media-downloader-5.3.2/translations/es.qm
+media-downloader-5.3.2/translations/tr_TR.ts
+media-downloader-5.3.2/translations/el_GR.qm
+media-downloader-5.3.2/translations/ru_RU.ts
+media-downloader-5.3.2/translations/en_US.ts
+media-downloader-5.3.2/translations/pl_PL.ts
+media-downloader-5.3.2/translations/ja_JP.qm
+media-downloader-5.3.2/changelog
+media-downloader-5.3.2/LICENSE.txt
+media-downloader-5.3.2/src/
+media-downloader-5.3.2/src/playlistdownloader.h
+media-downloader-5.3.2/src/tabmanager.cpp
+media-downloader-5.3.2/src/library.h
+media-downloader-5.3.2/src/icon.qrc
+media-downloader-5.3.2/src/themes.cpp
+media-downloader-5.3.2/src/util.hpp
+media-downloader-5.3.2/src/about.h
+media-downloader-5.3.2/src/basicdownloader.h
+media-downloader-5.3.2/src/utils/
+media-downloader-5.3.2/src/utils/qtimer.hpp
+media-downloader-5.3.2/src/utils/qprocess.hpp
+media-downloader-5.3.2/src/utils/miscellaneous.hpp
+media-downloader-5.3.2/src/utils/network_access_manager.hpp
+media-downloader-5.3.2/src/utils/single_instance.hpp
+media-downloader-5.3.2/src/utils/threads.hpp
+media-downloader-5.3.2/src/MacOSXBundleInfo.plist.in
+media-downloader-5.3.2/src/engines/
+media-downloader-5.3.2/src/engines/safaribooks.h
+media-downloader-5.3.2/src/engines/generic.h
+media-downloader-5.3.2/src/engines/tests.h
+media-downloader-5.3.2/src/engines/svtplay-dl.cpp
+media-downloader-5.3.2/src/engines/aria2c.cpp
+media-downloader-5.3.2/src/engines/tests.cpp
+media-downloader-5.3.2/src/engines/you-get.cpp
+media-downloader-5.3.2/src/engines/wget.cpp
+media-downloader-5.3.2/src/engines/safaribooks.cpp
+media-downloader-5.3.2/src/engines/svtplay-dl.h
+media-downloader-5.3.2/src/engines/wget.h
+media-downloader-5.3.2/src/engines/aria2c.h
+media-downloader-5.3.2/src/engines/gallery-dl.h
+media-downloader-5.3.2/src/engines/gallery-dl.cpp
+media-downloader-5.3.2/src/engines/lux.cpp
+media-downloader-5.3.2/src/engines/yt-dlp.h
+media-downloader-5.3.2/src/engines/you-get.h
+media-downloader-5.3.2/src/engines/generic.cpp
+media-downloader-5.3.2/src/engines/yt-dlp.cpp
+media-downloader-5.3.2/src/engines/lux.h
+media-downloader-5.3.2/src/main.cpp
+media-downloader-5.3.2/src/downloadmanager.hpp
+media-downloader-5.3.2/src/library.cpp
+media-downloader-5.3.2/src/versionInfo.cpp
+media-downloader-5.3.2/src/batchdownloader.h
+media-downloader-5.3.2/src/proxy.cpp
+media-downloader-5.3.2/src/flatpak/
+media-downloader-5.3.2/src/flatpak/io.github.mhogomchungu.media-downloader.desktop
+media-downloader-5.3.2/src/flatpak/io.github.mhogomchungu.media-downloader.metainfo.xml
+media-downloader-5.3.2/src/flatpak/HowTo.txt
+media-downloader-5.3.2/src/flatpak/io.github.mhogomchungu.media-downloader.png
+media-downloader-5.3.2/src/flatpak/io.github.mhogomchungu.media-downloader.json
+media-downloader-5.3.2/src/basicdownloader.cpp
+media-downloader-5.3.2/src/mainwindow.ui
+media-downloader-5.3.2/src/logger.cpp
+media-downloader-5.3.2/src/batchdownloader.cpp
+media-downloader-5.3.2/src/translator.h
+media-downloader-5.3.2/src/update_translations
+media-downloader-5.3.2/src/media-downloader.png
+media-downloader-5.3.2/src/engines.cpp
+media-downloader-5.3.2/src/translator.cpp
+media-downloader-5.3.2/src/media-downloader.ico
+media-downloader-5.3.2/src/media-downloader.desktop
+media-downloader-5.3.2/src/themes.h
+media-downloader-5.3.2/src/configure.cpp
+media-downloader-5.3.2/src/mainwindow.h
+media-downloader-5.3.2/src/logwindow.ui
+media-downloader-5.3.2/src/utility.cpp
+media-downloader-5.3.2/src/logwindow.h
+media-downloader-5.3.2/src/proxy.h
+media-downloader-5.3.2/src/media-downloader.pro
+media-downloader-5.3.2/src/playlistdownloader.cpp
+media-downloader-5.3.2/src/tableWidget.cpp
+media-downloader-5.3.2/src/engines.h
+media-downloader-5.3.2/src/icons/
+media-downloader-5.3.2/src/icons/blue/
+media-downloader-5.3.2/src/icons/blue/downloadOptions.png
+media-downloader-5.3.2/src/icons/blue/subscription.png
+media-downloader-5.3.2/src/icons/blue/clearFile.png
+media-downloader-5.3.2/src/icons/blue/recentlyUsed.png
+media-downloader-5.3.2/src/icons/blue/executable.png
+media-downloader-5.3.2/src/icons/blue/folder.png
+media-downloader-5.3.2/src/icons/blue/clipboard.png
+media-downloader-5.3.2/src/icons/blue/video.png
+media-downloader-5.3.2/src/icons/blue/cookie.png
+media-downloader-5.3.2/src/icons/blue/extensions.png
+media-downloader-5.3.2/src/icons/black/
+media-downloader-5.3.2/src/icons/black/downloadOptions.png
+media-downloader-5.3.2/src/icons/black/subscription.png
+media-downloader-5.3.2/src/icons/black/clearFile.png
+media-downloader-5.3.2/src/icons/black/recentlyUsed.png
+media-downloader-5.3.2/src/icons/black/executable.png
+media-downloader-5.3.2/src/icons/black/folder.png
+media-downloader-5.3.2/src/icons/black/clipboard.png
+media-downloader-5.3.2/src/icons/black/video.png
+media-downloader-5.3.2/src/icons/black/cookie.png
+media-downloader-5.3.2/src/icons/black/extensions.png
+media-downloader-5.3.2/src/logger.h
+media-downloader-5.3.2/src/networkAccess.cpp
+media-downloader-5.3.2/src/about.cpp
+media-downloader-5.3.2/src/tabmanager.h
+media-downloader-5.3.2/src/directoryEntries.h
+media-downloader-5.3.2/src/appicon.rc
+media-downloader-5.3.2/src/settings.cpp
+media-downloader-5.3.2/src/utility.h
+media-downloader-5.3.2/src/directoryEntries.cpp
+media-downloader-5.3.2/src/versionInfo.h
+media-downloader-5.3.2/src/media-downloader.icns
+media-downloader-5.3.2/src/tableWidget.h
+media-downloader-5.3.2/src/mainwindow.cpp
+media-downloader-5.3.2/src/networkAccess.h
+media-downloader-5.3.2/src/configure.h
+media-downloader-5.3.2/src/context.hpp
+media-downloader-5.3.2/src/logwindow.cpp
+media-downloader-5.3.2/src/settings.h
+media-downloader-5.3.2/build_windows.ps1
+media-downloader-5.3.2/images/
+media-downloader-5.3.2/images/media-downloader-1.png
+media-downloader-5.3.2/images/media-downloader-5.png
+media-downloader-5.3.2/images/media-downloader-2.png
+media-downloader-5.3.2/images/media-downloader-4.png
+media-downloader-5.3.2/images/media-downloader-6.png
+media-downloader-5.3.2/images/media-downloader-7.png
+media-downloader-5.3.2/images/media-downloader-3.png
+media-downloader-5.3.2/GPLv3
+media-downloader-5.3.2/CMakeLists.txt
+media-downloader-5.3.2/extensions/
+media-downloader-5.3.2/extensions/safaribooks.json
+media-downloader-5.3.2/extensions/yt-dlp-ffmpeg.json
+media-downloader-5.3.2/extensions/yt-dlp-aria2c-native.json
+media-downloader-5.3.2/extensions/yt-dlp-aria2c.json
+media-downloader-5.3.2/extensions/lux.json
+media-downloader-5.3.2/extensions/you-get.json
+media-downloader-5.3.2/extensions/yt-dlp.json
+media-downloader-5.3.2/extensions/gallery-dl.json
+media-downloader-5.3.2/extensions/ytdl-patched.json
+media-downloader-5.3.2/extensions/svtplay-dl.json
+media-downloader-5.3.2/extensions/aria2c.json
+media-downloader-5.3.2/extensions/wget.json
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Building With Qt6
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/work/media-downloader-5.3.2/build
+[1/36] Automatic MOC and UIC for target media-downloader
+[2/36] Automatic RCC for src/icon.qrc
+[3/36] Building CXX object CMakeFiles/media-downloader.dir/src/directoryEntries.cpp.o
+[4/36] Building CXX object CMakeFiles/media-downloader.dir/src/about.cpp.o
+[5/36] Building CXX object CMakeFiles/media-downloader.dir/src/themes.cpp.o
+[6/36] Building CXX object CMakeFiles/media-downloader.dir/src/tabmanager.cpp.o
+[7/36] Building CXX object CMakeFiles/media-downloader.dir/src/logwindow.cpp.o
+[8/36] Building CXX object CMakeFiles/media-downloader.dir/src/main.cpp.o
+[9/36] Building CXX object CMakeFiles/media-downloader.dir/src/tableWidget.cpp.o
+[10/36] Building CXX object CMakeFiles/media-downloader.dir/src/translator.cpp.o
+[11/36] Building CXX object CMakeFiles/media-downloader.dir/src/settings.cpp.o
+[12/36] Building CXX object CMakeFiles/media-downloader.dir/media-downloader_autogen/mocs_compilation.cpp.o
+[13/36] Building CXX object CMakeFiles/media-downloader.dir/src/versionInfo.cpp.o
+[14/36] Building CXX object CMakeFiles/media-downloader.dir/src/logger.cpp.o
+[15/36] Building CXX object CMakeFiles/media-downloader.dir/src/library.cpp.o
+[16/36] Building CXX object CMakeFiles/media-downloader.dir/src/proxy.cpp.o
+[17/36] Building CXX object CMakeFiles/media-downloader.dir/src/basicdownloader.cpp.o
+[18/36] Building CXX object CMakeFiles/media-downloader.dir/src/mainwindow.cpp.o
+[19/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines.cpp.o
+[20/36] Building CXX object CMakeFiles/media-downloader.dir/src/networkAccess.cpp.o
+[21/36] Building CXX object CMakeFiles/media-downloader.dir/src/utility.cpp.o
+[22/36] Building CXX object CMakeFiles/media-downloader.dir/src/configure.cpp.o
+[23/36] Building CXX object CMakeFiles/media-downloader.dir/media-downloader_autogen/UVLADIE3JM/qrc_icon.cpp.o
+[24/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/generic.cpp.o
+[25/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/tests.cpp.o
+[26/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/you-get.cpp.o
+[27/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/wget.cpp.o
+[28/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/gallery-dl.cpp.o
+[29/36] Building CXX object CMakeFiles/media-downloader.dir/src/playlistdownloader.cpp.o
+[30/36] Building CXX object CMakeFiles/media-downloader.dir/src/batchdownloader.cpp.o
+[31/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/aria2c.cpp.o
+[32/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/yt-dlp.cpp.o
+[33/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/svtplay-dl.cpp.o
+[34/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/safaribooks.cpp.o
+[35/36] Building CXX object CMakeFiles/media-downloader.dir/src/engines/lux.cpp.o
+[36/36] Linking CXX executable media-downloader
+-- Install configuration: "None"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/local/bin/media-downloader
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/applications/media-downloader.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/pixmaps/media-downloader.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/it_IT.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/ar.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/en_US.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/zh_CN.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/nl_NL.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/tr_TR.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/pl_PL.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/ko_KR.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/el_GR.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/de_DE.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/ja_JP.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/fr_FR.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/pt_BR.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/sv_SE.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/es.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/package-media-downloader/usr/share/media-downloader/translations/ru_RU.qm
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/media-downloader/media-downloader.info: No such file or directory
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/media-downloader/media-downloader-5.3.2-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/media-downloader-5.3.2/
+usr/doc/media-downloader-5.3.2/LICENSE
+usr/doc/media-downloader-5.3.2/README.md
+usr/doc/media-downloader-5.3.2/media-downloader.ini
+usr/local/
+usr/local/bin/
+usr/local/bin/media-downloader
+usr/share/
+usr/share/applications/
+usr/share/applications/media-downloader.desktop
+usr/share/media-downloader/
+usr/share/media-downloader/translations/
+usr/share/media-downloader/translations/ar.qm
+usr/share/media-downloader/translations/de_DE.qm
+usr/share/media-downloader/translations/el_GR.qm
+usr/share/media-downloader/translations/en_US.qm
+usr/share/media-downloader/translations/es.qm
+usr/share/media-downloader/translations/fr_FR.qm
+usr/share/media-downloader/translations/it_IT.qm
+usr/share/media-downloader/translations/ja_JP.qm
+usr/share/media-downloader/translations/ko_KR.qm
+usr/share/media-downloader/translations/nl_NL.qm
+usr/share/media-downloader/translations/pl_PL.qm
+usr/share/media-downloader/translations/pt_BR.qm
+usr/share/media-downloader/translations/ru_RU.qm
+usr/share/media-downloader/translations/sv_SE.qm
+usr/share/media-downloader/translations/tr_TR.qm
+usr/share/media-downloader/translations/zh_CN.qm
+usr/share/pixmaps/
+usr/share/pixmaps/media-downloader.png
+
+Slackware package /tmp/media-downloader/media-downloader-5.3.2-x86_64-1_rtz.tlz created.
+
+Create shared object file for media-downloader-5.3.2-x86_64-1_rtz.tlz
+Creating /tmp/media-downloader/media-downloader-5.3.2-x86_64-1_rtz.tlz.so.file using /tmp/media-downloader/media-downloader-5.3.2-x86_64-1_rtz.tlz
+Successfully created /tmp/media-downloader/media-downloader-5.3.2-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in media-downloader.tar.lz4 format.
+/tmp/media-downloader /tmp/media-downloader
+/tmp/media-downloader
+BIN_NAME
+README
+makepkg-media-downloader.log
+media-downloader-5.3.2-x86_64-1_rtz.tlz
+media-downloader-5.3.2-x86_64-1_rtz.tlz.md5
+media-downloader-5.3.2-x86_64-1_rtz.tlz.so.file
+media-downloader-5.3.2-x86_64-1_rtz.tlz.txt
+media-downloader build finished. Procced to installation...
+
++===========================================================================================================================+
+| Upgrading media-downloader-5.2.0-x86_64-1_rtz package using /tmp/media-downloader/media-downloader-5.3.2-x86_64-1_rtz.tlz |
++===========================================================================================================================+
+
+Pre-installing package media-downloader-5.3.2-x86_64-1_rtz...
+Removing package: media-downloader-5.2.0-x86_64-1_rtz-upgraded-2025-05-12,16:19:19
+Installing package media-downloader-5.3.2-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# media-downloader (front end to yt-dlp, youtube-dl, etc...)
+#
+# Media Downloader is a Qt/C++ front end to yt-dlp, youtube-dl,
+# gallery-dl, lux, you-get, svtplay-dl, aria2c, wget and safari books.
+#
+# https://github.com/mhogomchungu/media-downloader
+Executing install script for media-downloader-5.3.2-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package media-downloader-5.3.2-x86_64-1_rtz.tlz installed.
+Package media-downloader-5.2.0-x86_64-1_rtz upgraded with new package /tmp/media-downloader/media-downloader-5.3.2-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'media-downloader-5.3.2.tar.xz': No such file or directory
+Build process completed in 4 minutes and 20 seconds.

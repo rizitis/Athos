@@ -1,0 +1,1324 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	kcmutils	kconfig	kconfigwidgets	kdoctools	ki18n	kio	kxmlgui	libgphoto2
+extra-cmake-modules is already installed!
+kcmutils is already installed!
+kconfig is already installed!
+kconfigwidgets is already installed!
+kdoctools is already installed!
+ki18n is already installed!
+kio is already installed!
+kxmlgui is already installed!
+libgphoto2 is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 00:00:49--  https://download.kde.org/stable/release-service/25.04.1/src/kamera-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kamera-25.04.1.tar.xz [following]
+--2025-05-11 00:00:49--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kamera-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 133064 (130K) [application/octet-stream]
+Saving to: ‘kamera-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 38% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 76% 1.41M 0s
+   100K .......... .......... .........                       100% 10.9M=0.07s
+
+2025-05-11 00:00:49 (1.73 MB/s) - ‘kamera-25.04.1.tar.xz’ saved [133064/133064]
+
+Found file: kamera-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kamera-25.04.1/
+kamera-25.04.1/org.kde.kamera.metainfo.xml
+kamera-25.04.1/AUTHORS
+kamera-25.04.1/CMakePresets.json.license
+kamera-25.04.1/kioworker/
+kamera-25.04.1/kioworker/kameralist.cpp
+kamera-25.04.1/kioworker/kameralist.h
+kamera-25.04.1/kioworker/Messages.sh
+kamera-25.04.1/kioworker/kamera.cpp
+kamera-25.04.1/kioworker/camera.json
+kamera-25.04.1/kioworker/kamera.h
+kamera-25.04.1/kioworker/CMakeLists.txt
+kamera-25.04.1/CMakePresets.json
+kamera-25.04.1/LICENSES/
+kamera-25.04.1/LICENSES/GFDL-1.2-or-later.txt
+kamera-25.04.1/LICENSES/BSD-3-Clause.txt
+kamera-25.04.1/LICENSES/GPL-2.0-or-later.txt
+kamera-25.04.1/.gitlab-ci.yml
+kamera-25.04.1/doc/
+kamera-25.04.1/doc/index.docbook
+kamera-25.04.1/doc/CMakeLists.txt
+kamera-25.04.1/README
+kamera-25.04.1/logo.png
+kamera-25.04.1/.git-blame-ignore-revs
+kamera-25.04.1/.kde-ci.yml
+kamera-25.04.1/solid_camera.desktop
+kamera-25.04.1/kcontrol/
+kamera-25.04.1/kcontrol/kameradevice.h
+kamera-25.04.1/kcontrol/kameraconfigdialog.cpp
+kamera-25.04.1/kcontrol/kameraconfigdialog.h
+kamera-25.04.1/kcontrol/Messages.sh
+kamera-25.04.1/kcontrol/kamera.cpp
+kamera-25.04.1/kcontrol/kameradevice.cpp
+kamera-25.04.1/kcontrol/kamera.h
+kamera-25.04.1/kcontrol/kcm_kamera.json
+kamera-25.04.1/kcontrol/CMakeLists.txt
+kamera-25.04.1/FindGphoto2.cmake
+kamera-25.04.1/po/
+kamera-25.04.1/po/fa/
+kamera-25.04.1/po/fa/kcmkamera.po
+kamera-25.04.1/po/bg/
+kamera-25.04.1/po/bg/kio6_kamera.po
+kamera-25.04.1/po/bg/kcmkamera.po
+kamera-25.04.1/po/pt/
+kamera-25.04.1/po/pt/kio6_kamera.po
+kamera-25.04.1/po/pt/kcmkamera.po
+kamera-25.04.1/po/pt/docs/
+kamera-25.04.1/po/pt/docs/kcontrol/
+kamera-25.04.1/po/pt/docs/kcontrol/kamera/
+kamera-25.04.1/po/pt/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/km/
+kamera-25.04.1/po/km/kcmkamera.po
+kamera-25.04.1/po/nn/
+kamera-25.04.1/po/nn/kio6_kamera.po
+kamera-25.04.1/po/nn/kcmkamera.po
+kamera-25.04.1/po/pl/
+kamera-25.04.1/po/pl/kio6_kamera.po
+kamera-25.04.1/po/pl/kcmkamera.po
+kamera-25.04.1/po/pl/docs/
+kamera-25.04.1/po/pl/docs/kcontrol/
+kamera-25.04.1/po/pl/docs/kcontrol/kamera/
+kamera-25.04.1/po/pl/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/vi/
+kamera-25.04.1/po/vi/kio6_kamera.po
+kamera-25.04.1/po/vi/kcmkamera.po
+kamera-25.04.1/po/ja/
+kamera-25.04.1/po/ja/kio6_kamera.po
+kamera-25.04.1/po/ja/kcmkamera.po
+kamera-25.04.1/po/pa/
+kamera-25.04.1/po/pa/kio6_kamera.po
+kamera-25.04.1/po/pa/kcmkamera.po
+kamera-25.04.1/po/bs/
+kamera-25.04.1/po/bs/kcmkamera.po
+kamera-25.04.1/po/zh_CN/
+kamera-25.04.1/po/zh_CN/kio6_kamera.po
+kamera-25.04.1/po/zh_CN/kcmkamera.po
+kamera-25.04.1/po/cs/
+kamera-25.04.1/po/cs/kio6_kamera.po
+kamera-25.04.1/po/cs/kcmkamera.po
+kamera-25.04.1/po/cs/docs/
+kamera-25.04.1/po/cs/docs/kcontrol/
+kamera-25.04.1/po/cs/docs/kcontrol/kamera/
+kamera-25.04.1/po/cs/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/es/
+kamera-25.04.1/po/es/kio6_kamera.po
+kamera-25.04.1/po/es/kcmkamera.po
+kamera-25.04.1/po/es/docs/
+kamera-25.04.1/po/es/docs/kcontrol/
+kamera-25.04.1/po/es/docs/kcontrol/kamera/
+kamera-25.04.1/po/es/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/ka/
+kamera-25.04.1/po/ka/kio6_kamera.po
+kamera-25.04.1/po/ka/kcmkamera.po
+kamera-25.04.1/po/is/
+kamera-25.04.1/po/is/kio6_kamera.po
+kamera-25.04.1/po/is/kcmkamera.po
+kamera-25.04.1/po/tr/
+kamera-25.04.1/po/tr/kio6_kamera.po
+kamera-25.04.1/po/tr/kcmkamera.po
+kamera-25.04.1/po/tr/docs/
+kamera-25.04.1/po/tr/docs/kcontrol/
+kamera-25.04.1/po/tr/docs/kcontrol/kamera/
+kamera-25.04.1/po/tr/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/ug/
+kamera-25.04.1/po/ug/kcmkamera.po
+kamera-25.04.1/po/ca/
+kamera-25.04.1/po/ca/kio6_kamera.po
+kamera-25.04.1/po/ca/kcmkamera.po
+kamera-25.04.1/po/ca/docs/
+kamera-25.04.1/po/ca/docs/kcontrol/
+kamera-25.04.1/po/ca/docs/kcontrol/kamera/
+kamera-25.04.1/po/ca/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/se/
+kamera-25.04.1/po/se/kcmkamera.po
+kamera-25.04.1/po/ca@valencia/
+kamera-25.04.1/po/ca@valencia/kio6_kamera.po
+kamera-25.04.1/po/ca@valencia/kcmkamera.po
+kamera-25.04.1/po/fy/
+kamera-25.04.1/po/fy/kcmkamera.po
+kamera-25.04.1/po/hr/
+kamera-25.04.1/po/hr/kcmkamera.po
+kamera-25.04.1/po/gl/
+kamera-25.04.1/po/gl/kio6_kamera.po
+kamera-25.04.1/po/gl/kcmkamera.po
+kamera-25.04.1/po/gl/docs/
+kamera-25.04.1/po/gl/docs/kcontrol/
+kamera-25.04.1/po/gl/docs/kcontrol/kamera/
+kamera-25.04.1/po/gl/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/ro/
+kamera-25.04.1/po/ro/kio6_kamera.po
+kamera-25.04.1/po/ro/kcmkamera.po
+kamera-25.04.1/po/oc/
+kamera-25.04.1/po/oc/kcmkamera.po
+kamera-25.04.1/po/br/
+kamera-25.04.1/po/br/kcmkamera.po
+kamera-25.04.1/po/eo/
+kamera-25.04.1/po/eo/kio6_kamera.po
+kamera-25.04.1/po/eo/kcmkamera.po
+kamera-25.04.1/po/zh_HK/
+kamera-25.04.1/po/zh_HK/kcmkamera.po
+kamera-25.04.1/po/nl/
+kamera-25.04.1/po/nl/kio6_kamera.po
+kamera-25.04.1/po/nl/kcmkamera.po
+kamera-25.04.1/po/nl/docs/
+kamera-25.04.1/po/nl/docs/kcontrol/
+kamera-25.04.1/po/nl/docs/kcontrol/kamera/
+kamera-25.04.1/po/nl/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/mr/
+kamera-25.04.1/po/mr/kcmkamera.po
+kamera-25.04.1/po/af/
+kamera-25.04.1/po/af/kcmkamera.po
+kamera-25.04.1/po/ml/
+kamera-25.04.1/po/ml/kio6_kamera.po
+kamera-25.04.1/po/ml/kcmkamera.po
+kamera-25.04.1/po/hu/
+kamera-25.04.1/po/hu/kio6_kamera.po
+kamera-25.04.1/po/hu/kcmkamera.po
+kamera-25.04.1/po/eu/
+kamera-25.04.1/po/eu/kio6_kamera.po
+kamera-25.04.1/po/eu/kcmkamera.po
+kamera-25.04.1/po/lv/
+kamera-25.04.1/po/lv/kio6_kamera.po
+kamera-25.04.1/po/lv/kcmkamera.po
+kamera-25.04.1/po/mk/
+kamera-25.04.1/po/mk/kcmkamera.po
+kamera-25.04.1/po/nb/
+kamera-25.04.1/po/nb/kcmkamera.po
+kamera-25.04.1/po/fr/
+kamera-25.04.1/po/fr/kio6_kamera.po
+kamera-25.04.1/po/fr/kcmkamera.po
+kamera-25.04.1/po/fr/docs/
+kamera-25.04.1/po/fr/docs/kcontrol/
+kamera-25.04.1/po/fr/docs/kcontrol/kamera/
+kamera-25.04.1/po/fr/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/hi/
+kamera-25.04.1/po/hi/kio6_kamera.po
+kamera-25.04.1/po/hi/kcmkamera.po
+kamera-25.04.1/po/sl/
+kamera-25.04.1/po/sl/kio6_kamera.po
+kamera-25.04.1/po/sl/kcmkamera.po
+kamera-25.04.1/po/sl/docs/
+kamera-25.04.1/po/sl/docs/kcontrol/
+kamera-25.04.1/po/sl/docs/kcontrol/kamera/
+kamera-25.04.1/po/sl/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/th/
+kamera-25.04.1/po/th/kcmkamera.po
+kamera-25.04.1/po/ta/
+kamera-25.04.1/po/ta/kcmkamera.po
+kamera-25.04.1/po/he/
+kamera-25.04.1/po/he/kio6_kamera.po
+kamera-25.04.1/po/he/kcmkamera.po
+kamera-25.04.1/po/de/
+kamera-25.04.1/po/de/kio6_kamera.po
+kamera-25.04.1/po/de/kcmkamera.po
+kamera-25.04.1/po/de/docs/
+kamera-25.04.1/po/de/docs/kcontrol/
+kamera-25.04.1/po/de/docs/kcontrol/kamera/
+kamera-25.04.1/po/de/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/ar/
+kamera-25.04.1/po/ar/kio6_kamera.po
+kamera-25.04.1/po/ar/kcmkamera.po
+kamera-25.04.1/po/sk/
+kamera-25.04.1/po/sk/kio6_kamera.po
+kamera-25.04.1/po/sk/kcmkamera.po
+kamera-25.04.1/po/zh_TW/
+kamera-25.04.1/po/zh_TW/kio6_kamera.po
+kamera-25.04.1/po/zh_TW/kcmkamera.po
+kamera-25.04.1/po/et/
+kamera-25.04.1/po/et/kio6_kamera.po
+kamera-25.04.1/po/et/kcmkamera.po
+kamera-25.04.1/po/et/docs/
+kamera-25.04.1/po/et/docs/kcontrol/
+kamera-25.04.1/po/et/docs/kcontrol/kamera/
+kamera-25.04.1/po/et/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/it/
+kamera-25.04.1/po/it/kio6_kamera.po
+kamera-25.04.1/po/it/kcmkamera.po
+kamera-25.04.1/po/it/docs/
+kamera-25.04.1/po/it/docs/kcontrol/
+kamera-25.04.1/po/it/docs/kcontrol/kamera/
+kamera-25.04.1/po/it/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/el/
+kamera-25.04.1/po/el/kio6_kamera.po
+kamera-25.04.1/po/el/kcmkamera.po
+kamera-25.04.1/po/da/
+kamera-25.04.1/po/da/kio6_kamera.po
+kamera-25.04.1/po/da/kcmkamera.po
+kamera-25.04.1/po/xh/
+kamera-25.04.1/po/xh/kcmkamera.po
+kamera-25.04.1/po/pt_BR/
+kamera-25.04.1/po/pt_BR/kio6_kamera.po
+kamera-25.04.1/po/pt_BR/kcmkamera.po
+kamera-25.04.1/po/pt_BR/docs/
+kamera-25.04.1/po/pt_BR/docs/kcontrol/
+kamera-25.04.1/po/pt_BR/docs/kcontrol/kamera/
+kamera-25.04.1/po/pt_BR/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/ru/
+kamera-25.04.1/po/ru/kio6_kamera.po
+kamera-25.04.1/po/ru/kcmkamera.po
+kamera-25.04.1/po/ru/docs/
+kamera-25.04.1/po/ru/docs/kcontrol/
+kamera-25.04.1/po/ru/docs/kcontrol/kamera/
+kamera-25.04.1/po/ru/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/sq/
+kamera-25.04.1/po/sq/kcmkamera.po
+kamera-25.04.1/po/id/
+kamera-25.04.1/po/id/kio6_kamera.po
+kamera-25.04.1/po/id/kcmkamera.po
+kamera-25.04.1/po/ia/
+kamera-25.04.1/po/ia/kio6_kamera.po
+kamera-25.04.1/po/ia/kcmkamera.po
+kamera-25.04.1/po/cy/
+kamera-25.04.1/po/cy/kcmkamera.po
+kamera-25.04.1/po/sv/
+kamera-25.04.1/po/sv/kio6_kamera.po
+kamera-25.04.1/po/sv/kcmkamera.po
+kamera-25.04.1/po/sv/docs/
+kamera-25.04.1/po/sv/docs/kcontrol/
+kamera-25.04.1/po/sv/docs/kcontrol/kamera/
+kamera-25.04.1/po/sv/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/ne/
+kamera-25.04.1/po/ne/kcmkamera.po
+kamera-25.04.1/po/si/
+kamera-25.04.1/po/si/kcmkamera.po
+kamera-25.04.1/po/ms/
+kamera-25.04.1/po/ms/kcmkamera.po
+kamera-25.04.1/po/fi/
+kamera-25.04.1/po/fi/kio6_kamera.po
+kamera-25.04.1/po/fi/kcmkamera.po
+kamera-25.04.1/po/kk/
+kamera-25.04.1/po/kk/kcmkamera.po
+kamera-25.04.1/po/ast/
+kamera-25.04.1/po/ast/kio6_kamera.po
+kamera-25.04.1/po/ast/kcmkamera.po
+kamera-25.04.1/po/lt/
+kamera-25.04.1/po/lt/kio6_kamera.po
+kamera-25.04.1/po/lt/kcmkamera.po
+kamera-25.04.1/po/be/
+kamera-25.04.1/po/be/kcmkamera.po
+kamera-25.04.1/po/tg/
+kamera-25.04.1/po/tg/kcmkamera.po
+kamera-25.04.1/po/sa/
+kamera-25.04.1/po/sa/kio6_kamera.po
+kamera-25.04.1/po/sa/kcmkamera.po
+kamera-25.04.1/po/ko/
+kamera-25.04.1/po/ko/kio6_kamera.po
+kamera-25.04.1/po/ko/kcmkamera.po
+kamera-25.04.1/po/hne/
+kamera-25.04.1/po/hne/kcmkamera.po
+kamera-25.04.1/po/ga/
+kamera-25.04.1/po/ga/kcmkamera.po
+kamera-25.04.1/po/en_GB/
+kamera-25.04.1/po/en_GB/kio6_kamera.po
+kamera-25.04.1/po/en_GB/kcmkamera.po
+kamera-25.04.1/po/uk/
+kamera-25.04.1/po/uk/kio6_kamera.po
+kamera-25.04.1/po/uk/kcmkamera.po
+kamera-25.04.1/po/uk/docs/
+kamera-25.04.1/po/uk/docs/kcontrol/
+kamera-25.04.1/po/uk/docs/kcontrol/kamera/
+kamera-25.04.1/po/uk/docs/kcontrol/kamera/index.docbook
+kamera-25.04.1/po/nds/
+kamera-25.04.1/po/nds/kcmkamera.po
+kamera-25.04.1/po/az/
+kamera-25.04.1/po/az/kio6_kamera.po
+kamera-25.04.1/po/az/kcmkamera.po
+kamera-25.04.1/CMakeLists.txt
+kamera-25.04.1/.gitignore
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6ConfigWidgets: /usr/lib64/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.14.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.3.0") found components: ConfigWidgets XmlGui KIO I18n Config KCMUtils
+CMake Warning (dev) at FindGphoto2.cmake:26 (exec_program):
+  Policy CMP0153 is not set: The exec_program command should not be called.
+  Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Use execute_process() instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:49 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at FindGphoto2.cmake:27 (exec_program):
+  Policy CMP0153 is not set: The exec_program command should not be called.
+  Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Use execute_process() instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:49 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at FindGphoto2.cmake:28 (exec_program):
+  Policy CMP0153 is not set: The exec_program command should not be called.
+  Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Use execute_process() instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:49 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at FindGphoto2.cmake:29 (exec_program):
+  Policy CMP0153 is not set: The exec_program command should not be called.
+  Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Use execute_process() instead.
+Call Stack (most recent call first):
+  CMakeLists.txt:49 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found gphoto2: -L/usr/lib64 -lgphoto2_port;-L/usr/lib64 -lgphoto2 -lgphoto2_port -lm
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Core (required version >= 6.7.0)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * OpenGL
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * KF6DocTools (required version >= 6.3.0), Tools to generate documentation
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.3.0)
+ * Qt6 (required version >= 6.5.0)
+ * KF6ConfigWidgets (required version >= 6.14.0)
+ * KF6XmlGui (required version >= 6.3.0)
+ * KF6KIO (required version >= 6.3.0)
+ * Gettext
+ * KF6I18n (required version >= 6.3.0)
+ * KF6Config (required version >= 6.3.0)
+ * KF6KCMUtils (required version >= 6.3.0)
+ * KF6 (required version >= 6.3.0)
+ * Gphoto2 (required version >= 2.5.0)
+
+-- Configuring done (1.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/work/kamera-25.04.1/build
+[1/34] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/work/kamera-25.04.1/build/kcontrol && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/work/kamera-25.04.1/kcontrol/kcm_kamera.json /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/work/kamera-25.04.1/build/kcontrol/kcm_kamera.desktop
+[2/34] Generating ts...
+[3/34] Generating po/tr/docs/kcontrol/kamera/index.cache.bz2
+[4/34] Generating po/nl/docs/kcontrol/kamera/index.cache.bz2
+[5/34] Generating po/pl/docs/kcontrol/kamera/index.cache.bz2
+[6/34] Generating po/sl/docs/kcontrol/kamera/index.cache.bz2
+[7/34] Generating po/ru/docs/kcontrol/kamera/index.cache.bz2
+[8/34] Generating po/gl/docs/kcontrol/kamera/index.cache.bz2
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/.xml": No such file or directory
+No "en" localization of "footer-doc-comment" exists.
+No "en" localization of "footer-doc-feedback" exists.
+No "en" localization of "footer-doc-teamname" exists.
+[9/34] Generating po/pt_BR/docs/kcontrol/kamera/index.cache.bz2
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/pt-BR.xml": No such file or directory
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+[10/34] Generating po/de/docs/kcontrol/kamera/index.cache.bz2
+[11/34] Generating po/et/docs/kcontrol/kamera/index.cache.bz2
+[12/34] Generating po/ca/docs/kcontrol/kamera/index.cache.bz2
+[13/34] Generating mo...
+[14/34] Generating po/cs/docs/kcontrol/kamera/index.cache.bz2
+[15/34] Generating index.cache.bz2
+[16/34] Generating po/fr/docs/kcontrol/kamera/index.cache.bz2
+[17/34] Generating po/pt/docs/kcontrol/kamera/index.cache.bz2
+[18/34] Generating po/it/docs/kcontrol/kamera/index.cache.bz2
+[19/34] Generating po/es/docs/kcontrol/kamera/index.cache.bz2
+[20/34] Generating po/sv/docs/kcontrol/kamera/index.cache.bz2
+[21/34] Generating po/uk/docs/kcontrol/kamera/index.cache.bz2
+[22/34] Automatic MOC for target kio_kamera
+[23/34] Automatic MOC for target kcm_kamera
+[24/34] Building CXX object kioworker/CMakeFiles/kio_kamera.dir/kio_kamera_autogen/mocs_compilation.cpp.o
+[25/34] Building CXX object kcontrol/CMakeFiles/kcm_kamera.dir/kcm_kamera_autogen/mocs_compilation.cpp.o
+[26/34] Building CXX object kioworker/CMakeFiles/kio_kamera.dir/kameralist.cpp.o
+[27/34] Building CXX object kioworker/CMakeFiles/kio_kamera.dir/kio_kamera_log.cpp.o
+[28/34] Building CXX object kcontrol/CMakeFiles/kcm_kamera.dir/kcm_kamera_log.cpp.o
+[29/34] Building CXX object kcontrol/CMakeFiles/kcm_kamera.dir/kameraconfigdialog.cpp.o
+[30/34] Building CXX object kcontrol/CMakeFiles/kcm_kamera.dir/kameradevice.cpp.o
+[31/34] Building CXX object kioworker/CMakeFiles/kio_kamera.dir/kamera.cpp.o
+[32/34] Building CXX object kcontrol/CMakeFiles/kcm_kamera.dir/kamera.cpp.o
+[33/34] Linking CXX shared module bin/kio_kamera.so
+[34/34] Linking CXX shared module bin/plasma/kcms/systemsettings_qwidgets/kcm_kamera.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/lib64/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kamera.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/applications/kcm_kamera.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/lib64/qt6/plugins/kf6/kio/kio_kamera.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/da/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/da/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ms
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ms/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/cs/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/cs/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ja/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ja/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/de/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/de/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/el/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/el/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nn/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nn/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_HK
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_HK/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_HK/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fy/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hi/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hi/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pt_BR/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pt_BR/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/lt/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/lt/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/be/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pa/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pa/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sl/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sl/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ta/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/xh
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/xh/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/xh/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ro/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ro/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/bs/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/is/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/is/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/kk/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/he/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/he/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_TW/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_TW/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/tg/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fa/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pl/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pl/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/km/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pt/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/pt/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hr/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/az/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/az/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/tr/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/tr/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fr/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fr/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ast/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ast/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ne/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/vi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/vi/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/vi/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ka/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ka/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/cy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/cy/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/cy/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/th/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/gl/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/gl/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ia/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ia/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hu/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hu/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/eo/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/eo/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/bg/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/bg/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ga/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/br
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/br/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/br/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ca/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ca/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/uk/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/uk/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/id/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/id/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/en_GB/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/en_GB/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_CN/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/zh_CN/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nl/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nl/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/oc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/oc/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sa/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sa/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fi/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/fi/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ko/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ko/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/mk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/mk/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ru/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ru/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/af
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/af/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/af/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/lv/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/lv/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ml/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ml/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/hne/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ca@valencia/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nb/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/es/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/es/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/eu/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/eu/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/et/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/et/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/it/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/it/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/se
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/se/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/se/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ar/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ar/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sq
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sq/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/nds/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/mr/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/ug/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sk/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sk/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/si
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/si/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/si/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sv/LC_MESSAGES/kio6_kamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/locale/sv/LC_MESSAGES/kcmkamera.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/ca/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/ca/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/cs/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/cs/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/de/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/de/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/es/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/es/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/et/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/et/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/fr/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/fr/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/gl/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/gl/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/it/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/it/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/nl/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/nl/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/pl/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/pl/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/pt/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/pt/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/pt_BR/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/pt_BR/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/ru/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/ru/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/sl/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/sl/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/sv/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/sv/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/tr/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/tr/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/uk/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/uk/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/en/kcontrol/kamera/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/doc/HTML/en/kcontrol/kamera/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/solid/actions/solid_camera.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/metainfo/org.kde.kamera.metainfo.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/package-kamera/usr/share/qlogging-categories6/kamera.categories
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kamera/kamera.info: No such file or directory
+extra-cmake-modules
+kcmutils
+kconfig
+kconfigwidgets
+kdoctools
+ki18n
+kio
+kxmlgui
+libgphoto2
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kamera/kamera-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kamera-25.04.1/
+usr/doc/kamera-25.04.1/AUTHORS
+usr/doc/kamera-25.04.1/README
+usr/doc/kamera-25.04.1/kamera.ini
+usr/doc/kamera-25.04.1/slack-required
+usr/lib64/
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/kf6/
+usr/lib64/qt6/plugins/kf6/kio/
+usr/lib64/qt6/plugins/kf6/kio/kio_kamera.so
+usr/lib64/qt6/plugins/plasma/
+usr/lib64/qt6/plugins/plasma/kcms/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings_qwidgets/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kamera.so
+usr/share/
+usr/share/applications/
+usr/share/applications/kcm_kamera.desktop
+usr/share/doc/
+usr/share/doc/HTML/
+usr/share/doc/HTML/ca/
+usr/share/doc/HTML/ca/kcontrol/
+usr/share/doc/HTML/ca/kcontrol/kamera/
+usr/share/doc/HTML/ca/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/ca/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/cs/
+usr/share/doc/HTML/cs/kcontrol/
+usr/share/doc/HTML/cs/kcontrol/kamera/
+usr/share/doc/HTML/cs/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/cs/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/de/
+usr/share/doc/HTML/de/kcontrol/
+usr/share/doc/HTML/de/kcontrol/kamera/
+usr/share/doc/HTML/de/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/de/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/en/
+usr/share/doc/HTML/en/kcontrol/
+usr/share/doc/HTML/en/kcontrol/kamera/
+usr/share/doc/HTML/en/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/en/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/es/
+usr/share/doc/HTML/es/kcontrol/
+usr/share/doc/HTML/es/kcontrol/kamera/
+usr/share/doc/HTML/es/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/es/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/et/
+usr/share/doc/HTML/et/kcontrol/
+usr/share/doc/HTML/et/kcontrol/kamera/
+usr/share/doc/HTML/et/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/et/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/fr/
+usr/share/doc/HTML/fr/kcontrol/
+usr/share/doc/HTML/fr/kcontrol/kamera/
+usr/share/doc/HTML/fr/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/fr/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/gl/
+usr/share/doc/HTML/gl/kcontrol/
+usr/share/doc/HTML/gl/kcontrol/kamera/
+usr/share/doc/HTML/gl/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/gl/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/it/
+usr/share/doc/HTML/it/kcontrol/
+usr/share/doc/HTML/it/kcontrol/kamera/
+usr/share/doc/HTML/it/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/it/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/nl/
+usr/share/doc/HTML/nl/kcontrol/
+usr/share/doc/HTML/nl/kcontrol/kamera/
+usr/share/doc/HTML/nl/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/nl/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/pl/
+usr/share/doc/HTML/pl/kcontrol/
+usr/share/doc/HTML/pl/kcontrol/kamera/
+usr/share/doc/HTML/pl/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/pl/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/pt/
+usr/share/doc/HTML/pt/kcontrol/
+usr/share/doc/HTML/pt/kcontrol/kamera/
+usr/share/doc/HTML/pt/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/pt/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/pt_BR/
+usr/share/doc/HTML/pt_BR/kcontrol/
+usr/share/doc/HTML/pt_BR/kcontrol/kamera/
+usr/share/doc/HTML/pt_BR/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/pt_BR/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/ru/
+usr/share/doc/HTML/ru/kcontrol/
+usr/share/doc/HTML/ru/kcontrol/kamera/
+usr/share/doc/HTML/ru/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/ru/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/sl/
+usr/share/doc/HTML/sl/kcontrol/
+usr/share/doc/HTML/sl/kcontrol/kamera/
+usr/share/doc/HTML/sl/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/sl/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/sv/
+usr/share/doc/HTML/sv/kcontrol/
+usr/share/doc/HTML/sv/kcontrol/kamera/
+usr/share/doc/HTML/sv/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/sv/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/tr/
+usr/share/doc/HTML/tr/kcontrol/
+usr/share/doc/HTML/tr/kcontrol/kamera/
+usr/share/doc/HTML/tr/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/tr/kcontrol/kamera/index.docbook
+usr/share/doc/HTML/uk/
+usr/share/doc/HTML/uk/kcontrol/
+usr/share/doc/HTML/uk/kcontrol/kamera/
+usr/share/doc/HTML/uk/kcontrol/kamera/index.cache.bz2
+usr/share/doc/HTML/uk/kcontrol/kamera/index.docbook
+usr/share/locale/
+usr/share/locale/af/
+usr/share/locale/af/LC_MESSAGES/
+usr/share/locale/af/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ar/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ast/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/az/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/bg/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/br/
+usr/share/locale/br/LC_MESSAGES/
+usr/share/locale/br/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ca/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/cs/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/cy/
+usr/share/locale/cy/LC_MESSAGES/
+usr/share/locale/cy/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/da/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/de/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/el/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/en_GB/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/eo/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/es/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/et/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/eu/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/fi/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/fr/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/fy/
+usr/share/locale/fy/LC_MESSAGES/
+usr/share/locale/fy/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/gl/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/he/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/hi/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/hne/
+usr/share/locale/hne/LC_MESSAGES/
+usr/share/locale/hne/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/hu/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ia/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/id/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/is/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/it/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ja/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ka/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ko/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/lt/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/lv/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/mk/
+usr/share/locale/mk/LC_MESSAGES/
+usr/share/locale/mk/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ml/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ne/
+usr/share/locale/ne/LC_MESSAGES/
+usr/share/locale/ne/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/nl/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/nn/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/pa/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/pl/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/pt/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/pt_BR/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ro/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/ru/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/sa/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/si/
+usr/share/locale/si/LC_MESSAGES/
+usr/share/locale/si/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/sk/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/sl/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/sv/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/tr/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/uk/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/vi/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/xh/
+usr/share/locale/xh/LC_MESSAGES/
+usr/share/locale/xh/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/zh_CN/LC_MESSAGES/kio6_kamera.mo
+usr/share/locale/zh_HK/
+usr/share/locale/zh_HK/LC_MESSAGES/
+usr/share/locale/zh_HK/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kcmkamera.mo
+usr/share/locale/zh_TW/LC_MESSAGES/kio6_kamera.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.kamera.metainfo.xml
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kamera.categories
+usr/share/solid/
+usr/share/solid/actions/
+usr/share/solid/actions/solid_camera.desktop
+
+Slackware package /tmp/kamera/kamera-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for kamera-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/kamera/kamera-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/kamera/kamera-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/kamera/kamera-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kamera.tar.lz4 format.
+/tmp/kamera /tmp/kamera
+/tmp/kamera
+BIN_NAME
+README
+kamera-25.04.1-x86_64-1_rtz.tlz
+kamera-25.04.1-x86_64-1_rtz.tlz.md5
+kamera-25.04.1-x86_64-1_rtz.tlz.so.file
+kamera-25.04.1-x86_64-1_rtz.tlz.txt
+kamera.dep
+makepkg-kamera.log
+kamera build finished. Procced to installation...
+
++=================================================================================================+
+| Upgrading kamera-25.04.1-x86_64-1_rtz package using /tmp/kamera/kamera-25.04.1-x86_64-1_rtz.tlz |
++=================================================================================================+
+
+Pre-installing package kamera-25.04.1-x86_64-1_rtz...
+Removing package: kamera-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,00:00:57
+Installing package kamera-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kamera (KDE integration for gphoto2 cameras)
+#
+# KDE integration for gphoto2 cameras
+#
+# https://kde.org/applications/graphics
+Executing install script for kamera-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kamera-25.04.1-x86_64-1_rtz.tlz installed.
+Package kamera-25.04.1-x86_64-1_rtz upgraded with new package /tmp/kamera/kamera-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kamera-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 13 seconds.

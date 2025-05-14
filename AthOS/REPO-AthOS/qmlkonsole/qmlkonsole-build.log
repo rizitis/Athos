@@ -1,0 +1,810 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	ki18n	kirigami-addons	kirigami	kpty
+extra-cmake-modules is already installed!
+ki18n is already installed!
+kirigami-addons is already installed!
+kirigami is already installed!
+kpty is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:24:45--  https://download.kde.org/stable/release-service/25.04.1/src/qmlkonsole-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/qmlkonsole-25.04.1.tar.xz [following]
+--2025-05-11 01:24:45--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/qmlkonsole-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 199820 (195K) [application/octet-stream]
+Saving to: ‘qmlkonsole-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 25% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 51% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 76% 6.83M 0s
+   150K .......... .......... .......... .......... .....     100% 6.34M=0.08s
+
+2025-05-11 01:24:45 (2.26 MB/s) - ‘qmlkonsole-25.04.1.tar.xz’ saved [199820/199820]
+
+Found file: qmlkonsole-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+qmlkonsole-25.04.1/
+qmlkonsole-25.04.1/org.kde.qmlkonsole.svg
+qmlkonsole-25.04.1/README.md
+qmlkonsole-25.04.1/.reuse/
+qmlkonsole-25.04.1/.reuse/dep5
+qmlkonsole-25.04.1/LICENSES/
+qmlkonsole-25.04.1/LICENSES/CC0-1.0.txt
+qmlkonsole-25.04.1/LICENSES/LGPL-2.0-or-later.txt
+qmlkonsole-25.04.1/LICENSES/GPL-2.0-or-later.txt
+qmlkonsole-25.04.1/org.kde.qmlkonsole.svg.license
+qmlkonsole-25.04.1/.gitlab-ci.yml
+qmlkonsole-25.04.1/logo.png
+qmlkonsole-25.04.1/.git-blame-ignore-revs
+qmlkonsole-25.04.1/lib/
+qmlkonsole-25.04.1/lib/terminal.qrc
+qmlkonsole-25.04.1/lib/TerminalDisplay.h
+qmlkonsole-25.04.1/lib/BlockArray.h
+qmlkonsole-25.04.1/lib/Screen.cpp
+qmlkonsole-25.04.1/lib/TerminalCharacterDecoder.cpp
+qmlkonsole-25.04.1/lib/ScreenWindow.h
+qmlkonsole-25.04.1/lib/Pty.h
+qmlkonsole-25.04.1/lib/History.h
+qmlkonsole-25.04.1/lib/default.keytab
+qmlkonsole-25.04.1/lib/Session.h
+qmlkonsole-25.04.1/lib/HistorySearch.h
+qmlkonsole-25.04.1/lib/Vt102Emulation.cpp
+qmlkonsole-25.04.1/lib/qtermwidget.h
+qmlkonsole-25.04.1/lib/Screen.h
+qmlkonsole-25.04.1/lib/Vt102Emulation.h
+qmlkonsole-25.04.1/lib/BlockArray.cpp
+qmlkonsole-25.04.1/lib/Emulation.h
+qmlkonsole-25.04.1/lib/color-schemes/
+qmlkonsole-25.04.1/lib/color-schemes/BlackOnLightYellow.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/Tango.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/SolarizedLight.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/GreenOnBlack.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/BlackOnRandomLight.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/BlackOnWhite.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/GreenOnBlack.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/DarkPastels.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/BlackOnWhite.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/WhiteOnBlack.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/BlackOnRandomLight.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/cool-retro-term.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/Tango.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/cool-retro-term.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/BlackOnLightYellow.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/WhiteOnBlack.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/BreezeModified.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/BreezeModified.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/Ubuntu.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/Ubuntu.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/SolarizedLight.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/DarkPastels.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/Linux.colorscheme.license
+qmlkonsole-25.04.1/lib/color-schemes/Solarized.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/Linux.colorscheme
+qmlkonsole-25.04.1/lib/color-schemes/Solarized.colorscheme.license
+qmlkonsole-25.04.1/lib/KeyboardTranslator.cpp
+qmlkonsole-25.04.1/lib/Filter.cpp
+qmlkonsole-25.04.1/lib/LineFont.src
+qmlkonsole-25.04.1/lib/Emulation.cpp
+qmlkonsole-25.04.1/lib/Pty.cpp
+qmlkonsole-25.04.1/lib/LineFont.src.license
+qmlkonsole-25.04.1/lib/Character.h
+qmlkonsole-25.04.1/lib/TerminalDisplay.cpp
+qmlkonsole-25.04.1/lib/tools.cpp
+qmlkonsole-25.04.1/lib/ProcessInfo.cpp
+qmlkonsole-25.04.1/lib/HistorySearch.cpp
+qmlkonsole-25.04.1/lib/kb-layouts/
+qmlkonsole-25.04.1/lib/kb-layouts/solaris.keytab.license
+qmlkonsole-25.04.1/lib/kb-layouts/linux.keytab
+qmlkonsole-25.04.1/lib/kb-layouts/default.keytab
+qmlkonsole-25.04.1/lib/kb-layouts/solaris.keytab
+qmlkonsole-25.04.1/lib/kb-layouts/macbook.keytab
+qmlkonsole-25.04.1/lib/kb-layouts/default.keytab.license
+qmlkonsole-25.04.1/lib/kb-layouts/vt420pc.keytab.license
+qmlkonsole-25.04.1/lib/kb-layouts/macbook.keytab.license
+qmlkonsole-25.04.1/lib/kb-layouts/historic/
+qmlkonsole-25.04.1/lib/kb-layouts/historic/x11r5.keytab.license
+qmlkonsole-25.04.1/lib/kb-layouts/historic/x11r5.keytab
+qmlkonsole-25.04.1/lib/kb-layouts/historic/vt100.keytab.license
+qmlkonsole-25.04.1/lib/kb-layouts/historic/vt100.keytab
+qmlkonsole-25.04.1/lib/kb-layouts/linux.keytab.license
+qmlkonsole-25.04.1/lib/kb-layouts/vt420pc.keytab
+qmlkonsole-25.04.1/lib/ColorScheme.cpp
+qmlkonsole-25.04.1/lib/ColorScheme.h
+qmlkonsole-25.04.1/lib/TerminalSession.h
+qmlkonsole-25.04.1/lib/Session.cpp
+qmlkonsole-25.04.1/lib/ShellCommand.cpp
+qmlkonsole-25.04.1/lib/Filter.h
+qmlkonsole-25.04.1/lib/ScreenWindow.cpp
+qmlkonsole-25.04.1/lib/default.keytab.license
+qmlkonsole-25.04.1/lib/KonsoleQML.h
+qmlkonsole-25.04.1/lib/ShellCommand.h
+qmlkonsole-25.04.1/lib/konsole_wcwidth.h
+qmlkonsole-25.04.1/lib/TerminalCharacterDecoder.h
+qmlkonsole-25.04.1/lib/KonsoleQML.cpp
+qmlkonsole-25.04.1/lib/tools.h
+qmlkonsole-25.04.1/lib/CharacterColor.h
+qmlkonsole-25.04.1/lib/History.cpp
+qmlkonsole-25.04.1/lib/ProcessInfo.h
+qmlkonsole-25.04.1/lib/CMakeLists.txt
+qmlkonsole-25.04.1/lib/TerminalSession.cpp
+qmlkonsole-25.04.1/lib/LineFont.h
+qmlkonsole-25.04.1/lib/KeyboardTranslator.h
+qmlkonsole-25.04.1/org.kde.qmlkonsole.desktop
+qmlkonsole-25.04.1/.kde-ci.yml
+qmlkonsole-25.04.1/org.kde.qmlkonsole.appdata.xml
+qmlkonsole-25.04.1/.flatpak-manifest.json.license
+qmlkonsole-25.04.1/po/
+qmlkonsole-25.04.1/po/pt/
+qmlkonsole-25.04.1/po/pt/qmlkonsole.po
+qmlkonsole-25.04.1/po/nn/
+qmlkonsole-25.04.1/po/nn/qmlkonsole.po
+qmlkonsole-25.04.1/po/pl/
+qmlkonsole-25.04.1/po/pl/qmlkonsole.po
+qmlkonsole-25.04.1/po/ja/
+qmlkonsole-25.04.1/po/ja/qmlkonsole.po
+qmlkonsole-25.04.1/po/pa/
+qmlkonsole-25.04.1/po/pa/qmlkonsole.po
+qmlkonsole-25.04.1/po/zh_CN/
+qmlkonsole-25.04.1/po/zh_CN/qmlkonsole.po
+qmlkonsole-25.04.1/po/cs/
+qmlkonsole-25.04.1/po/cs/qmlkonsole.po
+qmlkonsole-25.04.1/po/es/
+qmlkonsole-25.04.1/po/es/qmlkonsole.po
+qmlkonsole-25.04.1/po/ka/
+qmlkonsole-25.04.1/po/ka/qmlkonsole.po
+qmlkonsole-25.04.1/po/tr/
+qmlkonsole-25.04.1/po/tr/qmlkonsole.po
+qmlkonsole-25.04.1/po/ca/
+qmlkonsole-25.04.1/po/ca/qmlkonsole.po
+qmlkonsole-25.04.1/po/ca@valencia/
+qmlkonsole-25.04.1/po/ca@valencia/qmlkonsole.po
+qmlkonsole-25.04.1/po/gl/
+qmlkonsole-25.04.1/po/gl/qmlkonsole.po
+qmlkonsole-25.04.1/po/ro/
+qmlkonsole-25.04.1/po/ro/qmlkonsole.po
+qmlkonsole-25.04.1/po/eo/
+qmlkonsole-25.04.1/po/eo/qmlkonsole.po
+qmlkonsole-25.04.1/po/nl/
+qmlkonsole-25.04.1/po/nl/qmlkonsole.po
+qmlkonsole-25.04.1/po/hu/
+qmlkonsole-25.04.1/po/hu/qmlkonsole.po
+qmlkonsole-25.04.1/po/eu/
+qmlkonsole-25.04.1/po/eu/qmlkonsole.po
+qmlkonsole-25.04.1/po/fr/
+qmlkonsole-25.04.1/po/fr/qmlkonsole.po
+qmlkonsole-25.04.1/po/hi/
+qmlkonsole-25.04.1/po/hi/qmlkonsole.po
+qmlkonsole-25.04.1/po/sl/
+qmlkonsole-25.04.1/po/sl/qmlkonsole.po
+qmlkonsole-25.04.1/po/ta/
+qmlkonsole-25.04.1/po/ta/qmlkonsole.po
+qmlkonsole-25.04.1/po/he/
+qmlkonsole-25.04.1/po/he/qmlkonsole.po
+qmlkonsole-25.04.1/po/de/
+qmlkonsole-25.04.1/po/de/qmlkonsole.po
+qmlkonsole-25.04.1/po/ar/
+qmlkonsole-25.04.1/po/ar/qmlkonsole.po
+qmlkonsole-25.04.1/po/sk/
+qmlkonsole-25.04.1/po/sk/qmlkonsole.po
+qmlkonsole-25.04.1/po/zh_TW/
+qmlkonsole-25.04.1/po/zh_TW/qmlkonsole.po
+qmlkonsole-25.04.1/po/it/
+qmlkonsole-25.04.1/po/it/qmlkonsole.po
+qmlkonsole-25.04.1/po/pt_BR/
+qmlkonsole-25.04.1/po/pt_BR/qmlkonsole.po
+qmlkonsole-25.04.1/po/ru/
+qmlkonsole-25.04.1/po/ru/qmlkonsole.po
+qmlkonsole-25.04.1/po/ia/
+qmlkonsole-25.04.1/po/ia/qmlkonsole.po
+qmlkonsole-25.04.1/po/sv/
+qmlkonsole-25.04.1/po/sv/qmlkonsole.po
+qmlkonsole-25.04.1/po/fi/
+qmlkonsole-25.04.1/po/fi/qmlkonsole.po
+qmlkonsole-25.04.1/po/ast/
+qmlkonsole-25.04.1/po/ast/qmlkonsole.po
+qmlkonsole-25.04.1/po/lt/
+qmlkonsole-25.04.1/po/lt/qmlkonsole.po
+qmlkonsole-25.04.1/po/sa/
+qmlkonsole-25.04.1/po/sa/qmlkonsole.po
+qmlkonsole-25.04.1/po/ko/
+qmlkonsole-25.04.1/po/ko/qmlkonsole.po
+qmlkonsole-25.04.1/po/en_GB/
+qmlkonsole-25.04.1/po/en_GB/qmlkonsole.po
+qmlkonsole-25.04.1/po/uk/
+qmlkonsole-25.04.1/po/uk/qmlkonsole.po
+qmlkonsole-25.04.1/logo.png.license
+qmlkonsole-25.04.1/.flatpak-manifest.json
+qmlkonsole-25.04.1/CMakeLists.txt
+qmlkonsole-25.04.1/src/
+qmlkonsole-25.04.1/src/terminalsettings.kcfgc
+qmlkonsole-25.04.1/src/contents/
+qmlkonsole-25.04.1/src/contents/ui/
+qmlkonsole-25.04.1/src/contents/ui/Tabs.qml
+qmlkonsole-25.04.1/src/contents/ui/TerminalKeyToolBar.qml
+qmlkonsole-25.04.1/src/contents/ui/TerminalPage.qml
+qmlkonsole-25.04.1/src/contents/ui/SettingsPage.qml
+qmlkonsole-25.04.1/src/contents/ui/AboutPage.qml
+qmlkonsole-25.04.1/src/contents/ui/main.qml
+qmlkonsole-25.04.1/src/contents/ui/TerminalKeyButton.qml
+qmlkonsole-25.04.1/src/contents/ui/SettingsDialog.qml
+qmlkonsole-25.04.1/src/contents/ui/SettingsComponent.qml
+qmlkonsole-25.04.1/src/contents/ui/SavedCommandsDialog.qml
+qmlkonsole-25.04.1/src/contents/ui/SavedCommandsSettings.qml
+qmlkonsole-25.04.1/src/util.cpp
+qmlkonsole-25.04.1/src/shellcommand.h
+qmlkonsole-25.04.1/src/Messages.sh
+qmlkonsole-25.04.1/src/util.h
+qmlkonsole-25.04.1/src/terminalsettings.kcfgc.license
+qmlkonsole-25.04.1/src/terminaltabmodel.h
+qmlkonsole-25.04.1/src/terminaltabmodel.cpp
+qmlkonsole-25.04.1/src/shellcommand.cpp
+qmlkonsole-25.04.1/src/fontlistmodel.h
+qmlkonsole-25.04.1/src/fontlistmodel.cpp
+qmlkonsole-25.04.1/src/savedcommandsmodel.h
+qmlkonsole-25.04.1/src/terminalsettings.kcfg
+qmlkonsole-25.04.1/src/main.cpp
+qmlkonsole-25.04.1/src/resources.qrc
+qmlkonsole-25.04.1/src/CMakeLists.txt
+qmlkonsole-25.04.1/src/savedcommandsmodel.cpp
+qmlkonsole-25.04.1/.gitignore
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Found KF6Kirigami: /usr/lib64/cmake/KF6Kirigami/KF6KirigamiConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.14.0")
+-- Found KF6Pty: /usr/lib64/cmake/KF6Pty/KF6PtyConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "5.240.0") found components: Kirigami I18n Config CoreAddons WindowSystem Pty
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Vulkan
+ * Qt6Test (required version >= 6.5.2)
+ * Qt6Svg (required version >= 6.5.2)
+ * Qt6QuickControls2 (required version >= 6.5.2)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.5.2)
+ * Qt6Core5Compat (required version >= 6.5.2)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6QuickTools (required version >= 6.8.3)
+ * Qt6Quick (required version >= 6.7.0)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Freetype
+ * PkgConfig
+ * Fontconfig
+ * Qt6CoreTools (required version >= 6.8.3)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.240.0)
+ * Qt6 (required version >= 6.5.2)
+ * KF6Kirigami (required version >= 5.240.0)
+ * Gettext
+ * KF6I18n (required version >= 5.240.0)
+ * KF6Config (required version >= 5.240.0)
+ * KF6WindowSystem (required version >= 5.240.0)
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6Pty (required version >= 5.240.0)
+ * KF6 (required version >= 5.240.0)
+ * Qt6Core
+ * KF6KirigamiAddons (required version >= 0.6)
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.8.3)
+
+-- Configuring done (1.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/build
+[1/39] Generating ts...
+[2/39] Generating mo...
+[3/39] Automatic MOC for target KonsoleQML
+[4/39] Automatic RCC for terminal.qrc
+[5/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KonsoleQML_autogen/EWIEGA46WW/qrc_terminal.cpp.o
+[6/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/TerminalCharacterDecoder.cpp.o
+[7/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ShellCommand.cpp.o
+[8/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/tools.cpp.o
+[9/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ScreenWindow.cpp.o
+[10/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Pty.cpp.o
+[11/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/BlockArray.cpp.o
+[12/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/HistorySearch.cpp.o
+[13/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KonsoleQML.cpp.o
+[14/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/History.cpp.o
+[15/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Filter.cpp.o
+[16/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/TerminalSession.cpp.o
+[17/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ProcessInfo.cpp.o
+[18/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KeyboardTranslator.cpp.o
+[19/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Vt102Emulation.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/Vt102Emulation.cpp: In member function ‘virtual void Konsole::Vt102Emulation::sendMouseEvent(int, int, int, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/Vt102Emulation.cpp:1517:56: warning: ‘%d’ directive output may be truncated writing between 1 and 10 bytes into a region of size between 7 and 26 [-Wformat-truncation=]
+ 1517 |         snprintf(command, sizeof(command), "\033[%d;%d;%dM", cb + 0x20, cx, cy);
+      |                                                        ^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/Vt102Emulation.cpp:1517:44: note: directive argument in the range [1, 2147483647]
+ 1517 |         snprintf(command, sizeof(command), "\033[%d;%d;%dM", cb + 0x20, cx, cy);
+      |                                            ^~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/Vt102Emulation.cpp:1517:17: note: ‘snprintf’ output between 9 and 37 bytes into a destination of size 32
+ 1517 |         snprintf(command, sizeof(command), "\033[%d;%d;%dM", cb + 0x20, cx, cy);
+      |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[20/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Emulation.cpp.o
+[21/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ColorScheme.cpp.o
+[22/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Screen.cpp.o
+[23/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Session.cpp.o
+[24/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KonsoleQML_autogen/mocs_compilation.cpp.o
+[25/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/TerminalDisplay.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp: In member function ‘void Konsole::TerminalDisplay::simulateMouseMove(int, int, int, int, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp:3025:141: warning: ‘QMouseEvent::QMouseEvent(QEvent::Type, const QPointF&, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, const QPointingDevice*)’ is deprecated: Use another constructor [-Wdeprecated-declarations]
+ 3025 |     QMouseEvent event(QEvent::MouseMove, QPointF(x, y), (Qt::MouseButton)button, (Qt::MouseButtons)buttons, (Qt::KeyboardModifiers)modifiers);
+      |                                                                                                                                             ^
+In file included from /usr/include/qt6/QtQuick/qquickitem.h:14,
+                 from /usr/include/qt6/QtQuick/qquickpainteditem.h:7,
+                 from /usr/include/qt6/QtQuick/QQuickPaintedItem:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.h:25,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp:21:
+/usr/include/qt6/QtGui/qevent.h:202:5: note: declared here
+  202 |     QMouseEvent(Type type, const QPointF &localPos, Qt::MouseButton button,
+      |     ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp: In member function ‘void Konsole::TerminalDisplay::simulateMousePress(int, int, int, int, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp:3031:148: warning: ‘QMouseEvent::QMouseEvent(QEvent::Type, const QPointF&, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, const QPointingDevice*)’ is deprecated: Use another constructor [-Wdeprecated-declarations]
+ 3031 |     QMouseEvent event(QEvent::MouseButtonPress, QPointF(x, y), (Qt::MouseButton)button, (Qt::MouseButtons)buttons, (Qt::KeyboardModifiers)modifiers);
+      |                                                                                                                                                    ^
+/usr/include/qt6/QtGui/qevent.h:202:5: note: declared here
+  202 |     QMouseEvent(Type type, const QPointF &localPos, Qt::MouseButton button,
+      |     ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp: In member function ‘void Konsole::TerminalDisplay::simulateMouseRelease(int, int, int, int, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp:3037:150: warning: ‘QMouseEvent::QMouseEvent(QEvent::Type, const QPointF&, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, const QPointingDevice*)’ is deprecated: Use another constructor [-Wdeprecated-declarations]
+ 3037 |     QMouseEvent event(QEvent::MouseButtonRelease, QPointF(x, y), (Qt::MouseButton)button, (Qt::MouseButtons)buttons, (Qt::KeyboardModifiers)modifiers);
+      |                                                                                                                                                      ^
+/usr/include/qt6/QtGui/qevent.h:202:5: note: declared here
+  202 |     QMouseEvent(Type type, const QPointF &localPos, Qt::MouseButton button,
+      |     ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp: In member function ‘void Konsole::TerminalDisplay::simulateMouseDoubleClick(int, int, int, int, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp:3043:151: warning: ‘QMouseEvent::QMouseEvent(QEvent::Type, const QPointF&, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, const QPointingDevice*)’ is deprecated: Use another constructor [-Wdeprecated-declarations]
+ 3043 |     QMouseEvent event(QEvent::MouseButtonDblClick, QPointF(x, y), (Qt::MouseButton)button, (Qt::MouseButtons)buttons, (Qt::KeyboardModifiers)modifiers);
+      |                                                                                                                                                       ^
+/usr/include/qt6/QtGui/qevent.h:202:5: note: declared here
+  202 |     QMouseEvent(Type type, const QPointF &localPos, Qt::MouseButton button,
+      |     ^~~~~~~~~~~
+[26/39] Linking CXX static library lib/libKonsoleQML.a
+[27/39] Generating terminalsettings.h, terminalsettings.cpp
+[28/39] Automatic MOC for target qmlkonsole
+[29/39] Automatic RCC for resources.qrc
+[30/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/qmlkonsole_autogen/EWIEGA46WW/qrc_resources.cpp.o
+[31/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/fontlistmodel.cpp.o
+[32/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/terminaltabmodel.cpp.o
+[33/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/terminalsettings.cpp.o
+[34/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/shellcommand.cpp.o
+[35/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/qmlkonsole_autogen/mocs_compilation.cpp.o
+[36/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/util.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/src/util.cpp: In member function ‘uint Util::getKeyFromString(QString)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/src/util.cpp:18:39: warning: ‘constexpr QKeyCombination::operator int() const’ is deprecated: Use QKeyCombination instead of int [-Wdeprecated-declarations]
+   18 |     return seq.count() > 0 ? seq[0] : 0;
+      |                                       ^
+In file included from /usr/include/qt6/QtCore/qbytearray.h:9,
+                 from /usr/include/qt6/QtCore/qstringview.h:10,
+                 from /usr/include/qt6/QtCore/qchar.h:670,
+                 from /usr/include/qt6/QtCore/qstring.h:14,
+                 from /usr/include/qt6/QtGui/qkeysequence.h:8,
+                 from /usr/include/qt6/QtGui/QKeySequence:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/src/util.h:6,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/src/util.cpp:4:
+/usr/include/qt6/QtCore/qnamespace.h:1912:26: note: declared here
+ 1912 |     constexpr Q_IMPLICIT operator int() const noexcept
+      |                          ^~~~~~~~
+[37/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/savedcommandsmodel.cpp.o
+[38/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/main.cpp.o
+[39/39] Linking CXX executable bin/qmlkonsole
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/bin/qmlkonsole
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/config.kcfg/terminalsettings.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/cs/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ja/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/de/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/nn/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/hi/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pt_BR/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/lt/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pa/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sl/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ta/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ro/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/he/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/zh_TW/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pl/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/pt/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/tr/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/fr/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ast/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ka/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/gl/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ia/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/hu/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/eo/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ca/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/uk/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/en_GB/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/zh_CN/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/nl/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sa/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/fi/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ko/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ru/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ca@valencia/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/es/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/eu/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/it/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/ar/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sk/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/locale/sv/LC_MESSAGES/qmlkonsole.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/applications/org.kde.qmlkonsole.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/metainfo/org.kde.qmlkonsole.appdata.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/package-qmlkonsole/usr/share/icons/hicolor/scalable/apps/org.kde.qmlkonsole.svg
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qmlkonsole/qmlkonsole.info: No such file or directory
+extra-cmake-modules
+ki18n
+kirigami-addons
+kirigami
+kpty
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/qmlkonsole/qmlkonsole-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/qmlkonsole
+usr/doc/
+usr/doc/qmlkonsole-25.04.1/
+usr/doc/qmlkonsole-25.04.1/README.md
+usr/doc/qmlkonsole-25.04.1/qmlkonsole.ini
+usr/doc/qmlkonsole-25.04.1/slack-required
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.qmlkonsole.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/terminalsettings.kcfg
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/org.kde.qmlkonsole.svg
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/qmlkonsole.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/qmlkonsole.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.qmlkonsole.appdata.xml
+
+Slackware package /tmp/qmlkonsole/qmlkonsole-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for qmlkonsole-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/qmlkonsole/qmlkonsole-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/qmlkonsole/qmlkonsole-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/qmlkonsole/qmlkonsole-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in qmlkonsole.tar.lz4 format.
+/tmp/qmlkonsole /tmp/qmlkonsole
+/tmp/qmlkonsole
+BIN_NAME
+README
+makepkg-qmlkonsole.log
+qmlkonsole-25.04.1-x86_64-1_rtz.tlz
+qmlkonsole-25.04.1-x86_64-1_rtz.tlz.md5
+qmlkonsole-25.04.1-x86_64-1_rtz.tlz.so.file
+qmlkonsole-25.04.1-x86_64-1_rtz.tlz.txt
+qmlkonsole.dep
+qmlkonsole build finished. Procced to installation...
+
++=============================================================================================================+
+| Upgrading qmlkonsole-25.04.1-x86_64-1_rtz package using /tmp/qmlkonsole/qmlkonsole-25.04.1-x86_64-1_rtz.tlz |
++=============================================================================================================+
+
+Pre-installing package qmlkonsole-25.04.1-x86_64-1_rtz...
+Removing package: qmlkonsole-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:25:04
+Installing package qmlkonsole-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# qmlkonsole (Terminal app for Plasma Mobile)
+#
+# Terminal app for Plasma Mobile
+#
+# invent.kde.org/plasma-mobile/qmlkonsole
+Executing install script for qmlkonsole-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package qmlkonsole-25.04.1-x86_64-1_rtz.tlz installed.
+Package qmlkonsole-25.04.1-x86_64-1_rtz upgraded with new package /tmp/qmlkonsole/qmlkonsole-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'qmlkonsole-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 25 seconds.

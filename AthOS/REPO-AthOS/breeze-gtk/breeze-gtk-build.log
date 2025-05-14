@@ -1,0 +1,1467 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: breeze	extra-cmake-modules	pycairo	sassc
+breeze is already installed!
+extra-cmake-modules is already installed!
+pycairo is already installed!
+sassc is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:27:52--  https://download.kde.org/stable/plasma/6.3.5/breeze-gtk-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/breeze-gtk-6.3.5.tar.xz [following]
+--2025-05-10 22:27:52--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/breeze-gtk-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40748 (40K) [application/octet-stream]
+Saving to: ‘breeze-gtk-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .........            100% 16.0M=0.002s
+
+2025-05-10 22:27:53 (16.0 MB/s) - ‘breeze-gtk-6.3.5.tar.xz’ saved [40748/40748]
+
+Found file: breeze-gtk-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+breeze-gtk-6.3.5/
+breeze-gtk-6.3.5/TODO
+breeze-gtk-6.3.5/cmake/
+breeze-gtk-6.3.5/cmake/FindPythonCairo.cmake
+breeze-gtk-6.3.5/cmake/FindGTKEngine.cmake
+breeze-gtk-6.3.5/cmake/FindSass.cmake
+breeze-gtk-6.3.5/LICENSES/
+breeze-gtk-6.3.5/LICENSES/BSD-3-Clause.txt
+breeze-gtk-6.3.5/LICENSES/CC0-1.0.txt
+breeze-gtk-6.3.5/.gitlab-ci.yml
+breeze-gtk-6.3.5/.prettierrc
+breeze-gtk-6.3.5/.gitignore
+breeze-gtk-6.3.5/.kde-ci.yml
+breeze-gtk-6.3.5/src/
+breeze-gtk-6.3.5/src/build_theme.sh.cmake
+breeze-gtk-6.3.5/src/render_assets.py
+breeze-gtk-6.3.5/src/assets/
+breeze-gtk-6.3.5/src/assets/breeze-check-unchecked-symbolic.svg
+breeze-gtk-6.3.5/src/assets/checkmark-symbolic.svg
+breeze-gtk-6.3.5/src/assets/dash-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-radio-indeterminate-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-minimize-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-check-indeterminate-symbolic.svg
+breeze-gtk-6.3.5/src/assets/bullet-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-radio-checked-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-maximize-active-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-minimize-active-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-radio-unchecked-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-check-checked-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-close-hover-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-close-active-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-maximized-hover-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-maximize-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-minimize-hover-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-maximized-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-maximized-active-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-close-symbolic.svg
+breeze-gtk-6.3.5/src/assets/breeze-maximize-hover-symbolic.svg
+breeze-gtk-6.3.5/src/_functions.scss
+breeze-gtk-6.3.5/src/_colors.scss
+breeze-gtk-6.3.5/src/gtk-dark-3.0.css
+breeze-gtk-6.3.5/src/settings.ini
+breeze-gtk-6.3.5/src/gtk3/
+breeze-gtk-6.3.5/src/gtk3/widgets/
+breeze-gtk-6.3.5/src/gtk3/widgets/_floating-bar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_link.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_dialogs.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_toolbar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_spinbutton.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_calendar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_scale.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_scrollbar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_tooltips.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_pathbar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_assistant.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_notebook.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_color_chooser.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_button.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_headerbar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_overshoot.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_progressbar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_app_notifications.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_treeview.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_switch.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_lists.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_checkboxes.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_entry.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_window_decorations.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_misc.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_infobar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_sidebar.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_menus.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_base.scss
+breeze-gtk-6.3.5/src/gtk3/widgets/_libhandy.scss
+breeze-gtk-6.3.5/src/gtk3/gtk.scss
+breeze-gtk-6.3.5/src/gtk3/applications/
+breeze-gtk-6.3.5/src/gtk3/applications/_firefox.scss
+breeze-gtk-6.3.5/src/gtk3/applications/_chromium.scss
+breeze-gtk-6.3.5/src/gtk2/
+breeze-gtk-6.3.5/src/gtk2/widgets/
+breeze-gtk-6.3.5/src/gtk2/widgets/menu
+breeze-gtk-6.3.5/src/gtk2/widgets/misc
+breeze-gtk-6.3.5/src/gtk2/widgets/scrollbar
+breeze-gtk-6.3.5/src/gtk2/widgets/range
+breeze-gtk-6.3.5/src/gtk2/widgets/default
+breeze-gtk-6.3.5/src/gtk2/widgets/buttons
+breeze-gtk-6.3.5/src/gtk2/widgets/entry
+breeze-gtk-6.3.5/src/gtk2/widgets/styles
+breeze-gtk-6.3.5/src/gtk2/widgets/notebook
+breeze-gtk-6.3.5/src/gtk2/widgets/toolbar
+breeze-gtk-6.3.5/src/gtk2/widgets/progressbar
+breeze-gtk-6.3.5/src/gtk-dark-4.0.css
+breeze-gtk-6.3.5/src/gtk4/
+breeze-gtk-6.3.5/src/gtk4/widgets/
+breeze-gtk-6.3.5/src/gtk4/widgets/_floating-bar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_link.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_dialogs.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_toolbar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_spinbutton.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_calendar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_scale.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_scrollbar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_tooltips.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_pathbar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_assistant.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_notebook.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_color_chooser.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_button.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_headerbar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_overshoot.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_progressbar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_app_notifications.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_treeview.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_switch.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_lists.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_checkboxes.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_entry.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_window_decorations.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_misc.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_infobar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_sidebar.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_menus.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_base.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_libhandy.scss
+breeze-gtk-6.3.5/src/gtk4/widgets/_typography.scss
+breeze-gtk-6.3.5/src/gtk4/gtk.scss
+breeze-gtk-6.3.5/src/CMakeLists.txt
+breeze-gtk-6.3.5/CMakeLists.txt
+breeze-gtk-6.3.5/README.md
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Sass: /usr/bin/sassc
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.10") found components: Interpreter
+-- The following RUNTIME packages have been found:
+
+ * GTKEngine, Pixmap/Pixbuf theme engine for GTK 2, <http://www.gtk.org/>
+   Required for GTK 2 theme
+
+-- The following OPTIONAL packages have been found:
+
+ * Qt6CoreTools
+ * Qt6
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.2.0)
+ * Sass, SASS compiler, <https://sass-lang.com/>
+   Required for building GTK themes
+ * Python3
+ * PythonCairo
+   Required to render assets
+ * Breeze (required version >= 5.27.80)
+   Required to build the Breeze GTK+ styles
+
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_INSTALL_DOCDIR
+
+
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/work/breeze-gtk-6.3.5/build
+[1/2] Generating ../Breeze-Dark/gtk-2.0/gtkrc, ../Breeze-Dark/gtk-3.0/gtk.css
+Installing into /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/work/breeze-gtk-6.3.5/build/Breeze-Dark
+[2/2] Generating ../Breeze/gtk-2.0/gtkrc, ../Breeze/gtk-3.0/gtk.css, ../Breeze/gtk-3.0/gtk-dark.css, ../Breeze/gtk-4.0/gtk-dark.css
+Installing into /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/work/breeze-gtk-6.3.5/build/Breeze
+-- Install configuration: "MinSizeRel"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-4.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-4.0/gtk.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-4.0/gtk-dark.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tab-right-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scale-slider-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/spinbutton-down-rtl-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/button.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/togglebutton.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-hover-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-up-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-right-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-right.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-horizontal-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/toolbutton-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scale-trough-horizontal.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-left.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/menubar-button.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tab-bottom-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tab-left-inactive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/frame-gap-start.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-down-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/combo-entry-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-right-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-minimize-active-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-maximized-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tab-bottom-inactive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-horizontal.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-active-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-check-unchecked-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/combo-entry-button-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-up-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scale-slider-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/togglebutton-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-vertical-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/toolbar-background.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-down.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-hover-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-maximize-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-down-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-trough-horizontal@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/spinbutton-up-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/line-h.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-up.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/menu-arrow.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-maximized-hover-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scale-slider-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/button-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/dash-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tab-left-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-vertical-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/frame.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/notebook-gap-horizontal.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-right-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-right.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/spinbutton-up-rtl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-radio-indeterminate-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-down.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/togglebutton-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-horizontal@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-up.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/notebook-frame-right.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/entry-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-active-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-close-hover-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-down-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/togglebutton-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/menu-arrow-selected.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-left-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-trough-vertical@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-maximized-active-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-minimize-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tab-top-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-down-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-hover-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-active-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/checkmark-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/toolbutton-toggled.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-trough-horizontal.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-left-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-hover-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/bullet-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/line-v.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-active-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/spinbutton-up.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tab-top-inactive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/combo-entry-button-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-horizontal-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-check-indeterminate-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-minimize-hover-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-radio-unchecked-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/combo-entry-button.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-active-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-vertical-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scale-trough-vertical.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/combo-entry-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-close-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/spinbutton-down-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-down-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-left-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-down-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/entry.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-up-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-left-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-maximize-active-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-vertical@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-radio-checked-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-trough-vertical.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/spinbutton-down-rtl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-checked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-up-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/button-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/spinbutton-up-rtl-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-close-active-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-hover-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tree-header.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/notebook-frame-top.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-maximize-hover-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/combo-entry.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-active-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-hover-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-up-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-vertical.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/button-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/frame-gap-end.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/progressbar-bar.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scale-slider.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-left-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-unchecked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/radio-mixed-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-minimize-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-close-active-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-up-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/progressbar-trough.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/notebook-gap-vertical.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/breeze-check-checked-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-checked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/notebook-frame-bottom.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/toolbutton-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-horizontal-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/tab-right-inactive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-right-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-horizontal-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/scrollbar-slider-vertical-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/handle-v.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-checked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/menu-arrow-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-mixed-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-left-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-left.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-selectionmode-unchecked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-hover-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-right-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/null.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/arrow-small-right-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-hover-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/entry-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/check-unchecked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/handle-h.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/spinbutton-down.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/assets/titlebutton-maximize-maximized-active-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-3.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-3.0/gtk.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-3.0/gtk-dark.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/default
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/range
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/notebook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/toolbar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/buttons
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/styles
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/scrollbar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/menu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/misc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/entry
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/widgets/progressbar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze/gtk-2.0/gtkrc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-4.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-4.0/gtk.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tab-right-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scale-slider-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/spinbutton-down-rtl-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/button.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/togglebutton.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-hover-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-up-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-right-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-right.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-horizontal-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/toolbutton-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scale-trough-horizontal.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-left.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/menubar-button.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tab-bottom-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tab-left-inactive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/frame-gap-start.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-down-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/combo-entry-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-right-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-minimize-active-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-maximized-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tab-bottom-inactive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-horizontal.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-active-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-check-unchecked-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/combo-entry-button-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-up-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scale-slider-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/togglebutton-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-vertical-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/toolbar-background.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-down.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-hover-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-maximize-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-down-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-trough-horizontal@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/spinbutton-up-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/line-h.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-up.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/menu-arrow.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-maximized-hover-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scale-slider-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/button-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/dash-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tab-left-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-vertical-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/frame.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/notebook-gap-horizontal.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-right-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-right.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/spinbutton-up-rtl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-radio-indeterminate-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-down.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/togglebutton-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-horizontal@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-up.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/notebook-frame-right.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/entry-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-active-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-close-hover-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-down-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/togglebutton-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/menu-arrow-selected.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-left-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-trough-vertical@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-maximized-active-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-minimize-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tab-top-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-down-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-hover-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-active-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/checkmark-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/toolbutton-toggled.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-trough-horizontal.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-left-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-hover-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/bullet-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/line-v.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-active-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/spinbutton-up.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tab-top-inactive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/combo-entry-button-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-horizontal-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-check-indeterminate-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-minimize-hover-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-radio-unchecked-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/combo-entry-button.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-active-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-vertical-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scale-trough-vertical.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/combo-entry-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-close-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/spinbutton-down-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-down-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-left-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-down-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/entry.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-up-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-left-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-maximize-active-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-vertical@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-radio-checked-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-trough-vertical.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/spinbutton-down-rtl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-checked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-up-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/button-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/spinbutton-up-rtl-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-close-active-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-hover-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tree-header.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/notebook-frame-top.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-maximize-hover-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/combo-entry.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-active-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-hover-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-up-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-vertical.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/button-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/frame-gap-end.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/progressbar-bar.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scale-slider.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-left-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-unchecked-backdrop-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/radio-mixed-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-minimize-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-close-active-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-up-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/progressbar-trough.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-backdrop-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/notebook-gap-vertical.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/breeze-check-checked-symbolic.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-checked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/notebook-frame-bottom.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/toolbutton-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-horizontal-hover@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/tab-right-inactive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-right-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-horizontal-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/scrollbar-slider-vertical-active@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/handle-v.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-checked-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/menu-arrow-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-mixed-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-left-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-left.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-selectionmode-unchecked-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-hover-backdrop@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-right-active.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/null.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/arrow-small-right-hover.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-hover-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/entry-insensitive.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/check-unchecked-insensitive@2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/handle-h.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/spinbutton-down.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/assets/titlebutton-maximize-maximized-active-backdrop.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-3.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-3.0/gtk.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/default
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/range
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/notebook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/toolbar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/buttons
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/styles
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/scrollbar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/menu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/misc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/entry
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/widgets/progressbar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes//Breeze-Dark/gtk-2.0/gtkrc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes/Breeze/settings.ini
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/package-breeze-gtk/usr/share/themes/Breeze-Dark/settings.ini
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/breeze-gtk/breeze-gtk.info: No such file or directory
+breeze
+extra-cmake-modules
+pycairo
+sassc
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/breeze-gtk/breeze-gtk-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/breeze-gtk-6.3.5/
+usr/doc/breeze-gtk-6.3.5/README.md
+usr/doc/breeze-gtk-6.3.5/breeze-gtk.ini
+usr/doc/breeze-gtk-6.3.5/slack-required
+usr/share/
+usr/share/themes/
+usr/share/themes/Breeze/
+usr/share/themes/Breeze-Dark/
+usr/share/themes/Breeze-Dark/assets/
+usr/share/themes/Breeze-Dark/assets/arrow-down-active.png
+usr/share/themes/Breeze-Dark/assets/arrow-down-hover.png
+usr/share/themes/Breeze-Dark/assets/arrow-down-insensitive.png
+usr/share/themes/Breeze-Dark/assets/arrow-down.png
+usr/share/themes/Breeze-Dark/assets/arrow-left-active.png
+usr/share/themes/Breeze-Dark/assets/arrow-left-hover.png
+usr/share/themes/Breeze-Dark/assets/arrow-left-insensitive.png
+usr/share/themes/Breeze-Dark/assets/arrow-left.png
+usr/share/themes/Breeze-Dark/assets/arrow-right-active.png
+usr/share/themes/Breeze-Dark/assets/arrow-right-hover.png
+usr/share/themes/Breeze-Dark/assets/arrow-right-insensitive.png
+usr/share/themes/Breeze-Dark/assets/arrow-right.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-down-active.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-down-hover.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-down-insensitive.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-down.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-left-active.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-left-hover.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-left-insensitive.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-left.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-right-active.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-right-hover.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-right-insensitive.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-right.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-up-active.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-up-hover.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-up-insensitive.png
+usr/share/themes/Breeze-Dark/assets/arrow-small-up.png
+usr/share/themes/Breeze-Dark/assets/arrow-up-active.png
+usr/share/themes/Breeze-Dark/assets/arrow-up-hover.png
+usr/share/themes/Breeze-Dark/assets/arrow-up-insensitive.png
+usr/share/themes/Breeze-Dark/assets/arrow-up.png
+usr/share/themes/Breeze-Dark/assets/breeze-check-checked-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-check-indeterminate-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-check-unchecked-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-close-active-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-close-hover-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-maximize-active-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-maximize-hover-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-maximize-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-maximized-active-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-maximized-hover-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-maximized-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-minimize-active-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-minimize-hover-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-minimize-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-radio-checked-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-radio-indeterminate-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/breeze-radio-unchecked-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/bullet-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/button-active.png
+usr/share/themes/Breeze-Dark/assets/button-hover.png
+usr/share/themes/Breeze-Dark/assets/button-insensitive.png
+usr/share/themes/Breeze-Dark/assets/button.png
+usr/share/themes/Breeze-Dark/assets/check-checked-active.png
+usr/share/themes/Breeze-Dark/assets/check-checked-active@2.png
+usr/share/themes/Breeze-Dark/assets/check-checked-backdrop-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-checked-backdrop-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-checked-backdrop.png
+usr/share/themes/Breeze-Dark/assets/check-checked-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/check-checked-hover.png
+usr/share/themes/Breeze-Dark/assets/check-checked-hover@2.png
+usr/share/themes/Breeze-Dark/assets/check-checked-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-checked-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-active.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-active@2.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-backdrop-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-backdrop-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-backdrop.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-hover.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-hover@2.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-mixed-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-active.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-active@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-backdrop-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-backdrop-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-backdrop.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-hover.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-hover@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-checked-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-active.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-active@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-backdrop-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-backdrop-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-backdrop.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-hover.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-hover@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked.png
+usr/share/themes/Breeze-Dark/assets/check-selectionmode-unchecked@2.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-active.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-active@2.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-backdrop-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-backdrop-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-backdrop.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-hover.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-hover@2.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-insensitive.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked.png
+usr/share/themes/Breeze-Dark/assets/check-unchecked@2.png
+usr/share/themes/Breeze-Dark/assets/checkmark-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/combo-entry-active.png
+usr/share/themes/Breeze-Dark/assets/combo-entry-button-active.png
+usr/share/themes/Breeze-Dark/assets/combo-entry-button-insensitive.png
+usr/share/themes/Breeze-Dark/assets/combo-entry-button.png
+usr/share/themes/Breeze-Dark/assets/combo-entry-insensitive.png
+usr/share/themes/Breeze-Dark/assets/combo-entry.png
+usr/share/themes/Breeze-Dark/assets/dash-symbolic.svg
+usr/share/themes/Breeze-Dark/assets/entry-active.png
+usr/share/themes/Breeze-Dark/assets/entry-insensitive.png
+usr/share/themes/Breeze-Dark/assets/entry.png
+usr/share/themes/Breeze-Dark/assets/frame-gap-end.png
+usr/share/themes/Breeze-Dark/assets/frame-gap-start.png
+usr/share/themes/Breeze-Dark/assets/frame.png
+usr/share/themes/Breeze-Dark/assets/handle-h.png
+usr/share/themes/Breeze-Dark/assets/handle-v.png
+usr/share/themes/Breeze-Dark/assets/line-h.png
+usr/share/themes/Breeze-Dark/assets/line-v.png
+usr/share/themes/Breeze-Dark/assets/menu-arrow-insensitive.png
+usr/share/themes/Breeze-Dark/assets/menu-arrow-selected.png
+usr/share/themes/Breeze-Dark/assets/menu-arrow.png
+usr/share/themes/Breeze-Dark/assets/menubar-button.png
+usr/share/themes/Breeze-Dark/assets/notebook-frame-bottom.png
+usr/share/themes/Breeze-Dark/assets/notebook-frame-right.png
+usr/share/themes/Breeze-Dark/assets/notebook-frame-top.png
+usr/share/themes/Breeze-Dark/assets/notebook-gap-horizontal.png
+usr/share/themes/Breeze-Dark/assets/notebook-gap-vertical.png
+usr/share/themes/Breeze-Dark/assets/null.png
+usr/share/themes/Breeze-Dark/assets/progressbar-bar.png
+usr/share/themes/Breeze-Dark/assets/progressbar-trough.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-active.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-active@2.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-backdrop-insensitive.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-backdrop-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-backdrop.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-hover.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-hover@2.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-insensitive.png
+usr/share/themes/Breeze-Dark/assets/radio-checked-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-active.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-active@2.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-backdrop-insensitive.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-backdrop-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-backdrop.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-hover.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-hover@2.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-insensitive.png
+usr/share/themes/Breeze-Dark/assets/radio-mixed-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-active.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-active@2.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-backdrop-insensitive.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-backdrop-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-backdrop.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-hover.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-hover@2.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-insensitive.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked-insensitive@2.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked.png
+usr/share/themes/Breeze-Dark/assets/radio-unchecked@2.png
+usr/share/themes/Breeze-Dark/assets/scale-slider-active.png
+usr/share/themes/Breeze-Dark/assets/scale-slider-hover.png
+usr/share/themes/Breeze-Dark/assets/scale-slider-insensitive.png
+usr/share/themes/Breeze-Dark/assets/scale-slider.png
+usr/share/themes/Breeze-Dark/assets/scale-trough-horizontal.png
+usr/share/themes/Breeze-Dark/assets/scale-trough-vertical.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-horizontal-active.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-horizontal-active@2.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-horizontal-hover.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-horizontal-hover@2.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-horizontal.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-horizontal@2.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-vertical-active.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-vertical-active@2.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-vertical-hover.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-vertical-hover@2.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-vertical.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-slider-vertical@2.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-trough-horizontal.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-trough-horizontal@2.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-trough-vertical.png
+usr/share/themes/Breeze-Dark/assets/scrollbar-trough-vertical@2.png
+usr/share/themes/Breeze-Dark/assets/spinbutton-down-insensitive.png
+usr/share/themes/Breeze-Dark/assets/spinbutton-down-rtl-insensitive.png
+usr/share/themes/Breeze-Dark/assets/spinbutton-down-rtl.png
+usr/share/themes/Breeze-Dark/assets/spinbutton-down.png
+usr/share/themes/Breeze-Dark/assets/spinbutton-up-insensitive.png
+usr/share/themes/Breeze-Dark/assets/spinbutton-up-rtl-insensitive.png
+usr/share/themes/Breeze-Dark/assets/spinbutton-up-rtl.png
+usr/share/themes/Breeze-Dark/assets/spinbutton-up.png
+usr/share/themes/Breeze-Dark/assets/tab-bottom-active.png
+usr/share/themes/Breeze-Dark/assets/tab-bottom-inactive.png
+usr/share/themes/Breeze-Dark/assets/tab-left-active.png
+usr/share/themes/Breeze-Dark/assets/tab-left-inactive.png
+usr/share/themes/Breeze-Dark/assets/tab-right-active.png
+usr/share/themes/Breeze-Dark/assets/tab-right-inactive.png
+usr/share/themes/Breeze-Dark/assets/tab-top-active.png
+usr/share/themes/Breeze-Dark/assets/tab-top-inactive.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-active-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-active-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-active.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-active@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-hover-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-hover-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-hover.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close-hover@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-active-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-active-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-active.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-active@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-hover-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-hover-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-hover.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-hover@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-active-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-active-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-active.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-active@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-hover-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-hover-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-hover.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized-hover@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize-maximized@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-maximize@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-active-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-active-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-active.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-active@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-hover-backdrop.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-hover-backdrop@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-hover.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize-hover@2.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize.png
+usr/share/themes/Breeze-Dark/assets/titlebutton-minimize@2.png
+usr/share/themes/Breeze-Dark/assets/togglebutton-active.png
+usr/share/themes/Breeze-Dark/assets/togglebutton-hover.png
+usr/share/themes/Breeze-Dark/assets/togglebutton-insensitive.png
+usr/share/themes/Breeze-Dark/assets/togglebutton.png
+usr/share/themes/Breeze-Dark/assets/toolbar-background.png
+usr/share/themes/Breeze-Dark/assets/toolbutton-active.png
+usr/share/themes/Breeze-Dark/assets/toolbutton-hover.png
+usr/share/themes/Breeze-Dark/assets/toolbutton-toggled.png
+usr/share/themes/Breeze-Dark/assets/tree-header.png
+usr/share/themes/Breeze-Dark/gtk-2.0/
+usr/share/themes/Breeze-Dark/gtk-2.0/gtkrc
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/buttons
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/default
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/entry
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/menu
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/misc
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/notebook
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/progressbar
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/range
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/scrollbar
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/styles
+usr/share/themes/Breeze-Dark/gtk-2.0/widgets/toolbar
+usr/share/themes/Breeze-Dark/gtk-3.0/
+usr/share/themes/Breeze-Dark/gtk-3.0/gtk.css
+usr/share/themes/Breeze-Dark/gtk-4.0/
+usr/share/themes/Breeze-Dark/gtk-4.0/gtk.css
+usr/share/themes/Breeze-Dark/settings.ini
+usr/share/themes/Breeze/assets/
+usr/share/themes/Breeze/assets/arrow-down-active.png
+usr/share/themes/Breeze/assets/arrow-down-hover.png
+usr/share/themes/Breeze/assets/arrow-down-insensitive.png
+usr/share/themes/Breeze/assets/arrow-down.png
+usr/share/themes/Breeze/assets/arrow-left-active.png
+usr/share/themes/Breeze/assets/arrow-left-hover.png
+usr/share/themes/Breeze/assets/arrow-left-insensitive.png
+usr/share/themes/Breeze/assets/arrow-left.png
+usr/share/themes/Breeze/assets/arrow-right-active.png
+usr/share/themes/Breeze/assets/arrow-right-hover.png
+usr/share/themes/Breeze/assets/arrow-right-insensitive.png
+usr/share/themes/Breeze/assets/arrow-right.png
+usr/share/themes/Breeze/assets/arrow-small-down-active.png
+usr/share/themes/Breeze/assets/arrow-small-down-hover.png
+usr/share/themes/Breeze/assets/arrow-small-down-insensitive.png
+usr/share/themes/Breeze/assets/arrow-small-down.png
+usr/share/themes/Breeze/assets/arrow-small-left-active.png
+usr/share/themes/Breeze/assets/arrow-small-left-hover.png
+usr/share/themes/Breeze/assets/arrow-small-left-insensitive.png
+usr/share/themes/Breeze/assets/arrow-small-left.png
+usr/share/themes/Breeze/assets/arrow-small-right-active.png
+usr/share/themes/Breeze/assets/arrow-small-right-hover.png
+usr/share/themes/Breeze/assets/arrow-small-right-insensitive.png
+usr/share/themes/Breeze/assets/arrow-small-right.png
+usr/share/themes/Breeze/assets/arrow-small-up-active.png
+usr/share/themes/Breeze/assets/arrow-small-up-hover.png
+usr/share/themes/Breeze/assets/arrow-small-up-insensitive.png
+usr/share/themes/Breeze/assets/arrow-small-up.png
+usr/share/themes/Breeze/assets/arrow-up-active.png
+usr/share/themes/Breeze/assets/arrow-up-hover.png
+usr/share/themes/Breeze/assets/arrow-up-insensitive.png
+usr/share/themes/Breeze/assets/arrow-up.png
+usr/share/themes/Breeze/assets/breeze-check-checked-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-check-indeterminate-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-check-unchecked-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-close-active-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-close-hover-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-close-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-maximize-active-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-maximize-hover-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-maximize-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-maximized-active-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-maximized-hover-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-maximized-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-minimize-active-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-minimize-hover-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-minimize-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-radio-checked-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-radio-indeterminate-symbolic.svg
+usr/share/themes/Breeze/assets/breeze-radio-unchecked-symbolic.svg
+usr/share/themes/Breeze/assets/bullet-symbolic.svg
+usr/share/themes/Breeze/assets/button-active.png
+usr/share/themes/Breeze/assets/button-hover.png
+usr/share/themes/Breeze/assets/button-insensitive.png
+usr/share/themes/Breeze/assets/button.png
+usr/share/themes/Breeze/assets/check-checked-active.png
+usr/share/themes/Breeze/assets/check-checked-active@2.png
+usr/share/themes/Breeze/assets/check-checked-backdrop-insensitive.png
+usr/share/themes/Breeze/assets/check-checked-backdrop-insensitive@2.png
+usr/share/themes/Breeze/assets/check-checked-backdrop.png
+usr/share/themes/Breeze/assets/check-checked-backdrop@2.png
+usr/share/themes/Breeze/assets/check-checked-hover.png
+usr/share/themes/Breeze/assets/check-checked-hover@2.png
+usr/share/themes/Breeze/assets/check-checked-insensitive.png
+usr/share/themes/Breeze/assets/check-checked-insensitive@2.png
+usr/share/themes/Breeze/assets/check-mixed-active.png
+usr/share/themes/Breeze/assets/check-mixed-active@2.png
+usr/share/themes/Breeze/assets/check-mixed-backdrop-insensitive.png
+usr/share/themes/Breeze/assets/check-mixed-backdrop-insensitive@2.png
+usr/share/themes/Breeze/assets/check-mixed-backdrop.png
+usr/share/themes/Breeze/assets/check-mixed-backdrop@2.png
+usr/share/themes/Breeze/assets/check-mixed-hover.png
+usr/share/themes/Breeze/assets/check-mixed-hover@2.png
+usr/share/themes/Breeze/assets/check-mixed-insensitive.png
+usr/share/themes/Breeze/assets/check-mixed-insensitive@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-active.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-active@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-backdrop-insensitive.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-backdrop-insensitive@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-backdrop.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-backdrop@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-hover.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-hover@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-insensitive.png
+usr/share/themes/Breeze/assets/check-selectionmode-checked-insensitive@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-active.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-active@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-backdrop-insensitive.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-backdrop-insensitive@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-backdrop.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-backdrop@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-hover.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-hover@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-insensitive.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked-insensitive@2.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked.png
+usr/share/themes/Breeze/assets/check-selectionmode-unchecked@2.png
+usr/share/themes/Breeze/assets/check-unchecked-active.png
+usr/share/themes/Breeze/assets/check-unchecked-active@2.png
+usr/share/themes/Breeze/assets/check-unchecked-backdrop-insensitive.png
+usr/share/themes/Breeze/assets/check-unchecked-backdrop-insensitive@2.png
+usr/share/themes/Breeze/assets/check-unchecked-backdrop.png
+usr/share/themes/Breeze/assets/check-unchecked-backdrop@2.png
+usr/share/themes/Breeze/assets/check-unchecked-hover.png
+usr/share/themes/Breeze/assets/check-unchecked-hover@2.png
+usr/share/themes/Breeze/assets/check-unchecked-insensitive.png
+usr/share/themes/Breeze/assets/check-unchecked-insensitive@2.png
+usr/share/themes/Breeze/assets/check-unchecked.png
+usr/share/themes/Breeze/assets/check-unchecked@2.png
+usr/share/themes/Breeze/assets/checkmark-symbolic.svg
+usr/share/themes/Breeze/assets/combo-entry-active.png
+usr/share/themes/Breeze/assets/combo-entry-button-active.png
+usr/share/themes/Breeze/assets/combo-entry-button-insensitive.png
+usr/share/themes/Breeze/assets/combo-entry-button.png
+usr/share/themes/Breeze/assets/combo-entry-insensitive.png
+usr/share/themes/Breeze/assets/combo-entry.png
+usr/share/themes/Breeze/assets/dash-symbolic.svg
+usr/share/themes/Breeze/assets/entry-active.png
+usr/share/themes/Breeze/assets/entry-insensitive.png
+usr/share/themes/Breeze/assets/entry.png
+usr/share/themes/Breeze/assets/frame-gap-end.png
+usr/share/themes/Breeze/assets/frame-gap-start.png
+usr/share/themes/Breeze/assets/frame.png
+usr/share/themes/Breeze/assets/handle-h.png
+usr/share/themes/Breeze/assets/handle-v.png
+usr/share/themes/Breeze/assets/line-h.png
+usr/share/themes/Breeze/assets/line-v.png
+usr/share/themes/Breeze/assets/menu-arrow-insensitive.png
+usr/share/themes/Breeze/assets/menu-arrow-selected.png
+usr/share/themes/Breeze/assets/menu-arrow.png
+usr/share/themes/Breeze/assets/menubar-button.png
+usr/share/themes/Breeze/assets/notebook-frame-bottom.png
+usr/share/themes/Breeze/assets/notebook-frame-right.png
+usr/share/themes/Breeze/assets/notebook-frame-top.png
+usr/share/themes/Breeze/assets/notebook-gap-horizontal.png
+usr/share/themes/Breeze/assets/notebook-gap-vertical.png
+usr/share/themes/Breeze/assets/null.png
+usr/share/themes/Breeze/assets/progressbar-bar.png
+usr/share/themes/Breeze/assets/progressbar-trough.png
+usr/share/themes/Breeze/assets/radio-checked-active.png
+usr/share/themes/Breeze/assets/radio-checked-active@2.png
+usr/share/themes/Breeze/assets/radio-checked-backdrop-insensitive.png
+usr/share/themes/Breeze/assets/radio-checked-backdrop-insensitive@2.png
+usr/share/themes/Breeze/assets/radio-checked-backdrop.png
+usr/share/themes/Breeze/assets/radio-checked-backdrop@2.png
+usr/share/themes/Breeze/assets/radio-checked-hover.png
+usr/share/themes/Breeze/assets/radio-checked-hover@2.png
+usr/share/themes/Breeze/assets/radio-checked-insensitive.png
+usr/share/themes/Breeze/assets/radio-checked-insensitive@2.png
+usr/share/themes/Breeze/assets/radio-mixed-active.png
+usr/share/themes/Breeze/assets/radio-mixed-active@2.png
+usr/share/themes/Breeze/assets/radio-mixed-backdrop-insensitive.png
+usr/share/themes/Breeze/assets/radio-mixed-backdrop-insensitive@2.png
+usr/share/themes/Breeze/assets/radio-mixed-backdrop.png
+usr/share/themes/Breeze/assets/radio-mixed-backdrop@2.png
+usr/share/themes/Breeze/assets/radio-mixed-hover.png
+usr/share/themes/Breeze/assets/radio-mixed-hover@2.png
+usr/share/themes/Breeze/assets/radio-mixed-insensitive.png
+usr/share/themes/Breeze/assets/radio-mixed-insensitive@2.png
+usr/share/themes/Breeze/assets/radio-unchecked-active.png
+usr/share/themes/Breeze/assets/radio-unchecked-active@2.png
+usr/share/themes/Breeze/assets/radio-unchecked-backdrop-insensitive.png
+usr/share/themes/Breeze/assets/radio-unchecked-backdrop-insensitive@2.png
+usr/share/themes/Breeze/assets/radio-unchecked-backdrop.png
+usr/share/themes/Breeze/assets/radio-unchecked-backdrop@2.png
+usr/share/themes/Breeze/assets/radio-unchecked-hover.png
+usr/share/themes/Breeze/assets/radio-unchecked-hover@2.png
+usr/share/themes/Breeze/assets/radio-unchecked-insensitive.png
+usr/share/themes/Breeze/assets/radio-unchecked-insensitive@2.png
+usr/share/themes/Breeze/assets/radio-unchecked.png
+usr/share/themes/Breeze/assets/radio-unchecked@2.png
+usr/share/themes/Breeze/assets/scale-slider-active.png
+usr/share/themes/Breeze/assets/scale-slider-hover.png
+usr/share/themes/Breeze/assets/scale-slider-insensitive.png
+usr/share/themes/Breeze/assets/scale-slider.png
+usr/share/themes/Breeze/assets/scale-trough-horizontal.png
+usr/share/themes/Breeze/assets/scale-trough-vertical.png
+usr/share/themes/Breeze/assets/scrollbar-slider-horizontal-active.png
+usr/share/themes/Breeze/assets/scrollbar-slider-horizontal-active@2.png
+usr/share/themes/Breeze/assets/scrollbar-slider-horizontal-hover.png
+usr/share/themes/Breeze/assets/scrollbar-slider-horizontal-hover@2.png
+usr/share/themes/Breeze/assets/scrollbar-slider-horizontal.png
+usr/share/themes/Breeze/assets/scrollbar-slider-horizontal@2.png
+usr/share/themes/Breeze/assets/scrollbar-slider-vertical-active.png
+usr/share/themes/Breeze/assets/scrollbar-slider-vertical-active@2.png
+usr/share/themes/Breeze/assets/scrollbar-slider-vertical-hover.png
+usr/share/themes/Breeze/assets/scrollbar-slider-vertical-hover@2.png
+usr/share/themes/Breeze/assets/scrollbar-slider-vertical.png
+usr/share/themes/Breeze/assets/scrollbar-slider-vertical@2.png
+usr/share/themes/Breeze/assets/scrollbar-trough-horizontal.png
+usr/share/themes/Breeze/assets/scrollbar-trough-horizontal@2.png
+usr/share/themes/Breeze/assets/scrollbar-trough-vertical.png
+usr/share/themes/Breeze/assets/scrollbar-trough-vertical@2.png
+usr/share/themes/Breeze/assets/spinbutton-down-insensitive.png
+usr/share/themes/Breeze/assets/spinbutton-down-rtl-insensitive.png
+usr/share/themes/Breeze/assets/spinbutton-down-rtl.png
+usr/share/themes/Breeze/assets/spinbutton-down.png
+usr/share/themes/Breeze/assets/spinbutton-up-insensitive.png
+usr/share/themes/Breeze/assets/spinbutton-up-rtl-insensitive.png
+usr/share/themes/Breeze/assets/spinbutton-up-rtl.png
+usr/share/themes/Breeze/assets/spinbutton-up.png
+usr/share/themes/Breeze/assets/tab-bottom-active.png
+usr/share/themes/Breeze/assets/tab-bottom-inactive.png
+usr/share/themes/Breeze/assets/tab-left-active.png
+usr/share/themes/Breeze/assets/tab-left-inactive.png
+usr/share/themes/Breeze/assets/tab-right-active.png
+usr/share/themes/Breeze/assets/tab-right-inactive.png
+usr/share/themes/Breeze/assets/tab-top-active.png
+usr/share/themes/Breeze/assets/tab-top-inactive.png
+usr/share/themes/Breeze/assets/titlebutton-close-active-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-close-active-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-close-active.png
+usr/share/themes/Breeze/assets/titlebutton-close-active@2.png
+usr/share/themes/Breeze/assets/titlebutton-close-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-close-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-close-hover-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-close-hover-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-close-hover.png
+usr/share/themes/Breeze/assets/titlebutton-close-hover@2.png
+usr/share/themes/Breeze/assets/titlebutton-close.png
+usr/share/themes/Breeze/assets/titlebutton-close@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-active-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-active-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-active.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-active@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-hover-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-hover-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-hover.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-hover@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-active-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-active-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-active.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-active@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-hover-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-hover-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-hover.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized-hover@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized.png
+usr/share/themes/Breeze/assets/titlebutton-maximize-maximized@2.png
+usr/share/themes/Breeze/assets/titlebutton-maximize.png
+usr/share/themes/Breeze/assets/titlebutton-maximize@2.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-active-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-active-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-active.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-active@2.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-hover-backdrop.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-hover-backdrop@2.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-hover.png
+usr/share/themes/Breeze/assets/titlebutton-minimize-hover@2.png
+usr/share/themes/Breeze/assets/titlebutton-minimize.png
+usr/share/themes/Breeze/assets/titlebutton-minimize@2.png
+usr/share/themes/Breeze/assets/togglebutton-active.png
+usr/share/themes/Breeze/assets/togglebutton-hover.png
+usr/share/themes/Breeze/assets/togglebutton-insensitive.png
+usr/share/themes/Breeze/assets/togglebutton.png
+usr/share/themes/Breeze/assets/toolbar-background.png
+usr/share/themes/Breeze/assets/toolbutton-active.png
+usr/share/themes/Breeze/assets/toolbutton-hover.png
+usr/share/themes/Breeze/assets/toolbutton-toggled.png
+usr/share/themes/Breeze/assets/tree-header.png
+usr/share/themes/Breeze/gtk-2.0/
+usr/share/themes/Breeze/gtk-2.0/gtkrc
+usr/share/themes/Breeze/gtk-2.0/widgets/
+usr/share/themes/Breeze/gtk-2.0/widgets/buttons
+usr/share/themes/Breeze/gtk-2.0/widgets/default
+usr/share/themes/Breeze/gtk-2.0/widgets/entry
+usr/share/themes/Breeze/gtk-2.0/widgets/menu
+usr/share/themes/Breeze/gtk-2.0/widgets/misc
+usr/share/themes/Breeze/gtk-2.0/widgets/notebook
+usr/share/themes/Breeze/gtk-2.0/widgets/progressbar
+usr/share/themes/Breeze/gtk-2.0/widgets/range
+usr/share/themes/Breeze/gtk-2.0/widgets/scrollbar
+usr/share/themes/Breeze/gtk-2.0/widgets/styles
+usr/share/themes/Breeze/gtk-2.0/widgets/toolbar
+usr/share/themes/Breeze/gtk-3.0/
+usr/share/themes/Breeze/gtk-3.0/gtk-dark.css
+usr/share/themes/Breeze/gtk-3.0/gtk.css
+usr/share/themes/Breeze/gtk-4.0/
+usr/share/themes/Breeze/gtk-4.0/gtk-dark.css
+usr/share/themes/Breeze/gtk-4.0/gtk.css
+usr/share/themes/Breeze/settings.ini
+
+Slackware package /tmp/breeze-gtk/breeze-gtk-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for breeze-gtk-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/breeze-gtk/breeze-gtk-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/breeze-gtk/breeze-gtk-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/breeze-gtk/breeze-gtk-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in breeze-gtk.tar.lz4 format.
+/tmp/breeze-gtk /tmp/breeze-gtk
+/tmp/breeze-gtk
+BIN_NAME
+README
+breeze-gtk-6.3.5-x86_64-1_rtz.tlz
+breeze-gtk-6.3.5-x86_64-1_rtz.tlz.md5
+breeze-gtk-6.3.5-x86_64-1_rtz.tlz.so.file
+breeze-gtk-6.3.5-x86_64-1_rtz.tlz.txt
+breeze-gtk.dep
+makepkg-breeze-gtk.log
+breeze-gtk build finished. Procced to installation...
+
++=========================================================================================================+
+| Upgrading breeze-gtk-6.3.5-x86_64-1_rtz package using /tmp/breeze-gtk/breeze-gtk-6.3.5-x86_64-1_rtz.tlz |
++=========================================================================================================+
+
+Pre-installing package breeze-gtk-6.3.5-x86_64-1_rtz...
+Removing package: breeze-gtk-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:27:55
+Installing package breeze-gtk-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# breeze-gtk (A GTK Theme Built to Match KDE's Breeze)
+#
+# A GTK Theme Built to Match KDE's Breeze
+#
+# https://kde.org/plasma-desktop/
+Executing install script for breeze-gtk-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package breeze-gtk-6.3.5-x86_64-1_rtz.tlz installed.
+Package breeze-gtk-6.3.5-x86_64-1_rtz upgraded with new package /tmp/breeze-gtk/breeze-gtk-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'breeze-gtk-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 7 seconds.

@@ -1,0 +1,207 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	kwallet	libgcrypt	linux-pam
+extra-cmake-modules is already installed!
+kwallet is already installed!
+libgcrypt is already installed!
+Building dep linux-pam...
+linux-pam 
+Error: Build file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/linux-pam/linux-pam.ini' not found.
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:35:03--  https://download.kde.org/stable/plasma/6.3.5/kwallet-pam-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kwallet-pam-6.3.5.tar.xz [following]
+--2025-05-10 22:35:03--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kwallet-pam-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 22488 (22K) [application/octet-stream]
+Saving to: ‘kwallet-pam-6.3.5.tar.xz’
+
+     0K .......... .......... .                               100%  300M=0s
+
+2025-05-10 22:35:04 (300 MB/s) - ‘kwallet-pam-6.3.5.tar.xz’ saved [22488/22488]
+
+Found file: kwallet-pam-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kwallet-pam-6.3.5/
+kwallet-pam-6.3.5/cmake/
+kwallet-pam-6.3.5/cmake/modules/
+kwallet-pam-6.3.5/cmake/modules/FindPAM.cmake
+kwallet-pam-6.3.5/LICENSES/
+kwallet-pam-6.3.5/LICENSES/LGPL-2.1-or-later.txt
+kwallet-pam-6.3.5/LICENSES/BSD-3-Clause.txt
+kwallet-pam-6.3.5/LICENSES/CC0-1.0.txt
+kwallet-pam-6.3.5/pam_darwin.c
+kwallet-pam-6.3.5/README.txt
+kwallet-pam-6.3.5/.gitlab-ci.yml
+kwallet-pam-6.3.5/pam_kwallet_init
+kwallet-pam-6.3.5/.gitignore
+kwallet-pam-6.3.5/plasma-kwallet-pam.service.in
+kwallet-pam-6.3.5/.kde-ci.yml
+kwallet-pam-6.3.5/pam_kwallet.c
+kwallet-pam-6.3.5/CMakeLists.txt
+kwallet-pam-6.3.5/pam_kwallet_init.desktop.cmake
+kwallet-pam-6.3.5/pam_darwin.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet-pam/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Performing Test PAM_MESSAGE_CONST
+-- Performing Test PAM_MESSAGE_CONST - Success
+-- Found PAM: /lib64/libpam.so;/usr/lib64/libdl.a
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'libgcrypt'
+--   Found libgcrypt, version 1.11.1
+-- Found socat executable: /usr/bin/socat
+-- KWALLETD_BIN_PATH not set, trying KF6::Wallet
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found KF6Wallet: /usr/lib64/cmake/KF6Wallet/KF6WalletConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.10.0") found components: Wallet
+-- Looking for explicit_bzero
+-- Looking for explicit_bzero - found
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet-pam/work/kwallet-pam-6.3.5/build
+[1/2] Building C object CMakeFiles/pam_kwallet5.dir/pam_kwallet.c.o
+[2/2] Linking C shared library pam_kwallet5.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet-pam/package-kwallet-pam/usr/lib64/security/pam_kwallet5.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet-pam/package-kwallet-pam/usr/libexec/pam_kwallet_init
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet-pam/package-kwallet-pam/etc/xdg/autostart/pam_kwallet_init.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet-pam/package-kwallet-pam/usr/lib/systemd/user/plasma-kwallet-pam.service
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet-pam/kwallet-pam.info: No such file or directory
+extra-cmake-modules
+kwallet
+libgcrypt
+linux-pam
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kwallet-pam/kwallet-pam-6.3.5-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/xdg/
+etc/xdg/autostart/
+etc/xdg/autostart/pam_kwallet_init.desktop
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kwallet-pam-6.3.5/
+usr/doc/kwallet-pam-6.3.5/README.txt
+usr/doc/kwallet-pam-6.3.5/kwallet-pam.ini
+usr/doc/kwallet-pam-6.3.5/slack-required
+usr/lib/
+usr/lib64/
+usr/lib64/security/
+usr/lib64/security/pam_kwallet5.so
+usr/libexec/
+usr/libexec/pam_kwallet_init
+
+Slackware package /tmp/kwallet-pam/kwallet-pam-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for kwallet-pam-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/kwallet-pam/kwallet-pam-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/kwallet-pam/kwallet-pam-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/kwallet-pam/kwallet-pam-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kwallet-pam.tar.lz4 format.
+/tmp/kwallet-pam /tmp/kwallet-pam
+/tmp/kwallet-pam
+BIN_NAME
+README
+kwallet-pam-6.3.5-x86_64-1_rtz.tlz
+kwallet-pam-6.3.5-x86_64-1_rtz.tlz.md5
+kwallet-pam-6.3.5-x86_64-1_rtz.tlz.so.file
+kwallet-pam-6.3.5-x86_64-1_rtz.tlz.txt
+kwallet-pam.dep
+makepkg-kwallet-pam.log
+kwallet-pam build finished. Procced to installation...
+
++============================================================================================================+
+| Upgrading kwallet-pam-6.3.5-x86_64-1_rtz package using /tmp/kwallet-pam/kwallet-pam-6.3.5-x86_64-1_rtz.tlz |
++============================================================================================================+
+
+Pre-installing package kwallet-pam-6.3.5-x86_64-1_rtz...
+Removing package: kwallet-pam-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:35:05
+Installing package kwallet-pam-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kwallet-pam (KWallet PAM integration)
+#
+# KWallet PAM integration
+#
+# https://kde.org/plasma-desktop/
+Executing install script for kwallet-pam-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kwallet-pam-6.3.5-x86_64-1_rtz.tlz installed.
+Package kwallet-pam-6.3.5-x86_64-1_rtz upgraded with new package /tmp/kwallet-pam/kwallet-pam-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kwallet-pam-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 7 seconds.

@@ -1,0 +1,785 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	karchive	kconfig	kcoreaddons	kdiagram	ki18n	kio	kparts
+extra-cmake-modules is already installed!
+karchive is already installed!
+kconfig is already installed!
+kcoreaddons is already installed!
+kdiagram is already installed!
+ki18n is already installed!
+kio is already installed!
+kparts is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:34:09--  https://download.kde.org/stable/release-service/25.04.1/src/massif-visualizer-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/massif-visualizer-25.04.1.tar.xz [following]
+--2025-05-11 01:34:09--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/massif-visualizer-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 283932 (277K) [application/octet-stream]
+Saving to: ‘massif-visualizer-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 18% 1.33M 0s
+    50K .......... .......... .......... .......... .......... 36% 1.46M 0s
+   100K .......... .......... .......... .......... .......... 54% 6.49M 0s
+   150K .......... .......... .......... .......... .......... 72% 1.77M 0s
+   200K .......... .......... .......... .......... .......... 90% 6.40M 0s
+   250K .......... .......... .......                         100% 5.27M=0.1s
+
+2025-05-11 01:34:09 (2.30 MB/s) - ‘massif-visualizer-25.04.1.tar.xz’ saved [283932/283932]
+
+Found file: massif-visualizer-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+massif-visualizer-25.04.1/
+massif-visualizer-25.04.1/.kateconfig
+massif-visualizer-25.04.1/test/
+massif-visualizer-25.04.1/test/data/
+massif-visualizer-25.04.1/test/data/massif.out.huge
+massif-visualizer-25.04.1/test/data/massif.out.duchainify.bz2
+massif-visualizer-25.04.1/test/data/massif.out.32406
+massif-visualizer-25.04.1/test/data/massif.out.kate3
+massif-visualizer-25.04.1/test/data/massif.out.kate
+massif-visualizer-25.04.1/test/data/massif.out.kate2
+massif-visualizer-25.04.1/test/data/massif.out.ktorrent
+massif-visualizer-25.04.1/test/data/massif.out.stack
+massif-visualizer-25.04.1/test/data/massif.out.kate.print
+massif-visualizer-25.04.1/test/massifparser.cpp
+massif-visualizer-25.04.1/test/datamodeltest.cpp
+massif-visualizer-25.04.1/test/datamodeltest.h
+massif-visualizer-25.04.1/test/CMakeLists.txt
+massif-visualizer-25.04.1/massif-visualizer.kdev4
+massif-visualizer-25.04.1/massifdata/
+massif-visualizer-25.04.1/massifdata/parserprivate.cpp
+massif-visualizer-25.04.1/massifdata/filedata.h
+massif-visualizer-25.04.1/massifdata/parser.h
+massif-visualizer-25.04.1/massifdata/util.cpp
+massif-visualizer-25.04.1/massifdata/parser.cpp
+massif-visualizer-25.04.1/massifdata/snapshotitem.h
+massif-visualizer-25.04.1/massifdata/parseworker.h
+massif-visualizer-25.04.1/massifdata/util.h
+massif-visualizer-25.04.1/massifdata/parseworker.cpp
+massif-visualizer-25.04.1/massifdata/treeleafitem.h
+massif-visualizer-25.04.1/massifdata/parserprivate.h
+massif-visualizer-25.04.1/massifdata/treeleafitem.cpp
+massif-visualizer-25.04.1/massifdata/snapshotitem.cpp
+massif-visualizer-25.04.1/massifdata/CMakeLists.txt
+massif-visualizer-25.04.1/massifdata/filedata.cpp
+massif-visualizer-25.04.1/app/
+massif-visualizer-25.04.1/app/massif-visualizer.qrc
+massif-visualizer-25.04.1/app/documentwidget.h
+massif-visualizer-25.04.1/app/massif-visualizer-settings.kcfgc
+massif-visualizer-25.04.1/app/allocatorstab.h
+massif-visualizer-25.04.1/app/callgraphtabui.rc
+massif-visualizer-25.04.1/app/documentwidgetui.rc
+massif-visualizer-25.04.1/app/org.kde.massif-visualizer.desktop
+massif-visualizer-25.04.1/app/massif-visualizerui.rc
+massif-visualizer-25.04.1/app/mainwindow.h
+massif-visualizer-25.04.1/app/config.ui
+massif-visualizer-25.04.1/app/mainwindow.ui
+massif-visualizer-25.04.1/app/callgraphtab.h
+massif-visualizer-25.04.1/app/configdialog.cpp
+massif-visualizer-25.04.1/app/documenttabinterface.h
+massif-visualizer-25.04.1/app/mainwindow.cpp
+massif-visualizer-25.04.1/app/documentwidget.cpp
+massif-visualizer-25.04.1/app/documenttabinterface.cpp
+massif-visualizer-25.04.1/app/main.cpp
+massif-visualizer-25.04.1/app/allocatorstab.cpp
+massif-visualizer-25.04.1/app/org.kde.massif-visualizer.appdata.xml
+massif-visualizer-25.04.1/app/charttab.cpp
+massif-visualizer-25.04.1/app/massif-visualizer-settings.kcfg
+massif-visualizer-25.04.1/app/CMakeLists.txt
+massif-visualizer-25.04.1/app/charttab.h
+massif-visualizer-25.04.1/app/massif.xml
+massif-visualizer-25.04.1/app/callgraphtab.cpp
+massif-visualizer-25.04.1/app/charttabui.rc
+massif-visualizer-25.04.1/app/callgraphtab.qrc
+massif-visualizer-25.04.1/app/configdialog.h
+massif-visualizer-25.04.1/AUTHORS
+massif-visualizer-25.04.1/pics/
+massif-visualizer-25.04.1/pics/hicolor/
+massif-visualizer-25.04.1/pics/hicolor/sc-apps-massif-visualizer.svg
+massif-visualizer-25.04.1/pics/hicolor/22-actions-shortentemplates.png
+massif-visualizer-25.04.1/pics/hicolor/CMakeLists.txt
+massif-visualizer-25.04.1/pics/CMakeLists.txt
+massif-visualizer-25.04.1/Messages.sh
+massif-visualizer-25.04.1/.kdev4/
+massif-visualizer-25.04.1/.kdev4/massif-visualizer.kdev4
+massif-visualizer-25.04.1/.gitlab-ci.yml
+massif-visualizer-25.04.1/README
+massif-visualizer-25.04.1/logo.png
+massif-visualizer-25.04.1/snapcraft.yaml
+massif-visualizer-25.04.1/visualizer/
+massif-visualizer-25.04.1/visualizer/detailedcostmodel.cpp
+massif-visualizer-25.04.1/visualizer/allocatorsmodel.cpp
+massif-visualizer-25.04.1/visualizer/totalcostmodel.cpp
+massif-visualizer-25.04.1/visualizer/datatreemodel.cpp
+massif-visualizer-25.04.1/visualizer/dotgraphgenerator.h
+massif-visualizer-25.04.1/visualizer/totalcostmodel.h
+massif-visualizer-25.04.1/visualizer/datatreemodel.h
+massif-visualizer-25.04.1/visualizer/modelitem.h
+massif-visualizer-25.04.1/visualizer/allocatorsmodel.h
+massif-visualizer-25.04.1/visualizer/dotgraphgenerator.cpp
+massif-visualizer-25.04.1/visualizer/filtereddatatreemodel.h
+massif-visualizer-25.04.1/visualizer/detailedcostmodel.h
+massif-visualizer-25.04.1/visualizer/filtereddatatreemodel.cpp
+massif-visualizer-25.04.1/visualizer/CMakeLists.txt
+massif-visualizer-25.04.1/.kde-ci.yml
+massif-visualizer-25.04.1/po/
+massif-visualizer-25.04.1/po/bg/
+massif-visualizer-25.04.1/po/bg/massif-visualizer.po
+massif-visualizer-25.04.1/po/pt/
+massif-visualizer-25.04.1/po/pt/massif-visualizer.po
+massif-visualizer-25.04.1/po/nn/
+massif-visualizer-25.04.1/po/nn/massif-visualizer.po
+massif-visualizer-25.04.1/po/pl/
+massif-visualizer-25.04.1/po/pl/massif-visualizer.po
+massif-visualizer-25.04.1/po/ja/
+massif-visualizer-25.04.1/po/ja/massif-visualizer.po
+massif-visualizer-25.04.1/po/bs/
+massif-visualizer-25.04.1/po/bs/massif-visualizer.po
+massif-visualizer-25.04.1/po/zh_CN/
+massif-visualizer-25.04.1/po/zh_CN/massif-visualizer.po
+massif-visualizer-25.04.1/po/cs/
+massif-visualizer-25.04.1/po/cs/massif-visualizer.po
+massif-visualizer-25.04.1/po/es/
+massif-visualizer-25.04.1/po/es/massif-visualizer.po
+massif-visualizer-25.04.1/po/ka/
+massif-visualizer-25.04.1/po/ka/massif-visualizer.po
+massif-visualizer-25.04.1/po/is/
+massif-visualizer-25.04.1/po/is/massif-visualizer.po
+massif-visualizer-25.04.1/po/tr/
+massif-visualizer-25.04.1/po/tr/massif-visualizer.po
+massif-visualizer-25.04.1/po/ug/
+massif-visualizer-25.04.1/po/ug/massif-visualizer.po
+massif-visualizer-25.04.1/po/ca/
+massif-visualizer-25.04.1/po/ca/massif-visualizer.po
+massif-visualizer-25.04.1/po/ca@valencia/
+massif-visualizer-25.04.1/po/ca@valencia/massif-visualizer.po
+massif-visualizer-25.04.1/po/gl/
+massif-visualizer-25.04.1/po/gl/massif-visualizer.po
+massif-visualizer-25.04.1/po/eo/
+massif-visualizer-25.04.1/po/eo/massif-visualizer.po
+massif-visualizer-25.04.1/po/nl/
+massif-visualizer-25.04.1/po/nl/massif-visualizer.po
+massif-visualizer-25.04.1/po/mr/
+massif-visualizer-25.04.1/po/mr/massif-visualizer.po
+massif-visualizer-25.04.1/po/hu/
+massif-visualizer-25.04.1/po/hu/massif-visualizer.po
+massif-visualizer-25.04.1/po/eu/
+massif-visualizer-25.04.1/po/eu/massif-visualizer.po
+massif-visualizer-25.04.1/po/nb/
+massif-visualizer-25.04.1/po/nb/massif-visualizer.po
+massif-visualizer-25.04.1/po/fr/
+massif-visualizer-25.04.1/po/fr/massif-visualizer.po
+massif-visualizer-25.04.1/po/hi/
+massif-visualizer-25.04.1/po/hi/massif-visualizer.po
+massif-visualizer-25.04.1/po/sl/
+massif-visualizer-25.04.1/po/sl/massif-visualizer.po
+massif-visualizer-25.04.1/po/he/
+massif-visualizer-25.04.1/po/he/massif-visualizer.po
+massif-visualizer-25.04.1/po/de/
+massif-visualizer-25.04.1/po/de/massif-visualizer.po
+massif-visualizer-25.04.1/po/sk/
+massif-visualizer-25.04.1/po/sk/massif-visualizer.po
+massif-visualizer-25.04.1/po/zh_TW/
+massif-visualizer-25.04.1/po/zh_TW/massif-visualizer.po
+massif-visualizer-25.04.1/po/et/
+massif-visualizer-25.04.1/po/et/massif-visualizer.po
+massif-visualizer-25.04.1/po/it/
+massif-visualizer-25.04.1/po/it/massif-visualizer.po
+massif-visualizer-25.04.1/po/el/
+massif-visualizer-25.04.1/po/el/massif-visualizer.po
+massif-visualizer-25.04.1/po/da/
+massif-visualizer-25.04.1/po/da/massif-visualizer.po
+massif-visualizer-25.04.1/po/pt_BR/
+massif-visualizer-25.04.1/po/pt_BR/massif-visualizer.po
+massif-visualizer-25.04.1/po/ru/
+massif-visualizer-25.04.1/po/ru/massif-visualizer.po
+massif-visualizer-25.04.1/po/ia/
+massif-visualizer-25.04.1/po/ia/massif-visualizer.po
+massif-visualizer-25.04.1/po/sv/
+massif-visualizer-25.04.1/po/sv/massif-visualizer.po
+massif-visualizer-25.04.1/po/fi/
+massif-visualizer-25.04.1/po/fi/massif-visualizer.po
+massif-visualizer-25.04.1/po/kk/
+massif-visualizer-25.04.1/po/kk/massif-visualizer.po
+massif-visualizer-25.04.1/po/lt/
+massif-visualizer-25.04.1/po/lt/massif-visualizer.po
+massif-visualizer-25.04.1/po/sa/
+massif-visualizer-25.04.1/po/sa/massif-visualizer.po
+massif-visualizer-25.04.1/po/ko/
+massif-visualizer-25.04.1/po/ko/massif-visualizer.po
+massif-visualizer-25.04.1/po/ga/
+massif-visualizer-25.04.1/po/ga/massif-visualizer.po
+massif-visualizer-25.04.1/po/en_GB/
+massif-visualizer-25.04.1/po/en_GB/massif-visualizer.po
+massif-visualizer-25.04.1/po/uk/
+massif-visualizer-25.04.1/po/uk/massif-visualizer.po
+massif-visualizer-25.04.1/po/nds/
+massif-visualizer-25.04.1/po/nds/massif-visualizer.po
+massif-visualizer-25.04.1/.flatpak-manifest.json
+massif-visualizer-25.04.1/CMakeLists.txt
+massif-visualizer-25.04.1/COPYING
+massif-visualizer-25.04.1/INSTALL
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Cups: /usr/lib64/libcups.so (found version "2.4.12")
+-- Found KF6Archive: /usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake (found version "6.14.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6Parts: /usr/lib64/cmake/KF6Parts/KF6PartsConfig.cmake (found version "6.14.0")
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.0.0") found components: Archive Config CoreAddons Parts KIO I18n
+-- Found SharedMimeInfo: /usr/bin/update-mime-database (found suitable version "2.4", minimum required is "0.30")
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Core5Compat (required version >= 6.5.0)
+ * OpenGL
+ * Qt6Test (required version >= 6.5.0)
+ * Cups
+ * Qt6PrintSupport (required version >= 6.5.0)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * SharedMimeInfo (required version >= 0.30), A database of common MIME types, <https://freedesktop.org/wiki/Software/shared-mime-info/>
+
+-- The following RECOMMENDED packages have been found:
+
+ * KGraphViewerPart (required version >= 2.5.0), KPart to view callgraph dot files, <https://commits.kde.org/kgraphviewer>
+   Required for detailed snapshot analysis
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.0.0)
+ * Qt6 (required version >= 6.5.0)
+ * KF6Archive (required version >= 6.0.0)
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6Config (required version >= 6.14.0)
+ * KF6Parts (required version >= 6.0.0)
+ * KF6KIO (required version >= 6.0.0)
+ * Gettext
+ * KF6I18n (required version >= 6.0.0)
+ * KF6 (required version >= 6.0.0)
+ * Qt6Svg (required version >= 6.5.0)
+ * Qt6Widgets (required version >= 6.5.0)
+ * KChart6 (required version >= 3.0.0)
+ * Qt6Core (required version >= 6.5.0)
+
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/work/massif-visualizer-25.04.1/build
+[1/48] Generating ts...
+[2/48] Generating mo...
+[3/48] Automatic MOC for target mv-massifdata
+[4/48] Building CXX object massifdata/CMakeFiles/mv-massifdata.dir/mv-massifdata_autogen/mocs_compilation.cpp.o
+[5/48] Building CXX object massifdata/CMakeFiles/mv-massifdata.dir/snapshotitem.cpp.o
+[6/48] Building CXX object massifdata/CMakeFiles/mv-massifdata.dir/filedata.cpp.o
+[7/48] Building CXX object massifdata/CMakeFiles/mv-massifdata.dir/parser.cpp.o
+[8/48] Building CXX object massifdata/CMakeFiles/mv-massifdata.dir/util.cpp.o
+[9/48] Building CXX object massifdata/CMakeFiles/mv-massifdata.dir/treeleafitem.cpp.o
+[10/48] Building CXX object massifdata/CMakeFiles/mv-massifdata.dir/parseworker.cpp.o
+[11/48] Building CXX object massifdata/CMakeFiles/mv-massifdata.dir/parserprivate.cpp.o
+[12/48] Linking CXX static library lib/libmv-massifdata.a
+[13/48] Automatic MOC for target massifparser
+[14/48] Building CXX object test/CMakeFiles/massifparser.dir/massifparser_autogen/mocs_compilation.cpp.o
+[15/48] Automatic MOC for target mv-visualizer
+[16/48] Building CXX object visualizer/CMakeFiles/mv-visualizer.dir/mv-visualizer_autogen/mocs_compilation.cpp.o
+[17/48] Building CXX object test/CMakeFiles/massifparser.dir/massifparser.cpp.o
+[18/48] Linking CXX executable bin/massifparser
+[19/48] Building CXX object visualizer/CMakeFiles/mv-visualizer.dir/totalcostmodel.cpp.o
+[20/48] Building CXX object visualizer/CMakeFiles/mv-visualizer.dir/filtereddatatreemodel.cpp.o
+[21/48] Building CXX object visualizer/CMakeFiles/mv-visualizer.dir/datatreemodel.cpp.o
+[22/48] Building CXX object visualizer/CMakeFiles/mv-visualizer.dir/allocatorsmodel.cpp.o
+[23/48] Building CXX object visualizer/CMakeFiles/mv-visualizer.dir/dotgraphgenerator.cpp.o
+[24/48] Building CXX object visualizer/CMakeFiles/mv-visualizer.dir/detailedcostmodel.cpp.o
+[25/48] Linking CXX static library lib/libmv-visualizer.a
+[26/48] Automatic MOC for target datamodeltest
+[27/48] Building CXX object test/CMakeFiles/datamodeltest.dir/datamodeltest_autogen/mocs_compilation.cpp.o
+[28/48] Automatic MOC for target massif-visualizer
+[29/48] Generating massif-visualizer-settings.h, massif-visualizer-settings.cpp
+[30/48] Automatic RCC for callgraphtab.qrc
+[31/48] Automatic RCC for massif-visualizer.qrc
+[32/48] Generating ui_config.h
+[33/48] Generating ui_mainwindow.h
+[34/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/massif-visualizer_autogen/mocs_compilation.cpp.o
+[35/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/massif-visualizer_autogen/EWIEGA46WW/qrc_massif-visualizer.cpp.o
+[36/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/massif-visualizer_autogen/EWIEGA46WW/qrc_callgraphtab.cpp.o
+[37/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/documenttabinterface.cpp.o
+[38/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/massif-visualizer-settings.cpp.o
+[39/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/configdialog.cpp.o
+[40/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/allocatorstab.cpp.o
+[41/48] Building CXX object test/CMakeFiles/datamodeltest.dir/datamodeltest.cpp.o
+[42/48] Linking CXX executable bin/datamodeltest
+[43/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/documentwidget.cpp.o
+[44/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/main.cpp.o
+[45/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/callgraphtab.cpp.o
+[46/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/charttab.cpp.o
+[47/48] Building CXX object app/CMakeFiles/massif-visualizer.dir/mainwindow.cpp.o
+[48/48] Linking CXX executable bin/massif-visualizer
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/bin/massif-visualizer
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/config.kcfg/massif-visualizer-settings.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/applications/org.kde.massif-visualizer.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/metainfo/org.kde.massif-visualizer.appdata.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/mime/packages/massif.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/massif-visualizer/icons/hicolor/22x22/actions/shortentemplates.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/icons/hicolor/scalable/apps/massif-visualizer.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/da/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/cs/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ja/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/de/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/el/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nn/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/hi/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pt_BR/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/lt/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sl/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/bs/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/is/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/kk/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/he/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/zh_TW/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pl/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/pt/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/tr/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/fr/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ka/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/gl/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ia/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/hu/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/eo/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/bg/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ga/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ca/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/uk/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/en_GB/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/zh_CN/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nl/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sa/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/fi/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ko/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ru/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ca@valencia/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nb/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/es/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/eu/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/et/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/it/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/nds/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/mr/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/ug/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sk/LC_MESSAGES/massif-visualizer.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/package-massif-visualizer/usr/share/locale/sv/LC_MESSAGES/massif-visualizer.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/massif-visualizer/massif-visualizer.info: No such file or directory
+extra-cmake-modules
+karchive
+kconfig
+kcoreaddons
+kdiagram
+ki18n
+kio
+kparts
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/massif-visualizer/massif-visualizer-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/massif-visualizer
+usr/doc/
+usr/doc/massif-visualizer-25.04.1/
+usr/doc/massif-visualizer-25.04.1/AUTHORS
+usr/doc/massif-visualizer-25.04.1/COPYING
+usr/doc/massif-visualizer-25.04.1/README
+usr/doc/massif-visualizer-25.04.1/massif-visualizer.ini
+usr/doc/massif-visualizer-25.04.1/slack-required
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.massif-visualizer.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/massif-visualizer-settings.kcfg
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/massif-visualizer.svg
+usr/share/locale/
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/massif-visualizer.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/massif-visualizer.mo
+usr/share/massif-visualizer/
+usr/share/massif-visualizer/icons/
+usr/share/massif-visualizer/icons/hicolor/
+usr/share/massif-visualizer/icons/hicolor/22x22/
+usr/share/massif-visualizer/icons/hicolor/22x22/actions/
+usr/share/massif-visualizer/icons/hicolor/22x22/actions/shortentemplates.png
+usr/share/metainfo/
+usr/share/metainfo/org.kde.massif-visualizer.appdata.xml
+usr/share/mime/
+usr/share/mime/packages/
+usr/share/mime/packages/massif.xml
+
+Slackware package /tmp/massif-visualizer/massif-visualizer-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for massif-visualizer-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/massif-visualizer/massif-visualizer-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/massif-visualizer/massif-visualizer-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/massif-visualizer/massif-visualizer-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in massif-visualizer.tar.lz4 format.
+/tmp/massif-visualizer /tmp/massif-visualizer
+/tmp/massif-visualizer
+BIN_NAME
+README
+makepkg-massif-visualizer.log
+massif-visualizer-25.04.1-x86_64-1_rtz.tlz
+massif-visualizer-25.04.1-x86_64-1_rtz.tlz.md5
+massif-visualizer-25.04.1-x86_64-1_rtz.tlz.so.file
+massif-visualizer-25.04.1-x86_64-1_rtz.tlz.txt
+massif-visualizer.dep
+massif-visualizer build finished. Procced to installation...
+
++==================================================================================================================================+
+| Upgrading massif-visualizer-25.04.1-x86_64-1_rtz package using /tmp/massif-visualizer/massif-visualizer-25.04.1-x86_64-1_rtz.tlz |
++==================================================================================================================================+
+
+Pre-installing package massif-visualizer-25.04.1-x86_64-1_rtz...
+Removing package: massif-visualizer-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:34:25
+Installing package massif-visualizer-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# massif-visualizer ( Valgrind Massif data files)
+#
+# Visualizer for Valgrind Massif data files
+#
+# kde.org/applications/development
+Executing install script for massif-visualizer-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package massif-visualizer-25.04.1-x86_64-1_rtz.tlz installed.
+Package massif-visualizer-25.04.1-x86_64-1_rtz upgraded with new package /tmp/massif-visualizer/massif-visualizer-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'massif-visualizer-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 21 seconds.

@@ -1,0 +1,390 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: exiv2	extra-cmake-modules
+exiv2 is already installed!
+extra-cmake-modules is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:07:57--  https://download.kde.org/stable/release-service/25.04.1/src/libkexiv2-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkexiv2-25.04.1.tar.xz [following]
+--2025-05-11 01:07:57--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkexiv2-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 60676 (59K) [application/octet-stream]
+Saving to: ‘libkexiv2-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 84% 1.35M 0s
+    50K .........                                             100% 17.2T=0.04s
+
+2025-05-11 01:07:58 (1.60 MB/s) - ‘libkexiv2-25.04.1.tar.xz’ saved [60676/60676]
+
+Found file: libkexiv2-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+libkexiv2-25.04.1/
+libkexiv2-25.04.1/cmake/
+libkexiv2-25.04.1/cmake/templates/
+libkexiv2-25.04.1/cmake/templates/KExiv2Config.cmake.in
+libkexiv2-25.04.1/.krazy
+libkexiv2-25.04.1/AUTHORS
+libkexiv2-25.04.1/LICENSES/
+libkexiv2-25.04.1/LICENSES/BSD-3-Clause.txt
+libkexiv2-25.04.1/LICENSES/GPL-2.0-or-later.txt
+libkexiv2-25.04.1/.gitlab-ci.yml
+libkexiv2-25.04.1/README
+libkexiv2-25.04.1/tests/
+libkexiv2-25.04.1/tests/loadfromba.cpp
+libkexiv2-25.04.1/tests/readimagewritexmpsidecar.cpp
+libkexiv2-25.04.1/tests/setiptcpreview.cpp
+libkexiv2-25.04.1/tests/usexmpsidecar.cpp
+libkexiv2-25.04.1/tests/printtagslist.cpp
+libkexiv2-25.04.1/tests/erasetag.cpp
+libkexiv2-25.04.1/tests/setxmpface.cpp
+libkexiv2-25.04.1/tests/CMakeLists.txt
+libkexiv2-25.04.1/TODO
+libkexiv2-25.04.1/.kde-ci.yml
+libkexiv2-25.04.1/CMakeLists.txt
+libkexiv2-25.04.1/src/
+libkexiv2-25.04.1/src/Mainpage.dox
+libkexiv2-25.04.1/src/kexiv2data.h
+libkexiv2-25.04.1/src/kexiv2comments.cpp
+libkexiv2-25.04.1/src/rotationmatrix.h
+libkexiv2-25.04.1/src/kexiv2iptc.cpp
+libkexiv2-25.04.1/src/kexiv2previews.cpp
+libkexiv2-25.04.1/src/kexiv2_p.cpp
+libkexiv2-25.04.1/src/kexiv2previews.h
+libkexiv2-25.04.1/src/kexiv2.cpp
+libkexiv2-25.04.1/src/kexiv2exif.cpp
+libkexiv2-25.04.1/src/kexiv2gps.cpp
+libkexiv2-25.04.1/src/rotationmatrix.cpp
+libkexiv2-25.04.1/src/kexiv2data.cpp
+libkexiv2-25.04.1/src/Doxyfile
+libkexiv2-25.04.1/src/kexiv2.h
+libkexiv2-25.04.1/src/CMakeLists.txt
+libkexiv2-25.04.1/src/kexiv2_p.h
+libkexiv2-25.04.1/src/kexiv2xmp.cpp
+libkexiv2-25.04.1/src/kexiv2image.cpp
+libkexiv2-25.04.1/.gitignore
+libkexiv2-25.04.1/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- ----------------------------------------------------------------------------------
+-- Starting CMake configuration for: libkexiv2
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found LibExiv2: /usr/lib64/libexiv2.so (found suitable version "0.28.5", minimum required is "0.25")
+-- DEPRECATED_BASE_VERSION (0) was lower than EXCLUDE_DEPRECATED_BEFORE_AND_AT (5.1.0) when calling ecm_generate_export_header(), raising to that.
+-- Excluding from build all API deprecated before and at: 5.1.0
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Core (required version >= 6.5.0)
+ * OpenGL
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6Gui (required version >= 6.5.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.91.0)
+ * Qt6 (required version >= 6.5.0)
+ * LibExiv2 (required version >= 0.25), Image metadata support, <https://www.exiv2.org>
+
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/build
+[1/44] Automatic MOC for target KExiv2
+[2/44] Building CXX object src/CMakeFiles/KExiv2.dir/KExiv2_autogen/mocs_compilation.cpp.o
+[3/44] Building CXX object src/CMakeFiles/KExiv2.dir/libkexiv2_debug.cpp.o
+[4/44] Building CXX object src/CMakeFiles/KExiv2.dir/rotationmatrix.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/rotationmatrix.cpp: In member function ‘KExiv2Iface::RotationMatrix& KExiv2Iface::RotationMatrix::operator*=(QList<TransformationAction>)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/rotationmatrix.cpp:175:55: warning: ‘constexpr typename std::add_const<_Tp>::type& qAsConst(T&) [with T = QList<KExiv2Iface::RotationMatrix::TransformationAction>; typename std::add_const<_Tp>::type = const QList<KExiv2Iface::RotationMatrix::TransformationAction>]’ is deprecated: Use std::as_const() instead. [-Wdeprecated-declarations]
+  175 |     for (const TransformationAction& action : qAsConst(actions))
+      |                                               ~~~~~~~~^~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qforeach.h:11,
+                 from /usr/include/qt6/QtCore/qglobal.h:57,
+                 from /usr/include/qt6/QtCore/qnamespace.h:12,
+                 from /usr/include/qt6/QtCore/qbytearray.h:9,
+                 from /usr/include/qt6/QtCore/QByteArray:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2.h:17,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/rotationmatrix.h:14,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/rotationmatrix.cpp:10:
+/usr/include/qt6/QtCore/qttypetraits.h:36:45: note: declared here
+   36 | constexpr typename std::add_const<T>::type &qAsConst(T &t) noexcept { return t; }
+      |                                             ^~~~~~~~
+[5/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2previews.cpp.o
+[6/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2gps.cpp.o
+[7/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2data.cpp.o
+[8/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2comments.cpp.o
+[9/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2.cpp: In static member function ‘static bool KExiv2Iface::KExiv2::initializeExiv2()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2.cpp:69:22: warning: ‘bool Exiv2::enableBMFF(bool)’ is deprecated [-Wdeprecated-declarations]
+   69 |     Exiv2::enableBMFF(true);
+      |     ~~~~~~~~~~~~~~~~~^~~~~~
+In file included from /usr/include/exiv2/exiv2.hpp:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2_p.h:44,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2.cpp:9:
+/usr/include/exiv2/bmffimage.hpp:16:30: note: declared here
+   16 | [[deprecated]] EXIV2API bool enableBMFF(bool enable = true);
+      |                              ^~~~~~~~~~
+[10/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2image.cpp.o
+[11/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2_p.cpp.o
+[12/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2exif.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2exif.cpp: In member function ‘QVariant KExiv2Iface::KExiv2::getExifTagVariant(const char*, bool, bool, int) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2exif.cpp:746:37: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  746 |                     if (it->count() > component)
+      |                         ~~~~~~~~~~~~^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2exif.cpp:763:41: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  763 |                         if (it->count() <= component)
+      |                             ~~~~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2exif.cpp:778:41: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  778 |                         if (it->count() <= component)
+      |                             ~~~~~~~~~~~~^~~~~~~~~~~~
+[13/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2iptc.cpp.o
+[14/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2xmp.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2xmp.cpp: In member function ‘QString KExiv2Iface::KExiv2::getXmpTagStringLangAlt(const char*, const QString&, bool) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2xmp.cpp:585:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  585 |                 for (int i = 0; i < it->count(); i++)
+      |                                 ~~^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2xmp.cpp: In member function ‘QStringList KExiv2Iface::KExiv2::getXmpTagStringSeq(const char*, bool) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2xmp.cpp:707:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  707 |                 for (int i = 0; i < it->count(); i++)
+      |                                 ~~^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2xmp.cpp: In member function ‘QStringList KExiv2Iface::KExiv2::getXmpTagStringBag(const char*, bool) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2xmp.cpp:812:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  812 |                 for (int i = 0; i < it->count(); i++)
+      |                                 ~~^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2xmp.cpp: In member function ‘QVariant KExiv2Iface::KExiv2::getXmpTagVariant(const char*, bool, bool) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2xmp.cpp:1027:37: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 1027 |                     for (int i=0; i < it->count(); i++)
+      |                                   ~~^~~~~~~~~~~~~
+[15/44] Linking CXX shared library bin/libKExiv2Qt6.so.5.1.0
+[16/44] Creating library symlink bin/libKExiv2Qt6.so.0 bin/libKExiv2Qt6.so
+[17/44] Automatic MOC for target erasetag
+[18/44] Automatic MOC for target loadfromba
+[19/44] Automatic MOC for target setiptcpreview
+[20/44] Automatic MOC for target usexmpsidecar
+[21/44] Automatic MOC for target setxmpface
+[22/44] Automatic MOC for target readimagewritexmpsidecar
+[23/44] Automatic MOC for target printtagslist
+[24/44] Building CXX object tests/CMakeFiles/setxmpface.dir/setxmpface_autogen/mocs_compilation.cpp.o
+[25/44] Building CXX object tests/CMakeFiles/erasetag.dir/erasetag_autogen/mocs_compilation.cpp.o
+[26/44] Building CXX object tests/CMakeFiles/loadfromba.dir/loadfromba_autogen/mocs_compilation.cpp.o
+[27/44] Building CXX object tests/CMakeFiles/setiptcpreview.dir/setiptcpreview_autogen/mocs_compilation.cpp.o
+[28/44] Building CXX object tests/CMakeFiles/usexmpsidecar.dir/usexmpsidecar_autogen/mocs_compilation.cpp.o
+[29/44] Building CXX object tests/CMakeFiles/printtagslist.dir/printtagslist_autogen/mocs_compilation.cpp.o
+[30/44] Building CXX object tests/CMakeFiles/readimagewritexmpsidecar.dir/readimagewritexmpsidecar_autogen/mocs_compilation.cpp.o
+[31/44] Building CXX object tests/CMakeFiles/usexmpsidecar.dir/usexmpsidecar.cpp.o
+[32/44] Building CXX object tests/CMakeFiles/readimagewritexmpsidecar.dir/readimagewritexmpsidecar.cpp.o
+[33/44] Building CXX object tests/CMakeFiles/erasetag.dir/erasetag.cpp.o
+[34/44] Building CXX object tests/CMakeFiles/setiptcpreview.dir/setiptcpreview.cpp.o
+[35/44] Building CXX object tests/CMakeFiles/printtagslist.dir/printtagslist.cpp.o
+[36/44] Linking CXX executable bin/usexmpsidecar
+[37/44] Linking CXX executable bin/readimagewritexmpsidecar
+[38/44] Linking CXX executable bin/erasetag
+[39/44] Linking CXX executable bin/setiptcpreview
+[40/44] Linking CXX executable bin/printtagslist
+[41/44] Building CXX object tests/CMakeFiles/setxmpface.dir/setxmpface.cpp.o
+[42/44] Building CXX object tests/CMakeFiles/loadfromba.dir/loadfromba.cpp.o
+[43/44] Linking CXX executable bin/setxmpface
+[44/44] Linking CXX executable bin/loadfromba
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/libKExiv2Qt6.so.5.1.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/libKExiv2Qt6.so.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/libKExiv2Qt6.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/KExiv2/KExiv2Data
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/KExiv2/KExiv2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/KExiv2/KExiv2Previews
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/KExiv2/RotationMatrix
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/kexiv2/kexiv2data.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/kexiv2/kexiv2.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/kexiv2/kexiv2previews.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/kexiv2/rotationmatrix.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/kexiv2/libkexiv2_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/include/KExiv2Qt6/libkexiv2_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/share/qlogging-categories6/libkexiv2.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/cmake/KExiv2Qt6/KExiv2Qt6Config.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/cmake/KExiv2Qt6/KExiv2Qt6ConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/cmake/KExiv2Qt6/KExiv2Qt6Targets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/cmake/KExiv2Qt6/KExiv2Qt6Targets-relwithdebinfo.cmake
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkexiv2/libkexiv2.info: No such file or directory
+exiv2
+extra-cmake-modules
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKExiv2Qt6.so	libKExiv2Qt6.so.0
+usr/lib64/libKExiv2Qt6.so.0	libKExiv2Qt6.so.5.1.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKExiv2Qt6.so )
+( cd usr/lib64 ; ln -sf libKExiv2Qt6.so.0 libKExiv2Qt6.so )
+( cd usr/lib64 ; rm -rf libKExiv2Qt6.so.0 )
+( cd usr/lib64 ; ln -sf libKExiv2Qt6.so.5.1.0 libKExiv2Qt6.so.0 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKExiv2Qt6.so'
+removed './usr/lib64/libKExiv2Qt6.so.0'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/libkexiv2/libkexiv2-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libkexiv2-25.04.1/
+usr/doc/libkexiv2-25.04.1/AUTHORS
+usr/doc/libkexiv2-25.04.1/README
+usr/doc/libkexiv2-25.04.1/libkexiv2.ini
+usr/doc/libkexiv2-25.04.1/slack-required
+usr/include/
+usr/include/KExiv2Qt6/
+usr/include/KExiv2Qt6/KExiv2/
+usr/include/KExiv2Qt6/KExiv2/KExiv2
+usr/include/KExiv2Qt6/KExiv2/KExiv2Data
+usr/include/KExiv2Qt6/KExiv2/KExiv2Previews
+usr/include/KExiv2Qt6/KExiv2/RotationMatrix
+usr/include/KExiv2Qt6/kexiv2/
+usr/include/KExiv2Qt6/kexiv2/kexiv2.h
+usr/include/KExiv2Qt6/kexiv2/kexiv2data.h
+usr/include/KExiv2Qt6/kexiv2/kexiv2previews.h
+usr/include/KExiv2Qt6/kexiv2/libkexiv2_export.h
+usr/include/KExiv2Qt6/kexiv2/rotationmatrix.h
+usr/include/KExiv2Qt6/libkexiv2_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KExiv2Qt6/
+usr/lib64/cmake/KExiv2Qt6/KExiv2Qt6Config.cmake
+usr/lib64/cmake/KExiv2Qt6/KExiv2Qt6ConfigVersion.cmake
+usr/lib64/cmake/KExiv2Qt6/KExiv2Qt6Targets-relwithdebinfo.cmake
+usr/lib64/cmake/KExiv2Qt6/KExiv2Qt6Targets.cmake
+usr/lib64/libKExiv2Qt6.so.5.1.0
+usr/share/
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/libkexiv2.categories
+
+Slackware package /tmp/libkexiv2/libkexiv2-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for libkexiv2-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/libkexiv2/libkexiv2-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/libkexiv2/libkexiv2-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/libkexiv2/libkexiv2-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in libkexiv2.tar.lz4 format.
+/tmp/libkexiv2 /tmp/libkexiv2
+/tmp/libkexiv2
+BIN_NAME
+README
+libkexiv2-25.04.1-x86_64-1_rtz.tlz
+libkexiv2-25.04.1-x86_64-1_rtz.tlz.md5
+libkexiv2-25.04.1-x86_64-1_rtz.tlz.so.file
+libkexiv2-25.04.1-x86_64-1_rtz.tlz.txt
+libkexiv2.dep
+makepkg-libkexiv2.log
+libkexiv2 build finished. Procced to installation...
+
++==========================================================================================================+
+| Upgrading libkexiv2-25.04.1-x86_64-1_rtz package using /tmp/libkexiv2/libkexiv2-25.04.1-x86_64-1_rtz.tlz |
++==========================================================================================================+
+
+Pre-installing package libkexiv2-25.04.1-x86_64-1_rtz...
+Removing package: libkexiv2-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:08:08
+Installing package libkexiv2-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# libkexiv2 (Library)
+#
+# Library to manipulate picture metadata
+#
+# https://www.kde.org/applications/graphics
+Executing install script for libkexiv2-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package libkexiv2-25.04.1-x86_64-1_rtz.tlz installed.
+Package libkexiv2-25.04.1-x86_64-1_rtz upgraded with new package /tmp/libkexiv2/libkexiv2-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'libkexiv2-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 16 seconds.

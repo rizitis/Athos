@@ -1,0 +1,1060 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: boost	extra-cmake-modules	kconfig	kcoreaddons	kdbusaddons	kglobalaccel	ki18n	kio	kwindowsystem	kxmlgui
+boost is already installed!
+extra-cmake-modules is already installed!
+kconfig is already installed!
+kcoreaddons is already installed!
+kdbusaddons is already installed!
+kglobalaccel is already installed!
+ki18n is already installed!
+kio is already installed!
+kwindowsystem is already installed!
+kxmlgui is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:30:21--  https://download.kde.org/stable/plasma/6.3.5/kactivitymanagerd-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kactivitymanagerd-6.3.5.tar.xz [following]
+--2025-05-10 22:30:21--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kactivitymanagerd-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 103196 (101K) [application/octet-stream]
+Saving to: ‘kactivitymanagerd-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 49% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 99% 1.57M 0s
+   100K                                                       100% 1.45T=0.07s
+
+2025-05-10 22:30:21 (1.46 MB/s) - ‘kactivitymanagerd-6.3.5.tar.xz’ saved [103196/103196]
+
+Found file: kactivitymanagerd-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kactivitymanagerd-6.3.5/
+kactivitymanagerd-6.3.5/TODO
+kactivitymanagerd-6.3.5/vim-extrarc
+kactivitymanagerd-6.3.5/docs/
+kactivitymanagerd-6.3.5/docs/Doxyfile.local
+kactivitymanagerd-6.3.5/.git-blame-ignore-revs
+kactivitymanagerd-6.3.5/LICENSES/
+kactivitymanagerd-6.3.5/LICENSES/GPL-2.0-only.txt
+kactivitymanagerd-6.3.5/LICENSES/LGPL-2.1-only.txt
+kactivitymanagerd-6.3.5/LICENSES/LGPL-3.0-only.txt
+kactivitymanagerd-6.3.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+kactivitymanagerd-6.3.5/LICENSES/GPL-2.0-or-later.txt
+kactivitymanagerd-6.3.5/LICENSES/CC0-1.0.txt
+kactivitymanagerd-6.3.5/LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+kactivitymanagerd-6.3.5/LICENSES/GPL-3.0-only.txt
+kactivitymanagerd-6.3.5/.vim-template:cpp
+kactivitymanagerd-6.3.5/MAINTAINER
+kactivitymanagerd-6.3.5/.gitlab-ci.yml
+kactivitymanagerd-6.3.5/README.developers
+kactivitymanagerd-6.3.5/.gitignore
+kactivitymanagerd-6.3.5/logo.png
+kactivitymanagerd-6.3.5/.kde-ci.yml
+kactivitymanagerd-6.3.5/.vim-template:h
+kactivitymanagerd-6.3.5/src/
+kactivitymanagerd-6.3.5/src/Messages.sh
+kactivitymanagerd-6.3.5/src/utils/
+kactivitymanagerd-6.3.5/src/utils/remove_if.h
+kactivitymanagerd-6.3.5/src/utils/qsqlquery_iterator.h
+kactivitymanagerd-6.3.5/src/utils/d_ptr_implementation.h
+kactivitymanagerd-6.3.5/src/utils/d_ptr.h
+kactivitymanagerd-6.3.5/src/utils/for_each_assoc.h
+kactivitymanagerd-6.3.5/src/utils/range.h
+kactivitymanagerd-6.3.5/src/utils/qsqlquery_iterator.cpp
+kactivitymanagerd-6.3.5/src/common/
+kactivitymanagerd-6.3.5/src/common/database/
+kactivitymanagerd-6.3.5/src/common/database/schema/
+kactivitymanagerd-6.3.5/src/common/database/schema/ResourcesDatabaseSchema.h
+kactivitymanagerd-6.3.5/src/common/database/schema/ResourcesDatabaseSchema.cpp
+kactivitymanagerd-6.3.5/src/common/database/Database.h
+kactivitymanagerd-6.3.5/src/common/database/Database.cpp
+kactivitymanagerd-6.3.5/src/common/dbus/
+kactivitymanagerd-6.3.5/src/common/dbus/org.kde.ActivityManager.ResourcesLinking.xml
+kactivitymanagerd-6.3.5/src/common/dbus/org.kde.ActivityManager.Activities.cpp
+kactivitymanagerd-6.3.5/src/common/dbus/org.kde.ActivityManager.Activities.h
+kactivitymanagerd-6.3.5/src/common/dbus/org.kde.ActivityManager.Features.xml
+kactivitymanagerd-6.3.5/src/common/dbus/common.h
+kactivitymanagerd-6.3.5/src/common/dbus/org.kde.ActivityManager.ResourcesScoring.xml
+kactivitymanagerd-6.3.5/src/common/dbus/org.kde.ActivityManager.Application.xml
+kactivitymanagerd-6.3.5/src/common/dbus/org.kde.ActivityManager.Activities.xml
+kactivitymanagerd-6.3.5/src/common/dbus/org.kde.ActivityManager.Resources.xml
+kactivitymanagerd-6.3.5/src/common/specialvalues.h
+kactivitymanagerd-6.3.5/src/kactivities-features.h.cmake
+kactivitymanagerd-6.3.5/src/plasma-kactivitymanagerd.service.in
+kactivitymanagerd-6.3.5/src/service/
+kactivitymanagerd-6.3.5/src/service/Activities_p.h
+kactivitymanagerd-6.3.5/src/service/Application.h
+kactivitymanagerd-6.3.5/src/service/Resources.h
+kactivitymanagerd-6.3.5/src/service/Module.h
+kactivitymanagerd-6.3.5/src/service/Activities.cpp
+kactivitymanagerd-6.3.5/src/service/Config.cpp
+kactivitymanagerd-6.3.5/src/service/Resources_p.h
+kactivitymanagerd-6.3.5/src/service/Features.cpp
+kactivitymanagerd-6.3.5/src/service/Plugin.cpp
+kactivitymanagerd-6.3.5/src/service/Config.h
+kactivitymanagerd-6.3.5/src/service/Event.cpp
+kactivitymanagerd-6.3.5/src/service/Resources.cpp
+kactivitymanagerd-6.3.5/src/service/Features.h
+kactivitymanagerd-6.3.5/src/service/Plugin.h
+kactivitymanagerd-6.3.5/src/service/plugins/
+kactivitymanagerd-6.3.5/src/service/plugins/libreoffice-spy/
+kactivitymanagerd-6.3.5/src/service/plugins/libreoffice-spy/LibreOfficeEventSpy.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/libreoffice-spy/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/plugins/libreoffice-spy/LibreOfficeEventSpy.h
+kactivitymanagerd-6.3.5/src/service/plugins/recentlyused-eventspy/
+kactivitymanagerd-6.3.5/src/service/plugins/recentlyused-eventspy/RecentlyUsedEventSpy.h
+kactivitymanagerd-6.3.5/src/service/plugins/recentlyused-eventspy/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/plugins/recentlyused-eventspy/RecentlyUsedEventSpy.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/runapplication/
+kactivitymanagerd-6.3.5/src/service/plugins/runapplication/RunApplicationPlugin.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/runapplication/RunApplicationPlugin.h
+kactivitymanagerd-6.3.5/src/service/plugins/runapplication/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/plugins/globalshortcuts/
+kactivitymanagerd-6.3.5/src/service/plugins/globalshortcuts/GlobalShortcutsPlugin.h
+kactivitymanagerd-6.3.5/src/service/plugins/globalshortcuts/GlobalShortcutsPlugin.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/globalshortcuts/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/plugins/activitytemplates/
+kactivitymanagerd-6.3.5/src/service/plugins/activitytemplates/org.kde.ActivityManager.Templates.xml
+kactivitymanagerd-6.3.5/src/service/plugins/activitytemplates/TemplatesPlugin.h
+kactivitymanagerd-6.3.5/src/service/plugins/activitytemplates/TemplatesPlugin.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/activitytemplates/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/StatsPlugin.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/ResourceScoreCache.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/Database.h
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/Database.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/ResourceLinking.h
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/StatsPlugin.h
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/ResourceScoreMaintainer.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/ResourceLinking.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/Utils.h
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/ResourceScoreCache.h
+kactivitymanagerd-6.3.5/src/service/plugins/sqlite/ResourceScoreMaintainer.h
+kactivitymanagerd-6.3.5/src/service/plugins/krunner/
+kactivitymanagerd-6.3.5/src/service/plugins/krunner/ActivityRunner.h
+kactivitymanagerd-6.3.5/src/service/plugins/krunner/ActivityRunner.cpp
+kactivitymanagerd-6.3.5/src/service/plugins/krunner/org.kde.krunner1.xml
+kactivitymanagerd-6.3.5/src/service/plugins/krunner/dbusutils.h
+kactivitymanagerd-6.3.5/src/service/plugins/krunner/plasma-runnners-activities.desktop
+kactivitymanagerd-6.3.5/src/service/plugins/krunner/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/plugins/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/Version.h
+kactivitymanagerd-6.3.5/src/service/ksmserver/
+kactivitymanagerd-6.3.5/src/service/ksmserver/KSMServer.h
+kactivitymanagerd-6.3.5/src/service/ksmserver/KSMServer_p.h
+kactivitymanagerd-6.3.5/src/service/ksmserver/KSMServer.cpp
+kactivitymanagerd-6.3.5/src/service/Application.cpp
+kactivitymanagerd-6.3.5/src/service/Activities.h
+kactivitymanagerd-6.3.5/src/service/Event.h
+kactivitymanagerd-6.3.5/src/service/CMakeLists.txt
+kactivitymanagerd-6.3.5/src/service/Module.cpp
+kactivitymanagerd-6.3.5/src/CMakeLists.txt
+kactivitymanagerd-6.3.5/CMakeLists.txt
+kactivitymanagerd-6.3.5/po/
+kactivitymanagerd-6.3.5/po/gl/
+kactivitymanagerd-6.3.5/po/gl/kactivities6.po
+kactivitymanagerd-6.3.5/po/eo/
+kactivitymanagerd-6.3.5/po/eo/kactivities6.po
+kactivitymanagerd-6.3.5/po/bs/
+kactivitymanagerd-6.3.5/po/bs/kactivities6.po
+kactivitymanagerd-6.3.5/po/he/
+kactivitymanagerd-6.3.5/po/he/kactivities6.po
+kactivitymanagerd-6.3.5/po/zh_CN/
+kactivitymanagerd-6.3.5/po/zh_CN/kactivities6.po
+kactivitymanagerd-6.3.5/po/th/
+kactivitymanagerd-6.3.5/po/th/kactivities6.po
+kactivitymanagerd-6.3.5/po/sr/
+kactivitymanagerd-6.3.5/po/sr/kactivities6.po
+kactivitymanagerd-6.3.5/po/sr@latin/
+kactivitymanagerd-6.3.5/po/sr@latin/kactivities6.po
+kactivitymanagerd-6.3.5/po/hi/
+kactivitymanagerd-6.3.5/po/hi/kactivities6.po
+kactivitymanagerd-6.3.5/po/bg/
+kactivitymanagerd-6.3.5/po/bg/kactivities6.po
+kactivitymanagerd-6.3.5/po/lv/
+kactivitymanagerd-6.3.5/po/lv/kactivities6.po
+kactivitymanagerd-6.3.5/po/ca@valencia/
+kactivitymanagerd-6.3.5/po/ca@valencia/kactivities6.po
+kactivitymanagerd-6.3.5/po/el/
+kactivitymanagerd-6.3.5/po/el/kactivities6.po
+kactivitymanagerd-6.3.5/po/kn/
+kactivitymanagerd-6.3.5/po/kn/kactivities6.po
+kactivitymanagerd-6.3.5/po/pt/
+kactivitymanagerd-6.3.5/po/pt/kactivities6.po
+kactivitymanagerd-6.3.5/po/nn/
+kactivitymanagerd-6.3.5/po/nn/kactivities6.po
+kactivitymanagerd-6.3.5/po/sr@ijekavian/
+kactivitymanagerd-6.3.5/po/sr@ijekavian/kactivities6.po
+kactivitymanagerd-6.3.5/po/fi/
+kactivitymanagerd-6.3.5/po/fi/kactivities6.po
+kactivitymanagerd-6.3.5/po/ka/
+kactivitymanagerd-6.3.5/po/ka/kactivities6.po
+kactivitymanagerd-6.3.5/po/ar/
+kactivitymanagerd-6.3.5/po/ar/kactivities6.po
+kactivitymanagerd-6.3.5/po/sk/
+kactivitymanagerd-6.3.5/po/sk/kactivities6.po
+kactivitymanagerd-6.3.5/po/pa/
+kactivitymanagerd-6.3.5/po/pa/kactivities6.po
+kactivitymanagerd-6.3.5/po/km/
+kactivitymanagerd-6.3.5/po/km/kactivities6.po
+kactivitymanagerd-6.3.5/po/ro/
+kactivitymanagerd-6.3.5/po/ro/kactivities6.po
+kactivitymanagerd-6.3.5/po/de/
+kactivitymanagerd-6.3.5/po/de/kactivities6.po
+kactivitymanagerd-6.3.5/po/is/
+kactivitymanagerd-6.3.5/po/is/kactivities6.po
+kactivitymanagerd-6.3.5/po/id/
+kactivitymanagerd-6.3.5/po/id/kactivities6.po
+kactivitymanagerd-6.3.5/po/tg/
+kactivitymanagerd-6.3.5/po/tg/kactivities6.po
+kactivitymanagerd-6.3.5/po/nds/
+kactivitymanagerd-6.3.5/po/nds/kactivities6.po
+kactivitymanagerd-6.3.5/po/ja/
+kactivitymanagerd-6.3.5/po/ja/kactivities6.po
+kactivitymanagerd-6.3.5/po/wa/
+kactivitymanagerd-6.3.5/po/wa/kactivities6.po
+kactivitymanagerd-6.3.5/po/ko/
+kactivitymanagerd-6.3.5/po/ko/kactivities6.po
+kactivitymanagerd-6.3.5/po/hu/
+kactivitymanagerd-6.3.5/po/hu/kactivities6.po
+kactivitymanagerd-6.3.5/po/sa/
+kactivitymanagerd-6.3.5/po/sa/kactivities6.po
+kactivitymanagerd-6.3.5/po/ru/
+kactivitymanagerd-6.3.5/po/ru/kactivities6.po
+kactivitymanagerd-6.3.5/po/kk/
+kactivitymanagerd-6.3.5/po/kk/kactivities6.po
+kactivitymanagerd-6.3.5/po/sl/
+kactivitymanagerd-6.3.5/po/sl/kactivities6.po
+kactivitymanagerd-6.3.5/po/ta/
+kactivitymanagerd-6.3.5/po/ta/kactivities6.po
+kactivitymanagerd-6.3.5/po/it/
+kactivitymanagerd-6.3.5/po/it/kactivities6.po
+kactivitymanagerd-6.3.5/po/mr/
+kactivitymanagerd-6.3.5/po/mr/kactivities6.po
+kactivitymanagerd-6.3.5/po/ga/
+kactivitymanagerd-6.3.5/po/ga/kactivities6.po
+kactivitymanagerd-6.3.5/po/pt_BR/
+kactivitymanagerd-6.3.5/po/pt_BR/kactivities6.po
+kactivitymanagerd-6.3.5/po/tr/
+kactivitymanagerd-6.3.5/po/tr/kactivities6.po
+kactivitymanagerd-6.3.5/po/et/
+kactivitymanagerd-6.3.5/po/et/kactivities6.po
+kactivitymanagerd-6.3.5/po/ca/
+kactivitymanagerd-6.3.5/po/ca/kactivities6.po
+kactivitymanagerd-6.3.5/po/se/
+kactivitymanagerd-6.3.5/po/se/kactivities6.po
+kactivitymanagerd-6.3.5/po/vi/
+kactivitymanagerd-6.3.5/po/vi/kactivities6.po
+kactivitymanagerd-6.3.5/po/nl/
+kactivitymanagerd-6.3.5/po/nl/kactivities6.po
+kactivitymanagerd-6.3.5/po/pl/
+kactivitymanagerd-6.3.5/po/pl/kactivities6.po
+kactivitymanagerd-6.3.5/po/sr@ijekavianlatin/
+kactivitymanagerd-6.3.5/po/sr@ijekavianlatin/kactivities6.po
+kactivitymanagerd-6.3.5/po/ms/
+kactivitymanagerd-6.3.5/po/ms/kactivities6.po
+kactivitymanagerd-6.3.5/po/nb/
+kactivitymanagerd-6.3.5/po/nb/kactivities6.po
+kactivitymanagerd-6.3.5/po/ml/
+kactivitymanagerd-6.3.5/po/ml/kactivities6.po
+kactivitymanagerd-6.3.5/po/hr/
+kactivitymanagerd-6.3.5/po/hr/kactivities6.po
+kactivitymanagerd-6.3.5/po/eu/
+kactivitymanagerd-6.3.5/po/eu/kactivities6.po
+kactivitymanagerd-6.3.5/po/cs/
+kactivitymanagerd-6.3.5/po/cs/kactivities6.po
+kactivitymanagerd-6.3.5/po/gu/
+kactivitymanagerd-6.3.5/po/gu/kactivities6.po
+kactivitymanagerd-6.3.5/po/az/
+kactivitymanagerd-6.3.5/po/az/kactivities6.po
+kactivitymanagerd-6.3.5/po/fr/
+kactivitymanagerd-6.3.5/po/fr/kactivities6.po
+kactivitymanagerd-6.3.5/po/zh_TW/
+kactivitymanagerd-6.3.5/po/zh_TW/kactivities6.po
+kactivitymanagerd-6.3.5/po/uk/
+kactivitymanagerd-6.3.5/po/uk/kactivities6.po
+kactivitymanagerd-6.3.5/po/sv/
+kactivitymanagerd-6.3.5/po/sv/kactivities6.po
+kactivitymanagerd-6.3.5/po/ug/
+kactivitymanagerd-6.3.5/po/ug/kactivities6.po
+kactivitymanagerd-6.3.5/po/en_GB/
+kactivitymanagerd-6.3.5/po/en_GB/kactivities6.po
+kactivitymanagerd-6.3.5/po/da/
+kactivitymanagerd-6.3.5/po/da/kactivities6.po
+kactivitymanagerd-6.3.5/po/es/
+kactivitymanagerd-6.3.5/po/es/kactivities6.po
+kactivitymanagerd-6.3.5/po/ast/
+kactivitymanagerd-6.3.5/po/ast/kactivities6.po
+kactivitymanagerd-6.3.5/po/ia/
+kactivitymanagerd-6.3.5/po/ia/kactivities6.po
+kactivitymanagerd-6.3.5/po/lt/
+kactivitymanagerd-6.3.5/po/lt/kactivities6.po
+kactivitymanagerd-6.3.5/po/gd/
+kactivitymanagerd-6.3.5/po/gd/kactivities6.po
+kactivitymanagerd-6.3.5/README.md
+kactivitymanagerd-6.3.5/.videproject/
+kactivitymanagerd-6.3.5/.videproject/vimrc
+kactivitymanagerd-6.3.5/.videproject/project.conf
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+CMake Warning (dev) at src/CMakeLists.txt:5 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib64/cmake/Boost-1.88.0/BoostConfig.cmake (found suitable version "1.88.0", minimum required is "1.58")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6Sql
+
+-- The following REQUIRED packages have been found:
+
+ * Qt6DBus (required version >= 6.7.0)
+ * KF6DBusAddons (required version >= 6.10.0)
+ * Qt6Core (required version >= 6.7.0)
+ * Qt6Widgets (required version >= 6.7.0)
+ * boost_headers (required version == 1.88.0)
+ * Boost (required version >= 1.58), Boost C++ Libraries, <https://www.boost.org>
+ * ECM (required version >= 0.0.8), Extra CMake Modules., <https://projects.kde.org/projects/kdesupport/extra-cmake-modules>
+ * Qt6
+ * KF6Config (required version >= 6.10.0)
+ * KF6CoreAddons (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.10.0)
+ * KF6WindowSystem (required version >= 6.10.0)
+ * KF6GlobalAccel (required version >= 6.10.0)
+ * KF6XmlGui (required version >= 6.10.0)
+ * KF6KIO (required version >= 6.10.0)
+ * KF6Crash (required version >= 6.10.0)
+
+-- Configuring done (1.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/work/kactivitymanagerd-6.3.5/build
+[1/82] Generating ts...
+[2/82] Automatic MOC for target debug_STATIC
+[3/82] Building CXX object src/CMakeFiles/debug_STATIC.dir/debug_STATIC_autogen/mocs_compilation.cpp.o
+[4/82] Generating mo...
+[5/82] Building CXX object src/CMakeFiles/debug_STATIC.dir/DebugResources.cpp.o
+[6/82] Building CXX object src/CMakeFiles/debug_STATIC.dir/DebugActivities.cpp.o
+[7/82] Building CXX object src/CMakeFiles/debug_STATIC.dir/DebugApplication.cpp.o
+[8/82] Linking CXX static library lib/libdebug_STATIC.a
+[9/82] Automatic MOC for target kactivitymanagerd_plugin
+[10/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd_plugin.dir/kactivitymanagerd_plugin_autogen/mocs_compilation.cpp.o
+[11/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd_plugin.dir/Event.cpp.o
+[12/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd_plugin.dir/Module.cpp.o
+[13/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd_plugin.dir/Plugin.cpp.o
+[14/82] Linking CXX shared library bin/libkactivitymanagerd_plugin.so
+[15/82] Automatic MOC for target org.kde.ActivityManager.ActivityRunner
+[16/82] Generating krunner1adaptor.cpp, krunner1adaptor.h
+[17/82] Generating moc_krunner1adaptor.cpp
+[18/82] Automatic MOC for target kactivitymanagerd
+[19/82] Generating resourcesadaptor.cpp, resourcesadaptor.h
+[20/82] Generating featuresadaptor.cpp, featuresadaptor.h
+[21/82] Automatic MOC for target org.kde.ActivityManager.ActivityTemplates
+[22/82] Automatic MOC for target org.kde.ActivityManager.LibreOfficeEventSpy
+[23/82] Generating activitiesadaptor.cpp, activitiesadaptor.h
+[24/82] Generating moc_featuresadaptor.cpp
+[25/82] Generating moc_resourcesadaptor.cpp
+[26/82] Generating moc_activitiesadaptor.cpp
+[27/82] Building CXX object src/service/plugins/krunner/CMakeFiles/org.kde.ActivityManager.ActivityRunner.dir/org.kde.ActivityManager.ActivityRunner_autogen/mocs_compilation.cpp.o
+[28/82] Generating templatesadaptor.cpp, templatesadaptor.h
+[29/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/kactivitymanagerd_autogen/mocs_compilation.cpp.o
+[30/82] Generating moc_templatesadaptor.cpp
+[31/82] Automatic MOC for target org.kde.ActivityManager.RunApplication
+[32/82] Automatic MOC for target org.kde.ActivityManager.RecentlyUsedEventSpy
+[33/82] Building CXX object src/service/plugins/activitytemplates/CMakeFiles/org.kde.ActivityManager.ActivityTemplates.dir/org.kde.ActivityManager.ActivityTemplates_autogen/mocs_compilation.cpp.o
+[34/82] Building CXX object src/service/plugins/runapplication/CMakeFiles/org.kde.ActivityManager.RunApplication.dir/org.kde.ActivityManager.RunApplication_autogen/mocs_compilation.cpp.o
+[35/82] Automatic MOC for target org.kde.ActivityManager.GlobalShortcuts
+[36/82] Building CXX object src/service/plugins/recentlyused-eventspy/CMakeFiles/org.kde.ActivityManager.RecentlyUsedEventSpy.dir/org.kde.ActivityManager.RecentlyUsedEventSpy_autogen/mocs_compilation.cpp.o
+[37/82] Building CXX object src/service/plugins/globalshortcuts/CMakeFiles/org.kde.ActivityManager.GlobalShortcuts.dir/org.kde.ActivityManager.GlobalShortcuts_autogen/mocs_compilation.cpp.o
+[38/82] Automatic MOC for target org.kde.ActivityManager.ResourceScoring
+[39/82] Generating resourcelinkingadaptor.cpp, resourcelinkingadaptor.h
+[40/82] Generating resourcescoringadaptor.cpp, resourcescoringadaptor.h
+[41/82] Generating moc_resourcelinkingadaptor.cpp
+[42/82] Generating moc_resourcescoringadaptor.cpp
+[43/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/org.kde.ActivityManager.ResourceScoring_autogen/mocs_compilation.cpp.o
+[44/82] Building CXX object src/service/plugins/recentlyused-eventspy/CMakeFiles/org.kde.ActivityManager.RecentlyUsedEventSpy.dir/DebugPluginRecentlyUsedEventSpy.cpp.o
+[45/82] Building CXX object src/service/plugins/libreoffice-spy/CMakeFiles/org.kde.ActivityManager.LibreOfficeEventSpy.dir/DebugLibreOfficeEventSpy.cpp.o
+[46/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/ksmserver/KSMServer.cpp.o
+[47/82] Building CXX object src/service/plugins/libreoffice-spy/CMakeFiles/org.kde.ActivityManager.LibreOfficeEventSpy.dir/org.kde.ActivityManager.LibreOfficeEventSpy_autogen/mocs_compilation.cpp.o
+[48/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Config.cpp.o
+[49/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/Database.cpp.o
+[50/82] Building CXX object src/service/plugins/libreoffice-spy/CMakeFiles/org.kde.ActivityManager.LibreOfficeEventSpy.dir/LibreOfficeEventSpy.cpp.o
+[51/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/__/common/dbus/org.kde.ActivityManager.Activities.cpp.o
+[52/82] Building CXX object src/service/plugins/globalshortcuts/CMakeFiles/org.kde.ActivityManager.GlobalShortcuts.dir/GlobalShortcutsPlugin.cpp.o
+[53/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/featuresadaptor.cpp.o
+[54/82] Linking CXX shared module bin/kactivitymanagerd1/org.kde.ActivityManager.GlobalShortcuts.so
+[55/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Application.cpp.o
+[56/82] Building CXX object src/service/plugins/runapplication/CMakeFiles/org.kde.ActivityManager.RunApplication.dir/RunApplicationPlugin.cpp.o
+[57/82] Linking CXX shared module bin/kactivitymanagerd1/org.kde.ActivityManager.LibreOfficeEventSpy.so
+[58/82] Linking CXX shared module bin/kactivitymanagerd1/org.kde.ActivityManager.RunApplication.so
+[59/82] Building CXX object src/service/plugins/recentlyused-eventspy/CMakeFiles/org.kde.ActivityManager.RecentlyUsedEventSpy.dir/RecentlyUsedEventSpy.cpp.o
+[60/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/resourcesadaptor.cpp.o
+[61/82] Linking CXX shared module bin/kactivitymanagerd1/org.kde.ActivityManager.RecentlyUsedEventSpy.so
+[62/82] Building CXX object src/service/plugins/activitytemplates/CMakeFiles/org.kde.ActivityManager.ActivityTemplates.dir/templatesadaptor.cpp.o
+[63/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Features.cpp.o
+[64/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Resources.cpp.o
+[65/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/activitiesadaptor.cpp.o
+[66/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/ResourceScoreMaintainer.cpp.o
+[67/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/__/__/__/utils/qsqlquery_iterator.cpp.o
+[68/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/ResourceScoreCache.cpp.o
+[69/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/__/__/__/common/database/Database.cpp.o
+[70/82] Building CXX object src/service/plugins/activitytemplates/CMakeFiles/org.kde.ActivityManager.ActivityTemplates.dir/TemplatesPlugin.cpp.o
+[71/82] Linking CXX shared module bin/kactivitymanagerd1/org.kde.ActivityManager.ActivityTemplates.so
+[72/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/__/__/__/common/database/schema/ResourcesDatabaseSchema.cpp.o
+[73/82] Building CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Activities.cpp.o
+[74/82] Linking CXX executable bin/kactivitymanagerd
+[75/82] Building CXX object src/service/plugins/krunner/CMakeFiles/org.kde.ActivityManager.ActivityRunner.dir/ActivityRunner.cpp.o
+[76/82] Building CXX object src/service/plugins/krunner/CMakeFiles/org.kde.ActivityManager.ActivityRunner.dir/krunner1adaptor.cpp.o
+[77/82] Linking CXX shared module bin/kactivitymanagerd1/org.kde.ActivityManager.ActivityRunner.so
+[78/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/resourcescoringadaptor.cpp.o
+[79/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/resourcelinkingadaptor.cpp.o
+[80/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/ResourceLinking.cpp.o
+[81/82] Building CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/StatsPlugin.cpp.o
+[82/82] Linking CXX shared module bin/kactivitymanagerd1/org.kde.ActivityManager.ResourceScoring.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/da/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ms
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ms/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/cs/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ja/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@ijekavian/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/de/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/el/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nn/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hi/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pt_BR/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/lt/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pa/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sl/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ta/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gu/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ro/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/bs/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/is/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/wa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/wa/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/kk/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sr@latin/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/he/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/zh_TW/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/tg/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pl/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/km/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/pt/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hr/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/az/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/tr/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/fr/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ast/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/vi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/vi/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ka/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/th/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gl/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ia/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/hu/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/eo/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/bg/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/kn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/kn/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ga/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ca/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/uk/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/id/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/en_GB/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/zh_CN/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nl/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sa/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/fi/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ko/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ru/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/lv/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gd
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gd/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/gd/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ml/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ca@valencia/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nb/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/es/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/eu/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/et/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/it/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/se
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/se/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/se/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ar/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/nds/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/mr/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/ug/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sk/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/locale/sv/LC_MESSAGES/kactivities6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/dbus-1/services/org.kde.ActivityManager.service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib/systemd/user/plasma-kactivitymanagerd.service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ResourceScoring.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ResourceScoring.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityTemplates.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityTemplates.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.GlobalShortcuts.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.GlobalShortcuts.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RecentlyUsedEventSpy.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RecentlyUsedEventSpy.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RunApplication.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RunApplication.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityRunner.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityRunner.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/krunner/dbusplugins/plasma-runnners-activities.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.LibreOfficeEventSpy.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.LibreOfficeEventSpy.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/libexec/kactivitymanagerd
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/libexec/kactivitymanagerd" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/lib64/libkactivitymanagerd_plugin.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/package-kactivitymanagerd/usr/share/qlogging-categories6/kactivitymanagerd.categories
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kactivitymanagerd/kactivitymanagerd.info: No such file or directory
+boost
+extra-cmake-modules
+kconfig
+kcoreaddons
+kdbusaddons
+kglobalaccel
+ki18n
+kio
+kwindowsystem
+kxmlgui
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kactivitymanagerd/kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kactivitymanagerd-6.3.5/
+usr/doc/kactivitymanagerd-6.3.5/README.developers
+usr/doc/kactivitymanagerd-6.3.5/README.md
+usr/doc/kactivitymanagerd-6.3.5/docs/
+usr/doc/kactivitymanagerd-6.3.5/docs/Doxyfile.local
+usr/doc/kactivitymanagerd-6.3.5/kactivitymanagerd.ini
+usr/doc/kactivitymanagerd-6.3.5/slack-required
+usr/lib/
+usr/lib64/
+usr/lib64/libexec/
+usr/lib64/libexec/kactivitymanagerd
+usr/lib64/libkactivitymanagerd_plugin.so
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/kactivitymanagerd1/
+usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityRunner.so
+usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityTemplates.so
+usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.GlobalShortcuts.so
+usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.LibreOfficeEventSpy.so
+usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RecentlyUsedEventSpy.so
+usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ResourceScoring.so
+usr/lib64/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RunApplication.so
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.kde.ActivityManager.service
+usr/share/krunner/
+usr/share/krunner/dbusplugins/
+usr/share/krunner/dbusplugins/plasma-runnners-activities.desktop
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/kactivities6.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/kactivities6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kactivities6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kactivities6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kactivities6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/kactivities6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kactivities6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/kactivities6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kactivities6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kactivities6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kactivities6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/kactivities6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kactivities6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kactivities6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/kactivities6.mo
+usr/share/locale/gd/
+usr/share/locale/gd/LC_MESSAGES/
+usr/share/locale/gd/LC_MESSAGES/kactivities6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kactivities6.mo
+usr/share/locale/gu/
+usr/share/locale/gu/LC_MESSAGES/
+usr/share/locale/gu/LC_MESSAGES/kactivities6.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kactivities6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kactivities6.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/kactivities6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kactivities6.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/kactivities6.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/kactivities6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kactivities6.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/kactivities6.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/kactivities6.mo
+usr/share/locale/kn/
+usr/share/locale/kn/LC_MESSAGES/
+usr/share/locale/kn/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kactivities6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kactivities6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/kactivities6.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/kactivities6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/kactivities6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/kactivities6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kactivities6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kactivities6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kactivities6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kactivities6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kactivities6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kactivities6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kactivities6.mo
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/kactivities6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kactivities6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kactivities6.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/kactivities6.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kactivities6.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kactivities6.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/kactivities6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/kactivities6.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/kactivities6.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/kactivities6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kactivities6.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/kactivities6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kactivities6.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/kactivities6.mo
+usr/share/locale/wa/
+usr/share/locale/wa/LC_MESSAGES/
+usr/share/locale/wa/LC_MESSAGES/kactivities6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kactivities6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kactivities6.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kactivitymanagerd.categories
+
+Slackware package /tmp/kactivitymanagerd/kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/kactivitymanagerd/kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/kactivitymanagerd/kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/kactivitymanagerd/kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kactivitymanagerd.tar.lz4 format.
+/tmp/kactivitymanagerd /tmp/kactivitymanagerd
+/tmp/kactivitymanagerd
+BIN_NAME
+README
+kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz
+kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz.md5
+kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz.so.file
+kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz.txt
+kactivitymanagerd.dep
+makepkg-kactivitymanagerd.log
+kactivitymanagerd build finished. Procced to installation...
+
++==============================================================================================================================+
+| Upgrading kactivitymanagerd-6.3.5-x86_64-1_rtz package using /tmp/kactivitymanagerd/kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz |
++==============================================================================================================================+
+
+Pre-installing package kactivitymanagerd-6.3.5-x86_64-1_rtz...
+Removing package: kactivitymanagerd-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:30:51
+Installing package kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kactivitymanagerd (System service manage user's activities)
+#
+# System service to manage user's activities and track the usage
+# patterns
+#
+# https://kde.org/plasma-desktop/
+Executing install script for kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz installed.
+Package kactivitymanagerd-6.3.5-x86_64-1_rtz upgraded with new package /tmp/kactivitymanagerd/kactivitymanagerd-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kactivitymanagerd-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 36 seconds.

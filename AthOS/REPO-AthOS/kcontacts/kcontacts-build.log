@@ -1,0 +1,1442 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules	kcodecs	kconfig	kcoreaddons	ki18n
+doxygen is already installed!
+extra-cmake-modules is already installed!
+kcodecs is already installed!
+kconfig is already installed!
+kcoreaddons is already installed!
+ki18n is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:08:21--  https://download.kde.org/stable/frameworks/6.14/kcontacts-6.14.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kcontacts-6.14.0.tar.xz [following]
+--2025-05-10 22:08:21--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kcontacts-6.14.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 209296 (204K) [application/octet-stream]
+Saving to: ‘kcontacts-6.14.0.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 24% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 48% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 73% 6.68M 0s
+   150K .......... .......... .......... .......... .......... 97% 1.99M 0s
+   200K ....                                                  100% 8.18T=0.1s
+
+2025-05-10 22:08:21 (1.95 MB/s) - ‘kcontacts-6.14.0.tar.xz’ saved [209296/209296]
+
+Found file: kcontacts-6.14.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kcontacts-6.14.0/
+kcontacts-6.14.0/.git-blame-ignore-revs
+kcontacts-6.14.0/.gitignore
+kcontacts-6.14.0/.gitlab-ci.yml
+kcontacts-6.14.0/.kde-ci.yml
+kcontacts-6.14.0/.krazy
+kcontacts-6.14.0/CMakeLists.txt
+kcontacts-6.14.0/KF6ContactsConfig.cmake.in
+kcontacts-6.14.0/LICENSES/
+kcontacts-6.14.0/LICENSES/BSD-3-Clause.txt
+kcontacts-6.14.0/LICENSES/CC0-1.0.txt
+kcontacts-6.14.0/LICENSES/LGPL-2.0-or-later.txt
+kcontacts-6.14.0/LICENSES/MIT.txt
+kcontacts-6.14.0/LICENSES/Unicode-DFS-2016.txt
+kcontacts-6.14.0/README.md
+kcontacts-6.14.0/autotests/
+kcontacts-6.14.0/autotests/CMakeLists.txt
+kcontacts-6.14.0/autotests/addresseetest.cpp
+kcontacts-6.14.0/autotests/addresseetest.h
+kcontacts-6.14.0/autotests/addressformattest.cpp
+kcontacts-6.14.0/autotests/addresstest.cpp
+kcontacts-6.14.0/autotests/addresstest.h
+kcontacts-6.14.0/autotests/birthdaytest.cpp
+kcontacts-6.14.0/autotests/birthdaytest.h
+kcontacts-6.14.0/autotests/calendarurltest.cpp
+kcontacts-6.14.0/autotests/calendarurltest.h
+kcontacts-6.14.0/autotests/clientpidmaptest.cpp
+kcontacts-6.14.0/autotests/clientpidmaptest.h
+kcontacts-6.14.0/autotests/contactgrouptest.cpp
+kcontacts-6.14.0/autotests/customidentifiertest.cpp
+kcontacts-6.14.0/autotests/customidentifiertest.h
+kcontacts-6.14.0/autotests/data/
+kcontacts-6.14.0/autotests/data/testfullvcard.vcf
+kcontacts-6.14.0/autotests/data/testfullvcard.vcf.ref
+kcontacts-6.14.0/autotests/data/v4_0.vcard1.vcf.ref
+kcontacts-6.14.0/autotests/data/v4_0.vcard2.vcf.ref
+kcontacts-6.14.0/autotests/data/v4_0.vcard3.vcf.ref
+kcontacts-6.14.0/autotests/data/v4_0.vcard4.vcf.ref
+kcontacts-6.14.0/autotests/data/v4_0.vcard5.vcf.ref
+kcontacts-6.14.0/autotests/data/v4_0.vcard6.vcf.ref
+kcontacts-6.14.0/autotests/data/v4_0.vcard7.vcf.ref
+kcontacts-6.14.0/autotests/data/v4_0.vcard8.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard1.vcf
+kcontacts-6.14.0/autotests/data/vcard1.vcf.2_1ref
+kcontacts-6.14.0/autotests/data/vcard1.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard10.vcf
+kcontacts-6.14.0/autotests/data/vcard10.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard11.vcf
+kcontacts-6.14.0/autotests/data/vcard11.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard12.vcf
+kcontacts-6.14.0/autotests/data/vcard12.vcf.2_1ref
+kcontacts-6.14.0/autotests/data/vcard12.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard13.vcf
+kcontacts-6.14.0/autotests/data/vcard13.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard14.vcf
+kcontacts-6.14.0/autotests/data/vcard14.vcf.2_1ref
+kcontacts-6.14.0/autotests/data/vcard14.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard15.vcf
+kcontacts-6.14.0/autotests/data/vcard15.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard2.vcf
+kcontacts-6.14.0/autotests/data/vcard2.vcf.2_1ref
+kcontacts-6.14.0/autotests/data/vcard2.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard3.vcf
+kcontacts-6.14.0/autotests/data/vcard3.vcf.2_1ref
+kcontacts-6.14.0/autotests/data/vcard3.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard4.vcf
+kcontacts-6.14.0/autotests/data/vcard4.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard5.vcf
+kcontacts-6.14.0/autotests/data/vcard5.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard6.vcf
+kcontacts-6.14.0/autotests/data/vcard6.vcf.2_1ref
+kcontacts-6.14.0/autotests/data/vcard6.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard7.vcf
+kcontacts-6.14.0/autotests/data/vcard7.vcf.2_1ref
+kcontacts-6.14.0/autotests/data/vcard7.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard8.vcf
+kcontacts-6.14.0/autotests/data/vcard8.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard9.vcf
+kcontacts-6.14.0/autotests/data/vcard9.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard_extension_case_normalization.vcf
+kcontacts-6.14.0/autotests/data/vcard_extension_case_normalization.vcf.ref
+kcontacts-6.14.0/autotests/data/vcard_legacy_messaging_fields.vcf
+kcontacts-6.14.0/autotests/data/vcard_legacy_messaging_fields.vcf.ref
+kcontacts-6.14.0/autotests/data/vcardwithitemasapplesupport.vcf
+kcontacts-6.14.0/autotests/data/vcardwithitemasapplesupport.vcf.ref
+kcontacts-6.14.0/autotests/datetimetest.cpp
+kcontacts-6.14.0/autotests/datetimetest.h
+kcontacts-6.14.0/autotests/emailtest.cpp
+kcontacts-6.14.0/autotests/emailtest.h
+kcontacts-6.14.0/autotests/fieldgrouptest.cpp
+kcontacts-6.14.0/autotests/fieldgrouptest.h
+kcontacts-6.14.0/autotests/gendertest.cpp
+kcontacts-6.14.0/autotests/gendertest.h
+kcontacts-6.14.0/autotests/geotest.cpp
+kcontacts-6.14.0/autotests/geotest.h
+kcontacts-6.14.0/autotests/importexportvcardtest.cpp
+kcontacts-6.14.0/autotests/importexportvcardtest.h
+kcontacts-6.14.0/autotests/impptest.cpp
+kcontacts-6.14.0/autotests/impptest.h
+kcontacts-6.14.0/autotests/keytest.cpp
+kcontacts-6.14.0/autotests/keytest.h
+kcontacts-6.14.0/autotests/langtest.cpp
+kcontacts-6.14.0/autotests/langtest.h
+kcontacts-6.14.0/autotests/ldifconvertertest.cpp
+kcontacts-6.14.0/autotests/ldifconvertertest.h
+kcontacts-6.14.0/autotests/nicknametest.cpp
+kcontacts-6.14.0/autotests/nicknametest.h
+kcontacts-6.14.0/autotests/orgtest.cpp
+kcontacts-6.14.0/autotests/orgtest.h
+kcontacts-6.14.0/autotests/phonenumbertest.cpp
+kcontacts-6.14.0/autotests/phonenumbertest.h
+kcontacts-6.14.0/autotests/picturetest.cpp
+kcontacts-6.14.0/autotests/picturetest.h
+kcontacts-6.14.0/autotests/relatedtest.cpp
+kcontacts-6.14.0/autotests/relatedtest.h
+kcontacts-6.14.0/autotests/resourcelocatorurltest.cpp
+kcontacts-6.14.0/autotests/resourcelocatorurltest.h
+kcontacts-6.14.0/autotests/roletest.cpp
+kcontacts-6.14.0/autotests/roletest.h
+kcontacts-6.14.0/autotests/secrecytest.cpp
+kcontacts-6.14.0/autotests/secrecytest.h
+kcontacts-6.14.0/autotests/soundtest.cpp
+kcontacts-6.14.0/autotests/soundtest.h
+kcontacts-6.14.0/autotests/testlock.h
+kcontacts-6.14.0/autotests/testroundtrip.cpp
+kcontacts-6.14.0/autotests/testroundtrip.qrc
+kcontacts-6.14.0/autotests/timezonetest.cpp
+kcontacts-6.14.0/autotests/timezonetest.h
+kcontacts-6.14.0/autotests/titletest.cpp
+kcontacts-6.14.0/autotests/titletest.h
+kcontacts-6.14.0/autotests/vcarddragtest.cpp
+kcontacts-6.14.0/autotests/vcardlinetest.cpp
+kcontacts-6.14.0/autotests/vcardlinetest.h
+kcontacts-6.14.0/autotests/vcardtool_benchmark.cpp
+kcontacts-6.14.0/autotests/vcardtool_benchmark.h
+kcontacts-6.14.0/docs/
+kcontacts-6.14.0/docs/AddressFormat.md
+kcontacts-6.14.0/docs/Doxyfile.local
+kcontacts-6.14.0/metainfo.yaml
+kcontacts-6.14.0/po/
+kcontacts-6.14.0/po/ar/
+kcontacts-6.14.0/po/ar/kcontacts6.po
+kcontacts-6.14.0/po/ast/
+kcontacts-6.14.0/po/ast/kcontacts6.po
+kcontacts-6.14.0/po/az/
+kcontacts-6.14.0/po/az/kcontacts6.po
+kcontacts-6.14.0/po/be/
+kcontacts-6.14.0/po/be/kcontacts6.po
+kcontacts-6.14.0/po/bg/
+kcontacts-6.14.0/po/bg/kcontacts6.po
+kcontacts-6.14.0/po/bs/
+kcontacts-6.14.0/po/bs/kcontacts6.po
+kcontacts-6.14.0/po/ca/
+kcontacts-6.14.0/po/ca/kcontacts6.po
+kcontacts-6.14.0/po/ca@valencia/
+kcontacts-6.14.0/po/ca@valencia/kcontacts6.po
+kcontacts-6.14.0/po/cs/
+kcontacts-6.14.0/po/cs/kcontacts6.po
+kcontacts-6.14.0/po/da/
+kcontacts-6.14.0/po/da/kcontacts6.po
+kcontacts-6.14.0/po/de/
+kcontacts-6.14.0/po/de/kcontacts6.po
+kcontacts-6.14.0/po/el/
+kcontacts-6.14.0/po/el/kcontacts6.po
+kcontacts-6.14.0/po/en_GB/
+kcontacts-6.14.0/po/en_GB/kcontacts6.po
+kcontacts-6.14.0/po/eo/
+kcontacts-6.14.0/po/eo/kcontacts6.po
+kcontacts-6.14.0/po/es/
+kcontacts-6.14.0/po/es/kcontacts6.po
+kcontacts-6.14.0/po/et/
+kcontacts-6.14.0/po/et/kcontacts6.po
+kcontacts-6.14.0/po/eu/
+kcontacts-6.14.0/po/eu/kcontacts6.po
+kcontacts-6.14.0/po/fi/
+kcontacts-6.14.0/po/fi/kcontacts6.po
+kcontacts-6.14.0/po/fr/
+kcontacts-6.14.0/po/fr/kcontacts6.po
+kcontacts-6.14.0/po/ga/
+kcontacts-6.14.0/po/ga/kcontacts6.po
+kcontacts-6.14.0/po/gl/
+kcontacts-6.14.0/po/gl/kcontacts6.po
+kcontacts-6.14.0/po/he/
+kcontacts-6.14.0/po/he/kcontacts6.po
+kcontacts-6.14.0/po/hi/
+kcontacts-6.14.0/po/hi/kcontacts6.po
+kcontacts-6.14.0/po/hne/
+kcontacts-6.14.0/po/hne/kcontacts6.po
+kcontacts-6.14.0/po/hu/
+kcontacts-6.14.0/po/hu/kcontacts6.po
+kcontacts-6.14.0/po/ia/
+kcontacts-6.14.0/po/ia/kcontacts6.po
+kcontacts-6.14.0/po/id/
+kcontacts-6.14.0/po/id/kcontacts6.po
+kcontacts-6.14.0/po/it/
+kcontacts-6.14.0/po/it/kcontacts6.po
+kcontacts-6.14.0/po/ja/
+kcontacts-6.14.0/po/ja/kcontacts6.po
+kcontacts-6.14.0/po/ka/
+kcontacts-6.14.0/po/ka/kcontacts6.po
+kcontacts-6.14.0/po/kk/
+kcontacts-6.14.0/po/kk/kcontacts6.po
+kcontacts-6.14.0/po/km/
+kcontacts-6.14.0/po/km/kcontacts6.po
+kcontacts-6.14.0/po/ko/
+kcontacts-6.14.0/po/ko/kcontacts6.po
+kcontacts-6.14.0/po/lt/
+kcontacts-6.14.0/po/lt/kcontacts6.po
+kcontacts-6.14.0/po/lv/
+kcontacts-6.14.0/po/lv/kcontacts6.po
+kcontacts-6.14.0/po/mai/
+kcontacts-6.14.0/po/mai/kcontacts6.po
+kcontacts-6.14.0/po/ml/
+kcontacts-6.14.0/po/ml/kcontacts6.po
+kcontacts-6.14.0/po/mr/
+kcontacts-6.14.0/po/mr/kcontacts6.po
+kcontacts-6.14.0/po/nb/
+kcontacts-6.14.0/po/nb/kcontacts6.po
+kcontacts-6.14.0/po/nds/
+kcontacts-6.14.0/po/nds/kcontacts6.po
+kcontacts-6.14.0/po/nl/
+kcontacts-6.14.0/po/nl/kcontacts6.po
+kcontacts-6.14.0/po/nn/
+kcontacts-6.14.0/po/nn/kcontacts6.po
+kcontacts-6.14.0/po/pa/
+kcontacts-6.14.0/po/pa/kcontacts6.po
+kcontacts-6.14.0/po/pl/
+kcontacts-6.14.0/po/pl/kcontacts6.po
+kcontacts-6.14.0/po/pt/
+kcontacts-6.14.0/po/pt/kcontacts6.po
+kcontacts-6.14.0/po/pt_BR/
+kcontacts-6.14.0/po/pt_BR/kcontacts6.po
+kcontacts-6.14.0/po/ro/
+kcontacts-6.14.0/po/ro/kcontacts6.po
+kcontacts-6.14.0/po/ru/
+kcontacts-6.14.0/po/ru/kcontacts6.po
+kcontacts-6.14.0/po/sa/
+kcontacts-6.14.0/po/sa/kcontacts6.po
+kcontacts-6.14.0/po/se/
+kcontacts-6.14.0/po/se/kcontacts6.po
+kcontacts-6.14.0/po/sk/
+kcontacts-6.14.0/po/sk/kcontacts6.po
+kcontacts-6.14.0/po/sl/
+kcontacts-6.14.0/po/sl/kcontacts6.po
+kcontacts-6.14.0/po/sq/
+kcontacts-6.14.0/po/sq/kcontacts6.po
+kcontacts-6.14.0/po/sr/
+kcontacts-6.14.0/po/sr/kcontacts6.po
+kcontacts-6.14.0/po/sr@ijekavian/
+kcontacts-6.14.0/po/sr@ijekavian/kcontacts6.po
+kcontacts-6.14.0/po/sr@ijekavianlatin/
+kcontacts-6.14.0/po/sr@ijekavianlatin/kcontacts6.po
+kcontacts-6.14.0/po/sr@latin/
+kcontacts-6.14.0/po/sr@latin/kcontacts6.po
+kcontacts-6.14.0/po/sv/
+kcontacts-6.14.0/po/sv/kcontacts6.po
+kcontacts-6.14.0/po/ta/
+kcontacts-6.14.0/po/ta/kcontacts6.po
+kcontacts-6.14.0/po/tg/
+kcontacts-6.14.0/po/tg/kcontacts6.po
+kcontacts-6.14.0/po/th/
+kcontacts-6.14.0/po/th/kcontacts6.po
+kcontacts-6.14.0/po/tr/
+kcontacts-6.14.0/po/tr/kcontacts6.po
+kcontacts-6.14.0/po/ug/
+kcontacts-6.14.0/po/ug/kcontacts6.po
+kcontacts-6.14.0/po/uk/
+kcontacts-6.14.0/po/uk/kcontacts6.po
+kcontacts-6.14.0/po/zh_CN/
+kcontacts-6.14.0/po/zh_CN/kcontacts6.po
+kcontacts-6.14.0/po/zh_TW/
+kcontacts-6.14.0/po/zh_TW/kcontacts6.po
+kcontacts-6.14.0/src/
+kcontacts-6.14.0/src/CMakeLists.txt
+kcontacts-6.14.0/src/Messages.sh
+kcontacts-6.14.0/src/address.cpp
+kcontacts-6.14.0/src/address.h
+kcontacts-6.14.0/src/addressee.cpp
+kcontacts-6.14.0/src/addressee.h
+kcontacts-6.14.0/src/addresseehelper.cpp
+kcontacts-6.14.0/src/addresseehelper_p.h
+kcontacts-6.14.0/src/addresseelist.h
+kcontacts-6.14.0/src/addressformat.cpp
+kcontacts-6.14.0/src/addressformat.h
+kcontacts-6.14.0/src/addressformat_p.h
+kcontacts-6.14.0/src/addressformatparser.cpp
+kcontacts-6.14.0/src/addressformatparser_p.h
+kcontacts-6.14.0/src/addressformatrc
+kcontacts-6.14.0/src/addressformatscript.cpp
+kcontacts-6.14.0/src/addressformatscript_p.h
+kcontacts-6.14.0/src/addressformatter.cpp
+kcontacts-6.14.0/src/addressformatter_p.h
+kcontacts-6.14.0/src/calendarurl.cpp
+kcontacts-6.14.0/src/calendarurl.h
+kcontacts-6.14.0/src/clientpidmap.cpp
+kcontacts-6.14.0/src/clientpidmap.h
+kcontacts-6.14.0/src/contactgroup.cpp
+kcontacts-6.14.0/src/contactgroup.h
+kcontacts-6.14.0/src/contactgroup.xsd
+kcontacts-6.14.0/src/contactgrouptool.cpp
+kcontacts-6.14.0/src/contactgrouptool.h
+kcontacts-6.14.0/src/converter/
+kcontacts-6.14.0/src/converter/CMakeLists.txt
+kcontacts-6.14.0/src/converter/ldifconverter.cpp
+kcontacts-6.14.0/src/converter/ldifconverter.h
+kcontacts-6.14.0/src/converter/vcardconverter.cpp
+kcontacts-6.14.0/src/converter/vcardconverter.h
+kcontacts-6.14.0/src/email.cpp
+kcontacts-6.14.0/src/email.h
+kcontacts-6.14.0/src/fieldgroup.cpp
+kcontacts-6.14.0/src/fieldgroup.h
+kcontacts-6.14.0/src/gender.cpp
+kcontacts-6.14.0/src/gender.h
+kcontacts-6.14.0/src/geo.cpp
+kcontacts-6.14.0/src/geo.h
+kcontacts-6.14.0/src/impp.cpp
+kcontacts-6.14.0/src/impp.h
+kcontacts-6.14.0/src/improtocols/
+kcontacts-6.14.0/src/improtocols/NOTE
+kcontacts-6.14.0/src/improtocols/aim.desktop
+kcontacts-6.14.0/src/improtocols/facebook.desktop
+kcontacts-6.14.0/src/improtocols/gg.desktop
+kcontacts-6.14.0/src/improtocols/googletalk.desktop
+kcontacts-6.14.0/src/improtocols/groupwise.desktop
+kcontacts-6.14.0/src/improtocols/icq.desktop
+kcontacts-6.14.0/src/improtocols/irc.desktop
+kcontacts-6.14.0/src/improtocols/matrix.desktop
+kcontacts-6.14.0/src/improtocols/meanwhile.desktop
+kcontacts-6.14.0/src/improtocols/msn.desktop
+kcontacts-6.14.0/src/improtocols/qq.desktop
+kcontacts-6.14.0/src/improtocols/rocketchat.desktop
+kcontacts-6.14.0/src/improtocols/signal.desktop
+kcontacts-6.14.0/src/improtocols/sip.desktop
+kcontacts-6.14.0/src/improtocols/skype.desktop
+kcontacts-6.14.0/src/improtocols/sms.desktop
+kcontacts-6.14.0/src/improtocols/telegram.desktop
+kcontacts-6.14.0/src/improtocols/threema.desktop
+kcontacts-6.14.0/src/improtocols/twitter.desktop
+kcontacts-6.14.0/src/improtocols/xmpp.desktop
+kcontacts-6.14.0/src/improtocols/ymsgr.desktop
+kcontacts-6.14.0/src/kcontacts.qrc
+kcontacts-6.14.0/src/key.cpp
+kcontacts-6.14.0/src/key.h
+kcontacts-6.14.0/src/lang.cpp
+kcontacts-6.14.0/src/lang.h
+kcontacts-6.14.0/src/ldif.cpp
+kcontacts-6.14.0/src/ldif_p.h
+kcontacts-6.14.0/src/namespace.cpp
+kcontacts-6.14.0/src/namespace.h
+kcontacts-6.14.0/src/nickname.cpp
+kcontacts-6.14.0/src/nickname.h
+kcontacts-6.14.0/src/note.cpp
+kcontacts-6.14.0/src/note.h
+kcontacts-6.14.0/src/org.cpp
+kcontacts-6.14.0/src/org.h
+kcontacts-6.14.0/src/parametermap_p.h
+kcontacts-6.14.0/src/phonenumber.cpp
+kcontacts-6.14.0/src/phonenumber.h
+kcontacts-6.14.0/src/picture.cpp
+kcontacts-6.14.0/src/picture.h
+kcontacts-6.14.0/src/qml/
+kcontacts-6.14.0/src/qml/CMakeLists.txt
+kcontacts-6.14.0/src/qml/kcontactsqmlplugin.cpp
+kcontacts-6.14.0/src/qml/types.h
+kcontacts-6.14.0/src/related.cpp
+kcontacts-6.14.0/src/related.h
+kcontacts-6.14.0/src/resourcelocatorurl.cpp
+kcontacts-6.14.0/src/resourcelocatorurl.h
+kcontacts-6.14.0/src/role.cpp
+kcontacts-6.14.0/src/role.h
+kcontacts-6.14.0/src/secrecy.cpp
+kcontacts-6.14.0/src/secrecy.h
+kcontacts-6.14.0/src/sound.cpp
+kcontacts-6.14.0/src/sound.h
+kcontacts-6.14.0/src/timezone.cpp
+kcontacts-6.14.0/src/timezone.h
+kcontacts-6.14.0/src/title.cpp
+kcontacts-6.14.0/src/title.h
+kcontacts-6.14.0/src/vcarddrag.cpp
+kcontacts-6.14.0/src/vcarddrag.h
+kcontacts-6.14.0/src/vcardparser/
+kcontacts-6.14.0/src/vcardparser/vcard.cpp
+kcontacts-6.14.0/src/vcardparser/vcard_p.h
+kcontacts-6.14.0/src/vcardparser/vcardline.cpp
+kcontacts-6.14.0/src/vcardparser/vcardline_p.h
+kcontacts-6.14.0/src/vcardparser/vcardparser.cpp
+kcontacts-6.14.0/src/vcardparser/vcardparser_p.h
+kcontacts-6.14.0/src/vcardtool.cpp
+kcontacts-6.14.0/src/vcardtool_p.h
+kcontacts-6.14.0/tests/
+kcontacts-6.14.0/tests/CMakeLists.txt
+kcontacts-6.14.0/tests/README.testing
+kcontacts-6.14.0/tests/checkvcard.pl
+kcontacts-6.14.0/tests/qmlintegrationtest.qml
+kcontacts-6.14.0/tests/testread.cpp
+kcontacts-6.14.0/tests/testread2.cpp
+kcontacts-6.14.0/tests/testutils.cpp
+kcontacts-6.14.0/tests/testutils.h
+kcontacts-6.14.0/tests/testwrite.cpp
+kcontacts-6.14.0/tools/
+kcontacts-6.14.0/tools/convert-libaddressinput-data.py
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6Codecs: /usr/lib64/cmake/KF6Codecs/KF6CodecsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.14.0") found components: CoreAddons I18n Config Codecs
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/work/kcontacts-6.14.0/build/src/KF6Contacts_ECMQchDoxygen.config' updated.
+
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6Qml (required version >= 6.7.0)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6QuickTools (required version >= 6.8.3)
+ * WrapVulkanHeaders
+ * Qt6Quick (required version >= 6.7.0)
+   QML integration test
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.14.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6Gui (required version >= 6.7.0)
+   Basic library component
+ * KF6CoreAddons (required version >= 6.14.0)
+ * Gettext
+ * KF6I18n (required version >= 6.14.0)
+ * KF6Config (required version >= 6.14.0)
+ * KF6Codecs (required version >= 6.14.0)
+ * KF6 (required version >= 6.14.0)
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * Qt6ToolsTools, qhelpgenerator from Qt6 tools
+   Needed for API dox QCH file generation
+ * Qt6 (required version >= 6.7.0)
+ * Qt6Test (required version >= 6.7.0)
+
+-- Configuring done (1.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/work/kcontacts-6.14.0/build
+[1/212] Generating ts...
+[2/212] Generating mo...
+[3/212] Generating src/KF6Contacts.qch, src/KF6Contacts.tags
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[4/212] Automatic MOC for target KF6Contacts
+[5/212] Running AUTOMOC file extraction for target KF6Contacts
+[6/212] Running moc --collect-json for target KF6Contacts
+[7/212] Running rcc for resource improtocols
+[8/212] Automatic RCC for kcontacts.qrc
+[9/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/KF6Contacts_autogen/mocs_compilation.cpp.o
+[10/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/gender.cpp.o
+[11/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/geo.cpp.o
+[12/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/addressformatscript.cpp.o
+[13/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/key.cpp.o
+[14/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/calendarurl.cpp.o
+[15/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/namespace.cpp.o
+[16/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/fieldgroup.cpp.o
+[17/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/lang.cpp.o
+[18/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/clientpidmap.cpp.o
+[19/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/email.cpp.o
+[20/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/addressformatter.cpp.o
+[21/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/contactgrouptool.cpp.o
+[22/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/addressformatparser.cpp.o
+[23/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/contactgroup.cpp.o
+[24/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/note.cpp.o
+[25/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/ldif.cpp.o
+[26/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/nickname.cpp.o
+[27/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/org.cpp.o
+[28/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/.qt/rcc/qrc_improtocols.cpp.o
+[29/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/addresseehelper.cpp.o
+[30/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/KF6Contacts_autogen/EWIEGA46WW/qrc_kcontacts.cpp.o
+[31/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/addressformat.cpp.o
+[32/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/sound.cpp.o
+[33/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/converter/vcardconverter.cpp.o
+[34/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/address.cpp.o
+[35/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/impp.cpp.o
+[36/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/related.cpp.o
+[37/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/timezone.cpp.o
+[38/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/secrecy.cpp.o
+[39/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/phonenumber.cpp.o
+[40/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/converter/ldifconverter.cpp.o
+[41/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/resourcelocatorurl.cpp.o
+[42/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/role.cpp.o
+[43/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/title.cpp.o
+[44/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/picture.cpp.o
+[45/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/kcontacts_debug.cpp.o
+[46/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/vcarddrag.cpp.o
+[47/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/vcardparser/vcard.cpp.o
+[48/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/vcardparser/vcardline.cpp.o
+[49/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/vcardparser/vcardparser.cpp.o
+[50/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/vcardtool.cpp.o
+[51/212] Building CXX object src/CMakeFiles/KF6Contacts.dir/addressee.cpp.o
+[52/212] Linking CXX shared library bin/libKF6Contacts.so.6.14.0
+[53/212] Creating library symlink bin/libKF6Contacts.so.6 bin/libKF6Contacts.so
+[54/212] Automatic MOC for target keytest
+[55/212] Automatic MOC for target geotest
+[56/212] Automatic MOC for target secrecytest
+[57/212] Automatic MOC for target langtest
+[58/212] Automatic MOC for target addresseetest
+[59/212] Automatic MOC for target birthdaytest
+[60/212] Automatic MOC for target timezonetest
+[61/212] Automatic MOC for target gendertest
+[62/212] Automatic MOC for target relatedtest
+[63/212] Automatic MOC for target ldifconvertertest
+[64/212] Automatic MOC for target addresstest
+[65/212] Automatic MOC for target soundtest
+[66/212] Automatic MOC for target impptest
+[67/212] Automatic MOC for target resourcelocatorurltest
+[68/212] Automatic MOC for target testread
+[69/212] Automatic MOC for target emailtest
+[70/212] Automatic MOC for target calendarurltest
+[71/212] Automatic MOC for target kcontactsqml
+[72/212] Building CXX object autotests/CMakeFiles/birthdaytest.dir/birthdaytest_autogen/mocs_compilation.cpp.o
+[73/212] Automatic MOC for target testread2
+[74/212] Running AUTOMOC file extraction for target kcontactsqml
+[75/212] Running rcc for resource qmake_org_kde_contacts
+[76/212] Automatic MOC for target phonenumbertest
+[77/212] Automatic MOC for target testwrite
+[78/212] Building CXX object autotests/CMakeFiles/addresseetest.dir/addresseetest_autogen/mocs_compilation.cpp.o
+[79/212] Automatic MOC for target addressformattest
+[80/212] Running moc --collect-json for target kcontactsqml
+[81/212] Automatic MOC for target contactgrouptest
+[82/212] Building CXX object autotests/CMakeFiles/impptest.dir/impptest_autogen/mocs_compilation.cpp.o
+[83/212] Automatic MOC for target testroundtrip
+[84/212] Automatic RCC for ../src/kcontacts.qrc
+[85/212] Automatic MOC for target vcarddragtest
+[86/212] Building CXX object autotests/CMakeFiles/emailtest.dir/emailtest_autogen/mocs_compilation.cpp.o
+[87/212] Building CXX object autotests/CMakeFiles/addresstest.dir/addresstest_autogen/mocs_compilation.cpp.o
+[88/212] Building CXX object autotests/CMakeFiles/addressformattest.dir/addressformattest_autogen/mocs_compilation.cpp.o
+[89/212] Automatic QML type registration for target kcontactsqml
+[90/212] Building CXX object autotests/CMakeFiles/addressformattest.dir/addressformattest_autogen/VNU7RW3YIC/qrc_kcontacts.cpp.o
+[91/212] Building CXX object autotests/CMakeFiles/geotest.dir/geotest_autogen/mocs_compilation.cpp.o
+[92/212] Automatic RCC for testroundtrip.qrc
+[93/212] Automatic MOC for target fieldgrouptest
+[94/212] Automatic MOC for target customidentifiertest
+[95/212] Automatic MOC for target importexportvcardtest
+[96/212] Building CXX object src/qml/CMakeFiles/kcontactsqml.dir/.qt/rcc/qrc_qmake_org_kde_contacts.cpp.o
+[97/212] Building CXX object autotests/CMakeFiles/testroundtrip.dir/testroundtrip_autogen/mocs_compilation.cpp.o
+[98/212] Building CXX object autotests/CMakeFiles/keytest.dir/keytest_autogen/mocs_compilation.cpp.o
+[99/212] Automatic MOC for target nicknametest
+[100/212] Automatic MOC for target vcardlinetest
+[101/212] Building CXX object autotests/CMakeFiles/phonenumbertest.dir/phonenumbertest_autogen/mocs_compilation.cpp.o
+[102/212] Automatic MOC for target clientpidmaptest
+[103/212] Automatic MOC for target titletest
+[104/212] Building CXX object autotests/CMakeFiles/secrecytest.dir/secrecytest_autogen/mocs_compilation.cpp.o
+[105/212] Automatic MOC for target roletest
+[106/212] Automatic MOC for target datetimetest
+[107/212] Building CXX object autotests/CMakeFiles/soundtest.dir/soundtest_autogen/mocs_compilation.cpp.o
+[108/212] Building CXX object autotests/CMakeFiles/timezonetest.dir/timezonetest_autogen/mocs_compilation.cpp.o
+[109/212] Automatic MOC for target orgtest
+[110/212] Building CXX object autotests/CMakeFiles/contactgrouptest.dir/contactgrouptest_autogen/mocs_compilation.cpp.o
+[111/212] Automatic MOC for target picturetest
+[112/212] Building CXX object autotests/CMakeFiles/vcarddragtest.dir/vcarddragtest_autogen/mocs_compilation.cpp.o
+[113/212] Automatic MOC for target vcardtool_benchmark
+[114/212] Building CXX object autotests/CMakeFiles/langtest.dir/langtest_autogen/mocs_compilation.cpp.o
+[115/212] Building CXX object autotests/CMakeFiles/gendertest.dir/gendertest_autogen/mocs_compilation.cpp.o
+[116/212] Building CXX object autotests/CMakeFiles/testroundtrip.dir/testroundtrip_autogen/EWIEGA46WW/qrc_testroundtrip.cpp.o
+[117/212] Building CXX object autotests/CMakeFiles/calendarurltest.dir/calendarurltest_autogen/mocs_compilation.cpp.o
+[118/212] Building CXX object autotests/CMakeFiles/ldifconvertertest.dir/ldifconvertertest_autogen/mocs_compilation.cpp.o
+[119/212] Building CXX object src/qml/CMakeFiles/kcontactsqml.dir/kcontactsqml_autogen/mocs_compilation.cpp.o
+[120/212] Building CXX object autotests/CMakeFiles/relatedtest.dir/relatedtest_autogen/mocs_compilation.cpp.o
+[121/212] Building CXX object src/qml/CMakeFiles/kcontactsqml.dir/kcontactsqmlplugin.cpp.o
+[122/212] Building CXX object autotests/CMakeFiles/resourcelocatorurltest.dir/resourcelocatorurltest_autogen/mocs_compilation.cpp.o
+[123/212] Building CXX object autotests/CMakeFiles/secrecytest.dir/secrecytest.cpp.o
+[124/212] Building CXX object autotests/CMakeFiles/customidentifiertest.dir/customidentifiertest_autogen/mocs_compilation.cpp.o
+[125/212] Building CXX object autotests/CMakeFiles/geotest.dir/geotest.cpp.o
+[126/212] Building CXX object autotests/CMakeFiles/vcardlinetest.dir/vcardlinetest_autogen/mocs_compilation.cpp.o
+[127/212] Building CXX object autotests/CMakeFiles/birthdaytest.dir/birthdaytest.cpp.o
+[128/212] Building CXX object autotests/CMakeFiles/fieldgrouptest.dir/fieldgrouptest_autogen/mocs_compilation.cpp.o
+[129/212] Building CXX object autotests/CMakeFiles/vcarddragtest.dir/vcarddragtest.cpp.o
+[130/212] Building CXX object autotests/CMakeFiles/importexportvcardtest.dir/importexportvcardtest_autogen/mocs_compilation.cpp.o
+[131/212] Building CXX object autotests/CMakeFiles/timezonetest.dir/timezonetest.cpp.o
+[132/212] Building CXX object autotests/CMakeFiles/titletest.dir/titletest_autogen/mocs_compilation.cpp.o
+[133/212] Building CXX object autotests/CMakeFiles/addressformattest.dir/addressformattest.cpp.o
+[134/212] Building CXX object autotests/CMakeFiles/nicknametest.dir/nicknametest_autogen/mocs_compilation.cpp.o
+[135/212] Building CXX object autotests/CMakeFiles/keytest.dir/keytest.cpp.o
+[136/212] Building CXX object autotests/CMakeFiles/roletest.dir/roletest_autogen/mocs_compilation.cpp.o
+[137/212] Building CXX object autotests/CMakeFiles/contactgrouptest.dir/contactgrouptest.cpp.o
+[138/212] Building CXX object autotests/CMakeFiles/orgtest.dir/orgtest_autogen/mocs_compilation.cpp.o
+[139/212] Building CXX object autotests/CMakeFiles/soundtest.dir/soundtest.cpp.o
+[140/212] Building CXX object autotests/CMakeFiles/testroundtrip.dir/testroundtrip.cpp.o
+[141/212] Building CXX object autotests/CMakeFiles/datetimetest.dir/datetimetest_autogen/mocs_compilation.cpp.o
+[142/212] Building CXX object autotests/CMakeFiles/clientpidmaptest.dir/clientpidmaptest_autogen/mocs_compilation.cpp.o
+[143/212] Building CXX object autotests/CMakeFiles/addresstest.dir/addresstest.cpp.o
+[144/212] Building CXX object autotests/CMakeFiles/picturetest.dir/picturetest_autogen/mocs_compilation.cpp.o
+[145/212] Building CXX object autotests/CMakeFiles/gendertest.dir/gendertest.cpp.o
+[146/212] Building CXX object autotests/CMakeFiles/vcardtool_benchmark.dir/vcardtool_benchmark_autogen/mocs_compilation.cpp.o
+[147/212] Building CXX object autotests/CMakeFiles/emailtest.dir/emailtest.cpp.o
+[148/212] Building CXX object tests/CMakeFiles/testread.dir/testread_autogen/mocs_compilation.cpp.o
+[149/212] Building CXX object autotests/CMakeFiles/phonenumbertest.dir/phonenumbertest.cpp.o
+[150/212] Building CXX object tests/CMakeFiles/testwrite.dir/testwrite_autogen/mocs_compilation.cpp.o
+[151/212] Building CXX object autotests/CMakeFiles/impptest.dir/impptest.cpp.o
+[152/212] Building CXX object tests/CMakeFiles/testread2.dir/testread2_autogen/mocs_compilation.cpp.o
+[153/212] Building CXX object autotests/CMakeFiles/addresseetest.dir/addresseetest.cpp.o
+[154/212] Building CXX object autotests/CMakeFiles/calendarurltest.dir/calendarurltest.cpp.o
+[155/212] Building CXX object autotests/CMakeFiles/ldifconvertertest.dir/ldifconvertertest.cpp.o
+[156/212] Building CXX object autotests/CMakeFiles/langtest.dir/langtest.cpp.o
+[157/212] Linking CXX executable bin/testroundtrip
+[158/212] Linking CXX executable bin/birthdaytest
+[159/212] Linking CXX executable bin/addresseetest
+[160/212] Linking CXX executable bin/emailtest
+[161/212] Linking CXX executable bin/impptest
+[162/212] Linking CXX executable bin/addresstest
+[163/212] Linking CXX executable bin/keytest
+[164/212] Linking CXX executable bin/geotest
+[165/212] Linking CXX executable bin/phonenumbertest
+[166/212] Linking CXX executable bin/secrecytest
+[167/212] Linking CXX executable bin/soundtest
+[168/212] Linking CXX executable bin/contactgrouptest
+[169/212] Linking CXX executable bin/timezonetest
+[170/212] Linking CXX executable bin/vcarddragtest
+[171/212] Linking CXX executable bin/langtest
+[172/212] Linking CXX executable bin/gendertest
+[173/212] Linking CXX executable bin/calendarurltest
+[174/212] Linking CXX executable bin/ldifconvertertest
+[175/212] Linking CXX executable bin/addressformattest
+[176/212] Building CXX object autotests/CMakeFiles/resourcelocatorurltest.dir/resourcelocatorurltest.cpp.o
+[177/212] Building CXX object autotests/CMakeFiles/customidentifiertest.dir/customidentifiertest.cpp.o
+[178/212] Linking CXX executable bin/resourcelocatorurltest
+[179/212] Linking CXX executable bin/customidentifiertest
+[180/212] Building CXX object src/qml/CMakeFiles/kcontactsqml.dir/kcontactsqml_qmltyperegistrations.cpp.o
+[181/212] Building CXX object tests/CMakeFiles/testread.dir/testread.cpp.o
+[182/212] Building CXX object tests/CMakeFiles/testwrite.dir/testwrite.cpp.o
+[183/212] Linking CXX shared module bin/org/kde/contacts/libkcontactsqml.so
+[184/212] Building CXX object tests/CMakeFiles/testread2.dir/testutils.cpp.o
+[185/212] Linking CXX executable bin/testwrite
+[186/212] Linking CXX executable bin/testread
+[187/212] Building CXX object tests/CMakeFiles/testread2.dir/testread2.cpp.o
+[188/212] Building CXX object autotests/CMakeFiles/importexportvcardtest.dir/importexportvcardtest.cpp.o
+[189/212] Linking CXX executable bin/testread2
+[190/212] Linking CXX executable bin/importexportvcardtest
+[191/212] Building CXX object autotests/CMakeFiles/vcardlinetest.dir/vcardlinetest.cpp.o
+[192/212] Building CXX object autotests/CMakeFiles/fieldgrouptest.dir/fieldgrouptest.cpp.o
+[193/212] Linking CXX executable bin/vcardlinetest
+[194/212] Building CXX object autotests/CMakeFiles/vcardtool_benchmark.dir/vcardtool_benchmark.cpp.o
+[195/212] Linking CXX executable bin/fieldgrouptest
+[196/212] Linking CXX executable bin/vcardtool_benchmark
+[197/212] Building CXX object autotests/CMakeFiles/nicknametest.dir/nicknametest.cpp.o
+[198/212] Linking CXX executable bin/nicknametest
+[199/212] Building CXX object autotests/CMakeFiles/picturetest.dir/picturetest.cpp.o
+[200/212] Building CXX object autotests/CMakeFiles/relatedtest.dir/relatedtest.cpp.o
+[201/212] Building CXX object autotests/CMakeFiles/datetimetest.dir/datetimetest.cpp.o
+[202/212] Linking CXX executable bin/relatedtest
+[203/212] Linking CXX executable bin/picturetest
+[204/212] Linking CXX executable bin/datetimetest
+[205/212] Building CXX object autotests/CMakeFiles/roletest.dir/roletest.cpp.o
+[206/212] Building CXX object autotests/CMakeFiles/orgtest.dir/orgtest.cpp.o
+[207/212] Linking CXX executable bin/roletest
+[208/212] Linking CXX executable bin/orgtest
+[209/212] Building CXX object autotests/CMakeFiles/titletest.dir/titletest.cpp.o
+[210/212] Building CXX object autotests/CMakeFiles/clientpidmaptest.dir/clientpidmaptest.cpp.o
+[211/212] Linking CXX executable bin/titletest
+[212/212] Linking CXX executable bin/clientpidmaptest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/da/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/cs/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ja/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/de/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/el/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nn/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hi/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pt_BR/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/lt/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/be/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pa/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sl/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ta/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ro/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/bs/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/kk/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sr@latin/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/he/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/zh_TW/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/tg/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pl/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/km/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/pt/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/az/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/tr/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/fr/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ast/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/mai
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/mai/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ka/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/th/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/gl/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ia/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hu/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/eo/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/bg/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ga/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ca/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/uk/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/id/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/en_GB/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/zh_CN/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nl/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sa/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/fi/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ko/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ru/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/lv/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ml/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/hne/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ca@valencia/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nb/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/es/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/eu/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/et/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/it/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/se
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/se/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/se/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ar/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sq
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sq/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/nds/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/mr/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/ug/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sk/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/locale/sv/LC_MESSAGES/kcontacts6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/libKF6Contacts.so.6.14.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/libKF6Contacts.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/libKF6Contacts.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/qt6/qml/org/kde/contacts/libkcontactsqml.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/qt6/qml/org/kde/contacts/libkcontactsqml.so" to "$ORIGIN/../../../../lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/qt6/qml/org/kde/contacts/qmldir
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/qt6/qml/org/kde/contacts/kcontactsqml.qmltypes
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/qt6/qml/org/kde/contacts/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/LDIFConverter
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/VCardConverter
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/ldifconverter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/vcardconverter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/kcontacts_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/address.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/addressformat.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/addressee.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/addresseelist.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/calendarurl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/contactgroup.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/contactgrouptool.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/email.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/geo.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/gender.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/key.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/lang.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/namespace.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/impp.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/phonenumber.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/picture.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/related.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/resourcelocatorurl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/secrecy.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/sound.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/timezone.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/title.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/role.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/note.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/org.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/nickname.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/vcarddrag.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/fieldgroup.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts/clientpidmap.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Address
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/AddressFormat
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Addressee
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/AddresseeList
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/CalendarUrl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/ContactGroup
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/ContactGroupTool
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Email
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Geo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Gender
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Key
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Lang
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Namespace
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Impp
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/PhoneNumber
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Picture
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Related
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/ResourceLocatorUrl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Secrecy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Sound
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/TimeZone
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Title
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Role
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Note
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/Org
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/NickName
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/VCardDrag
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/FieldGroup
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/KContacts/ClientPidMap
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/qlogging-categories6/kcontacts.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/share/qlogging-categories6/kcontacts.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Contacts.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Contacts.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/cmake/KF6Contacts/KF6ContactsQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/cmake/KF6Contacts/KF6ContactsConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/cmake/KF6Contacts/KF6ContactsConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/cmake/KF6Contacts/KF6ContactsTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/lib64/cmake/KF6Contacts/KF6ContactsTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/package-kcontacts/usr/include/KF6/KContacts/kcontacts_version.h
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kcontacts/kcontacts.info: No such file or directory
+doxygen
+extra-cmake-modules
+kcodecs
+kconfig
+kcoreaddons
+ki18n
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKF6Contacts.so	libKF6Contacts.so.6
+usr/lib64/libKF6Contacts.so.6	libKF6Contacts.so.6.14.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKF6Contacts.so )
+( cd usr/lib64 ; ln -sf libKF6Contacts.so.6 libKF6Contacts.so )
+( cd usr/lib64 ; rm -rf libKF6Contacts.so.6 )
+( cd usr/lib64 ; ln -sf libKF6Contacts.so.6.14.0 libKF6Contacts.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKF6Contacts.so.6'
+removed './usr/lib64/libKF6Contacts.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kcontacts/kcontacts-6.14.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kcontacts-6.14.0/
+usr/doc/kcontacts-6.14.0/README.md
+usr/doc/kcontacts-6.14.0/docs/
+usr/doc/kcontacts-6.14.0/docs/AddressFormat.md
+usr/doc/kcontacts-6.14.0/docs/Doxyfile.local
+usr/doc/kcontacts-6.14.0/kcontacts.ini
+usr/doc/kcontacts-6.14.0/slack-required
+usr/doc/qt6-6.8.3_20250319_bab1fecd/
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Contacts.qch
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Contacts.tags
+usr/include/
+usr/include/KF6/
+usr/include/KF6/KContacts/
+usr/include/KF6/KContacts/KContacts/
+usr/include/KF6/KContacts/KContacts/Address
+usr/include/KF6/KContacts/KContacts/AddressFormat
+usr/include/KF6/KContacts/KContacts/Addressee
+usr/include/KF6/KContacts/KContacts/AddresseeList
+usr/include/KF6/KContacts/KContacts/CalendarUrl
+usr/include/KF6/KContacts/KContacts/ClientPidMap
+usr/include/KF6/KContacts/KContacts/ContactGroup
+usr/include/KF6/KContacts/KContacts/ContactGroupTool
+usr/include/KF6/KContacts/KContacts/Email
+usr/include/KF6/KContacts/KContacts/FieldGroup
+usr/include/KF6/KContacts/KContacts/Gender
+usr/include/KF6/KContacts/KContacts/Geo
+usr/include/KF6/KContacts/KContacts/Impp
+usr/include/KF6/KContacts/KContacts/Key
+usr/include/KF6/KContacts/KContacts/LDIFConverter
+usr/include/KF6/KContacts/KContacts/Lang
+usr/include/KF6/KContacts/KContacts/Namespace
+usr/include/KF6/KContacts/KContacts/NickName
+usr/include/KF6/KContacts/KContacts/Note
+usr/include/KF6/KContacts/KContacts/Org
+usr/include/KF6/KContacts/KContacts/PhoneNumber
+usr/include/KF6/KContacts/KContacts/Picture
+usr/include/KF6/KContacts/KContacts/Related
+usr/include/KF6/KContacts/KContacts/ResourceLocatorUrl
+usr/include/KF6/KContacts/KContacts/Role
+usr/include/KF6/KContacts/KContacts/Secrecy
+usr/include/KF6/KContacts/KContacts/Sound
+usr/include/KF6/KContacts/KContacts/TimeZone
+usr/include/KF6/KContacts/KContacts/Title
+usr/include/KF6/KContacts/KContacts/VCardConverter
+usr/include/KF6/KContacts/KContacts/VCardDrag
+usr/include/KF6/KContacts/kcontacts/
+usr/include/KF6/KContacts/kcontacts/address.h
+usr/include/KF6/KContacts/kcontacts/addressee.h
+usr/include/KF6/KContacts/kcontacts/addresseelist.h
+usr/include/KF6/KContacts/kcontacts/addressformat.h
+usr/include/KF6/KContacts/kcontacts/calendarurl.h
+usr/include/KF6/KContacts/kcontacts/clientpidmap.h
+usr/include/KF6/KContacts/kcontacts/contactgroup.h
+usr/include/KF6/KContacts/kcontacts/contactgrouptool.h
+usr/include/KF6/KContacts/kcontacts/email.h
+usr/include/KF6/KContacts/kcontacts/fieldgroup.h
+usr/include/KF6/KContacts/kcontacts/gender.h
+usr/include/KF6/KContacts/kcontacts/geo.h
+usr/include/KF6/KContacts/kcontacts/impp.h
+usr/include/KF6/KContacts/kcontacts/kcontacts_export.h
+usr/include/KF6/KContacts/kcontacts/key.h
+usr/include/KF6/KContacts/kcontacts/lang.h
+usr/include/KF6/KContacts/kcontacts/ldifconverter.h
+usr/include/KF6/KContacts/kcontacts/namespace.h
+usr/include/KF6/KContacts/kcontacts/nickname.h
+usr/include/KF6/KContacts/kcontacts/note.h
+usr/include/KF6/KContacts/kcontacts/org.h
+usr/include/KF6/KContacts/kcontacts/phonenumber.h
+usr/include/KF6/KContacts/kcontacts/picture.h
+usr/include/KF6/KContacts/kcontacts/related.h
+usr/include/KF6/KContacts/kcontacts/resourcelocatorurl.h
+usr/include/KF6/KContacts/kcontacts/role.h
+usr/include/KF6/KContacts/kcontacts/secrecy.h
+usr/include/KF6/KContacts/kcontacts/sound.h
+usr/include/KF6/KContacts/kcontacts/timezone.h
+usr/include/KF6/KContacts/kcontacts/title.h
+usr/include/KF6/KContacts/kcontacts/vcardconverter.h
+usr/include/KF6/KContacts/kcontacts/vcarddrag.h
+usr/include/KF6/KContacts/kcontacts_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF6Contacts/
+usr/lib64/cmake/KF6Contacts/KF6ContactsConfig.cmake
+usr/lib64/cmake/KF6Contacts/KF6ContactsConfigVersion.cmake
+usr/lib64/cmake/KF6Contacts/KF6ContactsQchTargets.cmake
+usr/lib64/cmake/KF6Contacts/KF6ContactsTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KF6Contacts/KF6ContactsTargets.cmake
+usr/lib64/libKF6Contacts.so.6.14.0
+usr/lib64/qt6/
+usr/lib64/qt6/qml/
+usr/lib64/qt6/qml/org/
+usr/lib64/qt6/qml/org/kde/
+usr/lib64/qt6/qml/org/kde/contacts/
+usr/lib64/qt6/qml/org/kde/contacts/kcontactsqml.qmltypes
+usr/lib64/qt6/qml/org/kde/contacts/kde-qmlmodule.version
+usr/lib64/qt6/qml/org/kde/contacts/libkcontactsqml.so
+usr/lib64/qt6/qml/org/kde/contacts/qmldir
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/hne/
+usr/share/locale/hne/LC_MESSAGES/
+usr/share/locale/hne/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/mai/
+usr/share/locale/mai/LC_MESSAGES/
+usr/share/locale/mai/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kcontacts6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kcontacts6.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kcontacts.categories
+usr/share/qlogging-categories6/kcontacts.renamecategories
+
+Slackware package /tmp/kcontacts/kcontacts-6.14.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for kcontacts-6.14.0-x86_64-1_rtz.tlz
+Creating /tmp/kcontacts/kcontacts-6.14.0-x86_64-1_rtz.tlz.so.file using /tmp/kcontacts/kcontacts-6.14.0-x86_64-1_rtz.tlz
+Successfully created /tmp/kcontacts/kcontacts-6.14.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kcontacts.tar.lz4 format.
+/tmp/kcontacts /tmp/kcontacts
+/tmp/kcontacts
+BIN_NAME
+README
+kcontacts-6.14.0-x86_64-1_rtz.tlz
+kcontacts-6.14.0-x86_64-1_rtz.tlz.md5
+kcontacts-6.14.0-x86_64-1_rtz.tlz.so.file
+kcontacts-6.14.0-x86_64-1_rtz.tlz.txt
+kcontacts.dep
+makepkg-kcontacts.log
+kcontacts build finished. Procced to installation...
+
++========================================================================================================+
+| Upgrading kcontacts-6.14.0-x86_64-1_rtz package using /tmp/kcontacts/kcontacts-6.14.0-x86_64-1_rtz.tlz |
++========================================================================================================+
+
+Pre-installing package kcontacts-6.14.0-x86_64-1_rtz...
+Removing package: kcontacts-6.14.0-x86_64-1_rtz-upgraded-2025-05-10,22:09:05
+Installing package kcontacts-6.14.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kcontacts (Address book API for KDE)
+#
+# Address book API for KDE
+#
+# https://community.kde.org/Frameworks
+Executing install script for kcontacts-6.14.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kcontacts-6.14.0-x86_64-1_rtz.tlz installed.
+Package kcontacts-6.14.0-x86_64-1_rtz upgraded with new package /tmp/kcontacts/kcontacts-6.14.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kcontacts-6.14.0.tar.xz': No such file or directory
+Build process completed in 0 minutes and 49 seconds.

@@ -1,0 +1,394 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: libheif
+libheif is already installed!
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-12 16:10:53--  https://github.com/bcyran/timewall/archive/refs/tags/2.0.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/bcyran/timewall/tar.gz/refs/tags/2.0.0 [following]
+--2025-05-12 16:10:54--  https://codeload.github.com/bcyran/timewall/tar.gz/refs/tags/2.0.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘timewall-2.0.0.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  427K
+    50K .......... .......... .......... .......... ..........  866K
+   100K .......... .......... .......... .......... .......... 5.40M
+   150K .......... .......... .......... .......... .......... 6.39M
+   200K .......... .......... .......... .......... .......... 1.01M
+   250K .......... .......... .......... .......... .......... 6.61M
+   300K .......... .......... ......                           5.66M=0.3s
+
+2025-05-12 16:10:55 (1.27 MB/s) - ‘timewall-2.0.0.tar.gz’ saved [334817]
+
+Found file: timewall-2.0.0.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+timewall-2.0.0/
+timewall-2.0.0/.envrc
+timewall-2.0.0/.github/
+timewall-2.0.0/.github/dependabot.yml
+timewall-2.0.0/.github/workflows/
+timewall-2.0.0/.github/workflows/build.yml
+timewall-2.0.0/.github/workflows/test.yml
+timewall-2.0.0/.gitignore
+timewall-2.0.0/Cargo.lock
+timewall-2.0.0/Cargo.toml
+timewall-2.0.0/LICENSE
+timewall-2.0.0/README.md
+timewall-2.0.0/build.rs
+timewall-2.0.0/codecov.yml
+timewall-2.0.0/flake.lock
+timewall-2.0.0/flake.nix
+timewall-2.0.0/justfile
+timewall-2.0.0/nix/
+timewall-2.0.0/nix/hm-module.nix
+timewall-2.0.0/nix/package.nix
+timewall-2.0.0/rust-toolchain.toml
+timewall-2.0.0/src/
+timewall-2.0.0/src/actions.rs
+timewall-2.0.0/src/cache.rs
+timewall-2.0.0/src/cli.rs
+timewall-2.0.0/src/config.rs
+timewall-2.0.0/src/constants.rs
+timewall-2.0.0/src/geo.rs
+timewall-2.0.0/src/geoclue.rs
+timewall-2.0.0/src/heif/
+timewall-2.0.0/src/heif/context.rs
+timewall-2.0.0/src/heif/convert.rs
+timewall-2.0.0/src/heif/mod.rs
+timewall-2.0.0/src/heif/read.rs
+timewall-2.0.0/src/info.rs
+timewall-2.0.0/src/loader.rs
+timewall-2.0.0/src/macros.rs
+timewall-2.0.0/src/main.rs
+timewall-2.0.0/src/pidfile.rs
+timewall-2.0.0/src/schedule/
+timewall-2.0.0/src/schedule/appearance.rs
+timewall-2.0.0/src/schedule/h24.rs
+timewall-2.0.0/src/schedule/mod.rs
+timewall-2.0.0/src/schedule/solar.rs
+timewall-2.0.0/src/schedule/time.rs
+timewall-2.0.0/src/setter.rs
+timewall-2.0.0/src/signals.rs
+timewall-2.0.0/src/wallpaper/
+timewall-2.0.0/src/wallpaper/metadata.rs
+timewall-2.0.0/src/wallpaper/mod.rs
+timewall-2.0.0/src/wallpaper/properties.rs
+timewall-2.0.0/tests/
+timewall-2.0.0/tests/clear.rs
+timewall-2.0.0/tests/common.rs
+timewall-2.0.0/tests/error.rs
+timewall-2.0.0/tests/examples/
+timewall-2.0.0/tests/examples/properties_sun.xml
+timewall-2.0.0/tests/examples/properties_time.xml
+timewall-2.0.0/tests/examples/sun.heic
+timewall-2.0.0/tests/examples/time.heic
+timewall-2.0.0/tests/examples/unsupported.jpg
+timewall-2.0.0/tests/info.rs
+timewall-2.0.0/tests/preview.rs
+timewall-2.0.0/tests/set.rs
+timewall-2.0.0/tests/unpack.rs
+timewall-2.0.0/timewall.service
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/timewall/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded four-cc v0.4.0
+  Downloaded version-compare v0.2.0
+  Downloaded target-lexicon v0.12.16
+  Downloaded enumn v0.1.14
+  Downloaded system-deps v7.0.3
+  Downloaded cfg-expr v0.17.2
+  Downloaded zbus_macros v5.5.0
+  Downloaded xml-rs v0.8.25
+  Downloaded zbus v5.5.0
+  Downloaded plist v1.7.1
+  Downloaded winnow v0.7.3
+  Downloaded libheif-sys v4.0.1+1.19.7
+  Downloaded libc v0.2.171
+  Downloaded libheif-rs v2.2.0
+   Compiling proc-macro2 v1.0.92
+   Compiling unicode-ident v1.0.5
+   Compiling serde v1.0.219
+   Compiling cfg-if v1.0.0
+   Compiling libc v0.2.171
+   Compiling autocfg v1.1.0
+   Compiling winnow v0.6.20
+   Compiling pin-project-lite v0.2.16
+   Compiling equivalent v1.0.1
+   Compiling hashbrown v0.15.2
+   Compiling crossbeam-utils v0.8.12
+   Compiling parking v2.2.1
+   Compiling heck v0.5.0
+   Compiling once_cell v1.16.0
+   Compiling futures-core v0.3.31
+   Compiling memchr v2.5.0
+   Compiling fastrand v2.3.0
+   Compiling futures-io v0.3.31
+   Compiling static_assertions v1.1.0
+   Compiling utf8parse v0.2.2
+   Compiling target-lexicon v0.12.16
+   Compiling version_check v0.9.4
+   Compiling bitflags v2.8.0
+   Compiling anstyle-parse v0.2.5
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling anstyle v1.0.8
+   Compiling anstyle-query v1.1.1
+   Compiling colorchoice v1.0.2
+   Compiling rustix v0.38.43
+   Compiling linux-raw-sys v0.4.15
+   Compiling smallvec v1.15.0
+   Compiling clap_lex v0.7.4
+   Compiling futures-lite v2.6.0
+   Compiling tracing-core v0.1.33
+   Compiling syn v1.0.104
+   Compiling strsim v0.11.1
+   Compiling anstream v0.6.15
+   Compiling slab v0.4.9
+   Compiling ahash v0.7.6
+   Compiling concurrent-queue v2.5.0
+   Compiling version-compare v0.2.0
+   Compiling pkg-config v0.3.32
+   Compiling clap_builder v4.5.23
+   Compiling indexmap v2.7.0
+   Compiling event-listener v5.4.0
+   Compiling async-task v4.7.1
+   Compiling memoffset v0.9.1
+   Compiling cfg-expr v0.17.2
+   Compiling num-traits v0.2.15
+   Compiling thiserror v1.0.37
+   Compiling atomic-waker v1.1.2
+   Compiling endi v1.1.0
+   Compiling crc32fast v1.3.2
+   Compiling quote v1.0.36
+   Compiling event-listener-strategy v0.5.3
+   Compiling async-lock v3.4.0
+   Compiling async-channel v2.3.1
+   Compiling cfg_aliases v0.2.1
+   Compiling syn v2.0.90
+   Compiling nix v0.29.0
+   Compiling piper v0.2.4
+   Compiling aho-corasick v0.7.19
+   Compiling adler v1.0.2
+   Compiling powerfmt v0.2.0
+   Compiling itoa v1.0.4
+   Compiling regex-syntax v0.6.28
+   Compiling dlv-list v0.3.0
+   Compiling log v0.4.25
+   Compiling simd-adler32 v0.3.5
+   Compiling deranged v0.3.11
+   Compiling miniz_oxide v0.5.4
+   Compiling getrandom v0.2.8
+   Compiling signal-hook-registry v1.4.2
+   Compiling dirs-sys v0.3.7
+   Compiling hashbrown v0.12.3
+   Compiling blocking v1.6.1
+   Compiling anyhow v1.0.97
+   Compiling time-core v0.1.2
+   Compiling signal-hook v0.3.17
+   Compiling serde_json v1.0.138
+   Compiling option-ext v0.2.0
+   Compiling num-conv v0.1.0
+   Compiling adler2 v2.0.0
+   Compiling dirs-sys v0.4.1
+   Compiling miniz_oxide v0.8.0
+   Compiling flate2 v1.0.24
+   Compiling time v0.3.37
+   Compiling async-fs v2.1.2
+   Compiling dirs v4.0.0
+   Compiling ordered-multimap v0.4.3
+   Compiling fdeflate v0.3.4
+   Compiling regex v1.7.0
+   Compiling num_cpus v1.16.0
+   Compiling rust-ini v0.18.0
+   Compiling xdg-home v1.3.0
+   Compiling async-executor v1.13.1
+   Compiling async-broadcast v0.7.2
+   Compiling quick-xml v0.32.0
+   Compiling ordered-stream v0.2.0
+   Compiling winnow v0.7.3
+   Compiling base64 v0.22.1
+   Compiling thiserror-impl v1.0.37
+   Compiling iana-time-zone v0.1.53
+   Compiling four-cc v0.4.0
+   Compiling either v1.8.0
+   Compiling humantime v2.1.0
+   Compiling bitflags v1.3.2
+   Compiling hex v0.4.3
+   Compiling ryu v1.0.19
+   Compiling itertools v0.14.0
+   Compiling png v0.17.16
+   Compiling chrono v0.4.39
+   Compiling threadpool v1.8.1
+   Compiling env_filter v0.1.2
+   Compiling directories v5.0.1
+   Compiling env_logger v0.11.5
+   Compiling xml-rs v0.8.25
+   Compiling enquote v1.1.0
+   Compiling wallpape-rs v2.0.0
+   Compiling seahash v4.1.0
+   Compiling sun v0.3.1
+   Compiling serde_derive v1.0.219
+   Compiling enumflags2_derive v0.7.11
+   Compiling clap_derive v4.5.18
+   Compiling tracing-attributes v0.1.28
+   Compiling async-trait v0.1.85
+   Compiling serde_repr v0.1.19
+   Compiling enumn v0.1.14
+   Compiling tracing v0.1.41
+   Compiling polling v3.7.4
+   Compiling clap v4.5.23
+   Compiling clap-verbosity-flag v2.2.2
+   Compiling clap_complete v4.5.13
+   Compiling async-io v2.4.0
+   Compiling async-signal v0.2.10
+   Compiling timewall v2.0.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/timewall/work/timewall-2.0.0)
+   Compiling async-process v2.3.0
+   Compiling serde_spanned v0.6.8
+   Compiling toml_datetime v0.6.8
+   Compiling zvariant_utils v3.1.0
+   Compiling enumflags2 v0.7.11
+   Compiling toml_edit v0.22.22
+   Compiling plist v1.7.1
+   Compiling ordered-float v4.6.0
+   Compiling proc-macro-crate v3.2.0
+   Compiling toml v0.8.19
+   Compiling zvariant_derive v5.2.0
+   Compiling system-deps v7.0.3
+   Compiling libheif-sys v4.0.1+1.19.7
+   Compiling zvariant v5.2.0
+   Compiling libheif-rs v2.2.0
+   Compiling zbus_names v4.1.1
+   Compiling zbus_macros v5.5.0
+   Compiling zbus v5.5.0
+    Finished `release` profile [optimized] target(s) in 38.64s
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/timewall/timewall.info: No such file or directory
+libheif
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/timewall/timewall-2.0.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/timewall-2.0.0/
+usr/doc/timewall-2.0.0/LICENSE
+usr/doc/timewall-2.0.0/README.md
+usr/doc/timewall-2.0.0/slack-required
+usr/doc/timewall-2.0.0/timewall.ini
+usr/local/
+usr/local/bin/
+usr/local/bin/timewall
+usr/share/
+usr/share/bash-completion/
+usr/share/bash-completion/completions/
+usr/share/bash-completion/completions/timewall.bash
+usr/share/doc/
+usr/share/doc/timewall-2.0.0/
+usr/share/doc/timewall-2.0.0/LICENSE
+usr/share/doc/timewall-2.0.0/README.md
+usr/share/doc/timewall-2.0.0/run_timewall.desktop
+usr/share/fish/
+usr/share/fish/vendor_completions.d/
+usr/share/fish/vendor_completions.d/timewall.fish
+usr/share/zsh/
+usr/share/zsh/site-functions/
+usr/share/zsh/site-functions/_timewall
+
+Slackware package /tmp/timewall/timewall-2.0.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for timewall-2.0.0-x86_64-1_rtz.tlz
+Creating /tmp/timewall/timewall-2.0.0-x86_64-1_rtz.tlz.so.file using /tmp/timewall/timewall-2.0.0-x86_64-1_rtz.tlz
+Successfully created /tmp/timewall/timewall-2.0.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in timewall.tar.lz4 format.
+/tmp/timewall /tmp/timewall
+/tmp/timewall
+BIN_NAME
+README
+makepkg-timewall.log
+timewall-2.0.0-x86_64-1_rtz.tlz
+timewall-2.0.0-x86_64-1_rtz.tlz.md5
+timewall-2.0.0-x86_64-1_rtz.tlz.so.file
+timewall-2.0.0-x86_64-1_rtz.tlz.txt
+timewall.dep
+timewall build finished. Procced to installation...
+
++===================================================================================================+
+| Upgrading timewall-1.5.0-x86_64-1_rtz package using /tmp/timewall/timewall-2.0.0-x86_64-1_rtz.tlz |
++===================================================================================================+
+
+Pre-installing package timewall-2.0.0-x86_64-1_rtz...
+Removing package: timewall-1.5.0-x86_64-1_rtz-upgraded-2025-05-12,16:11:36
+Installing package timewall-2.0.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# timewall (Apple dynamic HEIF wallpapers)
+#
+# Apple dynamic HEIF wallpapers on GNU/Linux.Support for original
+# HEIF/HEIC dynamic wallpaper files used in MacOS.Support for all
+# schedule types: sun position based, time based, dark/light mode.Set
+# wallpaper once and continuously (daemon mode).Preview wallpaper
+# changes.Display wallpaper metadata.Extract all images and metadata
+# as XML.
+#
+# https://github.com/bcyran/timewall
+Executing install script for timewall-2.0.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package timewall-2.0.0-x86_64-1_rtz.tlz installed.
+Package timewall-1.5.0-x86_64-1_rtz upgraded with new package /tmp/timewall/timewall-2.0.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'timewall-2.0.0.tar.gz': No such file or directory
+Build process completed in 0 minutes and 48 seconds.

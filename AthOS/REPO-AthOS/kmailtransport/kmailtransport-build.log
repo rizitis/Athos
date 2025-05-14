@@ -1,0 +1,1182 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules akonadi	akonadi-mime	kcmutils	kconfigwidgets	ki18n	kio	kmime	ksmtp	kwallet	libkgapi	qtkeychain
+extra-cmake-modules is already installed!
+akonadi is already installed!
+akonadi-mime is already installed!
+kcmutils is already installed!
+kconfigwidgets is already installed!
+ki18n is already installed!
+kio is already installed!
+kmime is already installed!
+ksmtp is already installed!
+kwallet is already installed!
+libkgapi is already installed!
+qtkeychain is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:39:04--  https://download.kde.org/stable/release-service/25.04.1/src/kmailtransport-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kmailtransport-25.04.1.tar.xz [following]
+--2025-05-11 01:39:05--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kmailtransport-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 191632 (187K) [application/octet-stream]
+Saving to: ‘kmailtransport-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 26% 1.34M 0s
+    50K .......... .......... .......... .......... .......... 53% 1.48M 0s
+   100K .......... .......... .......... .......... .......... 80% 6.04M 0s
+   150K .......... .......... .......... .......              100% 7.16M=0.08s
+
+2025-05-11 01:39:05 (2.21 MB/s) - ‘kmailtransport-25.04.1.tar.xz’ saved [191632/191632]
+
+Found file: kmailtransport-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kmailtransport-25.04.1/
+kmailtransport-25.04.1/DESIGN
+kmailtransport-25.04.1/.krazy
+kmailtransport-25.04.1/Mainpage.dox
+kmailtransport-25.04.1/metainfo.yaml.license
+kmailtransport-25.04.1/CMakePresets.json.license
+kmailtransport-25.04.1/readme-build-ftime.txt
+kmailtransport-25.04.1/CMakePresets.json
+kmailtransport-25.04.1/LICENSES/
+kmailtransport-25.04.1/LICENSES/BSD-3-Clause.txt
+kmailtransport-25.04.1/LICENSES/CC0-1.0.txt
+kmailtransport-25.04.1/LICENSES/LGPL-2.1-or-later.txt
+kmailtransport-25.04.1/LICENSES/LGPL-2.0-or-later.txt
+kmailtransport-25.04.1/.gitlab-ci.yml
+kmailtransport-25.04.1/sanitizers.supp
+kmailtransport-25.04.1/.git-blame-ignore-revs
+kmailtransport-25.04.1/TODO
+kmailtransport-25.04.1/.kde-ci.yml
+kmailtransport-25.04.1/.codespellrc
+kmailtransport-25.04.1/po/
+kmailtransport-25.04.1/po/bg/
+kmailtransport-25.04.1/po/bg/libmailtransport6.po
+kmailtransport-25.04.1/po/pt/
+kmailtransport-25.04.1/po/pt/libmailtransport6.po
+kmailtransport-25.04.1/po/km/
+kmailtransport-25.04.1/po/km/libmailtransport6.po
+kmailtransport-25.04.1/po/nn/
+kmailtransport-25.04.1/po/nn/libmailtransport6.po
+kmailtransport-25.04.1/po/pl/
+kmailtransport-25.04.1/po/pl/libmailtransport6.po
+kmailtransport-25.04.1/po/ja/
+kmailtransport-25.04.1/po/ja/libmailtransport6.po
+kmailtransport-25.04.1/po/pa/
+kmailtransport-25.04.1/po/pa/libmailtransport6.po
+kmailtransport-25.04.1/po/bs/
+kmailtransport-25.04.1/po/bs/libmailtransport6.po
+kmailtransport-25.04.1/po/zh_CN/
+kmailtransport-25.04.1/po/zh_CN/libmailtransport6.po
+kmailtransport-25.04.1/po/cs/
+kmailtransport-25.04.1/po/cs/libmailtransport6.po
+kmailtransport-25.04.1/po/es/
+kmailtransport-25.04.1/po/es/libmailtransport6.po
+kmailtransport-25.04.1/po/ka/
+kmailtransport-25.04.1/po/ka/libmailtransport6.po
+kmailtransport-25.04.1/po/tr/
+kmailtransport-25.04.1/po/tr/libmailtransport6.po
+kmailtransport-25.04.1/po/ug/
+kmailtransport-25.04.1/po/ug/libmailtransport6.po
+kmailtransport-25.04.1/po/ca/
+kmailtransport-25.04.1/po/ca/libmailtransport6.po
+kmailtransport-25.04.1/po/se/
+kmailtransport-25.04.1/po/se/libmailtransport6.po
+kmailtransport-25.04.1/po/ca@valencia/
+kmailtransport-25.04.1/po/ca@valencia/libmailtransport6.po
+kmailtransport-25.04.1/po/gl/
+kmailtransport-25.04.1/po/gl/libmailtransport6.po
+kmailtransport-25.04.1/po/ro/
+kmailtransport-25.04.1/po/ro/libmailtransport6.po
+kmailtransport-25.04.1/po/eo/
+kmailtransport-25.04.1/po/eo/libmailtransport6.po
+kmailtransport-25.04.1/po/sr@ijekavian/
+kmailtransport-25.04.1/po/sr@ijekavian/libmailtransport6.po
+kmailtransport-25.04.1/po/nl/
+kmailtransport-25.04.1/po/nl/libmailtransport6.po
+kmailtransport-25.04.1/po/mr/
+kmailtransport-25.04.1/po/mr/libmailtransport6.po
+kmailtransport-25.04.1/po/hu/
+kmailtransport-25.04.1/po/hu/libmailtransport6.po
+kmailtransport-25.04.1/po/eu/
+kmailtransport-25.04.1/po/eu/libmailtransport6.po
+kmailtransport-25.04.1/po/lv/
+kmailtransport-25.04.1/po/lv/libmailtransport6.po
+kmailtransport-25.04.1/po/nb/
+kmailtransport-25.04.1/po/nb/libmailtransport6.po
+kmailtransport-25.04.1/po/fr/
+kmailtransport-25.04.1/po/fr/libmailtransport6.po
+kmailtransport-25.04.1/po/hi/
+kmailtransport-25.04.1/po/hi/libmailtransport6.po
+kmailtransport-25.04.1/po/sl/
+kmailtransport-25.04.1/po/sl/libmailtransport6.po
+kmailtransport-25.04.1/po/sr@latin/
+kmailtransport-25.04.1/po/sr@latin/libmailtransport6.po
+kmailtransport-25.04.1/po/th/
+kmailtransport-25.04.1/po/th/libmailtransport6.po
+kmailtransport-25.04.1/po/ta/
+kmailtransport-25.04.1/po/ta/libmailtransport6.po
+kmailtransport-25.04.1/po/sr/
+kmailtransport-25.04.1/po/sr/libmailtransport6.po
+kmailtransport-25.04.1/po/he/
+kmailtransport-25.04.1/po/he/libmailtransport6.po
+kmailtransport-25.04.1/po/de/
+kmailtransport-25.04.1/po/de/libmailtransport6.po
+kmailtransport-25.04.1/po/ar/
+kmailtransport-25.04.1/po/ar/libmailtransport6.po
+kmailtransport-25.04.1/po/sk/
+kmailtransport-25.04.1/po/sk/libmailtransport6.po
+kmailtransport-25.04.1/po/zh_TW/
+kmailtransport-25.04.1/po/zh_TW/libmailtransport6.po
+kmailtransport-25.04.1/po/et/
+kmailtransport-25.04.1/po/et/libmailtransport6.po
+kmailtransport-25.04.1/po/it/
+kmailtransport-25.04.1/po/it/libmailtransport6.po
+kmailtransport-25.04.1/po/mai/
+kmailtransport-25.04.1/po/mai/libmailtransport6.po
+kmailtransport-25.04.1/po/el/
+kmailtransport-25.04.1/po/el/libmailtransport6.po
+kmailtransport-25.04.1/po/da/
+kmailtransport-25.04.1/po/da/libmailtransport6.po
+kmailtransport-25.04.1/po/pt_BR/
+kmailtransport-25.04.1/po/pt_BR/libmailtransport6.po
+kmailtransport-25.04.1/po/ru/
+kmailtransport-25.04.1/po/ru/libmailtransport6.po
+kmailtransport-25.04.1/po/ia/
+kmailtransport-25.04.1/po/ia/libmailtransport6.po
+kmailtransport-25.04.1/po/sv/
+kmailtransport-25.04.1/po/sv/libmailtransport6.po
+kmailtransport-25.04.1/po/fi/
+kmailtransport-25.04.1/po/fi/libmailtransport6.po
+kmailtransport-25.04.1/po/kk/
+kmailtransport-25.04.1/po/kk/libmailtransport6.po
+kmailtransport-25.04.1/po/ast/
+kmailtransport-25.04.1/po/ast/libmailtransport6.po
+kmailtransport-25.04.1/po/lt/
+kmailtransport-25.04.1/po/lt/libmailtransport6.po
+kmailtransport-25.04.1/po/be/
+kmailtransport-25.04.1/po/be/libmailtransport6.po
+kmailtransport-25.04.1/po/sa/
+kmailtransport-25.04.1/po/sa/libmailtransport6.po
+kmailtransport-25.04.1/po/ko/
+kmailtransport-25.04.1/po/ko/libmailtransport6.po
+kmailtransport-25.04.1/po/hne/
+kmailtransport-25.04.1/po/hne/libmailtransport6.po
+kmailtransport-25.04.1/po/ga/
+kmailtransport-25.04.1/po/ga/libmailtransport6.po
+kmailtransport-25.04.1/po/en_GB/
+kmailtransport-25.04.1/po/en_GB/libmailtransport6.po
+kmailtransport-25.04.1/po/uk/
+kmailtransport-25.04.1/po/uk/libmailtransport6.po
+kmailtransport-25.04.1/po/sr@ijekavianlatin/
+kmailtransport-25.04.1/po/sr@ijekavianlatin/libmailtransport6.po
+kmailtransport-25.04.1/po/nds/
+kmailtransport-25.04.1/po/nds/libmailtransport6.po
+kmailtransport-25.04.1/CMakeLists.txt
+kmailtransport-25.04.1/src/
+kmailtransport-25.04.1/src/transportsortproxymodel.h
+kmailtransport-25.04.1/src/transportjob.h
+kmailtransport-25.04.1/src/transportsortproxymodel.cpp
+kmailtransport-25.04.1/src/kmailtransport_private_export.h
+kmailtransport-25.04.1/src/KPimMailTransportConfig.cmake.in
+kmailtransport-25.04.1/src/outlookoauthtokenrequester.h
+kmailtransport-25.04.1/src/Messages.sh
+kmailtransport-25.04.1/src/transportmodel.h
+kmailtransport-25.04.1/src/outlookoauthtokenrequester.cpp
+kmailtransport-25.04.1/src/transportmodel.cpp
+kmailtransport-25.04.1/src/tests/
+kmailtransport-25.04.1/src/tests/transporttreeview_gui.cpp
+kmailtransport-25.04.1/src/tests/transportmanagementwidgetng_gui.cpp
+kmailtransport-25.04.1/src/tests/transportmgr.h
+kmailtransport-25.04.1/src/tests/transportcombobox_gui.cpp
+kmailtransport-25.04.1/src/tests/transportmgr.cpp
+kmailtransport-25.04.1/src/tests/servertest.cpp
+kmailtransport-25.04.1/src/tests/addtransportdialogng_gui.h
+kmailtransport-25.04.1/src/tests/CMakeLists.txt
+kmailtransport-25.04.1/src/tests/addtransportdialogng_gui.cpp
+kmailtransport-25.04.1/src/servertest.cpp
+kmailtransport-25.04.1/src/transport_p.h
+kmailtransport-25.04.1/src/precommandjob.cpp
+kmailtransport-25.04.1/src/socket.h
+kmailtransport-25.04.1/src/precommandjob.h
+kmailtransport-25.04.1/src/transportactivitiesabstract.cpp
+kmailtransport-25.04.1/src/mailtransport_defs.h
+kmailtransport-25.04.1/src/transportbase.kcfgc
+kmailtransport-25.04.1/src/socket.cpp
+kmailtransport-25.04.1/src/transportmanager.h
+kmailtransport-25.04.1/src/transport.h
+kmailtransport-25.04.1/src/transporttype_p.h
+kmailtransport-25.04.1/src/transportjob.cpp
+kmailtransport-25.04.1/src/mailtransport.kcfg
+kmailtransport-25.04.1/src/transporttype.cpp
+kmailtransport-25.04.1/src/transporttype.h
+kmailtransport-25.04.1/src/autotests/
+kmailtransport-25.04.1/src/autotests/transporttreeviewtest.cpp
+kmailtransport-25.04.1/src/autotests/transporttreeviewtest.h
+kmailtransport-25.04.1/src/autotests/CMakeLists.txt
+kmailtransport-25.04.1/src/CMakeLists.txt
+kmailtransport-25.04.1/src/transportactivitiesabstract.h
+kmailtransport-25.04.1/src/transport.cpp
+kmailtransport-25.04.1/src/transportmanager.cpp
+kmailtransport-25.04.1/src/widgets/
+kmailtransport-25.04.1/src/widgets/transporttreedelegate.h
+kmailtransport-25.04.1/src/widgets/transportcombobox.cpp
+kmailtransport-25.04.1/src/widgets/transportmanagementwidgetng.cpp
+kmailtransport-25.04.1/src/widgets/transportconfigwidget.cpp
+kmailtransport-25.04.1/src/widgets/addtransportdialogng.h
+kmailtransport-25.04.1/src/widgets/addtransportdialogng.cpp
+kmailtransport-25.04.1/src/widgets/transportconfigwidget.h
+kmailtransport-25.04.1/src/widgets/transporttreeview.h
+kmailtransport-25.04.1/src/widgets/transporttreedelegate.cpp
+kmailtransport-25.04.1/src/widgets/transportconfigwidget_p.h
+kmailtransport-25.04.1/src/widgets/transportmanagementwidgetng.h
+kmailtransport-25.04.1/src/widgets/transporttreeview.cpp
+kmailtransport-25.04.1/src/widgets/transportactivitiesabstractplugin.h
+kmailtransport-25.04.1/src/widgets/transportcombobox.h
+kmailtransport-25.04.1/src/widgets/transportactivitiesabstractplugin.cpp
+kmailtransport-25.04.1/src/servertest.h
+kmailtransport-25.04.1/src/plugins/
+kmailtransport-25.04.1/src/plugins/transportabstractplugin.cpp
+kmailtransport-25.04.1/src/plugins/transportpluginmanager.h
+kmailtransport-25.04.1/src/plugins/tests/
+kmailtransport-25.04.1/src/plugins/tests/transportmanagertest.cpp
+kmailtransport-25.04.1/src/plugins/tests/transportmanagertest.h
+kmailtransport-25.04.1/src/plugins/tests/CMakeLists.txt
+kmailtransport-25.04.1/src/plugins/transportabstractplugin.h
+kmailtransport-25.04.1/src/plugins/smtp/
+kmailtransport-25.04.1/src/plugins/smtp/sessionuiproxy.h
+kmailtransport-25.04.1/src/plugins/smtp/smtpconfigwidget.cpp
+kmailtransport-25.04.1/src/plugins/smtp/outlookpasswordrequester.cpp
+kmailtransport-25.04.1/src/plugins/smtp/smtpmailtransport.json
+kmailtransport-25.04.1/src/plugins/smtp/smtpconfigdialog.h
+kmailtransport-25.04.1/src/plugins/smtp/smtpsettings.ui
+kmailtransport-25.04.1/src/plugins/smtp/smtpconfigwidget.h
+kmailtransport-25.04.1/src/plugins/smtp/smtpmailtransportplugin.cpp
+kmailtransport-25.04.1/src/plugins/smtp/xoauthpasswordrequester.cpp
+kmailtransport-25.04.1/src/plugins/smtp/smtpmailtransportplugin.h
+kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp
+kmailtransport-25.04.1/src/plugins/smtp/outlookpasswordrequester.h
+kmailtransport-25.04.1/src/plugins/smtp/gmailpasswordrequester.h
+kmailtransport-25.04.1/src/plugins/smtp/xoauthpasswordrequester.h
+kmailtransport-25.04.1/src/plugins/smtp/autotests/
+kmailtransport-25.04.1/src/plugins/smtp/autotests/fakeserver.cpp
+kmailtransport-25.04.1/src/plugins/smtp/autotests/fakeserver.h
+kmailtransport-25.04.1/src/plugins/smtp/autotests/smtpjobtest.cpp
+kmailtransport-25.04.1/src/plugins/smtp/autotests/CMakeLists.txt
+kmailtransport-25.04.1/src/plugins/smtp/smtpjob.h
+kmailtransport-25.04.1/src/plugins/smtp/CMakeLists.txt
+kmailtransport-25.04.1/src/plugins/smtp/gmailpasswordrequester.cpp
+kmailtransport-25.04.1/src/plugins/smtp/smtpconfigdialog.cpp
+kmailtransport-25.04.1/src/plugins/transportpluginmanager.cpp
+kmailtransport-25.04.1/src/ui/
+kmailtransport-25.04.1/src/ui/transportmanagementwidgetng.ui
+kmailtransport-25.04.1/src/ui/addtransportdialog.ui
+kmailtransport-25.04.1/.gitignore
+kmailtransport-25.04.1/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.10") found components: Interpreter
+-- Could NOT find ReuseTool (missing: REUSETOOL_EXECUTABLE) 
+CMake Warning at /usr/share/ECM/modules/ECMCheckOutboundLicense.cmake:86 (message):
+  Reuse tool not found, skipping test generation
+Call Stack (most recent call first):
+  CMakeLists.txt:20 (include)
+
+
+-- Skipping execution of outbound license tests.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+   Required to run tests of module ECMCheckOutboundLicense
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * OpenGL
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.9.0)
+ * KF6ConfigWidgets (required version >= 6.9.0)
+ * KF6KIO (required version >= 6.9.0)
+ * KPim6SMTP (required version >= 6.4.1)
+ * Gettext
+ * KF6I18n (required version >= 6.14.0)
+ * KPim6GAPI (required version >= 6.4.1)
+ * Qt6DBus
+ * Qt6Keychain (required version >= 0.14.2), Provides support for secure credentials storage, <https://github.com/frankosterfeld/qtkeychain>
+ * Qt6Test
+
+-- The following features have been disabled:
+
+ * SPDX_LICENSE_TESTING, Automatic license testing based on SPDX definitions (requires reuse tool)
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have not been found:
+
+ * ReuseTool
+   Required to run tests of module ECMCheckOutboundLicense
+
+-- Configuring done (2.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/build
+[1/85] Generating transportbase.h, transportbase.cpp
+[2/85] Generating ts...
+[3/85] Generating mo...
+[4/85] Automatic MOC for target KPim6MailTransport
+[5/85] Generating ui_addtransportdialog.h
+[6/85] Generating ui_transportmanagementwidgetng.h
+[7/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportactivitiesabstract.cpp.o
+[8/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/plugins/transportabstractplugin.cpp.o
+[9/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportsortproxymodel.cpp.o
+[10/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transporttype.cpp.o
+[11/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/precommandjob.cpp.o
+[12/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/mailtransport_debug.cpp.o
+[13/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportactivitiesabstractplugin.cpp.o
+[14/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportconfigwidget.cpp.o
+[15/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportjob.cpp.o
+[16/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportcombobox.cpp.o
+[17/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportmodel.cpp.o
+[18/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/KPim6MailTransport_autogen/mocs_compilation.cpp.o
+[19/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transporttreeview.cpp.o
+[20/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transport.cpp.o
+[21/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/outlookoauthtokenrequester.cpp.o
+[22/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transporttreedelegate.cpp.o
+[23/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/socket.cpp.o
+[24/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportmanagementwidgetng.cpp.o
+[25/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/plugins/transportpluginmanager.cpp.o
+[26/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/addtransportdialogng.cpp.o
+[27/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportbase.cpp.o
+[28/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportmanager.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:68:24: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+   68 |     QList<TransportJob *> walletQueue;
+      |                        ^
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:15:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:199:50: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  199 | void TransportManager::schedule(TransportJob *job)
+      |                                                  ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp: In member function ‘void MailTransport::TransportManager::schedule(MailTransport::TransportJob*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:201:33: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  201 |     connect(job, &TransportJob::result, this, [this](KJob *job) {
+      |                                 ^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp: At global scope:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:256:67: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  256 | TransportJob *TransportManager::createTransportJob(int transportId)
+      |                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:272:76: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  272 | TransportJob *TransportManager::createTransportJob(const QString &transport)
+      |                                                                            ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp: In member function ‘MailTransport::TransportJob* MailTransport::TransportManager::createTransportJob(const QString&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:287:34: warning: ‘MailTransport::TransportJob* MailTransport::TransportManager::createTransportJob(int)’ is deprecated [-Wdeprecated-declarations]
+  287 |         return createTransportJob(t->id());
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:256:15: note: declared here
+  256 | TransportJob *TransportManager::createTransportJob(int transportId)
+      |               ^~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp: In member function ‘void MailTransport::TransportManagerPrivate::startQueuedJobs()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:556:24: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  556 |     QList<TransportJob *> jobsToDel;
+      |                        ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp: In member function ‘void MailTransport::TransportManagerPrivate::jobResult(KJob*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:638:52: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  638 |     walletQueue.removeAll(static_cast<TransportJob *>(job));
+      |                                                    ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+[29/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/servertest.cpp.o
+[30/85] Linking CXX shared library bin/libKPim6MailTransport.so.6.4.1
+[31/85] Creating library symlink bin/libKPim6MailTransport.so.6 bin/libKPim6MailTransport.so
+[32/85] Automatic MOC for target servertest
+[33/85] Automatic MOC for target transporttreeview_gui
+[34/85] Automatic MOC for target transportmanagementwidgetng_gui
+[35/85] Automatic MOC for target transportcombobox_gui
+[36/85] Building CXX object src/tests/CMakeFiles/servertest.dir/servertest_autogen/mocs_compilation.cpp.o
+[37/85] Building CXX object src/tests/CMakeFiles/transporttreeview_gui.dir/transporttreeview_gui_autogen/mocs_compilation.cpp.o
+[38/85] Building CXX object src/tests/CMakeFiles/transportmanagementwidgetng_gui.dir/transportmanagementwidgetng_gui_autogen/mocs_compilation.cpp.o
+[39/85] Building CXX object src/tests/CMakeFiles/transportcombobox_gui.dir/transportcombobox_gui_autogen/mocs_compilation.cpp.o
+[40/85] Automatic MOC for target transporttreeviewtest
+[41/85] Automatic MOC for target transportmanagertest
+[42/85] Building CXX object src/autotests/CMakeFiles/transporttreeviewtest.dir/transporttreeviewtest_autogen/mocs_compilation.cpp.o
+[43/85] Building CXX object src/plugins/tests/CMakeFiles/transportmanagertest.dir/transportmanagertest_autogen/mocs_compilation.cpp.o
+[44/85] Automatic MOC for target addtransportdialogng_gui
+[45/85] Building CXX object src/tests/CMakeFiles/addtransportdialogng_gui.dir/addtransportdialogng_gui_autogen/mocs_compilation.cpp.o
+[46/85] Automatic MOC for target transportmgr
+[47/85] Building CXX object src/tests/CMakeFiles/transportmgr.dir/transportmgr_autogen/mocs_compilation.cpp.o
+[48/85] Automatic MOC for target mailtransport_smtpplugin
+[49/85] Generating ui_smtpsettings.h
+[50/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/mailtransport_smtpplugin_autogen/mocs_compilation.cpp.o
+[51/85] Automatic MOC for target smtpjobtest
+[52/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/smtpjobtest_autogen/mocs_compilation.cpp.o
+[53/85] Building CXX object src/plugins/tests/CMakeFiles/transportmanagertest.dir/transportmanagertest.cpp.o
+[54/85] Building CXX object src/tests/CMakeFiles/addtransportdialogng_gui.dir/addtransportdialogng_gui.cpp.o
+[55/85] Building CXX object src/tests/CMakeFiles/transportmanagementwidgetng_gui.dir/transportmanagementwidgetng_gui.cpp.o
+[56/85] Building CXX object src/tests/CMakeFiles/servertest.dir/servertest.cpp.o
+[57/85] Building CXX object src/tests/CMakeFiles/transportcombobox_gui.dir/transportcombobox_gui.cpp.o
+[58/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/mailtransportplugin_smtp_debug.cpp.o
+[59/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/xoauthpasswordrequester.cpp.o
+[60/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/xoauthpasswordrequester.cpp.o
+[61/85] Linking CXX executable bin/transportmanagementwidgetng_gui
+[62/85] Linking CXX executable bin/addtransportdialogng_gui
+[63/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/gmailpasswordrequester.cpp.o
+[64/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpconfigdialog.cpp.o
+[65/85] Linking CXX executable bin/transportcombobox_gui
+[66/85] Linking CXX executable bin/servertest
+[67/85] Linking CXX executable bin/transportmanagertest
+[68/85] Building CXX object src/tests/CMakeFiles/transporttreeview_gui.dir/transporttreeview_gui.cpp.o
+[69/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/mailtransportplugin_smtp_debug.cpp.o
+[70/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/outlookpasswordrequester.cpp.o
+[71/85] Linking CXX executable bin/transporttreeview_gui
+[72/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/gmailpasswordrequester.cpp.o
+[73/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpmailtransportplugin.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpmailtransportplugin.cpp:44:128: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+   44 | MailTransport::TransportJob *SMTPMailTransportPlugin::createTransportJob(MailTransport::Transport *t, const QString &identifier)
+      |                                                                                                                                ^
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpmailtransportplugin.cpp:9:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+[74/85] Building CXX object src/autotests/CMakeFiles/transporttreeviewtest.dir/transporttreeviewtest.cpp.o
+[75/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/outlookpasswordrequester.cpp.o
+[76/85] Linking CXX executable bin/transporttreeviewtest
+[77/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpjob.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp: In member function ‘virtual void MailTransport::SmtpJob::slotResult(KJob*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:379:23: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  379 |         TransportJob::slotResult(job);
+      |                       ^~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:10:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:383:19: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  383 |     TransportJob::slotResult(job);
+      |                   ^~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+[78/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/smtpjob.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp: In member function ‘virtual void MailTransport::SmtpJob::slotResult(KJob*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:379:23: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  379 |         TransportJob::slotResult(job);
+      |                       ^~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:10:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:383:19: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  383 |     TransportJob::slotResult(job);
+      |                   ^~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+[79/85] Building CXX object src/tests/CMakeFiles/transportmgr.dir/transportmgr.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp: In member function ‘void TransportMgr::sendBtnClicked()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp:85:19: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+   85 |     TransportJob *job = TransportManager::self()->createTransportJob(mComboBox->currentTransportId());
+      |                   ^~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp:10:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp:85:69: warning: ‘MailTransport::TransportJob* MailTransport::TransportManager::createTransportJob(MailTransport::Transport::Id)’ is deprecated [-Wdeprecated-declarations]
+   85 |     TransportJob *job = TransportManager::self()->createTransportJob(mComboBox->currentTransportId());
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp:11:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.h:115:44: note: declared here
+  115 |     MAILTRANSPORT_DEPRECATED TransportJob *createTransportJob(Transport::Id transportId);
+      |                                            ^~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp:96:33: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+   96 |     connect(job, &TransportJob::percentChanged, this, &TransportMgr::jobPercent);
+      |                                 ^~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp:99:39: warning: ‘void MailTransport::TransportManager::schedule(MailTransport::TransportJob*)’ is deprecated [-Wdeprecated-declarations]
+   99 |     TransportManager::self()->schedule(job);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.h:137:35: note: declared here
+  137 |     MAILTRANSPORT_DEPRECATED void schedule(TransportJob *job);
+      |                                   ^~~~~~~~
+[80/85] Linking CXX executable bin/transportmgr
+[81/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpconfigwidget.cpp.o
+[82/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/smtpjobtest.cpp.o
+[83/85] Linking CXX shared module bin/pim6/mailtransport/mailtransport_smtpplugin.so
+[84/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/fakeserver.cpp.o
+[85/85] Linking CXX executable bin/smtpjobtest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/libKPim6MailTransport.so.6.4.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/libKPim6MailTransport.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/libKPim6MailTransport.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/config.kcfg/mailtransport.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/private/transportconfigwidget_p.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/PrecommandJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/ServerTest
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/Transport
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportManager
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportType
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportModel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/OutlookOAuthTokenRequester
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportActivitiesAbstract
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportComboBox
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportConfigWidget
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportManagementWidgetNg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportActivitiesAbstractPlugin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/MailTransport/TransportAbstractPlugin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/mailtransport_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/precommandjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/servertest.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transport.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportmanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transporttype.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportmodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/outlookoauthtokenrequester.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportactivitiesabstract.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportcombobox.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportconfigwidget.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportmanagementwidgetng.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportactivitiesabstractplugin.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportabstractplugin.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport/transportbase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/include/KPim6/MailTransport/mailtransport_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/cmake/KPim6MailTransport/KPim6MailTransportConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/cmake/KPim6MailTransport/KPim6MailTransportConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/cmake/KPim6MailTransport/KPim6MailTransportTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/cmake/KPim6MailTransport/KPim6MailTransportTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/qt6/plugins/pim6/mailtransport/mailtransport_smtpplugin.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/lib64/qt6/plugins/pim6/mailtransport/mailtransport_smtpplugin.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/qlogging-categories6/kmailtransport.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/qlogging-categories6/kmailtransport.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/da/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/cs/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ja/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@ijekavian/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/de/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/el/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nn/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hi/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pt_BR/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/lt/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/be/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pa/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sl/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ta/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ro/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/bs/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/kk/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sr@latin/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/he/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/zh_TW/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pl/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/km/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/pt/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/tr/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/fr/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ast/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/mai
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/mai/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ka/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/th/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/gl/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ia/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hu/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/eo/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/bg/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ga/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ca/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/uk/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/en_GB/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/zh_CN/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nl/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sa/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/fi/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ko/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ru/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/lv/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/hne/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ca@valencia/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nb/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/es/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/eu/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/et/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/it/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/se
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/se/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/se/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ar/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/nds/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/mr/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/ug/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sk/LC_MESSAGES/libmailtransport6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/package-kmailtransport/usr/share/locale/sv/LC_MESSAGES/libmailtransport6.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'README*': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmailtransport/kmailtransport.info: No such file or directory
+extra-cmake-modules
+akonadi
+akonadi-mime
+kcmutils
+kconfigwidgets
+ki18n
+kio
+kmime
+ksmtp
+kwallet
+libkgapi
+qtkeychain
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKPim6MailTransport.so	libKPim6MailTransport.so.6
+usr/lib64/libKPim6MailTransport.so.6	libKPim6MailTransport.so.6.4.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKPim6MailTransport.so )
+( cd usr/lib64 ; ln -sf libKPim6MailTransport.so.6 libKPim6MailTransport.so )
+( cd usr/lib64 ; rm -rf libKPim6MailTransport.so.6 )
+( cd usr/lib64 ; ln -sf libKPim6MailTransport.so.6.4.1 libKPim6MailTransport.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKPim6MailTransport.so.6'
+removed './usr/lib64/libKPim6MailTransport.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kmailtransport/kmailtransport-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kmailtransport-25.04.1/
+usr/doc/kmailtransport-25.04.1/kmailtransport.ini
+usr/doc/kmailtransport-25.04.1/slack-required
+usr/include/
+usr/include/KPim6/
+usr/include/KPim6/MailTransport/
+usr/include/KPim6/MailTransport/MailTransport/
+usr/include/KPim6/MailTransport/MailTransport/OutlookOAuthTokenRequester
+usr/include/KPim6/MailTransport/MailTransport/PrecommandJob
+usr/include/KPim6/MailTransport/MailTransport/ServerTest
+usr/include/KPim6/MailTransport/MailTransport/Transport
+usr/include/KPim6/MailTransport/MailTransport/TransportAbstractPlugin
+usr/include/KPim6/MailTransport/MailTransport/TransportActivitiesAbstract
+usr/include/KPim6/MailTransport/MailTransport/TransportActivitiesAbstractPlugin
+usr/include/KPim6/MailTransport/MailTransport/TransportComboBox
+usr/include/KPim6/MailTransport/MailTransport/TransportConfigWidget
+usr/include/KPim6/MailTransport/MailTransport/TransportJob
+usr/include/KPim6/MailTransport/MailTransport/TransportManagementWidgetNg
+usr/include/KPim6/MailTransport/MailTransport/TransportManager
+usr/include/KPim6/MailTransport/MailTransport/TransportModel
+usr/include/KPim6/MailTransport/MailTransport/TransportType
+usr/include/KPim6/MailTransport/mailtransport/
+usr/include/KPim6/MailTransport/mailtransport/mailtransport_export.h
+usr/include/KPim6/MailTransport/mailtransport/outlookoauthtokenrequester.h
+usr/include/KPim6/MailTransport/mailtransport/precommandjob.h
+usr/include/KPim6/MailTransport/mailtransport/private/
+usr/include/KPim6/MailTransport/mailtransport/private/transportconfigwidget_p.h
+usr/include/KPim6/MailTransport/mailtransport/servertest.h
+usr/include/KPim6/MailTransport/mailtransport/transport.h
+usr/include/KPim6/MailTransport/mailtransport/transportabstractplugin.h
+usr/include/KPim6/MailTransport/mailtransport/transportactivitiesabstract.h
+usr/include/KPim6/MailTransport/mailtransport/transportactivitiesabstractplugin.h
+usr/include/KPim6/MailTransport/mailtransport/transportbase.h
+usr/include/KPim6/MailTransport/mailtransport/transportcombobox.h
+usr/include/KPim6/MailTransport/mailtransport/transportconfigwidget.h
+usr/include/KPim6/MailTransport/mailtransport/transportjob.h
+usr/include/KPim6/MailTransport/mailtransport/transportmanagementwidgetng.h
+usr/include/KPim6/MailTransport/mailtransport/transportmanager.h
+usr/include/KPim6/MailTransport/mailtransport/transportmodel.h
+usr/include/KPim6/MailTransport/mailtransport/transporttype.h
+usr/include/KPim6/MailTransport/mailtransport_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KPim6MailTransport/
+usr/lib64/cmake/KPim6MailTransport/KPim6MailTransportConfig.cmake
+usr/lib64/cmake/KPim6MailTransport/KPim6MailTransportConfigVersion.cmake
+usr/lib64/cmake/KPim6MailTransport/KPim6MailTransportTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KPim6MailTransport/KPim6MailTransportTargets.cmake
+usr/lib64/libKPim6MailTransport.so.6.4.1
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/pim6/
+usr/lib64/qt6/plugins/pim6/mailtransport/
+usr/lib64/qt6/plugins/pim6/mailtransport/mailtransport_smtpplugin.so
+usr/share/
+usr/share/config.kcfg/
+usr/share/config.kcfg/mailtransport.kcfg
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/hne/
+usr/share/locale/hne/LC_MESSAGES/
+usr/share/locale/hne/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/mai/
+usr/share/locale/mai/LC_MESSAGES/
+usr/share/locale/mai/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libmailtransport6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/libmailtransport6.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kmailtransport.categories
+usr/share/qlogging-categories6/kmailtransport.renamecategories
+
+Slackware package /tmp/kmailtransport/kmailtransport-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for kmailtransport-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/kmailtransport/kmailtransport-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/kmailtransport/kmailtransport-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/kmailtransport/kmailtransport-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kmailtransport.tar.lz4 format.
+/tmp/kmailtransport /tmp/kmailtransport
+/tmp/kmailtransport
+BIN_NAME
+README
+kmailtransport-25.04.1-x86_64-1_rtz.tlz
+kmailtransport-25.04.1-x86_64-1_rtz.tlz.md5
+kmailtransport-25.04.1-x86_64-1_rtz.tlz.so.file
+kmailtransport-25.04.1-x86_64-1_rtz.tlz.txt
+kmailtransport.dep
+makepkg-kmailtransport.log
+kmailtransport build finished. Procced to installation...
+
++=========================================================================================================================+
+| Upgrading kmailtransport-25.04.1-x86_64-1_rtz package using /tmp/kmailtransport/kmailtransport-25.04.1-x86_64-1_rtz.tlz |
++=========================================================================================================================+
+
+Pre-installing package kmailtransport-25.04.1-x86_64-1_rtz...
+Removing package: kmailtransport-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:39:25
+Installing package kmailtransport-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kmailtransport (Manage mail transport)
+#
+# Manage mail transport
+#
+# https://kontact.kde.org/
+Executing install script for kmailtransport-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kmailtransport-25.04.1-x86_64-1_rtz.tlz installed.
+Package kmailtransport-25.04.1-x86_64-1_rtz upgraded with new package /tmp/kmailtransport/kmailtransport-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kmailtransport-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 27 seconds.

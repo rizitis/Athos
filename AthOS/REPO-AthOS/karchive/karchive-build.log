@@ -1,0 +1,815 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules		xz	bzip2
+doxygen is already installed!
+extra-cmake-modules is already installed!
+xz is already installed!
+bzip2 is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 21:28:37--  https://download.kde.org/stable/frameworks/6.14/karchive-6.14.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/karchive-6.14.0.tar.xz [following]
+--2025-05-10 21:28:37--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/karchive-6.14.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1086872 (1.0M) [application/octet-stream]
+Saving to: ‘karchive-6.14.0.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  4% 1.33M 1s
+    50K .......... .......... .......... .......... ..........  9% 1.25M 1s
+   100K .......... .......... .......... .......... .......... 14%  785K 1s
+   150K .......... .......... .......... .......... .......... 18%  718K 1s
+   200K .......... .......... .......... .......... .......... 23%  324M 1s
+   250K .......... .......... .......... .......... .......... 28%  325M 1s
+   300K .......... .......... .......... .......... .......... 32% 4.54M 0s
+   350K .......... .......... .......... .......... .......... 37%  792K 0s
+   400K .......... .......... .......... .......... .......... 42% 1.62M 0s
+   450K .......... .......... .......... .......... .......... 47%  269M 0s
+   500K .......... .......... .......... .......... .......... 51% 2.93M 0s
+   550K .......... .......... .......... .......... .......... 56% 2.15M 0s
+   600K .......... .......... .......... .......... .......... 61% 1.69M 0s
+   650K .......... .......... .......... .......... .......... 65% 3.64M 0s
+   700K .......... .......... .......... .......... .......... 70% 1.88M 0s
+   750K .......... .......... .......... .......... .......... 75% 1.53M 0s
+   800K .......... .......... .......... .......... .......... 80% 3.45M 0s
+   850K .......... .......... .......... .......... .......... 84% 1.97M 0s
+   900K .......... .......... .......... .......... .......... 89% 1.64M 0s
+   950K .......... .......... .......... .......... .......... 94% 3.48M 0s
+  1000K .......... .......... .......... .......... .......... 98% 2.19M 0s
+  1050K .......... .                                          100%  203M=0.6s
+
+2025-05-10 21:28:38 (1.86 MB/s) - ‘karchive-6.14.0.tar.xz’ saved [1086872/1086872]
+
+Found file: karchive-6.14.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+karchive-6.14.0/
+karchive-6.14.0/.git-blame-ignore-revs
+karchive-6.14.0/.gitignore
+karchive-6.14.0/.gitlab-ci.yml
+karchive-6.14.0/.kde-ci.yml
+karchive-6.14.0/AUTHORS
+karchive-6.14.0/CMakeLists.txt
+karchive-6.14.0/INSTALL
+karchive-6.14.0/KF6ArchiveConfig.cmake.in
+karchive-6.14.0/LICENSES/
+karchive-6.14.0/LICENSES/BSD-2-Clause.txt
+karchive-6.14.0/LICENSES/CC0-1.0.txt
+karchive-6.14.0/LICENSES/LGPL-2.0-or-later.txt
+karchive-6.14.0/README.md
+karchive-6.14.0/autotests/
+karchive-6.14.0/autotests/CMakeLists.txt
+karchive-6.14.0/autotests/data/
+karchive-6.14.0/autotests/data/artest.a
+karchive-6.14.0/autotests/data/dirpermissions.zip
+karchive-6.14.0/autotests/data/global_header_test.tar.gz
+karchive-6.14.0/autotests/data/multiple_nameless_files.7z
+karchive-6.14.0/autotests/data/out.epub
+karchive-6.14.0/autotests/data/password_protected.7z
+karchive-6.14.0/autotests/data/readnumber_check.7z
+karchive-6.14.0/autotests/data/redundantDataDescriptorsNoSignature.zip
+karchive-6.14.0/autotests/data/redundantDataDescriptorsWithSignature.zip
+karchive-6.14.0/autotests/data/runtime_resource.rcc
+karchive-6.14.0/autotests/data/tar_directory_forgotten.tar.gz
+karchive-6.14.0/autotests/data/tar_directory_twice.tar.gz
+karchive-6.14.0/autotests/data/tar_emptyfile_missingdir.tar.gz
+karchive-6.14.0/autotests/data/tar_non_ascii_file_name.tar.gz
+karchive-6.14.0/autotests/data/tar_prefix_test.tar.gz
+karchive-6.14.0/autotests/data/tar_relative_path_outside_archive.tar.bz2
+karchive-6.14.0/autotests/data/tar_rootdir.tar.gz
+karchive-6.14.0/autotests/data/threefiles.gz
+karchive-6.14.0/autotests/data/twofiles.gz
+karchive-6.14.0/autotests/data/unusual_but_valid_364071.zip
+karchive-6.14.0/autotests/data/zip64.pkpass
+karchive-6.14.0/autotests/data/zip64_datadescriptor.zip
+karchive-6.14.0/autotests/data/zip64_end_of_central_directory.zip
+karchive-6.14.0/autotests/data/zip64_extra_zip64_localheader.oxps
+karchive-6.14.0/autotests/data/zip64_extra_zip64_size.zip.gz
+karchive-6.14.0/autotests/data/zip64_nested_stored_streamed.zip
+karchive-6.14.0/autotests/data/zip_within_zip.zip
+karchive-6.14.0/autotests/karchivetest.cpp
+karchive-6.14.0/autotests/karchivetest.h
+karchive-6.14.0/autotests/kcompressiondevicetest.cpp
+karchive-6.14.0/autotests/kcompressiondevicetest.h
+karchive-6.14.0/autotests/kfiltertest.cpp
+karchive-6.14.0/autotests/kfiltertest.h
+karchive-6.14.0/autotests/klimitediodevicetest.cpp
+karchive-6.14.0/autotests/klimitediodevicetest.h
+karchive-6.14.0/conanfile.py
+karchive-6.14.0/docs/
+karchive-6.14.0/docs/Doxyfile.local
+karchive-6.14.0/examples/
+karchive-6.14.0/examples/bzip2gzip/
+karchive-6.14.0/examples/bzip2gzip/CMakeLists.txt
+karchive-6.14.0/examples/bzip2gzip/main.cpp
+karchive-6.14.0/examples/helloworld/
+karchive-6.14.0/examples/helloworld/CMakeLists.txt
+karchive-6.14.0/examples/helloworld/main.cpp
+karchive-6.14.0/examples/tarlocalfiles/
+karchive-6.14.0/examples/tarlocalfiles/CMakeLists.txt
+karchive-6.14.0/examples/tarlocalfiles/main.cpp
+karchive-6.14.0/examples/unzipper/
+karchive-6.14.0/examples/unzipper/CMakeLists.txt
+karchive-6.14.0/examples/unzipper/main.cpp
+karchive-6.14.0/metainfo.yaml
+karchive-6.14.0/poqm/
+karchive-6.14.0/poqm/ar/
+karchive-6.14.0/poqm/ar/karchive6_qt.po
+karchive-6.14.0/poqm/ast/
+karchive-6.14.0/poqm/ast/karchive6_qt.po
+karchive-6.14.0/poqm/bg/
+karchive-6.14.0/poqm/bg/karchive6_qt.po
+karchive-6.14.0/poqm/ca/
+karchive-6.14.0/poqm/ca/karchive6_qt.po
+karchive-6.14.0/poqm/ca@valencia/
+karchive-6.14.0/poqm/ca@valencia/karchive6_qt.po
+karchive-6.14.0/poqm/cs/
+karchive-6.14.0/poqm/cs/karchive6_qt.po
+karchive-6.14.0/poqm/de/
+karchive-6.14.0/poqm/de/karchive6_qt.po
+karchive-6.14.0/poqm/en_GB/
+karchive-6.14.0/poqm/en_GB/karchive6_qt.po
+karchive-6.14.0/poqm/eo/
+karchive-6.14.0/poqm/eo/karchive6_qt.po
+karchive-6.14.0/poqm/es/
+karchive-6.14.0/poqm/es/karchive6_qt.po
+karchive-6.14.0/poqm/eu/
+karchive-6.14.0/poqm/eu/karchive6_qt.po
+karchive-6.14.0/poqm/fi/
+karchive-6.14.0/poqm/fi/karchive6_qt.po
+karchive-6.14.0/poqm/fr/
+karchive-6.14.0/poqm/fr/karchive6_qt.po
+karchive-6.14.0/poqm/gl/
+karchive-6.14.0/poqm/gl/karchive6_qt.po
+karchive-6.14.0/poqm/he/
+karchive-6.14.0/poqm/he/karchive6_qt.po
+karchive-6.14.0/poqm/hi/
+karchive-6.14.0/poqm/hi/karchive6_qt.po
+karchive-6.14.0/poqm/hu/
+karchive-6.14.0/poqm/hu/karchive6_qt.po
+karchive-6.14.0/poqm/ia/
+karchive-6.14.0/poqm/ia/karchive6_qt.po
+karchive-6.14.0/poqm/id/
+karchive-6.14.0/poqm/id/karchive6_qt.po
+karchive-6.14.0/poqm/it/
+karchive-6.14.0/poqm/it/karchive6_qt.po
+karchive-6.14.0/poqm/ja/
+karchive-6.14.0/poqm/ja/karchive6_qt.po
+karchive-6.14.0/poqm/ka/
+karchive-6.14.0/poqm/ka/karchive6_qt.po
+karchive-6.14.0/poqm/ko/
+karchive-6.14.0/poqm/ko/karchive6_qt.po
+karchive-6.14.0/poqm/lt/
+karchive-6.14.0/poqm/lt/karchive6_qt.po
+karchive-6.14.0/poqm/lv/
+karchive-6.14.0/poqm/lv/karchive6_qt.po
+karchive-6.14.0/poqm/nl/
+karchive-6.14.0/poqm/nl/karchive6_qt.po
+karchive-6.14.0/poqm/nn/
+karchive-6.14.0/poqm/nn/karchive6_qt.po
+karchive-6.14.0/poqm/pa/
+karchive-6.14.0/poqm/pa/karchive6_qt.po
+karchive-6.14.0/poqm/pl/
+karchive-6.14.0/poqm/pl/karchive6_qt.po
+karchive-6.14.0/poqm/pt/
+karchive-6.14.0/poqm/pt/karchive6_qt.po
+karchive-6.14.0/poqm/ro/
+karchive-6.14.0/poqm/ro/karchive6_qt.po
+karchive-6.14.0/poqm/ru/
+karchive-6.14.0/poqm/ru/karchive6_qt.po
+karchive-6.14.0/poqm/sa/
+karchive-6.14.0/poqm/sa/karchive6_qt.po
+karchive-6.14.0/poqm/sk/
+karchive-6.14.0/poqm/sk/karchive6_qt.po
+karchive-6.14.0/poqm/sl/
+karchive-6.14.0/poqm/sl/karchive6_qt.po
+karchive-6.14.0/poqm/sv/
+karchive-6.14.0/poqm/sv/karchive6_qt.po
+karchive-6.14.0/poqm/ta/
+karchive-6.14.0/poqm/ta/karchive6_qt.po
+karchive-6.14.0/poqm/tr/
+karchive-6.14.0/poqm/tr/karchive6_qt.po
+karchive-6.14.0/poqm/uk/
+karchive-6.14.0/poqm/uk/karchive6_qt.po
+karchive-6.14.0/poqm/zh_CN/
+karchive-6.14.0/poqm/zh_CN/karchive6_qt.po
+karchive-6.14.0/poqm/zh_TW/
+karchive-6.14.0/poqm/zh_TW/karchive6_qt.po
+karchive-6.14.0/src/
+karchive-6.14.0/src/CMakeLists.txt
+karchive-6.14.0/src/Messages.sh
+karchive-6.14.0/src/config-compression.h.cmake
+karchive-6.14.0/src/k7zip.cpp
+karchive-6.14.0/src/k7zip.h
+karchive-6.14.0/src/kar.cpp
+karchive-6.14.0/src/kar.h
+karchive-6.14.0/src/karchive.cpp
+karchive-6.14.0/src/karchive.h
+karchive-6.14.0/src/karchive_p.h
+karchive-6.14.0/src/karchivedirectory.h
+karchive-6.14.0/src/karchiveentry.h
+karchive-6.14.0/src/karchivefile.h
+karchive-6.14.0/src/kbzip2filter.cpp
+karchive-6.14.0/src/kbzip2filter.h
+karchive-6.14.0/src/kcompressiondevice.cpp
+karchive-6.14.0/src/kcompressiondevice.h
+karchive-6.14.0/src/kcompressiondevice_p.h
+karchive-6.14.0/src/kfilterbase.cpp
+karchive-6.14.0/src/kfilterbase.h
+karchive-6.14.0/src/kgzipfilter.cpp
+karchive-6.14.0/src/kgzipfilter.h
+karchive-6.14.0/src/klimitediodevice.cpp
+karchive-6.14.0/src/klimitediodevice_p.h
+karchive-6.14.0/src/knonefilter.cpp
+karchive-6.14.0/src/knonefilter.h
+karchive-6.14.0/src/krcc.cpp
+karchive-6.14.0/src/krcc.h
+karchive-6.14.0/src/ktar.cpp
+karchive-6.14.0/src/ktar.h
+karchive-6.14.0/src/kxzfilter.cpp
+karchive-6.14.0/src/kxzfilter.h
+karchive-6.14.0/src/kzip.cpp
+karchive-6.14.0/src/kzip.h
+karchive-6.14.0/src/kzipfileentry.h
+karchive-6.14.0/src/kzstdfilter.cpp
+karchive-6.14.0/src/kzstdfilter.h
+karchive-6.14.0/test_package/
+karchive-6.14.0/test_package/CMakeLists.txt
+karchive-6.14.0/test_package/conanfile.py
+karchive-6.14.0/test_package/example.cpp
+karchive-6.14.0/tests/
+karchive-6.14.0/tests/CMakeLists.txt
+karchive-6.14.0/tests/k7ziptest.cpp
+karchive-6.14.0/tests/kartest.cpp
+karchive-6.14.0/tests/krcctest.cpp
+karchive-6.14.0/tests/ktartest.cpp
+karchive-6.14.0/tests/kziptest.cpp
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found ZLIB: /usr/lib64/libz.so (found version "1.3.1")
+-- Found BZip2: /usr/lib64/libbz2.so (found version "1.0.8")
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Looking for lzma_auto_decoder in /usr/lib64/liblzma.so
+-- Looking for lzma_auto_decoder in /usr/lib64/liblzma.so - found
+-- Looking for lzma_easy_encoder in /usr/lib64/liblzma.so
+-- Looking for lzma_easy_encoder in /usr/lib64/liblzma.so - found
+-- Looking for lzma_lzma_preset in /usr/lib64/liblzma.so
+-- Looking for lzma_lzma_preset in /usr/lib64/liblzma.so - found
+-- Found LibLZMA: /usr/lib64/liblzma.so (found version "5.8.1")
+-- Found OpenSSL: /usr/lib64/libcrypto.so (found version "3.5.0")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'libzstd'
+--   Found libzstd, version 1.5.7
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/work/karchive-6.14.0/build/src/KF6Archive_ECMQchDoxygen.config' updated.
+
+-- The following features have been enabled:
+
+ * LibZstd, Support for zstd compressed files and data streams
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Network
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.14.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * ZLIB, Support for gzip compressed files and data streams, <https://www.zlib.net>
+   Support for gzip compressed files and data streams
+ * BZip2, Support for BZip2 compressed files and data streams, <https://sourceware.org/bzip2/>
+   Support for BZip2 compressed files and data streams
+ * LibLZMA, Support for xz compressed files and data streams, <https://tukaani.org/xz/>
+   Support for xz compressed files and data streams
+ * OpenSSL, Support for encrypted archives, <https://www.openssl.org/>
+   Support for encrypted archives
+ * PkgConfig
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * Qt6ToolsTools, qhelpgenerator from Qt6 tools
+   Needed for API dox QCH file generation
+ * Qt6Core
+ * Qt6
+
+-- Configuring done (1.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/work/karchive-6.14.0/build
+[1/99] Generating ECMPoQm/bg/karchive6_qt.qm
+[2/99] Generating ECMPoQm/de/karchive6_qt.qm
+[3/99] Generating ECMPoQm/ca@valencia/karchive6_qt.qm
+[4/99] Generating ECMPoQm/cs/karchive6_qt.qm
+[5/99] Generating ECMPoQm/en_GB/karchive6_qt.qm
+[6/99] Generating ECMPoQm/eo/karchive6_qt.qm
+[7/99] Generating ECMPoQm/eu/karchive6_qt.qm
+[8/99] Generating ECMPoQm/fi/karchive6_qt.qm
+[9/99] Generating ECMPoQm/gl/karchive6_qt.qm
+[10/99] Generating ECMPoQm/he/karchive6_qt.qm
+[11/99] Generating ECMPoQm/ar/karchive6_qt.qm
+[12/99] Generating ECMPoQm/ast/karchive6_qt.qm
+[13/99] Generating ECMPoQm/ca/karchive6_qt.qm
+[14/99] Generating ECMPoQm/es/karchive6_qt.qm
+[15/99] Generating ECMPoQm/fr/karchive6_qt.qm
+[16/99] Generating ECMPoQm/hi/karchive6_qt.qm
+[17/99] Generating ECMPoQm/hu/karchive6_qt.qm
+[18/99] Generating ECMPoQm/ia/karchive6_qt.qm
+[19/99] Generating ECMPoQm/id/karchive6_qt.qm
+[20/99] Generating ECMPoQm/it/karchive6_qt.qm
+[21/99] Generating ECMPoQm/lt/karchive6_qt.qm
+[22/99] Generating ECMPoQm/ja/karchive6_qt.qm
+[23/99] Generating ECMPoQm/lv/karchive6_qt.qm
+[24/99] Generating ECMPoQm/ro/karchive6_qt.qm
+[25/99] Generating ECMPoQm/pt/karchive6_qt.qm
+[26/99] Generating ECMPoQm/ka/karchive6_qt.qm
+[27/99] Generating ECMPoQm/nl/karchive6_qt.qm
+[28/99] Generating ECMPoQm/ko/karchive6_qt.qm
+[29/99] Generating ECMPoQm/nn/karchive6_qt.qm
+[30/99] Generating ECMPoQm/sa/karchive6_qt.qm
+[31/99] Generating ECMPoQm/sl/karchive6_qt.qm
+[32/99] Generating ECMPoQm/sk/karchive6_qt.qm
+[33/99] Generating ECMPoQm/sv/karchive6_qt.qm
+[34/99] Generating ECMPoQm/tr/karchive6_qt.qm
+[35/99] Generating ECMPoQm/ru/karchive6_qt.qm
+[36/99] Generating ECMPoQm/pl/karchive6_qt.qm
+[37/99] Generating ECMPoQm/ta/karchive6_qt.qm
+[38/99] Generating ECMPoQm/pa/karchive6_qt.qm
+[39/99] Generating ECMPoQm/uk/karchive6_qt.qm
+[40/99] Generating ECMPoQm/zh_TW/karchive6_qt.qm
+[41/99] Generating ECMPoQm/zh_CN/karchive6_qt.qm
+[42/99] Generating src/KF6Archive.qch, src/KF6Archive.tags
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[43/99] Automatic MOC for target klimitediodevicetest
+[44/99] Automatic MOC for target KF6Archive
+[45/99] Building CXX object autotests/CMakeFiles/klimitediodevicetest.dir/klimitediodevicetest_autogen/mocs_compilation.cpp.o
+[46/99] Building CXX object src/CMakeFiles/KF6Archive.dir/KF6Archive_autogen/mocs_compilation.cpp.o
+[47/99] Building CXX object src/CMakeFiles/KF6Archive.dir/kfilterbase.cpp.o
+[48/99] Building CXX object src/CMakeFiles/KF6Archive.dir/kgzipfilter.cpp.o
+[49/99] Building CXX object src/CMakeFiles/KF6Archive.dir/kzstdfilter.cpp.o
+[50/99] Building CXX object autotests/CMakeFiles/klimitediodevicetest.dir/__/src/klimitediodevice.cpp.o
+[51/99] Building CXX object src/CMakeFiles/KF6Archive.dir/kxzfilter.cpp.o
+[52/99] Building CXX object src/CMakeFiles/KF6Archive.dir/krcc.cpp.o
+[53/99] Building CXX object src/CMakeFiles/KF6Archive.dir/kcompressiondevice.cpp.o
+[54/99] Building CXX object src/CMakeFiles/KF6Archive.dir/loggingcategory.cpp.o
+[55/99] Building CXX object src/CMakeFiles/KF6Archive.dir/klimitediodevice.cpp.o
+[56/99] Building CXX object src/CMakeFiles/KF6Archive.dir/knonefilter.cpp.o
+[57/99] Building CXX object src/CMakeFiles/KF6Archive.dir/kbzip2filter.cpp.o
+[58/99] Building CXX object src/CMakeFiles/KF6Archive.dir/ECMQmLoader-karchive6_qt.cpp.o
+[59/99] Building CXX object autotests/CMakeFiles/klimitediodevicetest.dir/klimitediodevicetest.cpp.o
+[60/99] Building CXX object src/CMakeFiles/KF6Archive.dir/ktar.cpp.o
+[61/99] Building CXX object src/CMakeFiles/KF6Archive.dir/kar.cpp.o
+[62/99] Linking CXX executable bin/klimitediodevicetest
+[63/99] Building CXX object src/CMakeFiles/KF6Archive.dir/kzip.cpp.o
+[64/99] Building CXX object src/CMakeFiles/KF6Archive.dir/karchive.cpp.o
+[65/99] Building CXX object src/CMakeFiles/KF6Archive.dir/k7zip.cpp.o
+[66/99] Linking CXX shared library bin/libKF6Archive.so.6.14.0
+[67/99] Creating library symlink bin/libKF6Archive.so.6 bin/libKF6Archive.so
+[68/99] Automatic MOC for target kziptest
+[69/99] Automatic MOC for target kartest
+[70/99] Automatic MOC for target krcctest
+[71/99] Automatic MOC for target ktartest
+[72/99] Automatic MOC for target k7ziptest
+[73/99] Building CXX object tests/CMakeFiles/kziptest.dir/kziptest_autogen/mocs_compilation.cpp.o
+[74/99] Building CXX object tests/CMakeFiles/kartest.dir/kartest_autogen/mocs_compilation.cpp.o
+[75/99] Building CXX object tests/CMakeFiles/ktartest.dir/ktartest_autogen/mocs_compilation.cpp.o
+[76/99] Building CXX object tests/CMakeFiles/krcctest.dir/krcctest_autogen/mocs_compilation.cpp.o
+[77/99] Building CXX object tests/CMakeFiles/k7ziptest.dir/k7ziptest_autogen/mocs_compilation.cpp.o
+[78/99] Automatic MOC for target karchivetest
+[79/99] Building CXX object autotests/CMakeFiles/karchivetest.dir/karchivetest_autogen/mocs_compilation.cpp.o
+[80/99] Automatic MOC for target kfiltertest
+[81/99] Building CXX object autotests/CMakeFiles/kfiltertest.dir/kfiltertest_autogen/mocs_compilation.cpp.o
+[82/99] Automatic MOC for target kcompressiondevicetest
+[83/99] Building CXX object autotests/CMakeFiles/kcompressiondevicetest.dir/kcompressiondevicetest_autogen/mocs_compilation.cpp.o
+[84/99] Building CXX object tests/CMakeFiles/kartest.dir/kartest.cpp.o
+[85/99] Building CXX object tests/CMakeFiles/ktartest.dir/ktartest.cpp.o
+[86/99] Linking CXX executable bin/kartest
+[87/99] Linking CXX executable bin/ktartest
+[88/99] Building CXX object tests/CMakeFiles/kziptest.dir/kziptest.cpp.o
+[89/99] Linking CXX executable bin/kziptest
+[90/99] Building CXX object tests/CMakeFiles/k7ziptest.dir/k7ziptest.cpp.o
+[91/99] Linking CXX executable bin/k7ziptest
+[92/99] Building CXX object tests/CMakeFiles/krcctest.dir/krcctest.cpp.o
+[93/99] Building CXX object autotests/CMakeFiles/kcompressiondevicetest.dir/kcompressiondevicetest.cpp.o
+[94/99] Linking CXX executable bin/krcctest
+[95/99] Linking CXX executable bin/kcompressiondevicetest
+[96/99] Building CXX object autotests/CMakeFiles/kfiltertest.dir/kfiltertest.cpp.o
+[97/99] Linking CXX executable bin/kfiltertest
+[98/99] Building CXX object autotests/CMakeFiles/karchivetest.dir/karchivetest.cpp.o
+[99/99] Linking CXX executable bin/karchivetest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/lib64/libKF6Archive.so.6.14.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/lib64/libKF6Archive.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/lib64/libKF6Archive.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/karchive_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KArchive
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KArchiveEntry
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KArchiveFile
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KArchiveDirectory
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KAr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KCompressionDevice
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KFilterBase
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KRcc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KTar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KZip
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/KZipFileEntry
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/karchive.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/karchiveentry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/karchivefile.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/karchivedirectory.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/kar.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/kcompressiondevice.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/kfilterbase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/krcc.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/ktar.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/kzip.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/kzipfileentry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/K7Zip
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/k7zip.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/qlogging-categories6/karchive.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/qlogging-categories6/karchive.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Archive.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Archive.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ar/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ast/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/bg/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ca/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ca@valencia/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/cs/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/de/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/en_GB/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/eo/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/es/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/eu/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/fi/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/fr/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/gl/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/he/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/hi/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/hu/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ia/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/id/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/it/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ja/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ka/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ko/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/lt/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/lv/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/nl/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/nn/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/pa/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/pl/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/pt/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ro/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ru/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/sa/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/sk/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/sl/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/sv/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/ta/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/tr/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/uk/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/zh_CN/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/share/locale/zh_TW/LC_MESSAGES/karchive6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/lib64/cmake/KF6Archive/KF6ArchiveQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/include/KF6/KArchive/karchive_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/lib64/cmake/KF6Archive/KF6ArchiveConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/lib64/cmake/KF6Archive/KF6ArchiveTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/package-karchive/usr/lib64/cmake/KF6Archive/KF6ArchiveTargets-relwithdebinfo.cmake
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/karchive/karchive.info: No such file or directory
+doxygen
+extra-cmake-modules
+xz
+bzip2
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKF6Archive.so	libKF6Archive.so.6
+usr/lib64/libKF6Archive.so.6	libKF6Archive.so.6.14.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKF6Archive.so )
+( cd usr/lib64 ; ln -sf libKF6Archive.so.6 libKF6Archive.so )
+( cd usr/lib64 ; rm -rf libKF6Archive.so.6 )
+( cd usr/lib64 ; ln -sf libKF6Archive.so.6.14.0 libKF6Archive.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKF6Archive.so.6'
+removed './usr/lib64/libKF6Archive.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/karchive/karchive-6.14.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/karchive-6.14.0/
+usr/doc/karchive-6.14.0/AUTHORS
+usr/doc/karchive-6.14.0/README.md
+usr/doc/karchive-6.14.0/docs/
+usr/doc/karchive-6.14.0/docs/Doxyfile.local
+usr/doc/karchive-6.14.0/karchive.ini
+usr/doc/karchive-6.14.0/slack-required
+usr/doc/qt6-6.8.3_20250319_bab1fecd/
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Archive.qch
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Archive.tags
+usr/include/
+usr/include/KF6/
+usr/include/KF6/KArchive/
+usr/include/KF6/KArchive/K7Zip
+usr/include/KF6/KArchive/KAr
+usr/include/KF6/KArchive/KArchive
+usr/include/KF6/KArchive/KArchiveDirectory
+usr/include/KF6/KArchive/KArchiveEntry
+usr/include/KF6/KArchive/KArchiveFile
+usr/include/KF6/KArchive/KCompressionDevice
+usr/include/KF6/KArchive/KFilterBase
+usr/include/KF6/KArchive/KRcc
+usr/include/KF6/KArchive/KTar
+usr/include/KF6/KArchive/KZip
+usr/include/KF6/KArchive/KZipFileEntry
+usr/include/KF6/KArchive/k7zip.h
+usr/include/KF6/KArchive/kar.h
+usr/include/KF6/KArchive/karchive.h
+usr/include/KF6/KArchive/karchive_export.h
+usr/include/KF6/KArchive/karchive_version.h
+usr/include/KF6/KArchive/karchivedirectory.h
+usr/include/KF6/KArchive/karchiveentry.h
+usr/include/KF6/KArchive/karchivefile.h
+usr/include/KF6/KArchive/kcompressiondevice.h
+usr/include/KF6/KArchive/kfilterbase.h
+usr/include/KF6/KArchive/krcc.h
+usr/include/KF6/KArchive/ktar.h
+usr/include/KF6/KArchive/kzip.h
+usr/include/KF6/KArchive/kzipfileentry.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF6Archive/
+usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake
+usr/lib64/cmake/KF6Archive/KF6ArchiveConfigVersion.cmake
+usr/lib64/cmake/KF6Archive/KF6ArchiveQchTargets.cmake
+usr/lib64/cmake/KF6Archive/KF6ArchiveTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KF6Archive/KF6ArchiveTargets.cmake
+usr/lib64/libKF6Archive.so.6.14.0
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/karchive6_qt.qm
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/karchive6_qt.qm
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/karchive.categories
+usr/share/qlogging-categories6/karchive.renamecategories
+
+Slackware package /tmp/karchive/karchive-6.14.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for karchive-6.14.0-x86_64-1_rtz.tlz
+Creating /tmp/karchive/karchive-6.14.0-x86_64-1_rtz.tlz.so.file using /tmp/karchive/karchive-6.14.0-x86_64-1_rtz.tlz
+Successfully created /tmp/karchive/karchive-6.14.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in karchive.tar.lz4 format.
+/tmp/karchive /tmp/karchive
+/tmp/karchive
+BIN_NAME
+README
+karchive-6.14.0-x86_64-1_rtz.tlz
+karchive-6.14.0-x86_64-1_rtz.tlz.md5
+karchive-6.14.0-x86_64-1_rtz.tlz.so.file
+karchive-6.14.0-x86_64-1_rtz.tlz.txt
+karchive.dep
+makepkg-karchive.log
+karchive build finished. Procced to installation...
+
++=====================================================================================================+
+| Upgrading karchive-6.14.0-x86_64-1_rtz package using /tmp/karchive/karchive-6.14.0-x86_64-1_rtz.tlz |
++=====================================================================================================+
+
+Pre-installing package karchive-6.14.0-x86_64-1_rtz...
+Removing package: karchive-6.14.0-x86_64-1_rtz-upgraded-2025-05-10,21:28:55
+Installing package karchive-6.14.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# karchive (Qt addon )
+#
+# Qt addon providing access to numerous types of archives
+#
+# https://community.kde.org/Frameworks
+Executing install script for karchive-6.14.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package karchive-6.14.0-x86_64-1_rtz.tlz installed.
+Package karchive-6.14.0-x86_64-1_rtz upgraded with new package /tmp/karchive/karchive-6.14.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'karchive-6.14.0.tar.xz': No such file or directory
+Build process completed in 0 minutes and 24 seconds.

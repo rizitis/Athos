@@ -1,0 +1,1684 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: gnupg boost	extra-cmake-modules	gpgme	kcodecs	kcompletion	kconfig	kcoreaddons	ki18n	kitemmodels	kpimtextedit	kwidgetsaddons	kwindowsystem
+gnupg is already installed!
+boost is already installed!
+extra-cmake-modules is already installed!
+gpgme is already installed!
+kcodecs is already installed!
+kcompletion is already installed!
+kconfig is already installed!
+kcoreaddons is already installed!
+ki18n is already installed!
+kitemmodels is already installed!
+kpimtextedit is already installed!
+kwidgetsaddons is already installed!
+kwindowsystem is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:09:17--  https://download.kde.org/stable/release-service/25.04.1/src/libkleo-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkleo-25.04.1.tar.xz [following]
+--2025-05-11 01:09:18--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkleo-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 654960 (640K) [application/octet-stream]
+Saving to: ‘libkleo-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  7% 1.34M 0s
+    50K .......... .......... .......... .......... .......... 15% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 23% 6.32M 0s
+   150K .......... .......... .......... .......... .......... 31% 6.71M 0s
+   200K .......... .......... .......... .......... .......... 39% 2.02M 0s
+   250K .......... .......... .......... .......... .......... 46% 5.11M 0s
+   300K .......... .......... .......... .......... .......... 54% 6.99M 0s
+   350K .......... .......... .......... .......... .......... 62% 1.05M 0s
+   400K .......... .......... .......... .......... .......... 70%  310M 0s
+   450K .......... .......... .......... .......... .......... 78%  339M 0s
+   500K .......... .......... .......... .......... .......... 85%  344M 0s
+   550K .......... .......... .......... .......... .......... 93% 1.67M 0s
+   600K .......... .......... .......... .........            100% 9.50M=0.2s
+
+2025-05-11 01:09:18 (3.02 MB/s) - ‘libkleo-25.04.1.tar.xz’ saved [654960/654960]
+
+Found file: libkleo-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+libkleo-25.04.1/
+libkleo-25.04.1/cmake/
+libkleo-25.04.1/cmake/modules/
+libkleo-25.04.1/cmake/modules/FindLibGpgError.cmake
+libkleo-25.04.1/cmake/modules/FindLibAssuan.cmake
+libkleo-25.04.1/Mainpage.dox
+libkleo-25.04.1/metainfo.yaml.license
+libkleo-25.04.1/CMakePresets.json.license
+libkleo-25.04.1/readme-build-ftime.txt
+libkleo-25.04.1/CMakePresets.json
+libkleo-25.04.1/REUSE.toml
+libkleo-25.04.1/LICENSES/
+libkleo-25.04.1/LICENSES/GPL-2.0-only.txt
+libkleo-25.04.1/LICENSES/GPL-3.0-or-later.txt
+libkleo-25.04.1/LICENSES/GCC-exception-3.1.txt
+libkleo-25.04.1/LICENSES/BSD-3-Clause.txt
+libkleo-25.04.1/LICENSES/CC0-1.0.txt
+libkleo-25.04.1/LICENSES/LGPL-2.0-or-later.txt
+libkleo-25.04.1/LICENSES/GPL-2.0-or-later.txt
+libkleo-25.04.1/.gitlab-ci.yml
+libkleo-25.04.1/config-libkleo.h.in
+libkleo-25.04.1/sanitizers.supp
+libkleo-25.04.1/tests/
+libkleo-25.04.1/tests/test_keyresolver.cpp
+libkleo-25.04.1/tests/test_jobs.cpp
+libkleo-25.04.1/tests/test_keylister.cpp
+libkleo-25.04.1/tests/test_keyformailbox.cpp
+libkleo-25.04.1/tests/test_cryptoconfig.cpp
+libkleo-25.04.1/tests/test_auditlog.cpp
+libkleo-25.04.1/tests/test_keygen.h
+libkleo-25.04.1/tests/test_keylister.h
+libkleo-25.04.1/tests/test_keyselectiondialog.cpp
+libkleo-25.04.1/tests/test_keyselectioncombo.cpp
+libkleo-25.04.1/tests/CMakeLists.txt
+libkleo-25.04.1/tests/test_keygen.cpp
+libkleo-25.04.1/tests/gnupgviewer.h
+libkleo-25.04.1/.git-blame-ignore-revs
+libkleo-25.04.1/.kde-ci.yml
+libkleo-25.04.1/.codespellrc
+libkleo-25.04.1/po/
+libkleo-25.04.1/po/fa/
+libkleo-25.04.1/po/fa/libkleopatra6.po
+libkleo-25.04.1/po/bg/
+libkleo-25.04.1/po/bg/libkleopatra6.po
+libkleo-25.04.1/po/pt/
+libkleo-25.04.1/po/pt/libkleopatra6.po
+libkleo-25.04.1/po/km/
+libkleo-25.04.1/po/km/libkleopatra6.po
+libkleo-25.04.1/po/nn/
+libkleo-25.04.1/po/nn/libkleopatra6.po
+libkleo-25.04.1/po/pl/
+libkleo-25.04.1/po/pl/libkleopatra6.po
+libkleo-25.04.1/po/ja/
+libkleo-25.04.1/po/ja/libkleopatra6.po
+libkleo-25.04.1/po/pa/
+libkleo-25.04.1/po/pa/libkleopatra6.po
+libkleo-25.04.1/po/bs/
+libkleo-25.04.1/po/bs/libkleopatra6.po
+libkleo-25.04.1/po/zh_CN/
+libkleo-25.04.1/po/zh_CN/libkleopatra6.po
+libkleo-25.04.1/po/cs/
+libkleo-25.04.1/po/cs/libkleopatra6.po
+libkleo-25.04.1/po/es/
+libkleo-25.04.1/po/es/libkleopatra6.po
+libkleo-25.04.1/po/ka/
+libkleo-25.04.1/po/ka/libkleopatra6.po
+libkleo-25.04.1/po/is/
+libkleo-25.04.1/po/is/libkleopatra6.po
+libkleo-25.04.1/po/tr/
+libkleo-25.04.1/po/tr/libkleopatra6.po
+libkleo-25.04.1/po/ug/
+libkleo-25.04.1/po/ug/libkleopatra6.po
+libkleo-25.04.1/po/ca/
+libkleo-25.04.1/po/ca/libkleopatra6.po
+libkleo-25.04.1/po/se/
+libkleo-25.04.1/po/se/libkleopatra6.po
+libkleo-25.04.1/po/ca@valencia/
+libkleo-25.04.1/po/ca@valencia/libkleopatra6.po
+libkleo-25.04.1/po/fy/
+libkleo-25.04.1/po/fy/libkleopatra6.po
+libkleo-25.04.1/po/hr/
+libkleo-25.04.1/po/hr/libkleopatra6.po
+libkleo-25.04.1/po/gl/
+libkleo-25.04.1/po/gl/libkleopatra6.po
+libkleo-25.04.1/po/ro/
+libkleo-25.04.1/po/ro/libkleopatra6.po
+libkleo-25.04.1/po/br/
+libkleo-25.04.1/po/br/libkleopatra6.po
+libkleo-25.04.1/po/eo/
+libkleo-25.04.1/po/eo/libkleopatra6.po
+libkleo-25.04.1/po/sr@ijekavian/
+libkleo-25.04.1/po/sr@ijekavian/libkleopatra6.po
+libkleo-25.04.1/po/nl/
+libkleo-25.04.1/po/nl/libkleopatra6.po
+libkleo-25.04.1/po/mr/
+libkleo-25.04.1/po/mr/libkleopatra6.po
+libkleo-25.04.1/po/hu/
+libkleo-25.04.1/po/hu/libkleopatra6.po
+libkleo-25.04.1/po/eu/
+libkleo-25.04.1/po/eu/libkleopatra6.po
+libkleo-25.04.1/po/lv/
+libkleo-25.04.1/po/lv/libkleopatra6.po
+libkleo-25.04.1/po/mk/
+libkleo-25.04.1/po/mk/libkleopatra6.po
+libkleo-25.04.1/po/nb/
+libkleo-25.04.1/po/nb/libkleopatra6.po
+libkleo-25.04.1/po/fr/
+libkleo-25.04.1/po/fr/libkleopatra6.po
+libkleo-25.04.1/po/hi/
+libkleo-25.04.1/po/hi/libkleopatra6.po
+libkleo-25.04.1/po/sl/
+libkleo-25.04.1/po/sl/libkleopatra6.po
+libkleo-25.04.1/po/sr@latin/
+libkleo-25.04.1/po/sr@latin/libkleopatra6.po
+libkleo-25.04.1/po/ta/
+libkleo-25.04.1/po/ta/libkleopatra6.po
+libkleo-25.04.1/po/sr/
+libkleo-25.04.1/po/sr/libkleopatra6.po
+libkleo-25.04.1/po/de/
+libkleo-25.04.1/po/de/libkleopatra6.po
+libkleo-25.04.1/po/ar/
+libkleo-25.04.1/po/ar/libkleopatra6.po
+libkleo-25.04.1/po/sk/
+libkleo-25.04.1/po/sk/libkleopatra6.po
+libkleo-25.04.1/po/zh_TW/
+libkleo-25.04.1/po/zh_TW/libkleopatra6.po
+libkleo-25.04.1/po/et/
+libkleo-25.04.1/po/et/libkleopatra6.po
+libkleo-25.04.1/po/ie/
+libkleo-25.04.1/po/ie/libkleopatra6.po
+libkleo-25.04.1/po/it/
+libkleo-25.04.1/po/it/libkleopatra6.po
+libkleo-25.04.1/po/mai/
+libkleo-25.04.1/po/mai/libkleopatra6.po
+libkleo-25.04.1/po/el/
+libkleo-25.04.1/po/el/libkleopatra6.po
+libkleo-25.04.1/po/da/
+libkleo-25.04.1/po/da/libkleopatra6.po
+libkleo-25.04.1/po/pt_BR/
+libkleo-25.04.1/po/pt_BR/libkleopatra6.po
+libkleo-25.04.1/po/ru/
+libkleo-25.04.1/po/ru/libkleopatra6.po
+libkleo-25.04.1/po/sq/
+libkleo-25.04.1/po/sq/libkleopatra6.po
+libkleo-25.04.1/po/ia/
+libkleo-25.04.1/po/ia/libkleopatra6.po
+libkleo-25.04.1/po/cy/
+libkleo-25.04.1/po/cy/libkleopatra6.po
+libkleo-25.04.1/po/sv/
+libkleo-25.04.1/po/sv/libkleopatra6.po
+libkleo-25.04.1/po/ne/
+libkleo-25.04.1/po/ne/libkleopatra6.po
+libkleo-25.04.1/po/ms/
+libkleo-25.04.1/po/ms/libkleopatra6.po
+libkleo-25.04.1/po/fi/
+libkleo-25.04.1/po/fi/libkleopatra6.po
+libkleo-25.04.1/po/kk/
+libkleo-25.04.1/po/kk/libkleopatra6.po
+libkleo-25.04.1/po/ast/
+libkleo-25.04.1/po/ast/libkleopatra6.po
+libkleo-25.04.1/po/lt/
+libkleo-25.04.1/po/lt/libkleopatra6.po
+libkleo-25.04.1/po/be/
+libkleo-25.04.1/po/be/libkleopatra6.po
+libkleo-25.04.1/po/tg/
+libkleo-25.04.1/po/tg/libkleopatra6.po
+libkleo-25.04.1/po/sa/
+libkleo-25.04.1/po/sa/libkleopatra6.po
+libkleo-25.04.1/po/ko/
+libkleo-25.04.1/po/ko/libkleopatra6.po
+libkleo-25.04.1/po/hne/
+libkleo-25.04.1/po/hne/libkleopatra6.po
+libkleo-25.04.1/po/ga/
+libkleo-25.04.1/po/ga/libkleopatra6.po
+libkleo-25.04.1/po/en_GB/
+libkleo-25.04.1/po/en_GB/libkleopatra6.po
+libkleo-25.04.1/po/uk/
+libkleo-25.04.1/po/uk/libkleopatra6.po
+libkleo-25.04.1/po/sr@ijekavianlatin/
+libkleo-25.04.1/po/sr@ijekavianlatin/libkleopatra6.po
+libkleo-25.04.1/po/nds/
+libkleo-25.04.1/po/nds/libkleopatra6.po
+libkleo-25.04.1/KPimLibkleoConfig.cmake.in
+libkleo-25.04.1/autotests/
+libkleo-25.04.1/autotests/fixtures/
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/trustlist.txt
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/pubring.kbx
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/trustdb.gpg
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/53F70182AE3A9CFDDA3DA5B3A1742B875F43524B.key
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/0787F6F0B138537CD41474FCD0626D28A628B42E.key
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/F466487705518FB398FA38EA0FE10B131CAA3D3F.key
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/813F09E28E5F03D348AE525DE0F40BC5D2F512E9.key
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/54C4CD864DC04D5F4EE0CBB527EBF649934CB943.key
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/EC06D8C339EF73304D5B2CCF5363B437E0C915F2.key
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/4CA3595FF38DEF035B2D0158CF68EDE4DCC46868.key
+libkleo-25.04.1/autotests/fixtures/expirycheckertest/private-keys-v1.d/1AA8BA52430E51AE249AF0DA97D59F869E4101A8.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/test-ca.cert.srl
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/trustlist.txt
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/openssl.cnf
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/pubring.kbx
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/trustdb.gpg
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/readme.md
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/test-ca.cert.pem
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/B9E7A40AA2CE1512A3270374D05AB0A74F98E54E.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/4205C2F4EC7F5C7FBD175C5025A74E374E768B17.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/93FBC8415935DD866AEAE179D70A58B1BEE7EA85.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/029551BEA335EC0F84109F1EDD23E0FA44FEB336.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/A4E6D1CEBA63087E47B84863BF16D8E81F0B7629.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/9A54238A5B7D396D48A584255A1DE5622FBF8B99.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/B185B49FC722A9C92F8C2C30438BA225363F0A6B.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/878E0CC6690155A5B79124D0F79D0363B6E41E4B.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/8CD2635EB4B7766E0C174E62853FCE072795D304.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/82E263F0451C25D17100C2BAC06F1867B9E183E1.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/F769B16A6206E8F17D0AFB99EDB44BE813943A2C.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/private-keys-v1.d/07E5EE9F946A1760EC7E3DEC3E8665415BF8E5F0.key
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/test-ca.key.pem
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/newcerts/
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/newcerts/4C46CCE3B1A7F1F911C49A9148FF546F9CCF11EB.pem
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/newcerts/689E5D5EDD5C64BA423E26FC74ABC29345600D73.pem
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/newcerts/6237D5880ABA855CBF3829FF0DE1FF96BF7FDE60.pem
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/newcerts/53CE2C8DA0B767B450824278C15373FBD8CFF6B5.pem
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/newcerts/70CEEBA710B7FBF41184FBB6A50AC89D459E574D.pem
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/newcerts/6C48CCE8716D1609D0D1075F4D582C8DC307D1EE.pem
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/index.txt.attr
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/demoCA/index.txt
+libkleo-25.04.1/autotests/fixtures/keyresolvercoretest/.gitignore
+libkleo-25.04.1/autotests/keyresolvercoretest.qrc
+libkleo-25.04.1/autotests/hextest.cpp
+libkleo-25.04.1/autotests/keycachetest.cpp
+libkleo-25.04.1/autotests/keyserverconfigtest.cpp
+libkleo-25.04.1/autotests/stringutilstest.cpp
+libkleo-25.04.1/autotests/formattingtest.cpp
+libkleo-25.04.1/autotests/flatkeylistmodeltest.cpp
+libkleo-25.04.1/autotests/abstractkeylistmodeltest.h
+libkleo-25.04.1/autotests/testhelpers.h
+libkleo-25.04.1/autotests/keyselectioncombotest.cpp
+libkleo-25.04.1/autotests/expirycheckertest.cpp
+libkleo-25.04.1/autotests/classifytest.cpp
+libkleo-25.04.1/autotests/hierarchicalkeylistmodeltest.cpp
+libkleo-25.04.1/autotests/keyparameterstest.cpp
+libkleo-25.04.1/autotests/expirycheckertest.qrc
+libkleo-25.04.1/autotests/keyresolvercoretest.cpp
+libkleo-25.04.1/autotests/editdirectoryservicedialogtest.cpp
+libkleo-25.04.1/autotests/CMakeLists.txt
+libkleo-25.04.1/autotests/compliancetest.cpp
+libkleo-25.04.1/autotests/abstractkeylistmodeltest.cpp
+libkleo-25.04.1/autotests/newkeyapprovaldialogtest.cpp
+libkleo-25.04.1/CMakeLists.txt
+libkleo-25.04.1/src/
+libkleo-25.04.1/src/kleo/
+libkleo-25.04.1/src/kleo/debug.h
+libkleo-25.04.1/src/kleo/kleoexception.h
+libkleo-25.04.1/src/kleo/stl_util.h
+libkleo-25.04.1/src/kleo/predicates.h
+libkleo-25.04.1/src/kleo/expirycheckerconfig.cpp
+libkleo-25.04.1/src/kleo/expirycheckersettings.cpp
+libkleo-25.04.1/src/kleo/keygroup.cpp
+libkleo-25.04.1/src/kleo/checksumdefinition.cpp
+libkleo-25.04.1/src/kleo/enum.h
+libkleo-25.04.1/src/kleo/keygroupimportexport.h
+libkleo-25.04.1/src/kleo/oidmap.h
+libkleo-25.04.1/src/kleo/keyserverconfig.cpp
+libkleo-25.04.1/src/kleo/dn.h
+libkleo-25.04.1/src/kleo/docaction.cpp
+libkleo-25.04.1/src/kleo/expirychecker.h
+libkleo-25.04.1/src/kleo/defaultkeyfilter.cpp
+libkleo-25.04.1/src/kleo/enum.cpp
+libkleo-25.04.1/src/kleo/dn.cpp
+libkleo-25.04.1/src/kleo/defaultkeygenerationjob.h
+libkleo-25.04.1/src/kleo/auditlogentry.cpp
+libkleo-25.04.1/src/kleo/keyfiltermanager.cpp
+libkleo-25.04.1/src/kleo/keygroupconfig.cpp
+libkleo-25.04.1/src/kleo/keyresolver.h
+libkleo-25.04.1/src/kleo/keyfilter.h
+libkleo-25.04.1/src/kleo/keyfiltermanager.h
+libkleo-25.04.1/src/kleo/expirycheckersettings.h
+libkleo-25.04.1/src/kleo/defaultkeygenerationjob.cpp
+libkleo-25.04.1/src/kleo/expirychecker.cpp
+libkleo-25.04.1/src/kleo/keyresolver.cpp
+libkleo-25.04.1/src/kleo/kconfigbasedkeyfilter.h
+libkleo-25.04.1/src/kleo/keyresolvercore.h
+libkleo-25.04.1/src/kleo/kconfigbasedkeyfilter.cpp
+libkleo-25.04.1/src/kleo/keyresolvercore.cpp
+libkleo-25.04.1/src/kleo/debug.cpp
+libkleo-25.04.1/src/kleo/defaultkeyfilter.h
+libkleo-25.04.1/src/kleo/kleoexception.cpp
+libkleo-25.04.1/src/kleo/keygroup.h
+libkleo-25.04.1/src/kleo/keygroupimportexport.cpp
+libkleo-25.04.1/src/kleo/checksumdefinition.h
+libkleo-25.04.1/src/kleo/docaction.h
+libkleo-25.04.1/src/kleo/keyserverconfig.h
+libkleo-25.04.1/src/kleo/oidmap.cpp
+libkleo-25.04.1/src/kleo/keygroupconfig.h
+libkleo-25.04.1/src/kleo/auditlogentry.h
+libkleo-25.04.1/src/kleo/expirycheckerconfig.h
+libkleo-25.04.1/src/pics/
+libkleo-25.04.1/src/pics/key_ok.png
+libkleo-25.04.1/src/pics/smartcard.xpm
+libkleo-25.04.1/src/pics/key_unknown.png
+libkleo-25.04.1/src/pics/key.png
+libkleo-25.04.1/src/pics/key_bad.png
+libkleo-25.04.1/src/pics/libkleopatra.qrc
+libkleo-25.04.1/src/pics/CMakeLists.txt
+libkleo-25.04.1/src/Messages.sh
+libkleo-25.04.1/src/libkleopatrarc-win32.desktop
+libkleo-25.04.1/src/kcfg/
+libkleo-25.04.1/src/kcfg/openpgpcertificatecreationconfig.kcfg
+libkleo-25.04.1/src/kcfg/classifyconfig.kcfgc
+libkleo-25.04.1/src/kcfg/expirycheckerconfigbase.kcfgc
+libkleo-25.04.1/src/kcfg/expirycheckerconfigbase.kcfg
+libkleo-25.04.1/src/kcfg/classifyconfig.kcfg
+libkleo-25.04.1/src/kcfg/openpgpcertificatecreationconfig.kcfgc
+libkleo-25.04.1/src/utils/
+libkleo-25.04.1/src/utils/compat.cpp
+libkleo-25.04.1/src/utils/gnupg.h
+libkleo-25.04.1/src/utils/scdaemon.h
+libkleo-25.04.1/src/utils/validation.cpp
+libkleo-25.04.1/src/utils/validation.h
+libkleo-25.04.1/src/utils/formatting.cpp
+libkleo-25.04.1/src/utils/systeminfo.cpp
+libkleo-25.04.1/src/utils/formatting.h
+libkleo-25.04.1/src/utils/qtstlhelpers.cpp
+libkleo-25.04.1/src/utils/gnupg-registry.c
+libkleo-25.04.1/src/utils/keyusage.h
+libkleo-25.04.1/src/utils/cryptoconfig.cpp
+libkleo-25.04.1/src/utils/cryptoconfig.h
+libkleo-25.04.1/src/utils/cryptoconfig_p.h
+libkleo-25.04.1/src/utils/classify.h
+libkleo-25.04.1/src/utils/multivalidator.cpp
+libkleo-25.04.1/src/utils/hex.h
+libkleo-25.04.1/src/utils/expiration.cpp
+libkleo-25.04.1/src/utils/keyparameters.h
+libkleo-25.04.1/src/utils/multivalidator_p.h
+libkleo-25.04.1/src/utils/hex.cpp
+libkleo-25.04.1/src/utils/keyparameters.cpp
+libkleo-25.04.1/src/utils/gnupg.cpp
+libkleo-25.04.1/src/utils/assuan.h
+libkleo-25.04.1/src/utils/filesystemwatcher.cpp
+libkleo-25.04.1/src/utils/scdaemon.cpp
+libkleo-25.04.1/src/utils/keyhelpers.cpp
+libkleo-25.04.1/src/utils/stringutils.h
+libkleo-25.04.1/src/utils/gnupg-registry.h
+libkleo-25.04.1/src/utils/qtstlhelpers.h
+libkleo-25.04.1/src/utils/test.h
+libkleo-25.04.1/src/utils/classify.cpp
+libkleo-25.04.1/src/utils/compliance.h
+libkleo-25.04.1/src/utils/stringutils.cpp
+libkleo-25.04.1/src/utils/keyhelpers.h
+libkleo-25.04.1/src/utils/filesystemwatcher.h
+libkleo-25.04.1/src/utils/uniquelock.cpp
+libkleo-25.04.1/src/utils/test.cpp
+libkleo-25.04.1/src/utils/systeminfo.h
+libkleo-25.04.1/src/utils/compliance.cpp
+libkleo-25.04.1/src/utils/expiration.h
+libkleo-25.04.1/src/utils/uniquelock.h
+libkleo-25.04.1/src/utils/chrono.h
+libkleo-25.04.1/src/utils/compat.h
+libkleo-25.04.1/src/utils/algorithm.h
+libkleo-25.04.1/src/utils/assuan.cpp
+libkleo-25.04.1/src/libkleopatrarc.desktop
+libkleo-25.04.1/src/models/
+libkleo-25.04.1/src/models/keycache.cpp
+libkleo-25.04.1/src/models/keylistmodelinterface.cpp
+libkleo-25.04.1/src/models/keylistmodel.cpp
+libkleo-25.04.1/src/models/keylistmodel.h
+libkleo-25.04.1/src/models/keylist.h
+libkleo-25.04.1/src/models/useridlistmodel.h
+libkleo-25.04.1/src/models/subkeylistmodel.h
+libkleo-25.04.1/src/models/keylistsortfilterproxymodel.h
+libkleo-25.04.1/src/models/keycache.h
+libkleo-25.04.1/src/models/useridlistmodel.cpp
+libkleo-25.04.1/src/models/keyrearrangecolumnsproxymodel.cpp
+libkleo-25.04.1/src/models/useridproxymodel.cpp
+libkleo-25.04.1/src/models/useridlistproxymodel.h
+libkleo-25.04.1/src/models/keyrearrangecolumnsproxymodel.h
+libkleo-25.04.1/src/models/useridproxymodel.h
+libkleo-25.04.1/src/models/useridlistproxymodel.cpp
+libkleo-25.04.1/src/models/keylistsortfilterproxymodel.cpp
+libkleo-25.04.1/src/models/keycache_p.h
+libkleo-25.04.1/src/models/keylistmodelinterface.h
+libkleo-25.04.1/src/models/subkeylistmodel.cpp
+libkleo-25.04.1/src/CMakeLists.txt
+libkleo-25.04.1/src/ui/
+libkleo-25.04.1/src/ui/cryptoconfigmodule.cpp
+libkleo-25.04.1/src/ui/formtextinput.cpp
+libkleo-25.04.1/src/ui/filenamerequester.cpp
+libkleo-25.04.1/src/ui/animatedexpander_p.h
+libkleo-25.04.1/src/ui/messagebox.cpp
+libkleo-25.04.1/src/ui/cryptoconfigmodule.h
+libkleo-25.04.1/src/ui/readerportselection.cpp
+libkleo-25.04.1/src/ui/keyselectioncombo.h
+libkleo-25.04.1/src/ui/openpgpcertificatecreationdialog.cpp
+libkleo-25.04.1/src/ui/auditlogviewer.cpp
+libkleo-25.04.1/src/ui/useridselectioncombo.h
+libkleo-25.04.1/src/ui/keyrequester.h
+libkleo-25.04.1/src/ui/keylistview.cpp
+libkleo-25.04.1/src/ui/directoryserviceswidget.cpp
+libkleo-25.04.1/src/ui/treeview.h
+libkleo-25.04.1/src/ui/nameandemailwidget.h
+libkleo-25.04.1/src/ui/dnattributeorderconfigwidget.cpp
+libkleo-25.04.1/src/ui/nameandemailwidget.cpp
+libkleo-25.04.1/src/ui/cryptoconfigentryreaderport_p.h
+libkleo-25.04.1/src/ui/animatedexpander.cpp
+libkleo-25.04.1/src/ui/keyapprovaldialog.cpp
+libkleo-25.04.1/src/ui/keyselectioncombo.cpp
+libkleo-25.04.1/src/ui/cryptoconfigmodule_p.h
+libkleo-25.04.1/src/ui/progressdialog.cpp
+libkleo-25.04.1/src/ui/cryptoconfigentryreaderport.cpp
+libkleo-25.04.1/src/ui/newkeyapprovaldialog.h
+libkleo-25.04.1/src/ui/treeview.cpp
+libkleo-25.04.1/src/ui/errorlabel.h
+libkleo-25.04.1/src/ui/editdirectoryservicedialog.h
+libkleo-25.04.1/src/ui/directoryserviceswidget.h
+libkleo-25.04.1/src/ui/openpgpcertificatecreationdialog.h
+libkleo-25.04.1/src/ui/treewidget.cpp
+libkleo-25.04.1/src/ui/keyselectiondialog.cpp
+libkleo-25.04.1/src/ui/auditlogviewer.h
+libkleo-25.04.1/src/ui/treewidget.h
+libkleo-25.04.1/src/ui/useridselectioncombo.cpp
+libkleo-25.04.1/src/ui/progressbar.cpp
+libkleo-25.04.1/src/ui/keyselectiondialog.h
+libkleo-25.04.1/src/ui/formtextinput_p.h
+libkleo-25.04.1/src/ui/keylistview.h
+libkleo-25.04.1/src/ui/filenamerequester.h
+libkleo-25.04.1/src/ui/readerportselection.h
+libkleo-25.04.1/src/ui/editdirectoryservicedialog.cpp
+libkleo-25.04.1/src/ui/newkeyapprovaldialog.cpp
+libkleo-25.04.1/src/ui/errorlabel.cpp
+libkleo-25.04.1/src/ui/progressdialog.h
+libkleo-25.04.1/src/ui/keyrequester.cpp
+libkleo-25.04.1/src/ui/keyapprovaldialog.h
+libkleo-25.04.1/src/ui/dnattributeorderconfigwidget.h
+libkleo-25.04.1/src/ui/progressbar.h
+libkleo-25.04.1/src/ui/messagebox.h
+libkleo-25.04.1/.gitignore
+libkleo-25.04.1/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- GpgME++ Version 1.24.2
+-- Found LibGpgError: /usr/lib64/libgpg-error.so (found suitable version "1.55", minimum required is "1.36")
+CMake Warning (dev) at CMakeLists.txt:72 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Boost: /usr/lib64/cmake/Boost-1.88.0/BoostConfig.cmake (found suitable version "1.88.0", minimum required is "1.34.0")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.9.0)
+ * Qt6 (required version >= 6.7.0)
+ * Gettext
+ * KF6I18n (required version >= 6.9.0)
+ * Qt6Widgets (required version >= 6.7.0)
+ * KF6WidgetsAddons (required version >= 6.9.0)
+ * KF6Config (required version >= 6.14.0)
+ * KF6ColorScheme (required version >= 6.9.0)
+ * KF6Completion (required version >= 6.9.0)
+ * KF6CoreAddons (required version >= 6.9.0)
+ * KF6Codecs (required version >= 6.9.0)
+ * KF6ItemModels (required version >= 6.9.0)
+ * Gpgmepp, GpgME++ Library, <https://www.gnupg.org>
+   GpgME++ is required for OpenPGP support
+ * QGpgmeQt6 (required version >= 1.23.2)
+ * LibGpgError (required version >= 1.36), Runtime library for all GnuPG components, <https://www.gnupg.org/software/libgpg-error>
+ * Boost (required version >= 1.34.0), Boost C++ Libraries, <https://www.boost.org>
+   Boost is required for building most KDEPIM applications
+
+-- The following features have been disabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- Configuring done (1.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/work/libkleo-25.04.1/build
+[1/194] Generating ts...
+[2/194] Generating mo...
+[3/194] Automatic MOC for target KPim6Libkleo
+[4/194] Generating expirycheckerconfigbase.h, expirycheckerconfigbase.cpp
+[5/194] Generating classifyconfig.h, classifyconfig.cpp
+[6/194] Generating openpgpcertificatecreationconfig.h, openpgpcertificatecreationconfig.cpp
+[7/194] Automatic RCC for pics/libkleopatra.qrc
+[8/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/KPim6Libkleo_autogen/mocs_compilation.cpp.o
+[9/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/oidmap.cpp.o
+[10/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/kleoexception.cpp.o
+[11/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/expirycheckersettings.cpp.o
+[12/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/keylistmodelinterface.cpp.o
+[13/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/debug.cpp.o
+[14/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/keygroup.cpp.o
+[15/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/enum.cpp.o
+[16/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/defaultkeyfilter.cpp.o
+[17/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/auditlogentry.cpp.o
+[18/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/keyserverconfig.cpp.o
+[19/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/docaction.cpp.o
+[20/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/kconfigbasedkeyfilter.cpp.o
+[21/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/expirycheckerconfig.cpp.o
+[22/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/defaultkeygenerationjob.cpp.o
+[23/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/keygroupimportexport.cpp.o
+[24/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/keygroupconfig.cpp.o
+[25/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/keyresolver.cpp.o
+[26/194] Building C object src/CMakeFiles/KPim6Libkleo.dir/utils/gnupg-registry.c.o
+[27/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/compat.cpp.o
+[28/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/keyrearrangecolumnsproxymodel.cpp.o
+[29/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/dn.cpp.o
+[30/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/useridlistproxymodel.cpp.o
+[31/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/expirychecker.cpp.o
+[32/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/keylistsortfilterproxymodel.cpp.o
+[33/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/subkeylistmodel.cpp.o
+[34/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/keyfiltermanager.cpp.o
+[35/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/assuan.cpp.o
+[36/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/hex.cpp.o
+[37/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/qtstlhelpers.cpp.o
+[38/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/checksumdefinition.cpp.o
+[39/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/cryptoconfig.cpp.o
+[40/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/systeminfo.cpp.o
+[41/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/compliance.cpp.o
+[42/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/test.cpp.o
+[43/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/expiration.cpp.o
+[44/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/scdaemon.cpp.o
+[45/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/filesystemwatcher.cpp.o
+[46/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/stringutils.cpp.o
+[47/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/keyparameters.cpp.o
+[48/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/classify.cpp.o
+[49/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/useridproxymodel.cpp.o
+[50/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/libkleo_debug.cpp.o
+[51/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo/keyresolvercore.cpp.o
+[52/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/multivalidator.cpp.o
+[53/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/uniquelock.cpp.o
+[54/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/useridlistmodel.cpp.o
+[55/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/animatedexpander.cpp.o
+[56/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/validation.cpp.o
+[57/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/cryptoconfigentryreaderport.cpp.o
+[58/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/keyhelpers.cpp.o
+[59/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/auditlogviewer.cpp.o
+[60/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/errorlabel.cpp.o
+[61/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/formatting.cpp.o
+[62/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/nameandemailwidget.cpp.o
+[63/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/filenamerequester.cpp.o
+[64/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/kleo_ui_debug.cpp.o
+[65/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/messagebox.cpp.o
+[66/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/dnattributeorderconfigwidget.cpp.o
+[67/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/editdirectoryservicedialog.cpp.o
+[68/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/utils/gnupg.cpp.o
+[69/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/KPim6Libkleo_autogen/W5GHIJ4HRJ/qrc_libkleopatra.cpp.o
+[70/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/directoryserviceswidget.cpp.o
+[71/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/progressdialog.cpp.o
+[72/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/readerportselection.cpp.o
+[73/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/progressbar.cpp.o
+[74/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/treeview.cpp.o
+[75/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/formtextinput.cpp.o
+[76/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/openpgpcertificatecreationdialog.cpp.o
+[77/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/keyapprovaldialog.cpp.o
+[78/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/classifyconfig.cpp.o
+[79/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/treewidget.cpp.o
+[80/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/keyrequester.cpp.o
+[81/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/expirycheckerconfigbase.cpp.o
+[82/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/cryptoconfigmodule.cpp.o
+[83/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/keylistview.cpp.o
+[84/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/keylistmodel.cpp.o
+[85/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/models/keycache.cpp.o
+[86/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/openpgpcertificatecreationconfig.cpp.o
+[87/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/keyselectioncombo.cpp.o
+[88/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/useridselectioncombo.cpp.o
+[89/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/newkeyapprovaldialog.cpp.o
+[90/194] Building CXX object src/CMakeFiles/KPim6Libkleo.dir/ui/keyselectiondialog.cpp.o
+[91/194] Linking CXX shared library bin/libKPim6Libkleo.so.6.4.1
+[92/194] Creating library symlink bin/libKPim6Libkleo.so.6 bin/libKPim6Libkleo.so
+[93/194] Automatic MOC for target test_cryptoconfig
+[94/194] Automatic MOC for target test_jobs
+[95/194] Automatic MOC for target test_auditlog
+[96/194] Automatic MOC for target test_keyselectiondialog
+[97/194] Automatic MOC for target test_keyformailbox
+[98/194] Building CXX object tests/CMakeFiles/test_jobs.dir/test_jobs_autogen/mocs_compilation.cpp.o
+[99/194] Building CXX object tests/CMakeFiles/test_cryptoconfig.dir/test_cryptoconfig_autogen/mocs_compilation.cpp.o
+[100/194] Automatic MOC for target test_keyselectioncombo
+[101/194] Building CXX object tests/CMakeFiles/test_keyselectiondialog.dir/test_keyselectiondialog_autogen/mocs_compilation.cpp.o
+[102/194] Building CXX object tests/CMakeFiles/test_auditlog.dir/test_auditlog_autogen/mocs_compilation.cpp.o
+[103/194] Automatic MOC for target test_keygen
+[104/194] Automatic MOC for target classifytest
+[105/194] Building CXX object tests/CMakeFiles/test_keygen.dir/test_keygen_autogen/mocs_compilation.cpp.o
+[106/194] Automatic MOC for target compliancetest
+[107/194] Automatic MOC for target keycachetest
+[108/194] Building CXX object autotests/CMakeFiles/classifytest.dir/classifytest_autogen/mocs_compilation.cpp.o
+[109/194] Automatic MOC for target test_keylister
+[110/194] Building CXX object autotests/CMakeFiles/compliancetest.dir/compliancetest_autogen/mocs_compilation.cpp.o
+[111/194] Building CXX object autotests/CMakeFiles/keycachetest.dir/keycachetest_autogen/mocs_compilation.cpp.o
+[112/194] Automatic MOC for target test_keyresolver
+[113/194] Building CXX object tests/CMakeFiles/test_keylister.dir/test_keylister_autogen/mocs_compilation.cpp.o
+[114/194] Automatic MOC for target hierarchicalkeylistmodeltest
+[115/194] Automatic MOC for target keyresolvercoretest
+[116/194] Building CXX object tests/CMakeFiles/test_keyformailbox.dir/test_keyformailbox_autogen/mocs_compilation.cpp.o
+[117/194] Automatic MOC for target flatkeylistmodeltest
+[118/194] Automatic RCC for keyresolvercoretest.qrc
+[119/194] Automatic MOC for target hextest
+[120/194] Automatic MOC for target keyparameterstest
+[121/194] Automatic MOC for target formattingtest
+[122/194] Building CXX object autotests/CMakeFiles/hierarchicalkeylistmodeltest.dir/hierarchicalkeylistmodeltest_autogen/mocs_compilation.cpp.o
+[123/194] Automatic MOC for target stringutilstest
+[124/194] Building CXX object autotests/CMakeFiles/keyresolvercoretest.dir/keyresolvercoretest_autogen/mocs_compilation.cpp.o
+[125/194] Building CXX object autotests/CMakeFiles/flatkeylistmodeltest.dir/flatkeylistmodeltest_autogen/mocs_compilation.cpp.o
+[126/194] Automatic MOC for target expirycheckertest
+[127/194] Building CXX object autotests/CMakeFiles/hextest.dir/hextest_autogen/mocs_compilation.cpp.o
+[128/194] Automatic RCC for expirycheckertest.qrc
+[129/194] Building CXX object autotests/CMakeFiles/formattingtest.dir/formattingtest_autogen/mocs_compilation.cpp.o
+[130/194] Automatic MOC for target editdirectoryservicedialogtest
+[131/194] Building CXX object autotests/CMakeFiles/expirycheckertest.dir/expirycheckertest_autogen/mocs_compilation.cpp.o
+[132/194] Building CXX object autotests/CMakeFiles/keyresolvercoretest.dir/keyresolvercoretest_autogen/EWIEGA46WW/qrc_keyresolvercoretest.cpp.o
+[133/194] Automatic MOC for target keyselectioncombotest
+[134/194] Automatic MOC for target keyserverconfigtest
+[135/194] Building CXX object autotests/CMakeFiles/editdirectoryservicedialogtest.dir/editdirectoryservicedialogtest_autogen/mocs_compilation.cpp.o
+[136/194] Building CXX object autotests/CMakeFiles/keyselectioncombotest.dir/keyselectioncombotest_autogen/mocs_compilation.cpp.o
+[137/194] Automatic MOC for target newkeyapprovaldialogtest
+[138/194] Building CXX object autotests/CMakeFiles/keyserverconfigtest.dir/keyserverconfigtest_autogen/mocs_compilation.cpp.o
+[139/194] Building CXX object autotests/CMakeFiles/expirycheckertest.dir/expirycheckertest_autogen/EWIEGA46WW/qrc_expirycheckertest.cpp.o
+[140/194] Building CXX object autotests/CMakeFiles/newkeyapprovaldialogtest.dir/newkeyapprovaldialogtest_autogen/mocs_compilation.cpp.o
+[141/194] Building CXX object autotests/CMakeFiles/keyparameterstest.dir/keyparameterstest_autogen/mocs_compilation.cpp.o
+[142/194] Building CXX object tests/CMakeFiles/test_auditlog.dir/test_auditlog.cpp.o
+[143/194] Building CXX object autotests/CMakeFiles/stringutilstest.dir/stringutilstest_autogen/mocs_compilation.cpp.o
+[144/194] Building CXX object tests/CMakeFiles/test_cryptoconfig.dir/test_cryptoconfig.cpp.o
+[145/194] Building CXX object tests/CMakeFiles/test_keyselectiondialog.dir/test_keyselectiondialog.cpp.o
+[146/194] Building CXX object tests/CMakeFiles/test_keyselectioncombo.dir/test_keyselectioncombo_autogen/mocs_compilation.cpp.o
+[147/194] Building CXX object autotests/CMakeFiles/keyparameterstest.dir/keyparameterstest.cpp.o
+[148/194] Building CXX object tests/CMakeFiles/test_keyresolver.dir/test_keyresolver_autogen/mocs_compilation.cpp.o
+[149/194] Building CXX object autotests/CMakeFiles/hextest.dir/hextest.cpp.o
+[150/194] Building CXX object tests/CMakeFiles/test_keygen.dir/test_keygen.cpp.o
+[151/194] Building CXX object tests/CMakeFiles/test_jobs.dir/test_jobs.cpp.o
+[152/194] Linking CXX executable bin/hextest
+[153/194] Building CXX object autotests/CMakeFiles/classifytest.dir/classifytest.cpp.o
+[154/194] Building CXX object autotests/CMakeFiles/keycachetest.dir/keycachetest.cpp.o
+[155/194] Linking CXX executable bin/keyparameterstest
+[156/194] Linking CXX executable bin/test_cryptoconfig
+[157/194] Linking CXX executable bin/classifytest
+[158/194] Linking CXX executable bin/test_jobs
+[159/194] Building CXX object autotests/CMakeFiles/compliancetest.dir/compliancetest.cpp.o
+[160/194] Building CXX object tests/CMakeFiles/test_keylister.dir/test_keylister.cpp.o
+[161/194] Building CXX object autotests/CMakeFiles/hierarchicalkeylistmodeltest.dir/hierarchicalkeylistmodeltest.cpp.o
+[162/194] Building CXX object tests/CMakeFiles/test_keyformailbox.dir/test_keyformailbox.cpp.o
+[163/194] Linking CXX executable bin/keycachetest
+[164/194] Linking CXX executable bin/test_keyselectiondialog
+[165/194] Linking CXX executable bin/test_auditlog
+[166/194] Linking CXX executable bin/compliancetest
+[167/194] Linking CXX executable bin/test_keygen
+[168/194] Linking CXX executable bin/test_keylister
+[169/194] Building CXX object autotests/CMakeFiles/formattingtest.dir/formattingtest.cpp.o
+[170/194] Linking CXX executable bin/test_keyformailbox
+[171/194] Building CXX object autotests/CMakeFiles/flatkeylistmodeltest.dir/flatkeylistmodeltest.cpp.o
+[172/194] Linking CXX executable bin/formattingtest
+[173/194] Building CXX object autotests/CMakeFiles/keyselectioncombotest.dir/keyselectioncombotest.cpp.o
+[174/194] Building CXX object tests/CMakeFiles/test_keyselectioncombo.dir/test_keyselectioncombo.cpp.o
+[175/194] Linking CXX executable bin/keyselectioncombotest
+[176/194] Building CXX object autotests/CMakeFiles/keyserverconfigtest.dir/keyserverconfigtest.cpp.o
+[177/194] Building CXX object autotests/CMakeFiles/hierarchicalkeylistmodeltest.dir/abstractkeylistmodeltest.cpp.o
+[178/194] Linking CXX executable bin/test_keyselectioncombo
+[179/194] Building CXX object autotests/CMakeFiles/stringutilstest.dir/stringutilstest.cpp.o
+[180/194] Linking CXX executable bin/hierarchicalkeylistmodeltest
+[181/194] Linking CXX executable bin/keyserverconfigtest
+[182/194] Linking CXX executable bin/stringutilstest
+[183/194] Building CXX object autotests/CMakeFiles/editdirectoryservicedialogtest.dir/editdirectoryservicedialogtest.cpp.o
+[184/194] Building CXX object autotests/CMakeFiles/expirycheckertest.dir/expirycheckertest.cpp.o
+[185/194] Building CXX object tests/CMakeFiles/test_keyresolver.dir/test_keyresolver.cpp.o
+[186/194] Linking CXX executable bin/editdirectoryservicedialogtest
+[187/194] Linking CXX executable bin/expirycheckertest
+[188/194] Linking CXX executable bin/test_keyresolver
+[189/194] Building CXX object autotests/CMakeFiles/flatkeylistmodeltest.dir/abstractkeylistmodeltest.cpp.o
+[190/194] Linking CXX executable bin/flatkeylistmodeltest
+[191/194] Building CXX object autotests/CMakeFiles/keyresolvercoretest.dir/keyresolvercoretest.cpp.o
+[192/194] Linking CXX executable bin/keyresolvercoretest
+[193/194] Building CXX object autotests/CMakeFiles/newkeyapprovaldialogtest.dir/newkeyapprovaldialogtest.cpp.o
+[194/194] Linking CXX executable bin/newkeyapprovaldialogtest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/libkleopatra/pics/smartcard.xpm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/lib64/libKPim6Libkleo.so.6.4.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/lib64/libKPim6Libkleo.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/lib64/libKPim6Libkleo.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/AuditLogEntry
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/ChecksumDefinition
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Debug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/DefaultKeyFilter
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/DefaultKeyGenerationJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/DocAction
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Dn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Enum
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/ExpiryChecker
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/ExpiryCheckerConfig
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/ExpiryCheckerSettings
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KConfigBasedKeyFilter
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyFilter
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyFilterManager
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyGroup
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyGroupConfig
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyGroupImportExport
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyResolver
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyResolverCore
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyserverConfig
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KleoException
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/OidMap
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Predicates
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Stl_Util
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyCache
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyList
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyListModel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyListModelInterface
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyListSortFilterProxyModel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyRearrangeColumnsProxyModel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/SubkeyListModel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/UserIDListModel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/UserIDListProxyModel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/UserIDProxyModel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/AuditLogViewer
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/CryptoConfigModule
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/DNAttributeOrderConfigWidget
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/DirectoryServicesWidget
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/EditDirectoryServiceDialog
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/ErrorLabel
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/FileNameRequester
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyApprovalDialog
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyListView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyRequester
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeySelectionCombo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeySelectionDialog
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/MessageBox
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/NameAndEmailWidget
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/TreeView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/TreeWidget
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/NewKeyApprovalDialog
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/OpenPGPCertificateCreationDialog
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/ProgressDialog
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/ReaderPortSelection
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/UserIDSelectionCombo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Algorithm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Assuan
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Chrono
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Classify
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Compat
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Compliance
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/CryptoConfig
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Expiration
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/FileSystemWatcher
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Formatting
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/GnuPG
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Hex
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyHelpers
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyParameters
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/KeyUsage
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/QtStlHelpers
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/SCDaemon
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/StringUtils
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/SystemInfo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Test
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/UniqueLock
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/Libkleo/Validation
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/expirycheckerconfigbase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/kleo_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/auditlogentry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/checksumdefinition.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/debug.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/defaultkeyfilter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/defaultkeygenerationjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/docaction.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/dn.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/enum.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/expirychecker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/expirycheckerconfig.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/expirycheckersettings.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/kconfigbasedkeyfilter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyfilter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyfiltermanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keygroup.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keygroupconfig.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keygroupimportexport.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyresolver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyresolvercore.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyserverconfig.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/kleoexception.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/oidmap.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/predicates.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/stl_util.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keycache.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keylist.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keylistmodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keylistmodelinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keylistsortfilterproxymodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyrearrangecolumnsproxymodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/subkeylistmodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/useridlistmodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/useridlistproxymodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/useridproxymodel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/auditlogviewer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/cryptoconfigmodule.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/dnattributeorderconfigwidget.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/directoryserviceswidget.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/editdirectoryservicedialog.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/errorlabel.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/filenamerequester.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyapprovaldialog.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keylistview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyrequester.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyselectioncombo.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyselectiondialog.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/messagebox.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/nameandemailwidget.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/treeview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/treewidget.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/newkeyapprovaldialog.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/openpgpcertificatecreationdialog.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/progressdialog.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/readerportselection.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/useridselectioncombo.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/algorithm.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/assuan.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/chrono.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/classify.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/compat.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/compliance.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/cryptoconfig.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/expiration.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/filesystemwatcher.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/formatting.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/gnupg.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/hex.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyhelpers.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyparameters.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/keyusage.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/qtstlhelpers.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/scdaemon.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/stringutils.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/systeminfo.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/test.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/uniquelock.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/validation.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/include/KPim6/Libkleo/libkleo/classifyconfig.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/etc/xdg/libkleopatrarc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/qlogging-categories6/libkleo.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/qlogging-categories6/libkleo.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/da/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ms
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ms/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/cs/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ja/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@ijekavian/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/de/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/el/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nn/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fy/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hi/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pt_BR/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/lt/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/be/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pa/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sl/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ie
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ie/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ta/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ro/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/bs/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/is/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/kk/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sr@latin/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/zh_TW/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/tg/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fa/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pl/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/km/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/pt/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hr/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/tr/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fr/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ast/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mai
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mai/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ne/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ka/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/cy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/cy/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/cy/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/gl/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ia/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hu/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/eo/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/bg/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ga/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/br
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/br/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/br/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ca/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/uk/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/en_GB/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/zh_CN/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nl/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sa/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/fi/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ko/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mk/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ru/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/lv/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/hne/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ca@valencia/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nb/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/es/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/eu/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/et/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/it/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/se
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/se/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/se/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ar/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sq
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sq/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/nds/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/mr/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/ug/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sk/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/locale/sv/LC_MESSAGES/libkleopatra6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/lib64/cmake/KPim6Libkleo/KPim6LibkleoConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/lib64/cmake/KPim6Libkleo/KPim6LibkleoConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/lib64/cmake/KPim6Libkleo/KPim6LibkleoTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/lib64/cmake/KPim6Libkleo/KPim6LibkleoTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/KPim6Libkleo/find-modules/FindLibAssuan.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/package-libkleo/usr/share/KPim6Libkleo/find-modules/FindLibGpgError.cmake
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'README*': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libkleo/libkleo.info: No such file or directory
+gnupg
+boost
+extra-cmake-modules
+gpgme
+kcodecs
+kcompletion
+kconfig
+kcoreaddons
+ki18n
+kitemmodels
+kpimtextedit
+kwidgetsaddons
+kwindowsystem
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKPim6Libkleo.so	libKPim6Libkleo.so.6
+usr/lib64/libKPim6Libkleo.so.6	libKPim6Libkleo.so.6.4.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKPim6Libkleo.so )
+( cd usr/lib64 ; ln -sf libKPim6Libkleo.so.6 libKPim6Libkleo.so )
+( cd usr/lib64 ; rm -rf libKPim6Libkleo.so.6 )
+( cd usr/lib64 ; ln -sf libKPim6Libkleo.so.6.4.1 libKPim6Libkleo.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKPim6Libkleo.so'
+removed './usr/lib64/libKPim6Libkleo.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/libkleo/libkleo-25.04.1-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/xdg/
+etc/xdg/libkleopatrarc
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libkleo-25.04.1/
+usr/doc/libkleo-25.04.1/libkleo.ini
+usr/doc/libkleo-25.04.1/slack-required
+usr/include/
+usr/include/KPim6/
+usr/include/KPim6/Libkleo/
+usr/include/KPim6/Libkleo/Libkleo/
+usr/include/KPim6/Libkleo/Libkleo/Algorithm
+usr/include/KPim6/Libkleo/Libkleo/Assuan
+usr/include/KPim6/Libkleo/Libkleo/AuditLogEntry
+usr/include/KPim6/Libkleo/Libkleo/AuditLogViewer
+usr/include/KPim6/Libkleo/Libkleo/ChecksumDefinition
+usr/include/KPim6/Libkleo/Libkleo/Chrono
+usr/include/KPim6/Libkleo/Libkleo/Classify
+usr/include/KPim6/Libkleo/Libkleo/Compat
+usr/include/KPim6/Libkleo/Libkleo/Compliance
+usr/include/KPim6/Libkleo/Libkleo/CryptoConfig
+usr/include/KPim6/Libkleo/Libkleo/CryptoConfigModule
+usr/include/KPim6/Libkleo/Libkleo/DNAttributeOrderConfigWidget
+usr/include/KPim6/Libkleo/Libkleo/Debug
+usr/include/KPim6/Libkleo/Libkleo/DefaultKeyFilter
+usr/include/KPim6/Libkleo/Libkleo/DefaultKeyGenerationJob
+usr/include/KPim6/Libkleo/Libkleo/DirectoryServicesWidget
+usr/include/KPim6/Libkleo/Libkleo/Dn
+usr/include/KPim6/Libkleo/Libkleo/DocAction
+usr/include/KPim6/Libkleo/Libkleo/EditDirectoryServiceDialog
+usr/include/KPim6/Libkleo/Libkleo/Enum
+usr/include/KPim6/Libkleo/Libkleo/ErrorLabel
+usr/include/KPim6/Libkleo/Libkleo/Expiration
+usr/include/KPim6/Libkleo/Libkleo/ExpiryChecker
+usr/include/KPim6/Libkleo/Libkleo/ExpiryCheckerConfig
+usr/include/KPim6/Libkleo/Libkleo/ExpiryCheckerSettings
+usr/include/KPim6/Libkleo/Libkleo/FileNameRequester
+usr/include/KPim6/Libkleo/Libkleo/FileSystemWatcher
+usr/include/KPim6/Libkleo/Libkleo/Formatting
+usr/include/KPim6/Libkleo/Libkleo/GnuPG
+usr/include/KPim6/Libkleo/Libkleo/Hex
+usr/include/KPim6/Libkleo/Libkleo/KConfigBasedKeyFilter
+usr/include/KPim6/Libkleo/Libkleo/KeyApprovalDialog
+usr/include/KPim6/Libkleo/Libkleo/KeyCache
+usr/include/KPim6/Libkleo/Libkleo/KeyFilter
+usr/include/KPim6/Libkleo/Libkleo/KeyFilterManager
+usr/include/KPim6/Libkleo/Libkleo/KeyGroup
+usr/include/KPim6/Libkleo/Libkleo/KeyGroupConfig
+usr/include/KPim6/Libkleo/Libkleo/KeyGroupImportExport
+usr/include/KPim6/Libkleo/Libkleo/KeyHelpers
+usr/include/KPim6/Libkleo/Libkleo/KeyList
+usr/include/KPim6/Libkleo/Libkleo/KeyListModel
+usr/include/KPim6/Libkleo/Libkleo/KeyListModelInterface
+usr/include/KPim6/Libkleo/Libkleo/KeyListSortFilterProxyModel
+usr/include/KPim6/Libkleo/Libkleo/KeyListView
+usr/include/KPim6/Libkleo/Libkleo/KeyParameters
+usr/include/KPim6/Libkleo/Libkleo/KeyRearrangeColumnsProxyModel
+usr/include/KPim6/Libkleo/Libkleo/KeyRequester
+usr/include/KPim6/Libkleo/Libkleo/KeyResolver
+usr/include/KPim6/Libkleo/Libkleo/KeyResolverCore
+usr/include/KPim6/Libkleo/Libkleo/KeySelectionCombo
+usr/include/KPim6/Libkleo/Libkleo/KeySelectionDialog
+usr/include/KPim6/Libkleo/Libkleo/KeyUsage
+usr/include/KPim6/Libkleo/Libkleo/KeyserverConfig
+usr/include/KPim6/Libkleo/Libkleo/KleoException
+usr/include/KPim6/Libkleo/Libkleo/MessageBox
+usr/include/KPim6/Libkleo/Libkleo/NameAndEmailWidget
+usr/include/KPim6/Libkleo/Libkleo/NewKeyApprovalDialog
+usr/include/KPim6/Libkleo/Libkleo/OidMap
+usr/include/KPim6/Libkleo/Libkleo/OpenPGPCertificateCreationDialog
+usr/include/KPim6/Libkleo/Libkleo/Predicates
+usr/include/KPim6/Libkleo/Libkleo/ProgressDialog
+usr/include/KPim6/Libkleo/Libkleo/QtStlHelpers
+usr/include/KPim6/Libkleo/Libkleo/ReaderPortSelection
+usr/include/KPim6/Libkleo/Libkleo/SCDaemon
+usr/include/KPim6/Libkleo/Libkleo/Stl_Util
+usr/include/KPim6/Libkleo/Libkleo/StringUtils
+usr/include/KPim6/Libkleo/Libkleo/SubkeyListModel
+usr/include/KPim6/Libkleo/Libkleo/SystemInfo
+usr/include/KPim6/Libkleo/Libkleo/Test
+usr/include/KPim6/Libkleo/Libkleo/TreeView
+usr/include/KPim6/Libkleo/Libkleo/TreeWidget
+usr/include/KPim6/Libkleo/Libkleo/UniqueLock
+usr/include/KPim6/Libkleo/Libkleo/UserIDListModel
+usr/include/KPim6/Libkleo/Libkleo/UserIDListProxyModel
+usr/include/KPim6/Libkleo/Libkleo/UserIDProxyModel
+usr/include/KPim6/Libkleo/Libkleo/UserIDSelectionCombo
+usr/include/KPim6/Libkleo/Libkleo/Validation
+usr/include/KPim6/Libkleo/libkleo/
+usr/include/KPim6/Libkleo/libkleo/algorithm.h
+usr/include/KPim6/Libkleo/libkleo/assuan.h
+usr/include/KPim6/Libkleo/libkleo/auditlogentry.h
+usr/include/KPim6/Libkleo/libkleo/auditlogviewer.h
+usr/include/KPim6/Libkleo/libkleo/checksumdefinition.h
+usr/include/KPim6/Libkleo/libkleo/chrono.h
+usr/include/KPim6/Libkleo/libkleo/classify.h
+usr/include/KPim6/Libkleo/libkleo/classifyconfig.h
+usr/include/KPim6/Libkleo/libkleo/compat.h
+usr/include/KPim6/Libkleo/libkleo/compliance.h
+usr/include/KPim6/Libkleo/libkleo/cryptoconfig.h
+usr/include/KPim6/Libkleo/libkleo/cryptoconfigmodule.h
+usr/include/KPim6/Libkleo/libkleo/debug.h
+usr/include/KPim6/Libkleo/libkleo/defaultkeyfilter.h
+usr/include/KPim6/Libkleo/libkleo/defaultkeygenerationjob.h
+usr/include/KPim6/Libkleo/libkleo/directoryserviceswidget.h
+usr/include/KPim6/Libkleo/libkleo/dn.h
+usr/include/KPim6/Libkleo/libkleo/dnattributeorderconfigwidget.h
+usr/include/KPim6/Libkleo/libkleo/docaction.h
+usr/include/KPim6/Libkleo/libkleo/editdirectoryservicedialog.h
+usr/include/KPim6/Libkleo/libkleo/enum.h
+usr/include/KPim6/Libkleo/libkleo/errorlabel.h
+usr/include/KPim6/Libkleo/libkleo/expiration.h
+usr/include/KPim6/Libkleo/libkleo/expirychecker.h
+usr/include/KPim6/Libkleo/libkleo/expirycheckerconfig.h
+usr/include/KPim6/Libkleo/libkleo/expirycheckerconfigbase.h
+usr/include/KPim6/Libkleo/libkleo/expirycheckersettings.h
+usr/include/KPim6/Libkleo/libkleo/filenamerequester.h
+usr/include/KPim6/Libkleo/libkleo/filesystemwatcher.h
+usr/include/KPim6/Libkleo/libkleo/formatting.h
+usr/include/KPim6/Libkleo/libkleo/gnupg.h
+usr/include/KPim6/Libkleo/libkleo/hex.h
+usr/include/KPim6/Libkleo/libkleo/kconfigbasedkeyfilter.h
+usr/include/KPim6/Libkleo/libkleo/keyapprovaldialog.h
+usr/include/KPim6/Libkleo/libkleo/keycache.h
+usr/include/KPim6/Libkleo/libkleo/keyfilter.h
+usr/include/KPim6/Libkleo/libkleo/keyfiltermanager.h
+usr/include/KPim6/Libkleo/libkleo/keygroup.h
+usr/include/KPim6/Libkleo/libkleo/keygroupconfig.h
+usr/include/KPim6/Libkleo/libkleo/keygroupimportexport.h
+usr/include/KPim6/Libkleo/libkleo/keyhelpers.h
+usr/include/KPim6/Libkleo/libkleo/keylist.h
+usr/include/KPim6/Libkleo/libkleo/keylistmodel.h
+usr/include/KPim6/Libkleo/libkleo/keylistmodelinterface.h
+usr/include/KPim6/Libkleo/libkleo/keylistsortfilterproxymodel.h
+usr/include/KPim6/Libkleo/libkleo/keylistview.h
+usr/include/KPim6/Libkleo/libkleo/keyparameters.h
+usr/include/KPim6/Libkleo/libkleo/keyrearrangecolumnsproxymodel.h
+usr/include/KPim6/Libkleo/libkleo/keyrequester.h
+usr/include/KPim6/Libkleo/libkleo/keyresolver.h
+usr/include/KPim6/Libkleo/libkleo/keyresolvercore.h
+usr/include/KPim6/Libkleo/libkleo/keyselectioncombo.h
+usr/include/KPim6/Libkleo/libkleo/keyselectiondialog.h
+usr/include/KPim6/Libkleo/libkleo/keyserverconfig.h
+usr/include/KPim6/Libkleo/libkleo/keyusage.h
+usr/include/KPim6/Libkleo/libkleo/kleo_export.h
+usr/include/KPim6/Libkleo/libkleo/kleoexception.h
+usr/include/KPim6/Libkleo/libkleo/messagebox.h
+usr/include/KPim6/Libkleo/libkleo/nameandemailwidget.h
+usr/include/KPim6/Libkleo/libkleo/newkeyapprovaldialog.h
+usr/include/KPim6/Libkleo/libkleo/oidmap.h
+usr/include/KPim6/Libkleo/libkleo/openpgpcertificatecreationdialog.h
+usr/include/KPim6/Libkleo/libkleo/predicates.h
+usr/include/KPim6/Libkleo/libkleo/progressdialog.h
+usr/include/KPim6/Libkleo/libkleo/qtstlhelpers.h
+usr/include/KPim6/Libkleo/libkleo/readerportselection.h
+usr/include/KPim6/Libkleo/libkleo/scdaemon.h
+usr/include/KPim6/Libkleo/libkleo/stl_util.h
+usr/include/KPim6/Libkleo/libkleo/stringutils.h
+usr/include/KPim6/Libkleo/libkleo/subkeylistmodel.h
+usr/include/KPim6/Libkleo/libkleo/systeminfo.h
+usr/include/KPim6/Libkleo/libkleo/test.h
+usr/include/KPim6/Libkleo/libkleo/treeview.h
+usr/include/KPim6/Libkleo/libkleo/treewidget.h
+usr/include/KPim6/Libkleo/libkleo/uniquelock.h
+usr/include/KPim6/Libkleo/libkleo/useridlistmodel.h
+usr/include/KPim6/Libkleo/libkleo/useridlistproxymodel.h
+usr/include/KPim6/Libkleo/libkleo/useridproxymodel.h
+usr/include/KPim6/Libkleo/libkleo/useridselectioncombo.h
+usr/include/KPim6/Libkleo/libkleo/validation.h
+usr/include/KPim6/Libkleo/libkleo_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KPim6Libkleo/
+usr/lib64/cmake/KPim6Libkleo/KPim6LibkleoConfig.cmake
+usr/lib64/cmake/KPim6Libkleo/KPim6LibkleoConfigVersion.cmake
+usr/lib64/cmake/KPim6Libkleo/KPim6LibkleoTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KPim6Libkleo/KPim6LibkleoTargets.cmake
+usr/lib64/libKPim6Libkleo.so.6.4.1
+usr/share/
+usr/share/KPim6Libkleo/
+usr/share/KPim6Libkleo/find-modules/
+usr/share/KPim6Libkleo/find-modules/FindLibAssuan.cmake
+usr/share/KPim6Libkleo/find-modules/FindLibGpgError.cmake
+usr/share/libkleopatra/
+usr/share/libkleopatra/pics/
+usr/share/libkleopatra/pics/smartcard.xpm
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/br/
+usr/share/locale/br/LC_MESSAGES/
+usr/share/locale/br/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/cy/
+usr/share/locale/cy/LC_MESSAGES/
+usr/share/locale/cy/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/fy/
+usr/share/locale/fy/LC_MESSAGES/
+usr/share/locale/fy/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/hne/
+usr/share/locale/hne/LC_MESSAGES/
+usr/share/locale/hne/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ie/
+usr/share/locale/ie/LC_MESSAGES/
+usr/share/locale/ie/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/mai/
+usr/share/locale/mai/LC_MESSAGES/
+usr/share/locale/mai/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/mk/
+usr/share/locale/mk/LC_MESSAGES/
+usr/share/locale/mk/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ne/
+usr/share/locale/ne/LC_MESSAGES/
+usr/share/locale/ne/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libkleopatra6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/libkleopatra6.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/libkleo.categories
+usr/share/qlogging-categories6/libkleo.renamecategories
+
+Slackware package /tmp/libkleo/libkleo-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for libkleo-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/libkleo/libkleo-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/libkleo/libkleo-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/libkleo/libkleo-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in libkleo.tar.lz4 format.
+/tmp/libkleo /tmp/libkleo
+/tmp/libkleo
+BIN_NAME
+README
+libkleo-25.04.1-x86_64-1_rtz.tlz
+libkleo-25.04.1-x86_64-1_rtz.tlz.md5
+libkleo-25.04.1-x86_64-1_rtz.tlz.so.file
+libkleo-25.04.1-x86_64-1_rtz.tlz.txt
+libkleo.dep
+makepkg-libkleo.log
+libkleo build finished. Procced to installation...
+
++====================================================================================================+
+| Upgrading libkleo-25.04.1-x86_64-1_rtz package using /tmp/libkleo/libkleo-25.04.1-x86_64-1_rtz.tlz |
++====================================================================================================+
+
+Pre-installing package libkleo-25.04.1-x86_64-1_rtz...
+Removing package: libkleo-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:10:00
+Installing package libkleo-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# libkleo (KDE PIM cryptographic library)
+#
+# KDE PIM cryptographic library
+#
+# https://kontact.kde.org/
+Executing install script for libkleo-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package libkleo-25.04.1-x86_64-1_rtz.tlz installed.
+Package libkleo-25.04.1-x86_64-1_rtz upgraded with new package /tmp/libkleo/libkleo-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'libkleo-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 48 seconds.

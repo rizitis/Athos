@@ -1,0 +1,1649 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules		kdoctools	gpgme	kconfig	kconfigwidgets	kcoreaddons	kdbusaddons	ki18n	kiconthemes	knotifications	kservice	kwindowsystem	libgcrypt	
+doxygen is already installed!
+extra-cmake-modules is already installed!
+kdoctools is already installed!
+gpgme is already installed!
+kconfig is already installed!
+kconfigwidgets is already installed!
+kcoreaddons is already installed!
+kdbusaddons is already installed!
+ki18n is already installed!
+kiconthemes is already installed!
+knotifications is already installed!
+kservice is already installed!
+kwindowsystem is already installed!
+libgcrypt is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:14:04--  https://download.kde.org/stable/frameworks/6.14/kwallet-6.14.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kwallet-6.14.0.tar.xz [following]
+--2025-05-10 22:14:04--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kwallet-6.14.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 365196 (357K) [application/octet-stream]
+Saving to: ‘kwallet-6.14.0.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 14% 1.33M 0s
+    50K .......... .......... .......... .......... .......... 28% 1.45M 0s
+   100K .......... .......... .......... .......... .......... 42% 6.46M 0s
+   150K .......... .......... .......... .......... .......... 56% 1.99M 0s
+   200K .......... .......... .......... .......... .......... 70% 5.17M 0s
+   250K .......... .......... .......... .......... .......... 84% 5.29M 0s
+   300K .......... .......... .......... .......... .......... 98% 6.80M 0s
+   350K ......                                                100%  103M=0.1s
+
+2025-05-10 22:14:05 (2.71 MB/s) - ‘kwallet-6.14.0.tar.xz’ saved [365196/365196]
+
+Found file: kwallet-6.14.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kwallet-6.14.0/
+kwallet-6.14.0/.git-blame-ignore-revs
+kwallet-6.14.0/.gitignore
+kwallet-6.14.0/.gitlab-ci.yml
+kwallet-6.14.0/.kde-ci.yml
+kwallet-6.14.0/CMakeLists.txt
+kwallet-6.14.0/LICENSES/
+kwallet-6.14.0/LICENSES/BSD-3-Clause.txt
+kwallet-6.14.0/LICENSES/CC0-1.0.txt
+kwallet-6.14.0/LICENSES/LGPL-2.0-only.txt
+kwallet-6.14.0/LICENSES/LGPL-2.0-or-later.txt
+kwallet-6.14.0/LICENSES/LGPL-2.1-or-later.txt
+kwallet-6.14.0/LICENSES/LGPL-3.0-or-later.txt
+kwallet-6.14.0/README.md
+kwallet-6.14.0/autotests/
+kwallet-6.14.0/autotests/CMakeLists.txt
+kwallet-6.14.0/autotests/KWallet/
+kwallet-6.14.0/autotests/KWallet/CMakeLists.txt
+kwallet-6.14.0/autotests/blowfishtest.cpp
+kwallet-6.14.0/cmake/
+kwallet-6.14.0/cmake/FindLibGcrypt.cmake
+kwallet-6.14.0/docs/
+kwallet-6.14.0/docs/CMakeLists.txt
+kwallet-6.14.0/docs/Doxyfile.local
+kwallet-6.14.0/docs/kwallet-query/
+kwallet-6.14.0/docs/kwallet-query/CMakeLists.txt
+kwallet-6.14.0/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/docs/kwallet-query/using.adoc
+kwallet-6.14.0/examples/
+kwallet-6.14.0/examples/CMakeLists.txt
+kwallet-6.14.0/examples/asynchronous_app/
+kwallet-6.14.0/examples/asynchronous_app/CMakeLists.txt
+kwallet-6.14.0/examples/asynchronous_app/dialog.cpp
+kwallet-6.14.0/examples/asynchronous_app/dialog.h
+kwallet-6.14.0/examples/asynchronous_app/main.cpp
+kwallet-6.14.0/metainfo.yaml
+kwallet-6.14.0/po/
+kwallet-6.14.0/po/ar/
+kwallet-6.14.0/po/ar/kwallet6-query.po
+kwallet-6.14.0/po/ar/kwalletd6.po
+kwallet-6.14.0/po/ast/
+kwallet-6.14.0/po/ast/kwallet6-query.po
+kwallet-6.14.0/po/ast/kwalletd6.po
+kwallet-6.14.0/po/az/
+kwallet-6.14.0/po/az/kwallet6-query.po
+kwallet-6.14.0/po/az/kwalletd6.po
+kwallet-6.14.0/po/be/
+kwallet-6.14.0/po/be/kwalletd6.po
+kwallet-6.14.0/po/bg/
+kwallet-6.14.0/po/bg/kwallet6-query.po
+kwallet-6.14.0/po/bg/kwalletd6.po
+kwallet-6.14.0/po/bn/
+kwallet-6.14.0/po/bn/kwalletd6.po
+kwallet-6.14.0/po/bn_IN/
+kwallet-6.14.0/po/bn_IN/kwalletd6.po
+kwallet-6.14.0/po/bs/
+kwallet-6.14.0/po/bs/kwalletd6.po
+kwallet-6.14.0/po/ca/
+kwallet-6.14.0/po/ca/docs/
+kwallet-6.14.0/po/ca/docs/kwallet-query/
+kwallet-6.14.0/po/ca/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/ca/kwallet6-query.po
+kwallet-6.14.0/po/ca/kwalletd6.po
+kwallet-6.14.0/po/ca@valencia/
+kwallet-6.14.0/po/ca@valencia/docs/
+kwallet-6.14.0/po/ca@valencia/docs/kwallet-query/
+kwallet-6.14.0/po/ca@valencia/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/ca@valencia/kwallet6-query.po
+kwallet-6.14.0/po/ca@valencia/kwalletd6.po
+kwallet-6.14.0/po/cs/
+kwallet-6.14.0/po/cs/kwallet6-query.po
+kwallet-6.14.0/po/cs/kwalletd6.po
+kwallet-6.14.0/po/da/
+kwallet-6.14.0/po/da/kwallet6-query.po
+kwallet-6.14.0/po/da/kwalletd6.po
+kwallet-6.14.0/po/de/
+kwallet-6.14.0/po/de/docs/
+kwallet-6.14.0/po/de/docs/kwallet-query/
+kwallet-6.14.0/po/de/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/de/kwallet6-query.po
+kwallet-6.14.0/po/de/kwalletd6.po
+kwallet-6.14.0/po/el/
+kwallet-6.14.0/po/el/kwallet6-query.po
+kwallet-6.14.0/po/el/kwalletd6.po
+kwallet-6.14.0/po/en_GB/
+kwallet-6.14.0/po/en_GB/kwallet6-query.po
+kwallet-6.14.0/po/en_GB/kwalletd6.po
+kwallet-6.14.0/po/eo/
+kwallet-6.14.0/po/eo/kwallet6-query.po
+kwallet-6.14.0/po/eo/kwalletd6.po
+kwallet-6.14.0/po/es/
+kwallet-6.14.0/po/es/docs/
+kwallet-6.14.0/po/es/docs/kwallet-query/
+kwallet-6.14.0/po/es/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/es/kwallet6-query.po
+kwallet-6.14.0/po/es/kwalletd6.po
+kwallet-6.14.0/po/et/
+kwallet-6.14.0/po/et/kwallet6-query.po
+kwallet-6.14.0/po/et/kwalletd6.po
+kwallet-6.14.0/po/eu/
+kwallet-6.14.0/po/eu/kwallet6-query.po
+kwallet-6.14.0/po/eu/kwalletd6.po
+kwallet-6.14.0/po/fa/
+kwallet-6.14.0/po/fa/kwalletd6.po
+kwallet-6.14.0/po/fi/
+kwallet-6.14.0/po/fi/kwallet6-query.po
+kwallet-6.14.0/po/fi/kwalletd6.po
+kwallet-6.14.0/po/fr/
+kwallet-6.14.0/po/fr/kwallet6-query.po
+kwallet-6.14.0/po/fr/kwalletd6.po
+kwallet-6.14.0/po/fy/
+kwallet-6.14.0/po/fy/kwalletd6.po
+kwallet-6.14.0/po/ga/
+kwallet-6.14.0/po/ga/kwalletd6.po
+kwallet-6.14.0/po/gd/
+kwallet-6.14.0/po/gd/kwallet6-query.po
+kwallet-6.14.0/po/gd/kwalletd6.po
+kwallet-6.14.0/po/gl/
+kwallet-6.14.0/po/gl/kwallet6-query.po
+kwallet-6.14.0/po/gl/kwalletd6.po
+kwallet-6.14.0/po/gu/
+kwallet-6.14.0/po/gu/kwalletd6.po
+kwallet-6.14.0/po/he/
+kwallet-6.14.0/po/he/kwallet6-query.po
+kwallet-6.14.0/po/he/kwalletd6.po
+kwallet-6.14.0/po/hi/
+kwallet-6.14.0/po/hi/kwallet6-query.po
+kwallet-6.14.0/po/hi/kwalletd6.po
+kwallet-6.14.0/po/hr/
+kwallet-6.14.0/po/hr/kwalletd6.po
+kwallet-6.14.0/po/hsb/
+kwallet-6.14.0/po/hsb/kwalletd6.po
+kwallet-6.14.0/po/hu/
+kwallet-6.14.0/po/hu/kwallet6-query.po
+kwallet-6.14.0/po/hu/kwalletd6.po
+kwallet-6.14.0/po/ia/
+kwallet-6.14.0/po/ia/kwallet6-query.po
+kwallet-6.14.0/po/ia/kwalletd6.po
+kwallet-6.14.0/po/id/
+kwallet-6.14.0/po/id/kwallet6-query.po
+kwallet-6.14.0/po/id/kwalletd6.po
+kwallet-6.14.0/po/is/
+kwallet-6.14.0/po/is/kwallet6-query.po
+kwallet-6.14.0/po/is/kwalletd6.po
+kwallet-6.14.0/po/it/
+kwallet-6.14.0/po/it/docs/
+kwallet-6.14.0/po/it/docs/kwallet-query/
+kwallet-6.14.0/po/it/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/it/kwallet6-query.po
+kwallet-6.14.0/po/it/kwalletd6.po
+kwallet-6.14.0/po/ja/
+kwallet-6.14.0/po/ja/kwallet6-query.po
+kwallet-6.14.0/po/ja/kwalletd6.po
+kwallet-6.14.0/po/ka/
+kwallet-6.14.0/po/ka/kwallet6-query.po
+kwallet-6.14.0/po/ka/kwalletd6.po
+kwallet-6.14.0/po/kk/
+kwallet-6.14.0/po/kk/kwalletd6.po
+kwallet-6.14.0/po/km/
+kwallet-6.14.0/po/km/kwalletd6.po
+kwallet-6.14.0/po/kn/
+kwallet-6.14.0/po/kn/kwalletd6.po
+kwallet-6.14.0/po/ko/
+kwallet-6.14.0/po/ko/kwallet6-query.po
+kwallet-6.14.0/po/ko/kwalletd6.po
+kwallet-6.14.0/po/ku/
+kwallet-6.14.0/po/ku/kwalletd6.po
+kwallet-6.14.0/po/lt/
+kwallet-6.14.0/po/lt/kwallet6-query.po
+kwallet-6.14.0/po/lt/kwalletd6.po
+kwallet-6.14.0/po/lv/
+kwallet-6.14.0/po/lv/kwallet6-query.po
+kwallet-6.14.0/po/lv/kwalletd6.po
+kwallet-6.14.0/po/mai/
+kwallet-6.14.0/po/mai/kwalletd6.po
+kwallet-6.14.0/po/mk/
+kwallet-6.14.0/po/mk/kwalletd6.po
+kwallet-6.14.0/po/ml/
+kwallet-6.14.0/po/ml/kwallet6-query.po
+kwallet-6.14.0/po/ml/kwalletd6.po
+kwallet-6.14.0/po/mr/
+kwallet-6.14.0/po/mr/kwalletd6.po
+kwallet-6.14.0/po/ms/
+kwallet-6.14.0/po/ms/kwalletd6.po
+kwallet-6.14.0/po/nb/
+kwallet-6.14.0/po/nb/kwalletd6.po
+kwallet-6.14.0/po/nds/
+kwallet-6.14.0/po/nds/kwalletd6.po
+kwallet-6.14.0/po/nl/
+kwallet-6.14.0/po/nl/docs/
+kwallet-6.14.0/po/nl/docs/kwallet-query/
+kwallet-6.14.0/po/nl/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/nl/kwallet6-query.po
+kwallet-6.14.0/po/nl/kwalletd6.po
+kwallet-6.14.0/po/nn/
+kwallet-6.14.0/po/nn/kwallet6-query.po
+kwallet-6.14.0/po/nn/kwalletd6.po
+kwallet-6.14.0/po/or/
+kwallet-6.14.0/po/or/kwalletd6.po
+kwallet-6.14.0/po/pa/
+kwallet-6.14.0/po/pa/kwallet6-query.po
+kwallet-6.14.0/po/pa/kwalletd6.po
+kwallet-6.14.0/po/pl/
+kwallet-6.14.0/po/pl/kwallet6-query.po
+kwallet-6.14.0/po/pl/kwalletd6.po
+kwallet-6.14.0/po/pt/
+kwallet-6.14.0/po/pt/docs/
+kwallet-6.14.0/po/pt/docs/kwallet-query/
+kwallet-6.14.0/po/pt/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/pt/kwallet6-query.po
+kwallet-6.14.0/po/pt/kwalletd6.po
+kwallet-6.14.0/po/pt_BR/
+kwallet-6.14.0/po/pt_BR/docs/
+kwallet-6.14.0/po/pt_BR/docs/kwallet-query/
+kwallet-6.14.0/po/pt_BR/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/pt_BR/kwallet6-query.po
+kwallet-6.14.0/po/pt_BR/kwalletd6.po
+kwallet-6.14.0/po/ro/
+kwallet-6.14.0/po/ro/kwallet6-query.po
+kwallet-6.14.0/po/ro/kwalletd6.po
+kwallet-6.14.0/po/ru/
+kwallet-6.14.0/po/ru/kwallet6-query.po
+kwallet-6.14.0/po/ru/kwalletd6.po
+kwallet-6.14.0/po/sa/
+kwallet-6.14.0/po/sa/kwallet6-query.po
+kwallet-6.14.0/po/sa/kwalletd6.po
+kwallet-6.14.0/po/si/
+kwallet-6.14.0/po/si/kwalletd6.po
+kwallet-6.14.0/po/sk/
+kwallet-6.14.0/po/sk/kwallet6-query.po
+kwallet-6.14.0/po/sk/kwalletd6.po
+kwallet-6.14.0/po/sl/
+kwallet-6.14.0/po/sl/docs/
+kwallet-6.14.0/po/sl/docs/kwallet-query/
+kwallet-6.14.0/po/sl/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/sl/kwallet6-query.po
+kwallet-6.14.0/po/sl/kwalletd6.po
+kwallet-6.14.0/po/sq/
+kwallet-6.14.0/po/sq/kwalletd6.po
+kwallet-6.14.0/po/sr/
+kwallet-6.14.0/po/sr/docs/
+kwallet-6.14.0/po/sr/docs/kwallet-query/
+kwallet-6.14.0/po/sr/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/sr/kwallet6-query.po
+kwallet-6.14.0/po/sr/kwalletd6.po
+kwallet-6.14.0/po/sr@ijekavian/
+kwallet-6.14.0/po/sr@ijekavian/kwallet6-query.po
+kwallet-6.14.0/po/sr@ijekavian/kwalletd6.po
+kwallet-6.14.0/po/sr@ijekavianlatin/
+kwallet-6.14.0/po/sr@ijekavianlatin/kwallet6-query.po
+kwallet-6.14.0/po/sr@ijekavianlatin/kwalletd6.po
+kwallet-6.14.0/po/sr@latin/
+kwallet-6.14.0/po/sr@latin/docs/
+kwallet-6.14.0/po/sr@latin/docs/kwallet-query/
+kwallet-6.14.0/po/sr@latin/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/sr@latin/kwallet6-query.po
+kwallet-6.14.0/po/sr@latin/kwalletd6.po
+kwallet-6.14.0/po/sv/
+kwallet-6.14.0/po/sv/docs/
+kwallet-6.14.0/po/sv/docs/kwallet-query/
+kwallet-6.14.0/po/sv/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/sv/kwallet6-query.po
+kwallet-6.14.0/po/sv/kwalletd6.po
+kwallet-6.14.0/po/te/
+kwallet-6.14.0/po/te/kwalletd6.po
+kwallet-6.14.0/po/tg/
+kwallet-6.14.0/po/tg/kwallet6-query.po
+kwallet-6.14.0/po/tg/kwalletd6.po
+kwallet-6.14.0/po/th/
+kwallet-6.14.0/po/th/kwalletd6.po
+kwallet-6.14.0/po/tr/
+kwallet-6.14.0/po/tr/docs/
+kwallet-6.14.0/po/tr/docs/kwallet-query/
+kwallet-6.14.0/po/tr/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/tr/kwallet6-query.po
+kwallet-6.14.0/po/tr/kwalletd6.po
+kwallet-6.14.0/po/ug/
+kwallet-6.14.0/po/ug/kwalletd6.po
+kwallet-6.14.0/po/uk/
+kwallet-6.14.0/po/uk/docs/
+kwallet-6.14.0/po/uk/docs/kwallet-query/
+kwallet-6.14.0/po/uk/docs/kwallet-query/man-kwallet-query.1.docbook
+kwallet-6.14.0/po/uk/kwallet6-query.po
+kwallet-6.14.0/po/uk/kwalletd6.po
+kwallet-6.14.0/po/vi/
+kwallet-6.14.0/po/vi/kwallet6-query.po
+kwallet-6.14.0/po/vi/kwalletd6.po
+kwallet-6.14.0/po/wa/
+kwallet-6.14.0/po/wa/kwalletd6.po
+kwallet-6.14.0/po/zh_CN/
+kwallet-6.14.0/po/zh_CN/kwallet6-query.po
+kwallet-6.14.0/po/zh_CN/kwalletd6.po
+kwallet-6.14.0/po/zh_TW/
+kwallet-6.14.0/po/zh_TW/kwallet6-query.po
+kwallet-6.14.0/po/zh_TW/kwalletd6.po
+kwallet-6.14.0/src/
+kwallet-6.14.0/src/CMakeLists.txt
+kwallet-6.14.0/src/api/
+kwallet-6.14.0/src/api/CMakeLists.txt
+kwallet-6.14.0/src/api/KWallet/
+kwallet-6.14.0/src/api/KWallet/CMakeLists.txt
+kwallet-6.14.0/src/api/KWallet/KF6WalletConfig.cmake.in
+kwallet-6.14.0/src/api/KWallet/kwallet.cpp
+kwallet-6.14.0/src/api/KWallet/kwallet.h
+kwallet-6.14.0/src/api/KWallet/kwallet_mac.cpp
+kwallet-6.14.0/src/api/KWallet/org.freedesktop.Secrets.Collection.xml
+kwallet-6.14.0/src/api/KWallet/org.freedesktop.Secrets.Item.xml
+kwallet-6.14.0/src/api/KWallet/org.freedesktop.Secrets.Prompt.xml
+kwallet-6.14.0/src/api/KWallet/org.freedesktop.Secrets.Service.xml
+kwallet-6.14.0/src/api/KWallet/org.freedesktop.Secrets.Session.xml
+kwallet-6.14.0/src/api/KWallet/org.freedesktop.impl.portal.Secret.xml
+kwallet-6.14.0/src/api/KWallet/org.kde.KWallet.xml
+kwallet-6.14.0/src/api/KWallet/org.kde.nodeprecated.KWallet.xml
+kwallet-6.14.0/src/runtime/
+kwallet-6.14.0/src/runtime/CMakeLists.txt
+kwallet-6.14.0/src/runtime/ksecretd/
+kwallet-6.14.0/src/runtime/ksecretd/CMakeLists.txt
+kwallet-6.14.0/src/runtime/ksecretd/Messages.sh
+kwallet-6.14.0/src/runtime/ksecretd/README
+kwallet-6.14.0/src/runtime/ksecretd/autotests/
+kwallet-6.14.0/src/runtime/ksecretd/autotests/CMakeLists.txt
+kwallet-6.14.0/src/runtime/ksecretd/autotests/fdo_secrets_test.cpp
+kwallet-6.14.0/src/runtime/ksecretd/autotests/fdo_secrets_test.h
+kwallet-6.14.0/src/runtime/ksecretd/autotests/mockkwalletd.cpp
+kwallet-6.14.0/src/runtime/ksecretd/autotests/static_mock.hpp
+kwallet-6.14.0/src/runtime/ksecretd/autotests/testhelpers.hpp
+kwallet-6.14.0/src/runtime/ksecretd/config-ksecretd.h.cmake
+kwallet-6.14.0/src/runtime/ksecretd/kbetterthankdialog.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kbetterthankdialog.h
+kwallet-6.14.0/src/runtime/ksecretd/kbetterthankdialogbase.ui
+kwallet-6.14.0/src/runtime/ksecretd/knewwalletdialog.cpp
+kwallet-6.14.0/src/runtime/ksecretd/knewwalletdialog.h
+kwallet-6.14.0/src/runtime/ksecretd/knewwalletdialoggpg.ui
+kwallet-6.14.0/src/runtime/ksecretd/knewwalletdialogintro.ui
+kwallet-6.14.0/src/runtime/ksecretd/ksecretd.cpp
+kwallet-6.14.0/src/runtime/ksecretd/ksecretd.h
+kwallet-6.14.0/src/runtime/ksecretd/ksecretd.notifyrc
+kwallet-6.14.0/src/runtime/ksecretd/ktimeout.cpp
+kwallet-6.14.0/src/runtime/ksecretd/ktimeout.h
+kwallet-6.14.0/src/runtime/ksecretd/kwallet.portal
+kwallet-6.14.0/src/runtime/ksecretd/kwalletdbuscontext.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletdbuscontext.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopattributes.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopattributes.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopcollection.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopcollection.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopitem.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopitem.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopprompt.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopprompt.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopservice.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopservice.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopsession.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletfreedesktopsession.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletportalsecrets.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletportalsecrets.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletsessionstore.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletsessionstore.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletwizard.cpp
+kwallet-6.14.0/src/runtime/ksecretd/kwalletwizard.h
+kwallet-6.14.0/src/runtime/ksecretd/kwalletwizardpageexplanation.ui
+kwallet-6.14.0/src/runtime/ksecretd/kwalletwizardpagegpgkey.ui
+kwallet-6.14.0/src/runtime/ksecretd/kwalletwizardpageintro.ui
+kwallet-6.14.0/src/runtime/ksecretd/kwalletwizardpageoptions.ui
+kwallet-6.14.0/src/runtime/ksecretd/kwalletwizardpagepassword.ui
+kwallet-6.14.0/src/runtime/ksecretd/kwalletwizardpagepasswordgpg.ui
+kwallet-6.14.0/src/runtime/ksecretd/main.cpp
+kwallet-6.14.0/src/runtime/ksecretd/org.kde.ksecretd.desktop
+kwallet-6.14.0/src/runtime/ksecretd/org.kde.kwalletd5.service.win.in
+kwallet-6.14.0/src/runtime/ksecretd/org.kde.kwalletd6.service.win.in
+kwallet-6.14.0/src/runtime/ksecretd/org.kde.secretservicecompat.service.in
+kwallet-6.14.0/src/runtime/kwallet-query/
+kwallet-6.14.0/src/runtime/kwallet-query/CMakeLists.txt
+kwallet-6.14.0/src/runtime/kwallet-query/src/
+kwallet-6.14.0/src/runtime/kwallet-query/src/CMakeLists.txt
+kwallet-6.14.0/src/runtime/kwallet-query/src/Messages.sh
+kwallet-6.14.0/src/runtime/kwallet-query/src/main.cpp
+kwallet-6.14.0/src/runtime/kwallet-query/src/querydriver.cpp
+kwallet-6.14.0/src/runtime/kwallet-query/src/querydriver.h
+kwallet-6.14.0/src/runtime/kwalletbackend/
+kwallet-6.14.0/src/runtime/kwalletbackend/CMakeLists.txt
+kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.cpp
+kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.h
+kwallet-6.14.0/src/runtime/kwalletbackend/blockcipher.cc
+kwallet-6.14.0/src/runtime/kwalletbackend/blockcipher.h
+kwallet-6.14.0/src/runtime/kwalletbackend/blowfish.cc
+kwallet-6.14.0/src/runtime/kwalletbackend/blowfish.h
+kwallet-6.14.0/src/runtime/kwalletbackend/blowfishtables.h
+kwallet-6.14.0/src/runtime/kwalletbackend/cbc.cc
+kwallet-6.14.0/src/runtime/kwalletbackend/cbc.h
+kwallet-6.14.0/src/runtime/kwalletbackend/cbc.master.cc
+kwallet-6.14.0/src/runtime/kwalletbackend/config-kwalletbackend.h.cmake
+kwallet-6.14.0/src/runtime/kwalletbackend/kwalletbackend.cc
+kwallet-6.14.0/src/runtime/kwalletbackend/kwalletbackend.h
+kwallet-6.14.0/src/runtime/kwalletbackend/kwalletentry.cc
+kwallet-6.14.0/src/runtime/kwalletbackend/kwalletentry.h
+kwallet-6.14.0/src/runtime/kwalletbackend/sha1.cc
+kwallet-6.14.0/src/runtime/kwalletbackend/sha1.h
+kwallet-6.14.0/src/runtime/kwalletbackend/tests/
+kwallet-6.14.0/src/runtime/kwalletbackend/tests/CMakeLists.txt
+kwallet-6.14.0/src/runtime/kwalletbackend/tests/backendtest.cpp
+kwallet-6.14.0/src/runtime/kwalletbackend/tests/testbf.cpp
+kwallet-6.14.0/src/runtime/kwalletbackend/tests/testsha.cpp
+kwallet-6.14.0/src/runtime/kwalletd/
+kwallet-6.14.0/src/runtime/kwalletd/CMakeLists.txt
+kwallet-6.14.0/src/runtime/kwalletd/kwalletd.cpp
+kwallet-6.14.0/src/runtime/kwalletd/kwalletd.h
+kwallet-6.14.0/src/runtime/kwalletd/main.cpp
+kwallet-6.14.0/src/runtime/kwalletd/org.kde.kwalletd5.service.in
+kwallet-6.14.0/src/runtime/kwalletd/org.kde.kwalletd6.service.in
+kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp
+kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.h
+kwallet-6.14.0/tests/
+kwallet-6.14.0/tests/CMakeLists.txt
+kwallet-6.14.0/tests/KWallet/
+kwallet-6.14.0/tests/KWallet/CMakeLists.txt
+kwallet-6.14.0/tests/KWallet/kwallettest.cpp
+kwallet-6.14.0/tests/KWallet/kwallettest.h
+kwallet-6.14.0/tests/kwalletd/
+kwallet-6.14.0/tests/kwalletd/CMakeLists.txt
+kwallet-6.14.0/tests/kwalletd/README
+kwallet-6.14.0/tests/kwalletd/TODO
+kwallet-6.14.0/tests/kwalletd/kwalletasync.cpp
+kwallet-6.14.0/tests/kwalletd/kwalletasync.h
+kwallet-6.14.0/tests/kwalletd/kwalletboth.cpp
+kwallet-6.14.0/tests/kwalletd/kwalletboth.h
+kwallet-6.14.0/tests/kwalletd/kwalletcbc.cpp
+kwallet-6.14.0/tests/kwalletd/kwalletcbc.h
+kwallet-6.14.0/tests/kwalletd/kwalletmany.cpp
+kwallet-6.14.0/tests/kwalletd/kwalletmany.h
+kwallet-6.14.0/tests/kwalletd/kwalletpath.cpp
+kwallet-6.14.0/tests/kwalletd/kwalletpath.h
+kwallet-6.14.0/tests/kwalletd/kwalletsync.cpp
+kwallet-6.14.0/tests/kwalletd/kwalletsync.h
+kwallet-6.14.0/tests/kwalletd/kwallettest.cpp
+kwallet-6.14.0/tests/kwalletd/kwallettest.h
+kwallet-6.14.0/tests/kwalletd/kwalletwizardtest.cpp
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- No such target Qt6Gui_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/build/src/api/KWallet/KF6Wallet_ECMQchDoxygen.config' updated.
+
+GPG support enabled
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file sys/bitypes.h
+-- Looking for include file sys/bitypes.h - found
+-- Found LibGcrypt: /usr/lib64/libgcrypt.so (found suitable version "1.11.1", minimum required is "1.5.0")
+-- Looking for explicit_bzero
+-- Looking for explicit_bzero - found
+-- Looking for RtlSecureZeroMemory
+-- Looking for RtlSecureZeroMemory - not found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'libsecret-1'
+--   Found libsecret-1, version 0.21.7
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * KF6DocTools (required version >= 6.14.0)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Gpgmepp
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.14.0), Extra CMake Modules., <https://invent.kde.org/frameworks/extra-cmake-modules>
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * Qt6ToolsTools, qhelpgenerator from Qt6 tools
+   Needed for API dox QCH file generation
+ * LibGcrypt (required version >= 1.5.0), A general purpose cryptographic library based on the code from GnuPG., <http://www.gnu.org/software/libgcrypt/>
+   kwalletd needs libgcrypt to perform PBKDF2-SHA512 hashing
+ * KF6ColorScheme (required version >= 6.14.0)
+ * KF6Notifications (required version >= 6.14.0)
+ * KF6WindowSystem (required version >= 6.14.0)
+ * KF6Crash (required version >= 6.14.0)
+ * Qt6Core
+ * Qca-qt6
+ * KF6Config
+ * KF6DBusAddons (required version >= 6.14.0)
+ * PkgConfig
+ * Qt6Test (required version >= 6.7.0)
+ * Qt6 (required version >= 6.7.0)
+ * KF6CoreAddons (required version >= 6.14.0)
+ * Gettext
+ * KF6I18n (required version >= 6.14.0)
+ * Qt6Widgets (required version >= 6.7.0)
+ * KF6WidgetsAddons (required version >= 6.14.0)
+
+-- Configuring done (2.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/build
+[1/181] Generating ts...
+[2/181] Automatic MOC for target KF6WalletBackend
+[3/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/KF6WalletBackend_autogen/mocs_compilation.cpp.o
+[4/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/blockcipher.cc.o
+[5/181] Generating src/api/KWallet/KF6Wallet.qch, src/api/KWallet/KF6Wallet.tags
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[6/181] Generating mo...
+[7/181] Generating kwallet-query.1
+Note: Writing kwallet-query.1
+[8/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/blowfish.cc.o
+[9/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/sha1.cc.o
+[10/181] Automatic MOC for target KF6Wallet
+[11/181] Generating kwallet_interface.cpp, kwallet_interface.h
+[12/181] Generating moc_kwallet_interface.cpp
+[13/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/KF6Wallet_autogen/mocs_compilation.cpp.o
+[14/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/kwalletentry.cc.o
+[15/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/kwalletbackend_debug.cpp.o
+[16/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/cbc.cc.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/cbc.cc: In member function ‘virtual int CipherBlockChain::encrypt(void*, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/cbc.cc:105:16: warning: ‘rc’ may be used uninitialized [-Wmaybe-uninitialized]
+  105 |         return rc;
+      |                ^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/cbc.cc:77:13: note: ‘rc’ was declared here
+   77 |         int rc;
+      |             ^~
+[17/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet_api_debug.cpp.o
+[18/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/backendpersisthandler.cpp.o
+In file included from /usr/include/KF6/KI18n/KLocalizedString:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.cpp:11:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.cpp: In member function ‘virtual int KWallet::GpgPersistHandler::write(KWallet::Backend*, QSaveFile&, QByteArray&, WId)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.cpp:560:56: warning: ‘const char* GpgME::Error::asString() const’ is deprecated [-Wdeprecated-declarations]
+  560 |                                    res.error().asString()));
+      |                                    ~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/gpgme++/context.h:29,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.cpp:19:
+/usr/include/gpgme++/error.h:53:36: note: declared here
+   53 |     GPGMEPP_DEPRECATED const char *asString() const;
+      |                                    ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.cpp: In member function ‘virtual int KWallet::GpgPersistHandler::read(KWallet::Backend*, QFile&, WId)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.cpp:627:92: warning: ‘const char* GpgME::Error::asString() const’ is deprecated [-Wdeprecated-declarations]
+  627 |         qCDebug(KWALLETBACKEND_LOG) << "Error decrypting message: " << res.error().asString() << ", code " << res.error().code() << ", source "
+      |                                                                        ~~~~~~~~~~~~~~~~~~~~^~
+/usr/include/gpgme++/error.h:53:36: note: declared here
+   53 |     GPGMEPP_DEPRECATED const char *asString() const;
+      |                                    ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/backendpersisthandler.cpp:637:72: warning: ‘const char* GpgME::Error::asString() const’ is deprecated [-Wdeprecated-declarations]
+  637 |                                                    res.error().asString()),
+      |                                                    ~~~~~~~~~~~~~~~~~~~~^~
+/usr/include/gpgme++/error.h:53:36: note: declared here
+   53 |     GPGMEPP_DEPRECATED const char *asString() const;
+      |                                    ^~~~~~~~
+[19/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/kwalletbackend.cc.o
+[20/181] Linking CXX shared library bin/libKF6WalletBackend.so.6.14.0
+[21/181] Creating library symlink bin/libKF6WalletBackend.so.6 bin/libKF6WalletBackend.so
+[22/181] Automatic MOC for target testbf
+[23/181] Automatic MOC for target backendtest
+[24/181] Automatic MOC for target testsha
+[25/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/backendtest.dir/backendtest_autogen/mocs_compilation.cpp.o
+[26/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testsha.dir/testsha_autogen/mocs_compilation.cpp.o
+[27/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testbf.dir/testbf_autogen/mocs_compilation.cpp.o
+[28/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testsha.dir/testsha.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/tests/testsha.cpp: In function ‘int main()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletbackend/tests/testsha.cpp:24:12: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   24 |     if (rc != strlen((char *)data)) {
+      |         ~~~^~~~~~~~~~~~~~~~~~~~~~~
+[29/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testbf.dir/testbf.cpp.o
+[30/181] Linking CXX executable bin/testsha
+[31/181] Linking CXX executable bin/testbf
+[32/181] Automatic MOC for target blowfishtest
+[33/181] Building CXX object autotests/CMakeFiles/blowfishtest.dir/blowfishtest_autogen/mocs_compilation.cpp.o
+[34/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet_interface.cpp.o
+[35/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet.cpp.o
+[36/181] Linking CXX shared library bin/libKF6Wallet.so.6.14.0
+[37/181] Creating library symlink bin/libKF6Wallet.so.6 bin/libKF6Wallet.so
+[38/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/backendtest.dir/backendtest.cpp.o
+[39/181] Automatic MOC for target kwallettestlib
+[40/181] Building CXX object tests/kwalletd/CMakeFiles/kwallettestlib.dir/kwallettestlib_autogen/mocs_compilation.cpp.o
+[41/181] Automatic MOC for target kwallet-example-asynchronous
+[42/181] Linking CXX executable bin/backendtest
+[43/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/kwallet-example-asynchronous_autogen/mocs_compilation.cpp.o
+[44/181] Automatic MOC for target kwallet-query
+[45/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/kwallet-query_autogen/mocs_compilation.cpp.o
+[46/181] Automatic MOC for target kwallettest
+[47/181] Building CXX object tests/KWallet/CMakeFiles/kwallettest.dir/kwallettest_autogen/mocs_compilation.cpp.o
+[48/181] Automatic MOC for target kwalletwizardtest
+[49/181] Generating ui_kbetterthankdialogbase.h
+[50/181] Generating ui_kwalletwizardpageexplanation.h
+[51/181] Generating ui_kwalletwizardpageintro.h
+[52/181] Generating ui_kwalletwizardpagepasswordgpg.h
+[53/181] Generating ui_kwalletwizardpagepassword.h
+[54/181] Generating ui_kwalletwizardpagegpgkey.h
+[55/181] Generating ui_kwalletwizardpageoptions.h
+[56/181] Automatic MOC for target kwalletd6
+[57/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/kwalletwizardtest_autogen/mocs_compilation.cpp.o
+[58/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
+[59/181] Generating moc_kwalletadaptor.cpp
+[60/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd6_autogen/mocs_compilation.cpp.o
+[61/181] Automatic MOC for target ksecretd
+[62/181] Generating kwalletfreedesktopserviceadaptor.cpp, kwalletfreedesktopserviceadaptor.h
+[63/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
+[64/181] Generating kwalletfreedesktopsessionadaptor.cpp, kwalletfreedesktopsessionadaptor.h
+[65/181] Generating kwalletfreedesktopcollectionadaptor.cpp, kwalletfreedesktopcollectionadaptor.h
+[66/181] Generating kwalletfreedesktopitemadaptor.cpp, kwalletfreedesktopitemadaptor.h
+[67/181] Generating kwalletfreedesktoppromptadaptor.cpp, kwalletfreedesktoppromptadaptor.h
+[68/181] Generating kwalletportalsecretsadaptor.cpp, kwalletportalsecretsadaptor.h
+[69/181] Generating ui_kbetterthankdialogbase.h
+[70/181] Generating ui_kwalletwizardpageintro.h
+[71/181] Generating ui_kwalletwizardpageexplanation.h
+[72/181] Generating ui_kwalletwizardpagepassword.h
+[73/181] Generating ui_kwalletwizardpageoptions.h
+[74/181] Automatic MOC for target fdo_secrets_test
+[75/181] Generating moc_kwalletfreedesktopserviceadaptor.cpp
+[76/181] Generating moc_kwalletadaptor.cpp
+[77/181] Generating ui_knewwalletdialoggpg.h
+[78/181] Generating moc_kwalletfreedesktopsessionadaptor.cpp
+[79/181] Generating ui_knewwalletdialogintro.h
+[80/181] Generating ui_kwalletwizardpagepasswordgpg.h
+[81/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
+[82/181] Generating ui_kwalletwizardpagegpgkey.h
+[83/181] Generating kwalletfreedesktopserviceadaptor.cpp, kwalletfreedesktopserviceadaptor.h
+[84/181] Generating kwalletfreedesktopsessionadaptor.cpp, kwalletfreedesktopsessionadaptor.h
+[85/181] Generating kwalletfreedesktopcollectionadaptor.cpp, kwalletfreedesktopcollectionadaptor.h
+[86/181] Generating kwalletfreedesktoppromptadaptor.cpp, kwalletfreedesktoppromptadaptor.h
+[87/181] Generating moc_kwalletfreedesktopcollectionadaptor.cpp
+[88/181] Generating kwalletfreedesktopitemadaptor.cpp, kwalletfreedesktopitemadaptor.h
+[89/181] Generating moc_kwalletfreedesktopitemadaptor.cpp
+[90/181] Generating moc_kwalletfreedesktoppromptadaptor.cpp
+[91/181] Generating moc_kwalletportalsecretsadaptor.cpp
+[92/181] Generating moc_kwalletadaptor.cpp
+[93/181] Generating moc_kwalletfreedesktopitemadaptor.cpp
+[94/181] Generating moc_kwalletfreedesktopserviceadaptor.cpp
+[95/181] Generating moc_kwalletfreedesktopsessionadaptor.cpp
+[96/181] Generating moc_kwalletfreedesktopcollectionadaptor.cpp
+[97/181] Generating moc_kwalletfreedesktoppromptadaptor.cpp
+[98/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ksecretd_autogen/mocs_compilation.cpp.o
+[99/181] Building CXX object autotests/CMakeFiles/blowfishtest.dir/blowfishtest.cpp.o
+[100/181] Building CXX object tests/kwalletd/CMakeFiles/kwallettestlib.dir/kwallettest.cpp.o
+[101/181] Linking CXX static library lib/libkwallettestlib.a
+[102/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd_debug.cpp.o
+[103/181] Automatic MOC for target kwalletasync
+[104/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/kwalletwizardtest.cpp.o
+[105/181] Automatic MOC for target kwalletsync
+[106/181] Automatic MOC for target kwalletpath
+[107/181] Automatic MOC for target kwalletboth
+[108/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ktimeout.cpp.o
+[109/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletsessionstore.cpp.o
+[110/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/main.cpp.o
+[111/181] Automatic MOC for target kwalletmany
+[112/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/__/__/src/runtime/ksecretd/kwalletwizard.cpp.o
+[113/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/main.cpp.o
+[114/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/main.cpp.o
+[115/181] Automatic MOC for target kwalletcbc
+[116/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kbetterthankdialog.cpp.o
+[117/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/dialog.cpp.o
+[118/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/querydriver.cpp.o
+[119/181] Building CXX object tests/KWallet/CMakeFiles/kwallettest.dir/kwallettest.cpp.o
+[120/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/main.cpp.o
+[121/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/fdo_secrets_test_autogen/mocs_compilation.cpp.o
+[122/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletwizard.cpp.o
+[123/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/secretserviceclient.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp: In function ‘const SecretSchema* qtKeychainSchema()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved’ [-Wmissing-field-initializers]
+   28 |         {{"user", SECRET_SCHEMA_ATTRIBUTE_STRING}, {"server", SECRET_SCHEMA_ATTRIBUTE_STRING}, {"type", SECRET_SCHEMA_ATTRIBUTE_STRING}}};
+      |                                                                                                                                         ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved1’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved2’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved3’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved4’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved5’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved6’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.0/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved7’ [-Wmissing-field-initializers]
+[124/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopsession.cpp.o
+[125/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletadaptor.cpp.o
+[126/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ksecretd_debug.cpp.o
+[127/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/knewwalletdialog.cpp.o
+[128/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopsessionadaptor.cpp.o
+[129/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopattributes.cpp.o
+[130/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletportalsecrets.cpp.o
+[131/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktoppromptadaptor.cpp.o
+[132/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopitemadaptor.cpp.o
+[133/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletportalsecretsadaptor.cpp.o
+[134/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletadaptor.cpp.o
+[135/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletasync.dir/kwalletasync_autogen/mocs_compilation.cpp.o
+[136/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopprompt.cpp.o
+[137/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletsync.dir/kwalletsync_autogen/mocs_compilation.cpp.o
+[138/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopcollectionadaptor.cpp.o
+[139/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletpath.dir/kwalletpath_autogen/mocs_compilation.cpp.o
+[140/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopcollection.cpp.o
+[141/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ksecretd.cpp.o
+[142/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletboth.dir/kwalletboth_autogen/mocs_compilation.cpp.o
+[143/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd.cpp.o
+[144/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletmany.dir/kwalletmany_autogen/mocs_compilation.cpp.o
+[145/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletcbc.dir/kwalletcbc_autogen/mocs_compilation.cpp.o
+[146/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopservice.cpp.o
+[147/181] Linking CXX executable bin/kwalletd6
+[148/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopitem.cpp.o
+[149/181] Linking CXX executable bin/kwallet-query
+[150/181] Linking CXX executable bin/blowfishtest
+[151/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopsession.cpp.o
+[152/181] Linking CXX executable bin/kwallettest
+[153/181] Linking CXX executable bin/kwalletwizardtest
+[154/181] Linking CXX executable bin/kwallet-example-asynchronous
+[155/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopserviceadaptor.cpp.o
+[156/181] Linking CXX executable bin/ksecretd
+[157/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletasync.dir/kwalletasync.cpp.o
+[158/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopattributes.cpp.o
+[159/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopitem.cpp.o
+[160/181] Linking CXX executable bin/kwalletasync
+[161/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/fdo_secrets_test.cpp.o
+[162/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletadaptor.cpp.o
+[163/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopsessionadaptor.cpp.o
+[164/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktoppromptadaptor.cpp.o
+[165/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopitemadaptor.cpp.o
+[166/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletmany.dir/kwalletmany.cpp.o
+[167/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletpath.dir/kwalletpath.cpp.o
+[168/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletcbc.dir/kwalletcbc.cpp.o
+[169/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletsync.dir/kwalletsync.cpp.o
+[170/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopprompt.cpp.o
+[171/181] Linking CXX executable bin/kwalletmany
+[172/181] Linking CXX executable bin/kwalletpath
+[173/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopcollectionadaptor.cpp.o
+[174/181] Linking CXX executable bin/kwalletcbc
+[175/181] Linking CXX executable bin/kwalletsync
+[176/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletboth.dir/kwalletboth.cpp.o
+[177/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopcollection.cpp.o
+[178/181] Linking CXX executable bin/kwalletboth
+[179/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopservice.cpp.o
+[180/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopserviceadaptor.cpp.o
+[181/181] Linking CXX executable bin/fdo_secrets_test
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/da/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/da/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ms
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ms/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/cs/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/cs/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ja/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ja/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@ijekavian/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@ijekavian/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/de/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/de/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/el/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/el/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nn/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nn/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/or
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/or/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/or/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fy/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hi/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hi/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pt_BR/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pt_BR/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/lt/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/lt/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/be/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pa/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pa/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sl/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sl/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gu/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ro/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ro/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bs/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/is/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/is/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/wa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/wa/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/kk/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@latin/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sr@latin/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/he/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/he/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/zh_TW/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/zh_TW/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/tg/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/tg/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fa/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pl/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pl/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/km/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pt/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/pt/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hr/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/az/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/az/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/tr/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/tr/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fr/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fr/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ast/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ast/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mai
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mai/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/vi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/vi/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/vi/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/te
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/te/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/te/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ka/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ka/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hsb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hsb/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/th/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gl/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gl/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ia/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ia/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hu/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/hu/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/eo/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/eo/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bg/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bg/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/kn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/kn/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bn_IN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bn_IN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bn_IN/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ga/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ca/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ca/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/uk/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/uk/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/id/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/id/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ku
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ku/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/en_GB/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/en_GB/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/zh_CN/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/zh_CN/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nl/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nl/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/bn/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sa/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sa/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fi/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/fi/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ko/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ko/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mk/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ru/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ru/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/lv/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/lv/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gd
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gd/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gd/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/gd/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ml/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ml/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ca@valencia/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ca@valencia/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nb/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/es/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/es/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/eu/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/eu/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/et/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/et/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/it/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/it/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ar/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ar/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sq
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sq/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/nds/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/mr/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/ug/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sk/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sk/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/si
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/si/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/si/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sv/LC_MESSAGES/kwalletd6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale/sv/LC_MESSAGES/kwallet6-query.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/include/KF6/KWallet/kwallet_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/dbus-1/interfaces/kf6_org.kde.KWallet.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/libKF6Wallet.so.6.14.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/libKF6Wallet.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/libKF6Wallet.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/include/KF6/KWallet/kwallet_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/include/KF6/KWallet/KWallet
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/include/KF6/KWallet/kwallet.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Wallet.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Wallet.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/cmake/KF6Wallet/KF6WalletQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/cmake/KF6Wallet/KF6WalletConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/cmake/KF6Wallet/KF6WalletConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/cmake/KF6Wallet/KF6WalletTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/cmake/KF6Wallet/KF6WalletTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/libKF6WalletBackend.so.6.14.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/lib64/libKF6WalletBackend.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/bin/ksecretd
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/bin/ksecretd" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/dbus-1/services/org.kde.secretservicecompat.service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/knotifications6/ksecretd.notifyrc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/applications/org.kde.ksecretd.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/xdg-desktop-portal/portals/kwallet.portal
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/dbus-1/services/org.kde.kwalletd5.service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/dbus-1/services/org.kde.kwalletd6.service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/bin/kwalletd6
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/bin/kwalletd6" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/bin/kwallet-query
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/bin/kwallet-query" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/qlogging-categories6/kwallet.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/qlogging-categories6/kwallet.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/man/man1/kwallet-query.1
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwallet/kwallet.info: No such file or directory
+doxygen
+extra-cmake-modules
+kdoctools
+gpgme
+kconfig
+kconfigwidgets
+kcoreaddons
+kdbusaddons
+ki18n
+kiconthemes
+knotifications
+kservice
+kwindowsystem
+libgcrypt
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKF6Wallet.so	libKF6Wallet.so.6
+usr/lib64/libKF6Wallet.so.6	libKF6Wallet.so.6.14.0
+usr/lib64/libKF6WalletBackend.so.6	libKF6WalletBackend.so.6.14.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKF6Wallet.so )
+( cd usr/lib64 ; ln -sf libKF6Wallet.so.6 libKF6Wallet.so )
+( cd usr/lib64 ; rm -rf libKF6Wallet.so.6 )
+( cd usr/lib64 ; ln -sf libKF6Wallet.so.6.14.0 libKF6Wallet.so.6 )
+( cd usr/lib64 ; rm -rf libKF6WalletBackend.so.6 )
+( cd usr/lib64 ; ln -sf libKF6WalletBackend.so.6.14.0 libKF6WalletBackend.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKF6WalletBackend.so.6'
+removed './usr/lib64/libKF6Wallet.so'
+removed './usr/lib64/libKF6Wallet.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kwallet/kwallet-6.14.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/ksecretd
+usr/bin/kwallet-query
+usr/bin/kwalletd6
+usr/doc/
+usr/doc/kwallet-6.14.0/
+usr/doc/kwallet-6.14.0/README.md
+usr/doc/kwallet-6.14.0/docs/
+usr/doc/kwallet-6.14.0/docs/CMakeLists.txt
+usr/doc/kwallet-6.14.0/docs/Doxyfile.local
+usr/doc/kwallet-6.14.0/docs/kwallet-query/
+usr/doc/kwallet-6.14.0/docs/kwallet-query/CMakeLists.txt
+usr/doc/kwallet-6.14.0/docs/kwallet-query/man-kwallet-query.1.docbook
+usr/doc/kwallet-6.14.0/docs/kwallet-query/using.adoc
+usr/doc/kwallet-6.14.0/kwallet.ini
+usr/doc/kwallet-6.14.0/slack-required
+usr/doc/qt6-6.8.3_20250319_bab1fecd/
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Wallet.qch
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Wallet.tags
+usr/include/
+usr/include/KF6/
+usr/include/KF6/KWallet/
+usr/include/KF6/KWallet/KWallet
+usr/include/KF6/KWallet/kwallet.h
+usr/include/KF6/KWallet/kwallet_export.h
+usr/include/KF6/KWallet/kwallet_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF6Wallet/
+usr/lib64/cmake/KF6Wallet/KF6WalletConfig.cmake
+usr/lib64/cmake/KF6Wallet/KF6WalletConfigVersion.cmake
+usr/lib64/cmake/KF6Wallet/KF6WalletQchTargets.cmake
+usr/lib64/cmake/KF6Wallet/KF6WalletTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KF6Wallet/KF6WalletTargets.cmake
+usr/lib64/libKF6Wallet.so.6.14.0
+usr/lib64/libKF6WalletBackend.so.6.14.0
+usr/man/
+usr/man/man1/
+usr/man/man1/kwallet-query.1.gz
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.ksecretd.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/kf6_org.kde.KWallet.xml
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.kde.kwalletd6.service
+usr/share/dbus-1/services/org.kde.secretservicecompat.service
+usr/share/knotifications6/
+usr/share/knotifications6/ksecretd.notifyrc
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ar/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ast/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/az/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/bg/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/bn/
+usr/share/locale/bn/LC_MESSAGES/
+usr/share/locale/bn/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/bn_IN/
+usr/share/locale/bn_IN/LC_MESSAGES/
+usr/share/locale/bn_IN/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ca/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/cs/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/da/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/de/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/el/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/en_GB/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/eo/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/es/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/et/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/eu/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/fi/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/fr/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/fy/
+usr/share/locale/fy/LC_MESSAGES/
+usr/share/locale/fy/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/gd/
+usr/share/locale/gd/LC_MESSAGES/
+usr/share/locale/gd/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/gd/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/gl/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/gu/
+usr/share/locale/gu/LC_MESSAGES/
+usr/share/locale/gu/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/he/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/hi/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/hsb/
+usr/share/locale/hsb/LC_MESSAGES/
+usr/share/locale/hsb/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/hu/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ia/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/id/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/is/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/it/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ja/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ka/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/kn/
+usr/share/locale/kn/LC_MESSAGES/
+usr/share/locale/kn/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ko/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ku/
+usr/share/locale/ku/LC_MESSAGES/
+usr/share/locale/ku/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/lt/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/lv/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/mai/
+usr/share/locale/mai/LC_MESSAGES/
+usr/share/locale/mai/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/mk/
+usr/share/locale/mk/LC_MESSAGES/
+usr/share/locale/mk/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ml/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/nl/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/nn/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/or/
+usr/share/locale/or/LC_MESSAGES/
+usr/share/locale/or/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/pa/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/pl/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/pt/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/pt_BR/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ro/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/ru/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/sa/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/si/
+usr/share/locale/si/LC_MESSAGES/
+usr/share/locale/si/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/sk/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/sl/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/sr/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/sr@latin/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/sv/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/te/
+usr/share/locale/te/LC_MESSAGES/
+usr/share/locale/te/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/tg/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/tr/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/uk/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/vi/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/wa/
+usr/share/locale/wa/LC_MESSAGES/
+usr/share/locale/wa/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/zh_CN/LC_MESSAGES/kwalletd6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kwallet6-query.mo
+usr/share/locale/zh_TW/LC_MESSAGES/kwalletd6.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kwallet.categories
+usr/share/qlogging-categories6/kwallet.renamecategories
+usr/share/xdg-desktop-portal/
+usr/share/xdg-desktop-portal/portals/
+usr/share/xdg-desktop-portal/portals/kwallet.portal
+
+Slackware package /tmp/kwallet/kwallet-6.14.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for kwallet-6.14.0-x86_64-1_rtz.tlz
+Creating /tmp/kwallet/kwallet-6.14.0-x86_64-1_rtz.tlz.so.file using /tmp/kwallet/kwallet-6.14.0-x86_64-1_rtz.tlz
+Successfully created /tmp/kwallet/kwallet-6.14.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kwallet.tar.lz4 format.
+/tmp/kwallet /tmp/kwallet
+/tmp/kwallet
+BIN_NAME
+README
+kwallet-6.14.0-x86_64-1_rtz.tlz
+kwallet-6.14.0-x86_64-1_rtz.tlz.md5
+kwallet-6.14.0-x86_64-1_rtz.tlz.so.file
+kwallet-6.14.0-x86_64-1_rtz.tlz.txt
+kwallet.dep
+makepkg-kwallet.log
+kwallet build finished. Procced to installation...
+
++==================================================================================================+
+| Upgrading kwallet-6.14.0-x86_64-1_rtz package using /tmp/kwallet/kwallet-6.14.0-x86_64-1_rtz.tlz |
++==================================================================================================+
+
+Pre-installing package kwallet-6.14.0-x86_64-1_rtz...
+Removing package: kwallet-6.14.0-x86_64-1_rtz-upgraded-2025-05-10,22:14:51
+Installing package kwallet-6.14.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kwallet (unified container for passwords)
+#
+# Secure and unified container for user passwords
+#
+# https://community.kde.org/Frameworks
+Executing install script for kwallet-6.14.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kwallet-6.14.0-x86_64-1_rtz.tlz installed.
+Package kwallet-6.14.0-x86_64-1_rtz upgraded with new package /tmp/kwallet/kwallet-6.14.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kwallet-6.14.0.tar.xz': No such file or directory
+Build process completed in 0 minutes and 52 seconds.

@@ -1,0 +1,674 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules
+extra-cmake-modules is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:39:31--  https://download.kde.org/stable/release-service/25.04.1/src/kmbox-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kmbox-25.04.1.tar.xz [following]
+--2025-05-11 01:39:31--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kmbox-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 29236 (29K) [application/octet-stream]
+Saving to: ‘kmbox-25.04.1.tar.xz’
+
+     0K .......... .......... ........                        100%  106M=0s
+
+2025-05-11 01:39:31 (106 MB/s) - ‘kmbox-25.04.1.tar.xz’ saved [29236/29236]
+
+Found file: kmbox-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kmbox-25.04.1/
+kmbox-25.04.1/.krazy
+kmbox-25.04.1/metainfo.yaml.license
+kmbox-25.04.1/README.md
+kmbox-25.04.1/KPimMboxConfig.cmake.in
+kmbox-25.04.1/.codespellrc.license
+kmbox-25.04.1/readme-build-ftime.txt.license
+kmbox-25.04.1/CMakePresets.json.license
+kmbox-25.04.1/readme-build-ftime.txt
+kmbox-25.04.1/CMakePresets.json
+kmbox-25.04.1/LICENSES/
+kmbox-25.04.1/LICENSES/LGPL-2.0-only.txt
+kmbox-25.04.1/LICENSES/BSD-3-Clause.txt
+kmbox-25.04.1/LICENSES/CC0-1.0.txt
+kmbox-25.04.1/LICENSES/LGPL-2.0-or-later.txt
+kmbox-25.04.1/.gitlab-ci.yml
+kmbox-25.04.1/sanitizers.supp
+kmbox-25.04.1/.git-blame-ignore-revs
+kmbox-25.04.1/.kde-ci.yml
+kmbox-25.04.1/.codespellrc
+kmbox-25.04.1/.krazy.license
+kmbox-25.04.1/autotests/
+kmbox-25.04.1/autotests/mboxtest.cpp
+kmbox-25.04.1/autotests/mboxtest.h
+kmbox-25.04.1/autotests/mboxbenchmark.cpp
+kmbox-25.04.1/autotests/mboxbenchmark.h
+kmbox-25.04.1/autotests/test-entries.h
+kmbox-25.04.1/autotests/CMakeLists.txt
+kmbox-25.04.1/CMakeLists.txt
+kmbox-25.04.1/README.md.license
+kmbox-25.04.1/src/
+kmbox-25.04.1/src/mboxentry_p.h
+kmbox-25.04.1/src/mbox_p.cpp
+kmbox-25.04.1/src/mboxentry.h
+kmbox-25.04.1/src/mbox.h
+kmbox-25.04.1/src/mbox_p.h
+kmbox-25.04.1/src/mbox.cpp
+kmbox-25.04.1/src/mboxentry.cpp
+kmbox-25.04.1/src/CMakeLists.txt
+kmbox-25.04.1/.gitignore
+kmbox-25.04.1/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.10") found components: Interpreter
+-- Could NOT find ReuseTool (missing: REUSETOOL_EXECUTABLE) 
+CMake Warning at /usr/share/ECM/modules/ECMCheckOutboundLicense.cmake:86 (message):
+  Reuse tool not found, skipping test generation
+Call Stack (most recent call first):
+  CMakeLists.txt:24 (include)
+
+
+-- Skipping execution of outbound license tests.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+   Required to run tests of module ECMCheckOutboundLicense
+ * Qt6CoreTools (required version >= 6.8.3)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.9.0)
+ * KPim6Mime (required version >= 6.4.1)
+ * Qt6Test
+
+-- The following features have been disabled:
+
+ * SPDX_LICENSE_TESTING, Automatic license testing based on SPDX definitions (requires reuse tool)
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have not been found:
+
+ * ReuseTool
+   Required to run tests of module ECMCheckOutboundLicense
+
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/build
+[1/16] Automatic MOC for target KPim6Mbox
+[2/16] Building CXX object src/CMakeFiles/KPim6Mbox.dir/KPim6Mbox_autogen/mocs_compilation.cpp.o
+[3/16] Building CXX object src/CMakeFiles/KPim6Mbox.dir/mboxentry.cpp.o
+[4/16] Building CXX object src/CMakeFiles/KPim6Mbox.dir/kmbox_debug.cpp.o
+[5/16] Building CXX object src/CMakeFiles/KPim6Mbox.dir/mbox_p.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox_p.cpp: In member function ‘void KMBox::MBoxPrivate::unlockMBox()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox_p.cpp:81:18: warning: ignoring return value of ‘bool KMBox::MBox::unlock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   81 |     mMBox->unlock();
+      |     ~~~~~~~~~~~~~^~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox_p.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:218:24: note: declared here
+  218 |     [[nodiscard]] bool unlock();
+      |                        ^~~~~~
+[6/16] Building CXX object src/CMakeFiles/KPim6Mbox.dir/mbox.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp: In destructor ‘KMBox::MBox::~MBox()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:41:15: warning: ignoring return value of ‘bool KMBox::MBox::unlock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   41 |         unlock();
+      |         ~~~~~~^~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:13:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:218:24: note: declared here
+  218 |     [[nodiscard]] bool unlock();
+      |                        ^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp: In member function ‘bool KMBox::MBox::lock()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:208:34: warning: ignoring return value of ‘bool KMBox::MBoxPrivate::startTimerIfNeeded()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  208 |             d->startTimerIfNeeded();
+      |             ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:14:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox_p.h:33:24: note: declared here
+   33 |     [[nodiscard]] bool startTimerIfNeeded();
+      |                        ^~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:279:26: warning: ignoring return value of ‘bool KMBox::MBoxPrivate::startTimerIfNeeded()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  279 |     d->startTimerIfNeeded();
+      |     ~~~~~~~~~~~~~~~~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox_p.h:33:24: note: declared here
+   33 |     [[nodiscard]] bool startTimerIfNeeded();
+      |                        ^~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp: In member function ‘bool KMBox::MBox::purge(const KMBox::MBoxEntry::List&, QList<std::pair<KMBox::MBoxEntry, KMBox::MBoxEntry> >*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:313:19: warning: ignoring return value of ‘bool KMBox::MBox::unlock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  313 |             unlock();
+      |             ~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:218:24: note: declared here
+  218 |     [[nodiscard]] bool unlock();
+      |                        ^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp: In member function ‘QByteArray KMBox::MBox::readRawMessage(const KMBox::MBoxEntry&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:424:23: warning: ignoring return value of ‘bool KMBox::MBox::unlock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  424 |                 unlock();
+      |                 ~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:218:24: note: declared here
+  218 |     [[nodiscard]] bool unlock();
+      |                        ^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:441:23: warning: ignoring return value of ‘bool KMBox::MBox::unlock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  441 |                 unlock();
+      |                 ~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:218:24: note: declared here
+  218 |     [[nodiscard]] bool unlock();
+      |                        ^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:455:23: warning: ignoring return value of ‘bool KMBox::MBox::unlock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  455 |                 unlock();
+      |                 ~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:218:24: note: declared here
+  218 |     [[nodiscard]] bool unlock();
+      |                        ^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp: In member function ‘QByteArray KMBox::MBox::readMessageHeaders(const KMBox::MBoxEntry&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.cpp:537:15: warning: ignoring return value of ‘bool KMBox::MBox::unlock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  537 |         unlock();
+      |         ~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:218:24: note: declared here
+  218 |     [[nodiscard]] bool unlock();
+      |                        ^~~~~~
+[7/16] Linking CXX shared library bin/libKPim6Mbox.so.6.4.1
+[8/16] Creating library symlink bin/libKPim6Mbox.so.6 bin/libKPim6Mbox.so
+[9/16] Automatic MOC for target mboxbenchmark
+[10/16] Automatic MOC for target mboxtest
+[11/16] Building CXX object autotests/CMakeFiles/mboxbenchmark.dir/mboxbenchmark_autogen/mocs_compilation.cpp.o
+[12/16] Building CXX object autotests/CMakeFiles/mboxtest.dir/mboxtest_autogen/mocs_compilation.cpp.o
+[13/16] Building CXX object autotests/CMakeFiles/mboxbenchmark.dir/mboxbenchmark.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp: In member function ‘void MBoxBenchmark::testNoLockPerformance()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:45:21: warning: ignoring return value of ‘bool KMBox::MBox::setLockType(LockType)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   45 |     mbox.setLockType(MBox::None);
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.h:11,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:191:24: note: declared here
+  191 |     [[nodiscard]] bool setLockType(LockType ltype);
+      |                        ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:46:14: warning: ignoring return value of ‘bool KMBox::MBox::load(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   46 |     mbox.load(fileName());
+      |     ~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:88:24: note: declared here
+   88 |     [[nodiscard]] bool load(const QString &fileName);
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:49:27: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   49 |         mbox.appendMessage(mMail1);
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:52:14: warning: ignoring return value of ‘bool KMBox::MBox::save(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   52 |     mbox.save(fileName());
+      |     ~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:180:24: note: declared here
+  180 |     [[nodiscard]] bool save(const QString &fileName = QString());
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:56:26: warning: ignoring return value of ‘bool KMBox::MBox::setLockType(LockType)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   56 |         mbox2.setLockType(MBox::None);
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:191:24: note: declared here
+  191 |     [[nodiscard]] bool setLockType(LockType ltype);
+      |                        ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:58:19: warning: ignoring return value of ‘bool KMBox::MBox::load(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   58 |         mbox2.load(fileName());
+      |         ~~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:88:24: note: declared here
+   88 |     [[nodiscard]] bool load(const QString &fileName);
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp: In member function ‘void MBoxBenchmark::testProcfileLockPerformance()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:74:21: warning: ignoring return value of ‘bool KMBox::MBox::setLockType(LockType)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   74 |     mbox.setLockType(MBox::ProcmailLockfile);
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:191:24: note: declared here
+  191 |     [[nodiscard]] bool setLockType(LockType ltype);
+      |                        ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:75:14: warning: ignoring return value of ‘bool KMBox::MBox::load(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   75 |     mbox.load(fileName());
+      |     ~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:88:24: note: declared here
+   88 |     [[nodiscard]] bool load(const QString &fileName);
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:77:27: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   77 |         mbox.appendMessage(mMail1);
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:80:14: warning: ignoring return value of ‘bool KMBox::MBox::save(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   80 |     mbox.save(fileName());
+      |     ~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:180:24: note: declared here
+  180 |     [[nodiscard]] bool save(const QString &fileName = QString());
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:84:26: warning: ignoring return value of ‘bool KMBox::MBox::setLockType(LockType)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   84 |         mbox2.setLockType(MBox::ProcmailLockfile);
+      |         ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:191:24: note: declared here
+  191 |     [[nodiscard]] bool setLockType(LockType ltype);
+      |                        ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:85:19: warning: ignoring return value of ‘bool KMBox::MBox::load(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   85 |         mbox2.load(fileName());
+      |         ~~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:88:24: note: declared here
+   88 |     [[nodiscard]] bool load(const QString &fileName);
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp: In member function ‘void MBoxBenchmark::voidTestMD5Performance()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:99:21: warning: ignoring return value of ‘bool KMBox::MBox::setLockType(LockType)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   99 |     mbox.setLockType(MBox::None);
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:191:24: note: declared here
+  191 |     [[nodiscard]] bool setLockType(LockType ltype);
+      |                        ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:100:14: warning: ignoring return value of ‘bool KMBox::MBox::load(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  100 |     mbox.load(fileName());
+      |     ~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:88:24: note: declared here
+   88 |     [[nodiscard]] bool load(const QString &fileName);
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:103:27: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  103 |         mbox.appendMessage(mMail1);
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxbenchmark.cpp:106:14: warning: ignoring return value of ‘bool KMBox::MBox::save(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  106 |     mbox.save(fileName());
+      |     ~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:180:24: note: declared here
+  180 |     [[nodiscard]] bool save(const QString &fileName = QString());
+      |                        ^~~~
+[14/16] Linking CXX executable bin/mboxbenchmark
+[15/16] Building CXX object autotests/CMakeFiles/mboxtest.dir/mboxtest.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘void MboxTest::testAppend()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:168:21: warning: ignoring return value of ‘bool KMBox::MBox::setLockType(LockType)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  168 |     mbox.setLockType(MBox::None);
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:191:24: note: declared here
+  191 |     [[nodiscard]] bool setLockType(LockType ltype);
+      |                        ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘void MboxTest::testSaveAndLoad()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:228:23: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  228 |     mbox.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:229:23: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  229 |     mbox.appendMessage(mMail2);
+      |     ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘void MboxTest::testBlankLines()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:279:28: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  279 |         mbox1.appendMessage(mail);
+      |         ~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:280:28: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  280 |         mbox1.appendMessage(mail);
+      |         ~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:281:28: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  281 |         mbox1.appendMessage(mail);
+      |         ~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:282:19: warning: ignoring return value of ‘bool KMBox::MBox::save(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  282 |         mbox1.save();
+      |         ~~~~~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:180:24: note: declared here
+  180 |     [[nodiscard]] bool save(const QString &fileName = QString());
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘void MboxTest::testEntries()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:304:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  304 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:305:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  305 |     mbox1.appendMessage(mMail2);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:306:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  306 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘void MboxTest::testPurge()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:343:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  343 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:344:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  344 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:345:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  345 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:351:16: warning: ignoring return value of ‘bool KMBox::MBox::purge(const KMBox::MBoxEntry::List&, QList<std::pair<KMBox::MBoxEntry, KMBox::MBoxEntry> >*)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  351 |     mbox1.purge(MBoxEntry::List() << list.first());
+      |     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:127:24: note: declared here
+  127 |     [[nodiscard]] bool purge(const MBoxEntry::List &deletedEntries, QList<MBoxEntry::Pair> *movedEntries = nullptr);
+      |                        ^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:367:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  367 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:368:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  368 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:369:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  369 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:374:16: warning: ignoring return value of ‘bool KMBox::MBox::purge(const KMBox::MBoxEntry::List&, QList<std::pair<KMBox::MBoxEntry, KMBox::MBoxEntry> >*)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  374 |     mbox1.purge(MBoxEntry::List() << list.at(0) << list.at(1));
+      |     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:127:24: note: declared here
+  127 |     [[nodiscard]] bool purge(const MBoxEntry::List &deletedEntries, QList<MBoxEntry::Pair> *movedEntries = nullptr);
+      |                        ^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:384:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  384 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:385:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  385 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:386:24: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  386 |     mbox1.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:391:16: warning: ignoring return value of ‘bool KMBox::MBox::purge(const KMBox::MBoxEntry::List&, QList<std::pair<KMBox::MBoxEntry, KMBox::MBoxEntry> >*)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  391 |     mbox1.purge(MBoxEntry::List() << list.at(0) << list.at(1) << list.at(2));
+      |     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:127:24: note: declared here
+  127 |     [[nodiscard]] bool purge(const MBoxEntry::List &deletedEntries, QList<MBoxEntry::Pair> *movedEntries = nullptr);
+      |                        ^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘void MboxTest::testLockTimeout()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:400:14: warning: ignoring return value of ‘bool KMBox::MBox::load(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  400 |     mbox.load(fileName());
+      |     ~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:88:24: note: declared here
+   88 |     [[nodiscard]] bool load(const QString &fileName);
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:401:21: warning: ignoring return value of ‘bool KMBox::MBox::setLockType(LockType)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  401 |     mbox.setLockType(MBox::None);
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:191:24: note: declared here
+  191 |     [[nodiscard]] bool setLockType(LockType ltype);
+      |                        ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:405:14: warning: ignoring return value of ‘bool KMBox::MBox::lock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  405 |     mbox.lock();
+      |     ~~~~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:102:24: note: declared here
+  102 |     [[nodiscard]] bool lock();
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘void MboxTest::testHeaders()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:417:23: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  417 |     mbox.appendMessage(mMail1);
+      |     ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:418:23: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  418 |     mbox.appendMessage(mMail2);
+      |     ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘void MboxTest::testReadOnlyMbox()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:449:27: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  449 |         mbox.appendMessage(mMail1);
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:450:27: warning: ignoring return value of ‘KMBox::MBoxEntry KMBox::MBox::appendMessage(const KMime::Message::Ptr&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  450 |         mbox.appendMessage(mMail2);
+      |         ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:60:29: note: declared here
+   60 |     [[nodiscard]] MBoxEntry appendMessage(const KMime::Message::Ptr &message);
+      |                             ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In constructor ‘ThreadFillsMBox::ThreadFillsMBox(const QString&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:502:22: warning: ignoring return value of ‘bool KMBox::MBox::setLockType(LockType)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  502 |     mbox->setLockType(MBox::ProcmailLockfile);
+      |     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:191:24: note: declared here
+  191 |     [[nodiscard]] bool setLockType(LockType ltype);
+      |                        ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:503:15: warning: ignoring return value of ‘bool KMBox::MBox::lock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  503 |     mbox->lock();
+      |     ~~~~~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:102:24: note: declared here
+  102 |     [[nodiscard]] bool lock();
+      |                        ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp: In member function ‘virtual void ThreadFillsMBox::run()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/autotests/mboxtest.cpp:519:17: warning: ignoring return value of ‘bool KMBox::MBox::unlock()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+  519 |     mbox->unlock();
+      |     ~~~~~~~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/work/kmbox-25.04.1/src/mbox.h:218:24: note: declared here
+  218 |     [[nodiscard]] bool unlock();
+      |                        ^~~~~~
+[16/16] Linking CXX executable bin/mboxtest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/lib64/libKPim6Mbox.so.6.4.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/lib64/libKPim6Mbox.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/lib64/libKPim6Mbox.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/include/KPim6/KMbox/KMbox/MBox
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/include/KPim6/KMbox/KMbox/MBoxEntry
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/include/KPim6/KMbox/kmbox/kmbox_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/include/KPim6/KMbox/kmbox/mbox.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/include/KPim6/KMbox/kmbox/mboxentry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/share/qlogging-categories6/kmbox.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/share/qlogging-categories6/kmbox.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/lib64/cmake/KPim6Mbox/KPim6MboxConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/lib64/cmake/KPim6Mbox/KPim6MboxConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/lib64/cmake/KPim6Mbox/KPim6MboxTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/lib64/cmake/KPim6Mbox/KPim6MboxTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/package-kmbox/usr/include/KPim6/KMbox/kmbox_version.h
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kmbox/kmbox.info: No such file or directory
+extra-cmake-modules
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKPim6Mbox.so	libKPim6Mbox.so.6
+usr/lib64/libKPim6Mbox.so.6	libKPim6Mbox.so.6.4.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKPim6Mbox.so )
+( cd usr/lib64 ; ln -sf libKPim6Mbox.so.6 libKPim6Mbox.so )
+( cd usr/lib64 ; rm -rf libKPim6Mbox.so.6 )
+( cd usr/lib64 ; ln -sf libKPim6Mbox.so.6.4.1 libKPim6Mbox.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKPim6Mbox.so.6'
+removed './usr/lib64/libKPim6Mbox.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kmbox/kmbox-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kmbox-25.04.1/
+usr/doc/kmbox-25.04.1/README.md
+usr/doc/kmbox-25.04.1/README.md.license
+usr/doc/kmbox-25.04.1/kmbox.ini
+usr/doc/kmbox-25.04.1/slack-required
+usr/include/
+usr/include/KPim6/
+usr/include/KPim6/KMbox/
+usr/include/KPim6/KMbox/KMbox/
+usr/include/KPim6/KMbox/KMbox/MBox
+usr/include/KPim6/KMbox/KMbox/MBoxEntry
+usr/include/KPim6/KMbox/kmbox/
+usr/include/KPim6/KMbox/kmbox/kmbox_export.h
+usr/include/KPim6/KMbox/kmbox/mbox.h
+usr/include/KPim6/KMbox/kmbox/mboxentry.h
+usr/include/KPim6/KMbox/kmbox_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KPim6Mbox/
+usr/lib64/cmake/KPim6Mbox/KPim6MboxConfig.cmake
+usr/lib64/cmake/KPim6Mbox/KPim6MboxConfigVersion.cmake
+usr/lib64/cmake/KPim6Mbox/KPim6MboxTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KPim6Mbox/KPim6MboxTargets.cmake
+usr/lib64/libKPim6Mbox.so.6.4.1
+usr/share/
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kmbox.categories
+usr/share/qlogging-categories6/kmbox.renamecategories
+
+Slackware package /tmp/kmbox/kmbox-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for kmbox-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/kmbox/kmbox-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/kmbox/kmbox-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/kmbox/kmbox-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kmbox.tar.lz4 format.
+/tmp/kmbox /tmp/kmbox
+/tmp/kmbox
+BIN_NAME
+README
+kmbox-25.04.1-x86_64-1_rtz.tlz
+kmbox-25.04.1-x86_64-1_rtz.tlz.md5
+kmbox-25.04.1-x86_64-1_rtz.tlz.so.file
+kmbox-25.04.1-x86_64-1_rtz.tlz.txt
+kmbox.dep
+makepkg-kmbox.log
+kmbox build finished. Procced to installation...
+
++==============================================================================================+
+| Upgrading kmbox-25.04.1-x86_64-1_rtz package using /tmp/kmbox/kmbox-25.04.1-x86_64-1_rtz.tlz |
++==============================================================================================+
+
+Pre-installing package kmbox-25.04.1-x86_64-1_rtz...
+Removing package: kmbox-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:39:41
+Installing package kmbox-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kmbox (Library)
+#
+# Library for accessing mail storages in MBox format
+#
+# https://kontact.kde.org/
+Executing install script for kmbox-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kmbox-25.04.1-x86_64-1_rtz.tlz installed.
+Package kmbox-25.04.1-x86_64-1_rtz upgraded with new package /tmp/kmbox/kmbox-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kmbox-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 14 seconds.

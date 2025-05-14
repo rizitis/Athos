@@ -1,0 +1,843 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules ki18n	ksanecore	ktextwidgets	kwallet	kwidgetsaddons
+extra-cmake-modules is already installed!
+ki18n is already installed!
+ksanecore is already installed!
+ktextwidgets is already installed!
+kwallet is already installed!
+kwidgetsaddons is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:10:37--  https://download.kde.org/stable/release-service/25.04.1/src/libksane-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libksane-25.04.1.tar.xz [following]
+--2025-05-11 01:10:37--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libksane-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 156068 (152K) [application/octet-stream]
+Saving to: ‘libksane-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 32% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 65% 1.42M 0s
+   100K .......... .......... .......... .......... .......... 98% 6.97M 0s
+   150K ..                                                    100% 4.49T=0.08s
+
+2025-05-11 01:10:37 (1.93 MB/s) - ‘libksane-25.04.1.tar.xz’ saved [156068/156068]
+
+Found file: libksane-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+libksane-25.04.1/
+libksane-25.04.1/README.md
+libksane-25.04.1/KFSaneConfig.cmake.in
+libksane-25.04.1/AUTHORS
+libksane-25.04.1/CMakePresets.json
+libksane-25.04.1/COPYING.twain
+libksane-25.04.1/LICENSES/
+libksane-25.04.1/LICENSES/LGPL-3.0-only.txt
+libksane-25.04.1/LICENSES/LGPL-2.1-only.txt
+libksane-25.04.1/LICENSES/CC0-1.0.txt
+libksane-25.04.1/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+libksane-25.04.1/ksanetwain/
+libksane-25.04.1/ksanetwain/twainiface.h
+libksane-25.04.1/ksanetwain/twain.h
+libksane-25.04.1/ksanetwain/twainiface.cpp
+libksane-25.04.1/ksanetwain/CMakeLists.txt
+libksane-25.04.1/ksanetwain/ktwain_widget.cpp
+libksane-25.04.1/.gitlab-ci.yml
+libksane-25.04.1/tests/
+libksane-25.04.1/tests/ksaneviewertest.cpp
+libksane-25.04.1/tests/CMakeLists.txt
+libksane-25.04.1/TODO
+libksane-25.04.1/.kde-ci.yml
+libksane-25.04.1/po/
+libksane-25.04.1/po/bg/
+libksane-25.04.1/po/bg/libksane.po
+libksane-25.04.1/po/pt/
+libksane-25.04.1/po/pt/libksane.po
+libksane-25.04.1/po/km/
+libksane-25.04.1/po/km/libksane.po
+libksane-25.04.1/po/nn/
+libksane-25.04.1/po/nn/libksane.po
+libksane-25.04.1/po/pl/
+libksane-25.04.1/po/pl/libksane.po
+libksane-25.04.1/po/ja/
+libksane-25.04.1/po/ja/libksane.po
+libksane-25.04.1/po/pa/
+libksane-25.04.1/po/pa/libksane.po
+libksane-25.04.1/po/bs/
+libksane-25.04.1/po/bs/libksane.po
+libksane-25.04.1/po/zh_CN/
+libksane-25.04.1/po/zh_CN/libksane.po
+libksane-25.04.1/po/cs/
+libksane-25.04.1/po/cs/libksane.po
+libksane-25.04.1/po/es/
+libksane-25.04.1/po/es/libksane.po
+libksane-25.04.1/po/ka/
+libksane-25.04.1/po/ka/libksane.po
+libksane-25.04.1/po/is/
+libksane-25.04.1/po/is/libksane.po
+libksane-25.04.1/po/tr/
+libksane-25.04.1/po/tr/libksane.po
+libksane-25.04.1/po/ug/
+libksane-25.04.1/po/ug/libksane.po
+libksane-25.04.1/po/ca/
+libksane-25.04.1/po/ca/libksane.po
+libksane-25.04.1/po/ca@valencia/
+libksane-25.04.1/po/ca@valencia/libksane.po
+libksane-25.04.1/po/hr/
+libksane-25.04.1/po/hr/libksane.po
+libksane-25.04.1/po/gl/
+libksane-25.04.1/po/gl/libksane.po
+libksane-25.04.1/po/ro/
+libksane-25.04.1/po/ro/libksane.po
+libksane-25.04.1/po/oc/
+libksane-25.04.1/po/oc/libksane.po
+libksane-25.04.1/po/eo/
+libksane-25.04.1/po/eo/libksane.po
+libksane-25.04.1/po/nl/
+libksane-25.04.1/po/nl/libksane.po
+libksane-25.04.1/po/mr/
+libksane-25.04.1/po/mr/libksane.po
+libksane-25.04.1/po/ml/
+libksane-25.04.1/po/ml/libksane.po
+libksane-25.04.1/po/hu/
+libksane-25.04.1/po/hu/libksane.po
+libksane-25.04.1/po/eu/
+libksane-25.04.1/po/eu/libksane.po
+libksane-25.04.1/po/lv/
+libksane-25.04.1/po/lv/libksane.po
+libksane-25.04.1/po/nb/
+libksane-25.04.1/po/nb/libksane.po
+libksane-25.04.1/po/fr/
+libksane-25.04.1/po/fr/libksane.po
+libksane-25.04.1/po/hi/
+libksane-25.04.1/po/hi/libksane.po
+libksane-25.04.1/po/sl/
+libksane-25.04.1/po/sl/libksane.po
+libksane-25.04.1/po/th/
+libksane-25.04.1/po/th/libksane.po
+libksane-25.04.1/po/wa/
+libksane-25.04.1/po/wa/libksane.po
+libksane-25.04.1/po/he/
+libksane-25.04.1/po/he/libksane.po
+libksane-25.04.1/po/de/
+libksane-25.04.1/po/de/libksane.po
+libksane-25.04.1/po/ar/
+libksane-25.04.1/po/ar/libksane.po
+libksane-25.04.1/po/sk/
+libksane-25.04.1/po/sk/libksane.po
+libksane-25.04.1/po/zh_TW/
+libksane-25.04.1/po/zh_TW/libksane.po
+libksane-25.04.1/po/et/
+libksane-25.04.1/po/et/libksane.po
+libksane-25.04.1/po/ie/
+libksane-25.04.1/po/ie/libksane.po
+libksane-25.04.1/po/it/
+libksane-25.04.1/po/it/libksane.po
+libksane-25.04.1/po/el/
+libksane-25.04.1/po/el/libksane.po
+libksane-25.04.1/po/da/
+libksane-25.04.1/po/da/libksane.po
+libksane-25.04.1/po/pt_BR/
+libksane-25.04.1/po/pt_BR/libksane.po
+libksane-25.04.1/po/ru/
+libksane-25.04.1/po/ru/libksane.po
+libksane-25.04.1/po/sq/
+libksane-25.04.1/po/sq/libksane.po
+libksane-25.04.1/po/id/
+libksane-25.04.1/po/id/libksane.po
+libksane-25.04.1/po/ia/
+libksane-25.04.1/po/ia/libksane.po
+libksane-25.04.1/po/sv/
+libksane-25.04.1/po/sv/libksane.po
+libksane-25.04.1/po/fi/
+libksane-25.04.1/po/fi/libksane.po
+libksane-25.04.1/po/kk/
+libksane-25.04.1/po/kk/libksane.po
+libksane-25.04.1/po/lt/
+libksane-25.04.1/po/lt/libksane.po
+libksane-25.04.1/po/be/
+libksane-25.04.1/po/be/libksane.po
+libksane-25.04.1/po/sa/
+libksane-25.04.1/po/sa/libksane.po
+libksane-25.04.1/po/ko/
+libksane-25.04.1/po/ko/libksane.po
+libksane-25.04.1/po/hne/
+libksane-25.04.1/po/hne/libksane.po
+libksane-25.04.1/po/ga/
+libksane-25.04.1/po/ga/libksane.po
+libksane-25.04.1/po/en_GB/
+libksane-25.04.1/po/en_GB/libksane.po
+libksane-25.04.1/po/uk/
+libksane-25.04.1/po/uk/libksane.po
+libksane-25.04.1/po/nds/
+libksane-25.04.1/po/nds/libksane.po
+libksane-25.04.1/autotests/
+libksane-25.04.1/autotests/CMakeLists.txt
+libksane-25.04.1/CMakeLists.txt
+libksane-25.04.1/ksane.yaml
+libksane-25.04.1/src/
+libksane-25.04.1/src/ksanedevicedialog.h
+libksane-25.04.1/src/ksanewidget.cpp
+libksane-25.04.1/src/Mainpage.dox
+libksane-25.04.1/src/16-actions-color.png
+libksane-25.04.1/src/hiderectitem.cpp
+libksane-25.04.1/src/splittercollapser.cpp
+libksane-25.04.1/src/ksanewidget_p.cpp
+libksane-25.04.1/src/ksanewidget.h
+libksane-25.04.1/src/ksaneviewer.h
+libksane-25.04.1/src/ksanewidget_p.h
+libksane-25.04.1/src/splittercollapser.h
+libksane-25.04.1/src/Messages.sh
+libksane-25.04.1/src/i18n-hplip.cpp
+libksane-25.04.1/src/16-actions-black-white.png
+libksane-25.04.1/src/selectionitem.cpp
+libksane-25.04.1/src/selectionitem.h
+libksane-25.04.1/src/ksaneviewer.cpp
+libksane-25.04.1/src/CMakeLists.txt
+libksane-25.04.1/src/widgets/
+libksane-25.04.1/src/widgets/gammadisp.h
+libksane-25.04.1/src/widgets/labeledgamma.h
+libksane-25.04.1/src/widgets/labeledcheckbox.h
+libksane-25.04.1/src/widgets/labeledfslider.cpp
+libksane-25.04.1/src/widgets/labeledslider.cpp
+libksane-25.04.1/src/widgets/labeledslider.h
+libksane-25.04.1/src/widgets/gammadisp.cpp
+libksane-25.04.1/src/widgets/ksaneoptionwidget.cpp
+libksane-25.04.1/src/widgets/ksanebutton.cpp
+libksane-25.04.1/src/widgets/labeledcombo.h
+libksane-25.04.1/src/widgets/labeledgamma.cpp
+libksane-25.04.1/src/widgets/labeledfslider.h
+libksane-25.04.1/src/widgets/ksanebutton.h
+libksane-25.04.1/src/widgets/ksaneoptionwidget.h
+libksane-25.04.1/src/widgets/labeledentry.h
+libksane-25.04.1/src/widgets/labeledcombo.cpp
+libksane-25.04.1/src/widgets/labeledcheckbox.cpp
+libksane-25.04.1/src/widgets/labeledentry.cpp
+libksane-25.04.1/src/16-actions-gray-scale.png
+libksane-25.04.1/src/ksanedevicedialog.cpp
+libksane-25.04.1/src/hiderectitem.h
+libksane-25.04.1/.gitignore
+libksane-25.04.1/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- -------------------------------------------
+-- Starting CMake configuration for: libksane
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * KF6Wallet (required version >= 6.0.0), Safe desktop-wide storage for passwords
+   Required to have permanent storage of passwords for scanners
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6Test
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.0.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6Core (required version >= 6.7.0)
+ * Qt6Widgets (required version >= 6.7.0)
+ * KF6WidgetsAddons (required version >= 6.0.0)
+ * Gettext
+ * KF6I18n (required version >= 6.14.0)
+ * KF6TextWidgets (required version >= 6.0.0)
+ * KSaneCore6 (required version >= 25.04)
+ * Qt6
+
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/work/libksane-25.04.1/build
+[1/23] Generating ts...
+[2/23] Generating mo...
+[3/23] Automatic MOC for target KSaneWidgets
+[4/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/KSaneWidgets_autogen/mocs_compilation.cpp.o
+[5/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/ksane_debug.cpp.o
+[6/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/labeledentry.cpp.o
+[7/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/labeledfslider.cpp.o
+[8/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/gammadisp.cpp.o
+[9/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/labeledgamma.cpp.o
+[10/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/labeledcombo.cpp.o
+[11/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/hiderectitem.cpp.o
+[12/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/labeledslider.cpp.o
+[13/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/labeledcheckbox.cpp.o
+[14/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/ksanedevicedialog.cpp.o
+[15/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/selectionitem.cpp.o
+[16/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/ksaneoptionwidget.cpp.o
+[17/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/widgets/ksanebutton.cpp.o
+[18/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/splittercollapser.cpp.o
+[19/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/ksanewidget.cpp.o
+[20/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/ksaneviewer.cpp.o
+[21/23] Building CXX object src/CMakeFiles/KSaneWidgets.dir/ksanewidget_p.cpp.o
+[22/23] Linking CXX shared library bin/libKSaneWidgets6.so.25.04.1
+[23/23] Creating library symlink bin/libKSaneWidgets6.so.6 bin/libKSaneWidgets6.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/icons/hicolor/16x16/actions/black-white.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/icons/hicolor/16x16/actions/color.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/icons/hicolor/16x16/actions/gray-scale.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/lib64/libKSaneWidgets6.so.25.04.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/lib64/libKSaneWidgets6.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/lib64/libKSaneWidgets6.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/include/KSaneWidgets6/ksane_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/include/KSaneWidgets6/KSaneWidget
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/include/KSaneWidgets6/ksanewidget.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/lib64/cmake/KSaneWidgets6/KSaneWidgets6Config.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/lib64/cmake/KSaneWidgets6/KSaneWidgets6ConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/lib64/cmake/KSaneWidgets6/KSaneWidgets6Targets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/lib64/cmake/KSaneWidgets6/KSaneWidgets6Targets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/include/KSaneWidgets6/ksane_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/da/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/cs/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ja/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/de/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/el/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nn/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hi/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pt_BR/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/lt/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/be/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pa/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sl/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ie
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ie/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ro/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/bs/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/is/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/wa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/wa/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/kk/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/he/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/zh_TW/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pl/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/km/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/pt/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hr/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/tr/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/fr/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ka/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/th/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/gl/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ia/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hu/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/eo/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/bg/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ga/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ca/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/uk/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/id/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/en_GB/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/zh_CN/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nl/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/oc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/oc/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sa/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/fi/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ko/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ru/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/lv/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ml/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/hne/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ca@valencia/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nb/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/es/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/eu/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/et/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/it/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ar/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sq
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sq/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/nds/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/mr/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/ug/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sk/LC_MESSAGES/libksane.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/package-libksane/usr/share/locale/sv/LC_MESSAGES/libksane.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libksane/libksane.info: No such file or directory
+extra-cmake-modules
+ki18n
+ksanecore
+ktextwidgets
+kwallet
+kwidgetsaddons
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKSaneWidgets6.so	libKSaneWidgets6.so.6
+usr/lib64/libKSaneWidgets6.so.6	libKSaneWidgets6.so.25.04.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKSaneWidgets6.so )
+( cd usr/lib64 ; ln -sf libKSaneWidgets6.so.6 libKSaneWidgets6.so )
+( cd usr/lib64 ; rm -rf libKSaneWidgets6.so.6 )
+( cd usr/lib64 ; ln -sf libKSaneWidgets6.so.25.04.1 libKSaneWidgets6.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKSaneWidgets6.so'
+removed './usr/lib64/libKSaneWidgets6.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/libksane/libksane-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libksane-25.04.1/
+usr/doc/libksane-25.04.1/AUTHORS
+usr/doc/libksane-25.04.1/README.md
+usr/doc/libksane-25.04.1/libksane.ini
+usr/doc/libksane-25.04.1/slack-required
+usr/include/
+usr/include/KSaneWidgets6/
+usr/include/KSaneWidgets6/KSaneWidget
+usr/include/KSaneWidgets6/ksane_export.h
+usr/include/KSaneWidgets6/ksane_version.h
+usr/include/KSaneWidgets6/ksanewidget.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KSaneWidgets6/
+usr/lib64/cmake/KSaneWidgets6/KSaneWidgets6Config.cmake
+usr/lib64/cmake/KSaneWidgets6/KSaneWidgets6ConfigVersion.cmake
+usr/lib64/cmake/KSaneWidgets6/KSaneWidgets6Targets-relwithdebinfo.cmake
+usr/lib64/cmake/KSaneWidgets6/KSaneWidgets6Targets.cmake
+usr/lib64/libKSaneWidgets6.so.25.04.1
+usr/share/
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/16x16/
+usr/share/icons/hicolor/16x16/actions/
+usr/share/icons/hicolor/16x16/actions/black-white.png
+usr/share/icons/hicolor/16x16/actions/color.png
+usr/share/icons/hicolor/16x16/actions/gray-scale.png
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/libksane.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/libksane.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/libksane.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/libksane.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libksane.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/libksane.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libksane.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libksane.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libksane.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/libksane.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/libksane.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libksane.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libksane.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/libksane.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libksane.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libksane.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libksane.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/libksane.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/libksane.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/libksane.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/libksane.mo
+usr/share/locale/hne/
+usr/share/locale/hne/LC_MESSAGES/
+usr/share/locale/hne/LC_MESSAGES/libksane.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/libksane.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libksane.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/libksane.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/libksane.mo
+usr/share/locale/ie/
+usr/share/locale/ie/LC_MESSAGES/
+usr/share/locale/ie/LC_MESSAGES/libksane.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/libksane.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libksane.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libksane.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/libksane.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/libksane.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/libksane.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libksane.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libksane.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/libksane.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/libksane.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/libksane.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/libksane.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/libksane.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libksane.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/libksane.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/libksane.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/libksane.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libksane.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/libksane.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libksane.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libksane.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libksane.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/libksane.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libksane.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/libksane.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/libksane.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libksane.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/libksane.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/libksane.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/libksane.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libksane.mo
+usr/share/locale/wa/
+usr/share/locale/wa/LC_MESSAGES/
+usr/share/locale/wa/LC_MESSAGES/libksane.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libksane.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/libksane.mo
+
+Slackware package /tmp/libksane/libksane-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for libksane-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/libksane/libksane-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/libksane/libksane-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/libksane/libksane-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in libksane.tar.lz4 format.
+/tmp/libksane /tmp/libksane
+/tmp/libksane
+BIN_NAME
+README
+libksane-25.04.1-x86_64-1_rtz.tlz
+libksane-25.04.1-x86_64-1_rtz.tlz.md5
+libksane-25.04.1-x86_64-1_rtz.tlz.so.file
+libksane-25.04.1-x86_64-1_rtz.tlz.txt
+libksane.dep
+makepkg-libksane.log
+libksane build finished. Procced to installation...
+
++=======================================================================================================+
+| Upgrading libksane-25.04.1-x86_64-1_rtz package using /tmp/libksane/libksane-25.04.1-x86_64-1_rtz.tlz |
++=======================================================================================================+
+
+Pre-installing package libksane-25.04.1-x86_64-1_rtz...
+Removing package: libksane-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:10:45
+Installing package libksane-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# libksane (library)
+#
+# An image scanning library
+#
+# https://www.kde.org/applications/graphics
+Executing install script for libksane-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package libksane-25.04.1-x86_64-1_rtz.tlz installed.
+Package libksane-25.04.1-x86_64-1_rtz upgraded with new package /tmp/libksane/libksane-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'libksane-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 13 seconds.

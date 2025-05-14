@@ -1,0 +1,1398 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	kconfig	kdbusaddons	kdeclarative	kglobalaccel	ki18n	kio	kirigami-addons	kitemmodels	knewstuff	kservice	libksysguard	kirigami	ksystemstats
+extra-cmake-modules is already installed!
+kconfig is already installed!
+kdbusaddons is already installed!
+kdeclarative is already installed!
+kglobalaccel is already installed!
+ki18n is already installed!
+kio is already installed!
+kirigami-addons is already installed!
+kitemmodels is already installed!
+knewstuff is already installed!
+kservice is already installed!
+libksysguard is already installed!
+kirigami is already installed!
+ksystemstats is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:57:13--  https://download.kde.org/stable/plasma/6.3.5/plasma-systemmonitor-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-systemmonitor-6.3.5.tar.xz [following]
+--2025-05-10 22:57:14--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-systemmonitor-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 201892 (197K) [application/octet-stream]
+Saving to: ‘plasma-systemmonitor-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 25% 1.29M 0s
+    50K .......... .......... .......... .......... .......... 50% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 76% 6.74M 0s
+   150K .......... .......... .......... .......... .......   100% 7.08M=0.09s
+
+2025-05-10 22:57:14 (2.25 MB/s) - ‘plasma-systemmonitor-6.3.5.tar.xz’ saved [201892/201892]
+
+Found file: plasma-systemmonitor-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+plasma-systemmonitor-6.3.5/
+plasma-systemmonitor-6.3.5/logo.png.license
+plasma-systemmonitor-6.3.5/kcm_external_plasma-systemmonitor.desktop
+plasma-systemmonitor-6.3.5/Messages.sh
+plasma-systemmonitor-6.3.5/cmake/
+plasma-systemmonitor-6.3.5/cmake/FindKSystemStats.cmake
+plasma-systemmonitor-6.3.5/ExtraDesktop.sh
+plasma-systemmonitor-6.3.5/.git-blame-ignore-revs
+plasma-systemmonitor-6.3.5/.reuse/
+plasma-systemmonitor-6.3.5/.reuse/dep5
+plasma-systemmonitor-6.3.5/LICENSES/
+plasma-systemmonitor-6.3.5/LICENSES/GPL-2.0-only.txt
+plasma-systemmonitor-6.3.5/LICENSES/LGPL-2.1-only.txt
+plasma-systemmonitor-6.3.5/LICENSES/LGPL-3.0-or-later.txt
+plasma-systemmonitor-6.3.5/LICENSES/BSD-3-Clause.txt
+plasma-systemmonitor-6.3.5/LICENSES/LGPL-3.0-only.txt
+plasma-systemmonitor-6.3.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+plasma-systemmonitor-6.3.5/LICENSES/CC0-1.0.txt
+plasma-systemmonitor-6.3.5/LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+plasma-systemmonitor-6.3.5/LICENSES/LGPL-2.0-or-later.txt
+plasma-systemmonitor-6.3.5/LICENSES/GPL-3.0-only.txt
+plasma-systemmonitor-6.3.5/org.kde.plasma-systemmonitor.desktop
+plasma-systemmonitor-6.3.5/.gitlab-ci.yml
+plasma-systemmonitor-6.3.5/org.kde.plasma-systemmonitor.metainfo.xml
+plasma-systemmonitor-6.3.5/.gitignore
+plasma-systemmonitor-6.3.5/logo.png
+plasma-systemmonitor-6.3.5/.kde-ci.yml
+plasma-systemmonitor-6.3.5/src/
+plasma-systemmonitor-6.3.5/src/table/
+plasma-systemmonitor-6.3.5/src/table/ProcessSortFilterModel.cpp
+plasma-systemmonitor-6.3.5/src/table/LineChartCellDelegate.qml
+plasma-systemmonitor-6.3.5/src/table/BaseTableView.qml
+plasma-systemmonitor-6.3.5/src/table/BaseCellDelegate.qml
+plasma-systemmonitor-6.3.5/src/table/ReverseColumnsProxyModel.h
+plasma-systemmonitor-6.3.5/src/table/ComponentCacheProxyModel.h
+plasma-systemmonitor-6.3.5/src/table/TextCellDelegate.qml
+plasma-systemmonitor-6.3.5/src/table/ProcessSortFilterModel.h
+plasma-systemmonitor-6.3.5/src/table/UserCellDelegate.qml
+plasma-systemmonitor-6.3.5/src/table/ColumnDisplayModel.cpp
+plasma-systemmonitor-6.3.5/src/table/ColumnDisplayModel.h
+plasma-systemmonitor-6.3.5/src/table/ColumnSortModel.h
+plasma-systemmonitor-6.3.5/src/table/TableViewHeader.qml
+plasma-systemmonitor-6.3.5/src/table/ColumnSortModel.cpp
+plasma-systemmonitor-6.3.5/src/table/KillDialog.qml
+plasma-systemmonitor-6.3.5/src/table/FirstCellDelegate.qml
+plasma-systemmonitor-6.3.5/src/table/ComponentCacheProxyModel.cpp
+plasma-systemmonitor-6.3.5/src/table/CMakeLists.txt
+plasma-systemmonitor-6.3.5/src/table/ReverseColumnsProxyModel.cpp
+plasma-systemmonitor-6.3.5/src/table/ColumnConfigurationDialog.qml
+plasma-systemmonitor-6.3.5/src/pages/
+plasma-systemmonitor-6.3.5/src/pages/applications.page
+plasma-systemmonitor-6.3.5/src/pages/overview.page
+plasma-systemmonitor-6.3.5/src/pages/processes.page
+plasma-systemmonitor-6.3.5/src/pages/history.page
+plasma-systemmonitor-6.3.5/src/plasma-systemmonitor.knsrc
+plasma-systemmonitor-6.3.5/src/Configuration.h
+plasma-systemmonitor-6.3.5/src/GlobalMenu.qml
+plasma-systemmonitor-6.3.5/src/CommandLineArguments.cpp
+plasma-systemmonitor-6.3.5/src/page/
+plasma-systemmonitor-6.3.5/src/page/FacesModel.h
+plasma-systemmonitor-6.3.5/src/page/PageDataObject.h
+plasma-systemmonitor-6.3.5/src/page/FaceLoader.cpp
+plasma-systemmonitor-6.3.5/src/page/FacesModel.cpp
+plasma-systemmonitor-6.3.5/src/page/PageSortDialog.qml
+plasma-systemmonitor-6.3.5/src/page/LoadPresetDialog.qml
+plasma-systemmonitor-6.3.5/src/page/MoveButton.qml
+plasma-systemmonitor-6.3.5/src/page/ColumnControl.qml
+plasma-systemmonitor-6.3.5/src/page/PageDialog.qml
+plasma-systemmonitor-6.3.5/src/page/PageEditor.qml
+plasma-systemmonitor-6.3.5/src/page/PagesModel.h
+plasma-systemmonitor-6.3.5/src/page/EditablePage.qml
+plasma-systemmonitor-6.3.5/src/page/EditablePageAction.qml
+plasma-systemmonitor-6.3.5/src/page/PageSortModel.h
+plasma-systemmonitor-6.3.5/src/page/DialogLoader.qml
+plasma-systemmonitor-6.3.5/src/page/WidgetExporter.cpp
+plasma-systemmonitor-6.3.5/src/page/WidgetExporter.h
+plasma-systemmonitor-6.3.5/src/page/PageDataModel.cpp
+plasma-systemmonitor-6.3.5/src/page/RowControl.qml
+plasma-systemmonitor-6.3.5/src/page/PageDataObject.cpp
+plasma-systemmonitor-6.3.5/src/page/Container.qml
+plasma-systemmonitor-6.3.5/src/page/PlaceholderRectangle.qml
+plasma-systemmonitor-6.3.5/src/page/FaceLoader.h
+plasma-systemmonitor-6.3.5/src/page/PageDataModel.h
+plasma-systemmonitor-6.3.5/src/page/FaceConfigurationPage.qml
+plasma-systemmonitor-6.3.5/src/page/PagesModel.cpp
+plasma-systemmonitor-6.3.5/src/page/CMakeLists.txt
+plasma-systemmonitor-6.3.5/src/page/PageSortModel.cpp
+plasma-systemmonitor-6.3.5/src/page/SectionControl.qml
+plasma-systemmonitor-6.3.5/src/page/ConditionalLoader.qml
+plasma-systemmonitor-6.3.5/src/page/MissingSensorsDialog.qml
+plasma-systemmonitor-6.3.5/src/page/PageContents.qml
+plasma-systemmonitor-6.3.5/src/page/EditorToolBar.qml
+plasma-systemmonitor-6.3.5/src/page/FaceControl.qml
+plasma-systemmonitor-6.3.5/src/Configuration.cpp
+plasma-systemmonitor-6.3.5/src/Main.qml
+plasma-systemmonitor-6.3.5/src/systemmonitor.kcfg
+plasma-systemmonitor-6.3.5/src/faces/
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/faceproperties
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/config/
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/config/main.xml
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/ui/
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/ui/Config.qml
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/ui/FullRepresentation.qml
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/ui/LineChartCard.qml
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/ui/ApplicationsTableView.qml
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/ui/CompactRepresentation.qml
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/ui/ApplicationDetails.qml
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/contents/ui/ApplicationInformation.qml
+plasma-systemmonitor-6.3.5/src/faces/applicationstable/metadata.json
+plasma-systemmonitor-6.3.5/src/faces/processtable/
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/faceproperties
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/config/
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/config/main.xml
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/ui/
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/ui/Config.qml
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/ui/FullRepresentation.qml
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/ui/ProcessTableView.qml
+plasma-systemmonitor-6.3.5/src/faces/processtable/contents/ui/CompactRepresentation.qml
+plasma-systemmonitor-6.3.5/src/faces/processtable/metadata.json
+plasma-systemmonitor-6.3.5/src/faces/CMakeLists.txt
+plasma-systemmonitor-6.3.5/src/CommandLineArguments.h
+plasma-systemmonitor-6.3.5/src/CMakeLists.txt
+plasma-systemmonitor-6.3.5/src/systemmonitor.qrc
+plasma-systemmonitor-6.3.5/src/ToolsModel.cpp
+plasma-systemmonitor-6.3.5/src/main.cpp
+plasma-systemmonitor-6.3.5/src/ToolsModel.h
+plasma-systemmonitor-6.3.5/CMakeLists.txt
+plasma-systemmonitor-6.3.5/po/
+plasma-systemmonitor-6.3.5/po/gl/
+plasma-systemmonitor-6.3.5/po/gl/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/gl/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/gl/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/eo/
+plasma-systemmonitor-6.3.5/po/eo/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/eo/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/eo/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/he/
+plasma-systemmonitor-6.3.5/po/he/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/he/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/he/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/zh_CN/
+plasma-systemmonitor-6.3.5/po/zh_CN/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/zh_CN/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/zh_CN/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/be/
+plasma-systemmonitor-6.3.5/po/be/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/be/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/be/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/hi/
+plasma-systemmonitor-6.3.5/po/hi/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/hi/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/hi/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/bg/
+plasma-systemmonitor-6.3.5/po/bg/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/bg/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/bg/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/lv/
+plasma-systemmonitor-6.3.5/po/lv/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/lv/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/lv/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ca@valencia/
+plasma-systemmonitor-6.3.5/po/ca@valencia/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ca@valencia/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ca@valencia/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/pt/
+plasma-systemmonitor-6.3.5/po/pt/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/pt/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/pt/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/nn/
+plasma-systemmonitor-6.3.5/po/nn/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/nn/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/nn/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/fi/
+plasma-systemmonitor-6.3.5/po/fi/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/fi/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/fi/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ka/
+plasma-systemmonitor-6.3.5/po/ka/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ka/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ka/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ar/
+plasma-systemmonitor-6.3.5/po/ar/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ar/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ar/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/sk/
+plasma-systemmonitor-6.3.5/po/sk/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/sk/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/sk/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/pa/
+plasma-systemmonitor-6.3.5/po/pa/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/pa/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/pa/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ro/
+plasma-systemmonitor-6.3.5/po/ro/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ro/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ro/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/de/
+plasma-systemmonitor-6.3.5/po/de/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/de/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/de/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/is/
+plasma-systemmonitor-6.3.5/po/is/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/is/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/is/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/id/
+plasma-systemmonitor-6.3.5/po/id/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/id/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/id/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ja/
+plasma-systemmonitor-6.3.5/po/ja/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ja/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ja/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ko/
+plasma-systemmonitor-6.3.5/po/ko/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ko/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ko/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/hu/
+plasma-systemmonitor-6.3.5/po/hu/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/hu/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/hu/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/sa/
+plasma-systemmonitor-6.3.5/po/sa/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/sa/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/sa/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ru/
+plasma-systemmonitor-6.3.5/po/ru/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ru/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ru/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/sl/
+plasma-systemmonitor-6.3.5/po/sl/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/sl/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/sl/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ta/
+plasma-systemmonitor-6.3.5/po/ta/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ta/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ta/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/it/
+plasma-systemmonitor-6.3.5/po/it/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/it/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/it/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/pt_BR/
+plasma-systemmonitor-6.3.5/po/pt_BR/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/pt_BR/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/pt_BR/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/tr/
+plasma-systemmonitor-6.3.5/po/tr/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/tr/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/tr/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ca/
+plasma-systemmonitor-6.3.5/po/ca/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ca/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ca/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/nl/
+plasma-systemmonitor-6.3.5/po/nl/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/nl/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/nl/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/pl/
+plasma-systemmonitor-6.3.5/po/pl/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/pl/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/pl/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/nb/
+plasma-systemmonitor-6.3.5/po/nb/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/eu/
+plasma-systemmonitor-6.3.5/po/eu/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/eu/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/eu/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/cs/
+plasma-systemmonitor-6.3.5/po/cs/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/cs/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/cs/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/az/
+plasma-systemmonitor-6.3.5/po/az/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/az/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/az/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/fr/
+plasma-systemmonitor-6.3.5/po/fr/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/fr/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/fr/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/zh_TW/
+plasma-systemmonitor-6.3.5/po/zh_TW/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/zh_TW/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/zh_TW/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/uk/
+plasma-systemmonitor-6.3.5/po/uk/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/uk/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/uk/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/sv/
+plasma-systemmonitor-6.3.5/po/sv/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/sv/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/sv/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/en_GB/
+plasma-systemmonitor-6.3.5/po/en_GB/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/en_GB/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/en_GB/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/da/
+plasma-systemmonitor-6.3.5/po/da/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/da/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/da/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/es/
+plasma-systemmonitor-6.3.5/po/es/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/es/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/es/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ast/
+plasma-systemmonitor-6.3.5/po/ast/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ast/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ast/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/ia/
+plasma-systemmonitor-6.3.5/po/ia/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/ia/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/ia/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/po/lt/
+plasma-systemmonitor-6.3.5/po/lt/ksysguard_face_org.kde.ksysguard.processtable.po
+plasma-systemmonitor-6.3.5/po/lt/ksysguard_face_org.kde.ksysguard.applicationstable.po
+plasma-systemmonitor-6.3.5/po/lt/plasma-systemmonitor.po
+plasma-systemmonitor-6.3.5/kconf_update/
+plasma-systemmonitor-6.3.5/kconf_update/plasma-systemmonitor.upd
+plasma-systemmonitor-6.3.5/kconf_update/plasma-systemmonitor-replace-vmpss.py
+plasma-systemmonitor-6.3.5/README.md
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.14.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.14.0")
+-- Found KF6GlobalAccel: /usr/lib64/cmake/KF6GlobalAccel/KF6GlobalAccelConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6NewStuff: /usr/lib64/cmake/KF6NewStuff/KF6NewStuffConfig.cmake (found version "6.14.0")
+-- Found KF6ItemModels: /usr/lib64/cmake/KF6ItemModels/KF6ItemModelsConfig.cmake (found version "6.14.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.14.0")
+-- Found KF6Package: /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.10.0") found components: I18n Config Crash Service GlobalAccel KIO DBusAddons NewStuff ItemModels WindowSystem Package
+CMake Warning (dev) at /usr/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake:430 (message):
+  The package name passed to find_package_handle_standard_args()
+  (ksystemstats) does not match the name of the calling package
+  (KSystemStats).  This can lead to problems in calling code that expects
+  find_package() result variables (e.g., `_FOUND`) to follow a certain
+  pattern.
+Call Stack (most recent call first):
+  cmake/FindKSystemStats.cmake:7 (find_package_handle_standard_args)
+  CMakeLists.txt:37 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found ksystemstats: /usr/bin/ksystemstats
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Found Qt.labs.qmlmodels-QMLModule: TRUE
+-- Found org.kde.iconthemes-QMLModule: TRUE (found version "6.14.0")
+CMake Warning at /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:52 (message):
+  couldn't generate metainfo for org.kde.ksysguard.applicationstable: Error:
+  description missing, will result in broken appdata field as <summary/> is
+  mandatory at
+  /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/work/plasma-systemmonitor-6.3.5/src/faces/applicationstable/metadata.json
+Call Stack (most recent call first):
+  src/faces/CMakeLists.txt:1 (kpackage_install_package)
+
+
+CMake Warning at /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:52 (message):
+  couldn't generate metainfo for org.kde.ksysguard.processtable: Error:
+  description missing, will result in broken appdata field as <summary/> is
+  mandatory at
+  /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/work/plasma-systemmonitor-6.3.5/src/faces/processtable/metadata.json
+Call Stack (most recent call first):
+  src/faces/CMakeLists.txt:2 (kpackage_install_package)
+
+
+-- The following RUNTIME packages have been found:
+
+ * KSystemStats, <https://invent.kde.org/plasma/ksystemstats>
+   Daemon providing system statistics
+ * Qt6QuickControls2 (required version >= 6.7.0)
+ * KF6Kirigami (required version >= 6.10.0)
+ * Qt.labs.qmlmodels-QMLModule, QML module 'Qt.labs.qmlmodels' is a runtime dependency.
+ * org.kde.iconthemes-QMLModule, QML module 'org.kde.iconthemes' is a runtime dependency.
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6Qml (required version >= 6.7.0)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6QuickTools (required version >= 6.8.3)
+ * Qt6Quick (required version >= 6.7.0)
+ * Qt6CoreTools (required version >= 6.8.3)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0)
+ * KF6Crash (required version >= 6.10.0)
+ * KF6GlobalAccel (required version >= 6.10.0)
+ * KF6Service (required version >= 6.14.0)
+ * KF6KIO (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.10.0)
+ * KF6NewStuff (required version >= 6.10.0)
+ * KF6ItemModels (required version >= 6.10.0)
+ * KF6WindowSystem (required version >= 6.10.0)
+ * KF6Package (required version >= 6.10.0)
+ * KF6 (required version >= 6.10.0)
+ * KF6Config (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.10.0)
+ * KSysGuard (required version >= 6.3.5), The libksysguard collection of libraries, <https://invent.kde.org/plasma/libksysguard>
+ * Qt6Core
+ * KF6KirigamiAddons (required version >= 1.1.0)
+   Provides additional visual components
+ * Qt6
+
+-- Configuring done (2.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/work/plasma-systemmonitor-6.3.5/build
+[1/133] Copying PlasmaSystemMonitorTable qml resources into build dir
+[2/133] Copying plasma-systemmonitor qml resources into build dir
+[3/133] Copying plasma-systemmonitor qml sources into build dir
+[4/133] Copying PlasmaSystemMonitorPage qml resources into build dir
+[5/133] Copying PlasmaSystemMonitorTable qml sources into build dir
+[6/133] Copying PlasmaSystemMonitorPage qml sources into build dir
+[7/133] Generating ts...
+[8/133] Generating mo...
+[9/133] Automatic MOC for target PlasmaSystemMonitorPage
+[10/133] Running AUTOMOC file extraction for target PlasmaSystemMonitorPage
+[11/133] Running rcc for resource qmake_org_kde_ksysguard_page
+[12/133] Running moc --collect-json for target PlasmaSystemMonitorPage
+[13/133] Automatic MOC for target PlasmaSystemMonitorTable
+[14/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_qmlcache_loader.cpp
+[15/133] Running AUTOMOC file extraction for target PlasmaSystemMonitorTable
+[16/133] Running rcc for resource qmake_org_kde_ksysguard_table
+[17/133] Running rcc for resource PlasmaSystemMonitorTable_raw_qml_0
+[18/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_qmlcache_loader.cpp
+[19/133] Running moc --collect-json for target PlasmaSystemMonitorTable
+[20/133] Running rcc for resource PlasmaSystemMonitorPage_raw_qml_0
+[21/133] Automatic QML type registration for target PlasmaSystemMonitorPage
+[22/133] Automatic QML type registration for target PlasmaSystemMonitorTable
+Warning: ReverseColumnsProxyModel.h:17: KRearrangeColumnsProxyModel is used as base type but cannot be found.
+[23/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_DialogLoader_qml.cpp
+[24/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_PlaceholderRectangle_qml.cpp
+[25/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_MoveButton_qml.cpp
+[26/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_EditablePageAction_qml.cpp
+[27/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_ConditionalLoader_qml.cpp
+[28/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_TextCellDelegate_qml.cpp
+[29/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_LoadPresetDialog_qml.cpp
+[30/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_EditorToolBar_qml.cpp
+[31/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_PageSortDialog_qml.cpp
+[32/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_BaseCellDelegate_qml.cpp
+[33/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_Container_qml.cpp
+[34/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_SectionControl_qml.cpp
+[35/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_BaseTableView_qml.cpp
+[36/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_FaceControl_qml.cpp
+[37/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_ColumnControl_qml.cpp
+[38/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_FirstCellDelegate_qml.cpp
+[39/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_LineChartCellDelegate_qml.cpp
+[40/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_RowControl_qml.cpp
+[41/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_MissingSensorsDialog_qml.cpp
+[42/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_PageContents_qml.cpp
+[43/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_TableViewHeader_qml.cpp
+[44/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_UserCellDelegate_qml.cpp
+[45/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_PageEditor_qml.cpp
+[46/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_PageDialog_qml.cpp
+[47/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_KillDialog_qml.cpp
+[48/133] Generating .rcc/qmlcache/PlasmaSystemMonitorTable_ColumnConfigurationDialog_qml.cpp
+[49/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.qt/rcc/qrc_qmake_org_kde_ksysguard_table.cpp.o
+[50/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_EditablePage_qml.cpp
+[51/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.qt/rcc/qrc_PlasmaSystemMonitorTable_raw_qml_0.cpp.o
+[52/133] Generating .rcc/qmlcache/PlasmaSystemMonitorPage_FaceConfigurationPage_qml.cpp
+[53/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/PlasmaSystemMonitorPage_autogen/mocs_compilation.cpp.o
+[54/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.qt/rcc/qrc_qmake_org_kde_ksysguard_page.cpp.o
+[55/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_FirstCellDelegate_qml.cpp.o
+[56/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/PlasmaSystemMonitorTable_autogen/mocs_compilation.cpp.o
+[57/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_ColumnConfigurationDialog_qml.cpp.o
+[58/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_BaseCellDelegate_qml.cpp.o
+[59/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_TableViewHeader_qml.cpp.o
+[60/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_LineChartCellDelegate_qml.cpp.o
+[61/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_UserCellDelegate_qml.cpp.o
+[62/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_TextCellDelegate_qml.cpp.o
+[63/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_KillDialog_qml.cpp.o
+[64/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/ReverseColumnsProxyModel.cpp.o
+[65/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_qmlcache_loader.cpp.o
+[66/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/ProcessSortFilterModel.cpp.o
+[67/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/ColumnSortModel.cpp.o
+[68/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/.rcc/qmlcache/PlasmaSystemMonitorTable_BaseTableView_qml.cpp.o
+[69/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/plasmasystemmonitortable_qmltyperegistrations.cpp.o
+[70/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/PageDataModel.cpp.o
+[71/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/ComponentCacheProxyModel.cpp.o
+[72/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/plasmasystemmonitorpage_qmltyperegistrations.cpp.o
+[73/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/FacesModel.cpp.o
+[74/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/FaceLoader.cpp.o
+[75/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/PageDataObject.cpp.o
+[76/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_EditablePage_qml.cpp.o
+[77/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_ColumnControl_qml.cpp.o
+[78/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTable.dir/ColumnDisplayModel.cpp.o
+[79/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_Container_qml.cpp.o
+[80/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.qt/rcc/qrc_PlasmaSystemMonitorPage_raw_qml_0.cpp.o
+[81/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_RowControl_qml.cpp.o
+[82/133] Linking CXX shared library bin/libPlasmaSystemMonitorTable.so
+[83/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_PageEditor_qml.cpp.o
+[84/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_PageDialog_qml.cpp.o
+[85/133] Automatic MOC for target PlasmaSystemMonitorTableplugin
+[86/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTableplugin.dir/PlasmaSystemMonitorTableplugin_autogen/mocs_compilation.cpp.o
+[87/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_FaceControl_qml.cpp.o
+[88/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/PageSortModel.cpp.o
+[89/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_qmlcache_loader.cpp.o
+[90/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_LoadPresetDialog_qml.cpp.o
+[91/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_SectionControl_qml.cpp.o
+[92/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_EditorToolBar_qml.cpp.o
+[93/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_EditablePageAction_qml.cpp.o
+[94/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_PlaceholderRectangle_qml.cpp.o
+[95/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_PageContents_qml.cpp.o
+[96/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_FaceConfigurationPage_qml.cpp.o
+[97/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/WidgetExporter.cpp.o
+[98/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_DialogLoader_qml.cpp.o
+[99/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_MissingSensorsDialog_qml.cpp.o
+[100/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_MoveButton_qml.cpp.o
+[101/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/PagesModel.cpp.o
+[102/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_PageSortDialog_qml.cpp.o
+[103/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPage.dir/.rcc/qmlcache/PlasmaSystemMonitorPage_ConditionalLoader_qml.cpp.o
+[104/133] Linking CXX shared library bin/libPlasmaSystemMonitorPage.so
+[105/133] Generating systemmonitor.h, systemmonitor.cpp
+[106/133] Building CXX object src/table/CMakeFiles/PlasmaSystemMonitorTableplugin.dir/PlasmaSystemMonitorTableplugin_org_kde_ksysguard_tablePlugin.cpp.o
+[107/133] Linking CXX shared module bin/org/kde/ksysguard/table/libPlasmaSystemMonitorTableplugin.so
+[108/133] Automatic MOC for target PlasmaSystemMonitorPageplugin
+[109/133] Automatic MOC for target plasma-systemmonitor
+[110/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPageplugin.dir/PlasmaSystemMonitorPageplugin_autogen/mocs_compilation.cpp.o
+[111/133] Running AUTOMOC file extraction for target plasma-systemmonitor
+[112/133] Running rcc for resource qmake_org_kde_systemmonitor
+[113/133] Generating .rcc/qmlcache/plasma-systemmonitor_qmlcache_loader.cpp
+[114/133] Running moc --collect-json for target plasma-systemmonitor
+[115/133] Running rcc for resource plasma-systemmonitor_raw_qml_0
+[116/133] Automatic QML type registration for target plasma-systemmonitor
+[117/133] Generating .rcc/qmlcache/plasma-systemmonitor_GlobalMenu_qml.cpp
+[118/133] Generating .rcc/qmlcache/plasma-systemmonitor_Main_qml.cpp
+[119/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/.qt/rcc/qrc_qmake_org_kde_systemmonitor.cpp.o
+[120/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/.qt/rcc/qrc_plasma-systemmonitor_raw_qml_0.cpp.o
+[121/133] Building CXX object src/page/CMakeFiles/PlasmaSystemMonitorPageplugin.dir/PlasmaSystemMonitorPageplugin_org_kde_ksysguard_pagePlugin.cpp.o
+[122/133] Linking CXX shared module bin/org/kde/ksysguard/page/libPlasmaSystemMonitorPageplugin.so
+[123/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/CommandLineArguments.cpp.o
+[124/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/.rcc/qmlcache/plasma-systemmonitor_GlobalMenu_qml.cpp.o
+[125/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/plasma-systemmonitor_autogen/mocs_compilation.cpp.o
+[126/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/.rcc/qmlcache/plasma-systemmonitor_qmlcache_loader.cpp.o
+[127/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/ToolsModel.cpp.o
+[128/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/Configuration.cpp.o
+[129/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/systemmonitor.cpp.o
+[130/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/main.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/work/plasma-systemmonitor-6.3.5/src/main.cpp: In function ‘int main(int, char**)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/work/plasma-systemmonitor-6.3.5/src/main.cpp:104:10: warning: unused variable ‘sessionManager’ [-Wunused-variable]
+  104 |     auto sessionManager = new SessionManager(&app);
+      |          ^~~~~~~~~~~~~~
+[131/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/plasma-systemmonitor_qmltyperegistrations.cpp.o
+[132/133] Building CXX object src/CMakeFiles/plasma-systemmonitor.dir/.rcc/qmlcache/plasma-systemmonitor_Main_qml.cpp.o
+[133/133] Linking CXX executable bin/plasma-systemmonitor
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/libPlasmaSystemMonitorPage.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/libPlasmaSystemMonitorPageplugin.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/libPlasmaSystemMonitorPageplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/qmldir
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/PlasmaSystemMonitorPage.qmltypes
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/ColumnControl.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/Container.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/EditablePage.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/PageContents.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/PageEditor.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/PlaceholderRectangle.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/RowControl.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/SectionControl.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/PageDialog.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/EditablePageAction.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/FaceControl.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/FaceConfigurationPage.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/LoadPresetDialog.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/EditorToolBar.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/MoveButton.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/PageSortDialog.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/DialogLoader.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/MissingSensorsDialog.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/ConditionalLoader.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/page/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/libPlasmaSystemMonitorTable.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/libPlasmaSystemMonitorTableplugin.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/libPlasmaSystemMonitorTableplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/qmldir
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/PlasmaSystemMonitorTable.qmltypes
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/BaseCellDelegate.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/BaseTableView.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/TextCellDelegate.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/ColumnConfigurationDialog.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/FirstCellDelegate.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/LineChartCellDelegate.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/TableViewHeader.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/UserCellDelegate.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/KillDialog.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/lib64/qt6/qml/org/kde/ksysguard/table/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/metadata.json
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/ApplicationsTableView.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/Config.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/ApplicationDetails.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/ApplicationInformation.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/LineChartCard.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/FullRepresentation.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/CompactRepresentation.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/faceproperties
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/config
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/config/main.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/metadata.json
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/Config.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/FullRepresentation.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/ProcessTableView.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/CompactRepresentation.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/faceproperties
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/config
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/config/main.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/bin/plasma-systemmonitor
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/bin/plasma-systemmonitor" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/config.kcfg/systemmonitor.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/knsrcfiles/plasma-systemmonitor.knsrc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/plasma-systemmonitor/applications.page
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/plasma-systemmonitor/history.page
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/plasma-systemmonitor/overview.page
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/plasma-systemmonitor/processes.page
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/applications/org.kde.plasma-systemmonitor.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/kglobalaccel/org.kde.plasma-systemmonitor.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/metainfo/org.kde.plasma-systemmonitor.metainfo.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/plasma/kinfocenter/externalmodules/kcm_external_plasma-systemmonitor.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/kconf_update/plasma-systemmonitor.upd
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/kconf_update/plasma-systemmonitor-replace-vmpss.py
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/da/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/da/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/da/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/cs/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ja/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/de/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nn/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hi/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt_BR/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lt/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/be/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/be/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/be/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pa/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sl/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ta/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ta/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ta/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ro/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/is/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/is/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/is/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/he/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_TW/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pl/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/az/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/tr/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fr/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ast/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ka/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/gl/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ia/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hu/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eo/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/bg/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/uk/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/id/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/id/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/id/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/en_GB/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_CN/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nl/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sa/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fi/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ko/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ru/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lv/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca@valencia/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/nb/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/es/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eu/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/it/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ar/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sk/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sv/LC_MESSAGES/plasma-systemmonitor.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/package-plasma-systemmonitor/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-systemmonitor/plasma-systemmonitor.info: No such file or directory
+extra-cmake-modules
+kconfig
+kdbusaddons
+kdeclarative
+kglobalaccel
+ki18n
+kio
+kirigami-addons
+kitemmodels
+knewstuff
+kservice
+libksysguard
+kirigami
+ksystemstats
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/plasma-systemmonitor/plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/plasma-systemmonitor
+usr/doc/
+usr/doc/plasma-systemmonitor-6.3.5/
+usr/doc/plasma-systemmonitor-6.3.5/README.md
+usr/doc/plasma-systemmonitor-6.3.5/plasma-systemmonitor.ini
+usr/doc/plasma-systemmonitor-6.3.5/slack-required
+usr/lib64/
+usr/lib64/libPlasmaSystemMonitorPage.so
+usr/lib64/libPlasmaSystemMonitorTable.so
+usr/lib64/qt6/
+usr/lib64/qt6/qml/
+usr/lib64/qt6/qml/org/
+usr/lib64/qt6/qml/org/kde/
+usr/lib64/qt6/qml/org/kde/ksysguard/
+usr/lib64/qt6/qml/org/kde/ksysguard/page/
+usr/lib64/qt6/qml/org/kde/ksysguard/page/ColumnControl.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/ConditionalLoader.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/Container.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/DialogLoader.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/EditablePage.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/EditablePageAction.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/EditorToolBar.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/FaceConfigurationPage.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/FaceControl.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/LoadPresetDialog.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/MissingSensorsDialog.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/MoveButton.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/PageContents.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/PageDialog.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/PageEditor.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/PageSortDialog.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/PlaceholderRectangle.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/PlasmaSystemMonitorPage.qmltypes
+usr/lib64/qt6/qml/org/kde/ksysguard/page/RowControl.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/SectionControl.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/page/kde-qmlmodule.version
+usr/lib64/qt6/qml/org/kde/ksysguard/page/libPlasmaSystemMonitorPageplugin.so
+usr/lib64/qt6/qml/org/kde/ksysguard/page/qmldir
+usr/lib64/qt6/qml/org/kde/ksysguard/table/
+usr/lib64/qt6/qml/org/kde/ksysguard/table/BaseCellDelegate.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/BaseTableView.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/ColumnConfigurationDialog.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/FirstCellDelegate.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/KillDialog.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/LineChartCellDelegate.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/PlasmaSystemMonitorTable.qmltypes
+usr/lib64/qt6/qml/org/kde/ksysguard/table/TableViewHeader.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/TextCellDelegate.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/UserCellDelegate.qml
+usr/lib64/qt6/qml/org/kde/ksysguard/table/kde-qmlmodule.version
+usr/lib64/qt6/qml/org/kde/ksysguard/table/libPlasmaSystemMonitorTableplugin.so
+usr/lib64/qt6/qml/org/kde/ksysguard/table/qmldir
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.plasma-systemmonitor.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/systemmonitor.kcfg
+usr/share/kconf_update/
+usr/share/kconf_update/plasma-systemmonitor-replace-vmpss.py
+usr/share/kconf_update/plasma-systemmonitor.upd
+usr/share/kglobalaccel/
+usr/share/kglobalaccel/org.kde.plasma-systemmonitor.desktop
+usr/share/knsrcfiles/
+usr/share/knsrcfiles/plasma-systemmonitor.knsrc
+usr/share/ksysguard/
+usr/share/ksysguard/sensorfaces/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/config/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/config/main.xml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/faceproperties
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/ApplicationDetails.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/ApplicationInformation.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/ApplicationsTableView.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/CompactRepresentation.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/Config.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/FullRepresentation.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/contents/ui/LineChartCard.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.applicationstable/metadata.json
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/config/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/config/main.xml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/faceproperties
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/CompactRepresentation.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/Config.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/FullRepresentation.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/contents/ui/ProcessTableView.qml
+usr/share/ksysguard/sensorfaces/org.kde.ksysguard.processtable/metadata.json
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ar/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ast/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/az/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/be/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/be/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/bg/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ca/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/cs/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/da/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/da/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/de/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/en_GB/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/eo/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/es/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/eu/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/fi/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/fr/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/gl/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/he/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/hi/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/hu/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ia/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/id/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/id/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/is/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/is/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/it/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ja/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ka/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ko/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/lt/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/lv/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/nl/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/nn/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/pa/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/pl/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/pt/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/pt_BR/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ro/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ru/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/sa/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/sk/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/sl/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/sv/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/ta/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/ta/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/tr/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/uk/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/zh_CN/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.applicationstable.mo
+usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.processtable.mo
+usr/share/locale/zh_TW/LC_MESSAGES/plasma-systemmonitor.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.plasma-systemmonitor.metainfo.xml
+usr/share/plasma/
+usr/share/plasma-systemmonitor/
+usr/share/plasma-systemmonitor/applications.page
+usr/share/plasma-systemmonitor/history.page
+usr/share/plasma-systemmonitor/overview.page
+usr/share/plasma-systemmonitor/processes.page
+usr/share/plasma/kinfocenter/
+usr/share/plasma/kinfocenter/externalmodules/
+usr/share/plasma/kinfocenter/externalmodules/kcm_external_plasma-systemmonitor.desktop
+
+Slackware package /tmp/plasma-systemmonitor/plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/plasma-systemmonitor/plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/plasma-systemmonitor/plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/plasma-systemmonitor/plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in plasma-systemmonitor.tar.lz4 format.
+/tmp/plasma-systemmonitor /tmp/plasma-systemmonitor
+/tmp/plasma-systemmonitor
+BIN_NAME
+README
+makepkg-plasma-systemmonitor.log
+plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz
+plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz.md5
+plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz.so.file
+plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz.txt
+plasma-systemmonitor.dep
+plasma-systemmonitor build finished. Procced to installation...
+
++=======================================================================================================================================+
+| Upgrading plasma-systemmonitor-6.3.5-x86_64-1_rtz package using /tmp/plasma-systemmonitor/plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz |
++=======================================================================================================================================+
+
+Pre-installing package plasma-systemmonitor-6.3.5-x86_64-1_rtz...
+Removing package: plasma-systemmonitor-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:57:48
+Installing package plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# plasma-systemmonitor (monitoring system resources)
+#
+# An application for monitoring system resources
+#
+# https://kde.org/plasma-desktop/
+Executing install script for plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz installed.
+Package plasma-systemmonitor-6.3.5-x86_64-1_rtz upgraded with new package /tmp/plasma-systemmonitor/plasma-systemmonitor-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'plasma-systemmonitor-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 40 seconds.

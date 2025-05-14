@@ -1,0 +1,1462 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules kcmutils	kcrash	kdeclarative	kglobalaccel	ki18n	kidletime	knotifications	ksvg	ktextwidgets	kwayland	kwindowsystem	kxmlgui	layer-shell-qt	libkscreen	libseccomp	libplasma	solid	xcb-util-keysyms
+extra-cmake-modules is already installed!
+kcmutils is already installed!
+kcrash is already installed!
+kdeclarative is already installed!
+kglobalaccel is already installed!
+ki18n is already installed!
+kidletime is already installed!
+knotifications is already installed!
+ksvg is already installed!
+ktextwidgets is already installed!
+kwayland is already installed!
+kwindowsystem is already installed!
+kxmlgui is already installed!
+layer-shell-qt is already installed!
+libkscreen is already installed!
+libseccomp is already installed!
+libplasma is already installed!
+solid is already installed!
+xcb-util-keysyms is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 23:09:53--  https://download.kde.org/stable/plasma/6.3.5/kscreenlocker-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kscreenlocker-6.3.5.tar.xz [following]
+--2025-05-10 23:09:53--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kscreenlocker-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 184656 (180K) [application/octet-stream]
+Saving to: ‘kscreenlocker-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 27% 1.34M 0s
+    50K .......... .......... .......... .......... .......... 55% 1.45M 0s
+   100K .......... .......... .......... .......... .......... 83% 6.93M 0s
+   150K .......... .......... ..........                      100% 6.27M=0.08s
+
+2025-05-10 23:09:53 (2.15 MB/s) - ‘kscreenlocker-6.3.5.tar.xz’ saved [184656/184656]
+
+Found file: kscreenlocker-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kscreenlocker-6.3.5/
+kscreenlocker-6.3.5/abstractlocker.h
+kscreenlocker-6.3.5/globalaccel.h
+kscreenlocker-6.3.5/ksldapp.cpp
+kscreenlocker-6.3.5/kscreenlocker.notifyrc
+kscreenlocker-6.3.5/tests/
+kscreenlocker-6.3.5/tests/powermanagementtest.cpp
+kscreenlocker-6.3.5/tests/powermanagement.qml
+kscreenlocker-6.3.5/tests/kcheckpass_test.qml
+kscreenlocker-6.3.5/tests/kcheckpass_test.cpp
+kscreenlocker-6.3.5/tests/kscreenlocker_main.cpp
+kscreenlocker-6.3.5/tests/CMakeLists.txt
+kscreenlocker-6.3.5/tests/README.md
+kscreenlocker-6.3.5/Messages.sh
+kscreenlocker-6.3.5/cmake/
+kscreenlocker-6.3.5/cmake/Findloginctl.cmake
+kscreenlocker-6.3.5/cmake/FindPAM.cmake
+kscreenlocker-6.3.5/cmake/FindConsoleKit.cmake
+kscreenlocker-6.3.5/waylandlocker.cpp
+kscreenlocker-6.3.5/KScreenLockerConfig.cmake.in
+kscreenlocker-6.3.5/x11info.h
+kscreenlocker-6.3.5/dbus/
+kscreenlocker-6.3.5/dbus/org.freedesktop.ScreenSaver.xml
+kscreenlocker-6.3.5/dbus/kf6_org.kde.Solid.PowerManagement.PolicyAgent.xml
+kscreenlocker-6.3.5/dbus/org.kde.screensaver.xml
+kscreenlocker-6.3.5/interface.cpp
+kscreenlocker-6.3.5/protocols/
+kscreenlocker-6.3.5/protocols/ksld.xml
+kscreenlocker-6.3.5/.git-blame-ignore-revs
+kscreenlocker-6.3.5/waylandserver.cpp
+kscreenlocker-6.3.5/LICENSES/
+kscreenlocker-6.3.5/LICENSES/GPL-2.0-only.txt
+kscreenlocker-6.3.5/LICENSES/LGPL-2.1-only.txt
+kscreenlocker-6.3.5/LICENSES/BSD-3-Clause.txt
+kscreenlocker-6.3.5/LICENSES/LGPL-3.0-only.txt
+kscreenlocker-6.3.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+kscreenlocker-6.3.5/LICENSES/GPL-2.0-or-later.txt
+kscreenlocker-6.3.5/LICENSES/CC0-1.0.txt
+kscreenlocker-6.3.5/LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+kscreenlocker-6.3.5/LICENSES/GPL-3.0-only.txt
+kscreenlocker-6.3.5/abstractlocker.cpp
+kscreenlocker-6.3.5/waylandserver.h
+kscreenlocker-6.3.5/greeter/
+kscreenlocker-6.3.5/greeter/greeterapp.h
+kscreenlocker-6.3.5/greeter/noaccessnetworkaccessmanagerfactory.h
+kscreenlocker-6.3.5/greeter/Messages.sh
+kscreenlocker-6.3.5/greeter/powermanagement.h
+kscreenlocker-6.3.5/greeter/noaccessnetworkaccessmanagerfactory.cpp
+kscreenlocker-6.3.5/greeter/fallbacktheme/
+kscreenlocker-6.3.5/greeter/fallbacktheme/Greeter.qml
+kscreenlocker-6.3.5/greeter/fallbacktheme/LockScreen.qml
+kscreenlocker-6.3.5/greeter/powermanagement.cpp
+kscreenlocker-6.3.5/greeter/pamauthenticators.cpp
+kscreenlocker-6.3.5/greeter/pamauthenticators.h
+kscreenlocker-6.3.5/greeter/greeterapp.cpp
+kscreenlocker-6.3.5/greeter/pamauthenticator.cpp
+kscreenlocker-6.3.5/greeter/themes/
+kscreenlocker-6.3.5/greeter/themes/org.kde.passworddialog/
+kscreenlocker-6.3.5/greeter/themes/org.kde.passworddialog/metadata.desktop
+kscreenlocker-6.3.5/greeter/autotests/
+kscreenlocker-6.3.5/greeter/autotests/killtest.cpp
+kscreenlocker-6.3.5/greeter/autotests/CMakeLists.txt
+kscreenlocker-6.3.5/greeter/pamauthenticator.h
+kscreenlocker-6.3.5/greeter/fallbacktheme.qrc
+kscreenlocker-6.3.5/greeter/CMakeLists.txt
+kscreenlocker-6.3.5/greeter/main.cpp
+kscreenlocker-6.3.5/powermanagement_inhibition.cpp
+kscreenlocker-6.3.5/config-kscreenlocker.h.cmake
+kscreenlocker-6.3.5/.gitlab-ci.yml
+kscreenlocker-6.3.5/interface.h
+kscreenlocker-6.3.5/x11locker.h
+kscreenlocker-6.3.5/.gitignore
+kscreenlocker-6.3.5/logo.png
+kscreenlocker-6.3.5/powermanagement_inhibition.h
+kscreenlocker-6.3.5/ck-unlock-session.cmake
+kscreenlocker-6.3.5/waylandlocker.h
+kscreenlocker-6.3.5/ScreenSaverDBusInterfaceConfig.cmake.in
+kscreenlocker-6.3.5/kcm/
+kscreenlocker-6.3.5/kcm/kcm.h
+kscreenlocker-6.3.5/kcm/kcm.cpp
+kscreenlocker-6.3.5/kcm/Messages.sh
+kscreenlocker-6.3.5/kcm/kcm_screenlocker.json
+kscreenlocker-6.3.5/kcm/resources.qrc
+kscreenlocker-6.3.5/kcm/kscreenlockerdata.h
+kscreenlocker-6.3.5/kcm/kscreenlockerdata.cpp
+kscreenlocker-6.3.5/kcm/ui/
+kscreenlocker-6.3.5/kcm/ui/ComboBoxWithCustomValue.qml
+kscreenlocker-6.3.5/kcm/ui/WallpaperConfig.qml
+kscreenlocker-6.3.5/kcm/ui/DurationPromptDialog.qml
+kscreenlocker-6.3.5/kcm/ui/Appearance.qml
+kscreenlocker-6.3.5/kcm/ui/main.qml
+kscreenlocker-6.3.5/kcm/ui/ShellConfig.qml
+kscreenlocker-6.3.5/kcm/CMakeLists.txt
+kscreenlocker-6.3.5/README.pam
+kscreenlocker-6.3.5/logind.cpp
+kscreenlocker-6.3.5/.kde-ci.yml
+kscreenlocker-6.3.5/logind.h
+kscreenlocker-6.3.5/globalaccel.cpp
+kscreenlocker-6.3.5/autotests/
+kscreenlocker-6.3.5/autotests/fakelogind.h
+kscreenlocker-6.3.5/autotests/fakelogind.cpp
+kscreenlocker-6.3.5/autotests/data/
+kscreenlocker-6.3.5/autotests/data/test_db
+kscreenlocker-6.3.5/autotests/data/test_service.in
+kscreenlocker-6.3.5/autotests/pamtest.cpp
+kscreenlocker-6.3.5/autotests/keyboardgrabber.cpp
+kscreenlocker-6.3.5/autotests/pointergrabber.cpp
+kscreenlocker-6.3.5/autotests/ksldtest.cpp
+kscreenlocker-6.3.5/autotests/CMakeLists.txt
+kscreenlocker-6.3.5/autotests/x11lockertest.cpp
+kscreenlocker-6.3.5/autotests/logindtest.cpp
+kscreenlocker-6.3.5/COPYING
+kscreenlocker-6.3.5/x11locker.cpp
+kscreenlocker-6.3.5/settings/
+kscreenlocker-6.3.5/settings/shell_integration.cpp
+kscreenlocker-6.3.5/settings/kscreensaversettings.cpp
+kscreenlocker-6.3.5/settings/kscreensaversettings.h
+kscreenlocker-6.3.5/settings/shell_integration.h
+kscreenlocker-6.3.5/settings/kscreensaversettingsbase.kcfgc
+kscreenlocker-6.3.5/settings/appearancesettings.cpp
+kscreenlocker-6.3.5/settings/CMakeLists.txt
+kscreenlocker-6.3.5/settings/wallpaper_integration.h
+kscreenlocker-6.3.5/settings/appearancesettings.h
+kscreenlocker-6.3.5/settings/wallpaper_integration.cpp
+kscreenlocker-6.3.5/settings/kscreenlockersettings.kcfg
+kscreenlocker-6.3.5/DESIGN
+kscreenlocker-6.3.5/config-unix.h.cmake
+kscreenlocker-6.3.5/CMakeLists.txt
+kscreenlocker-6.3.5/po/
+kscreenlocker-6.3.5/po/gl/
+kscreenlocker-6.3.5/po/gl/kscreenlocker.po
+kscreenlocker-6.3.5/po/gl/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/gl/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/eo/
+kscreenlocker-6.3.5/po/eo/kscreenlocker.po
+kscreenlocker-6.3.5/po/eo/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/eo/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/bs/
+kscreenlocker-6.3.5/po/bs/kscreenlocker.po
+kscreenlocker-6.3.5/po/bs/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/bs/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/he/
+kscreenlocker-6.3.5/po/he/kscreenlocker.po
+kscreenlocker-6.3.5/po/he/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/he/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/zh_CN/
+kscreenlocker-6.3.5/po/zh_CN/kscreenlocker.po
+kscreenlocker-6.3.5/po/zh_CN/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/zh_CN/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/sr/
+kscreenlocker-6.3.5/po/sr/kscreenlocker.po
+kscreenlocker-6.3.5/po/sr/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/sr/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/sr@latin/
+kscreenlocker-6.3.5/po/sr@latin/kscreenlocker.po
+kscreenlocker-6.3.5/po/sr@latin/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/sr@latin/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/hi/
+kscreenlocker-6.3.5/po/hi/kscreenlocker.po
+kscreenlocker-6.3.5/po/hi/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/hi/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/bg/
+kscreenlocker-6.3.5/po/bg/kscreenlocker.po
+kscreenlocker-6.3.5/po/bg/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/bg/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/lv/
+kscreenlocker-6.3.5/po/lv/kscreenlocker.po
+kscreenlocker-6.3.5/po/lv/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/lv/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ca@valencia/
+kscreenlocker-6.3.5/po/ca@valencia/kscreenlocker.po
+kscreenlocker-6.3.5/po/ca@valencia/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ca@valencia/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/el/
+kscreenlocker-6.3.5/po/el/kscreenlocker.po
+kscreenlocker-6.3.5/po/el/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/el/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/pt/
+kscreenlocker-6.3.5/po/pt/kscreenlocker.po
+kscreenlocker-6.3.5/po/pt/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/pt/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/nn/
+kscreenlocker-6.3.5/po/nn/kscreenlocker.po
+kscreenlocker-6.3.5/po/nn/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/nn/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/sr@ijekavian/
+kscreenlocker-6.3.5/po/sr@ijekavian/kscreenlocker.po
+kscreenlocker-6.3.5/po/sr@ijekavian/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/sr@ijekavian/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/fi/
+kscreenlocker-6.3.5/po/fi/kscreenlocker.po
+kscreenlocker-6.3.5/po/fi/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/fi/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ka/
+kscreenlocker-6.3.5/po/ka/kscreenlocker.po
+kscreenlocker-6.3.5/po/ka/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ka/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ar/
+kscreenlocker-6.3.5/po/ar/kscreenlocker.po
+kscreenlocker-6.3.5/po/ar/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ar/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/sk/
+kscreenlocker-6.3.5/po/sk/kscreenlocker.po
+kscreenlocker-6.3.5/po/sk/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/sk/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/pa/
+kscreenlocker-6.3.5/po/pa/kscreenlocker.po
+kscreenlocker-6.3.5/po/pa/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/pa/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ro/
+kscreenlocker-6.3.5/po/ro/kscreenlocker.po
+kscreenlocker-6.3.5/po/ro/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ro/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/de/
+kscreenlocker-6.3.5/po/de/kscreenlocker.po
+kscreenlocker-6.3.5/po/de/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/de/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/is/
+kscreenlocker-6.3.5/po/is/kscreenlocker.po
+kscreenlocker-6.3.5/po/is/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/is/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/id/
+kscreenlocker-6.3.5/po/id/kscreenlocker.po
+kscreenlocker-6.3.5/po/id/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/id/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/tg/
+kscreenlocker-6.3.5/po/tg/kscreenlocker.po
+kscreenlocker-6.3.5/po/tg/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/nds/
+kscreenlocker-6.3.5/po/nds/kscreenlocker.po
+kscreenlocker-6.3.5/po/nds/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/nds/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ja/
+kscreenlocker-6.3.5/po/ja/kscreenlocker.po
+kscreenlocker-6.3.5/po/ja/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ja/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/wa/
+kscreenlocker-6.3.5/po/wa/kscreenlocker.po
+kscreenlocker-6.3.5/po/wa/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ko/
+kscreenlocker-6.3.5/po/ko/kscreenlocker.po
+kscreenlocker-6.3.5/po/ko/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ko/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/hu/
+kscreenlocker-6.3.5/po/hu/kscreenlocker.po
+kscreenlocker-6.3.5/po/hu/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/hu/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/sa/
+kscreenlocker-6.3.5/po/sa/kscreenlocker.po
+kscreenlocker-6.3.5/po/sa/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/sa/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ru/
+kscreenlocker-6.3.5/po/ru/kscreenlocker.po
+kscreenlocker-6.3.5/po/ru/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ru/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/kk/
+kscreenlocker-6.3.5/po/kk/kscreenlocker.po
+kscreenlocker-6.3.5/po/kk/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/sl/
+kscreenlocker-6.3.5/po/sl/kscreenlocker.po
+kscreenlocker-6.3.5/po/sl/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/sl/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ta/
+kscreenlocker-6.3.5/po/ta/kscreenlocker.po
+kscreenlocker-6.3.5/po/ta/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ta/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/it/
+kscreenlocker-6.3.5/po/it/kscreenlocker.po
+kscreenlocker-6.3.5/po/it/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/it/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/mr/
+kscreenlocker-6.3.5/po/mr/kscreenlocker.po
+kscreenlocker-6.3.5/po/mr/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ga/
+kscreenlocker-6.3.5/po/ga/kscreenlocker.po
+kscreenlocker-6.3.5/po/ga/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/pt_BR/
+kscreenlocker-6.3.5/po/pt_BR/kscreenlocker.po
+kscreenlocker-6.3.5/po/pt_BR/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/pt_BR/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/tr/
+kscreenlocker-6.3.5/po/tr/kscreenlocker.po
+kscreenlocker-6.3.5/po/tr/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/tr/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/et/
+kscreenlocker-6.3.5/po/et/kscreenlocker.po
+kscreenlocker-6.3.5/po/et/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/et/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ca/
+kscreenlocker-6.3.5/po/ca/kscreenlocker.po
+kscreenlocker-6.3.5/po/ca/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ca/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/nl/
+kscreenlocker-6.3.5/po/nl/kscreenlocker.po
+kscreenlocker-6.3.5/po/nl/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/nl/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/pl/
+kscreenlocker-6.3.5/po/pl/kscreenlocker.po
+kscreenlocker-6.3.5/po/pl/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/pl/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/sr@ijekavianlatin/
+kscreenlocker-6.3.5/po/sr@ijekavianlatin/kscreenlocker.po
+kscreenlocker-6.3.5/po/sr@ijekavianlatin/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/sr@ijekavianlatin/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/nb/
+kscreenlocker-6.3.5/po/nb/kscreenlocker.po
+kscreenlocker-6.3.5/po/nb/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/nb/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ml/
+kscreenlocker-6.3.5/po/ml/kscreenlocker.po
+kscreenlocker-6.3.5/po/ml/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ml/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/eu/
+kscreenlocker-6.3.5/po/eu/kscreenlocker.po
+kscreenlocker-6.3.5/po/eu/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/eu/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/cs/
+kscreenlocker-6.3.5/po/cs/kscreenlocker.po
+kscreenlocker-6.3.5/po/cs/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/cs/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/az/
+kscreenlocker-6.3.5/po/az/kscreenlocker.po
+kscreenlocker-6.3.5/po/fr/
+kscreenlocker-6.3.5/po/fr/kscreenlocker.po
+kscreenlocker-6.3.5/po/fr/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/fr/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/zh_TW/
+kscreenlocker-6.3.5/po/zh_TW/kscreenlocker.po
+kscreenlocker-6.3.5/po/zh_TW/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/zh_TW/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/uk/
+kscreenlocker-6.3.5/po/uk/kscreenlocker.po
+kscreenlocker-6.3.5/po/uk/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/uk/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/sv/
+kscreenlocker-6.3.5/po/sv/kscreenlocker.po
+kscreenlocker-6.3.5/po/sv/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/sv/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ug/
+kscreenlocker-6.3.5/po/ug/kscreenlocker.po
+kscreenlocker-6.3.5/po/ug/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/en_GB/
+kscreenlocker-6.3.5/po/en_GB/kscreenlocker.po
+kscreenlocker-6.3.5/po/en_GB/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/en_GB/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/da/
+kscreenlocker-6.3.5/po/da/kscreenlocker.po
+kscreenlocker-6.3.5/po/da/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/da/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/es/
+kscreenlocker-6.3.5/po/es/kscreenlocker.po
+kscreenlocker-6.3.5/po/es/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/es/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ast/
+kscreenlocker-6.3.5/po/ast/kscreenlocker.po
+kscreenlocker-6.3.5/po/ast/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ast/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/ia/
+kscreenlocker-6.3.5/po/ia/kscreenlocker.po
+kscreenlocker-6.3.5/po/ia/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/ia/kscreenlocker_greet.po
+kscreenlocker-6.3.5/po/lt/
+kscreenlocker-6.3.5/po/lt/kscreenlocker.po
+kscreenlocker-6.3.5/po/lt/kcm_screenlocker.po
+kscreenlocker-6.3.5/po/lt/kscreenlocker_greet.po
+kscreenlocker-6.3.5/ksldapp.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Looking for sys/prctl.h
+-- Looking for sys/prctl.h - found
+-- Looking for PR_SET_DUMPABLE
+-- Looking for PR_SET_DUMPABLE - found
+-- Looking for sys/procctl.h
+-- Looking for sys/procctl.h - not found
+-- Looking for PROC_TRACE_CTL
+-- Looking for PROC_TRACE_CTL - not found
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.14.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6GlobalAccel: /usr/lib64/cmake/KF6GlobalAccel/KF6GlobalAccelConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6IdleTime: /usr/lib64/cmake/KF6IdleTime/KF6IdleTimeConfig.cmake (found version "6.14.0")
+-- Found KF6Notifications: /usr/lib/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.14.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.14.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.14.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.14.0")
+-- Found KF6Svg: /usr/lib64/cmake/KF6Svg/KF6SvgConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.10.0") found components: Crash KCMUtils KIO GlobalAccel I18n IdleTime Notifications Solid WindowSystem XmlGui Svg
+-- Found XCB_XCB: /usr/lib64/libxcb.so (found version "1.17.0")
+-- Found XCB_KEYSYMS: /usr/lib64/libxcb-keysyms.so (found version "0.4.1")
+-- Found XCB_XTEST: /usr/lib64/libxcb-xtest.so (found version "1.17.0")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-xtest.so (found version "1.17.0") found components: XCB KEYSYMS XTEST
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found Wayland_Client: /usr/lib64/libwayland-client.so (found version "1.23.1")
+-- Found Wayland_Server: /usr/lib64/libwayland-server.so (found version "1.23.1")
+-- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so (found suitable version "1.23.1", minimum required is "1.3") found components: Client Server
+-- Found loginctl: /usr/bin/loginctl
+-- Performing Test PAM_MESSAGE_CONST
+-- Performing Test PAM_MESSAGE_CONST - Success
+-- Found PAM: /lib64/libpam.so;/usr/lib64/libdl.a
+-- The PAM service used by KScreenLocker will be "kde"
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Checking for one of the modules 'pam_wrapper'
+-- The following features have been enabled:
+
+ * prctl/procctl tracing control, Required for disallowing ptrace on greeter and kcheckpass process
+ * XInput, Required for grabbing XInput2 devices in the screen locker
+ * Unlock broken screenlocker, Needed for emergency unlock in case that the greeter is broken. In case your distribution does not provide loginctl or consolekit please contact plasma-devel@kde.org to discuss alternatives.
+
+-- The following RUNTIME packages have been found:
+
+ * loginctl, Send control commands to the login manager, <https://www.freedesktop.org/software/systemd/man/loginctl.html>
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6Test (required version >= 6.7.0)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6DBus (required version >= 6.7.0)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.7.0)
+ * Qt6QuickTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * WaylandScanner, Executable that converts XML protocol files to C code, <https://wayland.freedesktop.org/>
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0)
+ * Qt6 (required version >= 6.7.0)
+ * KF6Crash (required version >= 6.10.0)
+ * KF6KCMUtils (required version >= 6.10.0)
+ * KF6KIO (required version >= 6.10.0)
+ * KF6GlobalAccel (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.10.0)
+ * KF6IdleTime (required version >= 6.10.0)
+ * KF6Notifications (required version >= 6.10.0)
+ * KF6Solid (required version >= 6.10.0)
+ * KF6XmlGui (required version >= 6.10.0)
+ * KF6Svg (required version >= 6.10.0)
+ * KF6 (required version >= 6.10.0)
+ * Qt6Quick
+ * PlasmaQuick (required version >= 6.3.5)
+ * X11, X11 libraries, <https://www.x.org>
+   Required for building the X11 based workspace
+ * XCB, X protocol C-language Binding, <https://xcb.freedesktop.org/>
+ * Wayland (required version >= 1.3), C library implementation of the Wayland protocol: a protocol for a compositor to talk to its clients, <https://wayland.freedesktop.org/>
+   Required for building screenlocker
+ * LayerShellQt
+ * KF6Screen
+ * PAM, PAM Libraries, <https://www.kernel.org/pub/linux/libs/pam/>
+   Required for screen unlocking
+
+-- Configuring done (3.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/build
+[0/2] Re-checking globbed directories...
+[1/111] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/build/kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/kcm/kcm_screenlocker.json /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/build/kcm/kcm_screenlocker.desktop
+[2/111] Generating kscreensaversettingsbase.h, kscreensaversettingsbase.cpp
+[3/111] Generating ts...
+[4/111] Automatic MOC for target pointerGrabber
+[5/111] Automatic MOC for target keyboardGrabber
+[6/111] Building CXX object autotests/CMakeFiles/pointerGrabber.dir/pointerGrabber_autogen/mocs_compilation.cpp.o
+[7/111] Building CXX object autotests/CMakeFiles/keyboardGrabber.dir/keyboardGrabber_autogen/mocs_compilation.cpp.o
+[8/111] Generating mo...
+[9/111] Automatic MOC for target powermanagement_test
+[10/111] Building CXX object tests/CMakeFiles/powermanagement_test.dir/powermanagement_test_autogen/mocs_compilation.cpp.o
+[11/111] Automatic MOC for target killTest
+[12/111] Automatic MOC for target kscreenlocker_authenticator
+[13/111] Building CXX object greeter/autotests/CMakeFiles/killTest.dir/killTest_autogen/mocs_compilation.cpp.o
+[14/111] Automatic MOC for target logindTest
+[15/111] Building CXX object autotests/CMakeFiles/logindTest.dir/logindTest_autogen/mocs_compilation.cpp.o
+[16/111] Automatic MOC for target x11LockerTest
+[17/111] Building CXX object autotests/CMakeFiles/x11LockerTest.dir/x11LockerTest_autogen/mocs_compilation.cpp.o
+[18/111] Automatic MOC for target settings
+[19/111] Building CXX object autotests/CMakeFiles/pointerGrabber.dir/pointergrabber.cpp.o
+[20/111] Building CXX object autotests/CMakeFiles/logindTest.dir/__/kscreenlocker_logging.cpp.o
+[21/111] Building CXX object autotests/CMakeFiles/keyboardGrabber.dir/keyboardgrabber.cpp.o
+[22/111] Linking CXX executable bin/keyboardGrabber
+[23/111] Linking CXX executable bin/pointerGrabber
+[24/111] Building CXX object greeter/CMakeFiles/kscreenlocker_authenticator.dir/kscreenlocker_greet_logging.cpp.o
+[25/111] Building CXX object tests/CMakeFiles/powermanagement_test.dir/__/greeter/powermanagement.cpp.o
+[26/111] Building CXX object tests/CMakeFiles/powermanagement_test.dir/powermanagementtest.cpp.o
+[27/111] Building CXX object greeter/autotests/CMakeFiles/killTest.dir/killtest.cpp.o
+[28/111] Linking CXX executable bin/killTest
+[29/111] Building CXX object greeter/CMakeFiles/kscreenlocker_authenticator.dir/kscreenlocker_authenticator_autogen/mocs_compilation.cpp.o
+[30/111] Building CXX object autotests/CMakeFiles/x11LockerTest.dir/x11lockertest.cpp.o
+[31/111] Building CXX object autotests/CMakeFiles/x11LockerTest.dir/__/kscreenlocker_logging.cpp.o
+[32/111] Building CXX object autotests/CMakeFiles/logindTest.dir/fakelogind.cpp.o
+[33/111] Building CXX object autotests/CMakeFiles/x11LockerTest.dir/__/abstractlocker.cpp.o
+[34/111] Linking CXX executable bin/powermanagement_test
+[35/111] Building CXX object settings/CMakeFiles/settings.dir/settings_autogen/mocs_compilation.cpp.o
+[36/111] Building CXX object autotests/CMakeFiles/logindTest.dir/logindtest.cpp.o
+[37/111] Building CXX object greeter/CMakeFiles/kscreenlocker_authenticator.dir/pamauthenticator.cpp.o
+[38/111] Building CXX object greeter/CMakeFiles/kscreenlocker_authenticator.dir/pamauthenticators.cpp.o
+[39/111] Automatic MOC for target kcheckpass_test
+[40/111] Building CXX object tests/CMakeFiles/kcheckpass_test.dir/kcheckpass_test_autogen/mocs_compilation.cpp.o
+[41/111] Building CXX object settings/CMakeFiles/settings.dir/shell_integration.cpp.o
+[42/111] Building CXX object autotests/CMakeFiles/logindTest.dir/__/logind.cpp.o
+[43/111] Building CXX object settings/CMakeFiles/settings.dir/wallpaper_integration.cpp.o
+[44/111] Linking CXX executable bin/logindTest
+[45/111] Building CXX object autotests/CMakeFiles/x11LockerTest.dir/__/x11locker.cpp.o
+[46/111] Building CXX object settings/CMakeFiles/settings.dir/appearancesettings.cpp.o
+[47/111] Building CXX object settings/CMakeFiles/settings.dir/kscreensaversettings.cpp.o
+[48/111] Building CXX object autotests/CMakeFiles/x11LockerTest.dir/__/globalaccel.cpp.o
+[49/111] Linking CXX executable bin/x11LockerTest
+[50/111] Building CXX object settings/CMakeFiles/settings.dir/kscreensaversettingsbase.cpp.o
+[51/111] Linking CXX static library lib/libsettings.a
+[52/111] Automatic MOC for target KScreenLocker
+[53/111] Generating wayland-ksld-server-protocol.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/protocols/ksld.xml:10: warning: since version not increasing
+
+[54/111] Generating wayland-ksld-client-protocol.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/protocols/ksld.xml:10: warning: since version not increasing
+
+[55/111] Generating kscreensaveradaptor.cpp, kscreensaveradaptor.h
+[56/111] Generating wayland-ksld-protocol.c
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/protocols/ksld.xml:10: warning: since version not increasing
+
+[57/111] Generating powerdevilpolicyagent.cpp, powerdevilpolicyagent.h
+[58/111] Generating screensaveradaptor.cpp, screensaveradaptor.h
+[59/111] Generating moc_kscreensaveradaptor.cpp
+[60/111] Generating moc_powerdevilpolicyagent.cpp
+[61/111] Generating moc_screensaveradaptor.cpp
+[62/111] Building CXX object tests/CMakeFiles/kcheckpass_test.dir/kcheckpass_test.cpp.o
+[63/111] Building CXX object CMakeFiles/KScreenLocker.dir/KScreenLocker_autogen/mocs_compilation.cpp.o
+[64/111] Automatic MOC for target kcm_screenlocker
+AutoMoc warning
+---------------
+"SRC:/kcm/kscreenlockerdata.cpp"
+includes the moc file "kscreenlockerdata.moc", but does not contain a Q_OBJECT, Q_GADGET, Q_NAMESPACE, Q_NAMESPACE_EXPORT, Q_GADGET_EXPORT, Q_ENUM_NS, K_PLUGIN_FACTORY, K_PLUGIN_CLASS, K_PLUGIN_FACTORY_WITH_JSON or K_PLUGIN_CLASS_WITH_JSON macro.
+
+AutoMoc: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/kcm/kscreenlockerdata.cpp: note: No relevant classes found. No output generated.
+[65/111] Generating screenlocker_interface.cpp, screenlocker_interface.h
+[66/111] Building C object CMakeFiles/KScreenLocker.dir/wayland-ksld-protocol.c.o
+[67/111] Generating moc_screenlocker_interface.cpp
+[68/111] Generating qrc_kcm_screenlocker.cpp
+[69/111] Automatic MOC for target kscreenlocker_greet
+[70/111] Generating wayland-ksld-client-protocol.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/protocols/ksld.xml:10: warning: since version not increasing
+
+[71/111] Building CXX object kcm/CMakeFiles/kcm_screenlocker.dir/kcm_screenlocker_autogen/mocs_compilation.cpp.o
+[72/111] Generating wayland-ksld-protocol.c
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/protocols/ksld.xml:10: warning: since version not increasing
+
+[73/111] Generating qrc_fallbacktheme.cpp
+[74/111] Building CXX object kcm/CMakeFiles/kcm_screenlocker.dir/qrc_kcm_screenlocker.cpp.o
+[75/111] Linking CXX executable bin/kcheckpass_test
+[76/111] Building CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/qrc_fallbacktheme.cpp.o
+[77/111] Building C object greeter/CMakeFiles/kscreenlocker_greet.dir/wayland-ksld-protocol.c.o
+[78/111] Building CXX object CMakeFiles/KScreenLocker.dir/waylandserver.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/waylandserver.cpp: In static member function ‘static void ScreenLocker::WaylandServer::bind(wl_client*, void*, uint32_t, uint32_t)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/waylandserver.cpp:142:5: warning: missing initializer for member ‘org_kde_ksld_interface::suspendSystem’ [-Wmissing-field-initializers]
+  142 |     };
+      |     ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/work/kscreenlocker-6.3.5/waylandserver.cpp:142:5: warning: missing initializer for member ‘org_kde_ksld_interface::hibernateSystem’ [-Wmissing-field-initializers]
+[79/111] Building CXX object CMakeFiles/KScreenLocker.dir/kscreenlocker_logging.cpp.o
+[80/111] Building CXX object kcm/CMakeFiles/kcm_screenlocker.dir/kscreenlockerdata.cpp.o
+[81/111] Building CXX object CMakeFiles/KScreenLocker.dir/waylandlocker.cpp.o
+[82/111] Building CXX object CMakeFiles/KScreenLocker.dir/logind.cpp.o
+[83/111] Building CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/noaccessnetworkaccessmanagerfactory.cpp.o
+[84/111] Building CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/kscreenlocker_greet_autogen/mocs_compilation.cpp.o
+[85/111] Building CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/main.cpp.o
+[86/111] Building CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/powermanagement.cpp.o
+[87/111] Building CXX object CMakeFiles/KScreenLocker.dir/abstractlocker.cpp.o
+[88/111] Building CXX object CMakeFiles/KScreenLocker.dir/powermanagement_inhibition.cpp.o
+[89/111] Building CXX object CMakeFiles/KScreenLocker.dir/x11locker.cpp.o
+[90/111] Building CXX object CMakeFiles/KScreenLocker.dir/ksldapp.cpp.o
+[91/111] Building CXX object kcm/CMakeFiles/kcm_screenlocker.dir/screenlocker_interface.cpp.o
+[92/111] Building CXX object CMakeFiles/KScreenLocker.dir/kscreensaveradaptor.cpp.o
+[93/111] Building CXX object CMakeFiles/KScreenLocker.dir/screensaveradaptor.cpp.o
+[94/111] Building CXX object CMakeFiles/KScreenLocker.dir/powerdevilpolicyagent.cpp.o
+[95/111] Building CXX object CMakeFiles/KScreenLocker.dir/globalaccel.cpp.o
+[96/111] Building CXX object CMakeFiles/KScreenLocker.dir/interface.cpp.o
+[97/111] Building CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/greeterapp.cpp.o
+[98/111] Linking CXX shared library bin/libKScreenLocker.so.6.3.5
+[99/111] Creating library symlink bin/libKScreenLocker.so.6 bin/libKScreenLocker.so
+[100/111] Automatic MOC for target kscreenlocker_test
+[101/111] Building CXX object tests/CMakeFiles/kscreenlocker_test.dir/kscreenlocker_test_autogen/mocs_compilation.cpp.o
+[102/111] Linking CXX executable bin/kscreenlocker_greet
+[103/111] Automatic MOC for target ksldTest
+[104/111] Building CXX object autotests/CMakeFiles/ksldTest.dir/ksldTest_autogen/mocs_compilation.cpp.o
+[105/111] Building CXX object kcm/CMakeFiles/kcm_screenlocker.dir/kcm.cpp.o
+[106/111] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_screenlocker.so
+[107/111] Building CXX object tests/CMakeFiles/kscreenlocker_test.dir/kscreenlocker_main.cpp.o
+[108/111] Linking CXX executable bin/kscreenlocker_test
+[109/111] Building CXX object autotests/CMakeFiles/ksldTest.dir/ksldtest.cpp.o
+[110/111] Linking CXX executable bin/ksldTest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/libexec/kscreenlocker_greet
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/ksmserver/screenlocker/org.kde.passworddialog
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/ksmserver/screenlocker/org.kde.passworddialog/metadata.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_screenlocker.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/applications/kcm_screenlocker.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/cmake/ScreenSaverDBusInterface/ScreenSaverDBusInterfaceConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/libKScreenLocker.so.6.3.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/libKScreenLocker.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/libKScreenLocker.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/cmake/KScreenLocker/KScreenLockerTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/cmake/KScreenLocker/KScreenLockerTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/include/KScreenLocker/KScreenLocker/kscreenlocker_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/include/KScreenLocker/KScreenLocker/KsldApp
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/include/KScreenLocker/KScreenLocker/ksldapp.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/cmake/KScreenLocker/KScreenLockerConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/lib64/cmake/KScreenLocker/KScreenLockerConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/qlogging-categories6/kscreenlocker.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/knotifications6/ksmserver.notifyrc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/dbus-1/interfaces/kf6_org.freedesktop.ScreenSaver.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/dbus-1/interfaces/org.kde.screensaver.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/da/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/da/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/da/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/cs/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/cs/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/cs/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ja/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ja/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ja/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavian/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavian/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/de/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/de/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/de/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/el/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/el/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/el/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nn/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nn/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nn/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hi/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hi/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hi/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt_BR/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt_BR/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt_BR/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lt/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lt/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lt/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pa/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pa/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pa/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sl/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sl/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sl/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ta/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ta/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ta/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ro/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ro/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ro/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bs/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bs/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bs/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/is/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/is/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/is/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/wa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/wa/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/wa/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/kk/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/kk/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@latin/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@latin/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sr@latin/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/he/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/he/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/he/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_TW/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_TW/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_TW/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tg/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tg/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pl/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pl/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pl/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/pt/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/az/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tr/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tr/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/tr/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fr/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fr/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fr/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ast/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ast/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ast/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ka/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ka/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ka/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/gl/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/gl/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/gl/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ia/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ia/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ia/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hu/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hu/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/hu/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eo/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eo/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eo/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bg/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bg/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/bg/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ga/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ga/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/uk/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/uk/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/uk/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/id/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/id/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/id/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/en_GB/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/en_GB/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/en_GB/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_CN/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_CN/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/zh_CN/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nl/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nl/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nl/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sa/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sa/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sa/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fi/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fi/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/fi/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ko/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ko/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ko/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ru/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ru/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ru/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lv/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lv/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/lv/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ml/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ml/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ml/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca@valencia/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ca@valencia/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nb/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nb/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nb/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/es/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/es/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/es/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eu/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eu/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/eu/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/et/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/et/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/et/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/it/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/it/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/it/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ar/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ar/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ar/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nds/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nds/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/nds/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/mr/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/mr/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ug/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/ug/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sk/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sk/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sk/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sv/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sv/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/package-kscreenlocker/usr/share/locale/sv/LC_MESSAGES/kscreenlocker_greet.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kscreenlocker/kscreenlocker.info: No such file or directory
+extra-cmake-modules
+kcmutils
+kcrash
+kdeclarative
+kglobalaccel
+ki18n
+kidletime
+knotifications
+ksvg
+ktextwidgets
+kwayland
+kwindowsystem
+kxmlgui
+layer-shell-qt
+libkscreen
+libseccomp
+libplasma
+solid
+xcb-util-keysyms
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKScreenLocker.so	libKScreenLocker.so.6
+usr/lib64/libKScreenLocker.so.6	libKScreenLocker.so.6.3.5
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKScreenLocker.so )
+( cd usr/lib64 ; ln -sf libKScreenLocker.so.6 libKScreenLocker.so )
+( cd usr/lib64 ; rm -rf libKScreenLocker.so.6 )
+( cd usr/lib64 ; ln -sf libKScreenLocker.so.6.3.5 libKScreenLocker.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKScreenLocker.so.6'
+removed './usr/lib64/libKScreenLocker.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kscreenlocker/kscreenlocker-6.3.5-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/pam.d/
+etc/pam.d/kde-fingerprint
+etc/pam.d/kde-smartcard
+etc/pam.d/kde.new
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kscreenlocker-6.3.5/
+usr/doc/kscreenlocker-6.3.5/COPYING
+usr/doc/kscreenlocker-6.3.5/README.pam
+usr/doc/kscreenlocker-6.3.5/kscreenlocker.ini
+usr/doc/kscreenlocker-6.3.5/slack-required
+usr/include/
+usr/include/KScreenLocker/
+usr/include/KScreenLocker/KScreenLocker/
+usr/include/KScreenLocker/KScreenLocker/KsldApp
+usr/include/KScreenLocker/KScreenLocker/kscreenlocker_export.h
+usr/include/KScreenLocker/KScreenLocker/ksldapp.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KScreenLocker/
+usr/lib64/cmake/KScreenLocker/KScreenLockerConfig.cmake
+usr/lib64/cmake/KScreenLocker/KScreenLockerConfigVersion.cmake
+usr/lib64/cmake/KScreenLocker/KScreenLockerTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KScreenLocker/KScreenLockerTargets.cmake
+usr/lib64/cmake/ScreenSaverDBusInterface/
+usr/lib64/cmake/ScreenSaverDBusInterface/ScreenSaverDBusInterfaceConfig.cmake
+usr/lib64/libKScreenLocker.so.6.3.5
+usr/lib64/libexec/
+usr/lib64/libexec/kscreenlocker_greet
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/plasma/
+usr/lib64/qt6/plugins/plasma/kcms/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_screenlocker.so
+usr/share/
+usr/share/applications/
+usr/share/applications/kcm_screenlocker.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/kf6_org.freedesktop.ScreenSaver.xml
+usr/share/dbus-1/interfaces/org.kde.screensaver.xml
+usr/share/knotifications6/
+usr/share/knotifications6/ksmserver.notifyrc
+usr/share/ksmserver/
+usr/share/ksmserver/screenlocker/
+usr/share/ksmserver/screenlocker/org.kde.passworddialog/
+usr/share/ksmserver/screenlocker/org.kde.passworddialog/metadata.desktop
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ar/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ar/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ast/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ast/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/bg/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/bg/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/bs/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/bs/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ca/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ca/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/cs/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/cs/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/da/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/da/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/de/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/de/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/el/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/el/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/en_GB/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/en_GB/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/eo/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/eo/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/es/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/es/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/et/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/et/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/eu/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/eu/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/fi/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/fi/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/fr/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/fr/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ga/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/gl/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/gl/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/he/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/he/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/hi/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/hi/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/hu/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/hu/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ia/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ia/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/id/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/id/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/is/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/is/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/it/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/it/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ja/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ja/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ka/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ka/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/kk/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ko/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ko/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/lt/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/lt/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/lv/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/lv/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ml/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ml/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/mr/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/nb/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/nb/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/nds/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/nds/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/nl/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/nl/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/nn/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/nn/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/pa/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/pa/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/pl/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/pl/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/pt/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/pt/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/pt_BR/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/pt_BR/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ro/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ro/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ru/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ru/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/sa/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/sa/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/sk/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/sk/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/sl/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/sl/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/sr/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/sr/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/sr@latin/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/sr@latin/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/sv/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/sv/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/ta/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ta/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/tg/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/tr/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/tr/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/ug/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/uk/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/uk/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/wa/
+usr/share/locale/wa/LC_MESSAGES/
+usr/share/locale/wa/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/wa/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/zh_CN/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/zh_CN/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kcm_screenlocker.mo
+usr/share/locale/zh_TW/LC_MESSAGES/kscreenlocker.mo
+usr/share/locale/zh_TW/LC_MESSAGES/kscreenlocker_greet.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kscreenlocker.categories
+
+Slackware package /tmp/kscreenlocker/kscreenlocker-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for kscreenlocker-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/kscreenlocker/kscreenlocker-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/kscreenlocker/kscreenlocker-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/kscreenlocker/kscreenlocker-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kscreenlocker.tar.lz4 format.
+/tmp/kscreenlocker /tmp/kscreenlocker
+/tmp/kscreenlocker
+BIN_NAME
+README
+kscreenlocker-6.3.5-x86_64-1_rtz.tlz
+kscreenlocker-6.3.5-x86_64-1_rtz.tlz.md5
+kscreenlocker-6.3.5-x86_64-1_rtz.tlz.so.file
+kscreenlocker-6.3.5-x86_64-1_rtz.tlz.txt
+kscreenlocker.dep
+makepkg-kscreenlocker.log
+kscreenlocker build finished. Procced to installation...
+
++==================================================================================================================+
+| Upgrading kscreenlocker-6.3.5-x86_64-1_rtz package using /tmp/kscreenlocker/kscreenlocker-6.3.5-x86_64-1_rtz.tlz |
++==================================================================================================================+
+
+Pre-installing package kscreenlocker-6.3.5-x86_64-1_rtz...
+Removing package: kscreenlocker-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,23:10:31
+Installing package kscreenlocker-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kscreenlocker (Library and components)
+#
+# Library and components for secure lock screen architecture
+#
+# https://kde.org/plasma-desktop/
+Executing install script for kscreenlocker-6.3.5-x86_64-1_rtz.tlz.
+Package kscreenlocker-6.3.5-x86_64-1_rtz.tlz installed.
+Package kscreenlocker-6.3.5-x86_64-1_rtz upgraded with new package /tmp/kscreenlocker/kscreenlocker-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kscreenlocker-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 43 seconds.

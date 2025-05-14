@@ -1,0 +1,824 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	kauth	kcmutils	kcoreaddons	kdbusaddons	kdeclarative	ki18n	kio	knotifications	kservice	solid	kirigami	smartmontools
+extra-cmake-modules is already installed!
+kauth is already installed!
+kcmutils is already installed!
+kcoreaddons is already installed!
+kdbusaddons is already installed!
+kdeclarative is already installed!
+ki18n is already installed!
+kio is already installed!
+knotifications is already installed!
+kservice is already installed!
+solid is already installed!
+kirigami is already installed!
+smartmontools is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:53:15--  https://download.kde.org/stable/plasma/6.3.5/plasma-disks-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-disks-6.3.5.tar.xz [following]
+--2025-05-10 22:53:16--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-disks-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 105592 (103K) [application/octet-stream]
+Saving to: ‘plasma-disks-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 48% 1.31M 0s
+    50K .......... .......... .......... .......... .......... 96% 1.51M 0s
+   100K ...                                                   100% 5.81T=0.07s
+
+2025-05-10 22:53:16 (1.45 MB/s) - ‘plasma-disks-6.3.5.tar.xz’ saved [105592/105592]
+
+Found file: plasma-disks-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+plasma-disks-6.3.5/
+plasma-disks-6.3.5/logo.png.license
+plasma-disks-6.3.5/cmake/
+plasma-disks-6.3.5/cmake/Findsmartctl.cmake
+plasma-disks-6.3.5/.git-blame-ignore-revs
+plasma-disks-6.3.5/LICENSES/
+plasma-disks-6.3.5/LICENSES/GPL-2.0-only.txt
+plasma-disks-6.3.5/LICENSES/BSD-3-Clause.txt
+plasma-disks-6.3.5/LICENSES/LGPL-3.0-only.txt
+plasma-disks-6.3.5/LICENSES/FSFAP.txt
+plasma-disks-6.3.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+plasma-disks-6.3.5/LICENSES/CC0-1.0.txt
+plasma-disks-6.3.5/LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+plasma-disks-6.3.5/LICENSES/GPL-3.0-only.txt
+plasma-disks-6.3.5/.gitlab-ci.yml
+plasma-disks-6.3.5/.gitignore
+plasma-disks-6.3.5/logo.png
+plasma-disks-6.3.5/.kde-ci.yml
+plasma-disks-6.3.5/autotests/
+plasma-disks-6.3.5/autotests/smartdatatest.cpp
+plasma-disks-6.3.5/autotests/devicetest.cpp
+plasma-disks-6.3.5/autotests/fixtures/
+plasma-disks-6.3.5/autotests/fixtures/failing-sectors-passing-status.json
+plasma-disks-6.3.5/autotests/fixtures/failing-sectors-passing-status.json.license
+plasma-disks-6.3.5/autotests/fixtures/pass-without-status.json.license
+plasma-disks-6.3.5/autotests/fixtures/fail.json
+plasma-disks-6.3.5/autotests/fixtures/cli.txt.license
+plasma-disks-6.3.5/autotests/fixtures/missing-status.json.license
+plasma-disks-6.3.5/autotests/fixtures/broken.json
+plasma-disks-6.3.5/autotests/fixtures/simulation.qrc
+plasma-disks-6.3.5/autotests/fixtures/pass.json.license
+plasma-disks-6.3.5/autotests/fixtures/pass-freebsd.json
+plasma-disks-6.3.5/autotests/fixtures/cli.txt
+plasma-disks-6.3.5/autotests/fixtures/pass.json
+plasma-disks-6.3.5/autotests/fixtures/invalid-cmdline-bad-usb-bridge.json
+plasma-disks-6.3.5/autotests/fixtures/pass-without-status.json
+plasma-disks-6.3.5/autotests/fixtures/error-info-log-failed.json
+plasma-disks-6.3.5/autotests/fixtures/broken.json.license
+plasma-disks-6.3.5/autotests/fixtures/invalid-cmdline-bad-usb-bridge.json.license
+plasma-disks-6.3.5/autotests/fixtures/error-info-log-failed.json.license
+plasma-disks-6.3.5/autotests/fixtures/pass-freebsd.json.license
+plasma-disks-6.3.5/autotests/fixtures/invalid-vbox.json.license
+plasma-disks-6.3.5/autotests/fixtures/invalid-vbox.json
+plasma-disks-6.3.5/autotests/fixtures/fail.json.license
+plasma-disks-6.3.5/autotests/fixtures/missing-status.json
+plasma-disks-6.3.5/autotests/smartmonitortest.cpp
+plasma-disks-6.3.5/autotests/CMakeLists.txt
+plasma-disks-6.3.5/org.kde.plasma.disks.metainfo.xml
+plasma-disks-6.3.5/src/
+plasma-disks-6.3.5/src/helper.cpp
+plasma-disks-6.3.5/src/smartnotifier.h
+plasma-disks-6.3.5/src/simulationdevicenotifier.cpp
+plasma-disks-6.3.5/src/simulationctl.h
+plasma-disks-6.3.5/src/Messages.sh
+plasma-disks-6.3.5/src/smartfailure.h
+plasma-disks-6.3.5/src/helper.h
+plasma-disks-6.3.5/src/soliddevicenotifier.cpp
+plasma-disks-6.3.5/src/smart.json
+plasma-disks-6.3.5/src/smartdata.cpp
+plasma-disks-6.3.5/src/org.kde.kded.smart.actions
+plasma-disks-6.3.5/src/instabilities.cpp
+plasma-disks-6.3.5/src/smartfailure.cpp
+plasma-disks-6.3.5/src/device.cpp
+plasma-disks-6.3.5/src/device.h
+plasma-disks-6.3.5/src/devicenotifier.h
+plasma-disks-6.3.5/src/kcm/
+plasma-disks-6.3.5/src/kcm/version.h.cmake
+plasma-disks-6.3.5/src/kcm/kcm_disks.json
+plasma-disks-6.3.5/src/kcm/org.freedesktop.DBus.ObjectManager.xml
+plasma-disks-6.3.5/src/kcm/kcm_disks.json.license
+plasma-disks-6.3.5/src/kcm/servicerunner.h
+plasma-disks-6.3.5/src/kcm/module.cpp
+plasma-disks-6.3.5/src/kcm/devicemodel.cpp
+plasma-disks-6.3.5/src/kcm/devicemodel.h
+plasma-disks-6.3.5/src/kcm/ui/
+plasma-disks-6.3.5/src/kcm/ui/ReportPage.qml
+plasma-disks-6.3.5/src/kcm/ui/main.qml
+plasma-disks-6.3.5/src/kcm/CMakeLists.txt
+plasma-disks-6.3.5/src/kcm/org.freedesktop.DBus.Properties.xml
+plasma-disks-6.3.5/src/kcm/servicerunner.cpp
+plasma-disks-6.3.5/src/smart.json.license
+plasma-disks-6.3.5/src/smartnotifier.cpp
+plasma-disks-6.3.5/src/org.kde.kded.smart.notifyrc
+plasma-disks-6.3.5/src/smartmonitor.h
+plasma-disks-6.3.5/src/simulationctl.cpp
+plasma-disks-6.3.5/src/instabilities.h
+plasma-disks-6.3.5/src/smartmonitor.cpp
+plasma-disks-6.3.5/src/devicenotifier.cpp
+plasma-disks-6.3.5/src/smartctl.h
+plasma-disks-6.3.5/src/smartctl.cpp
+plasma-disks-6.3.5/src/smartdata.h
+plasma-disks-6.3.5/src/CMakeLists.txt
+plasma-disks-6.3.5/src/dbusobjectmanagerserver.cpp
+plasma-disks-6.3.5/src/soliddevicenotifier.h
+plasma-disks-6.3.5/src/main.cpp
+plasma-disks-6.3.5/src/dbusobjectmanagerserver.h
+plasma-disks-6.3.5/src/simulationdevicenotifier.h
+plasma-disks-6.3.5/CMakeLists.txt
+plasma-disks-6.3.5/po/
+plasma-disks-6.3.5/po/gl/
+plasma-disks-6.3.5/po/gl/kcm_disks.po
+plasma-disks-6.3.5/po/eo/
+plasma-disks-6.3.5/po/eo/kcm_disks.po
+plasma-disks-6.3.5/po/he/
+plasma-disks-6.3.5/po/he/kcm_disks.po
+plasma-disks-6.3.5/po/zh_CN/
+plasma-disks-6.3.5/po/zh_CN/kcm_disks.po
+plasma-disks-6.3.5/po/hi/
+plasma-disks-6.3.5/po/hi/kcm_disks.po
+plasma-disks-6.3.5/po/bg/
+plasma-disks-6.3.5/po/bg/kcm_disks.po
+plasma-disks-6.3.5/po/lv/
+plasma-disks-6.3.5/po/lv/kcm_disks.po
+plasma-disks-6.3.5/po/ca@valencia/
+plasma-disks-6.3.5/po/ca@valencia/kcm_disks.po
+plasma-disks-6.3.5/po/el/
+plasma-disks-6.3.5/po/el/kcm_disks.po
+plasma-disks-6.3.5/po/pt/
+plasma-disks-6.3.5/po/pt/kcm_disks.po
+plasma-disks-6.3.5/po/nn/
+plasma-disks-6.3.5/po/nn/kcm_disks.po
+plasma-disks-6.3.5/po/fi/
+plasma-disks-6.3.5/po/fi/kcm_disks.po
+plasma-disks-6.3.5/po/ka/
+plasma-disks-6.3.5/po/ka/kcm_disks.po
+plasma-disks-6.3.5/po/ar/
+plasma-disks-6.3.5/po/ar/kcm_disks.po
+plasma-disks-6.3.5/po/sk/
+plasma-disks-6.3.5/po/sk/kcm_disks.po
+plasma-disks-6.3.5/po/pa/
+plasma-disks-6.3.5/po/pa/kcm_disks.po
+plasma-disks-6.3.5/po/ro/
+plasma-disks-6.3.5/po/ro/kcm_disks.po
+plasma-disks-6.3.5/po/de/
+plasma-disks-6.3.5/po/de/kcm_disks.po
+plasma-disks-6.3.5/po/is/
+plasma-disks-6.3.5/po/is/kcm_disks.po
+plasma-disks-6.3.5/po/id/
+plasma-disks-6.3.5/po/id/kcm_disks.po
+plasma-disks-6.3.5/po/ja/
+plasma-disks-6.3.5/po/ja/kcm_disks.po
+plasma-disks-6.3.5/po/ko/
+plasma-disks-6.3.5/po/ko/kcm_disks.po
+plasma-disks-6.3.5/po/hu/
+plasma-disks-6.3.5/po/hu/kcm_disks.po
+plasma-disks-6.3.5/po/sa/
+plasma-disks-6.3.5/po/sa/kcm_disks.po
+plasma-disks-6.3.5/po/ru/
+plasma-disks-6.3.5/po/ru/kcm_disks.po
+plasma-disks-6.3.5/po/sl/
+plasma-disks-6.3.5/po/sl/kcm_disks.po
+plasma-disks-6.3.5/po/ta/
+plasma-disks-6.3.5/po/ta/kcm_disks.po
+plasma-disks-6.3.5/po/it/
+plasma-disks-6.3.5/po/it/kcm_disks.po
+plasma-disks-6.3.5/po/pt_BR/
+plasma-disks-6.3.5/po/pt_BR/kcm_disks.po
+plasma-disks-6.3.5/po/tr/
+plasma-disks-6.3.5/po/tr/kcm_disks.po
+plasma-disks-6.3.5/po/et/
+plasma-disks-6.3.5/po/et/kcm_disks.po
+plasma-disks-6.3.5/po/ca/
+plasma-disks-6.3.5/po/ca/kcm_disks.po
+plasma-disks-6.3.5/po/nl/
+plasma-disks-6.3.5/po/nl/kcm_disks.po
+plasma-disks-6.3.5/po/pl/
+plasma-disks-6.3.5/po/pl/kcm_disks.po
+plasma-disks-6.3.5/po/eu/
+plasma-disks-6.3.5/po/eu/kcm_disks.po
+plasma-disks-6.3.5/po/cs/
+plasma-disks-6.3.5/po/cs/kcm_disks.po
+plasma-disks-6.3.5/po/az/
+plasma-disks-6.3.5/po/az/kcm_disks.po
+plasma-disks-6.3.5/po/fr/
+plasma-disks-6.3.5/po/fr/kcm_disks.po
+plasma-disks-6.3.5/po/zh_TW/
+plasma-disks-6.3.5/po/zh_TW/kcm_disks.po
+plasma-disks-6.3.5/po/uk/
+plasma-disks-6.3.5/po/uk/kcm_disks.po
+plasma-disks-6.3.5/po/sv/
+plasma-disks-6.3.5/po/sv/kcm_disks.po
+plasma-disks-6.3.5/po/en_GB/
+plasma-disks-6.3.5/po/en_GB/kcm_disks.po
+plasma-disks-6.3.5/po/da/
+plasma-disks-6.3.5/po/da/kcm_disks.po
+plasma-disks-6.3.5/po/es/
+plasma-disks-6.3.5/po/es/kcm_disks.po
+plasma-disks-6.3.5/po/ast/
+plasma-disks-6.3.5/po/ast/kcm_disks.po
+plasma-disks-6.3.5/po/ia/
+plasma-disks-6.3.5/po/ia/kcm_disks.po
+plasma-disks-6.3.5/po/lt/
+plasma-disks-6.3.5/po/lt/kcm_disks.po
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6Notifications: /usr/lib/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.14.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6Auth: /usr/lib64/cmake/KF6Auth/KF6AuthConfig.cmake (found version "6.14.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.10.0") found components: CoreAddons DBusAddons Notifications I18n Solid Service KIO Auth KCMUtils
+-- Found smartctl: /usr/sbin/smartctl
+CMake Warning (dev) at /usr/share/cmake-4.0/Modules/CMakeDependentOption.cmake:104 (message):
+  Policy CMP0127 is not set: cmake_dependent_option() supports full Condition
+  Syntax.  Run "cmake --help-policy CMP0127" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  CMakeLists.txt:44 (cmake_dependent_option)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The following RUNTIME packages have been found:
+
+ * smartctl
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6Gui (required version >= 6.7.0)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Test (required version >= 6.7.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.10.0)
+ * KF6Notifications (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.10.0)
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6Solid (required version >= 6.14.0)
+ * KF6Service (required version >= 6.14.0)
+ * KF6KIO (required version >= 6.10.0)
+ * KF6Auth (required version >= 6.10.0)
+ * KF6KCMUtils (required version >= 6.10.0)
+ * KF6 (required version >= 6.10.0)
+ * Qt6 (required version >= 6.7.0)
+
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/work/plasma-disks-6.3.5/build
+[0/2] Re-checking globbed directories...
+[1/58] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/work/plasma-disks-6.3.5/build/src/kcm && echo
+
+[2/58] Generating org.kde.kded.smart.policy
+[3/58] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/work/plasma-disks-6.3.5/build/src/kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/work/plasma-disks-6.3.5/src/kcm/kcm_disks.json /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/work/plasma-disks-6.3.5/build/src/kcm/kcm_disks.desktop
+[4/58] Generating ts...
+[5/58] Generating mo...
+[6/58] Automatic MOC for target kded-smart-helper
+[7/58] Automatic MOC for target statickdedsmart
+[8/58] Building CXX object src/CMakeFiles/kded-smart-helper.dir/kded-smart-helper_autogen/mocs_compilation.cpp.o
+[9/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/statickdedsmart_autogen/mocs_compilation.cpp.o
+[10/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/devicenotifier.cpp.o
+[11/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/kded_debug.cpp.o
+[12/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/smartnotifier.cpp.o
+[13/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/device.cpp.o
+[14/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/smartctl.cpp.o
+[15/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/smartfailure.cpp.o
+[16/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/soliddevicenotifier.cpp.o
+[17/58] Building CXX object src/CMakeFiles/kded-smart-helper.dir/helper.cpp.o
+[18/58] Linking CXX executable bin/kded-smart-helper
+[19/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/smartdata.cpp.o
+[20/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/instabilities.cpp.o
+[21/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/smartmonitor.cpp.o
+[22/58] Building CXX object src/CMakeFiles/statickdedsmart.dir/dbusobjectmanagerserver.cpp.o
+[23/58] Linking CXX static library lib/libstatickdedsmart.a
+[24/58] Automatic MOC for target devicetest
+[25/58] Building CXX object autotests/CMakeFiles/devicetest.dir/devicetest_autogen/mocs_compilation.cpp.o
+[26/58] Automatic MOC for target kded-smart
+[27/58] Building CXX object src/CMakeFiles/kded-smart.dir/kded-smart_autogen/mocs_compilation.cpp.o
+[28/58] Automatic MOC for target smartmonitortest
+[29/58] Automatic MOC for target smartdatatest
+[30/58] Building CXX object autotests/CMakeFiles/smartmonitortest.dir/smartmonitortest_autogen/mocs_compilation.cpp.o
+[31/58] Building CXX object autotests/CMakeFiles/smartdatatest.dir/smartdatatest_autogen/mocs_compilation.cpp.o
+[32/58] Automatic MOC for target kcm_disks
+[33/58] Generating org.kde.kded.smart.Device.xml
+[34/58] Generating org.freedesktop.DBus.Properties.cpp, org.freedesktop.DBus.Properties.h
+[35/58] Generating org.freedesktop.DBus.ObjectManager.cpp, org.freedesktop.DBus.ObjectManager.h
+[36/58] Generating qrc_kcm_disks.cpp
+[37/58] Generating moc_org.freedesktop.DBus.Properties.cpp
+[38/58] Generating org.kde.kded.smart.Device.cpp, org.kde.kded.smart.Device.h
+[39/58] Generating moc_org.freedesktop.DBus.ObjectManager.cpp
+[40/58] Generating moc_org.kde.kded.smart.Device.cpp
+[41/58] Building CXX object src/kcm/CMakeFiles/kcm_disks.dir/kcm_disks_autogen/mocs_compilation.cpp.o
+[42/58] Building CXX object src/kcm/CMakeFiles/kcm_disks.dir/qrc_kcm_disks.cpp.o
+[43/58] Building CXX object src/CMakeFiles/kded-smart.dir/main.cpp.o
+[44/58] Building CXX object autotests/CMakeFiles/devicetest.dir/devicetest.cpp.o
+[45/58] Linking CXX shared module bin/smart.so
+[46/58] Linking CXX executable bin/devicetest
+[47/58] Building CXX object autotests/CMakeFiles/smartdatatest.dir/smartdatatest.cpp.o
+[48/58] Linking CXX executable bin/smartdatatest
+[49/58] Building CXX object src/kcm/CMakeFiles/kcm_disks.dir/servicerunner.cpp.o
+[50/58] Building CXX object src/kcm/CMakeFiles/kcm_disks.dir/org.freedesktop.DBus.Properties.cpp.o
+[51/58] Building CXX object autotests/CMakeFiles/smartmonitortest.dir/smartmonitortest.cpp.o
+[52/58] Linking CXX executable bin/smartmonitortest
+[53/58] Building CXX object src/kcm/CMakeFiles/kcm_disks.dir/org.kde.kded.smart.Device.cpp.o
+[54/58] Building CXX object src/kcm/CMakeFiles/kcm_disks.dir/org.freedesktop.DBus.ObjectManager.cpp.o
+[55/58] Building CXX object src/kcm/CMakeFiles/kcm_disks.dir/module.cpp.o
+[56/58] Building CXX object src/kcm/CMakeFiles/kcm_disks.dir/devicemodel.cpp.o
+[57/58] Linking CXX shared module bin/plasma/kcms/kinfocenter/kcm_disks.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/lib64/qt6/plugins/kf6/kded/smart.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/polkit-1/actions/org.kde.kded.smart.policy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/dbus-1/system.d/org.kde.kded.smart.conf
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/dbus-1/system-services/org.kde.kded.smart.service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/lib64/libexec/kf6/kauth/kded-smart-helper
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/knotifications6/org.kde.kded.smart.notifyrc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/lib64/qt6/plugins/plasma/kcms/kinfocenter/kcm_disks.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/applications/kcm_disks.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/da/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/cs/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ja/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/de/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/el/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/nn/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/hi/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pt_BR/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/lt/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pa/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sl/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ta/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ro/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/is/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/he/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/zh_TW/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pl/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/pt/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/az/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/tr/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/fr/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ast/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ka/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/gl/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ia/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/hu/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/eo/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/bg/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ca/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/uk/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/id/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/en_GB/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/zh_CN/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/nl/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sa/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/fi/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ko/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ru/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/lv/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/es/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/eu/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/et/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/it/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/ar/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sk/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/locale/sv/LC_MESSAGES/kcm_disks.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/package-plasma-disks/usr/share/metainfo/org.kde.plasma.disks.metainfo.xml
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'README*': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-disks/plasma-disks.info: No such file or directory
+extra-cmake-modules
+kauth
+kcmutils
+kcoreaddons
+kdbusaddons
+kdeclarative
+ki18n
+kio
+knotifications
+kservice
+solid
+kirigami
+smartmontools
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/plasma-disks/plasma-disks-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/plasma-disks-6.3.5/
+usr/doc/plasma-disks-6.3.5/plasma-disks.ini
+usr/doc/plasma-disks-6.3.5/slack-required
+usr/lib64/
+usr/lib64/libexec/
+usr/lib64/libexec/kf6/
+usr/lib64/libexec/kf6/kauth/
+usr/lib64/libexec/kf6/kauth/kded-smart-helper
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/kf6/
+usr/lib64/qt6/plugins/kf6/kded/
+usr/lib64/qt6/plugins/kf6/kded/smart.so
+usr/lib64/qt6/plugins/plasma/
+usr/lib64/qt6/plugins/plasma/kcms/
+usr/lib64/qt6/plugins/plasma/kcms/kinfocenter/
+usr/lib64/qt6/plugins/plasma/kcms/kinfocenter/kcm_disks.so
+usr/share/
+usr/share/applications/
+usr/share/applications/kcm_disks.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/system-services/
+usr/share/dbus-1/system-services/org.kde.kded.smart.service
+usr/share/dbus-1/system.d/
+usr/share/dbus-1/system.d/org.kde.kded.smart.conf
+usr/share/knotifications6/
+usr/share/knotifications6/org.kde.kded.smart.notifyrc
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kcm_disks.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kcm_disks.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.plasma.disks.metainfo.xml
+usr/share/polkit-1/
+usr/share/polkit-1/actions/
+usr/share/polkit-1/actions/org.kde.kded.smart.policy
+
+Slackware package /tmp/plasma-disks/plasma-disks-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for plasma-disks-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/plasma-disks/plasma-disks-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/plasma-disks/plasma-disks-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/plasma-disks/plasma-disks-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in plasma-disks.tar.lz4 format.
+/tmp/plasma-disks /tmp/plasma-disks
+/tmp/plasma-disks
+BIN_NAME
+README
+makepkg-plasma-disks.log
+plasma-disks-6.3.5-x86_64-1_rtz.tlz
+plasma-disks-6.3.5-x86_64-1_rtz.tlz.md5
+plasma-disks-6.3.5-x86_64-1_rtz.tlz.so.file
+plasma-disks-6.3.5-x86_64-1_rtz.tlz.txt
+plasma-disks.dep
+plasma-disks build finished. Procced to installation...
+
++===============================================================================================================+
+| Upgrading plasma-disks-6.3.5-x86_64-1_rtz package using /tmp/plasma-disks/plasma-disks-6.3.5-x86_64-1_rtz.tlz |
++===============================================================================================================+
+
+Pre-installing package plasma-disks-6.3.5-x86_64-1_rtz...
+Removing package: plasma-disks-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:53:36
+Installing package plasma-disks-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# plasma-disks (Monitors S.M.A.R.T)
+#
+# Monitors S.M.A.R.T. capable devices for imminent failure
+#
+# https://kde.org/plasma-desktop/
+Executing install script for plasma-disks-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package plasma-disks-6.3.5-x86_64-1_rtz.tlz installed.
+Package plasma-disks-6.3.5-x86_64-1_rtz upgraded with new package /tmp/plasma-disks/plasma-disks-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'plasma-disks-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 26 seconds.

@@ -1,0 +1,878 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: c-ares	curl	extra-cmake-modules	futuresql	kcontacts	ki18n	kio	kirigami-addons	kirigami	knotifications	kpeople	libphonenumber	modemmanager-qt	
+c-ares is already installed!
+curl is already installed!
+extra-cmake-modules is already installed!
+futuresql is already installed!
+kcontacts is already installed!
+ki18n is already installed!
+kio is already installed!
+kirigami-addons is already installed!
+kirigami is already installed!
+knotifications is already installed!
+kpeople is already installed!
+libphonenumber is already installed!
+modemmanager-qt is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 23:28:18--  https://download.kde.org/stable/plasma/6.3.5/spacebar-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/spacebar-6.3.5.tar.xz [following]
+--2025-05-10 23:28:19--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/spacebar-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 145184 (142K) [application/octet-stream]
+Saving to: ‘spacebar-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 35% 1.32M 0s
+    50K .......... .......... .......... .......... .......... 70% 1.41M 0s
+   100K .......... .......... .......... .......... .         100%  295K=0.2s
+
+2025-05-10 23:28:20 (664 KB/s) - ‘spacebar-6.3.5.tar.xz’ saved [145184/145184]
+
+Found file: spacebar-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+spacebar-6.3.5/
+spacebar-6.3.5/org.kde.spacebar.json
+spacebar-6.3.5/lib/
+spacebar-6.3.5/lib/telephonySupport/
+spacebar-6.3.5/lib/telephonySupport/avatarimageprovider.cpp
+spacebar-6.3.5/lib/telephonySupport/modemcontroller.cpp
+spacebar-6.3.5/lib/telephonySupport/phonenumberlist.cpp
+spacebar-6.3.5/lib/telephonySupport/phonenumber.cpp
+spacebar-6.3.5/lib/telephonySupport/avatarimageprovider.h
+spacebar-6.3.5/lib/telephonySupport/modemcontroller.h
+spacebar-6.3.5/lib/telephonySupport/phonenumber.h
+spacebar-6.3.5/lib/telephonySupport/contactphonenumbermapper.cpp
+spacebar-6.3.5/lib/telephonySupport/phonenumberlist.h
+spacebar-6.3.5/lib/telephonySupport/CMakeLists.txt
+spacebar-6.3.5/lib/telephonySupport/contactphonenumbermapper.h
+spacebar-6.3.5/lib/database/
+spacebar-6.3.5/lib/database/database.cpp
+spacebar-6.3.5/lib/database/database.h
+spacebar-6.3.5/lib/database/migrations.qrc
+spacebar-6.3.5/lib/database/migrations/
+spacebar-6.3.5/lib/database/migrations/2023-05-07-102621_init/
+spacebar-6.3.5/lib/database/migrations/2023-05-07-102621_init/up.sql
+spacebar-6.3.5/lib/database/migrations/2023-05-07-102621_init/down.sql
+spacebar-6.3.5/lib/database/CMakeLists.txt
+spacebar-6.3.5/lib/config/
+spacebar-6.3.5/lib/config/settingsmanager.kcfg
+spacebar-6.3.5/lib/config/settingsmanager.kcfgc
+spacebar-6.3.5/lib/config/CMakeLists.txt
+spacebar-6.3.5/lib/mms/
+spacebar-6.3.5/lib/mms/mms.h
+spacebar-6.3.5/lib/mms/mms.cpp
+spacebar-6.3.5/lib/mms/CMakeLists.txt
+spacebar-6.3.5/lib/global.h
+spacebar-6.3.5/lib/CMakeLists.txt
+spacebar-6.3.5/Messages.sh
+spacebar-6.3.5/org.kde.spacebar.svg
+spacebar-6.3.5/test/
+spacebar-6.3.5/test/CMakeLists.txt
+spacebar-6.3.5/test/fakeserver/
+spacebar-6.3.5/test/fakeserver/dbusobject.h
+spacebar-6.3.5/test/fakeserver/server.h
+spacebar-6.3.5/test/fakeserver/objectmanagermocker.cpp
+spacebar-6.3.5/test/fakeserver/server.cpp
+spacebar-6.3.5/test/fakeserver/dbus/
+spacebar-6.3.5/test/fakeserver/dbus/org.freedesktop.DBus.ObjectManager.xml
+spacebar-6.3.5/test/fakeserver/dbus/org.freedesktop.ModemManager1.xml
+spacebar-6.3.5/test/fakeserver/dbus/org.freedesktop.ModemManager1.Modem.xml
+spacebar-6.3.5/test/fakeserver/dbus/org.freedesktop.ModemManager1.Sms.xml
+spacebar-6.3.5/test/fakeserver/dbus/org.freedesktop.ModemManager1.Bearer.xml
+spacebar-6.3.5/test/fakeserver/dbus/org.freedesktop.ModemManager1.Modem.Messaging.xml
+spacebar-6.3.5/test/fakeserver/smsmocker.h
+spacebar-6.3.5/test/fakeserver/modemmocker.h
+spacebar-6.3.5/test/fakeserver/objectmanagermocker.h
+spacebar-6.3.5/test/fakeserver/rootmocker.cpp
+spacebar-6.3.5/test/fakeserver/messagingmocker.h
+spacebar-6.3.5/test/fakeserver/qml/
+spacebar-6.3.5/test/fakeserver/qml/Main.qml
+spacebar-6.3.5/test/fakeserver/messagingmocker.cpp
+spacebar-6.3.5/test/fakeserver/dbusobject.cpp
+spacebar-6.3.5/test/fakeserver/smsmocker.cpp
+spacebar-6.3.5/test/fakeserver/modemmocker.cpp
+spacebar-6.3.5/test/fakeserver/CMakeLists.txt
+spacebar-6.3.5/test/fakeserver/README.md
+spacebar-6.3.5/test/fakeserver/main.cpp
+spacebar-6.3.5/test/fakeserver/rootmocker.h
+spacebar-6.3.5/LICENSES/
+spacebar-6.3.5/LICENSES/GPL-2.0-only.txt
+spacebar-6.3.5/LICENSES/GPL-2.0-or-later.txt
+spacebar-6.3.5/LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+spacebar-6.3.5/LICENSES/GPL-3.0-only.txt
+spacebar-6.3.5/daemon/
+spacebar-6.3.5/daemon/channellogger.h
+spacebar-6.3.5/daemon/ecurl.cpp
+spacebar-6.3.5/daemon/channellogger.cpp
+spacebar-6.3.5/daemon/daemon-autostart.desktop.in
+spacebar-6.3.5/daemon/CMakeLists.txt
+spacebar-6.3.5/daemon/ecurl.h
+spacebar-6.3.5/daemon/main.cpp
+spacebar-6.3.5/daemon/org.kde.spacebar.Daemon.xml
+spacebar-6.3.5/org.kde.spacebar.desktop
+spacebar-6.3.5/.gitlab-ci.yml
+spacebar-6.3.5/.gitignore
+spacebar-6.3.5/logo.png
+spacebar-6.3.5/.kde-ci.yml
+spacebar-6.3.5/spacebar.notifyrc
+spacebar-6.3.5/org.kde.spacebar.appdata.xml
+spacebar-6.3.5/.flatpak-manifest.json
+spacebar-6.3.5/src/
+spacebar-6.3.5/src/chatlistmodel.cpp
+spacebar-6.3.5/src/contents/
+spacebar-6.3.5/src/contents/ui/
+spacebar-6.3.5/src/contents/ui/NewConversationPage.qml
+spacebar-6.3.5/src/contents/ui/PhoneNumberDialog.qml
+spacebar-6.3.5/src/contents/ui/FloatingActionButton.qml
+spacebar-6.3.5/src/contents/ui/ChatsPage.qml
+spacebar-6.3.5/src/contents/ui/FullscreenPage.qml
+spacebar-6.3.5/src/contents/ui/ChatDetailPage.qml
+spacebar-6.3.5/src/contents/ui/NewConversationContactsList.qml
+spacebar-6.3.5/src/contents/ui/main.qml
+spacebar-6.3.5/src/contents/ui/MessagesPage.qml
+spacebar-6.3.5/src/contents/ui/PreviewPage.qml
+spacebar-6.3.5/src/contents/ui/settings/
+spacebar-6.3.5/src/contents/ui/settings/MMSSettingsPage.qml
+spacebar-6.3.5/src/contents/ui/settings/SettingsPage.qml
+spacebar-6.3.5/src/contents/ui/AboutPage.qml
+spacebar-6.3.5/src/utils.h
+spacebar-6.3.5/src/messagemodel.cpp
+spacebar-6.3.5/src/channelhandler.h
+spacebar-6.3.5/src/messagemodel.h
+spacebar-6.3.5/src/utils.cpp
+spacebar-6.3.5/src/resources.qrc
+spacebar-6.3.5/src/channelhandler.cpp
+spacebar-6.3.5/src/chatlistmodel.h
+spacebar-6.3.5/src/CMakeLists.txt
+spacebar-6.3.5/src/main.cpp
+spacebar-6.3.5/CMakeLists.txt
+spacebar-6.3.5/po/
+spacebar-6.3.5/po/gl/
+spacebar-6.3.5/po/gl/spacebar.po
+spacebar-6.3.5/po/eo/
+spacebar-6.3.5/po/eo/spacebar.po
+spacebar-6.3.5/po/he/
+spacebar-6.3.5/po/he/spacebar.po
+spacebar-6.3.5/po/zh_CN/
+spacebar-6.3.5/po/zh_CN/spacebar.po
+spacebar-6.3.5/po/hi/
+spacebar-6.3.5/po/hi/spacebar.po
+spacebar-6.3.5/po/ca@valencia/
+spacebar-6.3.5/po/ca@valencia/spacebar.po
+spacebar-6.3.5/po/pt/
+spacebar-6.3.5/po/pt/spacebar.po
+spacebar-6.3.5/po/nn/
+spacebar-6.3.5/po/nn/spacebar.po
+spacebar-6.3.5/po/fi/
+spacebar-6.3.5/po/fi/spacebar.po
+spacebar-6.3.5/po/ka/
+spacebar-6.3.5/po/ka/spacebar.po
+spacebar-6.3.5/po/ar/
+spacebar-6.3.5/po/ar/spacebar.po
+spacebar-6.3.5/po/sk/
+spacebar-6.3.5/po/sk/spacebar.po
+spacebar-6.3.5/po/pa/
+spacebar-6.3.5/po/pa/spacebar.po
+spacebar-6.3.5/po/de/
+spacebar-6.3.5/po/de/spacebar.po
+spacebar-6.3.5/po/ja/
+spacebar-6.3.5/po/ja/spacebar.po
+spacebar-6.3.5/po/ko/
+spacebar-6.3.5/po/ko/spacebar.po
+spacebar-6.3.5/po/hu/
+spacebar-6.3.5/po/hu/spacebar.po
+spacebar-6.3.5/po/sa/
+spacebar-6.3.5/po/sa/spacebar.po
+spacebar-6.3.5/po/ru/
+spacebar-6.3.5/po/ru/spacebar.po
+spacebar-6.3.5/po/sl/
+spacebar-6.3.5/po/sl/spacebar.po
+spacebar-6.3.5/po/it/
+spacebar-6.3.5/po/it/spacebar.po
+spacebar-6.3.5/po/pt_BR/
+spacebar-6.3.5/po/pt_BR/spacebar.po
+spacebar-6.3.5/po/tr/
+spacebar-6.3.5/po/tr/spacebar.po
+spacebar-6.3.5/po/ca/
+spacebar-6.3.5/po/ca/spacebar.po
+spacebar-6.3.5/po/nl/
+spacebar-6.3.5/po/nl/spacebar.po
+spacebar-6.3.5/po/pl/
+spacebar-6.3.5/po/pl/spacebar.po
+spacebar-6.3.5/po/eu/
+spacebar-6.3.5/po/eu/spacebar.po
+spacebar-6.3.5/po/cs/
+spacebar-6.3.5/po/cs/spacebar.po
+spacebar-6.3.5/po/az/
+spacebar-6.3.5/po/az/spacebar.po
+spacebar-6.3.5/po/fr/
+spacebar-6.3.5/po/fr/spacebar.po
+spacebar-6.3.5/po/zh_TW/
+spacebar-6.3.5/po/zh_TW/spacebar.po
+spacebar-6.3.5/po/uk/
+spacebar-6.3.5/po/uk/spacebar.po
+spacebar-6.3.5/po/sv/
+spacebar-6.3.5/po/sv/spacebar.po
+spacebar-6.3.5/po/en_GB/
+spacebar-6.3.5/po/en_GB/spacebar.po
+spacebar-6.3.5/po/es/
+spacebar-6.3.5/po/es/spacebar.po
+spacebar-6.3.5/po/ast/
+spacebar-6.3.5/po/ast/spacebar.po
+spacebar-6.3.5/po/ia/
+spacebar-6.3.5/po/ia/spacebar.po
+spacebar-6.3.5/po/lt/
+spacebar-6.3.5/po/lt/spacebar.po
+spacebar-6.3.5/README.md
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Found KF6Kirigami: /usr/lib64/cmake/KF6Kirigami/KF6KirigamiConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6Contacts: /usr/lib64/cmake/KF6Contacts/KF6ContactsConfig.cmake (found version "6.14.0")
+-- Found KF6People: /usr/lib64/cmake/KF6People/KF6PeopleConfig.cmake (found version "6.14.0")
+-- Found KF6Notifications: /usr/lib/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.14.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6ModemManagerQt: /usr/lib64/cmake/KF6ModemManagerQt/KF6ModemManagerQtConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.14.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.10.0") found components: Kirigami I18n Contacts People Notifications Config CoreAddons DBusAddons ModemManagerQt KIO WindowSystem Crash
+-- Found PhoneNumber_PhoneNumber: /usr/lib64/libphonenumber.so (found version "")
+-- Found PhoneNumber: /usr/lib64/libphonenumber.so  found components: PhoneNumber
+-- Found CURL: /usr/lib64/libcurl.so (found version "8.13.0")
+-- Checking for one of the modules 'libcares'
+CMake Warning (dev) at /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:3409 (message):
+  Qt policy QTP0001 is not set: ':/qt/qml/' is the default resource prefix
+  for QML modules.  Check https://doc.qt.io/qt-6/qt-cmake-policy-qtp0001.html
+  for policy details.  Use the qt_policy command to set the policy and
+  suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:719 (__qt_internal_setup_policy)
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:1254 (qt6_add_qml_module)
+  test/fakeserver/CMakeLists.txt:55 (qt_add_qml_module)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:3409 (message):
+  Qt policy QTP0004 is not set: You need qmldir files for each extra
+  directory that contains .qml files for your module.  Check
+  https://doc.qt.io/qt-6/qt-cmake-policy-qtp0004.html for policy details.
+  Use the qt_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:3520 (__qt_internal_setup_policy)
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:3571 (qt6_target_qml_sources)
+  test/fakeserver/CMakeLists.txt:71 (qt_target_qml_sources)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Vulkan
+ * Qt6QuickControls2 (required version >= 6.7.0)
+ * Qt6Qml (required version >= 6.7.0)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6QuickTools (required version >= 6.8.3)
+ * Qt6Quick (required version >= 6.7.0)
+ * Qt6Concurrent (required version >= 6.7.0)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6Gui (required version >= 6.7.0)
+ * Freetype
+ * Fontconfig
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Git
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0)
+ * Qt6 (required version >= 6.7.0)
+ * KF6Kirigami (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.14.0)
+ * KF6Contacts (required version >= 6.10.0)
+ * KF6People (required version >= 6.10.0)
+ * KF6Notifications (required version >= 6.10.0)
+ * KF6Config (required version >= 6.10.0)
+ * KF6CoreAddons (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.10.0)
+ * KF6ModemManagerQt (required version >= 6.10.0)
+ * KF6KIO (required version >= 6.10.0)
+ * KF6WindowSystem (required version >= 6.10.0)
+ * KF6Crash (required version >= 6.10.0)
+ * KF6 (required version >= 6.10.0)
+ * KF6KirigamiAddons (required version >= 1.4)
+ * PhoneNumber, Library for parsing, formatting, and validating international phone numbers, <https://github.com/googlei18n/libphonenumber>
+ * PkgConfig
+ * CURL
+ * Qt6Core (required version >= 5.15.2)
+ * Qt6Sql (required version >= 5.15.2)
+ * FutureSQL6
+ * QCoro6Core
+ * QCoro6DBus
+ * QCoro6
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.8.3)
+
+-- Configuring done (1.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/build
+[1/90] Automatic MOC for target macros
+[2/90] Building CXX object lib/CMakeFiles/macros.dir/macros_autogen/mocs_compilation.cpp.o
+[3/90] Linking CXX static library lib/libmacros.a
+[4/90] Automatic MOC for target kTelephonySupport
+[5/90] Generating settingsmanager.h, settingsmanager.cpp
+[6/90] Building CXX object lib/telephonySupport/CMakeFiles/kTelephonySupport.dir/kTelephonySupport_autogen/mocs_compilation.cpp.o
+[7/90] Building CXX object lib/telephonySupport/CMakeFiles/kTelephonySupport.dir/avatarimageprovider.cpp.o
+[8/90] Building CXX object lib/telephonySupport/CMakeFiles/kTelephonySupport.dir/contactphonenumbermapper.cpp.o
+[9/90] Building CXX object lib/telephonySupport/CMakeFiles/kTelephonySupport.dir/modemcontroller.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/lib/telephonySupport/modemcontroller.cpp: In lambda function:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/lib/telephonySupport/modemcontroller.cpp:91:127: warning: unused parameter ‘ipv4Config’ [-Wunused-parameter]
+   91 |         connect(m_bearer.data(), &ModemManager::Bearer::ip4ConfigChanged, this, [this, bearers](const ModemManager::IpConfig &ipv4Config) {
+      |                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/lib/telephonySupport/modemcontroller.cpp: In lambda function:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/lib/telephonySupport/modemcontroller.cpp:96:127: warning: unused parameter ‘ipv6Config’ [-Wunused-parameter]
+   96 |         connect(m_bearer.data(), &ModemManager::Bearer::ip6ConfigChanged, this, [this, bearers](const ModemManager::IpConfig &ipv6Config) {
+      |                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+[10/90] Building CXX object lib/telephonySupport/CMakeFiles/kTelephonySupport.dir/phonenumber.cpp.o
+[11/90] Building CXX object lib/telephonySupport/CMakeFiles/kTelephonySupport.dir/phonenumberlist.cpp.o
+[12/90] Automatic MOC for target config
+[13/90] Linking CXX static library lib/libkTelephonySupport.a
+[14/90] Building CXX object lib/config/CMakeFiles/config.dir/config_autogen/mocs_compilation.cpp.o
+[15/90] Building CXX object lib/config/CMakeFiles/config.dir/settingsmanager.cpp.o
+[16/90] Automatic MOC for target database
+[17/90] Linking CXX static library lib/libconfig.a
+[18/90] Automatic RCC for migrations.qrc
+[19/90] Automatic MOC for target mms
+[20/90] Building CXX object lib/database/CMakeFiles/database.dir/database_autogen/mocs_compilation.cpp.o
+[21/90] Building CXX object lib/database/CMakeFiles/database.dir/database.cpp.o
+[22/90] Building CXX object lib/database/CMakeFiles/database.dir/database_autogen/EWIEGA46WW/qrc_migrations.cpp.o
+[23/90] Building CXX object lib/mms/CMakeFiles/mms.dir/mms_autogen/mocs_compilation.cpp.o
+[24/90] Building CXX object lib/mms/CMakeFiles/mms.dir/mms.cpp.o
+[25/90] Linking CXX static library lib/libdatabase.a
+[26/90] Linking CXX static library lib/libmms.a
+[27/90] Automatic MOC for target spacebar-daemon
+[28/90] Generating daemonadaptor.cpp, daemonadaptor.h
+[29/90] Generating moc_daemonadaptor.cpp
+[30/90] Copying spacebar-fakeserver qml sources into build dir
+[31/90] Copying spacebar-fakeserver qml resources into build dir
+[32/90] Building CXX object daemon/CMakeFiles/spacebar-daemon.dir/spacebar-daemon_autogen/mocs_compilation.cpp.o
+[33/90] Building CXX object daemon/CMakeFiles/spacebar-daemon.dir/main.cpp.o
+[34/90] Building CXX object daemon/CMakeFiles/spacebar-daemon.dir/channellogger.cpp.o
+[35/90] Building CXX object daemon/CMakeFiles/spacebar-daemon.dir/ecurl.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/daemon/ecurl.cpp: In member function ‘QByteArray ECurl::networkRequest(const QString&, const QByteArray&) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/daemon/ecurl.cpp:47:39: warning: ‘int ares_init(ares_channel_t**)’ is deprecated: Use ares_init_options instead [-Wdeprecated-declarations]
+   47 |             int aresReturn = ares_init(&channel);
+      |                              ~~~~~~~~~^~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/daemon/ecurl.h:11,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/daemon/ecurl.cpp:5:
+/usr/include/ares.h:487:70: note: declared here
+  487 | CARES_EXTERN             CARES_DEPRECATED_FOR(ares_init_options) int ares_init(
+      |                                                                      ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/daemon/ecurl.cpp:62:35: warning: ‘void ares_gethostbyname(ares_channel_t*, const char*, int, ares_host_callback, void*)’ is deprecated: Use ares_getaddrinfo instead [-Wdeprecated-declarations]
+   62 |                 ares_gethostbyname(channel, hostname, AF_UNSPEC, aresResolveCallback, (void *)&hostIp);
+      |                 ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ares.h:879:58: note: declared here
+  879 | CARES_EXTERN CARES_DEPRECATED_FOR(ares_getaddrinfo) void ares_gethostbyname(
+      |                                                          ^~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/daemon/ecurl.cpp: In static member function ‘static void ECurl::aresResolveWait(ares_channel)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/daemon/ecurl.cpp:167:24: warning: ‘int ares_fds(const ares_channel_t*, fd_set*, fd_set*)’ is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+  167 |         nfds = ares_fds(channel, &read_fds, &write_fds);
+      |                ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ares.h:898:31: note: declared here
+  898 |   ARES_OPT_SOCK_STATE_CB) int ares_fds(const ares_channel_t *channel,
+      |                               ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/work/spacebar-6.3.5/daemon/ecurl.cpp:181:21: warning: ‘void ares_process(ares_channel_t*, fd_set*, fd_set*)’ is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+  181 |         ares_process(channel, &read_fds, &write_fds);
+      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ares.h:910:58: note: declared here
+  910 | CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+      |                                                          ^~~~~~~~~~~~
+[36/90] Building CXX object daemon/CMakeFiles/spacebar-daemon.dir/daemonadaptor.cpp.o
+[37/90] Automatic MOC for target spacebar-fakeserver
+[38/90] Linking CXX executable bin/spacebar-daemon
+[39/90] Running AUTOMOC file extraction for target spacebar-fakeserver
+[40/90] Automatic MOC for target spacebar
+[41/90] Running moc --collect-json for target spacebar-fakeserver
+[42/90] Generating daemoninterface.cpp, daemoninterface.h
+[43/90] Generating messagingadaptor.cpp, messagingadaptor.h
+[44/90] Generating modemadaptor.cpp, modemadaptor.h
+[45/90] Generating smsadaptor.cpp, smsadaptor.h
+[46/90] Generating rootadaptor.cpp, rootadaptor.h
+[47/90] Generating objectmanageradaptor.cpp, objectmanageradaptor.h
+[48/90] Automatic QML type registration for target spacebar-fakeserver
+[49/90] Generating moc_daemoninterface.cpp
+[50/90] Generating qrc_resources.cpp
+[51/90] Generating moc_messagingadaptor.cpp
+[52/90] Generating moc_modemadaptor.cpp
+[53/90] Generating moc_smsadaptor.cpp
+[54/90] Generating moc_rootadaptor.cpp
+[55/90] Generating moc_objectmanageradaptor.cpp
+[56/90] Running rcc for resource qmake_org_kde_spacebar_fakeserver
+[57/90] Generating .rcc/qmlcache/spacebar-fakeserver_qmlcache_loader.cpp
+[58/90] Generating .rcc/qmlcache/spacebar-fakeserver_qml/Main_qml.cpp
+[59/90] Running rcc for resource spacebar-fakeserver_raw_qml_0
+[60/90] Building CXX object src/CMakeFiles/spacebar.dir/spacebar_autogen/mocs_compilation.cpp.o
+[61/90] Building CXX object src/CMakeFiles/spacebar.dir/main.cpp.o
+[62/90] Building CXX object src/CMakeFiles/spacebar.dir/chatlistmodel.cpp.o
+[63/90] Building CXX object src/CMakeFiles/spacebar.dir/messagemodel.cpp.o
+[64/90] Building CXX object src/CMakeFiles/spacebar.dir/utils.cpp.o
+[65/90] Building CXX object src/CMakeFiles/spacebar.dir/channelhandler.cpp.o
+[66/90] Building CXX object src/CMakeFiles/spacebar.dir/daemoninterface.cpp.o
+[67/90] Building CXX object src/CMakeFiles/spacebar.dir/qrc_resources.cpp.o
+[68/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/spacebar-fakeserver_autogen/mocs_compilation.cpp.o
+[69/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/main.cpp.o
+[70/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/server.cpp.o
+[71/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/messagingmocker.cpp.o
+[72/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/modemmocker.cpp.o
+[73/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/smsmocker.cpp.o
+[74/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/rootmocker.cpp.o
+[75/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/objectmanagermocker.cpp.o
+[76/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/dbusobject.cpp.o
+[77/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/messagingadaptor.cpp.o
+[78/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/modemadaptor.cpp.o
+[79/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/smsadaptor.cpp.o
+[80/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/rootadaptor.cpp.o
+[81/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/objectmanageradaptor.cpp.o
+[82/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/spacebar-fakeserver_qmltyperegistrations.cpp.o
+[83/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/.qt/rcc/qrc_qmake_org_kde_spacebar_fakeserver.cpp.o
+[84/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/.rcc/qmlcache/spacebar-fakeserver_qmlcache_loader.cpp.o
+[85/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/.rcc/qmlcache/spacebar-fakeserver_qml/Main_qml.cpp.o
+[86/90] Building CXX object test/fakeserver/CMakeFiles/spacebar-fakeserver.dir/.qt/rcc/qrc_spacebar-fakeserver_raw_qml_0.cpp.o
+[87/90] Generating mo...
+[88/90] Generating ts...
+[89/90] Linking CXX executable bin/spacebar
+[90/90] Linking CXX executable bin/spacebar-fakeserver
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/lib64/libexec/spacebar-daemon
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/etc/xdg/autostart/org.kde.spacebar.daemon.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/bin/spacebar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/bin/spacebar-fakeserver
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/cs/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ja/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/de/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/nn/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/hi/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pt_BR/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/lt/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pa/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sl/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/he/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/zh_TW/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pl/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/pt/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/az/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/tr/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/fr/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ast/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ka/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/gl/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ia/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/hu/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/eo/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ca/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/uk/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/en_GB/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/zh_CN/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/nl/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sa/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/fi/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ko/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ru/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ca@valencia/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/es/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/eu/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/it/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/ar/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sk/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/locale/sv/LC_MESSAGES/spacebar.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/applications/org.kde.spacebar.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/metainfo/org.kde.spacebar.appdata.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/icons/hicolor/scalable/apps/org.kde.spacebar.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/package-spacebar/usr/share/knotifications6/spacebar.notifyrc
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spacebar/spacebar.info: No such file or directory
+c-ares
+curl
+extra-cmake-modules
+futuresql
+kcontacts
+ki18n
+kio
+kirigami-addons
+kirigami
+knotifications
+kpeople
+libphonenumber
+modemmanager-qt
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/spacebar/spacebar-6.3.5-x86_64-1_rtz.tlz
+
+./
+etc/
+etc/xdg/
+etc/xdg/autostart/
+etc/xdg/autostart/org.kde.spacebar.daemon.desktop
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/spacebar
+usr/bin/spacebar-fakeserver
+usr/doc/
+usr/doc/spacebar-6.3.5/
+usr/doc/spacebar-6.3.5/README.md
+usr/doc/spacebar-6.3.5/slack-required
+usr/doc/spacebar-6.3.5/spacebar.ini
+usr/lib64/
+usr/lib64/libexec/
+usr/lib64/libexec/spacebar-daemon
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.spacebar.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/org.kde.spacebar.svg
+usr/share/knotifications6/
+usr/share/knotifications6/spacebar.notifyrc
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/spacebar.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/spacebar.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/spacebar.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/spacebar.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/spacebar.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/spacebar.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/spacebar.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/spacebar.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/spacebar.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/spacebar.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/spacebar.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/spacebar.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/spacebar.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/spacebar.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/spacebar.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/spacebar.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/spacebar.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/spacebar.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/spacebar.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/spacebar.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/spacebar.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/spacebar.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/spacebar.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/spacebar.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/spacebar.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/spacebar.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/spacebar.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/spacebar.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/spacebar.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/spacebar.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/spacebar.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/spacebar.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/spacebar.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/spacebar.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/spacebar.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/spacebar.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/spacebar.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/spacebar.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.spacebar.appdata.xml
+
+Slackware package /tmp/spacebar/spacebar-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for spacebar-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/spacebar/spacebar-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/spacebar/spacebar-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/spacebar/spacebar-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in spacebar.tar.lz4 format.
+/tmp/spacebar /tmp/spacebar
+/tmp/spacebar
+BIN_NAME
+README
+makepkg-spacebar.log
+spacebar-6.3.5-x86_64-1_rtz.tlz
+spacebar-6.3.5-x86_64-1_rtz.tlz.md5
+spacebar-6.3.5-x86_64-1_rtz.tlz.so.file
+spacebar-6.3.5-x86_64-1_rtz.tlz.txt
+spacebar.dep
+spacebar build finished. Procced to installation...
+
++===================================================================================================+
+| Upgrading spacebar-6.3.5-x86_64-1_rtz package using /tmp/spacebar/spacebar-6.3.5-x86_64-1_rtz.tlz |
++===================================================================================================+
+
+Pre-installing package spacebar-6.3.5-x86_64-1_rtz...
+Removing package: spacebar-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,23:31:03
+Installing package spacebar-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# spacebar (stuff for running IM on Plasma Mobile)
+#
+# Collection of stuff for running IM on Plasma Mobile
+#
+# invent.kde.org/plasma-mobile/spacebar
+Executing install script for spacebar-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package spacebar-6.3.5-x86_64-1_rtz.tlz installed.
+Package spacebar-6.3.5-x86_64-1_rtz upgraded with new package /tmp/spacebar/spacebar-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'spacebar-6.3.5.tar.xz': No such file or directory
+Build process completed in 2 minutes and 49 seconds.

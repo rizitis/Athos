@@ -1,0 +1,1471 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules	ffmpeg attr	exiv2	karchive	kcodecs	kconfig	kcoreaddons	ki18n
+doxygen is already installed!
+extra-cmake-modules is already installed!
+ffmpeg is already installed!
+attr is already installed!
+exiv2 is already installed!
+karchive is already installed!
+kcodecs is already installed!
+kconfig is already installed!
+kcoreaddons is already installed!
+ki18n is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:10:02--  https://download.kde.org/stable/frameworks/6.14/kfilemetadata-6.14.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kfilemetadata-6.14.0.tar.xz [following]
+--2025-05-10 22:10:03--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kfilemetadata-6.14.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 695864 (680K) [application/octet-stream]
+Saving to: ‘kfilemetadata-6.14.0.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  7% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 14% 1.44M 0s
+   100K .......... .......... .......... .......... .......... 22% 7.21M 0s
+   150K .......... .......... .......... .......... .......... 29% 1.97M 0s
+   200K .......... .......... .......... .......... .......... 36% 4.77M 0s
+   250K .......... .......... .......... .......... .......... 44% 8.26M 0s
+   300K .......... .......... .......... .......... .......... 51% 5.16M 0s
+   350K .......... .......... .......... .......... .......... 58%  963K 0s
+   400K .......... .......... .......... .......... .......... 66%  318M 0s
+   450K .......... .......... .......... .......... .......... 73%  350M 0s
+   500K .......... .......... .......... .......... .......... 80%  363M 0s
+   550K .......... .......... .......... .......... .......... 88% 2.15M 0s
+   600K .......... .......... .......... .......... .......... 95% 10.8M 0s
+   650K .......... .......... .........                       100% 12.6M=0.2s
+
+2025-05-10 22:10:03 (3.18 MB/s) - ‘kfilemetadata-6.14.0.tar.xz’ saved [695864/695864]
+
+Found file: kfilemetadata-6.14.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kfilemetadata-6.14.0/
+kfilemetadata-6.14.0/.git-blame-ignore-revs
+kfilemetadata-6.14.0/.gitignore
+kfilemetadata-6.14.0/.gitlab-ci.yml
+kfilemetadata-6.14.0/.kde-ci.yml
+kfilemetadata-6.14.0/CMakeLists.txt
+kfilemetadata-6.14.0/KF6FileMetaDataConfig.cmake.in
+kfilemetadata-6.14.0/LICENSES/
+kfilemetadata-6.14.0/LICENSES/BSD-3-Clause.txt
+kfilemetadata-6.14.0/LICENSES/CC0-1.0.txt
+kfilemetadata-6.14.0/LICENSES/LGPL-2.1-only.txt
+kfilemetadata-6.14.0/LICENSES/LGPL-2.1-or-later.txt
+kfilemetadata-6.14.0/LICENSES/LGPL-3.0-only.txt
+kfilemetadata-6.14.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+kfilemetadata-6.14.0/Messages.sh
+kfilemetadata-6.14.0/README.md
+kfilemetadata-6.14.0/autotests/
+kfilemetadata-6.14.0/autotests/CMakeLists.txt
+kfilemetadata-6.14.0/autotests/appimageextractortest.cpp
+kfilemetadata-6.14.0/autotests/appimageextractortest.h
+kfilemetadata-6.14.0/autotests/epubextractortest.cpp
+kfilemetadata-6.14.0/autotests/epubextractortest.h
+kfilemetadata-6.14.0/autotests/exiv2extractortest.cpp
+kfilemetadata-6.14.0/autotests/externalextractortest.cpp
+kfilemetadata-6.14.0/autotests/externalwritertest.cpp
+kfilemetadata-6.14.0/autotests/extractorcollectiontest.cpp
+kfilemetadata-6.14.0/autotests/extractorcoveragetest.cpp
+kfilemetadata-6.14.0/autotests/fb2extractortest.cpp
+kfilemetadata-6.14.0/autotests/fb2extractortest.h
+kfilemetadata-6.14.0/autotests/ffmpegextractortest.cpp
+kfilemetadata-6.14.0/autotests/ffmpegextractortest.h
+kfilemetadata-6.14.0/autotests/indexerextractortests.cpp
+kfilemetadata-6.14.0/autotests/indexerextractortestsconfig.h.in
+kfilemetadata-6.14.0/autotests/kritaextractortest.cpp
+kfilemetadata-6.14.0/autotests/kritaextractortest.h
+kfilemetadata-6.14.0/autotests/mobiextractortest.cpp
+kfilemetadata-6.14.0/autotests/mobiextractortest.h
+kfilemetadata-6.14.0/autotests/odfextractortest.cpp
+kfilemetadata-6.14.0/autotests/office2007extractortest.cpp
+kfilemetadata-6.14.0/autotests/pngextractortest.cpp
+kfilemetadata-6.14.0/autotests/pngextractortest.h
+kfilemetadata-6.14.0/autotests/popplerextractortest.cpp
+kfilemetadata-6.14.0/autotests/postscriptdscextractortest.cpp
+kfilemetadata-6.14.0/autotests/postscriptdscextractortest.h
+kfilemetadata-6.14.0/autotests/propertyinfotest.cpp
+kfilemetadata-6.14.0/autotests/propertyinfotest.h
+kfilemetadata-6.14.0/autotests/samplefiles/
+kfilemetadata-6.14.0/autotests/samplefiles/README
+kfilemetadata-6.14.0/autotests/samplefiles/cover.jpg
+kfilemetadata-6.14.0/autotests/samplefiles/misdetected/
+kfilemetadata-6.14.0/autotests/samplefiles/misdetected/test_arcgis_geodata.spx
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM1.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM10.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM2.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM3.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM4.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM5.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM6.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM7.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM8.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testMM9.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testWMP.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testWMP1.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testWMP2.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testWMP3.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testWMP4.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/mp3_rating/testWMP5.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/no-meta/
+kfilemetadata-6.14.0/autotests/samplefiles/no-meta/test.aax
+kfilemetadata-6.14.0/autotests/samplefiles/no-meta/test.flac
+kfilemetadata-6.14.0/autotests/samplefiles/no-meta/test.m4a
+kfilemetadata-6.14.0/autotests/samplefiles/no-meta/test.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/no-meta/test.mpc
+kfilemetadata-6.14.0/autotests/samplefiles/no-meta/test.ogg
+kfilemetadata-6.14.0/autotests/samplefiles/no-meta/test.opus
+kfilemetadata-6.14.0/autotests/samplefiles/test.AppImage
+kfilemetadata-6.14.0/autotests/samplefiles/test.aax
+kfilemetadata-6.14.0/autotests/samplefiles/test.aaxc
+kfilemetadata-6.14.0/autotests/samplefiles/test.aif
+kfilemetadata-6.14.0/autotests/samplefiles/test.ape
+kfilemetadata-6.14.0/autotests/samplefiles/test.avi
+kfilemetadata-6.14.0/autotests/samplefiles/test.avif
+kfilemetadata-6.14.0/autotests/samplefiles/test.dot
+kfilemetadata-6.14.0/autotests/samplefiles/test.eps
+kfilemetadata-6.14.0/autotests/samplefiles/test.epub
+kfilemetadata-6.14.0/autotests/samplefiles/test.fb2
+kfilemetadata-6.14.0/autotests/samplefiles/test.fb2.zip
+kfilemetadata-6.14.0/autotests/samplefiles/test.flac
+kfilemetadata-6.14.0/autotests/samplefiles/test.flac.ogg
+kfilemetadata-6.14.0/autotests/samplefiles/test.fodg
+kfilemetadata-6.14.0/autotests/samplefiles/test.fodp
+kfilemetadata-6.14.0/autotests/samplefiles/test.fodt
+kfilemetadata-6.14.0/autotests/samplefiles/test.heif
+kfilemetadata-6.14.0/autotests/samplefiles/test.id3v1.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/test.it
+kfilemetadata-6.14.0/autotests/samplefiles/test.jpg
+kfilemetadata-6.14.0/autotests/samplefiles/test.jxl
+kfilemetadata-6.14.0/autotests/samplefiles/test.kra
+kfilemetadata-6.14.0/autotests/samplefiles/test.m4a
+kfilemetadata-6.14.0/autotests/samplefiles/test.mkv
+kfilemetadata-6.14.0/autotests/samplefiles/test.mml
+kfilemetadata-6.14.0/autotests/samplefiles/test.mobi
+kfilemetadata-6.14.0/autotests/samplefiles/test.mod
+kfilemetadata-6.14.0/autotests/samplefiles/test.mp3
+kfilemetadata-6.14.0/autotests/samplefiles/test.mpc
+kfilemetadata-6.14.0/autotests/samplefiles/test.odg
+kfilemetadata-6.14.0/autotests/samplefiles/test.odp
+kfilemetadata-6.14.0/autotests/samplefiles/test.ods
+kfilemetadata-6.14.0/autotests/samplefiles/test.odt
+kfilemetadata-6.14.0/autotests/samplefiles/test.ogg
+kfilemetadata-6.14.0/autotests/samplefiles/test.ogv
+kfilemetadata-6.14.0/autotests/samplefiles/test.opus
+kfilemetadata-6.14.0/autotests/samplefiles/test.pdf
+kfilemetadata-6.14.0/autotests/samplefiles/test.pl
+kfilemetadata-6.14.0/autotests/samplefiles/test.png
+kfilemetadata-6.14.0/autotests/samplefiles/test.ps
+kfilemetadata-6.14.0/autotests/samplefiles/test.s3m
+kfilemetadata-6.14.0/autotests/samplefiles/test.spx
+kfilemetadata-6.14.0/autotests/samplefiles/test.ts
+kfilemetadata-6.14.0/autotests/samplefiles/test.wav
+kfilemetadata-6.14.0/autotests/samplefiles/test.webm
+kfilemetadata-6.14.0/autotests/samplefiles/test.webp
+kfilemetadata-6.14.0/autotests/samplefiles/test.wma
+kfilemetadata-6.14.0/autotests/samplefiles/test.wv
+kfilemetadata-6.14.0/autotests/samplefiles/test.xm
+kfilemetadata-6.14.0/autotests/samplefiles/test_apple_systemprofiler.spx
+kfilemetadata-6.14.0/autotests/samplefiles/test_dcterms.svg
+kfilemetadata-6.14.0/autotests/samplefiles/test_libreoffice.docx
+kfilemetadata-6.14.0/autotests/samplefiles/test_libreoffice.pptx
+kfilemetadata-6.14.0/autotests/samplefiles/test_libreoffice.xlsx
+kfilemetadata-6.14.0/autotests/samplefiles/test_missing_content.odt
+kfilemetadata-6.14.0/autotests/samplefiles/test_missing_meta.odt
+kfilemetadata-6.14.0/autotests/samplefiles/test_multicolumn.odt
+kfilemetadata-6.14.0/autotests/samplefiles/test_multicolumn.pdf
+kfilemetadata-6.14.0/autotests/samplefiles/test_multivalue.ogg
+kfilemetadata-6.14.0/autotests/samplefiles/test_no_gps.jpg
+kfilemetadata-6.14.0/autotests/samplefiles/test_plain_text_file.txt
+kfilemetadata-6.14.0/autotests/samplefiles/test_plain_text_file_GB18030.txt
+kfilemetadata-6.14.0/autotests/samplefiles/test_plain_text_file_euc-jp.txt
+kfilemetadata-6.14.0/autotests/samplefiles/test_plain_text_file_win1251.txt
+kfilemetadata-6.14.0/autotests/samplefiles/test_plain_text_html_file_utf16.html
+kfilemetadata-6.14.0/autotests/samplefiles/test_plain_text_html_file_win1251.html
+kfilemetadata-6.14.0/autotests/samplefiles/test_plain_text_newlines.txt
+kfilemetadata-6.14.0/autotests/samplefiles/test_public_key.gpg
+kfilemetadata-6.14.0/autotests/samplefiles/test_pyramid.3mf
+kfilemetadata-6.14.0/autotests/samplefiles/test_repeated.epub
+kfilemetadata-6.14.0/autotests/samplefiles/test_with_container.svg
+kfilemetadata-6.14.0/autotests/samplefiles/test_with_metadata.svg
+kfilemetadata-6.14.0/autotests/samplefiles/test_with_metadata.svgz
+kfilemetadata-6.14.0/autotests/samplefiles/test_word.docx
+kfilemetadata-6.14.0/autotests/samplefiles/test_word_strict.docx
+kfilemetadata-6.14.0/autotests/samplefiles/test_xpsdocument.oxps
+kfilemetadata-6.14.0/autotests/samplefiles/test_xpsdocument.xps
+kfilemetadata-6.14.0/autotests/samplefiles/test_zero_gps.jpg
+kfilemetadata-6.14.0/autotests/samplefiles/testexternalextractor/
+kfilemetadata-6.14.0/autotests/samplefiles/testexternalextractor/main.py
+kfilemetadata-6.14.0/autotests/samplefiles/testexternalextractor/manifest.json
+kfilemetadata-6.14.0/autotests/samplefiles/testexternalwriter/
+kfilemetadata-6.14.0/autotests/samplefiles/testexternalwriter/main.py
+kfilemetadata-6.14.0/autotests/samplefiles/testexternalwriter/manifest.json
+kfilemetadata-6.14.0/autotests/samplefiles/wma_rating/
+kfilemetadata-6.14.0/autotests/samplefiles/wma_rating/test0.wma
+kfilemetadata-6.14.0/autotests/samplefiles/wma_rating/test1.wma
+kfilemetadata-6.14.0/autotests/samplefiles/wma_rating/test2.wma
+kfilemetadata-6.14.0/autotests/samplefiles/wma_rating/test3.wma
+kfilemetadata-6.14.0/autotests/samplefiles/wma_rating/test4.wma
+kfilemetadata-6.14.0/autotests/samplefiles/wma_rating/test5.wma
+kfilemetadata-6.14.0/autotests/taglibextractortest.cpp
+kfilemetadata-6.14.0/autotests/taglibwritertest.cpp
+kfilemetadata-6.14.0/autotests/typeinfotest.cpp
+kfilemetadata-6.14.0/autotests/usermetadatawritertest.cpp
+kfilemetadata-6.14.0/autotests/writercollectiontest.cpp
+kfilemetadata-6.14.0/autotests/xmlextractortest.cpp
+kfilemetadata-6.14.0/cmake/
+kfilemetadata-6.14.0/cmake/FindCatDoc.cmake
+kfilemetadata-6.14.0/cmake/FindEPub.cmake
+kfilemetadata-6.14.0/cmake/FindFFmpeg.cmake
+kfilemetadata-6.14.0/cmake/FindLibraryWithDebug.cmake
+kfilemetadata-6.14.0/cmake/FindXattr.cmake
+kfilemetadata-6.14.0/docs/
+kfilemetadata-6.14.0/docs/Doxyfile.local
+kfilemetadata-6.14.0/metainfo.yaml
+kfilemetadata-6.14.0/po/
+kfilemetadata-6.14.0/po/ar/
+kfilemetadata-6.14.0/po/ar/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ast/
+kfilemetadata-6.14.0/po/ast/kfilemetadata6.po
+kfilemetadata-6.14.0/po/az/
+kfilemetadata-6.14.0/po/az/kfilemetadata6.po
+kfilemetadata-6.14.0/po/bg/
+kfilemetadata-6.14.0/po/bg/kfilemetadata6.po
+kfilemetadata-6.14.0/po/bs/
+kfilemetadata-6.14.0/po/bs/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ca/
+kfilemetadata-6.14.0/po/ca/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ca@valencia/
+kfilemetadata-6.14.0/po/ca@valencia/kfilemetadata6.po
+kfilemetadata-6.14.0/po/cs/
+kfilemetadata-6.14.0/po/cs/kfilemetadata6.po
+kfilemetadata-6.14.0/po/da/
+kfilemetadata-6.14.0/po/da/kfilemetadata6.po
+kfilemetadata-6.14.0/po/de/
+kfilemetadata-6.14.0/po/de/kfilemetadata6.po
+kfilemetadata-6.14.0/po/el/
+kfilemetadata-6.14.0/po/el/kfilemetadata6.po
+kfilemetadata-6.14.0/po/en_GB/
+kfilemetadata-6.14.0/po/en_GB/kfilemetadata6.po
+kfilemetadata-6.14.0/po/eo/
+kfilemetadata-6.14.0/po/eo/kfilemetadata6.po
+kfilemetadata-6.14.0/po/es/
+kfilemetadata-6.14.0/po/es/kfilemetadata6.po
+kfilemetadata-6.14.0/po/et/
+kfilemetadata-6.14.0/po/et/kfilemetadata6.po
+kfilemetadata-6.14.0/po/eu/
+kfilemetadata-6.14.0/po/eu/kfilemetadata6.po
+kfilemetadata-6.14.0/po/fi/
+kfilemetadata-6.14.0/po/fi/kfilemetadata6.po
+kfilemetadata-6.14.0/po/fr/
+kfilemetadata-6.14.0/po/fr/kfilemetadata6.po
+kfilemetadata-6.14.0/po/gd/
+kfilemetadata-6.14.0/po/gd/kfilemetadata6.po
+kfilemetadata-6.14.0/po/gl/
+kfilemetadata-6.14.0/po/gl/kfilemetadata6.po
+kfilemetadata-6.14.0/po/he/
+kfilemetadata-6.14.0/po/he/kfilemetadata6.po
+kfilemetadata-6.14.0/po/hi/
+kfilemetadata-6.14.0/po/hi/kfilemetadata6.po
+kfilemetadata-6.14.0/po/hu/
+kfilemetadata-6.14.0/po/hu/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ia/
+kfilemetadata-6.14.0/po/ia/kfilemetadata6.po
+kfilemetadata-6.14.0/po/id/
+kfilemetadata-6.14.0/po/id/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ie/
+kfilemetadata-6.14.0/po/ie/kfilemetadata6.po
+kfilemetadata-6.14.0/po/it/
+kfilemetadata-6.14.0/po/it/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ja/
+kfilemetadata-6.14.0/po/ja/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ka/
+kfilemetadata-6.14.0/po/ka/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ko/
+kfilemetadata-6.14.0/po/ko/kfilemetadata6.po
+kfilemetadata-6.14.0/po/lt/
+kfilemetadata-6.14.0/po/lt/kfilemetadata6.po
+kfilemetadata-6.14.0/po/lv/
+kfilemetadata-6.14.0/po/lv/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ml/
+kfilemetadata-6.14.0/po/ml/kfilemetadata6.po
+kfilemetadata-6.14.0/po/nb/
+kfilemetadata-6.14.0/po/nb/kfilemetadata6.po
+kfilemetadata-6.14.0/po/nds/
+kfilemetadata-6.14.0/po/nds/kfilemetadata6.po
+kfilemetadata-6.14.0/po/nl/
+kfilemetadata-6.14.0/po/nl/kfilemetadata6.po
+kfilemetadata-6.14.0/po/nn/
+kfilemetadata-6.14.0/po/nn/kfilemetadata6.po
+kfilemetadata-6.14.0/po/pa/
+kfilemetadata-6.14.0/po/pa/kfilemetadata6.po
+kfilemetadata-6.14.0/po/pl/
+kfilemetadata-6.14.0/po/pl/kfilemetadata6.po
+kfilemetadata-6.14.0/po/pt/
+kfilemetadata-6.14.0/po/pt/kfilemetadata6.po
+kfilemetadata-6.14.0/po/pt_BR/
+kfilemetadata-6.14.0/po/pt_BR/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ro/
+kfilemetadata-6.14.0/po/ro/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ru/
+kfilemetadata-6.14.0/po/ru/kfilemetadata6.po
+kfilemetadata-6.14.0/po/sa/
+kfilemetadata-6.14.0/po/sa/kfilemetadata6.po
+kfilemetadata-6.14.0/po/sk/
+kfilemetadata-6.14.0/po/sk/kfilemetadata6.po
+kfilemetadata-6.14.0/po/sl/
+kfilemetadata-6.14.0/po/sl/kfilemetadata6.po
+kfilemetadata-6.14.0/po/sr/
+kfilemetadata-6.14.0/po/sr/kfilemetadata6.po
+kfilemetadata-6.14.0/po/sr@ijekavian/
+kfilemetadata-6.14.0/po/sr@ijekavian/kfilemetadata6.po
+kfilemetadata-6.14.0/po/sr@ijekavianlatin/
+kfilemetadata-6.14.0/po/sr@ijekavianlatin/kfilemetadata6.po
+kfilemetadata-6.14.0/po/sr@latin/
+kfilemetadata-6.14.0/po/sr@latin/kfilemetadata6.po
+kfilemetadata-6.14.0/po/sv/
+kfilemetadata-6.14.0/po/sv/kfilemetadata6.po
+kfilemetadata-6.14.0/po/ta/
+kfilemetadata-6.14.0/po/ta/kfilemetadata6.po
+kfilemetadata-6.14.0/po/tg/
+kfilemetadata-6.14.0/po/tg/kfilemetadata6.po
+kfilemetadata-6.14.0/po/tr/
+kfilemetadata-6.14.0/po/tr/kfilemetadata6.po
+kfilemetadata-6.14.0/po/uk/
+kfilemetadata-6.14.0/po/uk/kfilemetadata6.po
+kfilemetadata-6.14.0/po/zh_CN/
+kfilemetadata-6.14.0/po/zh_CN/kfilemetadata6.po
+kfilemetadata-6.14.0/po/zh_TW/
+kfilemetadata-6.14.0/po/zh_TW/kfilemetadata6.po
+kfilemetadata-6.14.0/src/
+kfilemetadata-6.14.0/src/CMakeLists.txt
+kfilemetadata-6.14.0/src/config-kfilemetadata.h.in
+kfilemetadata-6.14.0/src/datetimeparser_p.h
+kfilemetadata-6.14.0/src/embeddedimagedata.cpp
+kfilemetadata-6.14.0/src/embeddedimagedata.h
+kfilemetadata-6.14.0/src/externalextractor.cpp
+kfilemetadata-6.14.0/src/externalextractor.h
+kfilemetadata-6.14.0/src/externalwriter.cpp
+kfilemetadata-6.14.0/src/externalwriter.h
+kfilemetadata-6.14.0/src/extractionresult.cpp
+kfilemetadata-6.14.0/src/extractionresult.h
+kfilemetadata-6.14.0/src/extractor.cpp
+kfilemetadata-6.14.0/src/extractor.h
+kfilemetadata-6.14.0/src/extractor_p.h
+kfilemetadata-6.14.0/src/extractorcollection.cpp
+kfilemetadata-6.14.0/src/extractorcollection.h
+kfilemetadata-6.14.0/src/extractorplugin.cpp
+kfilemetadata-6.14.0/src/extractorplugin.h
+kfilemetadata-6.14.0/src/extractors/
+kfilemetadata-6.14.0/src/extractors/CMakeLists.txt
+kfilemetadata-6.14.0/src/extractors/appimageextractor.cpp
+kfilemetadata-6.14.0/src/extractors/appimageextractor.h
+kfilemetadata-6.14.0/src/extractors/appimageextractor.json
+kfilemetadata-6.14.0/src/extractors/dublincoreextractor.cpp
+kfilemetadata-6.14.0/src/extractors/dublincoreextractor.h
+kfilemetadata-6.14.0/src/extractors/epubextractor.cpp
+kfilemetadata-6.14.0/src/extractors/epubextractor.h
+kfilemetadata-6.14.0/src/extractors/epubextractor.json
+kfilemetadata-6.14.0/src/extractors/exiv2extractor.cpp
+kfilemetadata-6.14.0/src/extractors/exiv2extractor.h
+kfilemetadata-6.14.0/src/extractors/exiv2extractor.json.in
+kfilemetadata-6.14.0/src/extractors/fb2extractor.cpp
+kfilemetadata-6.14.0/src/extractors/fb2extractor.h
+kfilemetadata-6.14.0/src/extractors/fb2extractor.json
+kfilemetadata-6.14.0/src/extractors/ffmpegextractor.cpp
+kfilemetadata-6.14.0/src/extractors/ffmpegextractor.h
+kfilemetadata-6.14.0/src/extractors/ffmpegextractor.json
+kfilemetadata-6.14.0/src/extractors/kritaextractor.cpp
+kfilemetadata-6.14.0/src/extractors/kritaextractor.h
+kfilemetadata-6.14.0/src/extractors/kritaextractor.json
+kfilemetadata-6.14.0/src/extractors/mobiextractor.cpp
+kfilemetadata-6.14.0/src/extractors/mobiextractor.h
+kfilemetadata-6.14.0/src/extractors/mobiextractor.json
+kfilemetadata-6.14.0/src/extractors/odfextractor.cpp
+kfilemetadata-6.14.0/src/extractors/odfextractor.h
+kfilemetadata-6.14.0/src/extractors/odfextractor.json
+kfilemetadata-6.14.0/src/extractors/office2007extractor.cpp
+kfilemetadata-6.14.0/src/extractors/office2007extractor.h
+kfilemetadata-6.14.0/src/extractors/office2007extractor.json
+kfilemetadata-6.14.0/src/extractors/officeextractor.cpp
+kfilemetadata-6.14.0/src/extractors/officeextractor.h
+kfilemetadata-6.14.0/src/extractors/officeextractor.json
+kfilemetadata-6.14.0/src/extractors/plaintextextractor.cpp
+kfilemetadata-6.14.0/src/extractors/plaintextextractor.h
+kfilemetadata-6.14.0/src/extractors/plaintextextractor.json
+kfilemetadata-6.14.0/src/extractors/pngextractor.cpp
+kfilemetadata-6.14.0/src/extractors/pngextractor.h
+kfilemetadata-6.14.0/src/extractors/pngextractor.json
+kfilemetadata-6.14.0/src/extractors/poextractor.cpp
+kfilemetadata-6.14.0/src/extractors/poextractor.h
+kfilemetadata-6.14.0/src/extractors/poextractor.json
+kfilemetadata-6.14.0/src/extractors/popplerextractor.cpp
+kfilemetadata-6.14.0/src/extractors/popplerextractor.h
+kfilemetadata-6.14.0/src/extractors/popplerextractor.json
+kfilemetadata-6.14.0/src/extractors/postscriptdscextractor.cpp
+kfilemetadata-6.14.0/src/extractors/postscriptdscextractor.h
+kfilemetadata-6.14.0/src/extractors/postscriptdscextractor.json
+kfilemetadata-6.14.0/src/extractors/taglibextractor.cpp
+kfilemetadata-6.14.0/src/extractors/taglibextractor.h
+kfilemetadata-6.14.0/src/extractors/taglibextractor.json
+kfilemetadata-6.14.0/src/extractors/xmlextractor.cpp
+kfilemetadata-6.14.0/src/extractors/xmlextractor.h
+kfilemetadata-6.14.0/src/extractors/xmlextractor.json
+kfilemetadata-6.14.0/src/formatstrings.cpp
+kfilemetadata-6.14.0/src/formatstrings_p.h
+kfilemetadata-6.14.0/src/icnamematch_p.h
+kfilemetadata-6.14.0/src/mimeutils.cpp
+kfilemetadata-6.14.0/src/mimeutils.h
+kfilemetadata-6.14.0/src/properties.h
+kfilemetadata-6.14.0/src/propertyinfo.cpp
+kfilemetadata-6.14.0/src/propertyinfo.h
+kfilemetadata-6.14.0/src/simpleextractionresult.cpp
+kfilemetadata-6.14.0/src/simpleextractionresult.h
+kfilemetadata-6.14.0/src/typeinfo.cpp
+kfilemetadata-6.14.0/src/typeinfo.h
+kfilemetadata-6.14.0/src/types.h
+kfilemetadata-6.14.0/src/usermetadata.cpp
+kfilemetadata-6.14.0/src/usermetadata.h
+kfilemetadata-6.14.0/src/writedata.cpp
+kfilemetadata-6.14.0/src/writedata.h
+kfilemetadata-6.14.0/src/writer.cpp
+kfilemetadata-6.14.0/src/writer.h
+kfilemetadata-6.14.0/src/writer_p.h
+kfilemetadata-6.14.0/src/writercollection.cpp
+kfilemetadata-6.14.0/src/writercollection.h
+kfilemetadata-6.14.0/src/writerplugin.cpp
+kfilemetadata-6.14.0/src/writerplugin.h
+kfilemetadata-6.14.0/src/writers/
+kfilemetadata-6.14.0/src/writers/CMakeLists.txt
+kfilemetadata-6.14.0/src/writers/taglibwriter.cpp
+kfilemetadata-6.14.0/src/writers/taglibwriter.h
+kfilemetadata-6.14.0/src/xattr_p.h
+kfilemetadata-6.14.0/tests/
+kfilemetadata-6.14.0/tests/CMakeLists.txt
+kfilemetadata-6.14.0/tests/dump.cpp
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Archive: /usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.14.0") found components: Archive
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.14.0") found components: CoreAddons
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.14.0") found components: Config
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.14.0") found components: I18n
+-- Found KF6Codecs: /usr/lib64/cmake/KF6Codecs/KF6CodecsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.14.0") found components: Codecs
+-- Poppler: Qt6 requires Core
+-- Found Poppler_Core: /usr/lib64/libpoppler.so (found version "25.05.0")
+-- Found Poppler_Qt6: /usr/lib64/libpoppler-qt6.so (found version "25.05.0")
+-- Found Poppler: /usr/lib64/libpoppler.so;/usr/lib64/libpoppler-qt6.so (found suitable version "25.05.0", minimum required is "0.12.1") found components: Qt6
+-- Found Taglib: /usr/lib64/libtag.so (found suitable version "1.13.1", minimum required is "1.12")
+-- Found LibExiv2: /usr/lib64/libexiv2.so (found suitable version "0.28.5", minimum required is "0.26")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Found FFmpeg: /usr/lib64/libavcodec.so (Required is at least version "57.48") found components: AVCODEC
+-- Found FFmpeg: /usr/lib64/libavformat.so (Required is at least version "57.40") found components: AVFORMAT
+-- Found FFmpeg: /usr/lib64/libavutil.so (Required is at least version "55.27") found components: AVUTIL
+-- Found EPub: /usr/lib64/libepub.so
+-- Found xattr
+-- Could NOT find libappimage (missing: libappimage_DIR)
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/work/kfilemetadata-6.14.0/build/src/KF6FileMetaData_ECMQchDoxygen.config' updated.
+
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.10") found components: Interpreter
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6Xml (required version >= 6.7.0)
+ * KF6Archive (required version >= 6.14.0), KDE Frameworks: Archive Framework, <https://download.kde.org/stable/frameworks/>
+   Archive is needed for several extractors
+   - Required for extracting data from compressed SVGs
+   - Required for ODF extractor
+   - Required for Office 2007 extractor
+   - Required for FictionBook2 extractor
+   - Required for Krita extractor
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * KF6Config (required version >= 6.14.0), KDE Frameworks: Config Framework, <https://download.kde.org/stable/frameworks/>
+   Config is needed to build the AppImage extractor
+ * Poppler (required version >= 0.12.1), A PDF rendering library, <https://poppler.freedesktop.org/>
+   Support for PDF files
+ * Taglib (required version >= 1.12), A library for reading and editing the meta-data of audio formats, <https://taglib.org/>
+   Support for music metadata
+ * LibExiv2 (required version >= 0.26), Image metadata support, <https://www.exiv2.org>
+   Support for image metadata
+ * FFmpeg (required version >= 55.27), Video Tag reader, <https://ffmpeg.org/>
+   Support for video metadata
+ * EPub, Ebook epub reader, <https://sourceforge.net/projects/ebook-tools/>
+   Support for epub metadata
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6Gui (required version >= 5.12.0), Qt6: Gui component
+   Qt6::Gui is needed for several extractors
+   - Required for AppImage extractor
+   - Required for Qt based PNG extractor
+ * QMobipocket6 (required version >= 2.1), Mobipocket epub reader, <https://invent.kde.org/graphics/kdegraphics-mobipocket>
+   Support for mobi metadata
+ * Qt6Test (required version >= 6.7.0)
+ * Python3, Python Interpreter, <https://www.python.org>
+   Python interpreter is required for testing external extractors and writers
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.14.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * KF6CoreAddons (required version >= 6.14.0), KDE Frameworks: Core Addons Framework, <https://download.kde.org/stable/frameworks/>
+   Needed for the formatting of properties for display purposes
+ * Gettext
+ * KF6I18n (required version >= 6.14.0)
+ * KF6Codecs (required version >= 6.14.0), KDE Frameworks: KCodecs Framework, <https://download.kde.org/stable/frameworks/>
+   Needed for the autodetecting encoding of plain text files
+ * KF6 (required version >= 6.14.0)
+ * Xattr, library libattr , <https://savannah.nongnu.org/projects/attr>
+   Extended attribute shared library
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * Qt6ToolsTools, qhelpgenerator from Qt6 tools
+   Needed for API dox QCH file generation
+ * Qt6 (required version >= 6.7.0)
+
+-- The following RUNTIME packages have not been found:
+
+ * CatDoc, catdoc executable, <https://www.wagner.pp.ru/~vitus/software/catdoc/>
+   Extract text from office 98 files - RUNTIME dependency
+
+-- The following OPTIONAL packages have not been found:
+
+ * libappimage (required version >= 0.1.10), Core library of the AppImage project, <https://github.com/AppImage/libappimage>
+   Needed to build the AppImage extractor
+
+-- Configuring done (1.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/work/kfilemetadata-6.14.0/build
+[1/235] Generating ts...
+[2/235] Generating mo...
+[3/235] Generating src/KF6FileMetaData.qch, src/KF6FileMetaData.tags
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[4/235] Automatic MOC for target KF6FileMetaData
+[5/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/KF6FileMetaData_autogen/mocs_compilation.cpp.o
+[6/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/mimeutils.cpp.o
+[7/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/writer.cpp.o
+[8/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/writedata.cpp.o
+[9/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/extractionresult.cpp.o
+[10/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/writerplugin.cpp.o
+[11/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/usermetadata.cpp.o
+[12/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/simpleextractionresult.cpp.o
+[13/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/formatstrings.cpp.o
+[14/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/kfilemetadata_debug.cpp.o
+[15/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/writercollection.cpp.o
+[16/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/externalwriter.cpp.o
+[17/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/externalextractor.cpp.o
+[18/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/typeinfo.cpp.o
+[19/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/extractor.cpp.o
+[20/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/embeddedimagedata.cpp.o
+[21/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/extractorplugin.cpp.o
+[22/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/propertyinfo.cpp.o
+[23/235] Building CXX object src/CMakeFiles/KF6FileMetaData.dir/extractorcollection.cpp.o
+[24/235] Linking CXX shared library bin/libKF6FileMetaData.so.6.14.0
+[25/235] Creating library symlink bin/libKF6FileMetaData.so.3 bin/libKF6FileMetaData.so
+[26/235] Automatic MOC for target kfilemetadata_ffmpegextractor
+[27/235] Automatic MOC for target kfilemetadata_fb2extractor
+[28/235] Automatic MOC for target kfilemetadata_xmlextractor
+[29/235] Automatic MOC for target kfilemetadata_krita
+[30/235] Automatic MOC for target kfilemetadata_taglibwriter
+[31/235] Automatic MOC for target kfilemetadata_officeextractor
+[32/235] Automatic MOC for target kfilemetadata_plaintextextractor
+[33/235] Automatic MOC for target kfilemetadata_odfextractor
+[34/235] Automatic MOC for target kfilemetadata_popplerextractor
+[35/235] Automatic MOC for target kfilemetadata_exiv2extractor
+[36/235] Automatic MOC for target kfilemetadata_poextractor
+[37/235] Automatic MOC for target kfilemetadata_office2007extractor
+[38/235] Automatic MOC for target kfilemetadata_pngextractor
+[39/235] Automatic MOC for target kfilemetadata_postscriptdscextractor
+[40/235] Automatic MOC for target kfilemetadata_mobiextractor
+[41/235] Automatic MOC for target kfilemetadata_taglibextractor
+[42/235] Automatic MOC for target extractorcoveragetest
+[43/235] Automatic MOC for target kfilemetadata_epubextractor
+[44/235] Automatic MOC for target officeextractortest
+[45/235] Automatic MOC for target odfextractortest
+[46/235] Automatic MOC for target dump
+[47/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_popplerextractor.dir/kfilemetadata_popplerextractor_autogen/mocs_compilation.cpp.o
+[48/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_taglibextractor.dir/kfilemetadata_taglibextractor_autogen/mocs_compilation.cpp.o
+[49/235] Automatic MOC for target fb2extractortest
+[50/235] Automatic MOC for target indexextractortest
+[51/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_exiv2extractor.dir/kfilemetadata_exiv2extractor_autogen/mocs_compilation.cpp.o
+[52/235] Automatic MOC for target popplerextractortest
+[53/235] Automatic MOC for target ffmpegextractortest
+[54/235] Automatic MOC for target typeinfotest_bin
+[55/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_ffmpegextractor.dir/kfilemetadata_ffmpegextractor_autogen/mocs_compilation.cpp.o
+[56/235] Automatic MOC for target epubextractortest
+[57/235] Automatic MOC for target propertyinfotest_bin
+[58/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_epubextractor.dir/kfilemetadata_epubextractor_autogen/mocs_compilation.cpp.o
+[59/235] Automatic MOC for target pngextractortest
+[60/235] Automatic MOC for target exiv2extractortest
+[61/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_plaintextextractor.dir/kfilemetadata_plaintextextractor_autogen/mocs_compilation.cpp.o
+[62/235] Automatic MOC for target usermetadatawritertest
+[63/235] Automatic MOC for target writercollectiontest
+[64/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_poextractor.dir/kfilemetadata_poextractor_autogen/mocs_compilation.cpp.o
+[65/235] Automatic MOC for target externalextractortest
+[66/235] Automatic MOC for target xmlextractortest
+[67/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_xmlextractor.dir/kfilemetadata_xmlextractor_autogen/mocs_compilation.cpp.o
+[68/235] Automatic MOC for target postscriptdscextractortest
+[69/235] Automatic MOC for target kritaextractortest
+[70/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_postscriptdscextractor.dir/kfilemetadata_postscriptdscextractor_autogen/mocs_compilation.cpp.o
+[71/235] Automatic MOC for target externalwritertest
+[72/235] Automatic MOC for target taglibextractortest
+[73/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_odfextractor.dir/kfilemetadata_odfextractor_autogen/mocs_compilation.cpp.o
+[74/235] Automatic MOC for target taglibwritertest
+[75/235] Automatic MOC for target extractorcollectiontest
+[76/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_office2007extractor.dir/kfilemetadata_office2007extractor_autogen/mocs_compilation.cpp.o
+[77/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_epubextractor.dir/__/kfilemetadata_debug.cpp.o
+[78/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_taglibextractor.dir/__/kfilemetadata_debug.cpp.o
+[79/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_officeextractor.dir/kfilemetadata_officeextractor_autogen/mocs_compilation.cpp.o
+[80/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_exiv2extractor.dir/__/kfilemetadata_debug.cpp.o
+[81/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_plaintextextractor.dir/__/kfilemetadata_debug.cpp.o
+[82/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_mobiextractor.dir/kfilemetadata_mobiextractor_autogen/mocs_compilation.cpp.o
+[83/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_odfextractor.dir/__/kfilemetadata_debug.cpp.o
+[84/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_postscriptdscextractor.dir/__/kfilemetadata_debug.cpp.o
+[85/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_xmlextractor.dir/__/kfilemetadata_debug.cpp.o
+[86/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_ffmpegextractor.dir/__/kfilemetadata_debug.cpp.o
+[87/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_pngextractor.dir/kfilemetadata_pngextractor_autogen/mocs_compilation.cpp.o
+[88/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_fb2extractor.dir/kfilemetadata_fb2extractor_autogen/mocs_compilation.cpp.o
+[89/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_popplerextractor.dir/__/kfilemetadata_debug.cpp.o
+[90/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_krita.dir/kfilemetadata_krita_autogen/mocs_compilation.cpp.o
+[91/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_poextractor.dir/poextractor.cpp.o
+[92/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_epubextractor.dir/epubextractor.cpp.o
+[93/235] Building CXX object src/writers/CMakeFiles/kfilemetadata_taglibwriter.dir/kfilemetadata_taglibwriter_autogen/mocs_compilation.cpp.o
+[94/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_ffmpegextractor.dir/ffmpegextractor.cpp.o
+[95/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_odfextractor.dir/odfextractor.cpp.o
+[96/235] Building CXX object autotests/CMakeFiles/extractorcoveragetest.dir/extractorcoveragetest_autogen/mocs_compilation.cpp.o
+[97/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_postscriptdscextractor.dir/postscriptdscextractor.cpp.o
+[98/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_popplerextractor.dir/popplerextractor.cpp.o
+[99/235] Building CXX object autotests/CMakeFiles/indexextractortest.dir/indexextractortest_autogen/mocs_compilation.cpp.o
+[100/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_xmlextractor.dir/dublincoreextractor.cpp.o
+[101/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_office2007extractor.dir/dublincoreextractor.cpp.o
+[102/235] Building CXX object autotests/CMakeFiles/odfextractortest.dir/odfextractortest_autogen/mocs_compilation.cpp.o
+[103/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_xmlextractor.dir/xmlextractor.cpp.o
+[104/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_plaintextextractor.dir/plaintextextractor.cpp.o
+[105/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_taglibextractor.dir/taglibextractor.cpp.o
+[106/235] Building CXX object autotests/CMakeFiles/officeextractortest.dir/officeextractortest_autogen/mocs_compilation.cpp.o
+[107/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_exiv2extractor.dir/exiv2extractor.cpp.o
+[108/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_office2007extractor.dir/office2007extractor.cpp.o
+[109/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_officeextractor.dir/__/kfilemetadata_debug.cpp.o
+[110/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_fb2extractor.dir/__/kfilemetadata_debug.cpp.o
+[111/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_office2007extractor.dir/__/kfilemetadata_debug.cpp.o
+[112/235] Building CXX object autotests/CMakeFiles/popplerextractortest.dir/popplerextractortest_autogen/mocs_compilation.cpp.o
+[113/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_mobiextractor.dir/__/kfilemetadata_debug.cpp.o
+[114/235] Building CXX object src/writers/CMakeFiles/kfilemetadata_taglibwriter.dir/__/kfilemetadata_debug.cpp.o
+[115/235] Building CXX object autotests/CMakeFiles/epubextractortest.dir/epubextractortest_autogen/mocs_compilation.cpp.o
+[116/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_officeextractor.dir/officeextractor.cpp.o
+[117/235] Building CXX object autotests/CMakeFiles/indexextractortest.dir/kfilemetadata_debug.cpp.o
+[118/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_krita.dir/__/kfilemetadata_debug.cpp.o
+[119/235] Building CXX object autotests/CMakeFiles/fb2extractortest.dir/fb2extractortest_autogen/mocs_compilation.cpp.o
+[120/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_pngextractor.dir/pngextractor.cpp.o
+[121/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_fb2extractor.dir/fb2extractor.cpp.o
+[122/235] Building CXX object autotests/CMakeFiles/odfextractortest.dir/kfilemetadata_debug.cpp.o
+[123/235] Building CXX object autotests/CMakeFiles/propertyinfotest_bin.dir/propertyinfotest_bin_autogen/mocs_compilation.cpp.o
+[124/235] Building CXX object autotests/CMakeFiles/indexextractortest.dir/indexerextractortests.cpp.o
+[125/235] Building CXX object autotests/CMakeFiles/officeextractortest.dir/__/src/kfilemetadata_debug.cpp.o
+[126/235] Building CXX object autotests/CMakeFiles/typeinfotest_bin.dir/typeinfotest_bin_autogen/mocs_compilation.cpp.o
+[127/235] Building CXX object autotests/CMakeFiles/exiv2extractortest.dir/exiv2extractortest_autogen/mocs_compilation.cpp.o
+[128/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_mobiextractor.dir/mobiextractor.cpp.o
+[129/235] Building CXX object src/extractors/CMakeFiles/kfilemetadata_krita.dir/kritaextractor.cpp.o
+[130/235] Building CXX object autotests/CMakeFiles/indexextractortest.dir/__/src/extractors/plaintextextractor.cpp.o
+[131/235] Building CXX object autotests/CMakeFiles/ffmpegextractortest.dir/ffmpegextractortest_autogen/mocs_compilation.cpp.o
+[132/235] Building CXX object src/writers/CMakeFiles/kfilemetadata_taglibwriter.dir/taglibwriter.cpp.o
+[133/235] Building CXX object autotests/CMakeFiles/officeextractortest.dir/__/src/extractors/dublincoreextractor.cpp.o
+[134/235] Building CXX object autotests/CMakeFiles/popplerextractortest.dir/kfilemetadata_debug.cpp.o
+[135/235] Building CXX object autotests/CMakeFiles/taglibextractortest.dir/taglibextractortest_autogen/mocs_compilation.cpp.o
+[136/235] Building CXX object autotests/CMakeFiles/extractorcoveragetest.dir/extractorcoveragetest.cpp.o
+[137/235] Building CXX object autotests/CMakeFiles/odfextractortest.dir/odfextractortest.cpp.o
+[138/235] Building CXX object autotests/CMakeFiles/odfextractortest.dir/__/src/extractors/odfextractor.cpp.o
+[139/235] Building CXX object autotests/CMakeFiles/externalextractortest.dir/externalextractortest_autogen/mocs_compilation.cpp.o
+[140/235] Building CXX object autotests/CMakeFiles/epubextractortest.dir/__/src/kfilemetadata_debug.cpp.o
+[141/235] Building CXX object autotests/CMakeFiles/officeextractortest.dir/office2007extractortest.cpp.o
+[142/235] Building CXX object autotests/CMakeFiles/popplerextractortest.dir/__/src/extractors/popplerextractor.cpp.o
+[143/235] Building CXX object autotests/CMakeFiles/extractorcollectiontest.dir/extractorcollectiontest_autogen/mocs_compilation.cpp.o
+[144/235] Building CXX object autotests/CMakeFiles/fb2extractortest.dir/__/src/kfilemetadata_debug.cpp.o
+[145/235] Building CXX object autotests/CMakeFiles/writercollectiontest.dir/writercollectiontest_autogen/mocs_compilation.cpp.o
+[146/235] Building CXX object autotests/CMakeFiles/officeextractortest.dir/__/src/extractors/office2007extractor.cpp.o
+[147/235] Building CXX object autotests/CMakeFiles/xmlextractortest.dir/xmlextractortest_autogen/mocs_compilation.cpp.o
+[148/235] Building CXX object autotests/CMakeFiles/exiv2extractortest.dir/kfilemetadata_debug.cpp.o
+[149/235] Building CXX object autotests/CMakeFiles/epubextractortest.dir/epubextractortest.cpp.o
+[150/235] Building CXX object autotests/CMakeFiles/popplerextractortest.dir/popplerextractortest.cpp.o
+[151/235] Building CXX object autotests/CMakeFiles/fb2extractortest.dir/fb2extractortest.cpp.o
+[152/235] Building CXX object autotests/CMakeFiles/fb2extractortest.dir/__/src/extractors/fb2extractor.cpp.o
+[153/235] Building CXX object autotests/CMakeFiles/postscriptdscextractortest.dir/postscriptdscextractortest_autogen/mocs_compilation.cpp.o
+[154/235] Building CXX object autotests/CMakeFiles/propertyinfotest_bin.dir/propertyinfotest.cpp.o
+[155/235] Building CXX object autotests/CMakeFiles/epubextractortest.dir/__/src/extractors/epubextractor.cpp.o
+[156/235] Building CXX object autotests/CMakeFiles/pngextractortest.dir/pngextractortest_autogen/mocs_compilation.cpp.o
+[157/235] Building CXX object autotests/CMakeFiles/taglibextractortest.dir/kfilemetadata_debug.cpp.o
+[158/235] Building CXX object autotests/CMakeFiles/externalextractortest.dir/kfilemetadata_debug.cpp.o
+[159/235] Building CXX object autotests/CMakeFiles/kritaextractortest.dir/kritaextractortest_autogen/mocs_compilation.cpp.o
+[160/235] Building CXX object autotests/CMakeFiles/ffmpegextractortest.dir/ffmpegextractortest.cpp.o
+[161/235] Building CXX object autotests/CMakeFiles/ffmpegextractortest.dir/__/src/kfilemetadata_debug.cpp.o
+[162/235] Building CXX object autotests/CMakeFiles/exiv2extractortest.dir/exiv2extractortest.cpp.o
+[163/235] Building CXX object autotests/CMakeFiles/usermetadatawritertest.dir/usermetadatawritertest_autogen/mocs_compilation.cpp.o
+[164/235] Building CXX object autotests/CMakeFiles/typeinfotest_bin.dir/typeinfotest.cpp.o
+[165/235] Building CXX object autotests/CMakeFiles/taglibwritertest.dir/taglibwritertest_autogen/mocs_compilation.cpp.o
+[166/235] Building CXX object autotests/CMakeFiles/exiv2extractortest.dir/__/src/extractors/exiv2extractor.cpp.o
+[167/235] Building CXX object autotests/CMakeFiles/ffmpegextractortest.dir/__/src/extractors/ffmpegextractor.cpp.o
+[168/235] Building CXX object autotests/CMakeFiles/externalextractortest.dir/externalextractortest.cpp.o
+[169/235] Building CXX object autotests/CMakeFiles/externalwritertest.dir/externalwritertest_autogen/mocs_compilation.cpp.o
+[170/235] Building CXX object autotests/CMakeFiles/xmlextractortest.dir/__/src/kfilemetadata_debug.cpp.o
+[171/235] Building CXX object autotests/CMakeFiles/xmlextractortest.dir/__/src/extractors/dublincoreextractor.cpp.o
+[172/235] Building CXX object autotests/CMakeFiles/taglibextractortest.dir/__/src/extractors/taglibextractor.cpp.o
+[173/235] Building CXX object tests/CMakeFiles/dump.dir/dump_autogen/mocs_compilation.cpp.o
+[174/235] Building CXX object autotests/CMakeFiles/extractorcollectiontest.dir/extractorcollectiontest.cpp.o
+[175/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_popplerextractor.so
+[176/235] Building CXX object autotests/CMakeFiles/externalextractortest.dir/__/src/externalextractor.cpp.o
+[177/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_taglibextractor.so
+[178/235] Building CXX object autotests/CMakeFiles/xmlextractortest.dir/__/src/extractors/xmlextractor.cpp.o
+[179/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_exiv2extractor.so
+[180/235] Building CXX object autotests/CMakeFiles/postscriptdscextractortest.dir/__/src/extractors/postscriptdscextractor.cpp.o
+[181/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_ffmpegextractor.so
+[182/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_plaintextextractor.so
+[183/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_poextractor.so
+[184/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_epubextractor.so
+[185/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_postscriptdscextractor.so
+[186/235] Building CXX object autotests/CMakeFiles/kritaextractortest.dir/kfilemetadata_debug.cpp.o
+[187/235] Building CXX object autotests/CMakeFiles/postscriptdscextractortest.dir/__/src/kfilemetadata_debug.cpp.o
+[188/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_xmlextractor.so
+[189/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_office2007extractor.so
+[190/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_odfextractor.so
+[191/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_officeextractor.so
+[192/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_fb2extractor.so
+[193/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_krita.so
+[194/235] Linking CXX shared module bin/kf6/kfilemetadata/writers/kfilemetadata_taglibwriter.so
+[195/235] Linking CXX executable bin/extractorcoveragetest
+[196/235] Linking CXX executable bin/indexextractortest
+[197/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_mobiextractor.so
+[198/235] Linking CXX shared module bin/kf6/kfilemetadata/kfilemetadata_pngextractor.so
+[199/235] Linking CXX executable bin/odfextractortest
+[200/235] Linking CXX executable bin/officeextractortest
+[201/235] Linking CXX executable bin/propertyinfotest_bin
+[202/235] Linking CXX executable bin/typeinfotest_bin
+[203/235] Linking CXX executable bin/epubextractortest
+[204/235] Linking CXX executable bin/fb2extractortest
+[205/235] Building CXX object autotests/CMakeFiles/writercollectiontest.dir/writercollectiontest.cpp.o
+[206/235] Linking CXX executable bin/popplerextractortest
+[207/235] Linking CXX executable bin/externalextractortest
+[208/235] Linking CXX executable bin/exiv2extractortest
+[209/235] Linking CXX executable bin/extractorcollectiontest
+[210/235] Linking CXX executable bin/writercollectiontest
+[211/235] Linking CXX executable bin/ffmpegextractortest
+[212/235] Building CXX object autotests/CMakeFiles/kritaextractortest.dir/__/src/extractors/kritaextractor.cpp.o
+[213/235] Building CXX object autotests/CMakeFiles/taglibwritertest.dir/kfilemetadata_debug.cpp.o
+[214/235] Building CXX object autotests/CMakeFiles/kritaextractortest.dir/kritaextractortest.cpp.o
+[215/235] Building CXX object autotests/CMakeFiles/xmlextractortest.dir/xmlextractortest.cpp.o
+[216/235] Building CXX object autotests/CMakeFiles/pngextractortest.dir/__/src/extractors/pngextractor.cpp.o
+[217/235] Linking CXX executable bin/kritaextractortest
+[218/235] Linking CXX executable bin/xmlextractortest
+[219/235] Building CXX object autotests/CMakeFiles/externalwritertest.dir/kfilemetadata_debug.cpp.o
+[220/235] Building CXX object autotests/CMakeFiles/postscriptdscextractortest.dir/postscriptdscextractortest.cpp.o
+[221/235] Building CXX object autotests/CMakeFiles/taglibextractortest.dir/taglibextractortest.cpp.o
+[222/235] Linking CXX executable bin/taglibextractortest
+[223/235] Linking CXX executable bin/postscriptdscextractortest
+[224/235] Building CXX object autotests/CMakeFiles/usermetadatawritertest.dir/usermetadatawritertest.cpp.o
+[225/235] Building CXX object autotests/CMakeFiles/pngextractortest.dir/pngextractortest.cpp.o
+[226/235] Linking CXX executable bin/usermetadatawritertest
+[227/235] Building CXX object autotests/CMakeFiles/externalwritertest.dir/externalwritertest.cpp.o
+[228/235] Linking CXX executable bin/pngextractortest
+[229/235] Building CXX object autotests/CMakeFiles/taglibwritertest.dir/__/src/writers/taglibwriter.cpp.o
+[230/235] Building CXX object autotests/CMakeFiles/externalwritertest.dir/__/src/externalwriter.cpp.o
+[231/235] Linking CXX executable bin/externalwritertest
+[232/235] Building CXX object tests/CMakeFiles/dump.dir/dump.cpp.o
+[233/235] Linking CXX executable bin/kfilemetadata_dump6
+[234/235] Building CXX object autotests/CMakeFiles/taglibwritertest.dir/taglibwritertest.cpp.o
+[235/235] Linking CXX executable bin/taglibwritertest
+-- Install configuration: "MinSizeRel"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/libKF6FileMetaData.so.6.14.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/libKF6FileMetaData.so.3
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/libKF6FileMetaData.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataTargets-minsizerel.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/kfilemetadata_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/extractionresult.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/simpleextractionresult.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/extractor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/extractorplugin.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/extractorcollection.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/properties.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/propertyinfo.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/types.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/typeinfo.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/usermetadata.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/writedata.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/writer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/writerplugin.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/writercollection.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/embeddedimagedata.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata/mimeutils.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/ExtractionResult
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/SimpleExtractionResult
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/Extractor
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/ExtractorPlugin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/ExtractorCollection
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/Properties
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/PropertyInfo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/Types
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/TypeInfo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/UserMetaData
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/WriteData
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/Writer
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/WriterPlugin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/WriterCollection
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/EmbeddedImageData
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/KFileMetaData/MimeUtils
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6FileMetaData.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6FileMetaData.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_popplerextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_popplerextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_taglibextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_taglibextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_exiv2extractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_exiv2extractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_ffmpegextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_ffmpegextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_epubextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_epubextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_plaintextextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_plaintextextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_poextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_poextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_xmlextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_xmlextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_postscriptdscextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_postscriptdscextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_odfextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_odfextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_office2007extractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_office2007extractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_officeextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_officeextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_mobiextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_mobiextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_pngextractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_pngextractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_fb2extractor.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_fb2extractor.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_krita.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_krita.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/writers/kfilemetadata_taglibwriter.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/qt6/plugins/kf6/kfilemetadata/writers/kfilemetadata_taglibwriter.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/qlogging-categories6/kfilemetadata.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/qlogging-categories6/kfilemetadata.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/bin/kfilemetadata_dump6
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/bin/kfilemetadata_dump6" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/da/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/cs/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ja/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@ijekavian/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/de/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/el/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nn/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/hi/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pt_BR/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/lt/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pa/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sl/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ie
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ie/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ta/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ro/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/bs/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sr@latin/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/he/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/zh_TW/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/tg/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pl/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/pt/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/az/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/tr/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/fr/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ast/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ka/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/gl/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ia/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/hu/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/eo/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/bg/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ca/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/uk/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/id/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/en_GB/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/zh_CN/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nl/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sa/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/fi/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ko/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ru/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/lv/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/gd
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/gd/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/gd/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ml/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ca@valencia/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nb/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/es/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/eu/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/et/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/it/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/ar/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/nds/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sk/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/share/locale/sv/LC_MESSAGES/kfilemetadata6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/package-kfilemetadata/usr/include/KF6/KFileMetaData/kfilemetadata_version.h
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kfilemetadata/kfilemetadata.info: No such file or directory
+doxygen
+extra-cmake-modules
+ffmpeg
+attr
+exiv2
+karchive
+kcodecs
+kconfig
+kcoreaddons
+ki18n
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKF6FileMetaData.so	libKF6FileMetaData.so.3
+usr/lib64/libKF6FileMetaData.so.3	libKF6FileMetaData.so.6.14.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKF6FileMetaData.so )
+( cd usr/lib64 ; ln -sf libKF6FileMetaData.so.3 libKF6FileMetaData.so )
+( cd usr/lib64 ; rm -rf libKF6FileMetaData.so.3 )
+( cd usr/lib64 ; ln -sf libKF6FileMetaData.so.6.14.0 libKF6FileMetaData.so.3 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKF6FileMetaData.so'
+removed './usr/lib64/libKF6FileMetaData.so.3'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kfilemetadata/kfilemetadata-6.14.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/kfilemetadata_dump6
+usr/doc/
+usr/doc/kfilemetadata-6.14.0/
+usr/doc/kfilemetadata-6.14.0/README.md
+usr/doc/kfilemetadata-6.14.0/docs/
+usr/doc/kfilemetadata-6.14.0/docs/Doxyfile.local
+usr/doc/kfilemetadata-6.14.0/kfilemetadata.ini
+usr/doc/kfilemetadata-6.14.0/slack-required
+usr/doc/qt6-6.8.3_20250319_bab1fecd/
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6FileMetaData.qch
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6FileMetaData.tags
+usr/include/
+usr/include/KF6/
+usr/include/KF6/KFileMetaData/
+usr/include/KF6/KFileMetaData/KFileMetaData/
+usr/include/KF6/KFileMetaData/KFileMetaData/EmbeddedImageData
+usr/include/KF6/KFileMetaData/KFileMetaData/ExtractionResult
+usr/include/KF6/KFileMetaData/KFileMetaData/Extractor
+usr/include/KF6/KFileMetaData/KFileMetaData/ExtractorCollection
+usr/include/KF6/KFileMetaData/KFileMetaData/ExtractorPlugin
+usr/include/KF6/KFileMetaData/KFileMetaData/MimeUtils
+usr/include/KF6/KFileMetaData/KFileMetaData/Properties
+usr/include/KF6/KFileMetaData/KFileMetaData/PropertyInfo
+usr/include/KF6/KFileMetaData/KFileMetaData/SimpleExtractionResult
+usr/include/KF6/KFileMetaData/KFileMetaData/TypeInfo
+usr/include/KF6/KFileMetaData/KFileMetaData/Types
+usr/include/KF6/KFileMetaData/KFileMetaData/UserMetaData
+usr/include/KF6/KFileMetaData/KFileMetaData/WriteData
+usr/include/KF6/KFileMetaData/KFileMetaData/Writer
+usr/include/KF6/KFileMetaData/KFileMetaData/WriterCollection
+usr/include/KF6/KFileMetaData/KFileMetaData/WriterPlugin
+usr/include/KF6/KFileMetaData/kfilemetadata/
+usr/include/KF6/KFileMetaData/kfilemetadata/embeddedimagedata.h
+usr/include/KF6/KFileMetaData/kfilemetadata/extractionresult.h
+usr/include/KF6/KFileMetaData/kfilemetadata/extractor.h
+usr/include/KF6/KFileMetaData/kfilemetadata/extractorcollection.h
+usr/include/KF6/KFileMetaData/kfilemetadata/extractorplugin.h
+usr/include/KF6/KFileMetaData/kfilemetadata/kfilemetadata_export.h
+usr/include/KF6/KFileMetaData/kfilemetadata/mimeutils.h
+usr/include/KF6/KFileMetaData/kfilemetadata/properties.h
+usr/include/KF6/KFileMetaData/kfilemetadata/propertyinfo.h
+usr/include/KF6/KFileMetaData/kfilemetadata/simpleextractionresult.h
+usr/include/KF6/KFileMetaData/kfilemetadata/typeinfo.h
+usr/include/KF6/KFileMetaData/kfilemetadata/types.h
+usr/include/KF6/KFileMetaData/kfilemetadata/usermetadata.h
+usr/include/KF6/KFileMetaData/kfilemetadata/writedata.h
+usr/include/KF6/KFileMetaData/kfilemetadata/writer.h
+usr/include/KF6/KFileMetaData/kfilemetadata/writercollection.h
+usr/include/KF6/KFileMetaData/kfilemetadata/writerplugin.h
+usr/include/KF6/KFileMetaData/kfilemetadata_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF6FileMetaData/
+usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataConfig.cmake
+usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataConfigVersion.cmake
+usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataQchTargets.cmake
+usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataTargets-minsizerel.cmake
+usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataTargets.cmake
+usr/lib64/libKF6FileMetaData.so.6.14.0
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/kf6/
+usr/lib64/qt6/plugins/kf6/kfilemetadata/
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_epubextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_exiv2extractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_fb2extractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_ffmpegextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_krita.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_mobiextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_odfextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_office2007extractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_officeextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_plaintextextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_pngextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_poextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_popplerextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_postscriptdscextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_taglibextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/kfilemetadata_xmlextractor.so
+usr/lib64/qt6/plugins/kf6/kfilemetadata/writers/
+usr/lib64/qt6/plugins/kf6/kfilemetadata/writers/kfilemetadata_taglibwriter.so
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/gd/
+usr/share/locale/gd/LC_MESSAGES/
+usr/share/locale/gd/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ie/
+usr/share/locale/ie/LC_MESSAGES/
+usr/share/locale/ie/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kfilemetadata6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kfilemetadata6.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kfilemetadata.categories
+usr/share/qlogging-categories6/kfilemetadata.renamecategories
+
+Slackware package /tmp/kfilemetadata/kfilemetadata-6.14.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for kfilemetadata-6.14.0-x86_64-1_rtz.tlz
+Creating /tmp/kfilemetadata/kfilemetadata-6.14.0-x86_64-1_rtz.tlz.so.file using /tmp/kfilemetadata/kfilemetadata-6.14.0-x86_64-1_rtz.tlz
+Successfully created /tmp/kfilemetadata/kfilemetadata-6.14.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kfilemetadata.tar.lz4 format.
+/tmp/kfilemetadata /tmp/kfilemetadata
+/tmp/kfilemetadata
+BIN_NAME
+README
+kfilemetadata-6.14.0-x86_64-1_rtz.tlz
+kfilemetadata-6.14.0-x86_64-1_rtz.tlz.md5
+kfilemetadata-6.14.0-x86_64-1_rtz.tlz.so.file
+kfilemetadata-6.14.0-x86_64-1_rtz.tlz.txt
+kfilemetadata.dep
+makepkg-kfilemetadata.log
+kfilemetadata build finished. Procced to installation...
+
++====================================================================================================================+
+| Upgrading kfilemetadata-6.14.0-x86_64-1_rtz package using /tmp/kfilemetadata/kfilemetadata-6.14.0-x86_64-1_rtz.tlz |
++====================================================================================================================+
+
+Pre-installing package kfilemetadata-6.14.0-x86_64-1_rtz...
+Removing package: kfilemetadata-6.14.0-x86_64-1_rtz-upgraded-2025-05-10,22:10:46
+Installing package kfilemetadata-6.14.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kfilemetadata (library)
+#
+# A library for extracting file metadata
+#
+# https://community.kde.org/Frameworks
+Executing install script for kfilemetadata-6.14.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kfilemetadata-6.14.0-x86_64-1_rtz.tlz installed.
+Package kfilemetadata-6.14.0-x86_64-1_rtz upgraded with new package /tmp/kfilemetadata/kfilemetadata-6.14.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kfilemetadata-6.14.0.tar.xz': No such file or directory
+Build process completed in 0 minutes and 48 seconds.

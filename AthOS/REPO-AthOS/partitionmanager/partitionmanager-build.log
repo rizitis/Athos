@@ -1,0 +1,1773 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	kconfig	kconfigwidgets	kcoreaddons	kcrash	kdbusaddons	kdoctools	ki18n	kiconthemes	kio	kjobwidgets	kpmcore	kwidgetsaddons	kxmlgui
+extra-cmake-modules is already installed!
+kconfig is already installed!
+kconfigwidgets is already installed!
+kcoreaddons is already installed!
+kcrash is already installed!
+kdbusaddons is already installed!
+kdoctools is already installed!
+ki18n is already installed!
+kiconthemes is already installed!
+kio is already installed!
+kjobwidgets is already installed!
+kpmcore is already installed!
+kwidgetsaddons is already installed!
+kxmlgui is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:22:57--  https://download.kde.org/stable/release-service/25.04.1/src/partitionmanager-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/partitionmanager-25.04.1.tar.xz [following]
+--2025-05-11 01:22:57--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/partitionmanager-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2336504 (2.2M) [application/octet-stream]
+Saving to: ‘partitionmanager-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  2% 1.33M 2s
+    50K .......... .......... .......... .......... ..........  4% 1.40M 2s
+   100K .......... .......... .......... .......... ..........  6% 6.14M 1s
+   150K .......... .......... .......... .......... ..........  8% 2.05M 1s
+   200K .......... .......... .......... .......... .......... 10% 6.86M 1s
+   250K .......... .......... .......... .......... .......... 13% 5.40M 1s
+   300K .......... .......... .......... .......... .......... 15% 5.13M 1s
+   350K .......... .......... .......... .......... .......... 17%  573K 1s
+   400K .......... .......... .......... .......... .......... 19%  335M 1s
+   450K .......... .......... .......... .......... .......... 21%  582M 1s
+   500K .......... .......... .......... .......... .......... 24%  623M 1s
+   550K .......... .......... .......... .......... .......... 26%  741M 1s
+   600K .......... .......... .......... .......... .......... 28%  743M 1s
+   650K .......... .......... .......... .......... .......... 30%  723M 0s
+   700K .......... .......... .......... .......... .......... 32% 12.1M 0s
+   750K .......... .......... .......... .......... .......... 35%  239M 0s
+   800K .......... .......... .......... .......... .......... 37%  596M 0s
+   850K .......... .......... .......... .......... .......... 39% 7.59M 0s
+   900K .......... .......... .......... .......... .......... 41% 4.87M 0s
+   950K .......... .......... .......... .......... .......... 43% 7.76M 0s
+  1000K .......... .......... .......... .......... .......... 46% 5.13M 0s
+  1050K .......... .......... .......... .......... .......... 48% 6.55M 0s
+  1100K .......... .......... .......... .......... .......... 50% 5.14M 0s
+  1150K .......... .......... .......... .......... .......... 52% 4.07M 0s
+  1200K .......... .......... .......... .......... .......... 54% 6.77M 0s
+  1250K .......... .......... .......... .......... .......... 56% 5.26M 0s
+  1300K .......... .......... .......... .......... .......... 59% 5.04M 0s
+  1350K .......... .......... .......... .......... .......... 61% 6.46M 0s
+  1400K .......... .......... .......... .......... .......... 63% 4.92M 0s
+  1450K .......... .......... .......... .......... .......... 65% 6.24M 0s
+  1500K .......... .......... .......... .......... .......... 67% 5.26M 0s
+  1550K .......... .......... .......... .......... .......... 70% 3.84M 0s
+  1600K .......... .......... .......... .......... .......... 72% 4.76M 0s
+  1650K .......... .......... .......... .......... .......... 74% 6.55M 0s
+  1700K .......... .......... .......... .......... .......... 76% 4.98M 0s
+  1750K .......... .......... .......... .......... .......... 78% 7.24M 0s
+  1800K .......... .......... .......... .......... .......... 81% 4.66M 0s
+  1850K .......... .......... .......... .......... .......... 83% 5.00M 0s
+  1900K .......... .......... .......... .......... .......... 85% 6.97M 0s
+  1950K .......... .......... .......... .......... .......... 87% 4.16M 0s
+  2000K .......... .......... .......... .......... .......... 89% 4.39M 0s
+  2050K .......... .......... .......... .......... .......... 92% 8.25M 0s
+  2100K .......... .......... .......... .......... .......... 94% 4.75M 0s
+  2150K .......... .......... .......... .......... .......... 96% 6.86M 0s
+  2200K .......... .......... .......... .......... .......... 98% 5.23M 0s
+  2250K .......... .......... .......... .                    100% 6.38M=0.5s
+
+2025-05-11 01:22:58 (4.66 MB/s) - ‘partitionmanager-25.04.1.tar.xz’ saved [2336504/2336504]
+
+Found file: partitionmanager-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+partitionmanager-25.04.1/
+partitionmanager-25.04.1/icons/
+partitionmanager-25.04.1/icons/sc-apps-partitionmanager.svg
+partitionmanager-25.04.1/icons/CMakeLists.txt
+partitionmanager-25.04.1/README.md
+partitionmanager-25.04.1/.reuse/
+partitionmanager-25.04.1/.reuse/dep5
+partitionmanager-25.04.1/LICENSES/
+partitionmanager-25.04.1/LICENSES/CC-BY-4.0.txt
+partitionmanager-25.04.1/LICENSES/MIT.txt
+partitionmanager-25.04.1/LICENSES/GFDL-1.2-or-later.txt
+partitionmanager-25.04.1/LICENSES/LGPL-3.0-or-later.txt
+partitionmanager-25.04.1/LICENSES/GPL-3.0-or-later.txt
+partitionmanager-25.04.1/LICENSES/CC0-1.0.txt
+partitionmanager-25.04.1/.gitlab-ci.yml
+partitionmanager-25.04.1/doc/
+partitionmanager-25.04.1/doc/usermanual.docbook
+partitionmanager-25.04.1/doc/credits.docbook
+partitionmanager-25.04.1/doc/resize_howto_6.png
+partitionmanager-25.04.1/doc/referencemanual.docbook
+partitionmanager-25.04.1/doc/index.docbook
+partitionmanager-25.04.1/doc/installos_howto_7.png
+partitionmanager-25.04.1/doc/faq.docbook
+partitionmanager-25.04.1/doc/installos_howto_3.png
+partitionmanager-25.04.1/doc/resize_howto_4.png
+partitionmanager-25.04.1/doc/copy_howto_1.png
+partitionmanager-25.04.1/doc/resize_howto_2.png
+partitionmanager-25.04.1/doc/resize_howto_7.png
+partitionmanager-25.04.1/doc/resize_howto_5.png
+partitionmanager-25.04.1/doc/resize_howto_1.png
+partitionmanager-25.04.1/doc/introduction.docbook
+partitionmanager-25.04.1/doc/copyhowto.docbook
+partitionmanager-25.04.1/doc/filesystemsupport.png
+partitionmanager-25.04.1/doc/resize_howto_9.png
+partitionmanager-25.04.1/doc/installos_howto_6.png
+partitionmanager-25.04.1/doc/resize_howto_3.png
+partitionmanager-25.04.1/doc/glossary.docbook
+partitionmanager-25.04.1/doc/mainwindow.png
+partitionmanager-25.04.1/doc/installos_howto_5.png
+partitionmanager-25.04.1/doc/installos_howto_4.png
+partitionmanager-25.04.1/doc/installoshowto.docbook
+partitionmanager-25.04.1/doc/installos_howto_1.png
+partitionmanager-25.04.1/doc/copy_howto_2.png
+partitionmanager-25.04.1/doc/resize_howto_8.png
+partitionmanager-25.04.1/doc/CMakeLists.txt
+partitionmanager-25.04.1/doc/resizehowto.docbook
+partitionmanager-25.04.1/doc/installos_howto_2.png
+partitionmanager-25.04.1/.kde-ci.yml
+partitionmanager-25.04.1/po/
+partitionmanager-25.04.1/po/bg/
+partitionmanager-25.04.1/po/bg/partitionmanager.po
+partitionmanager-25.04.1/po/pt/
+partitionmanager-25.04.1/po/pt/partitionmanager.po
+partitionmanager-25.04.1/po/pt/docs/
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/pt/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/nn/
+partitionmanager-25.04.1/po/nn/partitionmanager.po
+partitionmanager-25.04.1/po/pl/
+partitionmanager-25.04.1/po/pl/partitionmanager.po
+partitionmanager-25.04.1/po/ja/
+partitionmanager-25.04.1/po/ja/partitionmanager.po
+partitionmanager-25.04.1/po/pa/
+partitionmanager-25.04.1/po/pa/partitionmanager.po
+partitionmanager-25.04.1/po/bs/
+partitionmanager-25.04.1/po/bs/partitionmanager.po
+partitionmanager-25.04.1/po/zh_CN/
+partitionmanager-25.04.1/po/zh_CN/partitionmanager.po
+partitionmanager-25.04.1/po/cs/
+partitionmanager-25.04.1/po/cs/partitionmanager.po
+partitionmanager-25.04.1/po/es/
+partitionmanager-25.04.1/po/es/partitionmanager.po
+partitionmanager-25.04.1/po/es/docs/
+partitionmanager-25.04.1/po/es/docs/partitionmanager/
+partitionmanager-25.04.1/po/es/docs/partitionmanager/appendix.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/es/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/ka/
+partitionmanager-25.04.1/po/ka/partitionmanager.po
+partitionmanager-25.04.1/po/is/
+partitionmanager-25.04.1/po/is/partitionmanager.po
+partitionmanager-25.04.1/po/tr/
+partitionmanager-25.04.1/po/tr/partitionmanager.po
+partitionmanager-25.04.1/po/tr/docs/
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_6.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/installos_howto_7.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/installos_howto_3.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_4.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/copy_howto_1.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_2.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_7.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_5.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_1.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/filesystemsupport.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_9.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/installos_howto_6.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_3.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/mainwindow.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/installos_howto_5.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/installos_howto_4.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/installos_howto_1.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/copy_howto_2.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resize_howto_8.png
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/tr/docs/partitionmanager/installos_howto_2.png
+partitionmanager-25.04.1/po/ug/
+partitionmanager-25.04.1/po/ug/partitionmanager.po
+partitionmanager-25.04.1/po/ca/
+partitionmanager-25.04.1/po/ca/partitionmanager.po
+partitionmanager-25.04.1/po/ca/docs/
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/ca/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/ca@valencia/
+partitionmanager-25.04.1/po/ca@valencia/partitionmanager.po
+partitionmanager-25.04.1/po/hr/
+partitionmanager-25.04.1/po/hr/partitionmanager.po
+partitionmanager-25.04.1/po/gl/
+partitionmanager-25.04.1/po/gl/partitionmanager.po
+partitionmanager-25.04.1/po/ro/
+partitionmanager-25.04.1/po/ro/partitionmanager.po
+partitionmanager-25.04.1/po/eo/
+partitionmanager-25.04.1/po/eo/partitionmanager.po
+partitionmanager-25.04.1/po/sr@ijekavian/
+partitionmanager-25.04.1/po/sr@ijekavian/partitionmanager.po
+partitionmanager-25.04.1/po/nl/
+partitionmanager-25.04.1/po/nl/partitionmanager.po
+partitionmanager-25.04.1/po/nl/docs/
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/appendix.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/nl/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/mr/
+partitionmanager-25.04.1/po/mr/partitionmanager.po
+partitionmanager-25.04.1/po/hu/
+partitionmanager-25.04.1/po/hu/partitionmanager.po
+partitionmanager-25.04.1/po/eu/
+partitionmanager-25.04.1/po/eu/partitionmanager.po
+partitionmanager-25.04.1/po/lv/
+partitionmanager-25.04.1/po/lv/partitionmanager.po
+partitionmanager-25.04.1/po/nb/
+partitionmanager-25.04.1/po/nb/partitionmanager.po
+partitionmanager-25.04.1/po/fr/
+partitionmanager-25.04.1/po/fr/partitionmanager.po
+partitionmanager-25.04.1/po/fr/docs/
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/fr/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/hi/
+partitionmanager-25.04.1/po/hi/partitionmanager.po
+partitionmanager-25.04.1/po/sl/
+partitionmanager-25.04.1/po/sl/partitionmanager.po
+partitionmanager-25.04.1/po/sl/docs/
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/sl/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/sr@latin/
+partitionmanager-25.04.1/po/sr@latin/partitionmanager.po
+partitionmanager-25.04.1/po/th/
+partitionmanager-25.04.1/po/th/partitionmanager.po
+partitionmanager-25.04.1/po/ta/
+partitionmanager-25.04.1/po/ta/partitionmanager.po
+partitionmanager-25.04.1/po/sr/
+partitionmanager-25.04.1/po/sr/partitionmanager.po
+partitionmanager-25.04.1/po/he/
+partitionmanager-25.04.1/po/he/partitionmanager.po
+partitionmanager-25.04.1/po/de/
+partitionmanager-25.04.1/po/de/partitionmanager.po
+partitionmanager-25.04.1/po/de/docs/
+partitionmanager-25.04.1/po/de/docs/partitionmanager/
+partitionmanager-25.04.1/po/de/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/de/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/ar/
+partitionmanager-25.04.1/po/ar/partitionmanager.po
+partitionmanager-25.04.1/po/sk/
+partitionmanager-25.04.1/po/sk/partitionmanager.po
+partitionmanager-25.04.1/po/zh_TW/
+partitionmanager-25.04.1/po/zh_TW/partitionmanager.po
+partitionmanager-25.04.1/po/et/
+partitionmanager-25.04.1/po/et/partitionmanager.po
+partitionmanager-25.04.1/po/et/docs/
+partitionmanager-25.04.1/po/et/docs/partitionmanager/
+partitionmanager-25.04.1/po/et/docs/partitionmanager/appendix.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/et/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/it/
+partitionmanager-25.04.1/po/it/partitionmanager.po
+partitionmanager-25.04.1/po/it/docs/
+partitionmanager-25.04.1/po/it/docs/partitionmanager/
+partitionmanager-25.04.1/po/it/docs/partitionmanager/appendix.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_6.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/installos_howto_7.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/installos_howto_3.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_4.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/copy_howto_1.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_2.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_7.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_5.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_1.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/filesystemsupport.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_9.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/installos_howto_6.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_3.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/mainwindow.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/installos_howto_5.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/installos_howto_4.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/installos_howto_1.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/copy_howto_2.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resize_howto_8.png
+partitionmanager-25.04.1/po/it/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/it/docs/partitionmanager/installos_howto_2.png
+partitionmanager-25.04.1/po/mai/
+partitionmanager-25.04.1/po/mai/partitionmanager.po
+partitionmanager-25.04.1/po/el/
+partitionmanager-25.04.1/po/el/partitionmanager.po
+partitionmanager-25.04.1/po/da/
+partitionmanager-25.04.1/po/da/partitionmanager.po
+partitionmanager-25.04.1/po/pt_BR/
+partitionmanager-25.04.1/po/pt_BR/partitionmanager.po
+partitionmanager-25.04.1/po/pt_BR/docs/
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/appendix.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/pt_BR/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/ru/
+partitionmanager-25.04.1/po/ru/partitionmanager.po
+partitionmanager-25.04.1/po/id/
+partitionmanager-25.04.1/po/id/partitionmanager.po
+partitionmanager-25.04.1/po/id/docs/
+partitionmanager-25.04.1/po/id/docs/partitionmanager/
+partitionmanager-25.04.1/po/id/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/id/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/ia/
+partitionmanager-25.04.1/po/ia/partitionmanager.po
+partitionmanager-25.04.1/po/sv/
+partitionmanager-25.04.1/po/sv/partitionmanager.po
+partitionmanager-25.04.1/po/sv/docs/
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/appendix.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/sv/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/fi/
+partitionmanager-25.04.1/po/fi/partitionmanager.po
+partitionmanager-25.04.1/po/ast/
+partitionmanager-25.04.1/po/ast/partitionmanager.po
+partitionmanager-25.04.1/po/lt/
+partitionmanager-25.04.1/po/lt/partitionmanager.po
+partitionmanager-25.04.1/po/sa/
+partitionmanager-25.04.1/po/sa/partitionmanager.po
+partitionmanager-25.04.1/po/ko/
+partitionmanager-25.04.1/po/ko/partitionmanager.po
+partitionmanager-25.04.1/po/ga/
+partitionmanager-25.04.1/po/ga/partitionmanager.po
+partitionmanager-25.04.1/po/en_GB/
+partitionmanager-25.04.1/po/en_GB/partitionmanager.po
+partitionmanager-25.04.1/po/uk/
+partitionmanager-25.04.1/po/uk/partitionmanager.po
+partitionmanager-25.04.1/po/uk/docs/
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/usermanual.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/credits.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/referencemanual.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/index.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/faq.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/introduction.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/copyhowto.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/glossary.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/installoshowto.docbook
+partitionmanager-25.04.1/po/uk/docs/partitionmanager/resizehowto.docbook
+partitionmanager-25.04.1/po/sr@ijekavianlatin/
+partitionmanager-25.04.1/po/sr@ijekavianlatin/partitionmanager.po
+partitionmanager-25.04.1/po/nds/
+partitionmanager-25.04.1/po/nds/partitionmanager.po
+partitionmanager-25.04.1/po/az/
+partitionmanager-25.04.1/po/az/partitionmanager.po
+partitionmanager-25.04.1/INSTALL.md
+partitionmanager-25.04.1/CMakeLists.txt
+partitionmanager-25.04.1/src/
+partitionmanager-25.04.1/src/open_in_partitionmanager.desktop
+partitionmanager-25.04.1/src/gui/
+partitionmanager-25.04.1/src/gui/applyprogressdialogwidget.cpp
+partitionmanager-25.04.1/src/gui/filesystemsupportdialogwidgetbase.ui
+partitionmanager-25.04.1/src/gui/filesystemsupportdialogwidget.cpp
+partitionmanager-25.04.1/src/gui/applyprogressdetailswidgetbase.ui
+partitionmanager-25.04.1/src/gui/treelogbase.ui
+partitionmanager-25.04.1/src/gui/devicepropswidgetbase.ui
+partitionmanager-25.04.1/src/gui/parttablewidget.cpp
+partitionmanager-25.04.1/src/gui/volumegroupdialog.cpp
+partitionmanager-25.04.1/src/gui/partitionmanagerui.rc
+partitionmanager-25.04.1/src/gui/formattedspinbox.h
+partitionmanager-25.04.1/src/gui/partpropswidgetbase.ui
+partitionmanager-25.04.1/src/gui/partpropsdialog.cpp
+partitionmanager-25.04.1/src/gui/smartdialogwidget.h
+partitionmanager-25.04.1/src/gui/devicepropsdialog.cpp
+partitionmanager-25.04.1/src/gui/editmountoptionsdialog.cpp
+partitionmanager-25.04.1/src/gui/volumegroupdialog.h
+partitionmanager-25.04.1/src/gui/listdevices.cpp
+partitionmanager-25.04.1/src/gui/resizedialog.h
+partitionmanager-25.04.1/src/gui/createvolumegroupdialog.h
+partitionmanager-25.04.1/src/gui/applyprogressdialogwidget.h
+partitionmanager-25.04.1/src/gui/sizedetailswidgetbase.ui
+partitionmanager-25.04.1/src/gui/listoperationsbase.ui
+partitionmanager-25.04.1/src/gui/editmountpointdialogwidget.cpp
+partitionmanager-25.04.1/src/gui/resizevolumegroupdialog.h
+partitionmanager-25.04.1/src/gui/partitionmanagerwidget.h
+partitionmanager-25.04.1/src/gui/createpartitiontablewidgetbase.ui
+partitionmanager-25.04.1/src/gui/filesystemsupportdialog.cpp
+partitionmanager-25.04.1/src/gui/filesystemsupportdialog.h
+partitionmanager-25.04.1/src/gui/createpartitiontabledialog.cpp
+partitionmanager-25.04.1/src/gui/partpropswidget.h
+partitionmanager-25.04.1/src/gui/partpropsdialog.h
+partitionmanager-25.04.1/src/gui/scanprogressdialog.h
+partitionmanager-25.04.1/src/gui/devicepropswidget.cpp
+partitionmanager-25.04.1/src/gui/volumegroupwidgetbase.ui
+partitionmanager-25.04.1/src/gui/createpartitiontabledialog.h
+partitionmanager-25.04.1/src/gui/resizedialog.cpp
+partitionmanager-25.04.1/src/gui/mainwindow.h
+partitionmanager-25.04.1/src/gui/editmountpointdialog.cpp
+partitionmanager-25.04.1/src/gui/sizedialogbase.h
+partitionmanager-25.04.1/src/gui/sizedetailswidget.cpp
+partitionmanager-25.04.1/src/gui/insertdialog.cpp
+partitionmanager-25.04.1/src/gui/listoperations.cpp
+partitionmanager-25.04.1/src/gui/infopane.cpp
+partitionmanager-25.04.1/src/gui/treelog.cpp
+partitionmanager-25.04.1/src/gui/newdialog.cpp
+partitionmanager-25.04.1/src/gui/insertdialog.h
+partitionmanager-25.04.1/src/gui/sizedialogbase.cpp
+partitionmanager-25.04.1/src/gui/treelog.h
+partitionmanager-25.04.1/src/gui/editmountoptionsdialogwidgetbase.ui
+partitionmanager-25.04.1/src/gui/createpartitiontablewidget.cpp
+partitionmanager-25.04.1/src/gui/sizedialogwidget.h
+partitionmanager-25.04.1/src/gui/editmountpointdialogwidgetbase.ui
+partitionmanager-25.04.1/src/gui/partitionmanagerwidget.cpp
+partitionmanager-25.04.1/src/gui/mainwindow.cpp
+partitionmanager-25.04.1/src/gui/applyprogressdialog.h
+partitionmanager-25.04.1/src/gui/sizedialogwidget.cpp
+partitionmanager-25.04.1/src/gui/scanprogressdialog.cpp
+partitionmanager-25.04.1/src/gui/volumegroupwidget.h
+partitionmanager-25.04.1/src/gui/applyprogressdialog.cpp
+partitionmanager-25.04.1/src/gui/listoperations.h
+partitionmanager-25.04.1/src/gui/listphysicalvolumes.cpp
+partitionmanager-25.04.1/src/gui/createvolumegroupdialog.cpp
+partitionmanager-25.04.1/src/gui/volumegroupwidget.cpp
+partitionmanager-25.04.1/src/gui/mainwindowbase.ui
+partitionmanager-25.04.1/src/gui/devicepropsdialog.h
+partitionmanager-25.04.1/src/gui/applyprogressdetailswidget.cpp
+partitionmanager-25.04.1/src/gui/applyprogressdialogwidgetbase.ui
+partitionmanager-25.04.1/src/gui/listdevicesbase.ui
+partitionmanager-25.04.1/src/gui/listphysicalvolumesbase.ui
+partitionmanager-25.04.1/src/gui/devicepropswidget.h
+partitionmanager-25.04.1/src/gui/sizedetailswidget.h
+partitionmanager-25.04.1/src/gui/applyprogressdetailswidget.h
+partitionmanager-25.04.1/src/gui/editmountoptionsdialogwidget.h
+partitionmanager-25.04.1/src/gui/resizevolumegroupdialog.cpp
+partitionmanager-25.04.1/src/gui/listdevices.h
+partitionmanager-25.04.1/src/gui/listphysicalvolumes.h
+partitionmanager-25.04.1/src/gui/editmountoptionsdialog.h
+partitionmanager-25.04.1/src/gui/smartdialog.h
+partitionmanager-25.04.1/src/gui/partitionmanagerwidgetbase.ui
+partitionmanager-25.04.1/src/gui/parttablewidget.h
+partitionmanager-25.04.1/src/gui/CMakeLists.txt
+partitionmanager-25.04.1/src/gui/editmountoptionsdialogwidget.cpp
+partitionmanager-25.04.1/src/gui/createpartitiontablewidget.h
+partitionmanager-25.04.1/src/gui/partitionmanager.qrc
+partitionmanager-25.04.1/src/gui/sizedialogwidgetbase.ui
+partitionmanager-25.04.1/src/gui/smartdialogwidgetbase.ui
+partitionmanager-25.04.1/src/gui/newdialog.h
+partitionmanager-25.04.1/src/gui/smartdialog.cpp
+partitionmanager-25.04.1/src/gui/editmountpointdialog.h
+partitionmanager-25.04.1/src/gui/formattedspinbox.cpp
+partitionmanager-25.04.1/src/gui/editmountpointdialogwidget.h
+partitionmanager-25.04.1/src/gui/filesystemsupportdialogwidget.h
+partitionmanager-25.04.1/src/gui/smartdialogwidget.cpp
+partitionmanager-25.04.1/src/gui/infopane.h
+partitionmanager-25.04.1/src/Messages.sh
+partitionmanager-25.04.1/src/util/
+partitionmanager-25.04.1/src/util/guihelpers.h
+partitionmanager-25.04.1/src/util/guihelpers.cpp
+partitionmanager-25.04.1/src/util/CMakeLists.txt
+partitionmanager-25.04.1/src/org.kde.partitionmanager.appdata.xml
+partitionmanager-25.04.1/src/main.cpp
+partitionmanager-25.04.1/src/org.kde.partitionmanager.desktop
+partitionmanager-25.04.1/src/config/
+partitionmanager-25.04.1/src/config/generalpagewidget.h
+partitionmanager-25.04.1/src/config/configureoptionsdialog.cpp
+partitionmanager-25.04.1/src/config/advancedpagewidget.cpp
+partitionmanager-25.04.1/src/config/filesystemcolorspagewidget.cpp
+partitionmanager-25.04.1/src/config/filesystemcolorspagewidget.h
+partitionmanager-25.04.1/src/config/configurepagefilesystemcolors.ui
+partitionmanager-25.04.1/src/config/configureoptionsdialog.h
+partitionmanager-25.04.1/src/config/advancedpagewidget.h
+partitionmanager-25.04.1/src/config/generalpagewidget.cpp
+partitionmanager-25.04.1/src/config/CMakeLists.txt
+partitionmanager-25.04.1/src/config/configurepageadvanced.ui
+partitionmanager-25.04.1/src/config/configurepagegeneral.ui
+partitionmanager-25.04.1/src/config.kcfgc
+partitionmanager-25.04.1/src/CMakeLists.txt
+partitionmanager-25.04.1/src/partitionmanager.kcfg
+partitionmanager-25.04.1/src/org.kde.partitionmanager.xml
+partitionmanager-25.04.1/.gitignore
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6ConfigWidgets: /usr/lib64/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.14.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6JobWidgets: /usr/lib64/cmake/KF6JobWidgets/KF6JobWidgetsConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.14.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.14.0")
+-- Found KF6DocTools: /usr/lib64/cmake/KF6DocTools/KF6DocToolsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "5.240.0") found components: Config ConfigWidgets CoreAddons Crash DBusAddons I18n JobWidgets KIO WidgetsAddons WindowSystem XmlGui DocTools
+-- KDE Partition Manager 25.04.1 will be built for install into /usr
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6Core (required version >= 6.7.0)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6Gui (required version >= 6.7.0)
+ * KF6DocTools (required version >= 5.240.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.240.0)
+ * KF6Config (required version >= 6.14.0)
+ * KF6Crash (required version >= 5.240.0)
+ * KF6DBusAddons (required version >= 5.240.0)
+ * Gettext
+ * KF6I18n (required version >= 5.240.0)
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6JobWidgets (required version >= 6.14.0)
+ * KF6KIO (required version >= 5.240.0)
+ * KF6WidgetsAddons (required version >= 5.240.0)
+ * KF6WindowSystem (required version >= 5.240.0)
+ * KF6ConfigWidgets (required version >= 6.14.0)
+ * KF6XmlGui (required version >= 5.240.0)
+ * KF6 (required version >= 5.240.0)
+ * PolkitQt6-1
+ * Qt6 (required version >= 6.5.0)
+ * KPMcore (required version >= 25.04)
+
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/work/partitionmanager-25.04.1/build
+[1/86] Generating ts...
+[2/86] Generating mo...
+[3/86] Generating po/tr/docs/partitionmanager/index.cache.bz2
+[4/86] Generating po/nl/docs/partitionmanager/index.cache.bz2
+[5/86] Generating po/id/docs/partitionmanager/index.cache.bz2
+[6/86] Generating index.cache.bz2
+[7/86] Generating po/et/docs/partitionmanager/index.cache.bz2
+[8/86] Generating po/sl/docs/partitionmanager/index.cache.bz2
+[9/86] Generating po/sv/docs/partitionmanager/index.cache.bz2
+[10/86] Generating po/ca/docs/partitionmanager/index.cache.bz2
+[11/86] Generating po/fr/docs/partitionmanager/index.cache.bz2
+[12/86] Generating po/es/docs/partitionmanager/index.cache.bz2
+[13/86] Generating po/de/docs/partitionmanager/index.cache.bz2
+[14/86] Generating po/uk/docs/partitionmanager/index.cache.bz2
+[15/86] Generating po/it/docs/partitionmanager/index.cache.bz2
+[16/86] Generating po/pt_BR/docs/partitionmanager/index.cache.bz2
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/pt-BR.xml": No such file or directory
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+[17/86] Automatic MOC for target partitionmanager
+[18/86] Generating ui_applyprogressdetailswidgetbase.h
+[19/86] Generating ui_applyprogressdialogwidgetbase.h
+[20/86] Generating ui_createpartitiontablewidgetbase.h
+[21/86] Generating ui_editmountoptionsdialogwidgetbase.h
+[22/86] Generating ui_listphysicalvolumesbase.h
+[23/86] Generating ui_devicepropswidgetbase.h
+[24/86] Generating ui_editmountpointdialogwidgetbase.h
+[25/86] Generating ui_mainwindowbase.h
+[26/86] Generating ui_partitionmanagerwidgetbase.h
+[27/86] Generating ui_configurepageadvanced.h
+[28/86] Generating ui_filesystemsupportdialogwidgetbase.h
+[29/86] Generating ui_listdevicesbase.h
+[30/86] Generating ui_partpropswidgetbase.h
+[31/86] Generating ui_sizedialogwidgetbase.h
+[32/86] Generating ui_smartdialogwidgetbase.h
+[33/86] Generating ui_listoperationsbase.h
+[34/86] Generating ui_sizedetailswidgetbase.h
+[35/86] Generating ui_configurepagefilesystemcolors.h
+[36/86] Generating config.h, config.cpp
+[37/86] Generating ui_configurepagegeneral.h
+[38/86] Generating ui_treelogbase.h
+[39/86] Generating ui_volumegroupwidgetbase.h
+[40/86] Automatic RCC for gui/partitionmanager.qrc
+[41/86] Building CXX object src/CMakeFiles/partitionmanager.dir/partitionmanager_autogen/mocs_compilation.cpp.o
+[42/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/editmountoptionsdialogwidget.cpp.o
+[43/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/applyprogressdetailswidget.cpp.o
+[44/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/devicepropswidget.cpp.o
+[45/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/applyprogressdialogwidget.cpp.o
+[46/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/filesystemsupportdialogwidget.cpp.o
+[47/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/createpartitiontablewidget.cpp.o
+[48/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/devicepropsdialog.cpp.o
+[49/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/filesystemsupportdialog.cpp.o
+[50/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/formattedspinbox.cpp.o
+[51/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/editmountpointdialog.cpp.o
+[52/86] Building CXX object src/CMakeFiles/partitionmanager.dir/config/filesystemcolorspagewidget.cpp.o
+[53/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/createvolumegroupdialog.cpp.o
+[54/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/infopane.cpp.o
+[55/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/createpartitiontabledialog.cpp.o
+[56/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/insertdialog.cpp.o
+[57/86] Building CXX object src/CMakeFiles/partitionmanager.dir/config/generalpagewidget.cpp.o
+[58/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/editmountoptionsdialog.cpp.o
+[59/86] Building CXX object src/CMakeFiles/partitionmanager.dir/main.cpp.o
+[60/86] Building CXX object src/CMakeFiles/partitionmanager.dir/config/configureoptionsdialog.cpp.o
+[61/86] Building CXX object src/CMakeFiles/partitionmanager.dir/config/advancedpagewidget.cpp.o
+[62/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/editmountpointdialogwidget.cpp.o
+[63/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/listdevices.cpp.o
+[64/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/listoperations.cpp.o
+[65/86] Building CXX object src/CMakeFiles/partitionmanager.dir/partitionmanager_autogen/DMHXEJ42XS/qrc_partitionmanager.cpp.o
+[66/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/applyprogressdialog.cpp.o
+[67/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/listphysicalvolumes.cpp.o
+[68/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/sizedetailswidget.cpp.o
+[69/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/scanprogressdialog.cpp.o
+[70/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/sizedialogwidget.cpp.o
+[71/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/resizevolumegroupdialog.cpp.o
+[72/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/volumegroupwidget.cpp.o
+[73/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/parttablewidget.cpp.o
+[74/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/resizedialog.cpp.o
+[75/86] Building CXX object src/CMakeFiles/partitionmanager.dir/util/guihelpers.cpp.o
+[76/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/newdialog.cpp.o
+[77/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/volumegroupdialog.cpp.o
+[78/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/smartdialogwidget.cpp.o
+[79/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/smartdialog.cpp.o
+[80/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/treelog.cpp.o
+[81/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/sizedialogbase.cpp.o
+[82/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/partitionmanagerwidget.cpp.o
+[83/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/partpropsdialog.cpp.o
+[84/86] Building CXX object src/CMakeFiles/partitionmanager.dir/config.cpp.o
+[85/86] Building CXX object src/CMakeFiles/partitionmanager.dir/gui/mainwindow.cpp.o
+[86/86] Linking CXX executable bin/partitionmanager
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/config.kcfg/partitionmanager.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/bin/partitionmanager
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/metainfo/org.kde.partitionmanager.appdata.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/applications/org.kde.partitionmanager.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/solid/actions/open_in_partitionmanager.desktop
+-- Up-to-date: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/solid/actions/open_in_partitionmanager.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/icons/hicolor/scalable/apps/partitionmanager.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/copy_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/copy_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/filesystemsupport.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/installos_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/installos_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/installos_howto_3.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/installos_howto_4.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/installos_howto_5.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/installos_howto_6.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/installos_howto_7.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/mainwindow.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_3.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_4.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_5.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_6.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_7.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_8.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/en/partitionmanager/resize_howto_9.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/ca/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/de/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/appendix.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/es/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/appendix.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/et/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/fr/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/id/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/appendix.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/copy_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/copy_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/filesystemsupport.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/installos_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/installos_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/installos_howto_3.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/installos_howto_4.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/installos_howto_5.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/installos_howto_6.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/installos_howto_7.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/mainwindow.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_3.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_4.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_5.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_6.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_7.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_8.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/it/partitionmanager/resize_howto_9.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/appendix.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/nl/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/appendix.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/pt_BR/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sl/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/appendix.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/sv/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/copy_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/copy_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/filesystemsupport.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/installos_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/installos_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/installos_howto_3.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/installos_howto_4.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/installos_howto_5.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/installos_howto_6.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/installos_howto_7.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/mainwindow.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_2.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_3.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_4.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_5.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_6.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_7.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_8.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/tr/partitionmanager/resize_howto_9.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/copyhowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/credits.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/faq.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/glossary.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/installoshowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/introduction.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/referencemanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/resizehowto.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/doc/HTML/uk/partitionmanager/usermanual.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/da/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/cs/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ja/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@ijekavian/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/de/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/el/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nn/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hi/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pt_BR/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/lt/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pa/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sl/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ta/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ro/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/bs/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/is/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sr@latin/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/he/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/zh_TW/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pl/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/pt/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hr/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/az/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/tr/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/fr/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ast/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/mai
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/mai/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ka/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/th/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/gl/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ia/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/hu/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/eo/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/bg/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ga/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ca/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/uk/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/id/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/en_GB/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/zh_CN/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nl/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sa/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/fi/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ko/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ru/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/lv/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ca@valencia/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nb/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/es/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/eu/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/et/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/it/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ar/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/nds/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/mr/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/ug/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sk/LC_MESSAGES/partitionmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/package-partitionmanager/usr/share/locale/sv/LC_MESSAGES/partitionmanager.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/partitionmanager/partitionmanager.info: No such file or directory
+extra-cmake-modules
+kconfig
+kconfigwidgets
+kcoreaddons
+kcrash
+kdbusaddons
+kdoctools
+ki18n
+kiconthemes
+kio
+kjobwidgets
+kpmcore
+kwidgetsaddons
+kxmlgui
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/partitionmanager/partitionmanager-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/partitionmanager
+usr/doc/
+usr/doc/partitionmanager-25.04.1/
+usr/doc/partitionmanager-25.04.1/README.md
+usr/doc/partitionmanager-25.04.1/partitionmanager.ini
+usr/doc/partitionmanager-25.04.1/slack-required
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.partitionmanager.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/partitionmanager.kcfg
+usr/share/doc/
+usr/share/doc/HTML/
+usr/share/doc/HTML/ca/
+usr/share/doc/HTML/ca/partitionmanager/
+usr/share/doc/HTML/ca/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/ca/partitionmanager/credits.docbook
+usr/share/doc/HTML/ca/partitionmanager/faq.docbook
+usr/share/doc/HTML/ca/partitionmanager/glossary.docbook
+usr/share/doc/HTML/ca/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/ca/partitionmanager/index.docbook
+usr/share/doc/HTML/ca/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/ca/partitionmanager/introduction.docbook
+usr/share/doc/HTML/ca/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/ca/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/ca/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/de/
+usr/share/doc/HTML/de/partitionmanager/
+usr/share/doc/HTML/de/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/de/partitionmanager/credits.docbook
+usr/share/doc/HTML/de/partitionmanager/faq.docbook
+usr/share/doc/HTML/de/partitionmanager/glossary.docbook
+usr/share/doc/HTML/de/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/de/partitionmanager/index.docbook
+usr/share/doc/HTML/de/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/de/partitionmanager/introduction.docbook
+usr/share/doc/HTML/de/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/de/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/de/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/en/
+usr/share/doc/HTML/en/partitionmanager/
+usr/share/doc/HTML/en/partitionmanager/copy_howto_1.png
+usr/share/doc/HTML/en/partitionmanager/copy_howto_2.png
+usr/share/doc/HTML/en/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/en/partitionmanager/credits.docbook
+usr/share/doc/HTML/en/partitionmanager/faq.docbook
+usr/share/doc/HTML/en/partitionmanager/filesystemsupport.png
+usr/share/doc/HTML/en/partitionmanager/glossary.docbook
+usr/share/doc/HTML/en/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/en/partitionmanager/index.docbook
+usr/share/doc/HTML/en/partitionmanager/installos_howto_1.png
+usr/share/doc/HTML/en/partitionmanager/installos_howto_2.png
+usr/share/doc/HTML/en/partitionmanager/installos_howto_3.png
+usr/share/doc/HTML/en/partitionmanager/installos_howto_4.png
+usr/share/doc/HTML/en/partitionmanager/installos_howto_5.png
+usr/share/doc/HTML/en/partitionmanager/installos_howto_6.png
+usr/share/doc/HTML/en/partitionmanager/installos_howto_7.png
+usr/share/doc/HTML/en/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/en/partitionmanager/introduction.docbook
+usr/share/doc/HTML/en/partitionmanager/mainwindow.png
+usr/share/doc/HTML/en/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/en/partitionmanager/resize_howto_1.png
+usr/share/doc/HTML/en/partitionmanager/resize_howto_2.png
+usr/share/doc/HTML/en/partitionmanager/resize_howto_3.png
+usr/share/doc/HTML/en/partitionmanager/resize_howto_4.png
+usr/share/doc/HTML/en/partitionmanager/resize_howto_5.png
+usr/share/doc/HTML/en/partitionmanager/resize_howto_6.png
+usr/share/doc/HTML/en/partitionmanager/resize_howto_7.png
+usr/share/doc/HTML/en/partitionmanager/resize_howto_8.png
+usr/share/doc/HTML/en/partitionmanager/resize_howto_9.png
+usr/share/doc/HTML/en/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/en/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/es/
+usr/share/doc/HTML/es/partitionmanager/
+usr/share/doc/HTML/es/partitionmanager/appendix.docbook
+usr/share/doc/HTML/es/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/es/partitionmanager/credits.docbook
+usr/share/doc/HTML/es/partitionmanager/faq.docbook
+usr/share/doc/HTML/es/partitionmanager/glossary.docbook
+usr/share/doc/HTML/es/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/es/partitionmanager/index.docbook
+usr/share/doc/HTML/es/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/es/partitionmanager/introduction.docbook
+usr/share/doc/HTML/es/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/es/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/es/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/et/
+usr/share/doc/HTML/et/partitionmanager/
+usr/share/doc/HTML/et/partitionmanager/appendix.docbook
+usr/share/doc/HTML/et/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/et/partitionmanager/credits.docbook
+usr/share/doc/HTML/et/partitionmanager/faq.docbook
+usr/share/doc/HTML/et/partitionmanager/glossary.docbook
+usr/share/doc/HTML/et/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/et/partitionmanager/index.docbook
+usr/share/doc/HTML/et/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/et/partitionmanager/introduction.docbook
+usr/share/doc/HTML/et/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/et/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/et/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/fr/
+usr/share/doc/HTML/fr/partitionmanager/
+usr/share/doc/HTML/fr/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/fr/partitionmanager/credits.docbook
+usr/share/doc/HTML/fr/partitionmanager/faq.docbook
+usr/share/doc/HTML/fr/partitionmanager/glossary.docbook
+usr/share/doc/HTML/fr/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/fr/partitionmanager/index.docbook
+usr/share/doc/HTML/fr/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/fr/partitionmanager/introduction.docbook
+usr/share/doc/HTML/fr/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/fr/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/fr/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/id/
+usr/share/doc/HTML/id/partitionmanager/
+usr/share/doc/HTML/id/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/id/partitionmanager/credits.docbook
+usr/share/doc/HTML/id/partitionmanager/faq.docbook
+usr/share/doc/HTML/id/partitionmanager/glossary.docbook
+usr/share/doc/HTML/id/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/id/partitionmanager/index.docbook
+usr/share/doc/HTML/id/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/id/partitionmanager/introduction.docbook
+usr/share/doc/HTML/id/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/id/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/id/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/it/
+usr/share/doc/HTML/it/partitionmanager/
+usr/share/doc/HTML/it/partitionmanager/appendix.docbook
+usr/share/doc/HTML/it/partitionmanager/copy_howto_1.png
+usr/share/doc/HTML/it/partitionmanager/copy_howto_2.png
+usr/share/doc/HTML/it/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/it/partitionmanager/credits.docbook
+usr/share/doc/HTML/it/partitionmanager/faq.docbook
+usr/share/doc/HTML/it/partitionmanager/filesystemsupport.png
+usr/share/doc/HTML/it/partitionmanager/glossary.docbook
+usr/share/doc/HTML/it/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/it/partitionmanager/index.docbook
+usr/share/doc/HTML/it/partitionmanager/installos_howto_1.png
+usr/share/doc/HTML/it/partitionmanager/installos_howto_2.png
+usr/share/doc/HTML/it/partitionmanager/installos_howto_3.png
+usr/share/doc/HTML/it/partitionmanager/installos_howto_4.png
+usr/share/doc/HTML/it/partitionmanager/installos_howto_5.png
+usr/share/doc/HTML/it/partitionmanager/installos_howto_6.png
+usr/share/doc/HTML/it/partitionmanager/installos_howto_7.png
+usr/share/doc/HTML/it/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/it/partitionmanager/introduction.docbook
+usr/share/doc/HTML/it/partitionmanager/mainwindow.png
+usr/share/doc/HTML/it/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/it/partitionmanager/resize_howto_1.png
+usr/share/doc/HTML/it/partitionmanager/resize_howto_2.png
+usr/share/doc/HTML/it/partitionmanager/resize_howto_3.png
+usr/share/doc/HTML/it/partitionmanager/resize_howto_4.png
+usr/share/doc/HTML/it/partitionmanager/resize_howto_5.png
+usr/share/doc/HTML/it/partitionmanager/resize_howto_6.png
+usr/share/doc/HTML/it/partitionmanager/resize_howto_7.png
+usr/share/doc/HTML/it/partitionmanager/resize_howto_8.png
+usr/share/doc/HTML/it/partitionmanager/resize_howto_9.png
+usr/share/doc/HTML/it/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/it/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/nl/
+usr/share/doc/HTML/nl/partitionmanager/
+usr/share/doc/HTML/nl/partitionmanager/appendix.docbook
+usr/share/doc/HTML/nl/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/nl/partitionmanager/credits.docbook
+usr/share/doc/HTML/nl/partitionmanager/faq.docbook
+usr/share/doc/HTML/nl/partitionmanager/glossary.docbook
+usr/share/doc/HTML/nl/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/nl/partitionmanager/index.docbook
+usr/share/doc/HTML/nl/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/nl/partitionmanager/introduction.docbook
+usr/share/doc/HTML/nl/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/nl/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/nl/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/pt_BR/
+usr/share/doc/HTML/pt_BR/partitionmanager/
+usr/share/doc/HTML/pt_BR/partitionmanager/appendix.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/credits.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/faq.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/glossary.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/pt_BR/partitionmanager/index.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/introduction.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/pt_BR/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/sl/
+usr/share/doc/HTML/sl/partitionmanager/
+usr/share/doc/HTML/sl/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/sl/partitionmanager/credits.docbook
+usr/share/doc/HTML/sl/partitionmanager/faq.docbook
+usr/share/doc/HTML/sl/partitionmanager/glossary.docbook
+usr/share/doc/HTML/sl/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/sl/partitionmanager/index.docbook
+usr/share/doc/HTML/sl/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/sl/partitionmanager/introduction.docbook
+usr/share/doc/HTML/sl/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/sl/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/sl/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/sv/
+usr/share/doc/HTML/sv/partitionmanager/
+usr/share/doc/HTML/sv/partitionmanager/appendix.docbook
+usr/share/doc/HTML/sv/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/sv/partitionmanager/credits.docbook
+usr/share/doc/HTML/sv/partitionmanager/faq.docbook
+usr/share/doc/HTML/sv/partitionmanager/glossary.docbook
+usr/share/doc/HTML/sv/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/sv/partitionmanager/index.docbook
+usr/share/doc/HTML/sv/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/sv/partitionmanager/introduction.docbook
+usr/share/doc/HTML/sv/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/sv/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/sv/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/tr/
+usr/share/doc/HTML/tr/partitionmanager/
+usr/share/doc/HTML/tr/partitionmanager/copy_howto_1.png
+usr/share/doc/HTML/tr/partitionmanager/copy_howto_2.png
+usr/share/doc/HTML/tr/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/tr/partitionmanager/credits.docbook
+usr/share/doc/HTML/tr/partitionmanager/faq.docbook
+usr/share/doc/HTML/tr/partitionmanager/filesystemsupport.png
+usr/share/doc/HTML/tr/partitionmanager/glossary.docbook
+usr/share/doc/HTML/tr/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/tr/partitionmanager/index.docbook
+usr/share/doc/HTML/tr/partitionmanager/installos_howto_1.png
+usr/share/doc/HTML/tr/partitionmanager/installos_howto_2.png
+usr/share/doc/HTML/tr/partitionmanager/installos_howto_3.png
+usr/share/doc/HTML/tr/partitionmanager/installos_howto_4.png
+usr/share/doc/HTML/tr/partitionmanager/installos_howto_5.png
+usr/share/doc/HTML/tr/partitionmanager/installos_howto_6.png
+usr/share/doc/HTML/tr/partitionmanager/installos_howto_7.png
+usr/share/doc/HTML/tr/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/tr/partitionmanager/introduction.docbook
+usr/share/doc/HTML/tr/partitionmanager/mainwindow.png
+usr/share/doc/HTML/tr/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_1.png
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_2.png
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_3.png
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_4.png
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_5.png
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_6.png
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_7.png
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_8.png
+usr/share/doc/HTML/tr/partitionmanager/resize_howto_9.png
+usr/share/doc/HTML/tr/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/tr/partitionmanager/usermanual.docbook
+usr/share/doc/HTML/uk/
+usr/share/doc/HTML/uk/partitionmanager/
+usr/share/doc/HTML/uk/partitionmanager/copyhowto.docbook
+usr/share/doc/HTML/uk/partitionmanager/credits.docbook
+usr/share/doc/HTML/uk/partitionmanager/faq.docbook
+usr/share/doc/HTML/uk/partitionmanager/glossary.docbook
+usr/share/doc/HTML/uk/partitionmanager/index.cache.bz2
+usr/share/doc/HTML/uk/partitionmanager/index.docbook
+usr/share/doc/HTML/uk/partitionmanager/installoshowto.docbook
+usr/share/doc/HTML/uk/partitionmanager/introduction.docbook
+usr/share/doc/HTML/uk/partitionmanager/referencemanual.docbook
+usr/share/doc/HTML/uk/partitionmanager/resizehowto.docbook
+usr/share/doc/HTML/uk/partitionmanager/usermanual.docbook
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/partitionmanager.svg
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/mai/
+usr/share/locale/mai/LC_MESSAGES/
+usr/share/locale/mai/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/partitionmanager.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/partitionmanager.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.partitionmanager.appdata.xml
+usr/share/solid/
+usr/share/solid/actions/
+usr/share/solid/actions/open_in_partitionmanager.desktop
+
+Slackware package /tmp/partitionmanager/partitionmanager-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for partitionmanager-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/partitionmanager/partitionmanager-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/partitionmanager/partitionmanager-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/partitionmanager/partitionmanager-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in partitionmanager.tar.lz4 format.
+/tmp/partitionmanager /tmp/partitionmanager
+/tmp/partitionmanager
+BIN_NAME
+README
+makepkg-partitionmanager.log
+partitionmanager-25.04.1-x86_64-1_rtz.tlz
+partitionmanager-25.04.1-x86_64-1_rtz.tlz.md5
+partitionmanager-25.04.1-x86_64-1_rtz.tlz.so.file
+partitionmanager-25.04.1-x86_64-1_rtz.tlz.txt
+partitionmanager.dep
+partitionmanager build finished. Procced to installation...
+
++===============================================================================================================================+
+| Upgrading partitionmanager-25.04.1-x86_64-1_rtz package using /tmp/partitionmanager/partitionmanager-25.04.1-x86_64-1_rtz.tlz |
++===============================================================================================================================+
+
+Pre-installing package partitionmanager-25.04.1-x86_64-1_rtz...
+Removing package: partitionmanager-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:23:17
+Installing package partitionmanager-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# partitionmanager (manage disks partitions)
+#
+# A KDE utility that allows you to manage disks, partitions, and file
+# systems
+#
+# https://kde.org/applications/system/
+Executing install script for partitionmanager-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package partitionmanager-25.04.1-x86_64-1_rtz.tlz installed.
+Package partitionmanager-25.04.1-x86_64-1_rtz upgraded with new package /tmp/partitionmanager/partitionmanager-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'partitionmanager-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 25 seconds.

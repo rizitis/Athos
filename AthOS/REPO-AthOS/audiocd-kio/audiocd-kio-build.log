@@ -1,0 +1,2428 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	flac	kcmutils	kconfig	kdoctools	ki18n	kio	libkcddb	libkcompactdisc	libvorbis
+extra-cmake-modules is already installed!
+flac is already installed!
+kcmutils is already installed!
+kconfig is already installed!
+kdoctools is already installed!
+ki18n is already installed!
+kio is already installed!
+libkcddb is already installed!
+libkcompactdisc is already installed!
+libvorbis is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 23:41:01--  https://download.kde.org/stable/release-service/25.04.1/src/audiocd-kio-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/audiocd-kio-25.04.1.tar.xz [following]
+--2025-05-10 23:41:01--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/audiocd-kio-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 583956 (570K) [application/octet-stream]
+Saving to: ‘audiocd-kio-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  8% 1.34M 0s
+    50K .......... .......... .......... .......... .......... 17% 1.44M 0s
+   100K .......... .......... .......... .......... .......... 26% 5.05M 0s
+   150K .......... .......... .......... .......... .......... 35% 2.13M 0s
+   200K .......... .......... .......... .......... .......... 43% 7.31M 0s
+   250K .......... .......... .......... .......... .......... 52% 4.74M 0s
+   300K .......... .......... .......... .......... .......... 61% 6.99M 0s
+   350K .......... .......... .......... .......... .......... 70% 1.10M 0s
+   400K .......... .......... .......... .......... .......... 78%  322M 0s
+   450K .......... .......... .......... .......... .......... 87%  344M 0s
+   500K .......... .......... .......... .......... .......... 96%  361M 0s
+   550K .......... ..........                                 100%  487M=0.2s
+
+2025-05-10 23:41:02 (3.24 MB/s) - ‘audiocd-kio-25.04.1.tar.xz’ saved [583956/583956]
+
+Found file: audiocd-kio-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+audiocd-kio-25.04.1/
+audiocd-kio-25.04.1/cmake/
+audiocd-kio-25.04.1/cmake/FindOggVorbis.cmake
+audiocd-kio-25.04.1/cmake/FindCdparanoia.cmake
+audiocd-kio-25.04.1/cmake/FindFLAC.cmake
+audiocd-kio-25.04.1/cmake/COPYING-CMAKE-SCRIPTS
+audiocd-kio-25.04.1/Mainpage.dox
+audiocd-kio-25.04.1/HACKING
+audiocd-kio-25.04.1/CMakePresets.json.license
+audiocd-kio-25.04.1/CMakePresets.json
+audiocd-kio-25.04.1/Messages.sh
+audiocd-kio-25.04.1/.gitlab-ci.yml
+audiocd-kio-25.04.1/doc/
+audiocd-kio-25.04.1/doc/index.docbook
+audiocd-kio-25.04.1/doc/CMakeLists.txt
+audiocd-kio-25.04.1/data/
+audiocd-kio-25.04.1/data/solid_audiocd.desktop
+audiocd-kio-25.04.1/data/audiocd.desktop
+audiocd-kio-25.04.1/data/org.kde.kio_audiocd.metainfo.xml
+audiocd-kio-25.04.1/data/CMakeLists.txt
+audiocd-kio-25.04.1/audiocd.json
+audiocd-kio-25.04.1/logo.png
+audiocd-kio-25.04.1/.git-blame-ignore-revs
+audiocd-kio-25.04.1/audiocd.cpp
+audiocd-kio-25.04.1/kcmaudiocd/
+audiocd-kio-25.04.1/kcmaudiocd/kcmaudiocd.cpp
+audiocd-kio-25.04.1/kcmaudiocd/audiocdconfig.ui
+audiocd-kio-25.04.1/kcmaudiocd/Messages.sh
+audiocd-kio-25.04.1/kcmaudiocd/doc/
+audiocd-kio-25.04.1/kcmaudiocd/doc/flac.png
+audiocd-kio-25.04.1/kcmaudiocd/doc/mp3.png
+audiocd-kio-25.04.1/kcmaudiocd/doc/index.docbook
+audiocd-kio-25.04.1/kcmaudiocd/doc/opus.png
+audiocd-kio-25.04.1/kcmaudiocd/doc/names.png
+audiocd-kio-25.04.1/kcmaudiocd/doc/general.png
+audiocd-kio-25.04.1/kcmaudiocd/doc/CMakeLists.txt
+audiocd-kio-25.04.1/kcmaudiocd/doc/ogg.png
+audiocd-kio-25.04.1/kcmaudiocd/kcm_audiocd.json
+audiocd-kio-25.04.1/kcmaudiocd/kcmaudiocd.h
+audiocd-kio-25.04.1/kcmaudiocd/CMakeLists.txt
+audiocd-kio-25.04.1/.kde-ci.yml
+audiocd-kio-25.04.1/COPYING.DOC
+audiocd-kio-25.04.1/config-audiocd.h.in
+audiocd-kio-25.04.1/audiocd.h
+audiocd-kio-25.04.1/po/
+audiocd-kio-25.04.1/po/fa/
+audiocd-kio-25.04.1/po/fa/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/fa/kio_audiocd.po
+audiocd-kio-25.04.1/po/fa/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/fa/kcmaudiocd.po
+audiocd-kio-25.04.1/po/bg/
+audiocd-kio-25.04.1/po/bg/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/bg/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/bg/kio_audiocd.po
+audiocd-kio-25.04.1/po/bg/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/bg/kcmaudiocd.po
+audiocd-kio-25.04.1/po/bg/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/pt/
+audiocd-kio-25.04.1/po/pt/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/pt/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/pt/kio_audiocd.po
+audiocd-kio-25.04.1/po/pt/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/pt/kcmaudiocd.po
+audiocd-kio-25.04.1/po/pt/docs/
+audiocd-kio-25.04.1/po/pt/docs/kioworker6/
+audiocd-kio-25.04.1/po/pt/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/pt/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/pt/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/km/
+audiocd-kio-25.04.1/po/km/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/km/kio_audiocd.po
+audiocd-kio-25.04.1/po/km/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/km/kcmaudiocd.po
+audiocd-kio-25.04.1/po/nn/
+audiocd-kio-25.04.1/po/nn/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/nn/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/nn/kio_audiocd.po
+audiocd-kio-25.04.1/po/nn/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/nn/kcmaudiocd.po
+audiocd-kio-25.04.1/po/nn/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/pl/
+audiocd-kio-25.04.1/po/pl/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/pl/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/pl/kio_audiocd.po
+audiocd-kio-25.04.1/po/pl/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/pl/kcmaudiocd.po
+audiocd-kio-25.04.1/po/pl/docs/
+audiocd-kio-25.04.1/po/pl/docs/kioworker6/
+audiocd-kio-25.04.1/po/pl/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/pl/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/pl/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/vi/
+audiocd-kio-25.04.1/po/vi/kio_audiocd.po
+audiocd-kio-25.04.1/po/vi/kcmaudiocd.po
+audiocd-kio-25.04.1/po/csb/
+audiocd-kio-25.04.1/po/csb/kio_audiocd.po
+audiocd-kio-25.04.1/po/ja/
+audiocd-kio-25.04.1/po/ja/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ja/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ja/kio_audiocd.po
+audiocd-kio-25.04.1/po/ja/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ja/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ja/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/pa/
+audiocd-kio-25.04.1/po/pa/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/pa/kio_audiocd.po
+audiocd-kio-25.04.1/po/pa/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/pa/kcmaudiocd.po
+audiocd-kio-25.04.1/po/bs/
+audiocd-kio-25.04.1/po/bs/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/bs/kio_audiocd.po
+audiocd-kio-25.04.1/po/bs/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/bs/kcmaudiocd.po
+audiocd-kio-25.04.1/po/zh_CN/
+audiocd-kio-25.04.1/po/zh_CN/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/zh_CN/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/zh_CN/kio_audiocd.po
+audiocd-kio-25.04.1/po/zh_CN/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/zh_CN/kcmaudiocd.po
+audiocd-kio-25.04.1/po/zh_CN/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/cs/
+audiocd-kio-25.04.1/po/cs/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/cs/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/cs/kio_audiocd.po
+audiocd-kio-25.04.1/po/cs/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/cs/kcmaudiocd.po
+audiocd-kio-25.04.1/po/cs/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/es/
+audiocd-kio-25.04.1/po/es/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/es/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/es/kio_audiocd.po
+audiocd-kio-25.04.1/po/es/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/es/kcmaudiocd.po
+audiocd-kio-25.04.1/po/es/docs/
+audiocd-kio-25.04.1/po/es/docs/kcontrol/
+audiocd-kio-25.04.1/po/es/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/es/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/es/docs/kioworker6/
+audiocd-kio-25.04.1/po/es/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/es/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/es/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/ka/
+audiocd-kio-25.04.1/po/ka/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ka/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ka/kio_audiocd.po
+audiocd-kio-25.04.1/po/ka/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ka/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ka/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/is/
+audiocd-kio-25.04.1/po/is/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/is/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/is/kio_audiocd.po
+audiocd-kio-25.04.1/po/is/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/is/kcmaudiocd.po
+audiocd-kio-25.04.1/po/is/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/tr/
+audiocd-kio-25.04.1/po/tr/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/tr/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/tr/kio_audiocd.po
+audiocd-kio-25.04.1/po/tr/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/tr/kcmaudiocd.po
+audiocd-kio-25.04.1/po/tr/docs/
+audiocd-kio-25.04.1/po/tr/docs/kcontrol/
+audiocd-kio-25.04.1/po/tr/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/tr/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/tr/docs/kioworker6/
+audiocd-kio-25.04.1/po/tr/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/tr/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/tr/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/ug/
+audiocd-kio-25.04.1/po/ug/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ug/kio_audiocd.po
+audiocd-kio-25.04.1/po/ug/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ug/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ca/
+audiocd-kio-25.04.1/po/ca/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ca/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ca/kio_audiocd.po
+audiocd-kio-25.04.1/po/ca/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ca/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ca/docs/
+audiocd-kio-25.04.1/po/ca/docs/kcontrol/
+audiocd-kio-25.04.1/po/ca/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/ca/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/ca/docs/kioworker6/
+audiocd-kio-25.04.1/po/ca/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/ca/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/ca/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/se/
+audiocd-kio-25.04.1/po/se/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/se/kio_audiocd.po
+audiocd-kio-25.04.1/po/se/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/se/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ca@valencia/
+audiocd-kio-25.04.1/po/ca@valencia/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ca@valencia/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ca@valencia/kio_audiocd.po
+audiocd-kio-25.04.1/po/ca@valencia/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ca@valencia/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ca@valencia/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/hr/
+audiocd-kio-25.04.1/po/hr/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/hr/kio_audiocd.po
+audiocd-kio-25.04.1/po/hr/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/hr/kcmaudiocd.po
+audiocd-kio-25.04.1/po/gl/
+audiocd-kio-25.04.1/po/gl/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/gl/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/gl/kio_audiocd.po
+audiocd-kio-25.04.1/po/gl/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/gl/kcmaudiocd.po
+audiocd-kio-25.04.1/po/gl/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/ro/
+audiocd-kio-25.04.1/po/ro/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ro/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ro/kio_audiocd.po
+audiocd-kio-25.04.1/po/ro/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ro/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ro/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/oc/
+audiocd-kio-25.04.1/po/oc/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/oc/kio_audiocd.po
+audiocd-kio-25.04.1/po/oc/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/oc/kcmaudiocd.po
+audiocd-kio-25.04.1/po/br/
+audiocd-kio-25.04.1/po/br/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/br/kio_audiocd.po
+audiocd-kio-25.04.1/po/br/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/br/kcmaudiocd.po
+audiocd-kio-25.04.1/po/eo/
+audiocd-kio-25.04.1/po/eo/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/eo/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/eo/kio_audiocd.po
+audiocd-kio-25.04.1/po/eo/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/eo/kcmaudiocd.po
+audiocd-kio-25.04.1/po/eo/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/sr@ijekavian/
+audiocd-kio-25.04.1/po/sr@ijekavian/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sr@ijekavian/kio_audiocd.po
+audiocd-kio-25.04.1/po/sr@ijekavian/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sr@ijekavian/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sr@ijekavian/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/zh_HK/
+audiocd-kio-25.04.1/po/zh_HK/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/zh_HK/kio_audiocd.po
+audiocd-kio-25.04.1/po/zh_HK/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/zh_HK/kcmaudiocd.po
+audiocd-kio-25.04.1/po/nl/
+audiocd-kio-25.04.1/po/nl/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/nl/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/nl/kio_audiocd.po
+audiocd-kio-25.04.1/po/nl/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/nl/kcmaudiocd.po
+audiocd-kio-25.04.1/po/nl/docs/
+audiocd-kio-25.04.1/po/nl/docs/kcontrol/
+audiocd-kio-25.04.1/po/nl/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/nl/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/nl/docs/kioworker6/
+audiocd-kio-25.04.1/po/nl/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/nl/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/nl/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/mr/
+audiocd-kio-25.04.1/po/mr/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/mr/kio_audiocd.po
+audiocd-kio-25.04.1/po/mr/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/mr/kcmaudiocd.po
+audiocd-kio-25.04.1/po/af/
+audiocd-kio-25.04.1/po/af/kio_audiocd.po
+audiocd-kio-25.04.1/po/af/kcmaudiocd.po
+audiocd-kio-25.04.1/po/hu/
+audiocd-kio-25.04.1/po/hu/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/hu/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/hu/kio_audiocd.po
+audiocd-kio-25.04.1/po/hu/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/hu/kcmaudiocd.po
+audiocd-kio-25.04.1/po/hu/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/eu/
+audiocd-kio-25.04.1/po/eu/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/eu/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/eu/kio_audiocd.po
+audiocd-kio-25.04.1/po/eu/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/eu/kcmaudiocd.po
+audiocd-kio-25.04.1/po/eu/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/lv/
+audiocd-kio-25.04.1/po/lv/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/lv/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/lv/kio_audiocd.po
+audiocd-kio-25.04.1/po/lv/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/lv/kcmaudiocd.po
+audiocd-kio-25.04.1/po/lv/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/mk/
+audiocd-kio-25.04.1/po/mk/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/mk/kio_audiocd.po
+audiocd-kio-25.04.1/po/mk/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/mk/kcmaudiocd.po
+audiocd-kio-25.04.1/po/nb/
+audiocd-kio-25.04.1/po/nb/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/nb/kio_audiocd.po
+audiocd-kio-25.04.1/po/nb/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/nb/kcmaudiocd.po
+audiocd-kio-25.04.1/po/fr/
+audiocd-kio-25.04.1/po/fr/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/fr/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/fr/kio_audiocd.po
+audiocd-kio-25.04.1/po/fr/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/fr/kcmaudiocd.po
+audiocd-kio-25.04.1/po/fr/docs/
+audiocd-kio-25.04.1/po/fr/docs/kioworker6/
+audiocd-kio-25.04.1/po/fr/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/fr/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/fr/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/hi/
+audiocd-kio-25.04.1/po/hi/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/hi/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/hi/kio_audiocd.po
+audiocd-kio-25.04.1/po/hi/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/hi/kcmaudiocd.po
+audiocd-kio-25.04.1/po/hi/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/sl/
+audiocd-kio-25.04.1/po/sl/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sl/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/sl/kio_audiocd.po
+audiocd-kio-25.04.1/po/sl/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sl/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sl/docs/
+audiocd-kio-25.04.1/po/sl/docs/kcontrol/
+audiocd-kio-25.04.1/po/sl/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/sl/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/sl/docs/kioworker6/
+audiocd-kio-25.04.1/po/sl/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/sl/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/sl/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/sr@latin/
+audiocd-kio-25.04.1/po/sr@latin/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sr@latin/kio_audiocd.po
+audiocd-kio-25.04.1/po/sr@latin/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sr@latin/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sr@latin/docs/
+audiocd-kio-25.04.1/po/sr@latin/docs/kioworker6/
+audiocd-kio-25.04.1/po/sr@latin/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/sr@latin/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/sr@latin/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/bn/
+audiocd-kio-25.04.1/po/bn/kio_audiocd.po
+audiocd-kio-25.04.1/po/th/
+audiocd-kio-25.04.1/po/th/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/th/kio_audiocd.po
+audiocd-kio-25.04.1/po/th/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/th/kcmaudiocd.po
+audiocd-kio-25.04.1/po/wa/
+audiocd-kio-25.04.1/po/wa/kio_audiocd.po
+audiocd-kio-25.04.1/po/wa/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ta/
+audiocd-kio-25.04.1/po/ta/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ta/kio_audiocd.po
+audiocd-kio-25.04.1/po/ta/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ta/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sr/
+audiocd-kio-25.04.1/po/sr/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sr/kio_audiocd.po
+audiocd-kio-25.04.1/po/sr/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sr/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sr/docs/
+audiocd-kio-25.04.1/po/sr/docs/kioworker6/
+audiocd-kio-25.04.1/po/sr/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/sr/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/sr/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/he/
+audiocd-kio-25.04.1/po/he/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/he/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/he/kio_audiocd.po
+audiocd-kio-25.04.1/po/he/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/he/kcmaudiocd.po
+audiocd-kio-25.04.1/po/he/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/de/
+audiocd-kio-25.04.1/po/de/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/de/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/de/kio_audiocd.po
+audiocd-kio-25.04.1/po/de/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/de/kcmaudiocd.po
+audiocd-kio-25.04.1/po/de/docs/
+audiocd-kio-25.04.1/po/de/docs/kcontrol/
+audiocd-kio-25.04.1/po/de/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/de/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/de/docs/kioworker6/
+audiocd-kio-25.04.1/po/de/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/de/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/de/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/ar/
+audiocd-kio-25.04.1/po/ar/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ar/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ar/kio_audiocd.po
+audiocd-kio-25.04.1/po/ar/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ar/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ar/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/sk/
+audiocd-kio-25.04.1/po/sk/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sk/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/sk/kio_audiocd.po
+audiocd-kio-25.04.1/po/sk/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sk/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sk/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/zh_TW/
+audiocd-kio-25.04.1/po/zh_TW/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/zh_TW/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/zh_TW/kio_audiocd.po
+audiocd-kio-25.04.1/po/zh_TW/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/zh_TW/kcmaudiocd.po
+audiocd-kio-25.04.1/po/zh_TW/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/et/
+audiocd-kio-25.04.1/po/et/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/et/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/et/kio_audiocd.po
+audiocd-kio-25.04.1/po/et/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/et/kcmaudiocd.po
+audiocd-kio-25.04.1/po/et/docs/
+audiocd-kio-25.04.1/po/et/docs/kioworker6/
+audiocd-kio-25.04.1/po/et/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/et/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/et/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/it/
+audiocd-kio-25.04.1/po/it/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/it/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/it/kio_audiocd.po
+audiocd-kio-25.04.1/po/it/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/it/kcmaudiocd.po
+audiocd-kio-25.04.1/po/it/docs/
+audiocd-kio-25.04.1/po/it/docs/kcontrol/
+audiocd-kio-25.04.1/po/it/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/it/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/it/docs/kioworker6/
+audiocd-kio-25.04.1/po/it/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/it/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/it/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/el/
+audiocd-kio-25.04.1/po/el/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/el/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/el/kio_audiocd.po
+audiocd-kio-25.04.1/po/el/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/el/kcmaudiocd.po
+audiocd-kio-25.04.1/po/el/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/da/
+audiocd-kio-25.04.1/po/da/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/da/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/da/kio_audiocd.po
+audiocd-kio-25.04.1/po/da/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/da/kcmaudiocd.po
+audiocd-kio-25.04.1/po/da/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/xh/
+audiocd-kio-25.04.1/po/xh/kio_audiocd.po
+audiocd-kio-25.04.1/po/xh/kcmaudiocd.po
+audiocd-kio-25.04.1/po/pt_BR/
+audiocd-kio-25.04.1/po/pt_BR/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/pt_BR/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/pt_BR/kio_audiocd.po
+audiocd-kio-25.04.1/po/pt_BR/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/pt_BR/kcmaudiocd.po
+audiocd-kio-25.04.1/po/pt_BR/docs/
+audiocd-kio-25.04.1/po/pt_BR/docs/kioworker6/
+audiocd-kio-25.04.1/po/pt_BR/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/pt_BR/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/pt_BR/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/ru/
+audiocd-kio-25.04.1/po/ru/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ru/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ru/kio_audiocd.po
+audiocd-kio-25.04.1/po/ru/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ru/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ru/docs/
+audiocd-kio-25.04.1/po/ru/docs/kcontrol/
+audiocd-kio-25.04.1/po/ru/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/ru/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/ru/docs/kioworker6/
+audiocd-kio-25.04.1/po/ru/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/ru/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/ru/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/sq/
+audiocd-kio-25.04.1/po/sq/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sq/kio_audiocd.po
+audiocd-kio-25.04.1/po/sq/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sq/kcmaudiocd.po
+audiocd-kio-25.04.1/po/id/
+audiocd-kio-25.04.1/po/id/kio_audiocd.po
+audiocd-kio-25.04.1/po/id/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/ia/
+audiocd-kio-25.04.1/po/ia/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ia/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ia/kio_audiocd.po
+audiocd-kio-25.04.1/po/ia/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ia/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ia/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/cy/
+audiocd-kio-25.04.1/po/cy/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/cy/kio_audiocd.po
+audiocd-kio-25.04.1/po/cy/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/cy/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sv/
+audiocd-kio-25.04.1/po/sv/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sv/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/sv/kio_audiocd.po
+audiocd-kio-25.04.1/po/sv/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sv/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sv/docs/
+audiocd-kio-25.04.1/po/sv/docs/kcontrol/
+audiocd-kio-25.04.1/po/sv/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/sv/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/sv/docs/kioworker6/
+audiocd-kio-25.04.1/po/sv/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/sv/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/sv/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/ne/
+audiocd-kio-25.04.1/po/ne/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ne/kio_audiocd.po
+audiocd-kio-25.04.1/po/ne/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ne/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ms/
+audiocd-kio-25.04.1/po/ms/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ms/kio_audiocd.po
+audiocd-kio-25.04.1/po/ms/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ms/kcmaudiocd.po
+audiocd-kio-25.04.1/po/fi/
+audiocd-kio-25.04.1/po/fi/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/fi/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/fi/kio_audiocd.po
+audiocd-kio-25.04.1/po/fi/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/fi/kcmaudiocd.po
+audiocd-kio-25.04.1/po/fi/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/kk/
+audiocd-kio-25.04.1/po/kk/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/kk/kio_audiocd.po
+audiocd-kio-25.04.1/po/kk/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/kk/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ast/
+audiocd-kio-25.04.1/po/ast/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ast/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ast/kio_audiocd.po
+audiocd-kio-25.04.1/po/ast/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ast/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ast/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/lt/
+audiocd-kio-25.04.1/po/lt/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/lt/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/lt/kio_audiocd.po
+audiocd-kio-25.04.1/po/lt/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/lt/kcmaudiocd.po
+audiocd-kio-25.04.1/po/lt/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/be/
+audiocd-kio-25.04.1/po/be/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/be/kio_audiocd.po
+audiocd-kio-25.04.1/po/be/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/be/kcmaudiocd.po
+audiocd-kio-25.04.1/po/tg/
+audiocd-kio-25.04.1/po/tg/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/tg/kio_audiocd.po
+audiocd-kio-25.04.1/po/tg/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/tg/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sa/
+audiocd-kio-25.04.1/po/sa/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sa/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/sa/kio_audiocd.po
+audiocd-kio-25.04.1/po/sa/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sa/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sa/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/ko/
+audiocd-kio-25.04.1/po/ko/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ko/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/ko/kio_audiocd.po
+audiocd-kio-25.04.1/po/ko/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ko/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ko/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/hne/
+audiocd-kio-25.04.1/po/hne/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/hne/kio_audiocd.po
+audiocd-kio-25.04.1/po/hne/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/hne/kcmaudiocd.po
+audiocd-kio-25.04.1/po/ga/
+audiocd-kio-25.04.1/po/ga/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/ga/kio_audiocd.po
+audiocd-kio-25.04.1/po/ga/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/ga/kcmaudiocd.po
+audiocd-kio-25.04.1/po/en_GB/
+audiocd-kio-25.04.1/po/en_GB/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/en_GB/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/en_GB/kio_audiocd.po
+audiocd-kio-25.04.1/po/en_GB/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/en_GB/kcmaudiocd.po
+audiocd-kio-25.04.1/po/en_GB/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/uk/
+audiocd-kio-25.04.1/po/uk/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/uk/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/uk/kio_audiocd.po
+audiocd-kio-25.04.1/po/uk/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/uk/kcmaudiocd.po
+audiocd-kio-25.04.1/po/uk/docs/
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/kcmaudiocd/
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/kcmaudiocd/flac.png
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/kcmaudiocd/mp3.png
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/kcmaudiocd/index.docbook
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/kcmaudiocd/opus.png
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/kcmaudiocd/names.png
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/kcmaudiocd/general.png
+audiocd-kio-25.04.1/po/uk/docs/kcontrol/kcmaudiocd/ogg.png
+audiocd-kio-25.04.1/po/uk/docs/kioworker6/
+audiocd-kio-25.04.1/po/uk/docs/kioworker6/audiocd/
+audiocd-kio-25.04.1/po/uk/docs/kioworker6/audiocd/index.docbook
+audiocd-kio-25.04.1/po/uk/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/sr@ijekavianlatin/
+audiocd-kio-25.04.1/po/sr@ijekavianlatin/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/sr@ijekavianlatin/kio_audiocd.po
+audiocd-kio-25.04.1/po/sr@ijekavianlatin/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/sr@ijekavianlatin/kcmaudiocd.po
+audiocd-kio-25.04.1/po/sr@ijekavianlatin/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/po/nds/
+audiocd-kio-25.04.1/po/nds/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/nds/kio_audiocd.po
+audiocd-kio-25.04.1/po/nds/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/nds/kcmaudiocd.po
+audiocd-kio-25.04.1/po/az/
+audiocd-kio-25.04.1/po/az/audiocd_encoder_lame.po
+audiocd-kio-25.04.1/po/az/audiocd_encoder_opus.po
+audiocd-kio-25.04.1/po/az/kio_audiocd.po
+audiocd-kio-25.04.1/po/az/audiocd_encoder_vorbis.po
+audiocd-kio-25.04.1/po/az/kcmaudiocd.po
+audiocd-kio-25.04.1/po/az/audiocd_encoder_flac.po
+audiocd-kio-25.04.1/CMakeLists.txt
+audiocd-kio-25.04.1/COPYING
+audiocd-kio-25.04.1/.gitignore
+audiocd-kio-25.04.1/plugins/
+audiocd-kio-25.04.1/plugins/vorbis/
+audiocd-kio-25.04.1/plugins/vorbis/Messages.sh
+audiocd-kio-25.04.1/plugins/vorbis/audiocd_vorbis_encoder.kcfg
+audiocd-kio-25.04.1/plugins/vorbis/encodervorbis.h
+audiocd-kio-25.04.1/plugins/vorbis/encodervorbis.cpp
+audiocd-kio-25.04.1/plugins/vorbis/audiocd_vorbis_encoder.kcfgc
+audiocd-kio-25.04.1/plugins/vorbis/encodervorbisconfig.ui
+audiocd-kio-25.04.1/plugins/vorbis/CMakeLists.txt
+audiocd-kio-25.04.1/plugins/lame/
+audiocd-kio-25.04.1/plugins/lame/audiocd_lame_encoder.kcfgc
+audiocd-kio-25.04.1/plugins/lame/encoderlame.cpp
+audiocd-kio-25.04.1/plugins/lame/Messages.sh
+audiocd-kio-25.04.1/plugins/lame/encoderlameconfig.ui
+audiocd-kio-25.04.1/plugins/lame/audiocd_lame_encoder.kcfg
+audiocd-kio-25.04.1/plugins/lame/encoderlame.h
+audiocd-kio-25.04.1/plugins/lame/CMakeLists.txt
+audiocd-kio-25.04.1/plugins/opus/
+audiocd-kio-25.04.1/plugins/opus/audiocd_opus_encoder.kcfgc
+audiocd-kio-25.04.1/plugins/opus/Messages.sh
+audiocd-kio-25.04.1/plugins/opus/encoderopus.cpp
+audiocd-kio-25.04.1/plugins/opus/encoderopus.h
+audiocd-kio-25.04.1/plugins/opus/audiocd_opus_encoder.kcfg
+audiocd-kio-25.04.1/plugins/opus/encoderopusconfig.ui
+audiocd-kio-25.04.1/plugins/opus/CMakeLists.txt
+audiocd-kio-25.04.1/plugins/audiocdencoder.h
+audiocd-kio-25.04.1/plugins/wav/
+audiocd-kio-25.04.1/plugins/wav/encodercda.h
+audiocd-kio-25.04.1/plugins/wav/encoderwav.cpp
+audiocd-kio-25.04.1/plugins/wav/encodercda.cpp
+audiocd-kio-25.04.1/plugins/wav/CMakeLists.txt
+audiocd-kio-25.04.1/plugins/wav/encoderwav.h
+audiocd-kio-25.04.1/plugins/flac/
+audiocd-kio-25.04.1/plugins/flac/encoderflacconfig.ui
+audiocd-kio-25.04.1/plugins/flac/encoderflac.h
+audiocd-kio-25.04.1/plugins/flac/audiocd_flac_encoder.kcfg
+audiocd-kio-25.04.1/plugins/flac/Messages.sh
+audiocd-kio-25.04.1/plugins/flac/encoderflac.cpp
+audiocd-kio-25.04.1/plugins/flac/CMakeLists.txt
+audiocd-kio-25.04.1/plugins/flac/audiocd_flac_encoder.kcfgc
+audiocd-kio-25.04.1/plugins/audiocdencoder.cpp
+audiocd-kio-25.04.1/plugins/CMakeLists.txt
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.3.0") found components: Config I18n KIO KCMUtils WidgetsAddons
+-- Found Cdparanoia: /usr/lib64/libcdda_paranoia.so;/usr/lib64/libcdda_interface.so;-lm
+-- Performing Test CDDA_IOCTL_DEVICE_EXISTS
+-- Performing Test CDDA_IOCTL_DEVICE_EXISTS - Success
+-- Found FLAC: /usr/include
+-- Looking for vorbis_bitrate_addblock in vorbis
+-- Looking for vorbis_bitrate_addblock in vorbis - found
+-- Found OggVorbis: /usr/lib64/libogg.so;/usr/lib64/libvorbis.so;/usr/lib64/libvorbisfile.so;/usr/lib64/libvorbisenc.so
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6Core (required version >= 6.7)
+ * KF6DocTools (required version >= 6.3.0), Tools to generate documentation
+ * FLAC
+ * OggVorbis
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.3.0)
+ * Qt6 (required version >= 6.5.0)
+ * Gettext
+ * KF6I18n (required version >= 6.3.0)
+ * KF6KIO (required version >= 6.3.0)
+ * KF6KCMUtils (required version >= 6.3.0)
+ * KF6WidgetsAddons (required version >= 6.3.0)
+ * KF6 (required version >= 6.3.0)
+ * KCompactDisc6, KCompactDisc library, <https://commits.kde.org/libkcompactdisc>
+   libkcompactdisc is used to access CD drives.
+ * KF6Config
+ * KCddb6 (required version >= 5.1), Library used to retrieve audio CD metadata from the Internet, <https://commits.kde.org/libkcddb>
+   libkcddb is used to retrieve audio CD meta data from the internet.
+ * Cdparanoia
+
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/work/audiocd-kio-25.04.1/build
+[1/80] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/work/audiocd-kio-25.04.1/build/kcmaudiocd && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/work/audiocd-kio-25.04.1/kcmaudiocd/kcm_audiocd.json /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/work/audiocd-kio-25.04.1/build/kcmaudiocd/kcm_audiocd.desktop
+[2/80] Automatic MOC for target audiocdplugins
+[3/80] Building CXX object plugins/CMakeFiles/audiocdplugins.dir/audiocdplugins_autogen/mocs_compilation.cpp.o
+[4/80] Generating po/es/docs/kioworker6/audiocd/index.cache.bz2
+[5/80] Generating po/pt/docs/kioworker6/audiocd/index.cache.bz2
+[6/80] Generating po/ru/docs/kioworker6/audiocd/index.cache.bz2
+[7/80] Generating po/es/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[8/80] Generating po/sr/docs/kioworker6/audiocd/index.cache.bz2
+[9/80] Generating po/pl/docs/kioworker6/audiocd/index.cache.bz2
+[10/80] Generating po/et/docs/kioworker6/audiocd/index.cache.bz2
+[11/80] Generating po/de/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[12/80] Generating po/nl/docs/kioworker6/audiocd/index.cache.bz2
+[13/80] Generating po/it/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[14/80] Generating po/ru/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[15/80] Generating po/pt_BR/docs/kioworker6/audiocd/index.cache.bz2
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/pt-BR.xml": No such file or directory
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+[16/80] Generating po/nl/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[17/80] Generating po/it/docs/kioworker6/audiocd/index.cache.bz2
+[18/80] Generating po/ca/docs/kioworker6/audiocd/index.cache.bz2
+[19/80] Generating ts...
+[20/80] Generating po/sl/docs/kioworker6/audiocd/index.cache.bz2
+[21/80] Generating po/de/docs/kioworker6/audiocd/index.cache.bz2
+[22/80] Generating po/sr@latin/docs/kioworker6/audiocd/index.cache.bz2
+[23/80] Generating po/ca/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[24/80] Generating po/fr/docs/kioworker6/audiocd/index.cache.bz2
+[25/80] Generating po/sl/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[26/80] Generating po/sv/docs/kioworker6/audiocd/index.cache.bz2
+[27/80] Generating index.cache.bz2
+[28/80] Generating index.cache.bz2
+[29/80] Generating po/uk/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[30/80] Generating po/uk/docs/kioworker6/audiocd/index.cache.bz2
+[31/80] Generating po/tr/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[32/80] Generating po/sv/docs/kcontrol/kcmaudiocd/index.cache.bz2
+[33/80] Generating po/tr/docs/kioworker6/audiocd/index.cache.bz2
+[34/80] Generating mo...
+[35/80] Building CXX object plugins/CMakeFiles/audiocdplugins.dir/audiocdencoder.cpp.o
+[36/80] Linking CXX shared library bin/libaudiocdplugins.so.5.1.0
+[37/80] Creating library symlink bin/libaudiocdplugins.so.5 bin/libaudiocdplugins.so
+[38/80] Automatic MOC for target audiocd_encoder_wav
+[39/80] Automatic MOC for target audiocd_encoder_flac
+[40/80] Automatic MOC for target audiocd_encoder_vorbis
+[41/80] Generating audiocd_flac_encoder.h, audiocd_flac_encoder.cpp
+[42/80] Generating audiocd_vorbis_encoder.h, audiocd_vorbis_encoder.cpp
+[43/80] Generating ui_encoderflacconfig.h
+[44/80] Building CXX object plugins/wav/CMakeFiles/audiocd_encoder_wav.dir/audiocd_encoder_wav_autogen/mocs_compilation.cpp.o
+[45/80] Generating ui_encodervorbisconfig.h
+[46/80] Building CXX object plugins/flac/CMakeFiles/audiocd_encoder_flac.dir/audiocd_encoder_flac_autogen/mocs_compilation.cpp.o
+[47/80] Building CXX object plugins/vorbis/CMakeFiles/audiocd_encoder_vorbis.dir/audiocd_encoder_vorbis_autogen/mocs_compilation.cpp.o
+[48/80] Automatic MOC for target audiocd_encoder_opus
+[49/80] Generating audiocd_opus_encoder.h, audiocd_opus_encoder.cpp
+[50/80] Generating ui_encoderopusconfig.h
+[51/80] Building CXX object plugins/opus/CMakeFiles/audiocd_encoder_opus.dir/audiocd_encoder_opus_autogen/mocs_compilation.cpp.o
+[52/80] Automatic MOC for target audiocd_encoder_lame
+[53/80] Generating audiocd_lame_encoder.h, audiocd_lame_encoder.cpp
+[54/80] Automatic MOC for target kcm_audiocd
+[55/80] Generating ui_encoderlameconfig.h
+[56/80] Building CXX object plugins/lame/CMakeFiles/audiocd_encoder_lame.dir/audiocd_encoder_lame_autogen/mocs_compilation.cpp.o
+[57/80] Generating ui_audiocdconfig.h
+[58/80] Building CXX object kcmaudiocd/CMakeFiles/kcm_audiocd.dir/kcm_audiocd_autogen/mocs_compilation.cpp.o
+[59/80] Automatic MOC for target kio_audiocd
+[60/80] Building CXX object CMakeFiles/kio_audiocd.dir/kio_audiocd_autogen/mocs_compilation.cpp.o
+[61/80] Building CXX object plugins/wav/CMakeFiles/audiocd_encoder_wav.dir/encodercda.cpp.o
+[62/80] Building CXX object plugins/wav/CMakeFiles/audiocd_encoder_wav.dir/encoderwav.cpp.o
+[63/80] Linking CXX shared library bin/libaudiocd_encoder_wav.so
+[64/80] Building CXX object CMakeFiles/kio_audiocd.dir/audiocd_kio_debug.cpp.o
+[65/80] Building CXX object plugins/lame/CMakeFiles/audiocd_encoder_lame.dir/audiocd_lame_encoder.cpp.o
+[66/80] Building CXX object plugins/flac/CMakeFiles/audiocd_encoder_flac.dir/encoderflac.cpp.o
+[67/80] Building CXX object plugins/vorbis/CMakeFiles/audiocd_encoder_vorbis.dir/audiocd_vorbis_encoder.cpp.o
+[68/80] Building CXX object plugins/flac/CMakeFiles/audiocd_encoder_flac.dir/audiocd_flac_encoder.cpp.o
+[69/80] Linking CXX shared library bin/libaudiocd_encoder_flac.so
+[70/80] Building CXX object plugins/opus/CMakeFiles/audiocd_encoder_opus.dir/encoderopus.cpp.o
+[71/80] Building CXX object plugins/opus/CMakeFiles/audiocd_encoder_opus.dir/audiocd_opus_encoder.cpp.o
+[72/80] Linking CXX shared library bin/libaudiocd_encoder_opus.so
+[73/80] Building CXX object kcmaudiocd/CMakeFiles/kcm_audiocd.dir/kcmaudiocd.cpp.o
+[74/80] Building CXX object plugins/vorbis/CMakeFiles/audiocd_encoder_vorbis.dir/encodervorbis.cpp.o
+[75/80] Linking CXX shared module bin/plasma/kcms/systemsettings_qwidgets/kcm_audiocd.so
+[76/80] Linking CXX shared library bin/libaudiocd_encoder_vorbis.so
+[77/80] Building CXX object plugins/lame/CMakeFiles/audiocd_encoder_lame.dir/encoderlame.cpp.o
+[78/80] Linking CXX shared library bin/libaudiocd_encoder_lame.so
+[79/80] Building CXX object CMakeFiles/kio_audiocd.dir/audiocd.cpp.o
+[80/80] Linking CXX shared module bin/audiocd.so
+-- Install configuration: "MinSizeRel"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_flac.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_flac.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/config.kcfg/audiocd_flac_encoder.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_vorbis.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_vorbis.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/config.kcfg/audiocd_vorbis_encoder.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_wav.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_wav.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_lame.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_lame.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/config.kcfg/audiocd_lame_encoder.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_opus.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/libaudiocd_encoder_opus.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/config.kcfg/audiocd_opus_encoder.kcfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/libaudiocdplugins.so.5.1.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/libaudiocdplugins.so.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/libaudiocdplugins.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/include/audiocdplugins/audiocdplugins_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/include/audiocdplugins/audiocdplugins_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/include/audiocdplugins/audiocdencoder.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_audiocd.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_audiocd.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/applications/kcm_audiocd.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kcontrol/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kcontrol/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kcontrol/audiocd/flac.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kcontrol/audiocd/general.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kcontrol/audiocd/mp3.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kcontrol/audiocd/names.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kcontrol/audiocd/ogg.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kcontrol/audiocd/opus.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/konqsidebartng/virtual_folders/services/audiocd.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/solid/actions/solid_audiocd.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/metainfo/org.kde.kio_audiocd.metainfo.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/kf6/kio/audiocd.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/lib64/qt6/plugins/kf6/kio/audiocd.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/qlogging-categories6/kio_audiocd.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/qlogging-categories6/kio_audiocd.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kioslave5/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/en/kioslave5/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/ca/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/ca/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/ca/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/ca/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/de/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/de/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/de/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/de/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/es/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/es/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/es/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/es/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/et/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/et/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/fr/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/fr/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/it/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/it/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/it/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/it/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/nl/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/nl/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/nl/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/nl/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/pl/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/pl/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/pt/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/pt/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/pt_BR/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/pt_BR/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/ru/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/ru/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/ru/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/ru/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sl/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sl/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sl/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sl/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sr/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sr/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sr@latin/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sr@latin/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sv/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sv/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sv/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/sv/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/tr/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/tr/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/tr/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/tr/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/flac.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/general.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/mp3.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/names.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/ogg.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/opus.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kioworker6/audiocd/index.cache.bz2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/doc/HTML/uk/kioworker6/audiocd/index.docbook
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/da/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/da/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/da/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/da/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/da/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/da/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ms
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ms/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ms/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ms/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ms/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cs/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cs/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cs/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cs/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cs/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cs/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ja/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ja/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ja/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ja/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ja/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ja/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavian/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavian/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavian/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/de/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/de/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/de/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/de/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/de/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/de/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/el/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/el/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/el/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/el/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/el/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/el/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nn/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nn/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nn/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nn/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nn/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nn/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_HK
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_HK/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_HK/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_HK/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_HK/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_HK/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hi/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hi/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hi/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hi/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hi/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hi/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt_BR/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt_BR/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt_BR/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt_BR/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt_BR/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt_BR/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lt/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lt/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lt/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lt/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lt/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lt/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/be/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/be/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/be/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/be/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pa/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pa/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pa/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pa/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sl/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sl/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sl/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sl/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sl/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sl/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ta/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ta/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ta/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ta/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/xh
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/xh/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/xh/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/xh/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ro/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ro/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ro/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ro/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ro/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ro/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bs/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bs/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bs/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bs/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/is/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/is/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/is/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/is/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/is/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/is/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/wa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/wa/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/wa/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/kk/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/kk/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/kk/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/kk/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@latin/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@latin/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@latin/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@latin/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sr@latin/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/he/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/he/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/he/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/he/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/he/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/he/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_TW/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_TW/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_TW/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_TW/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_TW/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_TW/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tg/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tg/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tg/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tg/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fa/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fa/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fa/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fa/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/csb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/csb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/csb/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pl/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pl/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pl/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pl/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pl/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pl/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/km/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/km/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/km/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/km/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/pt/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hr/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hr/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hr/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/az/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/az/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/az/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/az/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/az/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/az/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tr/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tr/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tr/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tr/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/tr/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fr/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fr/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fr/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fr/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fr/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ast/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ast/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ast/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ast/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ast/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ast/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ne/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ne/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ne/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ne/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/vi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/vi/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/vi/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ka/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ka/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ka/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ka/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ka/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ka/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cy/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cy/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cy/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cy/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/cy/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/th/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/th/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/th/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/th/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/gl/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/gl/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/gl/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/gl/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/gl/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/gl/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ia/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ia/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ia/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ia/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ia/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ia/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hu/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hu/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hu/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hu/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hu/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hu/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eo/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eo/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eo/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eo/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eo/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eo/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bg/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bg/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bg/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bg/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bg/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bg/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ga/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ga/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ga/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ga/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/br
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/br/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/br/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/br/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/br/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/br/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/uk/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/uk/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/uk/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/uk/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/uk/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/uk/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/id/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/id/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/en_GB/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/en_GB/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/en_GB/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/en_GB/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/en_GB/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/en_GB/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_CN/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_CN/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_CN/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_CN/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_CN/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/zh_CN/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nl/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nl/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nl/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nl/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nl/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nl/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/bn/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/oc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/oc/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/oc/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/oc/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/oc/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sa/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sa/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sa/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sa/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sa/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sa/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fi/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fi/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fi/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fi/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fi/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/fi/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ko/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ko/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ko/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ko/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ko/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ko/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mk/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mk/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mk/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mk/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ru/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ru/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ru/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ru/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ru/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ru/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/af
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/af/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/af/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/af/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lv/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lv/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lv/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lv/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lv/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/lv/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hne/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hne/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hne/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/hne/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca@valencia/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca@valencia/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca@valencia/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca@valencia/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca@valencia/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ca@valencia/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nb/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nb/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nb/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nb/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/es/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/es/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/es/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/es/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/es/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/es/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eu/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eu/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eu/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eu/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eu/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/eu/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/et/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/et/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/et/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/et/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/et/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/et/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/it/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/it/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/it/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/it/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/it/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/it/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/se
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/se/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/se/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/se/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/se/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/se/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ar/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ar/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ar/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ar/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ar/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ar/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sq
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sq/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sq/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sq/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sq/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nds/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nds/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nds/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/nds/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mr/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mr/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/mr/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ug/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ug/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ug/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/ug/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sk/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sk/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sk/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sk/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sk/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sk/LC_MESSAGES/kcmaudiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sv/LC_MESSAGES/audiocd_encoder_flac.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sv/LC_MESSAGES/kio_audiocd.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sv/LC_MESSAGES/audiocd_encoder_lame.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sv/LC_MESSAGES/audiocd_encoder_opus.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sv/LC_MESSAGES/audiocd_encoder_vorbis.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/package-audiocd-kio/usr/share/locale/sv/LC_MESSAGES/kcmaudiocd.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'README*': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audiocd-kio/audiocd-kio.info: No such file or directory
+extra-cmake-modules
+flac
+kcmutils
+kconfig
+kdoctools
+ki18n
+kio
+libkcddb
+libkcompactdisc
+libvorbis
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libaudiocdplugins.so	libaudiocdplugins.so.5
+usr/lib64/libaudiocdplugins.so.5	libaudiocdplugins.so.5.1.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libaudiocdplugins.so )
+( cd usr/lib64 ; ln -sf libaudiocdplugins.so.5 libaudiocdplugins.so )
+( cd usr/lib64 ; rm -rf libaudiocdplugins.so.5 )
+( cd usr/lib64 ; ln -sf libaudiocdplugins.so.5.1.0 libaudiocdplugins.so.5 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libaudiocdplugins.so'
+removed './usr/lib64/libaudiocdplugins.so.5'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/audiocd-kio/audiocd-kio-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/audiocd-kio-25.04.1/
+usr/doc/audiocd-kio-25.04.1/COPYING
+usr/doc/audiocd-kio-25.04.1/audiocd-kio.ini
+usr/doc/audiocd-kio-25.04.1/slack-required
+usr/include/
+usr/include/audiocdplugins/
+usr/include/audiocdplugins/audiocdencoder.h
+usr/include/audiocdplugins/audiocdplugins_export.h
+usr/include/audiocdplugins/audiocdplugins_version.h
+usr/lib64/
+usr/lib64/libaudiocdplugins.so.5.1.0
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/kf6/
+usr/lib64/qt6/plugins/kf6/kio/
+usr/lib64/qt6/plugins/kf6/kio/audiocd.so
+usr/lib64/qt6/plugins/libaudiocd_encoder_flac.so
+usr/lib64/qt6/plugins/libaudiocd_encoder_lame.so
+usr/lib64/qt6/plugins/libaudiocd_encoder_opus.so
+usr/lib64/qt6/plugins/libaudiocd_encoder_vorbis.so
+usr/lib64/qt6/plugins/libaudiocd_encoder_wav.so
+usr/lib64/qt6/plugins/plasma/
+usr/lib64/qt6/plugins/plasma/kcms/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings_qwidgets/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_audiocd.so
+usr/share/
+usr/share/applications/
+usr/share/applications/kcm_audiocd.desktop
+usr/share/config.kcfg/
+usr/share/config.kcfg/audiocd_flac_encoder.kcfg
+usr/share/config.kcfg/audiocd_lame_encoder.kcfg
+usr/share/config.kcfg/audiocd_opus_encoder.kcfg
+usr/share/config.kcfg/audiocd_vorbis_encoder.kcfg
+usr/share/doc/
+usr/share/doc/HTML/
+usr/share/doc/HTML/ca/
+usr/share/doc/HTML/ca/kcontrol/
+usr/share/doc/HTML/ca/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/ca/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/ca/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/ca/kioworker6/
+usr/share/doc/HTML/ca/kioworker6/audiocd/
+usr/share/doc/HTML/ca/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/ca/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/de/
+usr/share/doc/HTML/de/kcontrol/
+usr/share/doc/HTML/de/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/de/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/de/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/de/kioworker6/
+usr/share/doc/HTML/de/kioworker6/audiocd/
+usr/share/doc/HTML/de/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/de/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/en/
+usr/share/doc/HTML/en/kcontrol/
+usr/share/doc/HTML/en/kcontrol/audiocd/
+usr/share/doc/HTML/en/kcontrol/audiocd/flac.png
+usr/share/doc/HTML/en/kcontrol/audiocd/general.png
+usr/share/doc/HTML/en/kcontrol/audiocd/index.cache.bz2
+usr/share/doc/HTML/en/kcontrol/audiocd/index.docbook
+usr/share/doc/HTML/en/kcontrol/audiocd/mp3.png
+usr/share/doc/HTML/en/kcontrol/audiocd/names.png
+usr/share/doc/HTML/en/kcontrol/audiocd/ogg.png
+usr/share/doc/HTML/en/kcontrol/audiocd/opus.png
+usr/share/doc/HTML/en/kioslave5/
+usr/share/doc/HTML/en/kioslave5/audiocd/
+usr/share/doc/HTML/en/kioslave5/audiocd/index.cache.bz2
+usr/share/doc/HTML/en/kioslave5/audiocd/index.docbook
+usr/share/doc/HTML/es/
+usr/share/doc/HTML/es/kcontrol/
+usr/share/doc/HTML/es/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/es/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/es/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/es/kioworker6/
+usr/share/doc/HTML/es/kioworker6/audiocd/
+usr/share/doc/HTML/es/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/es/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/et/
+usr/share/doc/HTML/et/kioworker6/
+usr/share/doc/HTML/et/kioworker6/audiocd/
+usr/share/doc/HTML/et/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/et/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/fr/
+usr/share/doc/HTML/fr/kioworker6/
+usr/share/doc/HTML/fr/kioworker6/audiocd/
+usr/share/doc/HTML/fr/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/fr/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/it/
+usr/share/doc/HTML/it/kcontrol/
+usr/share/doc/HTML/it/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/it/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/it/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/it/kioworker6/
+usr/share/doc/HTML/it/kioworker6/audiocd/
+usr/share/doc/HTML/it/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/it/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/nl/
+usr/share/doc/HTML/nl/kcontrol/
+usr/share/doc/HTML/nl/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/nl/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/nl/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/nl/kioworker6/
+usr/share/doc/HTML/nl/kioworker6/audiocd/
+usr/share/doc/HTML/nl/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/nl/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/pl/
+usr/share/doc/HTML/pl/kioworker6/
+usr/share/doc/HTML/pl/kioworker6/audiocd/
+usr/share/doc/HTML/pl/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/pl/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/pt/
+usr/share/doc/HTML/pt/kioworker6/
+usr/share/doc/HTML/pt/kioworker6/audiocd/
+usr/share/doc/HTML/pt/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/pt/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/pt_BR/
+usr/share/doc/HTML/pt_BR/kioworker6/
+usr/share/doc/HTML/pt_BR/kioworker6/audiocd/
+usr/share/doc/HTML/pt_BR/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/pt_BR/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/ru/
+usr/share/doc/HTML/ru/kcontrol/
+usr/share/doc/HTML/ru/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/ru/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/ru/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/ru/kioworker6/
+usr/share/doc/HTML/ru/kioworker6/audiocd/
+usr/share/doc/HTML/ru/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/ru/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/sl/
+usr/share/doc/HTML/sl/kcontrol/
+usr/share/doc/HTML/sl/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/sl/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/sl/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/sl/kioworker6/
+usr/share/doc/HTML/sl/kioworker6/audiocd/
+usr/share/doc/HTML/sl/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/sl/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/sr/
+usr/share/doc/HTML/sr/kioworker6/
+usr/share/doc/HTML/sr/kioworker6/audiocd/
+usr/share/doc/HTML/sr/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/sr/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/sr@latin/
+usr/share/doc/HTML/sr@latin/kioworker6/
+usr/share/doc/HTML/sr@latin/kioworker6/audiocd/
+usr/share/doc/HTML/sr@latin/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/sr@latin/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/sv/
+usr/share/doc/HTML/sv/kcontrol/
+usr/share/doc/HTML/sv/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/sv/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/sv/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/sv/kioworker6/
+usr/share/doc/HTML/sv/kioworker6/audiocd/
+usr/share/doc/HTML/sv/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/sv/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/tr/
+usr/share/doc/HTML/tr/kcontrol/
+usr/share/doc/HTML/tr/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/tr/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/tr/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/tr/kioworker6/
+usr/share/doc/HTML/tr/kioworker6/audiocd/
+usr/share/doc/HTML/tr/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/tr/kioworker6/audiocd/index.docbook
+usr/share/doc/HTML/uk/
+usr/share/doc/HTML/uk/kcontrol/
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/flac.png
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/general.png
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/index.cache.bz2
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/index.docbook
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/mp3.png
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/names.png
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/ogg.png
+usr/share/doc/HTML/uk/kcontrol/kcmaudiocd/opus.png
+usr/share/doc/HTML/uk/kioworker6/
+usr/share/doc/HTML/uk/kioworker6/audiocd/
+usr/share/doc/HTML/uk/kioworker6/audiocd/index.cache.bz2
+usr/share/doc/HTML/uk/kioworker6/audiocd/index.docbook
+usr/share/konqsidebartng/
+usr/share/konqsidebartng/virtual_folders/
+usr/share/konqsidebartng/virtual_folders/services/
+usr/share/konqsidebartng/virtual_folders/services/audiocd.desktop
+usr/share/locale/
+usr/share/locale/af/
+usr/share/locale/af/LC_MESSAGES/
+usr/share/locale/af/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/af/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ar/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ar/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ar/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ar/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ar/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ast/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ast/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ast/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ast/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ast/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/az/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/az/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/az/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/az/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/az/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/be/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/be/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/be/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/bg/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/bg/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/bg/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/bg/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/bg/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/bn/
+usr/share/locale/bn/LC_MESSAGES/
+usr/share/locale/bn/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/br/
+usr/share/locale/br/LC_MESSAGES/
+usr/share/locale/br/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/br/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/br/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/br/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/bs/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/bs/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/bs/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ca/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ca/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ca/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ca/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ca/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/cs/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/cs/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/cs/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/cs/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/cs/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/csb/
+usr/share/locale/csb/LC_MESSAGES/
+usr/share/locale/csb/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/cy/
+usr/share/locale/cy/LC_MESSAGES/
+usr/share/locale/cy/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/cy/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/cy/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/cy/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/da/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/da/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/da/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/da/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/da/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/de/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/de/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/de/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/de/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/de/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/el/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/el/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/el/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/el/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/el/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/en_GB/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/en_GB/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/en_GB/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/en_GB/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/en_GB/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/eo/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/eo/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/eo/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/eo/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/eo/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/es/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/es/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/es/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/es/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/es/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/et/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/et/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/et/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/et/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/et/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/eu/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/eu/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/eu/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/eu/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/eu/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/fa/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/fa/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/fa/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/fi/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/fi/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/fi/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/fi/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/fi/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/fr/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/fr/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/fr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/fr/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/fr/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ga/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ga/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ga/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/gl/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/gl/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/gl/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/gl/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/gl/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/he/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/he/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/he/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/he/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/he/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/hi/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/hi/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/hi/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/hi/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/hi/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/hne/
+usr/share/locale/hne/LC_MESSAGES/
+usr/share/locale/hne/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/hne/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/hne/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/hne/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/hr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/hr/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/hr/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/hu/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/hu/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/hu/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/hu/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/hu/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ia/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ia/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ia/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ia/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ia/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/id/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/is/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/is/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/is/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/is/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/is/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/it/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/it/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/it/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/it/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/it/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ja/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ja/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ja/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ja/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ja/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ka/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ka/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ka/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ka/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ka/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/kk/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/kk/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/kk/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/km/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/km/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/km/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ko/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ko/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ko/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ko/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ko/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/lt/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/lt/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/lt/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/lt/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/lt/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/lv/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/lv/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/lv/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/lv/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/lv/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/mk/
+usr/share/locale/mk/LC_MESSAGES/
+usr/share/locale/mk/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/mk/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/mk/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/mk/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/mr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/mr/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/mr/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ms/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ms/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ms/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/nb/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/nb/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/nb/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/nds/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/nds/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/nds/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ne/
+usr/share/locale/ne/LC_MESSAGES/
+usr/share/locale/ne/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ne/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ne/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ne/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/nl/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/nl/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/nl/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/nl/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/nl/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/nn/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/nn/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/nn/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/nn/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/nn/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/oc/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/oc/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/oc/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/pa/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/pa/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/pa/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/pl/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/pl/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/pl/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/pl/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/pl/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/pt/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/pt/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/pt/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/pt/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/pt/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/pt_BR/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/pt_BR/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/pt_BR/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/pt_BR/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/pt_BR/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ro/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ro/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ro/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ro/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ro/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/ru/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ru/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/ru/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ru/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ru/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/sa/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sa/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/sa/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sa/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sa/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/se/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/se/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/se/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/sk/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sk/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/sk/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sk/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sk/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/sl/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sl/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/sl/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sl/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sl/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sq/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sq/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sq/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/sr/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sr/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sr/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/sr@latin/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sr@latin/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sr@latin/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sr@latin/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/sv/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/sv/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/sv/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/sv/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/sv/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ta/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ta/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ta/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/tg/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/tg/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/tg/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/th/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/th/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/th/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/tr/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/tr/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/tr/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/tr/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/tr/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/ug/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/ug/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/ug/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/uk/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/uk/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/uk/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/uk/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/uk/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/vi/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/wa/
+usr/share/locale/wa/LC_MESSAGES/
+usr/share/locale/wa/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/wa/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/xh/
+usr/share/locale/xh/LC_MESSAGES/
+usr/share/locale/xh/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/xh/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/zh_CN/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/zh_CN/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/zh_CN/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/zh_CN/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/zh_CN/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/zh_HK/
+usr/share/locale/zh_HK/LC_MESSAGES/
+usr/share/locale/zh_HK/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/zh_HK/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/zh_HK/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/zh_HK/LC_MESSAGES/kio_audiocd.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/audiocd_encoder_flac.mo
+usr/share/locale/zh_TW/LC_MESSAGES/audiocd_encoder_lame.mo
+usr/share/locale/zh_TW/LC_MESSAGES/audiocd_encoder_opus.mo
+usr/share/locale/zh_TW/LC_MESSAGES/audiocd_encoder_vorbis.mo
+usr/share/locale/zh_TW/LC_MESSAGES/kcmaudiocd.mo
+usr/share/locale/zh_TW/LC_MESSAGES/kio_audiocd.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.kio_audiocd.metainfo.xml
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kio_audiocd.categories
+usr/share/qlogging-categories6/kio_audiocd.renamecategories
+usr/share/solid/
+usr/share/solid/actions/
+usr/share/solid/actions/solid_audiocd.desktop
+
+Slackware package /tmp/audiocd-kio/audiocd-kio-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for audiocd-kio-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/audiocd-kio/audiocd-kio-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/audiocd-kio/audiocd-kio-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/audiocd-kio/audiocd-kio-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in audiocd-kio.tar.lz4 format.
+/tmp/audiocd-kio /tmp/audiocd-kio
+/tmp/audiocd-kio
+BIN_NAME
+README
+audiocd-kio-25.04.1-x86_64-1_rtz.tlz
+audiocd-kio-25.04.1-x86_64-1_rtz.tlz.md5
+audiocd-kio-25.04.1-x86_64-1_rtz.tlz.so.file
+audiocd-kio-25.04.1-x86_64-1_rtz.tlz.txt
+audiocd-kio.dep
+makepkg-audiocd-kio.log
+audiocd-kio build finished. Procced to installation...
+
++================================================================================================================+
+| Upgrading audiocd-kio-25.04.1-x86_64-1_rtz package using /tmp/audiocd-kio/audiocd-kio-25.04.1-x86_64-1_rtz.tlz |
++================================================================================================================+
+
+Pre-installing package audiocd-kio-25.04.1-x86_64-1_rtz...
+Removing package: audiocd-kio-25.04.1-x86_64-1_rtz-upgraded-2025-05-10,23:41:14
+Installing package audiocd-kio-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# audiocd-kio (Kioslave for accessing audio CDs)
+#
+# Kioslave for accessing audio CDs
+#
+# https://www.kde.org/applications/multimedia
+Executing install script for audiocd-kio-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package audiocd-kio-25.04.1-x86_64-1_rtz.tlz installed.
+Package audiocd-kio-25.04.1-x86_64-1_rtz upgraded with new package /tmp/audiocd-kio/audiocd-kio-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'audiocd-kio-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 17 seconds.

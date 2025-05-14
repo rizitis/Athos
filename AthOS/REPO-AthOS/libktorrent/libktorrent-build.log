@@ -1,0 +1,2083 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules	karchive	kcrash	ki18n	kio	solid
+doxygen is already installed!
+extra-cmake-modules is already installed!
+karchive is already installed!
+kcrash is already installed!
+ki18n is already installed!
+kio is already installed!
+solid is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:10:50--  https://download.kde.org/stable/release-service/25.04.1/src/libktorrent-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libktorrent-25.04.1.tar.xz [following]
+--2025-05-11 01:10:50--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libktorrent-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 606328 (592K) [application/octet-stream]
+Saving to: ‘libktorrent-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  8% 1.30M 0s
+    50K .......... .......... .......... .......... .......... 16% 1.44M 0s
+   100K .......... .......... .......... .......... .......... 25% 6.76M 0s
+   150K .......... .......... .......... .......... .......... 33% 2.01M 0s
+   200K .......... .......... .......... .......... .......... 42% 7.28M 0s
+   250K .......... .......... .......... .......... .......... 50% 4.88M 0s
+   300K .......... .......... .......... .......... .......... 59% 5.41M 0s
+   350K .......... .......... .......... .......... .......... 67% 1.09M 0s
+   400K .......... .......... .......... .......... .......... 75%  332M 0s
+   450K .......... .......... .......... .......... .......... 84%  321M 0s
+   500K .......... .......... .......... .......... .......... 92%  353M 0s
+   550K .......... .......... .......... .......... ..        100% 1.52M=0.2s
+
+2025-05-11 01:10:50 (2.88 MB/s) - ‘libktorrent-25.04.1.tar.xz’ saved [606328/606328]
+
+Found file: libktorrent-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+libktorrent-25.04.1/
+libktorrent-25.04.1/cmake/
+libktorrent-25.04.1/cmake/FindLibGcrypt.cmake
+libktorrent-25.04.1/cmake/FindLibGMP.cmake
+libktorrent-25.04.1/cmake/CMakeLists.txt
+libktorrent-25.04.1/RoadMap
+libktorrent-25.04.1/Messages.sh
+libktorrent-25.04.1/LICENSES/
+libktorrent-25.04.1/LICENSES/MIT.txt
+libktorrent-25.04.1/LICENSES/BSD-3-Clause.txt
+libktorrent-25.04.1/LICENSES/CC0-1.0.txt
+libktorrent-25.04.1/LICENSES/GPL-2.0-or-later.txt
+libktorrent-25.04.1/.gitlab-ci.yml
+libktorrent-25.04.1/doc/
+libktorrent-25.04.1/doc/stylesheet.css
+libktorrent-25.04.1/doc/Doxyfile.in
+libktorrent-25.04.1/doc/CMakeLists.txt
+libktorrent-25.04.1/.git-blame-ignore-revs
+libktorrent-25.04.1/testlib/
+libktorrent-25.04.1/testlib/utils.cpp
+libktorrent-25.04.1/testlib/utils.h
+libktorrent-25.04.1/testlib/dummytorrentcreator.cpp
+libktorrent-25.04.1/testlib/dummytorrentcreator.h
+libktorrent-25.04.1/testlib/CMakeLists.txt
+libktorrent-25.04.1/.kde-ci.yml
+libktorrent-25.04.1/po/
+libktorrent-25.04.1/po/bg/
+libktorrent-25.04.1/po/bg/libktorrent6.po
+libktorrent-25.04.1/po/pt/
+libktorrent-25.04.1/po/pt/libktorrent6.po
+libktorrent-25.04.1/po/km/
+libktorrent-25.04.1/po/km/libktorrent6.po
+libktorrent-25.04.1/po/nn/
+libktorrent-25.04.1/po/nn/libktorrent6.po
+libktorrent-25.04.1/po/pl/
+libktorrent-25.04.1/po/pl/libktorrent6.po
+libktorrent-25.04.1/po/ja/
+libktorrent-25.04.1/po/ja/libktorrent6.po
+libktorrent-25.04.1/po/bs/
+libktorrent-25.04.1/po/bs/libktorrent6.po
+libktorrent-25.04.1/po/zh_CN/
+libktorrent-25.04.1/po/zh_CN/libktorrent6.po
+libktorrent-25.04.1/po/cs/
+libktorrent-25.04.1/po/cs/libktorrent6.po
+libktorrent-25.04.1/po/es/
+libktorrent-25.04.1/po/es/libktorrent6.po
+libktorrent-25.04.1/po/ka/
+libktorrent-25.04.1/po/ka/libktorrent6.po
+libktorrent-25.04.1/po/is/
+libktorrent-25.04.1/po/is/libktorrent6.po
+libktorrent-25.04.1/po/tr/
+libktorrent-25.04.1/po/tr/libktorrent6.po
+libktorrent-25.04.1/po/ug/
+libktorrent-25.04.1/po/ug/libktorrent6.po
+libktorrent-25.04.1/po/ca/
+libktorrent-25.04.1/po/ca/libktorrent6.po
+libktorrent-25.04.1/po/se/
+libktorrent-25.04.1/po/se/libktorrent6.po
+libktorrent-25.04.1/po/ca@valencia/
+libktorrent-25.04.1/po/ca@valencia/libktorrent6.po
+libktorrent-25.04.1/po/hr/
+libktorrent-25.04.1/po/hr/libktorrent6.po
+libktorrent-25.04.1/po/gl/
+libktorrent-25.04.1/po/gl/libktorrent6.po
+libktorrent-25.04.1/po/ro/
+libktorrent-25.04.1/po/ro/libktorrent6.po
+libktorrent-25.04.1/po/oc/
+libktorrent-25.04.1/po/oc/libktorrent6.po
+libktorrent-25.04.1/po/eo/
+libktorrent-25.04.1/po/eo/libktorrent6.po
+libktorrent-25.04.1/po/sr@ijekavian/
+libktorrent-25.04.1/po/sr@ijekavian/libktorrent6.po
+libktorrent-25.04.1/po/ku/
+libktorrent-25.04.1/po/ku/libktorrent6.po
+libktorrent-25.04.1/po/nl/
+libktorrent-25.04.1/po/nl/libktorrent6.po
+libktorrent-25.04.1/po/mr/
+libktorrent-25.04.1/po/mr/libktorrent6.po
+libktorrent-25.04.1/po/hu/
+libktorrent-25.04.1/po/hu/libktorrent6.po
+libktorrent-25.04.1/po/eu/
+libktorrent-25.04.1/po/eu/libktorrent6.po
+libktorrent-25.04.1/po/lv/
+libktorrent-25.04.1/po/lv/libktorrent6.po
+libktorrent-25.04.1/po/nb/
+libktorrent-25.04.1/po/nb/libktorrent6.po
+libktorrent-25.04.1/po/fr/
+libktorrent-25.04.1/po/fr/libktorrent6.po
+libktorrent-25.04.1/po/hi/
+libktorrent-25.04.1/po/hi/libktorrent6.po
+libktorrent-25.04.1/po/sl/
+libktorrent-25.04.1/po/sl/libktorrent6.po
+libktorrent-25.04.1/po/sr@latin/
+libktorrent-25.04.1/po/sr@latin/libktorrent6.po
+libktorrent-25.04.1/po/sr/
+libktorrent-25.04.1/po/sr/libktorrent6.po
+libktorrent-25.04.1/po/he/
+libktorrent-25.04.1/po/he/libktorrent6.po
+libktorrent-25.04.1/po/de/
+libktorrent-25.04.1/po/de/libktorrent6.po
+libktorrent-25.04.1/po/ar/
+libktorrent-25.04.1/po/ar/libktorrent6.po
+libktorrent-25.04.1/po/sk/
+libktorrent-25.04.1/po/sk/libktorrent6.po
+libktorrent-25.04.1/po/zh_TW/
+libktorrent-25.04.1/po/zh_TW/libktorrent6.po
+libktorrent-25.04.1/po/et/
+libktorrent-25.04.1/po/et/libktorrent6.po
+libktorrent-25.04.1/po/it/
+libktorrent-25.04.1/po/it/libktorrent6.po
+libktorrent-25.04.1/po/el/
+libktorrent-25.04.1/po/el/libktorrent6.po
+libktorrent-25.04.1/po/da/
+libktorrent-25.04.1/po/da/libktorrent6.po
+libktorrent-25.04.1/po/pt_BR/
+libktorrent-25.04.1/po/pt_BR/libktorrent6.po
+libktorrent-25.04.1/po/ru/
+libktorrent-25.04.1/po/ru/libktorrent6.po
+libktorrent-25.04.1/po/ia/
+libktorrent-25.04.1/po/ia/libktorrent6.po
+libktorrent-25.04.1/po/sv/
+libktorrent-25.04.1/po/sv/libktorrent6.po
+libktorrent-25.04.1/po/si/
+libktorrent-25.04.1/po/si/libktorrent6.po
+libktorrent-25.04.1/po/ms/
+libktorrent-25.04.1/po/ms/libktorrent6.po
+libktorrent-25.04.1/po/fi/
+libktorrent-25.04.1/po/fi/libktorrent6.po
+libktorrent-25.04.1/po/kk/
+libktorrent-25.04.1/po/kk/libktorrent6.po
+libktorrent-25.04.1/po/ast/
+libktorrent-25.04.1/po/ast/libktorrent6.po
+libktorrent-25.04.1/po/lt/
+libktorrent-25.04.1/po/lt/libktorrent6.po
+libktorrent-25.04.1/po/be/
+libktorrent-25.04.1/po/be/libktorrent6.po
+libktorrent-25.04.1/po/sa/
+libktorrent-25.04.1/po/sa/libktorrent6.po
+libktorrent-25.04.1/po/ko/
+libktorrent-25.04.1/po/ko/libktorrent6.po
+libktorrent-25.04.1/po/hne/
+libktorrent-25.04.1/po/hne/libktorrent6.po
+libktorrent-25.04.1/po/ga/
+libktorrent-25.04.1/po/ga/libktorrent6.po
+libktorrent-25.04.1/po/en_GB/
+libktorrent-25.04.1/po/en_GB/libktorrent6.po
+libktorrent-25.04.1/po/uk/
+libktorrent-25.04.1/po/uk/libktorrent6.po
+libktorrent-25.04.1/po/sr@ijekavianlatin/
+libktorrent-25.04.1/po/sr@ijekavianlatin/libktorrent6.po
+libktorrent-25.04.1/po/nds/
+libktorrent-25.04.1/po/nds/libktorrent6.po
+libktorrent-25.04.1/ChangeLog
+libktorrent-25.04.1/KTorrent6Config.cmake.in
+libktorrent-25.04.1/CMakeLists.txt
+libktorrent-25.04.1/examples/
+libktorrent-25.04.1/examples/ktcli/
+libktorrent-25.04.1/examples/ktcli/ktcli.h
+libktorrent-25.04.1/examples/ktcli/main.cpp
+libktorrent-25.04.1/examples/ktcli/ktcli.cpp
+libktorrent-25.04.1/examples/ktcli/CMakeLists.txt
+libktorrent-25.04.1/examples/CMakeLists.txt
+libktorrent-25.04.1/src/
+libktorrent-25.04.1/src/magnet/
+libktorrent-25.04.1/src/magnet/magnetlink.cpp
+libktorrent-25.04.1/src/magnet/magnetdownloader.cpp
+libktorrent-25.04.1/src/magnet/magnetlink.h
+libktorrent-25.04.1/src/magnet/tests/
+libktorrent-25.04.1/src/magnet/tests/CMakeLists.txt
+libktorrent-25.04.1/src/magnet/tests/magnetlinktest.cpp
+libktorrent-25.04.1/src/magnet/metadatadownload.h
+libktorrent-25.04.1/src/magnet/magnetdownloader.h
+libktorrent-25.04.1/src/magnet/metadatadownload.cpp
+libktorrent-25.04.1/src/magnet/CMakeLists.txt
+libktorrent-25.04.1/src/config-ktorrent.h.cmake
+libktorrent-25.04.1/src/version.cpp
+libktorrent-25.04.1/src/datachecker/
+libktorrent-25.04.1/src/datachecker/datachecker.h
+libktorrent-25.04.1/src/datachecker/multidatachecker.cpp
+libktorrent-25.04.1/src/datachecker/singledatachecker.cpp
+libktorrent-25.04.1/src/datachecker/datacheckerthread.h
+libktorrent-25.04.1/src/datachecker/datacheckerjob.h
+libktorrent-25.04.1/src/datachecker/tests/
+libktorrent-25.04.1/src/datachecker/tests/datacheckertest.cpp
+libktorrent-25.04.1/src/datachecker/tests/CMakeLists.txt
+libktorrent-25.04.1/src/datachecker/datacheckerthread.cpp
+libktorrent-25.04.1/src/datachecker/datacheckerjob.cpp
+libktorrent-25.04.1/src/datachecker/multidatachecker.h
+libktorrent-25.04.1/src/datachecker/CMakeLists.txt
+libktorrent-25.04.1/src/datachecker/singledatachecker.h
+libktorrent-25.04.1/src/datachecker/datachecker.cpp
+libktorrent-25.04.1/src/mse/
+libktorrent-25.04.1/src/mse/encryptedpacketsocket.h
+libktorrent-25.04.1/src/mse/bigint.h
+libktorrent-25.04.1/src/mse/functions.cpp
+libktorrent-25.04.1/src/mse/encryptedauthenticate.cpp
+libktorrent-25.04.1/src/mse/encryptedpacketsocket.cpp
+libktorrent-25.04.1/src/mse/encryptedserverauthenticate.cpp
+libktorrent-25.04.1/src/mse/encryptedauthenticate.h
+libktorrent-25.04.1/src/mse/tests/
+libktorrent-25.04.1/src/mse/tests/rc4encryptortest.cpp
+libktorrent-25.04.1/src/mse/tests/CMakeLists.txt
+libktorrent-25.04.1/src/mse/functions.h
+libktorrent-25.04.1/src/mse/rc4encryptor.cpp
+libktorrent-25.04.1/src/mse/bigint.cpp
+libktorrent-25.04.1/src/mse/encryptedserverauthenticate.h
+libktorrent-25.04.1/src/mse/rc4encryptor.h
+libktorrent-25.04.1/src/mse/CMakeLists.txt
+libktorrent-25.04.1/src/torrent/
+libktorrent-25.04.1/src/torrent/torrentcreator.cpp
+libktorrent-25.04.1/src/torrent/job.h
+libktorrent-25.04.1/src/torrent/torrentfilestream.h
+libktorrent-25.04.1/src/torrent/torrentstats.cpp
+libktorrent-25.04.1/src/torrent/uploader.cpp
+libktorrent-25.04.1/src/torrent/torrentfile.h
+libktorrent-25.04.1/src/torrent/jobqueue.cpp
+libktorrent-25.04.1/src/torrent/globals.cpp
+libktorrent-25.04.1/src/torrent/jobqueue.h
+libktorrent-25.04.1/src/torrent/torrent.cpp
+libktorrent-25.04.1/src/torrent/advancedchokealgorithm.h
+libktorrent-25.04.1/src/torrent/uploader.h
+libktorrent-25.04.1/src/torrent/tests/
+libktorrent-25.04.1/src/torrent/tests/torrentfilestreammultitest.cpp
+libktorrent-25.04.1/src/torrent/tests/statsfiletest.cpp
+libktorrent-25.04.1/src/torrent/tests/torrentfilestreamtest.cpp
+libktorrent-25.04.1/src/torrent/tests/CMakeLists.txt
+libktorrent-25.04.1/src/torrent/peersourcemanager.cpp
+libktorrent-25.04.1/src/torrent/server.cpp
+libktorrent-25.04.1/src/torrent/torrentcreator.h
+libktorrent-25.04.1/src/torrent/torrent.h
+libktorrent-25.04.1/src/torrent/torrentcontrol.cpp
+libktorrent-25.04.1/src/torrent/job.cpp
+libktorrent-25.04.1/src/torrent/choker.h
+libktorrent-25.04.1/src/torrent/timeestimator.h
+libktorrent-25.04.1/src/torrent/server.h
+libktorrent-25.04.1/src/torrent/advancedchokealgorithm.cpp
+libktorrent-25.04.1/src/torrent/torrentfile.cpp
+libktorrent-25.04.1/src/torrent/CMakeLists.txt
+libktorrent-25.04.1/src/torrent/torrentcontrol.h
+libktorrent-25.04.1/src/torrent/torrentstats.h
+libktorrent-25.04.1/src/torrent/timeestimator.cpp
+libktorrent-25.04.1/src/torrent/statsfile.cpp
+libktorrent-25.04.1/src/torrent/peersourcemanager.h
+libktorrent-25.04.1/src/torrent/choker.cpp
+libktorrent-25.04.1/src/torrent/torrentfilestream.cpp
+libktorrent-25.04.1/src/torrent/globals.h
+libktorrent-25.04.1/src/torrent/statsfile.h
+libktorrent-25.04.1/src/download/
+libktorrent-25.04.1/src/download/request.h
+libktorrent-25.04.1/src/download/httpconnection.h
+libktorrent-25.04.1/src/download/packet.h
+libktorrent-25.04.1/src/download/downloader.cpp
+libktorrent-25.04.1/src/download/chunkselector.cpp
+libktorrent-25.04.1/src/download/piece.cpp
+libktorrent-25.04.1/src/download/webseed.h
+libktorrent-25.04.1/src/download/packet.cpp
+libktorrent-25.04.1/src/download/tests/
+libktorrent-25.04.1/src/download/tests/streamingchunkselectortest.cpp
+libktorrent-25.04.1/src/download/tests/CMakeLists.txt
+libktorrent-25.04.1/src/download/httpconnection.cpp
+libktorrent-25.04.1/src/download/downloader.h
+libktorrent-25.04.1/src/download/webseed.cpp
+libktorrent-25.04.1/src/download/streamingchunkselector.h
+libktorrent-25.04.1/src/download/chunkdownload.h
+libktorrent-25.04.1/src/download/chunkselector.h
+libktorrent-25.04.1/src/download/request.cpp
+libktorrent-25.04.1/src/download/httpresponseheader.cpp
+libktorrent-25.04.1/src/download/httpresponseheader.h
+libktorrent-25.04.1/src/download/chunkdownload.cpp
+libktorrent-25.04.1/src/download/CMakeLists.txt
+libktorrent-25.04.1/src/download/piece.h
+libktorrent-25.04.1/src/download/streamingchunkselector.cpp
+libktorrent-25.04.1/src/util/
+libktorrent-25.04.1/src/util/autorotatelogjob.cpp
+libktorrent-25.04.1/src/util/win32.cpp
+libktorrent-25.04.1/src/util/array.h
+libktorrent-25.04.1/src/util/signalcatcher.cpp
+libktorrent-25.04.1/src/util/decompressfilejob.cpp
+libktorrent-25.04.1/src/util/waitjob.cpp
+libktorrent-25.04.1/src/util/pipe.h
+libktorrent-25.04.1/src/util/functions.cpp
+libktorrent-25.04.1/src/util/extractfilejob.h
+libktorrent-25.04.1/src/util/log.h
+libktorrent-25.04.1/src/util/file.h
+libktorrent-25.04.1/src/util/decompressfilejob.h
+libktorrent-25.04.1/src/util/logsystemmanager.cpp
+libktorrent-25.04.1/src/util/logsystemmanager.h
+libktorrent-25.04.1/src/util/sha1hashgen.h
+libktorrent-25.04.1/src/util/circularbuffer.cpp
+libktorrent-25.04.1/src/util/error.cpp
+libktorrent-25.04.1/src/util/bufferpool.cpp
+libktorrent-25.04.1/src/util/resourcemanager.cpp
+libktorrent-25.04.1/src/util/sha1hashgen.cpp
+libktorrent-25.04.1/src/util/timer.h
+libktorrent-25.04.1/src/util/tests/
+libktorrent-25.04.1/src/util/tests/circularbuffertest.cpp
+libktorrent-25.04.1/src/util/tests/signalcatchertest.cpp
+libktorrent-25.04.1/src/util/tests/resourcemanagertest.cpp
+libktorrent-25.04.1/src/util/tests/fileopstest.cpp
+libktorrent-25.04.1/src/util/tests/bufferpooltest.cpp
+libktorrent-25.04.1/src/util/tests/CMakeLists.txt
+libktorrent-25.04.1/src/util/log.cpp
+libktorrent-25.04.1/src/util/ptrmap.cpp
+libktorrent-25.04.1/src/util/bitset.h
+libktorrent-25.04.1/src/util/functions.h
+libktorrent-25.04.1/src/util/win32.h
+libktorrent-25.04.1/src/util/urlencoder.h
+libktorrent-25.04.1/src/util/compressfilejob.cpp
+libktorrent-25.04.1/src/util/array.cpp
+libktorrent-25.04.1/src/util/fileops.cpp
+libktorrent-25.04.1/src/util/timer.cpp
+libktorrent-25.04.1/src/util/autorotatelogjob.h
+libktorrent-25.04.1/src/util/sha1hash.h
+libktorrent-25.04.1/src/util/bufferpool.h
+libktorrent-25.04.1/src/util/waitjob.h
+libktorrent-25.04.1/src/util/pipe.cpp
+libktorrent-25.04.1/src/util/ptrmap.h
+libktorrent-25.04.1/src/util/compressfilejob.h
+libktorrent-25.04.1/src/util/urlencoder.cpp
+libktorrent-25.04.1/src/util/file.cpp
+libktorrent-25.04.1/src/util/error.h
+libktorrent-25.04.1/src/util/resourcemanager.h
+libktorrent-25.04.1/src/util/constants.h
+libktorrent-25.04.1/src/util/signalcatcher.h
+libktorrent-25.04.1/src/util/CMakeLists.txt
+libktorrent-25.04.1/src/util/bitset.cpp
+libktorrent-25.04.1/src/util/circularbuffer.h
+libktorrent-25.04.1/src/util/extractfilejob.cpp
+libktorrent-25.04.1/src/util/sha1hash.cpp
+libktorrent-25.04.1/src/util/fileops.h
+libktorrent-25.04.1/src/upnp/
+libktorrent-25.04.1/src/upnp/httprequest.h
+libktorrent-25.04.1/src/upnp/soap.h
+libktorrent-25.04.1/src/upnp/upnprouter.cpp
+libktorrent-25.04.1/src/upnp/upnprouter.h
+libktorrent-25.04.1/src/upnp/soap.cpp
+libktorrent-25.04.1/src/upnp/upnpmcastsocket.cpp
+libktorrent-25.04.1/src/upnp/upnpmcastsocket.h
+libktorrent-25.04.1/src/upnp/httprequest.cpp
+libktorrent-25.04.1/src/upnp/upnpdescriptionparser.h
+libktorrent-25.04.1/src/upnp/CMakeLists.txt
+libktorrent-25.04.1/src/upnp/upnpdescriptionparser.cpp
+libktorrent-25.04.1/src/version.h
+libktorrent-25.04.1/src/diskio/
+libktorrent-25.04.1/src/diskio/piecedata.cpp
+libktorrent-25.04.1/src/diskio/deletedatafilesjob.cpp
+libktorrent-25.04.1/src/diskio/dndfile.cpp
+libktorrent-25.04.1/src/diskio/singlefilecache.h
+libktorrent-25.04.1/src/diskio/preallocationthread.h
+libktorrent-25.04.1/src/diskio/chunkmanager.cpp
+libktorrent-25.04.1/src/diskio/movedatafilesjob.h
+libktorrent-25.04.1/src/diskio/preallocationjob.cpp
+libktorrent-25.04.1/src/diskio/cache.h
+libktorrent-25.04.1/src/diskio/piecedata.h
+libktorrent-25.04.1/src/diskio/cache.cpp
+libktorrent-25.04.1/src/diskio/multifilecache.h
+libktorrent-25.04.1/src/diskio/multifilecache.cpp
+libktorrent-25.04.1/src/diskio/chunk.cpp
+libktorrent-25.04.1/src/diskio/tests/
+libktorrent-25.04.1/src/diskio/tests/chunkmanagertest.cpp
+libktorrent-25.04.1/src/diskio/tests/CMakeLists.txt
+libktorrent-25.04.1/src/diskio/tests/preallocationtest.cpp
+libktorrent-25.04.1/src/diskio/chunkmanager.h
+libktorrent-25.04.1/src/diskio/cachefile.cpp
+libktorrent-25.04.1/src/diskio/chunk.h
+libktorrent-25.04.1/src/diskio/movedatafilesjob.cpp
+libktorrent-25.04.1/src/diskio/preallocationjob.h
+libktorrent-25.04.1/src/diskio/singlefilecache.cpp
+libktorrent-25.04.1/src/diskio/dndfile.h
+libktorrent-25.04.1/src/diskio/CMakeLists.txt
+libktorrent-25.04.1/src/diskio/cachefile.h
+libktorrent-25.04.1/src/diskio/preallocationthread.cpp
+libktorrent-25.04.1/src/diskio/deletedatafilesjob.h
+libktorrent-25.04.1/src/utp/
+libktorrent-25.04.1/src/utp/localwindow.h
+libktorrent-25.04.1/src/utp/outputqueue.h
+libktorrent-25.04.1/src/utp/utpserverthread.h
+libktorrent-25.04.1/src/utp/outputqueue.cpp
+libktorrent-25.04.1/src/utp/utpprotocol.h
+libktorrent-25.04.1/src/utp/utpsocket.h
+libktorrent-25.04.1/src/utp/utpserver_p.h
+libktorrent-25.04.1/src/utp/packetbuffer.cpp
+libktorrent-25.04.1/src/utp/utpsocket.cpp
+libktorrent-25.04.1/src/utp/pollpipe.cpp
+libktorrent-25.04.1/src/utp/tests/
+libktorrent-25.04.1/src/utp/tests/connectiontest.cpp
+libktorrent-25.04.1/src/utp/tests/transmittest.cpp
+libktorrent-25.04.1/src/utp/tests/fintest.cpp
+libktorrent-25.04.1/src/utp/tests/timevaluetest.cpp
+libktorrent-25.04.1/src/utp/tests/localwindowtest.cpp
+libktorrent-25.04.1/src/utp/tests/packetbuffertest.cpp
+libktorrent-25.04.1/src/utp/tests/congestiontest.cpp
+libktorrent-25.04.1/src/utp/tests/sockettest.cpp
+libktorrent-25.04.1/src/utp/tests/connecttest.cpp
+libktorrent-25.04.1/src/utp/tests/sendtest.cpp
+libktorrent-25.04.1/src/utp/tests/packetlosstest.cpp
+libktorrent-25.04.1/src/utp/tests/remotewindowtest.cpp
+libktorrent-25.04.1/src/utp/tests/CMakeLists.txt
+libktorrent-25.04.1/src/utp/tests/delaywindowtest.cpp
+libktorrent-25.04.1/src/utp/tests/utppolltest.cpp
+libktorrent-25.04.1/src/utp/packetbuffer.h
+libktorrent-25.04.1/src/utp/pollpipe.h
+libktorrent-25.04.1/src/utp/remotewindow.h
+libktorrent-25.04.1/src/utp/timevalue.h
+libktorrent-25.04.1/src/utp/utpserver.h
+libktorrent-25.04.1/src/utp/timevalue.cpp
+libktorrent-25.04.1/src/utp/utpserver.cpp
+libktorrent-25.04.1/src/utp/connection.h
+libktorrent-25.04.1/src/utp/connection.cpp
+libktorrent-25.04.1/src/utp/utpprotocol.cpp
+libktorrent-25.04.1/src/utp/remotewindow.cpp
+libktorrent-25.04.1/src/utp/delaywindow.cpp
+libktorrent-25.04.1/src/utp/CMakeLists.txt
+libktorrent-25.04.1/src/utp/utpserverthread.cpp
+libktorrent-25.04.1/src/utp/delaywindow.h
+libktorrent-25.04.1/src/utp/localwindow.cpp
+libktorrent-25.04.1/src/bcodec/
+libktorrent-25.04.1/src/bcodec/bnode.cpp
+libktorrent-25.04.1/src/bcodec/bdecoder.cpp
+libktorrent-25.04.1/src/bcodec/bdecoder.h
+libktorrent-25.04.1/src/bcodec/value.h
+libktorrent-25.04.1/src/bcodec/bnode.h
+libktorrent-25.04.1/src/bcodec/value.cpp
+libktorrent-25.04.1/src/bcodec/bencoder.h
+libktorrent-25.04.1/src/bcodec/bencoder.cpp
+libktorrent-25.04.1/src/peer/
+libktorrent-25.04.1/src/peer/peerconnector.cpp
+libktorrent-25.04.1/src/peer/authenticate.cpp
+libktorrent-25.04.1/src/peer/peer.h
+libktorrent-25.04.1/src/peer/chunkcounter.cpp
+libktorrent-25.04.1/src/peer/peerconnector.h
+libktorrent-25.04.1/src/peer/connectionlimit.h
+libktorrent-25.04.1/src/peer/peermanager.h
+libktorrent-25.04.1/src/peer/superseeder.h
+libktorrent-25.04.1/src/peer/badpeerslist.h
+libktorrent-25.04.1/src/peer/peeruploader.h
+libktorrent-25.04.1/src/peer/authenticate.h
+libktorrent-25.04.1/src/peer/badpeerslist.cpp
+libktorrent-25.04.1/src/peer/serverauthenticate.h
+libktorrent-25.04.1/src/peer/utpex.h
+libktorrent-25.04.1/src/peer/serverauthenticate.cpp
+libktorrent-25.04.1/src/peer/chunkcounter.h
+libktorrent-25.04.1/src/peer/utpex.cpp
+libktorrent-25.04.1/src/peer/peerdownloader.h
+libktorrent-25.04.1/src/peer/tests/
+libktorrent-25.04.1/src/peer/tests/connectionlimittest.cpp
+libktorrent-25.04.1/src/peer/tests/superseedtest.cpp
+libktorrent-25.04.1/src/peer/tests/packetreadertest.cpp
+libktorrent-25.04.1/src/peer/tests/accessmanagertest.cpp
+libktorrent-25.04.1/src/peer/tests/CMakeLists.txt
+libktorrent-25.04.1/src/peer/peerprotocolextension.cpp
+libktorrent-25.04.1/src/peer/utmetadata.cpp
+libktorrent-25.04.1/src/peer/accessmanager.cpp
+libktorrent-25.04.1/src/peer/peermanager.cpp
+libktorrent-25.04.1/src/peer/authenticatebase.h
+libktorrent-25.04.1/src/peer/peeruploader.cpp
+libktorrent-25.04.1/src/peer/utmetadata.h
+libktorrent-25.04.1/src/peer/connectionlimit.cpp
+libktorrent-25.04.1/src/peer/peerprotocolextension.h
+libktorrent-25.04.1/src/peer/accessmanager.h
+libktorrent-25.04.1/src/peer/packetreader.cpp
+libktorrent-25.04.1/src/peer/authenticationmonitor.cpp
+libktorrent-25.04.1/src/peer/peerid.cpp
+libktorrent-25.04.1/src/peer/peerid.h
+libktorrent-25.04.1/src/peer/peer.cpp
+libktorrent-25.04.1/src/peer/superseeder.cpp
+libktorrent-25.04.1/src/peer/CMakeLists.txt
+libktorrent-25.04.1/src/peer/peerdownloader.cpp
+libktorrent-25.04.1/src/peer/authenticationmonitor.h
+libktorrent-25.04.1/src/peer/packetreader.h
+libktorrent-25.04.1/src/peer/authenticatebase.cpp
+libktorrent-25.04.1/src/tracker/
+libktorrent-25.04.1/src/tracker/trackermanager.cpp
+libktorrent-25.04.1/src/tracker/tracker.h
+libktorrent-25.04.1/src/tracker/udptrackersocket.h
+libktorrent-25.04.1/src/tracker/httptracker.h
+libktorrent-25.04.1/src/tracker/tracker.cpp
+libktorrent-25.04.1/src/tracker/kioannouncejob.h
+libktorrent-25.04.1/src/tracker/httptracker.cpp
+libktorrent-25.04.1/src/tracker/udptracker.cpp
+libktorrent-25.04.1/src/tracker/kioannouncejob.cpp
+libktorrent-25.04.1/src/tracker/udptracker.h
+libktorrent-25.04.1/src/tracker/CMakeLists.txt
+libktorrent-25.04.1/src/tracker/udptrackersocket.cpp
+libktorrent-25.04.1/src/tracker/trackermanager.h
+libktorrent-25.04.1/src/dht/
+libktorrent-25.04.1/src/dht/pack.cpp
+libktorrent-25.04.1/src/dht/key.h
+libktorrent-25.04.1/src/dht/rpccall.cpp
+libktorrent-25.04.1/src/dht/rpcmsg.cpp
+libktorrent-25.04.1/src/dht/findnodersp.cpp
+libktorrent-25.04.1/src/dht/packednodecontainer.h
+libktorrent-25.04.1/src/dht/rpcmsg.h
+libktorrent-25.04.1/src/dht/getpeersreq.cpp
+libktorrent-25.04.1/src/dht/dhtbase.h
+libktorrent-25.04.1/src/dht/dht.cpp
+libktorrent-25.04.1/src/dht/task.cpp
+libktorrent-25.04.1/src/dht/pack.h
+libktorrent-25.04.1/src/dht/findnodereq.h
+libktorrent-25.04.1/src/dht/kbuckettable.h
+libktorrent-25.04.1/src/dht/database.cpp
+libktorrent-25.04.1/src/dht/rpcmsgfactory.h
+libktorrent-25.04.1/src/dht/nodelookup.h
+libktorrent-25.04.1/src/dht/rpcserverinterface.cpp
+libktorrent-25.04.1/src/dht/errmsg.h
+libktorrent-25.04.1/src/dht/rpcserver.h
+libktorrent-25.04.1/src/dht/rpcserver.cpp
+libktorrent-25.04.1/src/dht/findnodereq.cpp
+libktorrent-25.04.1/src/dht/task.h
+libktorrent-25.04.1/src/dht/announcersp.h
+libktorrent-25.04.1/src/dht/kclosestnodessearch.cpp
+libktorrent-25.04.1/src/dht/pingreq.cpp
+libktorrent-25.04.1/src/dht/node.cpp
+libktorrent-25.04.1/src/dht/taskmanager.cpp
+libktorrent-25.04.1/src/dht/kbucketentry.h
+libktorrent-25.04.1/src/dht/rpcserverinterface.h
+libktorrent-25.04.1/src/dht/rpcmsgfactory.cpp
+libktorrent-25.04.1/src/dht/findnodersp.h
+libktorrent-25.04.1/src/dht/key.cpp
+libktorrent-25.04.1/src/dht/tests/
+libktorrent-25.04.1/src/dht/tests/rpcmsgtest.cpp
+libktorrent-25.04.1/src/dht/tests/CMakeLists.txt
+libktorrent-25.04.1/src/dht/tests/keytest.cpp
+libktorrent-25.04.1/src/dht/announcereq.cpp
+libktorrent-25.04.1/src/dht/dhtpeersource.h
+libktorrent-25.04.1/src/dht/pingrsp.h
+libktorrent-25.04.1/src/dht/kbucket.cpp
+libktorrent-25.04.1/src/dht/announcersp.cpp
+libktorrent-25.04.1/src/dht/kclosestnodessearch.h
+libktorrent-25.04.1/src/dht/announcetask.h
+libktorrent-25.04.1/src/dht/taskmanager.h
+libktorrent-25.04.1/src/dht/dht.h
+libktorrent-25.04.1/src/dht/nodelookup.cpp
+libktorrent-25.04.1/src/dht/getpeersrsp.cpp
+libktorrent-25.04.1/src/dht/kbuckettable.cpp
+libktorrent-25.04.1/src/dht/node.h
+libktorrent-25.04.1/src/dht/pingrsp.cpp
+libktorrent-25.04.1/src/dht/getpeersreq.h
+libktorrent-25.04.1/src/dht/announcereq.h
+libktorrent-25.04.1/src/dht/announcetask.cpp
+libktorrent-25.04.1/src/dht/kbucket.h
+libktorrent-25.04.1/src/dht/getpeersrsp.h
+libktorrent-25.04.1/src/dht/packednodecontainer.cpp
+libktorrent-25.04.1/src/dht/dhtbase.cpp
+libktorrent-25.04.1/src/dht/rpccall.h
+libktorrent-25.04.1/src/dht/database.h
+libktorrent-25.04.1/src/dht/CMakeLists.txt
+libktorrent-25.04.1/src/dht/pingreq.h
+libktorrent-25.04.1/src/dht/kbucketentry.cpp
+libktorrent-25.04.1/src/dht/dhtpeersource.cpp
+libktorrent-25.04.1/src/dht/errmsg.cpp
+libktorrent-25.04.1/src/CMakeLists.txt
+libktorrent-25.04.1/src/interfaces/
+libktorrent-25.04.1/src/interfaces/torrentinterface.cpp
+libktorrent-25.04.1/src/interfaces/piecedownloader.cpp
+libktorrent-25.04.1/src/interfaces/monitorinterface.h
+libktorrent-25.04.1/src/interfaces/serverinterface.cpp
+libktorrent-25.04.1/src/interfaces/peersource.h
+libktorrent-25.04.1/src/interfaces/trackerinterface.cpp
+libktorrent-25.04.1/src/interfaces/peersource.cpp
+libktorrent-25.04.1/src/interfaces/piecedownloader.h
+libktorrent-25.04.1/src/interfaces/chunkselectorinterface.h
+libktorrent-25.04.1/src/interfaces/blocklistinterface.cpp
+libktorrent-25.04.1/src/interfaces/monitorinterface.cpp
+libktorrent-25.04.1/src/interfaces/logmonitorinterface.cpp
+libktorrent-25.04.1/src/interfaces/trackerinterface.h
+libktorrent-25.04.1/src/interfaces/blocklistinterface.h
+libktorrent-25.04.1/src/interfaces/queuemanagerinterface.cpp
+libktorrent-25.04.1/src/interfaces/torrentfileinterface.cpp
+libktorrent-25.04.1/src/interfaces/queuemanagerinterface.h
+libktorrent-25.04.1/src/interfaces/cachefactory.h
+libktorrent-25.04.1/src/interfaces/webseedinterface.h
+libktorrent-25.04.1/src/interfaces/chunkdownloadinterface.h
+libktorrent-25.04.1/src/interfaces/peerinterface.cpp
+libktorrent-25.04.1/src/interfaces/torrentfileinterface.h
+libktorrent-25.04.1/src/interfaces/serverinterface.h
+libktorrent-25.04.1/src/interfaces/webseedinterface.cpp
+libktorrent-25.04.1/src/interfaces/trackerslist.h
+libktorrent-25.04.1/src/interfaces/trackerslist.cpp
+libktorrent-25.04.1/src/interfaces/exitoperation.h
+libktorrent-25.04.1/src/interfaces/chunkselectorinterface.cpp
+libktorrent-25.04.1/src/interfaces/logmonitorinterface.h
+libktorrent-25.04.1/src/interfaces/exitoperation.cpp
+libktorrent-25.04.1/src/interfaces/torrentinterface.h
+libktorrent-25.04.1/src/interfaces/chunkdownloadinterface.cpp
+libktorrent-25.04.1/src/interfaces/peerinterface.h
+libktorrent-25.04.1/src/interfaces/cachefactory.cpp
+libktorrent-25.04.1/src/net/
+libktorrent-25.04.1/src/net/wakeuppipe.cpp
+libktorrent-25.04.1/src/net/socketdevice.h
+libktorrent-25.04.1/src/net/address.h
+libktorrent-25.04.1/src/net/addressresolver.cpp
+libktorrent-25.04.1/src/net/reverseresolver.h
+libktorrent-25.04.1/src/net/trafficshapedsocket.h
+libktorrent-25.04.1/src/net/uploadthread.h
+libktorrent-25.04.1/src/net/streamsocket.cpp
+libktorrent-25.04.1/src/net/wakeuppipe.h
+libktorrent-25.04.1/src/net/networkthread.h
+libktorrent-25.04.1/src/net/networkthread.cpp
+libktorrent-25.04.1/src/net/addressresolver.h
+libktorrent-25.04.1/src/net/socketgroup.h
+libktorrent-25.04.1/src/net/streamsocket.h
+libktorrent-25.04.1/src/net/socketdevice.cpp
+libktorrent-25.04.1/src/net/serversocket.h
+libktorrent-25.04.1/src/net/socketmonitor.cpp
+libktorrent-25.04.1/src/net/poll.cpp
+libktorrent-25.04.1/src/net/uploadthread.cpp
+libktorrent-25.04.1/src/net/tests/
+libktorrent-25.04.1/src/net/tests/polltest.cpp
+libktorrent-25.04.1/src/net/tests/wakeuppipetest.cpp
+libktorrent-25.04.1/src/net/tests/CMakeLists.txt
+libktorrent-25.04.1/src/net/socketmonitor.h
+libktorrent-25.04.1/src/net/socks.h
+libktorrent-25.04.1/src/net/packetsocket.h
+libktorrent-25.04.1/src/net/downloadthread.h
+libktorrent-25.04.1/src/net/poll.h
+libktorrent-25.04.1/src/net/socketgroup.cpp
+libktorrent-25.04.1/src/net/socket.h
+libktorrent-25.04.1/src/net/socks.cpp
+libktorrent-25.04.1/src/net/serversocket.cpp
+libktorrent-25.04.1/src/net/socket.cpp
+libktorrent-25.04.1/src/net/downloadthread.cpp
+libktorrent-25.04.1/src/net/reverseresolver.cpp
+libktorrent-25.04.1/src/net/portlist.h
+libktorrent-25.04.1/src/net/packetsocket.cpp
+libktorrent-25.04.1/src/net/speed.cpp
+libktorrent-25.04.1/src/net/CMakeLists.txt
+libktorrent-25.04.1/src/net/portlist.cpp
+libktorrent-25.04.1/src/net/trafficshapedsocket.cpp
+libktorrent-25.04.1/src/net/speed.h
+libktorrent-25.04.1/src/net/address.cpp
+libktorrent-25.04.1/.gitignore
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found KF6Archive: /usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake (found version "6.14.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "5.240.0") found components: Archive Crash I18n KIO Solid
+-- Found LibGMP: /usr/include (found suitable version "6.3.0", minimum required is "6.0.0")
+-- Found LibGcrypt: /usr/include (found suitable version "1.11.1", minimum required is "1.4.5")
+-- Looking for include file xfs/xfs.h
+-- Looking for include file xfs/xfs.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of __u64
+-- Check size of __u64 - done
+-- Check size of __s64
+-- Check size of __s64 - done
+-- xfsprogs found, building with XFS specific disk preallocation support
+-- Looking for fopen64
+-- Looking for fopen64 - found
+-- Looking for fseeko64
+-- Looking for fseeko64 - found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for ftello64
+-- Looking for ftello64 - found
+-- Looking for ftello
+-- Looking for ftello - found
+-- Looking for fstat64
+-- Looking for fstat64 - found
+-- Looking for stat64
+-- Looking for stat64 - found
+-- Looking for ftruncate64
+-- Looking for ftruncate64 - found
+-- Looking for lseek64
+-- Looking for lseek64 - found
+-- Looking for mmap64
+-- Looking for mmap64 - found
+-- Looking for munmap64
+-- Looking for munmap64 - not found
+-- Looking for posix_fallocate64
+-- Looking for posix_fallocate64 - found
+-- Looking for posix_fallocate
+-- Looking for posix_fallocate - found
+-- Looking for fallocate
+-- Looking for fallocate - found
+-- Looking for statvfs
+-- Looking for statvfs - found
+-- Looking for statvfs64
+-- Looking for statvfs64 - found
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found version "1.13.2") found components: doxygen dot
+-- Doxygen and dot found. make docs target is available
+-- The following OPTIONAL packages have been found:
+
+ * ECM (required version >= 5.240.0)
+ * Qt6Test (required version >= 6.5.0)
+ * Qt6Core (required version >= 6.7.0)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * OpenGL
+ * Vulkan
+ * Qt6Xml (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Freetype
+ * PkgConfig
+ * Fontconfig
+ * Qt6Network (required version >= 6.7.0)
+ * Doxygen
+ * Git
+
+-- The following REQUIRED packages have been found:
+
+ * Qt6 (required version >= 6.5.0)
+ * KF6Archive (required version >= 5.240.0)
+ * KF6Crash (required version >= 5.240.0)
+ * Gettext
+ * KF6I18n (required version >= 5.240.0)
+ * KF6KIO (required version >= 5.240.0)
+ * KF6Solid (required version >= 5.240.0)
+ * KF6 (required version >= 5.240.0)
+ * boost_headers (required version == 1.88.0)
+ * Boost (required version >= 1.71.0)
+ * LibGMP (required version >= 6.0.0), A library for calculating huge numbers (integer and floating point)., <https://gmplib.org/>
+ * LibGcrypt (required version >= 1.4.5), General purpose crypto library based on the code used in GnuPG., <http://directory.fsf.org/wiki/Libgcrypt>
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.8.3)
+
+-- Configuring done (3.1s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/build
+[1/338] Generating ts...
+[2/338] Generating mo...
+[3/338] Automatic MOC for target KTorrent6
+[4/338] Building CXX object src/CMakeFiles/KTorrent6.dir/KTorrent6_autogen/mocs_compilation.cpp.o
+[5/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/ptrmap.cpp.o
+[6/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/array.cpp.o
+[7/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/bitset.cpp.o
+[8/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/error.cpp.o
+[9/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/sha1hash.cpp.o
+[10/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/timer.cpp.o
+[11/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/sha1hashgen.cpp.o
+[12/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/circularbuffer.cpp.o
+[13/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/urlencoder.cpp.o
+[14/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/pipe.cpp.o
+[15/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/logsystemmanager.cpp.o
+[16/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/waitjob.cpp.o
+[17/338] Building CXX object src/CMakeFiles/KTorrent6.dir/bcodec/bencoder.cpp.o
+[18/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/resourcemanager.cpp.o
+[19/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/bufferpool.cpp.o
+[20/338] Building CXX object src/CMakeFiles/KTorrent6.dir/bcodec/bdecoder.cpp.o
+[21/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/file.cpp.o
+[22/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/autorotatelogjob.cpp.o
+[23/338] Building CXX object src/CMakeFiles/KTorrent6.dir/bcodec/value.cpp.o
+[24/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/log.cpp.o
+[25/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/decompressfilejob.cpp.o
+[26/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/extractfilejob.cpp.o
+[27/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/portlist.cpp.o
+[28/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/compressfilejob.cpp.o
+[29/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/address.cpp.o
+[30/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/functions.cpp.o
+[31/338] Building CXX object src/CMakeFiles/KTorrent6.dir/bcodec/bnode.cpp.o
+[32/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/socket.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/src/net/socket.cpp: In member function ‘virtual int net::Socket::send(const bt::Uint8*, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/src/net/socket.cpp:248:29: warning: logical ‘and’ of equal expressions [-Wlogical-op]
+  248 |         if (errno != EAGAIN && errno != EWOULDBLOCK) {
+      |                             ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/src/net/socket.cpp: In member function ‘virtual int net::Socket::recv(bt::Uint8*, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/src/net/socket.cpp:265:29: warning: logical ‘and’ of equal expressions [-Wlogical-op]
+  265 |         if (errno != EAGAIN && errno != EWOULDBLOCK) {
+      |                             ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/src/net/socket.cpp: In member function ‘int net::Socket::sendTo(const bt::Uint8*, int, const net::Address&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/src/net/socket.cpp:287:29: warning: logical ‘or’ of equal expressions [-Wlogical-op]
+  287 |         if (errno == EAGAIN || errno == EWOULDBLOCK)
+      |                             ^
+[33/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/speed.cpp.o
+[34/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/packetsocket.cpp.o
+[35/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/socketmonitor.cpp.o
+[36/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/socketgroup.cpp.o
+[37/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/fileops.cpp.o
+[38/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/wakeuppipe.cpp.o
+[39/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/uploadthread.cpp.o
+[40/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/socketdevice.cpp.o
+[41/338] Building CXX object src/CMakeFiles/KTorrent6.dir/mse/bigint.cpp.o
+[42/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/chunkcounter.cpp.o
+[43/338] Building CXX object src/CMakeFiles/KTorrent6.dir/mse/functions.cpp.o
+[44/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/networkthread.cpp.o
+[45/338] Building CXX object src/CMakeFiles/KTorrent6.dir/mse/rc4encryptor.cpp.o
+[46/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/poll.cpp.o
+[47/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/reverseresolver.cpp.o
+[48/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/downloadthread.cpp.o
+[49/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/streamsocket.cpp.o
+[50/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/socks.cpp.o
+[51/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/addressresolver.cpp.o
+[52/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/serversocket.cpp.o
+[53/338] Building CXX object src/CMakeFiles/KTorrent6.dir/mse/encryptedserverauthenticate.cpp.o
+[54/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/authenticatebase.cpp.o
+[55/338] Building CXX object src/CMakeFiles/KTorrent6.dir/net/trafficshapedsocket.cpp.o
+[56/338] Building CXX object src/CMakeFiles/KTorrent6.dir/mse/encryptedpacketsocket.cpp.o
+[57/338] Building CXX object src/CMakeFiles/KTorrent6.dir/mse/encryptedauthenticate.cpp.o
+[58/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/authenticationmonitor.cpp.o
+[59/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/serverauthenticate.cpp.o
+[60/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/authenticate.cpp.o
+[61/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/packetreader.cpp.o
+[62/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/peerprotocolextension.cpp.o
+[63/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/peerdownloader.cpp.o
+[64/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/peerconnector.cpp.o
+[65/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/badpeerslist.cpp.o
+[66/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/utmetadata.cpp.o
+[67/338] Building CXX object src/CMakeFiles/KTorrent6.dir/download/packet.cpp.o
+[68/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/logmonitorinterface.cpp.o
+[69/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/utpex.cpp.o
+[70/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/blocklistinterface.cpp.o
+[71/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/connectionlimit.cpp.o
+[72/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/accessmanager.cpp.o
+[73/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/monitorinterface.cpp.o
+[74/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/peeruploader.cpp.o
+[75/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/peer.cpp.o
+[76/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/chunkselectorinterface.cpp.o
+[77/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/peerinterface.cpp.o
+[78/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/piecedownloader.cpp.o
+[79/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/superseeder.cpp.o
+[80/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/chunkdownloadinterface.cpp.o
+[81/338] Building CXX object src/CMakeFiles/KTorrent6.dir/download/chunkselector.cpp.o
+[82/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/cachefactory.cpp.o
+[83/338] Building CXX object src/CMakeFiles/KTorrent6.dir/download/streamingchunkselector.cpp.o
+[84/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/peerid.cpp.o
+[85/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/webseedinterface.cpp.o
+[86/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/torrentfileinterface.cpp.o
+[87/338] Building CXX object src/CMakeFiles/KTorrent6.dir/download/httpresponseheader.cpp.o
+[88/338] Building CXX object src/CMakeFiles/KTorrent6.dir/download/webseed.cpp.o
+[89/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/trackerslist.cpp.o
+[90/338] Building CXX object src/CMakeFiles/KTorrent6.dir/download/httpconnection.cpp.o
+[91/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/torrentinterface.cpp.o
+[92/338] Building CXX object src/CMakeFiles/KTorrent6.dir/peer/peermanager.cpp.o
+[93/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/exitoperation.cpp.o
+[94/338] Building CXX object src/CMakeFiles/KTorrent6.dir/download/chunkdownload.cpp.o
+[95/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/peersource.cpp.o
+[96/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/trackerinterface.cpp.o
+[97/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/queuemanagerinterface.cpp.o
+[98/338] Building CXX object src/CMakeFiles/KTorrent6.dir/download/downloader.cpp.o
+[99/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/server.cpp.o
+[100/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/torrentfile.cpp.o
+[101/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/globals.cpp.o
+[102/338] Building CXX object src/CMakeFiles/KTorrent6.dir/interfaces/serverinterface.cpp.o
+[103/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/timeestimator.cpp.o
+[104/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/choker.cpp.o
+[105/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/statsfile.cpp.o
+[106/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/uploader.cpp.o
+[107/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/torrentstats.cpp.o
+[108/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/rpcmsg.cpp.o
+[109/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/nodelookup.cpp.o
+[110/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/jobqueue.cpp.o
+[111/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/peersourcemanager.cpp.o
+[112/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/key.cpp.o
+[113/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/job.cpp.o
+[114/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/kclosestnodessearch.cpp.o
+[115/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/torrentfilestream.cpp.o
+[116/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/announcetask.cpp.o
+[117/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/rpcmsgfactory.cpp.o
+[118/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/advancedchokealgorithm.cpp.o
+[119/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/pack.cpp.o
+[120/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/dht.cpp.o
+[121/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/torrent.cpp.o
+[122/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/dhtpeersource.cpp.o
+[123/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/torrentcreator.cpp.o
+[124/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/rpcserverinterface.cpp.o
+[125/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/taskmanager.cpp.o
+[126/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/kbucketentry.cpp.o
+[127/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/dhtbase.cpp.o
+[128/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/packednodecontainer.cpp.o
+[129/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/database.cpp.o
+[130/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/rpcserver.cpp.o
+[131/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/pingreq.cpp.o
+[132/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/pingrsp.cpp.o
+[133/338] Building CXX object src/CMakeFiles/KTorrent6.dir/torrent/torrentcontrol.cpp.o
+[134/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/kbuckettable.cpp.o
+[135/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/getpeersreq.cpp.o
+[136/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/errmsg.cpp.o
+[137/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/rpccall.cpp.o
+[138/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/findnodersp.cpp.o
+[139/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/task.cpp.o
+[140/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/node.cpp.o
+[141/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/announcereq.cpp.o
+[142/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/findnodereq.cpp.o
+[143/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/dndfile.cpp.o
+[144/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/kbucket.cpp.o
+[145/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/chunk.cpp.o
+[146/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/announcersp.cpp.o
+[147/338] Building CXX object src/CMakeFiles/KTorrent6.dir/dht/getpeersrsp.cpp.o
+[148/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/preallocationthread.cpp.o
+[149/338] Building CXX object src/CMakeFiles/KTorrent6.dir/datachecker/datachecker.cpp.o
+[150/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/piecedata.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/src/diskio/piecedata.cpp: In member function ‘bt::Uint32 bt::PieceData::write(const bt::Uint8*, bt::Uint32, bt::Uint32)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/work/libktorrent-25.04.1/src/diskio/piecedata.cpp:47:54: warning: argument ‘buf_size’ might be clobbered by ‘longjmp’ or ‘vfork’ [-Wclobbered]
+   47 | Uint32 PieceData::write(const bt::Uint8 *buf, Uint32 buf_size, Uint32 off)
+      |                                               ~~~~~~~^~~~~~~~
+[151/338] Building CXX object src/CMakeFiles/KTorrent6.dir/tracker/kioannouncejob.cpp.o
+[152/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/preallocationjob.cpp.o
+[153/338] Building CXX object src/CMakeFiles/KTorrent6.dir/tracker/tracker.cpp.o
+[154/338] Building CXX object src/CMakeFiles/KTorrent6.dir/datachecker/singledatachecker.cpp.o
+[155/338] Building CXX object src/CMakeFiles/KTorrent6.dir/tracker/udptracker.cpp.o
+[156/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/cache.cpp.o
+[157/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/movedatafilesjob.cpp.o
+[158/338] Building CXX object src/CMakeFiles/KTorrent6.dir/datachecker/datacheckerthread.cpp.o
+[159/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/singlefilecache.cpp.o
+[160/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/cachefile.cpp.o
+[161/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/timevalue.cpp.o
+[162/338] Building CXX object src/CMakeFiles/KTorrent6.dir/magnet/metadatadownload.cpp.o
+[163/338] Building CXX object src/CMakeFiles/KTorrent6.dir/magnet/magnetlink.cpp.o
+[164/338] Building CXX object src/CMakeFiles/KTorrent6.dir/tracker/udptrackersocket.cpp.o
+[165/338] Building CXX object src/CMakeFiles/KTorrent6.dir/datachecker/datacheckerjob.cpp.o
+[166/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/deletedatafilesjob.cpp.o
+[167/338] Building CXX object src/CMakeFiles/KTorrent6.dir/tracker/httptracker.cpp.o
+[168/338] Building CXX object src/CMakeFiles/KTorrent6.dir/datachecker/multidatachecker.cpp.o
+[169/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/chunkmanager.cpp.o
+[170/338] Building CXX object src/CMakeFiles/KTorrent6.dir/tracker/trackermanager.cpp.o
+[171/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/utpprotocol.cpp.o
+[172/338] Building CXX object src/CMakeFiles/KTorrent6.dir/magnet/magnetdownloader.cpp.o
+[173/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/utpserverthread.cpp.o
+[174/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/remotewindow.cpp.o
+[175/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/delaywindow.cpp.o
+[176/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/localwindow.cpp.o
+[177/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/utpsocket.cpp.o
+[178/338] Building CXX object src/CMakeFiles/KTorrent6.dir/diskio/multifilecache.cpp.o
+[179/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/pollpipe.cpp.o
+[180/338] Building CXX object src/CMakeFiles/KTorrent6.dir/upnp/soap.cpp.o
+[181/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/packetbuffer.cpp.o
+[182/338] Building CXX object src/CMakeFiles/KTorrent6.dir/version.cpp.o
+[183/338] Building CXX object src/CMakeFiles/KTorrent6.dir/util/signalcatcher.cpp.o
+[184/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/outputqueue.cpp.o
+[185/338] Building CXX object src/CMakeFiles/KTorrent6.dir/upnp/upnpdescriptionparser.cpp.o
+[186/338] Building CXX object src/CMakeFiles/KTorrent6.dir/upnp/httprequest.cpp.o
+[187/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/connection.cpp.o
+[188/338] Building CXX object src/CMakeFiles/KTorrent6.dir/upnp/upnpmcastsocket.cpp.o
+[189/338] Building CXX object src/CMakeFiles/KTorrent6.dir/utp/utpserver.cpp.o
+[190/338] Building CXX object src/CMakeFiles/KTorrent6.dir/upnp/upnprouter.cpp.o
+[191/338] Linking CXX shared library bin/libKTorrent6.so.25.04.1
+[192/338] Creating library symlink bin/libKTorrent6.so.6 bin/libKTorrent6.so
+[193/338] Automatic MOC for target sendtest
+[194/338] Automatic MOC for target testlib
+[195/338] Automatic MOC for target packetlosstest
+[196/338] Automatic MOC for target connecttest
+[197/338] Automatic MOC for target connectiontest
+[198/338] Automatic MOC for target fintest
+[199/338] Building CXX object testlib/CMakeFiles/testlib.dir/testlib_autogen/mocs_compilation.cpp.o
+[200/338] Automatic MOC for target sockettest
+[201/338] Automatic MOC for target utppolltest
+[202/338] Building CXX object src/utp/tests/CMakeFiles/connectiontest.dir/connectiontest_autogen/mocs_compilation.cpp.o
+[203/338] Automatic MOC for target statsfiletest
+[204/338] Automatic MOC for target fileopstest
+[205/338] Building CXX object src/torrent/tests/CMakeFiles/statsfiletest.dir/statsfiletest_autogen/mocs_compilation.cpp.o
+[206/338] Building CXX object testlib/CMakeFiles/testlib.dir/utils.cpp.o
+[207/338] Automatic MOC for target packetreadertest
+[208/338] Automatic MOC for target superseedtest
+[209/338] Building CXX object src/peer/tests/CMakeFiles/packetreadertest.dir/packetreadertest_autogen/mocs_compilation.cpp.o
+[210/338] Building CXX object src/util/tests/CMakeFiles/fileopstest.dir/fileopstest_autogen/mocs_compilation.cpp.o
+[211/338] Automatic MOC for target resourcemanagertest
+[212/338] Building CXX object src/peer/tests/CMakeFiles/superseedtest.dir/superseedtest_autogen/mocs_compilation.cpp.o
+[213/338] Automatic MOC for target accessmanagertest
+[214/338] Automatic MOC for target connectionlimittest
+[215/338] Building CXX object src/util/tests/CMakeFiles/resourcemanagertest.dir/resourcemanagertest_autogen/mocs_compilation.cpp.o
+[216/338] Automatic MOC for target circularbuffertest
+[217/338] Building CXX object src/peer/tests/CMakeFiles/accessmanagertest.dir/accessmanagertest_autogen/mocs_compilation.cpp.o
+[218/338] Automatic MOC for target wakeuppipetest
+[219/338] Automatic MOC for target remotewindowtest
+[220/338] Automatic MOC for target transmittest
+[221/338] Building CXX object src/peer/tests/CMakeFiles/connectionlimittest.dir/connectionlimittest_autogen/mocs_compilation.cpp.o
+[222/338] Automatic MOC for target ktcli
+[223/338] Automatic MOC for target localwindowtest
+[224/338] Building CXX object src/util/tests/CMakeFiles/circularbuffertest.dir/circularbuffertest_autogen/mocs_compilation.cpp.o
+[225/338] Automatic MOC for target rc4encryptortest
+[226/338] Building CXX object src/net/tests/CMakeFiles/wakeuppipetest.dir/wakeuppipetest_autogen/mocs_compilation.cpp.o
+[227/338] Automatic MOC for target polltest
+[228/338] Automatic MOC for target delaywindowtest
+[229/338] Automatic MOC for target signalcatchertest
+[230/338] Building CXX object src/utp/tests/CMakeFiles/remotewindowtest.dir/remotewindowtest_autogen/mocs_compilation.cpp.o
+[231/338] Building CXX object src/utp/tests/CMakeFiles/localwindowtest.dir/localwindowtest_autogen/mocs_compilation.cpp.o
+[232/338] Automatic MOC for target bufferpooltest
+[233/338] Automatic MOC for target packetbuffertest
+[234/338] Building CXX object src/net/tests/CMakeFiles/polltest.dir/polltest_autogen/mocs_compilation.cpp.o
+[235/338] Building CXX object src/mse/tests/CMakeFiles/rc4encryptortest.dir/rc4encryptortest_autogen/mocs_compilation.cpp.o
+[236/338] Building CXX object src/util/tests/CMakeFiles/bufferpooltest.dir/bufferpooltest_autogen/mocs_compilation.cpp.o
+[237/338] Building CXX object src/utp/tests/CMakeFiles/sendtest.dir/sendtest_autogen/mocs_compilation.cpp.o
+[238/338] Building CXX object src/util/tests/CMakeFiles/signalcatchertest.dir/signalcatchertest_autogen/mocs_compilation.cpp.o
+[239/338] Building CXX object src/utp/tests/CMakeFiles/connecttest.dir/connecttest_autogen/mocs_compilation.cpp.o
+[240/338] Building CXX object src/utp/tests/CMakeFiles/transmittest.dir/transmittest_autogen/mocs_compilation.cpp.o
+[241/338] Building CXX object src/utp/tests/CMakeFiles/packetlosstest.dir/packetlosstest_autogen/mocs_compilation.cpp.o
+[242/338] Building CXX object src/utp/tests/CMakeFiles/fintest.dir/fintest_autogen/mocs_compilation.cpp.o
+[243/338] Building CXX object testlib/CMakeFiles/testlib.dir/dummytorrentcreator.cpp.o
+[244/338] Linking CXX static library lib/libtestlib.a
+[245/338] Automatic MOC for target torrentfilestreamtest
+[246/338] Building CXX object src/util/tests/CMakeFiles/circularbuffertest.dir/circularbuffertest.cpp.o
+[247/338] Building CXX object src/utp/tests/CMakeFiles/connecttest.dir/connecttest.cpp.o
+[248/338] Building CXX object src/peer/tests/CMakeFiles/packetreadertest.dir/packetreadertest.cpp.o
+[249/338] Building CXX object src/util/tests/CMakeFiles/bufferpooltest.dir/bufferpooltest.cpp.o
+[250/338] Building CXX object src/mse/tests/CMakeFiles/rc4encryptortest.dir/rc4encryptortest.cpp.o
+[251/338] Building CXX object src/utp/tests/CMakeFiles/fintest.dir/fintest.cpp.o
+[252/338] Automatic MOC for target torrentfilestreammultitest
+[253/338] Building CXX object src/peer/tests/CMakeFiles/accessmanagertest.dir/accessmanagertest.cpp.o
+[254/338] Building CXX object src/torrent/tests/CMakeFiles/torrentfilestreamtest.dir/torrentfilestreamtest_autogen/mocs_compilation.cpp.o
+[255/338] Building CXX object src/utp/tests/CMakeFiles/transmittest.dir/transmittest.cpp.o
+[256/338] Building CXX object src/torrent/tests/CMakeFiles/torrentfilestreammultitest.dir/torrentfilestreammultitest_autogen/mocs_compilation.cpp.o
+[257/338] Building CXX object src/utp/tests/CMakeFiles/connectiontest.dir/connectiontest.cpp.o
+[258/338] Automatic MOC for target datacheckertest
+[259/338] Building CXX object src/utp/tests/CMakeFiles/sockettest.dir/sockettest_autogen/mocs_compilation.cpp.o
+[260/338] Building CXX object src/datachecker/tests/CMakeFiles/datacheckertest.dir/datacheckertest_autogen/mocs_compilation.cpp.o
+[261/338] Building CXX object src/net/tests/CMakeFiles/polltest.dir/polltest.cpp.o
+[262/338] Building CXX object src/peer/tests/CMakeFiles/superseedtest.dir/superseedtest.cpp.o
+[263/338] Building CXX object src/utp/tests/CMakeFiles/utppolltest.dir/utppolltest_autogen/mocs_compilation.cpp.o
+[264/338] Building CXX object src/utp/tests/CMakeFiles/delaywindowtest.dir/delaywindowtest_autogen/mocs_compilation.cpp.o
+[265/338] Building CXX object src/util/tests/CMakeFiles/fileopstest.dir/fileopstest.cpp.o
+[266/338] Building CXX object src/utp/tests/CMakeFiles/packetbuffertest.dir/packetbuffertest_autogen/mocs_compilation.cpp.o
+[267/338] Building CXX object src/util/tests/CMakeFiles/signalcatchertest.dir/signalcatchertest.cpp.o
+[268/338] Automatic MOC for target rpcmsgtest
+[269/338] Automatic MOC for target chunkmanagertest
+[270/338] Building CXX object examples/ktcli/CMakeFiles/ktcli.dir/ktcli_autogen/mocs_compilation.cpp.o
+[271/338] Building CXX object src/dht/tests/CMakeFiles/rpcmsgtest.dir/rpcmsgtest_autogen/mocs_compilation.cpp.o
+[272/338] Automatic MOC for target magnetlinktest
+[273/338] Building CXX object src/magnet/tests/CMakeFiles/magnetlinktest.dir/magnetlinktest_autogen/mocs_compilation.cpp.o
+[274/338] Automatic MOC for target preallocationtest
+[275/338] Building CXX object src/diskio/tests/CMakeFiles/chunkmanagertest.dir/chunkmanagertest_autogen/mocs_compilation.cpp.o
+[276/338] Building CXX object src/diskio/tests/CMakeFiles/preallocationtest.dir/preallocationtest_autogen/mocs_compilation.cpp.o
+[277/338] Automatic MOC for target streamingchunkselectortest
+[278/338] Building CXX object src/download/tests/CMakeFiles/streamingchunkselectortest.dir/streamingchunkselectortest_autogen/mocs_compilation.cpp.o
+[279/338] Building CXX object src/utp/tests/CMakeFiles/localwindowtest.dir/localwindowtest.cpp.o
+[280/338] Automatic MOC for target keytest
+[281/338] Building CXX object src/dht/tests/CMakeFiles/keytest.dir/keytest_autogen/mocs_compilation.cpp.o
+[282/338] Building CXX object src/utp/tests/CMakeFiles/sendtest.dir/sendtest.cpp.o
+[283/338] Building CXX object src/peer/tests/CMakeFiles/connectionlimittest.dir/connectionlimittest.cpp.o
+[284/338] Building CXX object src/net/tests/CMakeFiles/wakeuppipetest.dir/wakeuppipetest.cpp.o
+[285/338] Building CXX object src/torrent/tests/CMakeFiles/statsfiletest.dir/statsfiletest.cpp.o
+[286/338] Building CXX object src/utp/tests/CMakeFiles/remotewindowtest.dir/remotewindowtest.cpp.o
+[287/338] Building CXX object src/util/tests/CMakeFiles/resourcemanagertest.dir/resourcemanagertest.cpp.o
+[288/338] Linking CXX executable bin/superseedtest
+[289/338] Linking CXX executable bin/packetreadertest
+[290/338] Building CXX object src/utp/tests/CMakeFiles/packetlosstest.dir/packetlosstest.cpp.o
+[291/338] Linking CXX executable bin/connectionlimittest
+[292/338] Linking CXX executable bin/statsfiletest
+[293/338] Linking CXX executable bin/polltest
+[294/338] Linking CXX executable bin/accessmanagertest
+[295/338] Linking CXX executable bin/wakeuppipetest
+[296/338] Linking CXX executable bin/circularbuffertest
+[297/338] Linking CXX executable bin/resourcemanagertest
+[298/338] Linking CXX executable bin/signalcatchertest
+[299/338] Linking CXX executable bin/rc4encryptortest
+[300/338] Linking CXX executable bin/fileopstest
+[301/338] Linking CXX executable bin/localwindowtest
+[302/338] Linking CXX executable bin/bufferpooltest
+[303/338] Linking CXX executable bin/remotewindowtest
+[304/338] Linking CXX executable bin/sendtest
+[305/338] Linking CXX executable bin/connectiontest
+[306/338] Linking CXX executable bin/transmittest
+[307/338] Linking CXX executable bin/connecttest
+[308/338] Linking CXX executable bin/packetlosstest
+[309/338] Linking CXX executable bin/fintest
+[310/338] Building CXX object examples/ktcli/CMakeFiles/ktcli.dir/main.cpp.o
+[311/338] Building CXX object src/dht/tests/CMakeFiles/keytest.dir/keytest.cpp.o
+[312/338] Building CXX object src/torrent/tests/CMakeFiles/torrentfilestreammultitest.dir/torrentfilestreammultitest.cpp.o
+[313/338] Building CXX object src/dht/tests/CMakeFiles/rpcmsgtest.dir/rpcmsgtest.cpp.o
+[314/338] Building CXX object examples/ktcli/CMakeFiles/ktcli.dir/ktcli.cpp.o
+[315/338] Building CXX object src/datachecker/tests/CMakeFiles/datacheckertest.dir/datacheckertest.cpp.o
+[316/338] Building CXX object src/diskio/tests/CMakeFiles/preallocationtest.dir/preallocationtest.cpp.o
+[317/338] Linking CXX executable bin/keytest
+[318/338] Linking CXX executable bin/torrentfilestreammultitest
+[319/338] Linking CXX executable bin/rpcmsgtest
+[320/338] Linking CXX executable bin/ktcli
+[321/338] Building CXX object src/download/tests/CMakeFiles/streamingchunkselectortest.dir/streamingchunkselectortest.cpp.o
+[322/338] Linking CXX executable bin/datacheckertest
+[323/338] Linking CXX executable bin/preallocationtest
+[324/338] Building CXX object src/utp/tests/CMakeFiles/utppolltest.dir/utppolltest.cpp.o
+[325/338] Building CXX object src/utp/tests/CMakeFiles/sockettest.dir/sockettest.cpp.o
+[326/338] Building CXX object src/utp/tests/CMakeFiles/packetbuffertest.dir/packetbuffertest.cpp.o
+[327/338] Linking CXX executable bin/streamingchunkselectortest
+[328/338] Linking CXX executable bin/utppolltest
+[329/338] Building CXX object src/utp/tests/CMakeFiles/delaywindowtest.dir/delaywindowtest.cpp.o
+[330/338] Linking CXX executable bin/sockettest
+[331/338] Linking CXX executable bin/packetbuffertest
+[332/338] Building CXX object src/magnet/tests/CMakeFiles/magnetlinktest.dir/magnetlinktest.cpp.o
+[333/338] Building CXX object src/diskio/tests/CMakeFiles/chunkmanagertest.dir/chunkmanagertest.cpp.o
+[334/338] Building CXX object src/torrent/tests/CMakeFiles/torrentfilestreamtest.dir/torrentfilestreamtest.cpp.o
+[335/338] Linking CXX executable bin/delaywindowtest
+[336/338] Linking CXX executable bin/magnetlinktest
+[337/338] Linking CXX executable bin/chunkmanagertest
+[338/338] Linking CXX executable bin/torrentfilestreamtest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/libKTorrent6.so.25.04.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/libKTorrent6.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/libKTorrent6.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/bcodec/bencoder.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/bcodec/bnode.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/bcodec/bdecoder.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/bcodec/value.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/peerinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/queuemanagerinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/exitoperation.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/chunkdownloadinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/trackerslist.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/torrentinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/logmonitorinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/piecedownloader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/monitorinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/blocklistinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/torrentfileinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/peersource.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/chunkselectorinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/cachefactory.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/webseedinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/trackerinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/interfaces/serverinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/ktorrent_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/libktorrent_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/torrent.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/advancedchokealgorithm.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/peersourcemanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/choker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/server.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/torrentcontrol.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/uploader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/torrentcreator.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/timeestimator.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/torrentfile.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/statsfile.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/globals.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/torrentstats.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/job.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/jobqueue.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/torrent/torrentfilestream.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/datachecker/datacheckerthread.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/datachecker/datachecker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/datachecker/singledatachecker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/datachecker/multidatachecker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/datachecker/datacheckerjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/download/chunkdownload.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/download/downloader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/download/request.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/download/piece.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/download/packet.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/download/chunkselector.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/download/webseed.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/cache.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/cachefile.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/singlefilecache.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/preallocationthread.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/preallocationjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/movedatafilesjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/deletedatafilesjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/chunkmanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/dndfile.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/chunk.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/multifilecache.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/diskio/piecedata.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/peeruploader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/peer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/peermanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/authenticatebase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/authenticate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/peerprotocolextension.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/utpex.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/utmetadata.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/packetreader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/authenticationmonitor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/peerid.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/peerdownloader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/chunkcounter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/serverauthenticate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/accessmanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/peerconnector.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/superseeder.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/peer/connectionlimit.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/socks.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/packetsocket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/trafficshapedsocket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/streamsocket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/downloadthread.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/address.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/addressresolver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/socketgroup.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/portlist.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/networkthread.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/socket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/speed.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/uploadthread.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/socketmonitor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/reverseresolver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/socketdevice.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/poll.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/wakeuppipe.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/net/serversocket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/mse/encryptedserverauthenticate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/mse/functions.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/mse/rc4encryptor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/mse/encryptedauthenticate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/mse/bigint.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/mse/encryptedpacketsocket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/magnet/magnetdownloader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/magnet/magnetlink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/magnet/metadatadownload.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/autorotatelogjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/fileops.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/timer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/ptrmap.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/log.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/waitjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/urlencoder.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/array.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/functions.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/file.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/constants.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/bitset.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/sha1hash.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/sha1hashgen.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/error.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/win32.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/logsystemmanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/compressfilejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/decompressfilejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/extractfilejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/pipe.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/circularbuffer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/resourcemanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/bufferpool.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/util/signalcatcher.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/utpserver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/utpserverthread.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/utpprotocol.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/utpsocket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/connection.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/localwindow.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/remotewindow.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/timevalue.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/pollpipe.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/delaywindow.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/utp/packetbuffer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/upnp/upnprouter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/upnp/upnpmcastsocket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/tracker/tracker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/tracker/udptracker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/tracker/udptrackersocket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/tracker/httptracker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/tracker/trackermanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/tracker/kioannouncejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/dhtbase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/rpcserver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/rpcserverinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/key.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/pack.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/rpcmsg.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/dhtpeersource.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/announcetask.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/rpccall.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/kclosestnodessearch.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/dht.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/node.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/task.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/nodelookup.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/taskmanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/kbucket.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/kbucketentry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/kbuckettable.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/database.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/announcereq.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/announcersp.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/pingreq.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/pingrsp.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/findnodereq.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/findnodersp.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/getpeersreq.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/getpeersrsp.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/include/KF6/libktorrent/dht/rpcmsgfactory.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/cmake/KTorrent6/FindLibGMP.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/cmake/KTorrent6/FindLibGcrypt.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/cmake/KTorrent6/KTorrent6Config.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/cmake/KTorrent6/KTorrent6ConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/cmake/KTorrent6/KTorrent6Targets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/lib64/cmake/KTorrent6/KTorrent6Targets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/da/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ms
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ms/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/cs/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ja/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@ijekavian/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/de/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/el/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nn/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hi/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pt_BR/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/lt/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/be/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sl/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ro/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/bs/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/is/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/kk/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sr@latin/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/he/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/zh_TW/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pl/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/km/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/pt/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hr/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/tr/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/fr/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ast/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ka/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/gl/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ia/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hu/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/eo/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/bg/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ga/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ca/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/uk/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ku
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ku/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/en_GB/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/zh_CN/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nl/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/oc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/oc/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sa/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/fi/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ko/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ru/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/lv/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hne
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/hne/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ca@valencia/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nb/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/es/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/eu/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/et/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/it/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/se
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/se/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/se/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ar/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/nds/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/mr/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/ug/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sk/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/si
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/si/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/si/LC_MESSAGES/libktorrent6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/package-libktorrent/usr/share/locale/sv/LC_MESSAGES/libktorrent6.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'README*': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libktorrent/libktorrent.info: No such file or directory
+doxygen
+extra-cmake-modules
+karchive
+kcrash
+ki18n
+kio
+solid
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKTorrent6.so	libKTorrent6.so.6
+usr/lib64/libKTorrent6.so.6	libKTorrent6.so.25.04.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKTorrent6.so )
+( cd usr/lib64 ; ln -sf libKTorrent6.so.6 libKTorrent6.so )
+( cd usr/lib64 ; rm -rf libKTorrent6.so.6 )
+( cd usr/lib64 ; ln -sf libKTorrent6.so.25.04.1 libKTorrent6.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKTorrent6.so.6'
+removed './usr/lib64/libKTorrent6.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/libktorrent/libktorrent-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/libktorrent-25.04.1/
+usr/doc/libktorrent-25.04.1/ChangeLog
+usr/doc/libktorrent-25.04.1/libktorrent.ini
+usr/doc/libktorrent-25.04.1/slack-required
+usr/include/
+usr/include/KF6/
+usr/include/KF6/libktorrent/
+usr/include/KF6/libktorrent/bcodec/
+usr/include/KF6/libktorrent/bcodec/bdecoder.h
+usr/include/KF6/libktorrent/bcodec/bencoder.h
+usr/include/KF6/libktorrent/bcodec/bnode.h
+usr/include/KF6/libktorrent/bcodec/value.h
+usr/include/KF6/libktorrent/datachecker/
+usr/include/KF6/libktorrent/datachecker/datachecker.h
+usr/include/KF6/libktorrent/datachecker/datacheckerjob.h
+usr/include/KF6/libktorrent/datachecker/datacheckerthread.h
+usr/include/KF6/libktorrent/datachecker/multidatachecker.h
+usr/include/KF6/libktorrent/datachecker/singledatachecker.h
+usr/include/KF6/libktorrent/dht/
+usr/include/KF6/libktorrent/dht/announcereq.h
+usr/include/KF6/libktorrent/dht/announcersp.h
+usr/include/KF6/libktorrent/dht/announcetask.h
+usr/include/KF6/libktorrent/dht/database.h
+usr/include/KF6/libktorrent/dht/dht.h
+usr/include/KF6/libktorrent/dht/dhtbase.h
+usr/include/KF6/libktorrent/dht/dhtpeersource.h
+usr/include/KF6/libktorrent/dht/findnodereq.h
+usr/include/KF6/libktorrent/dht/findnodersp.h
+usr/include/KF6/libktorrent/dht/getpeersreq.h
+usr/include/KF6/libktorrent/dht/getpeersrsp.h
+usr/include/KF6/libktorrent/dht/kbucket.h
+usr/include/KF6/libktorrent/dht/kbucketentry.h
+usr/include/KF6/libktorrent/dht/kbuckettable.h
+usr/include/KF6/libktorrent/dht/kclosestnodessearch.h
+usr/include/KF6/libktorrent/dht/key.h
+usr/include/KF6/libktorrent/dht/node.h
+usr/include/KF6/libktorrent/dht/nodelookup.h
+usr/include/KF6/libktorrent/dht/pack.h
+usr/include/KF6/libktorrent/dht/pingreq.h
+usr/include/KF6/libktorrent/dht/pingrsp.h
+usr/include/KF6/libktorrent/dht/rpccall.h
+usr/include/KF6/libktorrent/dht/rpcmsg.h
+usr/include/KF6/libktorrent/dht/rpcmsgfactory.h
+usr/include/KF6/libktorrent/dht/rpcserver.h
+usr/include/KF6/libktorrent/dht/rpcserverinterface.h
+usr/include/KF6/libktorrent/dht/task.h
+usr/include/KF6/libktorrent/dht/taskmanager.h
+usr/include/KF6/libktorrent/diskio/
+usr/include/KF6/libktorrent/diskio/cache.h
+usr/include/KF6/libktorrent/diskio/cachefile.h
+usr/include/KF6/libktorrent/diskio/chunk.h
+usr/include/KF6/libktorrent/diskio/chunkmanager.h
+usr/include/KF6/libktorrent/diskio/deletedatafilesjob.h
+usr/include/KF6/libktorrent/diskio/dndfile.h
+usr/include/KF6/libktorrent/diskio/movedatafilesjob.h
+usr/include/KF6/libktorrent/diskio/multifilecache.h
+usr/include/KF6/libktorrent/diskio/piecedata.h
+usr/include/KF6/libktorrent/diskio/preallocationjob.h
+usr/include/KF6/libktorrent/diskio/preallocationthread.h
+usr/include/KF6/libktorrent/diskio/singlefilecache.h
+usr/include/KF6/libktorrent/download/
+usr/include/KF6/libktorrent/download/chunkdownload.h
+usr/include/KF6/libktorrent/download/chunkselector.h
+usr/include/KF6/libktorrent/download/downloader.h
+usr/include/KF6/libktorrent/download/packet.h
+usr/include/KF6/libktorrent/download/piece.h
+usr/include/KF6/libktorrent/download/request.h
+usr/include/KF6/libktorrent/download/webseed.h
+usr/include/KF6/libktorrent/interfaces/
+usr/include/KF6/libktorrent/interfaces/blocklistinterface.h
+usr/include/KF6/libktorrent/interfaces/cachefactory.h
+usr/include/KF6/libktorrent/interfaces/chunkdownloadinterface.h
+usr/include/KF6/libktorrent/interfaces/chunkselectorinterface.h
+usr/include/KF6/libktorrent/interfaces/exitoperation.h
+usr/include/KF6/libktorrent/interfaces/logmonitorinterface.h
+usr/include/KF6/libktorrent/interfaces/monitorinterface.h
+usr/include/KF6/libktorrent/interfaces/peerinterface.h
+usr/include/KF6/libktorrent/interfaces/peersource.h
+usr/include/KF6/libktorrent/interfaces/piecedownloader.h
+usr/include/KF6/libktorrent/interfaces/queuemanagerinterface.h
+usr/include/KF6/libktorrent/interfaces/serverinterface.h
+usr/include/KF6/libktorrent/interfaces/torrentfileinterface.h
+usr/include/KF6/libktorrent/interfaces/torrentinterface.h
+usr/include/KF6/libktorrent/interfaces/trackerinterface.h
+usr/include/KF6/libktorrent/interfaces/trackerslist.h
+usr/include/KF6/libktorrent/interfaces/webseedinterface.h
+usr/include/KF6/libktorrent/ktorrent_export.h
+usr/include/KF6/libktorrent/libktorrent_version.h
+usr/include/KF6/libktorrent/magnet/
+usr/include/KF6/libktorrent/magnet/magnetdownloader.h
+usr/include/KF6/libktorrent/magnet/magnetlink.h
+usr/include/KF6/libktorrent/magnet/metadatadownload.h
+usr/include/KF6/libktorrent/mse/
+usr/include/KF6/libktorrent/mse/bigint.h
+usr/include/KF6/libktorrent/mse/encryptedauthenticate.h
+usr/include/KF6/libktorrent/mse/encryptedpacketsocket.h
+usr/include/KF6/libktorrent/mse/encryptedserverauthenticate.h
+usr/include/KF6/libktorrent/mse/functions.h
+usr/include/KF6/libktorrent/mse/rc4encryptor.h
+usr/include/KF6/libktorrent/net/
+usr/include/KF6/libktorrent/net/address.h
+usr/include/KF6/libktorrent/net/addressresolver.h
+usr/include/KF6/libktorrent/net/downloadthread.h
+usr/include/KF6/libktorrent/net/networkthread.h
+usr/include/KF6/libktorrent/net/packetsocket.h
+usr/include/KF6/libktorrent/net/poll.h
+usr/include/KF6/libktorrent/net/portlist.h
+usr/include/KF6/libktorrent/net/reverseresolver.h
+usr/include/KF6/libktorrent/net/serversocket.h
+usr/include/KF6/libktorrent/net/socket.h
+usr/include/KF6/libktorrent/net/socketdevice.h
+usr/include/KF6/libktorrent/net/socketgroup.h
+usr/include/KF6/libktorrent/net/socketmonitor.h
+usr/include/KF6/libktorrent/net/socks.h
+usr/include/KF6/libktorrent/net/speed.h
+usr/include/KF6/libktorrent/net/streamsocket.h
+usr/include/KF6/libktorrent/net/trafficshapedsocket.h
+usr/include/KF6/libktorrent/net/uploadthread.h
+usr/include/KF6/libktorrent/net/wakeuppipe.h
+usr/include/KF6/libktorrent/peer/
+usr/include/KF6/libktorrent/peer/accessmanager.h
+usr/include/KF6/libktorrent/peer/authenticate.h
+usr/include/KF6/libktorrent/peer/authenticatebase.h
+usr/include/KF6/libktorrent/peer/authenticationmonitor.h
+usr/include/KF6/libktorrent/peer/chunkcounter.h
+usr/include/KF6/libktorrent/peer/connectionlimit.h
+usr/include/KF6/libktorrent/peer/packetreader.h
+usr/include/KF6/libktorrent/peer/peer.h
+usr/include/KF6/libktorrent/peer/peerconnector.h
+usr/include/KF6/libktorrent/peer/peerdownloader.h
+usr/include/KF6/libktorrent/peer/peerid.h
+usr/include/KF6/libktorrent/peer/peermanager.h
+usr/include/KF6/libktorrent/peer/peerprotocolextension.h
+usr/include/KF6/libktorrent/peer/peeruploader.h
+usr/include/KF6/libktorrent/peer/serverauthenticate.h
+usr/include/KF6/libktorrent/peer/superseeder.h
+usr/include/KF6/libktorrent/peer/utmetadata.h
+usr/include/KF6/libktorrent/peer/utpex.h
+usr/include/KF6/libktorrent/torrent/
+usr/include/KF6/libktorrent/torrent/advancedchokealgorithm.h
+usr/include/KF6/libktorrent/torrent/choker.h
+usr/include/KF6/libktorrent/torrent/globals.h
+usr/include/KF6/libktorrent/torrent/job.h
+usr/include/KF6/libktorrent/torrent/jobqueue.h
+usr/include/KF6/libktorrent/torrent/peersourcemanager.h
+usr/include/KF6/libktorrent/torrent/server.h
+usr/include/KF6/libktorrent/torrent/statsfile.h
+usr/include/KF6/libktorrent/torrent/timeestimator.h
+usr/include/KF6/libktorrent/torrent/torrent.h
+usr/include/KF6/libktorrent/torrent/torrentcontrol.h
+usr/include/KF6/libktorrent/torrent/torrentcreator.h
+usr/include/KF6/libktorrent/torrent/torrentfile.h
+usr/include/KF6/libktorrent/torrent/torrentfilestream.h
+usr/include/KF6/libktorrent/torrent/torrentstats.h
+usr/include/KF6/libktorrent/torrent/uploader.h
+usr/include/KF6/libktorrent/tracker/
+usr/include/KF6/libktorrent/tracker/httptracker.h
+usr/include/KF6/libktorrent/tracker/kioannouncejob.h
+usr/include/KF6/libktorrent/tracker/tracker.h
+usr/include/KF6/libktorrent/tracker/trackermanager.h
+usr/include/KF6/libktorrent/tracker/udptracker.h
+usr/include/KF6/libktorrent/tracker/udptrackersocket.h
+usr/include/KF6/libktorrent/upnp/
+usr/include/KF6/libktorrent/upnp/upnpmcastsocket.h
+usr/include/KF6/libktorrent/upnp/upnprouter.h
+usr/include/KF6/libktorrent/util/
+usr/include/KF6/libktorrent/util/array.h
+usr/include/KF6/libktorrent/util/autorotatelogjob.h
+usr/include/KF6/libktorrent/util/bitset.h
+usr/include/KF6/libktorrent/util/bufferpool.h
+usr/include/KF6/libktorrent/util/circularbuffer.h
+usr/include/KF6/libktorrent/util/compressfilejob.h
+usr/include/KF6/libktorrent/util/constants.h
+usr/include/KF6/libktorrent/util/decompressfilejob.h
+usr/include/KF6/libktorrent/util/error.h
+usr/include/KF6/libktorrent/util/extractfilejob.h
+usr/include/KF6/libktorrent/util/file.h
+usr/include/KF6/libktorrent/util/fileops.h
+usr/include/KF6/libktorrent/util/functions.h
+usr/include/KF6/libktorrent/util/log.h
+usr/include/KF6/libktorrent/util/logsystemmanager.h
+usr/include/KF6/libktorrent/util/pipe.h
+usr/include/KF6/libktorrent/util/ptrmap.h
+usr/include/KF6/libktorrent/util/resourcemanager.h
+usr/include/KF6/libktorrent/util/sha1hash.h
+usr/include/KF6/libktorrent/util/sha1hashgen.h
+usr/include/KF6/libktorrent/util/signalcatcher.h
+usr/include/KF6/libktorrent/util/timer.h
+usr/include/KF6/libktorrent/util/urlencoder.h
+usr/include/KF6/libktorrent/util/waitjob.h
+usr/include/KF6/libktorrent/util/win32.h
+usr/include/KF6/libktorrent/utp/
+usr/include/KF6/libktorrent/utp/connection.h
+usr/include/KF6/libktorrent/utp/delaywindow.h
+usr/include/KF6/libktorrent/utp/localwindow.h
+usr/include/KF6/libktorrent/utp/packetbuffer.h
+usr/include/KF6/libktorrent/utp/pollpipe.h
+usr/include/KF6/libktorrent/utp/remotewindow.h
+usr/include/KF6/libktorrent/utp/timevalue.h
+usr/include/KF6/libktorrent/utp/utpprotocol.h
+usr/include/KF6/libktorrent/utp/utpserver.h
+usr/include/KF6/libktorrent/utp/utpserverthread.h
+usr/include/KF6/libktorrent/utp/utpsocket.h
+usr/include/KF6/libktorrent/version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KTorrent6/
+usr/lib64/cmake/KTorrent6/FindLibGMP.cmake
+usr/lib64/cmake/KTorrent6/FindLibGcrypt.cmake
+usr/lib64/cmake/KTorrent6/KTorrent6Config.cmake
+usr/lib64/cmake/KTorrent6/KTorrent6ConfigVersion.cmake
+usr/lib64/cmake/KTorrent6/KTorrent6Targets-relwithdebinfo.cmake
+usr/lib64/cmake/KTorrent6/KTorrent6Targets.cmake
+usr/lib64/libKTorrent6.so.25.04.1
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/hne/
+usr/share/locale/hne/LC_MESSAGES/
+usr/share/locale/hne/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ku/
+usr/share/locale/ku/LC_MESSAGES/
+usr/share/locale/ku/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/si/
+usr/share/locale/si/LC_MESSAGES/
+usr/share/locale/si/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libktorrent6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/libktorrent6.mo
+
+Slackware package /tmp/libktorrent/libktorrent-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for libktorrent-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/libktorrent/libktorrent-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/libktorrent/libktorrent-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/libktorrent/libktorrent-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in libktorrent.tar.lz4 format.
+/tmp/libktorrent /tmp/libktorrent
+/tmp/libktorrent
+BIN_NAME
+README
+libktorrent-25.04.1-x86_64-1_rtz.tlz
+libktorrent-25.04.1-x86_64-1_rtz.tlz.md5
+libktorrent-25.04.1-x86_64-1_rtz.tlz.so.file
+libktorrent-25.04.1-x86_64-1_rtz.tlz.txt
+libktorrent.dep
+makepkg-libktorrent.log
+libktorrent build finished. Procced to installation...
+
++================================================================================================================+
+| Upgrading libktorrent-25.04.1-x86_64-1_rtz package using /tmp/libktorrent/libktorrent-25.04.1-x86_64-1_rtz.tlz |
++================================================================================================================+
+
+Pre-installing package libktorrent-25.04.1-x86_64-1_rtz...
+Removing package: libktorrent-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:11:52
+Installing package libktorrent-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# libktorrent (A powerful BitTorrent client for KDE)
+#
+# A powerful BitTorrent client for KDE
+#
+# https://kde.org/applications/internet
+Executing install script for libktorrent-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package libktorrent-25.04.1-x86_64-1_rtz.tlz installed.
+Package libktorrent-25.04.1-x86_64-1_rtz upgraded with new package /tmp/libktorrent/libktorrent-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'libktorrent-25.04.1.tar.xz': No such file or directory
+Build process completed in 1 minutes and 8 seconds.

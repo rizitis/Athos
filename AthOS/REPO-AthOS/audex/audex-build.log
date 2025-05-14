@@ -1,0 +1,1005 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules
+extra-cmake-modules is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 23:40:30--  https://download.kde.org/stable/release-service/25.04.1/src/audex-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/audex-25.04.1.tar.xz [following]
+--2025-05-10 23:40:30--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/audex-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 741636 (724K) [application/octet-stream]
+Saving to: ‘audex-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  6% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 13% 1.42M 0s
+   100K .......... .......... .......... .......... .......... 20% 6.51M 0s
+   150K .......... .......... .......... .......... .......... 27% 1.91M 0s
+   200K .......... .......... .......... .......... .......... 34% 5.07M 0s
+   250K .......... .......... .......... .......... .......... 41% 6.67M 0s
+   300K .......... .......... .......... .......... .......... 48% 5.04M 0s
+   350K .......... .......... .......... .......... .......... 55%  587K 0s
+   400K .......... .......... .......... .......... .......... 62%  318M 0s
+   450K .......... .......... .......... .......... .......... 69%  339M 0s
+   500K .......... .......... .......... .......... .......... 75%  336M 0s
+   550K .......... .......... .......... .......... .......... 82%  327M 0s
+   600K .......... .......... .......... .......... .......... 89%  651M 0s
+   650K .......... .......... .......... .......... .......... 96%  672M 0s
+   700K .......... .......... ....                            100% 17.3M=0.2s
+
+2025-05-10 23:40:31 (3.25 MB/s) - ‘audex-25.04.1.tar.xz’ saved [741636/741636]
+
+Found file: audex-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+audex-25.04.1/
+audex-25.04.1/cmake/
+audex-25.04.1/cmake/modules/
+audex-25.04.1/cmake/modules/Findcdio_cdda.cmake
+audex-25.04.1/cmake/modules/Findcdio.cmake
+audex-25.04.1/cmake/modules/Findcdio_paranoia.cmake
+audex-25.04.1/cmake/modules/COPYING-CMAKE-SCRIPTS
+audex-25.04.1/icons/
+audex-25.04.1/icons/64-apps-org.kde.audex.png
+audex-25.04.1/icons/48-apps-org.kde.audex.png
+audex-25.04.1/icons/sc-apps-org.kde.audex.svg
+audex-25.04.1/icons/128-apps-org.kde.audex.png
+audex-25.04.1/icons/32-apps-org.kde.audex.png
+audex-25.04.1/icons/16-apps-org.kde.audex.png
+audex-25.04.1/README.md
+audex-25.04.1/test/
+audex-25.04.1/test/devicestest.cpp
+audex-25.04.1/test/devicestest.h
+audex-25.04.1/test/CMakeLists.txt
+audex-25.04.1/audex.qrc
+audex-25.04.1/audex-rip-audiocd.desktop
+audex-25.04.1/audex.notifyrc
+audex-25.04.1/Messages.sh
+audex-25.04.1/LICENSES/
+audex-25.04.1/LICENSES/MIT.txt
+audex-25.04.1/LICENSES/GPL-3.0-or-later.txt
+audex-25.04.1/LICENSES/BSD-3-Clause.txt
+audex-25.04.1/LICENSES/CC0-1.0.txt
+audex-25.04.1/LICENSES/LGPL-2.0-or-later.txt
+audex-25.04.1/LICENSES/GPL-2.0-or-later.txt
+audex-25.04.1/org.kde.audex.desktop
+audex-25.04.1/dialogs/
+audex-25.04.1/dialogs/profiledatalogfiledialog.cpp
+audex-25.04.1/dialogs/filenameschemewizarddialog.h
+audex-25.04.1/dialogs/extractingprogressdialog.h
+audex-25.04.1/dialogs/profiledatacuesheetdialog.cpp
+audex-25.04.1/dialogs/extractingprogressdialog.cpp
+audex-25.04.1/dialogs/filenameschemewizarddialog.cpp
+audex-25.04.1/dialogs/commandwizarddialog.h
+audex-25.04.1/dialogs/commandwizardwidgetUI.ui
+audex-25.04.1/dialogs/profiledatainfodialog.h
+audex-25.04.1/dialogs/profiledatacoverwidgetUI.ui
+audex-25.04.1/dialogs/profiledatawidgetUI.ui
+audex-25.04.1/dialogs/profiledatainfowidgetUI.ui
+audex-25.04.1/dialogs/errordialog.cpp
+audex-25.04.1/dialogs/profiledataplaylistdialog.cpp
+audex-25.04.1/dialogs/profiledatacoverdialog.h
+audex-25.04.1/dialogs/profiledatalogfilewidgetUI.ui
+audex-25.04.1/dialogs/profiledatacuesheetwidgetUI.ui
+audex-25.04.1/dialogs/profiledatahashlistdialog.h
+audex-25.04.1/dialogs/profiledatalogfiledialog.h
+audex-25.04.1/dialogs/filenameschemewizardwidgetUI.ui
+audex-25.04.1/dialogs/cddaheaderdatadialog.h
+audex-25.04.1/dialogs/schemewizardwidgetUI.ui
+audex-25.04.1/dialogs/profiledatainfodialog.cpp
+audex-25.04.1/dialogs/profiledatadialog.cpp
+audex-25.04.1/dialogs/profiledataplaylistwidgetUI.ui
+audex-25.04.1/dialogs/profiledatasinglefilewidgetUI.ui
+audex-25.04.1/dialogs/profiledatasinglefiledialog.cpp
+audex-25.04.1/dialogs/logviewwidgetUI.ui
+audex-25.04.1/dialogs/profiledatasinglefiledialog.h
+audex-25.04.1/dialogs/profiledataplaylistdialog.h
+audex-25.04.1/dialogs/commandwizarddialog.cpp
+audex-25.04.1/dialogs/profiledatahashlistwidgetUI.ui
+audex-25.04.1/dialogs/profiledatacuesheetdialog.h
+audex-25.04.1/dialogs/textviewwidgetUI.ui
+audex-25.04.1/dialogs/logviewdialog.h
+audex-25.04.1/dialogs/profiledatahashlistdialog.cpp
+audex-25.04.1/dialogs/textviewdialog.cpp
+audex-25.04.1/dialogs/schemewizarddialog.cpp
+audex-25.04.1/dialogs/textviewdialog.h
+audex-25.04.1/dialogs/cddaheaderdatadialog.cpp
+audex-25.04.1/dialogs/profiledatacoverdialog.cpp
+audex-25.04.1/dialogs/profiledatadialog.h
+audex-25.04.1/dialogs/logviewdialog.cpp
+audex-25.04.1/dialogs/cddaheaderdatawidgetUI.ui
+audex-25.04.1/dialogs/schemewizarddialog.h
+audex-25.04.1/dialogs/extractingprogresswidgetUI.ui
+audex-25.04.1/dialogs/errordialog.h
+audex-25.04.1/.gitlab-ci.yml
+audex-25.04.1/logo.png
+audex-25.04.1/mainwindow.h
+audex-25.04.1/snapcraft.yaml
+audex-25.04.1/org.kde.audex.appdata.xml
+audex-25.04.1/audexui.rc
+audex-25.04.1/.kde-ci.yml
+audex-25.04.1/mainwindow.cpp
+audex-25.04.1/main.cpp
+audex-25.04.1/images/
+audex-25.04.1/images/cdcase_wo_latches.png
+audex-25.04.1/images/CMakeLists.txt
+audex-25.04.1/images/latches.png
+audex-25.04.1/po/
+audex-25.04.1/po/pt/
+audex-25.04.1/po/pt/audex.po
+audex-25.04.1/po/km/
+audex-25.04.1/po/km/audex.po
+audex-25.04.1/po/pl/
+audex-25.04.1/po/pl/audex.po
+audex-25.04.1/po/ja/
+audex-25.04.1/po/ja/audex.po
+audex-25.04.1/po/bs/
+audex-25.04.1/po/bs/audex.po
+audex-25.04.1/po/zh_CN/
+audex-25.04.1/po/zh_CN/audex.po
+audex-25.04.1/po/cs/
+audex-25.04.1/po/cs/audex.po
+audex-25.04.1/po/es/
+audex-25.04.1/po/es/audex.po
+audex-25.04.1/po/ka/
+audex-25.04.1/po/ka/audex.po
+audex-25.04.1/po/tr/
+audex-25.04.1/po/tr/audex.po
+audex-25.04.1/po/ug/
+audex-25.04.1/po/ug/audex.po
+audex-25.04.1/po/ca/
+audex-25.04.1/po/ca/audex.po
+audex-25.04.1/po/ca@valencia/
+audex-25.04.1/po/ca@valencia/audex.po
+audex-25.04.1/po/gl/
+audex-25.04.1/po/gl/audex.po
+audex-25.04.1/po/ro/
+audex-25.04.1/po/ro/audex.po
+audex-25.04.1/po/eo/
+audex-25.04.1/po/eo/audex.po
+audex-25.04.1/po/nl/
+audex-25.04.1/po/nl/audex.po
+audex-25.04.1/po/mr/
+audex-25.04.1/po/mr/audex.po
+audex-25.04.1/po/hu/
+audex-25.04.1/po/hu/audex.po
+audex-25.04.1/po/eu/
+audex-25.04.1/po/eu/audex.po
+audex-25.04.1/po/fr/
+audex-25.04.1/po/fr/audex.po
+audex-25.04.1/po/hi/
+audex-25.04.1/po/hi/audex.po
+audex-25.04.1/po/sl/
+audex-25.04.1/po/sl/audex.po
+audex-25.04.1/po/de/
+audex-25.04.1/po/de/audex.po
+audex-25.04.1/po/ar/
+audex-25.04.1/po/ar/audex.po
+audex-25.04.1/po/sk/
+audex-25.04.1/po/sk/audex.po
+audex-25.04.1/po/zh_TW/
+audex-25.04.1/po/zh_TW/audex.po
+audex-25.04.1/po/et/
+audex-25.04.1/po/et/audex.po
+audex-25.04.1/po/it/
+audex-25.04.1/po/it/audex.po
+audex-25.04.1/po/mai/
+audex-25.04.1/po/mai/audex.po
+audex-25.04.1/po/da/
+audex-25.04.1/po/da/audex.po
+audex-25.04.1/po/pt_BR/
+audex-25.04.1/po/pt_BR/audex.po
+audex-25.04.1/po/ru/
+audex-25.04.1/po/ru/audex.po
+audex-25.04.1/po/ia/
+audex-25.04.1/po/ia/audex.po
+audex-25.04.1/po/sv/
+audex-25.04.1/po/sv/audex.po
+audex-25.04.1/po/fi/
+audex-25.04.1/po/fi/audex.po
+audex-25.04.1/po/ast/
+audex-25.04.1/po/ast/audex.po
+audex-25.04.1/po/lt/
+audex-25.04.1/po/lt/audex.po
+audex-25.04.1/po/sa/
+audex-25.04.1/po/sa/audex.po
+audex-25.04.1/po/ko/
+audex-25.04.1/po/ko/audex.po
+audex-25.04.1/po/ga/
+audex-25.04.1/po/ga/audex.po
+audex-25.04.1/po/en_GB/
+audex-25.04.1/po/en_GB/audex.po
+audex-25.04.1/po/uk/
+audex-25.04.1/po/uk/audex.po
+audex-25.04.1/po/nds/
+audex-25.04.1/po/nds/audex.po
+audex-25.04.1/utils/
+audex-25.04.1/utils/hashlist.h
+audex-25.04.1/utils/encoderassistant.cpp
+audex-25.04.1/utils/playlist.cpp
+audex-25.04.1/utils/crc32hash.h
+audex-25.04.1/utils/cddacdio.cpp
+audex-25.04.1/utils/crc32hash.cpp
+audex-25.04.1/utils/wavefilewriter.cpp
+audex-25.04.1/utils/discidcalculator.cpp
+audex-25.04.1/utils/hashlist.cpp
+audex-25.04.1/utils/cddadevices.cpp
+audex-25.04.1/utils/upload.cpp
+audex-25.04.1/utils/cddacdio.h
+audex-25.04.1/utils/schemeparser.cpp
+audex-25.04.1/utils/wavefilewriter.h
+audex-25.04.1/utils/cuesheetwriter.h
+audex-25.04.1/utils/playlist.h
+audex-25.04.1/utils/cddaextractthread.cpp
+audex-25.04.1/utils/schemeparser.h
+audex-25.04.1/utils/parameters.h
+audex-25.04.1/utils/upload.h
+audex-25.04.1/utils/encoderwrapper.h
+audex-25.04.1/utils/cddaextractthread.h
+audex-25.04.1/utils/discidcalculator.h
+audex-25.04.1/utils/error.h
+audex-25.04.1/utils/parameters.cpp
+audex-25.04.1/utils/cuesheetwriter.cpp
+audex-25.04.1/utils/encoderwrapper.cpp
+audex-25.04.1/utils/encoderassistant.h
+audex-25.04.1/utils/cddadevices.h
+audex-25.04.1/models/
+audex-25.04.1/models/cddamodel.h
+audex-25.04.1/models/cddamodel.cpp
+audex-25.04.1/models/profilemodel.h
+audex-25.04.1/models/profilemodel.cpp
+audex-25.04.1/CMakeLists.txt
+audex-25.04.1/org.kde.audex.svg
+audex-25.04.1/audex.kcfg
+audex-25.04.1/preferences.kcfgc
+audex-25.04.1/core/
+audex-25.04.1/core/audex.cpp
+audex-25.04.1/core/audex.h
+audex-25.04.1/widgets/
+audex-25.04.1/widgets/devicewidget.h
+audex-25.04.1/widgets/wavewidget.h
+audex-25.04.1/widgets/flacwidget.h
+audex-25.04.1/widgets/oggencwidgetUI.ui
+audex-25.04.1/widgets/devicewidgetUI.ui
+audex-25.04.1/widgets/flacwidgetUI.ui
+audex-25.04.1/widgets/wavewidget.cpp
+audex-25.04.1/widgets/remoteserversettingswidgetUI.ui
+audex-25.04.1/widgets/generalsettingswidget.cpp
+audex-25.04.1/widgets/profilewidgetUI.ui
+audex-25.04.1/widgets/customwidgetUI.ui
+audex-25.04.1/widgets/oggencwidget.h
+audex-25.04.1/widgets/generalsettingswidget.h
+audex-25.04.1/widgets/remoteserversettingswidget.h
+audex-25.04.1/widgets/flacwidget.cpp
+audex-25.04.1/widgets/faacwidget.h
+audex-25.04.1/widgets/generalsettingswidgetUI.ui
+audex-25.04.1/widgets/profilewidget.h
+audex-25.04.1/widgets/faacwidget.cpp
+audex-25.04.1/widgets/lamewidget.cpp
+audex-25.04.1/widgets/oggencwidget.cpp
+audex-25.04.1/widgets/opusencwidgetUI.ui
+audex-25.04.1/widgets/customwidget.h
+audex-25.04.1/widgets/devicewidget.cpp
+audex-25.04.1/widgets/wavewidgetUI.ui
+audex-25.04.1/widgets/lamewidget.h
+audex-25.04.1/widgets/remoteserversettingswidget.cpp
+audex-25.04.1/widgets/faacwidgetUI.ui
+audex-25.04.1/widgets/profilewidget.cpp
+audex-25.04.1/widgets/opusencwidget.cpp
+audex-25.04.1/widgets/cddaheaderwidget.h
+audex-25.04.1/widgets/opusencwidget.h
+audex-25.04.1/widgets/customwidget.cpp
+audex-25.04.1/widgets/lamewidgetUI.ui
+audex-25.04.1/widgets/cddaheaderwidget.cpp
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6Completion: /usr/lib64/cmake/KF6Completion/KF6CompletionConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.14.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.14.0")
+-- Found KF6TextWidgets: /usr/lib64/cmake/KF6TextWidgets/KF6TextWidgetsConfig.cmake (found version "6.14.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found version "6.14.0") found components: Config Completion CoreAddons Crash I18n IconThemes KCMUtils KIO Solid TextWidgets WidgetsAddons XmlGui
+-- Found cdio: /usr/include
+-- Found cdio_cdda: /usr/include
+-- Found cdio_paranoia: /usr/include
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Vulkan
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6Qml (required version >= 6.7.0)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Freetype
+ * Fontconfig
+ * PkgConfig
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.245.0)
+ * Qt6 (required version >= 6.5)
+ * KF6Crash
+ * KF6IconThemes
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6KCMUtils
+ * KF6Completion (required version >= 6.14.0)
+ * KF6KIO
+ * KF6Solid
+ * Gettext
+ * KF6I18n (required version >= 6.14.0)
+ * KF6TextWidgets
+ * KF6WidgetsAddons
+ * KF6XmlGui
+ * KF6
+ * KF6Config
+ * KCddb6 (required version >= 5.1), CDDB library, <https://commits.kde.org/libkcddb>
+   libkcddb is used to retrieve audio CD meta data from the internet.
+ * cdio
+ * cdio_cdda
+ * cdio_paranoia
+ * Qt6Test
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.8.3)
+
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/build
+[1/86] Generating ts...
+[2/86] Generating mo...
+[3/86] Automatic MOC for target devicestest
+[4/86] Automatic MOC for target audex
+[5/86] Generating ui_profilewidgetUI.h
+[6/86] Generating ui_faacwidgetUI.h
+[7/86] Generating ui_opusencwidgetUI.h
+[8/86] Generating ui_customwidgetUI.h
+[9/86] Generating ui_cddaheaderdatawidgetUI.h
+[10/86] Generating ui_remoteserversettingswidgetUI.h
+[11/86] Generating ui_oggencwidgetUI.h
+[12/86] Generating ui_profiledatacoverwidgetUI.h
+[13/86] Generating ui_lamewidgetUI.h
+[14/86] Generating ui_profiledataplaylistwidgetUI.h
+[15/86] Generating ui_profiledatawidgetUI.h
+[16/86] Generating ui_profiledatainfowidgetUI.h
+[17/86] Generating ui_wavewidgetUI.h
+[18/86] Generating ui_generalsettingswidgetUI.h
+[19/86] Generating ui_flacwidgetUI.h
+[20/86] Generating preferences.h, preferences.cpp
+[21/86] Generating ui_profiledatahashlistwidgetUI.h
+[22/86] Generating qrc_audex.cpp
+[23/86] Generating ui_devicewidgetUI.h
+[24/86] Generating ui_profiledatasinglefilewidgetUI.h
+[25/86] Generating ui_profiledatacuesheetwidgetUI.h
+[26/86] Generating ui_extractingprogresswidgetUI.h
+[27/86] Generating ui_schemewizardwidgetUI.h
+[28/86] Generating ui_profiledatalogfilewidgetUI.h
+[29/86] Generating ui_filenameschemewizardwidgetUI.h
+[30/86] Generating ui_logviewwidgetUI.h
+[31/86] Generating ui_commandwizardwidgetUI.h
+[32/86] Generating ui_textviewwidgetUI.h
+[33/86] Building CXX object test/CMakeFiles/devicestest.dir/devicestest_autogen/mocs_compilation.cpp.o
+[34/86] Building CXX object test/CMakeFiles/devicestest.dir/devicestest.cpp.o
+[35/86] Building CXX object CMakeFiles/audex.dir/utils/discidcalculator.cpp.o
+[36/86] Building CXX object CMakeFiles/audex.dir/utils/crc32hash.cpp.o
+[37/86] Building CXX object CMakeFiles/audex.dir/utils/upload.cpp.o
+[38/86] Building CXX object CMakeFiles/audex.dir/utils/parameters.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.cpp: In member function ‘const QString Parameters::toString(const QChar&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.cpp:138:23: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  138 |         if (value.type() == QVariant::String || value.type() == QVariant::DateTime || value.type() == QVariant::Date || value.type() == QVariant::Time)
+      |             ~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtCore/QVariant:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.h:16,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.cpp:8:
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.cpp:138:59: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  138 |         if (value.type() == QVariant::String || value.type() == QVariant::DateTime || value.type() == QVariant::Date || value.type() == QVariant::Time)
+      |                                                 ~~~~~~~~~~^~
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.cpp:138:97: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  138 |         if (value.type() == QVariant::String || value.type() == QVariant::DateTime || value.type() == QVariant::Date || value.type() == QVariant::Time)
+      |                                                                                       ~~~~~~~~~~^~
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.cpp:138:131: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  138 |         if (value.type() == QVariant::String || value.type() == QVariant::DateTime || value.type() == QVariant::Date || value.type() == QVariant::Time)
+      |                                                                                                                         ~~~~~~~~~~^~
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+[39/86] Building CXX object CMakeFiles/audex.dir/utils/hashlist.cpp.o
+[40/86] Building CXX object CMakeFiles/audex.dir/utils/cddadevices.cpp.o
+[41/86] Building CXX object CMakeFiles/audex.dir/utils/encoderwrapper.cpp.o
+[42/86] Building CXX object CMakeFiles/audex.dir/utils/cddacdio.cpp.o
+[43/86] Building CXX object CMakeFiles/audex.dir/utils/wavefilewriter.cpp.o
+[44/86] Building CXX object CMakeFiles/audex.dir/widgets/generalsettingswidget.cpp.o
+[45/86] Building CXX object CMakeFiles/audex.dir/utils/cddaextractthread.cpp.o
+[46/86] Building CXX object CMakeFiles/audex.dir/utils/cuesheetwriter.cpp.o
+[47/86] Building CXX object CMakeFiles/audex.dir/widgets/devicewidget.cpp.o
+[48/86] Building CXX object CMakeFiles/audex.dir/utils/encoderassistant.cpp.o
+[49/86] Building CXX object CMakeFiles/audex.dir/widgets/remoteserversettingswidget.cpp.o
+[50/86] Building CXX object CMakeFiles/audex.dir/utils/schemeparser.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp: In member function ‘const QString SchemeParser::replace_char_list(const QString&, const QString&, const QString&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:554:19: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+  554 |     if (from.count() != to.count()) {
+      |         ~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
+                 from /usr/include/qt6/QtCore/qfloat16.h:10,
+                 from /usr/include/qt6/QtCore/qmetatype.h:14,
+                 from /usr/include/qt6/QtCore/qvariant.h:10,
+                 from /usr/include/qt6/QtCore/qlocale.h:7,
+                 from /usr/include/qt6/QtCore/qcalendar.h:10,
+                 from /usr/include/qt6/QtCore/qdatetime.h:8,
+                 from /usr/include/qt6/QtCore/QDate:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.h:11,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:8:
+/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
+  195 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:554:33: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+  554 |     if (from.count() != to.count()) {
+      |                         ~~~~~~~~^~
+/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
+  195 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:560:35: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+  560 |     for (int i = 0; i < from.count(); i++) {
+      |                         ~~~~~~~~~~^~
+/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
+  195 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+[51/86] Building CXX object CMakeFiles/audex.dir/models/cddamodel.cpp.o
+[52/86] Building CXX object CMakeFiles/audex.dir/main.cpp.o
+[53/86] Building CXX object CMakeFiles/audex.dir/widgets/profilewidget.cpp.o
+[54/86] Building CXX object CMakeFiles/audex.dir/widgets/cddaheaderwidget.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/widgets/cddaheaderwidget.cpp: In member function ‘void CDDAHeaderWidget::context_menu(const QPoint&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/widgets/cddaheaderwidget.cpp:327:121: warning: ‘QMouseEvent::QMouseEvent(QEvent::Type, const QPointF&, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, const QPointingDevice*)’ is deprecated: Use another constructor [-Wdeprecated-declarations]
+  327 |         auto *mevent = new QMouseEvent(QEvent::MouseButtonPress, point, Qt::RightButton, Qt::RightButton, Qt::NoModifier);
+      |                                                                                                                         ^
+In file included from /usr/include/qt6/QtGui/QMouseEvent:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/widgets/cddaheaderwidget.h:18,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/widgets/cddaheaderwidget.cpp:8:
+/usr/include/qt6/QtGui/qevent.h:202:5: note: declared here
+  202 |     QMouseEvent(Type type, const QPointF &localPos, Qt::MouseButton button,
+      |     ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/widgets/cddaheaderwidget.cpp:336:43: warning: ‘QPoint QMouseEvent::globalPos() const’ is deprecated: Use globalPosition() [-Wdeprecated-declarations]
+  336 |         contextMenu.exec(mevent->globalPos());
+      |                          ~~~~~~~~~~~~~~~~~^~
+/usr/include/qt6/QtGui/qevent.h:225:19: note: declared here
+  225 |     inline QPoint globalPos() const { return globalPosition().toPoint(); }
+      |                   ^~~~~~~~~
+[55/86] Building CXX object CMakeFiles/audex.dir/utils/playlist.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp: In member function ‘void Playlist::p_add_XSPF(const QByteArray&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp:263:24: warning: ‘bool QDomDocument::setContent(const QString&, QString*, int*, int*)’ is deprecated: Use the overload returning ParseResult instead. [-Wdeprecated-declarations]
+  263 |     if (!doc.setContent(QString(playlist), &errorMsg, &errorRow, &errorCol))
+      |          ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtXml/QDomDocument:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp:8:
+/usr/include/qt6/QtXml/qdom.h:328:10: note: declared here
+  328 |     bool setContent(const QString &text, QString *errorMsg, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+[56/86] Building CXX object CMakeFiles/audex.dir/models/profilemodel.cpp.o
+[57/86] Building CXX object CMakeFiles/audex.dir/widgets/oggencwidget.cpp.o
+[58/86] Building CXX object CMakeFiles/audex.dir/widgets/opusencwidget.cpp.o
+[59/86] Building CXX object CMakeFiles/audex.dir/widgets/lamewidget.cpp.o
+[60/86] Building CXX object CMakeFiles/audex.dir/widgets/flacwidget.cpp.o
+[61/86] Building CXX object CMakeFiles/audex.dir/widgets/wavewidget.cpp.o
+[62/86] Building CXX object CMakeFiles/audex.dir/widgets/faacwidget.cpp.o
+[63/86] Building CXX object CMakeFiles/audex.dir/qrc_audex.cpp.o
+[64/86] Building CXX object CMakeFiles/audex.dir/widgets/customwidget.cpp.o
+[65/86] Linking CXX executable bin/devicestest
+[66/86] Building CXX object CMakeFiles/audex.dir/dialogs/cddaheaderdatadialog.cpp.o
+[67/86] Building CXX object CMakeFiles/audex.dir/mainwindow.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp: In member function ‘void MainWindow::setup_actions()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp:445:72: warning: ‘constexpr QKeyCombination Qt::operator+(Modifier, Key)’ is deprecated: Use operator| instead [-Wdeprecated-declarations]
+  445 |     actionCollection()->setDefaultShortcut(ejectAction, Qt::CTRL + Qt::Key_E);
+      |                                                                        ^~~~~
+In file included from /usr/include/qt6/QtCore/qobjectdefs.h:12,
+                 from /usr/include/qt6/QtGui/qwindowdefs.h:8,
+                 from /usr/include/qt6/QtWidgets/qwidget.h:8,
+                 from /usr/include/qt6/QtWidgets/qcombobox.h:8,
+                 from /usr/include/qt6/QtWidgets/QComboBox:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.h:11,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp:8:
+/usr/include/qt6/QtCore/qnamespace.h:1972:27: note: declared here
+ 1972 | constexpr QKeyCombination operator+(Qt::Modifier modifier, Qt::Key key) noexcept
+      |                           ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp:478:77: warning: ‘constexpr QKeyCombination Qt::operator+(Modifier, Key)’ is deprecated: Use operator| instead [-Wdeprecated-declarations]
+  478 |     actionCollection()->setDefaultShortcut(cddbLookupAction, Qt::CTRL + Qt::Key_F);
+      |                                                                             ^~~~~
+/usr/include/qt6/QtCore/qnamespace.h:1972:27: note: declared here
+ 1972 | constexpr QKeyCombination operator+(Qt::Modifier modifier, Qt::Key key) noexcept
+      |                           ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp:484:77: warning: ‘constexpr QKeyCombination Qt::operator+(Modifier, Key)’ is deprecated: Use operator| instead [-Wdeprecated-declarations]
+  484 |     actionCollection()->setDefaultShortcut(cddbSubmitAction, Qt::CTRL + Qt::Key_S);
+      |                                                                             ^~~~~
+/usr/include/qt6/QtCore/qnamespace.h:1972:27: note: declared here
+ 1972 | constexpr QKeyCombination operator+(Qt::Modifier modifier, Qt::Key key) noexcept
+      |                           ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp:491:71: warning: ‘constexpr QKeyCombination Qt::operator+(Modifier, Key)’ is deprecated: Use operator| instead [-Wdeprecated-declarations]
+  491 |     actionCollection()->setDefaultShortcut(editAction, Qt::CTRL + Qt::Key_D);
+      |                                                                       ^~~~~
+/usr/include/qt6/QtCore/qnamespace.h:1972:27: note: declared here
+ 1972 | constexpr QKeyCombination operator+(Qt::Modifier modifier, Qt::Key key) noexcept
+      |                           ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp:498:74: warning: ‘constexpr QKeyCombination Qt::operator+(Modifier, Key)’ is deprecated: Use operator| instead [-Wdeprecated-declarations]
+  498 |     actionCollection()->setDefaultShortcut(extractAction, Qt::CTRL + Qt::Key_X);
+      |                                                                          ^~~~~
+/usr/include/qt6/QtCore/qnamespace.h:1972:27: note: declared here
+ 1972 | constexpr QKeyCombination operator+(Qt::Modifier modifier, Qt::Key key) noexcept
+      |                           ^~~~~~~~
+[68/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledataplaylistdialog.cpp.o
+[69/86] Building CXX object CMakeFiles/audex.dir/dialogs/errordialog.cpp.o
+[70/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatacoverdialog.cpp.o
+[71/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatacuesheetdialog.cpp.o
+[72/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatahashlistdialog.cpp.o
+[73/86] Building CXX object CMakeFiles/audex.dir/audex_autogen/mocs_compilation.cpp.o
+[74/86] Building CXX object CMakeFiles/audex.dir/dialogs/logviewdialog.cpp.o
+[75/86] Building CXX object CMakeFiles/audex.dir/dialogs/commandwizarddialog.cpp.o
+[76/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatasinglefiledialog.cpp.o
+[77/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatadialog.cpp.o
+[78/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatalogfiledialog.cpp.o
+[79/86] Building CXX object CMakeFiles/audex.dir/dialogs/schemewizarddialog.cpp.o
+[80/86] Building CXX object CMakeFiles/audex.dir/preferences.cpp.o
+[81/86] Building CXX object CMakeFiles/audex.dir/dialogs/textviewdialog.cpp.o
+[82/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatainfodialog.cpp.o
+[83/86] Building CXX object CMakeFiles/audex.dir/dialogs/filenameschemewizarddialog.cpp.o
+[84/86] Building CXX object CMakeFiles/audex.dir/dialogs/extractingprogressdialog.cpp.o
+[85/86] Building CXX object CMakeFiles/audex.dir/core/audex.cpp.o
+[86/86] Linking CXX executable bin/audex
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/bin/audex
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/applications/org.kde.audex.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/metainfo/org.kde.audex.appdata.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/solid/actions/audex-rip-audiocd.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/icons/hicolor/scalable/apps/org.kde.audex.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/audex/images/cdcase_wo_latches.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/audex/images/latches.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/da/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/cs/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ja/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/de/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/hi/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pt_BR/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/lt/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sl/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ro/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/bs/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/zh_TW/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pl/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/km/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/pt/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/tr/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/fr/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ast/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/mai
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/mai/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ka/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/gl/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ia/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/hu/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/eo/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ga/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ca/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/uk/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/en_GB/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/zh_CN/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/nl/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sa/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/fi/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ko/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ru/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ca@valencia/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/es/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/eu/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/et/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/it/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ar/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/nds/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/mr/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/ug/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sk/LC_MESSAGES/audex.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/package-audex/usr/share/locale/sv/LC_MESSAGES/audex.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/audex/audex.info: No such file or directory
+extra-cmake-modules
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/audex/audex-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/audex
+usr/doc/
+usr/doc/audex-25.04.1/
+usr/doc/audex-25.04.1/README.md
+usr/doc/audex-25.04.1/audex.ini
+usr/doc/audex-25.04.1/slack-required
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.audex.desktop
+usr/share/audex/
+usr/share/audex/images/
+usr/share/audex/images/cdcase_wo_latches.png
+usr/share/audex/images/latches.png
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/org.kde.audex.svg
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/audex.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/audex.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/audex.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/audex.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/audex.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/audex.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/audex.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/audex.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/audex.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/audex.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/audex.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/audex.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/audex.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/audex.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/audex.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/audex.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/audex.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/audex.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/audex.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/audex.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/audex.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/audex.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/audex.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/audex.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/audex.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/audex.mo
+usr/share/locale/mai/
+usr/share/locale/mai/LC_MESSAGES/
+usr/share/locale/mai/LC_MESSAGES/audex.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/audex.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/audex.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/audex.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/audex.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/audex.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/audex.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/audex.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/audex.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/audex.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/audex.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/audex.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/audex.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/audex.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/audex.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/audex.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/audex.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/audex.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.audex.appdata.xml
+usr/share/solid/
+usr/share/solid/actions/
+usr/share/solid/actions/audex-rip-audiocd.desktop
+
+Slackware package /tmp/audex/audex-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for audex-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/audex/audex-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/audex/audex-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/audex/audex-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in audex.tar.lz4 format.
+/tmp/audex /tmp/audex
+/tmp/audex
+BIN_NAME
+README
+audex-25.04.1-x86_64-1_rtz.tlz
+audex-25.04.1-x86_64-1_rtz.tlz.md5
+audex-25.04.1-x86_64-1_rtz.tlz.so.file
+audex-25.04.1-x86_64-1_rtz.tlz.txt
+audex.dep
+makepkg-audex.log
+audex build finished. Procced to installation...
+
++==============================================================================================+
+| Upgrading audex-25.04.1-x86_64-1_rtz package using /tmp/audex/audex-25.04.1-x86_64-1_rtz.tlz |
++==============================================================================================+
+
+Pre-installing package audex-25.04.1-x86_64-1_rtz...
+Removing package: audex-25.04.1-x86_64-1_rtz-upgraded-2025-05-10,23:40:56
+Installing package audex-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# audex (ripping discs)
+#
+# A Tool for ripping compact discs
+#
+Executing install script for audex-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package audex-25.04.1-x86_64-1_rtz.tlz installed.
+Package audex-25.04.1-x86_64-1_rtz upgraded with new package /tmp/audex/audex-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'audex-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 30 seconds.

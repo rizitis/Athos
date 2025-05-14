@@ -1,0 +1,2278 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules	kconfig	kcoreaddons	ki18n	kio	kpackage	kservice	kxmlgui	libksysguard
+doxygen is already installed!
+extra-cmake-modules is already installed!
+kconfig is already installed!
+kcoreaddons is already installed!
+ki18n is already installed!
+kio is already installed!
+kpackage is already installed!
+kservice is already installed!
+kxmlgui is already installed!
+libksysguard is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 23:02:06--  https://download.kde.org/stable/plasma/6.3.5/plasma5support-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma5support-6.3.5.tar.xz [following]
+--2025-05-10 23:02:06--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma5support-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 229720 (224K) [application/octet-stream]
+Saving to: ‘plasma5support-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 22% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 44% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 66% 5.31M 0s
+   150K .......... .......... .......... .......... .......... 89% 2.03M 0s
+   200K .......... .......... ....                            100% 18.6M=0.1s
+
+2025-05-10 23:02:06 (2.09 MB/s) - ‘plasma5support-6.3.5.tar.xz’ saved [229720/229720]
+
+Found file: plasma5support-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+plasma5support-6.3.5/
+plasma5support-6.3.5/LICENSES/
+plasma5support-6.3.5/LICENSES/GPL-2.0-or-later.txt
+plasma5support-6.3.5/LICENSES/CC0-1.0.txt
+plasma5support-6.3.5/LICENSES/LGPL-2.0-or-later.txt
+plasma5support-6.3.5/Plasma5SupportConfig.cmake.in
+plasma5support-6.3.5/Plasma5SupportMacros.cmake
+plasma5support-6.3.5/.gitlab-ci.yml
+plasma5support-6.3.5/.gitignore
+plasma5support-6.3.5/tools/
+plasma5support-6.3.5/tools/migratedataengines.sh
+plasma5support-6.3.5/.kde-ci.yml
+plasma5support-6.3.5/autotests/
+plasma5support-6.3.5/autotests/pluginloadertest.cpp
+plasma5support-6.3.5/autotests/pluginloadertest.h
+plasma5support-6.3.5/autotests/CMakeLists.txt
+plasma5support-6.3.5/src/
+plasma5support-6.3.5/src/Messages.sh
+plasma5support-6.3.5/src/declarativeimports/
+plasma5support-6.3.5/src/declarativeimports/datamodel.h
+plasma5support-6.3.5/src/declarativeimports/datamodel.cpp
+plasma5support-6.3.5/src/declarativeimports/serviceoperationstatus.cpp
+plasma5support-6.3.5/src/declarativeimports/datasource.cpp
+plasma5support-6.3.5/src/declarativeimports/CMakeLists.txt
+plasma5support-6.3.5/src/declarativeimports/types.h
+plasma5support-6.3.5/src/declarativeimports/datasource.h
+plasma5support-6.3.5/src/declarativeimports/Mainpage.dox
+plasma5support-6.3.5/src/declarativeimports/serviceoperationstatus.h
+plasma5support-6.3.5/src/dataengines/
+plasma5support-6.3.5/src/dataengines/mouse/
+plasma5support-6.3.5/src/dataengines/mouse/plasma-dataengine-mouse.json
+plasma5support-6.3.5/src/dataengines/mouse/cursornotificationhandler.h
+plasma5support-6.3.5/src/dataengines/mouse/mouseengine.h
+plasma5support-6.3.5/src/dataengines/mouse/mouseengine.cpp
+plasma5support-6.3.5/src/dataengines/mouse/cursornotificationhandler.cpp
+plasma5support-6.3.5/src/dataengines/mouse/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/places/
+plasma5support-6.3.5/src/dataengines/places/jobs.h
+plasma5support-6.3.5/src/dataengines/places/TODO
+plasma5support-6.3.5/src/dataengines/places/placeservice.cpp
+plasma5support-6.3.5/src/dataengines/places/placesproxymodel.cpp
+plasma5support-6.3.5/src/dataengines/places/placesproxymodel.h
+plasma5support-6.3.5/src/dataengines/places/placesengine.cpp
+plasma5support-6.3.5/src/dataengines/places/setupdevicejob.h
+plasma5support-6.3.5/src/dataengines/places/placeservice.h
+plasma5support-6.3.5/src/dataengines/places/org.kde.places.operations
+plasma5support-6.3.5/src/dataengines/places/placesengine.h
+plasma5support-6.3.5/src/dataengines/places/plasma-dataengine-places.json
+plasma5support-6.3.5/src/dataengines/places/modeljob.h
+plasma5support-6.3.5/src/dataengines/places/setupdevicejob.cpp
+plasma5support-6.3.5/src/dataengines/places/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/apps/
+plasma5support-6.3.5/src/dataengines/apps/appjob.h
+plasma5support-6.3.5/src/dataengines/apps/apps.operations
+plasma5support-6.3.5/src/dataengines/apps/appsengine.cpp
+plasma5support-6.3.5/src/dataengines/apps/appsengine.h
+plasma5support-6.3.5/src/dataengines/apps/appjob.cpp
+plasma5support-6.3.5/src/dataengines/apps/appservice.h
+plasma5support-6.3.5/src/dataengines/apps/appsource.h
+plasma5support-6.3.5/src/dataengines/apps/appsource.cpp
+plasma5support-6.3.5/src/dataengines/apps/appservice.cpp
+plasma5support-6.3.5/src/dataengines/apps/plasma-dataengine-apps.json
+plasma5support-6.3.5/src/dataengines/apps/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/activities/
+plasma5support-6.3.5/src/dataengines/activities/activities.operations
+plasma5support-6.3.5/src/dataengines/activities/ActivityData.cpp
+plasma5support-6.3.5/src/dataengines/activities/activityjob.cpp
+plasma5support-6.3.5/src/dataengines/activities/activityjob.h
+plasma5support-6.3.5/src/dataengines/activities/activityengine.cpp
+plasma5support-6.3.5/src/dataengines/activities/ActivityData.h
+plasma5support-6.3.5/src/dataengines/activities/activityservice.h
+plasma5support-6.3.5/src/dataengines/activities/plasma-dataengine-activities.json
+plasma5support-6.3.5/src/dataengines/activities/activityservice.cpp
+plasma5support-6.3.5/src/dataengines/activities/org.kde.ActivityManager.ActivityRanking.xml
+plasma5support-6.3.5/src/dataengines/activities/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/activities/activityengine.h
+plasma5support-6.3.5/src/dataengines/devicenotifications/
+plasma5support-6.3.5/src/dataengines/devicenotifications/Messages.sh
+plasma5support-6.3.5/src/dataengines/devicenotifications/devicenotificationsengine.cpp
+plasma5support-6.3.5/src/dataengines/devicenotifications/ksolidnotify.h
+plasma5support-6.3.5/src/dataengines/devicenotifications/plasma-dataengine-devicenotifications.json
+plasma5support-6.3.5/src/dataengines/devicenotifications/ksolidnotify.cpp
+plasma5support-6.3.5/src/dataengines/devicenotifications/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/devicenotifications/devicenotificationsengine.h
+plasma5support-6.3.5/src/dataengines/soliddevice/
+plasma5support-6.3.5/src/dataengines/soliddevice/devicesignalmapmanager.h
+plasma5support-6.3.5/src/dataengines/soliddevice/Messages.sh
+plasma5support-6.3.5/src/dataengines/soliddevice/hddtemp.h
+plasma5support-6.3.5/src/dataengines/soliddevice/soliddevicejob.h
+plasma5support-6.3.5/src/dataengines/soliddevice/soliddevice.operations
+plasma5support-6.3.5/src/dataengines/soliddevice/devicesignalmapper.cpp
+plasma5support-6.3.5/src/dataengines/soliddevice/soliddeviceengine.cpp
+plasma5support-6.3.5/src/dataengines/soliddevice/soliddeviceservice.h
+plasma5support-6.3.5/src/dataengines/soliddevice/soliddeviceengine.h
+plasma5support-6.3.5/src/dataengines/soliddevice/plasma-dataengine-soliddevice.json
+plasma5support-6.3.5/src/dataengines/soliddevice/devicesignalmapmanager.cpp
+plasma5support-6.3.5/src/dataengines/soliddevice/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/soliddevice/hddtemp.cpp
+plasma5support-6.3.5/src/dataengines/soliddevice/devicesignalmapper.h
+plasma5support-6.3.5/src/dataengines/soliddevice/soliddevicejob.cpp
+plasma5support-6.3.5/src/dataengines/soliddevice/soliddeviceservice.cpp
+plasma5support-6.3.5/src/dataengines/keystate/
+plasma5support-6.3.5/src/dataengines/keystate/Messages.sh
+plasma5support-6.3.5/src/dataengines/keystate/keystate.h
+plasma5support-6.3.5/src/dataengines/keystate/plasma-dataengine-keystate.json
+plasma5support-6.3.5/src/dataengines/keystate/keyservice.cpp
+plasma5support-6.3.5/src/dataengines/keystate/keyservice.h
+plasma5support-6.3.5/src/dataengines/keystate/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/keystate/keystate.cpp
+plasma5support-6.3.5/src/dataengines/keystate/modifierkeystate.operations
+plasma5support-6.3.5/src/dataengines/hotplug/
+plasma5support-6.3.5/src/dataengines/hotplug/hotplugjob.h
+plasma5support-6.3.5/src/dataengines/hotplug/Messages.sh
+plasma5support-6.3.5/src/dataengines/hotplug/plasma-dataengine-hotplug.json
+plasma5support-6.3.5/src/dataengines/hotplug/hotplugengine.cpp
+plasma5support-6.3.5/src/dataengines/hotplug/hotplugengine.h
+plasma5support-6.3.5/src/dataengines/hotplug/hotplugservice.cpp
+plasma5support-6.3.5/src/dataengines/hotplug/hotplug.operations
+plasma5support-6.3.5/src/dataengines/hotplug/deviceserviceaction.cpp
+plasma5support-6.3.5/src/dataengines/hotplug/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/hotplug/hotplugservice.h
+plasma5support-6.3.5/src/dataengines/hotplug/hotplugjob.cpp
+plasma5support-6.3.5/src/dataengines/hotplug/deviceserviceaction.h
+plasma5support-6.3.5/src/dataengines/packagekit/
+plasma5support-6.3.5/src/dataengines/packagekit/packagekitjob.h
+plasma5support-6.3.5/src/dataengines/packagekit/packagekitengine.h
+plasma5support-6.3.5/src/dataengines/packagekit/plasma-dataengine-packagekit.json
+plasma5support-6.3.5/src/dataengines/packagekit/packagekitservice.h
+plasma5support-6.3.5/src/dataengines/packagekit/packagekitservice.cpp
+plasma5support-6.3.5/src/dataengines/packagekit/packagekitengine.cpp
+plasma5support-6.3.5/src/dataengines/packagekit/packagekit.operations
+plasma5support-6.3.5/src/dataengines/packagekit/packagekitjob.cpp
+plasma5support-6.3.5/src/dataengines/packagekit/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/favicons/
+plasma5support-6.3.5/src/dataengines/favicons/favicons.h
+plasma5support-6.3.5/src/dataengines/favicons/favicons.cpp
+plasma5support-6.3.5/src/dataengines/favicons/faviconprovider.cpp
+plasma5support-6.3.5/src/dataengines/favicons/plasma-dataengine-favicons.json
+plasma5support-6.3.5/src/dataengines/favicons/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/favicons/faviconprovider.h
+plasma5support-6.3.5/src/dataengines/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/filebrowser/
+plasma5support-6.3.5/src/dataengines/filebrowser/filebrowserengine.cpp
+plasma5support-6.3.5/src/dataengines/filebrowser/plasma-dataengine-filebrowser.json
+plasma5support-6.3.5/src/dataengines/filebrowser/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/filebrowser/filebrowserengine.h
+plasma5support-6.3.5/src/dataengines/powermanagement/
+plasma5support-6.3.5/src/dataengines/powermanagement/Messages.sh
+plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementjob.h
+plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementservice.h
+plasma5support-6.3.5/src/dataengines/powermanagement/README.txt
+plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementengine.cpp
+plasma5support-6.3.5/src/dataengines/powermanagement/plasma-dataengine-powermanagement.json
+plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementjob.cpp
+plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementservice.cpp
+plasma5support-6.3.5/src/dataengines/powermanagement/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementservice.operations
+plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementengine.h
+plasma5support-6.3.5/src/dataengines/geolocation/
+plasma5support-6.3.5/src/dataengines/geolocation/geolocation.cpp
+plasma5support-6.3.5/src/dataengines/geolocation/geolocationprovider.cpp
+plasma5support-6.3.5/src/dataengines/geolocation/location_gps.cpp
+plasma5support-6.3.5/src/dataengines/geolocation/location_ip.h
+plasma5support-6.3.5/src/dataengines/geolocation/geolocationprovider.h
+plasma5support-6.3.5/src/dataengines/geolocation/location_ip.cpp
+plasma5support-6.3.5/src/dataengines/geolocation/plasma-dataengine-geolocation.json
+plasma5support-6.3.5/src/dataengines/geolocation/CMakeLists.txt
+plasma5support-6.3.5/src/dataengines/geolocation/location_gps.h
+plasma5support-6.3.5/src/dataengines/geolocation/geolocation.h
+plasma5support-6.3.5/src/config-X11.h.cmake
+plasma5support-6.3.5/src/plasma5support/
+plasma5support-6.3.5/src/plasma5support/version.h
+plasma5support-6.3.5/src/plasma5support/plasma5support.h
+plasma5support-6.3.5/src/plasma5support/plasma5support.cpp
+plasma5support-6.3.5/src/plasma5support/version.cpp
+plasma5support-6.3.5/src/plasma5support/data/
+plasma5support-6.3.5/src/plasma5support/data/operations/
+plasma5support-6.3.5/src/plasma5support/data/operations/plasmoidservice.operations
+plasma5support-6.3.5/src/plasma5support/data/operations/dataengineservice.operations
+plasma5support-6.3.5/src/plasma5support/data/operations/storage.operations
+plasma5support-6.3.5/src/plasma5support/servicejob.h
+plasma5support-6.3.5/src/plasma5support/private/
+plasma5support-6.3.5/src/plasma5support/private/dataenginemanager_p.h
+plasma5support-6.3.5/src/plasma5support/private/storage_p.h
+plasma5support-6.3.5/src/plasma5support/private/dataenginemanager.cpp
+plasma5support-6.3.5/src/plasma5support/private/service_p.h
+plasma5support-6.3.5/src/plasma5support/private/datacontainer_p.cpp
+plasma5support-6.3.5/src/plasma5support/private/dataengineconsumer_p.h
+plasma5support-6.3.5/src/plasma5support/private/storage.cpp
+plasma5support-6.3.5/src/plasma5support/private/dataengine_p.h
+plasma5support-6.3.5/src/plasma5support/private/storagethread.cpp
+plasma5support-6.3.5/src/plasma5support/private/storagethread_p.h
+plasma5support-6.3.5/src/plasma5support/private/servicejob_p.h
+plasma5support-6.3.5/src/plasma5support/private/datacontainer_p.h
+plasma5support-6.3.5/src/plasma5support/dataengineconsumer.h
+plasma5support-6.3.5/src/plasma5support/datacontainer.h
+plasma5support-6.3.5/src/plasma5support/dataengine.cpp
+plasma5support-6.3.5/src/plasma5support/pluginloader.cpp
+plasma5support-6.3.5/src/plasma5support/pluginloader.h
+plasma5support-6.3.5/src/plasma5support/servicejob.cpp
+plasma5support-6.3.5/src/plasma5support/dataengineconsumer.cpp
+plasma5support-6.3.5/src/plasma5support/service.h
+plasma5support-6.3.5/src/plasma5support/datacontainer.cpp
+plasma5support-6.3.5/src/plasma5support/.krazy
+plasma5support-6.3.5/src/plasma5support/CMakeLists.txt
+plasma5support-6.3.5/src/plasma5support/service.cpp
+plasma5support-6.3.5/src/plasma5support/config-plasma5support.h.cmake
+plasma5support-6.3.5/src/plasma5support/dataengine.h
+plasma5support-6.3.5/src/plasma5support/Mainpage.dox
+plasma5support-6.3.5/src/CMakeLists.txt
+plasma5support-6.3.5/CMakeLists.txt
+plasma5support-6.3.5/metainfo.yaml
+plasma5support-6.3.5/po/
+plasma5support-6.3.5/po/gl/
+plasma5support-6.3.5/po/gl/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/gl/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/gl/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/gl/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/gl/libplasma5support.po
+plasma5support-6.3.5/po/gl/plasma_engine_keystate.po
+plasma5support-6.3.5/po/eo/
+plasma5support-6.3.5/po/eo/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/eo/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/eo/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/eo/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/eo/libplasma5support.po
+plasma5support-6.3.5/po/eo/plasma_engine_keystate.po
+plasma5support-6.3.5/po/bs/
+plasma5support-6.3.5/po/bs/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/bs/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/bs/plasma_engine_keystate.po
+plasma5support-6.3.5/po/si/
+plasma5support-6.3.5/po/si/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/si/plasma_engine_keystate.po
+plasma5support-6.3.5/po/he/
+plasma5support-6.3.5/po/he/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/he/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/he/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/he/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/he/libplasma5support.po
+plasma5support-6.3.5/po/he/plasma_engine_keystate.po
+plasma5support-6.3.5/po/zh_CN/
+plasma5support-6.3.5/po/zh_CN/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/zh_CN/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/zh_CN/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/zh_CN/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/zh_CN/libplasma5support.po
+plasma5support-6.3.5/po/zh_CN/plasma_engine_keystate.po
+plasma5support-6.3.5/po/th/
+plasma5support-6.3.5/po/th/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/th/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sr/
+plasma5support-6.3.5/po/sr/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/sr/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/sr/plasma_engine_keystate.po
+plasma5support-6.3.5/po/be/
+plasma5support-6.3.5/po/be/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/be/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/be/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/be/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/be/libplasma5support.po
+plasma5support-6.3.5/po/be/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sr@latin/
+plasma5support-6.3.5/po/sr@latin/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/sr@latin/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/sr@latin/plasma_engine_keystate.po
+plasma5support-6.3.5/po/hi/
+plasma5support-6.3.5/po/hi/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/hi/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/hi/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/hi/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/hi/libplasma5support.po
+plasma5support-6.3.5/po/hi/plasma_engine_keystate.po
+plasma5support-6.3.5/po/bg/
+plasma5support-6.3.5/po/bg/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/bg/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/bg/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/bg/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/bg/libplasma5support.po
+plasma5support-6.3.5/po/bg/plasma_engine_keystate.po
+plasma5support-6.3.5/po/lv/
+plasma5support-6.3.5/po/lv/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/lv/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/lv/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/lv/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/lv/libplasma5support.po
+plasma5support-6.3.5/po/lv/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ca@valencia/
+plasma5support-6.3.5/po/ca@valencia/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ca@valencia/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ca@valencia/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ca@valencia/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ca@valencia/libplasma5support.po
+plasma5support-6.3.5/po/ca@valencia/plasma_engine_keystate.po
+plasma5support-6.3.5/po/el/
+plasma5support-6.3.5/po/el/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/el/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/el/plasma_engine_keystate.po
+plasma5support-6.3.5/po/kn/
+plasma5support-6.3.5/po/kn/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ie/
+plasma5support-6.3.5/po/ie/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/pt/
+plasma5support-6.3.5/po/pt/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/pt/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/pt/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/pt/plasma_engine_keystate.po
+plasma5support-6.3.5/po/mai/
+plasma5support-6.3.5/po/mai/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/mai/plasma_engine_keystate.po
+plasma5support-6.3.5/po/nn/
+plasma5support-6.3.5/po/nn/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/nn/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/nn/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/nn/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/nn/libplasma5support.po
+plasma5support-6.3.5/po/nn/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sr@ijekavian/
+plasma5support-6.3.5/po/sr@ijekavian/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/sr@ijekavian/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/sr@ijekavian/plasma_engine_keystate.po
+plasma5support-6.3.5/po/fi/
+plasma5support-6.3.5/po/fi/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/fi/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/fi/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/fi/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/fi/libplasma5support.po
+plasma5support-6.3.5/po/fi/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ka/
+plasma5support-6.3.5/po/ka/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ka/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ka/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ka/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ka/libplasma5support.po
+plasma5support-6.3.5/po/ka/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ar/
+plasma5support-6.3.5/po/ar/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ar/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ar/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ar/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ar/libplasma5support.po
+plasma5support-6.3.5/po/ar/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sk/
+plasma5support-6.3.5/po/sk/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/sk/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/sk/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/sk/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/sk/libplasma5support.po
+plasma5support-6.3.5/po/sk/plasma_engine_keystate.po
+plasma5support-6.3.5/po/pa/
+plasma5support-6.3.5/po/pa/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/pa/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/pa/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/pa/libplasma5support.po
+plasma5support-6.3.5/po/pa/plasma_engine_keystate.po
+plasma5support-6.3.5/po/km/
+plasma5support-6.3.5/po/km/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/km/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ro/
+plasma5support-6.3.5/po/ro/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ro/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ro/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ro/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ro/libplasma5support.po
+plasma5support-6.3.5/po/ro/plasma_engine_keystate.po
+plasma5support-6.3.5/po/de/
+plasma5support-6.3.5/po/de/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/de/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/de/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/de/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/de/libplasma5support.po
+plasma5support-6.3.5/po/de/plasma_engine_keystate.po
+plasma5support-6.3.5/po/fa/
+plasma5support-6.3.5/po/fa/libplasma5support.po
+plasma5support-6.3.5/po/is/
+plasma5support-6.3.5/po/is/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/is/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/is/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/is/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/is/libplasma5support.po
+plasma5support-6.3.5/po/is/plasma_engine_keystate.po
+plasma5support-6.3.5/po/id/
+plasma5support-6.3.5/po/id/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/id/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/id/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/id/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/id/libplasma5support.po
+plasma5support-6.3.5/po/id/plasma_engine_keystate.po
+plasma5support-6.3.5/po/tg/
+plasma5support-6.3.5/po/tg/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/tg/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/nds/
+plasma5support-6.3.5/po/nds/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/nds/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/nds/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ja/
+plasma5support-6.3.5/po/ja/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ja/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ja/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ja/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ja/libplasma5support.po
+plasma5support-6.3.5/po/ja/plasma_engine_keystate.po
+plasma5support-6.3.5/po/wa/
+plasma5support-6.3.5/po/wa/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/wa/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ko/
+plasma5support-6.3.5/po/ko/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ko/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ko/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ko/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ko/libplasma5support.po
+plasma5support-6.3.5/po/ko/plasma_engine_keystate.po
+plasma5support-6.3.5/po/hu/
+plasma5support-6.3.5/po/hu/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/hu/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/hu/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/hu/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/hu/libplasma5support.po
+plasma5support-6.3.5/po/hu/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sa/
+plasma5support-6.3.5/po/sa/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/sa/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/sa/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/sa/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/sa/libplasma5support.po
+plasma5support-6.3.5/po/sa/plasma_engine_keystate.po
+plasma5support-6.3.5/po/fy/
+plasma5support-6.3.5/po/fy/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ru/
+plasma5support-6.3.5/po/ru/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ru/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ru/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ru/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ru/libplasma5support.po
+plasma5support-6.3.5/po/ru/plasma_engine_keystate.po
+plasma5support-6.3.5/po/kk/
+plasma5support-6.3.5/po/kk/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/kk/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sl/
+plasma5support-6.3.5/po/sl/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/sl/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/sl/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/sl/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/sl/libplasma5support.po
+plasma5support-6.3.5/po/sl/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ta/
+plasma5support-6.3.5/po/ta/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ta/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ta/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ta/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ta/libplasma5support.po
+plasma5support-6.3.5/po/ta/plasma_engine_keystate.po
+plasma5support-6.3.5/po/it/
+plasma5support-6.3.5/po/it/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/it/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/it/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/it/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/it/libplasma5support.po
+plasma5support-6.3.5/po/it/plasma_engine_keystate.po
+plasma5support-6.3.5/po/mr/
+plasma5support-6.3.5/po/mr/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/mr/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ga/
+plasma5support-6.3.5/po/ga/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ga/plasma_engine_keystate.po
+plasma5support-6.3.5/po/pt_BR/
+plasma5support-6.3.5/po/pt_BR/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/pt_BR/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/pt_BR/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/pt_BR/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/pt_BR/libplasma5support.po
+plasma5support-6.3.5/po/pt_BR/plasma_engine_keystate.po
+plasma5support-6.3.5/po/tr/
+plasma5support-6.3.5/po/tr/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/tr/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/tr/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/tr/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/tr/libplasma5support.po
+plasma5support-6.3.5/po/tr/plasma_engine_keystate.po
+plasma5support-6.3.5/po/et/
+plasma5support-6.3.5/po/et/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/et/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/et/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/et/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ca/
+plasma5support-6.3.5/po/ca/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ca/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ca/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ca/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ca/libplasma5support.po
+plasma5support-6.3.5/po/ca/plasma_engine_keystate.po
+plasma5support-6.3.5/po/se/
+plasma5support-6.3.5/po/se/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/vi/
+plasma5support-6.3.5/po/vi/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/vi/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/vi/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/vi/plasma_engine_keystate.po
+plasma5support-6.3.5/po/nl/
+plasma5support-6.3.5/po/nl/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/nl/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/nl/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/nl/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/nl/libplasma5support.po
+plasma5support-6.3.5/po/nl/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sq/
+plasma5support-6.3.5/po/sq/plasma_engine_keystate.po
+plasma5support-6.3.5/po/pl/
+plasma5support-6.3.5/po/pl/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/pl/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/pl/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/pl/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/pl/libplasma5support.po
+plasma5support-6.3.5/po/pl/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sr@ijekavianlatin/
+plasma5support-6.3.5/po/sr@ijekavianlatin/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/sr@ijekavianlatin/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/sr@ijekavianlatin/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ms/
+plasma5support-6.3.5/po/ms/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ms/plasma_engine_keystate.po
+plasma5support-6.3.5/po/nb/
+plasma5support-6.3.5/po/nb/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/nb/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/nb/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/nb/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ml/
+plasma5support-6.3.5/po/ml/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ml/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ml/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ml/plasma_engine_keystate.po
+plasma5support-6.3.5/po/hr/
+plasma5support-6.3.5/po/hr/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/hr/plasma_engine_keystate.po
+plasma5support-6.3.5/po/eu/
+plasma5support-6.3.5/po/eu/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/eu/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/eu/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/eu/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/eu/libplasma5support.po
+plasma5support-6.3.5/po/eu/plasma_engine_keystate.po
+plasma5support-6.3.5/po/cs/
+plasma5support-6.3.5/po/cs/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/cs/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/cs/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/cs/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/cs/libplasma5support.po
+plasma5support-6.3.5/po/cs/plasma_engine_keystate.po
+plasma5support-6.3.5/po/gu/
+plasma5support-6.3.5/po/gu/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/gu/plasma_engine_keystate.po
+plasma5support-6.3.5/po/az/
+plasma5support-6.3.5/po/az/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/az/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/az/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/az/plasma_engine_keystate.po
+plasma5support-6.3.5/po/fr/
+plasma5support-6.3.5/po/fr/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/fr/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/fr/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/fr/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/fr/libplasma5support.po
+plasma5support-6.3.5/po/fr/plasma_engine_keystate.po
+plasma5support-6.3.5/po/zh_TW/
+plasma5support-6.3.5/po/zh_TW/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/zh_TW/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/zh_TW/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/zh_TW/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/zh_TW/libplasma5support.po
+plasma5support-6.3.5/po/zh_TW/plasma_engine_keystate.po
+plasma5support-6.3.5/po/uk/
+plasma5support-6.3.5/po/uk/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/uk/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/uk/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/uk/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/uk/libplasma5support.po
+plasma5support-6.3.5/po/uk/plasma_engine_keystate.po
+plasma5support-6.3.5/po/sv/
+plasma5support-6.3.5/po/sv/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/sv/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/sv/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/sv/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/sv/libplasma5support.po
+plasma5support-6.3.5/po/sv/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ug/
+plasma5support-6.3.5/po/ug/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ug/plasma_engine_keystate.po
+plasma5support-6.3.5/po/en_GB/
+plasma5support-6.3.5/po/en_GB/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/en_GB/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/en_GB/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/en_GB/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/en_GB/libplasma5support.po
+plasma5support-6.3.5/po/en_GB/plasma_engine_keystate.po
+plasma5support-6.3.5/po/da/
+plasma5support-6.3.5/po/da/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/da/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/da/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/da/plasma_engine_keystate.po
+plasma5support-6.3.5/po/es/
+plasma5support-6.3.5/po/es/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/es/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/es/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/es/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/es/libplasma5support.po
+plasma5support-6.3.5/po/es/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ast/
+plasma5support-6.3.5/po/ast/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ast/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ast/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ast/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ast/libplasma5support.po
+plasma5support-6.3.5/po/ast/plasma_engine_keystate.po
+plasma5support-6.3.5/po/ia/
+plasma5support-6.3.5/po/ia/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/ia/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/ia/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/ia/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/ia/libplasma5support.po
+plasma5support-6.3.5/po/ia/plasma_engine_keystate.po
+plasma5support-6.3.5/po/lt/
+plasma5support-6.3.5/po/lt/plasma_engine_devicenotifications.po
+plasma5support-6.3.5/po/lt/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/lt/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/lt/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/lt/libplasma5support.po
+plasma5support-6.3.5/po/lt/plasma_engine_keystate.po
+plasma5support-6.3.5/po/tok/
+plasma5support-6.3.5/po/tok/plasma_engine_powermanagement.po
+plasma5support-6.3.5/po/tok/plasma_engine_soliddevice.po
+plasma5support-6.3.5/po/tok/plasma_engine_hotplug.po
+plasma5support-6.3.5/po/tok/plasma_engine_keystate.po
+plasma5support-6.3.5/README.md
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6GuiAddons: /usr/lib64/cmake/KF6GuiAddons/KF6GuiAddonsConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6Notifications: /usr/lib/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.14.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.14.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.14.0")
+-- Found KF6IdleTime: /usr/lib64/cmake/KF6IdleTime/KF6IdleTimeConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found version "6.14.0") found components: Config CoreAddons GuiAddons I18n Notifications Solid Service IdleTime KIO
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for one of the modules 'libnm>=1.4.0'
+-- Checking for one of the modules 'gio-2.0'
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- No such target Qt6Gui_QCH defined when calling ecm_add_qch(), ignored.
+-- No such target KF6Package_QCH defined when calling ecm_add_qch(), ignored.
+-- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
+-- No such target Qt6Xml_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/build/src/plasma5support/Plasma5Support_ECMQchDoxygen.config' updated.
+
+-- Checking for module 'libgps'
+--   No package 'libgps' found
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6QuickTools (required version >= 6.8.3)
+ * Qt6Quick (required version >= 6.7.0)
+ * Qt6Sql (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6Gui (required version >= 6.7.0)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * KF6NetworkManagerQt
+ * PlasmaActivities
+
+-- The following REQUIRED packages have been found:
+
+ * KF6GuiAddons
+ * KF6Notifications
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6IdleTime
+ * KF6Solid (required version >= 6.14.0)
+ * KF6Service (required version >= 6.14.0)
+ * KF6KIO
+ * KF6
+ * Qt6Widgets (required version >= 6.7.0)
+ * Qt6Qml (required version >= 6.7.0)
+ * Gettext
+ * KF6I18n (required version >= 6.10.0)
+ * KSysGuard
+ * X11
+ * ECM (required version >= 5.240.0)
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * Qt6ToolsTools, qhelpgenerator from Qt6 tools
+   Needed for API dox QCH file generation
+ * Qt6
+ * Qt6Core
+ * Qt6Test
+
+-- Configuring done (2.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/build
+[1/129] Generating ts...
+[2/129] Generating src/plasma5support/Plasma5Support.qch, src/plasma5support/Plasma5Support.tags
+error: When enabling GENERATE_QHP the TAGFILES option should be empty. I'll adjust it for you.
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[3/129] Generating mo...
+[4/129] Automatic MOC for target Plasma5Support
+[5/129] Running AUTOMOC file extraction for target Plasma5Support
+[6/129] Running moc --collect-json for target Plasma5Support
+[7/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/Plasma5Support_autogen/mocs_compilation.cpp.o
+[8/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/debug_p.cpp.o
+[9/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/version.cpp.o
+[10/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/datacontainer_p.cpp.o
+[11/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/dataengineconsumer.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/plasma5support/dataengineconsumer.cpp: In member function ‘void Plasma5Support::DataEngineConsumerPrivate::slotJobFinished(Plasma5Support::ServiceJob*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/plasma5support/dataengineconsumer.cpp:22:77: warning: unused parameter ‘job’ [-Wunused-parameter]
+   22 | void DataEngineConsumerPrivate::slotJobFinished(Plasma5Support::ServiceJob *job)
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[12/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/dataenginemanager.cpp.o
+[13/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/storage.cpp.o
+[14/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/servicejob.cpp.o
+[15/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/plasma5support.cpp.o
+[16/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/pluginloader.cpp.o
+[17/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/datacontainer.cpp.o
+[18/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/dataengine.cpp.o
+[19/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/storagethread.cpp.o
+[20/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/service.cpp.o
+[21/129] Linking CXX shared library bin/libPlasma5Support.so.6.3.5
+[22/129] Creating library symlink bin/libPlasma5Support.so.6 bin/libPlasma5Support.so
+[23/129] Automatic MOC for target pluginloadertest
+[24/129] Building CXX object autotests/CMakeFiles/pluginloadertest.dir/pluginloadertest_autogen/mocs_compilation.cpp.o
+[25/129] Automatic MOC for target plasma_engine_filebrowser
+[26/129] Automatic MOC for target plasma_engine_keystate
+[27/129] Automatic MOC for target plasma_engine_favicons
+[28/129] Automatic MOC for target plasma-geolocation-interface
+[29/129] Automatic MOC for target plasma_engine_packagekit
+[30/129] Automatic MOC for target plasma_engine_devicenotifications
+[31/129] Automatic MOC for target plasma_engine_activities
+[32/129] Automatic MOC for target plasma_engine_mouse
+[33/129] Generating ActivityRankingInterface.cpp, ActivityRankingInterface.h
+[34/129] Generating moc_ActivityRankingInterface.cpp
+[35/129] Automatic MOC for target plasma_engine_apps
+[36/129] Automatic MOC for target plasma_engine_places
+[37/129] Automatic MOC for target plasma_engine_soliddevice
+[38/129] Automatic MOC for target plasma_engine_powermanagement
+[39/129] Automatic MOC for target plasma5supportplugin
+[40/129] Running AUTOMOC file extraction for target plasma5supportplugin
+[41/129] Running moc --collect-json for target plasma5supportplugin
+[42/129] Automatic MOC for target plasma_engine_hotplug
+[43/129] Running rcc for resource qmake_org_kde_plasma_plasma5support
+[44/129] Automatic QML type registration for target plasma5supportplugin
+[45/129] Building CXX object src/dataengines/filebrowser/CMakeFiles/plasma_engine_filebrowser.dir/plasma_engine_filebrowser_autogen/mocs_compilation.cpp.o
+[46/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-interface.dir/plasma-geolocation-interface_autogen/mocs_compilation.cpp.o
+[47/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/plasma_engine_keystate_autogen/mocs_compilation.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[48/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/plasma_engine_packagekit_autogen/mocs_compilation.cpp.o
+[49/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/.qt/rcc/qrc_qmake_org_kde_plasma_plasma5support.cpp.o
+[50/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/favicons.cpp.o
+[51/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/keyservice.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[52/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitjob.cpp.o
+[53/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/plasma_engine_devicenotifications_autogen/mocs_compilation.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[54/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/plasma_engine_favicons_autogen/mocs_compilation.cpp.o
+[55/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/ActivityData.cpp.o
+[56/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/devicenotificationsengine.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[57/129] Building CXX object src/dataengines/filebrowser/CMakeFiles/plasma_engine_filebrowser.dir/filebrowserengine.cpp.o
+[58/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_autogen/mocs_compilation.cpp.o
+[59/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/faviconprovider.cpp.o
+[60/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityjob.cpp.o
+[61/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/keystate.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[62/129] Building CXX object autotests/CMakeFiles/pluginloadertest.dir/pluginloadertest.cpp.o
+[63/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-interface.dir/geolocationprovider.cpp.o
+[64/129] Linking CXX shared library bin/libplasma-geolocation-interface.so.6.3.5
+[65/129] Creating library symlink bin/libplasma-geolocation-interface.so.6 bin/libplasma-geolocation-interface.so
+[66/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/ksolidnotify.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[67/129] Automatic MOC for target plasma_engine_geolocation
+[68/129] Automatic MOC for target plasma-geolocation-ip
+[69/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityservice.cpp.o
+[70/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/plasma_engine_activities_autogen/mocs_compilation.cpp.o
+[71/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_org_kde_plasma_plasma5supportPlugin.cpp.o
+[72/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/serviceoperationstatus.cpp.o
+[73/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugjob.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[74/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugservice.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[75/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_qmltyperegistrations.cpp.o
+[76/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/plasma_engine_hotplug_autogen/mocs_compilation.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[77/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/devicesignalmapper.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[78/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/deviceserviceaction.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[79/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/devicesignalmapmanager.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[80/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityengine.cpp.o
+[81/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/datasource.cpp.o
+[82/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/ActivityRankingInterface.cpp.o
+[83/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/plasma_engine_soliddevice_autogen/mocs_compilation.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[84/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/hddtemp.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[85/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma_engine_geolocation.dir/plasma_engine_geolocation_autogen/mocs_compilation.cpp.o
+[86/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddeviceservice.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[87/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-ip.dir/plasma-geolocation-ip_autogen/mocs_compilation.cpp.o
+[88/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-ip.dir/geolocdebug.cpp.o
+[89/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/datamodel.cpp.o
+[90/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugengine.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[91/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddevicejob.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[92/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitengine.cpp.o
+[93/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma_engine_geolocation.dir/geolocation.cpp.o
+[94/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/powermanagementservice.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[95/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitservice.cpp.o
+[96/129] Linking CXX shared module bin/org/kde/plasma/plasma5support/libplasma5supportplugin.so
+[97/129] Linking CXX shared module bin/plasma_engine_devicenotifications.so
+[98/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_favicons.so
+[99/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_geolocation.so
+[100/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_keystate.so
+[101/129] Linking CXX shared module bin/plasma_engine_activities.so
+[102/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_packagekit.so
+[103/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_filebrowser.so
+[104/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/plasma_engine_mouse_autogen/mocs_compilation.cpp.o
+[105/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/powermanagementjob.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementjob.cpp: In member function ‘virtual void PowerManagementJob::start()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementjob.cpp:37:37: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   37 |         if (m_sleepInhibitionCookie != -1) { // an inhibition request is already active; don't trigger another one
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementjob.cpp:77:36: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   77 |         if (m_lockInhibitionCookie != -1) { // an inhibition request is already active; don't trigger another one
+      |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+[106/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_hotplug.so
+[107/129] Linking CXX executable bin/pluginloadertest
+[108/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddeviceengine.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[109/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/setupdevicejob.cpp.o
+[110/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_soliddevice.so
+[111/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/cursornotificationhandler.cpp.o
+[112/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placesengine.cpp.o
+[113/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-ip.dir/location_ip.cpp.o
+[114/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/plasma_engine_places_autogen/mocs_compilation.cpp.o
+[115/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/plasma_engine_apps_autogen/mocs_compilation.cpp.o
+[116/129] Linking CXX shared module bin/plasma5support/geolocationprovider/plasma-geolocation-ip.so
+[117/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/plasma_engine_powermanagement_autogen/mocs_compilation.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[118/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/mouseengine.cpp.o
+[119/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appsengine.cpp.o
+[120/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_mouse.so
+[121/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placeservice.cpp.o
+[122/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placesproxymodel.cpp.o
+[123/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appservice.cpp.o
+[124/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_places.so
+[125/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appsource.cpp.o
+[126/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appjob.cpp.o
+[127/129] Linking CXX shared module bin/plasma_engine_apps.so
+[128/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/powermanagementengine.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[129/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_powermanagement.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/da/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/da/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/da/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/da/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ms
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ms/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ms/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/cs/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/cs/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/cs/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/cs/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/cs/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/cs/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ja/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ja/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ja/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ja/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ja/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ja/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/de/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/de/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/de/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/de/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/de/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/de/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/el/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/el/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/el/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nn/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nn/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nn/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nn/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nn/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nn/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fy/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hi/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hi/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hi/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hi/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hi/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hi/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt_BR/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lt/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lt/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lt/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lt/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lt/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lt/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/be/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/be/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/be/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/be/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/be/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/be/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pa/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pa/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pa/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pa/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pa/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sl/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sl/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sl/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sl/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sl/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sl/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ie
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ie/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ta/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ta/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ta/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ta/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ta/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ta/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gu/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gu/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ro/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ro/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ro/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ro/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ro/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ro/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bs/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bs/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bs/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/is/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/is/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/is/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/is/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/is/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/is/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/wa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/wa/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/wa/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/kk/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/kk/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@latin/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@latin/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sr@latin/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/he/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/he/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/he/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/he/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/he/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/he/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_TW/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tg/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tg/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fa/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pl/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pl/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pl/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pl/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pl/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pl/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/km/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/km/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/pt/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hr/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hr/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/az/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/az/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/az/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/az/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tr/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tr/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tr/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tr/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tr/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tr/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fr/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fr/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fr/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fr/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fr/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fr/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ast/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ast/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ast/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ast/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ast/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ast/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/mai
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/mai/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/mai/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/vi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/vi/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/vi/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/vi/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/vi/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ka/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ka/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ka/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ka/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ka/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ka/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/th
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/th/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/th/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/th/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gl/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gl/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gl/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gl/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gl/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/gl/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ia/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ia/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ia/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ia/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ia/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ia/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hu/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hu/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hu/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hu/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hu/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/hu/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eo/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eo/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eo/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eo/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eo/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eo/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bg/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bg/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bg/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bg/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bg/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/bg/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/kn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/kn/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ga/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ga/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/uk/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/uk/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/uk/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/uk/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/uk/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/uk/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/id/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/id/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/id/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/id/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/id/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/id/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/en_GB/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_CN/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nl/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nl/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nl/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nl/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nl/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nl/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tok
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tok/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tok/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tok/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tok/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/tok/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sa/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sa/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sa/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sa/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sa/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sa/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fi/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fi/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fi/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fi/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fi/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/fi/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ko/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ko/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ko/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ko/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ko/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ko/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ru/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ru/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ru/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ru/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ru/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ru/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lv/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lv/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lv/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lv/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lv/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/lv/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ml/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ml/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ml/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ml/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca@valencia/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nb/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nb/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nb/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nb/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/es/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/es/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/es/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/es/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/es/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/es/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eu/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eu/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eu/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eu/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eu/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/eu/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/et/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/et/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/et/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/et/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/it/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/it/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/it/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/it/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/it/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/it/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/se
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/se/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/se/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ar/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ar/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ar/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ar/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ar/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ar/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sq
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sq/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nds/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nds/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/nds/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/mr/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/mr/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ug/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/ug/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sk/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sk/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sk/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sk/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sk/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sk/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/si
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/si/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/si/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/si/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sv/LC_MESSAGES/plasma_engine_devicenotifications.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sv/LC_MESSAGES/plasma_engine_keystate.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sv/LC_MESSAGES/libplasma5support.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sv/LC_MESSAGES/plasma_engine_powermanagement.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sv/LC_MESSAGES/plasma_engine_hotplug.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/locale/sv/LC_MESSAGES/plasma_engine_soliddevice.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/datacontainer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/dataengine.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/dataengineconsumer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/pluginloader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/service.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/servicejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/plasma5support.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support/plasma5support_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/Plasma5Support/DataContainer
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/Plasma5Support/DataEngine
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/Plasma5Support/DataEngineConsumer
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/Plasma5Support/PluginLoader
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/Plasma5Support/Service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/Plasma5Support/ServiceJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/Plasma5Support/Plasma5Support
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/dataengineservice.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/plasmoidservice.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/storage.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/libPlasma5Support.so.6.3.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/libPlasma5Support.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/libPlasma5Support.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/doc/qt6-6.8.3_20250319_bab1fecd/Plasma5Support.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/doc/qt6-6.8.3_20250319_bab1fecd/Plasma5Support.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/qml/org/kde/plasma/plasma5support/libplasma5supportplugin.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/qml/org/kde/plasma/plasma5support/libplasma5supportplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/qml/org/kde/plasma/plasma5support/qmldir
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/qml/org/kde/plasma/plasma5support/plasma5supportplugin.qmltypes
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/qml/org/kde/plasma/plasma5support/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_devicenotifications.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_devicenotifications.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_favicons.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_favicons.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/libplasma-geolocation-interface.so.6.3.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/libplasma-geolocation-interface.so.6
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/libplasma-geolocation-interface.so.6.3.5" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/libplasma-geolocation-interface.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/plasma/geolocation/geolocationprovider.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/plasma/geolocation/geolocation_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_geolocation.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_geolocation.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/geolocationprovider/plasma-geolocation-ip.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/geolocationprovider/plasma-geolocation-ip.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_activities.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_activities.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/activities.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_keystate.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_keystate.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/modifierkeystate.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_hotplug.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_hotplug.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/hotplug.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_soliddevice.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_soliddevice.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/soliddevice.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_powermanagement.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_powermanagement.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/powermanagementservice.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_packagekit.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_packagekit.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/packagekit.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_mouse.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_mouse.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_filebrowser.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_filebrowser.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_places.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_places.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/org.kde.places.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_apps.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_apps.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/plasma5support/services/apps.operations
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/qlogging-categories6/plasma5support.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/share/qlogging-categories6/plasma5support.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/cmake/Plasma5Support/Plasma5SupportQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/cmake/Plasma5Support/Plasma5SupportConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/cmake/Plasma5Support/Plasma5SupportConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/cmake/Plasma5Support/Plasma5SupportMacros.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/cmake/Plasma5Support/Plasma5SupportTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/lib64/cmake/Plasma5Support/Plasma5SupportTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/package-plasma5support/usr/include/Plasma5Support/plasma5support_version.h
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma5support/plasma5support.info: No such file or directory
+doxygen
+extra-cmake-modules
+kconfig
+kcoreaddons
+ki18n
+kio
+kpackage
+kservice
+kxmlgui
+libksysguard
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libPlasma5Support.so	libPlasma5Support.so.6
+usr/lib64/libPlasma5Support.so.6	libPlasma5Support.so.6.3.5
+usr/lib64/libplasma-geolocation-interface.so	libplasma-geolocation-interface.so.6
+usr/lib64/libplasma-geolocation-interface.so.6	libplasma-geolocation-interface.so.6.3.5
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libPlasma5Support.so )
+( cd usr/lib64 ; ln -sf libPlasma5Support.so.6 libPlasma5Support.so )
+( cd usr/lib64 ; rm -rf libPlasma5Support.so.6 )
+( cd usr/lib64 ; ln -sf libPlasma5Support.so.6.3.5 libPlasma5Support.so.6 )
+( cd usr/lib64 ; rm -rf libplasma-geolocation-interface.so )
+( cd usr/lib64 ; ln -sf libplasma-geolocation-interface.so.6 libplasma-geolocation-interface.so )
+( cd usr/lib64 ; rm -rf libplasma-geolocation-interface.so.6 )
+( cd usr/lib64 ; ln -sf libplasma-geolocation-interface.so.6.3.5 libplasma-geolocation-interface.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libplasma-geolocation-interface.so'
+removed './usr/lib64/libPlasma5Support.so.6'
+removed './usr/lib64/libPlasma5Support.so'
+removed './usr/lib64/libplasma-geolocation-interface.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/plasma5support/plasma5support-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/plasma5support-6.3.5/
+usr/doc/plasma5support-6.3.5/README.md
+usr/doc/plasma5support-6.3.5/plasma5support.ini
+usr/doc/plasma5support-6.3.5/slack-required
+usr/doc/qt6-6.8.3_20250319_bab1fecd/
+usr/doc/qt6-6.8.3_20250319_bab1fecd/Plasma5Support.qch
+usr/doc/qt6-6.8.3_20250319_bab1fecd/Plasma5Support.tags
+usr/include/
+usr/include/Plasma5Support/
+usr/include/Plasma5Support/Plasma5Support/
+usr/include/Plasma5Support/Plasma5Support/DataContainer
+usr/include/Plasma5Support/Plasma5Support/DataEngine
+usr/include/Plasma5Support/Plasma5Support/DataEngineConsumer
+usr/include/Plasma5Support/Plasma5Support/Plasma5Support
+usr/include/Plasma5Support/Plasma5Support/PluginLoader
+usr/include/Plasma5Support/Plasma5Support/Service
+usr/include/Plasma5Support/Plasma5Support/ServiceJob
+usr/include/Plasma5Support/plasma5support/
+usr/include/Plasma5Support/plasma5support/datacontainer.h
+usr/include/Plasma5Support/plasma5support/dataengine.h
+usr/include/Plasma5Support/plasma5support/dataengineconsumer.h
+usr/include/Plasma5Support/plasma5support/plasma5support.h
+usr/include/Plasma5Support/plasma5support/plasma5support_export.h
+usr/include/Plasma5Support/plasma5support/pluginloader.h
+usr/include/Plasma5Support/plasma5support/service.h
+usr/include/Plasma5Support/plasma5support/servicejob.h
+usr/include/Plasma5Support/plasma5support/version.h
+usr/include/Plasma5Support/plasma5support_version.h
+usr/include/plasma/
+usr/include/plasma/geolocation/
+usr/include/plasma/geolocation/geolocation_export.h
+usr/include/plasma/geolocation/geolocationprovider.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/Plasma5Support/
+usr/lib64/cmake/Plasma5Support/Plasma5SupportConfig.cmake
+usr/lib64/cmake/Plasma5Support/Plasma5SupportConfigVersion.cmake
+usr/lib64/cmake/Plasma5Support/Plasma5SupportMacros.cmake
+usr/lib64/cmake/Plasma5Support/Plasma5SupportQchTargets.cmake
+usr/lib64/cmake/Plasma5Support/Plasma5SupportTargets-relwithdebinfo.cmake
+usr/lib64/cmake/Plasma5Support/Plasma5SupportTargets.cmake
+usr/lib64/libPlasma5Support.so.6.3.5
+usr/lib64/libplasma-geolocation-interface.so.6.3.5
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/plasma5support/
+usr/lib64/qt6/plugins/plasma5support/dataengine/
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_activities.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_apps.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_devicenotifications.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_favicons.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_filebrowser.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_geolocation.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_hotplug.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_keystate.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_mouse.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_packagekit.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_places.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_powermanagement.so
+usr/lib64/qt6/plugins/plasma5support/dataengine/plasma_engine_soliddevice.so
+usr/lib64/qt6/plugins/plasma5support/geolocationprovider/
+usr/lib64/qt6/plugins/plasma5support/geolocationprovider/plasma-geolocation-ip.so
+usr/lib64/qt6/qml/
+usr/lib64/qt6/qml/org/
+usr/lib64/qt6/qml/org/kde/
+usr/lib64/qt6/qml/org/kde/plasma/
+usr/lib64/qt6/qml/org/kde/plasma/plasma5support/
+usr/lib64/qt6/qml/org/kde/plasma/plasma5support/kde-qmlmodule.version
+usr/lib64/qt6/qml/org/kde/plasma/plasma5support/libplasma5supportplugin.so
+usr/lib64/qt6/qml/org/kde/plasma/plasma5support/plasma5supportplugin.qmltypes
+usr/lib64/qt6/qml/org/kde/plasma/plasma5support/qmldir
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ar/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ar/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ar/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ar/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ar/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ast/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ast/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ast/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ast/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ast/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/az/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/az/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/az/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/be/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/be/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/be/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/be/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/be/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/bg/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/bg/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/bg/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/bg/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/bg/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/bs/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/bs/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ca/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ca/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ca/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ca/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ca/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/cs/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/cs/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/cs/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/cs/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/cs/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/da/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/da/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/da/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/de/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/de/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/de/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/de/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/de/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/el/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/el/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/en_GB/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/eo/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/eo/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/eo/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/eo/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/eo/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/es/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/es/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/es/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/es/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/es/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/et/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/et/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/et/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/eu/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/eu/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/eu/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/eu/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/eu/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/fi/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/fi/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/fi/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/fi/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/fi/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/fr/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/fr/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/fr/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/fr/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/fr/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/fy/
+usr/share/locale/fy/LC_MESSAGES/
+usr/share/locale/fy/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ga/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/gl/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/gl/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/gl/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/gl/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/gl/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/gu/
+usr/share/locale/gu/LC_MESSAGES/
+usr/share/locale/gu/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/gu/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/he/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/he/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/he/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/he/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/he/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/hi/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/hi/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/hi/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/hi/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/hi/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/hr/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/hu/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/hu/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/hu/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/hu/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/hu/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ia/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ia/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ia/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ia/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ia/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/id/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/id/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/id/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/id/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/id/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ie/
+usr/share/locale/ie/LC_MESSAGES/
+usr/share/locale/ie/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/is/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/is/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/is/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/is/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/is/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/it/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/it/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/it/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/it/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/it/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ja/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ja/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ja/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ja/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ja/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ka/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ka/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ka/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ka/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ka/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/kk/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/km/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/kn/
+usr/share/locale/kn/LC_MESSAGES/
+usr/share/locale/kn/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ko/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ko/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ko/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ko/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ko/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/lt/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/lt/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/lt/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/lt/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/lt/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/lv/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/lv/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/lv/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/lv/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/lv/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/mai/
+usr/share/locale/mai/LC_MESSAGES/
+usr/share/locale/mai/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/mai/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ml/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ml/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ml/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/mr/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ms/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/nb/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/nb/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/nb/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/nds/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/nds/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/nl/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/nl/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/nl/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/nl/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/nl/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/nn/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/nn/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/nn/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/nn/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/nn/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/pa/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/pa/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/pa/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/pa/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/pl/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/pl/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/pl/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/pl/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/pl/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/pt/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/pt/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/pt/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/pt_BR/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ro/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ro/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ro/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ro/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ro/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ru/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ru/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ru/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ru/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ru/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/sa/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/sa/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/sa/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sa/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/sa/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/si/
+usr/share/locale/si/LC_MESSAGES/
+usr/share/locale/si/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/si/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/sk/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/sk/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/sk/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sk/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/sk/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/sl/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/sl/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/sl/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sl/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/sl/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sr/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/sr/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sr@latin/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/sr@latin/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/sv/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/sv/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/sv/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/sv/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/sv/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/ta/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/ta/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/ta/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ta/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/ta/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/tg/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/th/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/tok/
+usr/share/locale/tok/LC_MESSAGES/
+usr/share/locale/tok/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/tok/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/tok/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/tok/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/tr/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/tr/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/tr/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/tr/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/tr/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/ug/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/uk/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/uk/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/uk/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/uk/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/uk/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/vi/
+usr/share/locale/vi/LC_MESSAGES/
+usr/share/locale/vi/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/vi/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/vi/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/vi/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/wa/
+usr/share/locale/wa/LC_MESSAGES/
+usr/share/locale/wa/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/wa/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/zh_CN/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/libplasma5support.mo
+usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_devicenotifications.mo
+usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_hotplug.mo
+usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_keystate.mo
+usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_powermanagement.mo
+usr/share/locale/zh_TW/LC_MESSAGES/plasma_engine_soliddevice.mo
+usr/share/plasma5support/
+usr/share/plasma5support/services/
+usr/share/plasma5support/services/activities.operations
+usr/share/plasma5support/services/apps.operations
+usr/share/plasma5support/services/dataengineservice.operations
+usr/share/plasma5support/services/hotplug.operations
+usr/share/plasma5support/services/modifierkeystate.operations
+usr/share/plasma5support/services/org.kde.places.operations
+usr/share/plasma5support/services/packagekit.operations
+usr/share/plasma5support/services/plasmoidservice.operations
+usr/share/plasma5support/services/powermanagementservice.operations
+usr/share/plasma5support/services/soliddevice.operations
+usr/share/plasma5support/services/storage.operations
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/plasma5support.categories
+usr/share/qlogging-categories6/plasma5support.renamecategories
+
+Slackware package /tmp/plasma5support/plasma5support-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for plasma5support-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/plasma5support/plasma5support-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/plasma5support/plasma5support-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/plasma5support/plasma5support-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in plasma5support.tar.lz4 format.
+/tmp/plasma5support /tmp/plasma5support
+/tmp/plasma5support
+BIN_NAME
+README
+makepkg-plasma5support.log
+plasma5support-6.3.5-x86_64-1_rtz.tlz
+plasma5support-6.3.5-x86_64-1_rtz.tlz.md5
+plasma5support-6.3.5-x86_64-1_rtz.tlz.so.file
+plasma5support-6.3.5-x86_64-1_rtz.tlz.txt
+plasma5support.dep
+plasma5support build finished. Procced to installation...
+
++=====================================================================================================================+
+| Upgrading plasma5support-6.3.5-x86_64-1_rtz package using /tmp/plasma5support/plasma5support-6.3.5-x86_64-1_rtz.tlz |
++=====================================================================================================================+
+
+Pre-installing package plasma5support-6.3.5-x86_64-1_rtz...
+Removing package: plasma5support-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,23:02:56
+Installing package plasma5support-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# plasma5support (components )
+#
+# Support components for porting from KF5/Qt5 to KF6/Qt6
+#
+# https://kde.org/plasma-desktop/
+Executing install script for plasma5support-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package plasma5support-6.3.5-x86_64-1_rtz.tlz installed.
+Package plasma5support-6.3.5-x86_64-1_rtz upgraded with new package /tmp/plasma5support/plasma5support-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'plasma5support-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 56 seconds.

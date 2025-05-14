@@ -1,0 +1,577 @@
+Starting build process...
+Detected architecture: x86_64
+No required dependencies specified.
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-12 15:56:05--  https://github.com/gabime/spdlog/archive/v1.15.3/spdlog-1.15.3.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/gabime/spdlog/tar.gz/refs/tags/v1.15.3 [following]
+--2025-05-12 15:56:06--  https://codeload.github.com/gabime/spdlog/tar.gz/refs/tags/v1.15.3
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘spdlog-1.15.3.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  425K
+    50K .......... .......... .......... .......... ..........  855K
+   100K .......... .......... .......... .......... .......... 6.60M
+   150K .......... .......... .......... .......... ..........  907K
+   200K .......... .......... .......... .......... .......... 5.11M
+   250K .......... .......... .                                8.45M=0.3s
+
+2025-05-12 15:56:07 (1.06 MB/s) - ‘spdlog-1.15.3.tar.gz’ saved [277691]
+
+Found file: spdlog-1.15.3.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+spdlog-1.15.3/
+spdlog-1.15.3/.clang-format
+spdlog-1.15.3/.clang-tidy
+spdlog-1.15.3/.git-blame-ignore-revs
+spdlog-1.15.3/.gitattributes
+spdlog-1.15.3/.github/
+spdlog-1.15.3/.github/workflows/
+spdlog-1.15.3/.github/workflows/linux.yml
+spdlog-1.15.3/.github/workflows/macos.yml
+spdlog-1.15.3/.github/workflows/windows.yml
+spdlog-1.15.3/.gitignore
+spdlog-1.15.3/CMakeLists.txt
+spdlog-1.15.3/INSTALL
+spdlog-1.15.3/LICENSE
+spdlog-1.15.3/README.md
+spdlog-1.15.3/appveyor.yml
+spdlog-1.15.3/bench/
+spdlog-1.15.3/bench/CMakeLists.txt
+spdlog-1.15.3/bench/async_bench.cpp
+spdlog-1.15.3/bench/bench.cpp
+spdlog-1.15.3/bench/formatter-bench.cpp
+spdlog-1.15.3/bench/latency.cpp
+spdlog-1.15.3/bench/utils.h
+spdlog-1.15.3/cmake/
+spdlog-1.15.3/cmake/ide.cmake
+spdlog-1.15.3/cmake/pch.h.in
+spdlog-1.15.3/cmake/spdlog.pc.in
+spdlog-1.15.3/cmake/spdlogCPack.cmake
+spdlog-1.15.3/cmake/spdlogConfig.cmake.in
+spdlog-1.15.3/cmake/utils.cmake
+spdlog-1.15.3/cmake/version.rc.in
+spdlog-1.15.3/example/
+spdlog-1.15.3/example/CMakeLists.txt
+spdlog-1.15.3/example/example.cpp
+spdlog-1.15.3/include/
+spdlog-1.15.3/include/spdlog/
+spdlog-1.15.3/include/spdlog/async.h
+spdlog-1.15.3/include/spdlog/async_logger-inl.h
+spdlog-1.15.3/include/spdlog/async_logger.h
+spdlog-1.15.3/include/spdlog/cfg/
+spdlog-1.15.3/include/spdlog/cfg/argv.h
+spdlog-1.15.3/include/spdlog/cfg/env.h
+spdlog-1.15.3/include/spdlog/cfg/helpers-inl.h
+spdlog-1.15.3/include/spdlog/cfg/helpers.h
+spdlog-1.15.3/include/spdlog/common-inl.h
+spdlog-1.15.3/include/spdlog/common.h
+spdlog-1.15.3/include/spdlog/details/
+spdlog-1.15.3/include/spdlog/details/backtracer-inl.h
+spdlog-1.15.3/include/spdlog/details/backtracer.h
+spdlog-1.15.3/include/spdlog/details/circular_q.h
+spdlog-1.15.3/include/spdlog/details/console_globals.h
+spdlog-1.15.3/include/spdlog/details/file_helper-inl.h
+spdlog-1.15.3/include/spdlog/details/file_helper.h
+spdlog-1.15.3/include/spdlog/details/fmt_helper.h
+spdlog-1.15.3/include/spdlog/details/log_msg-inl.h
+spdlog-1.15.3/include/spdlog/details/log_msg.h
+spdlog-1.15.3/include/spdlog/details/log_msg_buffer-inl.h
+spdlog-1.15.3/include/spdlog/details/log_msg_buffer.h
+spdlog-1.15.3/include/spdlog/details/mpmc_blocking_q.h
+spdlog-1.15.3/include/spdlog/details/null_mutex.h
+spdlog-1.15.3/include/spdlog/details/os-inl.h
+spdlog-1.15.3/include/spdlog/details/os.h
+spdlog-1.15.3/include/spdlog/details/periodic_worker-inl.h
+spdlog-1.15.3/include/spdlog/details/periodic_worker.h
+spdlog-1.15.3/include/spdlog/details/registry-inl.h
+spdlog-1.15.3/include/spdlog/details/registry.h
+spdlog-1.15.3/include/spdlog/details/synchronous_factory.h
+spdlog-1.15.3/include/spdlog/details/tcp_client-windows.h
+spdlog-1.15.3/include/spdlog/details/tcp_client.h
+spdlog-1.15.3/include/spdlog/details/thread_pool-inl.h
+spdlog-1.15.3/include/spdlog/details/thread_pool.h
+spdlog-1.15.3/include/spdlog/details/udp_client-windows.h
+spdlog-1.15.3/include/spdlog/details/udp_client.h
+spdlog-1.15.3/include/spdlog/details/windows_include.h
+spdlog-1.15.3/include/spdlog/fmt/
+spdlog-1.15.3/include/spdlog/fmt/bin_to_hex.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/
+spdlog-1.15.3/include/spdlog/fmt/bundled/args.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/base.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/chrono.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/color.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/compile.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/core.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/fmt.license.rst
+spdlog-1.15.3/include/spdlog/fmt/bundled/format-inl.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/format.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/os.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/ostream.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/printf.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/ranges.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/std.h
+spdlog-1.15.3/include/spdlog/fmt/bundled/xchar.h
+spdlog-1.15.3/include/spdlog/fmt/chrono.h
+spdlog-1.15.3/include/spdlog/fmt/compile.h
+spdlog-1.15.3/include/spdlog/fmt/fmt.h
+spdlog-1.15.3/include/spdlog/fmt/ostr.h
+spdlog-1.15.3/include/spdlog/fmt/ranges.h
+spdlog-1.15.3/include/spdlog/fmt/std.h
+spdlog-1.15.3/include/spdlog/fmt/xchar.h
+spdlog-1.15.3/include/spdlog/formatter.h
+spdlog-1.15.3/include/spdlog/fwd.h
+spdlog-1.15.3/include/spdlog/logger-inl.h
+spdlog-1.15.3/include/spdlog/logger.h
+spdlog-1.15.3/include/spdlog/mdc.h
+spdlog-1.15.3/include/spdlog/pattern_formatter-inl.h
+spdlog-1.15.3/include/spdlog/pattern_formatter.h
+spdlog-1.15.3/include/spdlog/sinks/
+spdlog-1.15.3/include/spdlog/sinks/android_sink.h
+spdlog-1.15.3/include/spdlog/sinks/ansicolor_sink-inl.h
+spdlog-1.15.3/include/spdlog/sinks/ansicolor_sink.h
+spdlog-1.15.3/include/spdlog/sinks/base_sink-inl.h
+spdlog-1.15.3/include/spdlog/sinks/base_sink.h
+spdlog-1.15.3/include/spdlog/sinks/basic_file_sink-inl.h
+spdlog-1.15.3/include/spdlog/sinks/basic_file_sink.h
+spdlog-1.15.3/include/spdlog/sinks/callback_sink.h
+spdlog-1.15.3/include/spdlog/sinks/daily_file_sink.h
+spdlog-1.15.3/include/spdlog/sinks/dist_sink.h
+spdlog-1.15.3/include/spdlog/sinks/dup_filter_sink.h
+spdlog-1.15.3/include/spdlog/sinks/hourly_file_sink.h
+spdlog-1.15.3/include/spdlog/sinks/kafka_sink.h
+spdlog-1.15.3/include/spdlog/sinks/mongo_sink.h
+spdlog-1.15.3/include/spdlog/sinks/msvc_sink.h
+spdlog-1.15.3/include/spdlog/sinks/null_sink.h
+spdlog-1.15.3/include/spdlog/sinks/ostream_sink.h
+spdlog-1.15.3/include/spdlog/sinks/qt_sinks.h
+spdlog-1.15.3/include/spdlog/sinks/ringbuffer_sink.h
+spdlog-1.15.3/include/spdlog/sinks/rotating_file_sink-inl.h
+spdlog-1.15.3/include/spdlog/sinks/rotating_file_sink.h
+spdlog-1.15.3/include/spdlog/sinks/sink-inl.h
+spdlog-1.15.3/include/spdlog/sinks/sink.h
+spdlog-1.15.3/include/spdlog/sinks/stdout_color_sinks-inl.h
+spdlog-1.15.3/include/spdlog/sinks/stdout_color_sinks.h
+spdlog-1.15.3/include/spdlog/sinks/stdout_sinks-inl.h
+spdlog-1.15.3/include/spdlog/sinks/stdout_sinks.h
+spdlog-1.15.3/include/spdlog/sinks/syslog_sink.h
+spdlog-1.15.3/include/spdlog/sinks/systemd_sink.h
+spdlog-1.15.3/include/spdlog/sinks/tcp_sink.h
+spdlog-1.15.3/include/spdlog/sinks/udp_sink.h
+spdlog-1.15.3/include/spdlog/sinks/win_eventlog_sink.h
+spdlog-1.15.3/include/spdlog/sinks/wincolor_sink-inl.h
+spdlog-1.15.3/include/spdlog/sinks/wincolor_sink.h
+spdlog-1.15.3/include/spdlog/spdlog-inl.h
+spdlog-1.15.3/include/spdlog/spdlog.h
+spdlog-1.15.3/include/spdlog/stopwatch.h
+spdlog-1.15.3/include/spdlog/tweakme.h
+spdlog-1.15.3/include/spdlog/version.h
+spdlog-1.15.3/logos/
+spdlog-1.15.3/logos/jetbrains-variant-4.svg
+spdlog-1.15.3/logos/spdlog.png
+spdlog-1.15.3/scripts/
+spdlog-1.15.3/scripts/ci_setup_clang.sh
+spdlog-1.15.3/scripts/extract_version.py
+spdlog-1.15.3/scripts/format.sh
+spdlog-1.15.3/src/
+spdlog-1.15.3/src/async.cpp
+spdlog-1.15.3/src/bundled_fmtlib_format.cpp
+spdlog-1.15.3/src/cfg.cpp
+spdlog-1.15.3/src/color_sinks.cpp
+spdlog-1.15.3/src/file_sinks.cpp
+spdlog-1.15.3/src/spdlog.cpp
+spdlog-1.15.3/src/stdout_sinks.cpp
+spdlog-1.15.3/tests/
+spdlog-1.15.3/tests/CMakeLists.txt
+spdlog-1.15.3/tests/includes.h
+spdlog-1.15.3/tests/main.cpp
+spdlog-1.15.3/tests/test_async.cpp
+spdlog-1.15.3/tests/test_backtrace.cpp
+spdlog-1.15.3/tests/test_bin_to_hex.cpp
+spdlog-1.15.3/tests/test_cfg.cpp
+spdlog-1.15.3/tests/test_circular_q.cpp
+spdlog-1.15.3/tests/test_create_dir.cpp
+spdlog-1.15.3/tests/test_custom_callbacks.cpp
+spdlog-1.15.3/tests/test_daily_logger.cpp
+spdlog-1.15.3/tests/test_dup_filter.cpp
+spdlog-1.15.3/tests/test_errors.cpp
+spdlog-1.15.3/tests/test_eventlog.cpp
+spdlog-1.15.3/tests/test_file_helper.cpp
+spdlog-1.15.3/tests/test_file_logging.cpp
+spdlog-1.15.3/tests/test_fmt_helper.cpp
+spdlog-1.15.3/tests/test_macros.cpp
+spdlog-1.15.3/tests/test_misc.cpp
+spdlog-1.15.3/tests/test_mpmc_q.cpp
+spdlog-1.15.3/tests/test_pattern_formatter.cpp
+spdlog-1.15.3/tests/test_registry.cpp
+spdlog-1.15.3/tests/test_sink.h
+spdlog-1.15.3/tests/test_stdout_api.cpp
+spdlog-1.15.3/tests/test_stopwatch.cpp
+spdlog-1.15.3/tests/test_systemd.cpp
+spdlog-1.15.3/tests/test_time_point.cpp
+spdlog-1.15.3/tests/utils.cpp
+spdlog-1.15.3/tests/utils.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Build spdlog: 1.15.3
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Build type: None
+-- Looking for fwrite_unlocked
+-- Looking for fwrite_unlocked - found
+-- Generating example(s)
+-- Generating install
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/work/spdlog-1.15.3/build
+[1/10] Building CXX object CMakeFiles/spdlog.dir/src/cfg.cpp.o
+[2/10] Building CXX object CMakeFiles/spdlog.dir/src/async.cpp.o
+[3/10] Building CXX object CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+[4/10] Building CXX object CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+[5/10] Building CXX object CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+[6/10] Building CXX object example/CMakeFiles/example.dir/example.cpp.o
+[7/10] Building CXX object CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+[8/10] Linking CXX shared library libspdlog.so.1.15.3
+[9/10] Creating library symlink libspdlog.so.1.15 libspdlog.so
+[10/10] Linking CXX executable example/example
+-- Install configuration: "None"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/spdlog.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/async_logger-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/mdc.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fwd.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/cfg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/cfg/helpers-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/cfg/argv.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/cfg/helpers.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/cfg/env.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/tweakme.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/spdlog-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/common-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/logger.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/wincolor_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/msvc_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/qt_sinks.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/ansicolor_sink-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/base_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/daily_file_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/hourly_file_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/dist_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/base_sink-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/win_eventlog_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/rotating_file_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/udp_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/callback_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/null_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/stdout_sinks-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/stdout_color_sinks-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/systemd_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/mongo_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/rotating_file_sink-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/tcp_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/ringbuffer_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/sink-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/dup_filter_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/stdout_color_sinks.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/wincolor_sink-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/ansicolor_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/ostream_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/kafka_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/basic_file_sink-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/basic_file_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/syslog_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/android_sink.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/sinks/stdout_sinks.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/logger-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/pattern_formatter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/stopwatch.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/common.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/async.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/pattern_formatter-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/windows_include.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/udp_client.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/tcp_client.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/registry-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/file_helper-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/os-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/log_msg-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/null_mutex.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/log_msg_buffer-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/thread_pool.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/log_msg_buffer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/backtracer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/periodic_worker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/os.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/periodic_worker-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/circular_q.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/backtracer-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/thread_pool-inl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/log_msg.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/file_helper.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/console_globals.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/udp_client-windows.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/synchronous_factory.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/fmt_helper.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/tcp_client-windows.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/mpmc_blocking_q.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/details/registry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt/xchar.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt/std.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt/chrono.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt/ostr.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt/ranges.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt/fmt.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt/compile.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/fmt/bin_to_hex.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/formatter.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/include/spdlog/async_logger.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/lib64/libspdlog.so.1.15.3
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/lib64/libspdlog.so.1.15
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/lib64/libspdlog.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/lib64/pkgconfig/spdlog.pc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/lib64/cmake/spdlog/spdlogConfigTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/lib64/cmake/spdlog/spdlogConfigTargets-none.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/lib64/cmake/spdlog/spdlogConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/package-spdlog/usr/lib64/cmake/spdlog/spdlogConfigVersion.cmake
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/spdlog/spdlog.info: No such file or directory
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libspdlog.so	libspdlog.so.1.15
+usr/lib64/libspdlog.so.1.15	libspdlog.so.1.15.3
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libspdlog.so )
+( cd usr/lib64 ; ln -sf libspdlog.so.1.15 libspdlog.so )
+( cd usr/lib64 ; rm -rf libspdlog.so.1.15 )
+( cd usr/lib64 ; ln -sf libspdlog.so.1.15.3 libspdlog.so.1.15 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libspdlog.so'
+removed './usr/lib64/libspdlog.so.1.15'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/spdlog/spdlog-1.15.3-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/spdlog-1.15.3/
+usr/doc/spdlog-1.15.3/LICENSE
+usr/doc/spdlog-1.15.3/README.md
+usr/doc/spdlog-1.15.3/spdlog.ini
+usr/include/
+usr/include/spdlog/
+usr/include/spdlog/async.h
+usr/include/spdlog/async_logger-inl.h
+usr/include/spdlog/async_logger.h
+usr/include/spdlog/cfg/
+usr/include/spdlog/cfg/argv.h
+usr/include/spdlog/cfg/env.h
+usr/include/spdlog/cfg/helpers-inl.h
+usr/include/spdlog/cfg/helpers.h
+usr/include/spdlog/common-inl.h
+usr/include/spdlog/common.h
+usr/include/spdlog/details/
+usr/include/spdlog/details/backtracer-inl.h
+usr/include/spdlog/details/backtracer.h
+usr/include/spdlog/details/circular_q.h
+usr/include/spdlog/details/console_globals.h
+usr/include/spdlog/details/file_helper-inl.h
+usr/include/spdlog/details/file_helper.h
+usr/include/spdlog/details/fmt_helper.h
+usr/include/spdlog/details/log_msg-inl.h
+usr/include/spdlog/details/log_msg.h
+usr/include/spdlog/details/log_msg_buffer-inl.h
+usr/include/spdlog/details/log_msg_buffer.h
+usr/include/spdlog/details/mpmc_blocking_q.h
+usr/include/spdlog/details/null_mutex.h
+usr/include/spdlog/details/os-inl.h
+usr/include/spdlog/details/os.h
+usr/include/spdlog/details/periodic_worker-inl.h
+usr/include/spdlog/details/periodic_worker.h
+usr/include/spdlog/details/registry-inl.h
+usr/include/spdlog/details/registry.h
+usr/include/spdlog/details/synchronous_factory.h
+usr/include/spdlog/details/tcp_client-windows.h
+usr/include/spdlog/details/tcp_client.h
+usr/include/spdlog/details/thread_pool-inl.h
+usr/include/spdlog/details/thread_pool.h
+usr/include/spdlog/details/udp_client-windows.h
+usr/include/spdlog/details/udp_client.h
+usr/include/spdlog/details/windows_include.h
+usr/include/spdlog/fmt/
+usr/include/spdlog/fmt/bin_to_hex.h
+usr/include/spdlog/fmt/chrono.h
+usr/include/spdlog/fmt/compile.h
+usr/include/spdlog/fmt/fmt.h
+usr/include/spdlog/fmt/ostr.h
+usr/include/spdlog/fmt/ranges.h
+usr/include/spdlog/fmt/std.h
+usr/include/spdlog/fmt/xchar.h
+usr/include/spdlog/formatter.h
+usr/include/spdlog/fwd.h
+usr/include/spdlog/logger-inl.h
+usr/include/spdlog/logger.h
+usr/include/spdlog/mdc.h
+usr/include/spdlog/pattern_formatter-inl.h
+usr/include/spdlog/pattern_formatter.h
+usr/include/spdlog/sinks/
+usr/include/spdlog/sinks/android_sink.h
+usr/include/spdlog/sinks/ansicolor_sink-inl.h
+usr/include/spdlog/sinks/ansicolor_sink.h
+usr/include/spdlog/sinks/base_sink-inl.h
+usr/include/spdlog/sinks/base_sink.h
+usr/include/spdlog/sinks/basic_file_sink-inl.h
+usr/include/spdlog/sinks/basic_file_sink.h
+usr/include/spdlog/sinks/callback_sink.h
+usr/include/spdlog/sinks/daily_file_sink.h
+usr/include/spdlog/sinks/dist_sink.h
+usr/include/spdlog/sinks/dup_filter_sink.h
+usr/include/spdlog/sinks/hourly_file_sink.h
+usr/include/spdlog/sinks/kafka_sink.h
+usr/include/spdlog/sinks/mongo_sink.h
+usr/include/spdlog/sinks/msvc_sink.h
+usr/include/spdlog/sinks/null_sink.h
+usr/include/spdlog/sinks/ostream_sink.h
+usr/include/spdlog/sinks/qt_sinks.h
+usr/include/spdlog/sinks/ringbuffer_sink.h
+usr/include/spdlog/sinks/rotating_file_sink-inl.h
+usr/include/spdlog/sinks/rotating_file_sink.h
+usr/include/spdlog/sinks/sink-inl.h
+usr/include/spdlog/sinks/sink.h
+usr/include/spdlog/sinks/stdout_color_sinks-inl.h
+usr/include/spdlog/sinks/stdout_color_sinks.h
+usr/include/spdlog/sinks/stdout_sinks-inl.h
+usr/include/spdlog/sinks/stdout_sinks.h
+usr/include/spdlog/sinks/syslog_sink.h
+usr/include/spdlog/sinks/systemd_sink.h
+usr/include/spdlog/sinks/tcp_sink.h
+usr/include/spdlog/sinks/udp_sink.h
+usr/include/spdlog/sinks/win_eventlog_sink.h
+usr/include/spdlog/sinks/wincolor_sink-inl.h
+usr/include/spdlog/sinks/wincolor_sink.h
+usr/include/spdlog/spdlog-inl.h
+usr/include/spdlog/spdlog.h
+usr/include/spdlog/stopwatch.h
+usr/include/spdlog/tweakme.h
+usr/include/spdlog/version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/spdlog/
+usr/lib64/cmake/spdlog/spdlogConfig.cmake
+usr/lib64/cmake/spdlog/spdlogConfigTargets-none.cmake
+usr/lib64/cmake/spdlog/spdlogConfigTargets.cmake
+usr/lib64/cmake/spdlog/spdlogConfigVersion.cmake
+usr/lib64/libspdlog.so.1.15.3
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/spdlog.pc
+
+Slackware package /tmp/spdlog/spdlog-1.15.3-x86_64-1_rtz.tlz created.
+
+Create shared object file for spdlog-1.15.3-x86_64-1_rtz.tlz
+Creating /tmp/spdlog/spdlog-1.15.3-x86_64-1_rtz.tlz.so.file using /tmp/spdlog/spdlog-1.15.3-x86_64-1_rtz.tlz
+Successfully created /tmp/spdlog/spdlog-1.15.3-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in spdlog.tar.lz4 format.
+/tmp/spdlog /tmp/spdlog
+/tmp/spdlog
+BIN_NAME
+README
+makepkg-spdlog.log
+spdlog-1.15.3-x86_64-1_rtz.tlz
+spdlog-1.15.3-x86_64-1_rtz.tlz.md5
+spdlog-1.15.3-x86_64-1_rtz.tlz.so.file
+spdlog-1.15.3-x86_64-1_rtz.tlz.txt
+spdlog build finished. Procced to installation...
+
++===============================================================================================+
+| Upgrading spdlog-1.15.2-x86_64-1_rtz package using /tmp/spdlog/spdlog-1.15.3-x86_64-1_rtz.tlz |
++===============================================================================================+
+
+Pre-installing package spdlog-1.15.3-x86_64-1_rtz...
+Removing package: spdlog-1.15.2-x86_64-1_rtz-upgraded-2025-05-12,15:56:12
+Installing package spdlog-1.15.3-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# spdlog (header-only/compiled C++ logging library)
+#
+# Very fast, header-only/compiled, C++ logging library
+#
+# https://github.com/gabime/spdlog
+Executing install script for spdlog-1.15.3-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package spdlog-1.15.3-x86_64-1_rtz.tlz installed.
+Package spdlog-1.15.2-x86_64-1_rtz upgraded with new package /tmp/spdlog/spdlog-1.15.3-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'spdlog-1.15.3.tar.gz': No such file or directory
+Build process completed in 0 minutes and 11 seconds.

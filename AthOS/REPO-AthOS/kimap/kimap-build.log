@@ -1,0 +1,1568 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules cyrus-sasl	kcoreaddons	ki18n	kio	kmime
+extra-cmake-modules is already installed!
+cyrus-sasl is already installed!
+kcoreaddons is already installed!
+ki18n is already installed!
+kio is already installed!
+kmime is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 01:37:53--  https://download.kde.org/stable/release-service/25.04.1/src/kimap-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kimap-25.04.1.tar.xz [following]
+--2025-05-11 01:37:53--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kimap-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 133912 (131K) [application/octet-stream]
+Saving to: ‘kimap-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 38% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 76% 1.40M 0s
+   100K .......... .......... ..........                      100% 13.4M=0.07s
+
+2025-05-11 01:37:54 (1.75 MB/s) - ‘kimap-25.04.1.tar.xz’ saved [133912/133912]
+
+Found file: kimap-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kimap-25.04.1/
+kimap-25.04.1/.krazy
+kimap-25.04.1/metainfo.yaml.license
+kimap-25.04.1/README.md
+kimap-25.04.1/KPimIMAPConfig.cmake.in
+kimap-25.04.1/.codespellrc.license
+kimap-25.04.1/CMakePresets.json.license
+kimap-25.04.1/readme-build-ftime.txt
+kimap-25.04.1/CMakePresets.json
+kimap-25.04.1/REUSE.toml
+kimap-25.04.1/LICENSES/
+kimap-25.04.1/LICENSES/LGPL-2.0-only.txt
+kimap-25.04.1/LICENSES/BSD-3-Clause.txt
+kimap-25.04.1/LICENSES/CC0-1.0.txt
+kimap-25.04.1/LICENSES/LGPL-2.0-or-later.txt
+kimap-25.04.1/LICENSES/GPL-2.0-or-later.txt
+kimap-25.04.1/.gitlab-ci.yml
+kimap-25.04.1/sanitizers.supp
+kimap-25.04.1/tests/
+kimap-25.04.1/tests/testimapserver.cpp
+kimap-25.04.1/tests/testimapidle.cpp
+kimap-25.04.1/tests/CMakeLists.txt
+kimap-25.04.1/.git-blame-ignore-revs
+kimap-25.04.1/.kde-ci.yml
+kimap-25.04.1/.codespellrc
+kimap-25.04.1/po/
+kimap-25.04.1/po/pt/
+kimap-25.04.1/po/pt/libkimap6.po
+kimap-25.04.1/po/km/
+kimap-25.04.1/po/km/libkimap6.po
+kimap-25.04.1/po/nn/
+kimap-25.04.1/po/nn/libkimap6.po
+kimap-25.04.1/po/pl/
+kimap-25.04.1/po/pl/libkimap6.po
+kimap-25.04.1/po/ja/
+kimap-25.04.1/po/ja/libkimap6.po
+kimap-25.04.1/po/pa/
+kimap-25.04.1/po/pa/libkimap6.po
+kimap-25.04.1/po/bs/
+kimap-25.04.1/po/bs/libkimap6.po
+kimap-25.04.1/po/zh_CN/
+kimap-25.04.1/po/zh_CN/libkimap6.po
+kimap-25.04.1/po/cs/
+kimap-25.04.1/po/cs/libkimap6.po
+kimap-25.04.1/po/es/
+kimap-25.04.1/po/es/libkimap6.po
+kimap-25.04.1/po/ka/
+kimap-25.04.1/po/ka/libkimap6.po
+kimap-25.04.1/po/tr/
+kimap-25.04.1/po/tr/libkimap6.po
+kimap-25.04.1/po/ug/
+kimap-25.04.1/po/ug/libkimap6.po
+kimap-25.04.1/po/ca/
+kimap-25.04.1/po/ca/libkimap6.po
+kimap-25.04.1/po/ca@valencia/
+kimap-25.04.1/po/ca@valencia/libkimap6.po
+kimap-25.04.1/po/gl/
+kimap-25.04.1/po/gl/libkimap6.po
+kimap-25.04.1/po/ro/
+kimap-25.04.1/po/ro/libkimap6.po
+kimap-25.04.1/po/eo/
+kimap-25.04.1/po/eo/libkimap6.po
+kimap-25.04.1/po/sr@ijekavian/
+kimap-25.04.1/po/sr@ijekavian/libkimap6.po
+kimap-25.04.1/po/nl/
+kimap-25.04.1/po/nl/libkimap6.po
+kimap-25.04.1/po/mr/
+kimap-25.04.1/po/mr/libkimap6.po
+kimap-25.04.1/po/hu/
+kimap-25.04.1/po/hu/libkimap6.po
+kimap-25.04.1/po/eu/
+kimap-25.04.1/po/eu/libkimap6.po
+kimap-25.04.1/po/lv/
+kimap-25.04.1/po/lv/libkimap6.po
+kimap-25.04.1/po/nb/
+kimap-25.04.1/po/nb/libkimap6.po
+kimap-25.04.1/po/fr/
+kimap-25.04.1/po/fr/libkimap6.po
+kimap-25.04.1/po/hi/
+kimap-25.04.1/po/hi/libkimap6.po
+kimap-25.04.1/po/sl/
+kimap-25.04.1/po/sl/libkimap6.po
+kimap-25.04.1/po/sr@latin/
+kimap-25.04.1/po/sr@latin/libkimap6.po
+kimap-25.04.1/po/ta/
+kimap-25.04.1/po/ta/libkimap6.po
+kimap-25.04.1/po/sr/
+kimap-25.04.1/po/sr/libkimap6.po
+kimap-25.04.1/po/he/
+kimap-25.04.1/po/he/libkimap6.po
+kimap-25.04.1/po/de/
+kimap-25.04.1/po/de/libkimap6.po
+kimap-25.04.1/po/ar/
+kimap-25.04.1/po/ar/libkimap6.po
+kimap-25.04.1/po/sk/
+kimap-25.04.1/po/sk/libkimap6.po
+kimap-25.04.1/po/zh_TW/
+kimap-25.04.1/po/zh_TW/libkimap6.po
+kimap-25.04.1/po/et/
+kimap-25.04.1/po/et/libkimap6.po
+kimap-25.04.1/po/it/
+kimap-25.04.1/po/it/libkimap6.po
+kimap-25.04.1/po/el/
+kimap-25.04.1/po/el/libkimap6.po
+kimap-25.04.1/po/da/
+kimap-25.04.1/po/da/libkimap6.po
+kimap-25.04.1/po/pt_BR/
+kimap-25.04.1/po/pt_BR/libkimap6.po
+kimap-25.04.1/po/ru/
+kimap-25.04.1/po/ru/libkimap6.po
+kimap-25.04.1/po/sq/
+kimap-25.04.1/po/sq/libkimap6.po
+kimap-25.04.1/po/ia/
+kimap-25.04.1/po/ia/libkimap6.po
+kimap-25.04.1/po/sv/
+kimap-25.04.1/po/sv/libkimap6.po
+kimap-25.04.1/po/fi/
+kimap-25.04.1/po/fi/libkimap6.po
+kimap-25.04.1/po/kk/
+kimap-25.04.1/po/kk/libkimap6.po
+kimap-25.04.1/po/ast/
+kimap-25.04.1/po/ast/libkimap6.po
+kimap-25.04.1/po/lt/
+kimap-25.04.1/po/lt/libkimap6.po
+kimap-25.04.1/po/sa/
+kimap-25.04.1/po/sa/libkimap6.po
+kimap-25.04.1/po/ko/
+kimap-25.04.1/po/ko/libkimap6.po
+kimap-25.04.1/po/ga/
+kimap-25.04.1/po/ga/libkimap6.po
+kimap-25.04.1/po/en_GB/
+kimap-25.04.1/po/en_GB/libkimap6.po
+kimap-25.04.1/po/uk/
+kimap-25.04.1/po/uk/libkimap6.po
+kimap-25.04.1/po/sr@ijekavianlatin/
+kimap-25.04.1/po/sr@ijekavianlatin/libkimap6.po
+kimap-25.04.1/po/nds/
+kimap-25.04.1/po/nds/libkimap6.po
+kimap-25.04.1/.krazy.license
+kimap-25.04.1/autotests/
+kimap-25.04.1/autotests/fetchjobtest.cpp
+kimap-25.04.1/autotests/storejobtest.cpp
+kimap-25.04.1/autotests/kimaptest/
+kimap-25.04.1/autotests/kimaptest/mockjob.h
+kimap-25.04.1/autotests/kimaptest/fakeserver.cpp
+kimap-25.04.1/autotests/kimaptest/fakeserver.h
+kimap-25.04.1/autotests/kimaptest/sslserver.cpp
+kimap-25.04.1/autotests/kimaptest/sslserver.h
+kimap-25.04.1/autotests/kimaptest/mockjob.cpp
+kimap-25.04.1/autotests/kimaptest/CMakeLists.txt
+kimap-25.04.1/autotests/deletejobtest.cpp
+kimap-25.04.1/autotests/unsubscribejobtest.cpp
+kimap-25.04.1/autotests/setmetadatajobtest.cpp
+kimap-25.04.1/autotests/testrfccodecs.cpp
+kimap-25.04.1/autotests/createjobtest.cpp
+kimap-25.04.1/autotests/searchjobtest.cpp
+kimap-25.04.1/autotests/fakeservertest.cpp
+kimap-25.04.1/autotests/idjobtest.cpp
+kimap-25.04.1/autotests/quotarootjobtest.cpp
+kimap-25.04.1/autotests/testrfccodecs.h
+kimap-25.04.1/autotests/testsession.cpp
+kimap-25.04.1/autotests/listjobtest.cpp
+kimap-25.04.1/autotests/subscribejobtest.cpp
+kimap-25.04.1/autotests/expungejobtest.cpp
+kimap-25.04.1/autotests/imapsettest.cpp
+kimap-25.04.1/autotests/getmetadatajobtest.cpp
+kimap-25.04.1/autotests/movejobtest.cpp
+kimap-25.04.1/autotests/appendjobtest.cpp
+kimap-25.04.1/autotests/closejobtest.cpp
+kimap-25.04.1/autotests/statusjobtest.cpp
+kimap-25.04.1/autotests/logoutjobtest.cpp
+kimap-25.04.1/autotests/loginjobtest.cpp
+kimap-25.04.1/autotests/capabilitiesjobtest.cpp
+kimap-25.04.1/autotests/idlejobtest.cpp
+kimap-25.04.1/autotests/streamparsertest.cpp
+kimap-25.04.1/autotests/selectjobtest.cpp
+kimap-25.04.1/autotests/CMakeLists.txt
+kimap-25.04.1/autotests/enablejobtest.cpp
+kimap-25.04.1/autotests/fakeserverscenario.log
+kimap-25.04.1/autotests/renamejobtest.cpp
+kimap-25.04.1/CMakeLists.txt
+kimap-25.04.1/README.md.license
+kimap-25.04.1/src/
+kimap-25.04.1/src/acl.cpp
+kimap-25.04.1/src/searchjob.cpp
+kimap-25.04.1/src/subscribejob.h
+kimap-25.04.1/src/deleteacljob.cpp
+kimap-25.04.1/src/acljobbase.h
+kimap-25.04.1/src/sessionuiproxy.h
+kimap-25.04.1/src/imapstreamparser.cpp
+kimap-25.04.1/src/acljobbase_p.h
+kimap-25.04.1/src/createjob.cpp
+kimap-25.04.1/src/copyjob.h
+kimap-25.04.1/src/getmetadatajob.h
+kimap-25.04.1/src/setmetadatajob.cpp
+kimap-25.04.1/src/quotajobbase_p.h
+kimap-25.04.1/src/quotajobbase.cpp
+kimap-25.04.1/src/job.h
+kimap-25.04.1/src/sessionthread_p.h
+kimap-25.04.1/src/getquotarootjob.cpp
+kimap-25.04.1/src/subscribejob.cpp
+kimap-25.04.1/src/session_p.h
+kimap-25.04.1/src/closejob.cpp
+kimap-25.04.1/src/response_p.h
+kimap-25.04.1/src/setquotajob.cpp
+kimap-25.04.1/src/renamejob.h
+kimap-25.04.1/src/logoutjob.cpp
+kimap-25.04.1/src/sessionthread.cpp
+kimap-25.04.1/src/listjob.h
+kimap-25.04.1/src/unsubscribejob.h
+kimap-25.04.1/src/expungejob.h
+kimap-25.04.1/src/namespacejob.h
+kimap-25.04.1/src/setquotajob.h
+kimap-25.04.1/src/enablejob.cpp
+kimap-25.04.1/src/capabilitiesjob.h
+kimap-25.04.1/src/setmetadatajob.h
+kimap-25.04.1/src/storejob.h
+kimap-25.04.1/src/job_p.h
+kimap-25.04.1/src/metadatajobbase.cpp
+kimap-25.04.1/src/Messages.sh
+kimap-25.04.1/src/sessionlogger_p.h
+kimap-25.04.1/src/capabilitiesjob.cpp
+kimap-25.04.1/src/session.cpp
+kimap-25.04.1/src/getquotarootjob.h
+kimap-25.04.1/src/movejob.h
+kimap-25.04.1/src/rfccodecs.cpp
+kimap-25.04.1/src/deletejob.cpp
+kimap-25.04.1/src/movejob.cpp
+kimap-25.04.1/src/idjob.cpp
+kimap-25.04.1/src/renamejob.cpp
+kimap-25.04.1/src/setacljob.h
+kimap-25.04.1/src/selectjob.h
+kimap-25.04.1/src/copyjob.cpp
+kimap-25.04.1/src/idlejob.h
+kimap-25.04.1/src/session.h
+kimap-25.04.1/src/appendjob.h
+kimap-25.04.1/src/imapstreamparser.h
+kimap-25.04.1/src/sessionlogger.cpp
+kimap-25.04.1/src/loginjob.cpp
+kimap-25.04.1/src/loginjob.h
+kimap-25.04.1/src/metadatajobbase_p.h
+kimap-25.04.1/src/fetchjob.cpp
+kimap-25.04.1/src/sessionuiproxy.cpp
+kimap-25.04.1/src/idlejob.cpp
+kimap-25.04.1/src/job.cpp
+kimap-25.04.1/src/getacljob.h
+kimap-25.04.1/src/fetchjob.h
+kimap-25.04.1/src/statusjob.cpp
+kimap-25.04.1/src/myrightsjob.cpp
+kimap-25.04.1/src/setacljob.cpp
+kimap-25.04.1/src/searchjob.h
+kimap-25.04.1/src/getquotajob.cpp
+kimap-25.04.1/src/listrightsjob.h
+kimap-25.04.1/src/unsubscribejob.cpp
+kimap-25.04.1/src/selectjob.cpp
+kimap-25.04.1/src/appendjob.cpp
+kimap-25.04.1/src/namespacejob.cpp
+kimap-25.04.1/src/acl.h
+kimap-25.04.1/src/statusjob.h
+kimap-25.04.1/src/quotajobbase.h
+kimap-25.04.1/src/imapset.h
+kimap-25.04.1/src/closejob.h
+kimap-25.04.1/src/metadatajobbase.h
+kimap-25.04.1/src/storejob.cpp
+kimap-25.04.1/src/idjob.h
+kimap-25.04.1/src/getmetadatajob.cpp
+kimap-25.04.1/src/acljobbase.cpp
+kimap-25.04.1/src/rfccodecs.h
+kimap-25.04.1/src/enablejob.h
+kimap-25.04.1/src/common.h
+kimap-25.04.1/src/CMakeLists.txt
+kimap-25.04.1/src/imapset.cpp
+kimap-25.04.1/src/deleteacljob.h
+kimap-25.04.1/src/getquotajob.h
+kimap-25.04.1/src/listjob.cpp
+kimap-25.04.1/src/myrightsjob.h
+kimap-25.04.1/src/listrightsjob.cpp
+kimap-25.04.1/src/createjob.h
+kimap-25.04.1/src/expungejob.cpp
+kimap-25.04.1/src/logoutjob.h
+kimap-25.04.1/src/deletejob.h
+kimap-25.04.1/src/getacljob.cpp
+kimap-25.04.1/.gitignore
+kimap-25.04.1/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.10") found components: Interpreter
+-- Could NOT find ReuseTool (missing: REUSETOOL_EXECUTABLE) 
+CMake Warning at /usr/share/ECM/modules/ECMCheckOutboundLicense.cmake:86 (message):
+  Reuse tool not found, skipping test generation
+Call Stack (most recent call first):
+  CMakeLists.txt:42 (include)
+
+
+-- Skipping execution of outbound license tests.
+-- Checking for module 'libsasl2'
+--   Found libsasl2, version 2.1.28
+-- Found Sasl2: /usr/lib64/libsasl2.so (found version "2.1.28")
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+   Required to run tests of module ECMCheckOutboundLicense
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * OpenGL
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6Test (required version >= 6.7.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.9.0)
+ * Sasl2, The Cyrus-sasl library., <https://www.cyrusimap.org/sasl/>
+ * Gettext
+ * KF6I18n (required version >= 6.9.0)
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6KIO (required version >= 6.9.0)
+ * KPim6Mime (required version >= 6.4.1)
+ * Qt6 (required version >= 6.7.0)
+
+-- The following features have been disabled:
+
+ * SPDX_LICENSE_TESTING, Automatic license testing based on SPDX definitions (requires reuse tool)
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have not been found:
+
+ * ReuseTool
+   Required to run tests of module ECMCheckOutboundLicense
+
+-- Configuring done (2.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build
+[1/182] Generating ts...
+[2/182] Generating mo...
+[3/182] Automatic MOC for target KPim6IMAP
+[4/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/KPim6IMAP_autogen/mocs_compilation.cpp.o
+[5/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/acl.cpp.o
+[6/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/job.cpp.o
+[7/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/closejob.cpp.o
+[8/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/imapstreamparser.cpp.o
+[9/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/enablejob.cpp.o
+[10/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/acljobbase.cpp.o
+[11/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/expungejob.cpp.o
+[12/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/appendjob.cpp.o
+[13/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/imapset.cpp.o
+[14/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getquotajob.cpp.o
+[15/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/idlejob.cpp.o
+[16/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/idjob.cpp.o
+[17/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/createjob.cpp.o
+[18/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getacljob.cpp.o
+[19/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/deleteacljob.cpp.o
+[20/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/deletejob.cpp.o
+[21/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/copyjob.cpp.o
+[22/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/capabilitiesjob.cpp.o
+[23/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getquotarootjob.cpp.o
+[24/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/listjob.cpp.o
+[25/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getmetadatajob.cpp.o
+[26/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/rfccodecs.cpp.o
+[27/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/listrightsjob.cpp.o
+[28/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/myrightsjob.cpp.o
+[29/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/metadatajobbase.cpp.o
+[30/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionlogger.cpp.o
+[31/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/movejob.cpp.o
+[32/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionuiproxy.cpp.o
+[33/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/logoutjob.cpp.o
+[34/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/renamejob.cpp.o
+[35/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/namespacejob.cpp.o
+[36/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/quotajobbase.cpp.o
+[37/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setacljob.cpp.o
+[38/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/session.cpp.o
+[39/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setmetadatajob.cpp.o
+[40/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionthread.cpp.o
+[41/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/loginjob.cpp.o
+[42/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/kimap_debug.cpp.o
+[43/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/searchjob.cpp.o
+[44/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/subscribejob.cpp.o
+[45/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setquotajob.cpp.o
+[46/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/selectjob.cpp.o
+[47/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/fetchjob.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp: In member function ‘void KIMAP::FetchJobPrivate::emitPendings()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp:47:36: warning: ‘void KIMAP::FetchJob::partsReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, QMap<QByteArray, QSharedPointer<KMime::Content> > >&)’ is deprecated [-Wdeprecated-declarations]
+   47 |             Q_EMIT q->partsReceived(selectedMailBox, pendingUids, pendingParts);
+      |                    ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:415:10: note: declared here
+  415 |     void partsReceived(const QString &mailBox, const QMap<qint64, qint64> &uids, const QMap<qint64, KIMAP::MessageParts> &parts);
+      |          ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp:48:36: warning: ‘void KIMAP::FetchJob::partsReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, std::pair<QByteArray, QVariant> >&, const QMap<long long int, QMap<QByteArray, QSharedPointer<KMime::Content> > >&)’ is deprecated [-Wdeprecated-declarations]
+   48 |             Q_EMIT q->partsReceived(selectedMailBox, pendingUids, pendingAttributes, pendingParts);
+      |                    ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:434:10: note: declared here
+  434 |     void partsReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp:51:38: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+   51 |             Q_EMIT q->headersReceived(selectedMailBox, pendingUids, pendingSizes, pendingFlags, pendingMessages);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp:52:38: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, std::pair<QByteArray, QVariant> >&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+   52 |             Q_EMIT q->headersReceived(selectedMailBox, pendingUids, pendingSizes, pendingAttributes, pendingFlags, pendingMessages);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:343:10: note: declared here
+  343 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp:55:39: warning: ‘void KIMAP::FetchJob::messagesReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+   55 |             Q_EMIT q->messagesReceived(selectedMailBox, pendingUids, pendingMessages);
+      |                    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:371:10: note: declared here
+  371 |     void messagesReceived(const QString &mailBox, const QMap<qint64, qint64> &uids, const QMap<qint64, KIMAP::MessagePtr> &messages);
+      |          ^~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp:56:39: warning: ‘void KIMAP::FetchJob::messagesReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, std::pair<QByteArray, QVariant> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+   56 |             Q_EMIT q->messagesReceived(selectedMailBox, pendingUids, pendingAttributes, pendingMessages);
+      |                    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:391:10: note: declared here
+  391 |     void messagesReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~~
+[48/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/statusjob.cpp.o
+[49/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/unsubscribejob.cpp.o
+[50/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/storejob.cpp.o
+[51/182] Linking CXX shared library bin/libKPim6IMAP.so.6.4.1
+[52/182] Creating library symlink bin/libKPim6IMAP.so.6 bin/libKPim6IMAP.so
+[53/182] Automatic MOC for target testimapidle
+[54/182] Automatic MOC for target testimapserver
+[55/182] Building CXX object tests/CMakeFiles/testimapidle.dir/testimapidle_autogen/mocs_compilation.cpp.o
+[56/182] Building CXX object tests/CMakeFiles/testimapserver.dir/testimapserver_autogen/mocs_compilation.cpp.o
+[57/182] Automatic MOC for target kimaptest6
+[58/182] Building CXX object autotests/kimaptest/CMakeFiles/kimaptest6.dir/kimaptest6_autogen/mocs_compilation.cpp.o
+[59/182] Building CXX object tests/CMakeFiles/testimapidle.dir/testimapidle.cpp.o
+[60/182] Building CXX object autotests/kimaptest/CMakeFiles/kimaptest6.dir/mockjob.cpp.o
+[61/182] Linking CXX executable bin/testimapidle
+[62/182] Building CXX object autotests/kimaptest/CMakeFiles/kimaptest6.dir/sslserver.cpp.o
+[63/182] Building CXX object autotests/kimaptest/CMakeFiles/kimaptest6.dir/fakeserver.cpp.o
+[64/182] Linking CXX static library lib/libkimaptest6.a
+[65/182] Automatic MOC for target testrfccodecs
+[66/182] Automatic MOC for target imapsettest
+[67/182] Automatic MOC for target fakeservertest
+[68/182] Automatic MOC for target subscribejobtest
+[69/182] Automatic MOC for target expungejobtest
+[70/182] Automatic MOC for target createjobtest
+[71/182] Automatic MOC for target idjobtest
+[72/182] Automatic MOC for target enablejobtest
+[73/182] Automatic MOC for target fetchjobtest
+[74/182] Automatic MOC for target loginjobtest
+[75/182] Automatic MOC for target closejobtest
+[76/182] Automatic MOC for target storejobtest
+[77/182] Automatic MOC for target unsubscribejobtest
+[78/182] Building CXX object autotests/CMakeFiles/fakeservertest.dir/fakeservertest_autogen/mocs_compilation.cpp.o
+[79/182] Building CXX object autotests/CMakeFiles/testrfccodecs.dir/testrfccodecs_autogen/mocs_compilation.cpp.o
+[80/182] Automatic MOC for target logoutjobtest
+[81/182] Building CXX object autotests/CMakeFiles/loginjobtest.dir/loginjobtest_autogen/mocs_compilation.cpp.o
+[82/182] Building CXX object autotests/CMakeFiles/closejobtest.dir/closejobtest_autogen/mocs_compilation.cpp.o
+[83/182] Automatic MOC for target testsession
+[84/182] Building CXX object autotests/CMakeFiles/logoutjobtest.dir/logoutjobtest_autogen/mocs_compilation.cpp.o
+[85/182] Automatic MOC for target capabilitiesjobtest
+[86/182] Automatic MOC for target idlejobtest
+[87/182] Automatic MOC for target listjobtest
+[88/182] Automatic MOC for target renamejobtest
+[89/182] Building CXX object autotests/CMakeFiles/testsession.dir/testsession_autogen/mocs_compilation.cpp.o
+[90/182] Building CXX object autotests/CMakeFiles/capabilitiesjobtest.dir/capabilitiesjobtest_autogen/mocs_compilation.cpp.o
+[91/182] Automatic MOC for target deletejobtest
+[92/182] Building CXX object autotests/CMakeFiles/createjobtest.dir/createjobtest_autogen/mocs_compilation.cpp.o
+[93/182] Automatic MOC for target selectjobtest
+[94/182] Building CXX object autotests/CMakeFiles/enablejobtest.dir/enablejobtest_autogen/mocs_compilation.cpp.o
+[95/182] Building CXX object autotests/CMakeFiles/deletejobtest.dir/deletejobtest_autogen/mocs_compilation.cpp.o
+[96/182] Building CXX object autotests/CMakeFiles/selectjobtest.dir/selectjobtest_autogen/mocs_compilation.cpp.o
+[97/182] Building CXX object autotests/CMakeFiles/expungejobtest.dir/expungejobtest_autogen/mocs_compilation.cpp.o
+[98/182] Automatic MOC for target quotarootjobtest
+[99/182] Building CXX object autotests/CMakeFiles/fetchjobtest.dir/fetchjobtest_autogen/mocs_compilation.cpp.o
+[100/182] Building CXX object autotests/CMakeFiles/renamejobtest.dir/renamejobtest_autogen/mocs_compilation.cpp.o
+[101/182] Automatic MOC for target searchjobtest
+[102/182] Building CXX object autotests/CMakeFiles/subscribejobtest.dir/subscribejobtest_autogen/mocs_compilation.cpp.o
+[103/182] Automatic MOC for target movejobtest
+[104/182] Building CXX object autotests/CMakeFiles/unsubscribejobtest.dir/unsubscribejobtest_autogen/mocs_compilation.cpp.o
+[105/182] Automatic MOC for target setmetadatajobtest
+[106/182] Automatic MOC for target getmetadatajobtest
+[107/182] Automatic MOC for target streamparsertest
+[108/182] Automatic MOC for target statusjobtest
+[109/182] Building CXX object autotests/CMakeFiles/listjobtest.dir/listjobtest_autogen/mocs_compilation.cpp.o
+[110/182] Building CXX object autotests/CMakeFiles/imapsettest.dir/imapsettest_autogen/mocs_compilation.cpp.o
+[111/182] Building CXX object autotests/CMakeFiles/storejobtest.dir/storejobtest_autogen/mocs_compilation.cpp.o
+[112/182] Automatic MOC for target appendjobtest
+[113/182] Building CXX object autotests/CMakeFiles/idjobtest.dir/idjobtest_autogen/mocs_compilation.cpp.o
+[114/182] Building CXX object autotests/CMakeFiles/idlejobtest.dir/idlejobtest_autogen/mocs_compilation.cpp.o
+[115/182] Building CXX object tests/CMakeFiles/testimapserver.dir/testimapserver.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp: In function ‘void listFolders(KIMAP::Session*, bool, const QString&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:86:32: warning: ‘QList<KIMAP::MailBoxDescriptor> KIMAP::ListJob::mailBoxes() const’ is deprecated [-Wdeprecated-declarations]
+   86 |     int count = list->mailBoxes().size();
+      |                 ~~~~~~~~~~~~~~~^~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:23:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/listjob.h:61:47: note: declared here
+   61 |     KIMAP_DEPRECATED QList<MailBoxDescriptor> mailBoxes() const;
+      |                                               ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:88:55: warning: ‘QList<KIMAP::MailBoxDescriptor> KIMAP::ListJob::mailBoxes() const’ is deprecated [-Wdeprecated-declarations]
+   88 |         MailBoxDescriptor descriptor = list->mailBoxes()[i];
+      |                                        ~~~~~~~~~~~~~~~^~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/listjob.h:61:47: note: declared here
+   61 |     KIMAP_DEPRECATED QList<MailBoxDescriptor> mailBoxes() const;
+      |                                               ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp: In function ‘void testMetaData(KIMAP::Session*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:105:26: warning: ‘void KIMAP::SetMetaDataJob::setEntry(const QByteArray&)’ is deprecated [-Wdeprecated-declarations]
+  105 |     setmetadata->setEntry("/comment");
+      |     ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:34:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/setmetadatajob.h:161:27: note: declared here
+  161 |     KIMAP_DEPRECATED void setEntry(const QByteArray &entry);
+      |                           ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:112:26: warning: ‘void KIMAP::SetMetaDataJob::setEntry(const QByteArray&)’ is deprecated [-Wdeprecated-declarations]
+  112 |     setmetadata->setEntry("/check");
+      |     ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/setmetadatajob.h:161:27: note: declared here
+  161 |     KIMAP_DEPRECATED void setEntry(const QByteArray &entry);
+      |                           ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:119:26: warning: ‘void KIMAP::GetMetaDataJob::addEntry(const QByteArray&, const QByteArray&)’ is deprecated [-Wdeprecated-declarations]
+  119 |     getmetadata->addEntry("/*", "value.priv");
+      |     ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:22:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/getmetadatajob.h:84:27: note: declared here
+   84 |     KIMAP_DEPRECATED void addEntry(const QByteArray &entry, const QByteArray &attribute = QByteArray());
+      |                           ^~~~~~~~
+In file included from /usr/include/qt6/QtCore/qglobal.h:35,
+                 from /usr/include/qt6/QtCore/qcoreapplication.h:7,
+                 from /usr/include/qt6/QtCore/QCoreApplication:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:9:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:121:37: warning: ‘QByteArray KIMAP::GetMetaDataJob::metaData(const QString&, const QByteArray&, const QByteArray&) const’ is deprecated [-Wdeprecated-declarations]
+  121 |     Q_ASSERT_X(getmetadata->metaData(QLatin1StringView("INBOX/TestFolder"), "/check", "value.priv") == "true", "", "/check metadata should be true");
+      |                ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/getmetadatajob.h:162:33: note: declared here
+  162 |     KIMAP_DEPRECATED QByteArray metaData(const QString &mailBox, const QByteArray &entry, const QByteArray &attribute = QByteArray()) const;
+      |                                 ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:122:37: warning: ‘QByteArray KIMAP::GetMetaDataJob::metaData(const QString&, const QByteArray&, const QByteArray&) const’ is deprecated [-Wdeprecated-declarations]
+  122 |     Q_ASSERT_X(getmetadata->metaData(QLatin1StringView("INBOX/TestFolder"), "/comment", "value.priv") == "My new comment",
+      |                ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/getmetadatajob.h:162:33: note: declared here
+  162 |     KIMAP_DEPRECATED QByteArray metaData(const QString &mailBox, const QByteArray &entry, const QByteArray &attribute = QByteArray()) const;
+      |                                 ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp: In function ‘void testAppendAndStore(KIMAP::Session*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:241:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  241 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:20:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:241:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  241 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:264:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  264 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:264:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  264 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp: In function ‘int main(int, char**)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:507:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  507 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:507:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  507 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:539:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  539 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:539:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  539 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:564:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  564 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:564:83: warning: ‘void KIMAP::FetchJob::headersReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, long long int>&, const QMap<long long int, QList<QByteArray> >&, const QMap<long long int, QSharedPointer<KMime::Message> >&)’ is deprecated [-Wdeprecated-declarations]
+  564 |                      static_cast<HeadersReceivedSignal>(&FetchJob::headersReceived),
+      |                                                                                   ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:310:10: note: declared here
+  310 |     void headersReceived(const QString &mailBox,
+      |          ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:589:79: warning: ‘void KIMAP::FetchJob::partsReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, QMap<QByteArray, QSharedPointer<KMime::Content> > >&)’ is deprecated [-Wdeprecated-declarations]
+  589 |                      static_cast<PartsReceivedSignal>(&FetchJob::partsReceived),
+      |                                                                               ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:415:10: note: declared here
+  415 |     void partsReceived(const QString &mailBox, const QMap<qint64, qint64> &uids, const QMap<qint64, KIMAP::MessageParts> &parts);
+      |          ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:589:79: warning: ‘void KIMAP::FetchJob::partsReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, QMap<QByteArray, QSharedPointer<KMime::Content> > >&)’ is deprecated [-Wdeprecated-declarations]
+  589 |                      static_cast<PartsReceivedSignal>(&FetchJob::partsReceived),
+      |                                                                               ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:415:10: note: declared here
+  415 |     void partsReceived(const QString &mailBox, const QMap<qint64, qint64> &uids, const QMap<qint64, KIMAP::MessageParts> &parts);
+      |          ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:619:79: warning: ‘void KIMAP::FetchJob::partsReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, QMap<QByteArray, QSharedPointer<KMime::Content> > >&)’ is deprecated [-Wdeprecated-declarations]
+  619 |                      static_cast<PartsReceivedSignal>(&FetchJob::partsReceived),
+      |                                                                               ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:415:10: note: declared here
+  415 |     void partsReceived(const QString &mailBox, const QMap<qint64, qint64> &uids, const QMap<qint64, KIMAP::MessageParts> &parts);
+      |          ^~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/tests/testimapserver.cpp:619:79: warning: ‘void KIMAP::FetchJob::partsReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, QMap<QByteArray, QSharedPointer<KMime::Content> > >&)’ is deprecated [-Wdeprecated-declarations]
+  619 |                      static_cast<PartsReceivedSignal>(&FetchJob::partsReceived),
+      |                                                                               ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:415:10: note: declared here
+  415 |     void partsReceived(const QString &mailBox, const QMap<qint64, qint64> &uids, const QMap<qint64, KIMAP::MessageParts> &parts);
+      |          ^~~~~~~~~~~~~
+[116/182] Building CXX object autotests/CMakeFiles/quotarootjobtest.dir/quotarootjobtest_autogen/mocs_compilation.cpp.o
+[117/182] Building CXX object autotests/CMakeFiles/expungejobtest.dir/expungejobtest.cpp.o
+[118/182] Building CXX object autotests/CMakeFiles/searchjobtest.dir/searchjobtest_autogen/mocs_compilation.cpp.o
+[119/182] Building CXX object autotests/CMakeFiles/fakeservertest.dir/fakeservertest.cpp.o
+[120/182] Building CXX object autotests/CMakeFiles/getmetadatajobtest.dir/getmetadatajobtest_autogen/mocs_compilation.cpp.o
+[121/182] Building CXX object autotests/CMakeFiles/testrfccodecs.dir/testrfccodecs.cpp.o
+[122/182] Building CXX object autotests/CMakeFiles/subscribejobtest.dir/subscribejobtest.cpp.o
+[123/182] Building CXX object autotests/CMakeFiles/streamparsertest.dir/streamparsertest_autogen/mocs_compilation.cpp.o
+[124/182] Building CXX object autotests/CMakeFiles/setmetadatajobtest.dir/setmetadatajobtest_autogen/mocs_compilation.cpp.o
+[125/182] Building CXX object autotests/CMakeFiles/closejobtest.dir/closejobtest.cpp.o
+[126/182] Building CXX object autotests/CMakeFiles/appendjobtest.dir/appendjobtest_autogen/mocs_compilation.cpp.o
+[127/182] Building CXX object autotests/CMakeFiles/loginjobtest.dir/loginjobtest.cpp.o
+[128/182] Building CXX object autotests/CMakeFiles/imapsettest.dir/imapsettest.cpp.o
+[129/182] Building CXX object autotests/CMakeFiles/statusjobtest.dir/statusjobtest_autogen/mocs_compilation.cpp.o
+[130/182] Building CXX object autotests/CMakeFiles/createjobtest.dir/createjobtest.cpp.o
+[131/182] Building CXX object autotests/CMakeFiles/movejobtest.dir/movejobtest_autogen/mocs_compilation.cpp.o
+[132/182] Building CXX object autotests/CMakeFiles/enablejobtest.dir/enablejobtest.cpp.o
+[133/182] Linking CXX executable bin/fakeservertest
+[134/182] Linking CXX executable bin/testrfccodecs
+[135/182] Building CXX object autotests/CMakeFiles/deletejobtest.dir/deletejobtest.cpp.o
+[136/182] Building CXX object autotests/CMakeFiles/logoutjobtest.dir/logoutjobtest.cpp.o
+[137/182] Linking CXX executable bin/closejobtest
+[138/182] Linking CXX executable bin/loginjobtest
+[139/182] Building CXX object autotests/CMakeFiles/renamejobtest.dir/renamejobtest.cpp.o
+[140/182] Building CXX object autotests/CMakeFiles/unsubscribejobtest.dir/unsubscribejobtest.cpp.o
+[141/182] Building CXX object autotests/CMakeFiles/storejobtest.dir/storejobtest.cpp.o
+[142/182] Linking CXX executable bin/logoutjobtest
+[143/182] Linking CXX executable bin/createjobtest
+[144/182] Building CXX object autotests/CMakeFiles/capabilitiesjobtest.dir/capabilitiesjobtest.cpp.o
+[145/182] Linking CXX executable bin/enablejobtest
+[146/182] Linking CXX executable bin/deletejobtest
+[147/182] Building CXX object autotests/CMakeFiles/listjobtest.dir/listjobtest.cpp.o
+[148/182] Linking CXX executable bin/expungejobtest
+[149/182] Linking CXX executable bin/renamejobtest
+[150/182] Linking CXX executable bin/storejobtest
+[151/182] Linking CXX executable bin/capabilitiesjobtest
+[152/182] Linking CXX executable bin/subscribejobtest
+[153/182] Linking CXX executable bin/unsubscribejobtest
+[154/182] Linking CXX executable bin/imapsettest
+[155/182] Linking CXX executable bin/listjobtest
+[156/182] Linking CXX executable bin/testimapserver
+[157/182] Building CXX object autotests/CMakeFiles/idjobtest.dir/idjobtest.cpp.o
+[158/182] Building CXX object autotests/CMakeFiles/testsession.dir/testsession.cpp.o
+[159/182] Linking CXX executable bin/idjobtest
+[160/182] Linking CXX executable bin/testsession
+[161/182] Building CXX object autotests/CMakeFiles/selectjobtest.dir/selectjobtest.cpp.o
+[162/182] Linking CXX executable bin/selectjobtest
+[163/182] Building CXX object autotests/CMakeFiles/quotarootjobtest.dir/quotarootjobtest.cpp.o
+[164/182] Linking CXX executable bin/quotarootjobtest
+[165/182] Building CXX object autotests/CMakeFiles/idlejobtest.dir/idlejobtest.cpp.o
+[166/182] Linking CXX executable bin/idlejobtest
+[167/182] Building CXX object autotests/CMakeFiles/movejobtest.dir/movejobtest.cpp.o
+[168/182] Building CXX object autotests/CMakeFiles/streamparsertest.dir/streamparsertest.cpp.o
+[169/182] Linking CXX executable bin/movejobtest
+[170/182] Building CXX object autotests/CMakeFiles/setmetadatajobtest.dir/setmetadatajobtest.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp: In member function ‘void SetMetadataJobTest::annotatemore()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp:140:41: warning: ‘void KIMAP::SetMetaDataJob::setEntry(const QByteArray&)’ is deprecated [-Wdeprecated-declarations]
+  140 |                 setMetadataJob->setEntry(entry);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/setmetadatajob.h:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp:10:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/setmetadatajob.h:161:27: note: declared here
+  161 |     KIMAP_DEPRECATED void setEntry(const QByteArray &entry);
+      |                           ^~~~~~~~
+[171/182] Linking CXX executable bin/streamparsertest
+[172/182] Building CXX object autotests/CMakeFiles/appendjobtest.dir/appendjobtest.cpp.o
+[173/182] Linking CXX executable bin/setmetadatajobtest
+[174/182] Linking CXX executable bin/appendjobtest
+[175/182] Building CXX object autotests/CMakeFiles/searchjobtest.dir/searchjobtest.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/searchjobtest.cpp: In member function ‘void SearchJobTest::testSearch()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/searchjobtest.cpp:90:28: warning: ‘void KIMAP::SearchJob::setSearchLogic(SearchLogic)’ is deprecated [-Wdeprecated-declarations]
+   90 |         job->setSearchLogic(searchLogic);
+      |         ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/searchjob.h:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/searchjobtest.cpp:11:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/searchjob.h:223:27: note: declared here
+  223 |     KIMAP_DEPRECATED void setSearchLogic(SearchLogic logic);
+      |                           ^~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/searchjobtest.cpp:93:39: warning: ‘void KIMAP::SearchJob::addSearchCriteria(SearchCriteria)’ is deprecated [-Wdeprecated-declarations]
+   93 |                 job->addSearchCriteria(pair.first);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/searchjob.h:178:27: note: declared here
+  178 |     KIMAP_DEPRECATED void addSearchCriteria(SearchCriteria criteria);
+      |                           ^~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/searchjobtest.cpp:95:39: warning: ‘void KIMAP::SearchJob::addSearchCriteria(SearchCriteria, const QByteArray&)’ is deprecated [-Wdeprecated-declarations]
+   95 |                 job->addSearchCriteria(pair.first, pair.second);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/searchjob.h:188:27: note: declared here
+  188 |     KIMAP_DEPRECATED void addSearchCriteria(SearchCriteria criteria, const QByteArray &argument);
+      |                           ^~~~~~~~~~~~~~~~~
+[176/182] Linking CXX executable bin/searchjobtest
+[177/182] Building CXX object autotests/CMakeFiles/fetchjobtest.dir/fetchjobtest.cpp.o
+[178/182] Linking CXX executable bin/fetchjobtest
+[179/182] Building CXX object autotests/CMakeFiles/getmetadatajobtest.dir/getmetadatajobtest.cpp.o
+In file included from /usr/include/qt6/QtTest/qtest.h:13,
+                 from /usr/include/qt6/QtTest/QTest:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp: In member function ‘void GetMetadataJobTest::metadata()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:90:46: warning: ‘QByteArray KIMAP::GetMetaDataJob::metaData(const QString&, const QByteArray&, const QByteArray&) const’ is deprecated [-Wdeprecated-declarations]
+   90 |             QCOMPARE(getMetadataJob->metaData(mailbox, entry), expectedAnnotations.value(entry));
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/getmetadatajob.h:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:9:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/getmetadatajob.h:162:33: note: declared here
+  162 |     KIMAP_DEPRECATED QByteArray metaData(const QString &mailBox, const QByteArray &entry, const QByteArray &attribute = QByteArray()) const;
+      |                                 ^~~~~~~~
+[180/182] Building CXX object autotests/CMakeFiles/statusjobtest.dir/statusjobtest.cpp.o
+[181/182] Linking CXX executable bin/getmetadatajobtest
+[182/182] Linking CXX executable bin/statusjobtest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/libKPim6IMAP.so.6.4.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/libKPim6IMAP.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/libKPim6IMAP.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/kimap_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/acl.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/acljobbase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/appendjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/capabilitiesjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/closejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/copyjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/createjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/deleteacljob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/deletejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/enablejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/expungejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/fetchjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/getacljob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/getmetadatajob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/getquotajob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/getquotarootjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/idjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/idlejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/imapset.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/job.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/listjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/listrightsjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/loginjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/logoutjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/metadatajobbase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/movejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/myrightsjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/namespacejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/quotajobbase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/renamejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/rfccodecs.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/searchjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/selectjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/session.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/sessionuiproxy.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/setacljob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/setmetadatajob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/setquotajob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/statusjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/storejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/subscribejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/unsubscribejob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/Acl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/AclJobBase
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/AppendJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/CapabilitiesJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/CloseJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/CopyJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/CreateJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/DeleteAclJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/DeleteJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/EnableJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/ExpungeJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/FetchJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/GetAclJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/GetMetaDataJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/GetQuotaJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/GetQuotaRootJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/IdJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/IdleJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/ImapSet
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/Job
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/ListJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/ListRightsJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/LoginJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/LogoutJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/MetaDataJobBase
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/MoveJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/MyRightsJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/NamespaceJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/QuotaJobBase
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/RenameJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/RFCCodecs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/SearchJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/SelectJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/Session
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/SessionUiProxy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/SetAclJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/SetMetaDataJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/SetQuotaJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/StatusJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/StoreJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/SubscribeJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap/UnsubscribeJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/Acl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/AclJobBase
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/AppendJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/CapabilitiesJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/CloseJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/CopyJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/CreateJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/DeleteAclJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/DeleteJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/EnableJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/ExpungeJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/FetchJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/GetAclJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/GetMetaDataJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/GetQuotaJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/GetQuotaRootJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/IdJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/IdleJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/ImapSet
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/Job
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/ListJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/ListRightsJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/LoginJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/LogoutJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/MetaDataJobBase
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/MoveJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/MyRightsJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/NamespaceJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/QuotaJobBase
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/RenameJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/RFCCodecs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/SearchJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/SelectJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/Session
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/SessionUiProxy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/SetAclJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/SetMetaDataJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/SetQuotaJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/StatusJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/StoreJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/SubscribeJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/KIMAP/UnsubscribeJob
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/qlogging-categories6/kimap.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/qlogging-categories6/kimap.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/libkimaptest6.a
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAPTest/kimaptest/fakeserver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAPTest/kimaptest/mockjob.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/cmake/KPim6IMAP/KPim6IMAPConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/cmake/KPim6IMAP/KPim6IMAPConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/cmake/KPim6IMAP/KPim6IMAPTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/cmake/KPim6IMAP/KPim6IMAPTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/include/KPim6/KIMAP/kimap_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/da/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/cs/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ja/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@ijekavian/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/de/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/el/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nn/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/hi/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pt_BR/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/lt/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pa/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sl/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ta/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ro/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/bs/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/kk/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sr@latin/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/he/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/zh_TW/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pl/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/km/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/pt/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/tr/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/fr/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ast/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ka/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/gl/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ia/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/hu/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/eo/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ga/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ca/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/uk/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/en_GB/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/zh_CN/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nl/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sa/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/fi/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ko/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ru/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/lv/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ca@valencia/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nb/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/es/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/eu/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/et/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/it/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ar/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sq
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sq/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/nds/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/mr/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/ug/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sk/LC_MESSAGES/libkimap6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/package-kimap/usr/share/locale/sv/LC_MESSAGES/libkimap6.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kimap/kimap.info: No such file or directory
+extra-cmake-modules
+cyrus-sasl
+kcoreaddons
+ki18n
+kio
+kmime
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKPim6IMAP.so	libKPim6IMAP.so.6
+usr/lib64/libKPim6IMAP.so.6	libKPim6IMAP.so.6.4.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKPim6IMAP.so )
+( cd usr/lib64 ; ln -sf libKPim6IMAP.so.6 libKPim6IMAP.so )
+( cd usr/lib64 ; rm -rf libKPim6IMAP.so.6 )
+( cd usr/lib64 ; ln -sf libKPim6IMAP.so.6.4.1 libKPim6IMAP.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKPim6IMAP.so'
+removed './usr/lib64/libKPim6IMAP.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kimap/kimap-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kimap-25.04.1/
+usr/doc/kimap-25.04.1/README.md
+usr/doc/kimap-25.04.1/README.md.license
+usr/doc/kimap-25.04.1/kimap.ini
+usr/doc/kimap-25.04.1/slack-required
+usr/include/
+usr/include/KPim6/
+usr/include/KPim6/KIMAP/
+usr/include/KPim6/KIMAP/KIMAP/
+usr/include/KPim6/KIMAP/KIMAP/Acl
+usr/include/KPim6/KIMAP/KIMAP/AclJobBase
+usr/include/KPim6/KIMAP/KIMAP/AppendJob
+usr/include/KPim6/KIMAP/KIMAP/CapabilitiesJob
+usr/include/KPim6/KIMAP/KIMAP/CloseJob
+usr/include/KPim6/KIMAP/KIMAP/CopyJob
+usr/include/KPim6/KIMAP/KIMAP/CreateJob
+usr/include/KPim6/KIMAP/KIMAP/DeleteAclJob
+usr/include/KPim6/KIMAP/KIMAP/DeleteJob
+usr/include/KPim6/KIMAP/KIMAP/EnableJob
+usr/include/KPim6/KIMAP/KIMAP/ExpungeJob
+usr/include/KPim6/KIMAP/KIMAP/FetchJob
+usr/include/KPim6/KIMAP/KIMAP/GetAclJob
+usr/include/KPim6/KIMAP/KIMAP/GetMetaDataJob
+usr/include/KPim6/KIMAP/KIMAP/GetQuotaJob
+usr/include/KPim6/KIMAP/KIMAP/GetQuotaRootJob
+usr/include/KPim6/KIMAP/KIMAP/IdJob
+usr/include/KPim6/KIMAP/KIMAP/IdleJob
+usr/include/KPim6/KIMAP/KIMAP/ImapSet
+usr/include/KPim6/KIMAP/KIMAP/Job
+usr/include/KPim6/KIMAP/KIMAP/ListJob
+usr/include/KPim6/KIMAP/KIMAP/ListRightsJob
+usr/include/KPim6/KIMAP/KIMAP/LoginJob
+usr/include/KPim6/KIMAP/KIMAP/LogoutJob
+usr/include/KPim6/KIMAP/KIMAP/MetaDataJobBase
+usr/include/KPim6/KIMAP/KIMAP/MoveJob
+usr/include/KPim6/KIMAP/KIMAP/MyRightsJob
+usr/include/KPim6/KIMAP/KIMAP/NamespaceJob
+usr/include/KPim6/KIMAP/KIMAP/QuotaJobBase
+usr/include/KPim6/KIMAP/KIMAP/RFCCodecs
+usr/include/KPim6/KIMAP/KIMAP/RenameJob
+usr/include/KPim6/KIMAP/KIMAP/SearchJob
+usr/include/KPim6/KIMAP/KIMAP/SelectJob
+usr/include/KPim6/KIMAP/KIMAP/Session
+usr/include/KPim6/KIMAP/KIMAP/SessionUiProxy
+usr/include/KPim6/KIMAP/KIMAP/SetAclJob
+usr/include/KPim6/KIMAP/KIMAP/SetMetaDataJob
+usr/include/KPim6/KIMAP/KIMAP/SetQuotaJob
+usr/include/KPim6/KIMAP/KIMAP/StatusJob
+usr/include/KPim6/KIMAP/KIMAP/StoreJob
+usr/include/KPim6/KIMAP/KIMAP/SubscribeJob
+usr/include/KPim6/KIMAP/KIMAP/UnsubscribeJob
+usr/include/KPim6/KIMAP/kimap/
+usr/include/KPim6/KIMAP/kimap/Acl
+usr/include/KPim6/KIMAP/kimap/AclJobBase
+usr/include/KPim6/KIMAP/kimap/AppendJob
+usr/include/KPim6/KIMAP/kimap/CapabilitiesJob
+usr/include/KPim6/KIMAP/kimap/CloseJob
+usr/include/KPim6/KIMAP/kimap/CopyJob
+usr/include/KPim6/KIMAP/kimap/CreateJob
+usr/include/KPim6/KIMAP/kimap/DeleteAclJob
+usr/include/KPim6/KIMAP/kimap/DeleteJob
+usr/include/KPim6/KIMAP/kimap/EnableJob
+usr/include/KPim6/KIMAP/kimap/ExpungeJob
+usr/include/KPim6/KIMAP/kimap/FetchJob
+usr/include/KPim6/KIMAP/kimap/GetAclJob
+usr/include/KPim6/KIMAP/kimap/GetMetaDataJob
+usr/include/KPim6/KIMAP/kimap/GetQuotaJob
+usr/include/KPim6/KIMAP/kimap/GetQuotaRootJob
+usr/include/KPim6/KIMAP/kimap/IdJob
+usr/include/KPim6/KIMAP/kimap/IdleJob
+usr/include/KPim6/KIMAP/kimap/ImapSet
+usr/include/KPim6/KIMAP/kimap/Job
+usr/include/KPim6/KIMAP/kimap/ListJob
+usr/include/KPim6/KIMAP/kimap/ListRightsJob
+usr/include/KPim6/KIMAP/kimap/LoginJob
+usr/include/KPim6/KIMAP/kimap/LogoutJob
+usr/include/KPim6/KIMAP/kimap/MetaDataJobBase
+usr/include/KPim6/KIMAP/kimap/MoveJob
+usr/include/KPim6/KIMAP/kimap/MyRightsJob
+usr/include/KPim6/KIMAP/kimap/NamespaceJob
+usr/include/KPim6/KIMAP/kimap/QuotaJobBase
+usr/include/KPim6/KIMAP/kimap/RFCCodecs
+usr/include/KPim6/KIMAP/kimap/RenameJob
+usr/include/KPim6/KIMAP/kimap/SearchJob
+usr/include/KPim6/KIMAP/kimap/SelectJob
+usr/include/KPim6/KIMAP/kimap/Session
+usr/include/KPim6/KIMAP/kimap/SessionUiProxy
+usr/include/KPim6/KIMAP/kimap/SetAclJob
+usr/include/KPim6/KIMAP/kimap/SetMetaDataJob
+usr/include/KPim6/KIMAP/kimap/SetQuotaJob
+usr/include/KPim6/KIMAP/kimap/StatusJob
+usr/include/KPim6/KIMAP/kimap/StoreJob
+usr/include/KPim6/KIMAP/kimap/SubscribeJob
+usr/include/KPim6/KIMAP/kimap/UnsubscribeJob
+usr/include/KPim6/KIMAP/kimap/acl.h
+usr/include/KPim6/KIMAP/kimap/acljobbase.h
+usr/include/KPim6/KIMAP/kimap/appendjob.h
+usr/include/KPim6/KIMAP/kimap/capabilitiesjob.h
+usr/include/KPim6/KIMAP/kimap/closejob.h
+usr/include/KPim6/KIMAP/kimap/copyjob.h
+usr/include/KPim6/KIMAP/kimap/createjob.h
+usr/include/KPim6/KIMAP/kimap/deleteacljob.h
+usr/include/KPim6/KIMAP/kimap/deletejob.h
+usr/include/KPim6/KIMAP/kimap/enablejob.h
+usr/include/KPim6/KIMAP/kimap/expungejob.h
+usr/include/KPim6/KIMAP/kimap/fetchjob.h
+usr/include/KPim6/KIMAP/kimap/getacljob.h
+usr/include/KPim6/KIMAP/kimap/getmetadatajob.h
+usr/include/KPim6/KIMAP/kimap/getquotajob.h
+usr/include/KPim6/KIMAP/kimap/getquotarootjob.h
+usr/include/KPim6/KIMAP/kimap/idjob.h
+usr/include/KPim6/KIMAP/kimap/idlejob.h
+usr/include/KPim6/KIMAP/kimap/imapset.h
+usr/include/KPim6/KIMAP/kimap/job.h
+usr/include/KPim6/KIMAP/kimap/kimap_export.h
+usr/include/KPim6/KIMAP/kimap/listjob.h
+usr/include/KPim6/KIMAP/kimap/listrightsjob.h
+usr/include/KPim6/KIMAP/kimap/loginjob.h
+usr/include/KPim6/KIMAP/kimap/logoutjob.h
+usr/include/KPim6/KIMAP/kimap/metadatajobbase.h
+usr/include/KPim6/KIMAP/kimap/movejob.h
+usr/include/KPim6/KIMAP/kimap/myrightsjob.h
+usr/include/KPim6/KIMAP/kimap/namespacejob.h
+usr/include/KPim6/KIMAP/kimap/quotajobbase.h
+usr/include/KPim6/KIMAP/kimap/renamejob.h
+usr/include/KPim6/KIMAP/kimap/rfccodecs.h
+usr/include/KPim6/KIMAP/kimap/searchjob.h
+usr/include/KPim6/KIMAP/kimap/selectjob.h
+usr/include/KPim6/KIMAP/kimap/session.h
+usr/include/KPim6/KIMAP/kimap/sessionuiproxy.h
+usr/include/KPim6/KIMAP/kimap/setacljob.h
+usr/include/KPim6/KIMAP/kimap/setmetadatajob.h
+usr/include/KPim6/KIMAP/kimap/setquotajob.h
+usr/include/KPim6/KIMAP/kimap/statusjob.h
+usr/include/KPim6/KIMAP/kimap/storejob.h
+usr/include/KPim6/KIMAP/kimap/subscribejob.h
+usr/include/KPim6/KIMAP/kimap/unsubscribejob.h
+usr/include/KPim6/KIMAP/kimap_version.h
+usr/include/KPim6/KIMAPTest/
+usr/include/KPim6/KIMAPTest/kimaptest/
+usr/include/KPim6/KIMAPTest/kimaptest/fakeserver.h
+usr/include/KPim6/KIMAPTest/kimaptest/mockjob.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KPim6IMAP/
+usr/lib64/cmake/KPim6IMAP/KPim6IMAPConfig.cmake
+usr/lib64/cmake/KPim6IMAP/KPim6IMAPConfigVersion.cmake
+usr/lib64/cmake/KPim6IMAP/KPim6IMAPTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KPim6IMAP/KPim6IMAPTargets.cmake
+usr/lib64/libKPim6IMAP.so.6.4.1
+usr/lib64/libkimaptest6.a
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/libkimap6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/libkimap6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libkimap6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libkimap6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libkimap6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/libkimap6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/libkimap6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libkimap6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libkimap6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/libkimap6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libkimap6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libkimap6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/libkimap6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/libkimap6.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/libkimap6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/libkimap6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/libkimap6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/libkimap6.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/libkimap6.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libkimap6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libkimap6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/libkimap6.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/libkimap6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/libkimap6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/libkimap6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libkimap6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/libkimap6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/libkimap6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libkimap6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/libkimap6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/libkimap6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/libkimap6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/libkimap6.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/libkimap6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libkimap6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libkimap6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/libkimap6.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kimap.categories
+usr/share/qlogging-categories6/kimap.renamecategories
+
+Slackware package /tmp/kimap/kimap-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for kimap-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/kimap/kimap-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/kimap/kimap-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/kimap/kimap-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kimap.tar.lz4 format.
+/tmp/kimap /tmp/kimap
+/tmp/kimap
+BIN_NAME
+README
+kimap-25.04.1-x86_64-1_rtz.tlz
+kimap-25.04.1-x86_64-1_rtz.tlz.md5
+kimap-25.04.1-x86_64-1_rtz.tlz.so.file
+kimap-25.04.1-x86_64-1_rtz.tlz.txt
+kimap.dep
+makepkg-kimap.log
+kimap build finished. Procced to installation...
+
++==============================================================================================+
+| Upgrading kimap-25.04.1-x86_64-1_rtz package using /tmp/kimap/kimap-25.04.1-x86_64-1_rtz.tlz |
++==============================================================================================+
+
+Pre-installing package kimap-25.04.1-x86_64-1_rtz...
+Removing package: kimap-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,01:38:42
+Installing package kimap-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kimap (Job-based API)
+#
+# Job-based API for interacting with IMAP servers
+#
+# https://community.kde.org/KDE_PIM
+Executing install script for kimap-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kimap-25.04.1-x86_64-1_rtz.tlz installed.
+Package kimap-25.04.1-x86_64-1_rtz upgraded with new package /tmp/kimap/kimap-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kimap-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 55 seconds.

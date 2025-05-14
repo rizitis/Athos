@@ -1,0 +1,857 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules kwindowsystem kcmutils kcoreaddons kdbusaddons ki18n kirigami kitemmodels kwidgetsaddons
+extra-cmake-modules is already installed!
+kwindowsystem is already installed!
+kcmutils is already installed!
+kcoreaddons is already installed!
+kdbusaddons is already installed!
+ki18n is already installed!
+kirigami is already installed!
+kitemmodels is already installed!
+kwidgetsaddons is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 23:45:14--  https://download.kde.org/stable/release-service/25.04.1/src/colord-kde-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/colord-kde-25.04.1.tar.xz [following]
+--2025-05-10 23:45:14--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/colord-kde-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120032 (117K) [application/octet-stream]
+Saving to: ‘colord-kde-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 42% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 85% 1.50M 0s
+   100K .......... .......                                    100% 6.18M=0.07s
+
+2025-05-10 23:45:14 (1.60 MB/s) - ‘colord-kde-25.04.1.tar.xz’ saved [120032/120032]
+
+Found file: colord-kde-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+colord-kde-25.04.1/
+colord-kde-25.04.1/colord-tmp-interfaces/
+colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Sensor.xml
+colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml
+colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Profile.xml
+colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Device.xml
+colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorHelper.xml
+colord-kde-25.04.1/colord-kded/
+colord-kde-25.04.1/colord-kded/colord.json
+colord-kde-25.04.1/colord-kded/Edid.h
+colord-kde-25.04.1/colord-kded/Edid.cpp
+colord-kde-25.04.1/colord-kded/Output.h
+colord-kde-25.04.1/colord-kded/ProfilesWatcher.h
+colord-kde-25.04.1/colord-kded/XEventHandler.cpp
+colord-kde-25.04.1/colord-kded/DmiUtils.cpp
+colord-kde-25.04.1/colord-kded/ColorD.cpp
+colord-kde-25.04.1/colord-kded/ColorD.h
+colord-kde-25.04.1/colord-kded/Output.cpp
+colord-kde-25.04.1/colord-kded/ProfileUtils.cpp
+colord-kde-25.04.1/colord-kded/ProfilesWatcher.cpp
+colord-kde-25.04.1/colord-kded/xlibandxrandr.h
+colord-kde-25.04.1/colord-kded/CMakeLists.txt
+colord-kde-25.04.1/colord-kded/ProfileUtils.h
+colord-kde-25.04.1/colord-kded/XEventHandler.h
+colord-kde-25.04.1/colord-kded/DmiUtils.h
+colord-kde-25.04.1/CMakePresets.json
+colord-kde-25.04.1/Messages.sh
+colord-kde-25.04.1/icc-importer/
+colord-kde-25.04.1/icc-importer/colordkdeiccimporter.desktop
+colord-kde-25.04.1/icc-importer/main.cpp
+colord-kde-25.04.1/icc-importer/CMakeLists.txt
+colord-kde-25.04.1/MAINTAINERS
+colord-kde-25.04.1/.gitlab-ci.yml
+colord-kde-25.04.1/.git-blame-ignore-revs
+colord-kde-25.04.1/TODO
+colord-kde-25.04.1/.kde-ci.yml
+colord-kde-25.04.1/po/
+colord-kde-25.04.1/po/bg/
+colord-kde-25.04.1/po/bg/colord-kde.po
+colord-kde-25.04.1/po/pt/
+colord-kde-25.04.1/po/pt/colord-kde.po
+colord-kde-25.04.1/po/km/
+colord-kde-25.04.1/po/km/colord-kde.po
+colord-kde-25.04.1/po/nn/
+colord-kde-25.04.1/po/nn/colord-kde.po
+colord-kde-25.04.1/po/pl/
+colord-kde-25.04.1/po/pl/colord-kde.po
+colord-kde-25.04.1/po/ja/
+colord-kde-25.04.1/po/ja/colord-kde.po
+colord-kde-25.04.1/po/pa/
+colord-kde-25.04.1/po/pa/colord-kde.po
+colord-kde-25.04.1/po/bs/
+colord-kde-25.04.1/po/bs/colord-kde.po
+colord-kde-25.04.1/po/zh_CN/
+colord-kde-25.04.1/po/zh_CN/colord-kde.po
+colord-kde-25.04.1/po/cs/
+colord-kde-25.04.1/po/cs/colord-kde.po
+colord-kde-25.04.1/po/es/
+colord-kde-25.04.1/po/es/colord-kde.po
+colord-kde-25.04.1/po/ka/
+colord-kde-25.04.1/po/ka/colord-kde.po
+colord-kde-25.04.1/po/tr/
+colord-kde-25.04.1/po/tr/colord-kde.po
+colord-kde-25.04.1/po/ug/
+colord-kde-25.04.1/po/ug/colord-kde.po
+colord-kde-25.04.1/po/ca/
+colord-kde-25.04.1/po/ca/colord-kde.po
+colord-kde-25.04.1/po/ca@valencia/
+colord-kde-25.04.1/po/ca@valencia/colord-kde.po
+colord-kde-25.04.1/po/gl/
+colord-kde-25.04.1/po/gl/colord-kde.po
+colord-kde-25.04.1/po/ro/
+colord-kde-25.04.1/po/ro/colord-kde.po
+colord-kde-25.04.1/po/eo/
+colord-kde-25.04.1/po/eo/colord-kde.po
+colord-kde-25.04.1/po/nl/
+colord-kde-25.04.1/po/nl/colord-kde.po
+colord-kde-25.04.1/po/mr/
+colord-kde-25.04.1/po/mr/colord-kde.po
+colord-kde-25.04.1/po/hu/
+colord-kde-25.04.1/po/hu/colord-kde.po
+colord-kde-25.04.1/po/eu/
+colord-kde-25.04.1/po/eu/colord-kde.po
+colord-kde-25.04.1/po/lv/
+colord-kde-25.04.1/po/lv/colord-kde.po
+colord-kde-25.04.1/po/fr/
+colord-kde-25.04.1/po/fr/colord-kde.po
+colord-kde-25.04.1/po/hi/
+colord-kde-25.04.1/po/hi/colord-kde.po
+colord-kde-25.04.1/po/sl/
+colord-kde-25.04.1/po/sl/colord-kde.po
+colord-kde-25.04.1/po/ta/
+colord-kde-25.04.1/po/ta/colord-kde.po
+colord-kde-25.04.1/po/he/
+colord-kde-25.04.1/po/he/colord-kde.po
+colord-kde-25.04.1/po/de/
+colord-kde-25.04.1/po/de/colord-kde.po
+colord-kde-25.04.1/po/ar/
+colord-kde-25.04.1/po/ar/colord-kde.po
+colord-kde-25.04.1/po/sk/
+colord-kde-25.04.1/po/sk/colord-kde.po
+colord-kde-25.04.1/po/zh_TW/
+colord-kde-25.04.1/po/zh_TW/colord-kde.po
+colord-kde-25.04.1/po/et/
+colord-kde-25.04.1/po/et/colord-kde.po
+colord-kde-25.04.1/po/it/
+colord-kde-25.04.1/po/it/colord-kde.po
+colord-kde-25.04.1/po/el/
+colord-kde-25.04.1/po/el/colord-kde.po
+colord-kde-25.04.1/po/da/
+colord-kde-25.04.1/po/da/colord-kde.po
+colord-kde-25.04.1/po/pt_BR/
+colord-kde-25.04.1/po/pt_BR/colord-kde.po
+colord-kde-25.04.1/po/ru/
+colord-kde-25.04.1/po/ru/colord-kde.po
+colord-kde-25.04.1/po/id/
+colord-kde-25.04.1/po/id/colord-kde.po
+colord-kde-25.04.1/po/ia/
+colord-kde-25.04.1/po/ia/colord-kde.po
+colord-kde-25.04.1/po/sv/
+colord-kde-25.04.1/po/sv/colord-kde.po
+colord-kde-25.04.1/po/fi/
+colord-kde-25.04.1/po/fi/colord-kde.po
+colord-kde-25.04.1/po/ast/
+colord-kde-25.04.1/po/ast/colord-kde.po
+colord-kde-25.04.1/po/lt/
+colord-kde-25.04.1/po/lt/colord-kde.po
+colord-kde-25.04.1/po/sa/
+colord-kde-25.04.1/po/sa/colord-kde.po
+colord-kde-25.04.1/po/ko/
+colord-kde-25.04.1/po/ko/colord-kde.po
+colord-kde-25.04.1/po/ga/
+colord-kde-25.04.1/po/ga/colord-kde.po
+colord-kde-25.04.1/po/en_GB/
+colord-kde-25.04.1/po/en_GB/colord-kde.po
+colord-kde-25.04.1/po/uk/
+colord-kde-25.04.1/po/uk/colord-kde.po
+colord-kde-25.04.1/po/az/
+colord-kde-25.04.1/po/az/colord-kde.po
+colord-kde-25.04.1/dbus-types.h
+colord-kde-25.04.1/colord-kcm/
+colord-kde-25.04.1/colord-kcm/ColordKCM.cpp
+colord-kde-25.04.1/colord-kcm/Profile.h
+colord-kde-25.04.1/colord-kcm/DeviceDescription.cpp
+colord-kde-25.04.1/colord-kcm/ColordKCM.h
+colord-kde-25.04.1/colord-kcm/ProfileMetaDataModel.cpp
+colord-kde-25.04.1/colord-kcm/ProfileDescription.h
+colord-kde-25.04.1/colord-kcm/ProfileNamedColorsModel.h
+colord-kde-25.04.1/colord-kcm/ProfileMetaDataModel.h
+colord-kde-25.04.1/colord-kcm/ProfileModel.cpp
+colord-kde-25.04.1/colord-kcm/ProfileDescription.cpp
+colord-kde-25.04.1/colord-kcm/DeviceModel.h
+colord-kde-25.04.1/colord-kcm/Profile.cpp
+colord-kde-25.04.1/colord-kcm/DeviceModel.cpp
+colord-kde-25.04.1/colord-kcm/kcm_colord.json
+colord-kde-25.04.1/colord-kcm/ProfileModel.h
+colord-kde-25.04.1/colord-kcm/CMakeLists.txt
+colord-kde-25.04.1/colord-kcm/DeviceDescription.h
+colord-kde-25.04.1/colord-kcm/ui/
+colord-kde-25.04.1/colord-kcm/ui/main.qml
+colord-kde-25.04.1/colord-kcm/ui/ProfileMetaDataView.qml
+colord-kde-25.04.1/colord-kcm/ProfileNamedColorsModel.cpp
+colord-kde-25.04.1/CMakeLists.txt
+colord-kde-25.04.1/COPYING
+colord-kde-25.04.1/.gitignore
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found XCB_XCB: /usr/lib64/libxcb.so (found version "1.17.0")
+-- Found XCB_RANDR: /usr/lib64/libxcb-randr.so (found version "1.17.0")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-randr.so (found version "1.17.0") found components: XCB RANDR
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.14.0")
+-- Found KF6ItemModels: /usr/lib64/cmake/KF6ItemModels/KF6ItemModelsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "5.240.0") found components: CoreAddons DBusAddons I18n KCMUtils WidgetsAddons WindowSystem ItemModels
+-- Checking for module 'lcms2'
+--   Found lcms2, version 2.17
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Vulkan
+ * Qt6Core (required version >= 6.7.0)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6DBus (required version >= 6.7.0)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Freetype
+ * PkgConfig
+ * Fontconfig
+ * X11
+   For colord integration on X11
+ * Git
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.240.0)
+ * Qt6 (required version >= 6.5.0)
+ * XCB, X protocol C-language Binding, <https://xcb.freedesktop.org/>
+ * KF6DBusAddons (required version >= 5.240.0)
+ * Gettext
+ * KF6I18n (required version >= 5.240.0)
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6KCMUtils (required version >= 5.240.0)
+ * KF6WidgetsAddons (required version >= 5.240.0)
+ * KF6WindowSystem (required version >= 5.240.0)
+ * KF6ItemModels (required version >= 5.240.0)
+ * KF6 (required version >= 5.240.0)
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.8.3)
+
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/build
+[0/2] Re-checking globbed directories...
+[1/56] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/build/colord-kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/kcm_colord.json /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/build/colord-kcm/kcm_colord.desktop
+[2/56] Generating ts...
+[3/56] Automatic MOC for target colord-kde-icc-importer
+[4/56] Generating CdInterface.cpp, CdInterface.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:695:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:707:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:727:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:747:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:767:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:787:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:807:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:827:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:847:8: warning: Unknown element 'doc' while checking for signal arguments
+[5/56] Generating moc_CdInterface.cpp
+[6/56] Generating mo...
+[7/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/colord-kde-icc-importer_autogen/mocs_compilation.cpp.o
+[8/56] Automatic MOC for target kded_colord
+[9/56] Automatic MOC for target kcm_colord
+[10/56] Generating CdInterface.cpp, CdInterface.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:695:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:707:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:727:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:747:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:767:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:787:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:807:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:827:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:847:8: warning: Unknown element 'doc' while checking for signal arguments
+[11/56] Generating CdDeviceInterface.cpp, CdDeviceInterface.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Device.xml:275:8: warning: Unknown element 'doc' while checking for signal arguments
+[12/56] Generating CdProfileInterface.cpp, CdProfileInterface.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Profile.xml:231:8: warning: Unknown element 'doc' while checking for signal arguments
+[13/56] Generating moc_CdProfileInterface.cpp
+[14/56] Generating moc_CdDeviceInterface.cpp
+[15/56] Generating moc_CdInterface.cpp
+[16/56] Generating CdDeviceInterface.cpp, CdDeviceInterface.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Device.xml:275:8: warning: Unknown element 'doc' while checking for signal arguments
+[17/56] Generating CdSensorInterface.cpp, CdSensorInterface.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Sensor.xml:282:8: warning: Unknown element 'doc' while checking for signal arguments
+[18/56] Generating CdInterface.cpp, CdInterface.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:695:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:707:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:727:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:747:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:767:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:787:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:807:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:827:8: warning: Unknown element 'doc' while checking for signal arguments
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:847:8: warning: Unknown element 'doc' while checking for signal arguments
+[19/56] Generating CdProfileInterface.cpp, CdProfileInterface.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Profile.xml:231:8: warning: Unknown element 'doc' while checking for signal arguments
+[20/56] Generating moc_CdSensorInterface.cpp
+[21/56] Generating moc_CdInterface.cpp
+[22/56] Generating moc_CdDeviceInterface.cpp
+[23/56] Generating qrc_kcm_colord.cpp
+[24/56] Generating moc_CdProfileInterface.cpp
+[25/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/kded_colord_autogen/mocs_compilation.cpp.o
+[26/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/kcm_colord_autogen/mocs_compilation.cpp.o
+[27/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/XEventHandler.cpp.o
+[28/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/__/colord-kcm/Profile.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp: In member function ‘void Profile::parseProfile(const uint*, size_t)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:330:17: warning: ‘void QCryptographicHash::addData(const char*, qsizetype)’ is deprecated: Use the QByteArrayView overload instead [-Wdeprecated-declarations]
+  330 |     hash.addData(reinterpret_cast<const char *>(data), length);
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QCryptographicHash:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:22:
+/usr/include/qt6/QtCore/qcryptographichash.h:80:10: note: declared here
+   80 |     void addData(const char *data, qsizetype length);
+      |          ^~~~~~~
+[29/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/Edid.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kded/Edid.cpp: In member function ‘bool Edid::parse(const quint8*, size_t)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kded/Edid.cpp:301:17: warning: ‘void QCryptographicHash::addData(const char*, qsizetype)’ is deprecated: Use the QByteArrayView overload instead [-Wdeprecated-declarations]
+  301 |     hash.addData(reinterpret_cast<const char *>(data), length);
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QCryptographicHash:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kded/Edid.cpp:24:
+/usr/include/qt6/QtCore/qcryptographichash.h:80:10: note: declared here
+   80 |     void addData(const char *data, qsizetype length);
+      |          ^~~~~~~
+[30/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/DmiUtils.cpp.o
+[31/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/qrc_kcm_colord.cpp.o
+[32/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileNamedColorsModel.cpp.o
+[33/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/Profile.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp: In member function ‘void Profile::parseProfile(const uint*, size_t)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:330:17: warning: ‘void QCryptographicHash::addData(const char*, qsizetype)’ is deprecated: Use the QByteArrayView overload instead [-Wdeprecated-declarations]
+  330 |     hash.addData(reinterpret_cast<const char *>(data), length);
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QCryptographicHash:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:22:
+/usr/include/qt6/QtCore/qcryptographichash.h:80:10: note: declared here
+   80 |     void addData(const char *data, qsizetype length);
+      |          ^~~~~~~
+[34/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ProfileUtils.cpp.o
+[35/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileMetaDataModel.cpp.o
+[36/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/main.cpp.o
+[37/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdProfileInterface.cpp.o
+[38/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/Output.cpp.o
+[39/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/DeviceDescription.cpp.o
+[40/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileDescription.cpp.o
+[41/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ProfilesWatcher.cpp.o
+[42/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdDeviceInterface.cpp.o
+[43/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdInterface.cpp.o
+[44/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdInterface.cpp.o
+[45/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/CdInterface.cpp.o
+[46/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileModel.cpp.o
+[47/56] Linking CXX executable bin/colord-kde-icc-importer
+[48/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdDeviceInterface.cpp.o
+[49/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ColorD.cpp.o
+[50/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/DeviceModel.cpp.o
+[51/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdProfileInterface.cpp.o
+[52/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdSensorInterface.cpp.o
+[53/56] Linking CXX shared module bin/kf6/kded/colord.so
+[54/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ColordKCM.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/ColordKCM.cpp: In constructor ‘KCMColord::KCMColord(QObject*, const KPluginMetaData&, const QVariantList&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/ColordKCM.cpp:43:88: warning: unused parameter ‘args’ [-Wunused-parameter]
+   43 | KCMColord::KCMColord(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+      |                                                                    ~~~~~~~~~~~~~~~~~~~~^~~~
+[55/56] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_colord.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/lib64/qt6/plugins/kf6/kded/colord.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_colord.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/applications/kcm_colord.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/bin/colord-kde-icc-importer
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/applications/colordkdeiccimporter.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/da/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/cs/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ja/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/de/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/el/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/nn/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/hi/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pt_BR/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/lt/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pa/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sl/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ta/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ro/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/bs/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/he/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/zh_TW/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pl/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/km/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/pt/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/az/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/tr/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/fr/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ast/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ka/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/gl/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ia/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/hu/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/eo/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/bg/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ga/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ca/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/uk/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/id/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/en_GB/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/zh_CN/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/nl/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sa/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/fi/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ko/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ru/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/lv/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ca@valencia/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/es/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/eu/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/et/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/it/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ar/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/mr/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/ug/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sk/LC_MESSAGES/colord-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/package-colord-kde/usr/share/locale/sv/LC_MESSAGES/colord-kde.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'README*': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/colord-kde/colord-kde.info: No such file or directory
+extra-cmake-modules
+kwindowsystem
+kcmutils
+kcoreaddons
+kdbusaddons
+ki18n
+kirigami
+kitemmodels
+kwidgetsaddons
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/colord-kde/colord-kde-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/colord-kde-icc-importer
+usr/doc/
+usr/doc/colord-kde-25.04.1/
+usr/doc/colord-kde-25.04.1/COPYING
+usr/doc/colord-kde-25.04.1/MAINTAINERS
+usr/doc/colord-kde-25.04.1/colord-kde.ini
+usr/doc/colord-kde-25.04.1/slack-required
+usr/lib64/
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/kf6/
+usr/lib64/qt6/plugins/kf6/kded/
+usr/lib64/qt6/plugins/kf6/kded/colord.so
+usr/lib64/qt6/plugins/plasma/
+usr/lib64/qt6/plugins/plasma/kcms/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_colord.so
+usr/share/
+usr/share/applications/
+usr/share/applications/colordkdeiccimporter.desktop
+usr/share/applications/kcm_colord.desktop
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/colord-kde.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/colord-kde.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/colord-kde.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/colord-kde.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/colord-kde.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/colord-kde.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/colord-kde.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/colord-kde.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/colord-kde.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/colord-kde.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/colord-kde.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/colord-kde.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/colord-kde.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/colord-kde.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/colord-kde.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/colord-kde.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/colord-kde.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/colord-kde.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/colord-kde.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/colord-kde.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/colord-kde.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/colord-kde.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/colord-kde.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/colord-kde.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/colord-kde.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/colord-kde.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/colord-kde.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/colord-kde.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/colord-kde.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/colord-kde.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/colord-kde.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/colord-kde.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/colord-kde.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/colord-kde.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/colord-kde.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/colord-kde.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/colord-kde.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/colord-kde.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/colord-kde.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/colord-kde.mo
+
+Slackware package /tmp/colord-kde/colord-kde-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for colord-kde-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/colord-kde/colord-kde-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/colord-kde/colord-kde-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/colord-kde/colord-kde-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in colord-kde.tar.lz4 format.
+/tmp/colord-kde /tmp/colord-kde
+/tmp/colord-kde
+BIN_NAME
+README
+colord-kde-25.04.1-x86_64-1_rtz.tlz
+colord-kde-25.04.1-x86_64-1_rtz.tlz.md5
+colord-kde-25.04.1-x86_64-1_rtz.tlz.so.file
+colord-kde-25.04.1-x86_64-1_rtz.tlz.txt
+colord-kde.dep
+makepkg-colord-kde.log
+colord-kde build finished. Procced to installation...
+
++=============================================================================================================+
+| Upgrading colord-kde-25.04.1-x86_64-1_rtz package using /tmp/colord-kde/colord-kde-25.04.1-x86_64-1_rtz.tlz |
++=============================================================================================================+
+
+Pre-installing package colord-kde-25.04.1-x86_64-1_rtz...
+Removing package: colord-kde-25.04.1-x86_64-1_rtz-upgraded-2025-05-10,23:45:32
+Installing package colord-kde-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# colord-kde (daemon)
+#
+# session daemon to colord for KDE
+#
+# https://userbase.kde.org/Color_Management
+Executing install script for colord-kde-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package colord-kde-25.04.1-x86_64-1_rtz.tlz installed.
+Package colord-kde-25.04.1-x86_64-1_rtz upgraded with new package /tmp/colord-kde/colord-kde-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'colord-kde-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 23 seconds.

@@ -1,0 +1,1627 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: cups	extra-cmake-modules	kcmutils	kconfig	kconfigwidgets	kcoreaddons	kdbusaddons	ki18n	kiconthemes	kio	kirigami-addons	knotifications	kwidgetsaddons	kwindowsystem	libplasma
+cups is already installed!
+extra-cmake-modules is already installed!
+kcmutils is already installed!
+kconfig is already installed!
+kconfigwidgets is already installed!
+kcoreaddons is already installed!
+kdbusaddons is already installed!
+ki18n is already installed!
+kiconthemes is already installed!
+kio is already installed!
+kirigami-addons is already installed!
+knotifications is already installed!
+kwidgetsaddons is already installed!
+kwindowsystem is already installed!
+libplasma is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 23:03:32--  https://download.kde.org/stable/plasma/6.3.5/print-manager-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/print-manager-6.3.5.tar.xz [following]
+--2025-05-10 23:03:32--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/print-manager-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 392304 (383K) [application/octet-stream]
+Saving to: ‘print-manager-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 13% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 26% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 39% 6.97M 0s
+   150K .......... .......... .......... .......... .......... 52% 1.88M 0s
+   200K .......... .......... .......... .......... .......... 65% 5.13M 0s
+   250K .......... .......... .......... .......... .......... 78% 6.71M 0s
+   300K .......... .......... .......... .......... .......... 91% 1.13M 0s
+   350K .......... .......... .......... ...                  100%  983K=0.2s
+
+2025-05-10 23:03:32 (1.90 MB/s) - ‘print-manager-6.3.5.tar.xz’ saved [392304/392304]
+
+Found file: print-manager-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+print-manager-6.3.5/
+print-manager-6.3.5/Messages.sh
+print-manager-6.3.5/cmake/
+print-manager-6.3.5/cmake/modules/
+print-manager-6.3.5/cmake/modules/FindSCPDbus.cmake
+print-manager-6.3.5/cmake/modules/FindCupsSmb.cmake
+print-manager-6.3.5/LICENSES/
+print-manager-6.3.5/LICENSES/LGPL-2.1-only.txt
+print-manager-6.3.5/LICENSES/BSD-3-Clause.txt
+print-manager-6.3.5/LICENSES/LGPL-3.0-only.txt
+print-manager-6.3.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+print-manager-6.3.5/LICENSES/GPL-2.0-or-later.txt
+print-manager-6.3.5/LICENSES/LGPL-2.0-or-later.txt
+print-manager-6.3.5/.gitlab-ci.yml
+print-manager-6.3.5/.gitignore
+print-manager-6.3.5/logo.png
+print-manager-6.3.5/.kde-ci.yml
+print-manager-6.3.5/CMakePresets.json
+print-manager-6.3.5/src/
+print-manager-6.3.5/src/kded/
+print-manager-6.3.5/src/kded/printmanager.notifyrc
+print-manager-6.3.5/src/kded/PrintManagerKded.cpp
+print-manager-6.3.5/src/kded/PrintManagerKded.h
+print-manager-6.3.5/src/kded/printmanager.json
+print-manager-6.3.5/src/kded/NewPrinterNotification.h
+print-manager-6.3.5/src/kded/NewPrinterNotification.cpp
+print-manager-6.3.5/src/kded/CMakeLists.txt
+print-manager-6.3.5/src/kded/com.redhat.NewPrinterNotification.xml
+print-manager-6.3.5/src/add-printer/
+print-manager-6.3.5/src/add-printer/ChooseSamba.h
+print-manager-6.3.5/src/add-printer/AddPrinter.h
+print-manager-6.3.5/src/add-printer/AddPrinter.cpp
+print-manager-6.3.5/src/add-printer/ChooseLpd.h
+print-manager-6.3.5/src/add-printer/ChooseLpd.ui
+print-manager-6.3.5/src/add-printer/GenericPage.cpp
+print-manager-6.3.5/src/add-printer/ChooseUri.ui
+print-manager-6.3.5/src/add-printer/org.kde.kde-add-printer.desktop
+print-manager-6.3.5/src/add-printer/ChooseSocket.cpp
+print-manager-6.3.5/src/add-printer/ChooseSerial.cpp
+print-manager-6.3.5/src/add-printer/PageChoosePrinters.ui
+print-manager-6.3.5/src/add-printer/PageAddPrinter.cpp
+print-manager-6.3.5/src/add-printer/ChooseUri.cpp
+print-manager-6.3.5/src/add-printer/PageAddPrinter.ui
+print-manager-6.3.5/src/add-printer/ChooseSamba.cpp
+print-manager-6.3.5/src/add-printer/ChooseSerial.ui
+print-manager-6.3.5/src/add-printer/PageChoosePPD.cpp
+print-manager-6.3.5/src/add-printer/ChooseUri.h
+print-manager-6.3.5/src/add-printer/PageDestinations.ui
+print-manager-6.3.5/src/add-printer/ChooseSocket.h
+print-manager-6.3.5/src/add-printer/ChooseLpd.cpp
+print-manager-6.3.5/src/add-printer/PageDestinations.h
+print-manager-6.3.5/src/add-printer/ChooseSamba.ui
+print-manager-6.3.5/src/add-printer/PageChoosePPD.h
+print-manager-6.3.5/src/add-printer/PageChoosePrinters.h
+print-manager-6.3.5/src/add-printer/AddPrinterAssistant.h
+print-manager-6.3.5/src/add-printer/PageDestinations.cpp
+print-manager-6.3.5/src/add-printer/CMakeLists.txt
+print-manager-6.3.5/src/add-printer/PageChoosePPD.ui
+print-manager-6.3.5/src/add-printer/AddPrinterAssistant.cpp
+print-manager-6.3.5/src/add-printer/ChooseSocket.ui
+print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp
+print-manager-6.3.5/src/add-printer/main.cpp
+print-manager-6.3.5/src/add-printer/PageAddPrinter.h
+print-manager-6.3.5/src/add-printer/GenericPage.h
+print-manager-6.3.5/src/add-printer/ChooseSerial.h
+print-manager-6.3.5/src/plasmoid/
+print-manager-6.3.5/src/plasmoid/package/
+print-manager-6.3.5/src/plasmoid/package/contents/
+print-manager-6.3.5/src/plasmoid/package/contents/config/
+print-manager-6.3.5/src/plasmoid/package/contents/config/main.xml
+print-manager-6.3.5/src/plasmoid/package/contents/ui/
+print-manager-6.3.5/src/plasmoid/package/contents/ui/FullRepresentation.qml
+print-manager-6.3.5/src/plasmoid/package/contents/ui/PrinterDelegate.qml
+print-manager-6.3.5/src/plasmoid/package/contents/ui/main.qml
+print-manager-6.3.5/src/plasmoid/package/metadata.json
+print-manager-6.3.5/src/plasmoid/CMakeLists.txt
+print-manager-6.3.5/src/kcm/
+print-manager-6.3.5/src/kcm/Messages.sh
+print-manager-6.3.5/src/kcm/printermanager.cpp
+print-manager-6.3.5/src/kcm/kcm_printer_manager.json
+print-manager-6.3.5/src/kcm/scpinstaller.h
+print-manager-6.3.5/src/kcm/ui/
+print-manager-6.3.5/src/kcm/ui/InstallDialog.qml
+print-manager-6.3.5/src/kcm/ui/FindPrinter.qml
+print-manager-6.3.5/src/kcm/ui/MakeModel.qml
+print-manager-6.3.5/src/kcm/ui/components/
+print-manager-6.3.5/src/kcm/ui/components/Socket.qml
+print-manager-6.3.5/src/kcm/ui/components/Direct.qml
+print-manager-6.3.5/src/kcm/ui/components/Network.qml
+print-manager-6.3.5/src/kcm/ui/components/NotAvailable.qml
+print-manager-6.3.5/src/kcm/ui/components/Drivers.qml
+print-manager-6.3.5/src/kcm/ui/components/ManualUri.qml
+print-manager-6.3.5/src/kcm/ui/components/Lpd.qml
+print-manager-6.3.5/src/kcm/ui/components/AddressExamples.qml
+print-manager-6.3.5/src/kcm/ui/components/BaseDevice.qml
+print-manager-6.3.5/src/kcm/ui/PrinterSettings.qml
+print-manager-6.3.5/src/kcm/ui/BannerWithTimer.qml
+print-manager-6.3.5/src/kcm/ui/main.qml
+print-manager-6.3.5/src/kcm/ui/Global.qml
+print-manager-6.3.5/src/kcm/ui/ConfigValues.qml
+print-manager-6.3.5/src/kcm/CMakeLists.txt
+print-manager-6.3.5/src/kcm/scpinstaller.cpp
+print-manager-6.3.5/src/kcm/printermanager.h
+print-manager-6.3.5/src/libkcups/
+print-manager-6.3.5/src/libkcups/KCupsConnection.cpp
+print-manager-6.3.5/src/libkcups/ClassListWidget.h
+print-manager-6.3.5/src/libkcups/KCupsJob.cpp
+print-manager-6.3.5/src/libkcups/SelectMakeModel.h
+print-manager-6.3.5/src/libkcups/KCupsJob.h
+print-manager-6.3.5/src/libkcups/KCupsPrinter.cpp
+print-manager-6.3.5/src/libkcups/JobSortFilterModel.h
+print-manager-6.3.5/src/libkcups/KCupsServer.h
+print-manager-6.3.5/src/libkcups/DevicesModel.cpp
+print-manager-6.3.5/src/libkcups/KIppRequest_p.h
+print-manager-6.3.5/src/libkcups/KCupsRequest.cpp
+print-manager-6.3.5/src/libkcups/PPDModel.cpp
+print-manager-6.3.5/src/libkcups/KCupsPasswordDialog.h
+print-manager-6.3.5/src/libkcups/JobModel.cpp
+print-manager-6.3.5/src/libkcups/DevicesModel.h
+print-manager-6.3.5/src/libkcups/ProcessRunner.h
+print-manager-6.3.5/src/libkcups/SelectMakeModel.ui
+print-manager-6.3.5/src/libkcups/PPDModel.h
+print-manager-6.3.5/src/libkcups/KCupsRequest.h
+print-manager-6.3.5/src/libkcups/KCupsPrinter.h
+print-manager-6.3.5/src/libkcups/JobModel.h
+print-manager-6.3.5/src/libkcups/NoSelectionRectDelegate.h
+print-manager-6.3.5/src/libkcups/JobSortFilterModel.cpp
+print-manager-6.3.5/src/libkcups/NoSelectionRectDelegate.cpp
+print-manager-6.3.5/src/libkcups/PrinterModel.cpp
+print-manager-6.3.5/src/libkcups/ClassListWidget.cpp
+print-manager-6.3.5/src/libkcups/ProcessRunner.cpp
+print-manager-6.3.5/src/libkcups/SelectMakeModel.cpp
+print-manager-6.3.5/src/libkcups/KIppRequest.h
+print-manager-6.3.5/src/libkcups/CMakeLists.txt
+print-manager-6.3.5/src/libkcups/KCupsServer.cpp
+print-manager-6.3.5/src/libkcups/KIppRequest.cpp
+print-manager-6.3.5/src/libkcups/PrinterModel.h
+print-manager-6.3.5/src/libkcups/KCupsPasswordDialog.cpp
+print-manager-6.3.5/src/libkcups/KCupsConnection.h
+print-manager-6.3.5/src/printqueue/
+print-manager-6.3.5/src/printqueue/PrintQueueUi.ui
+print-manager-6.3.5/src/printqueue/PrintQueue.cpp
+print-manager-6.3.5/src/printqueue/org.kde.PrintQueue.desktop
+print-manager-6.3.5/src/printqueue/PrintQueue.h
+print-manager-6.3.5/src/printqueue/PrintQueueUi.cpp
+print-manager-6.3.5/src/printqueue/CMakeLists.txt
+print-manager-6.3.5/src/printqueue/main.cpp
+print-manager-6.3.5/src/printqueue/PrintQueueUi.h
+print-manager-6.3.5/src/CMakeLists.txt
+print-manager-6.3.5/src/configure-printer/
+print-manager-6.3.5/src/configure-printer/Debug.cpp
+print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp
+print-manager-6.3.5/src/configure-printer/org.kde.ConfigurePrinter.desktop
+print-manager-6.3.5/src/configure-printer/ConfigureDialog.h
+print-manager-6.3.5/src/configure-printer/org.kde.ConfigurePrinter.xml
+print-manager-6.3.5/src/configure-printer/Debug.h
+print-manager-6.3.5/src/configure-printer/PrinterPage.h
+print-manager-6.3.5/src/configure-printer/ConfigurePrinterInterface.cpp
+print-manager-6.3.5/src/configure-printer/PrinterOptions.ui
+print-manager-6.3.5/src/configure-printer/PrinterBehavior.cpp
+print-manager-6.3.5/src/configure-printer/PrinterPage.cpp
+print-manager-6.3.5/src/configure-printer/ConfigurePrinter.cpp
+print-manager-6.3.5/src/configure-printer/PrinterOptions.h
+print-manager-6.3.5/src/configure-printer/ConfigureDialog.cpp
+print-manager-6.3.5/src/configure-printer/PrinterBehavior.h
+print-manager-6.3.5/src/configure-printer/CMakeLists.txt
+print-manager-6.3.5/src/configure-printer/ConfigurePrinter.h
+print-manager-6.3.5/src/configure-printer/main.cpp
+print-manager-6.3.5/src/configure-printer/ConfigurePrinterInterface.h
+print-manager-6.3.5/src/configure-printer/PrinterBehavior.ui
+print-manager-6.3.5/CMakeLists.txt
+print-manager-6.3.5/po/
+print-manager-6.3.5/po/gl/
+print-manager-6.3.5/po/gl/print-manager.po
+print-manager-6.3.5/po/gl/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/gl/kcm_printer_manager.po
+print-manager-6.3.5/po/eo/
+print-manager-6.3.5/po/eo/print-manager.po
+print-manager-6.3.5/po/eo/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/eo/kcm_printer_manager.po
+print-manager-6.3.5/po/bs/
+print-manager-6.3.5/po/bs/print-manager.po
+print-manager-6.3.5/po/bs/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/he/
+print-manager-6.3.5/po/he/print-manager.po
+print-manager-6.3.5/po/he/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/he/kcm_printer_manager.po
+print-manager-6.3.5/po/zh_CN/
+print-manager-6.3.5/po/zh_CN/print-manager.po
+print-manager-6.3.5/po/zh_CN/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/zh_CN/kcm_printer_manager.po
+print-manager-6.3.5/po/hsb/
+print-manager-6.3.5/po/hsb/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/sr/
+print-manager-6.3.5/po/sr/print-manager.po
+print-manager-6.3.5/po/sr/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/be/
+print-manager-6.3.5/po/be/print-manager.po
+print-manager-6.3.5/po/be/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/be/kcm_printer_manager.po
+print-manager-6.3.5/po/sr@latin/
+print-manager-6.3.5/po/sr@latin/print-manager.po
+print-manager-6.3.5/po/sr@latin/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/hi/
+print-manager-6.3.5/po/hi/print-manager.po
+print-manager-6.3.5/po/hi/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/hi/kcm_printer_manager.po
+print-manager-6.3.5/po/bg/
+print-manager-6.3.5/po/bg/print-manager.po
+print-manager-6.3.5/po/bg/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/bg/kcm_printer_manager.po
+print-manager-6.3.5/po/ca@valencia/
+print-manager-6.3.5/po/ca@valencia/print-manager.po
+print-manager-6.3.5/po/ca@valencia/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ca@valencia/kcm_printer_manager.po
+print-manager-6.3.5/po/el/
+print-manager-6.3.5/po/el/print-manager.po
+print-manager-6.3.5/po/el/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/pt/
+print-manager-6.3.5/po/pt/print-manager.po
+print-manager-6.3.5/po/pt/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/nn/
+print-manager-6.3.5/po/nn/print-manager.po
+print-manager-6.3.5/po/nn/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/nn/kcm_printer_manager.po
+print-manager-6.3.5/po/sr@ijekavian/
+print-manager-6.3.5/po/sr@ijekavian/print-manager.po
+print-manager-6.3.5/po/sr@ijekavian/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/fi/
+print-manager-6.3.5/po/fi/print-manager.po
+print-manager-6.3.5/po/fi/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/fi/kcm_printer_manager.po
+print-manager-6.3.5/po/ka/
+print-manager-6.3.5/po/ka/print-manager.po
+print-manager-6.3.5/po/ka/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ka/kcm_printer_manager.po
+print-manager-6.3.5/po/ar/
+print-manager-6.3.5/po/ar/print-manager.po
+print-manager-6.3.5/po/ar/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ar/kcm_printer_manager.po
+print-manager-6.3.5/po/sk/
+print-manager-6.3.5/po/sk/print-manager.po
+print-manager-6.3.5/po/sk/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/sk/kcm_printer_manager.po
+print-manager-6.3.5/po/pa/
+print-manager-6.3.5/po/pa/print-manager.po
+print-manager-6.3.5/po/pa/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/pa/kcm_printer_manager.po
+print-manager-6.3.5/po/km/
+print-manager-6.3.5/po/km/print-manager.po
+print-manager-6.3.5/po/km/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ro/
+print-manager-6.3.5/po/ro/print-manager.po
+print-manager-6.3.5/po/ro/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ro/kcm_printer_manager.po
+print-manager-6.3.5/po/de/
+print-manager-6.3.5/po/de/print-manager.po
+print-manager-6.3.5/po/de/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/de/kcm_printer_manager.po
+print-manager-6.3.5/po/is/
+print-manager-6.3.5/po/is/print-manager.po
+print-manager-6.3.5/po/is/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/is/kcm_printer_manager.po
+print-manager-6.3.5/po/id/
+print-manager-6.3.5/po/id/print-manager.po
+print-manager-6.3.5/po/id/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/id/kcm_printer_manager.po
+print-manager-6.3.5/po/tg/
+print-manager-6.3.5/po/tg/print-manager.po
+print-manager-6.3.5/po/tg/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/nds/
+print-manager-6.3.5/po/nds/print-manager.po
+print-manager-6.3.5/po/nds/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ja/
+print-manager-6.3.5/po/ja/print-manager.po
+print-manager-6.3.5/po/ja/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ja/kcm_printer_manager.po
+print-manager-6.3.5/po/ko/
+print-manager-6.3.5/po/ko/print-manager.po
+print-manager-6.3.5/po/ko/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ko/kcm_printer_manager.po
+print-manager-6.3.5/po/hu/
+print-manager-6.3.5/po/hu/print-manager.po
+print-manager-6.3.5/po/hu/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/hu/kcm_printer_manager.po
+print-manager-6.3.5/po/sa/
+print-manager-6.3.5/po/sa/print-manager.po
+print-manager-6.3.5/po/sa/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/sa/kcm_printer_manager.po
+print-manager-6.3.5/po/ru/
+print-manager-6.3.5/po/ru/print-manager.po
+print-manager-6.3.5/po/ru/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ru/kcm_printer_manager.po
+print-manager-6.3.5/po/kk/
+print-manager-6.3.5/po/kk/print-manager.po
+print-manager-6.3.5/po/kk/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/sl/
+print-manager-6.3.5/po/sl/print-manager.po
+print-manager-6.3.5/po/sl/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/sl/kcm_printer_manager.po
+print-manager-6.3.5/po/ta/
+print-manager-6.3.5/po/ta/print-manager.po
+print-manager-6.3.5/po/ta/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/it/
+print-manager-6.3.5/po/it/print-manager.po
+print-manager-6.3.5/po/it/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/it/kcm_printer_manager.po
+print-manager-6.3.5/po/mr/
+print-manager-6.3.5/po/mr/print-manager.po
+print-manager-6.3.5/po/mr/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ga/
+print-manager-6.3.5/po/ga/print-manager.po
+print-manager-6.3.5/po/ga/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/pt_BR/
+print-manager-6.3.5/po/pt_BR/print-manager.po
+print-manager-6.3.5/po/pt_BR/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/pt_BR/kcm_printer_manager.po
+print-manager-6.3.5/po/tr/
+print-manager-6.3.5/po/tr/print-manager.po
+print-manager-6.3.5/po/tr/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/tr/kcm_printer_manager.po
+print-manager-6.3.5/po/et/
+print-manager-6.3.5/po/et/print-manager.po
+print-manager-6.3.5/po/et/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ca/
+print-manager-6.3.5/po/ca/print-manager.po
+print-manager-6.3.5/po/ca/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ca/kcm_printer_manager.po
+print-manager-6.3.5/po/nl/
+print-manager-6.3.5/po/nl/print-manager.po
+print-manager-6.3.5/po/nl/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/nl/kcm_printer_manager.po
+print-manager-6.3.5/po/pl/
+print-manager-6.3.5/po/pl/print-manager.po
+print-manager-6.3.5/po/pl/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/pl/kcm_printer_manager.po
+print-manager-6.3.5/po/sr@ijekavianlatin/
+print-manager-6.3.5/po/sr@ijekavianlatin/print-manager.po
+print-manager-6.3.5/po/sr@ijekavianlatin/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/nb/
+print-manager-6.3.5/po/nb/print-manager.po
+print-manager-6.3.5/po/nb/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/nb/kcm_printer_manager.po
+print-manager-6.3.5/po/eu/
+print-manager-6.3.5/po/eu/print-manager.po
+print-manager-6.3.5/po/eu/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/eu/kcm_printer_manager.po
+print-manager-6.3.5/po/cs/
+print-manager-6.3.5/po/cs/print-manager.po
+print-manager-6.3.5/po/cs/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/cs/kcm_printer_manager.po
+print-manager-6.3.5/po/az/
+print-manager-6.3.5/po/az/print-manager.po
+print-manager-6.3.5/po/az/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/fr/
+print-manager-6.3.5/po/fr/print-manager.po
+print-manager-6.3.5/po/fr/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/fr/kcm_printer_manager.po
+print-manager-6.3.5/po/zh_TW/
+print-manager-6.3.5/po/zh_TW/print-manager.po
+print-manager-6.3.5/po/zh_TW/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/zh_TW/kcm_printer_manager.po
+print-manager-6.3.5/po/uk/
+print-manager-6.3.5/po/uk/print-manager.po
+print-manager-6.3.5/po/uk/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/uk/kcm_printer_manager.po
+print-manager-6.3.5/po/sv/
+print-manager-6.3.5/po/sv/print-manager.po
+print-manager-6.3.5/po/sv/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/sv/kcm_printer_manager.po
+print-manager-6.3.5/po/ug/
+print-manager-6.3.5/po/ug/print-manager.po
+print-manager-6.3.5/po/ug/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/en_GB/
+print-manager-6.3.5/po/en_GB/print-manager.po
+print-manager-6.3.5/po/en_GB/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/en_GB/kcm_printer_manager.po
+print-manager-6.3.5/po/da/
+print-manager-6.3.5/po/da/print-manager.po
+print-manager-6.3.5/po/da/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/da/kcm_printer_manager.po
+print-manager-6.3.5/po/es/
+print-manager-6.3.5/po/es/print-manager.po
+print-manager-6.3.5/po/es/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/es/kcm_printer_manager.po
+print-manager-6.3.5/po/ast/
+print-manager-6.3.5/po/ast/print-manager.po
+print-manager-6.3.5/po/ast/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ast/kcm_printer_manager.po
+print-manager-6.3.5/po/ia/
+print-manager-6.3.5/po/ia/print-manager.po
+print-manager-6.3.5/po/ia/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/ia/kcm_printer_manager.po
+print-manager-6.3.5/po/lt/
+print-manager-6.3.5/po/lt/print-manager.po
+print-manager-6.3.5/po/lt/plasma_applet_org.kde.plasma.printmanager.po
+print-manager-6.3.5/po/lt/kcm_printer_manager.po
+print-manager-6.3.5/README.md
+print-manager-6.3.5/org.kde.print-manager.metainfo.xml
+print-manager-6.3.5/config.h.cmake
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6ConfigWidgets: /usr/lib64/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Found KF6Kirigami: /usr/lib64/cmake/KF6Kirigami/KF6KirigamiConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6Notifications: /usr/lib/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.14.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.10.0") found components: Config ConfigWidgets CoreAddons DBusAddons IconThemes I18n KCMUtils Kirigami KIO Notifications WidgetsAddons WindowSystem
+CMake Warning at CMakeLists.txt:60 (find_package):
+  By not providing "FindPackageKitQt6.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "PackageKitQt6", but CMake did not find one.
+
+  Could not find a package configuration file provided by "PackageKitQt6"
+  with any of the following names:
+
+    PackageKitQt6Config.cmake
+    packagekitqt6-config.cmake
+
+  Add the installation prefix of "PackageKitQt6" to CMAKE_PREFIX_PATH or set
+  "PackageKitQt6_DIR" to a directory containing one of the above files.  If
+  "PackageKitQt6" provides a separate development package or SDK, be sure it
+  has been installed.
+
+
+-- Found Cups: /usr/lib64/libcups.so (found suitable version "2.4.12", minimum required is "2.4")
+-- Detected CUPS version: 2.4.12
+-- Building with libcups2
+-- Could NOT find CupsSmb (missing: CupsSmb_BACKEND) 
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6DBus (required version >= 6.7.0)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6Widgets (required version >= 6.7.0)
+ * Qt6QuickTools (required version >= 6.8.3)
+ * Qt6Quick (required version >= 6.7.0)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0)
+ * Qt6 (required version >= 6.7.0)
+ * KF6Config (required version >= 6.14.0)
+ * KF6DBusAddons (required version >= 6.10.0)
+ * KF6IconThemes (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.10.0)
+ * KF6ConfigWidgets (required version >= 6.14.0)
+ * KF6KCMUtils (required version >= 6.10.0)
+ * KF6Kirigami (required version >= 6.10.0)
+   Kirigami application UI framework
+ * KF6KIO (required version >= 6.10.0)
+ * KF6Notifications (required version >= 6.10.0)
+ * KF6WidgetsAddons (required version >= 6.10.0)
+ * KF6 (required version >= 6.10.0)
+ * Qt6Qml
+ * Qt6Core (required version >= 6.7.0)
+ * Plasma (required version >= 6.3.5)
+ * Cups (required version >= 2.4)
+
+-- The following features have been disabled:
+
+ * System-config-printer Installation, Automatic installation of '"system-config-printer"' using PackageKit.
+
+-- The following RUNTIME packages have not been found:
+
+ * CupsSmb, SMB backend for CUPS (aka smbspool), <https://samba.org>
+   Required for CUPS to be able to print to printers shared over SMB
+
+-- The following OPTIONAL packages have not been found:
+
+ * PackageKitQt6, Software Manager integration
+   Needed to automatically install the system-config-printer package.
+
+-- Configuring done (2.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/build
+[0/2] Re-checking globbed directories...
+[1/101] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/build/src/kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/kcm_printer_manager.json /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/build/src/kcm/kcm_printer_manager.desktop
+[2/101] Generating ts...
+[3/101] Generating mo...
+[4/101] Automatic MOC for target kcupslib
+[5/101] Running AUTOMOC file extraction for target kcupslib
+[6/101] Running rcc for resource qmake_org_kde_plasma_printmanager
+[7/101] Generating ui_SelectMakeModel.h
+[8/101] Running moc --collect-json for target kcupslib
+[9/101] Automatic QML type registration for target kcupslib
+[10/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/kcupslib_autogen/mocs_compilation.cpp.o
+[11/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/.qt/rcc/qrc_qmake_org_kde_plasma_printmanager.cpp.o
+[12/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/kcupslib_log.cpp.o
+[13/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/ProcessRunner.cpp.o
+[14/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/NoSelectionRectDelegate.cpp.o
+[15/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsPasswordDialog.cpp.o
+[16/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/JobSortFilterModel.cpp.o
+[17/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsServer.cpp.o
+[18/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsJob.cpp.o
+[19/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsPrinter.cpp.o
+[20/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KIppRequest.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KIppRequest.cpp: In member function ‘void KIppRequest::addVariantValues(const QVariantMap&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KIppRequest.cpp:108:27: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  108 |         switch (value.type()) {
+      |                 ~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtCore/qmetaobject.h:10,
+                 from /usr/include/qt6/QtCore/QMetaMethod:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsConnection.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KIppRequest.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KIppRequest.cpp:7:
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KIppRequest.cpp: In member function ‘void KIppRequestPrivate::addRawRequestsToIpp(ipp_t*) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KIppRequest.cpp:210:35: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  210 |         switch (request.value.type()) {
+      |                 ~~~~~~~~~~~~~~~~~~^~
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+[21/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsConnection.cpp.o
+[22/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/PPDModel.cpp.o
+[23/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/ClassListWidget.cpp.o
+[24/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/JobModel.cpp.o
+[25/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/kcupslib_qmltyperegistrations.cpp.o
+[26/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/SelectMakeModel.cpp.o
+[27/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/PrinterModel.cpp.o
+[28/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsRequest.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsRequest.cpp: In member function ‘void KCupsRequest::getDevices(int, QStringList, QStringList)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsRequest.cpp:105:27: warning: ‘ipp_status_t cupsGetDevices(http_t*, int, const char*, const char*, cups_device_cb_t, void*)’ is deprecated [-Wdeprecated-declarations]
+  105 |             cupsGetDevices(CUPS_HTTP_DEFAULT, timeout, include, exclude, (cups_device_cb_t)choose_device_cb, this);
+      |             ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsRequest.cpp:13:
+/usr/include/cups/adminutil.h:77:25: note: declared here
+   77 | extern ipp_status_t     cupsGetDevices(http_t *http, int timeout,
+      |                         ^~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsRequest.cpp: In member function ‘void KCupsRequest::getPrinterPPD(const QString&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsRequest.cpp:256:35: warning: ‘const char* cupsGetPPD2(http_t*, const char*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  256 |             filename = cupsGetPPD2(CUPS_HTTP_DEFAULT, qUtf8Printable(printerName));
+      |                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsRequest.cpp:14:
+/usr/include/cups/ppd.h:360:26: note: declared here
+  360 | extern const char       *cupsGetPPD2(http_t *http, const char *name) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                          ^~~~~~~~~~~
+[29/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/DevicesModel.cpp.o
+[30/101] Linking CXX shared library bin/libkcupslib.so.6.3.5
+[31/101] Creating library symlink bin/libkcupslib.so
+[32/101] Automatic MOC for target kcupslibplugin
+[33/101] Building CXX object src/libkcups/CMakeFiles/kcupslibplugin.dir/kcupslibplugin_autogen/mocs_compilation.cpp.o
+[34/101] Automatic MOC for target kde-print-queue
+[35/101] Automatic MOC for target kcm_printer_manager
+[36/101] Generating ui_PrintQueueUi.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/printqueue/PrintQueueUi.ui: Warning: The name 'kseparator' (KSeparator) is already in use, defaulting to 'kseparator1'.
+[37/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/kde-print-queue_autogen/mocs_compilation.cpp.o
+[38/101] Generating qrc_kcm_printer_manager.cpp
+[39/101] Automatic MOC for target kded_printmanager
+[40/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/qrc_kcm_printer_manager.cpp.o
+[41/101] Generating newprinternotificationadaptor.cpp, newprinternotificationadaptor.h
+[42/101] Generating moc_newprinternotificationadaptor.cpp
+[43/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/kded_printmanager_autogen/mocs_compilation.cpp.o
+[44/101] Automatic MOC for target configure-printer
+[45/101] Generating configureprinteradaptor.cpp, configureprinteradaptor.h
+[46/101] Generating moc_configureprinteradaptor.cpp
+[47/101] Generating ui_PrinterOptions.h
+[48/101] Generating ui_PrinterBehavior.h
+[49/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/configure-printer_autogen/mocs_compilation.cpp.o
+[50/101] Automatic MOC for target kde-add-printer
+[51/101] Generating ui_ChooseLpd.h
+[52/101] Generating ui_PageDestinations.h
+[53/101] Generating ui_ChooseSamba.h
+[54/101] Generating ui_ChooseSerial.h
+[55/101] Generating ui_ChooseUri.h
+[56/101] Generating ui_ChooseSocket.h
+[57/101] Generating ui_PageChoosePrinters.h
+[58/101] Generating ui_PageChoosePPD.h
+[59/101] Generating ui_PageAddPrinter.h
+[60/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/kde-add-printer_autogen/mocs_compilation.cpp.o
+[61/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/pmkcm_log.cpp.o
+[62/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/pmkded_log.cpp.o
+[63/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/Debug.cpp.o
+[64/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigurePrinter.cpp.o
+[65/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/main.cpp.o
+[66/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/PrintManagerKded.cpp.o
+[67/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/kcm_printer_manager_autogen/mocs_compilation.cpp.o
+[68/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterPage.cpp.o
+[69/101] Building CXX object src/libkcups/CMakeFiles/kcupslibplugin.dir/kcupslibplugin_org_kde_plasma_printmanagerPlugin.cpp.o
+[70/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/main.cpp.o
+[71/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/main.cpp.o
+[72/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/PrintQueue.cpp.o
+[73/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/AddPrinter.cpp.o
+[74/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigureDialog.cpp.o
+[75/101] Linking CXX shared module bin/org/kde/plasma/printmanager/libkcupslibplugin.so
+[76/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterBehavior.cpp.o
+[77/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/GenericPage.cpp.o
+[78/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/configureprinteradaptor.cpp.o
+[79/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterOptions.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp: In member function ‘void PrinterOptions::reloadPPD()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:94:24: warning: ‘ppd_file_t* ppdOpenFile(const char*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+   94 |     m_ppd = ppdOpenFile(qUtf8Printable(m_filename));
+      |             ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.h:11,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:13:
+/usr/include/cups/ppd.h:390:26: note: declared here
+  390 | extern ppd_file_t       *ppdOpenFile(const char *filename) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                          ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:102:16: warning: ‘int ppdLocalize(ppd_file_t*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  102 |     ppdLocalize(m_ppd);
+      |     ~~~~~~~~~~~^~~~~~~
+/usr/include/cups/ppd.h:435:25: note: declared here
+  435 | extern int              ppdLocalize(ppd_file_t *ppd) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                         ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:104:20: warning: ‘void ppdMarkDefaults(ppd_file_t*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  104 |     ppdMarkDefaults(m_ppd);
+      |     ~~~~~~~~~~~~~~~^~~~~~~
+/usr/include/cups/ppd.h:385:25: note: declared here
+  385 | extern void             ppdMarkDefaults(ppd_file_t *ppd) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                         ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:142:35: warning: ‘ppd_attr_t* ppdFindAttr(ppd_file_t*, const char*, const char*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  142 |         || ((ppdattr = ppdFindAttr(m_ppd, "cupsCommands", nullptr)) != nullptr && ppdattr->value && strstr(ppdattr->value, "AutoConfigure"))) {
+      |                        ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/cups/ppd.h:400:26: note: declared here
+  400 | extern ppd_attr_t       *ppdFindAttr(ppd_file_t *ppd, const char *name,
+      |                          ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp: In destructor ‘virtual PrinterOptions::~PrinterOptions()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:372:17: warning: ‘void ppdClose(ppd_file_t*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  372 |         ppdClose(m_ppd);
+      |         ~~~~~~~~^~~~~~~
+/usr/include/cups/ppd.h:365:25: note: declared here
+  365 | extern void             ppdClose(ppd_file_t *ppd) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                         ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp: In member function ‘char* PrinterOptions::get_option_value(ppd_file_t*, const char*, char*, size_t) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:451:75: warning: ‘ppd_coption_t* ppdFindCustomOption(ppd_file_t*, const char*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  451 |     } else if (strcasecmp(val, "Custom") || (coption = ppdFindCustomOption(ppd, name)) == nullptr) {
+      |                                                        ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/usr/include/cups/ppd.h:425:26: note: declared here
+  425 | extern ppd_coption_t    *ppdFindCustomOption(ppd_file_t *ppd,
+      |                          ^~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:492:37: warning: ‘ppd_cparam_t* ppdFirstCustomParam(ppd_coption_t*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  492 |         cparam = ppdFirstCustomParam(coption);
+      |                  ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/usr/include/cups/ppd.h:430:26: note: declared here
+  430 | extern ppd_cparam_t     *ppdFirstCustomParam(ppd_coption_t *opt)
+      |                          ^~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:555:42: warning: ‘ppd_cparam_t* ppdFirstCustomParam(ppd_coption_t*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  555 |         for (cparam = ppdFirstCustomParam(coption); cparam; cparam = ppdNextCustomParam(coption)) {
+      |                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/usr/include/cups/ppd.h:430:26: note: declared here
+  430 | extern ppd_cparam_t     *ppdFirstCustomParam(ppd_coption_t *opt)
+      |                          ^~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:555:88: warning: ‘ppd_cparam_t* ppdNextCustomParam(ppd_coption_t*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  555 |         for (cparam = ppdFirstCustomParam(coption); cparam; cparam = ppdNextCustomParam(coption)) {
+      |                                                                      ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/usr/include/cups/ppd.h:433:26: note: declared here
+  433 | extern ppd_cparam_t     *ppdNextCustomParam(ppd_coption_t *opt) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:528:30: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  528 |             for (uval = val; *uval; ++uval) {
+      |                              ^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:533:9: note: here
+  533 |         case PPD_CUSTOM_PASSWORD:
+      |         ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:600:34: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  600 |                 for (uval = val; *uval; uval++) {
+      |                                  ^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:605:13: note: here
+  605 |             case PPD_CUSTOM_PASSWORD:
+      |             ^~~~
+[80/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/NewPrinterNotification.cpp.o
+[81/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/PrintQueueUi.cpp.o
+[82/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/newprinternotificationadaptor.cpp.o
+[83/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigurePrinterInterface.cpp.o
+[84/101] Linking CXX shared module bin/printmanager.so
+[85/101] Linking CXX executable bin/kde-print-queue
+[86/101] Linking CXX executable bin/configure-printer
+[87/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/kde-add-printer_log.cpp.o
+[88/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseSerial.cpp.o
+[89/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageChoosePrinters.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp: In member function ‘virtual bool PageChoosePrinters::canProceed() const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp:68:51: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+   68 |     return ui->membersLV->selectedPrinters().count() > 0;
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
+                 from /usr/include/qt6/QtCore/qhash.h:10,
+                 from /usr/include/qt6/QtCore/QHash:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/GenericPage.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp:7:
+/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
+  195 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+[90/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/AddPrinterAssistant.cpp.o
+[91/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseLpd.cpp.o
+[92/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/printermanager.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/printermanager.cpp: In lambda function:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/printermanager.cpp:279:30: warning: ‘ppd_file_t* ppdOpenFile(const char*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  279 |             ppd = ppdOpenFile(qUtf8Printable(filename));
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/printermanager.cpp:28:
+/usr/include/cups/ppd.h:390:26: note: declared here
+  390 | extern ppd_file_t       *ppdOpenFile(const char *filename) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                          ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/printermanager.cpp:289:20: warning: ‘int ppdLocalize(ppd_file_t*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  289 |         ppdLocalize(ppd);
+      |         ~~~~~~~~~~~^~~~~
+/usr/include/cups/ppd.h:435:25: note: declared here
+  435 | extern int              ppdLocalize(ppd_file_t *ppd) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                         ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/printermanager.cpp:291:24: warning: ‘void ppdMarkDefaults(ppd_file_t*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  291 |         ppdMarkDefaults(ppd);
+      |         ~~~~~~~~~~~~~~~^~~~~
+/usr/include/cups/ppd.h:385:25: note: declared here
+  385 | extern void             ppdMarkDefaults(ppd_file_t *ppd) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
+      |                         ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/printermanager.cpp:337:39: warning: ‘ppd_attr_t* ppdFindAttr(ppd_file_t*, const char*, const char*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
+  337 |             || ((ppdattr = ppdFindAttr(ppd, "cupsCommands", nullptr)) != nullptr && ppdattr->value && strstr(ppdattr->value, "AutoConfigure"))) {
+      |                            ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/cups/ppd.h:400:26: note: declared here
+  400 | extern ppd_attr_t       *ppdFindAttr(ppd_file_t *ppd, const char *name,
+      |                          ^~~~~~~~~~~
+[93/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageAddPrinter.cpp.o
+[94/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseUri.cpp.o
+[95/101] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_printer_manager.so
+[96/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageDestinations.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.cpp: In member function ‘void PageDestinations::deviceChanged()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.cpp:158:29: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  158 |         } else if (uris.type() == QVariant::StringList) {
+      |                    ~~~~~~~~~^~
+In file included from /usr/include/qt6/QtCore/QVariant:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/GenericPage.h:11,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.cpp:7:
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.cpp: In member function ‘QVariantMap PageDestinations::selectedItemValues() const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.cpp:280:39: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  280 |         if (uris.isNull() || uris.type() == QVariant::StringList) {
+      |                              ~~~~~~~~~^~
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.cpp:281:26: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
+  281 |             if (uris.type() == QVariant::StringList) {
+      |                 ~~~~~~~~~^~
+/usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
+  432 |     Type type() const
+      |          ^~~~
+[97/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseSocket.cpp.o
+[98/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseSamba.cpp.o
+[99/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageChoosePPD.cpp.o
+[100/101] Linking CXX executable bin/kde-add-printer
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/metainfo/org.kde.print-manager.metainfo.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/qml/org/kde/plasma/printmanager/libkcupslibplugin.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/qml/org/kde/plasma/printmanager/libkcupslibplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/qml/org/kde/plasma/printmanager/qmldir
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/qml/org/kde/plasma/printmanager/kcupslib.qmltypes
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/qml/org/kde/plasma/printmanager/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/libkcupslib.so.6.3.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/bin/configure-printer
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/bin/configure-printer" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/applications/org.kde.ConfigurePrinter.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/bin/kde-add-printer
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/bin/kde-add-printer" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/applications/org.kde.kde-add-printer.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_printer_manager.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_printer_manager.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/applications/kcm_printer_manager.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/bin/kde-print-queue
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/bin/kde-print-queue" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/applications/org.kde.PrintQueue.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/plugins/kf6/kded/printmanager.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/lib64/qt6/plugins/kf6/kded/printmanager.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/knotifications6/printmanager.notifyrc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager/metadata.json
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/PrinterDelegate.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/main.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/FullRepresentation.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/config
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/config/main.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/metainfo/org.kde.plasma.printmanager.appdata.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/qlogging-categories6/pmlogs.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/da/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/da/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/da/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/cs/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/cs/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/cs/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ja/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ja/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ja/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@ijekavian/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/de/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/de/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/de/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/el/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/el/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nn/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nn/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nn/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hi/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hi/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hi/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt_BR/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt_BR/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt_BR/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/lt/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/lt/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/lt/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/be/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/be/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/be/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pa/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pa/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pa/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sl/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sl/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sl/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ta/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ta/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ro/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ro/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ro/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bs/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bs/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/is/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/is/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/is/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/kk/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/kk/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@latin/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sr@latin/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/he/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/he/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/he/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_TW/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_TW/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_TW/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tg/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tg/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pl/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pl/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pl/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/km
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/km/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/km/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/km/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/pt/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/az/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/az/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tr/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tr/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fr/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fr/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fr/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ast/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ast/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ast/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ka/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ka/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ka/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hsb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hsb/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/gl/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/gl/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ia/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ia/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ia/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hu/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hu/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/hu/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eo/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eo/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eo/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bg/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bg/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/bg/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ga/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ga/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/uk/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/uk/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/uk/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/id/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/id/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/id/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/en_GB/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/en_GB/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/en_GB/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_CN/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_CN/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/zh_CN/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nl/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nl/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nl/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sa/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sa/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sa/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fi/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fi/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/fi/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ko/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ko/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ko/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ru/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ru/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ru/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca@valencia/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nb/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nb/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nb/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/es/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/es/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/es/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eu/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eu/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/eu/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/et/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/et/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/it/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/it/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/it/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ar/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ar/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ar/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nds/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/nds/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/mr/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/mr/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ug/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/ug/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sk/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sk/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sk/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sv/LC_MESSAGES/kcm_printer_manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sv/LC_MESSAGES/print-manager.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/locale/sv/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/print-manager/print-manager.info: No such file or directory
+cups
+extra-cmake-modules
+kcmutils
+kconfig
+kconfigwidgets
+kcoreaddons
+kdbusaddons
+ki18n
+kiconthemes
+kio
+kirigami-addons
+knotifications
+kwidgetsaddons
+kwindowsystem
+libplasma
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/print-manager/print-manager-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/configure-printer
+usr/bin/kde-add-printer
+usr/bin/kde-print-queue
+usr/doc/
+usr/doc/print-manager-6.3.5/
+usr/doc/print-manager-6.3.5/README.md
+usr/doc/print-manager-6.3.5/print-manager.ini
+usr/doc/print-manager-6.3.5/slack-required
+usr/lib64/
+usr/lib64/libkcupslib.so.6.3.5
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/kf6/
+usr/lib64/qt6/plugins/kf6/kded/
+usr/lib64/qt6/plugins/kf6/kded/printmanager.so
+usr/lib64/qt6/plugins/plasma/
+usr/lib64/qt6/plugins/plasma/kcms/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_printer_manager.so
+usr/lib64/qt6/qml/
+usr/lib64/qt6/qml/org/
+usr/lib64/qt6/qml/org/kde/
+usr/lib64/qt6/qml/org/kde/plasma/
+usr/lib64/qt6/qml/org/kde/plasma/printmanager/
+usr/lib64/qt6/qml/org/kde/plasma/printmanager/kcupslib.qmltypes
+usr/lib64/qt6/qml/org/kde/plasma/printmanager/kde-qmlmodule.version
+usr/lib64/qt6/qml/org/kde/plasma/printmanager/libkcupslibplugin.so
+usr/lib64/qt6/qml/org/kde/plasma/printmanager/qmldir
+usr/share/
+usr/share/applications/
+usr/share/applications/kcm_printer_manager.desktop
+usr/share/applications/org.kde.ConfigurePrinter.desktop
+usr/share/applications/org.kde.PrintQueue.desktop
+usr/share/applications/org.kde.kde-add-printer.desktop
+usr/share/knotifications6/
+usr/share/knotifications6/printmanager.notifyrc
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ar/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ar/LC_MESSAGES/print-manager.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ast/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ast/LC_MESSAGES/print-manager.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/az/LC_MESSAGES/print-manager.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/be/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/be/LC_MESSAGES/print-manager.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/bg/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/bg/LC_MESSAGES/print-manager.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/bs/LC_MESSAGES/print-manager.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ca/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ca/LC_MESSAGES/print-manager.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/print-manager.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/cs/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/cs/LC_MESSAGES/print-manager.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/da/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/da/LC_MESSAGES/print-manager.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/de/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/de/LC_MESSAGES/print-manager.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/el/LC_MESSAGES/print-manager.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/en_GB/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/en_GB/LC_MESSAGES/print-manager.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/eo/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/eo/LC_MESSAGES/print-manager.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/es/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/es/LC_MESSAGES/print-manager.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/et/LC_MESSAGES/print-manager.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/eu/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/eu/LC_MESSAGES/print-manager.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/fi/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/fi/LC_MESSAGES/print-manager.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/fr/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/fr/LC_MESSAGES/print-manager.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ga/LC_MESSAGES/print-manager.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/gl/LC_MESSAGES/print-manager.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/he/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/he/LC_MESSAGES/print-manager.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/hi/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/hi/LC_MESSAGES/print-manager.mo
+usr/share/locale/hsb/
+usr/share/locale/hsb/LC_MESSAGES/
+usr/share/locale/hsb/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/hu/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/hu/LC_MESSAGES/print-manager.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ia/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ia/LC_MESSAGES/print-manager.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/id/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/id/LC_MESSAGES/print-manager.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/is/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/is/LC_MESSAGES/print-manager.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/it/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/it/LC_MESSAGES/print-manager.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ja/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ja/LC_MESSAGES/print-manager.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ka/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ka/LC_MESSAGES/print-manager.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/kk/LC_MESSAGES/print-manager.mo
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/km/LC_MESSAGES/print-manager.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ko/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ko/LC_MESSAGES/print-manager.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/lt/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/lt/LC_MESSAGES/print-manager.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/mr/LC_MESSAGES/print-manager.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/nb/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/nb/LC_MESSAGES/print-manager.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/nds/LC_MESSAGES/print-manager.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/nl/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/nl/LC_MESSAGES/print-manager.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/nn/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/nn/LC_MESSAGES/print-manager.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/pa/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/pa/LC_MESSAGES/print-manager.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/pl/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/pl/LC_MESSAGES/print-manager.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/pt/LC_MESSAGES/print-manager.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/pt_BR/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/pt_BR/LC_MESSAGES/print-manager.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ro/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ro/LC_MESSAGES/print-manager.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/ru/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ru/LC_MESSAGES/print-manager.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/sa/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/sa/LC_MESSAGES/print-manager.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/sk/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/sk/LC_MESSAGES/print-manager.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/sl/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/sl/LC_MESSAGES/print-manager.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/sr/LC_MESSAGES/print-manager.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/sr@ijekavian/LC_MESSAGES/print-manager.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/print-manager.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/sr@latin/LC_MESSAGES/print-manager.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/sv/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/sv/LC_MESSAGES/print-manager.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ta/LC_MESSAGES/print-manager.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/tg/LC_MESSAGES/print-manager.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/tr/LC_MESSAGES/print-manager.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/ug/LC_MESSAGES/print-manager.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/uk/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/uk/LC_MESSAGES/print-manager.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/zh_CN/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/zh_CN/LC_MESSAGES/print-manager.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kcm_printer_manager.mo
+usr/share/locale/zh_TW/LC_MESSAGES/plasma_applet_org.kde.plasma.printmanager.mo
+usr/share/locale/zh_TW/LC_MESSAGES/print-manager.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.plasma.printmanager.appdata.xml
+usr/share/metainfo/org.kde.print-manager.metainfo.xml
+usr/share/plasma/
+usr/share/plasma/plasmoids/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/config/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/config/main.xml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/FullRepresentation.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/PrinterDelegate.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/contents/ui/main.qml
+usr/share/plasma/plasmoids/org.kde.plasma.printmanager/metadata.json
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/pmlogs.categories
+
+Slackware package /tmp/print-manager/print-manager-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for print-manager-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/print-manager/print-manager-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/print-manager/print-manager-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/print-manager/print-manager-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in print-manager.tar.lz4 format.
+/tmp/print-manager /tmp/print-manager
+/tmp/print-manager
+BIN_NAME
+README
+makepkg-print-manager.log
+print-manager-6.3.5-x86_64-1_rtz.tlz
+print-manager-6.3.5-x86_64-1_rtz.tlz.md5
+print-manager-6.3.5-x86_64-1_rtz.tlz.so.file
+print-manager-6.3.5-x86_64-1_rtz.tlz.txt
+print-manager.dep
+print-manager build finished. Procced to installation...
+
++==================================================================================================================+
+| Upgrading print-manager-6.3.5-x86_64-1_rtz package using /tmp/print-manager/print-manager-6.3.5-x86_64-1_rtz.tlz |
++==================================================================================================================+
+
+Pre-installing package print-manager-6.3.5-x86_64-1_rtz...
+Removing package: print-manager-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,23:04:12
+Installing package print-manager-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# print-manager (managing print jobs and printers)
+#
+# A tool for managing print jobs and printers
+#
+# https://www.kde.org/applications/utilities/
+Executing install script for print-manager-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package print-manager-6.3.5-x86_64-1_rtz.tlz installed.
+Package print-manager-6.3.5-x86_64-1_rtz upgraded with new package /tmp/print-manager/print-manager-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'print-manager-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 46 seconds.

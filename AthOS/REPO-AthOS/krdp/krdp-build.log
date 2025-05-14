@@ -1,0 +1,1758 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules plasma-wayland-protocols kcmutils kconfig kcoreaddons  kcrash ki18n kirigami kpipewire kstatusnotifieritem
+extra-cmake-modules is already installed!
+plasma-wayland-protocols is already installed!
+kcmutils is already installed!
+kconfig is already installed!
+kcoreaddons is already installed!
+kcrash is already installed!
+ki18n is already installed!
+kirigami is already installed!
+kpipewire is already installed!
+kstatusnotifieritem is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:34:28--  https://download.kde.org/stable/plasma/6.3.5/krdp-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/krdp-6.3.5.tar.xz [following]
+--2025-05-10 22:34:28--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/krdp-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 101288 (99K) [application/octet-stream]
+Saving to: ‘krdp-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 50% 1.34M 0s
+    50K .......... .......... .......... .......... ........  100% 1.51M=0.07s
+
+2025-05-10 22:34:28 (1.42 MB/s) - ‘krdp-6.3.5.tar.xz’ saved [101288/101288]
+
+Found file: krdp-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+krdp-6.3.5/
+krdp-6.3.5/KRdpConfig.cmake.in
+krdp-6.3.5/LICENSES/
+krdp-6.3.5/LICENSES/LGPL-2.1-only.txt
+krdp-6.3.5/LICENSES/LGPL-3.0-only.txt
+krdp-6.3.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+krdp-6.3.5/LICENSES/GPL-2.0-or-later.txt
+krdp-6.3.5/LICENSES/CC0-1.0.txt
+krdp-6.3.5/LICENSES/BSD-2-Clause.txt
+krdp-6.3.5/LICENSES/LGPL-2.0-or-later.txt
+krdp-6.3.5/server/
+krdp-6.3.5/server/org.kde.krdp.desktop.cmake
+krdp-6.3.5/server/Messages.sh
+krdp-6.3.5/server/SessionController.cpp
+krdp-6.3.5/server/SessionController.h
+krdp-6.3.5/server/app-org.kde.krdpserver.service.in
+krdp-6.3.5/server/krdpserversettings.kcfg
+krdp-6.3.5/server/CMakeLists.txt
+krdp-6.3.5/server/main.cpp
+krdp-6.3.5/.gitlab-ci.yml
+krdp-6.3.5/.gitignore
+krdp-6.3.5/.kde-ci.yml
+krdp-6.3.5/autotests/
+krdp-6.3.5/autotests/CMakeLists.txt
+krdp-6.3.5/src/
+krdp-6.3.5/src/Server.h
+krdp-6.3.5/src/xdp_dbus_remotedesktop_interface.xml
+krdp-6.3.5/src/Cursor.h
+krdp-6.3.5/src/Server.cpp
+krdp-6.3.5/src/PortalSession.h
+krdp-6.3.5/src/Clipboard.cpp
+krdp-6.3.5/src/screencasting.cpp
+krdp-6.3.5/src/PortalSession_p.h
+krdp-6.3.5/src/InputHandler.cpp
+krdp-6.3.5/src/PlasmaScreencastV1Session.h
+krdp-6.3.5/src/VideoStream.cpp
+krdp-6.3.5/src/xdp_dbus_screencast_interface.xml
+krdp-6.3.5/src/VideoStream.h
+krdp-6.3.5/src/AbstractSession.cpp
+krdp-6.3.5/src/kcm/
+krdp-6.3.5/src/kcm/Messages.sh
+krdp-6.3.5/src/kcm/kcmkrdpserver.cpp
+krdp-6.3.5/src/kcm/kcm_krdpserver.json
+krdp-6.3.5/src/kcm/ui/
+krdp-6.3.5/src/kcm/ui/DeleteUserModal.qml
+krdp-6.3.5/src/kcm/ui/EditUserModal.qml
+krdp-6.3.5/src/kcm/ui/main.qml
+krdp-6.3.5/src/kcm/ui/KeychainErrorDialog.qml
+krdp-6.3.5/src/kcm/krdpserversettings.kcfg
+krdp-6.3.5/src/kcm/CMakeLists.txt
+krdp-6.3.5/src/kcm/kcm_krdpserver.json.license
+krdp-6.3.5/src/kcm/kcmkrdpserver.h
+krdp-6.3.5/src/Cursor.cpp
+krdp-6.3.5/src/RdpConnection.h
+krdp-6.3.5/src/Clipboard.h
+krdp-6.3.5/src/RdpConnection.cpp
+krdp-6.3.5/src/AbstractSession.h
+krdp-6.3.5/src/NetworkDetection.cpp
+krdp-6.3.5/src/InputHandler.h
+krdp-6.3.5/src/PeerContext.cpp
+krdp-6.3.5/src/PeerContext_p.h
+krdp-6.3.5/src/CMakeLists.txt
+krdp-6.3.5/src/screencasting_p.h
+krdp-6.3.5/src/NetworkDetection.h
+krdp-6.3.5/src/PortalSession.cpp
+krdp-6.3.5/src/PlasmaScreencastV1Session.cpp
+krdp-6.3.5/CMakeLists.txt
+krdp-6.3.5/examples/
+krdp-6.3.5/examples/streamer/
+krdp-6.3.5/examples/streamer/org.kde.krdp.desktop.cmake
+krdp-6.3.5/examples/streamer/CMakeLists.txt
+krdp-6.3.5/examples/streamer/main.cpp
+krdp-6.3.5/examples/CMakeLists.txt
+krdp-6.3.5/po/
+krdp-6.3.5/po/gl/
+krdp-6.3.5/po/gl/krdpserver.po
+krdp-6.3.5/po/gl/kcm_krdpserver.po
+krdp-6.3.5/po/eo/
+krdp-6.3.5/po/eo/krdpserver.po
+krdp-6.3.5/po/eo/kcm_krdpserver.po
+krdp-6.3.5/po/he/
+krdp-6.3.5/po/he/krdpserver.po
+krdp-6.3.5/po/he/kcm_krdpserver.po
+krdp-6.3.5/po/zh_CN/
+krdp-6.3.5/po/zh_CN/krdpserver.po
+krdp-6.3.5/po/zh_CN/kcm_krdpserver.po
+krdp-6.3.5/po/hi/
+krdp-6.3.5/po/hi/krdpserver.po
+krdp-6.3.5/po/hi/kcm_krdpserver.po
+krdp-6.3.5/po/bg/
+krdp-6.3.5/po/bg/krdpserver.po
+krdp-6.3.5/po/bg/kcm_krdpserver.po
+krdp-6.3.5/po/lv/
+krdp-6.3.5/po/lv/krdpserver.po
+krdp-6.3.5/po/lv/kcm_krdpserver.po
+krdp-6.3.5/po/ca@valencia/
+krdp-6.3.5/po/ca@valencia/krdpserver.po
+krdp-6.3.5/po/ca@valencia/kcm_krdpserver.po
+krdp-6.3.5/po/nn/
+krdp-6.3.5/po/nn/krdpserver.po
+krdp-6.3.5/po/nn/kcm_krdpserver.po
+krdp-6.3.5/po/fi/
+krdp-6.3.5/po/fi/krdpserver.po
+krdp-6.3.5/po/fi/kcm_krdpserver.po
+krdp-6.3.5/po/ka/
+krdp-6.3.5/po/ka/krdpserver.po
+krdp-6.3.5/po/ka/kcm_krdpserver.po
+krdp-6.3.5/po/ar/
+krdp-6.3.5/po/ar/krdpserver.po
+krdp-6.3.5/po/ar/kcm_krdpserver.po
+krdp-6.3.5/po/sk/
+krdp-6.3.5/po/sk/krdpserver.po
+krdp-6.3.5/po/sk/kcm_krdpserver.po
+krdp-6.3.5/po/pa/
+krdp-6.3.5/po/pa/krdpserver.po
+krdp-6.3.5/po/pa/kcm_krdpserver.po
+krdp-6.3.5/po/de/
+krdp-6.3.5/po/de/krdpserver.po
+krdp-6.3.5/po/de/kcm_krdpserver.po
+krdp-6.3.5/po/ko/
+krdp-6.3.5/po/ko/krdpserver.po
+krdp-6.3.5/po/ko/kcm_krdpserver.po
+krdp-6.3.5/po/hu/
+krdp-6.3.5/po/hu/krdpserver.po
+krdp-6.3.5/po/hu/kcm_krdpserver.po
+krdp-6.3.5/po/sa/
+krdp-6.3.5/po/sa/krdpserver.po
+krdp-6.3.5/po/sa/kcm_krdpserver.po
+krdp-6.3.5/po/ru/
+krdp-6.3.5/po/ru/krdpserver.po
+krdp-6.3.5/po/ru/kcm_krdpserver.po
+krdp-6.3.5/po/sl/
+krdp-6.3.5/po/sl/krdpserver.po
+krdp-6.3.5/po/sl/kcm_krdpserver.po
+krdp-6.3.5/po/it/
+krdp-6.3.5/po/it/krdpserver.po
+krdp-6.3.5/po/it/kcm_krdpserver.po
+krdp-6.3.5/po/pt_BR/
+krdp-6.3.5/po/pt_BR/krdpserver.po
+krdp-6.3.5/po/pt_BR/kcm_krdpserver.po
+krdp-6.3.5/po/tr/
+krdp-6.3.5/po/tr/krdpserver.po
+krdp-6.3.5/po/tr/kcm_krdpserver.po
+krdp-6.3.5/po/ca/
+krdp-6.3.5/po/ca/krdpserver.po
+krdp-6.3.5/po/ca/kcm_krdpserver.po
+krdp-6.3.5/po/nl/
+krdp-6.3.5/po/nl/krdpserver.po
+krdp-6.3.5/po/nl/kcm_krdpserver.po
+krdp-6.3.5/po/pl/
+krdp-6.3.5/po/pl/krdpserver.po
+krdp-6.3.5/po/pl/kcm_krdpserver.po
+krdp-6.3.5/po/eu/
+krdp-6.3.5/po/eu/krdpserver.po
+krdp-6.3.5/po/eu/kcm_krdpserver.po
+krdp-6.3.5/po/cs/
+krdp-6.3.5/po/cs/krdpserver.po
+krdp-6.3.5/po/cs/kcm_krdpserver.po
+krdp-6.3.5/po/fr/
+krdp-6.3.5/po/fr/krdpserver.po
+krdp-6.3.5/po/fr/kcm_krdpserver.po
+krdp-6.3.5/po/zh_TW/
+krdp-6.3.5/po/zh_TW/krdpserver.po
+krdp-6.3.5/po/zh_TW/kcm_krdpserver.po
+krdp-6.3.5/po/uk/
+krdp-6.3.5/po/uk/krdpserver.po
+krdp-6.3.5/po/uk/kcm_krdpserver.po
+krdp-6.3.5/po/sv/
+krdp-6.3.5/po/sv/krdpserver.po
+krdp-6.3.5/po/sv/kcm_krdpserver.po
+krdp-6.3.5/po/en_GB/
+krdp-6.3.5/po/en_GB/krdpserver.po
+krdp-6.3.5/po/en_GB/kcm_krdpserver.po
+krdp-6.3.5/po/es/
+krdp-6.3.5/po/es/krdpserver.po
+krdp-6.3.5/po/es/kcm_krdpserver.po
+krdp-6.3.5/po/ia/
+krdp-6.3.5/po/ia/krdpserver.po
+krdp-6.3.5/po/ia/kcm_krdpserver.po
+krdp-6.3.5/README.md
+krdp-6.3.5/.flatpak-manifest.yml
+krdp-6.3.5/README.md.license
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Wayland_Client: /usr/lib64/libwayland-client.so (found version "1.23.1")
+-- Found Wayland_Server: /usr/lib64/libwayland-server.so (found version "1.23.1")
+-- Found Wayland_Cursor: /usr/lib64/libwayland-cursor.so (found version "1.23.1")
+-- Found Wayland_Egl: /usr/lib64/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so;/usr/lib64/libwayland-cursor.so;/usr/lib64/libwayland-egl.so (found suitable version "1.23.1", minimum required is "1.15")
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6StatusNotifierItem: /usr/lib64/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemConfig.cmake (found version "6.14.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.10.0") found components: Config DBusAddons KCMUtils I18n CoreAddons StatusNotifierItem Crash
+-- Found XKB: /usr/lib64/libxkbcommon.so (found version "1.9.2")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Qt6QuickTools (required version >= 6.8.3)
+ * OpenGL
+ * Qt6Quick (required version >= 6.7.0)
+ * Qt6WaylandScannerTools (required version >= 6.8.3)
+ * Qt6WaylandClient (required version >= 6.7.0)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6 (required version >= 6.7.0)
+ * KF6DBusAddons (required version >= 6.10.0)
+ * KF6Config (required version >= 6.14.0)
+ * KF6KCMUtils (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.10.0)
+ * KF6CoreAddons (required version >= 6.10.0)
+ * KF6StatusNotifierItem (required version >= 6.10.0)
+ * KF6Crash (required version >= 6.10.0)
+ * KF6 (required version >= 6.10.0)
+ * FreeRDP (required version >= 2.10)
+ * WinPR (required version >= 2.10)
+ * FreeRDP-Server (required version >= 2.10)
+ * KPipeWire (required version >= 5.27.80)
+ * XKB, XKB API common to servers and clients., <http://xkbcommon.org>
+ * Qt6Core
+ * Qt6Keychain, Provides support for secure credentials storage, <https://github.com/frankosterfeld/qtkeychain>
+ * PlasmaWaylandProtocols
+
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build
+[0/2] Re-checking globbed directories...
+[1/66] Generating wayland-fake-input-protocol.c
+[2/66] Generating wayland-zkde-screencast-unstable-v1-client-protocol.h
+[3/66] Generating wayland-zkde-screencast-unstable-v1-protocol.c
+[4/66] Generating wayland-fake-input-client-protocol.h
+[5/66] Generating qwayland-zkde-screencast-unstable-v1.cpp
+[6/66] Generating qwayland-fake-input.h
+[7/66] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/src/kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcm_krdpserver.json /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/src/kcm/kcm_krdpserver.desktop
+[8/66] Generating qwayland-zkde-screencast-unstable-v1.h
+[9/66] Generating qwayland-fake-input.cpp
+[10/66] Generating qwayland-wayland.h
+[11/66] Generating wayland-wayland-protocol.c
+[12/66] Generating wayland-wayland-client-protocol.h
+[13/66] Generating qwayland-wayland.cpp
+[14/66] Generating krdpserversettings.h, krdpserversettings.cpp
+[15/66] Generating ts...
+[16/66] Generating mo...
+[17/66] Automatic MOC for target kcm_krdpserver
+[18/66] Generating qrc_kcm_krdpserver.cpp
+[19/66] Building CXX object src/kcm/CMakeFiles/kcm_krdpserver.dir/qrc_kcm_krdpserver.cpp.o
+[20/66] Automatic MOC for target KRdp
+AutoMoc warning
+---------------
+"SRC:/src/AbstractSession.cpp"
+includes the moc file "AbstractSession.moc", but does not contain a Q_OBJECT, Q_GADGET, Q_NAMESPACE, Q_NAMESPACE_EXPORT, Q_GADGET_EXPORT, Q_ENUM_NS, K_PLUGIN_FACTORY, K_PLUGIN_CLASS, K_PLUGIN_FACTORY_WITH_JSON or K_PLUGIN_CLASS_WITH_JSON macro.
+
+AutoMoc: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/AbstractSession.cpp: note: No relevant classes found. No output generated.
+[21/66] Generating xdp_dbus_remotedesktop_interface.cpp, xdp_dbus_remotedesktop_interface.h
+[22/66] Generating xdp_dbus_screencast_interface.cpp, xdp_dbus_screencast_interface.h
+[23/66] Generating moc_xdp_dbus_screencast_interface.cpp
+[24/66] Generating moc_xdp_dbus_remotedesktop_interface.cpp
+[25/66] Building C object src/CMakeFiles/KRdp.dir/wayland-fake-input-protocol.c.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+cc1: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[26/66] Building C object src/CMakeFiles/KRdp.dir/wayland-zkde-screencast-unstable-v1-protocol.c.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+cc1: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[27/66] Building C object src/CMakeFiles/KRdp.dir/wayland-wayland-protocol.c.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+cc1: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[28/66] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-fake-input.cpp.o
+[29/66] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-zkde-screencast-unstable-v1.cpp.o
+[30/66] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-wayland.cpp.o
+[31/66] Building CXX object src/kcm/CMakeFiles/kcm_krdpserver.dir/krdpkcm_logging.cpp.o
+[32/66] Building CXX object src/CMakeFiles/KRdp.dir/krdp_logging.cpp.o
+[33/66] Building CXX object src/kcm/CMakeFiles/kcm_krdpserver.dir/krdpserverdata.cpp.o
+[34/66] Building CXX object src/CMakeFiles/KRdp.dir/screencasting.cpp.o
+[35/66] Building CXX object src/kcm/CMakeFiles/kcm_krdpserver.dir/krdpserversettings.cpp.o
+[36/66] Building CXX object src/CMakeFiles/KRdp.dir/Clipboard.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/freerdp.h:43,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/Clipboard.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/Clipboard.cpp:5:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[37/66] Building CXX object src/CMakeFiles/KRdp.dir/PeerContext.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/freerdp.h:43,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PeerContext_p.h:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PeerContext.cpp:5:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[38/66] Building CXX object src/CMakeFiles/KRdp.dir/Cursor.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/freerdp.h:43,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/Cursor.cpp:9:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[39/66] Building CXX object src/CMakeFiles/KRdp.dir/NetworkDetection.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/freerdp.h:43,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/NetworkDetection.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/NetworkDetection.cpp:10:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/NetworkDetection.cpp: In member function ‘void KRdp::NetworkDetection::updateAverageRtt()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/NetworkDetection.cpp:206:36: warning: comparison of unsigned expression in ‘< 0’ is always false [-Wtype-limits]
+  206 |     if (d->lastBandwithMeasurement < 0) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[40/66] Building CXX object src/CMakeFiles/KRdp.dir/PlasmaScreencastV1Session.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/dvc.h:56,
+                 from /usr/include/freerdp2/freerdp/channels/rdpgfx.h:24,
+                 from /usr/include/freerdp2/freerdp/server/rdpgfx.h:23,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/VideoStream.h:16,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/AbstractSession.h:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PlasmaScreencastV1Session.h:16,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PlasmaScreencastV1Session.cpp:5:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[41/66] Building CXX object src/CMakeFiles/KRdp.dir/Server.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/settings.h:28,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/Server.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/Server.cpp:5:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[42/66] Building CXX object src/CMakeFiles/KRdp.dir/RdpConnection.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/freerdp.h:43,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/RdpConnection.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/RdpConnection.cpp:10:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[43/66] Building CXX object src/CMakeFiles/KRdp.dir/AbstractSession.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/dvc.h:56,
+                 from /usr/include/freerdp2/freerdp/channels/rdpgfx.h:24,
+                 from /usr/include/freerdp2/freerdp/server/rdpgfx.h:23,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/VideoStream.h:16,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/AbstractSession.h:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/AbstractSession.cpp:5:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[44/66] Building CXX object src/CMakeFiles/KRdp.dir/KRdp_autogen/mocs_compilation.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/dvc.h:56,
+                 from /usr/include/freerdp2/freerdp/channels/rdpgfx.h:24,
+                 from /usr/include/freerdp2/freerdp/server/rdpgfx.h:23,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/src/KRdp_autogen/EWIEGA46WW/../../../../src/VideoStream.h:16,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/src/KRdp_autogen/EWIEGA46WW/../../../../src/AbstractSession.h:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/src/KRdp_autogen/EWIEGA46WW/moc_AbstractSession.cpp:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/src/KRdp_autogen/mocs_compilation.cpp:2:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[45/66] Building CXX object src/CMakeFiles/KRdp.dir/InputHandler.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/freerdp.h:43,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/InputHandler.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/InputHandler.cpp:5:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[46/66] Building CXX object src/CMakeFiles/KRdp.dir/VideoStream.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/dvc.h:56,
+                 from /usr/include/freerdp2/freerdp/channels/rdpgfx.h:24,
+                 from /usr/include/freerdp2/freerdp/server/rdpgfx.h:23,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/VideoStream.h:16,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/VideoStream.cpp:10:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[47/66] Building CXX object src/kcm/CMakeFiles/kcm_krdpserver.dir/kcm_krdpserver_autogen/mocs_compilation.cpp.o
+[48/66] Building CXX object src/kcm/CMakeFiles/kcm_krdpserver.dir/kcmkrdpserver.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:26:47: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   26 | static const QString dbusSystemdDestination = u"org.freedesktop.systemd1"_qs;
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
+                 from /usr/include/qt6/QtCore/qlist.h:10,
+                 from /usr/include/qt6/QtCore/qstringlist.h:5,
+                 from /usr/include/qt6/QtCore/QStringList:1,
+                 from /usr/include/KF6/KConfigCore/kconfigbase.h:16,
+                 from /usr/include/KF6/KConfigCore/kconfiggroup.h:14,
+                 from /usr/include/KF6/KConfigCore/kcoreconfigskeleton.h:15,
+                 from /usr/include/KF6/KConfigGui/kconfigskeleton.h:14,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/src/kcm/krdpserversettings.h:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.h:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:5:
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:27:40: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   27 | static const QString dbusSystemdPath = u"/org/freedesktop/systemd1"_qs;
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:28:50: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   28 | static const QString dbusKrdpServerServicePath = u"/org/freedesktop/systemd1/unit/plasma_2dkrdp_5fserver_2eservice"_qs;
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:29:49: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   29 | static const QString dbusSystemdUnitInterface = u"org.freedesktop.systemd1.Unit"_qs;
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:30:52: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   30 | static const QString dbusSystemdManagerInterface = u"org.freedesktop.systemd1.Manager"_qs;
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:31:55: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   31 | static const QString dbusSystemdPropertiesInterface = u"org.freedesktop.DBus.Properties"_qs;
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp: In constructor ‘KRDPServerConfig::KRDPServerConfig(QObject*, const KPluginMetaData&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:46:43: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   46 |                                           u"PropertiesChanged"_qs,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp: In member function ‘void KRDPServerConfig::toggleAutoconnect(bool)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:202:57: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  202 |                                               enabled ? u"EnableUnitFiles"_qs : u"DisableUnitFiles"_qs);
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:202:81: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  202 |                                               enabled ? u"EnableUnitFiles"_qs : u"DisableUnitFiles"_qs);
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:204:39: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  204 |         msg.setArguments({QStringList(u"app-org.kde.krdpserver.service"_qs), false, true});
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:206:39: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  206 |         msg.setArguments({QStringList(u"app-org.kde.krdpserver.service"_qs), false});
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp: In member function ‘void KRDPServerConfig::toggleServer(bool)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:213:134: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  213 |     auto msg = QDBusMessage::createMethodCall(dbusSystemdDestination, dbusKrdpServerServicePath, dbusSystemdUnitInterface, enabled ? u"Start"_qs : u"Stop"_qs);
+      |                                                                                                                                      ^~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:213:148: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  213 |     auto msg = QDBusMessage::createMethodCall(dbusSystemdDestination, dbusKrdpServerServicePath, dbusSystemdUnitInterface, enabled ? u"Start"_qs : u"Stop"_qs);
+      |                                                                                                                                                    ^~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:215:23: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  215 |     msg.setArguments({u"replace"_qs});
+      |                       ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp: In member function ‘void KRDPServerConfig::restartServer()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:223:131: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  223 |     auto restartMsg = QDBusMessage::createMethodCall(dbusSystemdDestination, dbusKrdpServerServicePath, dbusSystemdUnitInterface, u"Restart"_qs);
+      |                                                                                                                                   ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:224:30: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  224 |     restartMsg.setArguments({u"replace"_qs});
+      |                              ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp: In member function ‘void KRDPServerConfig::generateCertificate()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:238:88: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  238 |     QDir(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)).mkpath(u"krdpserver"_qs);
+      |                                                                                        ^~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:239:101: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  239 |     QString certificatePath(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + u"/krdpserver/krdp.crt"_qs);
+      |                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:240:104: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  240 |     QString certificateKeyPath(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + u"/krdpserver/krdp.key"_qs);
+      |                                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:243:22: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  243 |     sslProcess.start(u"openssl"_qs,
+      |                      ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:245:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  245 |                          u"req"_qs,
+      |                          ^~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:246:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  246 |                          u"-nodes"_qs,
+      |                          ^~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:247:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  247 |                          u"-new"_qs,
+      |                          ^~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:248:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  248 |                          u"-x509"_qs,
+      |                          ^~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:249:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  249 |                          u"-keyout"_qs,
+      |                          ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:251:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  251 |                          u"-out"_qs,
+      |                          ^~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:253:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  253 |                          u"-days"_qs,
+      |                          ^~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:254:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  254 |                          u"1"_qs,
+      |                          ^~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:255:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  255 |                          u"-batch"_qs,
+      |                          ^~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp: In member function ‘void KRDPServerConfig::checkServerRunning()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:277:130: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  277 |     auto msg = QDBusMessage::createMethodCall(dbusSystemdDestination, dbusKrdpServerServicePath, dbusSystemdPropertiesInterface, u"Get"_qs);
+      |                                                                                                                                  ^~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:278:23: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  278 |     msg.setArguments({u"org.freedesktop.systemd1.Service"_qs, u"MainPID"_qs});
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/kcm/kcmkrdpserver.cpp:278:63: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  278 |     msg.setArguments({u"org.freedesktop.systemd1.Service"_qs, u"MainPID"_qs});
+      |                                                               ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[49/66] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_krdpserver.so
+[50/66] Building CXX object src/CMakeFiles/KRdp.dir/xdp_dbus_remotedesktop_interface.cpp.o
+[51/66] Building CXX object src/CMakeFiles/KRdp.dir/xdp_dbus_screencast_interface.cpp.o
+[52/66] Building CXX object src/CMakeFiles/KRdp.dir/PortalSession.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/dvc.h:56,
+                 from /usr/include/freerdp2/freerdp/channels/rdpgfx.h:24,
+                 from /usr/include/freerdp2/freerdp/server/rdpgfx.h:23,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/VideoStream.h:16,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/AbstractSession.h:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.h:17,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.cpp:5:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.cpp: In lambda function:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.cpp:285:63: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  285 |             setLogicalSize(qdbus_cast<QSize>(stream.map.value(u"size"_qs)));
+      |                                                               ^~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
+                 from /usr/include/qt6/QtCore/qfloat16.h:10,
+                 from /usr/include/qt6/QtCore/qmetatype.h:14,
+                 from /usr/include/qt6/QtDBus/qtdbusglobal.h:8,
+                 from /usr/include/qt6/QtDBus/qdbuspendingcall.h:7,
+                 from /usr/include/qt6/QtDBus/QDBusPendingCallWatcher:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.h:12:
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.cpp:295:51: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  295 |             QDBusConnection::sessionBus().connect(u"org.freedesktop.portal.Desktop"_qs,
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.cpp:297:51: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  297 |                                                   u"org.freedesktop.portal.Session"_qs,
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.cpp:298:51: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  298 |                                                   u"Closed"_qs,
+      |                                                   ^~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[53/66] Linking CXX shared library bin/libKRdp.so.6.3.5
+[54/66] Creating library symlink bin/libKRdp.so.6 bin/libKRdp.so
+[55/66] Automatic MOC for target krdpstreamer
+[56/66] Building CXX object examples/streamer/CMakeFiles/krdpstreamer.dir/krdpstreamer_autogen/mocs_compilation.cpp.o
+[57/66] Automatic MOC for target krdpserver
+[58/66] Generating krdpserversettings.h, krdpserversettings.cpp
+[59/66] Building CXX object examples/streamer/CMakeFiles/krdpstreamer.dir/main.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/dvc.h:56,
+                 from /usr/include/freerdp2/freerdp/channels/rdpgfx.h:24,
+                 from /usr/include/freerdp2/freerdp/server/rdpgfx.h:23,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/VideoStream.h:16,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/AbstractSession.h:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/PortalSession.h:17,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:14:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp: In function ‘int main(int, char**)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:24:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   24 |         {u"quit-after"_qs, u"Quit after running for this amount of seconds"_qs, u"seconds"_qs},
+      |          ^~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
+                 from /usr/include/qt6/QtCore/qlist.h:10,
+                 from /usr/include/qt6/QtCore/qstringlist.h:5,
+                 from /usr/include/qt6/QtCore/qcommandlineparser.h:7,
+                 from /usr/include/qt6/QtCore/QCommandLineParser:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:7:
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:24:28: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   24 |         {u"quit-after"_qs, u"Quit after running for this amount of seconds"_qs, u"seconds"_qs},
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:24:81: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   24 |         {u"quit-after"_qs, u"Quit after running for this amount of seconds"_qs, u"seconds"_qs},
+      |                                                                                 ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:25:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   25 |         {u"monitor"_qs, u"Index of the monitor to display."_qs, u"monitor"_qs, u"-1"_qs},
+      |          ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:25:25: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   25 |         {u"monitor"_qs, u"Index of the monitor to display."_qs, u"monitor"_qs, u"-1"_qs},
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:25:65: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   25 |         {u"monitor"_qs, u"Index of the monitor to display."_qs, u"monitor"_qs, u"-1"_qs},
+      |                                                                 ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:25:80: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   25 |         {u"monitor"_qs, u"Index of the monitor to display."_qs, u"monitor"_qs, u"-1"_qs},
+      |                                                                                ^~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:26:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   26 |         {u"quality"_qs, u"Encoding quality of the stream, from 0 (lowest) to 100 (highest)"_qs, u"quality"_qs},
+      |          ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:26:25: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   26 |         {u"quality"_qs, u"Encoding quality of the stream, from 0 (lowest) to 100 (highest)"_qs, u"quality"_qs},
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:26:97: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   26 |         {u"quality"_qs, u"Encoding quality of the stream, from 0 (lowest) to 100 (highest)"_qs, u"quality"_qs},
+      |                                                                                                 ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:32:42: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   32 |     session.setActiveStream(parser.value(u"monitor"_qs).toInt());
+      |                                          ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:33:22: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   33 |     if (parser.isSet(u"quality"_qs)) {
+      |                      ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:34:46: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   34 |         session.setVideoQuality(parser.value(u"quality"_qs).toUShort());
+      |                                              ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:45:16: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   45 |     QFile file{u"stream.raw"_qs};
+      |                ^~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:57:22: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   57 |     if (parser.isSet(u"quit-after"_qs)) {
+      |                      ^~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/examples/streamer/main.cpp:59:40: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   59 |         timer.setInterval(parser.value(u"quit-after"_qs).toInt() * 1000);
+      |                                        ^~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[60/66] Building CXX object server/CMakeFiles/krdpserver.dir/krdpserversettings.cpp.o
+[61/66] Building CXX object server/CMakeFiles/krdpserver.dir/krdpserver_autogen/mocs_compilation.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/freerdp.h:43,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/RdpConnection.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/server/krdpserver_autogen/EWIEGA46WW/../../../../server/SessionController.h:6,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/server/krdpserver_autogen/EWIEGA46WW/moc_SessionController.cpp:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/build/server/krdpserver_autogen/mocs_compilation.cpp:2:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[62/66] Linking CXX executable bin/krdpstreamer
+[63/66] Building CXX object server/CMakeFiles/krdpserver.dir/main.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/settings.h:28,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/Server.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:18:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp: In function ‘int main(int, char**)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:26:36: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   26 |     application.setApplicationName(u"krdp-server"_qs);
+      |                                    ^~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qcoreapplication.h:8,
+                 from /usr/include/qt6/QtWidgets/qapplication.h:8,
+                 from /usr/include/qt6/QtWidgets/QApplication:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:8:
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:27:43: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   27 |     application.setApplicationDisplayName(u"KRDP Server"_qs);
+      |                                           ^~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:29:22: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   29 |     KAboutData about(u"krdp-server"_qs, u"KRDP Server"_qs, QStringLiteral(KRdp_VERSION_STRING));
+      |                      ^~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:29:41: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   29 |     KAboutData about(u"krdp-server"_qs, u"KRDP Server"_qs, QStringLiteral(KRdp_VERSION_STRING));
+      |                                         ^~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:36:9: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   36 |         u"An RDP server that exposes the current desktop session over the RDP protocol.\nNote that a valid TLS certificate and key is needed. If not provided, a temporary certificate will be generated."_qs);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:39:11: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   39 |         {{u"u"_qs, u"username"_qs}, u"The username to use for login"_qs, u"username"_qs},
+      |           ^~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:39:20: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   39 |         {{u"u"_qs, u"username"_qs}, u"The username to use for login"_qs, u"username"_qs},
+      |                    ^~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:39:37: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   39 |         {{u"u"_qs, u"username"_qs}, u"The username to use for login"_qs, u"username"_qs},
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:39:74: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   39 |         {{u"u"_qs, u"username"_qs}, u"The username to use for login"_qs, u"username"_qs},
+      |                                                                          ^~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:40:11: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   40 |         {{u"p"_qs, u"password"_qs}, u"The password to use for login. Requires username to be passed as well."_qs, u"password"_qs},
+      |           ^~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:40:20: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   40 |         {{u"p"_qs, u"password"_qs}, u"The password to use for login. Requires username to be passed as well."_qs, u"password"_qs},
+      |                    ^~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:40:37: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   40 |         {{u"p"_qs, u"password"_qs}, u"The password to use for login. Requires username to be passed as well."_qs, u"password"_qs},
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:40:115: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   40 |         {{u"p"_qs, u"password"_qs}, u"The password to use for login. Requires username to be passed as well."_qs, u"password"_qs},
+      |                                                                                                                   ^~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:41:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   41 |         {u"address"_qs, u"The address to listen on for connections. Defaults to 0.0.0.0"_qs, u"address"_qs},
+      |          ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:41:25: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   41 |         {u"address"_qs, u"The address to listen on for connections. Defaults to 0.0.0.0"_qs, u"address"_qs},
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:41:94: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   41 |         {u"address"_qs, u"The address to listen on for connections. Defaults to 0.0.0.0"_qs, u"address"_qs},
+      |                                                                                              ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:42:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   42 |         {u"port"_qs, u"The port to use for connections. Defaults to 3389."_qs, u"port"_qs, u"3389"_qs},
+      |          ^~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:42:22: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   42 |         {u"port"_qs, u"The port to use for connections. Defaults to 3389."_qs, u"port"_qs, u"3389"_qs},
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:42:80: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   42 |         {u"port"_qs, u"The port to use for connections. Defaults to 3389."_qs, u"port"_qs, u"3389"_qs},
+      |                                                                                ^~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:42:92: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   42 |         {u"port"_qs, u"The port to use for connections. Defaults to 3389."_qs, u"port"_qs, u"3389"_qs},
+      |                                                                                            ^~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:43:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   43 |         {u"certificate"_qs, u"The TLS certificate file to use."_qs, u"certificate"_qs, u"server.crt"_qs},
+      |          ^~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:43:29: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   43 |         {u"certificate"_qs, u"The TLS certificate file to use."_qs, u"certificate"_qs, u"server.crt"_qs},
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:43:69: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   43 |         {u"certificate"_qs, u"The TLS certificate file to use."_qs, u"certificate"_qs, u"server.crt"_qs},
+      |                                                                     ^~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:43:88: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   43 |         {u"certificate"_qs, u"The TLS certificate file to use."_qs, u"certificate"_qs, u"server.crt"_qs},
+      |                                                                                        ^~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:44:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   44 |         {u"certificate-key"_qs, u"The TLS certificate key to use."_qs, u"certificate-key"_qs, u"server.key"_qs},
+      |          ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:44:33: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   44 |         {u"certificate-key"_qs, u"The TLS certificate key to use."_qs, u"certificate-key"_qs, u"server.key"_qs},
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:44:72: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   44 |         {u"certificate-key"_qs, u"The TLS certificate key to use."_qs, u"certificate-key"_qs, u"server.key"_qs},
+      |                                                                        ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:44:95: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   44 |         {u"certificate-key"_qs, u"The TLS certificate key to use."_qs, u"certificate-key"_qs, u"server.key"_qs},
+      |                                                                                               ^~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:45:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   45 |         {u"monitor"_qs, u"The index of the monitor to use when streaming."_qs, u"monitor"_qs, u"-1"_qs},
+      |          ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:45:25: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   45 |         {u"monitor"_qs, u"The index of the monitor to use when streaming."_qs, u"monitor"_qs, u"-1"_qs},
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:45:80: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   45 |         {u"monitor"_qs, u"The index of the monitor to use when streaming."_qs, u"monitor"_qs, u"-1"_qs},
+      |                                                                                ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:45:95: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   45 |         {u"monitor"_qs, u"The index of the monitor to use when streaming."_qs, u"monitor"_qs, u"-1"_qs},
+      |                                                                                               ^~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:46:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   46 |         {u"virtual-monitor"_qs,
+      |          ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:47:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   47 |          u"Creates a new virtual output to connect to (WIDTHxHEIGHT@SCALE, e.g. 1920x1080@1). Incompatible with --monitor."_qs,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:48:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   48 |          u"data"_qs,
+      |          ^~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:49:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   49 |          u"1920x1080@1"_qs},
+      |          ^~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:50:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   50 |         {u"quality"_qs, u"Encoding quality of the stream, from 0 (lowest) to 100 (highest)"_qs, u"quality"_qs},
+      |          ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:50:25: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   50 |         {u"quality"_qs, u"Encoding quality of the stream, from 0 (lowest) to 100 (highest)"_qs, u"quality"_qs},
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:50:97: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   50 |         {u"quality"_qs, u"Encoding quality of the stream, from 0 (lowest) to 100 (highest)"_qs, u"quality"_qs},
+      |                                                                                                 ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:52:10: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   52 |         {u"plasma"_qs, u"Use Plasma protocols instead of XDP"_qs},
+      |          ^~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:52:24: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   52 |         {u"plasma"_qs, u"Use Plasma protocols instead of XDP"_qs},
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:77:22: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   77 |     if (parser.isSet(u"address"_qs)) {
+      |                      ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:78:45: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   78 |         address = QHostAddress(parser.value(u"address"_qs));
+      |                                             ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:93:22: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   93 |     if (parser.isSet(u"username"_qs)) {
+      |                      ^~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:95:34: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   95 |         user.name = parser.value(u"username"_qs);
+      |                                  ^~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:96:38: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   96 |         user.password = parser.value(u"password"_qs);
+      |                                      ^~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:119:56: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  119 |     SessionController controller(&server, parser.isSet(u"plasma"_qs) ? SessionController::SessionType::Plasma : SessionController::SessionType::Portal);
+      |                                                        ^~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:120:22: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  120 |     if (parser.isSet(u"virtual-monitor"_qs)) {
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:121:45: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  121 |         const QString vmData = parser.value(u"virtual-monitor"_qs);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:122:37: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  122 |         const QRegularExpression rx(uR"((\d+)x(\d+)@([\d.]+))"_qs);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:130:49: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  130 |         controller.setMonitorIndex(parser.isSet(u"monitor"_qs) ? std::optional(parser.value(u"monitor"_qs).toInt()) : std::nullopt);
+      |                                                 ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/main.cpp:130:93: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  130 |         controller.setMonitorIndex(parser.isSet(u"monitor"_qs) ? std::optional(parser.value(u"monitor"_qs).toInt()) : std::nullopt);
+      |                                                                                             ^~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[64/66] Building CXX object server/CMakeFiles/krdpserver.dir/SessionController.cpp.o
+In file included from /usr/include/winpr2/winpr/file.h:28,
+                 from /usr/include/winpr2/winpr/wtsapi.h:28,
+                 from /usr/include/freerdp2/freerdp/types.h:25,
+                 from /usr/include/freerdp2/freerdp/freerdp.h:43,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/RdpConnection.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.h:6,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp:4:
+/usr/include/winpr2/winpr/io.h:40:17: warning: ISO C++ prohibits anonymous structs [-Wpedantic]
+   40 |                 {
+      |                 ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp: In constructor ‘SessionController::SessionController(KRdp::Server*, SessionType)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp:85:37: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   85 |     m_sni = new KStatusNotifierItem(u"krdpserver"_qs, this);
+      |                                     ^~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qobject.h:11,
+                 from /usr/include/qt6/QtCore/QObject:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/src/RdpConnection.h:10:
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp:86:27: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   86 |     auto menu = new QMenu(u"quitMenu"_qs);
+      |                           ^~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp:90:26: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+   90 |     m_sni->setIconByName(u"preferences-system-network-remote"_qs);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp: In member function ‘void SessionController::stopFromSNI()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp:166:25: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  166 |     QDBusInterface unit(u"org.freedesktop.systemd1"_qs,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp:167:25: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  167 |                         u"/org/freedesktop/systemd1/unit/plasma_2dkrdp_5fserver_2eservice"_qs,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp:168:25: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  168 |                         u"org.freedesktop.systemd1.Unit"_qs);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/work/krdp-6.3.5/server/SessionController.cpp:170:20: warning: ‘QString QtLiterals::operator""_qs(const char16_t*, size_t)’ is deprecated: Use _s from Qt::StringLiterals namespace instead. [-Wdeprecated-declarations]
+  170 |     unit.asyncCall(u"Stop"_qs);
+      |                    ^~~~~~~~~~
+/usr/include/qt6/QtCore/qstring.h:1635:16: note: declared here
+ 1635 | inline QString operator""_qs(const char16_t *str, size_t size) noexcept
+      |                ^~~~~~~~
+At global scope:
+cc1plus: note: unrecognized command-line option ‘-Wno-c99-extensions’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-gnu-statement-expression-from-macro-expansion’ may have been intended to silence earlier diagnostics
+[65/66] Linking CXX executable bin/krdpserver
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/lib64/libKRdp.so.6.3.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/lib64/libKRdp.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/lib64/libKRdp.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/qlogging-categories6/krdp.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_krdpserver.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/applications/kcm_krdpserver.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/qlogging-categories6/kcm_krdpserver.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/bin/krdpserver
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/bin/krdpserver" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/applications/org.kde.krdp.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/lib/systemd/user/app-org.kde.krdpserver.service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/lib64/cmake/KRdp/KRdpConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/lib64/cmake/KRdp/KRdpConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/cs/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/cs/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/de/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/de/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/nn/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/nn/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/hi/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/hi/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pt_BR/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pt_BR/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pa/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pa/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sl/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sl/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/he/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/he/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/zh_TW/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/zh_TW/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pl/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/pl/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/tr/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/tr/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/fr/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/fr/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ka/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ka/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/gl/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/gl/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ia/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ia/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/hu/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/hu/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/eo/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/eo/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/bg/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/bg/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ca/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ca/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/uk/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/uk/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/en_GB/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/en_GB/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/zh_CN/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/zh_CN/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/nl/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/nl/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sa/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sa/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/fi/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/fi/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ko/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ko/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ru/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ru/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/lv/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/lv/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ca@valencia/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/es/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/es/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/eu/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/eu/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/it/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/it/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ar/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/ar/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sk/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sk/LC_MESSAGES/kcm_krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sv/LC_MESSAGES/krdpserver.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/package-krdp/usr/share/locale/sv/LC_MESSAGES/kcm_krdpserver.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/krdp/krdp.info: No such file or directory
+extra-cmake-modules
+plasma-wayland-protocols
+kcmutils
+kconfig
+kcoreaddons
+kcrash
+ki18n
+kirigami
+kpipewire
+kstatusnotifieritem
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKRdp.so	libKRdp.so.6
+usr/lib64/libKRdp.so.6	libKRdp.so.6.3.5
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKRdp.so )
+( cd usr/lib64 ; ln -sf libKRdp.so.6 libKRdp.so )
+( cd usr/lib64 ; rm -rf libKRdp.so.6 )
+( cd usr/lib64 ; ln -sf libKRdp.so.6.3.5 libKRdp.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKRdp.so'
+removed './usr/lib64/libKRdp.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/krdp/krdp-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/krdpserver
+usr/doc/
+usr/doc/krdp-6.3.5/
+usr/doc/krdp-6.3.5/README.md
+usr/doc/krdp-6.3.5/README.md.license
+usr/doc/krdp-6.3.5/krdp.ini
+usr/doc/krdp-6.3.5/slack-required
+usr/lib/
+usr/lib/systemd/
+usr/lib/systemd/user/
+usr/lib/systemd/user/app-org.kde.krdpserver.service
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KRdp/
+usr/lib64/cmake/KRdp/KRdpConfig.cmake
+usr/lib64/cmake/KRdp/KRdpConfigVersion.cmake
+usr/lib64/libKRdp.so.6.3.5
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/plasma/
+usr/lib64/qt6/plugins/plasma/kcms/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings/
+usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_krdpserver.so
+usr/share/
+usr/share/applications/
+usr/share/applications/kcm_krdpserver.desktop
+usr/share/applications/org.kde.krdp.desktop
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/ar/LC_MESSAGES/krdpserver.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/bg/LC_MESSAGES/krdpserver.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/ca/LC_MESSAGES/krdpserver.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/ca@valencia/LC_MESSAGES/krdpserver.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/cs/LC_MESSAGES/krdpserver.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/de/LC_MESSAGES/krdpserver.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/en_GB/LC_MESSAGES/krdpserver.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/eo/LC_MESSAGES/krdpserver.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/es/LC_MESSAGES/krdpserver.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/eu/LC_MESSAGES/krdpserver.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/fi/LC_MESSAGES/krdpserver.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/fr/LC_MESSAGES/krdpserver.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/gl/LC_MESSAGES/krdpserver.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/he/LC_MESSAGES/krdpserver.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/hi/LC_MESSAGES/krdpserver.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/hu/LC_MESSAGES/krdpserver.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/ia/LC_MESSAGES/krdpserver.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/it/LC_MESSAGES/krdpserver.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/ka/LC_MESSAGES/krdpserver.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/ko/LC_MESSAGES/krdpserver.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/lv/LC_MESSAGES/krdpserver.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/nl/LC_MESSAGES/krdpserver.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/nn/LC_MESSAGES/krdpserver.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/pa/LC_MESSAGES/krdpserver.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/pl/LC_MESSAGES/krdpserver.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/pt_BR/LC_MESSAGES/krdpserver.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/ru/LC_MESSAGES/krdpserver.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/sa/LC_MESSAGES/krdpserver.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/sk/LC_MESSAGES/krdpserver.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/sl/LC_MESSAGES/krdpserver.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/sv/LC_MESSAGES/krdpserver.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/tr/LC_MESSAGES/krdpserver.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/uk/LC_MESSAGES/krdpserver.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/zh_CN/LC_MESSAGES/krdpserver.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kcm_krdpserver.mo
+usr/share/locale/zh_TW/LC_MESSAGES/krdpserver.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kcm_krdpserver.categories
+usr/share/qlogging-categories6/krdp.categories
+
+Slackware package /tmp/krdp/krdp-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for krdp-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/krdp/krdp-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/krdp/krdp-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/krdp/krdp-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in krdp.tar.lz4 format.
+/tmp/krdp /tmp/krdp
+/tmp/krdp
+BIN_NAME
+README
+krdp-6.3.5-x86_64-1_rtz.tlz
+krdp-6.3.5-x86_64-1_rtz.tlz.md5
+krdp-6.3.5-x86_64-1_rtz.tlz.so.file
+krdp-6.3.5-x86_64-1_rtz.tlz.txt
+krdp.dep
+makepkg-krdp.log
+krdp build finished. Procced to installation...
+
++=======================================================================================+
+| Upgrading krdp-6.3.5-x86_64-1_rtz package using /tmp/krdp/krdp-6.3.5-x86_64-1_rtz.tlz |
++=======================================================================================+
+
+Pre-installing package krdp-6.3.5-x86_64-1_rtz...
+Removing package: krdp-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:34:48
+Installing package krdp-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# krdp (Library)
+#
+# Library and examples for creating an RDP server
+#
+# https://kde.org/plasma-desktop
+Executing install script for krdp-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package krdp-6.3.5-x86_64-1_rtz.tlz installed.
+Package krdp-6.3.5-x86_64-1_rtz upgraded with new package /tmp/krdp/krdp-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'krdp-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 26 seconds.

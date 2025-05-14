@@ -1,0 +1,362 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules wayland-protocols
+extra-cmake-modules is already installed!
+wayland-protocols is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:46:49--  https://download.kde.org/stable/plasma/6.3.5/layer-shell-qt-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/layer-shell-qt-6.3.5.tar.xz [following]
+--2025-05-10 22:46:50--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/layer-shell-qt-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35880 (35K) [application/octet-stream]
+Saving to: ‘layer-shell-qt-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .....                100% 14.4M=0.002s
+
+2025-05-10 22:46:50 (14.4 MB/s) - ‘layer-shell-qt-6.3.5.tar.xz’ saved [35880/35880]
+
+Found file: layer-shell-qt-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+layer-shell-qt-6.3.5/
+layer-shell-qt-6.3.5/tests/
+layer-shell-qt-6.3.5/tests/quicktest.qml
+layer-shell-qt-6.3.5/tests/CMakeLists.txt
+layer-shell-qt-6.3.5/tests/main.cpp
+layer-shell-qt-6.3.5/.reuse/
+layer-shell-qt-6.3.5/.reuse/dep5
+layer-shell-qt-6.3.5/LICENSES/
+layer-shell-qt-6.3.5/LICENSES/LGPL-2.1-only.txt
+layer-shell-qt-6.3.5/LICENSES/LGPL-3.0-or-later.txt
+layer-shell-qt-6.3.5/LICENSES/BSD-3-Clause.txt
+layer-shell-qt-6.3.5/LICENSES/LGPL-3.0-only.txt
+layer-shell-qt-6.3.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+layer-shell-qt-6.3.5/LICENSES/CC0-1.0.txt
+layer-shell-qt-6.3.5/LICENSES/MIT.txt
+layer-shell-qt-6.3.5/.gitlab-ci.yml
+layer-shell-qt-6.3.5/.gitignore
+layer-shell-qt-6.3.5/.kde-ci.yml
+layer-shell-qt-6.3.5/LayerShellQtConfig.cmake.in
+layer-shell-qt-6.3.5/src/
+layer-shell-qt-6.3.5/src/qwaylandlayershellintegration_p.h
+layer-shell-qt-6.3.5/src/qwaylandxdgactivationv1.cpp
+layer-shell-qt-6.3.5/src/layer-shell.json.license
+layer-shell-qt-6.3.5/src/qwaylandlayershellintegration.cpp
+layer-shell-qt-6.3.5/src/qwaylandlayersurface.cpp
+layer-shell-qt-6.3.5/src/interfaces/
+layer-shell-qt-6.3.5/src/interfaces/shell.cpp
+layer-shell-qt-6.3.5/src/interfaces/shell.h
+layer-shell-qt-6.3.5/src/interfaces/window.cpp
+layer-shell-qt-6.3.5/src/interfaces/window.h
+layer-shell-qt-6.3.5/src/wlr-layer-shell-unstable-v1.xml.license
+layer-shell-qt-6.3.5/src/layer-shell.json
+layer-shell-qt-6.3.5/src/wlr-layer-shell-unstable-v1.xml
+layer-shell-qt-6.3.5/src/qwaylandlayershellintegrationplugin.cpp
+layer-shell-qt-6.3.5/src/declarative/
+layer-shell-qt-6.3.5/src/declarative/layershellqtplugin.cpp
+layer-shell-qt-6.3.5/src/declarative/CMakeLists.txt
+layer-shell-qt-6.3.5/src/qwaylandlayersurface_p.h
+layer-shell-qt-6.3.5/src/CMakeLists.txt
+layer-shell-qt-6.3.5/src/qwaylandxdgactivationv1_p.h
+layer-shell-qt-6.3.5/CMakeLists.txt
+layer-shell-qt-6.3.5/metainfo.yaml
+layer-shell-qt-6.3.5/README.md
+layer-shell-qt-6.3.5/README.md.license
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found Wayland_Client: /usr/lib64/libwayland-client.so (found version "1.23.1")
+-- Found Wayland_Server: /usr/lib64/libwayland-server.so (found version "1.23.1")
+-- Found Wayland_Cursor: /usr/lib64/libwayland-cursor.so (found version "1.23.1")
+-- Found Wayland_Egl: /usr/lib64/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so;/usr/lib64/libwayland-cursor.so;/usr/lib64/libwayland-egl.so (found suitable version "1.23.1", minimum required is "1.15")
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so;/usr/lib64/libwayland-cursor.so;/usr/lib64/libwayland-egl.so (found suitable version "1.23.1", minimum required is "1.3") found components: Client Server
+-- Found WaylandProtocols: //usr/share/wayland-protocols (found version "1.44")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'xkbcommon'
+--   Found xkbcommon, version 1.9.2
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Core
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6Qml
+ * Qt6WaylandScannerTools (required version >= 6.8.3)
+ * OpenGL
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * Vulkan
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6WaylandClient (required version >= 6.7.0)
+ * Git
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0)
+ * Qt6 (required version >= 6.7.0)
+ * WaylandScanner, Executable that converts XML protocol files to C code, <https://wayland.freedesktop.org/>
+ * Wayland (required version >= 1.3), C library implementation of the Wayland protocol: a protocol for a compositor to talk to its clients, <https://wayland.freedesktop.org/>
+ * WaylandProtocols, Specifications of extended Wayland protocols, <https://wayland.freedesktop.org/>
+ * PkgConfig
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.8.3)
+
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/work/layer-shell-qt-6.3.5/build
+[1/46] Generating wayland-xdg-activation-v1-protocol.c
+[2/46] Generating wayland-xdg-activation-v1-client-protocol.h
+[3/46] Generating wayland-xdg-shell-protocol.c
+[4/46] Generating wayland-wlr-layer-shell-unstable-v1-protocol.c
+[5/46] Generating wayland-wlr-layer-shell-unstable-v1-client-protocol.h
+[6/46] Generating wayland-xdg-shell-client-protocol.h
+[7/46] Generating qwayland-xdg-activation-v1.cpp
+[8/46] Generating qwayland-wlr-layer-shell-unstable-v1.h
+[9/46] Generating qwayland-xdg-activation-v1.h
+[10/46] Generating qwayland-xdg-shell.h
+[11/46] Generating qwayland-xdg-shell.cpp
+[12/46] Generating qwayland-wlr-layer-shell-unstable-v1.cpp
+[13/46] Automatic MOC for target LayerShellQtInterface
+[14/46] Building C object src/CMakeFiles/LayerShellQtInterface.dir/wayland-wlr-layer-shell-unstable-v1-protocol.c.o
+[15/46] Building C object src/CMakeFiles/LayerShellQtInterface.dir/wayland-xdg-activation-v1-protocol.c.o
+[16/46] Building C object src/CMakeFiles/LayerShellQtInterface.dir/wayland-xdg-shell-protocol.c.o
+[17/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/qwayland-xdg-activation-v1.cpp.o
+[18/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/qwayland-wlr-layer-shell-unstable-v1.cpp.o
+[19/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/qwayland-xdg-shell.cpp.o
+[20/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/interfaces/shell.cpp.o
+[21/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/layershellqt_logging.cpp.o
+[22/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/qwaylandxdgactivationv1.cpp.o
+[23/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/interfaces/window.cpp.o
+[24/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/LayerShellQtInterface_autogen/mocs_compilation.cpp.o
+[25/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/qwaylandlayershellintegration.cpp.o
+[26/46] Building CXX object src/CMakeFiles/LayerShellQtInterface.dir/qwaylandlayersurface.cpp.o
+[27/46] Linking CXX shared library bin/libLayerShellQtInterface.so.6.3.5
+[28/46] Creating library symlink bin/libLayerShellQtInterface.so.6 bin/libLayerShellQtInterface.so
+[29/46] Automatic MOC for target layershellqt-test
+[30/46] Building CXX object tests/CMakeFiles/layershellqt-test.dir/layershellqt-test_autogen/mocs_compilation.cpp.o
+[31/46] Automatic MOC for target layer-shell
+[32/46] Automatic MOC for target LayerShellQtQml
+[33/46] Running AUTOMOC file extraction for target LayerShellQtQml
+[34/46] Running rcc for resource qmake_org_kde_layershell
+[35/46] Running moc --collect-json for target LayerShellQtQml
+[36/46] Building CXX object src/CMakeFiles/layer-shell.dir/layer-shell_autogen/mocs_compilation.cpp.o
+[37/46] Automatic QML type registration for target LayerShellQtQml
+[38/46] Building CXX object src/declarative/CMakeFiles/LayerShellQtQml.dir/LayerShellQtQml_autogen/mocs_compilation.cpp.o
+[39/46] Building CXX object src/declarative/CMakeFiles/LayerShellQtQml.dir/.qt/rcc/qrc_qmake_org_kde_layershell.cpp.o
+[40/46] Building CXX object src/declarative/CMakeFiles/LayerShellQtQml.dir/layershellqtqml_qmltyperegistrations.cpp.o
+[41/46] Building CXX object src/CMakeFiles/layer-shell.dir/qwaylandlayershellintegrationplugin.cpp.o
+[42/46] Building CXX object tests/CMakeFiles/layershellqt-test.dir/main.cpp.o
+[43/46] Linking CXX shared library bin/liblayer-shell.so
+[44/46] Linking CXX executable bin/layershellqt-test
+[45/46] Building CXX object src/declarative/CMakeFiles/LayerShellQtQml.dir/layershellqtplugin.cpp.o
+[46/46] Linking CXX shared module bin/org/kde/layershell/libLayerShellQtQml.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/qt6/plugins/wayland-shell-integration/liblayer-shell.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/qt6/plugins/wayland-shell-integration/liblayer-shell.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/libLayerShellQtInterface.so.6.3.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/libLayerShellQtInterface.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/libLayerShellQtInterface.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/include/LayerShellQt/Shell
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/include/LayerShellQt/Window
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/include/LayerShellQt/shell.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/include/LayerShellQt/window.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/include/LayerShellQt/layershellqt_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/qt6/qml/org/kde/layershell/libLayerShellQtQml.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/qt6/qml/org/kde/layershell/libLayerShellQtQml.so" to "$ORIGIN/../../../../lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/qt6/qml/org/kde/layershell/qmldir
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/qt6/qml/org/kde/layershell/LayerShellQtQml.qmltypes
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/qt6/qml/org/kde/layershell/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/cmake/LayerShellQt/LayerShellQtTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/cmake/LayerShellQt/LayerShellQtTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/cmake/LayerShellQt/LayerShellQtConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/package-layer-shell-qt/usr/lib64/cmake/LayerShellQt/LayerShellQtConfigVersion.cmake
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/layer-shell-qt/layer-shell-qt.info: No such file or directory
+extra-cmake-modules
+wayland-protocols
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libLayerShellQtInterface.so	libLayerShellQtInterface.so.6
+usr/lib64/libLayerShellQtInterface.so.6	libLayerShellQtInterface.so.6.3.5
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libLayerShellQtInterface.so )
+( cd usr/lib64 ; ln -sf libLayerShellQtInterface.so.6 libLayerShellQtInterface.so )
+( cd usr/lib64 ; rm -rf libLayerShellQtInterface.so.6 )
+( cd usr/lib64 ; ln -sf libLayerShellQtInterface.so.6.3.5 libLayerShellQtInterface.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libLayerShellQtInterface.so'
+removed './usr/lib64/libLayerShellQtInterface.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/layer-shell-qt/layer-shell-qt-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/layer-shell-qt-6.3.5/
+usr/doc/layer-shell-qt-6.3.5/README.md
+usr/doc/layer-shell-qt-6.3.5/README.md.license
+usr/doc/layer-shell-qt-6.3.5/layer-shell-qt.ini
+usr/doc/layer-shell-qt-6.3.5/slack-required
+usr/include/
+usr/include/LayerShellQt/
+usr/include/LayerShellQt/Shell
+usr/include/LayerShellQt/Window
+usr/include/LayerShellQt/layershellqt_export.h
+usr/include/LayerShellQt/shell.h
+usr/include/LayerShellQt/window.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/LayerShellQt/
+usr/lib64/cmake/LayerShellQt/LayerShellQtConfig.cmake
+usr/lib64/cmake/LayerShellQt/LayerShellQtConfigVersion.cmake
+usr/lib64/cmake/LayerShellQt/LayerShellQtTargets-relwithdebinfo.cmake
+usr/lib64/cmake/LayerShellQt/LayerShellQtTargets.cmake
+usr/lib64/libLayerShellQtInterface.so.6.3.5
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/wayland-shell-integration/
+usr/lib64/qt6/plugins/wayland-shell-integration/liblayer-shell.so
+usr/lib64/qt6/qml/
+usr/lib64/qt6/qml/org/
+usr/lib64/qt6/qml/org/kde/
+usr/lib64/qt6/qml/org/kde/layershell/
+usr/lib64/qt6/qml/org/kde/layershell/LayerShellQtQml.qmltypes
+usr/lib64/qt6/qml/org/kde/layershell/kde-qmlmodule.version
+usr/lib64/qt6/qml/org/kde/layershell/libLayerShellQtQml.so
+usr/lib64/qt6/qml/org/kde/layershell/qmldir
+
+Slackware package /tmp/layer-shell-qt/layer-shell-qt-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for layer-shell-qt-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/layer-shell-qt/layer-shell-qt-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/layer-shell-qt/layer-shell-qt-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/layer-shell-qt/layer-shell-qt-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in layer-shell-qt.tar.lz4 format.
+/tmp/layer-shell-qt /tmp/layer-shell-qt
+/tmp/layer-shell-qt
+BIN_NAME
+README
+layer-shell-qt-6.3.5-x86_64-1_rtz.tlz
+layer-shell-qt-6.3.5-x86_64-1_rtz.tlz.md5
+layer-shell-qt-6.3.5-x86_64-1_rtz.tlz.so.file
+layer-shell-qt-6.3.5-x86_64-1_rtz.tlz.txt
+layer-shell-qt.dep
+makepkg-layer-shell-qt.log
+layer-shell-qt build finished. Procced to installation...
+
++=====================================================================================================================+
+| Upgrading layer-shell-qt-6.3.5-x86_64-1_rtz package using /tmp/layer-shell-qt/layer-shell-qt-6.3.5-x86_64-1_rtz.tlz |
++=====================================================================================================================+
+
+Pre-installing package layer-shell-qt-6.3.5-x86_64-1_rtz...
+Removing package: layer-shell-qt-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:47:01
+Installing package layer-shell-qt-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# layer-shell-qt (Qt component)
+#
+# Qt component to allow applications to make use of the Wayland
+# wl-layer-shell protocol
+#
+# https://kde.org/plasma-desktop/
+Executing install script for layer-shell-qt-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package layer-shell-qt-6.3.5-x86_64-1_rtz.tlz installed.
+Package layer-shell-qt-6.3.5-x86_64-1_rtz upgraded with new package /tmp/layer-shell-qt/layer-shell-qt-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'layer-shell-qt-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 16 seconds.

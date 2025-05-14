@@ -1,0 +1,2168 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules karchive	kcodecs	ki18n	openssl
+extra-cmake-modules is already installed!
+karchive is already installed!
+kcodecs is already installed!
+ki18n is already installed!
+openssl is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 00:27:55--  https://download.kde.org/stable/release-service/25.04.1/src/khealthcertificate-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/khealthcertificate-25.04.1.tar.xz [following]
+--2025-05-11 00:27:55--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/khealthcertificate-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 514588 (503K) [application/octet-stream]
+Saving to: ‘khealthcertificate-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  9% 1.34M 0s
+    50K .......... .......... .......... .......... .......... 19% 1.42M 0s
+   100K .......... .......... .......... .......... .......... 29% 6.96M 0s
+   150K .......... .......... .......... .......... .......... 39% 1.97M 0s
+   200K .......... .......... .......... .......... .......... 49% 5.44M 0s
+   250K .......... .......... .......... .......... .......... 59% 7.25M 0s
+   300K .......... .......... .......... .......... .......... 69% 5.29M 0s
+   350K .......... .......... .......... .......... .......... 79% 1.10M 0s
+   400K .......... .......... .......... .......... .......... 89%  273M 0s
+   450K .......... .......... .......... .......... .......... 99%  367M 0s
+   500K ..                                                    100% 4.71T=0.2s
+
+2025-05-11 00:27:56 (2.84 MB/s) - ‘khealthcertificate-25.04.1.tar.xz’ saved [514588/514588]
+
+Found file: khealthcertificate-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+khealthcertificate-25.04.1/
+khealthcertificate-25.04.1/metainfo.yaml.license
+khealthcertificate-25.04.1/.kateconfig
+khealthcertificate-25.04.1/README.md
+khealthcertificate-25.04.1/KHealthCertificateConfig.cmake.in
+khealthcertificate-25.04.1/.reuse/
+khealthcertificate-25.04.1/.reuse/dep5
+khealthcertificate-25.04.1/CMakePresets.json.license
+khealthcertificate-25.04.1/CMakePresets.json
+khealthcertificate-25.04.1/LICENSES/
+khealthcertificate-25.04.1/LICENSES/CC-BY-4.0.txt
+khealthcertificate-25.04.1/LICENSES/MIT.txt
+khealthcertificate-25.04.1/LICENSES/CC-BY-3.0.txt
+khealthcertificate-25.04.1/LICENSES/BSD-3-Clause.txt
+khealthcertificate-25.04.1/LICENSES/Apache-2.0.txt
+khealthcertificate-25.04.1/LICENSES/CC0-1.0.txt
+khealthcertificate-25.04.1/LICENSES/EUPL-1.2.txt
+khealthcertificate-25.04.1/LICENSES/W3C-20150513.txt
+khealthcertificate-25.04.1/LICENSES/LGPL-2.0-or-later.txt
+khealthcertificate-25.04.1/.gitlab-ci.yml
+khealthcertificate-25.04.1/tests/
+khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp
+khealthcertificate-25.04.1/tests/health-certificate-viewer.qml
+khealthcertificate-25.04.1/tests/VaccinationCertificatePage.qml
+khealthcertificate-25.04.1/tests/nl-decoder.cpp
+khealthcertificate-25.04.1/tests/TestCertificatePage.qml
+khealthcertificate-25.04.1/tests/RecoveryCertificatePage.qml
+khealthcertificate-25.04.1/tests/CMakeLists.txt
+khealthcertificate-25.04.1/.kde-ci.yml
+khealthcertificate-25.04.1/.gitattributes
+khealthcertificate-25.04.1/autotests/
+khealthcertificate-25.04.1/autotests/divocparsertest.cpp
+khealthcertificate-25.04.1/autotests/data/
+khealthcertificate-25.04.1/autotests/data/icao/
+khealthcertificate-25.04.1/autotests/data/icao/single-vaccine.txt
+khealthcertificate-25.04.1/autotests/data/icao/jpn-triple-vaccine.txt
+khealthcertificate-25.04.1/autotests/data/icao/test.txt
+khealthcertificate-25.04.1/autotests/data/divoc/
+khealthcertificate-25.04.1/autotests/data/divoc/partial-vaccination.bin
+khealthcertificate-25.04.1/autotests/data/divoc/partial-vaccination.json.license
+khealthcertificate-25.04.1/autotests/data/divoc/partial-vaccination.json
+khealthcertificate-25.04.1/autotests/data/divoc/partial-vaccination.bin.license
+khealthcertificate-25.04.1/autotests/data/shc/
+khealthcertificate-25.04.1/autotests/data/shc/shc.qrc
+khealthcertificate-25.04.1/autotests/data/shc/example-00-f-qr-code-numeric-value-0.txt
+khealthcertificate-25.04.1/autotests/data/shc/3Kfdg-XwP-7gXyywtUfUADwBumDOPKMQx-iELL11W9s.jwk
+khealthcertificate-25.04.1/autotests/data/eu-dgc/
+khealthcertificate-25.04.1/autotests/data/eu-dgc/0c4b15512be91401.der
+khealthcertificate-25.04.1/autotests/data/eu-dgc/2e5dcd3f4df33b16.der
+khealthcertificate-25.04.1/autotests/data/eu-dgc/negative-rat-test-cz.txt
+khealthcertificate-25.04.1/autotests/data/eu-dgc/full-vaccination-ch.txt
+khealthcertificate-25.04.1/autotests/data/eu-dgc/negative-test.txt
+khealthcertificate-25.04.1/autotests/data/eu-dgc/recovery.txt
+khealthcertificate-25.04.1/autotests/data/eu-dgc/ea3ab2264f346d45.der
+khealthcertificate-25.04.1/autotests/data/eu-dgc/full-vaccination.txt
+khealthcertificate-25.04.1/autotests/data/eu-dgc/certs.qrc
+khealthcertificate-25.04.1/autotests/data/eu-dgc/partial-vaccination.txt
+khealthcertificate-25.04.1/autotests/data/nl-coronacheck/
+khealthcertificate-25.04.1/autotests/data/nl-coronacheck/sample-one-day.txt
+khealthcertificate-25.04.1/autotests/nlcoronacheckparsertest.cpp
+khealthcertificate-25.04.1/autotests/eudgcparsertest.cpp
+khealthcertificate-25.04.1/autotests/icaovdsparsertest.cpp
+khealthcertificate-25.04.1/autotests/shcparsertest.cpp
+khealthcertificate-25.04.1/autotests/CMakeLists.txt
+khealthcertificate-25.04.1/CMakeLists.txt
+khealthcertificate-25.04.1/README.md.license
+khealthcertificate-25.04.1/src/
+khealthcertificate-25.04.1/src/tools/
+khealthcertificate-25.04.1/src/tools/update-eu-dgc-data.py
+khealthcertificate-25.04.1/src/tools/update-icao-csca-ml.py
+khealthcertificate-25.04.1/src/tools/update-hl7-cvx-data.py
+khealthcertificate-25.04.1/src/tools/update-nl-public-keys.py
+khealthcertificate-25.04.1/src/tools/update-shc-certs.py
+khealthcertificate-25.04.1/src/tools/update-icd-11-data.py
+khealthcertificate-25.04.1/src/tools/value_sets_pb2.py
+khealthcertificate-25.04.1/src/tools/value_sets_pb2.py.license
+khealthcertificate-25.04.1/src/tools/value_sets.proto
+khealthcertificate-25.04.1/src/tools/CMakeLists.txt
+khealthcertificate-25.04.1/src/tools/update-eu-dgc-certs.py
+khealthcertificate-25.04.1/src/cli/
+khealthcertificate-25.04.1/src/cli/health-certificate-decode.cpp
+khealthcertificate-25.04.1/src/cli/CMakeLists.txt
+khealthcertificate-25.04.1/src/qml/
+khealthcertificate-25.04.1/src/qml/khealthcertificateqmlplugin.cpp
+khealthcertificate-25.04.1/src/qml/qmldir.license
+khealthcertificate-25.04.1/src/qml/qmldir
+khealthcertificate-25.04.1/src/qml/CMakeLists.txt
+khealthcertificate-25.04.1/src/lib/
+khealthcertificate-25.04.1/src/lib/openssl/
+khealthcertificate-25.04.1/src/lib/openssl/verify.cpp
+khealthcertificate-25.04.1/src/lib/openssl/x509loader_p.h
+khealthcertificate-25.04.1/src/lib/openssl/config-openssl_p.h.in
+khealthcertificate-25.04.1/src/lib/openssl/asn1_p.h
+khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h
+khealthcertificate-25.04.1/src/lib/openssl/verify_p.h
+khealthcertificate-25.04.1/src/lib/openssl/x509loader.cpp
+khealthcertificate-25.04.1/src/lib/openssl/bignum_p.h
+khealthcertificate-25.04.1/src/lib/khealthcertificatetypes_p.h
+khealthcertificate-25.04.1/src/lib/khealthcertificatetypes.h
+khealthcertificate-25.04.1/src/lib/ktestcertificate.h
+khealthcertificate-25.04.1/src/lib/icao/
+khealthcertificate-25.04.1/src/lib/icao/icaovdsparser_p.h
+khealthcertificate-25.04.1/src/lib/icao/data/
+khealthcertificate-25.04.1/src/lib/icao/data/vaccines.json
+khealthcertificate-25.04.1/src/lib/icao/data/icaovds-data.qrc
+khealthcertificate-25.04.1/src/lib/icao/data/diseases.json
+khealthcertificate-25.04.1/src/lib/icao/certs/
+khealthcertificate-25.04.1/src/lib/icao/certs/3617c1e7f56795712e3775708e55833186e9380e/
+khealthcertificate-25.04.1/src/lib/icao/certs/3617c1e7f56795712e3775708e55833186e9380e/16f5.der
+khealthcertificate-25.04.1/src/lib/icao/certs/3617c1e7f56795712e3775708e55833186e9380e/16f2.der
+khealthcertificate-25.04.1/src/lib/icao/certs/6ab4f29282bd9647f6ff2a02f7944d749e978463/
+khealthcertificate-25.04.1/src/lib/icao/certs/6ab4f29282bd9647f6ff2a02f7944d749e978463/e5.der
+khealthcertificate-25.04.1/src/lib/icao/certs/6ab4f29282bd9647f6ff2a02f7944d749e978463/e3.der
+khealthcertificate-25.04.1/src/lib/icao/certs/icao-csca-certs.qrc
+khealthcertificate-25.04.1/src/lib/icao/icaovdsparser.cpp
+khealthcertificate-25.04.1/src/lib/divoc/
+khealthcertificate-25.04.1/src/lib/divoc/jwsverifier.cpp
+khealthcertificate-25.04.1/src/lib/divoc/jwsverifier_p.h
+khealthcertificate-25.04.1/src/lib/divoc/divocparser.cpp
+khealthcertificate-25.04.1/src/lib/divoc/jsonld_p.h
+khealthcertificate-25.04.1/src/lib/divoc/data/
+khealthcertificate-25.04.1/src/lib/divoc/data/security-v2.json.license
+khealthcertificate-25.04.1/src/lib/divoc/data/security-v1.json.license
+khealthcertificate-25.04.1/src/lib/divoc/data/credentials-v1.json.license
+khealthcertificate-25.04.1/src/lib/divoc/data/vaccination-v1.json.license
+khealthcertificate-25.04.1/src/lib/divoc/data/vaccination-v1.json
+khealthcertificate-25.04.1/src/lib/divoc/data/security-v1.json
+khealthcertificate-25.04.1/src/lib/divoc/data/security-v2.json
+khealthcertificate-25.04.1/src/lib/divoc/data/credentials-v1.json
+khealthcertificate-25.04.1/src/lib/divoc/data/divoc-data.qrc
+khealthcertificate-25.04.1/src/lib/divoc/data/did-india.pem
+khealthcertificate-25.04.1/src/lib/divoc/data/did-india.pem.license
+khealthcertificate-25.04.1/src/lib/divoc/rdf.cpp
+khealthcertificate-25.04.1/src/lib/divoc/rdf_p.h
+khealthcertificate-25.04.1/src/lib/divoc/jsonld.cpp
+khealthcertificate-25.04.1/src/lib/divoc/divocparser_p.h
+khealthcertificate-25.04.1/src/lib/zlib/
+khealthcertificate-25.04.1/src/lib/zlib/zlib_p.h
+khealthcertificate-25.04.1/src/lib/zlib/zlib.cpp
+khealthcertificate-25.04.1/src/lib/ktestcertificate.cpp
+khealthcertificate-25.04.1/src/lib/krecoverycertificate.cpp
+khealthcertificate-25.04.1/src/lib/shc/
+khealthcertificate-25.04.1/src/lib/shc/jwkloader_p.h
+khealthcertificate-25.04.1/src/lib/shc/jwkloader.cpp
+khealthcertificate-25.04.1/src/lib/shc/shcparser_p.h
+khealthcertificate-25.04.1/src/lib/shc/data/
+khealthcertificate-25.04.1/src/lib/shc/data/shc-data.qrc
+khealthcertificate-25.04.1/src/lib/shc/data/hl7-cvx-codes.json
+khealthcertificate-25.04.1/src/lib/shc/jwtparser.cpp
+khealthcertificate-25.04.1/src/lib/shc/certs/
+khealthcertificate-25.04.1/src/lib/shc/certs/UnHGY-iyCIr__dzyqcxUiApMwU9lfeXnzT2i5Eo7TvE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/m8kmkOYQiUDyoMlF8672ZE7CGCtapeamus0P3bK9yEo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/kSkuBfLcOxfDGo8ZGzJh0GO3SP3wT6uT8ya62NMuYGk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/XCqxdhhS7SWlPqihaUXovM_FjU65WeoBFGc_ppent0Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-IgAJf77qAqSQGRHMXqAik9MDgFc2jk3JiLZQpuSQ2A.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/NIYjamR_uv5paKe7T9kn4mueOQFx2WlSaNSZzwIUILA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/__7c-ik-MpZuSZ6_ODZckR_FOOi2cN_2bn0s2FaqkpM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/2IfE2paj2TPh_-pC9nVIMaKKqUqb2hzoMFcRpX2l3Y4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/eWghKU5rTe2NuQ10H6LQzVLfwW5exhVgP795XCIv_vM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Akfcd16Qc_fhbPsoep3rbEcPlOXGKn9mIDVcb8c2kyo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/G8VIIg-KRMUU7bhW5RKy1H7FuI2DH1gMSc_Ok0t4uzE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/OQF77TBd03pus3I79czNkB9eqotQ3xtO5icxYYqCjrA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/eFBTn2ACOquZjMVKUGAWMFLPYjaNVJokDVvvY58ciQA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/eOYMUyNJAF4a6iiPbwcOV2a3b6n_YjuKko-4mROkRYg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/jemD-Hkw6KSeoIIYx0HyaI_SBmcJ9KNUkdazTevRBaU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SV4ZXthIsHHMzms_TmjfxQPpTY43wMtrxtX0MG-Nd28.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/k1KgH1uFX92OrEYgyKHlrfBvdUNt8uaiXSUuCex_W1M.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4XZuZB_fUaf_6Dsk7d5GonSo7oiPEXeW1EcZIP33gOI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/z6FF4HeX1EdoV8suJV4RtcYq98-RGaqHyPIq2GBUqss.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/pCmOvJBUfo30WuG9UVlDCOvyBhPScLU2_CrAGy9A4Q8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/LBHy9yteMf6D1ZOlGHxVZ2VJlT073apFfgck7uEnHUU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/_EKTZCsgEqwR1R3oVaib1O9_R0KWehcROkU1aA883OE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/m5kZX-HpcSSBUQ2gJqA1FgEFAU1ljHqMtvdGoRNzzj4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/DodINAnbnH8FXWBUhBvdUIZrHqJiPZeeStyxpnNYlJ4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/n2GS2CfMT1xmI7GTkSxkBkNSoXDYRjo2iXr5KReDF60.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/b8AJ71TFULKzUneEahRMHPDQazS3_cIIXeX4BoOXDLI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/MkUUbJzyTQj9fBXTebebVgAi7aLeInB3BoWhybAbi9w.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-h7TjqJB9Sn2yp2e9wO-Pf6YibiRGKjceNHgLGBvaM8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/mNCj9r3x2i2Be9bGAr983PVRzvbCQGKIjzXdPrpkQto.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/TaGRfZOTc7scC1KB9280fu3O8bMTPX8WzDbpsfV3Ug4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/LscjYTUMp733zsMu6D6tGCmvR7Rk4rTO7FV5w9r4e8E.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/XDwaeyJyEXvFo-lkeVW8TCPGM7sMLKlJJmU74Hy60ts.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Yins6zdFFla22fnW41GZV6fsPaX46b_MG5rE5X39tMk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/DHtX6zT15GJvXLQFAt8mCTyYJySL1cucMcJ0RizKDnI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/3Ujv5kjdbTwbZAfjC5OrWCHDnJtENU3sTckG-vmZzHw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/CGDPOMcHM7ZrKqsD4Y73HznEnERaJzxvG_dLwaenSgs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/3c7B_9lJp1tpByY1jBxnKpef7hNngBtujma1sa1BAdU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4a560ef3-49d3-4463-bd28-70efba817c1e.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/TUuI4nkHr1euHPUvOwN2cM_WThUOfjDmQKL3kXRxK_Y.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/HpcUqTHBGAPiIGHhmUrI3lT9LIrhPoPvhQ8XKgPv9gs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/NbIxdaroYhTu23PTcrVJWturNwugXfzFpLywAsugvhY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/5K75_U4qKM0yxpVb4KIuA1poRrLZuxHvMNkUw7-sexE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ESfry2QZcfrybMvZXIZGXhFF-MqmiYMJec8UOnEygnU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uKFcRTJBgcNtiMRNMFewWhp56dO7m1QD1eQ9DirduW0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UjF5uQPh6HUHhByMFl-Fx_4H26-xSi2gb7n2wcgbjYw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SzxkIArQIMhaFvD7yASR75tYfcIvc3SxbcY82WqpJYc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/6AGhASNoHIA9f9HBvUxlBcyCtYiMxo3yRQbmMhGPO-k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/VEccqX9LvPZJXqv11staEs0qPN2OR9bMS_PXEAZODXg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/HvlLNClY2JAEhIhsZZ_CfRaxF5jdooWgaKAbLajhv2I.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WMxaRAjz9Btz_jovTycngKWT--J4dQMAtlXnDhZKBzs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/tH7Y4mCBsxlPy0k60DzkkLaQ_2IHKgCDBhGwlYHi2Ok.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/R1svAJAoGZR1TklkMYpoFrrNHxEBRVB84Cl9H7vBTF0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/YfjIbmElcMkjwclXAoOVw6tmbsKI90EMXwB2WmJIqHc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-dznmcx21Vu7QQkxz4u4ki-d7XyuBj2Q7_KBdoBGuLE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/fcrZ56NMlidKduAwvKCvd3aspoK0x-YHf0_v_jEwzsM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/rOF8imMZYLD-BGdFIDl7bexBgpODIYr5_yPi57eNrVs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/YazFcWozjZcFokPsB7Sc4u1Xinv9-1yD8nrLMRLo0PA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JYaFsJ6ltkJVsolJUds8mxxMQLfYR6RrfoMR_U-mdPE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/lX0xpb5rm7y4oJNVQs8OSVJcMpiiPpy-XpmhoCaw64o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/e321KG2oVcL8QVUG59NKlgEg20kkJwiqpJ9jBvZdz-o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/nV5trGWntRI-iemPFzEhKBiaT9jy1wKbffVLM2mzfpE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/h9nChOTtudX0wXJ3G4K5u9mMXqbPtswhWZFuJqFqdCQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/FiQcwskJsU4jKq50IORlrplJe6Cj9EyfsWldvzNGHkM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4S4NI0l6wC6YBNPSdp8upWraj9XayAdQYUU-ycC6qcw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/pLS2q7bqcCbK49m-zjJkRQil3MQISMrwc-012pCHEkY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4S5oS222XceZXz5ROPy8lyQhSIbPk4eTrMXXThyMGqA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/MLHtoHWeAr5PeKA8C-S16QduFcPVHYMnuRAMLag1Fus.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JQlaeWurhA-i-75kRqPSBC6_qjnbeyOjwRxGkAIFNZU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/BbtbEKjD-fOvxZuzjaZqGsU5o8zhgRRPMzrQI4aD56M.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uGQkrVuVAZhysB0yD33u-i6xoTlw27F8_ENEjQPqGEw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/jwqukbzQbN1RxccBTk5kcDeD6imAxn7EylrmnRw-Xnc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/W-YqFW97-hXbFboeEwuzjNeLR43dULpzlNm7Oqbv1Pc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/aaPAzrs7vTMwGbUpmJXXv-K_rb6I4ljVYwgztBAVcGY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/olVoBiDPbga16QNVEO914-DbInqPozljsdlSS523898.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UOvXbgzZj4zL-lt1uJVS_98NHQrQz48FTdqQyNEdaNE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ta3yKjoYleeW_c6DGd9Sg6QdgrgaQ7FGrlnwQRpZ1v8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/2XlWk1UQMqavMtLt-aX35q_q9snFtGgdjH4-Y1gfH1M.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uY3K-Hn_UKOQJM2S_6jZYa3ZpZWGrwAJGPrMWuQrD8Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zBwvdXxZunOT7s39rKRmCkG8WntlwlwagOLKjopstSo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ggBXefAONrttYisHELbcrv6YKWXsSDLZA02rA_6KCMs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/t8qXEf0fKebVbXI8AwjqHRiDwF8FtatVyPA9wstzhqs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/d2Gu5_12Gabur3jC7bZ0ooWh41tq3SW6H4x35FnKRhI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/3PGPSVUemUL6vtrXBm4IEcgZuFbqm8wDF4-VGSNW0YU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/afXT8j9iwJJ7IRP24ZUKPhbkga79MfqPreO2DlK0sLA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/dYx3mLMcBeG34o7pWchb-baIIgnTQqcR53EVeYgITu4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Pjy4Qg73qkUFnK7pU02Od1c8szuA3Sf9MBqkW1_WeOA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/6-OXNT249Bgro8aYxmbXWcRrNkcVW8jqBbdDd15QE9E.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/sBHR4URZTz8cq2kIV_JhTXwicbqp1tHtodItRSx0O0Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/eRkkeRzQyu2hSe8BlIWd_7dSWJh4BSnvlfXC5wda4hI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/FjbTXpsFm8Wo24V_NIyJf7DKCMa1NsbNDuGOsdbQyMw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/athNk7Dw2SRzLXCO6JV63y6UngDxxEiK_hVLSrA89-w.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JFrLuzYhsSZKGHyY2mh9zRf3u002Skewj0IMu7z94LM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/r6TOQW6N9Twi0iPMoZLygAKX80fCeZAduGCeghxft0Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zmoeqXQpgis3DaSRjFn3BY7dfG964vp10uD_XE5RGX0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/AiB-cTlmIM07DDNjfdXghP_qAns0Y8eaXZ7CA1m7pW0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/obk0oQm4Y3sV67faaqKLBB9dkGZ89lejHLdHPyH2yTY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Cn7nYK-lnVbWLY9F5JJlUt4ZU8ptYla1-gT45Bzj0cA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/cr2Qyf3BnOqQCdIBIz3gzMryOTNjmybIDF7N59JJGSY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/OT577c8Cvwa1Bx6LYdKx2LBgzuE7eKO95-5inZPjx-s.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/xyIOe0nvr6-xRt_pVRmwNWgNYfvXlQbsj3453sVY5fc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/B3Wf0XsR9zdEy2vMUWO_x2_DkRaYz_LDnUg3k08hQb4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4ySM1Xd79w8fFYwFdwD1vViBRl9nNWDhMAsFpmHImSQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/9UUNq1iGOg5gdVIhcaXd4WzTKhlj7HdmtzUJYIeSEaQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/hspy-bpfqGL2PMFS3PJgvdCiRHqGiMJ5PUg8L2-9hGs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/97fItkBnzQyAc0sEljIwuYGbrRMCouhnuq-L8hcEKBg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/tNI3nVmGXwOqB4B2wa8VpxzDi_tBQNINMKYbWKvWJ6s.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/v-2hdxy8ys47SFsQT4wqSqrN88fw2M5I9SHzTxHs0rA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/q59IjbeGtaRpuHvdRuU9UxpNvzpQHCLcRXVD7rM563I.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/cZxJnAOT6390E103SoaVyX2RNJenO46qyBcceU4A8go.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/iy4q5Hxj7Gx5ambJY4mdLrIhgG6R_4vEX5lCmW1Tl-Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/5fGcRveDtGxLX2q_CjXLUOITyAR5KuVNsfe9TkjE86k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/pTte2yuVu81ajkY3uaCSHq7-hwhOuscOBEs2TOifKq4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/aea1bb72-98a1-40d6-a39b-bf7a7e49e6bb.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/DhcL94F0tr5BJuaEBc-ZLgpEYS97_mNOzbAnJuZ4hdE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/6rOie4oR3-44pk1sDn4QuqlDs8pFQj2zauY7qSHbHqw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/HFh-_XqH7cgzvyA2pEGnlYSix9BvlrSOaD2aCSbmzYc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/aHCZwBl5-1MUcNssdZJiu_XUD75sGxNPbEG04Oum2kg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/wdqzOShT_Gnt8uP5fYzHKAxp0eWweAk5zpoEvaI_VmU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UPhXyYBV4mAMlCsVtscAJP2KfP7T3kBn7R70dS9P3Lg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/85a29fcf-7189-4b0a-bb58-64e1bcc47d56.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ReGMeHA-aOv_AcmDkzMr-71KiCcOU4F7ZO88CrWw6oY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Psff9iGNTkbiOD7Ko8S2_24ftrsCl9Qsfn6o6lqRBn8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/PieNn3ty3quAW_G_TUMwJEUaeh_QORyjlHfKwQ--CxM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/e46ada0a-94df-4d6b-908a-13ee5dba900d.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/NdTA9DTXn_7fOnQXp0Lpqt_3qZu4W9VChV1FN_h3wH0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/brUxRd9nVAk5WpPbHrpJx0wx2ABpgUQ4bP1kp90o8gc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Arb29-Fsf_bSMgMURH8zVPieCYRF9C3qRduclItA6n8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/348jzyKWtD8225Duqr6zJHqw-Jc0jlXm_pCWq6Nw_1c.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/shc-certs-manual.qrc
+khealthcertificate-25.04.1/src/lib/shc/certs/HU_oQtpaUSKgrD7QzeQ9TxED9BtPRFGcD8MqI6og_8A.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/QF4owq0tMZAMYoMJWpLosERtLrzVtKL-lIzvTFY332g.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/e09rUHZUE_9ZfduHpQktUv7sOsk_ayGeVAdiIkmIaAQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/YRcPQZzXY1YroL_rOcluMVdtPizd_T3jHOGLKzGln9g.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/VcGBmQIW3DxECXXEHQBkbcyqOPFevpEz3Cghsjh--WE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Gnuke2ZfaUIYFahHcJgurDIOqva0X62u-0ZG1e98NFg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Z6ZwpiIh4RokwFr2eaHgahvr335Ph8hGdgzDD4Oaxko.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/BvZy98sZVulgVwK2D_-LcT2akKpadjH5AvCeMkdyiFc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/8C0XuFqvTGVUSW_l3lcE90ftgP-GWK7ooWcYoQRVRMQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/r1M-HNS30Li0J4WlLMrKUwKppsOK61ZfkZy7WhTez7w.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4nvtz4SKm7W0Kl5AZ-3tIpw_FqqcrdWIVqryIUzfygs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/RBvL32MBD4FXqXKE86HU9Nnjp0hADhqztOXb-M_mP_k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/nrVWTxXZnpk7WWh0roDnaBgRsE-HzhOkGUUlvOK2Uro.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Y9SciakkvRNFylc7r46l8qtrj0b6BMvEmZaJhJ7A5zA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/scrrOxgW26WSVKOf6MZzoQ0U6hF7gmcRtiCeqw_l0ec.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/t4PytV9gPYYrMFLSIqgRxaHLfKvggfY5oHPGTL2CFDs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/5Gn27eJKxDIMktqMh2J_k7qjb20oH1HCgJkccIBOhXk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/9GbJ5qM1XwrYTwDDe0HIgjEbimkzRiVo1-bX7srZUfk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WYErh5snsU6mJV_BbWDLk6M4TxyEhn6iEJMVkW585wI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/3a9rtgYUQe5RXpv2oM_DkXnd-h_1ZWfPkRrpcvtIY4A.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/l0JUwp6xs9h_s9fCWzu3ocKdSnJx7MNN-HhM4uVghlQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/0skYja5xi7ZEP1t2sLtaNBVlYGVvNh9rEOcXt0YywlA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/W67NuzZplOkH4pLpgm7jz-sOI9Sav3zN1eK8oaml5KU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/q6LZfDT70lWv0Mgysj0hgKlRBMi1cQ7_IGfEfOcRRkA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/COtZJhsWjnta-bYXwlRkWlldA95Ai7S6YGZE4MPB-tk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/k2MRYPPAREjXU9EsaiJyDhQIWmBOF3YhGtjdrmvWyz4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/H3oGY7mapRqQb9L_KCpH5eVkcGsJIM2QZOF1m-CeZ9k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-7KwyVSAe4g37WuMgIfw1HD8z1_LVsX8zqcwagZlQBo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/vqHxrsBwtWp2-NS2APN4m8aGjnaec8_juc9C4wFw9hI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/pW7F8zJPBc8uqtTRPBiKyCFDfAS4ZIeFlocSLdxZEe8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UI3Q5YHNlnwRPBmtxclGYkpuyT6pqzIWakoo_CHtkeg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/1j8HNfXiWLFT8qTSld_2uvCgYjyAdxjhig4XzBkRvRA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/isigIJLSjbRgCSNfgJANJ0-NQYxBva09-2KrSaYqcBI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/wDtJB1kPAfR1uJi6np_RvmIkp5inHWabymheScCGosI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/BS3vs7e2FDY2A5x_2sBgccJR7ULKvOkEedEH5NWYkM0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/X53dodl3nyr7HRw_6mnk06j7V-aYYZPkk2Bb7jpgUQU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/DftUSIlFGWXfFr0cm1tYwpQ1rL1wOS7_YtjyAGzRI68.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/K6BDDbIcqKk3-ffsDHYYaOz7F_CklzINPFTHGu6buvU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zSo8tNBGLuI-uEImCzrErr6udFjZZimOFkqO9pfICj8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/dKEeeC7VTe912gisnMXHxBCd3iFRuDHj76tWtb3uaBc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/2ERcjZgrojfX64RG8MBu6EvsW-7qmYGg_18LITMjO1s.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SrCqDaxmBy71tT6aH3HFRH5vIwq5oazM05Xhmg8VPQo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/xOqUO82bEz8APn_5wohZZvSK4Ui6pqWdSAv5BEhkes0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/shc-certs.qrc
+khealthcertificate-25.04.1/src/lib/shc/certs/1cbWQj6OEipUmkMhXGpgGPSf83uWS4ew4bJPpkbcong.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/R6-vROogzwE51ZIHxRl7tp8SSRoAfMcGeOoF_G2VGlo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/0IkOoOtxTAp0DpLmK2na2rpCnKF7LGhngdT3hIGFWnQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/QMIYc8XF3dJx9Rf9u30Y06XIQuiRgLcU0ev8th2nSvs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/fDpmdl8kXxgfs3Ce8xZkT4p3YZGrTK71Gp0yfTCEPPk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/gO4sQJYp9nQw-hu-gHq1aXTEmBM_qOk3W9DjWGwLVrQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/wCHGZVtkE3-PTtQasc41UDVYhjdoizeDKvCndmAbw3o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/wo2_PYrMPiKgdxp1bOZTk_wzwa4DkBFYcQDrZt-muWY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/aXVmKxzAGg5Jv1pLzaEDDI90bKboryfrDnwiC6Qw6dw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-Zl9IpZfFh3tYrojgmsfU34ulkdvsdKmELCOyHSaYZ0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SCW_L8yRRrg3Ww5Jj5l3jqGTcRQZZKlufsEYQjVQo4g.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/RjQ80uYgDxqUBGoa9Tj_FL0G1iBEfV_EqpAzPghtIA0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/tc3ffdtkNuTa1kqnSkoh_aBKdDiXLfnQAnmLVmRum3g.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/icKN8sxNH2ijHGcmqCOWHKziRPd25BoENF5Z0dVrkaI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/fFyWQ6CvV9Me_FkwWAL_DwxI_VQROw8tyzSp5_zI8_4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-Op_l5Cs2yvAEcQp-6WFFIUzjFEuANXf2E71uXRxWg8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/fN7bQ849kXe37OvMTtUwstk81hQ0w1wK4cFN6uCpGL4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/S7GOxM5DQsP-o6tbwJ-xQRWqTOsRABfZMD2N3Wc5-Hc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/w3miO24XR0QWVRPM5xIs7aGVydE2WZVybNGgQashSBo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/AUS1FwINnQiHFkT1S0NIoReaxz6CAoEoOIg7QpwuKhE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/kHmORnHhng11wAxRDSIIa_O9EdlHmVpNoRPXG2kjgvU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/t-DzYd2IEWgreyzw2GCdqwo-RzwUfmIwd3oJIsTFklA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/mxF4Ps18ovCh05dnazqw08rXkdDXqWCzpuUdG73PlvA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/K4d6GFBAxvHUSFOU5MGaBbG4RSLlbwAQANUktxWBC0Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UwqgQQ5XiNYjrPXhb3R7g7icjJljvasf2FHyV6uahyY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UURmFWohkZz1reDW0M16e5MlnKNSIxsvYfRvKnGodLI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/n3D7Wq5B0hHw3QA3Ir8AUGhUYdti09tEL2is9fSEqsc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/oO116HgQJSQ0vizv0eT3uf7xnw_opl8E3scpLDlogJs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/bnTieoDOSJHaGwK3VP1kG4ro5QutG5Qet1N59XfXCac.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/5vKTYrz-IoaW6hEqbeZGD-UIdlTJ5WtXQ9TpdzBlTPw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/lBvGROoOyhLYwYNzVGM7g_15SRqrnCLXCAIZkPEO9rc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/AWbze1dsT_69BBvlCv8g8rzUAyIBM3q6OT7zMQxBWVU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/cua-70AcjFVOJ0oU7rWhRdpjE5c9BA6BSy6m6Uz1OJY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/g3e0Mc14ryLe1pHUHkPwFMQRFRy5JeYXooUwECYo7kg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/EaQNVA8yremdk_91EEzZMZt2R4PHMiyThhwrxK0r0u4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uR7DqZcpf0Vmamhbr2waOENZZ2bOGV6fUkzcoraFMA0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WouwNX4pUA1SBWVtJ4Wej6pY3KcwNCbC4amiB7VOO5o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/CqfJ_R5DTOoBzVdpTiTCiD9xLkho4lKY0nxJVqTP-mA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ZxkxsYTHkfH2sjvw4E527bPUJxmw-fMuT8N188cHHbE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/dQZ_K6uV_az63aAQ6XppHWi7sS_EQW5aENOwK4l946Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/PF3kEL6tpYRX7p09lFg-81_GEEFh4qUvnWby61I37wo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zFmyJMKQGRkV_IydDfg9OD4x83x9HKdiE_r7EF_l6E4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/b207c3df-c707-4dff-8001-f3a70f12e0cb.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zWvWe-FEE5LXNs8BHbL3cMpu9vqvMz5yla9M9rFUjyY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/KFLKUh-mUZhkp5fye45PAcLesScYWHYaH49kZnT7ArE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/xoPJCz5NyVXywn4RILWgkMpwVVXs8Dj1bjYap3kyPVw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uUShgSbfSpPTP-_oyS83Pb43rjqzwKHkHOR-u_Fnasg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-_uyYYwS3b8zJnU0OFgEhXpUgdSFzp51kJjo8K-g-Sk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/o0GnOoIBxND1SYy0EKl1d_qCXTNqKjtUCe--nVqrmsI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/kUAhwIMHE_Udj1h8hBfl_dKWa7Runq-OTi_LxwnZ3yw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/teYn5RVZyzJOH0oWqb0hDiMyXEDjT2Ut5c5xigpXmrQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/kNi-D9BUk1ZhU1HjMqAanP-_ZfkeUiyrTw6wa0cPP4o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/D86U5NZ_OusITiBEqmgW2gRUAw1vhcbRtHujJ4wPx7w.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/oUamA58kt4bF2XQx0BSXcgwGWt3oWC66WFheXDJX4XM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/mbnuRYF85-Q53yMSuqfbIz7LBMitQQBRHyIEAxGjwzU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/gzeRVlR44Ia5cL67gN-6HhWsBikN_ZodlGAeGLv_HsI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/j3YAS_YwqLBY9TEosFzQ6VFRpGrC4HwYG5UJj2k7W00.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/qQSCMXPa87AZdzyNcWtUtJ6Ov3-ZN02oJum5IpWR1SQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/fH8e2QLUAtpb4BV8RDgh5DxVOLxa8Bfq4acEo3sOjuc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Ya2s4TJq_SEWD8Kl_uDPLMmsYKHTsiNuRrv8cbQtq0o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/9ENs36Gsu-GmkWIyIH9XCozU9BFhLeaXvwrT3B97Wok.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/vYkxPjrksrvOfK8S02wkQ6LYcY5JLuDpnyERBklL-V8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WwSjbTuZ4OFxX05NJ73jX2YgwMRprYNkWoo84IGB7S4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/A8sNGeV-QEu6Pg48dhiHU0E1AsiNUFrOLqUH8XsHTg8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SkSCQeF4JDcLSShAM5wejAAdB8rIT3X9-EH8rLNk0fY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Nlgwb6GUrU_f0agdYKc77sXM9U8en1gBu94plufPUj8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/h_Z1WIF7m6_q59f7JiB1_q2-rRhr8uGlJiiBBzGlXUY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/D0VRkhXEq80D7sfWeqDfJ0E4QbKhJPc8v0UlWV1Ef7U.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/mXSAa7v7IdgkKcJPtri7_YmQjhIpEPmNXeI_i2M42iM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/B5zoHRXFX54o1XgT9IbQLEqTc1GK4SEJg9vjd-K4n3o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/6DSzdcfY2mk5IwLt85m2FZUufO42M0RaQeltkgsN8HU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/sy5Q85VbiH4jNee-IpFkQvMxlVAhZ_poLMPLHiDF_8I.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/7Ew8XQNna_zgQ6Tq9kNMPCsxzAnFbK6_Mm2TZRXjQ-Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ah4qU-camAEEBAPzgMTUvVc16K4J4_vPevvASUffDo4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/AQlUbxO9XumTe_MC4BO5SVlYZFj9NRRBDcNYKyjk7tw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SPWZW51rFOoPACYISQNT37M4zY4c9hzxw2f66OrHIbY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/QN9XZf6C--UcWGVuZGS5nbAUv6ZV-rV_ESrtsBhkoKw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Z8YjtXO3hGPpbDR9wMcrifbcL-PswLyMFhEJGSn1yC0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/9cJjNUd_mdaZMqe4Q4BblQYvi2vbpXM9NQp7U6P0qvg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/08IMBTeXJ7px5KXBRgJK_qm3QU3eD1VR8mClLsi_Sck.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/MeB5Xl54rMTHgfAblHFhJR-WZ95McrrtnbgbnlBE1mA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Fu4hKB_nRoOlYLgKtRn6TbIFayByWMiK6nhMMpz5SUw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ah2leYbOLup_OAJl8xbIMfyNSO6CXN_FLgVhlCQuJUU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ak85WGwxd-AkBcKjRTTZacNr7uB_M0sZFt2jwPRpjfo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/2Z7GoHSkbDFuMxLgiGiMFDND31_G5n_I7ObMzMfGm4Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/e50JV1lD47lP__Y1gULMu4e0jLQ-DMgpbbSDKV_0KTg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/GsgdDSFYSRD4PjpzBfMgN7ca-oALWz32iFhYE1Gls_o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JxvB22At6mPxk8vL_pig6W8BLYOIWsAxGIJ0F10tSUU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4wII3Qmqml42zXXv51JGOLjQaJ5p7zkdGzFefru14Pc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/sm_OaOWEjXuh3edUdXS8D1Qjw5RcNqWuvX-4GDljkYo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Kt6Xmv-9dpM2mbpbzxTM0P3YGbAW-WIJD0EE3_ddH00.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/OxiC0eIyFZe_j-3L3yr_ZOLaXc-VKbLjLtTqp5ShGL0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/yMKx_IeaZkm9qVTh8hYzU0GFmS78a94I2ksJ-1xSzx8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/07gMGu-bZ8Oq0hva4Me2OdV28NNZ7LJ6UspgEyncUfg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/YUhLaxhyu1Rl7fiLLxXEP0Sort3tLH9aiSawcQMxjBA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/xOCk6XINgNsZO94QsqBCnTve96kHIfC_l2fIA4bksqc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/rNXvwaBEYRwtk2L091lX_LKYEmO-MyXKNC85IKO8u9c.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/T1XaubRlmv3f0Q8TvUgtY8qMY39YvQDmp6MVHM2HZBY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SixvhdwEmWS3Xl1US0fL0OZ3xbEPKFMMhyLj2ZEK8bQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zswRh4FtXw_oC8R_unDMagTyHSdUjoFZadoGgIvEgO0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/doDvNi6442LAkrO01bJ1LkNHLglZ5RpwGN2ElruZJyE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/TjqsZNIpXve9Q5qoQ6OvEXIRYhBfR_8JsMAQYYTW0Xk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/EgULK0aHMEYrZGejnLP2s3LpDIhzdF9GmO15hrqtP2s.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/sLs5T5-kmtEAMY-KBvQqCuWiCWvfjAHUOH3b__-w10A.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/RnTJ2-fHoqbCfTZJDsKokUNxBPZO9-vT5qJbFltDEM4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/93QPUBRdP4t_71jIJVPk256v5Jzq3-ppcH-7id9dmLY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/BY-MED9jsICOyQBrvR6EJAD66k4djQ2_-YltJVc5QKk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/jwt_auth_cert_bell_prod_aetna_com.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/aBasrtBz-O7X5Bj9MUh8s1jkGr_PzrJgqjdtGERFj50.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Ea430PzFJWqjaVTzIhOd697rB8xEbwaAsb7plntfv6U.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/L0ACjkybPcCgJOrMywfz3gJGDeEvxkUSa2j9Pbhjwz8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/IOq5euz9bZ_qQhioZsa4cn99d6URGojDuLtKXzNNL-E.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/qsf0gGRL-Qb4Oxim1Pul9L4Tc_U56MG0No7XLd5pHHw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SArj0J9FU7dr183eb1Sd_n6-WsFayMhxjrc1EIDvps4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/gKm8wgMFepJWK22y591B4rETZ1gc8J2xe9rfCSN1aDQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JMCyyrr9wjXT5FY8rx6Jiel4DCfXS0ZDQPUuGdv4P1k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uBrPkpHPRwoB-QEe8VML32s0zq0g_p3FI6m891ztMWY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Jf2obES6YUBFtvblB8o9kf6vC6siQOaCZzUvhEuDi1Q.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/91muGrbsWIODhKyYFvOacGujZIJrHEky5D5gI56lRak.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/sUi3qStM8I1RnCJ474IHuVJTS37R0LH1OCFitmjID8c.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Mfn5L3WBRV1T4KcjpYuNBwjuF8g7KtNLalYO-KlI2Ws.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Zma9nyEcg-ToDc3u3QDMJgdEfkUb4YyvYziwMvft7qE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/OIco740ONLpRLW0WKL5VY8vcMTOftq_JqFPH-bwBce8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/7NqO5Q6gSmaWKgGuO7WqSaMxsiqI3RrrEBO2r0vSXfI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/35iLwiFy_yB7mTxH2IpdSA94Z0mbo2PB5xqoo02BFhU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/iYMoTTvT1iEJrOrkHdpogzfFw5SStkswMeqA7gM7FoY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/MXH6EAfEDZ0JH46r3j5axkCTo-QdreVtEXE-dbvydUU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/imnTqWDx_qeAsWg9OE-_hojNlEGxcU4RIsVa1lv1r-w.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zrG9rdtg9G-9zPYBRApxcguLg7v8oPvBOBFydmjfYhQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/_a-kB8nWodnqIgCflOUDxUORfUD1aoUR6Bey8-mHyek.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/2bzOyga7BXGGfAQgcR2zyBckp7S_uezwgan57EwQN80.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/KpvqpmEOig00AbPJ9PEla4mXfDLR1krwfFFN9j1Eeew.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/a8QyErpkVPP7fp9hgy2hCEN4-8Tfj4eIXWGGyyqFjRM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/0_ZcobwGIYr7HFa8F1Y3nWbC63_d6MR880hNRB0mCzk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/O9F5s7NFdLhpbWtPGaNATiaND6att30ljwd81UtZh7s.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/2fWAF7o9jARYkwTrrq1w3kyviGhoKOf7rwZIs9epHkE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/rlB2N8ozLUBETUWWLgsQymnj6xnoNgyOiANHnZowZKc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/2gE2ashpDfzsbMfw4Mi6akYTE-jAr7YKCqqg8yZouZs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/nCwM-Wnp2Om2Whzqfbenxp67FnraMzPLqmTAzGfYpJM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/EW2z9bkqDwpiiM0Mmt9wy1s2c0hoyKvCSUgVfqUQgDo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/gNbWIX0XIlp8ucum_CkAdNeLqVvVuVmqYWUcYPE3m0A.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/DGhnun9vwmQ3VFGf0-pnMwGDMEPF_Nfs3HW48EQQEEQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/0Hs0endtJ3U4Saxq2KF6-bC4UJp5mkuibFk4AVviieI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Gd7oOauG7qlj1t4lG0EfSs7mbY-EacAdvBNU-mY0HlU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/rDW5Ssu6mvGAnouM1oaeiDh06OdTePgH9ZwC1MbwAoY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/t_bJ0Zuf4bCoyq1qR80RWnN5B95LAG2ITL08ugJ9dOg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/bRi8F_YcgjcfiBFxyNv6zO1mUSomobp4APHA6uabYKw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/791lJBb-aKqJrsxhnarJSN4bFYMjehczMc9S09Jtfps.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/YIs0ddl3dONqXea7IRaUPy2h2oH-QIY59JjSoRhEJNg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WjQB9E3D_WuHLTnDthtlMXpzK_wvoNla9Yb4d8DSVS8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zSv8wWkGzIPKpuwXHSPJ-4qJY5jkSa-oKvLUyC421uo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JGu1o4nn0XCXg9zJ4HqhQ3z9DphFMruWQ2_47C9Ozog.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-b19goNbl4_TqU-BngNWMobzTZc6XG-bpSVQppsh7TY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Uub2Z1O71aExs4C2Axu5LOw441TOEO7C3xWNHCMHJu4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/OQMCTfOWqE-cTVFeh_pDyZrQw95BgkklaBGAIzfwK50.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Y6mhj3wgC0EHH2aIx32rN3sgr2g4KWqnm9bceMWjiHg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/VtQjMUXvJ0PW1mrYJBgsBUI8XdV_iyTDb8XSsq0fJwY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/DycAtkoQV5M2g9UMtsOC7D07rCaQM91phKbS4FuzAgU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/gZfET4AyA_BcAo59QcUX4H4Rs9ifFZgpvq5IjxJDUJo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/8HT4AWdF888PjtY_DeoS5-7uCo_5RZATbernCT515_A.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/VZALHOHq2Q3rCm5Z-4pNUSLAnw1VFeAc9AYkFuJrKpw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/rHqkoVBAPbdquW53SCJkiYG0gM1z6PiLKt3SKDWXJKY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/b-7aJQqKDt2EKzY04tX2xu1F2GzW_oI_xaPcGkm3Ahg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JWMPgElQkZr2hl4NVVMSgnm5hKkHESS8c_uNpFckTYM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/lmaSyjUOrvO41TN3tUXZRuGv6zlbgnqiWHD53lxgPcs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/3QNulnBJO6wZu6HQy5tAS5pGsxnDj2MJMhgLtsmUptA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Q9zEnvms4LHbhnwtHZ3KETvXudIX52hRFqFVnDpmyYI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/b-Qi4HoCM8n_zR_lUJwnfqaYhsO5OptvQqwS5d74CZs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WfODizKk3y0fg5jvkhKAxnGEoHuulEW5x7VWbSngWdI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/jDJxOJi3e2z_hgqb7oCQkKLq_MngZQJSz2JiuDAKQbA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/f1vhQP9oOZkityrguynQqB4aVh8u9xcf3wm4AFF4aVw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/yS6yW_udGw90T30ShT-fFix4hnimgfoX7M5qVMgQvIk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/9DN7I5pt-f_WlVi02Mr2R_1WnF6Dv9Va1ttS3mn56MU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SwWtG4lfTAZQjLs7q5QyFtQF2SStbMn_zFx_x9xoUu8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/KGRVZgLMuFYQE28ZpW3xkQu0J2cxCwu1xXBE95XkjtA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Pvsx8C-BTJ81HdK-1RZxkFc8xEIvy0V6xyGYauhdqCI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/D_s7dMJ2fJt7q6tGayd31v0yarYgdD8mWb_Euk8PxLQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SvP1FzmaBl52-Ty6dl80yEk6LH41plr_lKWzOoGbj-4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/GACNzwRcDYM2QYg7JZs-0MNr3zwuGP6buRsZZalT0uU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/YwCqpnQduymRrY9cvCVY9JR2AUS3WvvDOo0iWLRdwO8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/V4VY0MC5Pr00FmzvBqDf9dIK-3bLTb51HxZVXNVlFhI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JoO-sJHpheZboXdsUK4NtfulfvpiN1GlTdNnXN3XAnM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/8fh6q6S2ASUK1AD9uz5FtPxNsxoMJsor8iMrE8puvho.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/r50AoONSfsSfFy2bYhKGJqr4GzCyDXIK5XvYMhQoBrk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/k_n5C2uxa3xRhCUh7N6Tbc-bt7Nu2HiQpCQcygxX4h8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ALVEROpd2CNyaE4RcZgG6T9cM38Erfg8oSIgiK_JSVo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/i29n9wbau7IMZb0R6Zsk99aLyej7Zd7Ll5qc8GFqlW8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/cjlJGwaFkzEElIUQP9G8DeG9N4pUcnc7CKD3Rsg6XkE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/eBGefdOXaJ3BzXhnAyfSVwyT1v60OFjupCF-eIpCXko.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/fv8yidDRzHOtgyEaqBe4C2-tti9kIGG6vYM41qJKT-U.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zTS48nKWsMcEMYW2qi3aEpb91M8MdDL1OjKpDagIOFY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/rtVmuCG9DrsEt9qlCsrST2P3n9UV6iGC4PwfijotD38.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-n9npwuiFpXrkXfFBCgdbSgcX3C_yAZ03gWkZpjrnvc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/JGByY_9xEE4Ke05ULW6fLHSubIBwwWhlQwi_J3-P3a8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-MhcwalYrsFlCdSkM02QaT-av4I8YgZAavGw5R4VGdw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4jzUyIF5gJ_IbzzkJ0c8S1iBJ5aTLoSEt9FQ4ZMiu94.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/S2ygSSZ0Bb6Vik6TUXEY70g58JY3mjrcq1KFH24vVQM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/kll7bVf5JqS_KCcJcx1Pm7VRDSk3zqqlKil-4ke4t2A.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/zKbXKVoQpThDLFSiQPQVcljHkFIlPR3ZcVVJntSyk80.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WNcCUlrzxklA2YfTtvqJETX7KtOApSzFNUaSGCwbriY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/h7OGYYaK_OD5cuYLiNHZ6WX4Ss0uChuKshpM2dNNydc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/_f2xrW24yVaafC8DRblDGOa29i4SJUoeh2hXogshkcE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/IF-c2JJkgxlK8fO6eTkw7MZlpBREFXyl4Q_tK2N2OIw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ldRTTQtvMvekd1TcW8W6f1BwmlHzqG3hGlJGVMc2mzU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4loR7Ete5nJI2Uo16NyxALWM1wjqtkXP85p2m8k7jyA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/IVzjSimVvH8ZyQ3AJEjI8LXm5HfrdrDYuEmG0QcXzOI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/vyUQoeFh-ln_mkfsVzfFDpxeRHEFggmM-uudcb6iq_k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/oThTEpqjupRvyvsNIdaxOjQ5fnYDUnYqyXdveuTvcQw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/kdCa2g-1ZpTKyMZewje_Bpf14QXI0VDqboyGQNJ8gKc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/n0S0H6_mbA93e3pEu-a67qoiF4CAWYsOGoWo6TLHUzQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/7JvktUpf1_9NPwdM-70FJT3YdyTiSe2IvmVxxgDSRb0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/8C-9TNgyGuOqc-3FXyNRq6m5U9S1wyhCS1TvpgjzkoU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/u5998105SW67sFwRs_iUr5Cu7lg46zySntjpQLEGRyA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/H68eJBumEmB0adGvfhp0MlEK8LNPFMgTfkMjccFVR00.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/iAs5Ivo09wptLYWttROpTK6hRbmqfrAXVjSadSgl0gQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Jis4PRQuC3d6JcYIl1kZ5YbQ_SIEMZhBzlUHoW3o0gg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Csx3qVWGVN55khs60Uu__EV93pYnz0eRAx0fhoTod7k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ujxdFgXdMW4j2lfl3F5OWt6xhae2K_zsbFvZUvGUChg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/GF4J7iNjERUsXgF7d3PTiHZMNMldLKLk4SP50qkJX-8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UExQXaKnL6-R6cWNWyCaBoyW0w69JuS2wJDMa3dv_8M.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/KBBgSdgGdb2_Nqufjj09pcISTziLYhj9meR19MmKLDk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/_BD2QNwCaZlx_EHUYL_Q2CmG0Wl7X329LpIifdFKdjs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/h0MD1WZcbX37spRMaNkLGt4uzyOqzgU8DtXVLw1YmpI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/o0OFwVwCCyBFOFooP-hoMWJUeUWf1ubfa8qVjjDzFCw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/6D-6sCTvV2W7km7l-QOr-y5nj_me_ftIpclsxHBmvDE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/lDwZ3d6e49iM85hT-5yiRi6pWE3vFZR4O_V4a-l-EKo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WL1tYZCG8qwq2tS5U4UTOCBCGABLHfNMAO_NdjUJh3k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uXqBkl4jkadfFUtcrkeVtXRaCCy-nNHA1aD6nKb0OJ4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/KASNZoKU3R9BU-tWTIcGAF6CiSGJ1XqUE8F0GFj0by4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-RtOtSoIDwwliuW1LfntCINuM8jcsh3G0TpgHJFkuLg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ni-iRbTdShFjSgtDNAcq2m1vYwMtYg0MbcRnaAUvxaA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/nQbMGYnIP4z_aCA5fXOy-wH1O8Rv_FJE0yjnfCsc0Fs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/C9m4nqmNWHe4eX_Dg_tyoLkMS-x3KvNfP0lMBx8Jd34.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/bF6qcbib9igh0oy3dZ5puupOi4-Lyc5zyrJcAlFPOD0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Ojnl4SYcPva17V4AV9ztCCTG7bXc02zpS8Qil7yi4ac.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/SYM1S7J-oUsFAlWk2Hh_JfDjT8W53HK8DGAAheuctzI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/xjDAI01aAqqKVfTby1HgI5mGmaNov_iNAe7YU42-GYI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Y8bKrcMW947XRkPl-LdWVdNvL20Iq5lMVAQ17BEj4d4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/KBah6YdfLp3Y4ckJnLjRRUJIhnHRtzIFkJhAscuWzJY.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/L8Kii7MSeCRyF0t0SAnV_zqgR6i9g7D7dbbqvgwNtck.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/HML0coLWkBduWLSxZsiEMluE2xUT94R9BWJR2WnK7mQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/yNrADAskh560Ou9Rdc8C86K3RjbtfxZo9uCOL_4D0xQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/N2maG8qOhITe_zyPqcrCa6LT_mW18ZtFPy09cGAB24w.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/lNDhWY4Y1WKPClF2dDYw8WGEZE_L353mw931GE5pfTA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/GQzGqewXUuPls1d2ckrwwwxMy_Gm8kQ5CZ7V-JOKWl8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/MhFC5Nju-gakQX0lGUbkOrPzkeWSNb-iW0pHNiYERio.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/TyJXvion-N1hiPReLqGqP3GEHIHUKqDbpNF6_Yx2x1g.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/sZ5ca2a73SgPl7aC9v4PyA4cR5zk9A6BhHX8I2CVNwM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/U31-S4HHO2BS8BAIgCJUmKwGjDFGd6YOM-Kp-ZASJ-M.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ErB6YIH5BCsAClfcZhuaMY0NRUMej4341nEFv48gkBw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/qxfAiYuTy-OR5WElq5yZNMOQOyV0y0NRSQ09kVsAWmk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/9AZ_jHkghUOcDDBeYSrc1JAMQSoF9MAS-nEIF6s4svc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/vynvvGw0IMsA61tRoHveGPU18im4azL3k0mDR8_CgsQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/RHJK4tfxSPdRGNqFUoL4lY6gyxTMz6qcE7WCiYeNnUs.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/bTxaoSI1nmcCMM2OpMPHg9pOdDd-s2hiAxULsHA1gPw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/0jzWwbsnyP2wrDPYMCe96n0DztcJBVZLNwAq0VghGG4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/AVJpN_VVlyCtb7SQG9ddP8T3D9ZWNZLMWhDSUVEMFHw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/m_Iqa--J0odnT7cyJiObD1px1jxmm0x5v00ETHXM1VM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/MP4R9FJRtzIt2Cqlvz2WfPbBXr24gxu_Z01GLB8N1uM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/LF4I5vj9mSzx7W7XlbCaEs8UuY0USX3lVUXHY3b8tRg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/jGSgVTJh5uLgH2gR5llGJcDE90PfREMqJ55GWOHqoVk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-AwbW_LMJ2UCWd67gqxc5Kvz3Od3fFSHrniFB2P8vpA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/q-jdwRFL7uv9SihJOTHpQUoqUiRecfxfsTuoGQstogU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/cO572tjdVSjz6zxwDVN44pQllfvi0-4HCIKlNgzU5Ts.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uPWKKpoWI3OIa11UbV9xdoRHdf5ZsYsAyvczK79L3RE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/766pfdc-NKZLQSbZv5qSoWH7vQfDwfCwEWJrj-kkoSE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/sBU-IwhRjb9FeJRb-Trv6VRzF-dOOIeZsUeayinVGTE.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/-_r7w_x7idqVXnRTLWtTx9rERBy2899yqRGgJCOPG7w.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UJrT9jU8vOCUl4xsI1RZjOPP8hFUv7n9mhVtolqH9qw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Blu1I2q57VDnWIgc7-X7Y1md8jrFqIvhJiQ_xvQydfA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/g1ot2FJmActNYkz-MRXX4Vq5Vk9oPf6aIRPgYvI-l2g.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/pDblG-nQwG009yiXj26Iu0mf18owsmMthrknKXcjKAw.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/u2vVlB0dvaWy1ZkXEDUmiVg4LAeZCWxuwqAFWc_HrVI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/vMMsQ-8ob3XdjLMvzLIqHWH8yiE6OM13mim6sHbL7OI.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/wiq4O75EhQcxyeUL4uGCrG_foq6rqZN13HRD-RnF4RU.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/t8ECc0bKpCa5j7Hhu5gejMrHXMoJHRiPT_AXjrX9rk4.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/nQM-36EWDZU5kLoCoeOvshvT2P9JUyc8Do6yWRhNokg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/bbODBOYLJ30uqUYEfA8rVrNHxnCt8YaYrWjOv65aozk.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Qxzp3u4Z6iafzbz-6oNnzobPG8HUr0Jry38M3nuV5A8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/iRMwmsV-JR-lPftS1SYNMyO_nZZc6zG8TOqZ9jjGlv0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/DdQ5s69nLlRAa5VnNNnxEITZd4ene9Qg2XPmTEdXI4E.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/5xg8uSlGi4aHdSG4KG9R8auOmKh5VS38Ao44KmYMHgo.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/CJS6fWZn_TAj28mkQj23aFEfp-qDrxDM8VY9O6huGpA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/_ct4HzuM-5nNMJcSyNMyp_rdMrQ__I66RVR4V4_EIy0.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/WG_qC2lsWHa2WgqHa_dcCG27Tic7kyNi8WulJ3DUbNQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/kct_SdbBMVt5x66BpspAK1oljykq8xWX6r8wgTmzi8w.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Yn044PCWeQk1-SmxXjVHxjFtS2PxfJfoAy5J9gm1IVc.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/iFj_jiA-Mw_Ixy-cPuVOZum56plmiba--2Zxme8-2Fg.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/uOMSmJPwphyuvhjU54UnpRZ8_wefjoWSaMHz1eopGVM.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/pyimkiqzNnxaHuVOntfWNfZdxcGHZXgJuUB0mRlqq5o.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/UnJc4EJjfzPmT-KuCfmrPgTTJP5NRZhQ0CfDeYd933k.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/Yo7FakZX2dm8c05k7FHcP_7EGLc6cUyj0vFSIdW-M2E.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/CVfQFkOuS08fAs1UKNr6PhqrWbp1rEuBu_M3pzfHjGA.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/YnYeVk1pCtYvnmOytVTq09igCGdu_SyJM2Wn29AV7AQ.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/tV-uO7L7Uuinaq3-oJ07sVf7rCClr0hEjfLWMol1V5Y.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/4m_Ud0LmhbJ9fXJaqbmni7tCAz_iFpwKYiUuG1FRUO8.jwk
+khealthcertificate-25.04.1/src/lib/shc/certs/ZwFzkFHXRFwE_0Jy0oyINwNZg4yLPKk5DW96xDwjMEo.jwk
+khealthcertificate-25.04.1/src/lib/shc/jwtparser_p.h
+khealthcertificate-25.04.1/src/lib/shc/shcparser.cpp
+khealthcertificate-25.04.1/src/lib/khealthcertificateparser.cpp
+khealthcertificate-25.04.1/src/lib/khealthcertificate.h
+khealthcertificate-25.04.1/src/lib/kvaccinationcertificate.h
+khealthcertificate-25.04.1/src/lib/kvaccinationcertificate.cpp
+khealthcertificate-25.04.1/src/lib/khealthcertificate.cpp
+khealthcertificate-25.04.1/src/lib/krecoverycertificate.h
+khealthcertificate-25.04.1/src/lib/CMakeLists.txt
+khealthcertificate-25.04.1/src/lib/eu-dgc/
+khealthcertificate-25.04.1/src/lib/eu-dgc/eudgcparser.cpp
+khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser.cpp
+khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser_p.h
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/eu-dgc-data.qrc
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/vp.json
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/tg.json
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/tcMa.json
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/tcTr.json
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/ma.json
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/mp.json
+khealthcertificate-25.04.1/src/lib/eu-dgc/data/tcTt.json
+khealthcertificate-25.04.1/src/lib/eu-dgc/cborutils.cpp
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d6b47136e804a84d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/81c6513f5a201f25.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2d9e02939b514fa7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0ef905dd4b59b0e5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/47de0c4f28ffb3c2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c9609176987c5c9b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9f5d30102537602d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4b85c467847a8dc8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b6a8087d25605951.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d811a8c8523260fb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ecfa52c1296fa203.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/967f0afbd4aa7ee0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3bee446382af7a68.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/aca0711d52a0bebd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e08007083b05ef92.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1221d91d8ca284e0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a57fdf2703c4da58.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c1bff6e39d0f3eb7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6206ab9057048878.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/92994a90f12f431d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3dbc9d7352ec717a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b9be909aff71b40a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/615a416272e1d47b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/15eacc006435f79b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/39ccfb043d4cb083.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a2123d2a5151d8ff.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4f2acb028a85ed0c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/84957bdf42c84e19.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d98e45c087ca0f6e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/38aa448cca3fd8c6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/64ba860891eb5b8b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/856a321ebb49b3e1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f3fb8e15f6e587e2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/923131d87ee1b8d1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bead3c97f2d3c619.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ba409b97695a4d28.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7614b33c3af81b63.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e0a8c6eae4d97bc7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c49453aead52a4be.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b4ea454be28905f2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ac3a063211577487.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1e191eaafaed4345.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/12be4e4ccc0b77bf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dd11c535e9753b76.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/790398e810e9faf3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/963b4a64390be58b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7670091e398ceb1a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b7cc696e4f35aff1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ecac70dfe3b96f3b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/342772b77b3e71a9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/017fe6e0f0c30971.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3c1a4356a9c9ed4b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/216d6e56c63c3c72.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0a41e94b34dd6f79.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f02b85f13c0a3cc3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5b436392c989326d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/43b5e8d9e1f3eb71.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8599f21e7d857a03.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5ee0844641eef246.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/14bffc30ad036489.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c826c3c67e80f684.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/066d0d0382fa8be1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/41cc19cfa7f8d533.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1a4e14d709ee5b43.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/49578f7b2ac91cac.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0977839b11c1f4ba.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3f97429077874de9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/22194e8bd5416bea.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/150c8b72d0303190.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/de862d88467dc29e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d4c4c58e5b845875.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0251a51071badff2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dba15c8e78ee7f6b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/96c84b6d87c25918.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d5063dc6db2cf5dc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/93d6c4c0b5fea78f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3502de9f5fb43aae.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a152b0c12706c6e6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dcf8c3ad88169beb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/606cd078c1f02c99.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8c3725701a2fe88e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7b8947e88e223083.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4416277e907ad043.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a5211f86532e6e1e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2e5dcd3f4df33b16.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0a40a9f6ab28603c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/82e78f23aad3f33c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/409e2fd413f8c512.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/02da46e5f6c89593.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8da842c464f8708d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/119a73a0ed92ca3b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e1e0dfb6124adeb4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bb37b60f674bf7d1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f486553a425164f4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a85345d9d0be9a34.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/966f4fdaf944c48e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c4d2a0b1b05ad9eb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ad73fd2fbc5d74bf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f59f4b96fd2b6bd9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a5eeab6a21b67561.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9864b7dd14418456.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/41ef03ea57d9e7f6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6fd8648212851c63.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/cf6ee93dc342ef4b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d98ae43cf3a7b504.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0ad13f3d024b667f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0656c2c01fd8808a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e06909b3d62c612e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e4464d032d64112b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d280afc8d281db5d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e9b20ec8b1ba3ef3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c599d87414fd3f37.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e0b980c07fbe245f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/78ebc67b6afd45b0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/92251770aceb967b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/52b8e9210b6401c6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/82ce5aed317cb0c3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/77260b8f1863ebd5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ed98a9e93200add5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/47570129471833b9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2f9cd4f98a6aac6a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c28a306f226d445a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/05df679c1608f3b6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0e93e77b083085aa.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/772f079cc4183ab1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8ec3d902acd48132.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4a212dd5cb79a2d4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9cf284626de05f35.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b84f7c2862d19d48.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/40695c0ce5424f04.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2b2df6697a036de5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8949f5ae90576892.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/97c5b8ae187d9d3b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/650743b819d9f334.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/05a380b5513f064e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0f53a647ecc46431.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/02a8ba3f8d036ea7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/233cdfca03db6ebb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/89e9a883a8342889.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/886814fdef25411e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e7714e8d7ff8689b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/901105e22ecde477.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f7408d1bc75c767d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0f0a5bad18f58ba1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/909b94a95f2f5e0e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9dd92cbb96d4b2a3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/770a83fa88097c06.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2bf9a8bd19cae5e9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a6585ae3179ae3d2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/626c58630f8b07ce.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/263aa5f6b06b8c72.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/794558d7aac3d8a7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/76361cafcf6e11a5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3a85b5faca5ba254.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f722116d36f46982.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dc545ba1bda558f8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c2d629c8098d99d9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ab9ccd40dd26ec00.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e03ade8ae4fd9e25.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0ff90c76610b1616.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/69a893823a403d35.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8b35036631ad1d66.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1f9bcf6c9b26e20f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9bbc1fa89cf4a22e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/63afddc119457ac2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6168d49fa794b7d8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/689ba58e90467905.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/cb1e165e792ac2a6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/56231ae01211080c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/782c0fbc6dd341a5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/701ed950c33595f0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dab95d75588af142.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9289bdcdbcb91e2c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d7c48370b670a76c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d54298a7ee883332.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e483dfa8e165d875.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6f8a11f2e25dd340.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8a53cef2f54857b6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d4fb6295300c8b29.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f950fd0b605ad4d7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d9204f16f9cb683e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/96d81faabb3c21d2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9b9819ce379a133d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/234faa90e2ebd9ed.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3dac80f284dd7b9e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ab17317e1f93ff23.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c653abeb7f64a89c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/353e88f883bbd7ec.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/49a7f4b3978c9084.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/79a2af338edafabf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/762350b34217324b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d0bec0688c2ef846.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f3e03bca8ff24798.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2e4ae9870272904c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8fde7085763d17c6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dc8b1d9936240003.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8364cf94d4e0bef3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/aaaa40839301b8ec.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/385baccca447c018.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4e94089001c0ca6e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6219f044a8667204.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/522ec35d08a4b2d1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a35d56f353206188.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/cadec6c569c23c04.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/43c8a7c971e6d8e7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3e189cf5aa3fcc69.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8f2dddef1820ef9f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f1ebc2cf8db38a23.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c836ecf4c9241283.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4bb438bb2317ed5a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3c2b7a18c4db57dc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d31820dd4445e9e9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8f193ecaed1a8f09.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c0cf750813eb6a21.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2197ed14b4662866.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a7ae2cbadbb8f140.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e985c31b539f19ee.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/68253428997e80c8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ed72e1431d4a5dd4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b059c20d239411b2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/570a3634560d87b4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6baaa2e93314c8b7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c73ad98c8d42ab9b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f12047375dcd94d2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f9d2cbf5e17862e0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/18e1637cad684b0c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/75b36ad599f9f897.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0af92d2b785d8de6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f9c0d5115b4558c1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e800d1183c8326c8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b7ed3b4ab08362b0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ef3f3eea8c30d9af.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f2dd9bf7f3d94c43.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5e898a1bbd85441b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/519d5c48c68f71a4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c77721e2697ddf82.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/35f6a65e07354739.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/fe840f43bb3d123e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/51cb8a7ae575b32b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0f01c615035a0e5c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/cb8f6f50b652e9fd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7be6c5772c322501.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e72c43846705c14a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/fbb80f68048e0096.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/13c27bdd2e580dbb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/cfb1f69a612f30a4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f0a53a53b30ba139.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b8707b6ec7ca8bcd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/00dd4478b20c026a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/de6c0c3eaca031b9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/65420e8a068f5fb9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/87dc2a032f86884b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/da891f92ce02fc79.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/696f4a8f9fb08891.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e34c1e9afb2edbc1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/10a7b48b69bd7e13.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2477780a437369d2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7bd487f1db56c1d6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/81f9aaea149fbe53.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f058b5274c9e4cbf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f88618e784075ecd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b120fd32e496c110.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0789846eeccf986e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/150be50510f52452.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b73b565c3da1e7ca.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/32b4f4d26843c4b4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a28cbd296f718d5b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/68c736b5c6a70fbd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8e9c3370ce37991e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/164f7b03658774a9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/18c14c06ed519428.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/20d55185c4949d94.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4387c89e6f96be41.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/273a2f9249a405d9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/72b89bb8c7ae905c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d2ab676f9866e85e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a1bd0c997284628d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f0856b42bae451e1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8d26317cd28dbacf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8950d7418464d203.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/af2bd7b22b0f3de5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/98513a412d23a2e9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/451c33f98ed8991f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c717a585179a97b7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5768bf2ff61bd0ca.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a4969b6e29a98bcf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/88dff8c23fbc262f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b629973298cba356.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6802ec2fcaa65736.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/21a191dbcdd4d630.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1b155c47da531257.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/68626f7142d61b85.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a77ecfef5ddc8608.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e2291b2c76ccd713.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bef61ad6f6969068.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/709b2eccd21d7070.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/603032fb2bc3e655.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2be9b55e1cfe06c8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/08b71adce5ac9058.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/61bd5afb5595ff56.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/97e52aa2d6ab2c97.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d49f696fcee7755d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dba6127398349c6f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c4125772ff039cbb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f6fe27e4cde022c5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/466ea4b1e61d7856.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a01d79a6160ebcf0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9731980a938142c5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/67f7326c9d065145.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/39570f79e02d71ac.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dd39c0350d112e73.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0b33bd54eec06fd4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e109a78b0ec1d207.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/98c5226ea18e8dab.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/62bf1af1177ecea2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/66c0e8079977113c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6ea231badbfb8c2e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8c817a307f8e6242.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ec490ba4240f5e08.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d4479d07c575ac86.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b06d316e88ffeafd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0269fb11a072d5a8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f4ce03caee04c695.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7fa27dd8b44aa63d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1cf639a6321292d8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0ab54f9e0f23576c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d085c7cfcfa1be90.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/66d25512539d5a6d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9142db5abd116e42.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/80c282488b99df2d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4e3d5043ff8b8c48.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c1e33e17f708ba53.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/afd6241096608bd9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d0d4169f14eff747.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/255b823a8a8cca5e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b7bc915287c08366.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/71c810d77b66914f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/395c610d9d47e5ed.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/32d23ddc83249cc9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7be971147d03223d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/25984c2d5f46c9c9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/04963e8f39acb3ed.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ba61435547484bc6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a53a52a834c894fc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7f3183670846b588.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b0b23f3ffa205cf8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/10349663c1e7ba5e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/72476431a312a1af.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4250659c3c0fe80d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e9574e3cb17cfc58.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d9e0a365cb8ea04a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0af988e313a8323e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4aac566f320546ca.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/523efba7ea8840db.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/340c822a5cbe8428.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a2c15117214859d5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3d77b8f7f987f367.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/961eed0430a20227.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a6f291f40235dafb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/298307674769e91a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e8ffe85db884e653.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a330620786ab8ffd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f48450a47a7405c9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/55183bab8090041c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6fa03bdfeffa97aa.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/04a04584d1575805.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1879f8c37e8fee14.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0c5aee7f5a5a79c2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dd7db12b5e996771.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/61ddfe2f11916a92.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/29e140e8c412f98b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/712ff0a2ed20fe9a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3c404cdc03ccbf12.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d99cdbceb84d56dc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5a5289acc3368bd9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5e455666a51e7857.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e8536400248c2c47.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4f9632c92614a596.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7c09dc6b11244cf1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/33017e13f7668cca.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1d14310b07550461.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/086154a6cf248773.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/695d60b775613063.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/901b7a3415ffdf5b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ec311301c751299d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5248b0f3b6412d03.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/643a057e49feca16.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/133611d6e93f1342.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/77e59b0c3f06af98.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/56ef59b48170c8bb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9b905863dd348056.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0203773a7d54f239.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ca9123cdb60da84c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9d869ec5e6a31da6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ff169092510199b0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f5fe909071f383c5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d8187ed87ace8347.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e71b52afa2a40060.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ccfb7940c44018b1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c723bed84d9eb337.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a16443ba1d44b8db.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6ab99d86edda1227.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/840d7ea7010ec422.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d36bdd00e63ffa02.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/73d9633ff2ceee5e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1f63511007f38cbd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ae37731556e06bc4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9e9a3465681d4126.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6ddfb960b3bf59bc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d4c32193afb5b819.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/47babbc9df7464f5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1b0ec65a890314e0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2fb5c8036822da9b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/818285a07148f5c6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f0a69eb241a98dba.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/052f26632156c6d3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1ae40f411c5b32c5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/efaf04e7176ae048.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4136676397cb9436.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4d93ac085b04da93.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/603e52c5e254fba3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/301d55405338afbc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/72b9b51cb01e693a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f218a561920feae2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/180bf6d60ce60620.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c9afe5c63290032e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7cdb2d354c601922.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e12b36ada3aa853c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/35d8534adef556d5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/611622750fb07ad8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c9dcbdb35c5439b9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/92863c04b0eb178a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9ca27204df14494b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2ff10b286aef9b5d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/556dc6a86f6bf7fb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1fa6fa6d0f2a8a3e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/34bce1e1330384cc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d1cd71827c75585d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bd939f941399813a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/349a42b0c2d0728e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2efb7d2bf6752e0c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f6fdc5a338ca014a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a1d1420e676a1367.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3e9d8a0595b37cf2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/16d53003db87268a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/620067ae96431979.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/fc872a2019e76737.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3dc97bc8158443b7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/18710f7087a45e30.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c49ce4246cc85779.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/33c6dc9f2b02323e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0e6b0ca446674000.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/383a9a1bc9a76eba.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/22cd89b6b3898629.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/639e739545870c00.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/00ff92e6482360a6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7cd7fcf37c0f2048.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e212b53f97002970.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/01dd45e6fd56da3e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3c0fa3572f717fee.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4cbd7f1c350f417f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/77cffe7a08208d31.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ec07c0c1ca563afd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9a8ff0f12f2b6744.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/cf12dff7d5239967.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/182b6ce58c8a7e92.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a13d22550292da68.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0b58f9301bf5b5ec.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d9771ad06811ad27.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0d6673f142ab58ed.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d02ec33dfc3435a8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2f2515f2ca2743cf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/91a245ac86480670.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/070e44dc527a85b0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/acb3221adeae0775.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b9f3d6b54b424e8b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7572cbe96e6626ad.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e98a87a9af967af9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6edc0b64445d23a0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a7c1444a0373ff6d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/086db6321c5b673c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a0462a504451f73c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e822e38b632a8bbc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4d9b8d8f5f281aa4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/779b262f27520aa7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/33e47b245164e86f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/26e8669f22e41f1a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0206874488c969c0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5e921badad5389d6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/27ca7da5ffb9ffd3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2aac5dff3ea98ad7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/15530cb6b858f266.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9c7999e4af7a518e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/62f2f9fa28f8a112.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bc4a96e42f4cbf2f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4f58ac511c52eb61.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d4f86fd8388d4e46.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ebde9ca5d0f8606c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d897a518eff29b14.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0ff3aa0af486a9a2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2f0626d5332761ea.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b9dae8b44d27ee2d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/157c356e2c2b2ed4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/84e53437ef1972cb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/743e25c60c0c4420.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4404aa59b9a11025.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/90dbff4d6786fbb7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/de54e60195f5f464.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/58a127c75ce56284.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/69478eaa8e23763c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a04922dd519f96bb.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/aa631c1c68e83423.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a068b1eef0ed96ae.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8d8a6be461c20e24.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b23363a36d1d6bbf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c6d667f9186787f9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a734fd59d2f6be53.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dae321271e6d1045.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/135d1bac308c4c7c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/de3a9a8f37c7a4a1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/31e948b147738db6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/313137fd87670e93.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/88f23f4a541ff727.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/25eca016c8b16233.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/95bec9dbce1aa690.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1de5aecc6c043397.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e727b6387b9e6b8d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/31e98c30b633d9c8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/92aec843234eaf64.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d26861ddbc2fe5f1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0a3d0ac0ea5116f4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/44e1c943d4524bfa.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/aca30303ae9188b1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/37b5f2e8136c4802.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c86eb637bac3690e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/65c7e496812f7c64.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/910043a1c48235dd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/258f2eb8ad2c9732.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8e715822ed72de27.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/988f056ddb4ebf79.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/39fea5b4f317b89a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/edbcadf6c72eade3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c535a0ce051d6306.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/68003ddc4993c27a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5d109230877f0f68.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/729ada9a5315596d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/205ece5a15226189.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2e537d6c3fbc7516.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2f168dfbf039c2c0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/011acd90246da6b6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f5933de79758addd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/18c35ed962295129.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/34ee8bd3f6774d93.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d7e75af1d2848e51.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6ca99ab3dc1ae6d7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/23cfd393bf57d46c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/78d36c8368dde300.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7d13d1f1407fc8fc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9241d6902ba41512.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4e52340bf3bee112.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e2b1ab0cbca559a6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/95128d24e68fb2b1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ac4dc1c1e287b6e3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6dd6c97adbb7ea56.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/723c6c95b5f1c675.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8477df48b4b50085.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0005503d7dced5fa.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9d3ac6f2094b525b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ff21cfb118d449ed.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c2428f8ba1c89b90.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bb7ba565da265e78.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ff6de152a6bdc89a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7a62fec19581ff76.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d78410d5be8914b9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/96bc6032cd83b9a7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e23dd3a5308a0ec3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bd891c28b3e60c1a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/aef0dd0ddc1feb75.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7c62eebe0ea7e709.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6c4907384a05d56f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/975d2d842de50b23.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/66a3d87b6e9e1049.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ad53ee7f7c8a2c18.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/baee6e4f5ea7ddbf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6a5c890a0548716b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/19f37790eaa47d33.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/52c4328427fc2f27.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0ca7311382509e0e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7e217dfeee621bee.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/27640391a9ec343c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9a9ea644de3696e0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6b656c8e3155213e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3503cab5a08b8a05.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/11c82ecd25d08a10.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f66df4751448e12c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b4233ced69da6901.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ad6a33224d6975f0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/261d0c2859d5300c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6dfa23dadaede9b1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/faf97f73df42bfff.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ddc110d049090e96.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8f443fa7f1267b98.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a3ff433bb606c6ff.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d046802f15fe3133.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2b9ee49f60b33993.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/200da039c3918ba0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ee6300af53f25bd0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e0a045d2b59921c9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/19a30590ec108924.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/65db7c2d2f80f42a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/be6a7daa3d50df91.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b185dc622c6b3860.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/95892e8cbc2ced21.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/975a8f9a21eee2e3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/66a1f6e80a9d3c98.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4715cc09d23b5811.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1307bed53a55f6ae.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d09cf2ba68edb595.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ef6d159a4cda58d4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b5c19f17697a9227.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/82973a2911d1e222.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e009b89ec5ac7552.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4c68d347e45efb29.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ce83d9714f334e3d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5ecea1dfa6bfc8ba.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4d07aa8b4e0cd9e9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0dcecaaedfb2ae2f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d36feab19ca2af2d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9aa5a45e9351d119.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b0f12074488f5482.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/118aeacd17cccb7c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d6a5da43a602acaf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8b9495b82b11e530.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/24a280c534fb5a0e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0449ef3159cd14af.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6699eca242b50e03.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/eabc642de2e6947d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7e34f9c469536b77.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/80d865bca1497c41.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b81e71ebfa693c74.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f2ff28489ef2d05c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ddc7f263067a2e0e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bf181cf78f1766c6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4a6fa69d50f77a96.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ef86be6e71e722d4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0a22252bbec7173d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/549412a1b8bcddc4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ec988c9298aeb2f1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/86860ea8f380d9f9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/309b900f26de71de.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/be39b423601327e6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bb2e7d5a844a0548.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/bf8ce49b65236ae3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/afd46d58af71edd3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/881e466ecc94f182.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/20a8a8078cb90342.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e66938288452be53.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4c41634bad16b6d9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ea9b6928903527dd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7bf611ab2bfefaa6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/de5ac15077388901.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6fa0efb5a50a1fa6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9bea0465828597b2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ebc1940b7cc98a2b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/10c8f32dc3e78543.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d6684900f906a132.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/01c3a60d6a66ee42.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/143392dfa46c327c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0a5cfa330a94ecd2.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5f4b25fa33dd15a8.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/34273a612b158a83.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/41a71b0bb0dd0f85.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6562b042fbd2bab1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ba4bac4d37129d0f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3f5f2f21c6830378.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c2c31ef0be3358d1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ef55264adcb3ead1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/98cd6e36f4855f00.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5e8efcaa0044c7c9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e98e2700da16d736.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/eu-dgc-certs.qrc
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1d4393301336b469.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ed97e98f68457592.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/29c7e4d6dea0fc07.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b74bc2b8e5110f68.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c06ae2e11fbb1cf1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6c19e691e54c57a0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/eaa421e3e5954746.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/14b9d98035a44a87.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/064c431979688048.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/af8127f501dabbd4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ad310912ce83d629.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7d8dbf4edd78d744.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ceb332b481f8d119.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/845a58ff248eaf02.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/12d23aa6d5dc813d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/12b4df5a12140af5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/21e3d8b4ab27ec14.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3bdfe89e54b831f5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5957b15a840ca3ef.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/23873e699c58c76b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/20a32cb5ff328ffe.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e424fe37b5950ec3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e9a836c099121ed9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dcb0919ae701f645.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/33185f75ca078a77.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f70309f88a5becca.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d3bd4bc9632ff5b6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7c9da5b90f082ff7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/eeb65b52b5cd94b9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/80420ae10fe5006d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8eeb24aab3507fa9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5276a799c82d7d40.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5606267beac4f449.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e820c1d612feb8a5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d46408d3de537b15.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d1a43b44ecacf4d9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ef08a37888ac6304.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/746eac300b180cbc.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/96cb0e33ce4705f9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f009c5fe1722952a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dc8f7860810c3794.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/53cab74735d6bb1b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7b447ad7e0734d66.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dcc18b854a2fb2b9.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/04ce38867e579b32.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/71d9bd6267f09f62.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/614f7e5fd9dea6a5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8566d129154ee382.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7355eb9c40688ff7.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/07b0d121bdf4e3f1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/36254a5f922c7ab1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5385e07ac958a132.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0eeb2c797af3a8ef.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/67a933f1f664a5c4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/79ab5257f9efd13e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/642f41e3f41d2e0c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2f7e3beb70b3c4f1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/e482660317d4c2b3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a1470235728232a6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b70a68bbe59af6f1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6e14c17c993a9ae1.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/860a471eb4dbe30b.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2bcdb92e48810ac5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/63a04829de72c97c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5368939373a028cd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a0ca4ddc5b0962c4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/cb664aadc604f1ee.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/72d9ef8e77d830fd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/16172217f8f7a658.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/db9402c41ac126f0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/868ff633dfd42276.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/56e6e43a078e2470.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/91273bfb4402483c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/a402222dc8aab0fd.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/20c80daf5d297cf4.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/aab75f4b3a9c8d17.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/77c25fe1c5856339.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d98bf491a8ec2250.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/26c45eb80b26cdaf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/c5b80468f1d112e6.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/0100860f276c4b54.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9335d67c259e503f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6d940826712b7fd5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7fee3200f2064d68.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/228c9b53a6b16491.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/5adb178cbb68f2d0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/04a2621875ad2d57.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b8e75d8882633aee.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/f938dd1ec440f525.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/ef65d54d0d80f49c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6e525fcf6c8dd11c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1af551ddee952483.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1b78c3150d682b44.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d0de3217115a0b70.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1433498da4825a2d.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/dda18ed678b8a8a0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/03ef6a326aee673f.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7016bdc5eb48186c.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/643225d904827027.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7ebd5838aaf60805.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/846512e198fd7cb3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/b3512127ddaa9521.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/9ea32700c9ef0128.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/76720e42e99adb55.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/7e97d6c722429346.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/897df1038f191edf.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/4fc91b628bd09585.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d93cdfb9cbebb4f3.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/2b714bfcbbc122b0.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/26415e9097a5ebfa.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/fa98630cad73378a.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/6a3a825f8b729503.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/3dc2f3338e044d6e.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/8faeab3bfb7dcf83.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/d24030172faf2e98.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/certs/1e34bc604904ddc5.der
+khealthcertificate-25.04.1/src/lib/eu-dgc/cborutils_p.h
+khealthcertificate-25.04.1/src/lib/eu-dgc/eudgcparser_p.h
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmaverifier.cpp
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlbase45.cpp
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey_p.h
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmaverifier_p.h
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlbase45_p.h
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey.cpp
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlcoronacheckparser_p.h
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-7.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-6.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-5.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/nl-public-keys.qrc
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-9.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-1.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-8.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-3.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-2.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/keys/VWS-CC-4.xml
+khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlcoronacheckparser.cpp
+khealthcertificate-25.04.1/src/lib/khealthcertificateparser.h
+khealthcertificate-25.04.1/src/CMakeLists.txt
+khealthcertificate-25.04.1/.gitignore
+khealthcertificate-25.04.1/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found KF6Archive: /usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake (found version "6.14.0")
+-- Found KF6Codecs: /usr/lib64/cmake/KF6Codecs/KF6CodecsConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "5.240") found components: Archive Codecs I18n
+-- Found OpenSSL: /usr/lib64/libcrypto.so (found version "3.5.0") found components: Crypto
+-- Found ZLIB: /usr/lib64/libz.so (found version "1.3.1")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Network
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6Qml
+ * Qt6Test
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6Core (required version >= 6.7.0)
+ * PkgConfig
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.240)
+ * Qt6
+ * KF6Archive (required version >= 5.240)
+ * KF6Codecs (required version >= 5.240)
+ * Gettext
+ * KF6I18n (required version >= 5.240)
+ * KF6 (required version >= 5.240)
+ * OpenSSL
+   Needed for signature verification.
+ * ZLIB
+   Needed for decoding EU DGC data.
+
+-- The following OPTIONAL packages have not been found:
+
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.8.3)
+
+-- Configuring done (1.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/build
+[1/86] Automatic MOC for target eu-dgc-decoder
+[2/86] Building CXX object tests/CMakeFiles/eu-dgc-decoder.dir/eu-dgc-decoder_autogen/mocs_compilation.cpp.o
+[3/86] Automatic MOC for target KHealthCertificate
+[4/86] Automatic RCC for shc/certs/shc-certs-manual.qrc
+[5/86] Automatic RCC for icao/certs/icao-csca-certs.qrc
+[6/86] Automatic RCC for divoc/data/divoc-data.qrc
+[7/86] Automatic RCC for icao/data/icaovds-data.qrc
+[8/86] Automatic RCC for shc/data/shc-data.qrc
+[9/86] Automatic RCC for eu-dgc/data/eu-dgc-data.qrc
+[10/86] Automatic RCC for nl-coronacheck/keys/nl-public-keys.qrc
+[11/86] Automatic RCC for shc/certs/shc-certs.qrc
+[12/86] Automatic RCC for eu-dgc/certs/eu-dgc-certs.qrc
+[13/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/mocs_compilation.cpp.o
+[14/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/openssl/x509loader.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/x509loader_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/x509loader.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[15/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/cborutils.cpp.o
+[16/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/nlbase45.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/bignum_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlbase45.cpp:8:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[17/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/openssl/verify.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/verify_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/verify.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/verify.cpp: In function ‘bool Verify::verifyECDSA(const openssl::evp_pkey_ptr&, const EVP_MD*, const char*, std::size_t, const char*, std::size_t)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/verify.cpp:23:57: warning: ‘ec_key_st* EVP_PKEY_get1_EC_KEY(EVP_PKEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   23 |     const openssl::ec_key_ptr ecKey(EVP_PKEY_get1_EC_KEY(pkey.get()));
+      |                                     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:17:
+/usr/include/openssl/evp.h:1433:19: note: declared here
+ 1433 | struct ec_key_st *EVP_PKEY_get1_EC_KEY(EVP_PKEY *pkey);
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/verify.cpp:41:46: warning: ‘int ECDSA_do_verify(const unsigned char*, int, const ECDSA_SIG*, EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     const auto verifyResult = ECDSA_do_verify(digestData, digestSize, sig.get(), ecKey.get());
+      |                               ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/ec.h:1410:27: note: declared here
+ 1410 | OSSL_DEPRECATEDIN_3_0 int ECDSA_do_verify(const unsigned char *dgst, int dgst_len,
+      |                           ^~~~~~~~~~~~~~~
+[18/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/khealthcertificateparser.cpp.o
+[19/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/QI42YZCEC2/qrc_divoc-data.cpp.o
+[20/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/LXX4422DJD/qrc_eu-dgc-data.cpp.o
+[21/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/BAJ4LIKJLE/qrc_icaovds-data.cpp.o
+[22/86] Building CXX object tests/CMakeFiles/eu-dgc-decoder.dir/eu-dgc-decoder.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp: In function ‘QJsonValue readOneValue(QCborStreamReader&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘ByteString’ not handled in switch [-Wswitch]
+   35 |     switch (reader.type()) {
+      |            ^
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘ByteArray’ not handled in switch [-Wswitch]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘Tag’ not handled in switch [-Wswitch]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘SimpleType’ not handled in switch [-Wswitch]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘HalfFloat’ not handled in switch [-Wswitch]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘Float16’ not handled in switch [-Wswitch]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘Float’ not handled in switch [-Wswitch]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘Double’ not handled in switch [-Wswitch]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘Invalid’ not handled in switch [-Wswitch]
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp: In function ‘int main(int, char**)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:79:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+   79 | int main(int argc, char **argv)
+      |          ~~~~^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:79:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+   79 | int main(int argc, char **argv)
+      |                    ~~~~~~~^~~~
+[23/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/HLEO2QW645/qrc_icao-csca-certs.cpp.o
+[24/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/ktestcertificate.cpp.o
+[25/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/WBKEWDV6B7/qrc_shc-data.cpp.o
+[26/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/CXRF6WC7PU/qrc_nl-public-keys.cpp.o
+[27/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/PNLUAWAU7E/qrc_shc-certs-manual.cpp.o
+[28/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/nlcoronacheckparser.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlcoronacheckparser.cpp:9:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[29/86] Linking CXX executable bin/eu-dgc-decoder
+[30/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/divocparser.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/divocparser.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[31/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/irmaverifier.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmaverifier_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmaverifier.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[32/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/shc/jwtparser.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwtparser.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[33/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/shc/jwkloader.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader.cpp: In static member function ‘static openssl::evp_pkey_ptr JwkLoader::loadPublicKey(const QJsonObject&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader.cpp:36:65: warning: ‘EC_KEY* EC_KEY_new_by_curve_name(int)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   36 |             ecKey = openssl::ec_key_ptr(EC_KEY_new_by_curve_name(NID_X9_62_prime256v1));
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/ec.h:1017:31: note: declared here
+ 1017 | OSSL_DEPRECATEDIN_3_0 EC_KEY *EC_KEY_new_by_curve_name(int nid);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader.cpp:38:65: warning: ‘EC_KEY* EC_KEY_new_by_curve_name(int)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   38 |             ecKey = openssl::ec_key_ptr(EC_KEY_new_by_curve_name(NID_secp384r1));
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/usr/include/openssl/ec.h:1017:31: note: declared here
+ 1017 | OSSL_DEPRECATEDIN_3_0 EC_KEY *EC_KEY_new_by_curve_name(int nid);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader.cpp:40:65: warning: ‘EC_KEY* EC_KEY_new_by_curve_name(int)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   40 |             ecKey = openssl::ec_key_ptr(EC_KEY_new_by_curve_name(NID_secp521r1));
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/usr/include/openssl/ec.h:1017:31: note: declared here
+ 1017 | OSSL_DEPRECATEDIN_3_0 EC_KEY *EC_KEY_new_by_curve_name(int nid);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader.cpp:50:49: warning: ‘int EC_KEY_set_public_key_affine_coordinates(EC_KEY*, BIGNUM*, BIGNUM*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   50 |         EC_KEY_set_public_key_affine_coordinates(ecKey.get(), x.get(), y.get());
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/openssl/ec.h:1141:27: note: declared here
+ 1141 | OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_public_key_affine_coordinates(EC_KEY *key,
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[34/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/kvaccinationcertificate.cpp.o
+[35/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/coseparser.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser.cpp: In member function ‘void CoseParser::validateECDSA(const openssl::evp_pkey_ptr&, int)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser.cpp:133:57: warning: ‘ec_key_st* EVP_PKEY_get1_EC_KEY(EVP_PKEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  133 |     const openssl::ec_key_ptr ecKey(EVP_PKEY_get1_EC_KEY(pkey.get()));
+      |                                     ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:17:
+/usr/include/openssl/evp.h:1433:19: note: declared here
+ 1433 | struct ec_key_st *EVP_PKEY_get1_EC_KEY(EVP_PKEY *pkey);
+      |                   ^~~~~~~~~~~~~~~~~~~~
+[36/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/PNLUAWAU7E/qrc_shc-certs.cpp.o
+[37/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/khealthcertificate.cpp.o
+[38/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/krecoverycertificate.cpp.o
+[39/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/irmapublickey.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[40/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/icao/icaovdsparser.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/icao/icaovdsparser.cpp:9:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[41/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/jwsverifier.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier.cpp: In member function ‘openssl::evp_pkey_ptr JwsVerifier::loadPublicKey() const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier.cpp:112:49: warning: ‘RSA* PEM_read_bio_RSA_PUBKEY(BIO*, RSA**, int (*)(char*, int, int, void*), void*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  112 |     openssl::rsa_ptr rsa(PEM_read_bio_RSA_PUBKEY(bio.get(), nullptr, nullptr, nullptr));
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier.cpp:16:
+/usr/include/openssl/pem.h:458:1: note: declared here
+  458 | DECLARE_PEM_rw_attr(OSSL_DEPRECATEDIN_3_0, RSA_PUBKEY, RSA)
+      | ^~~~~~~~~~~~~~~~~~~
+[42/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/logging.cpp.o
+[43/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/eudgcparser.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/eudgcparser.cpp:8:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[44/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/SDCYVD4CTB/qrc_eu-dgc-certs.cpp.o
+[45/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/shc/shcparser.cpp.o
+[46/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/zlib/zlib.cpp.o
+[47/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/rdf.cpp.o
+[48/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/jsonld.cpp.o
+[49/86] Linking CXX shared library bin/libKHealthCertificate.so.25.04.1
+[50/86] Creating library symlink bin/libKHealthCertificate.so.1 bin/libKHealthCertificate.so
+[51/86] Automatic MOC for target health-certificate-decode
+[52/86] Automatic MOC for target nl-decoder
+[53/86] Building CXX object src/cli/CMakeFiles/health-certificate-decode.dir/health-certificate-decode_autogen/mocs_compilation.cpp.o
+[54/86] Building CXX object tests/CMakeFiles/nl-decoder.dir/nl-decoder_autogen/mocs_compilation.cpp.o
+[55/86] Automatic MOC for target shcparsertest
+[56/86] Automatic MOC for target nlcoronacheckparsertest
+[57/86] Automatic RCC for data/shc/shc.qrc
+[58/86] Building CXX object autotests/CMakeFiles/nlcoronacheckparsertest.dir/nlcoronacheckparsertest_autogen/mocs_compilation.cpp.o
+[59/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest_autogen/mocs_compilation.cpp.o
+[60/86] Automatic MOC for target eudgcparsertest
+[61/86] Automatic MOC for target icaovdsparsertest
+[62/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest_autogen/SADZ7WIB52/qrc_shc.cpp.o
+[63/86] Automatic RCC for data/eu-dgc/certs.qrc
+[64/86] Building CXX object autotests/CMakeFiles/icaovdsparsertest.dir/icaovdsparsertest_autogen/mocs_compilation.cpp.o
+[65/86] Building CXX object autotests/CMakeFiles/eudgcparsertest.dir/eudgcparsertest_autogen/mocs_compilation.cpp.o
+[66/86] Building CXX object autotests/CMakeFiles/eudgcparsertest.dir/eudgcparsertest_autogen/JPSHB5O6TO/qrc_certs.cpp.o
+[67/86] Automatic MOC for target khealthcertificateqmlplugin
+[68/86] Automatic MOC for target divocparsertest
+[69/86] Building CXX object src/qml/CMakeFiles/khealthcertificateqmlplugin.dir/khealthcertificateqmlplugin_autogen/mocs_compilation.cpp.o
+[70/86] Building CXX object autotests/CMakeFiles/divocparsertest.dir/divocparsertest_autogen/mocs_compilation.cpp.o
+[71/86] Building CXX object src/cli/CMakeFiles/health-certificate-decode.dir/health-certificate-decode.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/cli/health-certificate-decode.cpp: In function ‘int main(int, char**)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/cli/health-certificate-decode.cpp:34:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+   34 | int main(int argc, char **argv)
+      |          ~~~~^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/cli/health-certificate-decode.cpp:34:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+   34 | int main(int argc, char **argv)
+      |                    ~~~~~~~^~~~
+[72/86] Building CXX object tests/CMakeFiles/nl-decoder.dir/nl-decoder.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/bignum_p.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/../src/lib/nl-coronacheck/nlbase45.cpp:8,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/nl-decoder.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/nl-decoder.cpp: In function ‘int main(int, char**)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/nl-decoder.cpp:117:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+  117 | int main(int argc, char **argv)
+      |          ~~~~^~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/nl-decoder.cpp:117:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+  117 | int main(int argc, char **argv)
+      |                    ~~~~~~~^~~~
+[73/86] Linking CXX executable bin/health-certificate-decode
+[74/86] Linking CXX executable bin/nl-decoder
+[75/86] Building CXX object src/qml/CMakeFiles/khealthcertificateqmlplugin.dir/khealthcertificateqmlplugin.cpp.o
+[76/86] Linking CXX shared library bin/org/kde/khealthcertificate/libkhealthcertificateqmlplugin.so
+[77/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest.cpp.o
+[78/86] Linking CXX executable bin/shcparsertest
+[79/86] Building CXX object autotests/CMakeFiles/icaovdsparsertest.dir/icaovdsparsertest.cpp.o
+[80/86] Building CXX object autotests/CMakeFiles/eudgcparsertest.dir/eudgcparsertest.cpp.o
+[81/86] Linking CXX executable bin/icaovdsparsertest
+[82/86] Linking CXX executable bin/eudgcparsertest
+[83/86] Building CXX object autotests/CMakeFiles/nlcoronacheckparsertest.dir/nlcoronacheckparsertest.cpp.o
+[84/86] Building CXX object autotests/CMakeFiles/divocparsertest.dir/divocparsertest.cpp.o
+[85/86] Linking CXX executable bin/nlcoronacheckparsertest
+[86/86] Linking CXX executable bin/divocparsertest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/libKHealthCertificate.so.25.04.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/libKHealthCertificate.so.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/libKHealthCertificate.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/khealthcertificate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/khealthcertificateparser.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/krecoverycertificate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/ktestcertificate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/kvaccinationcertificate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/KHealthCertificate
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/KHealthCertificateParser
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/KRecoveryCertificate
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/KTestCertificate
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/KVaccinationCertificate
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/khealthcertificatetypes.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/khealthcertificate_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/qt6/qml/org/kde/khealthcertificate/libkhealthcertificateqmlplugin.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/qt6/qml/org/kde/khealthcertificate/libkhealthcertificateqmlplugin.so" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/qt6/qml/org/kde/khealthcertificate/qmldir
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/cmake/KHealthCertificate/KHealthCertificateConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/cmake/KHealthCertificate/KHealthCertificateConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/cmake/KHealthCertificate/KHealthCertificateTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/cmake/KHealthCertificate/KHealthCertificateTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/include/KHealthCertificate/khealthcertificate_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/share/qlogging-categories6/org_kde_khealthcertificate.categories
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/khealthcertificate/khealthcertificate.info: No such file or directory
+extra-cmake-modules
+karchive
+kcodecs
+ki18n
+openssl
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKHealthCertificate.so	libKHealthCertificate.so.1
+usr/lib64/libKHealthCertificate.so.1	libKHealthCertificate.so.25.04.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKHealthCertificate.so )
+( cd usr/lib64 ; ln -sf libKHealthCertificate.so.1 libKHealthCertificate.so )
+( cd usr/lib64 ; rm -rf libKHealthCertificate.so.1 )
+( cd usr/lib64 ; ln -sf libKHealthCertificate.so.25.04.1 libKHealthCertificate.so.1 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKHealthCertificate.so'
+removed './usr/lib64/libKHealthCertificate.so.1'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/khealthcertificate/khealthcertificate-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/khealthcertificate-25.04.1/
+usr/doc/khealthcertificate-25.04.1/README.md
+usr/doc/khealthcertificate-25.04.1/README.md.license
+usr/doc/khealthcertificate-25.04.1/khealthcertificate.ini
+usr/doc/khealthcertificate-25.04.1/slack-required
+usr/include/
+usr/include/KHealthCertificate/
+usr/include/KHealthCertificate/KHealthCertificate
+usr/include/KHealthCertificate/KHealthCertificateParser
+usr/include/KHealthCertificate/KRecoveryCertificate
+usr/include/KHealthCertificate/KTestCertificate
+usr/include/KHealthCertificate/KVaccinationCertificate
+usr/include/KHealthCertificate/khealthcertificate.h
+usr/include/KHealthCertificate/khealthcertificate_export.h
+usr/include/KHealthCertificate/khealthcertificate_version.h
+usr/include/KHealthCertificate/khealthcertificateparser.h
+usr/include/KHealthCertificate/khealthcertificatetypes.h
+usr/include/KHealthCertificate/krecoverycertificate.h
+usr/include/KHealthCertificate/ktestcertificate.h
+usr/include/KHealthCertificate/kvaccinationcertificate.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KHealthCertificate/
+usr/lib64/cmake/KHealthCertificate/KHealthCertificateConfig.cmake
+usr/lib64/cmake/KHealthCertificate/KHealthCertificateConfigVersion.cmake
+usr/lib64/cmake/KHealthCertificate/KHealthCertificateTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KHealthCertificate/KHealthCertificateTargets.cmake
+usr/lib64/libKHealthCertificate.so.25.04.1
+usr/lib64/qt6/
+usr/lib64/qt6/qml/
+usr/lib64/qt6/qml/org/
+usr/lib64/qt6/qml/org/kde/
+usr/lib64/qt6/qml/org/kde/khealthcertificate/
+usr/lib64/qt6/qml/org/kde/khealthcertificate/libkhealthcertificateqmlplugin.so
+usr/lib64/qt6/qml/org/kde/khealthcertificate/qmldir
+usr/share/
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/org_kde_khealthcertificate.categories
+
+Slackware package /tmp/khealthcertificate/khealthcertificate-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for khealthcertificate-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/khealthcertificate/khealthcertificate-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/khealthcertificate/khealthcertificate-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/khealthcertificate/khealthcertificate-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in khealthcertificate.tar.lz4 format.
+/tmp/khealthcertificate /tmp/khealthcertificate
+/tmp/khealthcertificate
+BIN_NAME
+README
+khealthcertificate-25.04.1-x86_64-1_rtz.tlz
+khealthcertificate-25.04.1-x86_64-1_rtz.tlz.md5
+khealthcertificate-25.04.1-x86_64-1_rtz.tlz.so.file
+khealthcertificate-25.04.1-x86_64-1_rtz.tlz.txt
+khealthcertificate.dep
+makepkg-khealthcertificate.log
+khealthcertificate build finished. Procced to installation...
+
++=====================================================================================================================================+
+| Upgrading khealthcertificate-25.04.1-x86_64-1_rtz package using /tmp/khealthcertificate/khealthcertificate-25.04.1-x86_64-1_rtz.tlz |
++=====================================================================================================================================+
+
+Pre-installing package khealthcertificate-25.04.1-x86_64-1_rtz...
+Removing package: khealthcertificate-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,00:28:11
+Installing package khealthcertificate-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# khealthcertificate (test and recovery certificates)
+#
+# Handling of digital vaccination, test and recovery certificates
+#
+# invent.kde.org/pim/khealthcertificate
+Executing install script for khealthcertificate-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package khealthcertificate-25.04.1-x86_64-1_rtz.tlz installed.
+Package khealthcertificate-25.04.1-x86_64-1_rtz upgraded with new package /tmp/khealthcertificate/khealthcertificate-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'khealthcertificate-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 20 seconds.

@@ -1,0 +1,928 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	kconfig	kconfigwidgets	kcoreaddons	kdbusaddons	ki18n	kio	kitemmodels	kwidgetsaddons	libksysguard	networkmanager-qt	plasma-activities	libplasma
+extra-cmake-modules is already installed!
+kconfig is already installed!
+kconfigwidgets is already installed!
+kcoreaddons is already installed!
+kdbusaddons is already installed!
+ki18n is already installed!
+kio is already installed!
+kitemmodels is already installed!
+kwidgetsaddons is already installed!
+libksysguard is already installed!
+networkmanager-qt is already installed!
+plasma-activities is already installed!
+libplasma is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 22:58:15--  https://download.kde.org/stable/plasma/6.3.5/plasma-vault-6.3.5.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-vault-6.3.5.tar.xz [following]
+--2025-05-10 22:58:16--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-vault-6.3.5.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 205244 (200K) [application/octet-stream]
+Saving to: ‘plasma-vault-6.3.5.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 24% 1.33M 0s
+    50K .......... .......... .......... .......... .......... 49% 1.45M 0s
+   100K .......... .......... .......... .......... .......... 74% 5.09M 0s
+   150K .......... .......... .......... .......... .......... 99% 2.14M 0s
+   200K                                                       100%  827G=0.1s
+
+2025-05-10 22:58:16 (1.91 MB/s) - ‘plasma-vault-6.3.5.tar.xz’ saved [205244/205244]
+
+Found file: plasma-vault-6.3.5.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+plasma-vault-6.3.5/
+plasma-vault-6.3.5/kded/
+plasma-vault-6.3.5/kded/plasmavault.json
+plasma-vault-6.3.5/kded/engine/
+plasma-vault-6.3.5/kded/engine/singleton_p.h
+plasma-vault-6.3.5/kded/engine/fusebackend_p.cpp
+plasma-vault-6.3.5/kded/engine/fusebackend_p.h
+plasma-vault-6.3.5/kded/engine/types.cpp
+plasma-vault-6.3.5/kded/engine/vault.h
+plasma-vault-6.3.5/kded/engine/commandresult.h
+plasma-vault-6.3.5/kded/engine/backends/
+plasma-vault-6.3.5/kded/engine/backends/cryfs/
+plasma-vault-6.3.5/kded/engine/backends/cryfs/cryfsbackend.cpp
+plasma-vault-6.3.5/kded/engine/backends/cryfs/cryfsbackend.h
+plasma-vault-6.3.5/kded/engine/backends/gocryptfs/
+plasma-vault-6.3.5/kded/engine/backends/gocryptfs/gocryptfsbackend.cpp
+plasma-vault-6.3.5/kded/engine/backends/gocryptfs/gocryptfsbackend.h
+plasma-vault-6.3.5/kded/engine/backends/encfs/
+plasma-vault-6.3.5/kded/engine/backends/encfs/encfsbackend.cpp
+plasma-vault-6.3.5/kded/engine/backends/encfs/encfsbackend.h
+plasma-vault-6.3.5/kded/engine/backend_p.cpp
+plasma-vault-6.3.5/kded/engine/vault.cpp
+plasma-vault-6.3.5/kded/engine/backend_p.h
+plasma-vault-6.3.5/kded/engine/commandresult.cpp
+plasma-vault-6.3.5/kded/engine/types.h
+plasma-vault-6.3.5/kded/service.h
+plasma-vault-6.3.5/kded/ui/
+plasma-vault-6.3.5/kded/ui/mountdialog.cpp
+plasma-vault-6.3.5/kded/ui/offlineonlywidget.h
+plasma-vault-6.3.5/kded/ui/passwordchooserwidget.h
+plasma-vault-6.3.5/kded/ui/mountdialog.h
+plasma-vault-6.3.5/kded/ui/vaultconfigurationdialog.cpp
+plasma-vault-6.3.5/kded/ui/cryfscypherchooserwidget.cpp
+plasma-vault-6.3.5/kded/ui/vaultimportingwizard.h
+plasma-vault-6.3.5/kded/ui/namechooserwidget.ui
+plasma-vault-6.3.5/kded/ui/offlineonlywidget.cpp
+plasma-vault-6.3.5/kded/ui/activitieslinkingwidget.ui
+plasma-vault-6.3.5/kded/ui/directorypairchooserwidget.h
+plasma-vault-6.3.5/kded/ui/mountdialog.ui
+plasma-vault-6.3.5/kded/ui/vaultconfigurationdialog.ui
+plasma-vault-6.3.5/kded/ui/activitieslinkingwidget.h
+plasma-vault-6.3.5/kded/ui/vaultconfigurationdialog.h
+plasma-vault-6.3.5/kded/ui/dialogdsl.cpp
+plasma-vault-6.3.5/kded/ui/vaultdeletionwidget.ui
+plasma-vault-6.3.5/kded/ui/backendchooserwidget.ui
+plasma-vault-6.3.5/kded/ui/vaultimportingwizard.ui
+plasma-vault-6.3.5/kded/ui/backendchooserwidget.h
+plasma-vault-6.3.5/kded/ui/vaultcreationwizard.h
+plasma-vault-6.3.5/kded/ui/activitieslinkingwidget.cpp
+plasma-vault-6.3.5/kded/ui/vaultdeletionwidget.h
+plasma-vault-6.3.5/kded/ui/namechooserwidget.h
+plasma-vault-6.3.5/kded/ui/offlineonlywidget.ui
+plasma-vault-6.3.5/kded/ui/noticewidget.cpp
+plasma-vault-6.3.5/kded/ui/dialogdsl.h
+plasma-vault-6.3.5/kded/ui/vaultimportingwizard.cpp
+plasma-vault-6.3.5/kded/ui/vaultcreationwizard.cpp
+plasma-vault-6.3.5/kded/ui/directorychooserwidget.h
+plasma-vault-6.3.5/kded/ui/directorypairchooserwidget.ui
+plasma-vault-6.3.5/kded/ui/vaultdeletionwidget.cpp
+plasma-vault-6.3.5/kded/ui/cryfscypherchooserwidget.h
+plasma-vault-6.3.5/kded/ui/directorypairchooserwidget.cpp
+plasma-vault-6.3.5/kded/ui/directorychooserwidget.cpp
+plasma-vault-6.3.5/kded/ui/namechooserwidget.cpp
+plasma-vault-6.3.5/kded/ui/backendchooserwidget.cpp
+plasma-vault-6.3.5/kded/ui/passwordchooserwidget.ui
+plasma-vault-6.3.5/kded/ui/noticewidget.h
+plasma-vault-6.3.5/kded/ui/cryfscypherchooserwidget.ui
+plasma-vault-6.3.5/kded/ui/vaultcreationwizard.ui
+plasma-vault-6.3.5/kded/ui/noticewidget.ui
+plasma-vault-6.3.5/kded/ui/passwordchooserwidget.cpp
+plasma-vault-6.3.5/kded/ui/vaultwizardbase.h
+plasma-vault-6.3.5/kded/ui/directorychooserwidget.ui
+plasma-vault-6.3.5/kded/config-plasma-vault.cmake
+plasma-vault-6.3.5/kded/CMakeLists.txt
+plasma-vault-6.3.5/kded/service.cpp
+plasma-vault-6.3.5/asynqt/
+plasma-vault-6.3.5/asynqt/utils/
+plasma-vault-6.3.5/asynqt/utils/expected.h
+plasma-vault-6.3.5/asynqt/utils/either.h
+plasma-vault-6.3.5/asynqt/private/
+plasma-vault-6.3.5/asynqt/private/cxxutils_p.h
+plasma-vault-6.3.5/asynqt/private/utils_p.h
+plasma-vault-6.3.5/asynqt/private/basic/
+plasma-vault-6.3.5/asynqt/private/basic/readyfuture_p.h
+plasma-vault-6.3.5/asynqt/private/basic/delayedfuture_p.h
+plasma-vault-6.3.5/asynqt/private/basic/canceledfuture_p.h
+plasma-vault-6.3.5/asynqt/private/operations/
+plasma-vault-6.3.5/asynqt/private/operations/transform_p.h
+plasma-vault-6.3.5/asynqt/private/operations/filter_p.h
+plasma-vault-6.3.5/asynqt/private/operations/cast_p.h
+plasma-vault-6.3.5/asynqt/private/operations/listen_p.h
+plasma-vault-6.3.5/asynqt/private/operations/collect_p.h
+plasma-vault-6.3.5/asynqt/private/operations/flatten_p.h
+plasma-vault-6.3.5/asynqt/private/wrappers/
+plasma-vault-6.3.5/asynqt/private/wrappers/process_p.h
+plasma-vault-6.3.5/asynqt/private/wrappers/kjob_p.h
+plasma-vault-6.3.5/asynqt/basic/
+plasma-vault-6.3.5/asynqt/basic/canceledfuture.h
+plasma-vault-6.3.5/asynqt/basic/await.h
+plasma-vault-6.3.5/asynqt/basic/all.h
+plasma-vault-6.3.5/asynqt/basic/delayedfuture.h
+plasma-vault-6.3.5/asynqt/basic/readyfuture.h
+plasma-vault-6.3.5/asynqt/operations/
+plasma-vault-6.3.5/asynqt/operations/continuewith.h
+plasma-vault-6.3.5/asynqt/operations/transform.h
+plasma-vault-6.3.5/asynqt/operations/filter.h
+plasma-vault-6.3.5/asynqt/operations/cast.h
+plasma-vault-6.3.5/asynqt/operations/collect.h
+plasma-vault-6.3.5/asynqt/operations/listen.h
+plasma-vault-6.3.5/asynqt/operations/flatten.h
+plasma-vault-6.3.5/asynqt/wrappers/
+plasma-vault-6.3.5/asynqt/wrappers/kjob.h
+plasma-vault-6.3.5/asynqt/wrappers/process.h
+plasma-vault-6.3.5/Messages.sh
+plasma-vault-6.3.5/vim-extrarc
+plasma-vault-6.3.5/.git-blame-ignore-revs
+plasma-vault-6.3.5/LICENSES/
+plasma-vault-6.3.5/LICENSES/GPL-2.0-only.txt
+plasma-vault-6.3.5/LICENSES/LGPL-2.1-only.txt
+plasma-vault-6.3.5/LICENSES/LGPL-3.0-only.txt
+plasma-vault-6.3.5/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+plasma-vault-6.3.5/LICENSES/CC0-1.0.txt
+plasma-vault-6.3.5/LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+plasma-vault-6.3.5/LICENSES/GPL-3.0-only.txt
+plasma-vault-6.3.5/common/
+plasma-vault-6.3.5/common/org.kde.plasmavault.xml
+plasma-vault-6.3.5/common/vaultinfo.h
+plasma-vault-6.3.5/common/vaultinfo.cpp
+plasma-vault-6.3.5/.gitlab-ci.yml
+plasma-vault-6.3.5/plasma/
+plasma-vault-6.3.5/plasma/package/
+plasma-vault-6.3.5/plasma/package/contents/
+plasma-vault-6.3.5/plasma/package/contents/ui/
+plasma-vault-6.3.5/plasma/package/contents/ui/VaultItem.qml
+plasma-vault-6.3.5/plasma/package/contents/ui/main.qml
+plasma-vault-6.3.5/plasma/package/metadata.json
+plasma-vault-6.3.5/plasma/LICENSES/
+plasma-vault-6.3.5/plasma/LICENSES/GPL-2.0-only.txt
+plasma-vault-6.3.5/plasma/LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+plasma-vault-6.3.5/plasma/LICENSES/GPL-3.0-only.txt
+plasma-vault-6.3.5/plasma/vaultsmodel.cpp
+plasma-vault-6.3.5/plasma/vaultapplet.cpp
+plasma-vault-6.3.5/plasma/README
+plasma-vault-6.3.5/plasma/vaultsmodel.h
+plasma-vault-6.3.5/plasma/vaultsmodel_p.h
+plasma-vault-6.3.5/plasma/vaultapplet.h
+plasma-vault-6.3.5/plasma/CMakeLists.txt
+plasma-vault-6.3.5/.gitignore
+plasma-vault-6.3.5/logo.png
+plasma-vault-6.3.5/fileitemplugin/
+plasma-vault-6.3.5/fileitemplugin/plasmavaultfileitemaction.cpp
+plasma-vault-6.3.5/fileitemplugin/plasmavaultfileitemaction.json
+plasma-vault-6.3.5/fileitemplugin/CMakeLists.txt
+plasma-vault-6.3.5/fileitemplugin/plasmavaultfileitemaction.h
+plasma-vault-6.3.5/.kde-ci.yml
+plasma-vault-6.3.5/icons/
+plasma-vault-6.3.5/icons/plasmavault.svgz
+plasma-vault-6.3.5/icons/plasmavault-error.svgz
+plasma-vault-6.3.5/icons/hi22-apps-plasmavault.svgz
+plasma-vault-6.3.5/icons/hi22-apps-plasmavault-error.svgz
+plasma-vault-6.3.5/icons/CMakeLists.txt
+plasma-vault-6.3.5/CMakeLists.txt
+plasma-vault-6.3.5/po/
+plasma-vault-6.3.5/po/gl/
+plasma-vault-6.3.5/po/gl/plasmavault-kde.po
+plasma-vault-6.3.5/po/eo/
+plasma-vault-6.3.5/po/eo/plasmavault-kde.po
+plasma-vault-6.3.5/po/he/
+plasma-vault-6.3.5/po/he/plasmavault-kde.po
+plasma-vault-6.3.5/po/zh_CN/
+plasma-vault-6.3.5/po/zh_CN/plasmavault-kde.po
+plasma-vault-6.3.5/po/sr/
+plasma-vault-6.3.5/po/sr/plasmavault-kde.po
+plasma-vault-6.3.5/po/be/
+plasma-vault-6.3.5/po/be/plasmavault-kde.po
+plasma-vault-6.3.5/po/sr@latin/
+plasma-vault-6.3.5/po/sr@latin/plasmavault-kde.po
+plasma-vault-6.3.5/po/hi/
+plasma-vault-6.3.5/po/hi/plasmavault-kde.po
+plasma-vault-6.3.5/po/bg/
+plasma-vault-6.3.5/po/bg/plasmavault-kde.po
+plasma-vault-6.3.5/po/lv/
+plasma-vault-6.3.5/po/lv/plasmavault-kde.po
+plasma-vault-6.3.5/po/ca@valencia/
+plasma-vault-6.3.5/po/ca@valencia/plasmavault-kde.po
+plasma-vault-6.3.5/po/el/
+plasma-vault-6.3.5/po/el/plasmavault-kde.po
+plasma-vault-6.3.5/po/pt/
+plasma-vault-6.3.5/po/pt/plasmavault-kde.po
+plasma-vault-6.3.5/po/nn/
+plasma-vault-6.3.5/po/nn/plasmavault-kde.po
+plasma-vault-6.3.5/po/sr@ijekavian/
+plasma-vault-6.3.5/po/sr@ijekavian/plasmavault-kde.po
+plasma-vault-6.3.5/po/fi/
+plasma-vault-6.3.5/po/fi/plasmavault-kde.po
+plasma-vault-6.3.5/po/ka/
+plasma-vault-6.3.5/po/ka/plasmavault-kde.po
+plasma-vault-6.3.5/po/ar/
+plasma-vault-6.3.5/po/ar/plasmavault-kde.po
+plasma-vault-6.3.5/po/sk/
+plasma-vault-6.3.5/po/sk/plasmavault-kde.po
+plasma-vault-6.3.5/po/pa/
+plasma-vault-6.3.5/po/pa/plasmavault-kde.po
+plasma-vault-6.3.5/po/ro/
+plasma-vault-6.3.5/po/ro/plasmavault-kde.po
+plasma-vault-6.3.5/po/de/
+plasma-vault-6.3.5/po/de/plasmavault-kde.po
+plasma-vault-6.3.5/po/is/
+plasma-vault-6.3.5/po/is/plasmavault-kde.po
+plasma-vault-6.3.5/po/id/
+plasma-vault-6.3.5/po/id/plasmavault-kde.po
+plasma-vault-6.3.5/po/tg/
+plasma-vault-6.3.5/po/tg/plasmavault-kde.po
+plasma-vault-6.3.5/po/ja/
+plasma-vault-6.3.5/po/ja/plasmavault-kde.po
+plasma-vault-6.3.5/po/ko/
+plasma-vault-6.3.5/po/ko/plasmavault-kde.po
+plasma-vault-6.3.5/po/hu/
+plasma-vault-6.3.5/po/hu/plasmavault-kde.po
+plasma-vault-6.3.5/po/sa/
+plasma-vault-6.3.5/po/sa/plasmavault-kde.po
+plasma-vault-6.3.5/po/ru/
+plasma-vault-6.3.5/po/ru/plasmavault-kde.po
+plasma-vault-6.3.5/po/sl/
+plasma-vault-6.3.5/po/sl/plasmavault-kde.po
+plasma-vault-6.3.5/po/it/
+plasma-vault-6.3.5/po/it/plasmavault-kde.po
+plasma-vault-6.3.5/po/pt_BR/
+plasma-vault-6.3.5/po/pt_BR/plasmavault-kde.po
+plasma-vault-6.3.5/po/tr/
+plasma-vault-6.3.5/po/tr/plasmavault-kde.po
+plasma-vault-6.3.5/po/et/
+plasma-vault-6.3.5/po/et/plasmavault-kde.po
+plasma-vault-6.3.5/po/ca/
+plasma-vault-6.3.5/po/ca/plasmavault-kde.po
+plasma-vault-6.3.5/po/nl/
+plasma-vault-6.3.5/po/nl/plasmavault-kde.po
+plasma-vault-6.3.5/po/pl/
+plasma-vault-6.3.5/po/pl/plasmavault-kde.po
+plasma-vault-6.3.5/po/sr@ijekavianlatin/
+plasma-vault-6.3.5/po/sr@ijekavianlatin/plasmavault-kde.po
+plasma-vault-6.3.5/po/ml/
+plasma-vault-6.3.5/po/ml/plasmavault-kde.po
+plasma-vault-6.3.5/po/eu/
+plasma-vault-6.3.5/po/eu/plasmavault-kde.po
+plasma-vault-6.3.5/po/cs/
+plasma-vault-6.3.5/po/cs/plasmavault-kde.po
+plasma-vault-6.3.5/po/az/
+plasma-vault-6.3.5/po/az/plasmavault-kde.po
+plasma-vault-6.3.5/po/fr/
+plasma-vault-6.3.5/po/fr/plasmavault-kde.po
+plasma-vault-6.3.5/po/zh_TW/
+plasma-vault-6.3.5/po/zh_TW/plasmavault-kde.po
+plasma-vault-6.3.5/po/uk/
+plasma-vault-6.3.5/po/uk/plasmavault-kde.po
+plasma-vault-6.3.5/po/sv/
+plasma-vault-6.3.5/po/sv/plasmavault-kde.po
+plasma-vault-6.3.5/po/en_GB/
+plasma-vault-6.3.5/po/en_GB/plasmavault-kde.po
+plasma-vault-6.3.5/po/da/
+plasma-vault-6.3.5/po/da/plasmavault-kde.po
+plasma-vault-6.3.5/po/es/
+plasma-vault-6.3.5/po/es/plasmavault-kde.po
+plasma-vault-6.3.5/po/ast/
+plasma-vault-6.3.5/po/ast/plasmavault-kde.po
+plasma-vault-6.3.5/po/ia/
+plasma-vault-6.3.5/po/ia/plasmavault-kde.po
+plasma-vault-6.3.5/po/lt/
+plasma-vault-6.3.5/po/lt/plasmavault-kde.po
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found KF6ConfigWidgets: /usr/lib64/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6ItemModels: /usr/lib64/cmake/KF6ItemModels/KF6ItemModelsConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.14.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.10.0") found components: Config ConfigWidgets CoreAddons DBusAddons I18n ItemModels KIO Service WidgetsAddons
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for one of the modules 'libnm>=1.4.0'
+-- Checking for one of the modules 'gio-2.0'
+-- The following OPTIONAL packages have been found:
+
+ * Qt6QuickTools (required version >= 6.8.3)
+ * OpenGL
+ * Qt6Quick (required version >= 6.7.0)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * PkgConfig
+ * KF6NetworkManagerQt (required version >= 6.10.0)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0), Extra CMake Modules., <https://projects.kde.org/projects/kdesupport/extra-cmake-modules>
+ * Qt6 (required version >= 6.7.0)
+ * KF6ConfigWidgets (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.10.0)
+ * KF6ItemModels (required version >= 6.10.0)
+ * KF6KIO (required version >= 6.10.0)
+ * KF6Service (required version >= 6.10.0)
+ * KF6WidgetsAddons (required version >= 6.10.0)
+ * KF6 (required version >= 6.10.0)
+ * Qt6Core (required version >= 6.7.0)
+ * Plasma (required version >= 6.3.5)
+ * PlasmaActivities (required version >= 6.3.5)
+ * Qt6Widgets (required version >= 6.7.0)
+ * Qt6DBus (required version >= 6.7.0)
+ * Gettext
+ * KF6I18n (required version >= 6.10.0)
+ * KSysGuard
+
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/work/plasma-vault-6.3.5/build
+[1/57] Generating ts...
+[2/57] Generating mo...
+[3/57] Automatic MOC for target plasmavaultfileitemaction
+[4/57] Building CXX object fileitemplugin/CMakeFiles/plasmavaultfileitemaction.dir/plasmavaultfileitemaction_autogen/mocs_compilation.cpp.o
+[5/57] Automatic MOC for target org.kde.plasma.vault
+[6/57] Generating plasmavault_interface.cpp, plasmavault_interface.h
+[7/57] Generating moc_plasmavault_interface.cpp
+[8/57] Building CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/org.kde.plasma.vault_autogen/mocs_compilation.cpp.o
+[9/57] Automatic MOC for target kded_plasmavault
+[10/57] Generating ui_noticewidget.h
+[11/57] Generating ui_namechooserwidget.h
+[12/57] Generating ui_passwordchooserwidget.h
+[13/57] Generating ui_mountdialog.h
+[14/57] Generating ui_directorychooserwidget.h
+[15/57] Generating ui_offlineonlywidget.h
+[16/57] Generating ui_directorypairchooserwidget.h
+[17/57] Generating ui_activitieslinkingwidget.h
+[18/57] Generating ui_vaultcreationwizard.h
+[19/57] Generating ui_vaultconfigurationdialog.h
+[20/57] Generating ui_vaultdeletionwidget.h
+[21/57] Generating ui_vaultimportingwizard.h
+[22/57] Generating ui_cryfscypherchooserwidget.h
+[23/57] Generating ui_backendchooserwidget.h
+[24/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/kded_plasmavault_autogen/mocs_compilation.cpp.o
+[25/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/types.cpp.o
+[26/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/commandresult.cpp.o
+[27/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/directorychooserwidget.cpp.o
+[28/57] Building CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/__/common/vaultinfo.cpp.o
+[29/57] Building CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/vaultapplet.cpp.o
+[30/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/backend_p.cpp.o
+[31/57] Building CXX object fileitemplugin/CMakeFiles/plasmavaultfileitemaction.dir/plasmavaultfileitemaction.cpp.o
+[32/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/namechooserwidget.cpp.o
+[33/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/directorypairchooserwidget.cpp.o
+[34/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/activitieslinkingwidget.cpp.o
+[35/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/cryfscypherchooserwidget.cpp.o
+[36/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/dialogdsl.cpp.o
+[37/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/mountdialog.cpp.o
+[38/57] Linking CXX shared module bin/kf6/kfileitemaction/plasmavaultfileitemaction.so
+[39/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/backends/encfs/encfsbackend.cpp.o
+[40/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/fusebackend_p.cpp.o
+[41/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/backendchooserwidget.cpp.o
+[42/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/backends/gocryptfs/gocryptfsbackend.cpp.o
+[43/57] Building CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/plasmavault_interface.cpp.o
+[44/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/vault.cpp.o
+[45/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/noticewidget.cpp.o
+[46/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/backends/cryfs/cryfsbackend.cpp.o
+[47/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/vaultdeletionwidget.cpp.o
+[48/57] Building CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/vaultsmodel.cpp.o
+[49/57] Linking CXX shared module bin/org.kde.plasma.vault.so
+[50/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/offlineonlywidget.cpp.o
+[51/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/service.cpp.o
+[52/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/__/common/vaultinfo.cpp.o
+[53/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/passwordchooserwidget.cpp.o
+[54/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/vaultconfigurationdialog.cpp.o
+[55/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/vaultcreationwizard.cpp.o
+[56/57] Building CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/vaultimportingwizard.cpp.o
+[57/57] Linking CXX shared module bin/plasmavault.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/da/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/cs/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ja/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/de/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/el/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/nn/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/hi/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pt_BR/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/lt/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/be
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/be/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/be/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pa/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sl/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ro/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/is/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sr@latin/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/he/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/zh_TW/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/tg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/tg/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pl/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/pt/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/az/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/tr/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/fr/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ast/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ka/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/gl/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ia/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/hu/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/eo/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/bg/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ca/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/uk/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/id
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/id/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/id/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/en_GB/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/zh_CN/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/nl/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sa/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/fi/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ko/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ru/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/lv/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ml/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ca@valencia/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/es/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/eu/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/et/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/it/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/ar/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sk/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/locale/sv/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/lib64/qt6/plugins/kf6/kded/plasmavault.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/lib64/qt6/plugins/plasma/applets/org.kde.plasma.vault.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/plasma/plasmoids/org.kde.plasma.vault
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/plasma/plasmoids/org.kde.plasma.vault/metadata.json
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/plasma/plasmoids/org.kde.plasma.vault/contents
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui/main.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui/VaultItem.qml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/share/metainfo/org.kde.plasma.vault.appdata.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/package-plasma-vault/usr/lib64/qt6/plugins/kf6/kfileitemaction/plasmavaultfileitemaction.so
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'README*': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/plasma-vault/plasma-vault.info: No such file or directory
+extra-cmake-modules
+kconfig
+kconfigwidgets
+kcoreaddons
+kdbusaddons
+ki18n
+kio
+kitemmodels
+kwidgetsaddons
+libksysguard
+networkmanager-qt
+plasma-activities
+libplasma
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/plasma-vault/plasma-vault-6.3.5-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/plasma-vault-6.3.5/
+usr/doc/plasma-vault-6.3.5/plasma-vault.ini
+usr/doc/plasma-vault-6.3.5/slack-required
+usr/lib64/
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/kf6/
+usr/lib64/qt6/plugins/kf6/kded/
+usr/lib64/qt6/plugins/kf6/kded/plasmavault.so
+usr/lib64/qt6/plugins/kf6/kfileitemaction/
+usr/lib64/qt6/plugins/kf6/kfileitemaction/plasmavaultfileitemaction.so
+usr/lib64/qt6/plugins/plasma/
+usr/lib64/qt6/plugins/plasma/applets/
+usr/lib64/qt6/plugins/plasma/applets/org.kde.plasma.vault.so
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/plasmavault-kde.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/plasmavault-kde.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.plasma.vault.appdata.xml
+usr/share/plasma/
+usr/share/plasma/plasmoids/
+usr/share/plasma/plasmoids/org.kde.plasma.vault/
+usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/
+usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui/
+usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui/VaultItem.qml
+usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui/main.qml
+usr/share/plasma/plasmoids/org.kde.plasma.vault/metadata.json
+
+Slackware package /tmp/plasma-vault/plasma-vault-6.3.5-x86_64-1_rtz.tlz created.
+
+Create shared object file for plasma-vault-6.3.5-x86_64-1_rtz.tlz
+Creating /tmp/plasma-vault/plasma-vault-6.3.5-x86_64-1_rtz.tlz.so.file using /tmp/plasma-vault/plasma-vault-6.3.5-x86_64-1_rtz.tlz
+Successfully created /tmp/plasma-vault/plasma-vault-6.3.5-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in plasma-vault.tar.lz4 format.
+/tmp/plasma-vault /tmp/plasma-vault
+/tmp/plasma-vault
+BIN_NAME
+README
+makepkg-plasma-vault.log
+plasma-vault-6.3.5-x86_64-1_rtz.tlz
+plasma-vault-6.3.5-x86_64-1_rtz.tlz.md5
+plasma-vault-6.3.5-x86_64-1_rtz.tlz.so.file
+plasma-vault-6.3.5-x86_64-1_rtz.tlz.txt
+plasma-vault.dep
+plasma-vault build finished. Procced to installation...
+
++===============================================================================================================+
+| Upgrading plasma-vault-6.3.5-x86_64-1_rtz package using /tmp/plasma-vault/plasma-vault-6.3.5-x86_64-1_rtz.tlz |
++===============================================================================================================+
+
+Pre-installing package plasma-vault-6.3.5-x86_64-1_rtz...
+Removing package: plasma-vault-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:58:43
+Installing package plasma-vault-6.3.5-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# plasma-vault (creating encrypted vaults)
+#
+# Plasma applet and services for creating encrypted vaults
+#
+# https://kde.org/plasma-desktop/
+Executing install script for plasma-vault-6.3.5-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package plasma-vault-6.3.5-x86_64-1_rtz.tlz installed.
+Package plasma-vault-6.3.5-x86_64-1_rtz upgraded with new package /tmp/plasma-vault/plasma-vault-6.3.5-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'plasma-vault-6.3.5.tar.xz': No such file or directory
+Build process completed in 0 minutes and 34 seconds.

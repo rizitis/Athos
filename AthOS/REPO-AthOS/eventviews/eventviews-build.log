@@ -1,0 +1,991 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules	akonadi-calendar	akonadi	calendarsupport	kcalendarcore	kcalutils	kcodecs	kcompletion	kdiagram	kguiaddons	kholidays	ki18n	kiconthemes	kmime	kservice	libkdepim
+doxygen is already installed!
+extra-cmake-modules is already installed!
+akonadi-calendar is already installed!
+akonadi is already installed!
+calendarsupport is already installed!
+kcalendarcore is already installed!
+kcalutils is already installed!
+kcodecs is already installed!
+kcompletion is already installed!
+kdiagram is already installed!
+kguiaddons is already installed!
+kholidays is already installed!
+ki18n is already installed!
+kiconthemes is already installed!
+kmime is already installed!
+kservice is already installed!
+libkdepim is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-11 02:02:10--  https://download.kde.org/stable/release-service/25.04.1/src/eventviews-25.04.1.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/eventviews-25.04.1.tar.xz [following]
+--2025-05-11 02:02:10--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/eventviews-25.04.1.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 510360 (498K) [application/octet-stream]
+Saving to: ‘eventviews-25.04.1.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 10% 1.33M 0s
+    50K .......... .......... .......... .......... .......... 20% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 30% 5.41M 0s
+   150K .......... .......... .......... .......... .......... 40% 1.86M 0s
+   200K .......... .......... .......... .......... .......... 50% 6.88M 0s
+   250K .......... .......... .......... .......... .......... 60% 5.08M 0s
+   300K .......... .......... .......... .......... .......... 70% 1.12M 0s
+   350K .......... .......... .......... .......... .......... 80% 20.3M 0s
+   400K .......... .......... .......... .......... .......... 90%  657M 0s
+   450K .......... .......... .......... .......... ........  100%  717M=0.2s
+
+2025-05-11 02:02:11 (2.88 MB/s) - ‘eventviews-25.04.1.tar.xz’ saved [510360/510360]
+
+Found file: eventviews-25.04.1.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+eventviews-25.04.1/
+eventviews-25.04.1/.krazy
+eventviews-25.04.1/metainfo.yaml.license
+eventviews-25.04.1/.codespellrc.license
+eventviews-25.04.1/CMakePresets.json.license
+eventviews-25.04.1/readme-build-ftime.txt
+eventviews-25.04.1/CMakePresets.json
+eventviews-25.04.1/LICENSES/
+eventviews-25.04.1/LICENSES/Qt-Commercial-exception-1.0.txt
+eventviews-25.04.1/LICENSES/BSD-3-Clause.txt
+eventviews-25.04.1/LICENSES/CC0-1.0.txt
+eventviews-25.04.1/LICENSES/LGPL-2.0-or-later.txt
+eventviews-25.04.1/LICENSES/GPL-2.0-or-later.txt
+eventviews-25.04.1/.gitlab-ci.yml
+eventviews-25.04.1/sanitizers.supp
+eventviews-25.04.1/tests/
+eventviews-25.04.1/tests/createcolorgui_test.cpp
+eventviews-25.04.1/tests/CMakeLists.txt
+eventviews-25.04.1/tests/createcolorgui_test.h
+eventviews-25.04.1/.git-blame-ignore-revs
+eventviews-25.04.1/KPimEventViewsConfig.cmake.in
+eventviews-25.04.1/.kde-ci.yml
+eventviews-25.04.1/.codespellrc
+eventviews-25.04.1/po/
+eventviews-25.04.1/po/bg/
+eventviews-25.04.1/po/bg/libeventviews6.po
+eventviews-25.04.1/po/pt/
+eventviews-25.04.1/po/pt/libeventviews6.po
+eventviews-25.04.1/po/pl/
+eventviews-25.04.1/po/pl/libeventviews6.po
+eventviews-25.04.1/po/ja/
+eventviews-25.04.1/po/ja/libeventviews6.po
+eventviews-25.04.1/po/pa/
+eventviews-25.04.1/po/pa/libeventviews6.po
+eventviews-25.04.1/po/bs/
+eventviews-25.04.1/po/bs/libeventviews6.po
+eventviews-25.04.1/po/zh_CN/
+eventviews-25.04.1/po/zh_CN/libeventviews6.po
+eventviews-25.04.1/po/cs/
+eventviews-25.04.1/po/cs/libeventviews6.po
+eventviews-25.04.1/po/es/
+eventviews-25.04.1/po/es/libeventviews6.po
+eventviews-25.04.1/po/ka/
+eventviews-25.04.1/po/ka/libeventviews6.po
+eventviews-25.04.1/po/tr/
+eventviews-25.04.1/po/tr/libeventviews6.po
+eventviews-25.04.1/po/ug/
+eventviews-25.04.1/po/ug/libeventviews6.po
+eventviews-25.04.1/po/ca/
+eventviews-25.04.1/po/ca/libeventviews6.po
+eventviews-25.04.1/po/ca@valencia/
+eventviews-25.04.1/po/ca@valencia/libeventviews6.po
+eventviews-25.04.1/po/gl/
+eventviews-25.04.1/po/gl/libeventviews6.po
+eventviews-25.04.1/po/ro/
+eventviews-25.04.1/po/ro/libeventviews6.po
+eventviews-25.04.1/po/eo/
+eventviews-25.04.1/po/eo/libeventviews6.po
+eventviews-25.04.1/po/nl/
+eventviews-25.04.1/po/nl/libeventviews6.po
+eventviews-25.04.1/po/mr/
+eventviews-25.04.1/po/mr/libeventviews6.po
+eventviews-25.04.1/po/hu/
+eventviews-25.04.1/po/hu/libeventviews6.po
+eventviews-25.04.1/po/eu/
+eventviews-25.04.1/po/eu/libeventviews6.po
+eventviews-25.04.1/po/lv/
+eventviews-25.04.1/po/lv/libeventviews6.po
+eventviews-25.04.1/po/nb/
+eventviews-25.04.1/po/nb/libeventviews6.po
+eventviews-25.04.1/po/fr/
+eventviews-25.04.1/po/fr/libeventviews6.po
+eventviews-25.04.1/po/hi/
+eventviews-25.04.1/po/hi/libeventviews6.po
+eventviews-25.04.1/po/sl/
+eventviews-25.04.1/po/sl/libeventviews6.po
+eventviews-25.04.1/po/ta/
+eventviews-25.04.1/po/ta/libeventviews6.po
+eventviews-25.04.1/po/he/
+eventviews-25.04.1/po/he/libeventviews6.po
+eventviews-25.04.1/po/de/
+eventviews-25.04.1/po/de/libeventviews6.po
+eventviews-25.04.1/po/ar/
+eventviews-25.04.1/po/ar/libeventviews6.po
+eventviews-25.04.1/po/sk/
+eventviews-25.04.1/po/sk/libeventviews6.po
+eventviews-25.04.1/po/zh_TW/
+eventviews-25.04.1/po/zh_TW/libeventviews6.po
+eventviews-25.04.1/po/et/
+eventviews-25.04.1/po/et/libeventviews6.po
+eventviews-25.04.1/po/it/
+eventviews-25.04.1/po/it/libeventviews6.po
+eventviews-25.04.1/po/el/
+eventviews-25.04.1/po/el/libeventviews6.po
+eventviews-25.04.1/po/da/
+eventviews-25.04.1/po/da/libeventviews6.po
+eventviews-25.04.1/po/pt_BR/
+eventviews-25.04.1/po/pt_BR/libeventviews6.po
+eventviews-25.04.1/po/ru/
+eventviews-25.04.1/po/ru/libeventviews6.po
+eventviews-25.04.1/po/ia/
+eventviews-25.04.1/po/ia/libeventviews6.po
+eventviews-25.04.1/po/sv/
+eventviews-25.04.1/po/sv/libeventviews6.po
+eventviews-25.04.1/po/fi/
+eventviews-25.04.1/po/fi/libeventviews6.po
+eventviews-25.04.1/po/kk/
+eventviews-25.04.1/po/kk/libeventviews6.po
+eventviews-25.04.1/po/ast/
+eventviews-25.04.1/po/ast/libeventviews6.po
+eventviews-25.04.1/po/lt/
+eventviews-25.04.1/po/lt/libeventviews6.po
+eventviews-25.04.1/po/sa/
+eventviews-25.04.1/po/sa/libeventviews6.po
+eventviews-25.04.1/po/ko/
+eventviews-25.04.1/po/ko/libeventviews6.po
+eventviews-25.04.1/po/ga/
+eventviews-25.04.1/po/ga/libeventviews6.po
+eventviews-25.04.1/po/en_GB/
+eventviews-25.04.1/po/en_GB/libeventviews6.po
+eventviews-25.04.1/po/uk/
+eventviews-25.04.1/po/uk/libeventviews6.po
+eventviews-25.04.1/po/nds/
+eventviews-25.04.1/po/nds/libeventviews6.po
+eventviews-25.04.1/.krazy.license
+eventviews-25.04.1/CMakeLists.txt
+eventviews-25.04.1/src/
+eventviews-25.04.1/src/eventview_p.h
+eventviews-25.04.1/src/timeline/
+eventviews-25.04.1/src/timeline/timelineview.h
+eventviews-25.04.1/src/timeline/timelineview_p.h
+eventviews-25.04.1/src/timeline/timelineview_p.cpp
+eventviews-25.04.1/src/timeline/timelineview.cpp
+eventviews-25.04.1/src/timeline/timelineitem.cpp
+eventviews-25.04.1/src/timeline/timelineitem.h
+eventviews-25.04.1/src/Messages.sh
+eventviews-25.04.1/src/helper.h
+eventviews-25.04.1/src/journal/
+eventviews-25.04.1/src/journal/journalview.cpp
+eventviews-25.04.1/src/journal/journalview.h
+eventviews-25.04.1/src/journal/journalframe.h
+eventviews-25.04.1/src/journal/journalframe.cpp
+eventviews-25.04.1/src/eventview.h
+eventviews-25.04.1/src/helper.cpp
+eventviews-25.04.1/src/prefs.cpp
+eventviews-25.04.1/src/whatsnext/
+eventviews-25.04.1/src/whatsnext/whatsnextview.cpp
+eventviews-25.04.1/src/whatsnext/whatsnextview.h
+eventviews-25.04.1/src/month/
+eventviews-25.04.1/src/month/monthgraphicsitems.cpp
+eventviews-25.04.1/src/month/monthview.cpp
+eventviews-25.04.1/src/month/monthitem.h
+eventviews-25.04.1/src/month/monthgraphicsitems.h
+eventviews-25.04.1/src/month/monthview.h
+eventviews-25.04.1/src/month/monthscene.h
+eventviews-25.04.1/src/month/autotests/
+eventviews-25.04.1/src/month/autotests/monthitemordertest.cpp
+eventviews-25.04.1/src/month/autotests/CMakeLists.txt
+eventviews-25.04.1/src/month/monthscene.cpp
+eventviews-25.04.1/src/month/monthitem.cpp
+eventviews-25.04.1/src/prefs_base.kcfgc
+eventviews-25.04.1/src/eventviews.kcfg
+eventviews-25.04.1/src/agenda/
+eventviews-25.04.1/src/agenda/agenda.h
+eventviews-25.04.1/src/agenda/timelabels.cpp
+eventviews-25.04.1/src/agenda/viewcalendar.cpp
+eventviews-25.04.1/src/agenda/agendaview.h
+eventviews-25.04.1/src/agenda/timescaleedit_base.ui
+eventviews-25.04.1/src/agenda/decorationlabel.h
+eventviews-25.04.1/src/agenda/calendardecoration.cpp
+eventviews-25.04.1/src/agenda/timescaleconfigdialog.h
+eventviews-25.04.1/src/agenda/alternatelabel.h
+eventviews-25.04.1/src/agenda/agendaitem.cpp
+eventviews-25.04.1/src/agenda/timelabelszone.h
+eventviews-25.04.1/src/agenda/timescaleconfigdialog.cpp
+eventviews-25.04.1/src/agenda/timelabels.h
+eventviews-25.04.1/src/agenda/agenda.cpp
+eventviews-25.04.1/src/agenda/timelabelszone.cpp
+eventviews-25.04.1/src/agenda/agendaview.cpp
+eventviews-25.04.1/src/agenda/agendaitem.h
+eventviews-25.04.1/src/agenda/decorationlabel.cpp
+eventviews-25.04.1/src/agenda/alternatelabel.cpp
+eventviews-25.04.1/src/agenda/viewcalendar.h
+eventviews-25.04.1/src/agenda/calendardecoration.h
+eventviews-25.04.1/src/list/
+eventviews-25.04.1/src/list/listview.h
+eventviews-25.04.1/src/list/listview.cpp
+eventviews-25.04.1/src/todo/
+eventviews-25.04.1/src/todo/tododelegates.cpp
+eventviews-25.04.1/src/todo/todoview.h
+eventviews-25.04.1/src/todo/tododelegates.h
+eventviews-25.04.1/src/todo/coloredtodoproxymodel.h
+eventviews-25.04.1/src/todo/coloredtodoproxymodel.cpp
+eventviews-25.04.1/src/todo/todoview.cpp
+eventviews-25.04.1/src/todo/todoviewquicksearch.cpp
+eventviews-25.04.1/src/todo/todoviewquicksearch.h
+eventviews-25.04.1/src/todo/todoviewquickaddline.cpp
+eventviews-25.04.1/src/todo/todoviewsortfilterproxymodel.h
+eventviews-25.04.1/src/todo/todoviewview.cpp
+eventviews-25.04.1/src/todo/todoviewquickaddline.h
+eventviews-25.04.1/src/todo/todoviewview.h
+eventviews-25.04.1/src/todo/todoviewsortfilterproxymodel.cpp
+eventviews-25.04.1/src/eventview_p.cpp
+eventviews-25.04.1/src/viewerapp/
+eventviews-25.04.1/src/viewerapp/mainwindow.h
+eventviews-25.04.1/src/viewerapp/settings.kcfgc
+eventviews-25.04.1/src/viewerapp/mainwindow.ui
+eventviews-25.04.1/src/viewerapp/mainwindow.cpp
+eventviews-25.04.1/src/viewerapp/main.cpp
+eventviews-25.04.1/src/viewerapp/settings.kcfg
+eventviews-25.04.1/src/viewerapp/CMakeLists.txt
+eventviews-25.04.1/src/prefs.h
+eventviews-25.04.1/src/eventview.cpp
+eventviews-25.04.1/src/CMakeLists.txt
+eventviews-25.04.1/src/multiagenda/
+eventviews-25.04.1/src/multiagenda/multiagendaview.cpp
+eventviews-25.04.1/src/multiagenda/multiagendaview.h
+eventviews-25.04.1/src/multiagenda/configdialoginterface.h
+eventviews-25.04.1/.gitignore
+eventviews-25.04.1/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.10") found components: Interpreter
+-- Could NOT find ReuseTool (missing: REUSETOOL_EXECUTABLE) 
+CMake Warning at /usr/share/ECM/modules/ECMCheckOutboundLicense.cmake:86 (message):
+  Reuse tool not found, skipping test generation
+Call Stack (most recent call first):
+  CMakeLists.txt:31 (include)
+
+
+-- Skipping execution of outbound license tests.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found Cups: /usr/lib64/libcups.so (found version "2.4.12")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
+-- No such target Qt6Gui_QCH defined when calling ecm_add_qch(), ignored.
+-- No such target Qt6Widgets_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/build/src/KPim6EventViews_ECMQchDoxygen.config' updated.
+
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+   Required to run tests of module ECMCheckOutboundLicense
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * OpenGL
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Cups
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.9.0)
+ * KF6GuiAddons (required version >= 6.9.0)
+ * KF6IconThemes (required version >= 6.9.0)
+ * KF6ItemModels (required version >= 6.9.0)
+ * KF6Service (required version >= 6.9.0)
+ * KF6Completion (required version >= 6.9.0)
+ * KF6Holidays (required version >= 6.9.0)
+ * KF6Contacts (required version >= 6.9.0)
+ * KGantt6 (required version >= 3.0.0)
+ * KPim6Libkdepim (required version >= 6.4.1)
+ * KPim6CalendarUtils (required version >= 6.4.1)
+ * KF6CalendarCore (required version >= 6.9.0)
+ * KF6Codecs (required version >= 6.9.0)
+ * KPim6Akonadi (required version >= 6.4.1)
+ * Gettext
+ * KF6I18n (required version >= 6.9.0)
+ * KPim6CalendarSupport (required version >= 6.4.1)
+ * KPim6AkonadiCalendar (required version >= 6.4.1)
+ * KPim6Mime (required version >= 6.4.1)
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * Qt6ToolsTools, qhelpgenerator from Qt6 tools
+   Needed for API dox QCH file generation
+ * Qt6Core
+ * Qt6 (required version >= 6.7.0)
+
+-- The following features have been disabled:
+
+ * SPDX_LICENSE_TESTING, Automatic license testing based on SPDX definitions (requires reuse tool)
+
+-- The following OPTIONAL packages have not been found:
+
+ * ReuseTool
+   Required to run tests of module ECMCheckOutboundLicense
+
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/build
+[1/52] Generating ts...
+[2/52] Generating mo...
+[3/52] Generating src/KPim6EventViews.qch, src/KPim6EventViews.tags
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[4/52] Automatic MOC for target KPim6EventViews
+[5/52] Generating prefs_base.h, prefs_base.cpp
+[6/52] Generating ui_timescaleedit_base.h
+[7/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/KPim6EventViews_autogen/mocs_compilation.cpp.o
+[8/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/alternatelabel.cpp.o
+[9/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/calendardecoration.cpp.o
+[10/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/decorationlabel.cpp.o
+[11/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/helper.cpp.o
+[12/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/viewcalendar.cpp.o
+[13/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timelabelszone.cpp.o
+[14/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/eventview_p.cpp.o
+[15/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/journal/journalframe.cpp.o
+[16/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/journal/journalview.cpp.o
+[17/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timelabels.cpp.o
+[18/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timescaleconfigdialog.cpp.o
+[19/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/prefs.cpp.o
+[20/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthgraphicsitems.cpp.o
+[21/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthscene.cpp.o
+[22/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthitem.cpp.o
+[23/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewquickaddline.cpp.o
+[24/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthview.cpp.o
+[25/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agendaitem.cpp.o
+[26/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/coloredtodoproxymodel.cpp.o
+[27/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/list/listview.cpp.o
+[28/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/calendarview_debug.cpp.o
+[29/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/eventview.cpp.o
+[30/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewquicksearch.cpp.o
+[31/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewsortfilterproxymodel.cpp.o
+[32/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/tododelegates.cpp.o
+[33/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewview.cpp.o
+[34/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/multiagenda/multiagendaview.cpp.o
+[35/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineitem.cpp.o
+[36/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agenda.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/src/agenda/agenda.cpp: In member function ‘void EventViews::Agenda::endItemAction()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/src/agenda/agenda.cpp:1206:60: warning: ignoring return value of ‘bool EventViews::AgendaItem::dissociateFromMultiItem()’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 1206 |                     d->mActionItem->dissociateFromMultiItem();
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/src/agenda/agenda.h:14,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/src/agenda/agenda.cpp:13:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/src/agenda/agendaitem.h:187:24: note: declared here
+  187 |     [[nodiscard]] bool dissociateFromMultiItem();
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+[37/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineview_p.cpp.o
+[38/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/whatsnext/whatsnextview.cpp.o
+[39/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineview.cpp.o
+[40/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agendaview.cpp.o
+[41/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/prefs_base.cpp.o
+[42/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoview.cpp.o
+[43/52] Linking CXX shared library bin/libKPim6EventViews.so.6.4.1
+[44/52] Creating library symlink bin/libKPim6EventViews.so.6 bin/libKPim6EventViews.so
+[45/52] Automatic MOC for target createcolorgui_test
+[46/52] Building CXX object tests/CMakeFiles/createcolorgui_test.dir/createcolorgui_test_autogen/mocs_compilation.cpp.o
+[47/52] Automatic MOC for target monthitemordertest
+[48/52] Building CXX object src/month/autotests/CMakeFiles/monthitemordertest.dir/monthitemordertest_autogen/mocs_compilation.cpp.o
+[49/52] Building CXX object tests/CMakeFiles/createcolorgui_test.dir/createcolorgui_test.cpp.o
+[50/52] Building CXX object src/month/autotests/CMakeFiles/monthitemordertest.dir/monthitemordertest.cpp.o
+[51/52] Linking CXX executable bin/createcolorgui_test
+[52/52] Linking CXX executable bin/monthitemordertest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/libKPim6EventViews.so.6.4.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/libKPim6EventViews.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/libKPim6EventViews.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/Helper
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/Prefs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/EventView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/helper.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/prefs.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/eventview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/CalendarDecoration
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/AgendaView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/ViewCalendar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/TodoView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/WhatsNextView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/TimeLineView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/MultiAgendaView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/ConfigDialogInterface
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/JournalView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/ListView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/EventViews/MonthView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/eventviews_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/Helper
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/Prefs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/EventView
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/helper.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/prefs.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/eventview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/calendardecoration.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/agendaview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/viewcalendar.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/todoview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/whatsnextview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/timelineview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/multiagendaview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/configdialoginterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/journalview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/listview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews/monthview.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/qlogging-categories6/eventviews.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/qlogging-categories6/eventviews.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/doc/qt6-6.8.3_20250319_bab1fecd/KPim6EventViews.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/doc/qt6-6.8.3_20250319_bab1fecd/KPim6EventViews.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/cmake/KPim6EventViews/KPim6EventViewsQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/cmake/KPim6EventViews/KPim6EventViewsConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/cmake/KPim6EventViews/KPim6EventViewsConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/cmake/KPim6EventViews/KPim6EventViewsTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/cmake/KPim6EventViews/KPim6EventViewsTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/include/KPim6/EventViews/eventviews_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/da/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/cs/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ja/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/de/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/el/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/hi/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pt_BR/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/lt/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pa/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sl/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ta
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ta/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ro/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/bs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/bs/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/kk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/kk/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/he/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/zh_TW/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pl/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/pt/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/tr/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/fr/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ast/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ka/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/gl/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ia/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/hu/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/eo/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/bg/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ga
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ga/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ca/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/uk/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/en_GB/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/zh_CN/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nl/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sa/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/fi/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ko/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ru/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/lv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/lv/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ca@valencia/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nb
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nb/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/es/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/eu/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/et/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/it/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ar/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nds
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/nds/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/mr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/mr/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ug
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/ug/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sk/LC_MESSAGES/libeventviews6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/share/locale/sv/LC_MESSAGES/libeventviews6.mo
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'README*': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/eventviews/eventviews.info: No such file or directory
+doxygen
+extra-cmake-modules
+akonadi-calendar
+akonadi
+calendarsupport
+kcalendarcore
+kcalutils
+kcodecs
+kcompletion
+kdiagram
+kguiaddons
+kholidays
+ki18n
+kiconthemes
+kmime
+kservice
+libkdepim
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKPim6EventViews.so	libKPim6EventViews.so.6
+usr/lib64/libKPim6EventViews.so.6	libKPim6EventViews.so.6.4.1
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKPim6EventViews.so )
+( cd usr/lib64 ; ln -sf libKPim6EventViews.so.6 libKPim6EventViews.so )
+( cd usr/lib64 ; rm -rf libKPim6EventViews.so.6 )
+( cd usr/lib64 ; ln -sf libKPim6EventViews.so.6.4.1 libKPim6EventViews.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKPim6EventViews.so'
+removed './usr/lib64/libKPim6EventViews.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/eventviews/eventviews-25.04.1-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/eventviews-25.04.1/
+usr/doc/eventviews-25.04.1/eventviews.ini
+usr/doc/eventviews-25.04.1/slack-required
+usr/doc/qt6-6.8.3_20250319_bab1fecd/
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KPim6EventViews.qch
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KPim6EventViews.tags
+usr/include/
+usr/include/KPim6/
+usr/include/KPim6/EventViews/
+usr/include/KPim6/EventViews/EventViews/
+usr/include/KPim6/EventViews/EventViews/AgendaView
+usr/include/KPim6/EventViews/EventViews/CalendarDecoration
+usr/include/KPim6/EventViews/EventViews/ConfigDialogInterface
+usr/include/KPim6/EventViews/EventViews/EventView
+usr/include/KPim6/EventViews/EventViews/Helper
+usr/include/KPim6/EventViews/EventViews/JournalView
+usr/include/KPim6/EventViews/EventViews/ListView
+usr/include/KPim6/EventViews/EventViews/MonthView
+usr/include/KPim6/EventViews/EventViews/MultiAgendaView
+usr/include/KPim6/EventViews/EventViews/Prefs
+usr/include/KPim6/EventViews/EventViews/TimeLineView
+usr/include/KPim6/EventViews/EventViews/TodoView
+usr/include/KPim6/EventViews/EventViews/ViewCalendar
+usr/include/KPim6/EventViews/EventViews/WhatsNextView
+usr/include/KPim6/EventViews/EventViews/eventview.h
+usr/include/KPim6/EventViews/EventViews/helper.h
+usr/include/KPim6/EventViews/EventViews/prefs.h
+usr/include/KPim6/EventViews/eventviews/
+usr/include/KPim6/EventViews/eventviews/EventView
+usr/include/KPim6/EventViews/eventviews/Helper
+usr/include/KPim6/EventViews/eventviews/Prefs
+usr/include/KPim6/EventViews/eventviews/agendaview.h
+usr/include/KPim6/EventViews/eventviews/calendardecoration.h
+usr/include/KPim6/EventViews/eventviews/configdialoginterface.h
+usr/include/KPim6/EventViews/eventviews/eventview.h
+usr/include/KPim6/EventViews/eventviews/eventviews_export.h
+usr/include/KPim6/EventViews/eventviews/helper.h
+usr/include/KPim6/EventViews/eventviews/journalview.h
+usr/include/KPim6/EventViews/eventviews/listview.h
+usr/include/KPim6/EventViews/eventviews/monthview.h
+usr/include/KPim6/EventViews/eventviews/multiagendaview.h
+usr/include/KPim6/EventViews/eventviews/prefs.h
+usr/include/KPim6/EventViews/eventviews/timelineview.h
+usr/include/KPim6/EventViews/eventviews/todoview.h
+usr/include/KPim6/EventViews/eventviews/viewcalendar.h
+usr/include/KPim6/EventViews/eventviews/whatsnextview.h
+usr/include/KPim6/EventViews/eventviews_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KPim6EventViews/
+usr/lib64/cmake/KPim6EventViews/KPim6EventViewsConfig.cmake
+usr/lib64/cmake/KPim6EventViews/KPim6EventViewsConfigVersion.cmake
+usr/lib64/cmake/KPim6EventViews/KPim6EventViewsQchTargets.cmake
+usr/lib64/cmake/KPim6EventViews/KPim6EventViewsTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KPim6EventViews/KPim6EventViewsTargets.cmake
+usr/lib64/libKPim6EventViews.so.6.4.1
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libeventviews6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/libeventviews6.mo
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/eventviews.categories
+usr/share/qlogging-categories6/eventviews.renamecategories
+
+Slackware package /tmp/eventviews/eventviews-25.04.1-x86_64-1_rtz.tlz created.
+
+Create shared object file for eventviews-25.04.1-x86_64-1_rtz.tlz
+Creating /tmp/eventviews/eventviews-25.04.1-x86_64-1_rtz.tlz.so.file using /tmp/eventviews/eventviews-25.04.1-x86_64-1_rtz.tlz
+Successfully created /tmp/eventviews/eventviews-25.04.1-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in eventviews.tar.lz4 format.
+/tmp/eventviews /tmp/eventviews
+/tmp/eventviews
+BIN_NAME
+README
+eventviews-25.04.1-x86_64-1_rtz.tlz
+eventviews-25.04.1-x86_64-1_rtz.tlz.md5
+eventviews-25.04.1-x86_64-1_rtz.tlz.so.file
+eventviews-25.04.1-x86_64-1_rtz.tlz.txt
+eventviews.dep
+makepkg-eventviews.log
+eventviews build finished. Procced to installation...
+
++=============================================================================================================+
+| Upgrading eventviews-25.04.1-x86_64-1_rtz package using /tmp/eventviews/eventviews-25.04.1-x86_64-1_rtz.tlz |
++=============================================================================================================+
+
+Pre-installing package eventviews-25.04.1-x86_64-1_rtz...
+Removing package: eventviews-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,02:02:43
+Installing package eventviews-25.04.1-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# eventviews (Library for creating events)
+#
+# Library for creating events
+#
+# https://kontact.kde.org/
+Executing install script for eventviews-25.04.1-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package eventviews-25.04.1-x86_64-1_rtz.tlz installed.
+Package eventviews-25.04.1-x86_64-1_rtz upgraded with new package /tmp/eventviews/eventviews-25.04.1-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'eventviews-25.04.1.tar.xz': No such file or directory
+Build process completed in 0 minutes and 37 seconds.

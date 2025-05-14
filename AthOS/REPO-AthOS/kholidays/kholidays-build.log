@@ -1,0 +1,1126 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules
+doxygen is already installed!
+extra-cmake-modules is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-10 21:34:23--  https://download.kde.org/stable/frameworks/6.14/kholidays-6.14.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kholidays-6.14.0.tar.xz [following]
+--2025-05-10 21:34:23--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kholidays-6.14.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 257240 (251K) [application/octet-stream]
+Saving to: ‘kholidays-6.14.0.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 19% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 39% 1.41M 0s
+   100K .......... .......... .......... .......... .......... 59% 7.05M 0s
+   150K .......... .......... .......... .......... .......... 79% 5.25M 0s
+   200K .......... .......... .......... .......... .......... 99% 2.15M 0s
+   250K .                                                     100% 2.26T=0.1s
+
+2025-05-10 21:34:24 (2.24 MB/s) - ‘kholidays-6.14.0.tar.xz’ saved [257240/257240]
+
+Found file: kholidays-6.14.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kholidays-6.14.0/
+kholidays-6.14.0/.codespellrc
+kholidays-6.14.0/.git-blame-ignore-revs
+kholidays-6.14.0/.gitignore
+kholidays-6.14.0/.gitlab-ci.yml
+kholidays-6.14.0/.kde-ci.yml
+kholidays-6.14.0/.krazy
+kholidays-6.14.0/CMakeLists.txt
+kholidays-6.14.0/DESIGN
+kholidays-6.14.0/KF6HolidaysConfig.cmake.in
+kholidays-6.14.0/LICENSES/
+kholidays-6.14.0/LICENSES/BSD-2-Clause.txt
+kholidays-6.14.0/LICENSES/Bison-exception-2.2.txt
+kholidays-6.14.0/LICENSES/CC0-1.0.txt
+kholidays-6.14.0/LICENSES/GPL-3.0-or-later.txt
+kholidays-6.14.0/LICENSES/LGPL-2.0-or-later.txt
+kholidays-6.14.0/README.md
+kholidays-6.14.0/autotests/
+kholidays-6.14.0/autotests/CMakeLists.txt
+kholidays-6.14.0/autotests/data/
+kholidays-6.14.0/autotests/data/testlunar.answers
+kholidays-6.14.0/autotests/data/testseasons.answers
+kholidays-6.14.0/autotests/data/testzodiac.answers
+kholidays-6.14.0/autotests/holiday_calendar_systems
+kholidays-6.14.0/autotests/holiday_gb-eaw_en-gb_Test
+kholidays-6.14.0/autotests/holiday_solstice_in_holidays
+kholidays-6.14.0/autotests/testholidayregion.cpp
+kholidays-6.14.0/autotests/testholidayregion.h
+kholidays-6.14.0/autotests/testlunar.cpp
+kholidays-6.14.0/autotests/testlunar.h
+kholidays-6.14.0/autotests/testseasons.cpp
+kholidays-6.14.0/autotests/testseasons.h
+kholidays-6.14.0/autotests/testsunriseset.cpp
+kholidays-6.14.0/autotests/testsunriseset.h
+kholidays-6.14.0/autotests/testzodiac.cpp
+kholidays-6.14.0/docs/
+kholidays-6.14.0/docs/Doxyfile.local
+kholidays-6.14.0/holidays/
+kholidays-6.14.0/holidays/file-format.txt
+kholidays-6.14.0/holidays/holidays.qrc
+kholidays-6.14.0/holidays/plan2/
+kholidays-6.14.0/holidays/plan2/holiday_ar_es
+kholidays-6.14.0/holidays/plan2/holiday_at_de
+kholidays-6.14.0/holidays/plan2/holiday_au-act_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_au-nsw_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_au-nt_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_au-qld_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_au-sa_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_au-tas_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_au-vic_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_au-wa_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_ba-srp_sr
+kholidays-6.14.0/holidays/plan2/holiday_ba-srp_sr@ijekavian
+kholidays-6.14.0/holidays/plan2/holiday_ba-srp_sr@ijekavianlatin
+kholidays-6.14.0/holidays/plan2/holiday_ba-srp_sr@latin
+kholidays-6.14.0/holidays/plan2/holiday_bb_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_bd_bn
+kholidays-6.14.0/holidays/plan2/holiday_bd_en
+kholidays-6.14.0/holidays/plan2/holiday_be_fr
+kholidays-6.14.0/holidays/plan2/holiday_be_nl
+kholidays-6.14.0/holidays/plan2/holiday_be_wa
+kholidays-6.14.0/holidays/plan2/holiday_bg_bg
+kholidays-6.14.0/holidays/plan2/holiday_bh_ar
+kholidays-6.14.0/holidays/plan2/holiday_bj_fr
+kholidays-6.14.0/holidays/plan2/holiday_br_pt-br
+kholidays-6.14.0/holidays/plan2/holiday_by_be
+kholidays-6.14.0/holidays/plan2/holiday_ca-qc_fr
+kholidays-6.14.0/holidays/plan2/holiday_ca_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_ch_de
+kholidays-6.14.0/holidays/plan2/holiday_ch_fr
+kholidays-6.14.0/holidays/plan2/holiday_ch_it
+kholidays-6.14.0/holidays/plan2/holiday_ci_fr
+kholidays-6.14.0/holidays/plan2/holiday_cl_es
+kholidays-6.14.0/holidays/plan2/holiday_cm_en
+kholidays-6.14.0/holidays/plan2/holiday_cm_fr
+kholidays-6.14.0/holidays/plan2/holiday_cn_zh-cn
+kholidays-6.14.0/holidays/plan2/holiday_co_es
+kholidays-6.14.0/holidays/plan2/holiday_cr_en
+kholidays-6.14.0/holidays/plan2/holiday_cr_es
+kholidays-6.14.0/holidays/plan2/holiday_cu_en
+kholidays-6.14.0/holidays/plan2/holiday_cu_es
+kholidays-6.14.0/holidays/plan2/holiday_cz_cs
+kholidays-6.14.0/holidays/plan2/holiday_de-bb_de
+kholidays-6.14.0/holidays/plan2/holiday_de-be_de
+kholidays-6.14.0/holidays/plan2/holiday_de-bw_de
+kholidays-6.14.0/holidays/plan2/holiday_de-by_de
+kholidays-6.14.0/holidays/plan2/holiday_de-hb_de
+kholidays-6.14.0/holidays/plan2/holiday_de-he_de
+kholidays-6.14.0/holidays/plan2/holiday_de-hh_de
+kholidays-6.14.0/holidays/plan2/holiday_de-mv_de
+kholidays-6.14.0/holidays/plan2/holiday_de-ni_de
+kholidays-6.14.0/holidays/plan2/holiday_de-nw_de
+kholidays-6.14.0/holidays/plan2/holiday_de-rp_de
+kholidays-6.14.0/holidays/plan2/holiday_de-sh_de
+kholidays-6.14.0/holidays/plan2/holiday_de-sl_de
+kholidays-6.14.0/holidays/plan2/holiday_de-sn_de
+kholidays-6.14.0/holidays/plan2/holiday_de-st_de
+kholidays-6.14.0/holidays/plan2/holiday_de-th_de
+kholidays-6.14.0/holidays/plan2/holiday_de_de
+kholidays-6.14.0/holidays/plan2/holiday_dk_da
+kholidays-6.14.0/holidays/plan2/holiday_do_es
+kholidays-6.14.0/holidays/plan2/holiday_dz_ar
+kholidays-6.14.0/holidays/plan2/holiday_dz_fr
+kholidays-6.14.0/holidays/plan2/holiday_ee_et
+kholidays-6.14.0/holidays/plan2/holiday_eg_ar
+kholidays-6.14.0/holidays/plan2/holiday_es-ct_ca
+kholidays-6.14.0/holidays/plan2/holiday_es_es
+kholidays-6.14.0/holidays/plan2/holiday_fi_fi
+kholidays-6.14.0/holidays/plan2/holiday_fr_fr
+kholidays-6.14.0/holidays/plan2/holiday_gb-eaw_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_gb-nir_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_gb-sct_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_gf_fr
+kholidays-6.14.0/holidays/plan2/holiday_gp_fr
+kholidays-6.14.0/holidays/plan2/holiday_gr_el
+kholidays-6.14.0/holidays/plan2/holiday_gr_el_nameday
+kholidays-6.14.0/holidays/plan2/holiday_gt_es
+kholidays-6.14.0/holidays/plan2/holiday_hk_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_hk_zh-cn
+kholidays-6.14.0/holidays/plan2/holiday_hr_hr
+kholidays-6.14.0/holidays/plan2/holiday_hu_hu
+kholidays-6.14.0/holidays/plan2/holiday_id_en-us
+kholidays-6.14.0/holidays/plan2/holiday_id_id
+kholidays-6.14.0/holidays/plan2/holiday_ie_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_ie_ga
+kholidays-6.14.0/holidays/plan2/holiday_il_en-us
+kholidays-6.14.0/holidays/plan2/holiday_il_he
+kholidays-6.14.0/holidays/plan2/holiday_in_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_ir_en-us
+kholidays-6.14.0/holidays/plan2/holiday_ir_fa
+kholidays-6.14.0/holidays/plan2/holiday_is_is
+kholidays-6.14.0/holidays/plan2/holiday_it-bz_de
+kholidays-6.14.0/holidays/plan2/holiday_it_it
+kholidays-6.14.0/holidays/plan2/holiday_jm_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_jp_en-us
+kholidays-6.14.0/holidays/plan2/holiday_jp_ja
+kholidays-6.14.0/holidays/plan2/holiday_ke_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_kr_ko
+kholidays-6.14.0/holidays/plan2/holiday_kz_kk
+kholidays-6.14.0/holidays/plan2/holiday_kz_ru
+kholidays-6.14.0/holidays/plan2/holiday_lk_si
+kholidays-6.14.0/holidays/plan2/holiday_lt_lt
+kholidays-6.14.0/holidays/plan2/holiday_lu_fr
+kholidays-6.14.0/holidays/plan2/holiday_lu_lb
+kholidays-6.14.0/holidays/plan2/holiday_lv_lv
+kholidays-6.14.0/holidays/plan2/holiday_ma_ar
+kholidays-6.14.0/holidays/plan2/holiday_ma_fr
+kholidays-6.14.0/holidays/plan2/holiday_mq_fr
+kholidays-6.14.0/holidays/plan2/holiday_mt_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_mt_mt
+kholidays-6.14.0/holidays/plan2/holiday_mu_en
+kholidays-6.14.0/holidays/plan2/holiday_mu_en_islamic
+kholidays-6.14.0/holidays/plan2/holiday_mu_fr_catholic
+kholidays-6.14.0/holidays/plan2/holiday_mx_es
+kholidays-6.14.0/holidays/plan2/holiday_my_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_na_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_nc_fr
+kholidays-6.14.0/holidays/plan2/holiday_ng_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_ni_es
+kholidays-6.14.0/holidays/plan2/holiday_nl_nl
+kholidays-6.14.0/holidays/plan2/holiday_no_nb
+kholidays-6.14.0/holidays/plan2/holiday_no_nn
+kholidays-6.14.0/holidays/plan2/holiday_nz_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_pa_en
+kholidays-6.14.0/holidays/plan2/holiday_pa_es
+kholidays-6.14.0/holidays/plan2/holiday_pe_es
+kholidays-6.14.0/holidays/plan2/holiday_pf_fr
+kholidays-6.14.0/holidays/plan2/holiday_ph_en
+kholidays-6.14.0/holidays/plan2/holiday_pk_en
+kholidays-6.14.0/holidays/plan2/holiday_pl_pl
+kholidays-6.14.0/holidays/plan2/holiday_pr_en-us
+kholidays-6.14.0/holidays/plan2/holiday_pr_es
+kholidays-6.14.0/holidays/plan2/holiday_pt_pt
+kholidays-6.14.0/holidays/plan2/holiday_py_es
+kholidays-6.14.0/holidays/plan2/holiday_re_fr
+kholidays-6.14.0/holidays/plan2/holiday_ro_ro
+kholidays-6.14.0/holidays/plan2/holiday_rs_sr
+kholidays-6.14.0/holidays/plan2/holiday_rs_sr@ijekavian
+kholidays-6.14.0/holidays/plan2/holiday_rs_sr@ijekavianlatin
+kholidays-6.14.0/holidays/plan2/holiday_rs_sr@latin
+kholidays-6.14.0/holidays/plan2/holiday_ru_ru
+kholidays-6.14.0/holidays/plan2/holiday_se_sv
+kholidays-6.14.0/holidays/plan2/holiday_se_sv_nameday
+kholidays-6.14.0/holidays/plan2/holiday_sg_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_si_sl
+kholidays-6.14.0/holidays/plan2/holiday_sk_sk
+kholidays-6.14.0/holidays/plan2/holiday_sm_it
+kholidays-6.14.0/holidays/plan2/holiday_th_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_tr_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_tr_tr
+kholidays-6.14.0/holidays/plan2/holiday_tw_zh-tw
+kholidays-6.14.0/holidays/plan2/holiday_tz_en
+kholidays-6.14.0/holidays/plan2/holiday_ua_uk
+kholidays-6.14.0/holidays/plan2/holiday_us_en-us
+kholidays-6.14.0/holidays/plan2/holiday_uy_es
+kholidays-6.14.0/holidays/plan2/holiday_uz_ru
+kholidays-6.14.0/holidays/plan2/holiday_uz_uz
+kholidays-6.14.0/holidays/plan2/holiday_uz_uz@cyrillic
+kholidays-6.14.0/holidays/plan2/holiday_ve_es
+kholidays-6.14.0/holidays/plan2/holiday_wf_fr
+kholidays-6.14.0/holidays/plan2/holiday_yt_fr
+kholidays-6.14.0/holidays/plan2/holiday_za_en-gb
+kholidays-6.14.0/holidays/plan2/holiday_zm_en-gb
+kholidays-6.14.0/metainfo.yaml
+kholidays-6.14.0/poqm/
+kholidays-6.14.0/poqm/ar/
+kholidays-6.14.0/poqm/ar/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ast/
+kholidays-6.14.0/poqm/ast/libkholidays6_qt.po
+kholidays-6.14.0/poqm/az/
+kholidays-6.14.0/poqm/az/libkholidays6_qt.po
+kholidays-6.14.0/poqm/be/
+kholidays-6.14.0/poqm/be/libkholidays6_qt.po
+kholidays-6.14.0/poqm/bg/
+kholidays-6.14.0/poqm/bg/libkholidays6_qt.po
+kholidays-6.14.0/poqm/br/
+kholidays-6.14.0/poqm/br/libkholidays6_qt.po
+kholidays-6.14.0/poqm/bs/
+kholidays-6.14.0/poqm/bs/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ca/
+kholidays-6.14.0/poqm/ca/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ca@valencia/
+kholidays-6.14.0/poqm/ca@valencia/libkholidays6_qt.po
+kholidays-6.14.0/poqm/cs/
+kholidays-6.14.0/poqm/cs/libkholidays6_qt.po
+kholidays-6.14.0/poqm/cy/
+kholidays-6.14.0/poqm/cy/libkholidays6_qt.po
+kholidays-6.14.0/poqm/da/
+kholidays-6.14.0/poqm/da/libkholidays6_qt.po
+kholidays-6.14.0/poqm/de/
+kholidays-6.14.0/poqm/de/libkholidays6_qt.po
+kholidays-6.14.0/poqm/el/
+kholidays-6.14.0/poqm/el/libkholidays6_qt.po
+kholidays-6.14.0/poqm/en_GB/
+kholidays-6.14.0/poqm/en_GB/libkholidays6_qt.po
+kholidays-6.14.0/poqm/eo/
+kholidays-6.14.0/poqm/eo/libkholidays6_qt.po
+kholidays-6.14.0/poqm/es/
+kholidays-6.14.0/poqm/es/libkholidays6_qt.po
+kholidays-6.14.0/poqm/et/
+kholidays-6.14.0/poqm/et/libkholidays6_qt.po
+kholidays-6.14.0/poqm/eu/
+kholidays-6.14.0/poqm/eu/libkholidays6_qt.po
+kholidays-6.14.0/poqm/fa/
+kholidays-6.14.0/poqm/fa/libkholidays6_qt.po
+kholidays-6.14.0/poqm/fi/
+kholidays-6.14.0/poqm/fi/libkholidays6_qt.po
+kholidays-6.14.0/poqm/fr/
+kholidays-6.14.0/poqm/fr/libkholidays6_qt.po
+kholidays-6.14.0/poqm/fy/
+kholidays-6.14.0/poqm/fy/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ga/
+kholidays-6.14.0/poqm/ga/libkholidays6_qt.po
+kholidays-6.14.0/poqm/gl/
+kholidays-6.14.0/poqm/gl/libkholidays6_qt.po
+kholidays-6.14.0/poqm/he/
+kholidays-6.14.0/poqm/he/libkholidays6_qt.po
+kholidays-6.14.0/poqm/hi/
+kholidays-6.14.0/poqm/hi/libkholidays6_qt.po
+kholidays-6.14.0/poqm/hne/
+kholidays-6.14.0/poqm/hne/libkholidays6_qt.po
+kholidays-6.14.0/poqm/hu/
+kholidays-6.14.0/poqm/hu/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ia/
+kholidays-6.14.0/poqm/ia/libkholidays6_qt.po
+kholidays-6.14.0/poqm/id/
+kholidays-6.14.0/poqm/id/libkholidays6_qt.po
+kholidays-6.14.0/poqm/is/
+kholidays-6.14.0/poqm/is/libkholidays6_qt.po
+kholidays-6.14.0/poqm/it/
+kholidays-6.14.0/poqm/it/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ja/
+kholidays-6.14.0/poqm/ja/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ka/
+kholidays-6.14.0/poqm/ka/libkholidays6_qt.po
+kholidays-6.14.0/poqm/kk/
+kholidays-6.14.0/poqm/kk/libkholidays6_qt.po
+kholidays-6.14.0/poqm/km/
+kholidays-6.14.0/poqm/km/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ko/
+kholidays-6.14.0/poqm/ko/libkholidays6_qt.po
+kholidays-6.14.0/poqm/lt/
+kholidays-6.14.0/poqm/lt/libkholidays6_qt.po
+kholidays-6.14.0/poqm/lv/
+kholidays-6.14.0/poqm/lv/libkholidays6_qt.po
+kholidays-6.14.0/poqm/mk/
+kholidays-6.14.0/poqm/mk/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ml/
+kholidays-6.14.0/poqm/ml/libkholidays6_qt.po
+kholidays-6.14.0/poqm/mr/
+kholidays-6.14.0/poqm/mr/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ms/
+kholidays-6.14.0/poqm/ms/libkholidays6_qt.po
+kholidays-6.14.0/poqm/nb/
+kholidays-6.14.0/poqm/nb/libkholidays6_qt.po
+kholidays-6.14.0/poqm/nds/
+kholidays-6.14.0/poqm/nds/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ne/
+kholidays-6.14.0/poqm/ne/libkholidays6_qt.po
+kholidays-6.14.0/poqm/nl/
+kholidays-6.14.0/poqm/nl/libkholidays6_qt.po
+kholidays-6.14.0/poqm/nn/
+kholidays-6.14.0/poqm/nn/libkholidays6_qt.po
+kholidays-6.14.0/poqm/pa/
+kholidays-6.14.0/poqm/pa/libkholidays6_qt.po
+kholidays-6.14.0/poqm/pl/
+kholidays-6.14.0/poqm/pl/libkholidays6_qt.po
+kholidays-6.14.0/poqm/pt/
+kholidays-6.14.0/poqm/pt/libkholidays6_qt.po
+kholidays-6.14.0/poqm/pt_BR/
+kholidays-6.14.0/poqm/pt_BR/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ro/
+kholidays-6.14.0/poqm/ro/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ru/
+kholidays-6.14.0/poqm/ru/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sa/
+kholidays-6.14.0/poqm/sa/libkholidays6_qt.po
+kholidays-6.14.0/poqm/se/
+kholidays-6.14.0/poqm/se/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sk/
+kholidays-6.14.0/poqm/sk/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sl/
+kholidays-6.14.0/poqm/sl/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sq/
+kholidays-6.14.0/poqm/sq/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sr/
+kholidays-6.14.0/poqm/sr/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sr@ijekavian/
+kholidays-6.14.0/poqm/sr@ijekavian/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sr@ijekavianlatin/
+kholidays-6.14.0/poqm/sr@ijekavianlatin/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sr@latin/
+kholidays-6.14.0/poqm/sr@latin/libkholidays6_qt.po
+kholidays-6.14.0/poqm/sv/
+kholidays-6.14.0/poqm/sv/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ta/
+kholidays-6.14.0/poqm/ta/libkholidays6_qt.po
+kholidays-6.14.0/poqm/tg/
+kholidays-6.14.0/poqm/tg/libkholidays6_qt.po
+kholidays-6.14.0/poqm/th/
+kholidays-6.14.0/poqm/th/libkholidays6_qt.po
+kholidays-6.14.0/poqm/tr/
+kholidays-6.14.0/poqm/tr/libkholidays6_qt.po
+kholidays-6.14.0/poqm/ug/
+kholidays-6.14.0/poqm/ug/libkholidays6_qt.po
+kholidays-6.14.0/poqm/uk/
+kholidays-6.14.0/poqm/uk/libkholidays6_qt.po
+kholidays-6.14.0/poqm/uz/
+kholidays-6.14.0/poqm/uz/libkholidays6_qt.po
+kholidays-6.14.0/poqm/uz@cyrillic/
+kholidays-6.14.0/poqm/uz@cyrillic/libkholidays6_qt.po
+kholidays-6.14.0/poqm/wa/
+kholidays-6.14.0/poqm/wa/libkholidays6_qt.po
+kholidays-6.14.0/poqm/zh_CN/
+kholidays-6.14.0/poqm/zh_CN/libkholidays6_qt.po
+kholidays-6.14.0/poqm/zh_TW/
+kholidays-6.14.0/poqm/zh_TW/libkholidays6_qt.po
+kholidays-6.14.0/src/
+kholidays-6.14.0/src/CMakeLists.txt
+kholidays-6.14.0/src/Messages.sh
+kholidays-6.14.0/src/astroseasons.cpp
+kholidays-6.14.0/src/astroseasons.h
+kholidays-6.14.0/src/declarative/
+kholidays-6.14.0/src/declarative/CMakeLists.txt
+kholidays-6.14.0/src/declarative/holidayregionsmodel.cpp
+kholidays-6.14.0/src/declarative/holidayregionsmodel.h
+kholidays-6.14.0/src/declarative/kholidaysdeclarativeplugin.cpp
+kholidays-6.14.0/src/declarative/kholidaysdeclarativeplugin.h
+kholidays-6.14.0/src/holiday.cpp
+kholidays-6.14.0/src/holiday.h
+kholidays-6.14.0/src/holiday_p.h
+kholidays-6.14.0/src/holidayregion.cpp
+kholidays-6.14.0/src/holidayregion.h
+kholidays-6.14.0/src/lunarphase.cpp
+kholidays-6.14.0/src/lunarphase.h
+kholidays-6.14.0/src/parsers/
+kholidays-6.14.0/src/parsers/holidayparserdriver.cpp
+kholidays-6.14.0/src/parsers/holidayparserdriver_p.h
+kholidays-6.14.0/src/parsers/plan2/
+kholidays-6.14.0/src/parsers/plan2/FlexLexer.h
+kholidays-6.14.0/src/parsers/plan2/README
+kholidays-6.14.0/src/parsers/plan2/holidayparserdriverplan.cpp
+kholidays-6.14.0/src/parsers/plan2/holidayparserdriverplan_p.h
+kholidays-6.14.0/src/parsers/plan2/holidayparserplan.cpp
+kholidays-6.14.0/src/parsers/plan2/holidayparserplan.hpp
+kholidays-6.14.0/src/parsers/plan2/holidayparserplan.ypp
+kholidays-6.14.0/src/parsers/plan2/holidayscannerplan.cpp
+kholidays-6.14.0/src/parsers/plan2/holidayscannerplan.lpp
+kholidays-6.14.0/src/parsers/plan2/holidayscannerplan_p.h
+kholidays-6.14.0/src/parsers/plan2/location.hh
+kholidays-6.14.0/src/parsers/plan2/position.hh
+kholidays-6.14.0/src/parsers/plan2/stack.hh
+kholidays-6.14.0/src/parsers/qcalendarsystem.cpp
+kholidays-6.14.0/src/parsers/qcalendarsystem_p.h
+kholidays-6.14.0/src/sunriseset.cpp
+kholidays-6.14.0/src/sunriseset.h
+kholidays-6.14.0/src/zodiac.cpp
+kholidays-6.14.0/src/zodiac.h
+kholidays-6.14.0/tests/
+kholidays-6.14.0/tests/example.qml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/work/kholidays-6.14.0/build/src/KF6Holidays_ECMQchDoxygen.config' updated.
+
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have been found:
+
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6Qml
+ * Qt6LinguistTools
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.14.0)
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * Qt6ToolsTools, qhelpgenerator from Qt6 tools
+   Needed for API dox QCH file generation
+ * Qt6Test
+ * Qt6
+
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/work/kholidays-6.14.0/build
+[1/127] Generating ECMPoQm/bg/libkholidays6_qt.qm
+[2/127] Generating ECMPoQm/cy/libkholidays6_qt.qm
+[3/127] Generating ECMPoQm/az/libkholidays6_qt.qm
+[4/127] Generating ECMPoQm/ca/libkholidays6_qt.qm
+[5/127] Generating ECMPoQm/da/libkholidays6_qt.qm
+[6/127] Generating ECMPoQm/eo/libkholidays6_qt.qm
+[7/127] Generating ECMPoQm/cs/libkholidays6_qt.qm
+[8/127] Generating ECMPoQm/de/libkholidays6_qt.qm
+[9/127] Generating ECMPoQm/es/libkholidays6_qt.qm
+[10/127] Generating ECMPoQm/br/libkholidays6_qt.qm
+[11/127] Generating ECMPoQm/bs/libkholidays6_qt.qm
+[12/127] Generating ECMPoQm/ca@valencia/libkholidays6_qt.qm
+[13/127] Generating ECMPoQm/ar/libkholidays6_qt.qm
+[14/127] Generating ECMPoQm/be/libkholidays6_qt.qm
+[15/127] Generating ECMPoQm/el/libkholidays6_qt.qm
+[16/127] Generating ECMPoQm/ast/libkholidays6_qt.qm
+[17/127] Generating ECMPoQm/eu/libkholidays6_qt.qm
+[18/127] Generating ECMPoQm/fa/libkholidays6_qt.qm
+[19/127] Generating ECMPoQm/fi/libkholidays6_qt.qm
+[20/127] Generating ECMPoQm/fy/libkholidays6_qt.qm
+[21/127] Generating ECMPoQm/et/libkholidays6_qt.qm
+[22/127] Generating ECMPoQm/fr/libkholidays6_qt.qm
+[23/127] Generating ECMPoQm/en_GB/libkholidays6_qt.qm
+[24/127] Generating ECMPoQm/gl/libkholidays6_qt.qm
+[25/127] Generating ECMPoQm/ia/libkholidays6_qt.qm
+[26/127] Generating ECMPoQm/ga/libkholidays6_qt.qm
+[27/127] Generating ECMPoQm/he/libkholidays6_qt.qm
+[28/127] Generating ECMPoQm/hne/libkholidays6_qt.qm
+[29/127] Generating ECMPoQm/hu/libkholidays6_qt.qm
+[30/127] Generating ECMPoQm/id/libkholidays6_qt.qm
+[31/127] Generating ECMPoQm/hi/libkholidays6_qt.qm
+[32/127] Generating ECMPoQm/is/libkholidays6_qt.qm
+[33/127] Generating ECMPoQm/it/libkholidays6_qt.qm
+[34/127] Generating ECMPoQm/ja/libkholidays6_qt.qm
+[35/127] Generating ECMPoQm/lt/libkholidays6_qt.qm
+[36/127] Generating ECMPoQm/ka/libkholidays6_qt.qm
+[37/127] Generating ECMPoQm/ko/libkholidays6_qt.qm
+[38/127] Generating ECMPoQm/lv/libkholidays6_qt.qm
+[39/127] Generating ECMPoQm/ml/libkholidays6_qt.qm
+[40/127] Generating ECMPoQm/kk/libkholidays6_qt.qm
+[41/127] Generating ECMPoQm/km/libkholidays6_qt.qm
+[42/127] Generating ECMPoQm/mk/libkholidays6_qt.qm
+[43/127] Generating ECMPoQm/mr/libkholidays6_qt.qm
+[44/127] Generating ECMPoQm/ms/libkholidays6_qt.qm
+[45/127] Generating ECMPoQm/nb/libkholidays6_qt.qm
+[46/127] Generating ECMPoQm/nds/libkholidays6_qt.qm
+[47/127] Generating ECMPoQm/ne/libkholidays6_qt.qm
+[48/127] Generating ECMPoQm/nl/libkholidays6_qt.qm
+[49/127] Generating ECMPoQm/nn/libkholidays6_qt.qm
+[50/127] Generating ECMPoQm/pa/libkholidays6_qt.qm
+[51/127] Generating ECMPoQm/pl/libkholidays6_qt.qm
+[52/127] Generating ECMPoQm/pt_BR/libkholidays6_qt.qm
+[53/127] Generating ECMPoQm/ro/libkholidays6_qt.qm
+[54/127] Generating ECMPoQm/se/libkholidays6_qt.qm
+[55/127] Generating ECMPoQm/pt/libkholidays6_qt.qm
+[56/127] Generating ECMPoQm/ru/libkholidays6_qt.qm
+[57/127] Generating ECMPoQm/sa/libkholidays6_qt.qm
+[58/127] Generating ECMPoQm/sk/libkholidays6_qt.qm
+[59/127] Generating ECMPoQm/sl/libkholidays6_qt.qm
+[60/127] Generating ECMPoQm/sq/libkholidays6_qt.qm
+[61/127] Generating ECMPoQm/sr/libkholidays6_qt.qm
+[62/127] Generating ECMPoQm/sr@ijekavian/libkholidays6_qt.qm
+[63/127] Generating ECMPoQm/sr@ijekavianlatin/libkholidays6_qt.qm
+[64/127] Generating ECMPoQm/sr@latin/libkholidays6_qt.qm
+[65/127] Generating ECMPoQm/sv/libkholidays6_qt.qm
+[66/127] Generating ECMPoQm/ta/libkholidays6_qt.qm
+[67/127] Generating ECMPoQm/tg/libkholidays6_qt.qm
+[68/127] Generating ECMPoQm/th/libkholidays6_qt.qm
+[69/127] Generating ECMPoQm/tr/libkholidays6_qt.qm
+[70/127] Generating ECMPoQm/uk/libkholidays6_qt.qm
+[71/127] Generating ECMPoQm/ug/libkholidays6_qt.qm
+[72/127] Generating ECMPoQm/uz/libkholidays6_qt.qm
+[73/127] Generating ECMPoQm/uz@cyrillic/libkholidays6_qt.qm
+[74/127] Generating ECMPoQm/zh_TW/libkholidays6_qt.qm
+[75/127] Generating ECMPoQm/zh_CN/libkholidays6_qt.qm
+[76/127] Generating ECMPoQm/wa/libkholidays6_qt.qm
+[77/127] Generating src/KF6Holidays.qch, src/KF6Holidays.tags
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[78/127] Automatic MOC for target KF6Holidays
+[79/127] Automatic RCC for ../holidays/holidays.qrc
+[80/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/KF6Holidays_autogen/mocs_compilation.cpp.o
+[81/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/KF6Holidays_autogen/FVH3S7AUNZ/qrc_holidays.cpp.o
+[82/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/holiday.cpp.o
+[83/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/zodiac.cpp.o
+[84/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/kholidays_debug.cpp.o
+[85/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/parsers/qcalendarsystem.cpp.o
+[86/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/parsers/plan2/holidayscannerplan.cpp.o
+[87/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/sunriseset.cpp.o
+[88/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/parsers/plan2/holidayparserplan.cpp.o
+[89/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/ECMQmLoader-libkholidays6_qt.cpp.o
+[90/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/astroseasons.cpp.o
+[91/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/lunarphase.cpp.o
+[92/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/parsers/holidayparserdriver.cpp.o
+[93/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/parsers/plan2/holidayparserdriverplan.cpp.o
+[94/127] Building CXX object src/CMakeFiles/KF6Holidays.dir/holidayregion.cpp.o
+[95/127] Linking CXX shared library bin/libKF6Holidays.so.6.14.0
+[96/127] Creating library symlink bin/libKF6Holidays.so.6 bin/libKF6Holidays.so
+[97/127] Automatic MOC for target testzodiac
+[98/127] Building CXX object autotests/CMakeFiles/testzodiac.dir/testzodiac_autogen/mocs_compilation.cpp.o
+[99/127] Automatic MOC for target testsunriseset
+[100/127] Automatic MOC for target testholidayregion
+[101/127] Automatic MOC for target testlunar
+[102/127] Building CXX object autotests/CMakeFiles/testsunriseset.dir/testsunriseset_autogen/mocs_compilation.cpp.o
+[103/127] Building CXX object autotests/CMakeFiles/testholidayregion.dir/testholidayregion_autogen/mocs_compilation.cpp.o
+[104/127] Building CXX object autotests/CMakeFiles/testlunar.dir/testlunar_autogen/mocs_compilation.cpp.o
+[105/127] Automatic MOC for target testseasons
+[106/127] Building CXX object autotests/CMakeFiles/testseasons.dir/testseasons_autogen/mocs_compilation.cpp.o
+[107/127] Automatic MOC for target kholidaysdeclarativeplugin
+[108/127] Running AUTOMOC file extraction for target kholidaysdeclarativeplugin
+[109/127] Running rcc for resource qmake_org_kde_kholidays
+[110/127] Running moc --collect-json for target kholidaysdeclarativeplugin
+[111/127] Automatic QML type registration for target kholidaysdeclarativeplugin
+[112/127] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/kholidaysdeclarativeplugin_autogen/mocs_compilation.cpp.o
+[113/127] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/.qt/rcc/qrc_qmake_org_kde_kholidays.cpp.o
+[114/127] Building CXX object autotests/CMakeFiles/testzodiac.dir/testzodiac.cpp.o
+[115/127] Linking CXX executable bin/testzodiac
+[116/127] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/holidayregionsmodel.cpp.o
+[117/127] Building CXX object autotests/CMakeFiles/testlunar.dir/testlunar.cpp.o
+[118/127] Linking CXX executable bin/testlunar
+[119/127] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/kholidaysdeclarativeplugin_qmltyperegistrations.cpp.o
+[120/127] Building CXX object src/declarative/CMakeFiles/kholidaysdeclarativeplugin.dir/kholidaysdeclarativeplugin.cpp.o
+[121/127] Building CXX object autotests/CMakeFiles/testholidayregion.dir/testholidayregion.cpp.o
+[122/127] Linking CXX shared module bin/org/kde/kholidays/libkholidaysdeclarativeplugin.so
+[123/127] Linking CXX executable bin/testholidayregion
+[124/127] Building CXX object autotests/CMakeFiles/testsunriseset.dir/testsunriseset.cpp.o
+[125/127] Linking CXX executable bin/testsunriseset
+[126/127] Building CXX object autotests/CMakeFiles/testseasons.dir/testseasons.cpp.o
+[127/127] Linking CXX executable bin/testseasons
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/libKF6Holidays.so.6.14.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/libKF6Holidays.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/libKF6Holidays.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/kholidays/kholidays_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/kholidays/astroseasons.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/kholidays/holiday.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/kholidays/holidayregion.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/kholidays/lunarphase.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/kholidays/sunriseset.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/kholidays/zodiac.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/KHolidays/AstroSeasons
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/KHolidays/Holiday
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/KHolidays/HolidayRegion
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/KHolidays/LunarPhase
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/KHolidays/SunRiseSet
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/KHolidays/Zodiac
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Holidays.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Holidays.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/qt6/qml/org/kde/kholidays/libkholidaysdeclarativeplugin.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/qt6/qml/org/kde/kholidays/libkholidaysdeclarativeplugin.so" to "$ORIGIN/../../../../lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/qt6/qml/org/kde/kholidays/qmldir
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/qt6/qml/org/kde/kholidays/kholidaysdeclarativeplugin.qmltypes
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/qt6/qml/org/kde/kholidays/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/qlogging-categories6/kholidays.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ar/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ast/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/az/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/be/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/bg/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/br/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/bs/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ca/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ca@valencia/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/cs/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/cy/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/da/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/de/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/el/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/en_GB/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/eo/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/es/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/et/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/eu/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/fa/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/fi/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/fr/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/fy/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ga/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/gl/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/he/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/hi/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/hne/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/hu/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ia/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/id/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/is/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/it/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ja/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ka/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/kk/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/km/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ko/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/lt/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/lv/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/mk/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ml/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/mr/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ms/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/nb/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/nds/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ne/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/nl/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/nn/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/pa/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/pl/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/pt/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/pt_BR/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ro/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ru/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sa/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/se/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sk/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sl/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sq/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sr/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sr@ijekavian/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sr@latin/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/sv/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ta/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/tg/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/th/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/tr/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/ug/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/uk/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/uz/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/uz@cyrillic/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/wa/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/zh_CN/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/share/locale/zh_TW/LC_MESSAGES/libkholidays6_qt.qm
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/cmake/KF6Holidays/KF6HolidaysQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/cmake/KF6Holidays/KF6HolidaysConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/cmake/KF6Holidays/KF6HolidaysConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/cmake/KF6Holidays/KF6HolidaysTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/lib64/cmake/KF6Holidays/KF6HolidaysTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/package-kholidays/usr/include/KF6/KHolidays/kholidays_version.h
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kholidays/kholidays.info: No such file or directory
+doxygen
+extra-cmake-modules
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKF6Holidays.so	libKF6Holidays.so.6
+usr/lib64/libKF6Holidays.so.6	libKF6Holidays.so.6.14.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKF6Holidays.so )
+( cd usr/lib64 ; ln -sf libKF6Holidays.so.6 libKF6Holidays.so )
+( cd usr/lib64 ; rm -rf libKF6Holidays.so.6 )
+( cd usr/lib64 ; ln -sf libKF6Holidays.so.6.14.0 libKF6Holidays.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKF6Holidays.so'
+removed './usr/lib64/libKF6Holidays.so.6'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kholidays/kholidays-6.14.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kholidays-6.14.0/
+usr/doc/kholidays-6.14.0/README.md
+usr/doc/kholidays-6.14.0/docs/
+usr/doc/kholidays-6.14.0/docs/Doxyfile.local
+usr/doc/kholidays-6.14.0/kholidays.ini
+usr/doc/kholidays-6.14.0/slack-required
+usr/doc/qt6-6.8.3_20250319_bab1fecd/
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Holidays.qch
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KF6Holidays.tags
+usr/include/
+usr/include/KF6/
+usr/include/KF6/KHolidays/
+usr/include/KF6/KHolidays/KHolidays/
+usr/include/KF6/KHolidays/KHolidays/AstroSeasons
+usr/include/KF6/KHolidays/KHolidays/Holiday
+usr/include/KF6/KHolidays/KHolidays/HolidayRegion
+usr/include/KF6/KHolidays/KHolidays/LunarPhase
+usr/include/KF6/KHolidays/KHolidays/SunRiseSet
+usr/include/KF6/KHolidays/KHolidays/Zodiac
+usr/include/KF6/KHolidays/kholidays/
+usr/include/KF6/KHolidays/kholidays/astroseasons.h
+usr/include/KF6/KHolidays/kholidays/holiday.h
+usr/include/KF6/KHolidays/kholidays/holidayregion.h
+usr/include/KF6/KHolidays/kholidays/kholidays_export.h
+usr/include/KF6/KHolidays/kholidays/lunarphase.h
+usr/include/KF6/KHolidays/kholidays/sunriseset.h
+usr/include/KF6/KHolidays/kholidays/zodiac.h
+usr/include/KF6/KHolidays/kholidays_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF6Holidays/
+usr/lib64/cmake/KF6Holidays/KF6HolidaysConfig.cmake
+usr/lib64/cmake/KF6Holidays/KF6HolidaysConfigVersion.cmake
+usr/lib64/cmake/KF6Holidays/KF6HolidaysQchTargets.cmake
+usr/lib64/cmake/KF6Holidays/KF6HolidaysTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KF6Holidays/KF6HolidaysTargets.cmake
+usr/lib64/libKF6Holidays.so.6.14.0
+usr/lib64/qt6/
+usr/lib64/qt6/qml/
+usr/lib64/qt6/qml/org/
+usr/lib64/qt6/qml/org/kde/
+usr/lib64/qt6/qml/org/kde/kholidays/
+usr/lib64/qt6/qml/org/kde/kholidays/kde-qmlmodule.version
+usr/lib64/qt6/qml/org/kde/kholidays/kholidaysdeclarativeplugin.qmltypes
+usr/lib64/qt6/qml/org/kde/kholidays/libkholidaysdeclarativeplugin.so
+usr/lib64/qt6/qml/org/kde/kholidays/qmldir
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ast/
+usr/share/locale/ast/LC_MESSAGES/
+usr/share/locale/ast/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/br/
+usr/share/locale/br/LC_MESSAGES/
+usr/share/locale/br/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/bs/
+usr/share/locale/bs/LC_MESSAGES/
+usr/share/locale/bs/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/cy/
+usr/share/locale/cy/LC_MESSAGES/
+usr/share/locale/cy/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/et/
+usr/share/locale/et/LC_MESSAGES/
+usr/share/locale/et/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/fa/
+usr/share/locale/fa/LC_MESSAGES/
+usr/share/locale/fa/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/fy/
+usr/share/locale/fy/LC_MESSAGES/
+usr/share/locale/fy/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ga/
+usr/share/locale/ga/LC_MESSAGES/
+usr/share/locale/ga/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/hne/
+usr/share/locale/hne/LC_MESSAGES/
+usr/share/locale/hne/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/kk/
+usr/share/locale/kk/LC_MESSAGES/
+usr/share/locale/kk/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/km/
+usr/share/locale/km/LC_MESSAGES/
+usr/share/locale/km/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/lv/
+usr/share/locale/lv/LC_MESSAGES/
+usr/share/locale/lv/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/mk/
+usr/share/locale/mk/LC_MESSAGES/
+usr/share/locale/mk/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ml/
+usr/share/locale/ml/LC_MESSAGES/
+usr/share/locale/ml/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/mr/
+usr/share/locale/mr/LC_MESSAGES/
+usr/share/locale/mr/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ms/
+usr/share/locale/ms/LC_MESSAGES/
+usr/share/locale/ms/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/nb/
+usr/share/locale/nb/LC_MESSAGES/
+usr/share/locale/nb/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/nds/
+usr/share/locale/nds/LC_MESSAGES/
+usr/share/locale/nds/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ne/
+usr/share/locale/ne/LC_MESSAGES/
+usr/share/locale/ne/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/se/
+usr/share/locale/se/LC_MESSAGES/
+usr/share/locale/se/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sq/
+usr/share/locale/sq/LC_MESSAGES/
+usr/share/locale/sq/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sr@ijekavian/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/
+usr/share/locale/sr@ijekavian/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sr@ijekavianlatin/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/
+usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sr@latin/
+usr/share/locale/sr@latin/LC_MESSAGES/
+usr/share/locale/sr@latin/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ta/
+usr/share/locale/ta/LC_MESSAGES/
+usr/share/locale/ta/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/tg/
+usr/share/locale/tg/LC_MESSAGES/
+usr/share/locale/tg/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/th/
+usr/share/locale/th/LC_MESSAGES/
+usr/share/locale/th/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/ug/
+usr/share/locale/ug/LC_MESSAGES/
+usr/share/locale/ug/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/uz/
+usr/share/locale/uz/LC_MESSAGES/
+usr/share/locale/uz/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/uz@cyrillic/
+usr/share/locale/uz@cyrillic/LC_MESSAGES/
+usr/share/locale/uz@cyrillic/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/wa/
+usr/share/locale/wa/LC_MESSAGES/
+usr/share/locale/wa/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/libkholidays6_qt.qm
+usr/share/qlogging-categories6/
+usr/share/qlogging-categories6/kholidays.categories
+
+Slackware package /tmp/kholidays/kholidays-6.14.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for kholidays-6.14.0-x86_64-1_rtz.tlz
+Creating /tmp/kholidays/kholidays-6.14.0-x86_64-1_rtz.tlz.so.file using /tmp/kholidays/kholidays-6.14.0-x86_64-1_rtz.tlz
+Successfully created /tmp/kholidays/kholidays-6.14.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kholidays.tar.lz4 format.
+/tmp/kholidays /tmp/kholidays
+/tmp/kholidays
+BIN_NAME
+README
+kholidays-6.14.0-x86_64-1_rtz.tlz
+kholidays-6.14.0-x86_64-1_rtz.tlz.md5
+kholidays-6.14.0-x86_64-1_rtz.tlz.so.file
+kholidays-6.14.0-x86_64-1_rtz.tlz.txt
+kholidays.dep
+makepkg-kholidays.log
+kholidays build finished. Procced to installation...
+
++========================================================================================================+
+| Upgrading kholidays-6.14.0-x86_64-1_rtz package using /tmp/kholidays/kholidays-6.14.0-x86_64-1_rtz.tlz |
++========================================================================================================+
+
+Pre-installing package kholidays-6.14.0-x86_64-1_rtz...
+Removing package: kholidays-6.14.0-x86_64-1_rtz-upgraded-2025-05-10,21:34:40
+Installing package kholidays-6.14.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kholidays (Support for icon themes)
+#
+# Support for icon themes
+#
+# https://community.kde.org/Frameworks
+Executing install script for kholidays-6.14.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kholidays-6.14.0-x86_64-1_rtz.tlz installed.
+Package kholidays-6.14.0-x86_64-1_rtz upgraded with new package /tmp/kholidays/kholidays-6.14.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kholidays-6.14.0.tar.xz': No such file or directory
+Build process completed in 0 minutes and 22 seconds.
