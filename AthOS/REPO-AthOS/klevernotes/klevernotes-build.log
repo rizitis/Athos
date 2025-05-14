@@ -1,0 +1,893 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	kconfig	kconfigwidgets	kcoreaddons	ki18n	kio	kirigami	kirigami-addons	kitemmodels	qqc2-desktop-style
+extra-cmake-modules is already installed!
+kconfig is already installed!
+kconfigwidgets is already installed!
+kcoreaddons is already installed!
+ki18n is already installed!
+kio is already installed!
+kirigami is already installed!
+kirigami-addons is already installed!
+kitemmodels is already installed!
+qqc2-desktop-style is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-15 01:41:06--  https://download.kde.org/stable/klevernotes/1.2.2/klevernotes-1.2.2.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/klevernotes/1.2.2/klevernotes-1.2.2.tar.xz [following]
+--2025-05-15 01:41:06--  https://ftp.cc.uoc.gr/mirrors/kde/stable/klevernotes/1.2.2/klevernotes-1.2.2.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 393128 (384K) [application/octet-stream]
+Saving to: ‘klevernotes-1.2.2.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 13% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 26% 1.40M 0s
+   100K .......... .......... .......... .......... .......... 39% 5.41M 0s
+   150K .......... .......... .......... .......... .......... 52% 5.33M 0s
+   200K .......... .......... .......... .......... .......... 65% 2.35M 0s
+   250K .......... .......... .......... .......... .......... 78% 5.05M 0s
+   300K .......... .......... .......... .......... .......... 91% 7.04M 0s
+   350K .......... .......... .......... ...                  100% 4.57M=0.1s
+
+2025-05-15 01:41:06 (2.80 MB/s) - ‘klevernotes-1.2.2.tar.xz’ saved [393128/393128]
+
+Found file: klevernotes-1.2.2.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+klevernotes-1.2.2/
+klevernotes-1.2.2/CMakeLists.txt
+klevernotes-1.2.2/.reuse/
+klevernotes-1.2.2/.reuse/dep5
+klevernotes-1.2.2/logo.png
+klevernotes-1.2.2/org.kde.klevernotes.svg
+klevernotes-1.2.2/.gitignore
+klevernotes-1.2.2/org.kde.klevernotes.desktop
+klevernotes-1.2.2/.gitlab-ci.yml
+klevernotes-1.2.2/org.kde.klevernotes.metainfo.xml
+klevernotes-1.2.2/src/
+klevernotes-1.2.2/src/main.cpp
+klevernotes-1.2.2/src/example/
+klevernotes-1.2.2/src/example/Demo/
+klevernotes-1.2.2/src/example/Demo/Images/
+klevernotes-1.2.2/src/example/Demo/Images/logo.png
+klevernotes-1.2.2/src/example/Demo/note.md
+klevernotes-1.2.2/src/CMakeLists.txt
+klevernotes-1.2.2/src/kleverconfig.kcfgc
+klevernotes-1.2.2/src/contents/
+klevernotes-1.2.2/src/contents/resources/
+klevernotes-1.2.2/src/contents/resources/index.html
+klevernotes-1.2.2/src/contents/resources/demo.html
+klevernotes-1.2.2/src/contents/resources/style/
+klevernotes-1.2.2/src/contents/resources/style/Style9.css
+klevernotes-1.2.2/src/contents/resources/style/Avenir.css
+klevernotes-1.2.2/src/contents/resources/style/Style7.css
+klevernotes-1.2.2/src/contents/resources/style/KleverStyle.css
+klevernotes-1.2.2/src/contents/resources/qwebchannel.js
+klevernotes-1.2.2/src/contents/ui/
+klevernotes-1.2.2/src/contents/ui/sharedComponents/
+klevernotes-1.2.2/src/contents/ui/sharedComponents/ReversibleButtonDelegate.qml
+klevernotes-1.2.2/src/contents/ui/sharedComponents/ActionsList.qml
+klevernotes-1.2.2/src/contents/ui/sharedComponents/KAction.qml
+klevernotes-1.2.2/src/contents/ui/sharedComponents/ExpandingFormSwitch.qml
+klevernotes-1.2.2/src/contents/ui/pages/
+klevernotes-1.2.2/src/contents/ui/pages/MainPage.qml
+klevernotes-1.2.2/src/contents/ui/pages/SettingsPage.qml
+klevernotes-1.2.2/src/contents/ui/pages/PaintingPage.qml
+klevernotes-1.2.2/src/contents/ui/pages/AboutPage.qml
+klevernotes-1.2.2/src/contents/ui/pages/PrintingPage.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/
+klevernotes-1.2.2/src/contents/ui/textEditor/EditorView.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/TextEditor.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/TextDisplay.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/TextToolBar.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/BottomToolBar.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/CheatSheet.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/NotesMap.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/components/
+klevernotes-1.2.2/src/contents/ui/textEditor/components/NotesMapEntry.qml
+klevernotes-1.2.2/src/contents/ui/textEditor/components/CheatSheetEntry.qml
+klevernotes-1.2.2/src/contents/ui/painting/
+klevernotes-1.2.2/src/contents/ui/painting/DrawingToolBarOptions.qml
+klevernotes-1.2.2/src/contents/ui/painting/DrawingToolBar.qml
+klevernotes-1.2.2/src/contents/ui/painting/ColorBar.qml
+klevernotes-1.2.2/src/contents/ui/painting/ColorButton.qml
+klevernotes-1.2.2/src/contents/ui/settings/
+klevernotes-1.2.2/src/contents/ui/settings/NotePreviewTab.qml
+klevernotes-1.2.2/src/contents/ui/settings/FontPicker.qml
+klevernotes-1.2.2/src/contents/ui/settings/EditorHighlightPreview.qml
+klevernotes-1.2.2/src/contents/ui/settings/SettingsColorButton.qml
+klevernotes-1.2.2/src/contents/ui/settings/PluginsTab.qml
+klevernotes-1.2.2/src/contents/ui/settings/EditorTab.qml
+klevernotes-1.2.2/src/contents/ui/settings/TabBar.qml
+klevernotes-1.2.2/src/contents/ui/settings/DisplayPreview.qml
+klevernotes-1.2.2/src/contents/ui/settings/components/
+klevernotes-1.2.2/src/contents/ui/settings/components/ActionListViewDelegate.qml
+klevernotes-1.2.2/src/contents/ui/settings/components/ClickableArrow.qml
+klevernotes-1.2.2/src/contents/ui/settings/components/ClickableIcon.qml
+klevernotes-1.2.2/src/contents/ui/settings/GeneralTab.qml
+klevernotes-1.2.2/src/contents/ui/sideBar/
+klevernotes-1.2.2/src/contents/ui/sideBar/ActionBar.qml
+klevernotes-1.2.2/src/contents/ui/sideBar/TreeView.qml
+klevernotes-1.2.2/src/contents/ui/sideBar/SearchBar.qml
+klevernotes-1.2.2/src/contents/ui/sideBar/TreeItem.qml
+klevernotes-1.2.2/src/contents/ui/sideBar/Sidebar.qml
+klevernotes-1.2.2/src/contents/ui/sideBar/ContextMenu.qml
+klevernotes-1.2.2/src/contents/ui/todoEditor/
+klevernotes-1.2.2/src/contents/ui/todoEditor/TodoDelegate.qml
+klevernotes-1.2.2/src/contents/ui/todoEditor/ToDoView.qml
+klevernotes-1.2.2/src/contents/ui/main.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/
+klevernotes-1.2.2/src/contents/ui/dialogs/NamingErrorDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/URLDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/FileSaverDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/MoveDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/ItemPropertiesDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/todoDialog/
+klevernotes-1.2.2/src/contents/ui/dialogs/todoDialog/TextAreaDelegate.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/todoDialog/ToDoDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/imagePickerDialog/
+klevernotes-1.2.2/src/contents/ui/dialogs/imagePickerDialog/ImagePickerDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/imagePickerDialog/ButtonDelegate.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/FilePickerDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/emojiDialog/
+klevernotes-1.2.2/src/contents/ui/dialogs/emojiDialog/EmojiDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/emojiDialog/EmojiTonesPicker.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/emojiDialog/EmojiPicker.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/emojiDialog/EmojiDelegate.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/emojiDialog/EmojiGrid.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/TextDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/tableMakerDialog/
+klevernotes-1.2.2/src/contents/ui/dialogs/tableMakerDialog/UpDownButtonDelegate.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/tableMakerDialog/TableMakerDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/FontPickerDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/LinkNoteDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/NamingDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/DeleteConfirmationDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/LeavePaintingDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/FolderPickerDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/LinkDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/PrintingDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/StorageDialog.qml
+klevernotes-1.2.2/src/contents/ui/dialogs/StorageConversionDialog.qml
+klevernotes-1.2.2/src/logic/
+klevernotes-1.2.2/src/logic/treeview/
+klevernotes-1.2.2/src/logic/treeview/fileSystemHelper.cpp
+klevernotes-1.2.2/src/logic/treeview/treeModel.h
+klevernotes-1.2.2/src/logic/treeview/treeModel.cpp
+klevernotes-1.2.2/src/logic/treeview/oldModelConverter.cpp
+klevernotes-1.2.2/src/logic/treeview/treeItem.cpp
+klevernotes-1.2.2/src/logic/treeview/oldModelConverter.h
+klevernotes-1.2.2/src/logic/treeview/fileSystemHelper.h
+klevernotes-1.2.2/src/logic/treeview/treeItem.h
+klevernotes-1.2.2/src/logic/editor/
+klevernotes-1.2.2/src/logic/editor/posCacheUtils.cpp
+klevernotes-1.2.2/src/logic/editor/editorHandler.hpp
+klevernotes-1.2.2/src/logic/editor/colors.hpp
+klevernotes-1.2.2/src/logic/editor/posCacheUtils.hpp
+klevernotes-1.2.2/src/logic/editor/editorTextManipulation.hpp
+klevernotes-1.2.2/src/logic/editor/editorHandler.cpp
+klevernotes-1.2.2/src/logic/editor/editorTextManipulation.cpp
+klevernotes-1.2.2/src/logic/editor/editorHighlighter.hpp
+klevernotes-1.2.2/src/logic/editor/editorHighlighterPrivate.hpp
+klevernotes-1.2.2/src/logic/editor/editorHighlighterPrivate.cpp
+klevernotes-1.2.2/src/logic/editor/editorHighlighter.cpp
+klevernotes-1.2.2/src/logic/editor/colors.cpp
+klevernotes-1.2.2/src/logic/colorschemer.cpp
+klevernotes-1.2.2/src/logic/qmlLinker.h
+klevernotes-1.2.2/src/logic/qmlLinker.cpp
+klevernotes-1.2.2/src/logic/documentHandler.h
+klevernotes-1.2.2/src/logic/preview/
+klevernotes-1.2.2/src/logic/preview/styleHandler.cpp
+klevernotes-1.2.2/src/logic/preview/styleHandler.hpp
+klevernotes-1.2.2/src/logic/kleverUtility.cpp
+klevernotes-1.2.2/src/logic/printing/
+klevernotes-1.2.2/src/logic/printing/printingHelper.cpp
+klevernotes-1.2.2/src/logic/printing/printingHelper.h
+klevernotes-1.2.2/src/logic/documentHandler.cpp
+klevernotes-1.2.2/src/logic/parser/
+klevernotes-1.2.2/src/logic/parser/extendedSyntax/
+klevernotes-1.2.2/src/logic/parser/extendedSyntax/extendedSyntaxMaker.hpp
+klevernotes-1.2.2/src/logic/parser/extendedSyntax/extendedSyntaxMaker.cpp
+klevernotes-1.2.2/src/logic/parser/renderer.cpp
+klevernotes-1.2.2/src/logic/parser/md4qt/
+klevernotes-1.2.2/src/logic/parser/md4qt/entities_map.h
+klevernotes-1.2.2/src/logic/parser/md4qt/visitor.h
+klevernotes-1.2.2/src/logic/parser/md4qt/traits.h
+klevernotes-1.2.2/src/logic/parser/md4qt/doc.h
+klevernotes-1.2.2/src/logic/parser/md4qt/poscache.h
+klevernotes-1.2.2/src/logic/parser/md4qt/algo.h
+klevernotes-1.2.2/src/logic/parser/md4qt/utils.h
+klevernotes-1.2.2/src/logic/parser/md4qt/parser.h
+klevernotes-1.2.2/src/logic/parser/md4qt/html.h
+klevernotes-1.2.2/src/logic/parser/md4qtDataManip.cpp
+klevernotes-1.2.2/src/logic/parser/md4qtDataGetter.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/
+klevernotes-1.2.2/src/logic/parser/plugins/cliHelper.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/pluginHelper.h
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteLinkingPlugin.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteLinkingPlugin.hpp
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteMapperUtils.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteMapperUtils.h
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteMapperParserUtils.h
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteMapper.h
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteMapper.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteMapperParserUtils.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiTones.h
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiTones_data.h
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emoticonFilterModel.h
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiPlugin.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emoticonFilterModel.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiPlugin.hpp
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiModel.h
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiTones.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiModel.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojis.h
+klevernotes-1.2.2/src/logic/parser/plugins/cliHelper.h
+klevernotes-1.2.2/src/logic/parser/plugins/puml/
+klevernotes-1.2.2/src/logic/parser/plugins/puml/pumlParserUtils.h
+klevernotes-1.2.2/src/logic/parser/plugins/puml/pumlHelper.h
+klevernotes-1.2.2/src/logic/parser/plugins/puml/pumlParserUtils.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/puml/pumlHelper.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/syntaxHighlight/
+klevernotes-1.2.2/src/logic/parser/plugins/syntaxHighlight/highlightHelper.h
+klevernotes-1.2.2/src/logic/parser/plugins/syntaxHighlight/highlightHelper.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/syntaxHighlight/highlightParserUtils.cpp
+klevernotes-1.2.2/src/logic/parser/plugins/syntaxHighlight/highlightParserUtils.h
+klevernotes-1.2.2/src/logic/parser/plugins/pluginHelper.cpp
+klevernotes-1.2.2/src/logic/parser/md4qtDataCleaner.cpp
+klevernotes-1.2.2/src/logic/parser/renderer.h
+klevernotes-1.2.2/src/logic/parser/md4qtDataGetter.hpp
+klevernotes-1.2.2/src/logic/parser/md4qtDataCleaner.hpp
+klevernotes-1.2.2/src/logic/parser/md4qtDataManip.hpp
+klevernotes-1.2.2/src/logic/parser/parser.h
+klevernotes-1.2.2/src/logic/parser/parser.cpp
+klevernotes-1.2.2/src/logic/kleverUtility.h
+klevernotes-1.2.2/src/logic/colorschemer.h
+klevernotes-1.2.2/src/autotests/
+klevernotes-1.2.2/src/autotests/CMakeLists.txt
+klevernotes-1.2.2/src/autotests/parser/
+klevernotes-1.2.2/src/autotests/parser/noteLinkingTest.cpp
+klevernotes-1.2.2/src/autotests/parser/extendedSyntaxTest.cpp
+klevernotes-1.2.2/src/autotests/parser/emojiTest.cpp
+klevernotes-1.2.2/src/kleverconfig.kcfg
+klevernotes-1.2.2/src/app.h
+klevernotes-1.2.2/src/resources.qrc
+klevernotes-1.2.2/src/app.cpp
+klevernotes-1.2.2/src/Messages.sh
+klevernotes-1.2.2/po/
+klevernotes-1.2.2/po/it/
+klevernotes-1.2.2/po/it/klevernotes.po
+klevernotes-1.2.2/po/nl/
+klevernotes-1.2.2/po/nl/klevernotes.po
+klevernotes-1.2.2/po/fi/
+klevernotes-1.2.2/po/fi/klevernotes.po
+klevernotes-1.2.2/po/pl/
+klevernotes-1.2.2/po/pl/klevernotes.po
+klevernotes-1.2.2/po/he/
+klevernotes-1.2.2/po/he/klevernotes.po
+klevernotes-1.2.2/po/zh_CN/
+klevernotes-1.2.2/po/zh_CN/klevernotes.po
+klevernotes-1.2.2/po/eo/
+klevernotes-1.2.2/po/eo/klevernotes.po
+klevernotes-1.2.2/po/fr/
+klevernotes-1.2.2/po/fr/klevernotes.po
+klevernotes-1.2.2/po/uk/
+klevernotes-1.2.2/po/uk/klevernotes.po
+klevernotes-1.2.2/po/sk/
+klevernotes-1.2.2/po/sk/klevernotes.po
+klevernotes-1.2.2/po/gl/
+klevernotes-1.2.2/po/gl/klevernotes.po
+klevernotes-1.2.2/po/es/
+klevernotes-1.2.2/po/es/klevernotes.po
+klevernotes-1.2.2/po/en_GB/
+klevernotes-1.2.2/po/en_GB/klevernotes.po
+klevernotes-1.2.2/po/ja/
+klevernotes-1.2.2/po/ja/klevernotes.po
+klevernotes-1.2.2/po/sv/
+klevernotes-1.2.2/po/sv/klevernotes.po
+klevernotes-1.2.2/po/zh_TW/
+klevernotes-1.2.2/po/zh_TW/klevernotes.po
+klevernotes-1.2.2/po/hi/
+klevernotes-1.2.2/po/hi/klevernotes.po
+klevernotes-1.2.2/po/eu/
+klevernotes-1.2.2/po/eu/klevernotes.po
+klevernotes-1.2.2/po/ko/
+klevernotes-1.2.2/po/ko/klevernotes.po
+klevernotes-1.2.2/po/tr/
+klevernotes-1.2.2/po/tr/klevernotes.po
+klevernotes-1.2.2/po/pt/
+klevernotes-1.2.2/po/pt/klevernotes.po
+klevernotes-1.2.2/po/sl/
+klevernotes-1.2.2/po/sl/klevernotes.po
+klevernotes-1.2.2/po/ca/
+klevernotes-1.2.2/po/ca/klevernotes.po
+klevernotes-1.2.2/po/cs/
+klevernotes-1.2.2/po/cs/klevernotes.po
+klevernotes-1.2.2/po/ia/
+klevernotes-1.2.2/po/ia/klevernotes.po
+klevernotes-1.2.2/po/ka/
+klevernotes-1.2.2/po/ka/klevernotes.po
+klevernotes-1.2.2/po/ar/
+klevernotes-1.2.2/po/ar/klevernotes.po
+klevernotes-1.2.2/po/ca@valencia/
+klevernotes-1.2.2/po/ca@valencia/klevernotes.po
+klevernotes-1.2.2/po/sa/
+klevernotes-1.2.2/po/sa/klevernotes.po
+klevernotes-1.2.2/po/de/
+klevernotes-1.2.2/po/de/klevernotes.po
+klevernotes-1.2.2/LICENSES/
+klevernotes-1.2.2/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+klevernotes-1.2.2/LICENSES/MIT.txt
+klevernotes-1.2.2/LICENSES/BSD-3-Clause.txt
+klevernotes-1.2.2/LICENSES/GPL-3.0-or-later.txt
+klevernotes-1.2.2/LICENSES/FSFAP.txt
+klevernotes-1.2.2/LICENSES/LGPL-2.1-only.txt
+klevernotes-1.2.2/LICENSES/LGPL-2.1-or-later.txt
+klevernotes-1.2.2/LICENSES/LGPL-2.0-or-later.tx
+klevernotes-1.2.2/LICENSES/LGPL-2.0-only.txt
+klevernotes-1.2.2/LICENSES/CC0-1.0.txt
+klevernotes-1.2.2/LICENSES/GPL-3.0-only.txt
+klevernotes-1.2.2/LICENSES/GPL-2.0-or-later.txt
+klevernotes-1.2.2/LICENSES/LGPL-3.0-only.txt
+klevernotes-1.2.2/LICENSES/CC-BY-SA-4.0.txt
+klevernotes-1.2.2/.kde-ci.yml
+klevernotes-1.2.2/README.md
+klevernotes-1.2.2/.flatpak-manifest.json
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Cups: /usr/lib64/libcups.so (found version "2.4.12")
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Found KF6Kirigami: /usr/lib64/cmake/KF6Kirigami/KF6KirigamiConfig.cmake (found version "6.14.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6ColorScheme: /usr/lib64/cmake/KF6ColorScheme/KF6ColorSchemeConfig.cmake (found version "6.14.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.14.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "6.4") found components: Kirigami CoreAddons Config I18n ColorScheme IconThemes KIO
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Test (required version >= 6.5)
+ * OpenGL
+ * Qt6QuickControls2 (required version >= 6.5)
+ * Qt6Svg (required version >= 6.5)
+ * Cups
+ * Qt6PrintSupport (required version >= 6.5)
+ * Qt6WebEngineCoreTools (required version >= 6.8.3)
+ * Qt6WebEngineQuick (required version >= 6.5)
+ * Qt6Qml (required version >= 6.7.0)
+ * Qt6QmlTools (required version >= 6.8.3)
+ * Qt6QuickTools (required version >= 6.8.3)
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6Gui (required version >= 6.7.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.4)
+ * Qt6 (required version >= 6.5)
+ * KF6Kirigami (required version >= 6.4)
+ * Gettext
+ * KF6I18n (required version >= 6.4)
+ * KF6Config (required version >= 6.14.0)
+ * KF6ColorScheme (required version >= 6.4)
+ * KF6IconThemes (required version >= 6.4)
+ * KF6CoreAddons (required version >= 6.14.0)
+ * KF6KIO (required version >= 6.4)
+ * KF6 (required version >= 6.4)
+
+-- Configuring done (1.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/build
+[1/62] Generating kleverconfig.h, kleverconfig.cpp
+[2/62] Generating ts...
+[3/62] Generating mo...
+[4/62] Automatic MOC for target klevernoteslib
+AutoMoc: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/treeview/treeModel.h:17:1: warning: Property declaration noteMapEnabled has neither an associated QProperty<> member, nor a READ accessor function nor an associated MEMBER variable. The property will be invalid.
+[5/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/editor/colors.cpp.o
+[6/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/qmlLinker.cpp.o
+[7/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/treeview/fileSystemHelper.cpp.o
+[8/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/printing/printingHelper.cpp.o
+[9/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/treeview/oldModelConverter.cpp.o
+[10/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/documentHandler.cpp.o
+[11/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/colorschemer.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/colorschemer.cpp: In constructor ‘ColorSchemer::ColorSchemer(QObject*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/colorschemer.cpp:14:37: warning: ‘KColorSchemeManager::KColorSchemeManager(QObject*)’ is deprecated: Since 6.6. Use KColorSchemeManager::instance() [-Wdeprecated-declarations]
+   14 |     , c(new KColorSchemeManager(this))
+      |                                     ^
+In file included from /usr/include/KF6/KColorScheme/KColorSchemeManager:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/colorschemer.cpp:5:
+/usr/include/KF6/KColorScheme/kcolorschememanager.h:59:14: note: declared here
+   59 |     explicit KColorSchemeManager(QObject *parent = nullptr);
+      |              ^~~~~~~~~~~~~~~~~~~
+[12/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/preview/styleHandler.cpp.o
+[13/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/app.cpp.o
+[14/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/kleverUtility.cpp.o
+[15/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/cliHelper.cpp.o
+[16/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/pluginHelper.cpp.o
+[17/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/treeview/treeModel.cpp.o
+[18/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/treeview/treeItem.cpp.o
+[19/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/emoji/emoticonFilterModel.cpp.o
+[20/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/puml/pumlHelper.cpp.o
+[21/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/noteMapper/noteMapperUtils.cpp.o
+[22/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/puml/pumlParserUtils.cpp.o
+[23/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/syntaxHighlight/highlightHelper.cpp.o
+[24/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/noteMapper/noteMapper.cpp.o
+[25/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/syntaxHighlight/highlightParserUtils.cpp.o
+[26/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/kleverconfig.cpp.o
+[27/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/md4qtDataGetter.cpp.o
+[28/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/editor/editorHighlighterPrivate.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHandler.hpp:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHighlighterPrivate.hpp:5,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHighlighterPrivate.cpp:4:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/md4qt/html.h:165:10: warning: ‘void MD::details::HtmlVisitor<Trait>::onHeading(MD::Heading<Trait>*) [with Trait = MD::QStringTrait]’ was hidden [-Woverloaded-virtual=]
+  165 |     void onHeading(
+      |          ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:39:10: note:   by ‘virtual void Renderer::onHeading(MD::Heading<MD::QStringTrait>*, const MD::QStringTrait::String&)’
+   39 |     void onHeading(MD::Heading<MD::QStringTrait> *h, const typename MD::QStringTrait::String &ht) override;
+      |          ^~~~~~~~~
+[29/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/editor/editorHandler.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHandler.hpp:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHandler.cpp:4:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/md4qt/html.h:165:10: warning: ‘void MD::details::HtmlVisitor<Trait>::onHeading(MD::Heading<Trait>*) [with Trait = MD::QStringTrait]’ was hidden [-Woverloaded-virtual=]
+  165 |     void onHeading(
+      |          ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:39:10: note:   by ‘virtual void Renderer::onHeading(MD::Heading<MD::QStringTrait>*, const MD::QStringTrait::String&)’
+   39 |     void onHeading(MD::Heading<MD::QStringTrait> *h, const typename MD::QStringTrait::String &ht) override;
+      |          ^~~~~~~~~
+[30/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/editor/posCacheUtils.cpp.o
+[31/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/noteMapper/noteLinkingPlugin.cpp.o
+[32/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/renderer.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.cpp:6:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/md4qt/html.h:165:10: warning: ‘void MD::details::HtmlVisitor<Trait>::onHeading(MD::Heading<Trait>*) [with Trait = MD::QStringTrait]’ was hidden [-Woverloaded-virtual=]
+  165 |     void onHeading(
+      |          ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:39:10: note:   by ‘virtual void Renderer::onHeading(MD::Heading<MD::QStringTrait>*, const MD::QStringTrait::String&)’
+   39 |     void onHeading(MD::Heading<MD::QStringTrait> *h, const typename MD::QStringTrait::String &ht) override;
+      |          ^~~~~~~~~
+[33/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/noteMapper/noteMapperParserUtils.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHandler.hpp:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/plugins/noteMapper/noteMapperParserUtils.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/md4qt/html.h:165:10: warning: ‘void MD::details::HtmlVisitor<Trait>::onHeading(MD::Heading<Trait>*) [with Trait = MD::QStringTrait]’ was hidden [-Woverloaded-virtual=]
+  165 |     void onHeading(
+      |          ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:39:10: note:   by ‘virtual void Renderer::onHeading(MD::Heading<MD::QStringTrait>*, const MD::QStringTrait::String&)’
+   39 |     void onHeading(MD::Heading<MD::QStringTrait> *h, const typename MD::QStringTrait::String &ht) override;
+      |          ^~~~~~~~~
+[34/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/md4qtDataCleaner.cpp.o
+[35/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/emoji/emojiPlugin.cpp.o
+[36/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/editor/editorHighlighter.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHandler.hpp:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHighlighterPrivate.hpp:5,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHighlighter.hpp:7,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHighlighter.cpp:4:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/md4qt/html.h:165:10: warning: ‘void MD::details::HtmlVisitor<Trait>::onHeading(MD::Heading<Trait>*) [with Trait = MD::QStringTrait]’ was hidden [-Woverloaded-virtual=]
+  165 |     void onHeading(
+      |          ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:39:10: note:   by ‘virtual void Renderer::onHeading(MD::Heading<MD::QStringTrait>*, const MD::QStringTrait::String&)’
+   39 |     void onHeading(MD::Heading<MD::QStringTrait> *h, const typename MD::QStringTrait::String &ht) override;
+      |          ^~~~~~~~~
+[37/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/md4qtDataManip.cpp.o
+[38/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/editor/editorTextManipulation.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHandler.hpp:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorTextManipulation.cpp:7:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/md4qt/html.h:165:10: warning: ‘void MD::details::HtmlVisitor<Trait>::onHeading(MD::Heading<Trait>*) [with Trait = MD::QStringTrait]’ was hidden [-Woverloaded-virtual=]
+  165 |     void onHeading(
+      |          ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:39:10: note:   by ‘virtual void Renderer::onHeading(MD::Heading<MD::QStringTrait>*, const MD::QStringTrait::String&)’
+   39 |     void onHeading(MD::Heading<MD::QStringTrait> *h, const typename MD::QStringTrait::String &ht) override;
+      |          ^~~~~~~~~
+[39/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/extendedSyntax/extendedSyntaxMaker.cpp.o
+[40/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/klevernoteslib_autogen/mocs_compilation.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/build/src/klevernoteslib_autogen/AN27LCUQEM/../../../../src/logic/editor/editorHandler.hpp:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/build/src/klevernoteslib_autogen/AN27LCUQEM/moc_editorHandler.cpp:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/build/src/klevernoteslib_autogen/mocs_compilation.cpp:5:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/md4qt/html.h:165:10: warning: ‘void MD::details::HtmlVisitor<Trait>::onHeading(MD::Heading<Trait>*) [with Trait = MD::QStringTrait]’ was hidden [-Woverloaded-virtual=]
+  165 |     void onHeading(
+      |          ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:39:10: note:   by ‘virtual void Renderer::onHeading(MD::Heading<MD::QStringTrait>*, const MD::QStringTrait::String&)’
+   39 |     void onHeading(MD::Heading<MD::QStringTrait> *h, const typename MD::QStringTrait::String &ht) override;
+      |          ^~~~~~~~~
+[41/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/parser.cpp.o
+[42/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/emoji/emojiModel.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiModel.cpp: In constructor ‘EmojiModel::EmojiModel(QObject*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/plugins/emoji/emojiModel.cpp:14:1: note: variable tracking size limit exceeded with ‘-fvar-tracking-assignments’, retrying without
+   14 | EmojiModel::EmojiModel(QObject *parent)
+      | ^~~~~~~~~~
+[43/62] Building CXX object src/CMakeFiles/klevernoteslib.dir/logic/parser/plugins/emoji/emojiTones.cpp.o
+[44/62] Linking CXX static library lib/libklevernoteslib.a
+[45/62] Automatic MOC for target klevernotes
+[46/62] Automatic RCC for resources.qrc
+[47/62] Building CXX object src/CMakeFiles/klevernotes.dir/klevernotes_autogen/mocs_compilation.cpp.o
+[48/62] Building CXX object src/CMakeFiles/klevernotes.dir/klevernotes_autogen/EWIEGA46WW/qrc_resources.cpp.o
+[49/62] Automatic MOC for target noteLinking
+[50/62] Automatic MOC for target emoji
+[51/62] Automatic MOC for target extendedSyntax
+[52/62] Building CXX object src/autotests/CMakeFiles/noteLinking.dir/noteLinking_autogen/mocs_compilation.cpp.o
+[53/62] Building CXX object src/autotests/CMakeFiles/emoji.dir/emoji_autogen/mocs_compilation.cpp.o
+[54/62] Building CXX object src/autotests/CMakeFiles/extendedSyntax.dir/extendedSyntax_autogen/mocs_compilation.cpp.o
+[55/62] Building CXX object src/CMakeFiles/klevernotes.dir/main.cpp.o
+In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/editor/editorHandler.hpp:13,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/main.cpp:26:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/md4qt/html.h:165:10: warning: ‘void MD::details::HtmlVisitor<Trait>::onHeading(MD::Heading<Trait>*) [with Trait = MD::QStringTrait]’ was hidden [-Woverloaded-virtual=]
+  165 |     void onHeading(
+      |          ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/work/klevernotes-1.2.2/src/logic/parser/renderer.h:39:10: note:   by ‘virtual void Renderer::onHeading(MD::Heading<MD::QStringTrait>*, const MD::QStringTrait::String&)’
+   39 |     void onHeading(MD::Heading<MD::QStringTrait> *h, const typename MD::QStringTrait::String &ht) override;
+      |          ^~~~~~~~~
+[56/62] Linking CXX executable bin/klevernotes
+[57/62] Building CXX object src/autotests/CMakeFiles/noteLinking.dir/parser/noteLinkingTest.cpp.o
+[58/62] Building CXX object src/autotests/CMakeFiles/emoji.dir/parser/emojiTest.cpp.o
+[59/62] Building CXX object src/autotests/CMakeFiles/extendedSyntax.dir/parser/extendedSyntaxTest.cpp.o
+[60/62] Linking CXX executable bin/noteLinking
+[61/62] Linking CXX executable bin/extendedSyntax
+[62/62] Linking CXX executable bin/emoji
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/bin/klevernotes
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/cs/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ja/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/de/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/hi/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sl/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/he/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/zh_TW/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/pl/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/pt/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/tr/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/fr/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ka/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/gl/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ia/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/eo/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ca/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/uk/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/en_GB/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/zh_CN/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/nl/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sa/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/fi/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ko/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ca@valencia/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/es/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/eu/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/it/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/ar/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sk/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/locale/sv/LC_MESSAGES/klevernotes.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/applications/org.kde.klevernotes.desktop
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/metainfo/org.kde.klevernotes.metainfo.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/package-klevernotes/usr/share/icons/hicolor/scalable/apps/org.kde.klevernotes.svg
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/klevernotes/klevernotes.info: No such file or directory
+extra-cmake-modules
+kconfig
+kconfigwidgets
+kcoreaddons
+ki18n
+kio
+kirigami
+kirigami-addons
+kitemmodels
+qqc2-desktop-style
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/klevernotes/klevernotes-1.2.2-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/klevernotes
+usr/doc/
+usr/doc/klevernotes-1.2.2/
+usr/doc/klevernotes-1.2.2/README.md
+usr/doc/klevernotes-1.2.2/klevernotes.ini
+usr/doc/klevernotes-1.2.2/slack-required
+usr/share/
+usr/share/applications/
+usr/share/applications/org.kde.klevernotes.desktop
+usr/share/icons/
+usr/share/icons/hicolor/
+usr/share/icons/hicolor/scalable/
+usr/share/icons/hicolor/scalable/apps/
+usr/share/icons/hicolor/scalable/apps/org.kde.klevernotes.svg
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/klevernotes.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/klevernotes.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/klevernotes.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/klevernotes.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/klevernotes.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/klevernotes.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/klevernotes.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/klevernotes.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/klevernotes.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/klevernotes.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/klevernotes.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/klevernotes.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/klevernotes.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/klevernotes.mo
+usr/share/locale/ia/
+usr/share/locale/ia/LC_MESSAGES/
+usr/share/locale/ia/LC_MESSAGES/klevernotes.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/klevernotes.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/klevernotes.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/klevernotes.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/klevernotes.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/klevernotes.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/klevernotes.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/klevernotes.mo
+usr/share/locale/sa/
+usr/share/locale/sa/LC_MESSAGES/
+usr/share/locale/sa/LC_MESSAGES/klevernotes.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/klevernotes.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/klevernotes.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/klevernotes.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/klevernotes.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/klevernotes.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/klevernotes.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/klevernotes.mo
+usr/share/metainfo/
+usr/share/metainfo/org.kde.klevernotes.metainfo.xml
+
+Slackware package /tmp/klevernotes/klevernotes-1.2.2-x86_64-1_rtz.tlz created.
+
+Create shared object file for klevernotes-1.2.2-x86_64-1_rtz.tlz
+Creating /tmp/klevernotes/klevernotes-1.2.2-x86_64-1_rtz.tlz.so.file using /tmp/klevernotes/klevernotes-1.2.2-x86_64-1_rtz.tlz
+Successfully created /tmp/klevernotes/klevernotes-1.2.2-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in klevernotes.tar.lz4 format.
+/tmp/klevernotes /tmp/klevernotes
+/tmp/klevernotes
+BIN_NAME
+README
+klevernotes-1.2.2-x86_64-1_rtz.tlz
+klevernotes-1.2.2-x86_64-1_rtz.tlz.md5
+klevernotes-1.2.2-x86_64-1_rtz.tlz.so.file
+klevernotes-1.2.2-x86_64-1_rtz.tlz.txt
+klevernotes.dep
+makepkg-klevernotes.log
+klevernotes build finished. Procced to installation...
+
++============================================================================================================+
+| Upgrading klevernotes-1.2.2-x86_64-1_rtz package using /tmp/klevernotes/klevernotes-1.2.2-x86_64-1_rtz.tlz |
++============================================================================================================+
+
+Pre-installing package klevernotes-1.2.2-x86_64-1_rtz...
+Removing package: klevernotes-1.2.2-x86_64-1_rtz-upgraded-2025-05-15,01:44:08
+Installing package klevernotes-1.2.2-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# klevernotes (note-taking and management application)
+#
+# A note-taking and management application using markdown
+#
+# https://apps.kde.org/klevernotes/
+Executing install script for klevernotes-1.2.2-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package klevernotes-1.2.2-x86_64-1_rtz.tlz installed.
+Package klevernotes-1.2.2-x86_64-1_rtz upgraded with new package /tmp/klevernotes/klevernotes-1.2.2-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'klevernotes-1.2.2.tar.xz': No such file or directory

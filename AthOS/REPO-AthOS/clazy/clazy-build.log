@@ -1,0 +1,1696 @@
+Starting build process...
+Detected architecture: x86_64
+No required dependencies specified.
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-15 01:33:01--  https://download.kde.org/stable/clazy/1.14/src/clazy-1.14.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/clazy/1.14/src/clazy-1.14.tar.xz [following]
+--2025-05-15 01:33:01--  https://ftp.cc.uoc.gr/mirrors/kde/stable/clazy/1.14/src/clazy-1.14.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 436764 (427K) [application/octet-stream]
+Saving to: ‘clazy-1.14.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 11% 1.25M 0s
+    50K .......... .......... .......... .......... .......... 23% 1.54M 0s
+   100K .......... .......... .......... .......... .......... 35% 5.35M 0s
+   150K .......... .......... .......... .......... .......... 46% 6.06M 0s
+   200K .......... .......... .......... .......... .......... 58% 2.23M 0s
+   250K .......... .......... .......... .......... .......... 70% 6.46M 0s
+   300K .......... .......... .......... .......... .......... 82% 5.32M 0s
+   350K .......... .......... .......... .......... .......... 93% 1.10M 0s
+   400K .......... .......... ......                          100%  819K=0.2s
+
+2025-05-15 01:33:02 (2.05 MB/s) - ‘clazy-1.14.tar.xz’ saved [436764/436764]
+
+Found file: clazy-1.14.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+clazy-1.14/
+clazy-1.14/.clang-format
+clazy-1.14/.cmake_has_filesystem_test.cpp
+clazy-1.14/.gitignore
+clazy-1.14/.gitlab-ci.yml
+clazy-1.14/.kde-ci.yml
+clazy-1.14/.reuse/
+clazy-1.14/.reuse/dep5
+clazy-1.14/CMakeLists.txt
+clazy-1.14/CMakePresets.json
+clazy-1.14/Changelog
+clazy-1.14/CheckSources.generated.cmake
+clazy-1.14/ClazySources.cmake
+clazy-1.14/ClazyTests.generated.cmake
+clazy-1.14/HOWTO.md
+clazy-1.14/LICENSES/
+clazy-1.14/LICENSES/BSD-2-Clause.txt
+clazy-1.14/LICENSES/CC-BY-SA-4.0.txt
+clazy-1.14/LICENSES/CC0-1.0.txt
+clazy-1.14/LICENSES/LGPL-2.0-or-later.txt
+clazy-1.14/LICENSES/LGPL-2.1-only.txt
+clazy-1.14/LICENSES/LGPL-3.0-only.txt
+clazy-1.14/LICENSES/LicenseRef-Qt-Commercial.txt
+clazy-1.14/LICENSES/MIT.txt
+clazy-1.14/LICENSES/Qt-LGPL-exception-1.1.txt
+clazy-1.14/README.md
+clazy-1.14/_git_blame_ignore_revs
+clazy-1.14/artwork/
+clazy-1.14/artwork/clazy.png
+clazy-1.14/artwork/clazy.svgz
+clazy-1.14/artwork/ico1024.png
+clazy-1.14/artwork/ico128.png
+clazy-1.14/checks.json
+clazy-1.14/checks.json.h.in
+clazy-1.14/clazy-cl.bat
+clazy-1.14/clazy.bat
+clazy-1.14/clazy.cmake
+clazy-1.14/cmake/
+clazy-1.14/cmake/FindClang.cmake
+clazy-1.14/cmake/FindLLVM.cmake
+clazy-1.14/code.dev.code-workspace
+clazy-1.14/dev-scripts/
+clazy-1.14/dev-scripts/README
+clazy-1.14/dev-scripts/docker/
+clazy-1.14/dev-scripts/docker/AppImage/
+clazy-1.14/dev-scripts/docker/AppImage/Dockerfile
+clazy-1.14/dev-scripts/docker/AppImage/clazy.AppDir/
+clazy-1.14/dev-scripts/docker/AppImage/clazy.AppDir/AppRun
+clazy-1.14/dev-scripts/docker/AppImage/clazy.AppDir/clazy.desktop
+clazy-1.14/dev-scripts/docker/AppImage/clazy.AppDir/clazy.png
+clazy-1.14/dev-scripts/docker/make_appimage.sh
+clazy-1.14/dev-scripts/generate.py
+clazy-1.14/dev-scripts/make_appimage.py
+clazy-1.14/dev-scripts/make_windows_package.py
+clazy-1.14/dev-scripts/templates/
+clazy-1.14/dev-scripts/templates/.clang-format
+clazy-1.14/dev-scripts/templates/check-readme.md
+clazy-1.14/dev-scripts/templates/check.cpp
+clazy-1.14/dev-scripts/templates/check.h
+clazy-1.14/dev-scripts/templates/test-config.json
+clazy-1.14/dev-scripts/templates/test-main.cpp
+clazy-1.14/docs/
+clazy-1.14/docs/CMakeLists.txt
+clazy-1.14/docs/checks/
+clazy-1.14/docs/checks/README-assert-with-side-effects.md
+clazy-1.14/docs/checks/README-auto-unexpected-qstringbuilder.md
+clazy-1.14/docs/checks/README-base-class-event.md
+clazy-1.14/docs/checks/README-child-event-qobject-cast.md
+clazy-1.14/docs/checks/README-connect-3arg-lambda.md
+clazy-1.14/docs/checks/README-connect-by-name.md
+clazy-1.14/docs/checks/README-connect-non-signal.md
+clazy-1.14/docs/checks/README-connect-not-normalized.md
+clazy-1.14/docs/checks/README-const-signal-or-slot.md
+clazy-1.14/docs/checks/README-container-anti-pattern.md
+clazy-1.14/docs/checks/README-container-inside-loop.md
+clazy-1.14/docs/checks/README-copyable-polymorphic.md
+clazy-1.14/docs/checks/README-ctor-missing-parent-argument.md
+clazy-1.14/docs/checks/README-detaching-member.md
+clazy-1.14/docs/checks/README-detaching-temporary.md
+clazy-1.14/docs/checks/README-empty-qstringliteral.md
+clazy-1.14/docs/checks/README-foreach.md
+clazy-1.14/docs/checks/README-fully-qualified-moc-types.md
+clazy-1.14/docs/checks/README-function-args-by-ref.md
+clazy-1.14/docs/checks/README-function-args-by-value.md
+clazy-1.14/docs/checks/README-global-const-char-pointer.md
+clazy-1.14/docs/checks/README-heap-allocated-small-trivial-type.md
+clazy-1.14/docs/checks/README-ifndef-define-typo.md
+clazy-1.14/docs/checks/README-implicit-casts.md
+clazy-1.14/docs/checks/README-incorrect-emit.md
+clazy-1.14/docs/checks/README-install-event-filter.md
+clazy-1.14/docs/checks/README-isempty-vs-count.md
+clazy-1.14/docs/checks/README-jni-signatures.md
+clazy-1.14/docs/checks/README-lambda-in-connect.md
+clazy-1.14/docs/checks/README-lambda-unique-connection.md
+clazy-1.14/docs/checks/README-lowercase-qml-type-name.md
+clazy-1.14/docs/checks/README-missing-qobject-macro.md
+clazy-1.14/docs/checks/README-missing-typeinfo.md
+clazy-1.14/docs/checks/README-mutable-container-key.md
+clazy-1.14/docs/checks/README-no-module-include.md
+clazy-1.14/docs/checks/README-non-pod-global-static.md
+clazy-1.14/docs/checks/README-old-style-connect.md
+clazy-1.14/docs/checks/README-overloaded-signal.md
+clazy-1.14/docs/checks/README-overridden-signal.md
+clazy-1.14/docs/checks/README-post-event.md
+clazy-1.14/docs/checks/README-qbytearray-conversion-to-c-style.md
+clazy-1.14/docs/checks/README-qcolor-from-literal.md
+clazy-1.14/docs/checks/README-qdatetime-utc.md
+clazy-1.14/docs/checks/README-qdeleteall.md
+clazy-1.14/docs/checks/README-qenums.md
+clazy-1.14/docs/checks/README-qfileinfo-exists.md
+clazy-1.14/docs/checks/README-qgetenv.md
+clazy-1.14/docs/checks/README-qhash-namespace.md
+clazy-1.14/docs/checks/README-qhash-with-char-pointer-key.md
+clazy-1.14/docs/checks/README-qlatin1string-non-ascii.md
+clazy-1.14/docs/checks/README-qmap-with-pointer-key.md
+clazy-1.14/docs/checks/README-qproperty-type-mismatch.md
+clazy-1.14/docs/checks/README-qproperty-without-notify.md
+clazy-1.14/docs/checks/README-qrequiredresult-candidates.md
+clazy-1.14/docs/checks/README-qstring-allocations.md
+clazy-1.14/docs/checks/README-qstring-arg.md
+clazy-1.14/docs/checks/README-qstring-comparison-to-implicit-char.md
+clazy-1.14/docs/checks/README-qstring-insensitive-allocation.md
+clazy-1.14/docs/checks/README-qstring-left.md
+clazy-1.14/docs/checks/README-qstring-ref.md
+clazy-1.14/docs/checks/README-qstring-varargs.md
+clazy-1.14/docs/checks/README-qt-keyword-emit.md
+clazy-1.14/docs/checks/README-qt-keywords.md
+clazy-1.14/docs/checks/README-qt-macros.md
+clazy-1.14/docs/checks/README-qt6-deprecated-api-fixes.md
+clazy-1.14/docs/checks/README-qt6-fwd-fixes.md
+clazy-1.14/docs/checks/README-qt6-header-fixes.md
+clazy-1.14/docs/checks/README-qt6-qhash-signature.md
+clazy-1.14/docs/checks/README-qt6-qlatin1stringchar-to-u.md
+clazy-1.14/docs/checks/README-qvariant-template-instantiation.md
+clazy-1.14/docs/checks/README-range-loop-detach.md
+clazy-1.14/docs/checks/README-range-loop-reference.md
+clazy-1.14/docs/checks/README-raw-environment-function.md
+clazy-1.14/docs/checks/README-reserve-candidates.md
+clazy-1.14/docs/checks/README-returning-data-from-temporary.md
+clazy-1.14/docs/checks/README-returning-void-expression.md
+clazy-1.14/docs/checks/README-rule-of-three.md
+clazy-1.14/docs/checks/README-rule-of-two-soft.md
+clazy-1.14/docs/checks/README-sanitize-inline-keyword.md
+clazy-1.14/docs/checks/README-signal-with-return-value.md
+clazy-1.14/docs/checks/README-skipped-base-method.md
+clazy-1.14/docs/checks/README-static-pmf.md
+clazy-1.14/docs/checks/README-strict-iterators.md
+clazy-1.14/docs/checks/README-temporary-iterator.md
+clazy-1.14/docs/checks/README-thread-with-slots.md
+clazy-1.14/docs/checks/README-tr-non-literal.md
+clazy-1.14/docs/checks/README-unexpected-flag-enumerator-value.md
+clazy-1.14/docs/checks/README-unneeded-cast.md
+clazy-1.14/docs/checks/README-unused-non-trivial-variable.md
+clazy-1.14/docs/checks/README-unused-result-check.md
+clazy-1.14/docs/checks/README-use-arrow-operator-instead-of-data.md
+clazy-1.14/docs/checks/README-use-chrono-in-qtimer.md
+clazy-1.14/docs/checks/README-use-static-qregularexpression.md
+clazy-1.14/docs/checks/README-used-qunused-variable.md
+clazy-1.14/docs/checks/README-virtual-call-ctor.md
+clazy-1.14/docs/checks/README-virtual-signal.md
+clazy-1.14/docs/checks/README-writing-to-temporary.md
+clazy-1.14/docs/checks/README-wrong-qevent-cast.md
+clazy-1.14/docs/checks/README-wrong-qglobalstatic.md
+clazy-1.14/docs/man/
+clazy-1.14/docs/man/CMakeLists.txt
+clazy-1.14/docs/man/clazy.pod
+clazy-1.14/org.kde.clazy.metainfo.xml
+clazy-1.14/readmes.cmake
+clazy-1.14/scripts/
+clazy-1.14/scripts/fix_json_database.py
+clazy-1.14/src/
+clazy-1.14/src/AccessSpecifierManager.cpp
+clazy-1.14/src/AccessSpecifierManager.h
+clazy-1.14/src/Checks.h
+clazy-1.14/src/Clazy.cpp
+clazy-1.14/src/Clazy.h
+clazy-1.14/src/ClazyAnchorHeader.h
+clazy-1.14/src/ClazyContext.cpp
+clazy-1.14/src/ClazyContext.h
+clazy-1.14/src/ClazyStandaloneMain.cpp
+clazy-1.14/src/ContextUtils.cpp
+clazy-1.14/src/ContextUtils.h
+clazy-1.14/src/FixItExporter.cpp
+clazy-1.14/src/FixItExporter.h
+clazy-1.14/src/FixItUtils.cpp
+clazy-1.14/src/FixItUtils.h
+clazy-1.14/src/FunctionUtils.h
+clazy-1.14/src/HierarchyUtils.h
+clazy-1.14/src/LoopUtils.cpp
+clazy-1.14/src/LoopUtils.h
+clazy-1.14/src/MacroUtils.h
+clazy-1.14/src/MiniAstDumper.cpp
+clazy-1.14/src/MiniAstDumper.h
+clazy-1.14/src/NormalizedSignatureUtils.h
+clazy-1.14/src/PreProcessorVisitor.cpp
+clazy-1.14/src/PreProcessorVisitor.h
+clazy-1.14/src/QtUtils.cpp
+clazy-1.14/src/QtUtils.h
+clazy-1.14/src/SourceCompatibilityHelpers.h
+clazy-1.14/src/StmtBodyRange.h
+clazy-1.14/src/StringUtils.cpp
+clazy-1.14/src/StringUtils.h
+clazy-1.14/src/SuppressionManager.cpp
+clazy-1.14/src/SuppressionManager.h
+clazy-1.14/src/TemplateUtils.cpp
+clazy-1.14/src/TemplateUtils.h
+clazy-1.14/src/TypeUtils.cpp
+clazy-1.14/src/TypeUtils.h
+clazy-1.14/src/Utils.cpp
+clazy-1.14/src/Utils.h
+clazy-1.14/src/checkbase.cpp
+clazy-1.14/src/checkbase.h
+clazy-1.14/src/checkmanager.cpp
+clazy-1.14/src/checkmanager.h
+clazy-1.14/src/checks/
+clazy-1.14/src/checks/detachingbase.cpp
+clazy-1.14/src/checks/detachingbase.h
+clazy-1.14/src/checks/level0/
+clazy-1.14/src/checks/level0/connect-by-name.cpp
+clazy-1.14/src/checks/level0/connect-by-name.h
+clazy-1.14/src/checks/level0/connect-non-signal.cpp
+clazy-1.14/src/checks/level0/connect-non-signal.h
+clazy-1.14/src/checks/level0/connect-not-normalized.cpp
+clazy-1.14/src/checks/level0/connect-not-normalized.h
+clazy-1.14/src/checks/level0/container-anti-pattern.cpp
+clazy-1.14/src/checks/level0/container-anti-pattern.h
+clazy-1.14/src/checks/level0/empty-qstringliteral.cpp
+clazy-1.14/src/checks/level0/empty-qstringliteral.h
+clazy-1.14/src/checks/level0/fully-qualified-moc-types.cpp
+clazy-1.14/src/checks/level0/fully-qualified-moc-types.h
+clazy-1.14/src/checks/level0/lambda-in-connect.cpp
+clazy-1.14/src/checks/level0/lambda-in-connect.h
+clazy-1.14/src/checks/level0/lambda-unique-connection.cpp
+clazy-1.14/src/checks/level0/lambda-unique-connection.h
+clazy-1.14/src/checks/level0/lowercase-qml-type-name.cpp
+clazy-1.14/src/checks/level0/lowercase-qml-type-name.h
+clazy-1.14/src/checks/level0/mutable-container-key.cpp
+clazy-1.14/src/checks/level0/mutable-container-key.h
+clazy-1.14/src/checks/level0/no-module-include.cpp
+clazy-1.14/src/checks/level0/no-module-include.h
+clazy-1.14/src/checks/level0/overloaded-signal.cpp
+clazy-1.14/src/checks/level0/overloaded-signal.h
+clazy-1.14/src/checks/level0/qcolor-from-literal.cpp
+clazy-1.14/src/checks/level0/qcolor-from-literal.h
+clazy-1.14/src/checks/level0/qdatetime-utc.cpp
+clazy-1.14/src/checks/level0/qdatetime-utc.h
+clazy-1.14/src/checks/level0/qenums.cpp
+clazy-1.14/src/checks/level0/qenums.h
+clazy-1.14/src/checks/level0/qfileinfo-exists.cpp
+clazy-1.14/src/checks/level0/qfileinfo-exists.h
+clazy-1.14/src/checks/level0/qgetenv.cpp
+clazy-1.14/src/checks/level0/qgetenv.h
+clazy-1.14/src/checks/level0/qmap-with-pointer-key.cpp
+clazy-1.14/src/checks/level0/qmap-with-pointer-key.h
+clazy-1.14/src/checks/level0/qstring-arg.cpp
+clazy-1.14/src/checks/level0/qstring-arg.h
+clazy-1.14/src/checks/level0/qstring-comparison-to-implicit-char.cpp
+clazy-1.14/src/checks/level0/qstring-comparison-to-implicit-char.h
+clazy-1.14/src/checks/level0/qstring-insensitive-allocation.cpp
+clazy-1.14/src/checks/level0/qstring-insensitive-allocation.h
+clazy-1.14/src/checks/level0/qstring-ref.cpp
+clazy-1.14/src/checks/level0/qstring-ref.h
+clazy-1.14/src/checks/level0/qt-macros.cpp
+clazy-1.14/src/checks/level0/qt-macros.h
+clazy-1.14/src/checks/level0/strict-iterators.cpp
+clazy-1.14/src/checks/level0/strict-iterators.h
+clazy-1.14/src/checks/level0/temporary-iterator.cpp
+clazy-1.14/src/checks/level0/temporary-iterator.h
+clazy-1.14/src/checks/level0/unused-non-trivial-variable.cpp
+clazy-1.14/src/checks/level0/unused-non-trivial-variable.h
+clazy-1.14/src/checks/level0/use-static-qregularexpression.cpp
+clazy-1.14/src/checks/level0/use-static-qregularexpression.h
+clazy-1.14/src/checks/level0/writing-to-temporary.cpp
+clazy-1.14/src/checks/level0/writing-to-temporary.h
+clazy-1.14/src/checks/level0/wrong-qevent-cast.cpp
+clazy-1.14/src/checks/level0/wrong-qevent-cast.h
+clazy-1.14/src/checks/level0/wrong-qglobalstatic.cpp
+clazy-1.14/src/checks/level0/wrong-qglobalstatic.h
+clazy-1.14/src/checks/level1/
+clazy-1.14/src/checks/level1/auto-unexpected-qstringbuilder.cpp
+clazy-1.14/src/checks/level1/auto-unexpected-qstringbuilder.h
+clazy-1.14/src/checks/level1/child-event-qobject-cast.cpp
+clazy-1.14/src/checks/level1/child-event-qobject-cast.h
+clazy-1.14/src/checks/level1/connect-3arg-lambda.cpp
+clazy-1.14/src/checks/level1/connect-3arg-lambda.h
+clazy-1.14/src/checks/level1/const-signal-or-slot.cpp
+clazy-1.14/src/checks/level1/const-signal-or-slot.h
+clazy-1.14/src/checks/level1/detaching-temporary.cpp
+clazy-1.14/src/checks/level1/detaching-temporary.h
+clazy-1.14/src/checks/level1/foreach.cpp
+clazy-1.14/src/checks/level1/foreach.h
+clazy-1.14/src/checks/level1/incorrect-emit.cpp
+clazy-1.14/src/checks/level1/incorrect-emit.h
+clazy-1.14/src/checks/level1/install-event-filter.cpp
+clazy-1.14/src/checks/level1/install-event-filter.h
+clazy-1.14/src/checks/level1/non-pod-global-static.cpp
+clazy-1.14/src/checks/level1/non-pod-global-static.h
+clazy-1.14/src/checks/level1/overridden-signal.cpp
+clazy-1.14/src/checks/level1/overridden-signal.h
+clazy-1.14/src/checks/level1/post-event.cpp
+clazy-1.14/src/checks/level1/post-event.h
+clazy-1.14/src/checks/level1/qdeleteall.cpp
+clazy-1.14/src/checks/level1/qdeleteall.h
+clazy-1.14/src/checks/level1/qhash-namespace.cpp
+clazy-1.14/src/checks/level1/qhash-namespace.h
+clazy-1.14/src/checks/level1/qlatin1string-non-ascii.cpp
+clazy-1.14/src/checks/level1/qlatin1string-non-ascii.h
+clazy-1.14/src/checks/level1/qproperty-without-notify.cpp
+clazy-1.14/src/checks/level1/qproperty-without-notify.h
+clazy-1.14/src/checks/level1/qstring-left.cpp
+clazy-1.14/src/checks/level1/qstring-left.h
+clazy-1.14/src/checks/level1/range-loop-detach.cpp
+clazy-1.14/src/checks/level1/range-loop-detach.h
+clazy-1.14/src/checks/level1/range-loop-reference.cpp
+clazy-1.14/src/checks/level1/range-loop-reference.h
+clazy-1.14/src/checks/level1/returning-data-from-temporary.cpp
+clazy-1.14/src/checks/level1/returning-data-from-temporary.h
+clazy-1.14/src/checks/level1/rule-of-two-soft.cpp
+clazy-1.14/src/checks/level1/rule-of-two-soft.h
+clazy-1.14/src/checks/level1/skipped-base-method.cpp
+clazy-1.14/src/checks/level1/skipped-base-method.h
+clazy-1.14/src/checks/level1/virtual-signal.cpp
+clazy-1.14/src/checks/level1/virtual-signal.h
+clazy-1.14/src/checks/level2/
+clazy-1.14/src/checks/level2/base-class-event.cpp
+clazy-1.14/src/checks/level2/base-class-event.h
+clazy-1.14/src/checks/level2/copyable-polymorphic.cpp
+clazy-1.14/src/checks/level2/copyable-polymorphic.h
+clazy-1.14/src/checks/level2/ctor-missing-parent-argument.cpp
+clazy-1.14/src/checks/level2/ctor-missing-parent-argument.h
+clazy-1.14/src/checks/level2/function-args-by-ref.cpp
+clazy-1.14/src/checks/level2/function-args-by-ref.h
+clazy-1.14/src/checks/level2/function-args-by-value.cpp
+clazy-1.14/src/checks/level2/function-args-by-value.h
+clazy-1.14/src/checks/level2/global-const-char-pointer.cpp
+clazy-1.14/src/checks/level2/global-const-char-pointer.h
+clazy-1.14/src/checks/level2/implicit-casts.cpp
+clazy-1.14/src/checks/level2/implicit-casts.h
+clazy-1.14/src/checks/level2/missing-qobject-macro.cpp
+clazy-1.14/src/checks/level2/missing-qobject-macro.h
+clazy-1.14/src/checks/level2/missing-typeinfo.cpp
+clazy-1.14/src/checks/level2/missing-typeinfo.h
+clazy-1.14/src/checks/level2/old-style-connect.cpp
+clazy-1.14/src/checks/level2/old-style-connect.h
+clazy-1.14/src/checks/level2/qstring-allocations.cpp
+clazy-1.14/src/checks/level2/qstring-allocations.h
+clazy-1.14/src/checks/level2/returning-void-expression.cpp
+clazy-1.14/src/checks/level2/returning-void-expression.h
+clazy-1.14/src/checks/level2/rule-of-three.cpp
+clazy-1.14/src/checks/level2/rule-of-three.h
+clazy-1.14/src/checks/level2/static-pmf.cpp
+clazy-1.14/src/checks/level2/static-pmf.h
+clazy-1.14/src/checks/level2/virtual-call-ctor.cpp
+clazy-1.14/src/checks/level2/virtual-call-ctor.h
+clazy-1.14/src/checks/manuallevel/
+clazy-1.14/src/checks/manuallevel/assert-with-side-effects.cpp
+clazy-1.14/src/checks/manuallevel/assert-with-side-effects.h
+clazy-1.14/src/checks/manuallevel/container-inside-loop.cpp
+clazy-1.14/src/checks/manuallevel/container-inside-loop.h
+clazy-1.14/src/checks/manuallevel/detaching-member.cpp
+clazy-1.14/src/checks/manuallevel/detaching-member.h
+clazy-1.14/src/checks/manuallevel/heap-allocated-small-trivial-type.cpp
+clazy-1.14/src/checks/manuallevel/heap-allocated-small-trivial-type.h
+clazy-1.14/src/checks/manuallevel/ifndef-define-typo.cpp
+clazy-1.14/src/checks/manuallevel/ifndef-define-typo.h
+clazy-1.14/src/checks/manuallevel/isempty-vs-count.cpp
+clazy-1.14/src/checks/manuallevel/isempty-vs-count.h
+clazy-1.14/src/checks/manuallevel/jnisignatures.cpp
+clazy-1.14/src/checks/manuallevel/jnisignatures.h
+clazy-1.14/src/checks/manuallevel/levenshteindistance.h
+clazy-1.14/src/checks/manuallevel/qbytearray-conversion-to-c-style.cpp
+clazy-1.14/src/checks/manuallevel/qbytearray-conversion-to-c-style.h
+clazy-1.14/src/checks/manuallevel/qhash-with-char-pointer-key.cpp
+clazy-1.14/src/checks/manuallevel/qhash-with-char-pointer-key.h
+clazy-1.14/src/checks/manuallevel/qproperty-type-mismatch.cpp
+clazy-1.14/src/checks/manuallevel/qproperty-type-mismatch.h
+clazy-1.14/src/checks/manuallevel/qrequiredresult-candidates.cpp
+clazy-1.14/src/checks/manuallevel/qrequiredresult-candidates.h
+clazy-1.14/src/checks/manuallevel/qstring-varargs.cpp
+clazy-1.14/src/checks/manuallevel/qstring-varargs.h
+clazy-1.14/src/checks/manuallevel/qt-keyword-emit.cpp
+clazy-1.14/src/checks/manuallevel/qt-keyword-emit.h
+clazy-1.14/src/checks/manuallevel/qt-keywords.cpp
+clazy-1.14/src/checks/manuallevel/qt-keywords.h
+clazy-1.14/src/checks/manuallevel/qt6-deprecated-api-fixes.cpp
+clazy-1.14/src/checks/manuallevel/qt6-deprecated-api-fixes.h
+clazy-1.14/src/checks/manuallevel/qt6-fwd-fixes.cpp
+clazy-1.14/src/checks/manuallevel/qt6-fwd-fixes.h
+clazy-1.14/src/checks/manuallevel/qt6-header-fixes.cpp
+clazy-1.14/src/checks/manuallevel/qt6-header-fixes.h
+clazy-1.14/src/checks/manuallevel/qt6-qhash-signature.cpp
+clazy-1.14/src/checks/manuallevel/qt6-qhash-signature.h
+clazy-1.14/src/checks/manuallevel/qt6-qlatin1stringchar-to-u.cpp
+clazy-1.14/src/checks/manuallevel/qt6-qlatin1stringchar-to-u.h
+clazy-1.14/src/checks/manuallevel/qvariant-template-instantiation.cpp
+clazy-1.14/src/checks/manuallevel/qvariant-template-instantiation.h
+clazy-1.14/src/checks/manuallevel/raw-environment-function.cpp
+clazy-1.14/src/checks/manuallevel/raw-environment-function.h
+clazy-1.14/src/checks/manuallevel/reserve-candidates.cpp
+clazy-1.14/src/checks/manuallevel/reserve-candidates.h
+clazy-1.14/src/checks/manuallevel/sanitize-inline-keyword.cpp
+clazy-1.14/src/checks/manuallevel/sanitize-inline-keyword.h
+clazy-1.14/src/checks/manuallevel/signal-with-return-value.cpp
+clazy-1.14/src/checks/manuallevel/signal-with-return-value.h
+clazy-1.14/src/checks/manuallevel/thread-with-slots.cpp
+clazy-1.14/src/checks/manuallevel/thread-with-slots.h
+clazy-1.14/src/checks/manuallevel/tr-non-literal.cpp
+clazy-1.14/src/checks/manuallevel/tr-non-literal.h
+clazy-1.14/src/checks/manuallevel/unexpected-flag-enumerator-value.cpp
+clazy-1.14/src/checks/manuallevel/unexpected-flag-enumerator-value.h
+clazy-1.14/src/checks/manuallevel/unneeded-cast.cpp
+clazy-1.14/src/checks/manuallevel/unneeded-cast.h
+clazy-1.14/src/checks/manuallevel/unused-result-check.cpp
+clazy-1.14/src/checks/manuallevel/unused-result-check.h
+clazy-1.14/src/checks/manuallevel/use-arrow-operator-instead-of-data.cpp
+clazy-1.14/src/checks/manuallevel/use-arrow-operator-instead-of-data.h
+clazy-1.14/src/checks/manuallevel/use-chrono-in-qtimer.cpp
+clazy-1.14/src/checks/manuallevel/use-chrono-in-qtimer.h
+clazy-1.14/src/checks/manuallevel/used-qunused-variable.cpp
+clazy-1.14/src/checks/manuallevel/used-qunused-variable.h
+clazy-1.14/src/checks/requiredresults.cpp
+clazy-1.14/src/checks/requiredresults.h
+clazy-1.14/src/checks/ruleofbase.cpp
+clazy-1.14/src/checks/ruleofbase.h
+clazy-1.14/src/clazy_stl.h
+clazy-1.14/tests/
+clazy-1.14/tests/.clang-format
+clazy-1.14/tests/Testing/
+clazy-1.14/tests/Testing/Temporary/
+clazy-1.14/tests/Testing/Temporary/CTestCostData.txt
+clazy-1.14/tests/assert-with-side-effects/
+clazy-1.14/tests/assert-with-side-effects/config.json
+clazy-1.14/tests/assert-with-side-effects/main.cpp
+clazy-1.14/tests/assert-with-side-effects/main.cpp.expected
+clazy-1.14/tests/auto-unexpected-qstringbuilder/
+clazy-1.14/tests/auto-unexpected-qstringbuilder/config.json
+clazy-1.14/tests/auto-unexpected-qstringbuilder/main.cpp
+clazy-1.14/tests/auto-unexpected-qstringbuilder/main.cpp.expected
+clazy-1.14/tests/auto-unexpected-qstringbuilder/main.cpp.fixed.expected
+clazy-1.14/tests/base-class-event/
+clazy-1.14/tests/base-class-event/config.json
+clazy-1.14/tests/base-class-event/main.cpp
+clazy-1.14/tests/base-class-event/main.cpp.expected
+clazy-1.14/tests/child-event-qobject-cast/
+clazy-1.14/tests/child-event-qobject-cast/config.json
+clazy-1.14/tests/child-event-qobject-cast/main.cpp
+clazy-1.14/tests/child-event-qobject-cast/main.cpp.expected
+clazy-1.14/tests/clazy-standalone/
+clazy-1.14/tests/clazy-standalone/config.json
+clazy-1.14/tests/clazy-standalone/fileToIgnore.cpp
+clazy-1.14/tests/clazy-standalone/fileToIgnore.cpp.expected
+clazy-1.14/tests/clazy-standalone/fileToNotIgnore.cpp
+clazy-1.14/tests/clazy-standalone/fileToNotIgnore.cpp.expected
+clazy-1.14/tests/clazy-standalone/header_filter.cpp
+clazy-1.14/tests/clazy-standalone/header_filter.cpp.expected
+clazy-1.14/tests/clazy-standalone/header_filter2.cpp
+clazy-1.14/tests/clazy-standalone/header_filter2.cpp.expected
+clazy-1.14/tests/clazy-standalone/header_filter_bar.h
+clazy-1.14/tests/clazy-standalone/header_filter_foo.h
+clazy-1.14/tests/clazy/
+clazy-1.14/tests/clazy/config.json
+clazy-1.14/tests/clazy/onlyQt1.cpp
+clazy-1.14/tests/clazy/onlyQt1.cpp.expected
+clazy-1.14/tests/clazy/onlyQt1.cpp.fixed.expected
+clazy-1.14/tests/clazy/onlyQt2.cpp
+clazy-1.14/tests/clazy/onlyQt2.cpp.expected
+clazy-1.14/tests/clazy/suppressions.cpp
+clazy-1.14/tests/clazy/suppressions.cpp.expected
+clazy-1.14/tests/clazy/suppressionsWholeFile.cpp
+clazy-1.14/tests/clazy/suppressionsWholeFile.cpp.expected
+clazy-1.14/tests/clazy/test_requested_checks.sh
+clazy-1.14/tests/clazy/test_requested_checks.sh.expected
+clazy-1.14/tests/clazy/werror.cpp
+clazy-1.14/tests/clazy/werror.cpp.expected
+clazy-1.14/tests/clazy/werror2.cpp
+clazy-1.14/tests/clazy/werror2.cpp.expected
+clazy-1.14/tests/cmath-bug.cpp
+clazy-1.14/tests/connect-3arg-lambda/
+clazy-1.14/tests/connect-3arg-lambda/config.json
+clazy-1.14/tests/connect-3arg-lambda/main.cpp
+clazy-1.14/tests/connect-3arg-lambda/main.cpp.expected
+clazy-1.14/tests/connect-by-name/
+clazy-1.14/tests/connect-by-name/config.json
+clazy-1.14/tests/connect-by-name/main.cpp
+clazy-1.14/tests/connect-by-name/main.cpp.expected
+clazy-1.14/tests/connect-non-signal/
+clazy-1.14/tests/connect-non-signal/392441.cpp
+clazy-1.14/tests/connect-non-signal/392441.cpp.expected
+clazy-1.14/tests/connect-non-signal/bug374951.cpp
+clazy-1.14/tests/connect-non-signal/bug374951.cpp.expected
+clazy-1.14/tests/connect-non-signal/bug375239.cpp
+clazy-1.14/tests/connect-non-signal/bug375239.cpp.expected
+clazy-1.14/tests/connect-non-signal/bug375748.cpp
+clazy-1.14/tests/connect-non-signal/bug375748.cpp.expected
+clazy-1.14/tests/connect-non-signal/bug376137.cpp
+clazy-1.14/tests/connect-non-signal/bug376137.cpp.expected
+clazy-1.14/tests/connect-non-signal/bug431186.cpp
+clazy-1.14/tests/connect-non-signal/bug431186.cpp.expected
+clazy-1.14/tests/connect-non-signal/config.json
+clazy-1.14/tests/connect-non-signal/main.cpp
+clazy-1.14/tests/connect-non-signal/main.cpp.expected
+clazy-1.14/tests/connect-non-signal/signal_as_variable.cpp
+clazy-1.14/tests/connect-non-signal/signal_as_variable.cpp.expected
+clazy-1.14/tests/connect-non-signal/test_qmetamethod.cpp
+clazy-1.14/tests/connect-non-signal/test_qmetamethod.cpp.expected
+clazy-1.14/tests/connect-not-normalized/
+clazy-1.14/tests/connect-not-normalized/config.json
+clazy-1.14/tests/connect-not-normalized/main.cpp
+clazy-1.14/tests/connect-not-normalized/main.cpp.expected
+clazy-1.14/tests/const-signal-or-slot/
+clazy-1.14/tests/const-signal-or-slot/config.json
+clazy-1.14/tests/const-signal-or-slot/main.cpp
+clazy-1.14/tests/const-signal-or-slot/main.cpp.expected
+clazy-1.14/tests/container-anti-pattern/
+clazy-1.14/tests/container-anti-pattern/config.json
+clazy-1.14/tests/container-anti-pattern/main.cpp
+clazy-1.14/tests/container-anti-pattern/main.cpp.expected
+clazy-1.14/tests/container-anti-pattern/qset.cpp
+clazy-1.14/tests/container-anti-pattern/qset.cpp.expected
+clazy-1.14/tests/container-inside-loop/
+clazy-1.14/tests/container-inside-loop/config.json
+clazy-1.14/tests/container-inside-loop/main.cpp
+clazy-1.14/tests/container-inside-loop/main.cpp.expected
+clazy-1.14/tests/copyable-polymorphic/
+clazy-1.14/tests/copyable-polymorphic/config.json
+clazy-1.14/tests/copyable-polymorphic/fixits.cpp
+clazy-1.14/tests/copyable-polymorphic/fixits.cpp.expected
+clazy-1.14/tests/copyable-polymorphic/fixits.cpp.fixed.expected
+clazy-1.14/tests/copyable-polymorphic/main.cpp
+clazy-1.14/tests/copyable-polymorphic/main.cpp.expected
+clazy-1.14/tests/copyable-polymorphic/main.cpp.fixed.expected
+clazy-1.14/tests/ctor-missing-parent-argument/
+clazy-1.14/tests/ctor-missing-parent-argument/bug400942.cpp
+clazy-1.14/tests/ctor-missing-parent-argument/bug400942.cpp.expected
+clazy-1.14/tests/ctor-missing-parent-argument/config.json
+clazy-1.14/tests/ctor-missing-parent-argument/main.cpp
+clazy-1.14/tests/ctor-missing-parent-argument/main.cpp.expected
+clazy-1.14/tests/detaching-member/
+clazy-1.14/tests/detaching-member/config.json
+clazy-1.14/tests/detaching-member/main.cpp
+clazy-1.14/tests/detaching-member/main.cpp.expected
+clazy-1.14/tests/detaching-temporary/
+clazy-1.14/tests/detaching-temporary/config.json
+clazy-1.14/tests/detaching-temporary/main.cpp
+clazy-1.14/tests/detaching-temporary/main.cpp.expected
+clazy-1.14/tests/detaching-temporary/multi_containers.cpp
+clazy-1.14/tests/detaching-temporary/multi_containers.cpp.qt5.expected
+clazy-1.14/tests/detaching-temporary/multi_containers.cpp.qt6.expected
+clazy-1.14/tests/docker/
+clazy-1.14/tests/docker/build-clazy.sh
+clazy-1.14/tests/docker/conf.json
+clazy-1.14/tests/docker/images/
+clazy-1.14/tests/docker/images/clazy-archlinux/
+clazy-1.14/tests/docker/images/clazy-archlinux/Dockerfile
+clazy-1.14/tests/docker/images/clazy-debian-unstable/
+clazy-1.14/tests/docker/images/clazy-debian-unstable/Dockerfile
+clazy-1.14/tests/docker/images/clazy-fedora-34/
+clazy-1.14/tests/docker/images/clazy-fedora-34/Dockerfile
+clazy-1.14/tests/docker/images/clazy-opensuse-leap/
+clazy-1.14/tests/docker/images/clazy-opensuse-leap/Dockerfile
+clazy-1.14/tests/docker/images/clazy-opensuse-tubleweed/
+clazy-1.14/tests/docker/images/clazy-opensuse-tubleweed/Dockerfile
+clazy-1.14/tests/docker/images/clazy-ubuntu-21.04/
+clazy-1.14/tests/docker/images/clazy-ubuntu-21.04/Dockerfile
+clazy-1.14/tests/docker/test_docker.py
+clazy-1.14/tests/empty-qstringliteral/
+clazy-1.14/tests/empty-qstringliteral/config.json
+clazy-1.14/tests/empty-qstringliteral/main.cpp
+clazy-1.14/tests/empty-qstringliteral/main.cpp.expected
+clazy-1.14/tests/empty-qstringliteral/ui_qstringliteral.h
+clazy-1.14/tests/foreach/
+clazy-1.14/tests/foreach/config.json
+clazy-1.14/tests/foreach/main.cpp
+clazy-1.14/tests/foreach/main.cpp.expected
+clazy-1.14/tests/fully-qualified-moc-types/
+clazy-1.14/tests/fully-qualified-moc-types/config.json
+clazy-1.14/tests/fully-qualified-moc-types/main.cpp
+clazy-1.14/tests/fully-qualified-moc-types/main.cpp.expected
+clazy-1.14/tests/fully-qualified-moc-types/main.cpp.fixed.expected
+clazy-1.14/tests/fully-qualified-moc-types/main.qt5.moc_
+clazy-1.14/tests/fully-qualified-moc-types/main.qt6.moc_
+clazy-1.14/tests/fully-qualified-moc-types/main.qt6.moc_69
+clazy-1.14/tests/function-args-by-ref/
+clazy-1.14/tests/function-args-by-ref/config.json
+clazy-1.14/tests/function-args-by-ref/lambdas.cpp
+clazy-1.14/tests/function-args-by-ref/lambdas.cpp.expected
+clazy-1.14/tests/function-args-by-ref/main.cpp
+clazy-1.14/tests/function-args-by-ref/main.cpp.expected
+clazy-1.14/tests/function-args-by-ref/main.cpp.fixed.expected
+clazy-1.14/tests/function-args-by-ref/more_fixits.cpp
+clazy-1.14/tests/function-args-by-ref/more_fixits.cpp.expected
+clazy-1.14/tests/function-args-by-ref/more_fixits.cpp.fixed.expected
+clazy-1.14/tests/function-args-by-ref/sharedptrs.cpp
+clazy-1.14/tests/function-args-by-ref/sharedptrs.cpp.expected
+clazy-1.14/tests/function-args-by-ref/warn-for-overridden-methods.cpp
+clazy-1.14/tests/function-args-by-ref/warn-for-overridden-methods.cpp.expected
+clazy-1.14/tests/function-args-by-value/
+clazy-1.14/tests/function-args-by-value/bug379342.cpp
+clazy-1.14/tests/function-args-by-value/bug379342.cpp.expected
+clazy-1.14/tests/function-args-by-value/config.json
+clazy-1.14/tests/function-args-by-value/default_methods.cpp
+clazy-1.14/tests/function-args-by-value/default_methods.cpp.expected
+clazy-1.14/tests/function-args-by-value/lambdas.cpp
+clazy-1.14/tests/function-args-by-value/lambdas.cpp.expected
+clazy-1.14/tests/function-args-by-value/main.cpp
+clazy-1.14/tests/function-args-by-value/main.cpp.expected
+clazy-1.14/tests/function-args-by-value/main.cpp.fixed.expected
+clazy-1.14/tests/function-args-by-value/sharedptrs.cpp
+clazy-1.14/tests/function-args-by-value/sharedptrs.cpp.expected
+clazy-1.14/tests/function-args-by-value/warn-for-overridden-methods.cpp
+clazy-1.14/tests/function-args-by-value/warn-for-overridden-methods.cpp.expected
+clazy-1.14/tests/function-args-by-value/warn-for-overridden-methods.cpp.fixed.expected
+clazy-1.14/tests/global-const-char-pointer/
+clazy-1.14/tests/global-const-char-pointer/config.json
+clazy-1.14/tests/global-const-char-pointer/main.cpp
+clazy-1.14/tests/global-const-char-pointer/main.cpp.expected
+clazy-1.14/tests/heap-allocated-small-trivial-type/
+clazy-1.14/tests/heap-allocated-small-trivial-type/config.json
+clazy-1.14/tests/heap-allocated-small-trivial-type/main.cpp
+clazy-1.14/tests/heap-allocated-small-trivial-type/main.cpp.expected
+clazy-1.14/tests/ifndef-define-typo/
+clazy-1.14/tests/ifndef-define-typo/config.json
+clazy-1.14/tests/ifndef-define-typo/main.cpp
+clazy-1.14/tests/ifndef-define-typo/main.cpp.expected
+clazy-1.14/tests/implicit-casts/
+clazy-1.14/tests/implicit-casts/bool2int.cpp
+clazy-1.14/tests/implicit-casts/bool2int.cpp.expected
+clazy-1.14/tests/implicit-casts/config.json
+clazy-1.14/tests/implicit-casts/main.cpp
+clazy-1.14/tests/implicit-casts/main.cpp.expected
+clazy-1.14/tests/incorrect-emit/
+clazy-1.14/tests/incorrect-emit/bug377134.cpp
+clazy-1.14/tests/incorrect-emit/bug377134.cpp.expected
+clazy-1.14/tests/incorrect-emit/bug377140.cpp
+clazy-1.14/tests/incorrect-emit/bug377140.cpp.expected
+clazy-1.14/tests/incorrect-emit/bug406798.cpp
+clazy-1.14/tests/incorrect-emit/bug406798.cpp.expected
+clazy-1.14/tests/incorrect-emit/bug437092.cpp
+clazy-1.14/tests/incorrect-emit/bug437092.cpp.expected
+clazy-1.14/tests/incorrect-emit/config.json
+clazy-1.14/tests/incorrect-emit/main.cpp
+clazy-1.14/tests/incorrect-emit/main.cpp.expected
+clazy-1.14/tests/install-event-filter/
+clazy-1.14/tests/install-event-filter/config.json
+clazy-1.14/tests/install-event-filter/main.cpp
+clazy-1.14/tests/install-event-filter/main.cpp.expected
+clazy-1.14/tests/isempty-vs-count/
+clazy-1.14/tests/isempty-vs-count/config.json
+clazy-1.14/tests/isempty-vs-count/main.cpp
+clazy-1.14/tests/isempty-vs-count/main.cpp.expected
+clazy-1.14/tests/jni-signatures/
+clazy-1.14/tests/jni-signatures/config.json
+clazy-1.14/tests/jni-signatures/main.cpp
+clazy-1.14/tests/jni-signatures/main.cpp.expected
+clazy-1.14/tests/lambda-in-connect/
+clazy-1.14/tests/lambda-in-connect/config.json
+clazy-1.14/tests/lambda-in-connect/main.cpp
+clazy-1.14/tests/lambda-in-connect/main.cpp.expected
+clazy-1.14/tests/lambda-unique-connection/
+clazy-1.14/tests/lambda-unique-connection/config.json
+clazy-1.14/tests/lambda-unique-connection/main.cpp
+clazy-1.14/tests/lambda-unique-connection/main.cpp.expected
+clazy-1.14/tests/lowercase-qml-type-name/
+clazy-1.14/tests/lowercase-qml-type-name/config.json
+clazy-1.14/tests/lowercase-qml-type-name/main.cpp
+clazy-1.14/tests/lowercase-qml-type-name/main.cpp.expected
+clazy-1.14/tests/missing-qobject-macro/
+clazy-1.14/tests/missing-qobject-macro/config.json
+clazy-1.14/tests/missing-qobject-macro/file.hh
+clazy-1.14/tests/missing-qobject-macro/file.hh.expected
+clazy-1.14/tests/missing-qobject-macro/file.hh.fixed.expected
+clazy-1.14/tests/missing-qobject-macro/fixit.cpp
+clazy-1.14/tests/missing-qobject-macro/fixit.cpp.expected
+clazy-1.14/tests/missing-qobject-macro/fixit.cpp.fixed.expected
+clazy-1.14/tests/missing-qobject-macro/main.cpp
+clazy-1.14/tests/missing-qobject-macro/main.cpp.expected
+clazy-1.14/tests/missing-typeinfo/
+clazy-1.14/tests/missing-typeinfo/config.json
+clazy-1.14/tests/missing-typeinfo/main.cpp
+clazy-1.14/tests/missing-typeinfo/main.cpp.expected
+clazy-1.14/tests/mutable-container-key/
+clazy-1.14/tests/mutable-container-key/config.json
+clazy-1.14/tests/mutable-container-key/main.cpp
+clazy-1.14/tests/mutable-container-key/main.cpp.expected
+clazy-1.14/tests/no-module-include/
+clazy-1.14/tests/no-module-include/config.json
+clazy-1.14/tests/no-module-include/dummy_qdbusxml2cpp.cpp
+clazy-1.14/tests/no-module-include/dummy_qdbusxml2cpp.cpp.expected
+clazy-1.14/tests/no-module-include/main.cpp
+clazy-1.14/tests/no-module-include/main.cpp.expected
+clazy-1.14/tests/non-pod-global-static/
+clazy-1.14/tests/non-pod-global-static/config.json
+clazy-1.14/tests/non-pod-global-static/foo.cpp
+clazy-1.14/tests/non-pod-global-static/foo.cpp.expected
+clazy-1.14/tests/non-pod-global-static/qml_module.cpp
+clazy-1.14/tests/non-pod-global-static/qml_module.cpp.qt6.expected
+clazy-1.14/tests/old-style-connect/
+clazy-1.14/tests/old-style-connect/config.json
+clazy-1.14/tests/old-style-connect/main.cpp
+clazy-1.14/tests/old-style-connect/main.cpp.expected
+clazy-1.14/tests/old-style-connect/main.cpp.fixed.expected
+clazy-1.14/tests/old-style-connect/main.qt5.moc_
+clazy-1.14/tests/old-style-connect/main.qt6.moc_
+clazy-1.14/tests/old-style-connect/main.qt6.moc_69
+clazy-1.14/tests/old-style-connect/namespaces.cpp
+clazy-1.14/tests/old-style-connect/namespaces.cpp.expected
+clazy-1.14/tests/old-style-connect/namespaces.cpp.fixed.expected
+clazy-1.14/tests/old-style-connect/namespaces.h
+clazy-1.14/tests/old-style-connect/namespaces.h.fixed.expected
+clazy-1.14/tests/old-style-connect/namespaces.qt5.moc_
+clazy-1.14/tests/old-style-connect/namespaces.qt6.moc_
+clazy-1.14/tests/old-style-connect/namespaces.qt6.moc_69
+clazy-1.14/tests/old-style-connect/not-in-hierarchy.cpp
+clazy-1.14/tests/old-style-connect/port_qsignalspy.cpp
+clazy-1.14/tests/old-style-connect/port_qsignalspy.cpp.qt5.expected
+clazy-1.14/tests/old-style-connect/port_qsignalspy.cpp.qt6.expected
+clazy-1.14/tests/old-style-connect/q_private_slot.cpp
+clazy-1.14/tests/old-style-connect/q_private_slot.cpp.expected
+clazy-1.14/tests/old-style-connect/q_private_slot.cpp.fixed.expected
+clazy-1.14/tests/old-style-connect/usingnamespace.cpp
+clazy-1.14/tests/old-style-connect/usingnamespace.cpp.expected
+clazy-1.14/tests/old-style-connect/usingnamespace.cpp.fixed.expected
+clazy-1.14/tests/old-style-connect/usingnamespace.qt5.moc_
+clazy-1.14/tests/old-style-connect/usingnamespace.qt6.moc_
+clazy-1.14/tests/old-style-connect/usingnamespace.qt6.moc_69
+clazy-1.14/tests/overloaded-signal/
+clazy-1.14/tests/overloaded-signal/config.json
+clazy-1.14/tests/overloaded-signal/main.cpp
+clazy-1.14/tests/overloaded-signal/main.cpp.expected
+clazy-1.14/tests/overridden-signal/
+clazy-1.14/tests/overridden-signal/config.json
+clazy-1.14/tests/overridden-signal/main.cpp
+clazy-1.14/tests/overridden-signal/main.cpp.expected
+clazy-1.14/tests/post-event/
+clazy-1.14/tests/post-event/config.json
+clazy-1.14/tests/post-event/main.cpp
+clazy-1.14/tests/post-event/main.cpp.expected
+clazy-1.14/tests/qbytearray-conversion-to-c-style/
+clazy-1.14/tests/qbytearray-conversion-to-c-style/config.json
+clazy-1.14/tests/qbytearray-conversion-to-c-style/main.cpp
+clazy-1.14/tests/qbytearray-conversion-to-c-style/main.cpp.expected
+clazy-1.14/tests/qbytearray-conversion-to-c-style/main.cpp.fixed.expected
+clazy-1.14/tests/qcolor-from-literal/
+clazy-1.14/tests/qcolor-from-literal/colorfromstring.cpp
+clazy-1.14/tests/qcolor-from-literal/colorfromstring.cpp.expected
+clazy-1.14/tests/qcolor-from-literal/colorfromstring.cpp.fixed.expected
+clazy-1.14/tests/qcolor-from-literal/config.json
+clazy-1.14/tests/qcolor-from-literal/main.cpp
+clazy-1.14/tests/qcolor-from-literal/main.cpp.expected
+clazy-1.14/tests/qcolor-from-literal/main.cpp.fixed.expected
+clazy-1.14/tests/qdatetime-utc/
+clazy-1.14/tests/qdatetime-utc/config.json
+clazy-1.14/tests/qdatetime-utc/main.cpp
+clazy-1.14/tests/qdatetime-utc/main.cpp.fixed.expected
+clazy-1.14/tests/qdatetime-utc/main.cpp.qt5.expected
+clazy-1.14/tests/qdatetime-utc/main.cpp.qt6.expected
+clazy-1.14/tests/qdeleteall/
+clazy-1.14/tests/qdeleteall/config.json
+clazy-1.14/tests/qdeleteall/main.cpp
+clazy-1.14/tests/qdeleteall/main.cpp.expected
+clazy-1.14/tests/qenums/
+clazy-1.14/tests/qenums/config.json
+clazy-1.14/tests/qenums/main.cpp
+clazy-1.14/tests/qenums/main.cpp.expected
+clazy-1.14/tests/qfileinfo-exists/
+clazy-1.14/tests/qfileinfo-exists/config.json
+clazy-1.14/tests/qfileinfo-exists/main.cpp
+clazy-1.14/tests/qfileinfo-exists/main.cpp.expected
+clazy-1.14/tests/qfileinfo-exists/main.cpp.fixed.expected
+clazy-1.14/tests/qgetenv/
+clazy-1.14/tests/qgetenv/config.json
+clazy-1.14/tests/qgetenv/main.cpp
+clazy-1.14/tests/qgetenv/main.cpp.expected
+clazy-1.14/tests/qgetenv/main.cpp.fixed.expected
+clazy-1.14/tests/qhash-namespace/
+clazy-1.14/tests/qhash-namespace/config.json
+clazy-1.14/tests/qhash-namespace/main.cpp
+clazy-1.14/tests/qhash-namespace/main.cpp.expected
+clazy-1.14/tests/qhash-namespace/test_typedef.cpp
+clazy-1.14/tests/qhash-namespace/test_typedef.cpp.expected
+clazy-1.14/tests/qhash-with-char-pointer-key/
+clazy-1.14/tests/qhash-with-char-pointer-key/config.json
+clazy-1.14/tests/qhash-with-char-pointer-key/main.cpp
+clazy-1.14/tests/qhash-with-char-pointer-key/main.cpp.expected
+clazy-1.14/tests/qlatin1string-non-ascii/
+clazy-1.14/tests/qlatin1string-non-ascii/config.json
+clazy-1.14/tests/qlatin1string-non-ascii/main.cpp
+clazy-1.14/tests/qlatin1string-non-ascii/main.cpp.expected
+clazy-1.14/tests/qmap-with-pointer-key/
+clazy-1.14/tests/qmap-with-pointer-key/config.json
+clazy-1.14/tests/qmap-with-pointer-key/main.cpp
+clazy-1.14/tests/qmap-with-pointer-key/main.cpp.expected
+clazy-1.14/tests/qproperty-type-mismatch/
+clazy-1.14/tests/qproperty-type-mismatch/config.json
+clazy-1.14/tests/qproperty-type-mismatch/main.cpp
+clazy-1.14/tests/qproperty-type-mismatch/main.cpp.expected
+clazy-1.14/tests/qproperty-without-notify/
+clazy-1.14/tests/qproperty-without-notify/config.json
+clazy-1.14/tests/qproperty-without-notify/main.cpp
+clazy-1.14/tests/qproperty-without-notify/main.cpp.expected
+clazy-1.14/tests/qrequiredresult-candidates/
+clazy-1.14/tests/qrequiredresult-candidates/config.json
+clazy-1.14/tests/qrequiredresult-candidates/main.cpp
+clazy-1.14/tests/qrequiredresult-candidates/main.cpp.expected
+clazy-1.14/tests/qstring-allocations/
+clazy-1.14/tests/qstring-allocations/364092.cpp
+clazy-1.14/tests/qstring-allocations/364092.cpp.expected
+clazy-1.14/tests/qstring-allocations/364092.cpp.fixed.expected
+clazy-1.14/tests/qstring-allocations/config.json
+clazy-1.14/tests/qstring-allocations/main.cpp
+clazy-1.14/tests/qstring-allocations/main.cpp.expected
+clazy-1.14/tests/qstring-allocations/main.cpp.fixed.expected
+clazy-1.14/tests/qstring-allocations/msvc-compat.cpp
+clazy-1.14/tests/qstring-allocations/msvc-compat.cpp.expected
+clazy-1.14/tests/qstring-allocations/msvc-compat.cpp.fixed.expected
+clazy-1.14/tests/qstring-allocations/no-msvc-compat.cpp
+clazy-1.14/tests/qstring-allocations/no-msvc-compat.cpp.expected
+clazy-1.14/tests/qstring-allocations/no-msvc-compat.cpp.fixed.expected
+clazy-1.14/tests/qstring-allocations/ui_foo.cpp
+clazy-1.14/tests/qstring-allocations/ui_foo.cpp.expected
+clazy-1.14/tests/qstring-allocations/ui_foo.h
+clazy-1.14/tests/qstring-arg/
+clazy-1.14/tests/qstring-arg/config.json
+clazy-1.14/tests/qstring-arg/fill-char-overloads.cpp
+clazy-1.14/tests/qstring-arg/fill-char-overloads.cpp.expected
+clazy-1.14/tests/qstring-arg/main.cpp
+clazy-1.14/tests/qstring-arg/main.cpp.expected
+clazy-1.14/tests/qstring-arg/main.cpp.fixed.expected
+clazy-1.14/tests/qstring-arg/qlatin1string.cpp
+clazy-1.14/tests/qstring-arg/qlatin1string.cpp.expected
+clazy-1.14/tests/qstring-comparison-to-implicit-char/
+clazy-1.14/tests/qstring-comparison-to-implicit-char/config.json
+clazy-1.14/tests/qstring-comparison-to-implicit-char/main.cpp
+clazy-1.14/tests/qstring-comparison-to-implicit-char/main.cpp.expected
+clazy-1.14/tests/qstring-insensitive-allocation/
+clazy-1.14/tests/qstring-insensitive-allocation/config.json
+clazy-1.14/tests/qstring-insensitive-allocation/main.cpp
+clazy-1.14/tests/qstring-insensitive-allocation/main.cpp.expected
+clazy-1.14/tests/qstring-left/
+clazy-1.14/tests/qstring-left/config.json
+clazy-1.14/tests/qstring-left/main.cpp
+clazy-1.14/tests/qstring-left/main.cpp.expected
+clazy-1.14/tests/qstring-ref/
+clazy-1.14/tests/qstring-ref/bug376737.cpp
+clazy-1.14/tests/qstring-ref/bug376737.cpp.expected
+clazy-1.14/tests/qstring-ref/config.json
+clazy-1.14/tests/qstring-ref/main.cpp
+clazy-1.14/tests/qstring-ref/main.cpp.expected
+clazy-1.14/tests/qstring-varargs/
+clazy-1.14/tests/qstring-varargs/config.json
+clazy-1.14/tests/qstring-varargs/main.cpp
+clazy-1.14/tests/qstring-varargs/main.cpp.expected
+clazy-1.14/tests/qt-keyword-emit/
+clazy-1.14/tests/qt-keyword-emit/config.json
+clazy-1.14/tests/qt-keyword-emit/main.cpp
+clazy-1.14/tests/qt-keyword-emit/main.cpp.expected
+clazy-1.14/tests/qt-keyword-emit/main.cpp.fixed.expected
+clazy-1.14/tests/qt-keywords/
+clazy-1.14/tests/qt-keywords/config.json
+clazy-1.14/tests/qt-keywords/main.cpp
+clazy-1.14/tests/qt-keywords/main.cpp.expected
+clazy-1.14/tests/qt-keywords/main.cpp.fixed.expected
+clazy-1.14/tests/qt-keywords/no_keywords.cpp
+clazy-1.14/tests/qt-keywords/no_keywords.cpp.expected
+clazy-1.14/tests/qt-macros/
+clazy-1.14/tests/qt-macros/config.json
+clazy-1.14/tests/qt-macros/main.cpp
+clazy-1.14/tests/qt-macros/main.cpp.expected
+clazy-1.14/tests/qt-macros/q_os_windows.cpp
+clazy-1.14/tests/qt-macros/q_os_windows.cpp.expected
+clazy-1.14/tests/qt6-deprecated-api-fixes/
+clazy-1.14/tests/qt6-deprecated-api-fixes/config.json
+clazy-1.14/tests/qt6-deprecated-api-fixes/main.cpp
+clazy-1.14/tests/qt6-deprecated-api-fixes/main.cpp.expected
+clazy-1.14/tests/qt6-deprecated-api-fixes/main.cpp.fixed.expected
+clazy-1.14/tests/qt6-fwd-fixes/
+clazy-1.14/tests/qt6-fwd-fixes/config.json
+clazy-1.14/tests/qt6-fwd-fixes/file1.cpp
+clazy-1.14/tests/qt6-fwd-fixes/file1.cpp.expected
+clazy-1.14/tests/qt6-fwd-fixes/file1.cpp.fixed.expected
+clazy-1.14/tests/qt6-fwd-fixes/file2.cpp
+clazy-1.14/tests/qt6-fwd-fixes/file2.cpp.expected
+clazy-1.14/tests/qt6-fwd-fixes/file2.cpp.fixed.expected
+clazy-1.14/tests/qt6-fwd-fixes/header1.h
+clazy-1.14/tests/qt6-fwd-fixes/main.cpp
+clazy-1.14/tests/qt6-fwd-fixes/main.cpp.expected
+clazy-1.14/tests/qt6-fwd-fixes/main.cpp.fixed.expected
+clazy-1.14/tests/qt6-header-fixes/
+clazy-1.14/tests/qt6-header-fixes/config.json
+clazy-1.14/tests/qt6-header-fixes/main.cpp
+clazy-1.14/tests/qt6-header-fixes/main.cpp.expected
+clazy-1.14/tests/qt6-header-fixes/main.cpp.fixed.expected
+clazy-1.14/tests/qt6-qhash-signature/
+clazy-1.14/tests/qt6-qhash-signature/config.json
+clazy-1.14/tests/qt6-qhash-signature/main.cpp
+clazy-1.14/tests/qt6-qhash-signature/main.cpp.fixed.expected
+clazy-1.14/tests/qt6-qhash-signature/main.cpp.qt5.expected
+clazy-1.14/tests/qt6-qhash-signature/main.cpp.qt6.expected
+clazy-1.14/tests/qt6-qlatin1stringchar-to-u/
+clazy-1.14/tests/qt6-qlatin1stringchar-to-u/config.json
+clazy-1.14/tests/qt6-qlatin1stringchar-to-u/main.cpp
+clazy-1.14/tests/qt6-qlatin1stringchar-to-u/main.cpp.expected
+clazy-1.14/tests/qt6-qlatin1stringchar-to-u/main.cpp.fixed.expected
+clazy-1.14/tests/qvariant-template-instantiation/
+clazy-1.14/tests/qvariant-template-instantiation/config.json
+clazy-1.14/tests/qvariant-template-instantiation/main.cpp
+clazy-1.14/tests/qvariant-template-instantiation/main.cpp.expected
+clazy-1.14/tests/qvariant-template-instantiation/qhash.cpp
+clazy-1.14/tests/qvariant-template-instantiation/qhash.cpp.expected
+clazy-1.14/tests/qvariant-template-instantiation/qlist.cpp
+clazy-1.14/tests/qvariant-template-instantiation/qlist.cpp.expected
+clazy-1.14/tests/qvariant-template-instantiation/qmap.cpp
+clazy-1.14/tests/qvariant-template-instantiation/qmap.cpp.expected
+clazy-1.14/tests/range-loop-detach/
+clazy-1.14/tests/range-loop-detach/bug370609.cpp
+clazy-1.14/tests/range-loop-detach/bug370609.cpp.expected
+clazy-1.14/tests/range-loop-detach/bug370609.cpp.fixed.expected
+clazy-1.14/tests/range-loop-detach/config.json
+clazy-1.14/tests/range-loop-detach/main.cpp
+clazy-1.14/tests/range-loop-detach/main.cpp.expected
+clazy-1.14/tests/range-loop-detach/main.cpp.fixed.expected
+clazy-1.14/tests/range-loop-detach/main_cpp17.cpp
+clazy-1.14/tests/range-loop-detach/main_cpp17.cpp.expected
+clazy-1.14/tests/range-loop-detach/main_cpp17.cpp.fixed.expected
+clazy-1.14/tests/range-loop-reference/
+clazy-1.14/tests/range-loop-reference/config.json
+clazy-1.14/tests/range-loop-reference/main.cpp
+clazy-1.14/tests/range-loop-reference/main.cpp.expected
+clazy-1.14/tests/range-loop-reference/main.cpp.fixed.expected
+clazy-1.14/tests/raw-environment-function/
+clazy-1.14/tests/raw-environment-function/config.json
+clazy-1.14/tests/raw-environment-function/main.cpp
+clazy-1.14/tests/raw-environment-function/main.cpp.expected
+clazy-1.14/tests/reserve-candidates/
+clazy-1.14/tests/reserve-candidates/config.json
+clazy-1.14/tests/reserve-candidates/main.cpp
+clazy-1.14/tests/reserve-candidates/main.cpp.expected
+clazy-1.14/tests/returning-data-from-temporary/
+clazy-1.14/tests/returning-data-from-temporary/config.json
+clazy-1.14/tests/returning-data-from-temporary/main.cpp
+clazy-1.14/tests/returning-data-from-temporary/main.cpp.expected
+clazy-1.14/tests/returning-void-expression/
+clazy-1.14/tests/returning-void-expression/config.json
+clazy-1.14/tests/returning-void-expression/main.cpp
+clazy-1.14/tests/returning-void-expression/main.cpp.expected
+clazy-1.14/tests/rule-of-three/
+clazy-1.14/tests/rule-of-three/bug388677.cpp
+clazy-1.14/tests/rule-of-three/bug388677.cpp.expected
+clazy-1.14/tests/rule-of-three/bug388682.cpp
+clazy-1.14/tests/rule-of-three/bug388682.cpp.expected
+clazy-1.14/tests/rule-of-three/bug403193.cpp
+clazy-1.14/tests/rule-of-three/bug403193.cpp.expected
+clazy-1.14/tests/rule-of-three/bug_qca.cpp
+clazy-1.14/tests/rule-of-three/bug_qca.cpp.expected
+clazy-1.14/tests/rule-of-three/config.json
+clazy-1.14/tests/rule-of-three/main.cpp
+clazy-1.14/tests/rule-of-three/main.cpp.expected
+clazy-1.14/tests/rule-of-three/main.h
+clazy-1.14/tests/rule-of-two-soft/
+clazy-1.14/tests/rule-of-two-soft/bug375537.cpp
+clazy-1.14/tests/rule-of-two-soft/bug375537.cpp.expected
+clazy-1.14/tests/rule-of-two-soft/bug443343.cpp
+clazy-1.14/tests/rule-of-two-soft/bug443343.cpp.expected
+clazy-1.14/tests/rule-of-two-soft/config.json
+clazy-1.14/tests/rule-of-two-soft/main.cpp
+clazy-1.14/tests/rule-of-two-soft/main.cpp.expected
+clazy-1.14/tests/run_tests.py
+clazy-1.14/tests/sanitize-inline-keyword/
+clazy-1.14/tests/sanitize-inline-keyword/config.json
+clazy-1.14/tests/sanitize-inline-keyword/main.cpp
+clazy-1.14/tests/sanitize-inline-keyword/main.cpp.expected
+clazy-1.14/tests/sanitize-inline-keyword/main.cpp.fixed.expected
+clazy-1.14/tests/signal-with-return-value/
+clazy-1.14/tests/signal-with-return-value/config.json
+clazy-1.14/tests/signal-with-return-value/main.cpp
+clazy-1.14/tests/signal-with-return-value/main.cpp.expected
+clazy-1.14/tests/skipped-base-method/
+clazy-1.14/tests/skipped-base-method/config.json
+clazy-1.14/tests/skipped-base-method/main.cpp
+clazy-1.14/tests/skipped-base-method/main.cpp.expected
+clazy-1.14/tests/static-pmf/
+clazy-1.14/tests/static-pmf/config.json
+clazy-1.14/tests/static-pmf/main.cpp
+clazy-1.14/tests/static-pmf/main.cpp.expected
+clazy-1.14/tests/strict-iterators/
+clazy-1.14/tests/strict-iterators/config.json
+clazy-1.14/tests/strict-iterators/main.cpp
+clazy-1.14/tests/strict-iterators/main.cpp.expected
+clazy-1.14/tests/strict-iterators/main_qt6.cpp
+clazy-1.14/tests/strict-iterators/main_qt6.cpp.expected
+clazy-1.14/tests/temporary-iterator/
+clazy-1.14/tests/temporary-iterator/config.json
+clazy-1.14/tests/temporary-iterator/main.cpp
+clazy-1.14/tests/temporary-iterator/main.cpp.expected
+clazy-1.14/tests/thread-with-slots/
+clazy-1.14/tests/thread-with-slots/config.json
+clazy-1.14/tests/thread-with-slots/main.cpp
+clazy-1.14/tests/thread-with-slots/main.cpp.expected
+clazy-1.14/tests/tr-non-literal/
+clazy-1.14/tests/tr-non-literal/config.json
+clazy-1.14/tests/tr-non-literal/main.cpp
+clazy-1.14/tests/tr-non-literal/main.cpp.expected
+clazy-1.14/tests/unexpected-flag-enumerator-value/
+clazy-1.14/tests/unexpected-flag-enumerator-value/config.json
+clazy-1.14/tests/unexpected-flag-enumerator-value/main.cpp
+clazy-1.14/tests/unexpected-flag-enumerator-value/main.cpp.expected
+clazy-1.14/tests/unneeded-cast/
+clazy-1.14/tests/unneeded-cast/config.json
+clazy-1.14/tests/unneeded-cast/dynamic_cast_over_qobjectcast.cpp
+clazy-1.14/tests/unneeded-cast/dynamic_cast_over_qobjectcast.cpp.expected
+clazy-1.14/tests/unneeded-cast/main.cpp
+clazy-1.14/tests/unneeded-cast/main.cpp.expected
+clazy-1.14/tests/unused-non-trivial-variable/
+clazy-1.14/tests/unused-non-trivial-variable/config.json
+clazy-1.14/tests/unused-non-trivial-variable/main.cpp
+clazy-1.14/tests/unused-non-trivial-variable/main.cpp.expected
+clazy-1.14/tests/unused-non-trivial-variable/no-whitelist.cpp
+clazy-1.14/tests/unused-non-trivial-variable/no-whitelist.cpp.expected
+clazy-1.14/tests/unused-non-trivial-variable/other.h
+clazy-1.14/tests/unused-result-check/
+clazy-1.14/tests/unused-result-check/config.json
+clazy-1.14/tests/unused-result-check/main.cpp
+clazy-1.14/tests/unused-result-check/main.cpp.expected
+clazy-1.14/tests/use-arrow-operator-instead-of-data/
+clazy-1.14/tests/use-arrow-operator-instead-of-data/config.json
+clazy-1.14/tests/use-arrow-operator-instead-of-data/main.cpp
+clazy-1.14/tests/use-arrow-operator-instead-of-data/main.cpp.expected
+clazy-1.14/tests/use-arrow-operator-instead-of-data/main.cpp.fixed.expected
+clazy-1.14/tests/use-chrono-in-qtimer/
+clazy-1.14/tests/use-chrono-in-qtimer/config.json
+clazy-1.14/tests/use-chrono-in-qtimer/main.cpp
+clazy-1.14/tests/use-chrono-in-qtimer/main.cpp.expected
+clazy-1.14/tests/use-chrono-in-qtimer/main.cpp.fixed.expected
+clazy-1.14/tests/use-chrono-in-qtimer/missing-include.cpp
+clazy-1.14/tests/use-chrono-in-qtimer/missing-include.cpp.expected
+clazy-1.14/tests/use-chrono-in-qtimer/missing-include.cpp.fixed.expected
+clazy-1.14/tests/use-static-qregularexpression/
+clazy-1.14/tests/use-static-qregularexpression/config.json
+clazy-1.14/tests/use-static-qregularexpression/main.cpp
+clazy-1.14/tests/use-static-qregularexpression/main.cpp.expected
+clazy-1.14/tests/use-static-qregularexpression/splitref.qt5.cpp
+clazy-1.14/tests/use-static-qregularexpression/splitref.qt5.cpp.expected
+clazy-1.14/tests/used-qunused-variable/
+clazy-1.14/tests/used-qunused-variable/config.json
+clazy-1.14/tests/used-qunused-variable/main.cpp
+clazy-1.14/tests/used-qunused-variable/main.cpp.expected
+clazy-1.14/tests/virtual-call-ctor/
+clazy-1.14/tests/virtual-call-ctor/config.json
+clazy-1.14/tests/virtual-call-ctor/main.cpp
+clazy-1.14/tests/virtual-call-ctor/main.cpp.expected
+clazy-1.14/tests/virtual-signal/
+clazy-1.14/tests/virtual-signal/config.json
+clazy-1.14/tests/virtual-signal/main.cpp
+clazy-1.14/tests/virtual-signal/main.cpp.expected
+clazy-1.14/tests/virtual-signal/non-qobject-base.cpp
+clazy-1.14/tests/virtual-signal/non-qobject-base.cpp.expected
+clazy-1.14/tests/writing-to-temporary/
+clazy-1.14/tests/writing-to-temporary/config.json
+clazy-1.14/tests/writing-to-temporary/main.cpp
+clazy-1.14/tests/writing-to-temporary/main.cpp.expected
+clazy-1.14/tests/writing-to-temporary/widen-criteria.cpp
+clazy-1.14/tests/writing-to-temporary/widen-criteria.cpp.expected
+clazy-1.14/tests/wrong-qevent-cast/
+clazy-1.14/tests/wrong-qevent-cast/config.json
+clazy-1.14/tests/wrong-qevent-cast/main.cpp
+clazy-1.14/tests/wrong-qevent-cast/main.cpp.expected
+clazy-1.14/tests/wrong-qglobalstatic/
+clazy-1.14/tests/wrong-qglobalstatic/config.json
+clazy-1.14/tests/wrong-qglobalstatic/main.cpp
+clazy-1.14/tests/wrong-qglobalstatic/main.cpp.expected
+clazy-1.14/windows-package/
+clazy-1.14/windows-package/LICENSE-CLAZY.txt
+clazy-1.14/windows-package/LICENSE-LLVM.TXT
+clazy-1.14/windows-package/README.txt
+clazy-1.14/windows-package/clazy-cl.bat
+clazy-1.14/windows-package/clazy.bat
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is Clang 20.1.4
+-- The CXX compiler identification is Clang 20.1.4
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Clang found: /usr/bin/clang
+-- Found LLVM (version: 20.1.4): (using /usr/bin/llvm-config)
+--   Include dirs:   /usr/include;/usr/include
+--   LLVM libraries: /usr/lib64/libLLVM-20.so;-lLLVM-20
+--   LLVM System libraries: 
+--   LLVM 19+ detected, additional libraries may be available
+--   LLVM built with RTTI: YES
+-- Detected that llvm-config comes from a build-tree, adding more include directories for Clang
+-- Found Clang (LLVM version: 20.1.4)
+--   Include dirs:          /usr/include;/usr/include;/usr/tools/clang/include;/usr/include/../../clang/include
+--   Clang libraries:       /usr/lib64/libclang-cpp.so;/usr/lib64/libclangFrontend.a;/usr/lib64/libclangDriver.a;/usr/lib64/libclangCodeGen.a;/usr/lib64/libclangSema.a;/usr/lib64/libclangAnalysis.a;/usr/lib64/libclangRewriteFrontend.a;/usr/lib64/libclangRewrite.a;/usr/lib64/libclangAST.a;/usr/lib64/libclangASTMatchers.a;/usr/lib64/libclangParse.a;/usr/lib64/libclangLex.a;/usr/lib64/libclangBasic.a;/usr/lib64/libclangARCMigrate.a;/usr/lib64/libclangEdit.a;/usr/lib64/libclangFrontendTool.a;/usr/lib64/libclangSerialization.a;/usr/lib64/libclangTooling.a;/usr/lib64/libclangStaticAnalyzerCheckers.a;/usr/lib64/libclangStaticAnalyzerCore.a;/usr/lib64/libclangStaticAnalyzerFrontend.a;/usr/lib64/libclangAPINotes.a;/usr/lib64/libclangSupport.a;/usr/lib64/libclangASTMatchers.a;/usr/lib64/libclangTransformer.a;/usr/lib64/libclangToolingCore.a;/usr/lib64/libclangToolingInclusions.a;/usr/lib64/libclangToolingRefactoring.a;/usr/lib64/libclangToolingSyntax.a;/usr/lib64/libclangDependencyScanning.a
+--   Libclang C library:    /usr/lib64/libclang.so
+--   Clang dynamic library: /usr/lib64/libclang-cpp.so
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    MAN_INSTALL_DIR
+
+
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/work/clazy-1.14/build
+[1/123] Generating clazy.1
+[2/123] Building CXX object CMakeFiles/ClazyPlugin.dir/cmake_pch.hxx.pch
+[3/123] Building CXX object CMakeFiles/clazy-standalone.dir/src/ClazyStandaloneMain.cpp.o
+[4/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/ruleofbase.cpp.o
+[5/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/detachingbase.cpp.o
+[6/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qstring-varargs.cpp.o
+[7/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qhash-with-char-pointer-key.cpp.o
+[8/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qt-keywords.cpp.o
+[9/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/assert-with-side-effects.cpp.o
+[10/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/ifndef-define-typo.cpp.o
+[11/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/heap-allocated-small-trivial-type.cpp.o
+[12/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qvariant-template-instantiation.cpp.o
+[13/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qt6-qhash-signature.cpp.o
+[14/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qproperty-type-mismatch.cpp.o
+[15/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/detaching-member.cpp.o
+[16/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/container-inside-loop.cpp.o
+[17/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/isempty-vs-count.cpp.o
+[18/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qt-keyword-emit.cpp.o
+[19/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qt6-qlatin1stringchar-to-u.cpp.o
+[20/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qt6-deprecated-api-fixes.cpp.o
+[21/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qt6-fwd-fixes.cpp.o
+[22/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qt6-header-fixes.cpp.o
+[23/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/raw-environment-function.cpp.o
+[24/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qrequiredresult-candidates.cpp.o
+[25/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/qbytearray-conversion-to-c-style.cpp.o
+[26/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/tr-non-literal.cpp.o
+[27/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/reserve-candidates.cpp.o
+[28/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/sanitize-inline-keyword.cpp.o
+[29/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/signal-with-return-value.cpp.o
+[30/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/connect-by-name.cpp.o
+[31/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/unexpected-flag-enumerator-value.cpp.o
+[32/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/unneeded-cast.cpp.o
+[33/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/use-chrono-in-qtimer.cpp.o
+[34/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/use-arrow-operator-instead-of-data.cpp.o
+[35/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/unused-result-check.cpp.o
+[36/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/container-anti-pattern.cpp.o
+[37/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/thread-with-slots.cpp.o
+[38/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/lowercase-qml-type-name.cpp.o
+[39/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/empty-qstringliteral.cpp.o
+[40/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/lambda-unique-connection.cpp.o
+[41/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/mutable-container-key.cpp.o
+[42/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/connect-non-signal.cpp.o
+[43/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/jnisignatures.cpp.o
+[44/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/no-module-include.cpp.o
+[45/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/lambda-in-connect.cpp.o
+[46/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/connect-not-normalized.cpp.o
+[47/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/overloaded-signal.cpp.o
+[48/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qdatetime-utc.cpp.o
+[49/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qfileinfo-exists.cpp.o
+[50/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/fully-qualified-moc-types.cpp.o
+[51/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qcolor-from-literal.cpp.o
+[52/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qenums.cpp.o
+[53/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qgetenv.cpp.o
+[54/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qmap-with-pointer-key.cpp.o
+[55/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qstring-comparison-to-implicit-char.cpp.o
+[56/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qstring-insensitive-allocation.cpp.o
+[57/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qstring-arg.cpp.o
+[58/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qt-macros.cpp.o
+[59/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/writing-to-temporary.cpp.o
+[60/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/auto-unexpected-qstringbuilder.cpp.o
+[61/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/qstring-ref.cpp.o
+[62/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/temporary-iterator.cpp.o
+[63/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/strict-iterators.cpp.o
+[64/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/child-event-qobject-cast.cpp.o
+[65/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/unused-non-trivial-variable.cpp.o
+[66/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/const-signal-or-slot.cpp.o
+[67/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/wrong-qevent-cast.cpp.o
+[68/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/install-event-filter.cpp.o
+[69/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/use-static-qregularexpression.cpp.o
+[70/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level0/wrong-qglobalstatic.cpp.o
+[71/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/connect-3arg-lambda.cpp.o
+[72/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/incorrect-emit.cpp.o
+[73/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/post-event.cpp.o
+[74/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/foreach.cpp.o
+[75/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/qlatin1string-non-ascii.cpp.o
+[76/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/detaching-temporary.cpp.o
+[77/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/qstring-left.cpp.o
+[78/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/qdeleteall.cpp.o
+[79/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/non-pod-global-static.cpp.o
+[80/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/qproperty-without-notify.cpp.o
+[81/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/overridden-signal.cpp.o
+[82/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/returning-data-from-temporary.cpp.o
+[83/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/qhash-namespace.cpp.o
+[84/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/skipped-base-method.cpp.o
+[85/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/rule-of-two-soft.cpp.o
+[86/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/virtual-signal.cpp.o
+[87/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/ctor-missing-parent-argument.cpp.o
+[88/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/range-loop-detach.cpp.o
+[89/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/base-class-event.cpp.o
+[90/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level1/range-loop-reference.cpp.o
+[91/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/global-const-char-pointer.cpp.o
+[92/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/copyable-polymorphic.cpp.o
+[93/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/missing-typeinfo.cpp.o
+[94/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/function-args-by-ref.cpp.o
+[95/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/static-pmf.cpp.o
+[96/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/returning-void-expression.cpp.o
+[97/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/rule-of-three.cpp.o
+[98/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/function-args-by-value.cpp.o
+[99/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/virtual-call-ctor.cpp.o
+[100/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/implicit-casts.cpp.o
+[101/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/missing-qobject-macro.cpp.o
+[102/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/qstring-allocations.cpp.o
+[103/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/manuallevel/used-qunused-variable.cpp.o
+[104/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/FixItUtils.cpp.o
+[105/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/ContextUtils.cpp.o
+[106/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/ClazyContext.cpp.o
+[107/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/AccessSpecifierManager.cpp.o
+[108/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checkbase.cpp.o
+[109/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/LoopUtils.cpp.o
+[110/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/TemplateUtils.cpp.o
+[111/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/StringUtils.cpp.o
+[112/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/PreProcessorVisitor.cpp.o
+[113/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/QtUtils.cpp.o
+[114/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/TypeUtils.cpp.o
+[115/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/FixItExporter.cpp.o
+[116/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/SuppressionManager.cpp.o
+[117/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checks/level2/old-style-connect.cpp.o
+[118/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/checkmanager.cpp.o
+[119/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/Utils.cpp.o
+[120/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/Clazy.cpp.o
+[121/123] Building CXX object CMakeFiles/ClazyPlugin.dir/src/MiniAstDumper.cpp.o
+[122/123] Linking CXX shared library lib/ClazyPlugin.so
+[123/123] Linking CXX executable bin/clazy-standalone
+-- Install configuration: "MinSizeRel"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/lib64/ClazyPlugin.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/bin/clazy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-connect-by-name.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-connect-non-signal.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-connect-not-normalized.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-container-anti-pattern.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-empty-qstringliteral.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-fully-qualified-moc-types.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-lambda-in-connect.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-lambda-unique-connection.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-lowercase-qml-type-name.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-mutable-container-key.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-no-module-include.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-overloaded-signal.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qcolor-from-literal.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qdatetime-utc.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qenums.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qfileinfo-exists.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qgetenv.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qmap-with-pointer-key.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qstring-arg.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qstring-comparison-to-implicit-char.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qstring-insensitive-allocation.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qstring-ref.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-qt-macros.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-strict-iterators.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-temporary-iterator.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-unused-non-trivial-variable.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-use-static-qregularexpression.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-writing-to-temporary.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-wrong-qevent-cast.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level0/README-wrong-qglobalstatic.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-auto-unexpected-qstringbuilder.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-child-event-qobject-cast.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-connect-3arg-lambda.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-const-signal-or-slot.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-detaching-temporary.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-foreach.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-incorrect-emit.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-install-event-filter.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-non-pod-global-static.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-overridden-signal.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-post-event.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-qdeleteall.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-qhash-namespace.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-qlatin1string-non-ascii.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-qproperty-without-notify.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-qstring-left.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-range-loop-detach.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-range-loop-reference.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-returning-data-from-temporary.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-rule-of-two-soft.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-skipped-base-method.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level1/README-virtual-signal.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-base-class-event.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-copyable-polymorphic.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-ctor-missing-parent-argument.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-function-args-by-ref.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-function-args-by-value.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-global-const-char-pointer.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-implicit-casts.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-missing-qobject-macro.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-missing-typeinfo.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-old-style-connect.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-qstring-allocations.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-returning-void-expression.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-rule-of-three.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-static-pmf.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/level2/README-virtual-call-ctor.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-assert-with-side-effects.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-container-inside-loop.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-detaching-member.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-heap-allocated-small-trivial-type.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-ifndef-define-typo.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-isempty-vs-count.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-jni-signatures.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qbytearray-conversion-to-c-style.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qhash-with-char-pointer-key.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qproperty-type-mismatch.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qrequiredresult-candidates.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qstring-varargs.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qt-keyword-emit.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qt-keywords.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qt6-deprecated-api-fixes.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qt6-fwd-fixes.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qt6-header-fixes.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qt6-qhash-signature.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qt6-qlatin1stringchar-to-u.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-qvariant-template-instantiation.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-raw-environment-function.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-reserve-candidates.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-sanitize-inline-keyword.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-signal-with-return-value.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-thread-with-slots.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-tr-non-literal.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-unexpected-flag-enumerator-value.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-unneeded-cast.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-unused-result-check.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-use-arrow-operator-instead-of-data.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-use-chrono-in-qtimer.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/manuallevel/README-used-qunused-variable.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/README.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/LGPL-2.0-or-later.txt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/doc/clazy-1.14/checks.json
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/bin/clazy-standalone
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/bin/clazy-standalone" to "/usr/lib64"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/share/metainfo/org.kde.clazy.metainfo.xml
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/package-clazy/usr/man/man1/clazy.1
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/clazy/clazy.info: No such file or directory
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/clazy/clazy-1.14-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/clazy
+usr/bin/clazy-standalone
+usr/doc/
+usr/doc/clazy-1.14/
+usr/doc/clazy-1.14/LGPL-2.0-or-later.txt
+usr/doc/clazy-1.14/README.md
+usr/doc/clazy-1.14/checks.json
+usr/doc/clazy-1.14/clazy.ini
+usr/doc/clazy-1.14/docs/
+usr/doc/clazy-1.14/docs/CMakeLists.txt
+usr/doc/clazy-1.14/docs/checks/
+usr/doc/clazy-1.14/docs/checks/README-assert-with-side-effects.md
+usr/doc/clazy-1.14/docs/checks/README-auto-unexpected-qstringbuilder.md
+usr/doc/clazy-1.14/docs/checks/README-base-class-event.md
+usr/doc/clazy-1.14/docs/checks/README-child-event-qobject-cast.md
+usr/doc/clazy-1.14/docs/checks/README-connect-3arg-lambda.md
+usr/doc/clazy-1.14/docs/checks/README-connect-by-name.md
+usr/doc/clazy-1.14/docs/checks/README-connect-non-signal.md
+usr/doc/clazy-1.14/docs/checks/README-connect-not-normalized.md
+usr/doc/clazy-1.14/docs/checks/README-const-signal-or-slot.md
+usr/doc/clazy-1.14/docs/checks/README-container-anti-pattern.md
+usr/doc/clazy-1.14/docs/checks/README-container-inside-loop.md
+usr/doc/clazy-1.14/docs/checks/README-copyable-polymorphic.md
+usr/doc/clazy-1.14/docs/checks/README-ctor-missing-parent-argument.md
+usr/doc/clazy-1.14/docs/checks/README-detaching-member.md
+usr/doc/clazy-1.14/docs/checks/README-detaching-temporary.md
+usr/doc/clazy-1.14/docs/checks/README-empty-qstringliteral.md
+usr/doc/clazy-1.14/docs/checks/README-foreach.md
+usr/doc/clazy-1.14/docs/checks/README-fully-qualified-moc-types.md
+usr/doc/clazy-1.14/docs/checks/README-function-args-by-ref.md
+usr/doc/clazy-1.14/docs/checks/README-function-args-by-value.md
+usr/doc/clazy-1.14/docs/checks/README-global-const-char-pointer.md
+usr/doc/clazy-1.14/docs/checks/README-heap-allocated-small-trivial-type.md
+usr/doc/clazy-1.14/docs/checks/README-ifndef-define-typo.md
+usr/doc/clazy-1.14/docs/checks/README-implicit-casts.md
+usr/doc/clazy-1.14/docs/checks/README-incorrect-emit.md
+usr/doc/clazy-1.14/docs/checks/README-install-event-filter.md
+usr/doc/clazy-1.14/docs/checks/README-isempty-vs-count.md
+usr/doc/clazy-1.14/docs/checks/README-jni-signatures.md
+usr/doc/clazy-1.14/docs/checks/README-lambda-in-connect.md
+usr/doc/clazy-1.14/docs/checks/README-lambda-unique-connection.md
+usr/doc/clazy-1.14/docs/checks/README-lowercase-qml-type-name.md
+usr/doc/clazy-1.14/docs/checks/README-missing-qobject-macro.md
+usr/doc/clazy-1.14/docs/checks/README-missing-typeinfo.md
+usr/doc/clazy-1.14/docs/checks/README-mutable-container-key.md
+usr/doc/clazy-1.14/docs/checks/README-no-module-include.md
+usr/doc/clazy-1.14/docs/checks/README-non-pod-global-static.md
+usr/doc/clazy-1.14/docs/checks/README-old-style-connect.md
+usr/doc/clazy-1.14/docs/checks/README-overloaded-signal.md
+usr/doc/clazy-1.14/docs/checks/README-overridden-signal.md
+usr/doc/clazy-1.14/docs/checks/README-post-event.md
+usr/doc/clazy-1.14/docs/checks/README-qbytearray-conversion-to-c-style.md
+usr/doc/clazy-1.14/docs/checks/README-qcolor-from-literal.md
+usr/doc/clazy-1.14/docs/checks/README-qdatetime-utc.md
+usr/doc/clazy-1.14/docs/checks/README-qdeleteall.md
+usr/doc/clazy-1.14/docs/checks/README-qenums.md
+usr/doc/clazy-1.14/docs/checks/README-qfileinfo-exists.md
+usr/doc/clazy-1.14/docs/checks/README-qgetenv.md
+usr/doc/clazy-1.14/docs/checks/README-qhash-namespace.md
+usr/doc/clazy-1.14/docs/checks/README-qhash-with-char-pointer-key.md
+usr/doc/clazy-1.14/docs/checks/README-qlatin1string-non-ascii.md
+usr/doc/clazy-1.14/docs/checks/README-qmap-with-pointer-key.md
+usr/doc/clazy-1.14/docs/checks/README-qproperty-type-mismatch.md
+usr/doc/clazy-1.14/docs/checks/README-qproperty-without-notify.md
+usr/doc/clazy-1.14/docs/checks/README-qrequiredresult-candidates.md
+usr/doc/clazy-1.14/docs/checks/README-qstring-allocations.md
+usr/doc/clazy-1.14/docs/checks/README-qstring-arg.md
+usr/doc/clazy-1.14/docs/checks/README-qstring-comparison-to-implicit-char.md
+usr/doc/clazy-1.14/docs/checks/README-qstring-insensitive-allocation.md
+usr/doc/clazy-1.14/docs/checks/README-qstring-left.md
+usr/doc/clazy-1.14/docs/checks/README-qstring-ref.md
+usr/doc/clazy-1.14/docs/checks/README-qstring-varargs.md
+usr/doc/clazy-1.14/docs/checks/README-qt-keyword-emit.md
+usr/doc/clazy-1.14/docs/checks/README-qt-keywords.md
+usr/doc/clazy-1.14/docs/checks/README-qt-macros.md
+usr/doc/clazy-1.14/docs/checks/README-qt6-deprecated-api-fixes.md
+usr/doc/clazy-1.14/docs/checks/README-qt6-fwd-fixes.md
+usr/doc/clazy-1.14/docs/checks/README-qt6-header-fixes.md
+usr/doc/clazy-1.14/docs/checks/README-qt6-qhash-signature.md
+usr/doc/clazy-1.14/docs/checks/README-qt6-qlatin1stringchar-to-u.md
+usr/doc/clazy-1.14/docs/checks/README-qvariant-template-instantiation.md
+usr/doc/clazy-1.14/docs/checks/README-range-loop-detach.md
+usr/doc/clazy-1.14/docs/checks/README-range-loop-reference.md
+usr/doc/clazy-1.14/docs/checks/README-raw-environment-function.md
+usr/doc/clazy-1.14/docs/checks/README-reserve-candidates.md
+usr/doc/clazy-1.14/docs/checks/README-returning-data-from-temporary.md
+usr/doc/clazy-1.14/docs/checks/README-returning-void-expression.md
+usr/doc/clazy-1.14/docs/checks/README-rule-of-three.md
+usr/doc/clazy-1.14/docs/checks/README-rule-of-two-soft.md
+usr/doc/clazy-1.14/docs/checks/README-sanitize-inline-keyword.md
+usr/doc/clazy-1.14/docs/checks/README-signal-with-return-value.md
+usr/doc/clazy-1.14/docs/checks/README-skipped-base-method.md
+usr/doc/clazy-1.14/docs/checks/README-static-pmf.md
+usr/doc/clazy-1.14/docs/checks/README-strict-iterators.md
+usr/doc/clazy-1.14/docs/checks/README-temporary-iterator.md
+usr/doc/clazy-1.14/docs/checks/README-thread-with-slots.md
+usr/doc/clazy-1.14/docs/checks/README-tr-non-literal.md
+usr/doc/clazy-1.14/docs/checks/README-unexpected-flag-enumerator-value.md
+usr/doc/clazy-1.14/docs/checks/README-unneeded-cast.md
+usr/doc/clazy-1.14/docs/checks/README-unused-non-trivial-variable.md
+usr/doc/clazy-1.14/docs/checks/README-unused-result-check.md
+usr/doc/clazy-1.14/docs/checks/README-use-arrow-operator-instead-of-data.md
+usr/doc/clazy-1.14/docs/checks/README-use-chrono-in-qtimer.md
+usr/doc/clazy-1.14/docs/checks/README-use-static-qregularexpression.md
+usr/doc/clazy-1.14/docs/checks/README-used-qunused-variable.md
+usr/doc/clazy-1.14/docs/checks/README-virtual-call-ctor.md
+usr/doc/clazy-1.14/docs/checks/README-virtual-signal.md
+usr/doc/clazy-1.14/docs/checks/README-writing-to-temporary.md
+usr/doc/clazy-1.14/docs/checks/README-wrong-qevent-cast.md
+usr/doc/clazy-1.14/docs/checks/README-wrong-qglobalstatic.md
+usr/doc/clazy-1.14/docs/man/
+usr/doc/clazy-1.14/docs/man/CMakeLists.txt
+usr/doc/clazy-1.14/docs/man/clazy.pod
+usr/doc/clazy-1.14/level0/
+usr/doc/clazy-1.14/level0/README-connect-by-name.md
+usr/doc/clazy-1.14/level0/README-connect-non-signal.md
+usr/doc/clazy-1.14/level0/README-connect-not-normalized.md
+usr/doc/clazy-1.14/level0/README-container-anti-pattern.md
+usr/doc/clazy-1.14/level0/README-empty-qstringliteral.md
+usr/doc/clazy-1.14/level0/README-fully-qualified-moc-types.md
+usr/doc/clazy-1.14/level0/README-lambda-in-connect.md
+usr/doc/clazy-1.14/level0/README-lambda-unique-connection.md
+usr/doc/clazy-1.14/level0/README-lowercase-qml-type-name.md
+usr/doc/clazy-1.14/level0/README-mutable-container-key.md
+usr/doc/clazy-1.14/level0/README-no-module-include.md
+usr/doc/clazy-1.14/level0/README-overloaded-signal.md
+usr/doc/clazy-1.14/level0/README-qcolor-from-literal.md
+usr/doc/clazy-1.14/level0/README-qdatetime-utc.md
+usr/doc/clazy-1.14/level0/README-qenums.md
+usr/doc/clazy-1.14/level0/README-qfileinfo-exists.md
+usr/doc/clazy-1.14/level0/README-qgetenv.md
+usr/doc/clazy-1.14/level0/README-qmap-with-pointer-key.md
+usr/doc/clazy-1.14/level0/README-qstring-arg.md
+usr/doc/clazy-1.14/level0/README-qstring-comparison-to-implicit-char.md
+usr/doc/clazy-1.14/level0/README-qstring-insensitive-allocation.md
+usr/doc/clazy-1.14/level0/README-qstring-ref.md
+usr/doc/clazy-1.14/level0/README-qt-macros.md
+usr/doc/clazy-1.14/level0/README-strict-iterators.md
+usr/doc/clazy-1.14/level0/README-temporary-iterator.md
+usr/doc/clazy-1.14/level0/README-unused-non-trivial-variable.md
+usr/doc/clazy-1.14/level0/README-use-static-qregularexpression.md
+usr/doc/clazy-1.14/level0/README-writing-to-temporary.md
+usr/doc/clazy-1.14/level0/README-wrong-qevent-cast.md
+usr/doc/clazy-1.14/level0/README-wrong-qglobalstatic.md
+usr/doc/clazy-1.14/level1/
+usr/doc/clazy-1.14/level1/README-auto-unexpected-qstringbuilder.md
+usr/doc/clazy-1.14/level1/README-child-event-qobject-cast.md
+usr/doc/clazy-1.14/level1/README-connect-3arg-lambda.md
+usr/doc/clazy-1.14/level1/README-const-signal-or-slot.md
+usr/doc/clazy-1.14/level1/README-detaching-temporary.md
+usr/doc/clazy-1.14/level1/README-foreach.md
+usr/doc/clazy-1.14/level1/README-incorrect-emit.md
+usr/doc/clazy-1.14/level1/README-install-event-filter.md
+usr/doc/clazy-1.14/level1/README-non-pod-global-static.md
+usr/doc/clazy-1.14/level1/README-overridden-signal.md
+usr/doc/clazy-1.14/level1/README-post-event.md
+usr/doc/clazy-1.14/level1/README-qdeleteall.md
+usr/doc/clazy-1.14/level1/README-qhash-namespace.md
+usr/doc/clazy-1.14/level1/README-qlatin1string-non-ascii.md
+usr/doc/clazy-1.14/level1/README-qproperty-without-notify.md
+usr/doc/clazy-1.14/level1/README-qstring-left.md
+usr/doc/clazy-1.14/level1/README-range-loop-detach.md
+usr/doc/clazy-1.14/level1/README-range-loop-reference.md
+usr/doc/clazy-1.14/level1/README-returning-data-from-temporary.md
+usr/doc/clazy-1.14/level1/README-rule-of-two-soft.md
+usr/doc/clazy-1.14/level1/README-skipped-base-method.md
+usr/doc/clazy-1.14/level1/README-virtual-signal.md
+usr/doc/clazy-1.14/level2/
+usr/doc/clazy-1.14/level2/README-base-class-event.md
+usr/doc/clazy-1.14/level2/README-copyable-polymorphic.md
+usr/doc/clazy-1.14/level2/README-ctor-missing-parent-argument.md
+usr/doc/clazy-1.14/level2/README-function-args-by-ref.md
+usr/doc/clazy-1.14/level2/README-function-args-by-value.md
+usr/doc/clazy-1.14/level2/README-global-const-char-pointer.md
+usr/doc/clazy-1.14/level2/README-implicit-casts.md
+usr/doc/clazy-1.14/level2/README-missing-qobject-macro.md
+usr/doc/clazy-1.14/level2/README-missing-typeinfo.md
+usr/doc/clazy-1.14/level2/README-old-style-connect.md
+usr/doc/clazy-1.14/level2/README-qstring-allocations.md
+usr/doc/clazy-1.14/level2/README-returning-void-expression.md
+usr/doc/clazy-1.14/level2/README-rule-of-three.md
+usr/doc/clazy-1.14/level2/README-static-pmf.md
+usr/doc/clazy-1.14/level2/README-virtual-call-ctor.md
+usr/doc/clazy-1.14/manuallevel/
+usr/doc/clazy-1.14/manuallevel/README-assert-with-side-effects.md
+usr/doc/clazy-1.14/manuallevel/README-container-inside-loop.md
+usr/doc/clazy-1.14/manuallevel/README-detaching-member.md
+usr/doc/clazy-1.14/manuallevel/README-heap-allocated-small-trivial-type.md
+usr/doc/clazy-1.14/manuallevel/README-ifndef-define-typo.md
+usr/doc/clazy-1.14/manuallevel/README-isempty-vs-count.md
+usr/doc/clazy-1.14/manuallevel/README-jni-signatures.md
+usr/doc/clazy-1.14/manuallevel/README-qbytearray-conversion-to-c-style.md
+usr/doc/clazy-1.14/manuallevel/README-qhash-with-char-pointer-key.md
+usr/doc/clazy-1.14/manuallevel/README-qproperty-type-mismatch.md
+usr/doc/clazy-1.14/manuallevel/README-qrequiredresult-candidates.md
+usr/doc/clazy-1.14/manuallevel/README-qstring-varargs.md
+usr/doc/clazy-1.14/manuallevel/README-qt-keyword-emit.md
+usr/doc/clazy-1.14/manuallevel/README-qt-keywords.md
+usr/doc/clazy-1.14/manuallevel/README-qt6-deprecated-api-fixes.md
+usr/doc/clazy-1.14/manuallevel/README-qt6-fwd-fixes.md
+usr/doc/clazy-1.14/manuallevel/README-qt6-header-fixes.md
+usr/doc/clazy-1.14/manuallevel/README-qt6-qhash-signature.md
+usr/doc/clazy-1.14/manuallevel/README-qt6-qlatin1stringchar-to-u.md
+usr/doc/clazy-1.14/manuallevel/README-qvariant-template-instantiation.md
+usr/doc/clazy-1.14/manuallevel/README-raw-environment-function.md
+usr/doc/clazy-1.14/manuallevel/README-reserve-candidates.md
+usr/doc/clazy-1.14/manuallevel/README-sanitize-inline-keyword.md
+usr/doc/clazy-1.14/manuallevel/README-signal-with-return-value.md
+usr/doc/clazy-1.14/manuallevel/README-thread-with-slots.md
+usr/doc/clazy-1.14/manuallevel/README-tr-non-literal.md
+usr/doc/clazy-1.14/manuallevel/README-unexpected-flag-enumerator-value.md
+usr/doc/clazy-1.14/manuallevel/README-unneeded-cast.md
+usr/doc/clazy-1.14/manuallevel/README-unused-result-check.md
+usr/doc/clazy-1.14/manuallevel/README-use-arrow-operator-instead-of-data.md
+usr/doc/clazy-1.14/manuallevel/README-use-chrono-in-qtimer.md
+usr/doc/clazy-1.14/manuallevel/README-used-qunused-variable.md
+usr/lib64/
+usr/lib64/ClazyPlugin.so
+usr/man/
+usr/man/man1/
+usr/man/man1/clazy.1.gz
+usr/share/
+usr/share/metainfo/
+usr/share/metainfo/org.kde.clazy.metainfo.xml
+
+Slackware package /tmp/clazy/clazy-1.14-x86_64-1_rtz.tlz created.
+
+Create shared object file for clazy-1.14-x86_64-1_rtz.tlz
+Creating /tmp/clazy/clazy-1.14-x86_64-1_rtz.tlz.so.file using /tmp/clazy/clazy-1.14-x86_64-1_rtz.tlz
+Successfully created /tmp/clazy/clazy-1.14-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in clazy.tar.lz4 format.
+/tmp/clazy /tmp/clazy
+/tmp/clazy
+BIN_NAME
+README
+clazy-1.14-x86_64-1_rtz.tlz
+clazy-1.14-x86_64-1_rtz.tlz.md5
+clazy-1.14-x86_64-1_rtz.tlz.so.file
+clazy-1.14-x86_64-1_rtz.tlz.txt
+makepkg-clazy.log
+clazy build finished. Procced to installation...
+
++========================================================================================+
+| Upgrading clazy-1.14-x86_64-1_rtz package using /tmp/clazy/clazy-1.14-x86_64-1_rtz.tlz |
++========================================================================================+
+
+Pre-installing package clazy-1.14-x86_64-1_rtz...
+Removing package: clazy-1.14-x86_64-1_rtz-upgraded-2025-05-15,01:33:32
+Installing package clazy-1.14-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# clazy (Qt static code analyzer based on Clang)
+#
+# clazy is a compiler plugin which allows clang to understand Qt
+# semantics. You get more than 50 Qt related compiler warnings,
+# ranging from unneeded memory allocations to misusage of API,
+# including fix-its for automatic refactoring.
+#
+# https://invent.kde.org/sdk/clazy
+Executing install script for clazy-1.14-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package clazy-1.14-x86_64-1_rtz.tlz installed.
+Package clazy-1.14-x86_64-1_rtz upgraded with new package /tmp/clazy/clazy-1.14-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'clazy-1.14.tar.xz': No such file or directory
