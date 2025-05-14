@@ -1,0 +1,1964 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: cmake	doxygen		wayland-protocols
+cmake is already installed!
+doxygen is already installed!
+wayland-protocols is already installed!
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-15 00:20:50--  https://github.com/maliit/framework/archive/2.3.0/framework-2.3.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/maliit/framework/tar.gz/refs/tags/2.3.0 [following]
+--2025-05-15 00:20:50--  https://codeload.github.com/maliit/framework/tar.gz/refs/tags/2.3.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘framework-2.3.0.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  431K
+    50K .......... .......... .......... .......... ..........  867K
+   100K .......... .......... .......... .......... .......... 4.76M
+   150K .......... .......... .......... .......... .......... 7.34M
+   200K .......... .......... .......... .......... .......... 1.01M
+   250K .......... .......... .......... .......... .......... 5.97M
+   300K .......... .......... .......... .......... .......... 5.10M
+   350K .......... .......... .......... .......... ..........  772K
+   400K .......... .......... .......... .......... .......... 1.69M
+   450K .......... .......... .......... .......... .......... 86.3M
+   500K .......... .......... .......... .......... .......... 88.6M
+   550K .......... .......... ......                           1.02M=0.4s
+
+2025-05-15 00:20:51 (1.49 MB/s) - ‘framework-2.3.0.tar.gz’ saved [589886]
+
+Found file: framework-2.3.0.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+framework-2.3.0/
+framework-2.3.0/.github/
+framework-2.3.0/.github/workflows/
+framework-2.3.0/.github/workflows/main.yaml
+framework-2.3.0/.gitignore
+framework-2.3.0/CMakeLists.txt
+framework-2.3.0/INSTALL.local
+framework-2.3.0/LICENSE.LGPL
+framework-2.3.0/NEWS
+framework-2.3.0/README.md
+framework-2.3.0/cmake/
+framework-2.3.0/cmake/ECMFindModuleHelpers.cmake
+framework-2.3.0/cmake/FindGIO.cmake
+framework-2.3.0/cmake/FindGLib2.cmake
+framework-2.3.0/cmake/FindQtWaylandScanner.cmake
+framework-2.3.0/cmake/FindUDev.cmake
+framework-2.3.0/cmake/FindWayland.cmake
+framework-2.3.0/cmake/FindWaylandProtocols.cmake
+framework-2.3.0/cmake/FindWaylandScanner.cmake
+framework-2.3.0/cmake/FindXCB.cmake
+framework-2.3.0/common/
+framework-2.3.0/common/.gitignore
+framework-2.3.0/common/maliit-framework.pc.in
+framework-2.3.0/common/maliit-framework.prf.in
+framework-2.3.0/common/maliit/
+framework-2.3.0/common/maliit/namespace.h
+framework-2.3.0/common/maliit/namespaceinternal.h
+framework-2.3.0/common/maliit/settingdata.cpp
+framework-2.3.0/common/maliit/settingdata.h
+framework-2.3.0/connection/
+framework-2.3.0/connection/.gitignore
+framework-2.3.0/connection/README.weston
+framework-2.3.0/connection/connectionfactory.cpp
+framework-2.3.0/connection/connectionfactory.h
+framework-2.3.0/connection/dbuscustomarguments.cpp
+framework-2.3.0/connection/dbuscustomarguments.h
+framework-2.3.0/connection/dbusinputcontextconnection.cpp
+framework-2.3.0/connection/dbusinputcontextconnection.h
+framework-2.3.0/connection/dbusserverconnection.cpp
+framework-2.3.0/connection/dbusserverconnection.h
+framework-2.3.0/connection/inputcontextdbusaddress.cpp
+framework-2.3.0/connection/inputcontextdbusaddress.h
+framework-2.3.0/connection/mimserverconnection.cpp
+framework-2.3.0/connection/mimserverconnection.h
+framework-2.3.0/connection/minputcontextconnection.cpp
+framework-2.3.0/connection/minputcontextconnection.h
+framework-2.3.0/connection/org.maliit.server.service.in
+framework-2.3.0/connection/serverdbusaddress.cpp
+framework-2.3.0/connection/serverdbusaddress.h
+framework-2.3.0/connection/waylandinputmethodconnection.cpp
+framework-2.3.0/connection/waylandinputmethodconnection.h
+framework-2.3.0/dbus_interfaces/
+framework-2.3.0/dbus_interfaces/minputmethodcontext1interface.xml
+framework-2.3.0/dbus_interfaces/minputmethodserver1interface.xml
+framework-2.3.0/doc/
+framework-2.3.0/doc/.gitignore
+framework-2.3.0/doc/Doxyfile.in
+framework-2.3.0/doc/aliases.sed
+framework-2.3.0/doc/images/
+framework-2.3.0/doc/images/architecture-overview.png
+framework-2.3.0/doc/images/maliit-fw-components.odg
+framework-2.3.0/doc/images/maliit-fw-components.png
+framework-2.3.0/doc/src/
+framework-2.3.0/doc/src/architecture.dox
+framework-2.3.0/doc/src/common.dox
+framework-2.3.0/doc/src/extensions.dox
+framework-2.3.0/doc/src/footer.html
+framework-2.3.0/doc/src/header.html
+framework-2.3.0/doc/src/images/
+framework-2.3.0/doc/src/images/.dummy
+framework-2.3.0/doc/src/images/dummyimage
+framework-2.3.0/doc/src/internals.dox
+framework-2.3.0/doc/src/libmaliit.dox
+framework-2.3.0/doc/src/mainpage.dox
+framework-2.3.0/doc/src/maliitserver.dox
+framework-2.3.0/doc/src/meego-im.css
+framework-2.3.0/doc/src/pluginapi.dox
+framework-2.3.0/doc/src/pluginsystem.dox
+framework-2.3.0/doc/src/plugintutorial.dox
+framework-2.3.0/doc/src/toolbarxml.dox
+framework-2.3.0/examples/
+framework-2.3.0/examples/README
+framework-2.3.0/examples/apps/
+framework-2.3.0/examples/apps/plainqt/
+framework-2.3.0/examples/apps/plainqt/.gitignore
+framework-2.3.0/examples/apps/plainqt/mainwindow.cpp
+framework-2.3.0/examples/apps/plainqt/mainwindow.h
+framework-2.3.0/examples/apps/plainqt/plainqt.cpp
+framework-2.3.0/examples/apps/qml/
+framework-2.3.0/examples/apps/qml/enterKeyCustomization.qml
+framework-2.3.0/examples/plugins/
+framework-2.3.0/examples/plugins/cxx/
+framework-2.3.0/examples/plugins/cxx/helloworld/
+framework-2.3.0/examples/plugins/cxx/helloworld/helloworldinputmethod.cpp
+framework-2.3.0/examples/plugins/cxx/helloworld/helloworldinputmethod.h
+framework-2.3.0/examples/plugins/cxx/helloworld/helloworldplugin.cpp
+framework-2.3.0/examples/plugins/cxx/helloworld/helloworldplugin.h
+framework-2.3.0/examples/plugins/cxx/helloworld/helloworldplugin.json
+framework-2.3.0/examples/plugins/cxx/override/
+framework-2.3.0/examples/plugins/cxx/override/overrideinputmethod.cpp
+framework-2.3.0/examples/plugins/cxx/override/overrideinputmethod.h
+framework-2.3.0/examples/plugins/cxx/override/overrideplugin.cpp
+framework-2.3.0/examples/plugins/cxx/override/overrideplugin.h
+framework-2.3.0/examples/plugins/cxx/override/overrideplugin.json
+framework-2.3.0/input-context/
+framework-2.3.0/input-context/main.cpp
+framework-2.3.0/input-context/maliit.json
+framework-2.3.0/input-context/minputcontext.cpp
+framework-2.3.0/input-context/minputcontext.h
+framework-2.3.0/maliit-glib/
+framework-2.3.0/maliit-glib/.gitignore
+framework-2.3.0/maliit-glib/MaliitGLibConfig.cmake.in
+framework-2.3.0/maliit-glib/maliit-docs.xml
+framework-2.3.0/maliit-glib/maliit-glib-docs.pro
+framework-2.3.0/maliit-glib/maliit-glib.pc.in
+framework-2.3.0/maliit-glib/maliit-sections.txt
+framework-2.3.0/maliit-glib/maliitattributeextension.c
+framework-2.3.0/maliit-glib/maliitattributeextension.h
+framework-2.3.0/maliit-glib/maliitattributeextensionprivate.h
+framework-2.3.0/maliit-glib/maliitattributeextensionregistry.c
+framework-2.3.0/maliit-glib/maliitattributeextensionregistry.h
+framework-2.3.0/maliit-glib/maliitbus.c
+framework-2.3.0/maliit-glib/maliitbus.h
+framework-2.3.0/maliit-glib/maliitbusprivate.h
+framework-2.3.0/maliit-glib/maliitinputmethod.c
+framework-2.3.0/maliit-glib/maliitinputmethod.h
+framework-2.3.0/maliit-glib/maliitmarshallers.list
+framework-2.3.0/maliit-glib/maliitpluginsettings.c
+framework-2.3.0/maliit-glib/maliitpluginsettings.h
+framework-2.3.0/maliit-glib/maliitpluginsettingsprivate.h
+framework-2.3.0/maliit-glib/maliitsettingdata.c
+framework-2.3.0/maliit-glib/maliitsettingdata.h
+framework-2.3.0/maliit-glib/maliitsettingsentry.c
+framework-2.3.0/maliit-glib/maliitsettingsentry.h
+framework-2.3.0/maliit-glib/maliitsettingsentryprivate.h
+framework-2.3.0/maliit-glib/maliitsettingsmanager.c
+framework-2.3.0/maliit-glib/maliitsettingsmanager.h
+framework-2.3.0/passthroughserver/
+framework-2.3.0/passthroughserver/.gitignore
+framework-2.3.0/passthroughserver/main.cpp
+framework-2.3.0/src/
+framework-2.3.0/src/.gitignore
+framework-2.3.0/src/MaliitPluginsConfig.cmake.in
+framework-2.3.0/src/abstractplatform.cpp
+framework-2.3.0/src/abstractplatform.h
+framework-2.3.0/src/logging.cpp
+framework-2.3.0/src/logging.h
+framework-2.3.0/src/maliit-defines.prf.in
+framework-2.3.0/src/maliit-plugins.pc.in
+framework-2.3.0/src/maliit-plugins.prf.in
+framework-2.3.0/src/maliit-server.pc.in
+framework-2.3.0/src/maliit/
+framework-2.3.0/src/maliit/plugins/
+framework-2.3.0/src/maliit/plugins/abstractinputmethod.cpp
+framework-2.3.0/src/maliit/plugins/abstractinputmethod.h
+framework-2.3.0/src/maliit/plugins/abstractinputmethodhost.cpp
+framework-2.3.0/src/maliit/plugins/abstractinputmethodhost.h
+framework-2.3.0/src/maliit/plugins/abstractpluginsetting.h
+framework-2.3.0/src/maliit/plugins/attributeextension.cpp
+framework-2.3.0/src/maliit/plugins/attributeextension.h
+framework-2.3.0/src/maliit/plugins/attributeextension_p.h
+framework-2.3.0/src/maliit/plugins/extensionevent.cpp
+framework-2.3.0/src/maliit/plugins/extensionevent.h
+framework-2.3.0/src/maliit/plugins/extensionevent_p.h
+framework-2.3.0/src/maliit/plugins/inputmethodplugin.h
+framework-2.3.0/src/maliit/plugins/keyoverride.cpp
+framework-2.3.0/src/maliit/plugins/keyoverride.h
+framework-2.3.0/src/maliit/plugins/keyoverride_p.h
+framework-2.3.0/src/maliit/plugins/keyoverridedata.cpp
+framework-2.3.0/src/maliit/plugins/keyoverridedata.h
+framework-2.3.0/src/maliit/plugins/plugindescription.cpp
+framework-2.3.0/src/maliit/plugins/plugindescription.h
+framework-2.3.0/src/maliit/plugins/subviewdescription.cpp
+framework-2.3.0/src/maliit/plugins/subviewdescription.h
+framework-2.3.0/src/maliit/plugins/updateevent.cpp
+framework-2.3.0/src/maliit/plugins/updateevent.h
+framework-2.3.0/src/maliit/plugins/updateevent_p.h
+framework-2.3.0/src/maliit/plugins/updatereceiver.cpp
+framework-2.3.0/src/maliit/plugins/updatereceiver.h
+framework-2.3.0/src/maliit/standaloneinputmethod.cpp
+framework-2.3.0/src/maliit/standaloneinputmethod.h
+framework-2.3.0/src/maliit/standaloneinputmethodhost.cpp
+framework-2.3.0/src/maliit/standaloneinputmethodhost.h
+framework-2.3.0/src/mattributeextensionid.cpp
+framework-2.3.0/src/mattributeextensionid.h
+framework-2.3.0/src/mattributeextensionmanager.cpp
+framework-2.3.0/src/mattributeextensionmanager.h
+framework-2.3.0/src/mimhwkeyboardtracker.cpp
+framework-2.3.0/src/mimhwkeyboardtracker.h
+framework-2.3.0/src/mimhwkeyboardtracker_p.h
+framework-2.3.0/src/mimhwkeyboardtracker_stub.cpp
+framework-2.3.0/src/mimonscreenplugins.cpp
+framework-2.3.0/src/mimonscreenplugins.h
+framework-2.3.0/src/mimpluginmanager.cpp
+framework-2.3.0/src/mimpluginmanager.h
+framework-2.3.0/src/mimpluginmanager_p.h
+framework-2.3.0/src/mimserver.cpp
+framework-2.3.0/src/mimserver.h
+framework-2.3.0/src/mimserveroptions.cpp
+framework-2.3.0/src/mimserveroptions.h
+framework-2.3.0/src/mimsettings.cpp
+framework-2.3.0/src/mimsettings.h
+framework-2.3.0/src/mimsettingsqsettings.cpp
+framework-2.3.0/src/mimsettingsqsettings.h
+framework-2.3.0/src/mimsubviewoverride.cpp
+framework-2.3.0/src/mimsubviewoverride.h
+framework-2.3.0/src/minputmethodhost.cpp
+framework-2.3.0/src/minputmethodhost.h
+framework-2.3.0/src/msharedattributeextensionmanager.cpp
+framework-2.3.0/src/msharedattributeextensionmanager.h
+framework-2.3.0/src/qt/
+framework-2.3.0/src/qt/plugins/
+framework-2.3.0/src/qt/plugins/shellintegration/
+framework-2.3.0/src/qt/plugins/shellintegration/inputpanelshell.json
+framework-2.3.0/src/qt/plugins/shellintegration/inputpanelshellplugin.cpp
+framework-2.3.0/src/qt/plugins/shellintegration/qwaylandinputpanelshellintegration.cpp
+framework-2.3.0/src/qt/plugins/shellintegration/qwaylandinputpanelshellintegration.h
+framework-2.3.0/src/qt/plugins/shellintegration/qwaylandinputpanelsurface.cpp
+framework-2.3.0/src/qt/plugins/shellintegration/qwaylandinputpanelsurface.h
+framework-2.3.0/src/quick/
+framework-2.3.0/src/quick/inputmethodquick.cpp
+framework-2.3.0/src/quick/inputmethodquick.h
+framework-2.3.0/src/quick/inputmethodquickplugin.cpp
+framework-2.3.0/src/quick/inputmethodquickplugin.h
+framework-2.3.0/src/quick/keyoverridequick.cpp
+framework-2.3.0/src/quick/keyoverridequick.h
+framework-2.3.0/src/quick/keyoverridequick_p.h
+framework-2.3.0/src/quick/maliitquick.h
+framework-2.3.0/src/unknownplatform.cpp
+framework-2.3.0/src/unknownplatform.h
+framework-2.3.0/src/waylandplatform.cpp
+framework-2.3.0/src/waylandplatform.h
+framework-2.3.0/src/windowdata.cpp
+framework-2.3.0/src/windowdata.h
+framework-2.3.0/src/windowgroup.cpp
+framework-2.3.0/src/windowgroup.h
+framework-2.3.0/src/xcbplatform.cpp
+framework-2.3.0/src/xcbplatform.h
+framework-2.3.0/tests/
+framework-2.3.0/tests/dummyimplugin/
+framework-2.3.0/tests/dummyimplugin/dummyimplugin.cpp
+framework-2.3.0/tests/dummyimplugin/dummyimplugin.h
+framework-2.3.0/tests/dummyimplugin/dummyimplugin.json
+framework-2.3.0/tests/dummyimplugin/dummyinputmethod.cpp
+framework-2.3.0/tests/dummyimplugin/dummyinputmethod.h
+framework-2.3.0/tests/dummyimplugin2/
+framework-2.3.0/tests/dummyimplugin2/dummyimplugin2.cpp
+framework-2.3.0/tests/dummyimplugin2/dummyimplugin2.h
+framework-2.3.0/tests/dummyimplugin2/dummyimplugin2.json
+framework-2.3.0/tests/dummyimplugin3/
+framework-2.3.0/tests/dummyimplugin3/dummyimplugin3.cpp
+framework-2.3.0/tests/dummyimplugin3/dummyimplugin3.h
+framework-2.3.0/tests/dummyimplugin3/dummyimplugin3.json
+framework-2.3.0/tests/dummyimplugin3/dummyinputmethod3.cpp
+framework-2.3.0/tests/dummyimplugin3/dummyinputmethod3.h
+framework-2.3.0/tests/dummyplugin/
+framework-2.3.0/tests/dummyplugin/dummyplugin.cpp
+framework-2.3.0/tests/dummyplugin/dummyplugin.h
+framework-2.3.0/tests/dummyplugin/dummyplugin.json
+framework-2.3.0/tests/ft_exampleplugin/
+framework-2.3.0/tests/ft_exampleplugin/.gitignore
+framework-2.3.0/tests/ft_exampleplugin/ft_exampleplugin.cpp
+framework-2.3.0/tests/ft_exampleplugin/ft_exampleplugin.h
+framework-2.3.0/tests/ft_mimpluginmanager/
+framework-2.3.0/tests/ft_mimpluginmanager/.gitignore
+framework-2.3.0/tests/ft_mimpluginmanager/ft_mimpluginmanager.cpp
+framework-2.3.0/tests/ft_mimpluginmanager/ft_mimpluginmanager.h
+framework-2.3.0/tests/qmlplugin/
+framework-2.3.0/tests/qmlplugin/helloworld.qml
+framework-2.3.0/tests/sanitychecks/
+framework-2.3.0/tests/sanitychecks/.gitignore
+framework-2.3.0/tests/sanitychecks/sanitychecks.cpp
+framework-2.3.0/tests/sanitychecks/sanitychecks.h
+framework-2.3.0/tests/stubs/
+framework-2.3.0/tests/stubs/fakeproperty.cpp
+framework-2.3.0/tests/stubs/fakeproperty.h
+framework-2.3.0/tests/stubs/mkeyboardstatetracker_stub.h
+framework-2.3.0/tests/ut_maliit_glib_settings/
+framework-2.3.0/tests/ut_maliit_glib_settings/.gitignore
+framework-2.3.0/tests/ut_maliit_glib_settings/mockmaliitserver.c
+framework-2.3.0/tests/ut_maliit_glib_settings/mockmaliitserver.h
+framework-2.3.0/tests/ut_maliit_glib_settings/ut_maliit_glib_settings.c
+framework-2.3.0/tests/ut_mattributeextensionmanager/
+framework-2.3.0/tests/ut_mattributeextensionmanager/.gitignore
+framework-2.3.0/tests/ut_mattributeextensionmanager/toolbar1.xml
+framework-2.3.0/tests/ut_mattributeextensionmanager/toolbar2.xml
+framework-2.3.0/tests/ut_mattributeextensionmanager/ut_mattributeextensionmanager.cpp
+framework-2.3.0/tests/ut_mattributeextensionmanager/ut_mattributeextensionmanager.h
+framework-2.3.0/tests/ut_mimonscreenplugins/
+framework-2.3.0/tests/ut_mimonscreenplugins/.gitignore
+framework-2.3.0/tests/ut_mimonscreenplugins/ut_mimonscreenplugins.cpp
+framework-2.3.0/tests/ut_mimonscreenplugins/ut_mimonscreenplugins.h
+framework-2.3.0/tests/ut_mimpluginmanager/
+framework-2.3.0/tests/ut_mimpluginmanager/.gitignore
+framework-2.3.0/tests/ut_mimpluginmanager/toolbar1.xml
+framework-2.3.0/tests/ut_mimpluginmanager/toolbar2.xml
+framework-2.3.0/tests/ut_mimpluginmanager/ut_mimpluginmanager.cpp
+framework-2.3.0/tests/ut_mimpluginmanager/ut_mimpluginmanager.h
+framework-2.3.0/tests/ut_mimpluginmanagerconfig/
+framework-2.3.0/tests/ut_mimpluginmanagerconfig/.gitignore
+framework-2.3.0/tests/ut_mimpluginmanagerconfig/ut_mimpluginmanagerconfig.cpp
+framework-2.3.0/tests/ut_mimpluginmanagerconfig/ut_mimpluginmanagerconfig.h
+framework-2.3.0/tests/ut_mimserveroptions/
+framework-2.3.0/tests/ut_mimserveroptions/.gitignore
+framework-2.3.0/tests/ut_mimserveroptions/ut_mimserveroptions.cpp
+framework-2.3.0/tests/ut_mimserveroptions/ut_mimserveroptions.h
+framework-2.3.0/tests/ut_mimsettings/
+framework-2.3.0/tests/ut_mimsettings/.gitignore
+framework-2.3.0/tests/ut_mimsettings/ut_mimsettings.cpp
+framework-2.3.0/tests/ut_mimsettings/ut_mimsettings.h
+framework-2.3.0/tests/ut_minputmethodquickplugin/
+framework-2.3.0/tests/ut_minputmethodquickplugin/.gitignore
+framework-2.3.0/tests/ut_minputmethodquickplugin/ut_minputmethodquickplugin.cpp
+framework-2.3.0/tests/ut_minputmethodquickplugin/ut_minputmethodquickplugin.h
+framework-2.3.0/tests/ut_mkeyoverride/
+framework-2.3.0/tests/ut_mkeyoverride/.gitignore
+framework-2.3.0/tests/ut_mkeyoverride/ut_mkeyoverride.cpp
+framework-2.3.0/tests/ut_mkeyoverride/ut_mkeyoverride.h
+framework-2.3.0/tests/utils/
+framework-2.3.0/tests/utils/core-utils.cpp
+framework-2.3.0/tests/utils/core-utils.h
+framework-2.3.0/tests/utils/gui-utils.cpp
+framework-2.3.0/tests/utils/gui-utils.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+patching file tests/ut_mimserveroptions/ut_mimserveroptions.cpp
+patching file connection/serverdbusaddress.cpp
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Found WaylandProtocols: //usr/share/wayland-protocols
+-- Found QtWaylandScanner: /usr/lib64/qt5/bin/qtwaylandscanner
+-- Found Wayland_Client: /usr/lib64/libwayland-client.so (found version "1.23.1")
+-- Found Wayland_Server: /usr/lib64/libwayland-server.so (found version "1.23.1")
+-- Found Wayland_Cursor: /usr/lib64/libwayland-cursor.so (found version "1.23.1")
+-- Found Wayland_Egl: /usr/lib64/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so;/usr/lib64/libwayland-cursor.so;/usr/lib64/libwayland-egl.so (found version "1.23.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Checking for module 'xkbcommon'
+--   Found xkbcommon, version 1.9.2
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-xfixes.so
+-- Found UDev: /usr/include (found version "251")
+-- Found GLib2: /usr/lib64/libglib-2.0.so
+-- Found GIO: /usr/lib64/libgio-2.0.so;/usr/lib64/libgobject-2.0.so;/usr/lib64/libglib-2.0.so
+-- Found Doxygen: /usr/bin/doxygen (found version "1.13.2") found components: doxygen dot
+-- Configuring done (1.6s)
+-- Generating done (0.2s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    enable-wayland-gtk
+
+
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build
+[1/185] Generating wayland-input-method-unstable-v1-client-protocol.h
+[2/185] Generating wayland-input-method-unstable-v1-protocol.c
+Using "code" is deprecated - use private-code or public-code.
+See the help page for details.
+[3/185] Generating qwayland-input-method-unstable-v1.h
+[4/185] Generating qwayland-input-method-unstable-v1.cpp
+[5/185] Automatic MOC for target maliit-common
+[6/185] Automatic MOC for target maliit-glib
+[7/185] Building CXX object CMakeFiles/maliit-common.dir/maliit-common_autogen/mocs_compilation.cpp.o
+[8/185] Generating maliit-glib/maliitcontext.c, maliit-glib/maliitcontext.h
+[9/185] Generating maliitmarshallers.h
+INFO: Reading /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/maliit-glib/maliitmarshallers.list...
+[10/185] Generating maliitmarshallers.c
+INFO: Reading /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/maliit-glib/maliitmarshallers.list...
+[11/185] Generating maliit-glib/maliitserver.c, maliit-glib/maliitserver.h
+[12/185] Building CXX object CMakeFiles/maliit-glib.dir/maliit-glib_autogen/mocs_compilation.cpp.o
+[13/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitattributeextension.c.o
+[14/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitsettingdata.c.o
+[15/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitpluginsettings.c.o
+[16/185] Automatic MOC for target test-stubs
+[17/185] Building C object CMakeFiles/maliit-glib.dir/maliitmarshallers.c.o
+[18/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitbus.c.o
+[19/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitsettingsentry.c.o
+[20/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitinputmethod.c.o
+[21/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitsettingsmanager.c.o
+[22/185] Automatic MOC for target inputpanel-shell
+[23/185] Building CXX object CMakeFiles/inputpanel-shell.dir/inputpanel-shell_autogen/mocs_compilation.cpp.o
+[24/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitattributeextensionregistry.c.o
+[25/185] Building C object CMakeFiles/inputpanel-shell.dir/wayland-input-method-unstable-v1-protocol.c.o
+[26/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitcontext.c.o
+[27/185] Building C object CMakeFiles/maliit-glib.dir/maliit-glib/maliitserver.c.o
+[28/185] Linking CXX shared library libmaliit-glib.so.2.3.0
+[29/185] Creating library symlink libmaliit-glib.so.2 libmaliit-glib.so
+[30/185] Automatic MOC for target ut_maliit_glib_settings
+[31/185] Building CXX object CMakeFiles/ut_maliit_glib_settings.dir/ut_maliit_glib_settings_autogen/mocs_compilation.cpp.o
+[32/185] Building C object CMakeFiles/ut_maliit_glib_settings.dir/tests/ut_maliit_glib_settings/ut_maliit_glib_settings.c.o
+[33/185] Building C object CMakeFiles/ut_maliit_glib_settings.dir/tests/ut_maliit_glib_settings/mockmaliitserver.c.o
+[34/185] Linking CXX executable ut_maliit_glib_settings
+[35/185] Building CXX object CMakeFiles/inputpanel-shell.dir/qwayland-input-method-unstable-v1.cpp.o
+[36/185] Building CXX object CMakeFiles/test-stubs.dir/test-stubs_autogen/mocs_compilation.cpp.o
+[37/185] Building CXX object CMakeFiles/test-stubs.dir/tests/stubs/fakeproperty.cpp.o
+[38/185] Linking CXX static library libtest-stubs.a
+[39/185] Building CXX object CMakeFiles/maliit-common.dir/common/maliit/settingdata.cpp.o
+[40/185] Linking CXX static library libmaliit-common.a
+[41/185] Building CXX object CMakeFiles/inputpanel-shell.dir/src/qt/plugins/shellintegration/qwaylandinputpanelsurface.cpp.o
+[42/185] Generating API documentation with Doxygen
+warning: Tag 'OUTPUT_TEXT_DIRECTION' at line 102 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'CLANG_ASSISTED_PARSING' at line 1126 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' belongs to an option that was not enabled at compile time.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u", or recompile doxygen with this feature enabled.
+warning: Tag 'CLANG_ADD_INC_PATHS' at line 1132 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' belongs to an option that was not enabled at compile time.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u", or recompile doxygen with this feature enabled.
+warning: Tag 'CLANG_OPTIONS' at line 1140 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' belongs to an option that was not enabled at compile time.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u", or recompile doxygen with this feature enabled.
+warning: Tag 'CLANG_DATABASE_PATH' at line 1153 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' belongs to an option that was not enabled at compile time.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u", or recompile doxygen with this feature enabled.
+warning: Tag 'HTML_TIMESTAMP' at line 1300 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'FORMULA_TRANSPARENT' at line 1605 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'LATEX_SOURCE_CODE' at line 1918 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'LATEX_TIMESTAMP' at line 1934 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'RTF_SOURCE_CODE' at line 2008 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'DOCBOOK_PROGRAMLISTING' at line 2113 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'CLASS_DIAGRAMS' at line 2300 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'DOT_FONTNAME' at line 2342 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'DOT_FONTSIZE' at line 2349 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+warning: Tag 'DOT_TRANSPARENT' at line 2597 of file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/work/framework-2.3.0/build/Doxyfile' has become obsolete.
+         To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+[43/185] Automatic MOC for target maliit-connection
+[44/185] Generating minputmethodcontext1interfaceadaptor.cpp, minputmethodcontext1interfaceadaptor.h
+[45/185] Generating minputmethodcontext1interface_interface.cpp, minputmethodcontext1interface_interface.h
+[46/185] Generating minputmethodserver1interface_interface.cpp, minputmethodserver1interface_interface.h
+[47/185] Generating minputmethodserver1interfaceadaptor.cpp, minputmethodserver1interfaceadaptor.h
+[48/185] Generating minputmethodcontext1interface_interface.moc
+[49/185] Generating minputmethodcontext1interfaceadaptor.moc
+[50/185] Generating minputmethodserver1interface_interface.moc
+[51/185] Generating minputmethodserver1interfaceadaptor.moc
+[52/185] Building CXX object CMakeFiles/inputpanel-shell.dir/src/qt/plugins/shellintegration/qwaylandinputpanelshellintegration.cpp.o
+[53/185] Building CXX object CMakeFiles/inputpanel-shell.dir/src/qt/plugins/shellintegration/inputpanelshellplugin.cpp.o
+[54/185] Building C object CMakeFiles/maliit-connection.dir/wayland-input-method-unstable-v1-protocol.c.o
+[55/185] Linking CXX shared module libinputpanel-shell.so
+[56/185] Building CXX object CMakeFiles/maliit-connection.dir/qwayland-input-method-unstable-v1.cpp.o
+[57/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/inputcontextdbusaddress.cpp.o
+[58/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/dbuscustomarguments.cpp.o
+[59/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/serverdbusaddress.cpp.o
+[60/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/mimserverconnection.cpp.o
+[61/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/connectionfactory.cpp.o
+[62/185] Building CXX object CMakeFiles/maliit-connection.dir/minputmethodcontext1interfaceadaptor.cpp.o
+[63/185] Building CXX object CMakeFiles/maliit-connection.dir/minputmethodserver1interfaceadaptor.cpp.o
+[64/185] Building CXX object CMakeFiles/maliit-connection.dir/maliit-connection_autogen/mocs_compilation.cpp.o
+[65/185] Building CXX object CMakeFiles/maliit-connection.dir/minputmethodcontext1interface_interface.cpp.o
+[66/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/minputcontextconnection.cpp.o
+[67/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/waylandinputmethodconnection.cpp.o
+[68/185] Building CXX object CMakeFiles/maliit-connection.dir/minputmethodserver1interface_interface.cpp.o
+[69/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/dbusinputcontextconnection.cpp.o
+[70/185] Building CXX object CMakeFiles/maliit-connection.dir/connection/dbusserverconnection.cpp.o
+[71/185] Linking CXX static library libmaliit-connection.a
+[72/185] Automatic MOC for target test-utils
+[73/185] Building CXX object CMakeFiles/test-utils.dir/test-utils_autogen/mocs_compilation.cpp.o
+[74/185] Automatic MOC for target maliitplatforminputcontextplugin
+[75/185] Automatic MOC for target maliit-plugins
+[76/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/subviewdescription.cpp.o
+[77/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/quick/inputmethodquickplugin.cpp.o
+[78/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/quick/keyoverridequick.cpp.o
+[79/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/abstractinputmethodhost.cpp.o
+[80/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/extensionevent.cpp.o
+[81/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/abstractplatform.cpp.o
+[82/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/keyoverride.cpp.o
+[83/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/plugindescription.cpp.o
+[84/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/updatereceiver.cpp.o
+[85/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/attributeextension.cpp.o
+[86/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/keyoverridedata.cpp.o
+[87/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/abstractinputmethod.cpp.o
+[88/185] Building CXX object CMakeFiles/maliitplatforminputcontextplugin.dir/input-context/main.cpp.o
+[89/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mattributeextensionid.cpp.o
+[90/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/logging.cpp.o
+[91/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mattributeextensionmanager.cpp.o
+[92/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mimsubviewoverride.cpp.o
+[93/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/unknownplatform.cpp.o
+[94/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/standaloneinputmethodhost.cpp.o
+[95/185] Building CXX object CMakeFiles/test-utils.dir/tests/utils/core-utils.cpp.o
+[96/185] Building CXX object CMakeFiles/maliitplatforminputcontextplugin.dir/maliitplatforminputcontextplugin_autogen/mocs_compilation.cpp.o
+[97/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mimserveroptions.cpp.o
+[98/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mimonscreenplugins.cpp.o
+[99/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/plugins/updateevent.cpp.o
+[100/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mimsettings.cpp.o
+[101/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/windowdata.cpp.o
+[102/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mimsettingsqsettings.cpp.o
+[103/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/windowgroup.cpp.o
+[104/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/maliit/standaloneinputmethod.cpp.o
+[105/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/msharedattributeextensionmanager.cpp.o
+[106/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/quick/inputmethodquick.cpp.o
+[107/185] Building CXX object CMakeFiles/test-utils.dir/tests/utils/gui-utils.cpp.o
+[108/185] Building CXX object CMakeFiles/maliitplatforminputcontextplugin.dir/input-context/minputcontext.cpp.o
+[109/185] Linking CXX static library libtest-utils.a
+[110/185] Building CXX object CMakeFiles/maliit-plugins.dir/maliit-plugins_autogen/mocs_compilation.cpp.o
+[111/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/xcbplatform.cpp.o
+[112/185] Linking CXX shared module libmaliitplatforminputcontextplugin.so
+[113/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mimhwkeyboardtracker.cpp.o
+[114/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/minputmethodhost.cpp.o
+[115/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/waylandplatform.cpp.o
+[116/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mimserver.cpp.o
+[117/185] Building CXX object CMakeFiles/maliit-plugins.dir/src/mimpluginmanager.cpp.o
+[118/185] Linking CXX shared library libmaliit-plugins.so.2.3.0
+[119/185] Creating library symlink libmaliit-plugins.so.2 libmaliit-plugins.so
+[120/185] Automatic MOC for target maliit-server
+[121/185] Building CXX object CMakeFiles/maliit-server.dir/maliit-server_autogen/mocs_compilation.cpp.o
+[122/185] Automatic MOC for target dummyimplugin3
+[123/185] Automatic MOC for target dummyplugin
+[124/185] Automatic MOC for target ut_mimserveroptions
+[125/185] Automatic MOC for target ut_mkeyoverride
+[126/185] Automatic MOC for target dummyimplugin
+[127/185] Automatic MOC for target ut_mimsettings
+[128/185] Automatic MOC for target dummyimplugin2
+[129/185] Automatic MOC for target ut_mattributeextensionmanager
+[130/185] Automatic MOC for target sanitychecks
+[131/185] Automatic MOC for target ut_mimonscreenplugins
+[132/185] Automatic MOC for target ft_exampleplugin
+[133/185] Automatic MOC for target ut_minputmethodquickplugin
+[134/185] Automatic MOC for target ut_mimpluginmanagerconfig
+[135/185] Building CXX object CMakeFiles/dummyimplugin3.dir/tests/dummyimplugin3/dummyimplugin3.cpp.o
+[136/185] Building CXX object CMakeFiles/dummyplugin.dir/dummyplugin_autogen/mocs_compilation.cpp.o
+[137/185] Building CXX object CMakeFiles/dummyimplugin3.dir/dummyimplugin3_autogen/mocs_compilation.cpp.o
+[138/185] Building CXX object CMakeFiles/dummyplugin.dir/tests/dummyplugin/dummyplugin.cpp.o
+[139/185] Building CXX object CMakeFiles/dummyimplugin.dir/tests/dummyimplugin/dummyimplugin.cpp.o
+[140/185] Building CXX object CMakeFiles/maliit-server.dir/passthroughserver/main.cpp.o
+[141/185] Building CXX object CMakeFiles/dummyimplugin3.dir/tests/dummyimplugin3/dummyinputmethod3.cpp.o
+[142/185] Building CXX object CMakeFiles/dummyimplugin.dir/dummyimplugin_autogen/mocs_compilation.cpp.o
+[143/185] Building CXX object CMakeFiles/dummyimplugin2.dir/tests/dummyimplugin2/dummyimplugin2.cpp.o
+[144/185] Building CXX object CMakeFiles/dummyimplugin.dir/tests/dummyimplugin/dummyinputmethod.cpp.o
+[145/185] Building CXX object CMakeFiles/dummyimplugin2.dir/dummyimplugin2_autogen/mocs_compilation.cpp.o
+[146/185] Linking CXX shared library tests/plugins/libdummyimplugin3.so
+[147/185] Linking CXX shared library tests/plugins/libdummyplugin.so
+[148/185] Linking CXX shared library tests/plugins/libdummyimplugin.so
+[149/185] Linking CXX shared library tests/plugins/libdummyimplugin2.so
+[150/185] Building CXX object CMakeFiles/ut_mattributeextensionmanager.dir/ut_mattributeextensionmanager_autogen/mocs_compilation.cpp.o
+[151/185] Linking CXX executable maliit-server
+[152/185] Automatic MOC for target ft_mimpluginmanager
+[153/185] Automatic MOC for target ut_mimpluginmanager
+[154/185] Building CXX object CMakeFiles/ut_mattributeextensionmanager.dir/tests/ut_mattributeextensionmanager/ut_mattributeextensionmanager.cpp.o
+[155/185] Building CXX object CMakeFiles/sanitychecks.dir/tests/sanitychecks/sanitychecks.cpp.o
+[156/185] Building CXX object CMakeFiles/ut_mimserveroptions.dir/ut_mimserveroptions_autogen/mocs_compilation.cpp.o
+[157/185] Building CXX object CMakeFiles/ut_mkeyoverride.dir/ut_mkeyoverride_autogen/mocs_compilation.cpp.o
+[158/185] Building CXX object CMakeFiles/sanitychecks.dir/sanitychecks_autogen/mocs_compilation.cpp.o
+[159/185] Building CXX object CMakeFiles/ut_mimonscreenplugins.dir/ut_mimonscreenplugins_autogen/mocs_compilation.cpp.o
+[160/185] Building CXX object CMakeFiles/ut_mkeyoverride.dir/tests/ut_mkeyoverride/ut_mkeyoverride.cpp.o
+[161/185] Building CXX object CMakeFiles/ut_mimserveroptions.dir/tests/ut_mimserveroptions/ut_mimserveroptions.cpp.o
+[162/185] Linking CXX executable ut_mattributeextensionmanager
+[163/185] Building CXX object CMakeFiles/ut_mimsettings.dir/ut_mimsettings_autogen/mocs_compilation.cpp.o
+[164/185] Building CXX object CMakeFiles/ut_mimsettings.dir/tests/ut_mimsettings/ut_mimsettings.cpp.o
+[165/185] Linking CXX executable sanitychecks
+[166/185] Linking CXX executable ut_mkeyoverride
+[167/185] Linking CXX executable ut_mimsettings
+[168/185] Linking CXX executable ut_mimserveroptions
+[169/185] Building CXX object CMakeFiles/ut_mimonscreenplugins.dir/tests/ut_mimonscreenplugins/ut_mimonscreenplugins.cpp.o
+[170/185] Building CXX object CMakeFiles/ut_minputmethodquickplugin.dir/tests/ut_minputmethodquickplugin/ut_minputmethodquickplugin.cpp.o
+[171/185] Linking CXX executable ut_mimonscreenplugins
+[172/185] Building CXX object CMakeFiles/ft_exampleplugin.dir/ft_exampleplugin_autogen/mocs_compilation.cpp.o
+[173/185] Building CXX object CMakeFiles/ut_mimpluginmanagerconfig.dir/ut_mimpluginmanagerconfig_autogen/mocs_compilation.cpp.o
+[174/185] Building CXX object CMakeFiles/ut_mimpluginmanagerconfig.dir/tests/ut_mimpluginmanagerconfig/ut_mimpluginmanagerconfig.cpp.o
+[175/185] Building CXX object CMakeFiles/ut_minputmethodquickplugin.dir/ut_minputmethodquickplugin_autogen/mocs_compilation.cpp.o
+[176/185] Linking CXX executable ut_mimpluginmanagerconfig
+[177/185] Building CXX object CMakeFiles/ft_mimpluginmanager.dir/ft_mimpluginmanager_autogen/mocs_compilation.cpp.o
+[178/185] Linking CXX executable ut_minputmethodquickplugin
+[179/185] Building CXX object CMakeFiles/ut_mimpluginmanager.dir/ut_mimpluginmanager_autogen/mocs_compilation.cpp.o
+[180/185] Building CXX object CMakeFiles/ft_exampleplugin.dir/tests/ft_exampleplugin/ft_exampleplugin.cpp.o
+[181/185] Linking CXX executable ft_exampleplugin
+[182/185] Building CXX object CMakeFiles/ft_mimpluginmanager.dir/tests/ft_mimpluginmanager/ft_mimpluginmanager.cpp.o
+[183/185] Building CXX object CMakeFiles/ut_mimpluginmanager.dir/tests/ut_mimpluginmanager/ut_mimpluginmanager.cpp.o
+[184/185] Linking CXX executable ft_mimpluginmanager
+[185/185] Linking CXX executable ut_mimpluginmanager
+-- Install configuration: "None"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/libmaliit-plugins.so.2.3.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/libmaliit-plugins.so.2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/libmaliit-plugins.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/bin/maliit-server
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/bin/maliit-server" to ""
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/namespace.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/settingdata.h
+-- Up-to-date: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/plugindescription.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/abstractinputmethodhost.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/inputmethodplugin.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/keyoverridedata.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/updatereceiver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/updateevent.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/abstractinputmethod.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/abstractpluginsetting.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/extensionevent.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/keyoverride.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/attributeextension.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/plugins/subviewdescription.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/standaloneinputmethod.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/standaloneinputmethodhost.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit/mimserver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/pkgconfig/maliit-framework.pc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/pkgconfig/maliit-plugins.pc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/pkgconfig/maliit-server.pc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/qt5/mkspecs/features/maliit-framework.prf
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/qt5/mkspecs/features/maliit-plugins.prf
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/qt5/mkspecs/features/maliit-defines.prf
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/cmake/MaliitPlugins/MaliitPluginsTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/cmake/MaliitPlugins/MaliitPluginsTargets-none.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/cmake/MaliitPlugins/MaliitPluginsConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/cmake/MaliitPlugins/MaliitPluginsConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework/INSTALL.local
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework/LICENSE.LGPL
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework/NEWS
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework/README.md
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/libmaliit-glib.so.2.3.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/libmaliit-glib.so.2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/libmaliit-glib.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitinputmethod.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitsettingdata.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitbus.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitsettingsentry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitpluginsettings.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitattributeextensionregistry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitsettingsmanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitattributeextension.h
+-- Up-to-date: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitcontext.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/include/maliit-2/maliit-glib/maliitserver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/cmake/MaliitGLib/MaliitGLibTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/cmake/MaliitGLib/MaliitGLibTargets-none.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/cmake/MaliitGLib/MaliitGLibConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/cmake/MaliitGLib/MaliitGLibConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/pkgconfig/maliit-glib.pc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/qt5/plugins/platforminputcontexts/libmaliitplatforminputcontextplugin.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/lib64/qt5/plugins/wayland-shell-integration/libinputpanel-shell.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/dbus-1/services/org.maliit.server.service
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_cfca581c18726cf36b805559b9fcd00b_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_i.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/folderopend.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespacemembers_vars.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_attribute_extension__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_o.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserveroptions_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/attributeextension_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_5c56ba38d0b9e3285660cc3d6d1f5416_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/nav_f.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/extensionevent_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowgroup_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/splitbar.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowdata_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/deprecated.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionid_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionid_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_f.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_k.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionid_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/extensionevent_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/subviewdescription_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_f0c29a9f5764d78706f34c972e8114d8_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettings_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimonscreenplugins_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimpluginmanager_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/group__maliitserver.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethod_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updateevent_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_674b5eebda37ff8056e36dc9f4238e9b_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/subviewdescription_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_v.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_p.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plugintutorial.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_61c9e5842729cb34568d93cb98ad85b9_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridequick_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_plugin_description.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodplugin_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettings_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_1efaa9881cea70e33db6bf4d2d1678f6.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespacemembers_enum.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_quick.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_qt_wayland_client.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/sync_off.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updateevent_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserveroptions_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverride_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettings_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/minputmethodhost_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridequick_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_maliit.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_5c56ba38d0b9e3285660cc3d6d1f5416.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/files.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/unknownplatform_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/maliitserver_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tab_bd.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/jquery.js
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tab_ad.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/internals.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_61c9e5842729cb34568d93cb98ad85b9_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_sub_view_description.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_o.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override_data__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverride_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/topics.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mainpage_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowdata_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/minputmethodhost_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updateevent_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/struct_m_im_plugin_settings_info.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/unknownplatform_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquick_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/waylandplatform_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/minusd.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/attributeextension_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowdata_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_maliit_1_1_input_method_query.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_l.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserveroptions_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_f0c29a9f5764d78706f34c972e8114d8.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/graph_legend.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_maliit_1_1_setting_entry_attributes.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_quick__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_000010_000003.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_000010_000000.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_fbfa1aad8d608287fbaf22fccc4579a6_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridequick_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/attributeextension_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/architecture-overview.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/common_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/clipboard.js
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_cfca581c18726cf36b805559b9fcd00b_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/graph_legend.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tab_b.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/logging_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_fbfa1aad8d608287fbaf22fccc4579a6_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/pluginsystem_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/globals.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_n.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_m.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespaceinternal_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plugindescription_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/maliitquick_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/maliitquick_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/settingdata_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/index.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_w.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tab_sd.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_attribute_extension.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_event__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override_data.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespacemembers.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/resize.js
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimpluginmanager_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/extensionevent_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettings_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_674b5eebda37ff8056e36dc9f4238e9b_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tab_h.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_quick-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_maliit_1_1_plugins.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractplatform_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/extensionevent_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_674b5eebda37ff8056e36dc9f4238e9b_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_f0c29a9f5764d78706f34c972e8114d8_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plugindescription_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_s.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/nav_g.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/unknownplatform_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/doxygen_crawl.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/maliitquick_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updatereceiver_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/open.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/struct_m_im_plugin_settings_info-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionid_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updatereceiver_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/architecture_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plugindescription_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimonscreenplugins_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridedata_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_cfca581c18726cf36b805559b9fcd00b_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquick_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_server-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/settingdata_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/annotated.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_t.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/settingdata_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/waylandplatform_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_2c02760a18a061ded52e38125572a3e7.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_bdd9a5d540de89e9fe90efdfc6973a4f.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/folderclosed.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/globals_defs.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/nav_fd.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_d.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_server__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_plugin_description-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/architecture.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespacemembers_eval.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/xcbplatform_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/sync_on.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_vars.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/xcbplatform_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_extension_event-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsubviewoverride_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethod_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespacemembers_func.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_2c02760a18a061ded52e38125572a3e7_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updateevent_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_61c9e5842729cb34568d93cb98ad85b9.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/group__libmaliit.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/struct_maliit_1_1_window_data.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_f.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/subviewdescription_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowgroup_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/waylandplatform_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/meego-im.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_server__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/doc.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/closed.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_quick__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_cfca581c18726cf36b805559b9fcd00b.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/subviewdescription_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_attribute_extension-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/maliitquick_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/settingdata_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_68267d1309a1af8e8297ef4c3efbcdba.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractplatform_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputpanelshellplugin_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tab_s.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/classes.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_attribute_extension__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_i.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_eval.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverride_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_receiver-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquick_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plusd.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override_data-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_000007_000000.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_u.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/struct_maliit_1_1_preedit_text_format-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowdata_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/extensions.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_k.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionid_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/subviewdescription_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimonscreenplugins_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/xcbplatform_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespaces.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/bc_s.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_receiver__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/folderopen.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/hierarchy.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/logging_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowgroup_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updatereceiver_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/globals_type.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespaceinternal_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethod_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimonscreenplugins_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_extension_event__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/globals_func.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/minus.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridedata_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_prop.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/logging_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_v.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_server.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/extensionevent_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dot_inline_dotgraph_1.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/toolbarxml_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_q.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_2c02760a18a061ded52e38125572a3e7_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/bc_sd.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_s.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_c.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/minputmethodhost_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_w.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/settingdata_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimpluginmanager_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimonscreenplugins_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserver_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_61c9e5842729cb34568d93cb98ad85b9_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethod_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plus.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/minputmethodhost_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimpluginmanager_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/attributeextension_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_000003_000000.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_fbfa1aad8d608287fbaf22fccc4579a6.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_receiver.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridedata_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsubviewoverride_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/pages.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsubviewoverride_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_1efaa9881cea70e33db6bf4d2d1678f6_dep.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_~.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override_data__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/attributeextension_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/toolbarxml.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/nav_h.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_e.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverride_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_attribute_extension__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_l.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_674b5eebda37ff8056e36dc9f4238e9b.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowgroup_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_quick__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserver_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/libmaliit_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethod_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/struct_m_im_plugin_settings_entry-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_~.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridequick_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_d.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/pluginsystem.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plugintutorial_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/group__pluginapi.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_2c02760a18a061ded52e38125572a3e7_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override_data__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquick_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/waylandplatform_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserver_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_1efaa9881cea70e33db6bf4d2d1678f6_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsubviewoverride_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/struct_maliit_1_1_window_data-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_5c56ba38d0b9e3285660cc3d6d1f5416_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethod_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/pluginapi_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/docd.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridedata_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/unknownplatform_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_t.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/internals_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/unknownplatform_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_extension_event__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowdata_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/struct_maliit_1_1_preedit_text_format.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker__stub_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethod_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractplatform_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/doxygen.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tab_hd.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodplugin_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_extension_event.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/struct_m_im_plugin_settings_entry.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/waylandplatform_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractplatform_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_sub_view_description-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserver_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_q.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_r.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/nav_hd.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_1efaa9881cea70e33db6bf4d2d1678f6_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethod_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/graph_legend.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_f0c29a9f5764d78706f34c972e8114d8_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_000004_000000.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverride_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_event__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_server__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractplatform_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespace_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsubviewoverride_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodplugin_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_receiver__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimsettings_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dynsections.js
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractpluginsetting_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespaceinternal_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/logging_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/folderclosedd.svg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updatereceiver_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plugindescription_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_receiver__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserveroptions_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridedata_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/namespaceinternal_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_e.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_u.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethod_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_5c56ba38d0b9e3285660cc3d6d1f5416_dep.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_r.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/splitbard.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tabs.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/windowgroup_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/abstractinputmethod_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquick_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/plugindescription_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_000003_000004.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_event.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/xcbplatform_8h__dep__incl.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserver_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/extensions_8dox.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_enum.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/keyoverridequick_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimserveroptions_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_fbfa1aad8d608287fbaf22fccc4579a6_dep.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_e68e8157741866f444e17edd764ebbae.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/logging_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/dir_000007_000003.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_event__inherit__graph.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/group__common.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updateevent_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_update_event-members.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/tab_a.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_rela.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_n.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodplugin_8h__dep__incl.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/xcbplatform_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_key_override__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_func_p.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8h__dep__incl.map
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/updatereceiver_8h.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/navtree.css
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_type.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/mimpluginmanager_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform__inherit__graph.png
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8cpp.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/functions_c.html
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/class_m_im_extension_event__inherit__graph.md5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/package-maliit-framework/usr/share/doc/maliit-framework-doc/minputmethodhost_8h__dep__incl.map
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/maliit-framework/maliit-framework.info: No such file or directory
+cmake
+doxygen
+wayland-protocols
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libmaliit-glib.so	libmaliit-glib.so.2
+usr/lib64/libmaliit-glib.so.2	libmaliit-glib.so.2.3.0
+usr/lib64/libmaliit-plugins.so	libmaliit-plugins.so.2
+usr/lib64/libmaliit-plugins.so.2	libmaliit-plugins.so.2.3.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libmaliit-glib.so )
+( cd usr/lib64 ; ln -sf libmaliit-glib.so.2 libmaliit-glib.so )
+( cd usr/lib64 ; rm -rf libmaliit-glib.so.2 )
+( cd usr/lib64 ; ln -sf libmaliit-glib.so.2.3.0 libmaliit-glib.so.2 )
+( cd usr/lib64 ; rm -rf libmaliit-plugins.so )
+( cd usr/lib64 ; ln -sf libmaliit-plugins.so.2 libmaliit-plugins.so )
+( cd usr/lib64 ; rm -rf libmaliit-plugins.so.2 )
+( cd usr/lib64 ; ln -sf libmaliit-plugins.so.2.3.0 libmaliit-plugins.so.2 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libmaliit-plugins.so.2'
+removed './usr/lib64/libmaliit-plugins.so'
+removed './usr/lib64/libmaliit-glib.so.2'
+removed './usr/lib64/libmaliit-glib.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/maliit-framework/maliit-framework-2.3.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/maliit-server
+usr/doc/
+usr/doc/maliit-framework-2.3.0/
+usr/doc/maliit-framework-2.3.0/NEWS
+usr/doc/maliit-framework-2.3.0/README.md
+usr/doc/maliit-framework-2.3.0/maliit-framework.ini
+usr/doc/maliit-framework-2.3.0/slack-required
+usr/include/
+usr/include/maliit-2/
+usr/include/maliit-2/maliit/
+usr/include/maliit-2/maliit-glib/
+usr/include/maliit-2/maliit-glib/maliitattributeextension.h
+usr/include/maliit-2/maliit-glib/maliitattributeextensionregistry.h
+usr/include/maliit-2/maliit-glib/maliitbus.h
+usr/include/maliit-2/maliit-glib/maliitcontext.h
+usr/include/maliit-2/maliit-glib/maliitinputmethod.h
+usr/include/maliit-2/maliit-glib/maliitpluginsettings.h
+usr/include/maliit-2/maliit-glib/maliitserver.h
+usr/include/maliit-2/maliit-glib/maliitsettingdata.h
+usr/include/maliit-2/maliit-glib/maliitsettingsentry.h
+usr/include/maliit-2/maliit-glib/maliitsettingsmanager.h
+usr/include/maliit-2/maliit/mimserver.h
+usr/include/maliit-2/maliit/namespace.h
+usr/include/maliit-2/maliit/plugins/
+usr/include/maliit-2/maliit/plugins/abstractinputmethod.h
+usr/include/maliit-2/maliit/plugins/abstractinputmethodhost.h
+usr/include/maliit-2/maliit/plugins/abstractpluginsetting.h
+usr/include/maliit-2/maliit/plugins/attributeextension.h
+usr/include/maliit-2/maliit/plugins/extensionevent.h
+usr/include/maliit-2/maliit/plugins/inputmethodplugin.h
+usr/include/maliit-2/maliit/plugins/keyoverride.h
+usr/include/maliit-2/maliit/plugins/keyoverridedata.h
+usr/include/maliit-2/maliit/plugins/plugindescription.h
+usr/include/maliit-2/maliit/plugins/subviewdescription.h
+usr/include/maliit-2/maliit/plugins/updateevent.h
+usr/include/maliit-2/maliit/plugins/updatereceiver.h
+usr/include/maliit-2/maliit/settingdata.h
+usr/include/maliit-2/maliit/standaloneinputmethod.h
+usr/include/maliit-2/maliit/standaloneinputmethodhost.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/MaliitGLib/
+usr/lib64/cmake/MaliitGLib/MaliitGLibConfig.cmake
+usr/lib64/cmake/MaliitGLib/MaliitGLibConfigVersion.cmake
+usr/lib64/cmake/MaliitGLib/MaliitGLibTargets-none.cmake
+usr/lib64/cmake/MaliitGLib/MaliitGLibTargets.cmake
+usr/lib64/cmake/MaliitPlugins/
+usr/lib64/cmake/MaliitPlugins/MaliitPluginsConfig.cmake
+usr/lib64/cmake/MaliitPlugins/MaliitPluginsConfigVersion.cmake
+usr/lib64/cmake/MaliitPlugins/MaliitPluginsTargets-none.cmake
+usr/lib64/cmake/MaliitPlugins/MaliitPluginsTargets.cmake
+usr/lib64/libmaliit-glib.so.2.3.0
+usr/lib64/libmaliit-plugins.so.2.3.0
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/maliit-framework.pc
+usr/lib64/pkgconfig/maliit-glib.pc
+usr/lib64/pkgconfig/maliit-plugins.pc
+usr/lib64/pkgconfig/maliit-server.pc
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/features/
+usr/lib64/qt5/mkspecs/features/maliit-defines.prf
+usr/lib64/qt5/mkspecs/features/maliit-framework.prf
+usr/lib64/qt5/mkspecs/features/maliit-plugins.prf
+usr/lib64/qt5/plugins/
+usr/lib64/qt5/plugins/platforminputcontexts/
+usr/lib64/qt5/plugins/platforminputcontexts/libmaliitplatforminputcontextplugin.so
+usr/lib64/qt5/plugins/wayland-shell-integration/
+usr/lib64/qt5/plugins/wayland-shell-integration/libinputpanel-shell.so
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.maliit.server.service
+usr/share/doc/
+usr/share/doc/maliit-framework/
+usr/share/doc/maliit-framework-doc/
+usr/share/doc/maliit-framework-doc/abstractinputmethod_8cpp.html
+usr/share/doc/maliit-framework-doc/abstractinputmethod_8h.html
+usr/share/doc/maliit-framework-doc/abstractinputmethod_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/abstractinputmethod_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/abstractinputmethod_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8cpp.html
+usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8h.html
+usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/abstractinputmethodhost_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/abstractplatform_8cpp.html
+usr/share/doc/maliit-framework-doc/abstractplatform_8h.html
+usr/share/doc/maliit-framework-doc/abstractplatform_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/abstractplatform_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/abstractplatform_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/abstractpluginsetting_8h.html
+usr/share/doc/maliit-framework-doc/annotated.html
+usr/share/doc/maliit-framework-doc/architecture-overview.png
+usr/share/doc/maliit-framework-doc/architecture.html
+usr/share/doc/maliit-framework-doc/architecture_8dox.html
+usr/share/doc/maliit-framework-doc/attributeextension_8cpp.html
+usr/share/doc/maliit-framework-doc/attributeextension_8h.html
+usr/share/doc/maliit-framework-doc/attributeextension_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/attributeextension_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/attributeextension_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/bc_s.png
+usr/share/doc/maliit-framework-doc/bc_sd.png
+usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting-members.html
+usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting.html
+usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_abstract_plugin_setting__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method-members.html
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method.html
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host-members.html
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host.html
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_abstract_input_method_host__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_attribute_extension-members.html
+usr/share/doc/maliit-framework-doc/class_m_attribute_extension.html
+usr/share/doc/maliit-framework-doc/class_m_attribute_extension__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_attribute_extension__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_attribute_extension__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_im_extension_event-members.html
+usr/share/doc/maliit-framework-doc/class_m_im_extension_event.html
+usr/share/doc/maliit-framework-doc/class_m_im_extension_event__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_im_extension_event__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_im_extension_event__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins-members.html
+usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins.html
+usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_im_on_screen_plugins__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_im_plugin_description-members.html
+usr/share/doc/maliit-framework-doc/class_m_im_plugin_description.html
+usr/share/doc/maliit-framework-doc/class_m_im_server-members.html
+usr/share/doc/maliit-framework-doc/class_m_im_server.html
+usr/share/doc/maliit-framework-doc/class_m_im_server__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_im_server__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_im_server__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_im_sub_view_description-members.html
+usr/share/doc/maliit-framework-doc/class_m_im_sub_view_description.html
+usr/share/doc/maliit-framework-doc/class_m_im_update_event-members.html
+usr/share/doc/maliit-framework-doc/class_m_im_update_event.html
+usr/share/doc/maliit-framework-doc/class_m_im_update_event__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_im_update_event__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_im_update_event__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_im_update_receiver-members.html
+usr/share/doc/maliit-framework-doc/class_m_im_update_receiver.html
+usr/share/doc/maliit-framework-doc/class_m_im_update_receiver__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_im_update_receiver__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_im_update_receiver__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_key_override-members.html
+usr/share/doc/maliit-framework-doc/class_m_key_override.html
+usr/share/doc/maliit-framework-doc/class_m_key_override__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_key_override__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_key_override__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_m_key_override_data-members.html
+usr/share/doc/maliit-framework-doc/class_m_key_override_data.html
+usr/share/doc/maliit-framework-doc/class_m_key_override_data__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_m_key_override_data__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_m_key_override_data__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_abstract_platform__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_input_method_quick_plugin__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_key_override_quick__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_abstract_plugin_setting__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_plugins_1_1_input_method_plugin__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_standalone_input_method_host__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_unknown_platform__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_wayland_platform__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_window_group__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform.html
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_1_1_x_c_b_platform__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_maliit_quick-members.html
+usr/share/doc/maliit-framework-doc/class_maliit_quick.html
+usr/share/doc/maliit-framework-doc/class_maliit_quick__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_maliit_quick__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_maliit_quick__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration-members.html
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration.html
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin-members.html
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin.html
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_shell_integration_plugin__inherit__graph.png
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface-members.html
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface.html
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface__inherit__graph.map
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface__inherit__graph.md5
+usr/share/doc/maliit-framework-doc/class_qt_wayland_client_1_1_q_wayland_input_panel_surface__inherit__graph.png
+usr/share/doc/maliit-framework-doc/classes.html
+usr/share/doc/maliit-framework-doc/clipboard.js
+usr/share/doc/maliit-framework-doc/closed.png
+usr/share/doc/maliit-framework-doc/common_8dox.html
+usr/share/doc/maliit-framework-doc/deprecated.html
+usr/share/doc/maliit-framework-doc/dir_000003_000000.html
+usr/share/doc/maliit-framework-doc/dir_000003_000004.html
+usr/share/doc/maliit-framework-doc/dir_000004_000000.html
+usr/share/doc/maliit-framework-doc/dir_000007_000000.html
+usr/share/doc/maliit-framework-doc/dir_000007_000003.html
+usr/share/doc/maliit-framework-doc/dir_000010_000000.html
+usr/share/doc/maliit-framework-doc/dir_000010_000003.html
+usr/share/doc/maliit-framework-doc/dir_1efaa9881cea70e33db6bf4d2d1678f6.html
+usr/share/doc/maliit-framework-doc/dir_1efaa9881cea70e33db6bf4d2d1678f6_dep.map
+usr/share/doc/maliit-framework-doc/dir_1efaa9881cea70e33db6bf4d2d1678f6_dep.md5
+usr/share/doc/maliit-framework-doc/dir_1efaa9881cea70e33db6bf4d2d1678f6_dep.png
+usr/share/doc/maliit-framework-doc/dir_2c02760a18a061ded52e38125572a3e7.html
+usr/share/doc/maliit-framework-doc/dir_2c02760a18a061ded52e38125572a3e7_dep.map
+usr/share/doc/maliit-framework-doc/dir_2c02760a18a061ded52e38125572a3e7_dep.md5
+usr/share/doc/maliit-framework-doc/dir_2c02760a18a061ded52e38125572a3e7_dep.png
+usr/share/doc/maliit-framework-doc/dir_5c56ba38d0b9e3285660cc3d6d1f5416.html
+usr/share/doc/maliit-framework-doc/dir_5c56ba38d0b9e3285660cc3d6d1f5416_dep.map
+usr/share/doc/maliit-framework-doc/dir_5c56ba38d0b9e3285660cc3d6d1f5416_dep.md5
+usr/share/doc/maliit-framework-doc/dir_5c56ba38d0b9e3285660cc3d6d1f5416_dep.png
+usr/share/doc/maliit-framework-doc/dir_61c9e5842729cb34568d93cb98ad85b9.html
+usr/share/doc/maliit-framework-doc/dir_61c9e5842729cb34568d93cb98ad85b9_dep.map
+usr/share/doc/maliit-framework-doc/dir_61c9e5842729cb34568d93cb98ad85b9_dep.md5
+usr/share/doc/maliit-framework-doc/dir_61c9e5842729cb34568d93cb98ad85b9_dep.png
+usr/share/doc/maliit-framework-doc/dir_674b5eebda37ff8056e36dc9f4238e9b.html
+usr/share/doc/maliit-framework-doc/dir_674b5eebda37ff8056e36dc9f4238e9b_dep.map
+usr/share/doc/maliit-framework-doc/dir_674b5eebda37ff8056e36dc9f4238e9b_dep.md5
+usr/share/doc/maliit-framework-doc/dir_674b5eebda37ff8056e36dc9f4238e9b_dep.png
+usr/share/doc/maliit-framework-doc/dir_68267d1309a1af8e8297ef4c3efbcdba.html
+usr/share/doc/maliit-framework-doc/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.map
+usr/share/doc/maliit-framework-doc/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.md5
+usr/share/doc/maliit-framework-doc/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.png
+usr/share/doc/maliit-framework-doc/dir_bdd9a5d540de89e9fe90efdfc6973a4f.html
+usr/share/doc/maliit-framework-doc/dir_cfca581c18726cf36b805559b9fcd00b.html
+usr/share/doc/maliit-framework-doc/dir_cfca581c18726cf36b805559b9fcd00b_dep.map
+usr/share/doc/maliit-framework-doc/dir_cfca581c18726cf36b805559b9fcd00b_dep.md5
+usr/share/doc/maliit-framework-doc/dir_cfca581c18726cf36b805559b9fcd00b_dep.png
+usr/share/doc/maliit-framework-doc/dir_e68e8157741866f444e17edd764ebbae.html
+usr/share/doc/maliit-framework-doc/dir_f0c29a9f5764d78706f34c972e8114d8.html
+usr/share/doc/maliit-framework-doc/dir_f0c29a9f5764d78706f34c972e8114d8_dep.map
+usr/share/doc/maliit-framework-doc/dir_f0c29a9f5764d78706f34c972e8114d8_dep.md5
+usr/share/doc/maliit-framework-doc/dir_f0c29a9f5764d78706f34c972e8114d8_dep.png
+usr/share/doc/maliit-framework-doc/dir_fbfa1aad8d608287fbaf22fccc4579a6.html
+usr/share/doc/maliit-framework-doc/dir_fbfa1aad8d608287fbaf22fccc4579a6_dep.map
+usr/share/doc/maliit-framework-doc/dir_fbfa1aad8d608287fbaf22fccc4579a6_dep.md5
+usr/share/doc/maliit-framework-doc/dir_fbfa1aad8d608287fbaf22fccc4579a6_dep.png
+usr/share/doc/maliit-framework-doc/doc.svg
+usr/share/doc/maliit-framework-doc/docd.svg
+usr/share/doc/maliit-framework-doc/dot_inline_dotgraph_1.png
+usr/share/doc/maliit-framework-doc/doxygen.svg
+usr/share/doc/maliit-framework-doc/doxygen_crawl.html
+usr/share/doc/maliit-framework-doc/dynsections.js
+usr/share/doc/maliit-framework-doc/extensionevent_8cpp.html
+usr/share/doc/maliit-framework-doc/extensionevent_8h.html
+usr/share/doc/maliit-framework-doc/extensionevent_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/extensionevent_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/extensionevent_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/extensions.html
+usr/share/doc/maliit-framework-doc/extensions_8dox.html
+usr/share/doc/maliit-framework-doc/files.html
+usr/share/doc/maliit-framework-doc/folderclosed.svg
+usr/share/doc/maliit-framework-doc/folderclosedd.svg
+usr/share/doc/maliit-framework-doc/folderopen.svg
+usr/share/doc/maliit-framework-doc/folderopend.svg
+usr/share/doc/maliit-framework-doc/functions.html
+usr/share/doc/maliit-framework-doc/functions_c.html
+usr/share/doc/maliit-framework-doc/functions_d.html
+usr/share/doc/maliit-framework-doc/functions_e.html
+usr/share/doc/maliit-framework-doc/functions_enum.html
+usr/share/doc/maliit-framework-doc/functions_eval.html
+usr/share/doc/maliit-framework-doc/functions_f.html
+usr/share/doc/maliit-framework-doc/functions_func.html
+usr/share/doc/maliit-framework-doc/functions_func_c.html
+usr/share/doc/maliit-framework-doc/functions_func_d.html
+usr/share/doc/maliit-framework-doc/functions_func_e.html
+usr/share/doc/maliit-framework-doc/functions_func_f.html
+usr/share/doc/maliit-framework-doc/functions_func_h.html
+usr/share/doc/maliit-framework-doc/functions_func_i.html
+usr/share/doc/maliit-framework-doc/functions_func_k.html
+usr/share/doc/maliit-framework-doc/functions_func_l.html
+usr/share/doc/maliit-framework-doc/functions_func_n.html
+usr/share/doc/maliit-framework-doc/functions_func_o.html
+usr/share/doc/maliit-framework-doc/functions_func_p.html
+usr/share/doc/maliit-framework-doc/functions_func_q.html
+usr/share/doc/maliit-framework-doc/functions_func_r.html
+usr/share/doc/maliit-framework-doc/functions_func_s.html
+usr/share/doc/maliit-framework-doc/functions_func_t.html
+usr/share/doc/maliit-framework-doc/functions_func_u.html
+usr/share/doc/maliit-framework-doc/functions_func_v.html
+usr/share/doc/maliit-framework-doc/functions_func_w.html
+usr/share/doc/maliit-framework-doc/functions_func_~.html
+usr/share/doc/maliit-framework-doc/functions_h.html
+usr/share/doc/maliit-framework-doc/functions_i.html
+usr/share/doc/maliit-framework-doc/functions_k.html
+usr/share/doc/maliit-framework-doc/functions_l.html
+usr/share/doc/maliit-framework-doc/functions_m.html
+usr/share/doc/maliit-framework-doc/functions_n.html
+usr/share/doc/maliit-framework-doc/functions_o.html
+usr/share/doc/maliit-framework-doc/functions_p.html
+usr/share/doc/maliit-framework-doc/functions_prop.html
+usr/share/doc/maliit-framework-doc/functions_q.html
+usr/share/doc/maliit-framework-doc/functions_r.html
+usr/share/doc/maliit-framework-doc/functions_rela.html
+usr/share/doc/maliit-framework-doc/functions_s.html
+usr/share/doc/maliit-framework-doc/functions_t.html
+usr/share/doc/maliit-framework-doc/functions_type.html
+usr/share/doc/maliit-framework-doc/functions_u.html
+usr/share/doc/maliit-framework-doc/functions_v.html
+usr/share/doc/maliit-framework-doc/functions_vars.html
+usr/share/doc/maliit-framework-doc/functions_w.html
+usr/share/doc/maliit-framework-doc/functions_~.html
+usr/share/doc/maliit-framework-doc/globals.html
+usr/share/doc/maliit-framework-doc/globals_defs.html
+usr/share/doc/maliit-framework-doc/globals_func.html
+usr/share/doc/maliit-framework-doc/globals_type.html
+usr/share/doc/maliit-framework-doc/graph_legend.html
+usr/share/doc/maliit-framework-doc/graph_legend.md5
+usr/share/doc/maliit-framework-doc/graph_legend.png
+usr/share/doc/maliit-framework-doc/group__common.html
+usr/share/doc/maliit-framework-doc/group__libmaliit.html
+usr/share/doc/maliit-framework-doc/group__maliitserver.html
+usr/share/doc/maliit-framework-doc/group__pluginapi.html
+usr/share/doc/maliit-framework-doc/hierarchy.html
+usr/share/doc/maliit-framework-doc/index.html
+usr/share/doc/maliit-framework-doc/inputmethodplugin_8h.html
+usr/share/doc/maliit-framework-doc/inputmethodplugin_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/inputmethodplugin_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/inputmethodplugin_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/inputmethodquick_8cpp.html
+usr/share/doc/maliit-framework-doc/inputmethodquick_8h.html
+usr/share/doc/maliit-framework-doc/inputmethodquick_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/inputmethodquick_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/inputmethodquick_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8cpp.html
+usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8h.html
+usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/inputmethodquickplugin_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/inputpanelshellplugin_8cpp.html
+usr/share/doc/maliit-framework-doc/internals.html
+usr/share/doc/maliit-framework-doc/internals_8dox.html
+usr/share/doc/maliit-framework-doc/jquery.js
+usr/share/doc/maliit-framework-doc/keyoverride_8cpp.html
+usr/share/doc/maliit-framework-doc/keyoverride_8h.html
+usr/share/doc/maliit-framework-doc/keyoverride_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/keyoverride_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/keyoverride_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/keyoverridedata_8cpp.html
+usr/share/doc/maliit-framework-doc/keyoverridedata_8h.html
+usr/share/doc/maliit-framework-doc/keyoverridedata_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/keyoverridedata_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/keyoverridedata_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/keyoverridequick_8cpp.html
+usr/share/doc/maliit-framework-doc/keyoverridequick_8h.html
+usr/share/doc/maliit-framework-doc/keyoverridequick_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/keyoverridequick_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/keyoverridequick_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/libmaliit_8dox.html
+usr/share/doc/maliit-framework-doc/logging_8cpp.html
+usr/share/doc/maliit-framework-doc/logging_8h.html
+usr/share/doc/maliit-framework-doc/logging_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/logging_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/logging_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mainpage_8dox.html
+usr/share/doc/maliit-framework-doc/maliitquick_8h.html
+usr/share/doc/maliit-framework-doc/maliitquick_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/maliitquick_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/maliitquick_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/maliitserver_8dox.html
+usr/share/doc/maliit-framework-doc/mattributeextensionid_8cpp.html
+usr/share/doc/maliit-framework-doc/mattributeextensionid_8h.html
+usr/share/doc/maliit-framework-doc/mattributeextensionid_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mattributeextensionid_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mattributeextensionid_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8cpp.html
+usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8h.html
+usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mattributeextensionmanager_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/meego-im.css
+usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8cpp.html
+usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8h.html
+usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mimhwkeyboardtracker__stub_8cpp.html
+usr/share/doc/maliit-framework-doc/mimonscreenplugins_8cpp.html
+usr/share/doc/maliit-framework-doc/mimonscreenplugins_8h.html
+usr/share/doc/maliit-framework-doc/mimonscreenplugins_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mimonscreenplugins_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mimonscreenplugins_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mimpluginmanager_8cpp.html
+usr/share/doc/maliit-framework-doc/mimpluginmanager_8h.html
+usr/share/doc/maliit-framework-doc/mimpluginmanager_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mimpluginmanager_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mimpluginmanager_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mimserver_8cpp.html
+usr/share/doc/maliit-framework-doc/mimserver_8h.html
+usr/share/doc/maliit-framework-doc/mimserver_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mimserver_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mimserver_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mimserveroptions_8cpp.html
+usr/share/doc/maliit-framework-doc/mimserveroptions_8h.html
+usr/share/doc/maliit-framework-doc/mimserveroptions_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mimserveroptions_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mimserveroptions_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mimsettings_8cpp.html
+usr/share/doc/maliit-framework-doc/mimsettings_8h.html
+usr/share/doc/maliit-framework-doc/mimsettings_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mimsettings_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mimsettings_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8cpp.html
+usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8h.html
+usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mimsettingsqsettings_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/mimsubviewoverride_8cpp.html
+usr/share/doc/maliit-framework-doc/mimsubviewoverride_8h.html
+usr/share/doc/maliit-framework-doc/mimsubviewoverride_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/mimsubviewoverride_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/mimsubviewoverride_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/minputmethodhost_8cpp.html
+usr/share/doc/maliit-framework-doc/minputmethodhost_8h.html
+usr/share/doc/maliit-framework-doc/minputmethodhost_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/minputmethodhost_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/minputmethodhost_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/minus.svg
+usr/share/doc/maliit-framework-doc/minusd.svg
+usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8cpp.html
+usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8h.html
+usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/msharedattributeextensionmanager_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/namespace_8h.html
+usr/share/doc/maliit-framework-doc/namespace_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/namespace_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/namespace_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/namespace_maliit.html
+usr/share/doc/maliit-framework-doc/namespace_maliit_1_1_input_method_query.html
+usr/share/doc/maliit-framework-doc/namespace_maliit_1_1_plugins.html
+usr/share/doc/maliit-framework-doc/namespace_maliit_1_1_setting_entry_attributes.html
+usr/share/doc/maliit-framework-doc/namespace_qt_wayland_client.html
+usr/share/doc/maliit-framework-doc/namespaceinternal_8h.html
+usr/share/doc/maliit-framework-doc/namespaceinternal_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/namespaceinternal_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/namespaceinternal_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/namespacemembers.html
+usr/share/doc/maliit-framework-doc/namespacemembers_enum.html
+usr/share/doc/maliit-framework-doc/namespacemembers_eval.html
+usr/share/doc/maliit-framework-doc/namespacemembers_func.html
+usr/share/doc/maliit-framework-doc/namespacemembers_vars.html
+usr/share/doc/maliit-framework-doc/namespaces.html
+usr/share/doc/maliit-framework-doc/nav_f.png
+usr/share/doc/maliit-framework-doc/nav_fd.png
+usr/share/doc/maliit-framework-doc/nav_g.png
+usr/share/doc/maliit-framework-doc/nav_h.png
+usr/share/doc/maliit-framework-doc/nav_hd.png
+usr/share/doc/maliit-framework-doc/navtree.css
+usr/share/doc/maliit-framework-doc/open.png
+usr/share/doc/maliit-framework-doc/pages.html
+usr/share/doc/maliit-framework-doc/pluginapi_8dox.html
+usr/share/doc/maliit-framework-doc/plugindescription_8cpp.html
+usr/share/doc/maliit-framework-doc/plugindescription_8h.html
+usr/share/doc/maliit-framework-doc/plugindescription_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/plugindescription_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/plugindescription_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/pluginsystem.html
+usr/share/doc/maliit-framework-doc/pluginsystem_8dox.html
+usr/share/doc/maliit-framework-doc/plugintutorial.html
+usr/share/doc/maliit-framework-doc/plugintutorial_8dox.html
+usr/share/doc/maliit-framework-doc/plus.svg
+usr/share/doc/maliit-framework-doc/plusd.svg
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8cpp.html
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8h.html
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelshellintegration_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8cpp.html
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8h.html
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/qwaylandinputpanelsurface_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/resize.js
+usr/share/doc/maliit-framework-doc/settingdata_8cpp.html
+usr/share/doc/maliit-framework-doc/settingdata_8h.html
+usr/share/doc/maliit-framework-doc/settingdata_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/settingdata_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/settingdata_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/splitbar.png
+usr/share/doc/maliit-framework-doc/splitbard.png
+usr/share/doc/maliit-framework-doc/standaloneinputmethod_8cpp.html
+usr/share/doc/maliit-framework-doc/standaloneinputmethod_8h.html
+usr/share/doc/maliit-framework-doc/standaloneinputmethod_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/standaloneinputmethod_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/standaloneinputmethod_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8cpp.html
+usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8h.html
+usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/standaloneinputmethodhost_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/struct_m_im_plugin_settings_entry-members.html
+usr/share/doc/maliit-framework-doc/struct_m_im_plugin_settings_entry.html
+usr/share/doc/maliit-framework-doc/struct_m_im_plugin_settings_info-members.html
+usr/share/doc/maliit-framework-doc/struct_m_im_plugin_settings_info.html
+usr/share/doc/maliit-framework-doc/struct_maliit_1_1_preedit_text_format-members.html
+usr/share/doc/maliit-framework-doc/struct_maliit_1_1_preedit_text_format.html
+usr/share/doc/maliit-framework-doc/struct_maliit_1_1_window_data-members.html
+usr/share/doc/maliit-framework-doc/struct_maliit_1_1_window_data.html
+usr/share/doc/maliit-framework-doc/subviewdescription_8cpp.html
+usr/share/doc/maliit-framework-doc/subviewdescription_8h.html
+usr/share/doc/maliit-framework-doc/subviewdescription_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/subviewdescription_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/subviewdescription_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/sync_off.png
+usr/share/doc/maliit-framework-doc/sync_on.png
+usr/share/doc/maliit-framework-doc/tab_a.png
+usr/share/doc/maliit-framework-doc/tab_ad.png
+usr/share/doc/maliit-framework-doc/tab_b.png
+usr/share/doc/maliit-framework-doc/tab_bd.png
+usr/share/doc/maliit-framework-doc/tab_h.png
+usr/share/doc/maliit-framework-doc/tab_hd.png
+usr/share/doc/maliit-framework-doc/tab_s.png
+usr/share/doc/maliit-framework-doc/tab_sd.png
+usr/share/doc/maliit-framework-doc/tabs.css
+usr/share/doc/maliit-framework-doc/toolbarxml.html
+usr/share/doc/maliit-framework-doc/toolbarxml_8dox.html
+usr/share/doc/maliit-framework-doc/topics.html
+usr/share/doc/maliit-framework-doc/unknownplatform_8cpp.html
+usr/share/doc/maliit-framework-doc/unknownplatform_8h.html
+usr/share/doc/maliit-framework-doc/unknownplatform_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/unknownplatform_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/unknownplatform_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/updateevent_8cpp.html
+usr/share/doc/maliit-framework-doc/updateevent_8h.html
+usr/share/doc/maliit-framework-doc/updateevent_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/updateevent_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/updateevent_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/updatereceiver_8cpp.html
+usr/share/doc/maliit-framework-doc/updatereceiver_8h.html
+usr/share/doc/maliit-framework-doc/updatereceiver_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/updatereceiver_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/updatereceiver_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/waylandplatform_8cpp.html
+usr/share/doc/maliit-framework-doc/waylandplatform_8h.html
+usr/share/doc/maliit-framework-doc/waylandplatform_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/waylandplatform_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/waylandplatform_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/windowdata_8cpp.html
+usr/share/doc/maliit-framework-doc/windowdata_8h.html
+usr/share/doc/maliit-framework-doc/windowdata_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/windowdata_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/windowdata_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/windowgroup_8cpp.html
+usr/share/doc/maliit-framework-doc/windowgroup_8h.html
+usr/share/doc/maliit-framework-doc/windowgroup_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/windowgroup_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/windowgroup_8h__dep__incl.png
+usr/share/doc/maliit-framework-doc/xcbplatform_8cpp.html
+usr/share/doc/maliit-framework-doc/xcbplatform_8h.html
+usr/share/doc/maliit-framework-doc/xcbplatform_8h__dep__incl.map
+usr/share/doc/maliit-framework-doc/xcbplatform_8h__dep__incl.md5
+usr/share/doc/maliit-framework-doc/xcbplatform_8h__dep__incl.png
+usr/share/doc/maliit-framework/INSTALL.local
+usr/share/doc/maliit-framework/LICENSE.LGPL
+usr/share/doc/maliit-framework/NEWS
+usr/share/doc/maliit-framework/README.md
+
+Slackware package /tmp/maliit-framework/maliit-framework-2.3.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for maliit-framework-2.3.0-x86_64-1_rtz.tlz
+Creating /tmp/maliit-framework/maliit-framework-2.3.0-x86_64-1_rtz.tlz.so.file using /tmp/maliit-framework/maliit-framework-2.3.0-x86_64-1_rtz.tlz
+Successfully created /tmp/maliit-framework/maliit-framework-2.3.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in maliit-framework.tar.lz4 format.
+/tmp/maliit-framework /tmp/maliit-framework
+/tmp/maliit-framework
+BIN_NAME
+README
+makepkg-maliit-framework.log
+maliit-framework-2.3.0-x86_64-1_rtz.tlz
+maliit-framework-2.3.0-x86_64-1_rtz.tlz.md5
+maliit-framework-2.3.0-x86_64-1_rtz.tlz.so.file
+maliit-framework-2.3.0-x86_64-1_rtz.tlz.txt
+maliit-framework.dep
+maliit-framework build finished. Procced to installation...
+
++===========================================================================================================================+
+| Upgrading maliit-framework-2.3.0-x86_64-1_rtz package using /tmp/maliit-framework/maliit-framework-2.3.0-x86_64-1_rtz.tlz |
++===========================================================================================================================+
+
+Pre-installing package maliit-framework-2.3.0-x86_64-1_rtz...
+Removing package: maliit-framework-2.3.0-x86_64-1_rtz-upgraded-2025-05-15,00:21:44
+Installing package maliit-framework-2.3.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# maliit-framework ()
+#
+# Core libraries of Maliit and server
+#
+# https://github.com/maliit/framework
+Executing install script for maliit-framework-2.3.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package maliit-framework-2.3.0-x86_64-1_rtz.tlz installed.
+Package maliit-framework-2.3.0-x86_64-1_rtz upgraded with new package /tmp/maliit-framework/maliit-framework-2.3.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'framework-2.3.0.tar.gz': No such file or directory

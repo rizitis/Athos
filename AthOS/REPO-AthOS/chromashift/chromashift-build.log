@@ -1,0 +1,213 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: google-go-lang
+google-go-lang is already installed!
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-15 00:49:56--  https://github.com/Nadim147c/ChromaShift/archive/refs/tags/v1.5.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/Nadim147c/ChromaShift/tar.gz/refs/tags/v1.5.0 [following]
+--2025-05-15 00:49:56--  https://codeload.github.com/Nadim147c/ChromaShift/tar.gz/refs/tags/v1.5.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘ChromaShift-1.5.0.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  429K
+    50K .......... ........                                    4.77M=0.1s
+
+2025-05-15 00:49:56 (570 KB/s) - ‘ChromaShift-1.5.0.tar.gz’ saved [70270]
+
+Found file: ChromaShift-1.5.0.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+ChromaShift-1.5.0/
+ChromaShift-1.5.0/.github/
+ChromaShift-1.5.0/.github/workflows/
+ChromaShift-1.5.0/.github/workflows/main.yml
+ChromaShift-1.5.0/.github/workflows/release.yml
+ChromaShift-1.5.0/.gitignore
+ChromaShift-1.5.0/.prettierrc
+ChromaShift-1.5.0/LICENSE
+ChromaShift-1.5.0/Makefile
+ChromaShift-1.5.0/README.md
+ChromaShift-1.5.0/assets/
+ChromaShift-1.5.0/assets/free.png
+ChromaShift-1.5.0/cmd/
+ChromaShift-1.5.0/cmd/LS_COLORS.txt
+ChromaShift-1.5.0/cmd/alias.go
+ChromaShift-1.5.0/cmd/colorize.go
+ChromaShift-1.5.0/cmd/colors.go
+ChromaShift-1.5.0/cmd/colors_test.go
+ChromaShift-1.5.0/cmd/config.go
+ChromaShift-1.5.0/cmd/list.go
+ChromaShift-1.5.0/cmd/output.go
+ChromaShift-1.5.0/cmd/path_colorize.go
+ChromaShift-1.5.0/cmd/path_colorize_test.go
+ChromaShift-1.5.0/cmd/root.go
+ChromaShift-1.5.0/cmd/rule.go
+ChromaShift-1.5.0/config.toml
+ChromaShift-1.5.0/go.mod
+ChromaShift-1.5.0/go.sum
+ChromaShift-1.5.0/main.go
+ChromaShift-1.5.0/rule.schema.json
+ChromaShift-1.5.0/rules/
+ChromaShift-1.5.0/rules/cp.toml
+ChromaShift-1.5.0/rules/curl.toml
+ChromaShift-1.5.0/rules/df.toml
+ChromaShift-1.5.0/rules/dig.toml
+ChromaShift-1.5.0/rules/docker-image.toml
+ChromaShift-1.5.0/rules/docker-info.toml
+ChromaShift-1.5.0/rules/docker-network.toml
+ChromaShift-1.5.0/rules/docker-ps.toml
+ChromaShift-1.5.0/rules/docker-version.toml
+ChromaShift-1.5.0/rules/du.toml
+ChromaShift-1.5.0/rules/env.toml
+ChromaShift-1.5.0/rules/find.toml
+ChromaShift-1.5.0/rules/findpkg.toml
+ChromaShift-1.5.0/rules/free.toml
+ChromaShift-1.5.0/rules/gcc.toml
+ChromaShift-1.5.0/rules/go-test.toml
+ChromaShift-1.5.0/rules/id.toml
+ChromaShift-1.5.0/rules/last.toml
+ChromaShift-1.5.0/rules/lsblk.toml
+ChromaShift-1.5.0/rules/lscpu.toml
+ChromaShift-1.5.0/rules/lsmod.toml
+ChromaShift-1.5.0/rules/mount.toml
+ChromaShift-1.5.0/rules/mv.toml
+ChromaShift-1.5.0/rules/netstat.toml
+ChromaShift-1.5.0/rules/ping.toml
+ChromaShift-1.5.0/rules/ps.toml
+ChromaShift-1.5.0/rules/rm.toml
+ChromaShift-1.5.0/rules/stat.toml
+ChromaShift-1.5.0/rules/stow.toml
+ChromaShift-1.5.0/rules/strace.toml
+ChromaShift-1.5.0/rules/traceroute.toml
+ChromaShift-1.5.0/rules/vmstat.toml
+ChromaShift-1.5.0/rules/wget.toml
+ChromaShift-1.5.0/rules/yt-dlp.toml
+ChromaShift-1.5.0/scripts/
+ChromaShift-1.5.0/scripts/install.gh-release.sh
+ChromaShift-1.5.0/scripts/install.local.sh
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/chromashift/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+Installing dependencies...
+go mod download
+go mod verify
+all modules verified
+go get -v
+fatal: No names found, cannot describe anything.
+Building cshift...
+go build -ldflags "-X cshift/cmd.Version=" -o cshift
+fatal: No names found, cannot describe anything.
+Building cshift...
+go build -ldflags "-X cshift/cmd.Version=" -o cshift
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/chromashift/chromashift.info: No such file or directory
+google-go-lang
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/chromashift/chromashift-1.5.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/chromashift-1.5.0/
+usr/doc/chromashift-1.5.0/LICENSE
+usr/doc/chromashift-1.5.0/README.md
+usr/doc/chromashift-1.5.0/chromashift.ini
+usr/doc/chromashift-1.5.0/slack-required
+usr/local/
+usr/local/bin/
+usr/local/bin/chromashift
+usr/share/
+usr/share/chromashift/
+usr/share/chromashift/config.toml
+
+Slackware package /tmp/chromashift/chromashift-1.5.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for chromashift-1.5.0-x86_64-1_rtz.tlz
+Creating /tmp/chromashift/chromashift-1.5.0-x86_64-1_rtz.tlz.so.file using /tmp/chromashift/chromashift-1.5.0-x86_64-1_rtz.tlz
+Successfully created /tmp/chromashift/chromashift-1.5.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in chromashift.tar.lz4 format.
+/tmp/chromashift /tmp/chromashift
+/tmp/chromashift
+BIN_NAME
+README
+chromashift-1.5.0-x86_64-1_rtz.tlz
+chromashift-1.5.0-x86_64-1_rtz.tlz.md5
+chromashift-1.5.0-x86_64-1_rtz.tlz.so.file
+chromashift-1.5.0-x86_64-1_rtz.tlz.txt
+chromashift.dep
+makepkg-chromashift.log
+chromashift build finished. Procced to installation...
+
++============================================================================================================+
+| Upgrading chromashift-1.5.0-x86_64-1_rtz package using /tmp/chromashift/chromashift-1.5.0-x86_64-1_rtz.tlz |
++============================================================================================================+
+
+Pre-installing package chromashift-1.5.0-x86_64-1_rtz...
+Removing package: chromashift-1.5.0-x86_64-1_rtz-upgraded-2025-05-15,00:50:04
+Installing package chromashift-1.5.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# chromashift (colorizer for commands)
+#
+# A output colorizer for your favorite commands.
+#
+# https://github.com/Nadim147c/ChromaShift
+Executing install script for chromashift-1.5.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package chromashift-1.5.0-x86_64-1_rtz.tlz installed.
+Package chromashift-1.5.0-x86_64-1_rtz upgraded with new package /tmp/chromashift/chromashift-1.5.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'ChromaShift-1.5.0.tar.gz': No such file or directory

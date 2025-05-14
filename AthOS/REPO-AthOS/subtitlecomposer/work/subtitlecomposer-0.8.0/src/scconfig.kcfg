@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+						  http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+	<kcfgfile name="subtitlecomposerrc"/>
+
+	<group name="General">
+		<entry name="DefaultSubtitlesEncoding" type="String">
+			<label>Default Subtitles Encoding</label>
+			<default>UTF-8</default>
+		</entry>
+		<entry name="TextLineBreak" type="Int">
+			<label>Line Break Character</label>
+			<default>0</default>
+		</entry>
+		<entry name="SeekOffsetOnDoubleClick" type="Int">
+			<label>Seek Offset On Double Click</label>
+			<default>1500</default>
+		</entry>
+		<entry name="JumpLineOffset" type="Int">
+			<label>Jump to prev/next line offset</label>
+			<default>0</default>
+		</entry>
+		<entry name="UnpauseOnDoubleClick" type="Bool">
+			<label>Unpause On Double Click</label>
+			<default>false</default>
+		</entry>
+		<entry name="AutomaticVideoLoad" type="Bool">
+			<label>Automatic Video Load</label>
+			<default>true</default>
+		</entry>
+
+		<entry name="LinesQuickShiftAmount" type="Int">
+			<label>Lines Quick Shift Amount</label>
+			<default>100</default>
+		</entry>
+		<entry name="GrabbedPositionCompensation" type="Int">
+			<label>Grabbed Position Compensation</label>
+			<default>250</default>
+		</entry>
+
+		<entry name="LineDuration" type="Int">
+			<label>Default subtitle line duration</label>
+			<default>1000</default>
+		</entry>
+		<entry name="LinePause" type="Int">
+			<label>Default duration between subtitle lines</label>
+			<default>100</default>
+		</entry>
+	</group>
+
+	<group name="Error Check">
+		<entry name="MaxCharacters" type="Int">
+			<label>Maximum number of characters</label>
+			<default>80</default>
+		</entry>
+		<entry name="MaxLines" type="Int">
+			<label>Maximum number of lines</label>
+			<default>2</default>
+		</entry>
+
+		<entry name="MinDuration" type="Int">
+			<label>Minimum duration</label>
+			<default>700</default>
+		</entry>
+		<entry name="MaxDuration" type="Int">
+			<label>Maximum duration</label>
+			<default>5000</default>
+		</entry>
+
+		<entry name="MinDurationPerCharacter" type="Int">
+			<label>Minimum duration per character</label>
+			<default>30</default>
+		</entry>
+		<entry name="IdealDurationPerCharacter" type="Int">
+			<label>Ideal duration per character</label>
+			<default>50</default>
+		</entry>
+		<entry name="MaxDurationPerCharacter" type="Int">
+			<label>Maximum duration per character</label>
+			<default>185</default>
+		</entry>
+
+		<entry name="AutoClearFixed" type="Bool">
+			<label>Automatically clear fixed errors</label>
+			<default>false</default>
+		</entry>
+	</group>
+
+	<group name="Spelling">
+		<entry name="DefaultLanguage" type="String">
+			<label>Default Language</label>
+			<default>en_US</default>
+		</entry>
+		<entry name="DefaultClient" type="String">
+			<label>Default client</label>
+			<default></default>
+		</entry>
+		<entry name="CheckUppercase" type="Bool">
+			<label>Check uppercase</label>
+			<default>true</default>
+		</entry>
+		<entry name="SkipRunTogether" type="Bool">
+			<label>Skip Run Together</label>
+			<default>true</default>
+		</entry>
+	</group>
+
+	<group name="Waveform Widget">
+		<entry name="wfInnerColor" type="String">
+			<label>Waveform Inner Color</label>
+			<default>#969696</default>
+		</entry>
+		<entry name="wfOuterColor" type="String">
+			<label>Waveform Outer Color</label>
+			<default>#646464</default>
+		</entry>
+		<entry name="wfSmoothScroll" type="Bool">
+			<label>Waveform Smooth Scrolling</label>
+			<default>true</default>
+		</entry>
+		<entry name="wfAutoscrollPadding" type="Int">
+			<label>Autoscroll Padding</label>
+			<default>12</default>
+			<whatsthis>Autoscroll page when play position reaches ScrollPadding distance (percentage) from page border.</whatsthis>
+		</entry>
+		<entry name="wfSubBackground" type="String">
+			<label>Waveform Subtitle Background Color</label>
+			<default>#64000064</default>
+		</entry>
+		<entry name="wfSubBorder" type="String">
+			<label>Waveform Subtitle Border Color</label>
+			<default>#960000ff</default>
+		</entry>
+		<entry name="wfSubBorderWidth" type="Int">
+			<label>Waveform Subtitle Border Width</label>
+			<default>1</default>
+		</entry>
+		<entry name="wfSelBackground" type="String">
+			<label>Waveform Selected Subtitle Background Color</label>
+			<default>#64646400</default>
+		</entry>
+		<entry name="wfSelBorder" type="String">
+			<label>Waveform Selected Subtitle Border Color</label>
+			<default>#96ffff00</default>
+		</entry>
+		<entry name="wfFontFamily" type="String">
+			<label>Font Family</label>
+			<default>Sans Serif</default>
+		</entry>
+		<entry name="wfSubNumberFontSize" type="Int">
+			<label>Subtitle Number Font Size</label>
+			<default>10</default>
+		</entry>
+		<entry name="wfSubNumberColor" type="String">
+			<label>Subtitle Number Font Color</label>
+			<default>#ffffff</default>
+		</entry>
+		<entry name="wfSubTextFontSize" type="Int">
+			<label>Subtitle Text Font Size</label>
+			<default>9</default>
+		</entry>
+		<entry name="wfSubTextColor" type="String">
+			<label>Subtitle Text Font Color</label>
+			<default>#e1ffffff</default>
+		</entry>
+		<entry name="wfMouseLocation" type="String">
+			<label>Mouse Location Line Color</label>
+			<default>#50ffffff</default>
+		</entry>
+		<entry name="wfPlayLocation" type="String">
+			<label>Play Location Line Color</label>
+			<default>#a0ffffff</default>
+		</entry>
+	</group>
+
+	<group name="VideoPlayer">
+		<entry name="VideoAutoPlay" type="Bool">
+			<label>Start playing video when loaded</label>
+			<default>true</default>
+		</entry>
+		<entry name="SeekJumpLength" type="Double">
+			<label>Jump length on seek</label>
+			<default>5.0</default>
+		</entry>
+		<entry name="StepJumpLength" type="Int">
+			<label>Amount of frames to skip when stepping</label>
+			<default>2</default>
+		</entry>
+		<entry name="ShowPositionTimeEdit" type="Bool">
+			<label>Show editable time position</label>
+			<default>false</default>
+		</entry>
+		<entry name="VolumeAmplification" type="Int">
+			<label>Volume Amplification</label>
+			<default>0</default>
+		</entry>
+
+		<entry name="FontFamily" type="String">
+			<label>Font Family</label>
+			<default>Sans Serif</default>
+		</entry>
+		<entry name="FontSize" type="Int">
+			<label>Font Size</label>
+			<default>15</default>
+		</entry>
+		<entry name="FontColor" type="String">
+			<label>Font Color</label>
+			<default>#ffff00</default>
+		</entry>
+		<entry name="OutlineColor" type="String">
+			<label>Outline Color</label>
+			<default>#000000</default>
+		</entry>
+		<entry name="OutlineWidth" type="Int">
+			<label>Outline Width</label>
+			<default>1</default>
+		</entry>
+	</group>
+
+	<group name="Translation">
+		<entry name="translateEngine" type="String">
+			<label>Last used translate engine</label>
+			<default>DeepL</default>
+		</entry>
+	</group>
+
+	<group name="GoogleCloudTranslate">
+		<entry name="gctServiceJSON" type="Path">
+			<label>Service Account JSON containing private key</label>
+		</entry>
+		<entry name="gctLangSource" type="String">
+			<label>source language - cached</label>
+		</entry>
+		<entry name="gctLangTrans" type="String">
+			<label>translation language - cached</label>
+		</entry>
+		<entry name="gctAccessToken" type="String">
+			<label>access token - cached</label>
+		</entry>
+		<entry name="gctTokenExpires" type="DateTime">
+			<label>access token expiry - cached</label>
+		</entry>
+		<entry name="gctTokenType" type="String">
+			<label>access token type - cached</label>
+		</entry>
+	</group>
+
+	<group name="DeepLTranslate">
+		<entry name="dltAuthKey" type="String">
+			<label>DeepL API authentication key</label>
+		</entry>
+		<entry name="dltApiDomain" type="String">
+			<label>DeepL API domain name</label>
+		</entry>
+		<entry name="dltLangSource" type="String">
+			<label>source language - cached</label>
+		</entry>
+		<entry name="dltLangTrans" type="String">
+			<label>translation language - cached</label>
+		</entry>
+	</group>
+</kcfg>

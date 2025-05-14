@@ -1,0 +1,887 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules kholidays ki18n
+doxygen is already installed!
+extra-cmake-modules is already installed!
+kholidays is already installed!
+ki18n is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-15 00:49:49--  https://download.kde.org/stable/kweathercore/0.8.0/kweathercore-0.8.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://download.kde.org/Attic/kweathercore/0.8.0/kweathercore-0.8.0.tar.xz [following]
+--2025-05-15 00:49:50--  https://download.kde.org/Attic/kweathercore/0.8.0/kweathercore-0.8.0.tar.xz
+Reusing existing connection to download.kde.org:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/Attic/kweathercore/0.8.0/kweathercore-0.8.0.tar.xz [following]
+--2025-05-15 00:49:50--  https://ftp.cc.uoc.gr/mirrors/kde/Attic/kweathercore/0.8.0/kweathercore-0.8.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 76420 (75K) [application/octet-stream]
+Saving to: ‘kweathercore-0.8.0.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 66% 1.35M 0s
+    50K .......... .......... ....                            100% 11.1M=0.04s
+
+2025-05-15 00:49:50 (1.91 MB/s) - ‘kweathercore-0.8.0.tar.xz’ saved [76420/76420]
+
+Found file: kweathercore-0.8.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+kweathercore-0.8.0/
+kweathercore-0.8.0/.gitignore
+kweathercore-0.8.0/autotests/
+kweathercore-0.8.0/autotests/dailyweatherforecasttest.h
+kweathercore-0.8.0/autotests/geotimezonetest.h
+kweathercore-0.8.0/autotests/locationquerytest.cpp
+kweathercore-0.8.0/autotests/metnoparsertest.cpp
+kweathercore-0.8.0/autotests/capdata/
+kweathercore-0.8.0/autotests/capdata/thunderstorm.xml
+kweathercore-0.8.0/autotests/capdata/tsunami.xml
+kweathercore-0.8.0/autotests/capdata/polygon-trailing-space.xml
+kweathercore-0.8.0/autotests/capdata/dwd-update.xml
+kweathercore-0.8.0/autotests/capdata/multi-area.xml
+kweathercore-0.8.0/autotests/capparsertest.cpp
+kweathercore-0.8.0/autotests/geotimezonetest.cpp
+kweathercore-0.8.0/autotests/pendingweatherforecasttest.cpp
+kweathercore-0.8.0/autotests/weatherforecasttest.h
+kweathercore-0.8.0/autotests/weatherforecasttest.cpp
+kweathercore-0.8.0/autotests/met.no/
+kweathercore-0.8.0/autotests/met.no/berlin.json.ref
+kweathercore-0.8.0/autotests/met.no/berlin.json
+kweathercore-0.8.0/autotests/hourlyweatherforecasttest.cpp
+kweathercore-0.8.0/autotests/CMakeLists.txt
+kweathercore-0.8.0/autotests/dailyweatherforecasttest.cpp
+kweathercore-0.8.0/po/
+kweathercore-0.8.0/po/es/
+kweathercore-0.8.0/po/es/kweathercore6.po
+kweathercore-0.8.0/po/ar/
+kweathercore-0.8.0/po/ar/kweathercore6.po
+kweathercore-0.8.0/po/sk/
+kweathercore-0.8.0/po/sk/kweathercore6.po
+kweathercore-0.8.0/po/nl/
+kweathercore-0.8.0/po/nl/kweathercore6.po
+kweathercore-0.8.0/po/ja/
+kweathercore-0.8.0/po/ja/kweathercore6.po
+kweathercore-0.8.0/po/sv/
+kweathercore-0.8.0/po/sv/kweathercore6.po
+kweathercore-0.8.0/po/is/
+kweathercore-0.8.0/po/is/kweathercore6.po
+kweathercore-0.8.0/po/uk/
+kweathercore-0.8.0/po/uk/kweathercore6.po
+kweathercore-0.8.0/po/gl/
+kweathercore-0.8.0/po/gl/kweathercore6.po
+kweathercore-0.8.0/po/zh_CN/
+kweathercore-0.8.0/po/zh_CN/kweathercore6.po
+kweathercore-0.8.0/po/ca/
+kweathercore-0.8.0/po/ca/kweathercore6.po
+kweathercore-0.8.0/po/eu/
+kweathercore-0.8.0/po/eu/kweathercore6.po
+kweathercore-0.8.0/po/pa/
+kweathercore-0.8.0/po/pa/kweathercore6.po
+kweathercore-0.8.0/po/az/
+kweathercore-0.8.0/po/az/kweathercore6.po
+kweathercore-0.8.0/po/pl/
+kweathercore-0.8.0/po/pl/kweathercore6.po
+kweathercore-0.8.0/po/nn/
+kweathercore-0.8.0/po/nn/kweathercore6.po
+kweathercore-0.8.0/po/pt_BR/
+kweathercore-0.8.0/po/pt_BR/kweathercore6.po
+kweathercore-0.8.0/po/ko/
+kweathercore-0.8.0/po/ko/kweathercore6.po
+kweathercore-0.8.0/po/ca@valencia/
+kweathercore-0.8.0/po/ca@valencia/kweathercore6.po
+kweathercore-0.8.0/po/fr/
+kweathercore-0.8.0/po/fr/kweathercore6.po
+kweathercore-0.8.0/po/hi/
+kweathercore-0.8.0/po/hi/kweathercore6.po
+kweathercore-0.8.0/po/it/
+kweathercore-0.8.0/po/it/kweathercore6.po
+kweathercore-0.8.0/po/pt/
+kweathercore-0.8.0/po/pt/kweathercore6.po
+kweathercore-0.8.0/po/ka/
+kweathercore-0.8.0/po/ka/kweathercore6.po
+kweathercore-0.8.0/po/de/
+kweathercore-0.8.0/po/de/kweathercore6.po
+kweathercore-0.8.0/po/zh_TW/
+kweathercore-0.8.0/po/zh_TW/kweathercore6.po
+kweathercore-0.8.0/po/fi/
+kweathercore-0.8.0/po/fi/kweathercore6.po
+kweathercore-0.8.0/po/sl/
+kweathercore-0.8.0/po/sl/kweathercore6.po
+kweathercore-0.8.0/po/lt/
+kweathercore-0.8.0/po/lt/kweathercore6.po
+kweathercore-0.8.0/po/ru/
+kweathercore-0.8.0/po/ru/kweathercore6.po
+kweathercore-0.8.0/po/eo/
+kweathercore-0.8.0/po/eo/kweathercore6.po
+kweathercore-0.8.0/po/cs/
+kweathercore-0.8.0/po/cs/kweathercore6.po
+kweathercore-0.8.0/po/el/
+kweathercore-0.8.0/po/el/kweathercore6.po
+kweathercore-0.8.0/po/en_GB/
+kweathercore-0.8.0/po/en_GB/kweathercore6.po
+kweathercore-0.8.0/po/bg/
+kweathercore-0.8.0/po/bg/kweathercore6.po
+kweathercore-0.8.0/po/tr/
+kweathercore-0.8.0/po/tr/kweathercore6.po
+kweathercore-0.8.0/src/
+kweathercore-0.8.0/src/alertmanager.cpp
+kweathercore-0.8.0/src/weatherforecastsource.cpp
+kweathercore-0.8.0/src/reply.cpp
+kweathercore-0.8.0/src/locationqueryresult.cpp
+kweathercore-0.8.0/src/hourlyweatherforecast.h
+kweathercore-0.8.0/src/capalertinfo.h
+kweathercore-0.8.0/src/metnoparser.cpp
+kweathercore-0.8.0/src/pendingcap.h
+kweathercore-0.8.0/src/reply.h
+kweathercore-0.8.0/src/capreference.h
+kweathercore-0.8.0/src/alertfeedentry.h
+kweathercore-0.8.0/src/alertfeedentry.cpp
+kweathercore-0.8.0/src/locationqueryresult.h
+kweathercore-0.8.0/src/capalertinfo.cpp
+kweathercore-0.8.0/src/pendingweatherforecast.cpp
+kweathercore-0.8.0/src/capalertmessage.h
+kweathercore-0.8.0/src/feedparser.h
+kweathercore-0.8.0/src/hourlyweatherforecast.cpp
+kweathercore-0.8.0/src/metnoparser_p.h
+kweathercore-0.8.0/src/config/
+kweathercore-0.8.0/src/config/dummy.json
+kweathercore-0.8.0/src/weatherforecast.cpp
+kweathercore-0.8.0/src/kweathercore.cpp
+kweathercore-0.8.0/src/locationquery.cpp
+kweathercore-0.8.0/src/kweathercore_p.h
+kweathercore-0.8.0/src/dailyweatherforecast.cpp
+kweathercore-0.8.0/src/geotimezone.h
+kweathercore-0.8.0/src/caparea.cpp
+kweathercore-0.8.0/src/capalertmessage.cpp
+kweathercore-0.8.0/src/pendingalerts.cpp
+kweathercore-0.8.0/src/alertmanager.h
+kweathercore-0.8.0/src/weatherforecast.h
+kweathercore-0.8.0/src/reply_p.h
+kweathercore-0.8.0/src/pendingweatherforecast.h
+kweathercore-0.8.0/src/pendingweatherforecast_p.h
+kweathercore-0.8.0/src/locationqueryreply.cpp
+kweathercore-0.8.0/src/CMakeLists.txt
+kweathercore-0.8.0/src/caparea.h
+kweathercore-0.8.0/src/capnamedvalue.h
+kweathercore-0.8.0/src/Messages.sh
+kweathercore-0.8.0/src/weatherforecastsource.h
+kweathercore-0.8.0/src/capreference.cpp
+kweathercore-0.8.0/src/pendingalerts.h
+kweathercore-0.8.0/src/capparser.cpp
+kweathercore-0.8.0/src/dailyweatherforecast.h
+kweathercore-0.8.0/src/geotimezone.cpp
+kweathercore-0.8.0/src/locationquery.h
+kweathercore-0.8.0/src/capparser.h
+kweathercore-0.8.0/src/locationqueryreply.h
+kweathercore-0.8.0/src/feedparser.cpp
+kweathercore-0.8.0/src/pendingcap.cpp
+kweathercore-0.8.0/.kde-ci.yml
+kweathercore-0.8.0/Mainpage.dox
+kweathercore-0.8.0/KWeatherCoreConfig.cmake.in
+kweathercore-0.8.0/README.md
+kweathercore-0.8.0/LICENSES/
+kweathercore-0.8.0/LICENSES/CC0-1.0.txt
+kweathercore-0.8.0/LICENSES/LGPL-2.0-or-later.txt
+kweathercore-0.8.0/LICENSES/CC-BY-4.0.txt
+kweathercore-0.8.0/metainfo.yaml
+kweathercore-0.8.0/CMakeLists.txt
+kweathercore-0.8.0/examples/
+kweathercore-0.8.0/examples/snippets/
+kweathercore-0.8.0/examples/snippets/example.cpp
+kweathercore-0.8.0/examples/snippets/locationquery.cpp
+kweathercore-0.8.0/examples/CMakeLists.txt
+kweathercore-0.8.0/.reuse/
+kweathercore-0.8.0/.reuse/dep5
+kweathercore-0.8.0/.gitlab-ci.yml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+CMake Warning (dev) at /usr/share/ECM/kde-modules/KDECompilerSettings.cmake:655 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'ENABLE_BSYMBOLICFUNCTIONS'.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEFrameworkCompilerSettings.cmake:58 (include)
+  CMakeLists.txt:18 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found Gettext: /usr/bin/msgmerge (found version "0.25")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
+-- Found KF6Holidays: /usr/lib64/cmake/KF6Holidays/KF6HolidaysConfig.cmake (found version "6.14.0")
+-- Found KF6: success (found suitable version "6.14.0", minimum required is "5.240.0") found components: I18n Holidays
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- No such target Qt5Core_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/build/src/KWeatherCore_ECMQchDoxygen.config' updated.
+
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Network (required version >= 6.5.0)
+ * Qt6Positioning (required version >= 6.5.0)
+ * Qt6Test (required version >= 6.5.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.240.0), Extra CMake Modules., <https://invent.kde.org/frameworks/extra-cmake-modules>
+ * Gettext
+ * KF6I18n (required version >= 5.240.0)
+ * KF6Holidays (required version >= 5.240.0)
+ * KF6 (required version >= 5.240.0)
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * Qt6ToolsTools, qhelpgenerator from Qt6 tools
+   Needed for API dox QCH file generation
+ * Qt6 (required version >= 6.5.0)
+
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/build
+[1/61] Generating ts...
+[2/61] Generating mo...
+[3/61] Generating src/KWeatherCore.qch, src/KWeatherCore.tags
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[4/61] Automatic MOC for target KWeatherCore
+[5/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/KWeatherCore_autogen/mocs_compilation.cpp.o
+[6/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/locationqueryresult.cpp.o
+[7/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/caparea.cpp.o
+[8/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/capalertmessage.cpp.o
+[9/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/geotimezone.cpp.o
+[10/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/reply.cpp.o
+[11/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/capreference.cpp.o
+[12/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/pendingcap.cpp.o
+[13/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/dailyweatherforecast.cpp.o
+[14/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/weatherforecastsource.cpp.o
+[15/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/capalertinfo.cpp.o
+[16/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/weatherforecast.cpp.o
+[17/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/hourlyweatherforecast.cpp.o
+[18/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/locationquery.cpp.o
+[19/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/pendingalerts.cpp.o
+[20/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/pendingweatherforecast.cpp.o
+[21/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/alertfeedentry.cpp.o
+[22/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/metnoparser.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/src/metnoparser.cpp: In member function ‘bool KWeatherCore::MetNoParser::isDayTime(const QDateTime&) const’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/src/metnoparser.cpp:91:61: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+   91 |     auto sunrise = QDateTime(dt.date(), sunriseTime, Qt::UTC);
+      |                                                             ^
+In file included from /usr/include/qt6/QtCore/qdirlisting.h:12,
+                 from /usr/include/qt6/QtCore/qdir.h:9,
+                 from /usr/include/qt6/QtCore/QDir:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/src/kweathercore_p.h:12,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/src/metnoparser.cpp:8:
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/src/metnoparser.cpp:92:59: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+   92 |     auto sunset = QDateTime(dt.date(), sunsetTime, Qt::UTC);
+      |                                                           ^
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+[23/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/kweathercore.cpp.o
+[24/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/alertmanager.cpp.o
+[25/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/capparser.cpp.o
+[26/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/feedparser.cpp.o
+[27/61] Building CXX object src/CMakeFiles/KWeatherCore.dir/locationqueryreply.cpp.o
+[28/61] Linking CXX shared library bin/libKWeatherCore.so.0.8.0
+[29/61] Creating library symlink bin/libKWeatherCore.so.6 bin/libKWeatherCore.so
+[30/61] Automatic MOC for target pendingweatherforecasttest
+[31/61] Automatic MOC for target capparsertest
+[32/61] Building CXX object autotests/CMakeFiles/pendingweatherforecasttest.dir/pendingweatherforecasttest_autogen/mocs_compilation.cpp.o
+[33/61] Building CXX object autotests/CMakeFiles/capparsertest.dir/capparsertest_autogen/mocs_compilation.cpp.o
+[34/61] Automatic MOC for target dailyweatherforecasttest
+[35/61] Automatic MOC for target metnoparsertest
+[36/61] Automatic MOC for target locationquerytest
+[37/61] Building CXX object autotests/CMakeFiles/dailyweatherforecasttest.dir/dailyweatherforecasttest_autogen/mocs_compilation.cpp.o
+[38/61] Automatic MOC for target weatherforecasttest
+[39/61] Building CXX object autotests/CMakeFiles/metnoparsertest.dir/metnoparsertest_autogen/mocs_compilation.cpp.o
+[40/61] Building CXX object autotests/CMakeFiles/locationquerytest.dir/locationquerytest_autogen/mocs_compilation.cpp.o
+[41/61] Building CXX object autotests/CMakeFiles/weatherforecasttest.dir/weatherforecasttest_autogen/mocs_compilation.cpp.o
+[42/61] Automatic MOC for target hourlyweatherforecasttest
+[43/61] Building CXX object autotests/CMakeFiles/hourlyweatherforecasttest.dir/hourlyweatherforecasttest_autogen/mocs_compilation.cpp.o
+[44/61] Automatic MOC for target geotimezonetest
+[45/61] Building CXX object autotests/CMakeFiles/geotimezonetest.dir/geotimezonetest_autogen/mocs_compilation.cpp.o
+[46/61] Building CXX object autotests/CMakeFiles/pendingweatherforecasttest.dir/pendingweatherforecasttest.cpp.o
+[47/61] Linking CXX executable bin/pendingweatherforecasttest
+[48/61] Building CXX object autotests/CMakeFiles/metnoparsertest.dir/metnoparsertest.cpp.o
+[49/61] Building CXX object autotests/CMakeFiles/geotimezonetest.dir/geotimezonetest.cpp.o
+[50/61] Linking CXX executable bin/metnoparsertest
+[51/61] Linking CXX executable bin/geotimezonetest
+[52/61] Building CXX object autotests/CMakeFiles/hourlyweatherforecasttest.dir/hourlyweatherforecasttest.cpp.o
+[53/61] Linking CXX executable bin/hourlyweatherforecasttest
+[54/61] Building CXX object autotests/CMakeFiles/capparsertest.dir/capparsertest.cpp.o
+In file included from /usr/include/qt6/QtTest/qtest.h:13,
+                 from /usr/include/qt6/QtTest/QTest:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:13:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp: In member function ‘void CapParserTest::testParseCap()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:30:103: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+   30 |         QCOMPARE(alert.sentTime(), QDateTime({2003, 06, 17}, {14, 57}, Qt::OffsetFromUTC, -7 * 60 * 60));
+      |                                                                                                       ^
+In file included from /usr/include/qt6/QtCore/QDateTime:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/build/autotests/../src/kweathercore/../../../src/capalertinfo.h:9,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/build/autotests/../src/kweathercore/capalertinfo.h:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/build/autotests/../src/KWeatherCore/CAPAlertInfo:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:6:
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:40:103: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+   40 |         QCOMPARE(info.expireTime(), QDateTime({2003, 06, 17}, {16, 0}, Qt::OffsetFromUTC, -7 * 60 * 60));
+      |                                                                                                       ^
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp: In member function ‘void CapParserTest::testMultiArea()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:81:106: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+   81 |         QCOMPARE(alert.sentTime(), QDateTime({2022, 8, 10}, {16, 12, 20}, Qt::OffsetFromUTC, +2 * 60 * 60));
+      |                                                                                                          ^
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp: In member function ‘void CapParserTest::testCircleArea()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:120:94: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+  120 |         QCOMPARE(alert.sentTime(), QDateTime({2022, 8, 01}, {0, 40, 48}, Qt::OffsetFromUTC, 0));
+      |                                                                                              ^
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp: In member function ‘void CapParserTest::testPolygon()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:145:106: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+  145 |         QCOMPARE(alert.sentTime(), QDateTime({2022, 8, 12}, {13, 22, 45}, Qt::OffsetFromUTC, -3 * 60 * 60));
+      |                                                                                                          ^
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp: In member function ‘void CapParserTest::testReferences()’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:174:95: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+  174 |         QCOMPARE(ref.sent(), QDateTime({2022, 8, 26}, {21, 29}, Qt::OffsetFromUTC, 2 * 60 * 60));
+      |                                                                                               ^
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/work/kweathercore-0.8.0/autotests/capparsertest.cpp:179:94: warning: ‘QDateTime::QDateTime(QDate, QTime, Qt::TimeSpec, int)’ is deprecated: Pass QTimeZone instead [-Wdeprecated-declarations]
+  179 |         QCOMPARE(ref.sent(), QDateTime({2022, 8, 26}, {22, 3}, Qt::OffsetFromUTC, 2 * 60 * 60));
+      |                                                                                              ^
+/usr/include/qt6/QtCore/qdatetime.h:359:5: note: declared here
+  359 |     QDateTime(QDate date, QTime time, Qt::TimeSpec spec, int offsetSeconds = 0);
+      |     ^~~~~~~~~
+[55/61] Building CXX object autotests/CMakeFiles/dailyweatherforecasttest.dir/dailyweatherforecasttest.cpp.o
+[56/61] Linking CXX executable bin/capparsertest
+[57/61] Linking CXX executable bin/dailyweatherforecasttest
+[58/61] Building CXX object autotests/CMakeFiles/locationquerytest.dir/locationquerytest.cpp.o
+[59/61] Building CXX object autotests/CMakeFiles/weatherforecasttest.dir/weatherforecasttest.cpp.o
+[60/61] Linking CXX executable bin/locationquerytest
+[61/61] Linking CXX executable bin/weatherforecasttest
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/cs/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ja/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/de/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/el/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/nn/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/hi/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pt_BR/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/lt/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pa
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pa/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sl/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/is
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/is/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/is/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/zh_TW/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pl/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/pt/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/az/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/tr/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/fr/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ka/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/gl/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/eo/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/bg
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/bg/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ca/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/uk/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/en_GB/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/zh_CN/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/nl/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/fi/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ko/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ru/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ca@valencia/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/es/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/eu/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/it/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/ar/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sk/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/share/locale/sv/LC_MESSAGES/kweathercore6.mo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/cmake/KWeatherCore/KWeatherCoreQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/cmake/KWeatherCore/KWeatherCoreConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/cmake/KWeatherCore/KWeatherCoreConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/cmake/KWeatherCore/KWeatherCoreTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/cmake/KWeatherCore/KWeatherCoreTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/kweathercore_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/LocationQuery
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/LocationQueryReply
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/LocationQueryResult
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/DailyWeatherForecast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/HourlyWeatherForecast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/PendingWeatherForecast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/WeatherForecast
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/WeatherForecastSource
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/GeoTimezone
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/CAPAlertInfo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/CAPAlertMessage
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/AlertFeedEntry
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/AlertManager
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/PendingAlerts
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/PendingCAP
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/CAPParser
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/CAPArea
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/CAPNamedValue
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/CAPReference
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/KWeatherCore/Reply
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/libKWeatherCore.so.0.8.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/libKWeatherCore.so.6
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/libKWeatherCore.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/kweathercore_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/locationquery.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/locationqueryreply.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/locationqueryresult.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/dailyweatherforecast.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/hourlyweatherforecast.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/pendingweatherforecast.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/weatherforecast.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/weatherforecastsource.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/geotimezone.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/capalertinfo.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/capalertmessage.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/alertfeedentry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/alertmanager.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/pendingalerts.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/pendingcap.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/capparser.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/caparea.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/capnamedvalue.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/capreference.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/include/KWeatherCore/kweathercore/reply.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/doc/qt6-6.8.3_20250319_bab1fecd/KWeatherCore.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/doc/qt6-6.8.3_20250319_bab1fecd/KWeatherCore.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/package-kweathercore/usr/lib64/qt6/mkspecs/modules/qt_KWeatherCore.pri
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kweathercore/kweathercore.info: No such file or directory
+doxygen
+extra-cmake-modules
+kholidays
+ki18n
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKWeatherCore.so	libKWeatherCore.so.6
+usr/lib64/libKWeatherCore.so.6	libKWeatherCore.so.0.8.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKWeatherCore.so )
+( cd usr/lib64 ; ln -sf libKWeatherCore.so.6 libKWeatherCore.so )
+( cd usr/lib64 ; rm -rf libKWeatherCore.so.6 )
+( cd usr/lib64 ; ln -sf libKWeatherCore.so.0.8.0 libKWeatherCore.so.6 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKWeatherCore.so.6'
+removed './usr/lib64/libKWeatherCore.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/kweathercore/kweathercore-0.8.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/kweathercore-0.8.0/
+usr/doc/kweathercore-0.8.0/README.md
+usr/doc/kweathercore-0.8.0/kweathercore.ini
+usr/doc/kweathercore-0.8.0/slack-required
+usr/doc/qt6-6.8.3_20250319_bab1fecd/
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KWeatherCore.qch
+usr/doc/qt6-6.8.3_20250319_bab1fecd/KWeatherCore.tags
+usr/include/
+usr/include/KWeatherCore/
+usr/include/KWeatherCore/KWeatherCore/
+usr/include/KWeatherCore/KWeatherCore/AlertFeedEntry
+usr/include/KWeatherCore/KWeatherCore/AlertManager
+usr/include/KWeatherCore/KWeatherCore/CAPAlertInfo
+usr/include/KWeatherCore/KWeatherCore/CAPAlertMessage
+usr/include/KWeatherCore/KWeatherCore/CAPArea
+usr/include/KWeatherCore/KWeatherCore/CAPNamedValue
+usr/include/KWeatherCore/KWeatherCore/CAPParser
+usr/include/KWeatherCore/KWeatherCore/CAPReference
+usr/include/KWeatherCore/KWeatherCore/DailyWeatherForecast
+usr/include/KWeatherCore/KWeatherCore/GeoTimezone
+usr/include/KWeatherCore/KWeatherCore/HourlyWeatherForecast
+usr/include/KWeatherCore/KWeatherCore/LocationQuery
+usr/include/KWeatherCore/KWeatherCore/LocationQueryReply
+usr/include/KWeatherCore/KWeatherCore/LocationQueryResult
+usr/include/KWeatherCore/KWeatherCore/PendingAlerts
+usr/include/KWeatherCore/KWeatherCore/PendingCAP
+usr/include/KWeatherCore/KWeatherCore/PendingWeatherForecast
+usr/include/KWeatherCore/KWeatherCore/Reply
+usr/include/KWeatherCore/KWeatherCore/WeatherForecast
+usr/include/KWeatherCore/KWeatherCore/WeatherForecastSource
+usr/include/KWeatherCore/kweathercore/
+usr/include/KWeatherCore/kweathercore/alertfeedentry.h
+usr/include/KWeatherCore/kweathercore/alertmanager.h
+usr/include/KWeatherCore/kweathercore/capalertinfo.h
+usr/include/KWeatherCore/kweathercore/capalertmessage.h
+usr/include/KWeatherCore/kweathercore/caparea.h
+usr/include/KWeatherCore/kweathercore/capnamedvalue.h
+usr/include/KWeatherCore/kweathercore/capparser.h
+usr/include/KWeatherCore/kweathercore/capreference.h
+usr/include/KWeatherCore/kweathercore/dailyweatherforecast.h
+usr/include/KWeatherCore/kweathercore/geotimezone.h
+usr/include/KWeatherCore/kweathercore/hourlyweatherforecast.h
+usr/include/KWeatherCore/kweathercore/kweathercore_export.h
+usr/include/KWeatherCore/kweathercore/locationquery.h
+usr/include/KWeatherCore/kweathercore/locationqueryreply.h
+usr/include/KWeatherCore/kweathercore/locationqueryresult.h
+usr/include/KWeatherCore/kweathercore/pendingalerts.h
+usr/include/KWeatherCore/kweathercore/pendingcap.h
+usr/include/KWeatherCore/kweathercore/pendingweatherforecast.h
+usr/include/KWeatherCore/kweathercore/reply.h
+usr/include/KWeatherCore/kweathercore/weatherforecast.h
+usr/include/KWeatherCore/kweathercore/weatherforecastsource.h
+usr/include/kweathercore_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KWeatherCore/
+usr/lib64/cmake/KWeatherCore/KWeatherCoreConfig.cmake
+usr/lib64/cmake/KWeatherCore/KWeatherCoreConfigVersion.cmake
+usr/lib64/cmake/KWeatherCore/KWeatherCoreQchTargets.cmake
+usr/lib64/cmake/KWeatherCore/KWeatherCoreTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KWeatherCore/KWeatherCoreTargets.cmake
+usr/lib64/libKWeatherCore.so.0.8.0
+usr/lib64/qt6/
+usr/lib64/qt6/mkspecs/
+usr/lib64/qt6/mkspecs/modules/
+usr/lib64/qt6/mkspecs/modules/qt_KWeatherCore.pri
+usr/share/
+usr/share/locale/
+usr/share/locale/ar/
+usr/share/locale/ar/LC_MESSAGES/
+usr/share/locale/ar/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/az/
+usr/share/locale/az/LC_MESSAGES/
+usr/share/locale/az/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/bg/
+usr/share/locale/bg/LC_MESSAGES/
+usr/share/locale/bg/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/ca@valencia/
+usr/share/locale/ca@valencia/LC_MESSAGES/
+usr/share/locale/ca@valencia/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/el/
+usr/share/locale/el/LC_MESSAGES/
+usr/share/locale/el/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/eo/
+usr/share/locale/eo/LC_MESSAGES/
+usr/share/locale/eo/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/eu/
+usr/share/locale/eu/LC_MESSAGES/
+usr/share/locale/eu/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/fi/
+usr/share/locale/fi/LC_MESSAGES/
+usr/share/locale/fi/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/is/
+usr/share/locale/is/LC_MESSAGES/
+usr/share/locale/is/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/ko/
+usr/share/locale/ko/LC_MESSAGES/
+usr/share/locale/ko/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/nn/
+usr/share/locale/nn/LC_MESSAGES/
+usr/share/locale/nn/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/pa/
+usr/share/locale/pa/LC_MESSAGES/
+usr/share/locale/pa/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/kweathercore6.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/kweathercore6.mo
+
+Slackware package /tmp/kweathercore/kweathercore-0.8.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for kweathercore-0.8.0-x86_64-1_rtz.tlz
+Creating /tmp/kweathercore/kweathercore-0.8.0-x86_64-1_rtz.tlz.so.file using /tmp/kweathercore/kweathercore-0.8.0-x86_64-1_rtz.tlz
+Successfully created /tmp/kweathercore/kweathercore-0.8.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in kweathercore.tar.lz4 format.
+/tmp/kweathercore /tmp/kweathercore
+/tmp/kweathercore
+BIN_NAME
+README
+kweathercore-0.8.0-x86_64-1_rtz.tlz
+kweathercore-0.8.0-x86_64-1_rtz.tlz.md5
+kweathercore-0.8.0-x86_64-1_rtz.tlz.so.file
+kweathercore-0.8.0-x86_64-1_rtz.tlz.txt
+kweathercore.dep
+makepkg-kweathercore.log
+kweathercore build finished. Procced to installation...
+
++===============================================================================================================+
+| Upgrading kweathercore-0.8.0-x86_64-1_rtz package using /tmp/kweathercore/kweathercore-0.8.0-x86_64-1_rtz.tlz |
++===============================================================================================================+
+
+Pre-installing package kweathercore-0.8.0-x86_64-1_rtz...
+Removing package: kweathercore-0.8.0-x86_64-1_rtz-upgraded-2025-05-15,00:50:04
+Installing package kweathercore-0.8.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# kweathercore (Library)
+#
+# Library to facilitate retrieval of weather information including
+# forecasts and alerts
+#
+# invent.kde.org/libraries/kweathercore
+Executing install script for kweathercore-0.8.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package kweathercore-0.8.0-x86_64-1_rtz.tlz installed.
+Package kweathercore-0.8.0-x86_64-1_rtz upgraded with new package /tmp/kweathercore/kweathercore-0.8.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'kweathercore-0.8.0.tar.xz': No such file or directory

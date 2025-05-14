@@ -1,0 +1,359 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: mvp 
+Building dep mvp...
+mvp 
+Error: Build file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/mvp/mvp.ini' not found.
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-15 00:52:26--  https://github.com/OpenProgger/phonon-mpv/archive/refs/tags/v0.1.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/OpenProgger/phonon-mpv/tar.gz/refs/tags/v0.1.0 [following]
+--2025-05-15 00:52:26--  https://codeload.github.com/OpenProgger/phonon-mpv/tar.gz/refs/tags/v0.1.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘phonon-mpv-0.1.0.tar.gz’
+
+     0K .......... .......... .......... .......... ..          369K=0.1s
+
+2025-05-15 00:52:27 (369 KB/s) - ‘phonon-mpv-0.1.0.tar.gz’ saved [43859]
+
+Found file: phonon-mpv-0.1.0.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+phonon-mpv-0.1.0/
+phonon-mpv-0.1.0/.gitignore
+phonon-mpv-0.1.0/AUTHORS
+phonon-mpv-0.1.0/CMakeLists.txt
+phonon-mpv-0.1.0/COPYING.LIB
+phonon-mpv-0.1.0/README.md
+phonon-mpv-0.1.0/src/
+phonon-mpv-0.1.0/src/.gitignore
+phonon-mpv-0.1.0/src/CMakeLists.txt
+phonon-mpv-0.1.0/src/audio/
+phonon-mpv-0.1.0/src/audio/audiodataoutput.cpp
+phonon-mpv-0.1.0/src/audio/audiodataoutput.h
+phonon-mpv-0.1.0/src/audio/audiooutput.cpp
+phonon-mpv-0.1.0/src/audio/audiooutput.h
+phonon-mpv-0.1.0/src/audio/volumefadereffect.cpp
+phonon-mpv-0.1.0/src/audio/volumefadereffect.h
+phonon-mpv-0.1.0/src/backend.cpp
+phonon-mpv-0.1.0/src/backend.h
+phonon-mpv-0.1.0/src/effect.cpp
+phonon-mpv-0.1.0/src/effect.h
+phonon-mpv-0.1.0/src/effectmanager.cpp
+phonon-mpv-0.1.0/src/effectmanager.h
+phonon-mpv-0.1.0/src/mediacontroller.cpp
+phonon-mpv-0.1.0/src/mediacontroller.h
+phonon-mpv-0.1.0/src/mediaobject.cpp
+phonon-mpv-0.1.0/src/mediaobject.h
+phonon-mpv-0.1.0/src/phonon-mpv.json.in
+phonon-mpv-0.1.0/src/sinknode.cpp
+phonon-mpv-0.1.0/src/sinknode.h
+phonon-mpv-0.1.0/src/utils/
+phonon-mpv-0.1.0/src/utils/debug.cpp
+phonon-mpv-0.1.0/src/utils/debug.h
+phonon-mpv-0.1.0/src/utils/debug_p.h
+phonon-mpv-0.1.0/src/video/
+phonon-mpv-0.1.0/src/video/videowidget.cpp
+phonon-mpv-0.1.0/src/video/videowidget.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'mpv>=1.101.0'
+--   Found mpv, version 2.5.0
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found WrapVulkanHeaders: /usr/include
+-- Checking for module 'xkbcommon-x11>=0.4.1'
+--   Found xkbcommon-x11, version 1.9.2
+-- XCB: CURSOR requires XCB
+-- Found XCB_XCB: /usr/lib64/libxcb.so (found version "1.17.0")
+-- Found XCB_CURSOR: /usr/lib64/libxcb-cursor.so (found version "0.1.5")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so (found suitable version "1.17.0", minimum required is "0.1.1") found components: CURSOR
+-- XCB: ICCCM requires XCB
+-- Found XCB_ICCCM: /usr/lib64/libxcb-icccm.so (found version "0.4.2")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so (found suitable version "1.17.0", minimum required is "0.3.9") found components: ICCCM
+-- XCB: IMAGE requires XCB;SHM
+-- XCB: IMAGE requires XCB;SHM
+-- Found XCB_SHM: /usr/lib64/libxcb-shm.so (found version "1.17.0")
+-- Found XCB_IMAGE: /usr/lib64/libxcb-image.so (found version "0.4.1")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so (found suitable version "1.17.0", minimum required is "0.3.9") found components: IMAGE
+-- XCB: KEYSYMS requires XCB
+-- Found XCB_KEYSYMS: /usr/lib64/libxcb-keysyms.so (found version "0.4.1")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so (found suitable version "1.17.0", minimum required is "0.3.9") found components: KEYSYMS
+-- XCB: RANDR requires XCB
+-- Found XCB_RANDR: /usr/lib64/libxcb-randr.so (found version "1.17.0")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so (found version "1.17.0") found components: RANDR
+-- XCB: RENDER requires XCB
+-- Found XCB_RENDER: /usr/lib64/libxcb-render.so (found version "1.17.0")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-render.so (found version "1.17.0") found components: RENDER
+-- XCB: RENDERUTIL requires XCB;RENDER
+-- XCB: RENDERUTIL requires XCB;RENDER
+-- Found XCB_RENDERUTIL: /usr/lib64/libxcb-render-util.so (found version "0.3.10")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-render-util.so (found suitable version "1.17.0", minimum required is "0.3.9") found components: RENDERUTIL
+-- XCB: SHAPE requires XCB
+-- Found XCB_SHAPE: /usr/lib64/libxcb-shape.so (found version "1.17.0")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-shape.so (found version "1.17.0") found components: SHAPE
+-- XCB: SHM requires XCB
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-shape.so (found version "1.17.0") found components: SHM
+-- XCB: SYNC requires XCB
+-- Found XCB_SYNC: /usr/lib64/libxcb-sync.so (found version "1.17.0")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-sync.so (found version "1.17.0") found components: SYNC
+-- Found XCB_XFIXES: /usr/lib64/libxcb-xfixes.so (found version "1.17.0")
+-- Found XCB_ATOM: /usr/lib64/libxcb-util.so (found version "0.4.1")
+-- Found XCB_AUX: /usr/lib64/libxcb-util.so (found version "0.4.1")
+-- Found XCB_COMPOSITE: /usr/lib64/libxcb-composite.so (found version "1.17.0")
+-- Found XCB_DAMAGE: /usr/lib64/libxcb-damage.so (found version "1.17.0")
+-- Found XCB_DPMS: /usr/lib64/libxcb-dpms.so (found version "1.17.0")
+-- Found XCB_DRI2: /usr/lib64/libxcb-dri2.so (found version "1.17.0")
+-- Found XCB_DRI3: /usr/lib64/libxcb-dri3.so (found version "1.17.0")
+-- Found XCB_EVENT: /usr/lib64/libxcb-util.so (found version "0.4.1")
+-- Found XCB_EWMH: /usr/lib64/libxcb-ewmh.so (found version "0.4.2")
+-- Found XCB_GLX: /usr/lib64/libxcb-glx.so (found version "1.17.0")
+-- Found XCB_PRESENT: /usr/lib64/libxcb-present.so (found version "1.17.0")
+-- Found XCB_RECORD: /usr/lib64/libxcb-record.so (found version "1.17.0")
+-- Found XCB_RES: /usr/lib64/libxcb-res.so (found version "1.17.0")
+-- Found XCB_SCREENSAVER: /usr/lib64/libxcb-screensaver.so (found version "1.17.0")
+-- Found XCB_UTIL: /usr/lib64/libxcb-util.so (found version "0.4.1")
+-- Found XCB_XF86DRI: /usr/lib64/libxcb-xf86dri.so (found version "1.17.0")
+-- Found XCB_XINERAMA: /usr/lib64/libxcb-xinerama.so (found version "1.17.0")
+-- Found XCB_XINPUT: /usr/lib64/libxcb-xinput.so (found version "1.17.0")
+-- Found XCB_XKB: /usr/lib64/libxcb-xkb.so (found version "1.17.0")
+-- Found XCB_XTEST: /usr/lib64/libxcb-xtest.so (found version "1.17.0")
+-- Found XCB_XV: /usr/lib64/libxcb-xv.so (found version "1.17.0")
+-- Found XCB_XVMC: /usr/lib64/libxcb-xvmc.so (found version "1.17.0")
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found suitable version "1.17.0", minimum required is "1.11")
+-- XCB: XFIXES requires XCB;RENDER;SHAPE
+-- XCB: XFIXES requires XCB;RENDER;SHAPE
+-- XCB: XFIXES requires XCB;RENDER;SHAPE
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found version "1.17.0") found components: XFIXES
+-- XCB: XKB requires XCB
+-- Found XCB: /usr/lib64/libxcb.so;/usr/lib64/libxcb-cursor.so;/usr/lib64/libxcb-icccm.so;/usr/lib64/libxcb-shm.so;/usr/lib64/libxcb-image.so;/usr/lib64/libxcb-keysyms.so;/usr/lib64/libxcb-randr.so;/usr/lib64/libxcb-render.so;/usr/lib64/libxcb-render-util.so;/usr/lib64/libxcb-shape.so;/usr/lib64/libxcb-sync.so;/usr/lib64/libxcb-xfixes.so;/usr/lib64/libxcb-util.so;/usr/lib64/libxcb-composite.so;/usr/lib64/libxcb-damage.so;/usr/lib64/libxcb-dpms.so;/usr/lib64/libxcb-dri2.so;/usr/lib64/libxcb-dri3.so;/usr/lib64/libxcb-ewmh.so;/usr/lib64/libxcb-glx.so;/usr/lib64/libxcb-present.so;/usr/lib64/libxcb-record.so;/usr/lib64/libxcb-res.so;/usr/lib64/libxcb-screensaver.so;/usr/lib64/libxcb-xf86dri.so;/usr/lib64/libxcb-xinerama.so;/usr/lib64/libxcb-xinput.so;/usr/lib64/libxcb-xkb.so;/usr/lib64/libxcb-xtest.so;/usr/lib64/libxcb-xv.so;/usr/lib64/libxcb-xvmc.so (found version "1.17.0") found components: XKB
+-- Found X11_XCB: /usr/lib64/libX11-xcb.so (found version "1.8.12")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Building against Phonon 4.10 API
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.8.3)
+ * Qt6Gui
+ * WrapVulkanHeaders
+ * Qt6OpenGLWidgets
+ * XKB (required version >= 0.5.0), XKB API common to servers and clients., <http://xkbcommon.org>
+ * Qt6XcbQpaPrivate
+ * Qt6Core
+ * Qt6CoreTools (required version >= 6.8.3)
+ * Qt6GuiTools (required version >= 6.8.3)
+ * Qt6WidgetsTools (required version >= 6.8.3)
+ * Phonon4Qt6Experimental (required version >= 4.10.60), Phonon experimental library, <https://api.kde.org/phonon/html/index.html>
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.90), Extra CMake Modules, <https://api.kde.org/frameworks/extra-cmake-modules/html/index.html>
+ * Qt6
+ * Phonon4Qt6 (required version >= 4.10.60), Phonon core library, <https://api.kde.org/phonon/html/index.html>
+
+-- Configuring done (2.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work/phonon-mpv-0.1.0/build
+[1/15] Automatic MOC for target phonon_mpv_qt6
+[2/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/effectmanager.cpp.o
+[3/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/utils/debug.cpp.o
+[4/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/effect.cpp.o
+[5/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/ECMQmLoader-phonon_mpv_qt.cpp.o
+[6/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/audio/volumefadereffect.cpp.o
+[7/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/sinknode.cpp.o
+[8/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/audio/audiooutput.cpp.o
+[9/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/phonon_mpv_qt6_autogen/mocs_compilation.cpp.o
+[10/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/video/videowidget.cpp.o
+[11/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/mediaobject.cpp.o
+[12/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/audio/audiodataoutput.cpp.o
+[13/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/mediacontroller.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work/phonon-mpv-0.1.0/src/mediacontroller.cpp: In member function ‘virtual QVariant Phonon::MPV::MediaController::interfaceCall(Phonon::AddonInterface::Interface, int, const QList<QVariant>&)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work/phonon-mpv-0.1.0/src/mediacontroller.cpp:88:76: warning: ‘bool QVariant::canConvert(int) const’ is deprecated [-Wdeprecated-declarations]
+   88 |                     if(arguments.isEmpty() || !arguments.first().canConvert(QVariant::Int)) {
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QVariant:1,
+                 from /usr/include/phonon4qt6/phonon/addoninterface.h:30,
+                 from /usr/include/phonon4qt6/phonon/AddonInterface:1,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work/phonon-mpv-0.1.0/src/mediacontroller.h:24,
+                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work/phonon-mpv-0.1.0/src/mediacontroller.cpp:22:
+/usr/include/qt6/QtCore/qvariant.h:353:10: note: declared here
+  353 |     bool canConvert(int targetTypeId) const
+      |          ^~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work/phonon-mpv-0.1.0/src/mediacontroller.cpp:103:76: warning: ‘bool QVariant::canConvert(int) const’ is deprecated [-Wdeprecated-declarations]
+  103 |                     if(arguments.isEmpty() || !arguments.first().canConvert(QVariant::Int)) {
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qvariant.h:353:10: note: declared here
+  353 |     bool canConvert(int targetTypeId) const
+      |          ^~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work/phonon-mpv-0.1.0/src/mediacontroller.cpp:112:76: warning: ‘bool QVariant::canConvert(int) const’ is deprecated [-Wdeprecated-declarations]
+  112 |                     if(arguments.isEmpty() || !arguments.first().canConvert(QVariant::Bool)) {
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qvariant.h:353:10: note: declared here
+  353 |     bool canConvert(int targetTypeId) const
+      |          ^~~~~~~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/work/phonon-mpv-0.1.0/src/mediacontroller.cpp:127:76: warning: ‘bool QVariant::canConvert(int) const’ is deprecated [-Wdeprecated-declarations]
+  127 |                     if(arguments.isEmpty() || !arguments.first().canConvert(QVariant::Int)) {
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qvariant.h:353:10: note: declared here
+  353 |     bool canConvert(int targetTypeId) const
+      |          ^~~~~~~~~~
+[14/15] Building CXX object src6/CMakeFiles/phonon_mpv_qt6.dir/backend.cpp.o
+[15/15] Linking CXX shared module bin/phonon_mpv_qt6.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/package-phonon-mpv-qt6/usr/lib64/qt6/plugins/phonon4qt6_backend/phonon_mpv_qt6.so
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/phonon-mpv-qt6/phonon-mpv-qt6.info: No such file or directory
+mvp
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/phonon-mpv-qt6/phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/phonon-mpv-qt6-0.1.0/
+usr/doc/phonon-mpv-qt6-0.1.0/AUTHORS
+usr/doc/phonon-mpv-qt6-0.1.0/README.md
+usr/doc/phonon-mpv-qt6-0.1.0/phonon-mpv-qt6.ini
+usr/doc/phonon-mpv-qt6-0.1.0/slack-required
+usr/lib64/
+usr/lib64/qt6/
+usr/lib64/qt6/plugins/
+usr/lib64/qt6/plugins/phonon4qt6_backend/
+usr/lib64/qt6/plugins/phonon4qt6_backend/phonon_mpv_qt6.so
+
+Slackware package /tmp/phonon-mpv-qt6/phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz
+Creating /tmp/phonon-mpv-qt6/phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz.so.file using /tmp/phonon-mpv-qt6/phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz
+Successfully created /tmp/phonon-mpv-qt6/phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in phonon-mpv-qt6.tar.lz4 format.
+/tmp/phonon-mpv-qt6 /tmp/phonon-mpv-qt6
+/tmp/phonon-mpv-qt6
+BIN_NAME
+README
+makepkg-phonon-mpv-qt6.log
+phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz
+phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz.md5
+phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz.so.file
+phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz.txt
+phonon-mpv-qt6.dep
+phonon-mpv-qt6 build finished. Procced to installation...
+
++=====================================================================================================================+
+| Upgrading phonon-mpv-qt6-0.1.0-x86_64-1_rtz package using /tmp/phonon-mpv-qt6/phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz |
++=====================================================================================================================+
+
+Pre-installing package phonon-mpv-qt6-0.1.0-x86_64-1_rtz...
+Removing package: phonon-mpv-qt6-0.1.0-x86_64-1_rtz-upgraded-2025-05-15,00:52:39
+Installing package phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# phonon-mpv-qt6 (This is a fork of phonon-vlc)
+#
+# Phonon Backend using MPV Player(libmpv) for Qt6
+#
+# https://github.com/OpenProgger/phonon-mpv
+Executing install script for phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz installed.
+Package phonon-mpv-qt6-0.1.0-x86_64-1_rtz upgraded with new package /tmp/phonon-mpv-qt6/phonon-mpv-qt6-0.1.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'phonon-mpv-0.1.0.tar.gz': No such file or directory
