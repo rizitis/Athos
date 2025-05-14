@@ -1,0 +1,455 @@
+Starting build process...
+Detected architecture: x86_64
+No required dependencies specified.
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-15 02:06:43--  https://github.com/rust-secure-code/cargo-auditable/archive/refs/tags/v0.6.6.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/rust-secure-code/cargo-auditable/tar.gz/refs/tags/v0.6.6 [following]
+--2025-05-15 02:06:43--  https://codeload.github.com/rust-secure-code/cargo-auditable/tar.gz/refs/tags/v0.6.6
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘cargo-auditable-0.6.6.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  432K
+    50K .......... ....                                        5.84M=0.1s
+
+2025-05-15 02:06:44 (546 KB/s) - ‘cargo-auditable-0.6.6.tar.gz’ saved [66046]
+
+Found file: cargo-auditable-0.6.6.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+cargo-auditable-0.6.6/
+cargo-auditable-0.6.6/.github/
+cargo-auditable-0.6.6/.github/workflows/
+cargo-auditable-0.6.6/.github/workflows/check.yml
+cargo-auditable-0.6.6/.github/workflows/linux.yml
+cargo-auditable-0.6.6/.github/workflows/mac.yml
+cargo-auditable-0.6.6/.github/workflows/release.yml
+cargo-auditable-0.6.6/.github/workflows/windows.yml
+cargo-auditable-0.6.6/.gitignore
+cargo-auditable-0.6.6/CODE_OF_CONDUCT.md
+cargo-auditable-0.6.6/CONTRIBUTING.md
+cargo-auditable-0.6.6/Cargo.lock
+cargo-auditable-0.6.6/Cargo.toml
+cargo-auditable-0.6.6/LICENSE-APACHE
+cargo-auditable-0.6.6/LICENSE-MIT
+cargo-auditable-0.6.6/PARSING.md
+cargo-auditable-0.6.6/README.md
+cargo-auditable-0.6.6/REPLACING_CARGO.md
+cargo-auditable-0.6.6/auditable-cyclonedx/
+cargo-auditable-0.6.6/auditable-cyclonedx/Cargo.toml
+cargo-auditable-0.6.6/auditable-cyclonedx/src/
+cargo-auditable-0.6.6/auditable-cyclonedx/src/lib.rs
+cargo-auditable-0.6.6/auditable-extract/
+cargo-auditable-0.6.6/auditable-extract/.gitignore
+cargo-auditable-0.6.6/auditable-extract/CHANGELOG.md
+cargo-auditable-0.6.6/auditable-extract/Cargo.toml
+cargo-auditable-0.6.6/auditable-extract/README.md
+cargo-auditable-0.6.6/auditable-extract/fuzz/
+cargo-auditable-0.6.6/auditable-extract/fuzz/.gitignore
+cargo-auditable-0.6.6/auditable-extract/fuzz/Cargo.toml
+cargo-auditable-0.6.6/auditable-extract/fuzz/fuzz_targets/
+cargo-auditable-0.6.6/auditable-extract/fuzz/fuzz_targets/parse_wasm.rs
+cargo-auditable-0.6.6/auditable-extract/src/
+cargo-auditable-0.6.6/auditable-extract/src/lib.rs
+cargo-auditable-0.6.6/auditable-extract/src/wasm.rs
+cargo-auditable-0.6.6/auditable-info/
+cargo-auditable-0.6.6/auditable-info/CHANGELOG.md
+cargo-auditable-0.6.6/auditable-info/Cargo.toml
+cargo-auditable-0.6.6/auditable-info/README.md
+cargo-auditable-0.6.6/auditable-info/src/
+cargo-auditable-0.6.6/auditable-info/src/error.rs
+cargo-auditable-0.6.6/auditable-info/src/lib.rs
+cargo-auditable-0.6.6/auditable-serde/
+cargo-auditable-0.6.6/auditable-serde/CHANGELOG.md
+cargo-auditable-0.6.6/auditable-serde/Cargo.toml
+cargo-auditable-0.6.6/auditable-serde/README.md
+cargo-auditable-0.6.6/auditable-serde/src/
+cargo-auditable-0.6.6/auditable-serde/src/lib.rs
+cargo-auditable-0.6.6/auditable-serde/src/validation.rs
+cargo-auditable-0.6.6/auditable2cdx/
+cargo-auditable-0.6.6/auditable2cdx/Cargo.toml
+cargo-auditable-0.6.6/auditable2cdx/src/
+cargo-auditable-0.6.6/auditable2cdx/src/main.rs
+cargo-auditable-0.6.6/auditable2cdx/src/workarounds.rs
+cargo-auditable-0.6.6/cargo-auditable.schema.json
+cargo-auditable-0.6.6/cargo-auditable/
+cargo-auditable-0.6.6/cargo-auditable/CHANGELOG.md
+cargo-auditable-0.6.6/cargo-auditable/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/cargo-auditable.1
+cargo-auditable-0.6.6/cargo-auditable/gen_manpage/
+cargo-auditable-0.6.6/cargo-auditable/gen_manpage/Cargo.lock
+cargo-auditable-0.6.6/cargo-auditable/gen_manpage/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/gen_manpage/src/
+cargo-auditable-0.6.6/cargo-auditable/gen_manpage/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/src/
+cargo-auditable-0.6.6/cargo-auditable/src/auditable_from_metadata.rs
+cargo-auditable-0.6.6/cargo-auditable/src/binary_file.rs
+cargo-auditable-0.6.6/cargo-auditable/src/cargo_arguments.rs
+cargo-auditable-0.6.6/cargo-auditable/src/cargo_auditable.rs
+cargo-auditable-0.6.6/cargo-auditable/src/collect_audit_data.rs
+cargo-auditable-0.6.6/cargo-auditable/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/src/object_file.rs
+cargo-auditable-0.6.6/cargo-auditable/src/platform_detection.rs
+cargo-auditable-0.6.6/cargo-auditable/src/rustc_arguments.rs
+cargo-auditable-0.6.6/cargo-auditable/src/rustc_wrapper.rs
+cargo-auditable-0.6.6/cargo-auditable/src/target_info.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/build_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/build_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/build_dep/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/build_dep/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/runtime_dep_of_build_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/runtime_dep_of_build_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/runtime_dep_of_build_dep/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/runtime_dep_of_build_dep/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/top_level_crate/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/top_level_crate/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/top_level_crate/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/build_then_runtime_dep/top_level_crate/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/.gitignore
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/README.md
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/a/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/a/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/a/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/a/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/b/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/b/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/b/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/b/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/cargo-audit-dep-cycle/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/crate_with_build_script/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/crate_with_build_script/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/crate_with_build_script/build.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/crate_with_build_script/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/crate_with_build_script/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/build_dep_of_runtime_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/build_dep_of_runtime_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/build_dep_of_runtime_dep/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/build_dep_of_runtime_dep/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/runtime_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/runtime_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/runtime_dep/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/runtime_dep/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/top_level_crate/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/top_level_crate/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/top_level_crate/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/custom_rustc_path/top_level_crate/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lib_and_bin_crate/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lib_and_bin_crate/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lib_and_bin_crate/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lib_and_bin_crate/src/bin/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lib_and_bin_crate/src/bin/some_binary.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lib_and_bin_crate/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lto_binary_crate/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lto_binary_crate/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lto_binary_crate/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/lto_binary_crate/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/should_not_be_included/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/should_not_be_included/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/should_not_be_included/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/should_not_be_included/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/with_platform_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/with_platform_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/with_platform_dep/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/platform_specific_deps/with_platform_dep/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/build_dep_of_runtime_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/build_dep_of_runtime_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/build_dep_of_runtime_dep/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/build_dep_of_runtime_dep/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/runtime_dep/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/runtime_dep/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/runtime_dep/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/runtime_dep/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/top_level_crate/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/top_level_crate/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/top_level_crate/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/runtime_then_build_dep/top_level_crate/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/wasm_crate/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/wasm_crate/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/wasm_crate/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/wasm_crate/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/wasm_crate/src/utils.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/binary_and_cdylib_crate/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/binary_and_cdylib_crate/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/binary_and_cdylib_crate/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/binary_and_cdylib_crate/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/binary_and_cdylib_crate/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/crate_with_features/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/crate_with_features/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/crate_with_features/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/crate_with_features/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/crate_with_features/src/main.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/library_crate/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/library_crate/Cargo.toml
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/library_crate/src/
+cargo-auditable-0.6.6/cargo-auditable/tests/fixtures/workspace/library_crate/src/lib.rs
+cargo-auditable-0.6.6/cargo-auditable/tests/it.rs
+cargo-auditable-0.6.6/rust-audit-info/
+cargo-auditable-0.6.6/rust-audit-info/.gitignore
+cargo-auditable-0.6.6/rust-audit-info/Cargo.lock
+cargo-auditable-0.6.6/rust-audit-info/Cargo.toml
+cargo-auditable-0.6.6/rust-audit-info/README.md
+cargo-auditable-0.6.6/rust-audit-info/src/
+cargo-auditable-0.6.6/rust-audit-info/src/main.rs
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+warning: virtual workspace defaulting to `resolver = "1"` despite one or more workspace members being on edition 2021 which implies `resolver = "2"`
+note: to keep the current resolver, specify `workspace.resolver = "1"` in the workspace root's manifest
+note: to use the edition 2021 resolver, specify `workspace.resolver = "2"` in the workspace root's manifest
+note: for more details see https://doc.rust-lang.org/cargo/reference/resolver.html#resolver-versions
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded quote v1.0.37
+  Downloaded cyclonedx-bom-macros v0.1.0
+  Downloaded home v0.5.9
+  Downloaded wasm-gen v0.1.4
+  Downloaded foldhash v0.1.3
+  Downloaded itoa v1.0.13
+  Downloaded binfarce v0.2.1
+  Downloaded leb128 v0.2.5
+  Downloaded byteorder v0.5.3
+  Downloaded which v4.4.2
+  Downloaded rustversion v1.0.18
+  Downloaded pico-args v0.5.0
+  Downloaded cargo-platform v0.1.8
+  Downloaded cargo_metadata v0.18.1
+  Downloaded ordered-float v4.5.0
+  Downloaded schemars_derive v0.8.21
+  Downloaded semver v1.0.23
+  Downloaded purl v0.1.3
+  Downloaded camino v1.1.9
+  Downloaded fluent-uri v0.1.4
+  Downloaded serde_derive_internals v0.29.1
+  Downloaded uuid v1.11.0
+  Downloaded schemars v0.8.21
+  Downloaded indexmap v2.6.0
+  Downloaded xml-rs v0.8.23
+  Downloaded bitflags v2.6.0
+  Downloaded hashbrown v0.15.1
+  Downloaded serde_json v1.0.133
+  Downloaded cyclonedx-bom v0.8.0
+  Downloaded wasmparser v0.207.0
+  Downloaded syn v2.0.89
+  Downloaded object v0.36.5
+  Downloaded rustix v0.38.41
+  Downloaded libc v0.2.164
+  Downloaded spdx v0.10.7
+warning: virtual workspace defaulting to `resolver = "1"` despite one or more workspace members being on edition 2021 which implies `resolver = "2"`
+note: to keep the current resolver, specify `workspace.resolver = "1"` in the workspace root's manifest
+note: to use the edition 2021 resolver, specify `workspace.resolver = "2"` in the workspace root's manifest
+note: for more details see https://doc.rust-lang.org/cargo/reference/resolver.html#resolver-versions
+   Compiling proc-macro2 v1.0.92
+   Compiling unicode-ident v1.0.14
+   Compiling serde v1.0.215
+   Compiling memchr v2.7.4
+   Compiling foldhash v0.1.3
+   Compiling equivalent v1.0.1
+   Compiling itoa v1.0.13
+   Compiling serde_json v1.0.133
+   Compiling ryu v1.0.18
+   Compiling semver v1.0.23
+   Compiling thiserror v1.0.69
+   Compiling cfg-if v1.0.0
+   Compiling rustversion v1.0.18
+   Compiling libc v0.2.164
+   Compiling autocfg v1.4.0
+   Compiling powerfmt v0.2.0
+   Compiling regex-syntax v0.8.5
+   Compiling topological-sort v0.2.2
+   Compiling heck v0.5.0
+   Compiling bitflags v1.3.2
+   Compiling bitflags v2.6.0
+   Compiling hex v0.4.3
+   Compiling percent-encoding v2.3.1
+   Compiling num-conv v0.1.0
+   Compiling hashbrown v0.15.1
+   Compiling time-core v0.1.2
+   Compiling deranged v0.3.11
+   Compiling camino v1.1.9
+   Compiling adler2 v2.0.0
+   Compiling smallvec v1.13.2
+   Compiling fluent-uri v0.1.4
+   Compiling binfarce v0.2.1
+   Compiling wasmparser v0.207.0
+   Compiling miniz_oxide v0.8.0
+   Compiling once_cell v1.20.2
+   Compiling base64 v0.21.7
+   Compiling xml-rs v0.8.23
+   Compiling crc32fast v1.4.2
+   Compiling byteorder v0.5.3
+   Compiling num-traits v0.2.19
+   Compiling leb128 v0.2.5
+   Compiling spdx v0.10.7
+   Compiling pico-args v0.5.0
+   Compiling wasm-gen v0.1.4
+   Compiling aho-corasick v1.1.3
+   Compiling quote v1.0.37
+   Compiling indexmap v2.6.0
+   Compiling syn v2.0.89
+   Compiling time v0.3.36
+   Compiling ordered-float v4.5.0
+   Compiling getrandom v0.2.15
+   Compiling uuid v1.11.0
+   Compiling object v0.36.5
+   Compiling regex-automata v0.4.9
+   Compiling auditable-extract v0.3.5 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable-extract)
+   Compiling regex v1.11.1
+   Compiling serde_derive v1.0.215
+   Compiling thiserror-impl v1.0.69
+   Compiling strum_macros v0.26.4
+   Compiling cyclonedx-bom-macros v0.1.0
+   Compiling purl v0.1.3
+   Compiling strum v0.26.3
+   Compiling cargo-platform v0.1.8
+   Compiling auditable-serde v0.8.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable-serde)
+   Compiling cyclonedx-bom v0.8.0
+   Compiling cargo_metadata v0.18.1
+   Compiling auditable-info v0.9.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable-info)
+   Compiling cargo-auditable v0.6.6 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/cargo-auditable)
+   Compiling auditable-cyclonedx v0.1.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable-cyclonedx)
+   Compiling auditable2cdx v0.1.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable2cdx)
+    Finished `release` profile [optimized] target(s) in 25.22s
+
+==========================
+rebuilding with cargo-auditable itself
+==========================
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/target/release:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:
+warning: virtual workspace defaulting to `resolver = "1"` despite one or more workspace members being on edition 2021 which implies `resolver = "2"`
+note: to keep the current resolver, specify `workspace.resolver = "1"` in the workspace root's manifest
+note: to use the edition 2021 resolver, specify `workspace.resolver = "2"` in the workspace root's manifest
+note: for more details see https://doc.rust-lang.org/cargo/reference/resolver.html#resolver-versions
+   Compiling auditable-serde v0.8.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable-serde)
+   Compiling auditable-extract v0.3.5 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable-extract)
+   Compiling auditable-info v0.9.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable-info)
+   Compiling auditable-cyclonedx v0.1.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable-cyclonedx)
+   Compiling cargo-auditable v0.6.6 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/cargo-auditable)
+   Compiling auditable2cdx v0.1.0 (/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/work/cargo-auditable-0.6.6/auditable2cdx)
+    Finished `release` profile [optimized] target(s) in 3.32s
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/cargo-auditable/cargo-auditable.info: No such file or directory
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/cargo-auditable/cargo-auditable-0.6.6-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/cargo-auditable-0.6.6/
+usr/doc/cargo-auditable-0.6.6/README.md
+usr/doc/cargo-auditable-0.6.6/cargo-auditable.ini
+usr/local/
+usr/local/bin/
+usr/local/bin/cargo-auditable
+usr/man/
+usr/man/man1/
+usr/man/man1/cargo-auditable.1.gz
+
+Slackware package /tmp/cargo-auditable/cargo-auditable-0.6.6-x86_64-1_rtz.tlz created.
+
+Create shared object file for cargo-auditable-0.6.6-x86_64-1_rtz.tlz
+Creating /tmp/cargo-auditable/cargo-auditable-0.6.6-x86_64-1_rtz.tlz.so.file using /tmp/cargo-auditable/cargo-auditable-0.6.6-x86_64-1_rtz.tlz
+Successfully created /tmp/cargo-auditable/cargo-auditable-0.6.6-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in cargo-auditable.tar.lz4 format.
+/tmp/cargo-auditable /tmp/cargo-auditable
+/tmp/cargo-auditable
+BIN_NAME
+README
+cargo-auditable-0.6.6-x86_64-1_rtz.tlz
+cargo-auditable-0.6.6-x86_64-1_rtz.tlz.md5
+cargo-auditable-0.6.6-x86_64-1_rtz.tlz.so.file
+cargo-auditable-0.6.6-x86_64-1_rtz.tlz.txt
+makepkg-cargo-auditable.log
+cargo-auditable build finished. Procced to installation...
+
++========================================================================================================================+
+| Upgrading cargo-auditable-0.6.6-x86_64-1_rtz package using /tmp/cargo-auditable/cargo-auditable-0.6.6-x86_64-1_rtz.tlz |
++========================================================================================================================+
+
+Pre-installing package cargo-auditable-0.6.6-x86_64-1_rtz...
+Removing package: cargo-auditable-0.6.6-x86_64-1_rtz-upgraded-2025-05-15,02:07:18
+Installing package cargo-auditable-0.6.6-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# cargo-auditable (Make production Rust binaries auditable)
+#
+# Cargo wrapper for embedding auditing data. Know the exact crate
+# versions used to build your Rust executable. Audit binaries for
+# known bugs or security vulnerabilities in production, at scale, with
+# zero bookkeeping. This works by embedding data about the dependency
+# tree in JSON format into a dedicated linker section of the compiled
+# executable.
+#
+# https://github.com/rust-secure-code/cargo-auditable
+Executing install script for cargo-auditable-0.6.6-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package cargo-auditable-0.6.6-x86_64-1_rtz.tlz installed.
+Package cargo-auditable-0.6.6-x86_64-1_rtz upgraded with new package /tmp/cargo-auditable/cargo-auditable-0.6.6-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'cargo-auditable-0.6.6.tar.gz': No such file or directory

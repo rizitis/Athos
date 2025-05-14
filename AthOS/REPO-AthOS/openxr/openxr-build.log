@@ -1,0 +1,753 @@
+Starting build process...
+Detected architecture: x86_64
+No required dependencies specified.
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-15 02:14:55--  https://github.com/KhronosGroup/OpenXR-SDK/archive/release-1.1.43.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/KhronosGroup/OpenXR-SDK/tar.gz/refs/tags/release-1.1.43 [following]
+--2025-05-15 02:14:56--  https://codeload.github.com/KhronosGroup/OpenXR-SDK/tar.gz/refs/tags/release-1.1.43
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘OpenXR-SDK-release-1.1.43.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  433K
+    50K .......... .......... .......... .......... ..........  859K
+   100K .......... .......... .......... .......... .......... 6.86M
+   150K .......... .......... .......... .......... .......... 4.82M
+   200K .......... .......... .......... .......... .......... 1.02M
+   250K .......... .......... .......... .......... .......... 6.25M
+   300K .......... .......... .......... .......... .......... 4.96M
+   350K .......... .......... .......... .......... ..........  547K
+   400K .......... .......... .......... .......... ..........  159M
+   450K .......... .......... .......... .......... ..........  385M
+   500K .......... .......... .......... .......... ..........  366M
+   550K .......... .......... .......... .......... .......... 6.38M
+   600K .......... .......... .........                        3.98M=0.4s
+
+2025-05-15 02:14:56 (1.69 MB/s) - ‘OpenXR-SDK-release-1.1.43.tar.gz’ saved [644835]
+
+Found file: OpenXR-SDK-release-1.1.43.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+OpenXR-SDK-release-1.1.43/
+OpenXR-SDK-release-1.1.43/.appveyor.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/
+OpenXR-SDK-release-1.1.43/.azure-pipelines/nuget/
+OpenXR-SDK-release-1.1.43/.azure-pipelines/nuget/NugetTemplate/
+OpenXR-SDK-release-1.1.43/.azure-pipelines/nuget/NugetTemplate/OpenXR.Loader.nuspec
+OpenXR-SDK-release-1.1.43/.azure-pipelines/nuget/NugetTemplate/build/
+OpenXR-SDK-release-1.1.43/.azure-pipelines/nuget/NugetTemplate/build/native/
+OpenXR-SDK-release-1.1.43/.azure-pipelines/nuget/NugetTemplate/build/native/OpenXR.Loader.props
+OpenXR-SDK-release-1.1.43/.azure-pipelines/nuget/NugetTemplate/build/native/OpenXR.Loader.targets
+OpenXR-SDK-release-1.1.43/.azure-pipelines/nuget/stage_nuget.ps1
+OpenXR-SDK-release-1.1.43/.azure-pipelines/openxr-sdk.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/build_jobs.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/build_linux.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/build_mingw.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/build_msvc.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/check_clang_format.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/check_file_format.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/codespell.yml
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/generate_windows_matrix_build.py
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/install_vulkan.ps1
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/organize_windows_artifacts.py
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/print_windows_artifact_names.py
+OpenXR-SDK-release-1.1.43/.azure-pipelines/shared/shared.py
+OpenXR-SDK-release-1.1.43/.editorconfig
+OpenXR-SDK-release-1.1.43/.git-blame-ignore-revs
+OpenXR-SDK-release-1.1.43/.gitattributes
+OpenXR-SDK-release-1.1.43/.github/
+OpenXR-SDK-release-1.1.43/.github/pull_request_template.md
+OpenXR-SDK-release-1.1.43/.github/scripts/
+OpenXR-SDK-release-1.1.43/.github/scripts/CMakePresets.json
+OpenXR-SDK-release-1.1.43/.github/scripts/CMakePresets.json.license
+OpenXR-SDK-release-1.1.43/.github/scripts/generate_windows_matrix_build.py
+OpenXR-SDK-release-1.1.43/.github/scripts/install_vulkan.ps1
+OpenXR-SDK-release-1.1.43/.github/scripts/organize_windows_artifacts.py
+OpenXR-SDK-release-1.1.43/.github/scripts/shared.py
+OpenXR-SDK-release-1.1.43/.github/workflows/
+OpenXR-SDK-release-1.1.43/.github/workflows/android.yml
+OpenXR-SDK-release-1.1.43/.github/workflows/check_clang_format_and_codespell.yml
+OpenXR-SDK-release-1.1.43/.github/workflows/msvc-build-preset.yml
+OpenXR-SDK-release-1.1.43/.github/workflows/windows-matrix.yml
+OpenXR-SDK-release-1.1.43/.gitignore
+OpenXR-SDK-release-1.1.43/.mailmap
+OpenXR-SDK-release-1.1.43/.reuse/
+OpenXR-SDK-release-1.1.43/.reuse/dep5
+OpenXR-SDK-release-1.1.43/CHANGELOG.SDK.md
+OpenXR-SDK-release-1.1.43/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/CODE_OF_CONDUCT.md
+OpenXR-SDK-release-1.1.43/COPYING.adoc
+OpenXR-SDK-release-1.1.43/LICENSE
+OpenXR-SDK-release-1.1.43/LICENSES/
+OpenXR-SDK-release-1.1.43/LICENSES/Apache-2.0.txt
+OpenXR-SDK-release-1.1.43/LICENSES/BSD-3-Clause.txt
+OpenXR-SDK-release-1.1.43/LICENSES/BSL-1.0.txt
+OpenXR-SDK-release-1.1.43/LICENSES/CC-BY-4.0.txt
+OpenXR-SDK-release-1.1.43/LICENSES/CC0-1.0.txt
+OpenXR-SDK-release-1.1.43/LICENSES/ISC.txt
+OpenXR-SDK-release-1.1.43/LICENSES/LicenseRef-Khronos-Free-Use-License-for-Software-and-Documentation.txt
+OpenXR-SDK-release-1.1.43/LICENSES/LicenseRef-KhronosSpecCopyright-WithNormativeWording-v10.txt
+OpenXR-SDK-release-1.1.43/LICENSES/LicenseRef-jsoncpp-public-domain.txt
+OpenXR-SDK-release-1.1.43/LICENSES/MIT.txt
+OpenXR-SDK-release-1.1.43/LICENSES/OFL-1.1-RFN.txt
+OpenXR-SDK-release-1.1.43/LICENSES/Unlicense.txt
+OpenXR-SDK-release-1.1.43/LICENSES/Zlib.txt
+OpenXR-SDK-release-1.1.43/README.md
+OpenXR-SDK-release-1.1.43/include/
+OpenXR-SDK-release-1.1.43/include/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/include/generated_header_list.txt
+OpenXR-SDK-release-1.1.43/include/generated_header_list.txt.license
+OpenXR-SDK-release-1.1.43/include/openxr/
+OpenXR-SDK-release-1.1.43/include/openxr/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/include/openxr/openxr.h
+OpenXR-SDK-release-1.1.43/include/openxr/openxr_loader_negotiation.h
+OpenXR-SDK-release-1.1.43/include/openxr/openxr_platform.h
+OpenXR-SDK-release-1.1.43/include/openxr/openxr_platform_defines.h
+OpenXR-SDK-release-1.1.43/include/openxr/openxr_reflection.h
+OpenXR-SDK-release-1.1.43/include/openxr/openxr_reflection_parent_structs.h
+OpenXR-SDK-release-1.1.43/include/openxr/openxr_reflection_structs.h
+OpenXR-SDK-release-1.1.43/specification/
+OpenXR-SDK-release-1.1.43/specification/registry/
+OpenXR-SDK-release-1.1.43/specification/registry/xr.xml
+OpenXR-SDK-release-1.1.43/src/
+OpenXR-SDK-release-1.1.43/src/.clang-format
+OpenXR-SDK-release-1.1.43/src/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/cmake/
+OpenXR-SDK-release-1.1.43/src/cmake/FindEGL.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/FindJsonCpp.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/FindMetalTools.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/FindOpenGLES.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/GetGitRevisionDescription.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/GetGitRevisionDescription.cmake.in
+OpenXR-SDK-release-1.1.43/src/cmake/StdFilesystemFlags.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/cmake_uninstall.cmake.in
+OpenXR-SDK-release-1.1.43/src/cmake/fxc_shader.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/glsl_shader.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/make_includable.cmake
+OpenXR-SDK-release-1.1.43/src/cmake/metaconfig.cmake.in
+OpenXR-SDK-release-1.1.43/src/cmake/presentation.cmake
+OpenXR-SDK-release-1.1.43/src/common/
+OpenXR-SDK-release-1.1.43/src/common/extra_algorithms.h
+OpenXR-SDK-release-1.1.43/src/common/filesystem_utils.cpp
+OpenXR-SDK-release-1.1.43/src/common/filesystem_utils.hpp
+OpenXR-SDK-release-1.1.43/src/common/hex_and_handles.h
+OpenXR-SDK-release-1.1.43/src/common/object_info.cpp
+OpenXR-SDK-release-1.1.43/src/common/object_info.h
+OpenXR-SDK-release-1.1.43/src/common/platform_utils.hpp
+OpenXR-SDK-release-1.1.43/src/common/stdfs_conditions.h
+OpenXR-SDK-release-1.1.43/src/common/unique_asset.h
+OpenXR-SDK-release-1.1.43/src/common/vulkan_debug_object_namer.hpp
+OpenXR-SDK-release-1.1.43/src/common/xr_dependencies.h
+OpenXR-SDK-release-1.1.43/src/common/xr_linear.h
+OpenXR-SDK-release-1.1.43/src/common_config.h.in
+OpenXR-SDK-release-1.1.43/src/external/
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/ObjectWrapperBase.h
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.content.cpp
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.content.h
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.content.impl.h
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.database.cpp
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.database.h
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.database.impl.h
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.net.cpp
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.net.h
+OpenXR-SDK-release-1.1.43/src/external/android-jni-wrappers/wrap/android.net.impl.h
+OpenXR-SDK-release-1.1.43/src/external/jnipp/
+OpenXR-SDK-release-1.1.43/src/external/jnipp/Android.bp
+OpenXR-SDK-release-1.1.43/src/external/jnipp/CHANGELOG.md
+OpenXR-SDK-release-1.1.43/src/external/jnipp/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jnipp/LICENSE
+OpenXR-SDK-release-1.1.43/src/external/jnipp/README.md
+OpenXR-SDK-release-1.1.43/src/external/jnipp/android/
+OpenXR-SDK-release-1.1.43/src/external/jnipp/android/AndroidManifest.xml
+OpenXR-SDK-release-1.1.43/src/external/jnipp/android/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jnipp/build.gradle
+OpenXR-SDK-release-1.1.43/src/external/jnipp/changes/
+OpenXR-SDK-release-1.1.43/src/external/jnipp/changes/changes/
+OpenXR-SDK-release-1.1.43/src/external/jnipp/changes/changes/pr.40.md
+OpenXR-SDK-release-1.1.43/src/external/jnipp/changes/fixes/
+OpenXR-SDK-release-1.1.43/src/external/jnipp/changes/fixes/pr.49.md
+OpenXR-SDK-release-1.1.43/src/external/jnipp/jnipp.cpp
+OpenXR-SDK-release-1.1.43/src/external/jnipp/jnipp.h
+OpenXR-SDK-release-1.1.43/src/external/jnipp/jnipp.vcxproj
+OpenXR-SDK-release-1.1.43/src/external/jnipp/jnipp.vcxproj.filters
+OpenXR-SDK-release-1.1.43/src/external/jnipp/makefile
+OpenXR-SDK-release-1.1.43/src/external/jnipp/proclamation.json
+OpenXR-SDK-release-1.1.43/src/external/jnipp/tests/
+OpenXR-SDK-release-1.1.43/src/external/jnipp/tests/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jnipp/tests/external_create.cpp
+OpenXR-SDK-release-1.1.43/src/external/jnipp/tests/external_detach.cpp
+OpenXR-SDK-release-1.1.43/src/external/jnipp/tests/main.cpp
+OpenXR-SDK-release-1.1.43/src/external/jnipp/tests/testing.h
+OpenXR-SDK-release-1.1.43/src/external/jnipp/tests/tests.vcxproj
+OpenXR-SDK-release-1.1.43/src/external/jnipp/tests/tests.vcxproj.filters
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/.clang-format
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/.clang-tidy
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/.gitattributes
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/.github/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/.github/ISSUE_TEMPLATE/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/.github/ISSUE_TEMPLATE/bug_report.md
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/.github/ISSUE_TEMPLATE/feature_request.md
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/.gitignore
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/AUTHORS
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/BUILD.bazel
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/CONTRIBUTING.md
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/CTestConfig.cmake
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/LICENSE
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/README.md
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/amalgamate.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/appveyor.yml
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/cmake/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/cmake/JoinPaths.cmake
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/dev.makefile
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/__init__.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/agent_vmw7.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/agent_vmxp.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/antglob.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/batchbuild.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/fixeol.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/licenseupdater.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/devtools/tarball.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doc/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doc/doxyfile.in
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doc/footer.html
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doc/header.html
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doc/jsoncpp.dox
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doc/readme.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doc/roadmap.dox
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doc/web_doxyfile.in
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/doxybuild.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/README.md
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/readFromStream/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/readFromStream/errorFormat.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/readFromStream/readFromStream.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/readFromStream/withComment.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/readFromString/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/readFromString/readFromString.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/streamWrite/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/streamWrite/streamWrite.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/stringWrite/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/example/stringWrite/stringWrite.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/get_version.pl
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/PreventInBuildInstalls.cmake
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/PreventInSourceBuilds.cmake
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/allocator.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/assertions.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/config.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/forwards.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/json.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/json_features.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/reader.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/value.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/version.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/include/json/writer.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/jsoncpp-namespaced-targets.cmake
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/jsoncppConfig.cmake.in
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/meson.build
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/meson_options.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/pkg-config/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/pkg-config/jsoncpp.pc.in
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/reformat.sh
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/jsontestrunner/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/jsontestrunner/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/jsontestrunner/main.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/lib_json/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/lib_json/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/lib_json/json_reader.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/lib_json/json_tool.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/lib_json/json_value.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/lib_json/json_valueiterator.inl
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/lib_json/json_writer.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/test_lib_json/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/test_lib_json/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/test_lib_json/fuzz.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/test_lib_json/fuzz.dict
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/test_lib_json/fuzz.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/test_lib_json/jsontest.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/test_lib_json/jsontest.h
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/src/test_lib_json/main.cpp
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/cleantests.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/fail_invalid_quote.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/fail_test_array_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/fail_test_array_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/fail_test_object_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/fail_test_stack_limit.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_02.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_03.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_03.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_04.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_04.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_05.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_05.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_06.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_06.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_07.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_array_07.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_02.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_03.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_03.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_04.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_04.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_05.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_05.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_06.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_06.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_07.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_07.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_08.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_08.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_09.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_basic_09.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_comment_00.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_comment_00.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_comment_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_comment_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_comment_02.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_comment_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_complex_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_complex_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_02.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_03.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_03.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_04.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_04.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_05.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_05.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_06_64bits.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_06_64bits.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_07_64bits.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_07_64bits.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_08_64bits.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_integer_08_64bits.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_large_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_large_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_object_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_object_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_object_02.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_object_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_object_03.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_object_03.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_object_04.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_object_04.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_preserve_comment_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_preserve_comment_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_02.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_03.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_03.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_04.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_04.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_05.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_05.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_06.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_06.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_07.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_07.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_08.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_08.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_09.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_09.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_10.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_10.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_11.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_11.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_12.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_real_12.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_02.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_03.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_03.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_04.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_04.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_05.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_05.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_01.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_01.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_02.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_02.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_03.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_03.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_04.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_04.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_05.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/legacy_test_string_unicode_05.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/test_array_08.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/test_array_08.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/test_object_05.expected
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/data/test_object_05.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/generate_expected.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail1.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail10.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail11.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail12.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail13.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail14.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail15.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail16.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail17.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail18.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail19.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail2.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail20.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail21.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail22.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail23.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail24.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail25.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail26.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail27.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail28.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail29.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail3.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail30.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail31.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail32.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail33.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail4.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail5.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail6.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail7.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail8.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/fail9.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/pass1.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/pass2.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/pass3.json
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/jsonchecker/readme.txt
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/pyjsontestrunner.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/runjsontests.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/test/rununittests.py
+OpenXR-SDK-release-1.1.43/src/external/jsoncpp/version.in
+OpenXR-SDK-release-1.1.43/src/loader/
+OpenXR-SDK-release-1.1.43/src/loader/.gitignore
+OpenXR-SDK-release-1.1.43/src/loader/AndroidManifest.xml.in
+OpenXR-SDK-release-1.1.43/src/loader/CMakeLists.txt
+OpenXR-SDK-release-1.1.43/src/loader/OpenXRConfig.cmake.in
+OpenXR-SDK-release-1.1.43/src/loader/abi.json
+OpenXR-SDK-release-1.1.43/src/loader/abi.json.license
+OpenXR-SDK-release-1.1.43/src/loader/additional_manifest.mf.in
+OpenXR-SDK-release-1.1.43/src/loader/additional_manifest.mf.in.license
+OpenXR-SDK-release-1.1.43/src/loader/android_utilities.cpp
+OpenXR-SDK-release-1.1.43/src/loader/android_utilities.h
+OpenXR-SDK-release-1.1.43/src/loader/api_layer_interface.cpp
+OpenXR-SDK-release-1.1.43/src/loader/api_layer_interface.hpp
+OpenXR-SDK-release-1.1.43/src/loader/exception_handling.hpp
+OpenXR-SDK-release-1.1.43/src/loader/loader.rc
+OpenXR-SDK-release-1.1.43/src/loader/loader_core.cpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_init_data.cpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_init_data.hpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_instance.cpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_instance.hpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_logger.cpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_logger.hpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_logger_recorders.cpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_logger_recorders.hpp
+OpenXR-SDK-release-1.1.43/src/loader/loader_platform.hpp
+OpenXR-SDK-release-1.1.43/src/loader/manifest_file.cpp
+OpenXR-SDK-release-1.1.43/src/loader/manifest_file.hpp
+OpenXR-SDK-release-1.1.43/src/loader/module.json
+OpenXR-SDK-release-1.1.43/src/loader/module.json.license
+OpenXR-SDK-release-1.1.43/src/loader/openxr-loader.def
+OpenXR-SDK-release-1.1.43/src/loader/openxr-loader.expsym
+OpenXR-SDK-release-1.1.43/src/loader/openxr-loader.map
+OpenXR-SDK-release-1.1.43/src/loader/openxr.pc.in
+OpenXR-SDK-release-1.1.43/src/loader/openxr_loader_for_android.pom
+OpenXR-SDK-release-1.1.43/src/loader/prefab.json
+OpenXR-SDK-release-1.1.43/src/loader/prefab.json.license
+OpenXR-SDK-release-1.1.43/src/loader/runtime_interface.cpp
+OpenXR-SDK-release-1.1.43/src/loader/runtime_interface.hpp
+OpenXR-SDK-release-1.1.43/src/loader/settings.gradle
+OpenXR-SDK-release-1.1.43/src/loader/xr_generated_loader.cpp
+OpenXR-SDK-release-1.1.43/src/loader/xr_generated_loader.hpp
+OpenXR-SDK-release-1.1.43/src/version.cmake
+OpenXR-SDK-release-1.1.43/src/xr_generated_dispatch_table.c
+OpenXR-SDK-release-1.1.43/src/xr_generated_dispatch_table.h
+OpenXR-SDK-release-1.1.43/src/xr_generated_dispatch_table_core.c
+OpenXR-SDK-release-1.1.43/src/xr_generated_dispatch_table_core.h
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.10") found components: Interpreter
+-- Performing Test HAVE_FILESYSTEM_WITHOUT_LIB
+-- Performing Test HAVE_FILESYSTEM_WITHOUT_LIB - Failed
+-- Performing Test HAVE_FILESYSTEM_NEEDING_LIBSTDCXXFS
+-- Performing Test HAVE_FILESYSTEM_NEEDING_LIBSTDCXXFS - Success
+-- Performing Test HAVE_FILESYSTEM_NEEDING_LIBCXXFS
+-- Performing Test HAVE_FILESYSTEM_NEEDING_LIBCXXFS - Failed
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Enabling OpenGL support
+-- Found Vulkan: /usr/lib64/libvulkan.so (found version "1.4.304") found components: glslc glslangValidator
+-- Enabling Vulkan support
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Could NOT find JsonCpp (missing: JsonCpp_INCLUDE_DIR JsonCpp_LIBRARY) 
+-- Presentation backend selected for hello_xr, loader_test, conformance: xlib
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for one of the modules 'xcb;xcb-glx'
+-- Checking for one of the modules 'wayland-client'
+-- BUILD_WITH_XLIB_HEADERS: ON
+-- BUILD_WITH_XCB_HEADERS: ON
+-- BUILD_WITH_WAYLAND_HEADERS: ON
+-- Found glslc: /usr/bin/glslc
+-- Looking for secure_getenv
+-- Looking for secure_getenv - found
+-- Looking for __secure_getenv
+-- Looking for __secure_getenv - not found
+-- Looking for timespec_get
+-- Looking for timespec_get - found
+-- OpenXR 1.1.43
+-- Found and will use pre-generated xr_generated_dispatch_table.h in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table.c in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table_core.h in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table_core.c in source tree
+-- Performing Test SUPPORTS_Wall
+-- Performing Test SUPPORTS_Wall - Success
+-- Performing Test SUPPORTS_C_Wall
+-- Performing Test SUPPORTS_C_Wall - Success
+-- Performing Test SUPPORTS_Werrorunusedparameter
+-- Performing Test SUPPORTS_Werrorunusedparameter - Success
+-- Performing Test SUPPORTS_C_Werrorunusedparameter
+-- Performing Test SUPPORTS_C_Werrorunusedparameter - Success
+-- Performing Test SUPPORTS_Werrorunusedargument
+-- Performing Test SUPPORTS_Werrorunusedargument - Failed
+-- Performing Test SUPPORTS_C_Werrorunusedargument
+-- Performing Test SUPPORTS_C_Werrorunusedargument - Failed
+-- Performing Test SUPPORTS_Wpointerarith
+-- Performing Test SUPPORTS_Wpointerarith - Success
+-- Performing Test SUPPORTS_C_Wpointerarith
+-- Performing Test SUPPORTS_C_Wpointerarith - Success
+-- Found and will use pre-generated xr_generated_loader.hpp in source tree
+-- Found and will use pre-generated xr_generated_loader.cpp in source tree
+-- Configuring done (3.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/work/OpenXR-SDK-release-1.1.43/build
+[1/19] cd /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/work/OpenXR-SDK-release-1.1.43/build/src/loader && /usr/bin/cmake -E create_symlink libopenxr_loader.so.1.1.43 libopenxr_loader.so.1.1
+[2/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/android_utilities.cpp.o
+[3/19] Building C object src/loader/CMakeFiles/openxr_loader.dir/__/xr_generated_dispatch_table_core.c.o
+[4/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/loader_init_data.cpp.o
+[5/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/loader_logger_recorders.cpp.o
+[6/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/__/common/filesystem_utils.cpp.o
+[7/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/xr_generated_loader.cpp.o
+[8/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/loader_instance.cpp.o
+[9/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/__/common/object_info.cpp.o
+[10/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/runtime_interface.cpp.o
+[11/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/api_layer_interface.cpp.o
+[12/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/loader_logger.cpp.o
+[13/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/__/external/jsoncpp/src/lib_json/json_writer.cpp.o
+[14/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/__/external/jsoncpp/src/lib_json/json_reader.cpp.o
+[15/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/__/external/jsoncpp/src/lib_json/json_value.cpp.o
+[16/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/loader_core.cpp.o
+[17/19] Building CXX object src/loader/CMakeFiles/openxr_loader.dir/manifest_file.cpp.o
+[18/19] Linking CXX shared library src/loader/libopenxr_loader.so.1.1.43
+[19/19] Creating library symlink src/loader/libopenxr_loader.so.1 src/loader/libopenxr_loader.so
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/include/openxr/openxr_platform_defines.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/include/openxr/openxr.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/include/openxr/openxr_loader_negotiation.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/include/openxr/openxr_platform.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/include/openxr/openxr_reflection.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/include/openxr/openxr_reflection_structs.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/include/openxr/openxr_reflection_parent_structs.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/lib64/pkgconfig/openxr.pc
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/lib64/libopenxr_loader.so.1.1.43
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/lib64/libopenxr_loader.so.1
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/lib64/libopenxr_loader.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/lib64/cmake/openxr/OpenXRTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/lib64/cmake/openxr/OpenXRTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/lib64/cmake/openxr/OpenXRConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/lib64/cmake/openxr/OpenXRConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/package-openxr/usr/share/doc/openxr/LICENSE
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openxr/openxr.info: No such file or directory
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libopenxr_loader.so	libopenxr_loader.so.1
+usr/lib64/libopenxr_loader.so.1	libopenxr_loader.so.1.1.43
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libopenxr_loader.so )
+( cd usr/lib64 ; ln -sf libopenxr_loader.so.1 libopenxr_loader.so )
+( cd usr/lib64 ; rm -rf libopenxr_loader.so.1 )
+( cd usr/lib64 ; ln -sf libopenxr_loader.so.1.1.43 libopenxr_loader.so.1 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libopenxr_loader.so.1'
+removed './usr/lib64/libopenxr_loader.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/openxr/openxr-1.1.43-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/openxr-1.1.43/
+usr/doc/openxr-1.1.43/LICENSE
+usr/doc/openxr-1.1.43/README.md
+usr/doc/openxr-1.1.43/openxr.ini
+usr/include/
+usr/include/openxr/
+usr/include/openxr/openxr.h
+usr/include/openxr/openxr_loader_negotiation.h
+usr/include/openxr/openxr_platform.h
+usr/include/openxr/openxr_platform_defines.h
+usr/include/openxr/openxr_reflection.h
+usr/include/openxr/openxr_reflection_parent_structs.h
+usr/include/openxr/openxr_reflection_structs.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/openxr/
+usr/lib64/cmake/openxr/OpenXRConfig.cmake
+usr/lib64/cmake/openxr/OpenXRConfigVersion.cmake
+usr/lib64/cmake/openxr/OpenXRTargets-relwithdebinfo.cmake
+usr/lib64/cmake/openxr/OpenXRTargets.cmake
+usr/lib64/libopenxr_loader.so.1.1.43
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/openxr.pc
+usr/share/
+usr/share/doc/
+usr/share/doc/openxr/
+usr/share/doc/openxr/LICENSE
+
+Slackware package /tmp/openxr/openxr-1.1.43-x86_64-1_rtz.tlz created.
+
+Create shared object file for openxr-1.1.43-x86_64-1_rtz.tlz
+Creating /tmp/openxr/openxr-1.1.43-x86_64-1_rtz.tlz.so.file using /tmp/openxr/openxr-1.1.43-x86_64-1_rtz.tlz
+Successfully created /tmp/openxr/openxr-1.1.43-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in openxr.tar.lz4 format.
+/tmp/openxr /tmp/openxr
+/tmp/openxr
+BIN_NAME
+README
+makepkg-openxr.log
+openxr-1.1.43-x86_64-1_rtz.tlz
+openxr-1.1.43-x86_64-1_rtz.tlz.md5
+openxr-1.1.43-x86_64-1_rtz.tlz.so.file
+openxr-1.1.43-x86_64-1_rtz.tlz.txt
+openxr build finished. Procced to installation...
+
++===============================================================================================+
+| Upgrading openxr-1.1.43-x86_64-1_rtz package using /tmp/openxr/openxr-1.1.43-x86_64-1_rtz.tlz |
++===============================================================================================+
+
+Pre-installing package openxr-1.1.43-x86_64-1_rtz...
+Removing package: openxr-1.1.43-x86_64-1_rtz-upgraded-2025-05-15,02:15:05
+Installing package openxr-1.1.43-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# openxr (OpenXR loader library)
+#
+# https://khronos.org/openxr
+Executing install script for openxr-1.1.43-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package openxr-1.1.43-x86_64-1_rtz.tlz installed.
+Package openxr-1.1.43-x86_64-1_rtz upgraded with new package /tmp/openxr/openxr-1.1.43-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'OpenXR-SDK-release-1.1.43.tar.gz': No such file or directory

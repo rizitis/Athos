@@ -1,0 +1,1279 @@
+Starting build process...
+Detected architecture: x86_64
+No required dependencies specified.
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-15 02:12:22--  https://gitlab.com/accounts-sso/libaccounts-glib/-/archive/VERSION_1.27/libaccounts-glib-VERSION_1.27.tar.gz
+Resolving gitlab.com (gitlab.com)... 172.65.251.78, 2606:4700:90:0:f22e:fbec:5bed:a9b9
+Connecting to gitlab.com (gitlab.com)|172.65.251.78|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/octet-stream]
+Saving to: ‘libaccounts-glib-VERSION_1.27-1.27.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  636K
+    50K .......... .......... .......... .......... .......... 2.08M
+   100K .......... .....                                       5.99M=0.1s
+
+2025-05-15 02:12:23 (1.08 MB/s) - ‘libaccounts-glib-VERSION_1.27-1.27.tar.gz’ saved [117922]
+
+Found file: libaccounts-glib-VERSION_1.27-1.27.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+libaccounts-glib-VERSION_1.27/
+libaccounts-glib-VERSION_1.27/.gitignore
+libaccounts-glib-VERSION_1.27/.gitlab-ci.yml
+libaccounts-glib-VERSION_1.27/COPYING
+libaccounts-glib-VERSION_1.27/NEWS
+libaccounts-glib-VERSION_1.27/README.md
+libaccounts-glib-VERSION_1.27/data/
+libaccounts-glib-VERSION_1.27/data/accounts-application.dtd
+libaccounts-glib-VERSION_1.27/data/accounts-application.its
+libaccounts-glib-VERSION_1.27/data/accounts-application.loc
+libaccounts-glib-VERSION_1.27/data/accounts-provider.dtd
+libaccounts-glib-VERSION_1.27/data/accounts-provider.its
+libaccounts-glib-VERSION_1.27/data/accounts-provider.loc
+libaccounts-glib-VERSION_1.27/data/accounts-service-type.dtd
+libaccounts-glib-VERSION_1.27/data/accounts-service-type.its
+libaccounts-glib-VERSION_1.27/data/accounts-service-type.loc
+libaccounts-glib-VERSION_1.27/data/accounts-service.dtd
+libaccounts-glib-VERSION_1.27/data/accounts-service.its
+libaccounts-glib-VERSION_1.27/data/accounts-service.loc
+libaccounts-glib-VERSION_1.27/data/meson.build
+libaccounts-glib-VERSION_1.27/docs/
+libaccounts-glib-VERSION_1.27/docs/meson.build
+libaccounts-glib-VERSION_1.27/docs/reference/
+libaccounts-glib-VERSION_1.27/docs/reference/ag-backup.xml
+libaccounts-glib-VERSION_1.27/docs/reference/ag-tool.xml
+libaccounts-glib-VERSION_1.27/docs/reference/application-file-format.xml
+libaccounts-glib-VERSION_1.27/docs/reference/gettext-xml-files.xml
+libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-compiling.xml
+libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-glib-docs.xml
+libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-glossary.xml
+libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-overview.xml
+libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-running.xml
+libaccounts-glib-VERSION_1.27/docs/reference/meson.build
+libaccounts-glib-VERSION_1.27/docs/reference/provider-file-format.xml
+libaccounts-glib-VERSION_1.27/docs/reference/service-file-format.xml
+libaccounts-glib-VERSION_1.27/docs/reference/service-type-file-format.xml
+libaccounts-glib-VERSION_1.27/docs/reference/validating-xml-files.xml
+libaccounts-glib-VERSION_1.27/docs/reference/version.xml.in
+libaccounts-glib-VERSION_1.27/libaccounts-glib/
+libaccounts-glib-VERSION_1.27/libaccounts-glib/accounts-glib.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-account-service.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-account-service.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-account.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-account.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-application.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-application.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-auth-data.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-auth-data.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-autocleanups.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-debug.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-debug.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-errors.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-internals.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-manager.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-manager.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-marshal.list
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-provider.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-provider.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-service-type.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-service-type.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-service.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-service.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-types.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-util.c
+libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-util.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/com.google.code.AccountsSSO.Accounts.Manager.xml
+libaccounts-glib-VERSION_1.27/libaccounts-glib/libaccounts-glib.deps
+libaccounts-glib-VERSION_1.27/libaccounts-glib/libaccounts-glib.h
+libaccounts-glib-VERSION_1.27/libaccounts-glib/meson.build
+libaccounts-glib-VERSION_1.27/libaccounts-glib/pygobject/
+libaccounts-glib-VERSION_1.27/libaccounts-glib/pygobject/Accounts.py
+libaccounts-glib-VERSION_1.27/libaccounts-glib/pygobject/meson.build
+libaccounts-glib-VERSION_1.27/meson.build
+libaccounts-glib-VERSION_1.27/meson_options.txt
+libaccounts-glib-VERSION_1.27/tests/
+libaccounts-glib-VERSION_1.27/tests/.gitignore
+libaccounts-glib-VERSION_1.27/tests/check_ag.c
+libaccounts-glib-VERSION_1.27/tests/data/
+libaccounts-glib-VERSION_1.27/tests/data/accounts/
+libaccounts-glib-VERSION_1.27/tests/data/accounts/applications/
+libaccounts-glib-VERSION_1.27/tests/data/accounts/applications/Gallery.application
+libaccounts-glib-VERSION_1.27/tests/data/accounts/applications/Mailer.application
+libaccounts-glib-VERSION_1.27/tests/data/accounts/providers/
+libaccounts-glib-VERSION_1.27/tests/data/accounts/providers/MyProvider.provider
+libaccounts-glib-VERSION_1.27/tests/data/accounts/providers/fake-os/
+libaccounts-glib-VERSION_1.27/tests/data/accounts/providers/fake-os/MyProvider.provider
+libaccounts-glib-VERSION_1.27/tests/data/accounts/providers/maemo.provider
+libaccounts-glib-VERSION_1.27/tests/data/accounts/service-types/
+libaccounts-glib-VERSION_1.27/tests/data/accounts/service-types/e-mail.service-type
+libaccounts-glib-VERSION_1.27/tests/data/accounts/services/
+libaccounts-glib-VERSION_1.27/tests/data/accounts/services/MyService.service
+libaccounts-glib-VERSION_1.27/tests/data/accounts/services/MyService2.service
+libaccounts-glib-VERSION_1.27/tests/data/accounts/services/OtherService.service
+libaccounts-glib-VERSION_1.27/tests/data/applications/
+libaccounts-glib-VERSION_1.27/tests/data/applications/Mailer.desktop
+libaccounts-glib-VERSION_1.27/tests/meson.build
+libaccounts-glib-VERSION_1.27/tests/test-process.c
+libaccounts-glib-VERSION_1.27/tools/
+libaccounts-glib-VERSION_1.27/tools/.gitignore
+libaccounts-glib-VERSION_1.27/tools/backup.c
+libaccounts-glib-VERSION_1.27/tools/main.c
+libaccounts-glib-VERSION_1.27/tools/meson.build
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work
+README or README.md already exists, skipping creation.
+/usr/local/bin/athos: line 901: cd: libaccounts-glib-VERSION_1.27-1.27: No such file or directory
+/usr/local/bin/athos: line 901: cd: libaccounts-glib-1.27: No such file or directory
+hm...lets continue and see what happens
+The Meson build system
+Version: 1.8.0
+Source dir: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27
+Build dir: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build
+Build type: native build
+Project name: libaccounts-glib
+Project version: 1.27
+C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+C linker for the host machine: cc ld.bfd 2.44-slack151
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Run-time dependency glib-2.0 found: YES 2.84.1
+Run-time dependency gio-2.0 found: YES 2.84.1
+Run-time dependency gio-unix-2.0 found: YES 2.84.1
+Run-time dependency gobject-2.0 found: YES 2.84.1
+Run-time dependency libxml-2.0 found: YES 2.13.8
+Run-time dependency sqlite3 found: YES 3.49.2
+Program xmllint found: YES (/usr/bin/xmllint)
+Dependency glib-2.0 found: YES 2.84.1 (cached)
+Program /usr/bin/glib-genmarshal found: YES (/usr/bin/glib-genmarshal)
+Run-time dependency gobject-introspection-1.0 found: YES 1.84.0
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program vapigen found: YES (/usr/bin/vapigen)
+Dependency glib-2.0 found: YES 2.84.1 (cached)
+Configuring version.xml using configuration
+Program gtkdoc-scan found: YES (/usr/bin/gtkdoc-scan)
+Program gtkdoc-scangobj found: YES (/usr/bin/gtkdoc-scangobj)
+Program gtkdoc-mkdb found: YES (/usr/bin/gtkdoc-mkdb)
+Program gtkdoc-mkhtml found: YES (/usr/bin/gtkdoc-mkhtml)
+Program gtkdoc-fixxref found: YES (/usr/bin/gtkdoc-fixxref)
+Run-time dependency check found: YES 0.15.2
+Dependency gio-2.0 found: YES 2.84.1 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Program dbus-test-runner found: NO
+Build targets in project: 14
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'dependency.get_pkgconfig_variable', 'meson.source_root'}
+
+libaccounts-glib 1.27
+
+  User defined options
+    buildtype    : release
+    infodir      : /usr/info
+    libdir       : /usr/lib64
+    localstatedir: /var
+    mandir       : /usr/man
+    prefix       : /usr
+    strip        : true
+    sysconfdir   : /etc
+
+Found ninja-1.12.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+[1/29] Generating gdbus source tests/test-manager.c
+[2/29] Generating glib marshaller header libaccounts-glib/ag-marshal_h
+[3/29] Generating gdbus header tests/test-manager.h
+[4/29] Generating glib marshaller source libaccounts-glib/ag-marshal_c
+[5/29] Compiling C object tools/ag-backup.p/backup.c.o
+[6/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-debug.c.o
+[7/29] Linking target tools/ag-backup
+[8/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/meson-generated_.._ag-marshal.c.o
+[9/29] Compiling C object tests/test-process.p/test-process.c.o
+[10/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-service-type.c.o
+[11/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-auth-data.c.o
+[12/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-provider.c.o
+[13/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-account-service.c.o
+../libaccounts-glib/ag-account-service.c: In function ‘ag_account_service_class_init’:
+../libaccounts-glib/ag-account-service.c:300:5: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+  300 |     g_type_class_add_private (object_class, sizeof (AgAccountServicePrivate));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from ../libaccounts-glib/ag-account-service.h:33,
+                 from ../libaccounts-glib/ag-account-service.c:113:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+../libaccounts-glib/ag-account-service.c: In function ‘ag_account_service_init’:
+../libaccounts-glib/ag-account-service.c:390:13: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+  390 |                                               AgAccountServicePrivate);
+      |             ^                                 ~~~~~~~~~~~~~~~~~~~~~~~~~      
+[14/29] Compiling C object tools/ag-tool.p/main.c.o
+[15/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-service.c.o
+[16/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-util.c.o
+[17/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-application.c.o
+[18/29] Compiling C object tests/accounts-glib-testsuite.p/meson-generated_.._test-manager.c.o
+[19/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-manager.c.o
+../libaccounts-glib/ag-manager.c: In function ‘ag_manager_init’:
+../libaccounts-glib/ag-manager.c:1507:13: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+ 1507 |                                                  AgManagerPrivate);
+      |             ^                                    ~~~~~~~~~~~~~~~~~~          
+../libaccounts-glib/ag-manager.c: In function ‘ag_manager_class_init’:
+../libaccounts-glib/ag-manager.c:1694:5: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+ 1694 |     g_type_class_add_private (object_class, sizeof (AgManagerPrivate));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from ../libaccounts-glib/ag-manager.h:35,
+                 from ../libaccounts-glib/ag-manager.c:47:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+[20/29] Compiling C object libaccounts-glib/libaccounts-glib.so.1.27.p/ag-account.c.o
+../libaccounts-glib/ag-account.c: In function ‘ag_account_init’:
+../libaccounts-glib/ag-account.c:844:13: warning: Deprecated pre-processor symbol: replace with "G_ADD_PRIVATE"
+  844 |                                                  AgAccountPrivate);
+      |             ^                                    ~~~~~~~~~~~~~~~~~~          
+../libaccounts-glib/ag-account.c: In function ‘ag_account_class_init’:
+../libaccounts-glib/ag-account.c:1028:5: warning: ‘g_type_class_add_private’ is deprecated [-Wdeprecated-declarations]
+ 1028 |     g_type_class_add_private (object_class, sizeof (AgAccountPrivate));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:26,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:31,
+                 from /usr/include/glib-2.0/glib-object.h:24,
+                 from ../libaccounts-glib/ag-manager.h:35,
+                 from ../libaccounts-glib/ag-account.c:102:
+/usr/include/glib-2.0/gobject/gtype.h:1503:10: note: declared here
+ 1503 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+[21/29] Linking target libaccounts-glib/libaccounts-glib.so.1.27
+[22/29] Generating symbol file libaccounts-glib/libaccounts-glib.so.1.27.p/libaccounts-glib.so.1.27.symbols
+[23/29] Linking target tests/test-process
+[24/29] Linking target tools/ag-tool
+[25/29] Generating libaccounts-glib/Accounts-1.0.gir with a custom command (wrapped by meson to set env)
+../libaccounts-glib/ag-types.h:97: Warning: Accounts: symbol='G_DEPRECATED_FOR': Skipping foreign symbol from namespace Gio
+[26/29] Compiling C object tests/accounts-glib-testsuite.p/check_ag.c.o
+In file included from ../tests/check_ag.c:44:
+../tests/check_ag.c: In function ‘test_init_fn’:
+../tests/check_ag.c:219:18: warning: too many arguments for format [-Wformat-extra-args]
+  219 |                  "Failed to initialize the AgManager.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_object_fn’:
+../tests/check_ag.c:259:18: warning: too many arguments for format [-Wformat-extra-args]
+  259 |                  "Failed to create the AgAccount.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_read_only_fn’:
+../tests/check_ag.c:278:18: warning: too many arguments for format [-Wformat-extra-args]
+  278 |                  "Failed to create the AgAccount.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_provider_fn’:
+../tests/check_ag.c:315:18: warning: too many arguments for format [-Wformat-extra-args]
+  315 |                  "Failed to create the AgAccount.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:346:22: warning: too many arguments for format [-Wformat-extra-args]
+  346 |                      "Wrong service tag: %s", tag);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_provider_settings_fn’:
+../tests/check_ag.c:404:18: warning: too many arguments for format [-Wformat-extra-args]
+  404 |                  "Failed to create the AgAccount.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘account_store_cb’:
+../tests/check_ag.c:479:43: warning: too many arguments for format [-Wformat-extra-args]
+  479 |     fail_unless (AG_IS_ACCOUNT (account), "Account got disposed?");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:481:14: warning: too many arguments for format [-Wformat-extra-args]
+  481 |         fail("Got error: %s", error->message);
+      |              ^~~~~~~~~~~~~~~
+../tests/check_ag.c:482:56: warning: too many arguments for format [-Wformat-extra-args]
+  482 |     fail_unless (g_strcmp0 (string, TEST_STRING) == 0, "Got wrong string");
+      |                                                        ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘account_store_locked_cb’:
+../tests/check_ag.c:511:43: warning: too many arguments for format [-Wformat-extra-args]
+  511 |     fail_unless (AG_IS_ACCOUNT (account), "Account got disposed?");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:513:14: warning: too many arguments for format [-Wformat-extra-args]
+  513 |         fail("Got error: %s", error->message);
+      |              ^~~~~~~~~~~~~~~
+../tests/check_ag.c:514:56: warning: too many arguments for format [-Wformat-extra-args]
+  514 |     fail_unless (g_strcmp0 (string, TEST_STRING) == 0, "Got wrong string");
+      |                                                        ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:516:33: warning: too many arguments for format [-Wformat-extra-args]
+  516 |     fail_unless (lock_released, "Data stored while DB locked!");
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_store_locked_fn’:
+../tests/check_ag.c:545:37: warning: too many arguments for format [-Wformat-extra-args]
+  545 |     fail_unless (main_loop != NULL, "Callback invoked too early");
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘account_store_locked_cancel_cb’:
+../tests/check_ag.c:562:33: warning: too many arguments for format [-Wformat-extra-args]
+  562 |     fail_unless (error != NULL, "Account disposed but no error set!");
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:563:47: warning: too many arguments for format [-Wformat-extra-args]
+  563 |     fail_unless (error->domain == G_IO_ERROR, "Wrong error domain");
+      |                                               ^~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:565:18: warning: too many arguments for format [-Wformat-extra-args]
+  565 |                  "Got a different error code");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_store_locked_cancel_fn’:
+../tests/check_ag.c:609:37: warning: too many arguments for format [-Wformat-extra-args]
+  609 |     fail_unless (main_loop != NULL, "Callback invoked too early");
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:612:29: warning: too many arguments for format [-Wformat-extra-args]
+  612 |     fail_unless (cb_called, "Callback not invoked");
+      |                             ^~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_store_read_only_fn’:
+../tests/check_ag.c:701:18: warning: too many arguments for format [-Wformat-extra-args]
+  701 |                  "Failed to create the AgAccount.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘account_store_now_cb’:
+../tests/check_ag.c:748:43: warning: too many arguments for format [-Wformat-extra-args]
+  748 |     fail_unless (AG_IS_ACCOUNT (account), "Account got disposed?");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:750:14: warning: too many arguments for format [-Wformat-extra-args]
+  750 |         fail("Got error: %s", error->message);
+      |              ^~~~~~~~~~~~~~~
+../tests/check_ag.c:751:56: warning: too many arguments for format [-Wformat-extra-args]
+  751 |     fail_unless (g_strcmp0 (string, TEST_STRING) == 0, "Got wrong string");
+      |                                                        ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_account_service_fn’:
+../tests/check_ag.c:774:31: warning: too many arguments for format [-Wformat-extra-args]
+  774 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:785:18: warning: too many arguments for format [-Wformat-extra-args]
+  785 |                  "Failed to create AccountService");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:806:18: warning: too many arguments for format [-Wformat-extra-args]
+  806 |                  "Cannot get port from profile");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:808:18: warning: too many arguments for format [-Wformat-extra-args]
+  808 |                  "Wrong port number: %d", g_value_get_int (&value));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:821:18: warning: too many arguments for format [-Wformat-extra-args]
+  821 |                  "Failed to create AccountService for global settings");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_account_service_enabledness_fn’:
+../tests/check_ag.c:863:18: warning: too many arguments for format [-Wformat-extra-args]
+  863 |                  "Failed to create AccountService");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:867:31: warning: too many arguments for format [-Wformat-extra-args]
+  867 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:881:31: warning: too many arguments for format [-Wformat-extra-args]
+  881 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:899:31: warning: too many arguments for format [-Wformat-extra-args]
+  899 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:912:31: warning: too many arguments for format [-Wformat-extra-args]
+  912 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:932:18: warning: too many arguments for format [-Wformat-extra-args]
+  932 |                  "Couldn't load account %u", account_id);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:933:33: warning: too many arguments for format [-Wformat-extra-args]
+  933 |     fail_unless (error == NULL, "Error is not NULL");
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:948:18: warning: too many arguments for format [-Wformat-extra-args]
+  948 |                  "Failed to create AccountService");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:962:31: warning: too many arguments for format [-Wformat-extra-args]
+  962 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_account_service_settings_fn’:
+../tests/check_ag.c:1020:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1020 |                  "Failed to create AccountService");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1040:31: warning: too many arguments for format [-Wformat-extra-args]
+ 1040 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1076:31: warning: too many arguments for format [-Wformat-extra-args]
+ 1076 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_account_service_list_fn’:
+../tests/check_ag.c:1199:35: warning: too many arguments for format [-Wformat-extra-args]
+ 1199 |         fail_unless (data_stored, "Callback not invoked immediately");
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1217:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1217 |                  "Got list length %d, expecting %d",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1236:31: warning: too many arguments for format [-Wformat-extra-args]
+ 1236 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1249:31: warning: too many arguments for format [-Wformat-extra-args]
+ 1249 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1261:31: warning: too many arguments for format [-Wformat-extra-args]
+ 1261 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1277:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1277 |                  "Got list length %d, expecting %d",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1285:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1285 |                  "Got list length %d, expecting %d",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1300:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1300 |                  "Got list length %d, expecting %d",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1307:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1307 |                  "Got list length %d, expecting %d",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘check_string_in_params’:
+../tests/check_ag.c:1349:15: warning: too many arguments for format [-Wformat-extra-args]
+ 1349 |         fail ("Key %s is missing", key);
+      |               ^~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_auth_data_fn’:
+../tests/check_ag.c:1421:31: warning: too many arguments for format [-Wformat-extra-args]
+ 1421 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘check_variant_in_dict’:
+../tests/check_ag.c:1465:15: warning: too many arguments for format [-Wformat-extra-args]
+ 1465 |         fail ("Key %s is missing", key);
+      |               ^~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1470:15: warning: too many arguments for format [-Wformat-extra-args]
+ 1470 |         fail ("Values differ for key %s! Expected %s, actual %s", key,
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_application_fn’:
+../tests/check_ag.c:1634:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1634 |                  "Got %d applications, expecting 1", g_list_length(list));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1660:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1660 |                  "Got %d applications, expecting 1", g_list_length(list));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_service_fn’:
+../tests/check_ag.c:1770:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1770 |                  "Wrong service type: %s", service_type);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1774:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1774 |                  "Wrong service name: %s", service_name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1778:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1778 |                  "Wrong service display name: %s", service_name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1783:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1783 |                  "Wrong service description: %s", service_description);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1787:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1787 |                  "Wrong service icon name: %s", icon_name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1799:22: warning: too many arguments for format [-Wformat-extra-args]
+ 1799 |                      "Wrong service tag: %s", tag);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1803:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1803 |                  "Missing service tag");
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1815:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1815 |                  "Cannot get port from profile");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1817:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1817 |                  "Wrong port number: %d", g_value_get_int (&value));
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1824:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1824 |                  "Cannot get capabilities from profile");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1827:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1827 |                  "Wrong capabilties");
+      |                  ^~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1863:22: warning: too many arguments for format [-Wformat-extra-args]
+ 1863 |                      "Wrong service tag: %s", tag);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1867:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1867 |                  "Missing service tag");
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1883:31: warning: too many arguments for format [-Wformat-extra-args]
+ 1883 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1897:35: warning: too many arguments for format [-Wformat-extra-args]
+ 1897 |     fail_unless (account == NULL, "Loading a non-existing account!");
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1898:33: warning: too many arguments for format [-Wformat-extra-args]
+ 1898 |     fail_unless (error != NULL, "Error is NULL");
+      |                                 ^~~~~~~~~~~~~~~
+../tests/check_ag.c:1903:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1903 |                  "Couldn't load account %u", account_id);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1904:33: warning: too many arguments for format [-Wformat-extra-args]
+ 1904 |     fail_unless (error == NULL, "Error is not NULL");
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1908:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1908 |                  "Got provider %s, expecting %s", provider_name, PROVIDER);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1912:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1912 |                  "Account enabled!");
+      |                  ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1915:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1915 |                  "Display name not retained!");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1919:55: warning: too many arguments for format [-Wformat-extra-args]
+ 1919 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:1921:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1921 |                  "Wrong value");
+      |                  ^~~~~~~~~~~~~
+../tests/check_ag.c:1928:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1928 |                  "Account service not enabled!");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1932:55: warning: too many arguments for format [-Wformat-extra-args]
+ 1932 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:1934:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1934 |                  "Wrong value");
+      |                  ^~~~~~~~~~~~~
+../tests/check_ag.c:1939:55: warning: too many arguments for format [-Wformat-extra-args]
+ 1939 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:1941:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1941 |                  "Wrong value");
+      |                  ^~~~~~~~~~~~~
+../tests/check_ag.c:1946:55: warning: too many arguments for format [-Wformat-extra-args]
+ 1946 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:1947:56: warning: too many arguments for format [-Wformat-extra-args]
+ 1947 |     fail_unless (g_value_get_int (&value) == interval, "Wrong value");
+      |                                                        ^~~~~~~~~~~~~
+../tests/check_ag.c:1952:55: warning: too many arguments for format [-Wformat-extra-args]
+ 1952 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:1955:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1955 |                  "Wrong animals :-)");
+      |                  ^~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1961:55: warning: too many arguments for format [-Wformat-extra-args]
+ 1961 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:1963:58: warning: too many arguments for format [-Wformat-extra-args]
+ 1963 |     fail_unless (g_value_get_schar (&value) == interval, "Wrong value");
+      |                                                          ^~~~~~~~~~~~~
+../tests/check_ag.c:1981:31: warning: too many arguments for format [-Wformat-extra-args]
+ 1981 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:1985:18: warning: too many arguments for format [-Wformat-extra-args]
+ 1985 |                  "Account still disabled!");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_account_services_fn’:
+../tests/check_ag.c:2012:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2012 |                  "Failed to create the AgAccount.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_signals_fn’:
+../tests/check_ag.c:2079:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2079 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2081:34: warning: too many arguments for format [-Wformat-extra-args]
+ 2081 |     fail_unless (enabled_called, "Enabled signal not emitted!");
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2082:39: warning: too many arguments for format [-Wformat-extra-args]
+ 2082 |     fail_unless (display_name_called, "DisplayName signal not emitted!");
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2083:41: warning: too many arguments for format [-Wformat-extra-args]
+ 2083 |     fail_unless (notify_enabled_called, "Enabled property not notified!");
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2085:35: warning: too many arguments for format [-Wformat-extra-args]
+ 2085 |     fail_unless (enabled == TRUE, "Account not enabled!");
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2087:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2087 |                  "DisplayName property not notified!");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_signals_other_manager_fn’:
+../tests/check_ag.c:2111:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2111 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2120:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2120 |                  "Couldn't load account %u", account_id);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2121:33: warning: too many arguments for format [-Wformat-extra-args]
+ 2121 |     fail_unless (error == NULL, "Error is not NULL");
+      |                                 ^~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2134:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2134 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_list_fn’:
+../tests/check_ag.c:2175:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2175 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2178:36: warning: too many arguments for format [-Wformat-extra-args]
+ 2178 |     fail_unless (account->id != 0, "Account ID is still 0!");
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2199:32: warning: too many arguments for format [-Wformat-extra-args]
+ 2199 |     fail_unless (list != NULL, "Empty list");
+      |                                ^~~~~~~~~~~~
+../tests/check_ag.c:2201:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2201 |                  "Created account not found in list");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2208:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2208 |                  "Service %s has no type", my_service_name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2212:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2212 |                  "New account supports %s service type, but shouldn't",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2220:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2220 |                  "Service %s has no type", service_name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2224:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2224 |                  "New account doesn't supports %s service type, but should",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_settings_iter_gvalue_fn’:
+../tests/check_ag.c:2274:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2274 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2277:36: warning: too many arguments for format [-Wformat-extra-args]
+ 2277 |     fail_unless (account->id != 0, "Account ID is still 0!");
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2293:30: warning: too many arguments for format [-Wformat-extra-args]
+ 2293 |                              "Got value %s for key %s, expecting %s",
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2299:29: warning: too many arguments for format [-Wformat-extra-args]
+ 2299 |         fail_unless (found, "Unknown setting %s", key);
+      |                             ^~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2305:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2305 |                  "Not all settings were retrieved (%d out of %d)",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2316:22: warning: too many arguments for format [-Wformat-extra-args]
+ 2316 |                      "Got key with unstripped prefix (%s)", key);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2327:30: warning: too many arguments for format [-Wformat-extra-args]
+ 2327 |                              "Got value %s for key %s, expecting %s",
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2334:29: warning: too many arguments for format [-Wformat-extra-args]
+ 2334 |         fail_unless (found, "Unknown setting %s", key);
+      |                             ^~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2339:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2339 |     fail_unless (n_read == 3, "Not all settings were retrieved");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2352:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2352 |     fail_unless (n_read == 4, "Not all settings were retrieved");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2370:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2370 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2379:22: warning: too many arguments for format [-Wformat-extra-args]
+ 2379 |                      "Got key with unstripped prefix (%s)", key);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2388:26: warning: too many arguments for format [-Wformat-extra-args]
+ 2388 |                          "Got value %d for key %s, expecting %d",
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2395:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2395 |     fail_unless (n_read == 5, "Not all settings were retrieved");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_settings_iter_fn’:
+../tests/check_ag.c:2441:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2441 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2444:36: warning: too many arguments for format [-Wformat-extra-args]
+ 2444 |     fail_unless (account->id != 0, "Account ID is still 0!");
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2460:30: warning: too many arguments for format [-Wformat-extra-args]
+ 2460 |                              "Got value %s for key %s, expecting %s",
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2466:29: warning: too many arguments for format [-Wformat-extra-args]
+ 2466 |         fail_unless (found, "Unknown setting %s", key);
+      |                             ^~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2472:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2472 |                  "Not all settings were retrieved (%d out of %d)",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2483:22: warning: too many arguments for format [-Wformat-extra-args]
+ 2483 |                      "Got key with unstripped prefix (%s)", key);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2494:30: warning: too many arguments for format [-Wformat-extra-args]
+ 2494 |                              "Got value %s for key %s, expecting %s",
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2501:29: warning: too many arguments for format [-Wformat-extra-args]
+ 2501 |         fail_unless (found, "Unknown setting %s", key);
+      |                             ^~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2506:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2506 |     fail_unless (n_read == 3, "Not all settings were retrieved");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2520:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2520 |     fail_unless (n_read == 4, "Not all settings were retrieved");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2534:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2534 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2543:22: warning: too many arguments for format [-Wformat-extra-args]
+ 2543 |                      "Got key with unstripped prefix (%s)", key);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2553:26: warning: too many arguments for format [-Wformat-extra-args]
+ 2553 |                          "Got value %d for key %s, expecting %d",
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2560:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2560 |     fail_unless (n_read == 5, "Not all settings were retrieved");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_list_services_fn’:
+../tests/check_ag.c:2580:35: warning: too many arguments for format [-Wformat-extra-args]
+ 2580 |     fail_unless (n_services == 3, "Got %d services, expecting 3", n_services);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2591:22: warning: too many arguments for format [-Wformat-extra-args]
+ 2591 |                      "Got unexpected service `%s'", name);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2599:35: warning: too many arguments for format [-Wformat-extra-args]
+ 2599 |     fail_unless (n_services == 1, "Got %d services, expecting 1", n_services);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2605:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2605 |                  "Got unexpected service `%s'", name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_list_service_types_fn’:
+../tests/check_ag.c:2625:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2625 |                  "Got %d service types, expecting 1",
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2635:22: warning: too many arguments for format [-Wformat-extra-args]
+ 2635 |                      "Got unexpected service type `%s'", name);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2644:26: warning: too many arguments for format [-Wformat-extra-args]
+ 2644 |                          "Got unexpected service type tag `%s'", tag);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2648:22: warning: too many arguments for format [-Wformat-extra-args]
+ 2648 |                      "Missing service type tag");
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_delete_fn’:
+../tests/check_ag.c:2669:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2669 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2672:36: warning: too many arguments for format [-Wformat-extra-args]
+ 2672 |     fail_unless (account->id != 0, "Account ID is still 0!");
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2689:43: warning: too many arguments for format [-Wformat-extra-args]
+ 2689 |     fail_unless (enabled_called == FALSE, "Accound disabled too early!");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2690:43: warning: too many arguments for format [-Wformat-extra-args]
+ 2690 |     fail_unless (deleted_called == FALSE, "Accound deleted too early!");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2695:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2695 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2699:34: warning: too many arguments for format [-Wformat-extra-args]
+ 2699 |     fail_unless (enabled_called, "Accound enabled signal not emitted");
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2700:34: warning: too many arguments for format [-Wformat-extra-args]
+ 2700 |     fail_unless (deleted_called, "Accound deleted signal not emitted");
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2706:35: warning: too many arguments for format [-Wformat-extra-args]
+ 2706 |     fail_unless (account == NULL, "The account still exists");
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘key_changed_cb’:
+../tests/check_ag.c:2716:37: warning: too many arguments for format [-Wformat-extra-args]
+ 2716 |     fail_unless (*invoked == FALSE, "Callback invoked twice!");
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2721:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2721 |                  "Callback invoked for wrong key %s", key);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘dir_changed_cb’:
+../tests/check_ag.c:2729:37: warning: too many arguments for format [-Wformat-extra-args]
+ 2729 |     fail_unless (*invoked == FALSE, "Callback invoked twice!");
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2733:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2733 |                  "Callback invoked for wrong dir %s", key);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_watches_fn’:
+../tests/check_ag.c:2777:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2777 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2782:43: warning: too many arguments for format [-Wformat-extra-args]
+ 2782 |     fail_unless (server_changed == FALSE, "Callback for 'server' invoked");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2785:40: warning: too many arguments for format [-Wformat-extra-args]
+ 2785 |     fail_unless (port_changed == TRUE, "Callback for 'port' not invoked");
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2788:39: warning: too many arguments for format [-Wformat-extra-args]
+ 2788 |     fail_unless (dir_changed == TRUE, "Callback for 'parameters/' not invoked");
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2810:31: warning: too many arguments for format [-Wformat-extra-args]
+ 2810 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2814:42: warning: too many arguments for format [-Wformat-extra-args]
+ 2814 |     fail_unless (server_changed == TRUE, "Callback for 'server' not invoked");
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2817:41: warning: too many arguments for format [-Wformat-extra-args]
+ 2817 |     fail_unless (port_changed == FALSE, "Callback for 'port' invoked");
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2820:39: warning: too many arguments for format [-Wformat-extra-args]
+ 2820 |     fail_unless (dir_changed == TRUE, "Callback for 'parameters/' not invoked");
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘on_account_deleted’:
+../tests/check_ag.c:2879:37: warning: too many arguments for format [-Wformat-extra-args]
+ 2879 |     fail_unless (account_id == *id, "Deletion of unexpected account");
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘changed_cb’:
+../tests/check_ag.c:2888:37: warning: too many arguments for format [-Wformat-extra-args]
+ 2888 |     fail_unless (*invoked == FALSE, "Callback invoked twice!");
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_concurrency_fn’:
+../tests/check_ag.c:2938:34: warning: too many arguments for format [-Wformat-extra-args]
+ 2938 |     fail_unless (source_id != 0, "Timeout happened");
+      |                                  ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2941:35: warning: too many arguments for format [-Wformat-extra-args]
+ 2941 |     fail_unless (account_id != 0, "Account ID still 0");
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2944:43: warning: too many arguments for format [-Wformat-extra-args]
+ 2944 |     fail_unless (AG_IS_ACCOUNT (account), "Got invalid account");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2948:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2948 |                  "Wrong provider name '%s'", provider_name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2952:18: warning: too many arguments for format [-Wformat-extra-args]
+ 2952 |                  "Wrong display name '%s'", display_name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2960:22: warning: too many arguments for format [-Wformat-extra-args]
+ 2960 |                      "Wrong display name '%s'", allocated_display_name);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2973:34: warning: too many arguments for format [-Wformat-extra-args]
+ 2973 |     fail_unless (source_id != 0, "Timeout happened");
+      |                                  ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2977:35: warning: too many arguments for format [-Wformat-extra-args]
+ 2977 |     fail_unless (account_id == 0, "Account still alive");
+      |                                   ^~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2985:34: warning: too many arguments for format [-Wformat-extra-args]
+ 2985 |     fail_unless (source_id != 0, "Timeout happened");
+      |                                  ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2988:35: warning: too many arguments for format [-Wformat-extra-args]
+ 2988 |     fail_unless (account_id != 0, "Account ID still 0");
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:2991:43: warning: too many arguments for format [-Wformat-extra-args]
+ 2991 |     fail_unless (AG_IS_ACCOUNT (account), "Got invalid account");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3007:55: warning: too many arguments for format [-Wformat-extra-args]
+ 3007 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:3010:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3010 |                  "Wrong numbers");
+      |                  ^~~~~~~~~~~~~~~
+../tests/check_ag.c:3015:35: warning: too many arguments for format [-Wformat-extra-args]
+ 3015 |     fail_unless (service != NULL, "Cannot get service");
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3072:34: warning: too many arguments for format [-Wformat-extra-args]
+ 3072 |     fail_unless (source_id != 0, "Timeout happened");
+      |                                  ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_service_regression_fn’:
+../tests/check_ag.c:3164:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3164 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3176:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3176 |                  "Couldn't load account %u", account_id);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3180:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3180 |                  "Got provider %s, expecting %s", provider_name, PROVIDER);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3185:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3185 |                  "Display name not retained!");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3191:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3191 |                  "Account service not enabled!");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3195:55: warning: too many arguments for format [-Wformat-extra-args]
+ 3195 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:3197:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3197 |                  "Wrong value");
+      |                  ^~~~~~~~~~~~~
+../tests/check_ag.c:3202:55: warning: too many arguments for format [-Wformat-extra-args]
+ 3202 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:3204:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3204 |                  "Wrong value");
+      |                  ^~~~~~~~~~~~~
+../tests/check_ag.c:3209:55: warning: too many arguments for format [-Wformat-extra-args]
+ 3209 |     fail_unless (source == AG_SETTING_SOURCE_ACCOUNT, "Wrong source");
+      |                                                       ^~~~~~~~~~~~~~
+../tests/check_ag.c:3210:56: warning: too many arguments for format [-Wformat-extra-args]
+ 3210 |     fail_unless (g_value_get_int (&value) == interval, "Wrong value");
+      |                                                        ^~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_blocking_fn’:
+../tests/check_ag.c:3234:22: warning: too many arguments for format [-Wformat-extra-args]
+ 3234 |     fail_unless (ok, "Got error %s", error ? error->message : "No error set");
+      |                      ^~~~~~~~~~~~~~
+../tests/check_ag.c:3239:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3239 |                  "Wrong display name '%s'", display_name);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3270:22: warning: too many arguments for format [-Wformat-extra-args]
+ 3270 |     fail_unless (ok, "Got error %s", error ? error->message : "No error set");
+      |                      ^~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_cache_regression_fn’:
+../tests/check_ag.c:3318:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3318 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3329:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3329 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3345:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3345 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_serviceid_regression_fn’:
+../tests/check_ag.c:3397:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3397 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3402:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3402 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_enabled_regression_fn’:
+../tests/check_ag.c:3439:45: warning: too many arguments for format [-Wformat-extra-args]
+ 3439 |     fail_unless (ecd.enabled_check == TRUE, "Settings are not updated!");
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3447:45: warning: too many arguments for format [-Wformat-extra-args]
+ 3447 |     fail_unless (ecd.enabled_check == TRUE, "Settings are not updated!");
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_delete_regression_fn’:
+../tests/check_ag.c:3471:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3471 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3474:36: warning: too many arguments for format [-Wformat-extra-args]
+ 3474 |     fail_unless (account->id != 0, "Account ID is still 0!");
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3492:43: warning: too many arguments for format [-Wformat-extra-args]
+ 3492 |     fail_unless (enabled_called == FALSE, "Accound disabled too early!");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3493:43: warning: too many arguments for format [-Wformat-extra-args]
+ 3493 |     fail_unless (deleted_called == FALSE, "Accound deleted too early!");
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3498:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3498 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3502:34: warning: too many arguments for format [-Wformat-extra-args]
+ 3502 |     fail_unless (enabled_called, "Accound enabled signal not emitted");
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3503:34: warning: too many arguments for format [-Wformat-extra-args]
+ 3503 |     fail_unless (deleted_called, "Accound deleted signal not emitted");
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_duplicate_create_regression_fn’:
+../tests/check_ag.c:3554:17: warning: too many arguments for format [-Wformat-extra-args]
+ 3554 |                 "account-created emitted %d times!", create_signal_counter);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_manager_new_for_service_type_fn’:
+../tests/check_ag.c:3593:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3593 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3597:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3597 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_manager_enabled_event_fn’:
+../tests/check_ag.c:3673:31: warning: too many arguments for format [-Wformat-extra-args]
+ 3673 |     fail_unless (data_stored, "Callback not invoked immediately");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3688:34: warning: too many arguments for format [-Wformat-extra-args]
+ 3688 |     fail_unless (source_id != 0, "Timeout happened");
+      |                                  ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3702:34: warning: too many arguments for format [-Wformat-extra-args]
+ 3702 |     fail_unless (source_id != 0, "Timeout happened");
+      |                                  ^~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_list_enabled_account_fn’:
+../tests/check_ag.c:3722:35: warning: too many arguments for format [-Wformat-extra-args]
+ 3722 |     fail_unless (manager != NULL, "Manager should not be NULL");
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3726:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3726 |                  "Failed to create the AgAccount.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3733:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3733 |                  "Failed to create the AgAccount.");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3741:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3741 |                  "No enabled accounts?");
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3758:33: warning: too many arguments for format [-Wformat-extra-args]
+ 3758 |     fail_unless (found == TRUE, "Required account not enabled");
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_account_list_enabled_services_fn’:
+../tests/check_ag.c:3829:35: warning: too many arguments for format [-Wformat-extra-args]
+ 3829 |     fail_unless (n_services == 1, "Got %d services, expecting 1", n_services);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3840:35: warning: too many arguments for format [-Wformat-extra-args]
+ 3840 |     fail_unless (n_services == 2, "Got %d services, expecting 2", n_services);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3852:35: warning: too many arguments for format [-Wformat-extra-args]
+ 3852 |     fail_unless (n_services == 1, "Got %d services, expecting 1", n_services);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3858:35: warning: too many arguments for format [-Wformat-extra-args]
+ 3858 |     fail_unless (n_services == 1, "Got %d services, expecting 1", n_services);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3880:35: warning: too many arguments for format [-Wformat-extra-args]
+ 3880 |     fail_unless (n_services == 0, "Got %d services, expecting 0", n_services);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_service_type_fn’:
+../tests/check_ag.c:3912:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3912 |                  "Wrong service type name: %s", string);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3916:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3916 |                  "Wrong service type display name: %s", string);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3920:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3920 |                  "Wrong service type description: %s", string);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3924:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3924 |                  "Wrong service type icon name: %s", string);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c:3928:18: warning: too many arguments for format [-Wformat-extra-args]
+ 3928 |                  "Wrong service type i18n name: %s", string);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../tests/check_ag.c: In function ‘test_db_access_fn’:
+../tests/check_ag.c:4019:34: warning: too many arguments for format [-Wformat-extra-args]
+ 4019 |     fail_unless (source_id != 0, "Timeout happened");
+      |                                  ^~~~~~~~~~~~~~~~~~
+[27/29] Linking target tests/accounts-glib-testsuite
+[28/29] Generating libaccounts-glib/Accounts-1.0.typelib with a custom command
+[29/29] Generating libaccounts-glib/libaccounts-glib.vapi with a custom command
+Accounts-1.0.gir:1010.7-1014.26: warning: Signal `Ag.Account.enabled' conflicts with property of the same name
+Accounts-1.0.gir:1688.7-1692.26: warning: Signal `Ag.AccountService.enabled' conflicts with property of the same name
+[0/1] Installing files
+Installing libaccounts-glib/libaccounts-glib.so.1.27 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/lib64
+Stripping target 'libaccounts-glib/libaccounts-glib.so.1.27'.
+Installing libaccounts-glib/Accounts-1.0.gir to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gir-1.0
+Installing libaccounts-glib/Accounts-1.0.typelib to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/lib64/girepository-1.0
+Installing libaccounts-glib/libaccounts-glib.vapi to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/vala/vapi
+Installing tools/ag-backup to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/bin
+Stripping target 'tools/ag-backup'.
+Installing tools/ag-tool to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/bin
+Stripping target 'tools/ag-tool'.
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/libaccounts-glib.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-types.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-account.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-account-service.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-application.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-auth-data.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-autocleanups.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-errors.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-manager.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-provider.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-service.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/ag-service-type.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/accounts-glib.h to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/include/libaccounts-glib
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build/meson-private/libaccounts-glib.pc to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/lib64/pkgconfig
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build/meson-private/libaccounts-glib.deps to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/vala/vapi
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/libaccounts-glib.deps to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/vala/vapi
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/com.google.code.AccountsSSO.Accounts.Manager.xml to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/dbus-1/interfaces
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-application.dtd to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/xml/accounts/schema/dtd
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-provider.dtd to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/xml/accounts/schema/dtd
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-service.dtd to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/xml/accounts/schema/dtd
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-service-type.dtd to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/xml/accounts/schema/dtd
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-application.loc to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gettext/its
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-application.its to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gettext/its
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-provider.loc to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gettext/its
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-provider.its to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gettext/its
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-service.loc to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gettext/its
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-service.its to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gettext/its
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-service-type.loc to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gettext/its
+Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/data/accounts-service-type.its to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/share/gettext/its
+Installing symlink pointing to libaccounts-glib.so.1.27 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/lib64/libaccounts-glib.so.0
+Installing symlink pointing to libaccounts-glib.so.0 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/package-libaccounts-glib/usr/lib64/libaccounts-glib.so
+Running custom install script '/usr/bin/meson --internal gtkdoc --sourcedir=/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27 --builddir=/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build --subdir=docs/reference --headerdirs=/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/.@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build/libaccounts-glib/. --mainfile=libaccounts-glib-docs.xml --modulename=libaccounts-glib --moduleversion= --mode=auto --gtkdoc-scan=/usr/bin/gtkdoc-scan --gtkdoc-scangobj=/usr/bin/gtkdoc-scangobj --gtkdoc-mkdb=/usr/bin/gtkdoc-mkdb --gtkdoc-mkhtml=/usr/bin/gtkdoc-mkhtml --gtkdoc-fixxref=/usr/bin/gtkdoc-fixxref --htmlargs= --scanargs=--rebuild-types --scanobjsargs= --gobjects-types-file= --fixxrefargs=--html-dir=/usr/share/gtk-doc/html@@--extra-dir=/usr/share/gtk-doc/html/glib@@--extra-dir=/usr/share/gtk-doc/html/gobject@@--extra-dir=/usr/share/gtk-doc/html/gio --mkdbargs= --html-assets= --content-files=/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/ag-backup.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/ag-tool.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/application-file-format.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/gettext-xml-files.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-compiling.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-glossary.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-overview.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/libaccounts-running.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/provider-file-format.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/service-file-format.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/service-type-file-format.xml@@/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/docs/reference/validating-xml-files.xml --expand-content-files= --ignore-headers=ag-debug.h@@ag-internals.h@@ag-util.h --installdir= --cc=ccache cc --ld=cc --cflags=-DACCOUNTS_GLIB_COMPILATION=1 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/libaccounts-glib/. -I/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build/libaccounts-glib/. -I/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/. -I/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build/. -pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gio-unix-2.0 -I/usr/include/libxml2 -O2 -march=x86-64 -mtune=generic -fPIC \'-DAPPLICATION_FILES_DIR="accounts/applications"\' \'-DPROVIDER_FILES_DIR="accounts/providers"\' \'-DSERVICE_FILES_DIR="accounts/services"\' \'-DSERVICE_TYPE_FILES_DIR="accounts/service_types"\' \'-DDATABASE_DIR="libaccounts-glib"\' --ldflags=-L/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build/libaccounts-glib -Wl,-rpath,/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/work/libaccounts-glib-VERSION_1.27/build/libaccounts-glib -laccounts-glib -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lxml2 -lsqlite3 -ldl -O2 -march=x86-64 -mtune=generic -fPIC'
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/libaccounts-glib/libaccounts-glib.info: No such file or directory
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libaccounts-glib.so	libaccounts-glib.so.0
+usr/lib64/libaccounts-glib.so.0	libaccounts-glib.so.1.27
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libaccounts-glib.so )
+( cd usr/lib64 ; ln -sf libaccounts-glib.so.0 libaccounts-glib.so )
+( cd usr/lib64 ; rm -rf libaccounts-glib.so.0 )
+( cd usr/lib64 ; ln -sf libaccounts-glib.so.1.27 libaccounts-glib.so.0 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libaccounts-glib.so'
+removed './usr/lib64/libaccounts-glib.so.0'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/libaccounts-glib/libaccounts-glib-1.27-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/ag-backup
+usr/bin/ag-tool
+usr/doc/
+usr/doc/libaccounts-glib-1.27/
+usr/doc/libaccounts-glib-1.27/COPYING
+usr/doc/libaccounts-glib-1.27/NEWS
+usr/doc/libaccounts-glib-1.27/README.md
+usr/doc/libaccounts-glib-1.27/docs/
+usr/doc/libaccounts-glib-1.27/docs/meson.build
+usr/doc/libaccounts-glib-1.27/docs/reference/
+usr/doc/libaccounts-glib-1.27/docs/reference/ag-backup.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/ag-tool.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/application-file-format.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/gettext-xml-files.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/libaccounts-compiling.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/libaccounts-glib-docs.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/libaccounts-glossary.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/libaccounts-overview.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/libaccounts-running.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/meson.build
+usr/doc/libaccounts-glib-1.27/docs/reference/provider-file-format.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/service-file-format.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/service-type-file-format.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/validating-xml-files.xml
+usr/doc/libaccounts-glib-1.27/docs/reference/version.xml.in
+usr/doc/libaccounts-glib-1.27/libaccounts-glib.ini
+usr/include/
+usr/include/libaccounts-glib/
+usr/include/libaccounts-glib/accounts-glib.h
+usr/include/libaccounts-glib/ag-account-service.h
+usr/include/libaccounts-glib/ag-account.h
+usr/include/libaccounts-glib/ag-application.h
+usr/include/libaccounts-glib/ag-auth-data.h
+usr/include/libaccounts-glib/ag-autocleanups.h
+usr/include/libaccounts-glib/ag-errors.h
+usr/include/libaccounts-glib/ag-manager.h
+usr/include/libaccounts-glib/ag-provider.h
+usr/include/libaccounts-glib/ag-service-type.h
+usr/include/libaccounts-glib/ag-service.h
+usr/include/libaccounts-glib/ag-types.h
+usr/include/libaccounts-glib/libaccounts-glib.h
+usr/lib64/
+usr/lib64/girepository-1.0/
+usr/lib64/girepository-1.0/Accounts-1.0.typelib
+usr/lib64/libaccounts-glib.so.1.27
+usr/lib64/pkgconfig/
+usr/lib64/pkgconfig/libaccounts-glib.pc
+usr/share/
+usr/share/dbus-1/
+usr/share/dbus-1/interfaces/
+usr/share/dbus-1/interfaces/com.google.code.AccountsSSO.Accounts.Manager.xml
+usr/share/gettext/
+usr/share/gettext/its/
+usr/share/gettext/its/accounts-application.its
+usr/share/gettext/its/accounts-application.loc
+usr/share/gettext/its/accounts-provider.its
+usr/share/gettext/its/accounts-provider.loc
+usr/share/gettext/its/accounts-service-type.its
+usr/share/gettext/its/accounts-service-type.loc
+usr/share/gettext/its/accounts-service.its
+usr/share/gettext/its/accounts-service.loc
+usr/share/gir-1.0/
+usr/share/gir-1.0/Accounts-1.0.gir
+usr/share/gtk-doc/
+usr/share/gtk-doc/html/
+usr/share/gtk-doc/html/libaccounts-glib/
+usr/share/gtk-doc/html/libaccounts-glib/AgAccount.html
+usr/share/gtk-doc/html/libaccounts-glib/AgAccountService.html
+usr/share/gtk-doc/html/libaccounts-glib/AgManager.html
+usr/share/gtk-doc/html/libaccounts-glib/account-management.html
+usr/share/gtk-doc/html/libaccounts-glib/ag-backup.html
+usr/share/gtk-doc/html/libaccounts-glib/ag-tool.html
+usr/share/gtk-doc/html/libaccounts-glib/annotation-glossary.html
+usr/share/gtk-doc/html/libaccounts-glib/api-index-full.html
+usr/share/gtk-doc/html/libaccounts-glib/appendices.html
+usr/share/gtk-doc/html/libaccounts-glib/gettext-xml-files.html
+usr/share/gtk-doc/html/libaccounts-glib/glossary.html
+usr/share/gtk-doc/html/libaccounts-glib/home.png
+usr/share/gtk-doc/html/libaccounts-glib/index.html
+usr/share/gtk-doc/html/libaccounts-glib/left-insensitive.png
+usr/share/gtk-doc/html/libaccounts-glib/left.png
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-compiling.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib-ag-application.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib-ag-auth-data.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib-ag-provider.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib-ag-service-type.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib-ag-service.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib-objects.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib-overview.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib-tools.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-glib.devhelp2
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-overview.html
+usr/share/gtk-doc/html/libaccounts-glib/libaccounts-running.html
+usr/share/gtk-doc/html/libaccounts-glib/provider-file-format.html
+usr/share/gtk-doc/html/libaccounts-glib/right-insensitive.png
+usr/share/gtk-doc/html/libaccounts-glib/right.png
+usr/share/gtk-doc/html/libaccounts-glib/service-file-format.html
+usr/share/gtk-doc/html/libaccounts-glib/service-type-file-format.html
+usr/share/gtk-doc/html/libaccounts-glib/style.css
+usr/share/gtk-doc/html/libaccounts-glib/up-insensitive.png
+usr/share/gtk-doc/html/libaccounts-glib/up.png
+usr/share/gtk-doc/html/libaccounts-glib/validating-xml-files.html
+usr/share/gtk-doc/html/libaccounts-glib/xml-file-formats.html
+usr/share/gtk-doc/html/libaccounts-glib/xml-files.html
+usr/share/vala/
+usr/share/vala/vapi/
+usr/share/vala/vapi/libaccounts-glib.deps
+usr/share/vala/vapi/libaccounts-glib.vapi
+usr/share/xml/
+usr/share/xml/accounts/
+usr/share/xml/accounts/schema/
+usr/share/xml/accounts/schema/dtd/
+usr/share/xml/accounts/schema/dtd/accounts-application.dtd
+usr/share/xml/accounts/schema/dtd/accounts-provider.dtd
+usr/share/xml/accounts/schema/dtd/accounts-service-type.dtd
+usr/share/xml/accounts/schema/dtd/accounts-service.dtd
+
+Slackware package /tmp/libaccounts-glib/libaccounts-glib-1.27-x86_64-1_rtz.tlz created.
+
+Create shared object file for libaccounts-glib-1.27-x86_64-1_rtz.tlz
+Creating /tmp/libaccounts-glib/libaccounts-glib-1.27-x86_64-1_rtz.tlz.so.file using /tmp/libaccounts-glib/libaccounts-glib-1.27-x86_64-1_rtz.tlz
+Successfully created /tmp/libaccounts-glib/libaccounts-glib-1.27-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in libaccounts-glib.tar.lz4 format.
+/tmp/libaccounts-glib /tmp/libaccounts-glib
+/tmp/libaccounts-glib
+BIN_NAME
+README
+libaccounts-glib-1.27-x86_64-1_rtz.tlz
+libaccounts-glib-1.27-x86_64-1_rtz.tlz.md5
+libaccounts-glib-1.27-x86_64-1_rtz.tlz.so.file
+libaccounts-glib-1.27-x86_64-1_rtz.tlz.txt
+makepkg-libaccounts-glib.log
+libaccounts-glib build finished. Procced to installation...
+
++=========================================================================================================================+
+| Upgrading libaccounts-glib-1.27-x86_64-1_rtz package using /tmp/libaccounts-glib/libaccounts-glib-1.27-x86_64-1_rtz.tlz |
++=========================================================================================================================+
+
+Pre-installing package libaccounts-glib-1.27-x86_64-1_rtz...
+Removing package: libaccounts-glib-1.27-x86_64-1_rtz-upgraded-2025-05-15,02:12:29
+Installing package libaccounts-glib-1.27-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# libaccounts-glib ()
+#
+# Glib-based client library for accessing the online accounts database
+# https://gitlab.com/accounts-sso/libaccounts-glib
+#
+Executing install script for libaccounts-glib-1.27-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package libaccounts-glib-1.27-x86_64-1_rtz.tlz installed.
+Package libaccounts-glib-1.27-x86_64-1_rtz upgraded with new package /tmp/libaccounts-glib/libaccounts-glib-1.27-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'libaccounts-glib-VERSION_1.27-1.27.tar.gz': No such file or directory
