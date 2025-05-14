@@ -1,6 +1,0 @@
-#ifndef CONFIG_H
-#define CONFIG_H
-
-#define POCKETSPHINX_MODELDIR "@POCKETSPHINX_MODELDIR@"
-
-#endif
