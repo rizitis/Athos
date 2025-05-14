@@ -1,0 +1,998 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: extra-cmake-modules	doxygen	 kcodecs5
+extra-cmake-modules is already installed!
+doxygen is already installed!
+kcodecs5 is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-14 23:29:59--  https://download.kde.org/stable/frameworks/5.116/syndication-5.116.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/syndication-5.116.0.tar.xz [following]
+--2025-05-14 23:30:00--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/syndication-5.116.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 510556 (499K) [application/octet-stream]
+Saving to: ‘syndication-5.116.0.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 10% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 20% 1.46M 0s
+   100K .......... .......... .......... .......... .......... 30% 5.42M 0s
+   150K .......... .......... .......... .......... .......... 40% 2.09M 0s
+   200K .......... .......... .......... .......... .......... 50% 6.54M 0s
+   250K .......... .......... .......... .......... .......... 60% 5.12M 0s
+   300K .......... .......... .......... .......... .......... 70% 6.55M 0s
+   350K .......... .......... .......... .......... .......... 80% 1.10M 0s
+   400K .......... .......... .......... .......... .......... 90%  318M 0s
+   450K .......... .......... .......... .......... ........  100%  354M=0.2s
+
+2025-05-14 23:30:00 (2.85 MB/s) - ‘syndication-5.116.0.tar.xz’ saved [510556/510556]
+
+Found file: syndication-5.116.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+syndication-5.116.0/
+syndication-5.116.0/.krazy
+syndication-5.116.0/Mainpage.dox
+syndication-5.116.0/README.md
+syndication-5.116.0/KF5SyndicationConfig.cmake.in
+syndication-5.116.0/LICENSES/
+syndication-5.116.0/LICENSES/BSD-2-Clause.txt
+syndication-5.116.0/LICENSES/Qt-Commercial-exception-1.0.txt
+syndication-5.116.0/LICENSES/CC0-1.0.txt
+syndication-5.116.0/LICENSES/LGPL-2.0-or-later.txt
+syndication-5.116.0/LICENSES/GPL-2.0-or-later.txt
+syndication-5.116.0/.gitlab-ci.yml
+syndication-5.116.0/tests/
+syndication-5.116.0/tests/testloader.h
+syndication-5.116.0/tests/testloader.cpp
+syndication-5.116.0/tests/CMakeLists.txt
+syndication-5.116.0/.git-blame-ignore-revs
+syndication-5.116.0/.kde-ci.yml
+syndication-5.116.0/autotests/
+syndication-5.116.0/autotests/testfeeds.rb
+syndication-5.116.0/autotests/atom/
+syndication-5.116.0/autotests/atom/atom10_entry_title.xml.expected
+syndication-5.116.0/autotests/atom/atom10_relative_uris.xml.expected
+syndication-5.116.0/autotests/atom/bildblog.xml.expected
+syndication-5.116.0/autotests/atom/blogspot.com-plaintext.xml
+syndication-5.116.0/autotests/atom/atom10_feed_rights_text.xml.expected
+syndication-5.116.0/autotests/atom/atom10_entry_id.xml
+syndication-5.116.0/autotests/atom/atom10_authors_priority.xml
+syndication-5.116.0/autotests/atom/heise-foto.xml-not_tested
+syndication-5.116.0/autotests/atom/atom10_feed_rights_inline_markup.xml.expected
+syndication-5.116.0/autotests/atom/atom10_relative_uris.xml
+syndication-5.116.0/autotests/atom/tbray.org_nested_xmlbase.xml
+syndication-5.116.0/autotests/atom/atom10_feed_rights.xml.expected
+syndication-5.116.0/autotests/atom/atom10_feed_generator.xml
+syndication-5.116.0/autotests/atom/atom10_feed_icon.xml.expected
+syndication-5.116.0/autotests/atom/blogspot.com_heimwege.xml.expected
+syndication-5.116.0/autotests/atom/atom10_feed_rights_inline_markup.xml
+syndication-5.116.0/autotests/atom/atom10_feed_rights_text.xml
+syndication-5.116.0/autotests/atom/atom10_entry_category.xml
+syndication-5.116.0/autotests/atom/atom10_feed_icon.xml
+syndication-5.116.0/autotests/atom/wordpress2_atom03_example.xml
+syndication-5.116.0/autotests/atom/bug-414086.xml.expected
+syndication-5.116.0/autotests/atom/rssowl.org.xml
+syndication-5.116.0/autotests/atom/bug-414086.xml
+syndication-5.116.0/autotests/atom/atom10_entry_summary.xml
+syndication-5.116.0/autotests/atom/atom10_authors_and_contributors.xml.expected
+syndication-5.116.0/autotests/atom/atom10_feed_rights_inline_markup_2.xml
+syndication-5.116.0/autotests/atom/tbray.org_nested_xmlbase.xml.expected
+syndication-5.116.0/autotests/atom/atom10_feed_rights_inline_markup_2.xml.expected
+syndication-5.116.0/autotests/atom/atom10_entry_link.xml
+syndication-5.116.0/autotests/atom/atom10_authors_priority.xml.expected
+syndication-5.116.0/autotests/atom/bug411626.xml.expected
+syndication-5.116.0/autotests/atom/blogspot.com-plaintext.xml.expected
+syndication-5.116.0/autotests/atom/blogspot.com_heimwege.xml
+syndication-5.116.0/autotests/atom/heise-atom.xml
+syndication-5.116.0/autotests/atom/atom10_feed_generator.xml.expected
+syndication-5.116.0/autotests/atom/atom10_entry_id.xml.expected
+syndication-5.116.0/autotests/atom/atom10_feed_rights_escaped_markup.xml
+syndication-5.116.0/autotests/atom/qtblog.xml
+syndication-5.116.0/autotests/atom/atom10_entry_summary.xml.expected
+syndication-5.116.0/autotests/atom/atom10_entry_category.xml.expected
+syndication-5.116.0/autotests/atom/bug-190068.xml.expected
+syndication-5.116.0/autotests/atom/bug411626.xml
+syndication-5.116.0/autotests/atom/wordpress2_atom03_example.xml.expected
+syndication-5.116.0/autotests/atom/atom10_entry_link.xml.expected
+syndication-5.116.0/autotests/atom/bug-190068.xml
+syndication-5.116.0/autotests/atom/atom10_entry_content.xml.expected
+syndication-5.116.0/autotests/atom/bildblog.xml
+syndication-5.116.0/autotests/atom/atom10_feed_logo.xml.expected
+syndication-5.116.0/autotests/atom/qtblog.xml.expected
+syndication-5.116.0/autotests/atom/atom10_feed_logo.xml
+syndication-5.116.0/autotests/atom/atom10_authors_and_contributors.xml
+syndication-5.116.0/autotests/atom/atom10_entry_title.xml
+syndication-5.116.0/autotests/atom/atom10_feed_rights.xml
+syndication-5.116.0/autotests/atom/rssowl.org.xml.expected
+syndication-5.116.0/autotests/atom/atom10_feed_rights_escaped_markup.xml.expected
+syndication-5.116.0/autotests/atom/heise-atom.xml.expected
+syndication-5.116.0/autotests/atom/atom10_entry_content.xml
+syndication-5.116.0/autotests/getUrlsFromOPML.rb
+syndication-5.116.0/autotests/loaderutiltest.cpp
+syndication-5.116.0/autotests/testpersonimpl.h
+syndication-5.116.0/autotests/benchmark.cpp
+syndication-5.116.0/autotests/rss2/
+syndication-5.116.0/autotests/rss2/xhtml-i.xml
+syndication-5.116.0/autotests/rss2/desc-c.xml.expected
+syndication-5.116.0/autotests/rss2/reddit.com.xml.expected
+syndication-5.116.0/autotests/rss2/xhtml-j.xml
+syndication-5.116.0/autotests/rss2/zeit.de.xml
+syndication-5.116.0/autotests/rss2/akregator_blog_rss2.xml
+syndication-5.116.0/autotests/rss2/linuxfr_forums.xml
+syndication-5.116.0/autotests/rss2/lunatic_fringe.xml.expected
+syndication-5.116.0/autotests/rss2/cia_osterfeld.xml
+syndication-5.116.0/autotests/rss2/schockwellenreiter.xml
+syndication-5.116.0/autotests/rss2/content-g.xml
+syndication-5.116.0/autotests/rss2/stefandecker.org.xml
+syndication-5.116.0/autotests/rss2/chaosradio-podcast.xml
+syndication-5.116.0/autotests/rss2/kde-apps.rss2.xml
+syndication-5.116.0/autotests/rss2/pro-linux.rss091.xml
+syndication-5.116.0/autotests/rss2/arstechnica.xml
+syndication-5.116.0/autotests/rss2/linuxfr_forums.xml.expected
+syndication-5.116.0/autotests/rss2/content-g.xml.expected
+syndication-5.116.0/autotests/rss2/content-f.xml
+syndication-5.116.0/autotests/rss2/chaosradio-podcast.xml.expected
+syndication-5.116.0/autotests/rss2/arstechnica.xml.expected
+syndication-5.116.0/autotests/rss2/feedster_search_akregator.xml
+syndication-5.116.0/autotests/rss2/corante.com_many.xml.expected
+syndication-5.116.0/autotests/rss2/cia_osterfeld.xml.expected
+syndication-5.116.0/autotests/rss2/linux_org_ru.xml
+syndication-5.116.0/autotests/rss2/lunatic_fringe.xml
+syndication-5.116.0/autotests/rss2/assembla.xml.expected
+syndication-5.116.0/autotests/rss2/pennyarcade.xml.expected
+syndication-5.116.0/autotests/rss2/xhtml-i.xml.expected
+syndication-5.116.0/autotests/rss2/desc-c.xml
+syndication-5.116.0/autotests/rss2/assembla.xml
+syndication-5.116.0/autotests/rss2/stefandecker.org.xml.expected
+syndication-5.116.0/autotests/rss2/feedster_search_akregator.xml.expected
+syndication-5.116.0/autotests/rss2/desc-d.xml
+syndication-5.116.0/autotests/rss2/hilfe_us.xml-not_tested
+syndication-5.116.0/autotests/rss2/spreeblick.xml.expected
+syndication-5.116.0/autotests/rss2/xhtml-j.xml.expected
+syndication-5.116.0/autotests/rss2/livejournal.com_madfire.xml
+syndication-5.116.0/autotests/rss2/inhabitat.xml.expected
+syndication-5.116.0/autotests/rss2/xhtml-h.xml.expected
+syndication-5.116.0/autotests/rss2/enclosure.xml
+syndication-5.116.0/autotests/rss2/content-f.xml.expected
+syndication-5.116.0/autotests/rss2/reddit.com.xml
+syndication-5.116.0/autotests/rss2/linux_org_ru.xml.expected
+syndication-5.116.0/autotests/rss2/xhtml-k.xml
+syndication-5.116.0/autotests/rss2/pro-linux.rss091.xml.expected
+syndication-5.116.0/autotests/rss2/desc-e.xml
+syndication-5.116.0/autotests/rss2/schockwellenreiter.xml.expected
+syndication-5.116.0/autotests/rss2/pcinpact_news.xml.expected
+syndication-5.116.0/autotests/rss2/desc-b.xml
+syndication-5.116.0/autotests/rss2/xhtml-h.xml
+syndication-5.116.0/autotests/rss2/desc-a.xml.expected
+syndication-5.116.0/autotests/rss2/desc-b.xml.expected
+syndication-5.116.0/autotests/rss2/xhtml-k.xml.expected
+syndication-5.116.0/autotests/rss2/enclosure.xml.expected
+syndication-5.116.0/autotests/rss2/corante.com_many.xml
+syndication-5.116.0/autotests/rss2/desc-a.xml
+syndication-5.116.0/autotests/rss2/desc-e.xml.expected
+syndication-5.116.0/autotests/rss2/desc-d.xml.expected
+syndication-5.116.0/autotests/rss2/pennyarcade.xml
+syndication-5.116.0/autotests/rss2/spreeblick.xml
+syndication-5.116.0/autotests/rss2/zeit.de.xml.expected
+syndication-5.116.0/autotests/rss2/sueddeutsche.rss2.xml
+syndication-5.116.0/autotests/rss2/sueddeutsche.rss2.xml.expected
+syndication-5.116.0/autotests/rss2/livejournal.com_madfire.xml.expected
+syndication-5.116.0/autotests/rss2/inhabitat.xml
+syndication-5.116.0/autotests/rss2/akregator_blog_rss2.xml.expected
+syndication-5.116.0/autotests/rss2/pcinpact_news.xml
+syndication-5.116.0/autotests/rss2/kde-apps.rss2.xml.expected
+syndication-5.116.0/autotests/syndicationtest.cpp
+syndication-5.116.0/autotests/feeds/
+syndication-5.116.0/autotests/feeds/bug-383381.txt
+syndication-5.116.0/autotests/additional/
+syndication-5.116.0/autotests/additional/gmane.comp.gnu.binutils.xml
+syndication-5.116.0/autotests/additional/README
+syndication-5.116.0/autotests/syndicationtest.h
+syndication-5.116.0/autotests/LICENSE.UNITTESTS
+syndication-5.116.0/autotests/loaderutiltest.h
+syndication-5.116.0/autotests/rdf/
+syndication-5.116.0/autotests/rdf/security_debian.rdf.xml.expected
+syndication-5.116.0/autotests/rdf/laut.de.xml
+syndication-5.116.0/autotests/rdf/slashdot.xml.expected
+syndication-5.116.0/autotests/rdf/heise.de-newsticker.xml
+syndication-5.116.0/autotests/rdf/laut.de.xml.expected
+syndication-5.116.0/autotests/rdf/tagesschau.de.xml.expected
+syndication-5.116.0/autotests/rdf/don.antville.org.xml.expected
+syndication-5.116.0/autotests/rdf/rss090_item_title.xml.expected
+syndication-5.116.0/autotests/rdf/don.antville.org.xml
+syndication-5.116.0/autotests/rdf/heise.de-newsticker.xml.expected
+syndication-5.116.0/autotests/rdf/tagesschau.de.xml
+syndication-5.116.0/autotests/rdf/rss090_item_title.xml
+syndication-5.116.0/autotests/rdf/javaworld.xml
+syndication-5.116.0/autotests/rdf/slashdot.xml
+syndication-5.116.0/autotests/rdf/javaworld.xml.expected
+syndication-5.116.0/autotests/rdf/rss090_channel_title.xml.expected
+syndication-5.116.0/autotests/rdf/rss090_channel_title.xml
+syndication-5.116.0/autotests/rdf/security_debian.rdf.xml
+syndication-5.116.0/autotests/fetchFeeds.rb
+syndication-5.116.0/autotests/testpersonimpl.cpp
+syndication-5.116.0/autotests/CMakeLists.txt
+syndication-5.116.0/autotests/testlibsyndication.cpp
+syndication-5.116.0/CMakeLists.txt
+syndication-5.116.0/src/
+syndication-5.116.0/src/specificdocument.cpp
+syndication-5.116.0/src/feed.h
+syndication-5.116.0/src/documentsource.h
+syndication-5.116.0/src/atom/
+syndication-5.116.0/src/atom/category.cpp
+syndication-5.116.0/src/atom/link.cpp
+syndication-5.116.0/src/atom/category.h
+syndication-5.116.0/src/atom/atomtools.h
+syndication-5.116.0/src/atom/Mainpage.dox
+syndication-5.116.0/src/atom/entry.cpp
+syndication-5.116.0/src/atom/parser.h
+syndication-5.116.0/src/atom/constants.cpp
+syndication-5.116.0/src/atom/parser.cpp
+syndication-5.116.0/src/atom/person.cpp
+syndication-5.116.0/src/atom/atomtools.cpp
+syndication-5.116.0/src/atom/content.cpp
+syndication-5.116.0/src/atom/entry.h
+syndication-5.116.0/src/atom/source.cpp
+syndication-5.116.0/src/atom/person.h
+syndication-5.116.0/src/atom/document.h
+syndication-5.116.0/src/atom/source.h
+syndication-5.116.0/src/atom/generator.cpp
+syndication-5.116.0/src/atom/link.h
+syndication-5.116.0/src/atom/constants.h
+syndication-5.116.0/src/atom/CMakeLists.txt
+syndication-5.116.0/src/atom/document.cpp
+syndication-5.116.0/src/atom/generator.h
+syndication-5.116.0/src/atom/content.h
+syndication-5.116.0/src/atom/atom.h
+syndication-5.116.0/src/category.cpp
+syndication-5.116.0/src/category.h
+syndication-5.116.0/src/global.h
+syndication-5.116.0/src/syndication.h
+syndication-5.116.0/src/loader.h
+syndication-5.116.0/src/constants.cpp
+syndication-5.116.0/src/image.cpp
+syndication-5.116.0/src/item.h
+syndication-5.116.0/src/person.cpp
+syndication-5.116.0/src/enclosure.cpp
+syndication-5.116.0/src/personimpl.cpp
+syndication-5.116.0/src/specificdocument.h
+syndication-5.116.0/src/parsercollectionimpl.h
+syndication-5.116.0/src/loaderutil_p.h
+syndication-5.116.0/src/specificitemvisitor.cpp
+syndication-5.116.0/src/global.cpp
+syndication-5.116.0/src/rss2/
+syndication-5.116.0/src/rss2/category.cpp
+syndication-5.116.0/src/rss2/category.h
+syndication-5.116.0/src/rss2/Mainpage.dox
+syndication-5.116.0/src/rss2/cloud.cpp
+syndication-5.116.0/src/rss2/parser.h
+syndication-5.116.0/src/rss2/parser.cpp
+syndication-5.116.0/src/rss2/image.cpp
+syndication-5.116.0/src/rss2/item.h
+syndication-5.116.0/src/rss2/tools_p.cpp
+syndication-5.116.0/src/rss2/enclosure.cpp
+syndication-5.116.0/src/rss2/textinput.cpp
+syndication-5.116.0/src/rss2/rss2.h
+syndication-5.116.0/src/rss2/source.cpp
+syndication-5.116.0/src/rss2/item.cpp
+syndication-5.116.0/src/rss2/image.h
+syndication-5.116.0/src/rss2/enclosure.h
+syndication-5.116.0/src/rss2/document.h
+syndication-5.116.0/src/rss2/source.h
+syndication-5.116.0/src/rss2/textinput.h
+syndication-5.116.0/src/rss2/cloud.h
+syndication-5.116.0/src/rss2/CMakeLists.txt
+syndication-5.116.0/src/rss2/document.cpp
+syndication-5.116.0/src/rss2/tools_p.h
+syndication-5.116.0/src/specificitem.h
+syndication-5.116.0/src/elementwrapper.cpp
+syndication-5.116.0/src/tools.cpp
+syndication-5.116.0/src/specificitemvisitor.h
+syndication-5.116.0/src/personimpl.h
+syndication-5.116.0/src/dataretriever.cpp
+syndication-5.116.0/src/item.cpp
+syndication-5.116.0/src/documentsource.cpp
+syndication-5.116.0/src/image.h
+syndication-5.116.0/src/person.h
+syndication-5.116.0/src/abstractparser.h
+syndication-5.116.0/src/enclosure.h
+syndication-5.116.0/src/dataretriever.h
+syndication-5.116.0/src/abstractparser.cpp
+syndication-5.116.0/src/mapper.h
+syndication-5.116.0/src/feed.cpp
+syndication-5.116.0/src/mapper/
+syndication-5.116.0/src/mapper/feedrdfimpl.cpp
+syndication-5.116.0/src/mapper/itemrdfimpl.h
+syndication-5.116.0/src/mapper/feedrss2impl.cpp
+syndication-5.116.0/src/mapper/imagerdfimpl.h
+syndication-5.116.0/src/mapper/categoryrss2impl.h
+syndication-5.116.0/src/mapper/imagerdfimpl.cpp
+syndication-5.116.0/src/mapper/enclosurerss2impl.cpp
+syndication-5.116.0/src/mapper/itematomimpl.cpp
+syndication-5.116.0/src/mapper/feedatomimpl.cpp
+syndication-5.116.0/src/mapper/enclosureatomimpl.h
+syndication-5.116.0/src/mapper/itemrdfimpl.cpp
+syndication-5.116.0/src/mapper/itemrss2impl.cpp
+syndication-5.116.0/src/mapper/itematomimpl.h
+syndication-5.116.0/src/mapper/feedrss2impl.h
+syndication-5.116.0/src/mapper/feedatomimpl.h
+syndication-5.116.0/src/mapper/itemrss2impl.h
+syndication-5.116.0/src/mapper/enclosureatomimpl.cpp
+syndication-5.116.0/src/mapper/categoryrss2impl.cpp
+syndication-5.116.0/src/mapper/imageatomimpl.h
+syndication-5.116.0/src/mapper/enclosurerss2impl.h
+syndication-5.116.0/src/mapper/feedrdfimpl.h
+syndication-5.116.0/src/mapper/mapperrdfimpl.h
+syndication-5.116.0/src/mapper/mapperrss2impl.h
+syndication-5.116.0/src/mapper/imagerss2impl.h
+syndication-5.116.0/src/mapper/categoryatomimpl.cpp
+syndication-5.116.0/src/mapper/imagerss2impl.cpp
+syndication-5.116.0/src/mapper/categoryatomimpl.h
+syndication-5.116.0/src/mapper/mapperatomimpl.h
+syndication-5.116.0/src/syndication_private_export.h
+syndication-5.116.0/src/documentvisitor.h
+syndication-5.116.0/src/tools.h
+syndication-5.116.0/src/rdf/
+syndication-5.116.0/src/rdf/resource.cpp
+syndication-5.116.0/src/rdf/Mainpage.dox
+syndication-5.116.0/src/rdf/contentvocab.cpp
+syndication-5.116.0/src/rdf/syndicationinfo.cpp
+syndication-5.116.0/src/rdf/contentvocab.h
+syndication-5.116.0/src/rdf/parser.h
+syndication-5.116.0/src/rdf/parser.cpp
+syndication-5.116.0/src/rdf/rdfvocab.h
+syndication-5.116.0/src/rdf/image.cpp
+syndication-5.116.0/src/rdf/model.cpp
+syndication-5.116.0/src/rdf/property.cpp
+syndication-5.116.0/src/rdf/item.h
+syndication-5.116.0/src/rdf/nodevisitor.h
+syndication-5.116.0/src/rdf/syndicationvocab.h
+syndication-5.116.0/src/rdf/node.cpp
+syndication-5.116.0/src/rdf/modelmaker.h
+syndication-5.116.0/src/rdf/model.h
+syndication-5.116.0/src/rdf/rdf.h
+syndication-5.116.0/src/rdf/literal.cpp
+syndication-5.116.0/src/rdf/textinput.cpp
+syndication-5.116.0/src/rdf/sequence.h
+syndication-5.116.0/src/rdf/statement.cpp
+syndication-5.116.0/src/rdf/statement.h
+syndication-5.116.0/src/rdf/resourcewrapper.h
+syndication-5.116.0/src/rdf/sequence.cpp
+syndication-5.116.0/src/rdf/model_p.h
+syndication-5.116.0/src/rdf/dublincore.cpp
+syndication-5.116.0/src/rdf/nodevisitor.cpp
+syndication-5.116.0/src/rdf/item.cpp
+syndication-5.116.0/src/rdf/image.h
+syndication-5.116.0/src/rdf/resourcewrapper.cpp
+syndication-5.116.0/src/rdf/document.h
+syndication-5.116.0/src/rdf/dublincorevocab.cpp
+syndication-5.116.0/src/rdf/textinput.h
+syndication-5.116.0/src/rdf/rssvocab.h
+syndication-5.116.0/src/rdf/literal.h
+syndication-5.116.0/src/rdf/resource.h
+syndication-5.116.0/src/rdf/node.h
+syndication-5.116.0/src/rdf/rssvocab.cpp
+syndication-5.116.0/src/rdf/property.h
+syndication-5.116.0/src/rdf/dublincorevocab.h
+syndication-5.116.0/src/rdf/syndicationinfo.h
+syndication-5.116.0/src/rdf/syndicationvocab.cpp
+syndication-5.116.0/src/rdf/CMakeLists.txt
+syndication-5.116.0/src/rdf/document.cpp
+syndication-5.116.0/src/rdf/dublincore.h
+syndication-5.116.0/src/rdf/rdfvocab.cpp
+syndication-5.116.0/src/rdf/modelmaker.cpp
+syndication-5.116.0/src/loaderutil.cpp
+syndication-5.116.0/src/constants.h
+syndication-5.116.0/src/CMakeLists.txt
+syndication-5.116.0/src/parsercollection.h
+syndication-5.116.0/src/loader.cpp
+syndication-5.116.0/src/elementwrapper.h
+syndication-5.116.0/src/specificitem.cpp
+syndication-5.116.0/src/documentvisitor.cpp
+syndication-5.116.0/.gitignore
+syndication-5.116.0/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found QHelpGenerator executable: /usr/lib64/qt5/bin/qhelpgenerator
+-- No such target Qt5Core_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/work/syndication-5.116.0/build/src/KF5Syndication_ECMQchDoxygen.config' updated.
+
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.116.0)
+ * Qt5Xml (required version >= 5.15.2)
+ * KF5Codecs (required version >= 5.116.0)
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * QHelpGenerator, Part of Qt5 tools
+   Needed for API dox QCH file generation
+ * Qt5Core
+ * Qt5Test
+ * Qt5Network (required version >= 5.15.2)
+
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_INSTALL_DOCDIR
+
+
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/work/syndication-5.116.0/build
+[1/101] Automatic MOC for target KF5Syndication
+[2/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/KF5Syndication_autogen/mocs_compilation.cpp.o
+[3/101] Generating src/KF5Syndication.qch, src/KF5Syndication.tags
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[4/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/tools_p.cpp.o
+[5/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/enclosure.cpp.o
+[6/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/node.cpp.o
+[7/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/image.cpp.o
+[8/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/contentvocab.cpp.o
+[9/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/literal.cpp.o
+[10/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/source.cpp.o
+[11/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/image.cpp.o
+[12/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/textinput.cpp.o
+[13/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/nodevisitor.cpp.o
+[14/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/modelmaker.cpp.o
+[15/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/category.cpp.o
+[16/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/parser.cpp.o
+[17/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/dublincore.cpp.o
+[18/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/cloud.cpp.o
+[19/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/item.cpp.o
+[20/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/dublincorevocab.cpp.o
+[21/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/item.cpp.o
+[22/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/rdfvocab.cpp.o
+[23/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/constants.cpp.o
+[24/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/parser.cpp.o
+[25/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/property.cpp.o
+[26/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/resourcewrapper.cpp.o
+[27/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/document.cpp.o
+[28/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/syndicationinfo.cpp.o
+[29/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/atomtools.cpp.o
+[30/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/model.cpp.o
+[31/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/resource.cpp.o
+[32/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/generator.cpp.o
+[33/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/syndicationvocab.cpp.o
+[34/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/category.cpp.o
+[35/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/sequence.cpp.o
+[36/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/statement.cpp.o
+[37/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/textinput.cpp.o
+[38/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rss2/document.cpp.o
+[39/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/link.cpp.o
+[40/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/rdf/rssvocab.cpp.o
+[41/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/content.cpp.o
+[42/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/categoryrss2impl.cpp.o
+[43/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/parser.cpp.o
+[44/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/imagerss2impl.cpp.o
+[45/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/person.cpp.o
+[46/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/constants.cpp.o
+[47/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/source.cpp.o
+[48/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/enclosurerss2impl.cpp.o
+[49/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/imagerdfimpl.cpp.o
+[50/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/enclosureatomimpl.cpp.o
+[51/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/abstractparser.cpp.o
+[52/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/categoryatomimpl.cpp.o
+[53/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/feedrss2impl.cpp.o
+[54/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/entry.cpp.o
+[55/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/atom/document.cpp.o
+[56/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/feedrdfimpl.cpp.o
+[57/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/itemrdfimpl.cpp.o
+[58/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/documentvisitor.cpp.o
+[59/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/category.cpp.o
+[60/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/dataretriever.cpp.o
+[61/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/itemrss2impl.cpp.o
+[62/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/documentsource.cpp.o
+[63/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/feed.cpp.o
+[64/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/image.cpp.o
+[65/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/enclosure.cpp.o
+[66/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/person.cpp.o
+[67/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/specificdocument.cpp.o
+[68/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/loader.cpp.o
+[69/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/specificitem.cpp.o
+[70/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/item.cpp.o
+[71/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/feedatomimpl.cpp.o
+[72/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/specificitemvisitor.cpp.o
+[73/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/personimpl.cpp.o
+[74/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/syndication_debug.cpp.o
+[75/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/mapper/itematomimpl.cpp.o
+[76/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/global.cpp.o
+[77/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/elementwrapper.cpp.o
+[78/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/tools.cpp.o
+[79/101] Building CXX object src/CMakeFiles/KF5Syndication.dir/loaderutil.cpp.o
+[80/101] Linking CXX shared library bin/libKF5Syndication.so.5.116.0
+[81/101] Creating library symlink bin/libKF5Syndication.so.5 bin/libKF5Syndication.so
+[82/101] Automatic MOC for target testlibsyndication
+[83/101] Building CXX object autotests/CMakeFiles/testlibsyndication.dir/testlibsyndication_autogen/mocs_compilation.cpp.o
+[84/101] Automatic MOC for target loaderutiltest
+[85/101] Automatic MOC for target syndicationtest
+[86/101] Automatic MOC for target testloader
+[87/101] Automatic MOC for target testpersonimpl
+[88/101] Building CXX object autotests/CMakeFiles/loaderutiltest.dir/loaderutiltest_autogen/mocs_compilation.cpp.o
+[89/101] Building CXX object autotests/CMakeFiles/syndicationtest.dir/syndicationtest_autogen/mocs_compilation.cpp.o
+[90/101] Building CXX object tests/CMakeFiles/testloader.dir/testloader_autogen/mocs_compilation.cpp.o
+[91/101] Building CXX object autotests/CMakeFiles/testpersonimpl.dir/testpersonimpl_autogen/mocs_compilation.cpp.o
+[92/101] Building CXX object autotests/CMakeFiles/testlibsyndication.dir/testlibsyndication.cpp.o
+[93/101] Linking CXX executable bin/testlibsyndication
+[94/101] Building CXX object autotests/CMakeFiles/loaderutiltest.dir/loaderutiltest.cpp.o
+[95/101] Linking CXX executable bin/loaderutiltest
+[96/101] Building CXX object tests/CMakeFiles/testloader.dir/testloader.cpp.o
+[97/101] Linking CXX executable bin/testloader
+[98/101] Building CXX object autotests/CMakeFiles/syndicationtest.dir/syndicationtest.cpp.o
+[99/101] Building CXX object autotests/CMakeFiles/testpersonimpl.dir/testpersonimpl.cpp.o
+[100/101] Linking CXX executable bin/syndicationtest
+[101/101] Linking CXX executable bin/testpersonimpl
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Atom
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Category
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Constants
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Content
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Document
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Entry
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Generator
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Link
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Parser
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Person
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Atom/Source
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/atom.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/category.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/constants.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/content.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/document.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/entry.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/generator.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/link.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/parser.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/person.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/atom/source.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/ContentVocab
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Document
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/DublinCore
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/DublinCoreVocab
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Image
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Item
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Literal
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Model
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/ModelMaker
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Node
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/NodeVisitor
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Parser
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Property
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Rdf
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/RdfVocab
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Resource
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/ResourceWrapper
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/RssVocab
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Sequence
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/Statement
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/SyndicationInfo
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/SyndicationVocab
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rdf/TextInput
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/contentvocab.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/document.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/dublincore.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/dublincorevocab.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/image.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/item.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/literal.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/model.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/modelmaker.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/node.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/nodevisitor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/parser.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/property.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/rdf.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/rdfvocab.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/resource.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/resourcewrapper.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/rssvocab.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/sequence.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/statement.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/syndicationinfo.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/syndicationvocab.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rdf/textinput.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Category
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Cloud
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Document
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Enclosure
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Image
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Item
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Parser
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Rss2
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/Source
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Rss2/TextInput
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/category.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/cloud.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/document.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/enclosure.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/image.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/item.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/parser.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/rss2.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/source.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/rss2/textinput.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/libKF5Syndication.so.5.116.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/libKF5Syndication.so.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/libKF5Syndication.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/syndication_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/abstractparser.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/category.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/constants.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/dataretriever.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/documentsource.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/documentvisitor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/elementwrapper.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/enclosure.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/feed.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/global.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/image.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/item.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/loader.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/mapper.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/parsercollection.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/person.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/specificdocument.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/specificitem.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/specificitemvisitor.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/syndication.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication/tools.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/AbstractParser
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Category
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Constants
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/DataRetriever
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/DocumentSource
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/DocumentVisitor
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/ElementWrapper
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Enclosure
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Feed
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Global
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Image
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Item
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Loader
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Mapper
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/ParserCollection
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Person
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/SpecificDocument
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/SpecificItem
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/SpecificItemVisitor
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Syndication
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/Syndication/Tools
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/share/qlogging-categories5/syndication.categories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/share/qlogging-categories5/syndication.renamecategories
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Syndication.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Syndication.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/qt5/mkspecs/modules/qt_Syndication.pri
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/cmake/KF5Syndication/KF5SyndicationQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/cmake/KF5Syndication/KF5SyndicationConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/cmake/KF5Syndication/KF5SyndicationConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/cmake/KF5Syndication/KF5SyndicationTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/lib64/cmake/KF5Syndication/KF5SyndicationTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/package-syndication5/usr/include/KF5/Syndication/syndication_version.h
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/syndication5/syndication5.info: No such file or directory
+extra-cmake-modules
+doxygen
+kcodecs5
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKF5Syndication.so	libKF5Syndication.so.5
+usr/lib64/libKF5Syndication.so.5	libKF5Syndication.so.5.116.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKF5Syndication.so )
+( cd usr/lib64 ; ln -sf libKF5Syndication.so.5 libKF5Syndication.so )
+( cd usr/lib64 ; rm -rf libKF5Syndication.so.5 )
+( cd usr/lib64 ; ln -sf libKF5Syndication.so.5.116.0 libKF5Syndication.so.5 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKF5Syndication.so.5'
+removed './usr/lib64/libKF5Syndication.so'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/syndication5/syndication5-5.116.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/qt5-5.15.16_20250408_6cb26397/
+usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Syndication.qch
+usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Syndication.tags
+usr/doc/syndication5-5.116.0/
+usr/doc/syndication5-5.116.0/README.md
+usr/doc/syndication5-5.116.0/slack-required
+usr/doc/syndication5-5.116.0/syndication5.ini
+usr/include/
+usr/include/KF5/
+usr/include/KF5/Syndication/
+usr/include/KF5/Syndication/Syndication/
+usr/include/KF5/Syndication/Syndication/AbstractParser
+usr/include/KF5/Syndication/Syndication/Atom/
+usr/include/KF5/Syndication/Syndication/Atom/Atom
+usr/include/KF5/Syndication/Syndication/Atom/Category
+usr/include/KF5/Syndication/Syndication/Atom/Constants
+usr/include/KF5/Syndication/Syndication/Atom/Content
+usr/include/KF5/Syndication/Syndication/Atom/Document
+usr/include/KF5/Syndication/Syndication/Atom/Entry
+usr/include/KF5/Syndication/Syndication/Atom/Generator
+usr/include/KF5/Syndication/Syndication/Atom/Link
+usr/include/KF5/Syndication/Syndication/Atom/Parser
+usr/include/KF5/Syndication/Syndication/Atom/Person
+usr/include/KF5/Syndication/Syndication/Atom/Source
+usr/include/KF5/Syndication/Syndication/Category
+usr/include/KF5/Syndication/Syndication/Constants
+usr/include/KF5/Syndication/Syndication/DataRetriever
+usr/include/KF5/Syndication/Syndication/DocumentSource
+usr/include/KF5/Syndication/Syndication/DocumentVisitor
+usr/include/KF5/Syndication/Syndication/ElementWrapper
+usr/include/KF5/Syndication/Syndication/Enclosure
+usr/include/KF5/Syndication/Syndication/Feed
+usr/include/KF5/Syndication/Syndication/Global
+usr/include/KF5/Syndication/Syndication/Image
+usr/include/KF5/Syndication/Syndication/Item
+usr/include/KF5/Syndication/Syndication/Loader
+usr/include/KF5/Syndication/Syndication/Mapper
+usr/include/KF5/Syndication/Syndication/ParserCollection
+usr/include/KF5/Syndication/Syndication/Person
+usr/include/KF5/Syndication/Syndication/Rdf/
+usr/include/KF5/Syndication/Syndication/Rdf/ContentVocab
+usr/include/KF5/Syndication/Syndication/Rdf/Document
+usr/include/KF5/Syndication/Syndication/Rdf/DublinCore
+usr/include/KF5/Syndication/Syndication/Rdf/DublinCoreVocab
+usr/include/KF5/Syndication/Syndication/Rdf/Image
+usr/include/KF5/Syndication/Syndication/Rdf/Item
+usr/include/KF5/Syndication/Syndication/Rdf/Literal
+usr/include/KF5/Syndication/Syndication/Rdf/Model
+usr/include/KF5/Syndication/Syndication/Rdf/ModelMaker
+usr/include/KF5/Syndication/Syndication/Rdf/Node
+usr/include/KF5/Syndication/Syndication/Rdf/NodeVisitor
+usr/include/KF5/Syndication/Syndication/Rdf/Parser
+usr/include/KF5/Syndication/Syndication/Rdf/Property
+usr/include/KF5/Syndication/Syndication/Rdf/Rdf
+usr/include/KF5/Syndication/Syndication/Rdf/RdfVocab
+usr/include/KF5/Syndication/Syndication/Rdf/Resource
+usr/include/KF5/Syndication/Syndication/Rdf/ResourceWrapper
+usr/include/KF5/Syndication/Syndication/Rdf/RssVocab
+usr/include/KF5/Syndication/Syndication/Rdf/Sequence
+usr/include/KF5/Syndication/Syndication/Rdf/Statement
+usr/include/KF5/Syndication/Syndication/Rdf/SyndicationInfo
+usr/include/KF5/Syndication/Syndication/Rdf/SyndicationVocab
+usr/include/KF5/Syndication/Syndication/Rdf/TextInput
+usr/include/KF5/Syndication/Syndication/Rss2/
+usr/include/KF5/Syndication/Syndication/Rss2/Category
+usr/include/KF5/Syndication/Syndication/Rss2/Cloud
+usr/include/KF5/Syndication/Syndication/Rss2/Document
+usr/include/KF5/Syndication/Syndication/Rss2/Enclosure
+usr/include/KF5/Syndication/Syndication/Rss2/Image
+usr/include/KF5/Syndication/Syndication/Rss2/Item
+usr/include/KF5/Syndication/Syndication/Rss2/Parser
+usr/include/KF5/Syndication/Syndication/Rss2/Rss2
+usr/include/KF5/Syndication/Syndication/Rss2/Source
+usr/include/KF5/Syndication/Syndication/Rss2/TextInput
+usr/include/KF5/Syndication/Syndication/SpecificDocument
+usr/include/KF5/Syndication/Syndication/SpecificItem
+usr/include/KF5/Syndication/Syndication/SpecificItemVisitor
+usr/include/KF5/Syndication/Syndication/Syndication
+usr/include/KF5/Syndication/Syndication/Tools
+usr/include/KF5/Syndication/syndication/
+usr/include/KF5/Syndication/syndication/abstractparser.h
+usr/include/KF5/Syndication/syndication/atom/
+usr/include/KF5/Syndication/syndication/atom/atom.h
+usr/include/KF5/Syndication/syndication/atom/category.h
+usr/include/KF5/Syndication/syndication/atom/constants.h
+usr/include/KF5/Syndication/syndication/atom/content.h
+usr/include/KF5/Syndication/syndication/atom/document.h
+usr/include/KF5/Syndication/syndication/atom/entry.h
+usr/include/KF5/Syndication/syndication/atom/generator.h
+usr/include/KF5/Syndication/syndication/atom/link.h
+usr/include/KF5/Syndication/syndication/atom/parser.h
+usr/include/KF5/Syndication/syndication/atom/person.h
+usr/include/KF5/Syndication/syndication/atom/source.h
+usr/include/KF5/Syndication/syndication/category.h
+usr/include/KF5/Syndication/syndication/constants.h
+usr/include/KF5/Syndication/syndication/dataretriever.h
+usr/include/KF5/Syndication/syndication/documentsource.h
+usr/include/KF5/Syndication/syndication/documentvisitor.h
+usr/include/KF5/Syndication/syndication/elementwrapper.h
+usr/include/KF5/Syndication/syndication/enclosure.h
+usr/include/KF5/Syndication/syndication/feed.h
+usr/include/KF5/Syndication/syndication/global.h
+usr/include/KF5/Syndication/syndication/image.h
+usr/include/KF5/Syndication/syndication/item.h
+usr/include/KF5/Syndication/syndication/loader.h
+usr/include/KF5/Syndication/syndication/mapper.h
+usr/include/KF5/Syndication/syndication/parsercollection.h
+usr/include/KF5/Syndication/syndication/person.h
+usr/include/KF5/Syndication/syndication/rdf/
+usr/include/KF5/Syndication/syndication/rdf/contentvocab.h
+usr/include/KF5/Syndication/syndication/rdf/document.h
+usr/include/KF5/Syndication/syndication/rdf/dublincore.h
+usr/include/KF5/Syndication/syndication/rdf/dublincorevocab.h
+usr/include/KF5/Syndication/syndication/rdf/image.h
+usr/include/KF5/Syndication/syndication/rdf/item.h
+usr/include/KF5/Syndication/syndication/rdf/literal.h
+usr/include/KF5/Syndication/syndication/rdf/model.h
+usr/include/KF5/Syndication/syndication/rdf/modelmaker.h
+usr/include/KF5/Syndication/syndication/rdf/node.h
+usr/include/KF5/Syndication/syndication/rdf/nodevisitor.h
+usr/include/KF5/Syndication/syndication/rdf/parser.h
+usr/include/KF5/Syndication/syndication/rdf/property.h
+usr/include/KF5/Syndication/syndication/rdf/rdf.h
+usr/include/KF5/Syndication/syndication/rdf/rdfvocab.h
+usr/include/KF5/Syndication/syndication/rdf/resource.h
+usr/include/KF5/Syndication/syndication/rdf/resourcewrapper.h
+usr/include/KF5/Syndication/syndication/rdf/rssvocab.h
+usr/include/KF5/Syndication/syndication/rdf/sequence.h
+usr/include/KF5/Syndication/syndication/rdf/statement.h
+usr/include/KF5/Syndication/syndication/rdf/syndicationinfo.h
+usr/include/KF5/Syndication/syndication/rdf/syndicationvocab.h
+usr/include/KF5/Syndication/syndication/rdf/textinput.h
+usr/include/KF5/Syndication/syndication/rss2/
+usr/include/KF5/Syndication/syndication/rss2/category.h
+usr/include/KF5/Syndication/syndication/rss2/cloud.h
+usr/include/KF5/Syndication/syndication/rss2/document.h
+usr/include/KF5/Syndication/syndication/rss2/enclosure.h
+usr/include/KF5/Syndication/syndication/rss2/image.h
+usr/include/KF5/Syndication/syndication/rss2/item.h
+usr/include/KF5/Syndication/syndication/rss2/parser.h
+usr/include/KF5/Syndication/syndication/rss2/rss2.h
+usr/include/KF5/Syndication/syndication/rss2/source.h
+usr/include/KF5/Syndication/syndication/rss2/textinput.h
+usr/include/KF5/Syndication/syndication/specificdocument.h
+usr/include/KF5/Syndication/syndication/specificitem.h
+usr/include/KF5/Syndication/syndication/specificitemvisitor.h
+usr/include/KF5/Syndication/syndication/syndication.h
+usr/include/KF5/Syndication/syndication/syndication_export.h
+usr/include/KF5/Syndication/syndication/tools.h
+usr/include/KF5/Syndication/syndication_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5Syndication/
+usr/lib64/cmake/KF5Syndication/KF5SyndicationConfig.cmake
+usr/lib64/cmake/KF5Syndication/KF5SyndicationConfigVersion.cmake
+usr/lib64/cmake/KF5Syndication/KF5SyndicationQchTargets.cmake
+usr/lib64/cmake/KF5Syndication/KF5SyndicationTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KF5Syndication/KF5SyndicationTargets.cmake
+usr/lib64/libKF5Syndication.so.5.116.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_Syndication.pri
+usr/share/
+usr/share/qlogging-categories5/
+usr/share/qlogging-categories5/syndication.categories
+usr/share/qlogging-categories5/syndication.renamecategories
+
+Slackware package /tmp/syndication5/syndication5-5.116.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for syndication5-5.116.0-x86_64-1_rtz.tlz
+Creating /tmp/syndication5/syndication5-5.116.0-x86_64-1_rtz.tlz.so.file using /tmp/syndication5/syndication5-5.116.0-x86_64-1_rtz.tlz
+Successfully created /tmp/syndication5/syndication5-5.116.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in syndication5.tar.lz4 format.
+/tmp/syndication5 /tmp/syndication5
+/tmp/syndication5
+BIN_NAME
+README
+makepkg-syndication5.log
+syndication5-5.116.0-x86_64-1_rtz.tlz
+syndication5-5.116.0-x86_64-1_rtz.tlz.md5
+syndication5-5.116.0-x86_64-1_rtz.tlz.so.file
+syndication5-5.116.0-x86_64-1_rtz.tlz.txt
+syndication5.dep
+syndication5 build finished. Procced to installation...
+
++===================================================================================================================+
+| Upgrading syndication5-5.116.0-x86_64-1_rtz package using /tmp/syndication5/syndication5-5.116.0-x86_64-1_rtz.tlz |
++===================================================================================================================+
+
+Pre-installing package syndication5-5.116.0-x86_64-1_rtz...
+Removing package: syndication5-5.116.0-x86_64-1_rtz-upgraded-2025-05-14,23:30:13
+Installing package syndication5-5.116.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# syndication5 (An RSS/Atom parser library)
+#
+# An RSS/Atom parser library
+#
+# https://community.kde.org/Frameworks
+Executing install script for syndication5-5.116.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package syndication5-5.116.0-x86_64-1_rtz.tlz installed.
+Package syndication5-5.116.0-x86_64-1_rtz upgraded with new package /tmp/syndication5/syndication5-5.116.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'syndication-5.116.0.tar.xz': No such file or directory

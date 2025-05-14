@@ -1,0 +1,9 @@
+PLSM5="attica5 frameworkintegration5 kactivities5 karchive5 kauth5 kbookmarks5 kcalendarcore5 kcmutils5 kcodecs5 kcompletion5 kconfig5 kconfigwidgets5 kcontacts5 kcoreaddons5 kcrash5 kdbusaddons5 kdeclarative5 kdesu5 kdnssd5 kdoctools5 kemoticons5 kfilemetadata5 kglobalaccel5 kguiaddons5 kholidays5 ki18n5 kiconthemes5 kidletime5 kinit5 kio5 kirigami2 kitemmodels5 kitemviews5 kjobwidgets5 knewstuff5 knotifications5 knotifyconfig5 kpackage5 kparts5 kpeople5 kplotting5 kpty5 krunner5 kservice5 ktexteditor5 ktextwidgets5 kwallet5 kwayland5 kwidgetsaddons5 kwindowsystem5 kxmlgui5 plasma-framework5 prison5 purpose5 solid5 sonnet5 syndication5 syntax-highlighting5 threadweaver5"
+
+
+for i in $PLSM5; do
+echo "###################"
+echo "|Building $i  |"
+echo "###################"
+athos $i
+done

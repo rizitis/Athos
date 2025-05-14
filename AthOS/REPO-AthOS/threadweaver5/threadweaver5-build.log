@@ -1,0 +1,677 @@
+Starting build process...
+Detected architecture: x86_64
+Required dependencies: doxygen	extra-cmake-modules
+doxygen is already installed!
+extra-cmake-modules is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-14 23:31:36--  https://download.kde.org/stable/frameworks/5.116/threadweaver-5.116.0.tar.xz
+Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
+Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/threadweaver-5.116.0.tar.xz [following]
+--2025-05-14 23:31:36--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/threadweaver-5.116.0.tar.xz
+Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
+Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1413124 (1.3M) [application/octet-stream]
+Saving to: ‘threadweaver-5.116.0.tar.xz’
+
+     0K .......... .......... .......... .......... ..........  3% 1.34M 1s
+    50K .......... .......... .......... .......... ..........  7% 1.43M 1s
+   100K .......... .......... .......... .......... .......... 10% 5.01M 1s
+   150K .......... .......... .......... .......... .......... 14% 2.16M 1s
+   200K .......... .......... .......... .......... .......... 18% 5.25M 1s
+   250K .......... .......... .......... .......... .......... 21% 5.31M 0s
+   300K .......... .......... .......... .......... .......... 25% 7.26M 0s
+   350K .......... .......... .......... .......... .......... 28%  546K 1s
+   400K .......... .......... .......... .......... .......... 32% 64.4M 0s
+   450K .......... .......... .......... .......... .......... 36%  150M 0s
+   500K .......... .......... .......... .......... .......... 39%  127M 0s
+   550K .......... .......... .......... .......... .......... 43%  124M 0s
+   600K .......... .......... .......... .......... .......... 47%  156M 0s
+   650K .......... .......... .......... .......... .......... 50%  158M 0s
+   700K .......... .......... .......... .......... .......... 54%  164M 0s
+   750K .......... .......... .......... .......... .......... 57%  123M 0s
+   800K .......... .......... .......... .......... .......... 61%  180M 0s
+   850K .......... .......... .......... .......... .......... 65% 6.33M 0s
+   900K .......... .......... .......... .......... .......... 68% 5.28M 0s
+   950K .......... .......... .......... .......... .......... 72% 6.80M 0s
+  1000K .......... .......... .......... .......... .......... 76% 6.55M 0s
+  1050K .......... .......... .......... .......... .......... 79% 5.17M 0s
+  1100K .......... .......... .......... .......... .......... 83% 5.34M 0s
+  1150K .......... .......... .......... .......... .......... 86% 4.85M 0s
+  1200K .......... .......... .......... .......... .......... 90% 5.30M 0s
+  1250K .......... .......... .......... .......... .......... 94% 6.47M 0s
+  1300K .......... .......... .......... .......... .......... 97% 5.25M 0s
+  1350K .......... .......... ..........                      100% 12.3M=0.3s
+
+2025-05-14 23:31:37 (4.32 MB/s) - ‘threadweaver-5.116.0.tar.xz’ saved [1413124/1413124]
+
+Found file: threadweaver-5.116.0.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+threadweaver-5.116.0/
+threadweaver-5.116.0/README.md
+threadweaver-5.116.0/COPYING.LIB
+threadweaver-5.116.0/LICENSES/
+threadweaver-5.116.0/LICENSES/CC0-1.0.txt
+threadweaver-5.116.0/LICENSES/LGPL-2.0-or-later.txt
+threadweaver-5.116.0/doxygen-footer.html
+threadweaver-5.116.0/.gitlab-ci.yml
+threadweaver-5.116.0/KF5ThreadWeaverConfig.cmake.in
+threadweaver-5.116.0/.git-blame-ignore-revs
+threadweaver-5.116.0/.kde-ci.yml
+threadweaver-5.116.0/internal-doxygen.cfg
+threadweaver-5.116.0/benchmarks/
+threadweaver-5.116.0/benchmarks/QueueBenchmarks.cpp
+threadweaver-5.116.0/benchmarks/CMakeLists.txt
+threadweaver-5.116.0/docs/
+threadweaver-5.116.0/docs/whymultithreading.md
+threadweaver-5.116.0/docs/Doxyfile.local
+threadweaver-5.116.0/docs/use-cases.md
+threadweaver-5.116.0/autotests/
+threadweaver-5.116.0/autotests/DeleteTest.cpp
+threadweaver-5.116.0/autotests/AppendCharacterAndVerifyJob.h
+threadweaver-5.116.0/autotests/WaitForIdleAndFinished.h
+threadweaver-5.116.0/autotests/DeleteTest.h
+threadweaver-5.116.0/autotests/AppendCharacterJob.h
+threadweaver-5.116.0/autotests/AppendCharacterAndVerifyJob.cpp
+threadweaver-5.116.0/autotests/JobLoggingWeaver.cpp
+threadweaver-5.116.0/autotests/QueueTests.h
+threadweaver-5.116.0/autotests/QueueTests.cpp
+threadweaver-5.116.0/autotests/run-n-tests.py
+threadweaver-5.116.0/autotests/JobTests.cpp
+threadweaver-5.116.0/autotests/WaitForIdleAndFinished.cpp
+threadweaver-5.116.0/autotests/SequencesTests.h
+threadweaver-5.116.0/autotests/JobLoggingWeaver.h
+threadweaver-5.116.0/autotests/JobTests.h
+threadweaver-5.116.0/autotests/QueueFactoryTests.cpp
+threadweaver-5.116.0/autotests/SequencesTests.cpp
+threadweaver-5.116.0/autotests/ShutdownOnQApplicationQuitTests.cpp
+threadweaver-5.116.0/autotests/JobLoggingDecorator.h
+threadweaver-5.116.0/autotests/CMakeLists.txt
+threadweaver-5.116.0/autotests/JobLoggingDecorator.cpp
+threadweaver-5.116.0/autotests/LifecycleTests.cpp
+threadweaver-5.116.0/CMakeLists.txt
+threadweaver-5.116.0/examples/
+threadweaver-5.116.0/examples/HelloWorldRaw/
+threadweaver-5.116.0/examples/HelloWorldRaw/HelloWorldRaw.cpp
+threadweaver-5.116.0/examples/HelloWorldRaw/CMakeLists.txt
+threadweaver-5.116.0/examples/HelloWorldRaw.in.md
+threadweaver-5.116.0/examples/HelloWorld/
+threadweaver-5.116.0/examples/HelloWorld/HelloWorld.cpp
+threadweaver-5.116.0/examples/HelloWorld/CMakeLists.txt
+threadweaver-5.116.0/examples/HelloInternet.in.md
+threadweaver-5.116.0/examples/HelloInternet/
+threadweaver-5.116.0/examples/HelloInternet/ViewController.h
+threadweaver-5.116.0/examples/HelloInternet/ViewController.cpp
+threadweaver-5.116.0/examples/HelloInternet/HelloInternetResources.qrc
+threadweaver-5.116.0/examples/HelloInternet/resources/
+threadweaver-5.116.0/examples/HelloInternet/resources/IMG_20140813_004131-colors-cubed.png
+threadweaver-5.116.0/examples/HelloInternet/resources/IMG_20140813_004131.png
+threadweaver-5.116.0/examples/HelloInternet/main.cpp
+threadweaver-5.116.0/examples/HelloInternet/MainWidget.cpp
+threadweaver-5.116.0/examples/HelloInternet/MainWidget.h
+threadweaver-5.116.0/examples/HelloInternet/CMakeLists.txt
+threadweaver-5.116.0/examples/ThumbNailer/
+threadweaver-5.116.0/examples/ThumbNailer/MainWindow.ui
+threadweaver-5.116.0/examples/ThumbNailer/FileLoaderJob.h
+threadweaver-5.116.0/examples/ThumbNailer/FileLoaderJob.cpp
+threadweaver-5.116.0/examples/ThumbNailer/ImageLoaderJob.cpp
+threadweaver-5.116.0/examples/ThumbNailer/Image.cpp
+threadweaver-5.116.0/examples/ThumbNailer/ItemDelegate.h
+threadweaver-5.116.0/examples/ThumbNailer/Progress.h
+threadweaver-5.116.0/examples/ThumbNailer/PriorityDecorator.cpp
+threadweaver-5.116.0/examples/ThumbNailer/ImageLoaderJob.h
+threadweaver-5.116.0/examples/ThumbNailer/PriorityDecorator.h
+threadweaver-5.116.0/examples/ThumbNailer/ComputeThumbNailJob.cpp
+threadweaver-5.116.0/examples/ThumbNailer/ImageListFilter.cpp
+threadweaver-5.116.0/examples/ThumbNailer/MainWindow.h
+threadweaver-5.116.0/examples/ThumbNailer/Image.h
+threadweaver-5.116.0/examples/ThumbNailer/MainWindow.cpp
+threadweaver-5.116.0/examples/ThumbNailer/Benchmark.cpp
+threadweaver-5.116.0/examples/ThumbNailer/ComputeThumbNailJob.h
+threadweaver-5.116.0/examples/ThumbNailer/ThumbNailer.cpp
+threadweaver-5.116.0/examples/ThumbNailer/Model.h
+threadweaver-5.116.0/examples/ThumbNailer/Model.cpp
+threadweaver-5.116.0/examples/ThumbNailer/ItemDelegate.cpp
+threadweaver-5.116.0/examples/ThumbNailer/AverageLoadManager.h
+threadweaver-5.116.0/examples/ThumbNailer/AverageLoadManager.cpp
+threadweaver-5.116.0/examples/ThumbNailer/Benchmark.h
+threadweaver-5.116.0/examples/ThumbNailer/CMakeLists.txt
+threadweaver-5.116.0/examples/ThumbNailer/ImageListFilter.h
+threadweaver-5.116.0/examples/screenshots/
+threadweaver-5.116.0/examples/screenshots/HelloInternet.png
+threadweaver-5.116.0/examples/ThumbNailer.in.md
+threadweaver-5.116.0/examples/CMakeLists.txt
+threadweaver-5.116.0/src/
+threadweaver-5.116.0/src/queuestream.cpp
+threadweaver-5.116.0/src/qobjectdecorator.cpp
+threadweaver-5.116.0/src/suspendedstate.cpp
+threadweaver-5.116.0/src/dependencypolicy.cpp
+threadweaver-5.116.0/src/queuesignals.h
+threadweaver-5.116.0/src/dependency.h
+threadweaver-5.116.0/src/weaverimplstate.cpp
+threadweaver-5.116.0/src/queuesignals.cpp
+threadweaver-5.116.0/src/iddecorator.cpp
+threadweaver-5.116.0/src/weaverinterface.h
+threadweaver-5.116.0/src/queue.h
+threadweaver-5.116.0/src/weaver_p.h
+threadweaver-5.116.0/src/managedjobpointer.h
+threadweaver-5.116.0/src/destructedstate.cpp
+threadweaver-5.116.0/src/job.h
+threadweaver-5.116.0/src/queuestream.h
+threadweaver-5.116.0/src/state.cpp
+threadweaver-5.116.0/src/suspendingstate.cpp
+threadweaver-5.116.0/src/suspendingstate.h
+threadweaver-5.116.0/src/collection_p.h
+threadweaver-5.116.0/src/weaverimplstate.h
+threadweaver-5.116.0/src/sequence_p.h
+threadweaver-5.116.0/src/resourcerestrictionpolicy.cpp
+threadweaver-5.116.0/src/state.h
+threadweaver-5.116.0/src/thread.h
+threadweaver-5.116.0/src/exception.h
+threadweaver-5.116.0/src/workinghardstate.h
+threadweaver-5.116.0/src/inconstructionstate.cpp
+threadweaver-5.116.0/src/job_p.h
+threadweaver-5.116.0/src/queueing.h
+threadweaver-5.116.0/src/queuesignals_p.h
+threadweaver-5.116.0/src/destructedstate.h
+threadweaver-5.116.0/src/sequence_p.cpp
+threadweaver-5.116.0/src/queuesignals_p.cpp
+threadweaver-5.116.0/src/executewrapper.cpp
+threadweaver-5.116.0/src/sequence.h
+threadweaver-5.116.0/src/executor.cpp
+threadweaver-5.116.0/src/debuggingaids.cpp
+threadweaver-5.116.0/src/queuepolicy.h
+threadweaver-5.116.0/src/dependencypolicy.h
+threadweaver-5.116.0/src/sequence.cpp
+threadweaver-5.116.0/src/executewrapper_p.h
+threadweaver-5.116.0/src/threadweaver.h
+threadweaver-5.116.0/src/thread.cpp
+threadweaver-5.116.0/src/job.cpp
+threadweaver-5.116.0/src/jobinterface.h
+threadweaver-5.116.0/src/threadweaver.cpp
+threadweaver-5.116.0/src/suspendedstate.h
+threadweaver-5.116.0/src/jobpointer.h
+threadweaver-5.116.0/src/iddecorator.h
+threadweaver-5.116.0/src/workinghardstate.cpp
+threadweaver-5.116.0/src/qobjectdecorator.h
+threadweaver-5.116.0/src/lambda.h
+threadweaver-5.116.0/src/queueapi.cpp
+threadweaver-5.116.0/src/queueinterface.h
+threadweaver-5.116.0/src/exception.cpp
+threadweaver-5.116.0/src/executor_p.h
+threadweaver-5.116.0/src/queue.cpp
+threadweaver-5.116.0/src/weaver_p.cpp
+threadweaver-5.116.0/src/job_p.cpp
+threadweaver-5.116.0/src/queueapi.h
+threadweaver-5.116.0/src/weaver.cpp
+threadweaver-5.116.0/src/shuttingdownstate.cpp
+threadweaver-5.116.0/src/dependency.cpp
+threadweaver-5.116.0/src/shuttingdownstate.h
+threadweaver-5.116.0/src/CMakeLists.txt
+threadweaver-5.116.0/src/collection.h
+threadweaver-5.116.0/src/resourcerestrictionpolicy.h
+threadweaver-5.116.0/src/debuggingaids.h
+threadweaver-5.116.0/src/collection.cpp
+threadweaver-5.116.0/src/weaver.h
+threadweaver-5.116.0/src/inconstructionstate.h
+threadweaver-5.116.0/src/collection_p.cpp
+threadweaver-5.116.0/.gitignore
+threadweaver-5.116.0/metainfo.yaml
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+-- 
+
+-- Found QHelpGenerator executable: /usr/lib64/qt5/bin/qhelpgenerator
+-- No such target Qt5Core_QCH defined when calling ecm_add_qch(), ignored.
+
+
+Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/work/threadweaver-5.116.0/build/src/KF5ThreadWeaver_ECMQchDoxygen.config' updated.
+
+CMake Deprecation Warning at examples/HelloWorld/CMakeLists.txt:5 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The following features have been enabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- The following REQUIRED packages have been found:
+
+ * Doxygen (required version >= 1.8.13)
+   Needed for API dox QCH file generation
+ * QHelpGenerator, Part of Qt5 tools
+   Needed for API dox QCH file generation
+ * Qt5Gui (required version >= 5.15.16)
+ * Qt5Test (required version >= 5.15.2)
+ * ECM (required version >= 1.1.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt5Core
+ * Qt5Network
+ * Qt5Xml
+ * Qt5Widgets
+ * Qt5
+
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/work/threadweaver-5.116.0/build
+[1/106] Automatic MOC for target KF5ThreadWeaver
+[2/106] Generating src/KF5ThreadWeaver.qch, src/KF5ThreadWeaver.tags
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+Building up file structure...
+Insert custom filters...
+Insert help data for filter section (1 of 1)...
+Insert files...
+Insert contents...
+Insert indices...
+Documentation successfully generated.
+[3/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/KF5ThreadWeaver_autogen/mocs_compilation.cpp.o
+[4/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/queuesignals_p.cpp.o
+[5/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/exception.cpp.o
+[6/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/debuggingaids.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/work/threadweaver-5.116.0/src/debuggingaids.cpp: In function ‘void ThreadWeaver::mutexAssertUnlocked(QMutex*, const char*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/work/threadweaver-5.116.0/src/debuggingaids.cpp:23:53: warning: unused parameter ‘where’ [-Wunused-parameter]
+   23 | void mutexAssertUnlocked(QMutex *mutex, const char *where)
+      |                                         ~~~~~~~~~~~~^~~~~
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/work/threadweaver-5.116.0/src/debuggingaids.cpp: In function ‘void ThreadWeaver::mutexAssertLocked(QMutex*, const char*)’:
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/work/threadweaver-5.116.0/src/debuggingaids.cpp:32:51: warning: unused parameter ‘where’ [-Wunused-parameter]
+   32 | void mutexAssertLocked(QMutex *mutex, const char *where)
+      |                                       ~~~~~~~~~~~~^~~~~
+[7/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/queueapi.cpp.o
+[8/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/executewrapper.cpp.o
+[9/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/queuesignals.cpp.o
+[10/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/qobjectdecorator.cpp.o
+[11/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/job_p.cpp.o
+[12/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/destructedstate.cpp.o
+[13/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/sequence.cpp.o
+[14/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/executor.cpp.o
+[15/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/iddecorator.cpp.o
+[16/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/dependency.cpp.o
+[17/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/sequence_p.cpp.o
+[18/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/queuestream.cpp.o
+[19/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/inconstructionstate.cpp.o
+[20/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/shuttingdownstate.cpp.o
+[21/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/resourcerestrictionpolicy.cpp.o
+[22/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/collection_p.cpp.o
+[23/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/dependencypolicy.cpp.o
+[24/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/collection.cpp.o
+[25/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/queue.cpp.o
+[26/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/job.cpp.o
+[27/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/state.cpp.o
+[28/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/suspendedstate.cpp.o
+[29/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/suspendingstate.cpp.o
+[30/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/threadweaver.cpp.o
+[31/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/weaverimplstate.cpp.o
+[32/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/thread.cpp.o
+[33/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/workinghardstate.cpp.o
+[34/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/weaver_p.cpp.o
+[35/106] Building CXX object src/CMakeFiles/KF5ThreadWeaver.dir/weaver.cpp.o
+[36/106] Linking CXX shared library bin/libKF5ThreadWeaver.so.5.116.0
+[37/106] Creating library symlink bin/libKF5ThreadWeaver.so.5 bin/libKF5ThreadWeaver.so
+[38/106] Automatic MOC for target ThreadWeaver_HelloWorldRaw
+[39/106] Automatic MOC for target ThreadWeaver_HelloWorld
+[40/106] Building CXX object examples/HelloWorldRaw/CMakeFiles/ThreadWeaver_HelloWorldRaw.dir/ThreadWeaver_HelloWorldRaw_autogen/mocs_compilation.cpp.o
+[41/106] Building CXX object examples/HelloWorld/CMakeFiles/ThreadWeaver_HelloWorld.dir/ThreadWeaver_HelloWorld_autogen/mocs_compilation.cpp.o
+[42/106] Automatic MOC for target ThreadWeaverQueueTests
+[43/106] Building CXX object autotests/CMakeFiles/ThreadWeaverQueueTests.dir/ThreadWeaverQueueTests_autogen/mocs_compilation.cpp.o
+[44/106] Automatic MOC for target ThreadWeaverSequencesTests
+[45/106] Automatic MOC for target ThreadWeaverQueueBenchmarks
+[46/106] Automatic MOC for target ThreadWeaverJobTests
+[47/106] Automatic MOC for target ThreadWeaverDeleteTest
+[48/106] Building CXX object autotests/CMakeFiles/ThreadWeaverSequencesTests.dir/ThreadWeaverSequencesTests_autogen/mocs_compilation.cpp.o
+[49/106] Automatic MOC for target ThreadWeaverLifecycleTest
+[50/106] Automatic MOC for target ThreadWeaverShutdownOnQApplicationQuitTest
+[51/106] Automatic MOC for target ThreadWeaverQueueFactoryTest
+[52/106] Building CXX object benchmarks/CMakeFiles/ThreadWeaverQueueBenchmarks.dir/ThreadWeaverQueueBenchmarks_autogen/mocs_compilation.cpp.o
+[53/106] Building CXX object autotests/CMakeFiles/ThreadWeaverJobTests.dir/ThreadWeaverJobTests_autogen/mocs_compilation.cpp.o
+[54/106] Automatic MOC for target ThreadWeaver_HelloInternet
+[55/106] Building CXX object autotests/CMakeFiles/ThreadWeaverDeleteTest.dir/ThreadWeaverDeleteTest_autogen/mocs_compilation.cpp.o
+[56/106] Building CXX object autotests/CMakeFiles/ThreadWeaverShutdownOnQApplicationQuitTest.dir/ThreadWeaverShutdownOnQApplicationQuitTest_autogen/mocs_compilation.cpp.o
+[57/106] Automatic MOC for target ThreadWeaver_ThumbNailer
+[58/106] Building CXX object autotests/CMakeFiles/ThreadWeaverLifecycleTest.dir/ThreadWeaverLifecycleTest_autogen/mocs_compilation.cpp.o
+[59/106] Building CXX object autotests/CMakeFiles/ThreadWeaverQueueFactoryTest.dir/ThreadWeaverQueueFactoryTest_autogen/mocs_compilation.cpp.o
+[60/106] Generating ui_MainWindow.h
+[61/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ThreadWeaver_ThumbNailer_autogen/mocs_compilation.cpp.o
+[62/106] Automatic RCC for HelloInternetResources.qrc
+[63/106] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/ThreadWeaver_HelloInternet_autogen/mocs_compilation.cpp.o
+[64/106] Building CXX object autotests/CMakeFiles/ThreadWeaverJobTests.dir/WaitForIdleAndFinished.cpp.o
+[65/106] Building CXX object autotests/CMakeFiles/ThreadWeaverJobTests.dir/AppendCharacterAndVerifyJob.cpp.o
+[66/106] Building CXX object autotests/CMakeFiles/ThreadWeaverShutdownOnQApplicationQuitTest.dir/ShutdownOnQApplicationQuitTests.cpp.o
+[67/106] Building CXX object autotests/CMakeFiles/ThreadWeaverSequencesTests.dir/WaitForIdleAndFinished.cpp.o
+[68/106] Building CXX object autotests/CMakeFiles/ThreadWeaverSequencesTests.dir/SequencesTests.cpp.o
+[69/106] Building CXX object autotests/CMakeFiles/ThreadWeaverJobTests.dir/JobLoggingWeaver.cpp.o
+[70/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/PriorityDecorator.cpp.o
+[71/106] Building CXX object autotests/CMakeFiles/ThreadWeaverQueueFactoryTest.dir/QueueFactoryTests.cpp.o
+[72/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/Image.cpp.o
+[73/106] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/main.cpp.o
+[74/106] Building CXX object examples/HelloWorld/CMakeFiles/ThreadWeaver_HelloWorld.dir/HelloWorld.cpp.o
+[75/106] Building CXX object autotests/CMakeFiles/ThreadWeaverDeleteTest.dir/DeleteTest.cpp.o
+[76/106] Building CXX object autotests/CMakeFiles/ThreadWeaverLifecycleTest.dir/LifecycleTests.cpp.o
+[77/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ThumbNailer.cpp.o
+[78/106] Linking CXX executable bin/ThreadWeaverShutdownOnQApplicationQuitTest
+[79/106] Building CXX object autotests/CMakeFiles/ThreadWeaverJobTests.dir/JobLoggingDecorator.cpp.o
+[80/106] Building CXX object examples/HelloWorldRaw/CMakeFiles/ThreadWeaver_HelloWorldRaw.dir/HelloWorldRaw.cpp.o
+[81/106] Linking CXX executable bin/ThreadWeaverSequencesTests
+[82/106] Linking CXX executable bin/ThreadWeaverDeleteTest
+[83/106] Linking CXX executable bin/ThreadWeaverQueueFactoryTest
+[84/106] Linking CXX executable bin/ThreadWeaverLifecycleTest
+[85/106] Linking CXX executable bin/ThreadWeaver_HelloWorld
+[86/106] Building CXX object benchmarks/CMakeFiles/ThreadWeaverQueueBenchmarks.dir/QueueBenchmarks.cpp.o
+[87/106] Linking CXX executable bin/ThreadWeaver_HelloWorldRaw
+[88/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/Model.cpp.o
+[89/106] Building CXX object autotests/CMakeFiles/ThreadWeaverQueueTests.dir/QueueTests.cpp.o
+[90/106] Linking CXX executable bin/ThreadWeaverQueueBenchmarks
+[91/106] Linking CXX executable bin/ThreadWeaverQueueTests
+[92/106] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/MainWidget.cpp.o
+[93/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/Benchmark.cpp.o
+[94/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ImageListFilter.cpp.o
+[95/106] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/ThreadWeaver_HelloInternet_autogen/EWIEGA46WW/qrc_HelloInternetResources.cpp.o
+[96/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ComputeThumbNailJob.cpp.o
+[97/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/MainWindow.cpp.o
+[98/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/AverageLoadManager.cpp.o
+[99/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ImageLoaderJob.cpp.o
+[100/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/FileLoaderJob.cpp.o
+[101/106] Building CXX object examples/HelloInternet/CMakeFiles/ThreadWeaver_HelloInternet.dir/ViewController.cpp.o
+[102/106] Linking CXX executable bin/ThreadWeaver_HelloInternet
+[103/106] Building CXX object examples/ThumbNailer/CMakeFiles/ThreadWeaver_ThumbNailer.dir/ItemDelegate.cpp.o
+[104/106] Linking CXX executable bin/ThreadWeaver_ThumbNailer
+[105/106] Building CXX object autotests/CMakeFiles/ThreadWeaverJobTests.dir/JobTests.cpp.o
+[106/106] Linking CXX executable bin/ThreadWeaverJobTests
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/libKF5ThreadWeaver.so.5.116.0
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/libKF5ThreadWeaver.so.5
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/libKF5ThreadWeaver.so
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/ThreadWeaver
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Weaver
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/WeaverInterface
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/QueueAPI
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/QueueStream
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Queueing
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Exception
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/QueueInterface
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Queue
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/DebuggingAids
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Thread
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/JobInterface
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Job
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/IdDecorator
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/QObjectDecorator
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Lambda
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/State
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/WeaverImplState
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/InConstructionState
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/WorkingHardState
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/SuspendingState
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/SuspendedState
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/ShuttingDownState
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/DestructedState
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Collection
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Sequence
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/Dependency
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/DependencyPolicy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/ResourceRestrictionPolicy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/QueueSignals
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/QueuePolicy
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/JobPointer
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/ThreadWeaver/ManagedJobPointer
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/threadweaver_export.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/threadweaver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/weaver.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/weaverinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/queueapi.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/queuestream.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/queueing.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/exception.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/queueinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/queue.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/debuggingaids.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/thread.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/jobinterface.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/job.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/iddecorator.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/qobjectdecorator.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/lambda.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/state.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/weaverimplstate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/inconstructionstate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/workinghardstate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/suspendingstate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/suspendedstate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/shuttingdownstate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/destructedstate.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/collection.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/sequence.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/dependency.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/dependencypolicy.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/resourcerestrictionpolicy.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/queuesignals.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/queuepolicy.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/jobpointer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver/managedjobpointer.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5ThreadWeaver.qch
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5ThreadWeaver.tags
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/qt5/mkspecs/modules/qt_ThreadWeaver.pri
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverQchTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/include/KF5/ThreadWeaver/threadweaver_version.h
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverConfig.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverTargets.cmake
+-- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/package-threadweaver5/usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverTargets-relwithdebinfo.cmake
+The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/threadweaver5/threadweaver5.info: No such file or directory
+doxygen
+extra-cmake-modules
+Packaging compiled for slackware installation...
+MAKEPKG_FLAGS is empty or unset, using default
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+usr/lib64/libKF5ThreadWeaver.so	libKF5ThreadWeaver.so.5
+usr/lib64/libKF5ThreadWeaver.so.5	libKF5ThreadWeaver.so.5.116.0
+
+Making symbolic link creation script:
+( cd usr/lib64 ; rm -rf libKF5ThreadWeaver.so )
+( cd usr/lib64 ; ln -sf libKF5ThreadWeaver.so.5 libKF5ThreadWeaver.so )
+( cd usr/lib64 ; rm -rf libKF5ThreadWeaver.so.5 )
+( cd usr/lib64 ; ln -sf libKF5ThreadWeaver.so.5.116.0 libKF5ThreadWeaver.so.5 )
+
+Unless your existing installation script already contains the code
+to create these links, you should append these lines to your existing
+install script. Now's your chance. :^)
+
+Would you like to add this stuff to the existing install script and
+remove the symbolic links ([y]es, [n]o)? y
+
+
+Removing symbolic links:
+removed './usr/lib64/libKF5ThreadWeaver.so'
+removed './usr/lib64/libKF5ThreadWeaver.so.5'
+
+Updating your ./install/doinst.sh...
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/threadweaver5/threadweaver5-5.116.0-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/qt5-5.15.16_20250408_6cb26397/
+usr/doc/qt5-5.15.16_20250408_6cb26397/KF5ThreadWeaver.qch
+usr/doc/qt5-5.15.16_20250408_6cb26397/KF5ThreadWeaver.tags
+usr/doc/threadweaver5-5.116.0/
+usr/doc/threadweaver5-5.116.0/README.md
+usr/doc/threadweaver5-5.116.0/docs/
+usr/doc/threadweaver5-5.116.0/docs/Doxyfile.local
+usr/doc/threadweaver5-5.116.0/docs/use-cases.md
+usr/doc/threadweaver5-5.116.0/docs/whymultithreading.md
+usr/doc/threadweaver5-5.116.0/slack-required
+usr/doc/threadweaver5-5.116.0/threadweaver5.ini
+usr/include/
+usr/include/KF5/
+usr/include/KF5/ThreadWeaver/
+usr/include/KF5/ThreadWeaver/ThreadWeaver/
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Collection
+usr/include/KF5/ThreadWeaver/ThreadWeaver/DebuggingAids
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Dependency
+usr/include/KF5/ThreadWeaver/ThreadWeaver/DependencyPolicy
+usr/include/KF5/ThreadWeaver/ThreadWeaver/DestructedState
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Exception
+usr/include/KF5/ThreadWeaver/ThreadWeaver/IdDecorator
+usr/include/KF5/ThreadWeaver/ThreadWeaver/InConstructionState
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Job
+usr/include/KF5/ThreadWeaver/ThreadWeaver/JobInterface
+usr/include/KF5/ThreadWeaver/ThreadWeaver/JobPointer
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Lambda
+usr/include/KF5/ThreadWeaver/ThreadWeaver/ManagedJobPointer
+usr/include/KF5/ThreadWeaver/ThreadWeaver/QObjectDecorator
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Queue
+usr/include/KF5/ThreadWeaver/ThreadWeaver/QueueAPI
+usr/include/KF5/ThreadWeaver/ThreadWeaver/QueueInterface
+usr/include/KF5/ThreadWeaver/ThreadWeaver/QueuePolicy
+usr/include/KF5/ThreadWeaver/ThreadWeaver/QueueSignals
+usr/include/KF5/ThreadWeaver/ThreadWeaver/QueueStream
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Queueing
+usr/include/KF5/ThreadWeaver/ThreadWeaver/ResourceRestrictionPolicy
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Sequence
+usr/include/KF5/ThreadWeaver/ThreadWeaver/ShuttingDownState
+usr/include/KF5/ThreadWeaver/ThreadWeaver/State
+usr/include/KF5/ThreadWeaver/ThreadWeaver/SuspendedState
+usr/include/KF5/ThreadWeaver/ThreadWeaver/SuspendingState
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Thread
+usr/include/KF5/ThreadWeaver/ThreadWeaver/ThreadWeaver
+usr/include/KF5/ThreadWeaver/ThreadWeaver/Weaver
+usr/include/KF5/ThreadWeaver/ThreadWeaver/WeaverImplState
+usr/include/KF5/ThreadWeaver/ThreadWeaver/WeaverInterface
+usr/include/KF5/ThreadWeaver/ThreadWeaver/WorkingHardState
+usr/include/KF5/ThreadWeaver/threadweaver/
+usr/include/KF5/ThreadWeaver/threadweaver/collection.h
+usr/include/KF5/ThreadWeaver/threadweaver/debuggingaids.h
+usr/include/KF5/ThreadWeaver/threadweaver/dependency.h
+usr/include/KF5/ThreadWeaver/threadweaver/dependencypolicy.h
+usr/include/KF5/ThreadWeaver/threadweaver/destructedstate.h
+usr/include/KF5/ThreadWeaver/threadweaver/exception.h
+usr/include/KF5/ThreadWeaver/threadweaver/iddecorator.h
+usr/include/KF5/ThreadWeaver/threadweaver/inconstructionstate.h
+usr/include/KF5/ThreadWeaver/threadweaver/job.h
+usr/include/KF5/ThreadWeaver/threadweaver/jobinterface.h
+usr/include/KF5/ThreadWeaver/threadweaver/jobpointer.h
+usr/include/KF5/ThreadWeaver/threadweaver/lambda.h
+usr/include/KF5/ThreadWeaver/threadweaver/managedjobpointer.h
+usr/include/KF5/ThreadWeaver/threadweaver/qobjectdecorator.h
+usr/include/KF5/ThreadWeaver/threadweaver/queue.h
+usr/include/KF5/ThreadWeaver/threadweaver/queueapi.h
+usr/include/KF5/ThreadWeaver/threadweaver/queueing.h
+usr/include/KF5/ThreadWeaver/threadweaver/queueinterface.h
+usr/include/KF5/ThreadWeaver/threadweaver/queuepolicy.h
+usr/include/KF5/ThreadWeaver/threadweaver/queuesignals.h
+usr/include/KF5/ThreadWeaver/threadweaver/queuestream.h
+usr/include/KF5/ThreadWeaver/threadweaver/resourcerestrictionpolicy.h
+usr/include/KF5/ThreadWeaver/threadweaver/sequence.h
+usr/include/KF5/ThreadWeaver/threadweaver/shuttingdownstate.h
+usr/include/KF5/ThreadWeaver/threadweaver/state.h
+usr/include/KF5/ThreadWeaver/threadweaver/suspendedstate.h
+usr/include/KF5/ThreadWeaver/threadweaver/suspendingstate.h
+usr/include/KF5/ThreadWeaver/threadweaver/thread.h
+usr/include/KF5/ThreadWeaver/threadweaver/threadweaver.h
+usr/include/KF5/ThreadWeaver/threadweaver/threadweaver_export.h
+usr/include/KF5/ThreadWeaver/threadweaver/weaver.h
+usr/include/KF5/ThreadWeaver/threadweaver/weaverimplstate.h
+usr/include/KF5/ThreadWeaver/threadweaver/weaverinterface.h
+usr/include/KF5/ThreadWeaver/threadweaver/workinghardstate.h
+usr/include/KF5/ThreadWeaver/threadweaver_version.h
+usr/lib64/
+usr/lib64/cmake/
+usr/lib64/cmake/KF5ThreadWeaver/
+usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverConfig.cmake
+usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverConfigVersion.cmake
+usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverQchTargets.cmake
+usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverTargets-relwithdebinfo.cmake
+usr/lib64/cmake/KF5ThreadWeaver/KF5ThreadWeaverTargets.cmake
+usr/lib64/libKF5ThreadWeaver.so.5.116.0
+usr/lib64/qt5/
+usr/lib64/qt5/mkspecs/
+usr/lib64/qt5/mkspecs/modules/
+usr/lib64/qt5/mkspecs/modules/qt_ThreadWeaver.pri
+
+Slackware package /tmp/threadweaver5/threadweaver5-5.116.0-x86_64-1_rtz.tlz created.
+
+Create shared object file for threadweaver5-5.116.0-x86_64-1_rtz.tlz
+Creating /tmp/threadweaver5/threadweaver5-5.116.0-x86_64-1_rtz.tlz.so.file using /tmp/threadweaver5/threadweaver5-5.116.0-x86_64-1_rtz.tlz
+Successfully created /tmp/threadweaver5/threadweaver5-5.116.0-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in threadweaver5.tar.lz4 format.
+/tmp/threadweaver5 /tmp/threadweaver5
+/tmp/threadweaver5
+BIN_NAME
+README
+makepkg-threadweaver5.log
+threadweaver5-5.116.0-x86_64-1_rtz.tlz
+threadweaver5-5.116.0-x86_64-1_rtz.tlz.md5
+threadweaver5-5.116.0-x86_64-1_rtz.tlz.so.file
+threadweaver5-5.116.0-x86_64-1_rtz.tlz.txt
+threadweaver5.dep
+threadweaver5 build finished. Procced to installation...
+
++======================================================================================================================+
+| Upgrading threadweaver5-5.116.0-x86_64-1_rtz package using /tmp/threadweaver5/threadweaver5-5.116.0-x86_64-1_rtz.tlz |
++======================================================================================================================+
+
+Pre-installing package threadweaver5-5.116.0-x86_64-1_rtz...
+Removing package: threadweaver5-5.116.0-x86_64-1_rtz-upgraded-2025-05-14,23:31:47
+Installing package threadweaver5-5.116.0-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# threadweaver5 (High-level multithreading framework)
+#
+# High-level multithreading framework
+#
+# https://community.kde.org/Frameworks
+Executing install script for threadweaver5-5.116.0-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package threadweaver5-5.116.0-x86_64-1_rtz.tlz installed.
+Package threadweaver5-5.116.0-x86_64-1_rtz upgraded with new package /tmp/threadweaver5/threadweaver5-5.116.0-x86_64-1_rtz.tlz.
+Cleaning environmet: Removing source code, and work-space...
+rm: cannot remove 'threadweaver-5.116.0.tar.xz': No such file or directory
