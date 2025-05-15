@@ -2,7 +2,7 @@
 
 > We're living the future so the present is our past.
 
-![](../system-info.png)
+![](../IMAGES/system-info.png)
 
 ## What is AthOS
 
@@ -70,5 +70,5 @@ something that you might need is the
 > 
 
 - - -
-![image](./cptn.png)
+![image](../IMAGES/cptn.png)
 
