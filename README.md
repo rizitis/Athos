@@ -1,11 +1,11 @@
-![](./Commitsovertime.png)
+![](./IMAGES/Commitsovertime.png)
 
 ---
 
 **Here is my way for a Plasma6 and more... It is not a fork of anyone but a work from scratch.** <br>
 
 
-![plasma6-slackware64-current](./slack.png)
+![plasma6-slackware64-current](./IMAGES/slack.png)
 
 ## HowTO
 
@@ -62,7 +62,7 @@ PS. It is public for 2 reasons:
 
 ---
 
-![S](./S.svg)
+![S](./IMAGES/S.svg)
 
 - - -
 Standard Slackware-current disclaimer follows...
