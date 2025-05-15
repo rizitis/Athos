@@ -6,27 +6,27 @@ extra-cmake-modules is already installed!
 plasma-wayland-protocols is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-14 23:52:24--  https://download.kde.org/stable/frameworks/5.116/kwayland-5.116.0.tar.xz
+--2025-05-15 10:21:23--  https://download.kde.org/stable/frameworks/5.116/kwayland-5.116.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kwayland-5.116.0.tar.xz [following]
---2025-05-14 23:52:24--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kwayland-5.116.0.tar.xz
+--2025-05-15 10:21:23--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kwayland-5.116.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 337540 (330K) [application/octet-stream]
 Saving to: ‘kwayland-5.116.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 15% 1.33M 0s
-    50K .......... .......... .......... .......... .......... 30% 1.45M 0s
-   100K .......... .......... .......... .......... .......... 45% 5.18M 0s
-   150K .......... .......... .......... .......... .......... 60% 1.95M 0s
-   200K .......... .......... .......... .......... .......... 75% 6.84M 0s
-   250K .......... .......... .......... .......... .......... 91% 6.72M 0s
-   300K .......... .......... .........                       100% 6.42M=0.1s
+     0K .......... .......... .......... .......... .......... 15% 1.29M 0s
+    50K .......... .......... .......... .......... .......... 30% 1.28M 0s
+   100K .......... .......... .......... .......... .......... 45% 4.99M 0s
+   150K .......... .......... .......... .......... .......... 60% 5.22M 0s
+   200K .......... .......... .......... .......... .......... 75% 1.67M 0s
+   250K .......... .......... .......... .......... .......... 91% 6.48M 0s
+   300K .......... .......... .........                       100% 6.17M=0.1s
 
-2025-05-14 23:52:25 (2.60 MB/s) - ‘kwayland-5.116.0.tar.xz’ saved [337540/337540]
+2025-05-15 10:21:24 (2.36 MB/s) - ‘kwayland-5.116.0.tar.xz’ saved [337540/337540]
 
 Found file: kwayland-5.116.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -406,8 +406,29 @@ kwayland-5.116.0/metainfo.yaml
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
+-- The C compiler identification is Clang 20.1.4
+-- The CXX compiler identification is Clang 20.1.4
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- 
 
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE
+-- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
 CMake Warning (dev) at CMakeLists.txt:26 (include):
   Policy CMP0173 is not set: The CMakeFindFrameworks module is removed.  Run
   "cmake --help-policy CMP0173" for policy details.  Use the cmake_policy
@@ -423,6 +444,30 @@ Call Stack (most recent call first):
   CMakeLists.txt:26 (include)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
+-- Found QtWaylandScanner: /usr/lib64/qt5/bin/qtwaylandscanner
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'xkbcommon'
+--   Found xkbcommon, version 1.9.2
+-- Found Wayland_Client: /usr/lib64/libwayland-client.so (found version "1.23.1")
+-- Found Wayland_Server: /usr/lib64/libwayland-server.so (found version "1.23.1")
+-- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so (found suitable version "1.23.1", minimum required is "1.15") found components: Client Server
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found WaylandProtocols: //usr/share/wayland-protocols (found suitable version "1.44", minimum required is "1.15")
+-- Performing Test HAVE_EGL
+-- Performing Test HAVE_EGL - Success
+-- Found EGL: /usr/include (found version "1.5")
+-- Performing Test HAVE_MEMFD
+-- Performing Test HAVE_MEMFD - Success
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
 -- Found QHelpGenerator executable: /usr/lib64/qt5/bin/qhelpgenerator
 -- No such target Qt5Gui_QCH defined when calling ecm_add_qch(), ignored.
 
@@ -454,88 +499,205 @@ Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/wo
  * QHelpGenerator, Part of Qt5 tools
    Needed for API dox QCH file generation
 
--- Configuring done (0.2s)
+-- Configuring done (1.4s)
 -- Generating done (0.1s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_INSTALL_DOCDIR
+
+
 -- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/build
-[1/260] Automatic MOC for target KF5WaylandClient
-[2/260] Generating wayland-fullscreen-shell-protocol.c
-[3/260] Generating wayland-output-management-protocol.c
-[4/260] Generating wayland-org_kde_kwin_outputdevice-protocol.c
-[5/260] Generating wayland-plasma-shell-protocol.c
-[6/260] Generating wayland-plasma-virtual-desktop-protocol.c
-[7/260] Generating wayland-idle-protocol.c
-[8/260] Generating wayland-fake-input-protocol.c
-[9/260] Generating wayland-blur-protocol.c
-[10/260] Generating wayland-dpms-protocol.c
-[11/260] Generating wayland-server-decoration-protocol.c
-[12/260] Generating wayland-plasma-window-management-protocol.c
+[1/355] Automatic MOC for target KF5WaylandClient
+[2/355] Generating wayland-fullscreen-shell-client-protocol.h
+[3/355] Generating wayland-org_kde_kwin_outputdevice-client-protocol.h
+[4/355] Generating wayland-plasma-shell-client-protocol.h
+[5/355] Generating wayland-plasma-virtual-desktop-client-protocol.h
+[6/355] Generating wayland-idle-client-protocol.h
+[7/355] Generating wayland-contrast-client-protocol.h
+[8/355] Generating wayland-slide-client-protocol.h
+[9/355] Generating wayland-server-decoration-client-protocol.h
+[10/355] Generating wayland-fake-input-client-protocol.h
+[11/355] Generating wayland-shadow-client-protocol.h
+[12/355] Generating wayland-blur-client-protocol.h
+[13/355] Generating wayland-dpms-client-protocol.h
+[14/355] Generating wayland-output-management-client-protocol.h
+[15/355] Generating wayland-plasma-window-management-client-protocol.h
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
 
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
 
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
 
-[13/260] Generating wayland-shadow-protocol.c
-[14/260] Generating wayland-contrast-protocol.c
-[15/260] Generating wayland-slide-protocol.c
-[16/260] Generating wayland-text-input-v0-protocol.c
-[17/260] Generating wayland-text-input-v2-protocol.c
-[18/260] Generating wayland-xdg-shell-v6-protocol.c
-[19/260] Generating wayland-relativepointer-unstable-v1-protocol.c
-[20/260] Generating wayland-pointer-gestures-unstable-v1-protocol.c
-[21/260] Generating wayland-pointer-constraints-unstable-v1-protocol.c
-[22/260] Generating wayland-xdg-foreign-unstable-v2-protocol.c
-[23/260] Generating wayland-idle-inhibit-unstable-v1-protocol.c
-[24/260] Generating wayland-appmenu-protocol.c
-[25/260] Generating wayland-server-decoration-palette-protocol.c
-[26/260] Generating wayland-xdg-output-unstable-v1-protocol.c
-[27/260] Generating wayland-xdg-shell-protocol.c
-[28/260] Generating wayland-xdg-decoration-unstable-v1-protocol.c
-[29/260] Generating wayland-remote-access-protocol.c
-[30/260] Generating wayland-keystate-protocol.c
-[31/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/KF5WaylandClient_autogen/mocs_compilation.cpp.o
-[32/260] Automatic MOC for target KF5WaylandServer
-[33/260] Generating wayland-output-management-protocol.c
-[34/260] Generating wayland-org_kde_kwin_outputdevice-protocol.c
-[35/260] Generating wayland-plasma-shell-protocol.c
-[36/260] Generating wayland-plasma-virtual-desktop-protocol.c
-[37/260] Generating wayland-plasma-window-management-protocol.c
+[16/355] Generating wayland-text-input-v0-client-protocol.h
+[17/355] Generating wayland-text-input-v2-client-protocol.h
+[18/355] Generating wayland-xdg-shell-v6-client-protocol.h
+[19/355] Generating wayland-relativepointer-unstable-v1-client-protocol.h
+[20/355] Generating wayland-pointer-gestures-unstable-v1-client-protocol.h
+[21/355] Generating wayland-xdg-foreign-unstable-v2-client-protocol.h
+[22/355] Generating wayland-idle-inhibit-unstable-v1-client-protocol.h
+[23/355] Generating wayland-appmenu-client-protocol.h
+[24/355] Generating wayland-server-decoration-palette-client-protocol.h
+[25/355] Generating wayland-pointer-constraints-unstable-v1-client-protocol.h
+[26/355] Generating wayland-xdg-output-unstable-v1-client-protocol.h
+[27/355] Generating wayland-xdg-decoration-unstable-v1-client-protocol.h
+[28/355] Generating wayland-keystate-client-protocol.h
+[29/355] Generating wayland-remote-access-client-protocol.h
+[30/355] Generating wayland-fullscreen-shell-protocol.c
+[31/355] Generating wayland-org_kde_kwin_outputdevice-protocol.c
+[32/355] Generating wayland-plasma-shell-protocol.c
+[33/355] Generating wayland-output-management-protocol.c
+[34/355] Generating wayland-plasma-virtual-desktop-protocol.c
+[35/355] Generating wayland-xdg-shell-client-protocol.h
+[36/355] Generating wayland-plasma-window-management-protocol.c
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
 
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
 
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
 
-[38/260] Generating wayland-qt-surface-extension-protocol.c
-[39/260] Generating wayland-idle-protocol.c
-[40/260] Generating wayland-fake-input-protocol.c
-[41/260] Generating wayland-shadow-protocol.c
-[42/260] Generating wayland-dpms-protocol.c
-[43/260] Generating wayland-blur-protocol.c
-[44/260] Generating wayland-contrast-protocol.c
-[45/260] Generating wayland-relativepointer-unstable-v1-protocol.c
-[46/260] Generating wayland-slide-protocol.c
-[47/260] Generating wayland-server_decoration-protocol.c
-[48/260] Generating wayland-text-protocol.c
-[49/260] Generating wayland-text-input-unstable-v2-protocol.c
-[50/260] Generating wayland-xdg-shell-v6-protocol.c
-[51/260] Generating wayland-pointer-gestures-unstable-v1-protocol.c
-[52/260] Generating wayland-pointer-constraints-unstable-v1-protocol.c
-[53/260] Generating wayland-xdg-foreign-unstable-v2-protocol.c
-[54/260] Generating wayland-idle-inhibit-unstable-v1-protocol.c
-[55/260] Generating wayland-appmenu-protocol.c
-[56/260] Generating wayland-server_decoration_palette-protocol.c
-[57/260] Generating wayland-remote-access-protocol.c
-[58/260] Generating wayland-xdg-output-protocol.c
-[59/260] Generating wayland-xdg-shell-protocol.c
-[60/260] Generating wayland-xdg-decoration-protocol.c
-[61/260] Generating wayland-eglstream-controller-protocol.c
-[62/260] Generating wayland-keystate-protocol.c
-[63/260] Generating wayland-linux-dmabuf-unstable-v1-protocol.c
-[64/260] Generating wayland-tablet-unstable-v2-protocol.c
-[65/260] Generating qwayland-server-tablet-unstable-v2.cpp
-[66/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/KF5WaylandServer_autogen/mocs_compilation.cpp.o
-[67/260] Generating src/KF5Wayland.qch, src/KF5Wayland.tags
+[37/355] Generating wayland-idle-protocol.c
+[38/355] Generating wayland-fake-input-protocol.c
+[39/355] Generating wayland-shadow-protocol.c
+[40/355] Generating wayland-contrast-protocol.c
+[41/355] Generating wayland-blur-protocol.c
+[42/355] Generating wayland-slide-protocol.c
+[43/355] Generating wayland-dpms-protocol.c
+[44/355] Generating wayland-server-decoration-protocol.c
+[45/355] Generating wayland-text-input-v0-protocol.c
+[46/355] Generating wayland-text-input-v2-protocol.c
+[47/355] Generating wayland-xdg-shell-v6-protocol.c
+[48/355] Generating wayland-relativepointer-unstable-v1-protocol.c
+[49/355] Generating wayland-pointer-constraints-unstable-v1-protocol.c
+[50/355] Generating wayland-appmenu-protocol.c
+[51/355] Generating wayland-pointer-gestures-unstable-v1-protocol.c
+[52/355] Generating wayland-idle-inhibit-unstable-v1-protocol.c
+[53/355] Generating wayland-xdg-foreign-unstable-v2-protocol.c
+[54/355] Generating wayland-xdg-output-unstable-v1-protocol.c
+[55/355] Generating wayland-server-decoration-palette-protocol.c
+[56/355] Generating wayland-remote-access-protocol.c
+[57/355] Generating wayland-xdg-shell-protocol.c
+[58/355] Generating wayland-xdg-decoration-unstable-v1-protocol.c
+[59/355] Generating wayland-keystate-protocol.c
+[60/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/KF5WaylandClient_autogen/mocs_compilation.cpp.o
+[61/355] Automatic MOC for target KF5WaylandServer
+[62/355] Generating wayland-output-management-client-protocol.h
+[63/355] Generating wayland-org_kde_kwin_outputdevice-client-protocol.h
+[64/355] Generating wayland-plasma-shell-client-protocol.h
+[65/355] Generating wayland-plasma-virtual-desktop-client-protocol.h
+[66/355] Generating wayland-plasma-window-management-client-protocol.h
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
+
+[67/355] Generating wayland-qt-surface-extension-client-protocol.h
+[68/355] Generating wayland-idle-client-protocol.h
+[69/355] Generating wayland-fake-input-client-protocol.h
+[70/355] Generating wayland-shadow-client-protocol.h
+[71/355] Generating wayland-dpms-client-protocol.h
+[72/355] Generating wayland-blur-client-protocol.h
+[73/355] Generating wayland-contrast-client-protocol.h
+[74/355] Generating wayland-relativepointer-unstable-v1-client-protocol.h
+[75/355] Generating wayland-slide-client-protocol.h
+[76/355] Generating wayland-server_decoration-client-protocol.h
+[77/355] Generating wayland-text-client-protocol.h
+[78/355] Generating wayland-text-input-unstable-v2-client-protocol.h
+[79/355] Generating wayland-xdg-shell-v6-client-protocol.h
+[80/355] Generating wayland-pointer-gestures-unstable-v1-client-protocol.h
+[81/355] Generating wayland-pointer-constraints-unstable-v1-client-protocol.h
+[82/355] Generating wayland-xdg-foreign-unstable-v2-client-protocol.h
+[83/355] Generating wayland-idle-inhibit-unstable-v1-client-protocol.h
+[84/355] Generating wayland-appmenu-client-protocol.h
+[85/355] Generating wayland-server_decoration_palette-client-protocol.h
+[86/355] Generating wayland-remote-access-client-protocol.h
+[87/355] Generating wayland-xdg-output-client-protocol.h
+[88/355] Generating wayland-xdg-shell-client-protocol.h
+[89/355] Generating wayland-xdg-decoration-client-protocol.h
+[90/355] Generating wayland-eglstream-controller-client-protocol.h
+[91/355] Generating wayland-keystate-client-protocol.h
+[92/355] Generating wayland-linux-dmabuf-unstable-v1-client-protocol.h
+[93/355] Generating wayland-tablet-unstable-v2-client-protocol.h
+[94/355] Generating qwayland-server-tablet-unstable-v2.h
+[95/355] Generating wayland-output-management-protocol.c
+[96/355] Generating wayland-output-management-server-protocol.h
+[97/355] Generating wayland-org_kde_kwin_outputdevice-protocol.c
+[98/355] Generating wayland-org_kde_kwin_outputdevice-server-protocol.h
+[99/355] Generating wayland-plasma-shell-protocol.c
+[100/355] Generating wayland-plasma-shell-server-protocol.h
+[101/355] Generating wayland-plasma-virtual-desktop-protocol.c
+[102/355] Generating wayland-plasma-virtual-desktop-server-protocol.h
+[103/355] Generating wayland-plasma-window-management-protocol.c
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
+
+[104/355] Generating wayland-plasma-window-management-server-protocol.h
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
+
+[105/355] Generating wayland-qt-surface-extension-protocol.c
+[106/355] Generating wayland-qt-surface-extension-server-protocol.h
+[107/355] Generating wayland-idle-protocol.c
+[108/355] Generating wayland-idle-server-protocol.h
+[109/355] Generating wayland-fake-input-protocol.c
+[110/355] Generating wayland-fake-input-server-protocol.h
+[111/355] Generating wayland-shadow-protocol.c
+[112/355] Generating wayland-shadow-server-protocol.h
+[113/355] Generating wayland-dpms-protocol.c
+[114/355] Generating wayland-dpms-server-protocol.h
+[115/355] Generating wayland-blur-protocol.c
+[116/355] Generating wayland-blur-server-protocol.h
+[117/355] Generating wayland-contrast-protocol.c
+[118/355] Generating wayland-contrast-server-protocol.h
+[119/355] Generating wayland-relativepointer-unstable-v1-protocol.c
+[120/355] Generating wayland-relativepointer-unstable-v1-server-protocol.h
+[121/355] Generating wayland-slide-protocol.c
+[122/355] Generating wayland-slide-server-protocol.h
+[123/355] Generating wayland-server_decoration-protocol.c
+[124/355] Generating wayland-server_decoration-server-protocol.h
+[125/355] Generating wayland-text-protocol.c
+[126/355] Generating wayland-text-server-protocol.h
+[127/355] Generating wayland-text-input-unstable-v2-protocol.c
+[128/355] Generating wayland-text-input-unstable-v2-server-protocol.h
+[129/355] Generating wayland-xdg-shell-v6-protocol.c
+[130/355] Generating wayland-xdg-shell-v6-server-protocol.h
+[131/355] Generating wayland-pointer-gestures-unstable-v1-protocol.c
+[132/355] Generating wayland-pointer-gestures-unstable-v1-server-protocol.h
+[133/355] Generating wayland-pointer-constraints-unstable-v1-protocol.c
+[134/355] Generating wayland-pointer-constraints-unstable-v1-server-protocol.h
+[135/355] Generating wayland-xdg-foreign-unstable-v2-protocol.c
+[136/355] Generating wayland-xdg-foreign-unstable-v2-server-protocol.h
+[137/355] Generating wayland-idle-inhibit-unstable-v1-protocol.c
+[138/355] Generating wayland-idle-inhibit-unstable-v1-server-protocol.h
+[139/355] Generating wayland-appmenu-protocol.c
+[140/355] Generating wayland-appmenu-server-protocol.h
+[141/355] Generating wayland-server_decoration_palette-protocol.c
+[142/355] Generating wayland-server_decoration_palette-server-protocol.h
+[143/355] Generating wayland-remote-access-protocol.c
+[144/355] Generating wayland-remote-access-server-protocol.h
+[145/355] Generating wayland-xdg-output-protocol.c
+[146/355] Generating wayland-xdg-output-server-protocol.h
+[147/355] Generating wayland-xdg-shell-protocol.c
+[148/355] Generating wayland-xdg-shell-server-protocol.h
+[149/355] Generating wayland-xdg-decoration-protocol.c
+[150/355] Generating wayland-xdg-decoration-server-protocol.h
+[151/355] Generating wayland-eglstream-controller-protocol.c
+[152/355] Generating wayland-eglstream-controller-server-protocol.h
+[153/355] Generating wayland-keystate-protocol.c
+[154/355] Generating wayland-keystate-server-protocol.h
+[155/355] Generating wayland-linux-dmabuf-unstable-v1-protocol.c
+[156/355] Generating wayland-linux-dmabuf-unstable-v1-server-protocol.h
+[157/355] Generating wayland-tablet-unstable-v2-protocol.c
+[158/355] Generating wayland-tablet-unstable-v2-server-protocol.h
+[159/355] Generating qwayland-server-tablet-unstable-v2.cpp
+[160/355] Generating src/KF5Wayland.qch, src/KF5Wayland.tags
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
 Building up file structure...
 Insert custom filters...
@@ -544,84 +706,86 @@ Insert files...
 Insert contents...
 Insert indices...
 Documentation successfully generated.
-[68/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/dataoffer.cpp.o
-[69/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/idleinhibit.cpp.o
-[70/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/fakeinput.cpp.o
-[71/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/event_queue.cpp.o
-[72/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/remote_access.cpp.o
-[73/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/buffer.cpp.o
-[74/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/contrast.cpp.o
-[75/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/blur.cpp.o
-[76/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/idle.cpp.o
-[77/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/slide.cpp.o
-[78/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/compositor.cpp.o
-[79/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/blur_interface.cpp.o
-[80/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datadevicemanager.cpp.o
-[81/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/dpms.cpp.o
-[82/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/appmenu.cpp.o
-[83/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/keystate.cpp.o
-[84/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datasource.cpp.o
-[85/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/connection_thread.cpp.o
-[86/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/fullscreen_shell.cpp.o
-[87/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/keyboard.cpp.o
-[88/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datadevice.cpp.o
-[89/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/appmenu_interface.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/appmenu_interface.cpp:47:116: warning: missing field 'release' initializer [-Wmissing-field-initializers]
-   47 | const struct org_kde_kwin_appmenu_manager_interface AppMenuManagerInterface::Private::s_interface = {createCallback};
-      |                                                                                                                    ^
-1 warning generated.
-[90/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/clientconnection.cpp.o
-[91/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/dataoffer_interface.cpp.o
-[92/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/compositor_interface.cpp.o
-[93/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/buffer_interface.cpp.o
-[94/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datasource_interface.cpp.o
-[95/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/global.cpp.o
-[96/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/contrast_interface.cpp.o
+[161/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/KF5WaylandServer_autogen/mocs_compilation.cpp.o
+[162/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/__/compat/wayland-xdg-shell-v5-protocol.c.o
+[163/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/fakeinput.cpp.o
+[164/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/dataoffer.cpp.o
+[165/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/idle.cpp.o
+[166/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/blur.cpp.o
+[167/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datadevicemanager.cpp.o
+[168/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/compositor.cpp.o
+[169/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datasource.cpp.o
+[170/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/datadevice.cpp.o
+[171/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/event_queue.cpp.o
+[172/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/remote_access.cpp.o
+[173/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/contrast.cpp.o
+[174/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/buffer.cpp.o
+[175/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/dpms.cpp.o
+[176/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/keyboard.cpp.o
+[177/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/idleinhibit.cpp.o
+[178/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/appmenu.cpp.o
+[179/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/keystate.cpp.o
+[180/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/slide.cpp.o
+[181/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/fullscreen_shell.cpp.o
+[182/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/connection_thread.cpp.o
+[183/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/blur_interface.cpp.o
+[184/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/contrast_interface.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/contrast_interface.cpp:154:132: warning: missing field 'set_frost' initializer [-Wmissing-field-initializers]
   154 |     {commitCallback, setRegionCallback, setContrastCallback, setIntensityCallback, setSaturationCallback, resourceDestroyedCallback};
       |                                                                                                                                    ^
 1 warning generated.
-[97/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/fakeinput_interface.cpp.o
+[185/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/appmenu_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/appmenu_interface.cpp:47:116: warning: missing field 'release' initializer [-Wmissing-field-initializers]
+   47 | const struct org_kde_kwin_appmenu_manager_interface AppMenuManagerInterface::Private::s_interface = {createCallback};
+      |                                                                                                                    ^
+1 warning generated.
+[186/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/filtered_display.cpp.o
+[187/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/clientconnection.cpp.o
+[188/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datasource_interface.cpp.o
+[189/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/eglstream_controller_interface.cpp.o
+[190/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datadevicemanager_interface.cpp.o
+[191/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/compositor_interface.cpp.o
+[192/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/global.cpp.o
+[193/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/dataoffer_interface.cpp.o
+[194/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datadevice_interface.cpp.o
+[195/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/dpms_interface.cpp.o
+[196/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/buffer_interface.cpp.o
+[197/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/fakeinput_interface.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/fakeinput_interface.cpp:76:111: warning: missing field 'destroy' initializer [-Wmissing-field-initializers]
    76 |                                                                                            keyboardKeyCallback};
       |                                                                                                               ^
 1 warning generated.
-[98/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/filtered_display.cpp.o
-[99/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/dpms_interface.cpp.o
-[100/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datadevicemanager_interface.cpp.o
-[101/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idleinhibit_interface_v1.cpp.o
-[102/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idleinhibit_interface.cpp.o
-[103/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/keystate_interface.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/keystate_interface.cpp:70:108: warning: missing field 'destroy' initializer [-Wmissing-field-initializers]
-   70 | const struct org_kde_kwin_keystate_interface KeyStateInterface::Private::s_interface = {fetchStatesCallback};
-      |                                                                                                            ^
-1 warning generated.
-[104/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/eglstream_controller_interface.cpp.o
-[105/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/linuxdmabuf_v1_interface.cpp.o
+[198/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idleinhibit_interface.cpp.o
+[199/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputchangeset.cpp.o
+[200/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idleinhibit_interface_v1.cpp.o
+[201/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idle_interface.cpp.o
+[202/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/linuxdmabuf_v1_interface.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/linuxdmabuf_v1_interface.cpp:175:102: warning: missing field 'get_default_feedback' initializer [-Wmissing-field-initializers]
   175 |                                                                                  createParamsCallback};
       |                                                                                                      ^
 1 warning generated.
-[106/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/keyboard_interface.cpp.o
-[107/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/datadevice_interface.cpp.o
-[108/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/idle_interface.cpp.o
-[109/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputchangeset.cpp.o
-[110/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmashell_interface.cpp.o
+[203/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointergestures_interface.cpp.o
+[204/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointerconstraints_interface_v1.cpp.o
+[205/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/output_interface.cpp.o
+[206/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmashell_interface.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmashell_interface.cpp:152:123: warning: missing field 'open_under_cursor' initializer [-Wmissing-field-initializers]
   152 |                                                                                                    setSkipSwitcherCallback};
       |                                                                                                                           ^
 1 warning generated.
-[111/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputmanagement_interface.cpp.o
-[112/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/relativepointer_interface.cpp.o
-[113/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputconfiguration_interface.cpp.o
-[114/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmavirtualdesktop_interface.cpp.o
-[115/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointerconstraints_interface_v1.cpp.o
-[116/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointerconstraints_interface.cpp.o
-[117/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/output_interface.cpp.o
-[118/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointergestures_interface.cpp.o
-[119/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/qtsurfaceextension_interface.cpp.o
-[120/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/region_interface.cpp.o
-[121/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/display.cpp.o
+[207/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/keystate_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/keystate_interface.cpp:70:108: warning: missing field 'destroy' initializer [-Wmissing-field-initializers]
+   70 | const struct org_kde_kwin_keystate_interface KeyStateInterface::Private::s_interface = {fetchStatesCallback};
+      |                                                                                                            ^
+1 warning generated.
+[208/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputmanagement_interface.cpp.o
+[209/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/keyboard_interface.cpp.o
+[210/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/relativepointer_interface_v1.cpp.o
+[211/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointerconstraints_interface.cpp.o
+[212/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmavirtualdesktop_interface.cpp.o
+[213/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/resource.cpp.o
+[214/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputconfiguration_interface.cpp.o
+[215/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputdevice_interface.cpp.o
+[216/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/display.cpp.o
 In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/display.cpp:27:
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h:36:5: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
    36 |     PlasmaWindowManagementInterface() = default;
@@ -634,17 +798,59 @@ In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/
       |                                         ^~~~~~~
       |                                         delete
 1 warning generated.
-[122/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/resource.cpp.o
-[123/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/relativepointer_interface_v1.cpp.o
-[124/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointergestures_interface_v1.cpp.o
+[217/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointer_interface.cpp.o
+[218/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/relativepointer_interface.cpp.o
+[219/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/region_interface.cpp.o
+[220/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/remote_access_interface.cpp.o
+[221/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/qtsurfaceextension_interface.cpp.o
+[222/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/shadow_interface.cpp.o
+[223/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointergestures_interface_v1.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/pointergestures_interface_v1.cpp:44:156: warning: missing field 'release' initializer [-Wmissing-field-initializers]
    44 | const struct zwp_pointer_gestures_v1_interface PointerGesturesUnstableV1Interface::Private::s_interface = {getSwipeGestureCallback, getPinchGestureCallback};
       |                                                                                                                                                            ^
 1 warning generated.
-[125/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/pointer_interface.cpp.o
-[126/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/outputdevice_interface.cpp.o
-[127/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/server_decoration_interface.cpp.o
-[128/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmawindowmanagement_interface.cpp.o
+[224/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/server_decoration_palette_interface.cpp.o
+[225/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/server_decoration_interface.cpp.o
+[226/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-output-management-protocol.c.o
+[227/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-org_kde_kwin_outputdevice-protocol.c.o
+[228/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-shell-protocol.c.o
+[229/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/subcompositor_interface.cpp.o
+[230/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-virtual-desktop-protocol.c.o
+[231/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-window-management-protocol.c.o
+[232/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-qt-surface-extension-protocol.c.o
+[233/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/slide_interface.cpp.o
+[234/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-idle-protocol.c.o
+[235/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-fake-input-protocol.c.o
+[236/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-blur-protocol.c.o
+[237/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-shadow-protocol.c.o
+[238/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/surfacerole.cpp.o
+[239/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-dpms-protocol.c.o
+[240/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/touch_interface.cpp.o
+[241/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-contrast-protocol.c.o
+[242/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-relativepointer-unstable-v1-protocol.c.o
+[243/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-server_decoration-protocol.c.o
+[244/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-slide-protocol.c.o
+[245/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-shell-v6-protocol.c.o
+[246/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface_v0.cpp.o
+[247/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-text-protocol.c.o
+[248/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o
+[249/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-text-input-unstable-v2-protocol.c.o
+[250/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o
+[251/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o
+[252/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-remote-access-protocol.c.o
+[253/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-server_decoration_palette-protocol.c.o
+[254/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o
+[255/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-appmenu-protocol.c.o
+[256/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-decoration-protocol.c.o
+[257/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-keystate-protocol.c.o
+[258/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-linux-dmabuf-unstable-v1-protocol.c.o
+[259/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-output-protocol.c.o
+[260/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-shell-protocol.c.o
+[261/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-eglstream-controller-protocol.c.o
+[262/355] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-tablet-unstable-v2-protocol.c.o
+[263/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface_v2.cpp.o
+[264/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/logging.cpp.o
+[265/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/plasmawindowmanagement_interface.cpp.o
 In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.cpp:6:
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/plasmawindowmanagement_interface.h:36:5: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
    36 |     PlasmaWindowManagementInterface() = default;
@@ -663,64 +869,17 @@ In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/
   344 |                                                                                             requestLeaveVirtualDesktopCallback};
       |                                                                                                                               ^
 3 warnings generated.
-[129/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/slide_interface.cpp.o
-[130/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/remote_access_interface.cpp.o
-[131/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-output-management-protocol.c.o
-[132/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-org_kde_kwin_outputdevice-protocol.c.o
-[133/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-shell-protocol.c.o
-[134/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/surfacerole.cpp.o
-[135/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/server_decoration_palette_interface.cpp.o
-[136/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/shell_interface.cpp.o
-[137/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-virtual-desktop-protocol.c.o
-[138/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-plasma-window-management-protocol.c.o
-[139/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-idle-protocol.c.o
-[140/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/subcompositor_interface.cpp.o
-[141/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-qt-surface-extension-protocol.c.o
-[142/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-fake-input-protocol.c.o
-[143/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-blur-protocol.c.o
-[144/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-shadow-protocol.c.o
-[145/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-contrast-protocol.c.o
-[146/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface.cpp.o
-[147/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgdecoration_interface.cpp.o
-[148/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-slide-protocol.c.o
-[149/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-relativepointer-unstable-v1-protocol.c.o
-[150/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-server_decoration-protocol.c.o
-[151/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-dpms-protocol.c.o
-[152/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-text-protocol.c.o
-[153/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/shadow_interface.cpp.o
-[154/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-text-input-unstable-v2-protocol.c.o
-[155/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o
-[156/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-shell-v6-protocol.c.o
-[157/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-appmenu-protocol.c.o
-[158/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o
-[159/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o
-[160/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o
-[161/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-server_decoration_palette-protocol.c.o
-[162/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/touch_interface.cpp.o
-[163/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-remote-access-protocol.c.o
-[164/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-eglstream-controller-protocol.c.o
-[165/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface_v0.cpp.o
-[166/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-output-protocol.c.o
-[167/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-decoration-protocol.c.o
-[168/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-tablet-unstable-v2-protocol.c.o
-[169/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-keystate-protocol.c.o
-[170/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-linux-dmabuf-unstable-v1-protocol.c.o
-[171/260] Building C object src/server/CMakeFiles/KF5WaylandServer.dir/wayland-xdg-shell-protocol.c.o
-[172/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface_v2.cpp.o
-[173/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/tablet_interface.cpp.o
-[174/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/logging.cpp.o
-[175/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgoutput_interface.cpp.o
-[176/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/seat_interface.cpp.o
-[177/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgforeign_interface.cpp.o
-[178/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/surface_interface.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/surface_interface.cpp:255:97: warning: missing field 'offset' initializer [-Wmissing-field-initializers]
-  255 |                                                                             damageBufferCallback};
-      |                                                                                                 ^
-1 warning generated.
-[179/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_v5_interface.cpp.o
-[180/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgforeign_v2_interface.cpp.o
-[181/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_interface.cpp.o
-[182/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_stable_interface.cpp.o
+[266/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/textinput_interface.cpp.o
+[267/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgforeign_interface.cpp.o
+[268/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/shell_interface.cpp.o
+[269/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/tablet_interface.cpp.o
+[270/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgdecoration_interface.cpp.o
+[271/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/seat_interface.cpp.o
+[272/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgforeign_v2_interface.cpp.o
+[273/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_interface.cpp.o
+[274/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_v6_interface.cpp.o
+[275/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgoutput_interface.cpp.o
+[276/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_stable_interface.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/xdgshell_stable_interface.cpp:608:110: warning: missing field 'set_reactive' initializer [-Wmissing-field-initializers]
   608 |                                                                                             setOffsetCallback};
       |                                                                                                              ^
@@ -728,37 +887,75 @@ In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/
   924 | const struct xdg_popup_interface XdgPopupStableInterface::Private::s_interface = {resourceDestroyedCallback, grabCallback};
       |                                                                                                                          ^
 2 warnings generated.
-[183/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/relativepointer.cpp.o
-[184/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmashell.cpp.o
-[185/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointer.cpp.o
+[277/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointer.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/pointer.cpp:72:155: warning: missing field 'axis_value120' initializer [-Wmissing-field-initializers]
    72 |     {enterCallback, leaveCallback, motionCallback, buttonCallback, axisCallback, frameCallback, axisSourceCallback, axisStopCallback, axisDiscreteCallback};
       |                                                                                                                                                           ^
 1 warning generated.
-[186/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputmanagement.cpp.o
-[187/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/output.cpp.o
-[188/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointerconstraints.cpp.o
-[189/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputconfiguration.cpp.o
-[190/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/region.cpp.o
-[191/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputdevice.cpp.o
-[192/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmavirtualdesktop.cpp.o
-[193/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_v6_interface.cpp.o
-[194/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmawindowmodel.cpp.o
-[195/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/seat.cpp.o
-[196/260] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/qwayland-server-tablet-unstable-v2.cpp.o
-[197/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/server_decoration_palette.cpp.o
-[198/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointergestures.cpp.o
-[199/260] Linking CXX shared library bin/libKF5WaylandServer.so.5.116.0
-[200/260] Creating library symlink bin/libKF5WaylandServer.so.5 bin/libKF5WaylandServer.so
-[201/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/__/compat/wayland-xdg-shell-v5-protocol.c.o
-[202/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shadow.cpp.o
-[203/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-fullscreen-shell-protocol.c.o
-[204/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-output-management-protocol.c.o
-[205/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-org_kde_kwin_outputdevice-protocol.c.o
-[206/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-shell-protocol.c.o
-[207/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-virtual-desktop-protocol.c.o
-[208/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput.cpp.o
-[209/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmawindowmanagement.cpp.o
+[278/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputconfiguration.cpp.o
+[279/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointergestures.cpp.o
+[280/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/surface_interface.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/server/surface_interface.cpp:255:97: warning: missing field 'offset' initializer [-Wmissing-field-initializers]
+  255 |                                                                             damageBufferCallback};
+      |                                                                                                 ^
+1 warning generated.
+[281/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/xdgshell_v5_interface.cpp.o
+[282/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/output.cpp.o
+[283/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputmanagement.cpp.o
+[284/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/outputdevice.cpp.o
+[285/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmashell.cpp.o
+[286/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/pointerconstraints.cpp.o
+[287/355] Building CXX object src/server/CMakeFiles/KF5WaylandServer.dir/qwayland-server-tablet-unstable-v2.cpp.o
+[288/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/region.cpp.o
+[289/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/seat.cpp.o
+[290/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmavirtualdesktop.cpp.o
+[291/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shadow.cpp.o
+[292/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/server_decoration_palette.cpp.o
+[293/355] Linking CXX shared library bin/libKF5WaylandServer.so.5.116.0
+[294/355] Creating library symlink bin/libKF5WaylandServer.so.5 bin/libKF5WaylandServer.so
+[295/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/relativepointer.cpp.o
+[296/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/subcompositor.cpp.o
+[297/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/__/compat/wayland-xdg-shell-v5-protocol.c.o
+[298/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmawindowmodel.cpp.o
+[299/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/subsurface.cpp.o
+[300/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-fullscreen-shell-protocol.c.o
+[301/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-org_kde_kwin_outputdevice-protocol.c.o
+[302/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-shell-protocol.c.o
+[303/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-output-management-protocol.c.o
+[304/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-virtual-desktop-protocol.c.o
+[305/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-window-management-protocol.c.o
+[306/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/server_decoration.cpp.o
+[307/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-idle-protocol.c.o
+[308/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shell.cpp.o
+[309/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-fake-input-protocol.c.o
+[310/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shm_pool.cpp.o
+[311/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-contrast-protocol.c.o
+[312/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-shadow-protocol.c.o
+[313/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-dpms-protocol.c.o
+[314/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-slide-protocol.c.o
+[315/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-blur-protocol.c.o
+[316/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-server-decoration-protocol.c.o
+[317/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput_v2.cpp.o
+[318/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-text-input-v0-protocol.c.o
+[319/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-text-input-v2-protocol.c.o
+[320/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-shell-v6-protocol.c.o
+[321/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-relativepointer-unstable-v1-protocol.c.o
+[322/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o
+[323/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-appmenu-protocol.c.o
+[324/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-server-decoration-palette-protocol.c.o
+[325/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o
+[326/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o
+[327/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-output-unstable-v1-protocol.c.o
+[328/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o
+[329/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-decoration-unstable-v1-protocol.c.o
+[330/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-keystate-protocol.c.o
+[331/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-shell-protocol.c.o
+[332/355] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-remote-access-protocol.c.o
+[333/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput.cpp.o
+[334/355] Automatic MOC for target org-kde-kf5-kwayland-testserver
+[335/355] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/org-kde-kf5-kwayland-testserver_autogen/mocs_compilation.cpp.o
+[336/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgdecoration.cpp.o
+[337/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/plasmawindowmanagement.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/plasmawindowmanagement.cpp:159:1: warning: missing field 'stacking_order_changed_2' initializer [-Wmissing-field-initializers]
   159 | };
       | ^
@@ -766,55 +963,20 @@ In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/
   442 | };
       | ^
 2 warnings generated.
-[210/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/subcompositor.cpp.o
-[211/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-plasma-window-management-protocol.c.o
-[212/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-fake-input-protocol.c.o
-[213/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/server_decoration.cpp.o
-[214/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-shadow-protocol.c.o
-[215/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-idle-protocol.c.o
-[216/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-blur-protocol.c.o
-[217/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-contrast-protocol.c.o
-[218/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-dpms-protocol.c.o
-[219/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/subsurface.cpp.o
-[220/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-server-decoration-protocol.c.o
-[221/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-slide-protocol.c.o
-[222/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-shell-v6-protocol.c.o
-[223/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-text-input-v0-protocol.c.o
-[224/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-text-input-v2-protocol.c.o
-[225/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-relativepointer-unstable-v1-protocol.c.o
-[226/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o
-[227/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o
-[228/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o
-[229/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-appmenu-protocol.c.o
-[230/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shm_pool.cpp.o
-[231/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o
-[232/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/touch.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/touch.cpp:127:126: warning: missing field 'shape' initializer [-Wmissing-field-initializers]
-  127 | const wl_touch_listener Touch::Private::s_listener = {downCallback, upCallback, motionCallback, frameCallback, cancelCallback};
-      |                                                                                                                              ^
-1 warning generated.
-[233/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-server-decoration-palette-protocol.c.o
-[234/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-shell-protocol.c.o
-[235/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-decoration-unstable-v1-protocol.c.o
-[236/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-keystate-protocol.c.o
-[237/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-remote-access-protocol.c.o
-[238/260] Building C object src/client/CMakeFiles/KF5WaylandClient.dir/wayland-xdg-output-unstable-v1-protocol.c.o
-[239/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgforeign_v2.cpp.o
-[240/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/surface.cpp.o
+[338/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/surface.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/surface.cpp:86:101: warning: missing field 'preferred_buffer_scale' initializer [-Wmissing-field-initializers]
    86 | const struct wl_surface_listener Surface::Private::s_surfaceListener = {enterCallback, leaveCallback};
       |                                                                                                     ^
 1 warning generated.
-[241/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/shell.cpp.o
-[242/260] Automatic MOC for target org-kde-kf5-kwayland-testserver
-[243/260] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/org-kde-kf5-kwayland-testserver_autogen/mocs_compilation.cpp.o
-[244/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput_v2.cpp.o
-[245/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_v5.cpp.o
-[246/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgforeign.cpp.o
-[247/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput_v0.cpp.o
-[248/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/logging.cpp.o
-[249/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell.cpp.o
-[250/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_stable.cpp.o
+[339/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/textinput_v0.cpp.o
+[340/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/logging.cpp.o
+[341/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/touch.cpp.o
+/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/touch.cpp:127:126: warning: missing field 'shape' initializer [-Wmissing-field-initializers]
+  127 | const wl_touch_listener Touch::Private::s_listener = {downCallback, upCallback, motionCallback, frameCallback, cancelCallback};
+      |                                                                                                                              ^
+1 warning generated.
+[342/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgforeign.cpp.o
+[343/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_stable.cpp.o
 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/work/kwayland-5.116.0/src/client/xdgshell_stable.cpp:288:118: warning: missing field 'configure_bounds' initializer [-Wmissing-field-initializers]
   288 | const struct xdg_toplevel_listener XdgTopLevelStable::Private::s_toplevelListener = {configureCallback, closeCallback};
       |                                                                                                                      ^
@@ -822,16 +984,18 @@ In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/
   527 | const struct xdg_popup_listener XdgShellPopupStable::Private::s_popupListener = {configureCallback, popupDoneCallback};
       |                                                                                                                      ^
 2 warnings generated.
-[251/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgdecoration.cpp.o
-[252/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgoutput.cpp.o
-[253/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_v6.cpp.o
-[254/260] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/main.cpp.o
-[255/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/surface_p.cpp.o
-[256/260] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/testserver.cpp.o
-[257/260] Linking CXX executable bin/org-kde-kf5-kwayland-testserver
-[258/260] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/registry.cpp.o
-[259/260] Linking CXX shared library bin/libKF5WaylandClient.so.5.116.0
-[260/260] Creating library symlink bin/libKF5WaylandClient.so.5 bin/libKF5WaylandClient.so
+[344/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_v6.cpp.o
+[345/355] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/main.cpp.o
+[346/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgforeign_v2.cpp.o
+[347/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgoutput.cpp.o
+[348/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell_v5.cpp.o
+[349/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/xdgshell.cpp.o
+[350/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/surface_p.cpp.o
+[351/355] Building CXX object src/tools/testserver/CMakeFiles/org-kde-kf5-kwayland-testserver.dir/testserver.cpp.o
+[352/355] Linking CXX executable bin/org-kde-kf5-kwayland-testserver
+[353/355] Building CXX object src/client/CMakeFiles/KF5WaylandClient.dir/registry.cpp.o
+[354/355] Linking CXX shared library bin/libKF5WaylandClient.so.5.116.0
+[355/355] Creating library symlink bin/libKF5WaylandClient.so.5 bin/libKF5WaylandClient.so
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libKF5WaylandClient.so.5.116.0
 -- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland5/package-kwayland5/usr/lib64/libKF5WaylandClient.so.5
@@ -1189,7 +1353,7 @@ kwayland5 build finished. Procced to installation...
 +==========================================================================================================+
 
 Pre-installing package kwayland5-5.116.0-x86_64-1_rtz...
-Removing package: kwayland5-5.116.0-x86_64-1_rtz-upgraded-2025-05-14,23:52:47
+Removing package: kwayland5-5.116.0-x86_64-1_rtz-upgraded-2025-05-15,10:21:44
 Installing package kwayland5-5.116.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kwayland5 (Client and Server library wrapper)
