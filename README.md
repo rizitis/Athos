@@ -13,7 +13,7 @@ For example you can use athos to build a full plasma 6 desktop for Slackware.
 
 The tool I use for building and install local packages in my Slackware64-current system is `athos`.
 
-IF you want to use it:<br>
+IF you want to use it for Plasma6:<br>
 
 0. clone repo.
 1. Read [README.md](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/README.md) and then install all deps needed from [Ponce-Alien-Conraid repos and some pip also](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DEPS-BEFORE-BUILD).
