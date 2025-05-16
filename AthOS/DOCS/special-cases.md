@@ -42,6 +42,7 @@ desktop_entry
 9. `SKIP_INSTALL=YES` if you only want to build but not install.
 10. `MAKEPKG_FLAGS` if its not set, then by default it use: `makepkg --remove-tmp-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"`  
 <br> If you want to set other `MAKEPKG_FLAGS= ` please [READ](https://github.com/rizitis/PLASMA_WORLD/blob/main/AthOS/DOCS/MAKEPKG_FLAGS) . Example `MAKEPKG_FLAGS="-l y -c n"` or `MAKEPKG_FLAGS="--remove-rpaths"` etc..
+11. `LOCAL_FILE=YES` Assume you already have $SRCNAM.$COMPRESS in same directory with $PRGNAM.ini and skip download source.
 ---
 ====================================================
 ---
@@ -66,6 +67,6 @@ For the history SRCURL for the above example was this:
 SRCURL="https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1683370141/aegisub-v3.3.3-x86-64.AppImage?response-content-disposition=attachment%3B%2520aegisub-v3.3.3-x86-64.AppImage&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20241103%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241103T200807Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=7e13176b2e7def3ea861cdac150e55fc851b556a888c3ac26e1b3341c4eafb68"
 ```
 
- 
+
 
 
