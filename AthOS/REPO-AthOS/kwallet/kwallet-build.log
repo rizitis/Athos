@@ -17,28 +17,28 @@ kwindowsystem is already installed!
 libgcrypt is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-17 00:52:21--  https://download.kde.org/stable/frameworks/6.14/kwallet-6.14.1.tar.xz
+--2025-05-17 01:04:46--  https://download.kde.org/stable/frameworks/6.14/kwallet-6.14.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://mirror.telepoint.bg/kde/stable/frameworks/6.14/kwallet-6.14.1.tar.xz [following]
---2025-05-17 00:52:21--  https://mirror.telepoint.bg/kde/stable/frameworks/6.14/kwallet-6.14.1.tar.xz
-Resolving mirror.telepoint.bg (mirror.telepoint.bg)... 78.128.80.70, 78.128.80.69, 2a01:8740:ffff:fffc::31, ...
-Connecting to mirror.telepoint.bg (mirror.telepoint.bg)|78.128.80.70|:443... connected.
+--2025-05-17 01:04:46--  https://mirror.telepoint.bg/kde/stable/frameworks/6.14/kwallet-6.14.1.tar.xz
+Resolving mirror.telepoint.bg (mirror.telepoint.bg)... 78.128.80.69, 78.128.80.70, 2a01:8740:ffff:fffc::32, ...
+Connecting to mirror.telepoint.bg (mirror.telepoint.bg)|78.128.80.69|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 365448 (357K) [application/octet-stream]
 Saving to: ‘kwallet-6.14.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 14%  341K 1s
-    50K .......... .......... .......... .......... .......... 28%  776K 1s
-   100K .......... .......... .......... .......... .......... 42% 2.18M 0s
-   150K .......... .......... .......... .......... .......... 56% 2.56M 0s
-   200K .......... .......... .......... .......... .......... 70% 1.30M 0s
-   250K .......... .......... .......... .......... .......... 84% 4.55M 0s
-   300K .......... .......... .......... .......... .......... 98% 4.73M 0s
-   350K ......                                                100% 4.17M=0.3s
+     0K .......... .......... .......... .......... .......... 14%  372K 1s
+    50K .......... .......... .......... .......... .......... 28% 1.36M 0s
+   100K .......... .......... .......... .......... .......... 42% 1.09M 0s
+   150K .......... .......... .......... .......... .......... 56% 2.95M 0s
+   200K .......... .......... .......... .......... .......... 70% 1.40M 0s
+   250K .......... .......... .......... .......... .......... 84% 4.45M 0s
+   300K .......... .......... .......... .......... .......... 98% 5.28M 0s
+   350K ......                                                100% 2.87M=0.3s
 
-2025-05-17 00:52:22 (1.11 MB/s) - ‘kwallet-6.14.1.tar.xz’ saved [365448/365448]
+2025-05-17 01:04:47 (1.20 MB/s) - ‘kwallet-6.14.1.tar.xz’ saved [365448/365448]
 
 Found file: kwallet-6.14.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -619,7 +619,7 @@ Note: Writing kwallet-query.1
 [11/181] Generating moc_kwallet_interface.cpp
 [12/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/KF6Wallet_autogen/mocs_compilation.cpp.o
 [13/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/sha1.cc.o
-[14/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet_api_debug.cpp.o
+[14/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/kwalletbackend_debug.cpp.o
 [15/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/cbc.cc.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletbackend/cbc.cc: In member function ‘virtual int CipherBlockChain::encrypt(void*, int)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletbackend/cbc.cc:105:16: warning: ‘rc’ may be used uninitialized [-Wmaybe-uninitialized]
@@ -628,7 +628,7 @@ Note: Writing kwallet-query.1
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletbackend/cbc.cc:77:13: note: ‘rc’ was declared here
    77 |         int rc;
       |             ^~
-[16/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/kwalletbackend_debug.cpp.o
+[16/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet_api_debug.cpp.o
 [17/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/kwalletentry.cc.o
 [18/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/backendpersisthandler.cpp.o
 In file included from /usr/include/KF6/KI18n/KLocalizedString:1,
@@ -656,115 +656,112 @@ In file included from /usr/include/gpgme++/context.h:29,
    53 |     GPGMEPP_DEPRECATED const char *asString() const;
       |                                    ^~~~~~~~
 [19/181] Building CXX object src/runtime/kwalletbackend/CMakeFiles/KF6WalletBackend.dir/kwalletbackend.cc.o
-[20/181] Linking CXX shared library bin/libKF6WalletBackend.so.6.14.1
-[21/181] Creating library symlink bin/libKF6WalletBackend.so.6 bin/libKF6WalletBackend.so
-[22/181] Automatic MOC for target testbf
-[23/181] Automatic MOC for target backendtest
+[20/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet_interface.cpp.o
+[21/181] Linking CXX shared library bin/libKF6WalletBackend.so.6.14.1
+[22/181] Creating library symlink bin/libKF6WalletBackend.so.6 bin/libKF6WalletBackend.so
+[23/181] Automatic MOC for target testbf
 [24/181] Automatic MOC for target testsha
-[25/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testsha.dir/testsha_autogen/mocs_compilation.cpp.o
-[26/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/backendtest.dir/backendtest_autogen/mocs_compilation.cpp.o
-[27/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testbf.dir/testbf_autogen/mocs_compilation.cpp.o
-[28/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testsha.dir/testsha.cpp.o
+[25/181] Automatic MOC for target backendtest
+[26/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testbf.dir/testbf_autogen/mocs_compilation.cpp.o
+[27/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testsha.dir/testsha_autogen/mocs_compilation.cpp.o
+[28/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/backendtest.dir/backendtest_autogen/mocs_compilation.cpp.o
+[29/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testsha.dir/testsha.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletbackend/tests/testsha.cpp: In function ‘int main()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletbackend/tests/testsha.cpp:24:12: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
    24 |     if (rc != strlen((char *)data)) {
       |         ~~~^~~~~~~~~~~~~~~~~~~~~~~
-[29/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testbf.dir/testbf.cpp.o
-[30/181] Linking CXX executable bin/testbf
+[30/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/testbf.dir/testbf.cpp.o
 [31/181] Linking CXX executable bin/testsha
-[32/181] Automatic MOC for target blowfishtest
-[33/181] Building CXX object autotests/CMakeFiles/blowfishtest.dir/blowfishtest_autogen/mocs_compilation.cpp.o
-[34/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet_interface.cpp.o
-[35/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/backendtest.dir/backendtest.cpp.o
-[36/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet.cpp.o
-[37/181] Linking CXX executable bin/backendtest
-[38/181] Linking CXX shared library bin/libKF6Wallet.so.6.14.1
-[39/181] Creating library symlink bin/libKF6Wallet.so.6 bin/libKF6Wallet.so
-[40/181] Automatic MOC for target kwallettestlib
-[41/181] Building CXX object tests/kwalletd/CMakeFiles/kwallettestlib.dir/kwallettestlib_autogen/mocs_compilation.cpp.o
+[32/181] Linking CXX executable bin/testbf
+[33/181] Automatic MOC for target blowfishtest
+[34/181] Building CXX object autotests/CMakeFiles/blowfishtest.dir/blowfishtest_autogen/mocs_compilation.cpp.o
+[35/181] Building CXX object src/api/KWallet/CMakeFiles/KF6Wallet.dir/kwallet.cpp.o
+[36/181] Linking CXX shared library bin/libKF6Wallet.so.6.14.1
+[37/181] Creating library symlink bin/libKF6Wallet.so.6 bin/libKF6Wallet.so
+[38/181] Automatic MOC for target kwallettestlib
+[39/181] Building CXX object tests/kwalletd/CMakeFiles/kwallettestlib.dir/kwallettestlib_autogen/mocs_compilation.cpp.o
+[40/181] Automatic MOC for target kwallet-example-asynchronous
+[41/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/kwallet-example-asynchronous_autogen/mocs_compilation.cpp.o
 [42/181] Automatic MOC for target kwallettest
-[43/181] Automatic MOC for target kwalletwizardtest
-[44/181] Generating ui_kwalletwizardpageexplanation.h
-[45/181] Generating ui_kbetterthankdialogbase.h
-[46/181] Generating ui_kwalletwizardpageoptions.h
-[47/181] Generating ui_kwalletwizardpagegpgkey.h
-[48/181] Building CXX object tests/KWallet/CMakeFiles/kwallettest.dir/kwallettest_autogen/mocs_compilation.cpp.o
-[49/181] Generating ui_kwalletwizardpageintro.h
-[50/181] Generating ui_kwalletwizardpagepasswordgpg.h
+[43/181] Building CXX object tests/KWallet/CMakeFiles/kwallettest.dir/kwallettest_autogen/mocs_compilation.cpp.o
+[44/181] Automatic MOC for target kwallet-query
+[45/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/kwallet-query_autogen/mocs_compilation.cpp.o
+[46/181] Automatic MOC for target kwalletwizardtest
+[47/181] Generating ui_kwalletwizardpageintro.h
+[48/181] Generating ui_kwalletwizardpagepasswordgpg.h
+[49/181] Generating ui_kbetterthankdialogbase.h
+[50/181] Generating ui_kwalletwizardpageoptions.h
 [51/181] Generating ui_kwalletwizardpagepassword.h
-[52/181] Automatic MOC for target kwallet-query
-[53/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/kwalletwizardtest_autogen/mocs_compilation.cpp.o
-[54/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/kwallet-query_autogen/mocs_compilation.cpp.o
-[55/181] Automatic MOC for target kwallet-example-asynchronous
-[56/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/kwallet-example-asynchronous_autogen/mocs_compilation.cpp.o
-[57/181] Automatic MOC for target kwalletd6
-[58/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
+[52/181] Generating ui_kwalletwizardpageexplanation.h
+[53/181] Generating ui_kwalletwizardpagegpgkey.h
+[54/181] Automatic MOC for target kwalletd6
+[55/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/kwalletwizardtest_autogen/mocs_compilation.cpp.o
+[56/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
+[57/181] Generating moc_kwalletadaptor.cpp
+[58/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd6_autogen/mocs_compilation.cpp.o
 [59/181] Automatic MOC for target fdo_secrets_test
-[60/181] Generating moc_kwalletadaptor.cpp
-[61/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
+[60/181] Generating kwalletfreedesktopcollectionadaptor.cpp, kwalletfreedesktopcollectionadaptor.h
+[61/181] Generating kwalletfreedesktopserviceadaptor.cpp, kwalletfreedesktopserviceadaptor.h
 [62/181] Generating kwalletfreedesktopsessionadaptor.cpp, kwalletfreedesktopsessionadaptor.h
-[63/181] Generating kwalletfreedesktopcollectionadaptor.cpp, kwalletfreedesktopcollectionadaptor.h
-[64/181] Generating kwalletfreedesktopitemadaptor.cpp, kwalletfreedesktopitemadaptor.h
-[65/181] Generating kwalletfreedesktoppromptadaptor.cpp, kwalletfreedesktoppromptadaptor.h
-[66/181] Generating kwalletfreedesktopserviceadaptor.cpp, kwalletfreedesktopserviceadaptor.h
-[67/181] Generating moc_kwalletfreedesktopsessionadaptor.cpp
-[68/181] Generating moc_kwalletadaptor.cpp
+[63/181] Generating kwalletfreedesktopitemadaptor.cpp, kwalletfreedesktopitemadaptor.h
+[64/181] Generating kwalletfreedesktoppromptadaptor.cpp, kwalletfreedesktoppromptadaptor.h
+[65/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
+[66/181] Generating moc_kwalletfreedesktopcollectionadaptor.cpp
+[67/181] Generating moc_kwalletfreedesktopserviceadaptor.cpp
+[68/181] Generating moc_kwalletfreedesktopsessionadaptor.cpp
 [69/181] Generating moc_kwalletfreedesktopitemadaptor.cpp
 [70/181] Generating moc_kwalletfreedesktoppromptadaptor.cpp
-[71/181] Generating moc_kwalletfreedesktopcollectionadaptor.cpp
-[72/181] Generating moc_kwalletfreedesktopserviceadaptor.cpp
-[73/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd6_autogen/mocs_compilation.cpp.o
-[74/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/fdo_secrets_test_autogen/mocs_compilation.cpp.o
-[75/181] Automatic MOC for target ksecretd
-[76/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
-[77/181] Generating kwalletfreedesktopserviceadaptor.cpp, kwalletfreedesktopserviceadaptor.h
-[78/181] Generating kwalletfreedesktopsessionadaptor.cpp, kwalletfreedesktopsessionadaptor.h
-[79/181] Generating kwalletfreedesktopcollectionadaptor.cpp, kwalletfreedesktopcollectionadaptor.h
-[80/181] Generating kwalletfreedesktopitemadaptor.cpp, kwalletfreedesktopitemadaptor.h
-[81/181] Generating kwalletfreedesktoppromptadaptor.cpp, kwalletfreedesktoppromptadaptor.h
-[82/181] Generating kwalletportalsecretsadaptor.cpp, kwalletportalsecretsadaptor.h
-[83/181] Generating ui_kbetterthankdialogbase.h
-[84/181] Generating ui_kwalletwizardpageexplanation.h
-[85/181] Generating ui_kwalletwizardpageintro.h
-[86/181] Generating ui_kwalletwizardpageoptions.h
-[87/181] Generating ui_kwalletwizardpagepassword.h
-[88/181] Generating ui_kwalletwizardpagepasswordgpg.h
-[89/181] Generating ui_kwalletwizardpagegpgkey.h
-[90/181] Generating ui_knewwalletdialogintro.h
+[71/181] Generating moc_kwalletadaptor.cpp
+[72/181] Automatic MOC for target ksecretd
+[73/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/fdo_secrets_test_autogen/mocs_compilation.cpp.o
+[74/181] Generating kwalletadaptor.cpp, kwalletadaptor.h
+[75/181] Generating kwalletfreedesktopserviceadaptor.cpp, kwalletfreedesktopserviceadaptor.h
+[76/181] Generating kwalletfreedesktopsessionadaptor.cpp, kwalletfreedesktopsessionadaptor.h
+[77/181] Generating kwalletfreedesktopitemadaptor.cpp, kwalletfreedesktopitemadaptor.h
+[78/181] Generating kwalletfreedesktopcollectionadaptor.cpp, kwalletfreedesktopcollectionadaptor.h
+[79/181] Generating kwalletfreedesktoppromptadaptor.cpp, kwalletfreedesktoppromptadaptor.h
+[80/181] Generating kwalletportalsecretsadaptor.cpp, kwalletportalsecretsadaptor.h
+[81/181] Generating ui_kbetterthankdialogbase.h
+[82/181] Generating ui_kwalletwizardpageexplanation.h
+[83/181] Generating ui_kwalletwizardpageintro.h
+[84/181] Generating ui_kwalletwizardpageoptions.h
+[85/181] Generating ui_kwalletwizardpagepasswordgpg.h
+[86/181] Generating ui_kwalletwizardpagepassword.h
+[87/181] Generating ui_knewwalletdialogintro.h
+[88/181] Generating ui_kwalletwizardpagegpgkey.h
+[89/181] Generating moc_kwalletadaptor.cpp
+[90/181] Generating moc_kwalletfreedesktopserviceadaptor.cpp
 [91/181] Generating ui_knewwalletdialoggpg.h
-[92/181] Generating moc_kwalletadaptor.cpp
-[93/181] Generating moc_kwalletfreedesktopserviceadaptor.cpp
-[94/181] Generating moc_kwalletfreedesktopsessionadaptor.cpp
-[95/181] Generating moc_kwalletfreedesktopcollectionadaptor.cpp
-[96/181] Generating moc_kwalletfreedesktopitemadaptor.cpp
-[97/181] Generating moc_kwalletfreedesktoppromptadaptor.cpp
-[98/181] Generating moc_kwalletportalsecretsadaptor.cpp
-[99/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ksecretd_autogen/mocs_compilation.cpp.o
-[100/181] Building CXX object autotests/CMakeFiles/blowfishtest.dir/blowfishtest.cpp.o
-[101/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/main.cpp.o
-[102/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/main.cpp.o
-[103/181] Building CXX object tests/kwalletd/CMakeFiles/kwallettestlib.dir/kwallettest.cpp.o
-[104/181] Linking CXX static library lib/libkwallettestlib.a
-[105/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd_debug.cpp.o
-[106/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/main.cpp.o
-[107/181] Automatic MOC for target kwalletasync
-[108/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/dialog.cpp.o
-[109/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/__/__/src/runtime/ksecretd/kwalletwizard.cpp.o
-[110/181] Automatic MOC for target kwalletsync
-[111/181] Automatic MOC for target kwalletpath
-[112/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/kwalletwizardtest.cpp.o
-[113/181] Automatic MOC for target kwalletboth
-[114/181] Automatic MOC for target kwalletcbc
-[115/181] Automatic MOC for target kwalletmany
-[116/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/querydriver.cpp.o
-[117/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kbetterthankdialog.cpp.o
-[118/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/main.cpp.o
-[119/181] Building CXX object tests/KWallet/CMakeFiles/kwallettest.dir/kwallettest.cpp.o
-[120/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopattributes.cpp.o
-[121/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletadaptor.cpp.o
-[122/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletsessionstore.cpp.o
-[123/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopsession.cpp.o
-[124/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/secretserviceclient.cpp.o
+[92/181] Generating moc_kwalletfreedesktopcollectionadaptor.cpp
+[93/181] Generating moc_kwalletfreedesktopsessionadaptor.cpp
+[94/181] Generating moc_kwalletfreedesktopitemadaptor.cpp
+[95/181] Generating moc_kwalletfreedesktoppromptadaptor.cpp
+[96/181] Generating moc_kwalletportalsecretsadaptor.cpp
+[97/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ksecretd_autogen/mocs_compilation.cpp.o
+[98/181] Building CXX object src/runtime/kwalletbackend/tests/CMakeFiles/backendtest.dir/backendtest.cpp.o
+[99/181] Building CXX object autotests/CMakeFiles/blowfishtest.dir/blowfishtest.cpp.o
+[100/181] Building CXX object tests/kwalletd/CMakeFiles/kwallettestlib.dir/kwallettest.cpp.o
+[101/181] Linking CXX static library lib/libkwallettestlib.a
+[102/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd_debug.cpp.o
+[103/181] Automatic MOC for target kwalletasync
+[104/181] Automatic MOC for target kwalletsync
+[105/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/kwalletwizardtest.cpp.o
+[106/181] Building CXX object tests/KWallet/CMakeFiles/kwallettest.dir/kwallettest.cpp.o
+[107/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/main.cpp.o
+[108/181] Automatic MOC for target kwalletboth
+[109/181] Automatic MOC for target kwalletpath
+[110/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/main.cpp.o
+[111/181] Building CXX object examples/asynchronous_app/CMakeFiles/kwallet-example-asynchronous.dir/dialog.cpp.o
+[112/181] Automatic MOC for target kwalletmany
+[113/181] Automatic MOC for target kwalletcbc
+[114/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletwizardtest.dir/__/__/src/runtime/ksecretd/kwalletwizard.cpp.o
+[115/181] Building CXX object src/runtime/kwallet-query/src/CMakeFiles/kwallet-query.dir/querydriver.cpp.o
+[116/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/main.cpp.o
+[117/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/main.cpp.o
+[118/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kbetterthankdialog.cpp.o
+[119/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletadaptor.cpp.o
+[120/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopsession.cpp.o
+[121/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/secretserviceclient.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletd/secretserviceclient.cpp: In function ‘const SecretSchema* qtKeychainSchema()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved’ [-Wmissing-field-initializers]
    28 |         {{"user", SECRET_SCHEMA_ATTRIBUTE_STRING}, {"server", SECRET_SCHEMA_ATTRIBUTE_STRING}, {"type", SECRET_SCHEMA_ATTRIBUTE_STRING}}};
@@ -776,62 +773,65 @@ In file included from /usr/include/gpgme++/context.h:29,
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved5’ [-Wmissing-field-initializers]
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved6’ [-Wmissing-field-initializers]
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/work/kwallet-6.14.1/src/runtime/kwalletd/secretserviceclient.cpp:28:137: warning: missing initializer for member ‘SecretSchema::reserved7’ [-Wmissing-field-initializers]
+[122/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletsessionstore.cpp.o
+[123/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ktimeout.cpp.o
+[124/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletwizard.cpp.o
 [125/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ksecretd_debug.cpp.o
-[126/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ktimeout.cpp.o
-[127/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletwizard.cpp.o
-[128/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopitem.cpp.o
+[126/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopitem.cpp.o
+[127/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/knewwalletdialog.cpp.o
+[128/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopprompt.cpp.o
 [129/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopattributes.cpp.o
 [130/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopsession.cpp.o
-[131/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/knewwalletdialog.cpp.o
+[131/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopcollection.cpp.o
 [132/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletportalsecrets.cpp.o
-[133/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopprompt.cpp.o
-[134/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopitem.cpp.o
-[135/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletasync.dir/kwalletasync_autogen/mocs_compilation.cpp.o
-[136/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/fdo_secrets_test.cpp.o
-[137/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletsync.dir/kwalletsync_autogen/mocs_compilation.cpp.o
-[138/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopcollection.cpp.o
-[139/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletpath.dir/kwalletpath_autogen/mocs_compilation.cpp.o
-[140/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd.cpp.o
-[141/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletboth.dir/kwalletboth_autogen/mocs_compilation.cpp.o
-[142/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopservice.cpp.o
-[143/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletmany.dir/kwalletmany_autogen/mocs_compilation.cpp.o
-[144/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopsessionadaptor.cpp.o
+[133/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletadaptor.cpp.o
+[134/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletasync.dir/kwalletasync_autogen/mocs_compilation.cpp.o
+[135/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/fdo_secrets_test.cpp.o
+[136/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletsync.dir/kwalletsync_autogen/mocs_compilation.cpp.o
+[137/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopservice.cpp.o
+[138/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletpath.dir/kwalletpath_autogen/mocs_compilation.cpp.o
+[139/181] Building CXX object src/runtime/kwalletd/CMakeFiles/kwalletd6.dir/kwalletd.cpp.o
+[140/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletboth.dir/kwalletboth_autogen/mocs_compilation.cpp.o
+[141/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopitem.cpp.o
+[142/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletmany.dir/kwalletmany_autogen/mocs_compilation.cpp.o
+[143/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopsessionadaptor.cpp.o
+[144/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopprompt.cpp.o
 [145/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletcbc.dir/kwalletcbc_autogen/mocs_compilation.cpp.o
-[146/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletadaptor.cpp.o
-[147/181] Linking CXX executable bin/kwalletd6
-[148/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletportalsecretsadaptor.cpp.o
-[149/181] Linking CXX executable bin/blowfishtest
-[150/181] Linking CXX executable bin/kwallet-query
-[151/181] Linking CXX executable bin/kwallettest
-[152/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopprompt.cpp.o
-[153/181] Linking CXX executable bin/kwalletwizardtest
-[154/181] Linking CXX executable bin/kwallet-example-asynchronous
-[155/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ksecretd.cpp.o
-[156/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopcollection.cpp.o
-[157/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopcollectionadaptor.cpp.o
+[146/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopcollection.cpp.o
+[147/181] Linking CXX executable bin/backendtest
+[148/181] Linking CXX executable bin/kwalletd6
+[149/181] Linking CXX executable bin/kwallet-query
+[150/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopitemadaptor.cpp.o
+[151/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/__/kwalletfreedesktopattributes.cpp.o
+[152/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletportalsecretsadaptor.cpp.o
+[153/181] Linking CXX executable bin/kwallettest
+[154/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/ksecretd.cpp.o
+[155/181] Linking CXX executable bin/kwalletwizardtest
+[156/181] Linking CXX executable bin/blowfishtest
+[157/181] Linking CXX executable bin/kwallet-example-asynchronous
 [158/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktoppromptadaptor.cpp.o
-[159/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletadaptor.cpp.o
-[160/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopitemadaptor.cpp.o
-[161/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletpath.dir/kwalletpath.cpp.o
-[162/181] Linking CXX executable bin/kwalletpath
-[163/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletsync.dir/kwalletsync.cpp.o
-[164/181] Linking CXX executable bin/kwalletsync
-[165/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopsessionadaptor.cpp.o
-[166/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletboth.dir/kwalletboth.cpp.o
-[167/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopservice.cpp.o
-[168/181] Linking CXX executable bin/kwalletboth
+[159/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletsync.dir/kwalletsync.cpp.o
+[160/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletasync.dir/kwalletasync.cpp.o
+[161/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletadaptor.cpp.o
+[162/181] Linking CXX executable bin/kwalletasync
+[163/181] Linking CXX executable bin/kwalletsync
+[164/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopsessionadaptor.cpp.o
+[165/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopcollectionadaptor.cpp.o
+[166/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletpath.dir/kwalletpath.cpp.o
+[167/181] Linking CXX executable bin/kwalletpath
+[168/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletboth.dir/kwalletboth.cpp.o
 [169/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopserviceadaptor.cpp.o
-[170/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletasync.dir/kwalletasync.cpp.o
-[171/181] Linking CXX executable bin/kwalletasync
-[172/181] Linking CXX executable bin/ksecretd
-[173/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletmany.dir/kwalletmany.cpp.o
+[170/181] Linking CXX executable bin/kwalletboth
+[171/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletcbc.dir/kwalletcbc.cpp.o
+[172/181] Linking CXX executable bin/kwalletcbc
+[173/181] Building CXX object src/runtime/ksecretd/CMakeFiles/ksecretd.dir/kwalletfreedesktopservice.cpp.o
 [174/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktoppromptadaptor.cpp.o
-[175/181] Linking CXX executable bin/kwalletmany
-[176/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletcbc.dir/kwalletcbc.cpp.o
-[177/181] Linking CXX executable bin/kwalletcbc
-[178/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopitemadaptor.cpp.o
-[179/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopserviceadaptor.cpp.o
-[180/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopcollectionadaptor.cpp.o
+[175/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopcollectionadaptor.cpp.o
+[176/181] Linking CXX executable bin/ksecretd
+[177/181] Building CXX object tests/kwalletd/CMakeFiles/kwalletmany.dir/kwalletmany.cpp.o
+[178/181] Linking CXX executable bin/kwalletmany
+[179/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopitemadaptor.cpp.o
+[180/181] Building CXX object src/runtime/ksecretd/autotests/CMakeFiles/fdo_secrets_test.dir/kwalletfreedesktopserviceadaptor.cpp.o
 [181/181] Linking CXX executable bin/fdo_secrets_test
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwallet/package-kwallet/usr/share/locale
@@ -1229,7 +1229,7 @@ Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root:root ([y]es, [n]o)? n
 
 
-Creating Slackware package:  /tmp/kwallet/kwallet-6.14.1-x86_64-1_ath.tlz
+Creating Slackware package:  /tmp/kwallet/kwallet-6.14.1-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -1591,38 +1591,38 @@ usr/share/xdg-desktop-portal/
 usr/share/xdg-desktop-portal/portals/
 usr/share/xdg-desktop-portal/portals/kwallet.portal
 
-Slackware package /tmp/kwallet/kwallet-6.14.1-x86_64-1_ath.tlz created.
+Slackware package /tmp/kwallet/kwallet-6.14.1-x86_64-1_rtz.tlz created.
 
-Create shared object file for kwallet-6.14.1-x86_64-1_ath.tlz
-Creating /tmp/kwallet/kwallet-6.14.1-x86_64-1_ath.tlz.so.file using /tmp/kwallet/kwallet-6.14.1-x86_64-1_ath.tlz
-Successfully created /tmp/kwallet/kwallet-6.14.1-x86_64-1_ath.tlz.so.file
+Create shared object file for kwallet-6.14.1-x86_64-1_rtz.tlz
+Creating /tmp/kwallet/kwallet-6.14.1-x86_64-1_rtz.tlz.so.file using /tmp/kwallet/kwallet-6.14.1-x86_64-1_rtz.tlz
+Successfully created /tmp/kwallet/kwallet-6.14.1-x86_64-1_rtz.tlz.so.file
 Packaging of executable and meta-data in kwallet.tar.lz4 format.
 /tmp/kwallet /tmp/kwallet
 /tmp/kwallet
 BIN_NAME
 README
-kwallet-6.14.1-x86_64-1_ath.tlz
-kwallet-6.14.1-x86_64-1_ath.tlz.md5
-kwallet-6.14.1-x86_64-1_ath.tlz.so.file
-kwallet-6.14.1-x86_64-1_ath.tlz.txt
+kwallet-6.14.1-x86_64-1_rtz.tlz
+kwallet-6.14.1-x86_64-1_rtz.tlz.md5
+kwallet-6.14.1-x86_64-1_rtz.tlz.so.file
+kwallet-6.14.1-x86_64-1_rtz.tlz.txt
 kwallet.dep
 makepkg-kwallet.log
 [32mkwallet build finished. Procced to installation...[0m
 
 +==================================================================================================+
-| Upgrading kwallet-6.14.0-x86_64-1_rtz package using /tmp/kwallet/kwallet-6.14.1-x86_64-1_ath.tlz |
+| Upgrading kwallet-6.14.1-x86_64-1_ath package using /tmp/kwallet/kwallet-6.14.1-x86_64-1_rtz.tlz |
 +==================================================================================================+
 
-Pre-installing package kwallet-6.14.1-x86_64-1_ath...
-Removing package: kwallet-6.14.0-x86_64-1_rtz-upgraded-2025-05-17,00:53:03
-Installing package kwallet-6.14.1-x86_64-1_ath.tlz:
+Pre-installing package kwallet-6.14.1-x86_64-1_rtz...
+Removing package: kwallet-6.14.1-x86_64-1_ath-upgraded-2025-05-17,01:05:25
+Installing package kwallet-6.14.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kwallet (unified container for passwords)
 #
 # Secure and unified container for user passwords
 #
 # https://community.kde.org/Frameworks
-Executing install script for kwallet-6.14.1-x86_64-1_ath.tlz.
+Executing install script for kwallet-6.14.1-x86_64-1_rtz.tlz.
 Font directories:
 	/usr/share/fonts
 /usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
@@ -1642,7 +1642,7 @@ Font directories:
 /root/.cache/fontconfig: not cleaning non-existent cache directory
 /root/.fontconfig: not cleaning non-existent cache directory
 /usr/bin/fc-cache: succeeded
-Package kwallet-6.14.1-x86_64-1_ath.tlz installed.
-Package kwallet-6.14.0-x86_64-1_rtz upgraded with new package /tmp/kwallet/kwallet-6.14.1-x86_64-1_ath.tlz.
+Package kwallet-6.14.1-x86_64-1_rtz.tlz installed.
+Package kwallet-6.14.1-x86_64-1_ath upgraded with new package /tmp/kwallet/kwallet-6.14.1-x86_64-1_rtz.tlz.
 [32mCleaning environmet: Removing source code, and work-space...[0m
 rm: cannot remove 'kwallet-6.14.1.tar.xz': No such file or directory

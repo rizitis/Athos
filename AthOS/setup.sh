@@ -20,8 +20,10 @@ mv athos.env /etc/"$APPL"/athos.env
 
 # prepare scripts permissions and symlink to /usr/local/bin
 chmod +x athos
+rm -rf /usr/local/bin/athos || true
 ln -sr athos /usr/local/bin/athos
 chmod +x slackdesc
+rm -rf /usr/local/bin/slackdesc || true
 ln -sr slackdesc /usr/local/bin/slackdesc
 
 # create docs folder
