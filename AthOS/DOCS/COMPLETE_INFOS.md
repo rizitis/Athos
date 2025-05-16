@@ -85,7 +85,9 @@ This was an example of **gimp.ini**
 Now lets see all options a `pkg.ini` file can support.
 
 > everything has `must` means must exist in all `pkg.ini` files.
+>
 > everything has `if_need` means if `pkg.ini` need it.
+>
 > everything has `opt` means its optional.
 
 
