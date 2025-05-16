@@ -26,8 +26,9 @@ ln -sr slackdesc /usr/local/bin/slackdesc
 
 # create docs folder
 mkdir -p /usr/doc/"$APPL"
-cp -R UNLICENSE setup.sh README.md DOCS \
+cp -R UNLICENSE setup.sh DOCS \
  /usr/doc/"$APPL"
+cp ../README.md /usr/doc/"$APPL"
 
 # create share template dir
 mkdir -p /usr/share/"$APPL"
