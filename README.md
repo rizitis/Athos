@@ -16,7 +16,9 @@ IF you want to use it:<br>
 0. clone repo.
 1. Read [README.md](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/README.md) and then install all deps needed from [Ponce-Alien-Conraid repos and some pip also](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DEPS-BEFORE-BUILD).
 2. `sudo bash setup.sh` to install athos.
-Now you are ready to build Plasma 6 and **every other package** you will create as log as you dont remove clone folder from its place.
+3. `nano /etc/Athos/athos.env` and replace **Packager** and **TAG** with yours.
+
+Now you are ready to build Plasma 6 and **every other package** you will find here or create as log as you **dont** remove clone folder from its place.
 
 
 ## TO Build Plasma6
