@@ -8,11 +8,11 @@ All these not often happens, but happens.
 athos can face most of these cases, but in order to do it pkg.ini has to mention them.<p>
 
 **Examples:**<br>
-1. To git clone and git url in SRCURL and mention that `COMPRESS=git`<br> If you also want to git checout then add one line `GITCHEK="12345qwer4321sdfg"`
+1. To git clone and git checkout for a commit use `COMPRESS=git`and `GITCHEK="12345qwer4321sdfg"` 
 2. If source name is something like `MY_PROJECT_NAME_0_18_9.tar.gz` then in SRCNAM type all this ugly name `SRCNAM=MY_PROJECT_NAME_0_18_9` and ofcource in `COMPRESS=tar.gz`
-3. For deb, rpm etc mention in `COMPRESS="deb"` and if needed also add one line `BIN_PKG=YES`
+3. For deb, rpm etc mention in `COMPRESS="deb"`
 4. `BIN_PKG=YES` needed for sure when try build a package which `source.tar.?z*` after extracted  output provide directly the files/folders of source.
-5. For package.desktop things are very simple just create a desktop_entry function and call it in pkg build, example:
+5. For package.desktop things are very simple just create a desktop_entry function before slackbuild() function and call it in slackbuild(), example:
 
 ```
 desktop_entry() {
@@ -34,16 +34,12 @@ MimeType=application/x-srt;text/plain;text/x-ass;text/x-microdvd;text/x-ssa;
 StartupWMClass=aegisub
 EOF
 }
+
+slackbuild(){
+build commands...
 desktop_entry
+}
 ```
-6. `META_PKG=YES` This is a fake package-meta.ini that only build requireds and exist. See plasma6-meta kde6-meta etc...
-7. `CHROOT=NO` Some times no chroot needed, use this in ini file. Note that means you also run athos as user no root.
-8. Accepted sums are: `SHA512SUM=xxxxxxxxx`, `SHA256SUM=xxxxxxx` and `MDSCHK=xxxxx` or EMPTY for skip checksum
-9. `SKIP_INSTALL=YES` if you only want to build but not install.
-10. `MAKEPKG_FLAGS` if its not set, then by default it use: `makepkg --remove-tmp-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"`  
-<br> If you want to set other `MAKEPKG_FLAGS= ` please [READ](https://github.com/rizitis/PLASMA_WORLD/blob/main/AthOS/DOCS/MAKEPKG_FLAGS) . Example `MAKEPKG_FLAGS="-l y -c n"` or `MAKEPKG_FLAGS="--remove-rpaths"` etc..
-11. `LOCAL_FILE=YES` Assume you already have $SRCNAM.$COMPRESS in same directory with $PRGNAM.ini and skip download source.
-12. `STUCK_PKG=YES` That mean this package dont accept updates we also have source tarball in $CWD. This flag works with  `LOCAL_FILE=YES` only.
 ---
 ====================================================
 ---

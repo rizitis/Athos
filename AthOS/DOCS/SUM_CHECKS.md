@@ -1,9 +1,10 @@
-## Accepted VARS are
+## Accepted VARS in the ini file are
 
 - SHA512SUM=
 - SHA256SUM=
 - MDSCHK=
-- or empty for not check sums...
+- or empty
+- none provided
 
 | Scenario                  | Expected Outcome                        |
 |---------------------------|----------------------------------------|

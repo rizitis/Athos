@@ -6,7 +6,10 @@ APPL=AthOS
 CWD=$(pwd)
 
 # setup env file
-echo "A_HOME=$CWD" > athos.env
+echo "TAG=${TAG:-_ath}" > athos.env
+echo 'Packager="Jonny Propper <example@mail.com>" ' >> athos.env
+echo "" >> athos.env
+echo "A_HOME=$CWD" >> athos.env
 echo "W_DIR=$CWD/REPO-$APPL" >> athos.env
 echo "SH_DIR=/usr/share/$APPL" >> athos.env
 echo "ENV_DIR=/etc/$APPL" >> athos.env
