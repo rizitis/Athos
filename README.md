@@ -1,6 +1,6 @@
 ![](./IMAGES/Commitsovertime.png)
 
-Athos is Slackware package builder. [README](https://github.com/rizitis/Athos/tree/main/AthOS#readme)<br>
+Athos is Slackware package builder.<br>
 
 ---
 
@@ -34,10 +34,10 @@ Usage:
 
   
 ```
-**Note**: `athos update` will update/edit/remove your local scripts (*.ini files) and that is something you might not want.<br>
-      this command is ok **ONLY** if you follow exaclty my builds, else ignore it.
+**NOTE**: `athos update` is like `sbopkg -r` or `slpkg -u`, meaning it will *update/edit/remove* your local scripts (.ini files) and that is something you might do not want.<br>
+     So this command is ok **ONLY** if you follow exactly my builds here and use it as remote repo, else if you use athos in a personal local repo please ignore this command.
 
----
+- - -
 
 ### Explain Better
 
@@ -56,8 +56,7 @@ Lets say that `foo.ini` is the `foo.SlackBuild` <br>
 The `mkedit` option will open in your default text editor the `foo.ini` file for edit it.
 
 3. STEP
-foo.ini is very very simple, I will split it in 2 parts to be more easy:
-<br>
+- foo.ini is very very simple, I will split it in 2 parts to be more easy:
 The first part are informations for package tarball . <br>
 ```
 Homepage="https://foo-project/homepage.com"
@@ -78,12 +77,13 @@ BUILD=${BUILD:-1}
 
 The second part is 2 functions (commands for package build only).<br>
 
-One for patches (even if not patches needed just leave it there)<br>
-And the main slackbuild() function.
-<br>
-We add in slackbuild() function **only** build commands. Nothing else needed. Just the build command, everything else is athos automagicaly job.
-> athos know how to deal with Docs, .la files, man pages, Strip binaries - libraries, etc...
-In slackbuild() function only add what needed to build/repackage source tarbal and is enough. 
+- One for patches (even if not patches needed just leave it there)<br>
+- And the main slackbuild() function.
+
+We add in slackbuild() function **only** build commands. Nothing else needed.<br> Just build commands, everything else is athos automagicaly job.
+> athos know how to deal with *Docs*, *.la files*, *man pages*, *Strip binaries - libraries*, etc...
+>
+> In slackbuild() function only add what needed to build/repackage source tarbal and is enough. 
 
 ```
 # This must be always here even if not patches needed.
