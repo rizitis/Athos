@@ -1,5 +1,7 @@
 ![](./IMAGES/Commitsovertime.png)
 
+Athos is Slackware package builder. [README](https://github.com/rizitis/Athos/tree/main/AthOS#readme)<br>
+For example you can use athos to build a full plasma 6 desktop for Slackware. 
 ---
 
 **Here is my way for a Plasma6 and more... It is not a fork of anyone but a work from scratch.** <br>
