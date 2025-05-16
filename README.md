@@ -124,9 +124,23 @@ When ready foo.ini, build foo package.
 
 --- 
 
-#### HELP FILES
+### HELP FILES
 This is the minimum request for a vali foo.ini, but athos support many, many more options for *.ini files.
 Complete informations you can find in [DOCS](https://github.com/rizitis/PLASMA_WORLD/tree/main/AthOS/DOCS)
 
+
+---
+
+### OUTPUT
+
+When for example you build the package-1.6.2 by using `athos package` command, then in `/tmp` dir you can find:
+- `/tmp/package`
+- `/tmp/package.tar.lz4`
+- `/tmp/package-build.log`
+
+If you `ls /tmp/package` will show:
+```
+BIN_NAME  README  package-1.6.2-x86_64-1_rtz.tlz  package-1.6.2-x86_64-1_rtz.tlz.md5  package-1.6.2-x86_64-1_rtz.tlz.so.file  package-1.6.2-x86_64-1_rtz.tlz.txt  makepkg-package.log
+```
 
 
