@@ -79,9 +79,7 @@ cd build
 }
 ```
 
-This was an example of **gimp.ini**
-
-<br>
+This was an example of **gimp.ini**<br>
 Now lets see all options a `pkg.ini` file can support.
 
 > everything has `must` means must exist in all `pkg.ini` files.
