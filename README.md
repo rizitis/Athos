@@ -142,5 +142,5 @@ If you `ls /tmp/package` will show:
 ```
 BIN_NAME  README  package-1.6.2-x86_64-1_rtz.tlz  package-1.6.2-x86_64-1_rtz.tlz.md5  package-1.6.2-x86_64-1_rtz.tlz.so.file  package-1.6.2-x86_64-1_rtz.tlz.txt  makepkg-package.log
 ```
-
+This folder is compressed in `/tmp/package.tar.lz4` too.
 
