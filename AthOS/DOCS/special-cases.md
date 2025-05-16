@@ -43,6 +43,7 @@ desktop_entry
 10. `MAKEPKG_FLAGS` if its not set, then by default it use: `makepkg --remove-tmp-rpaths -l y -c n "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"`  
 <br> If you want to set other `MAKEPKG_FLAGS= ` please [READ](https://github.com/rizitis/PLASMA_WORLD/blob/main/AthOS/DOCS/MAKEPKG_FLAGS) . Example `MAKEPKG_FLAGS="-l y -c n"` or `MAKEPKG_FLAGS="--remove-rpaths"` etc..
 11. `LOCAL_FILE=YES` Assume you already have $SRCNAM.$COMPRESS in same directory with $PRGNAM.ini and skip download source.
+12. `STUCK_PKG=YES` That mean this package dont accept updates we also have source tarball in $CWD. This flag works with  `LOCAL_FILE=YES` only.
 ---
 ====================================================
 ---
