@@ -1,5 +1,5 @@
 #!/bin/bash
-# shellcheck disable=SC2046,SC2086,SC2140,SC1090,SC2034,SC2154,SC2181,SC2115
+# shellcheck disable=SC2046,SC2086,SC2140,SC1090,SC2034,SC2154,SC2181,SC2115,SC2002
 
 APPL=AthOS
 
@@ -29,7 +29,7 @@ fi
 # Check if a package name was provided
 if [ -z "$package" ]; then
     echo "Error: No package name provided."
-    echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n  athos package_name mkbuild # To create a new package build template\n  athos package_name mkedit # To edit package ini file\n  athos package_name mklog # To view PackageBuild.log\n  athos packane_name mkopen-dir        # To open package folder\n  athos package_name mkdel-dir      # To delete package folder\n  athos update  # To update your local repository\n  athos package_name mkls   # To view package folder contents"
+    echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n  athos package_name mkbuild # To create a new package build template\n  athos package_name mkedit # To edit package ini file\n  athos package_name mklog # To view PackageBuild.log\n  athos package_name mkopen-dir        # To open package folder\n  athos package_name mkdel-dir      # To delete package folder\n  athos update  # To update your local repository\n  athos package_name mkls   # To view package folder contents\n  athos package_name mkv  # To read package version and tarball url"
     exit 1
 fi
 
@@ -64,6 +64,10 @@ elif [ "$2" = "mkopen-dir" ]; then
 elif [ "$2" = "mkcat" ]; then
     cat "$W_DIR"/"$package"/"$package".ini &
     exit
+elif [ "$2" = "mkv" ]; then
+    cat "$W_DIR"/"$package"/"$package".ini | grep "VERSION" &
+    cat "$W_DIR"/"$package"/"$package".ini | grep "SRCURL" &
+    exit
 elif [ "$2" = "mkdel-dir" ]; then
     rm -rf "$W_DIR"/"$package"/ &
     exit
@@ -71,7 +75,7 @@ elif [ "$2" = "mkls" ]; then
     ls -a "$W_DIR"/"$package"/ &
     exit
 else
-    echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n    athos package_name mkbuild        # To create a new package build template\n     athos package_name mkedit        # To edit package ini file\n      athos package_name mklog        # To view PackageBuild.log\n   athos packane_name mkopen-dir        # To open package folder\n athos package_name mkdel-dir      # To delete package folder\n  athos update  # To update your local repository\n athos package_name mkls   # To view package folder contents"
+    echo -e "Error: Invalid command.\nUsage:\n  athos package_name        # To build an existing package\n    athos package_name mkbuild        # To create a new package build template\n     athos package_name mkedit        # To edit package ini file\n      athos package_name mklog        # To view PackageBuild.log\n   athos packane_name mkopen-dir        # To open package folder\n athos package_name mkdel-dir      # To delete package folder\n  athos update  # To update your local repository\n athos package_name mkls   # To view package folder contents\n  athos package_name mkv  # To read package version and tarball url"
     exit 1
 fi
 

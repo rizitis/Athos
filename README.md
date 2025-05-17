@@ -30,6 +30,7 @@ Usage:
   athos packane_name mkopen-dir  # To open package folder
   athos package_name mkdel-dir   # To delete package folder
   athos package_name mkls        # To view package folder contents
+  athos package_name mkv         # To read package version and tarball url
   athos update                   # To rsync/update your local repository with mine here (optional)
 
   
