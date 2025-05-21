@@ -644,7 +644,17 @@ if [[ $SKIP_INSTALL == YES ]]; then
 amsg --color "SKIP_INSTALL = $SKIP_INSTALL skip $PRGNAM installation..."
 else
 amsg --color "$PRGNAM build finished. Procced to installation..."
-sudo upgradepkg --install-new --reinstall "$OUTPUT"/$PRGNAM-"$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
+sudo upgradepkg --install-new --reinstall "$OUTPUT"/"$PRGNAM-$VERSION"-"$ARCH"-"$BUILD""$TAG"."$PKGTYPE"
+DESTINATION="/usr/doc/$PRGNAM-$VERSION"
+mkdir -p "$DESTINATION"
+for file in ./*; do
+    if [ -f "$file" ]; then
+        # Check if it's a text file
+        if file "$file" | grep -qE 'ASCII text|UTF-8 Unicode text'; then
+            cp "$file" "$DESTINATION"
+        fi
+    fi
+done
 fi
 }
 
