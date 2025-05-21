@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "APK: clean /tmp and reboot..."
+echo "ATHOS: clean /tmp and reboot...?"
 echo ""
 read -p "Do you want to clen and reboot first? (y/n): " answer
 answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
@@ -15,9 +15,13 @@ else
     echo "Invalid input. Please enter 'y' or 'n'."
 fi
 
+bash ./PLASMA5_NEED
+sleep 2
 bash ./FRAMEWORKS-UPDATE
 sleep 2
 bash ./PLASMA_STUFF
 sleep 2
 bash ./KDE_APPS
+sleep 2
+bash ./TA_LIMA
 

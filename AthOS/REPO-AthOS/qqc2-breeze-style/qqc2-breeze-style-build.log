@@ -1,4 +1,4 @@
-Starting build process...
+[32mStarting build process...[0m
 Detected architecture: x86_64
 Required dependencies: extra-cmake-modules	kconfig	kconfigwidgets	kguiaddons	kiconthemes	kirigami	kquickcharts
 extra-cmake-modules is already installed!
@@ -10,12 +10,12 @@ kirigami is already installed!
 kquickcharts is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-10 23:04:17--  https://download.kde.org/stable/plasma/6.3.5/qqc2-breeze-style-6.3.5.tar.xz
+--2025-05-21 14:47:19--  https://download.kde.org/stable/plasma/6.3.5/qqc2-breeze-style-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/qqc2-breeze-style-6.3.5.tar.xz [following]
---2025-05-10 23:04:18--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/qqc2-breeze-style-6.3.5.tar.xz
+--2025-05-21 14:47:19--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/qqc2-breeze-style-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
@@ -23,9 +23,9 @@ Length: 66928 (65K) [application/octet-stream]
 Saving to: ‘qqc2-breeze-style-6.3.5.tar.xz’
 
      0K .......... .......... .......... .......... .......... 76% 1.35M 0s
-    50K .......... .....                                      100%  231M=0.04s
+    50K .......... .....                                      100% 80.0M=0.04s
 
-2025-05-10 23:04:18 (1.76 MB/s) - ‘qqc2-breeze-style-6.3.5.tar.xz’ saved [66928/66928]
+2025-05-21 14:47:20 (1.75 MB/s) - ‘qqc2-breeze-style-6.3.5.tar.xz’ saved [66928/66928]
 
 Found file: qqc2-breeze-style-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -158,7 +158,7 @@ qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/units.cpp
 qqc2-breeze-style-6.3.5/.kde-ci.yml
 qqc2-breeze-style-6.3.5/CMakeLists.txt
 qqc2-breeze-style-6.3.5/README.md
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
 -- The C compiler identification is GNU 14.2.0
@@ -189,7 +189,7 @@ hm...lets continue and see what happens
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6GuiAddons: /usr/lib64/cmake/KF6GuiAddons/KF6GuiAddonsConfig.cmake (found version "6.14.0")
 -- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
--- Found KF6KirigamiPlatform: /usr/lib64/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformConfig.cmake (found version "6.14.0")
+-- Found KF6KirigamiPlatform: /usr/lib64/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformConfig.cmake (found version "6.14.1")
 -- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
 -- Found KF6ColorScheme: /usr/lib64/cmake/KF6ColorScheme/KF6ColorSchemeConfig.cmake (found version "6.14.0")
 -- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.14.0")
@@ -237,83 +237,56 @@ hm...lets continue and see what happens
  * KF6IconThemes (required version >= 6.10.0)
  * KF6 (required version >= 6.10.0)
 
--- Configuring done (1.8s)
+-- Configuring done (1.5s)
 -- Generating done (0.1s)
--- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/build
-[1/207] Copying BreezeStyle qml resources into build dir
-[2/207] Copying BreezeImpl qml resources into build dir
+-- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/build
+[1/207] Copying BreezeImpl qml resources into build dir
+[2/207] Copying BreezeStyle qml resources into build dir
 [3/207] Copying BreezeImpl qml sources into build dir
 [4/207] Copying BreezeStyle qml sources into build dir
-[5/207] Automatic MOC for target BreezeImpl
-[6/207] Running AUTOMOC file extraction for target BreezeImpl
-[7/207] Running rcc for resource qmake_org_kde_breeze_impl
-[8/207] Automatic MOC for target org.kde.breeze
-[9/207] Generating .rcc/qmlcache/BreezeImpl_qmlcache_loader.cpp
+[5/207] Automatic MOC for target org.kde.breeze
+[6/207] Building CXX object kirigami-plasmadesktop-integration/CMakeFiles/org.kde.breeze.dir/org.kde.breeze_autogen/mocs_compilation.cpp.o
+[7/207] Automatic MOC for target BreezeImpl
+[8/207] Running AUTOMOC file extraction for target BreezeImpl
+[9/207] Running rcc for resource qmake_org_kde_breeze_impl
 [10/207] Running moc --collect-json for target BreezeImpl
-[11/207] Running rcc for resource BreezeImpl_raw_qml_0
-[12/207] Building CXX object kirigami-plasmadesktop-integration/CMakeFiles/org.kde.breeze.dir/org.kde.breeze_autogen/mocs_compilation.cpp.o
+[11/207] Generating .rcc/qmlcache/BreezeImpl_qmlcache_loader.cpp
+[12/207] Running rcc for resource BreezeImpl_raw_qml_0
 [13/207] Automatic QML type registration for target BreezeImpl
 [14/207] Generating .rcc/qmlcache/BreezeImpl_LargeShadow_qml.cpp
-[15/207] Generating .rcc/qmlcache/BreezeImpl_ListViewHighlight_qml.cpp
-[16/207] Generating .rcc/qmlcache/BreezeImpl_InlineIconLabelContent_qml.cpp
-[17/207] Generating .rcc/qmlcache/BreezeImpl_CursorHandle_qml.cpp
-[18/207] Generating .rcc/qmlcache/BreezeImpl_MediumShadow_qml.cpp
-[19/207] Generating .rcc/qmlcache/BreezeImpl_IconLabelContent_qml.cpp
-[20/207] Generating .rcc/qmlcache/BreezeImpl_ComboBoxBackground_qml.cpp
-[21/207] Generating .rcc/qmlcache/BreezeImpl_DelegateBackground_qml.cpp
-[22/207] Generating .rcc/qmlcache/BreezeImpl_MenuItemBackground_qml.cpp
-[23/207] Generating .rcc/qmlcache/BreezeImpl_OverlayModalBackground_qml.cpp
-[24/207] Generating .rcc/qmlcache/BreezeImpl_FocusRect_qml.cpp
-[25/207] Generating .rcc/qmlcache/BreezeImpl_CursorDelegate_qml.cpp
-[26/207] Generating .rcc/qmlcache/BreezeImpl_OverlayDimBackground_qml.cpp
-[27/207] Generating .rcc/qmlcache/BreezeImpl_IconLabelShortcutContent_qml.cpp
-[28/207] Generating .rcc/qmlcache/BreezeImpl_ScrollHandle_qml.cpp
-[29/207] Generating .rcc/qmlcache/BreezeImpl_ButtonBackground_qml.cpp
+[15/207] Generating .rcc/qmlcache/BreezeImpl_OverlayDimBackground_qml.cpp
+[16/207] Generating .rcc/qmlcache/BreezeImpl_MediumShadow_qml.cpp
+[17/207] Generating .rcc/qmlcache/BreezeImpl_ListViewHighlight_qml.cpp
+[18/207] Generating .rcc/qmlcache/BreezeImpl_OverlayModalBackground_qml.cpp
+[19/207] Generating .rcc/qmlcache/BreezeImpl_DelegateBackground_qml.cpp
+[20/207] Generating .rcc/qmlcache/BreezeImpl_CursorDelegate_qml.cpp
+[21/207] Generating .rcc/qmlcache/BreezeImpl_MenuItemBackground_qml.cpp
+[22/207] Generating .rcc/qmlcache/BreezeImpl_IconLabelShortcutContent_qml.cpp
+[23/207] Generating .rcc/qmlcache/BreezeImpl_CursorHandle_qml.cpp
+[24/207] Generating .rcc/qmlcache/BreezeImpl_ComboBoxBackground_qml.cpp
+[25/207] Generating .rcc/qmlcache/BreezeImpl_ButtonBackground_qml.cpp
+[26/207] Generating .rcc/qmlcache/BreezeImpl_IconLabelContent_qml.cpp
+[27/207] Generating .rcc/qmlcache/BreezeImpl_SliderGroove_qml.cpp
+[28/207] Generating .rcc/qmlcache/BreezeImpl_FocusRect_qml.cpp
+[29/207] Generating .rcc/qmlcache/BreezeImpl_InlineIconLabelContent_qml.cpp
 [30/207] Generating .rcc/qmlcache/BreezeImpl_CheckIndicator_qml.cpp
-[31/207] Generating .rcc/qmlcache/BreezeImpl_SliderGroove_qml.cpp
-[32/207] Generating .rcc/qmlcache/BreezeImpl_RadioIndicator_qml.cpp
-[33/207] Generating .rcc/qmlcache/BreezeImpl_SmallBoxShadow_qml.cpp
-[34/207] Generating .rcc/qmlcache/BreezeImpl_Theme_qml.cpp
-[35/207] Generating .rcc/qmlcache/BreezeImpl_SpinBoxIndicator_qml.cpp
-[36/207] Generating .rcc/qmlcache/BreezeImpl_Units_qml.cpp
-[37/207] Generating .rcc/qmlcache/BreezeImpl_TextEditBackground_qml.cpp
-[38/207] Generating .rcc/qmlcache/BreezeImpl_SliderHandle_qml.cpp
-[39/207] Generating .rcc/qmlcache/BreezeImpl_SwitchIndicator_qml.cpp
+[31/207] Generating .rcc/qmlcache/BreezeImpl_SmallBoxShadow_qml.cpp
+[32/207] Generating .rcc/qmlcache/BreezeImpl_ScrollHandle_qml.cpp
+[33/207] Generating .rcc/qmlcache/BreezeImpl_Theme_qml.cpp
+[34/207] Generating .rcc/qmlcache/BreezeImpl_SpinBoxIndicator_qml.cpp
+[35/207] Generating .rcc/qmlcache/BreezeImpl_RadioIndicator_qml.cpp
+[36/207] Generating .rcc/qmlcache/BreezeImpl_SliderHandle_qml.cpp
+[37/207] Generating .rcc/qmlcache/BreezeImpl_SwitchIndicator_qml.cpp
+[38/207] Generating .rcc/qmlcache/BreezeImpl_Units_qml.cpp
+[39/207] Generating .rcc/qmlcache/BreezeImpl_TextEditBackground_qml.cpp
 [40/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/BreezeImpl_autogen/mocs_compilation.cpp.o
 [41/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.qt/rcc/qrc_qmake_org_kde_breeze_impl.cpp.o
-[42/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/kcolorutilssingleton.cpp.o
-[43/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_LargeShadow_qml.cpp.o
-[44/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/breezeimpl_qmltyperegistrations.cpp.o
-[45/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_ComboBoxBackground_qml.cpp.o
-[46/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_CursorHandle_qml.cpp.o
-[47/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/paintedsymbolitem.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/paintedsymbolitem.cpp: In constructor ‘PaintedSymbolItem::PaintedSymbolItem(QQuickItem*)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/paintedsymbolitem.cpp:15:40: warning: ‘void QGuiApplication::fontChanged(const QFont&)’ is deprecated: Handle QEvent::ApplicationFontChange instead [-Wdeprecated-declarations]
-   15 |     connect(qGuiApp, &QGuiApplication::fontChanged, this, [this, d]() {
-      |                                        ^~~~~~~~~~~
-In file included from /usr/include/qt6/QtGui/qscreen_platform.h:19,
-                 from /usr/include/qt6/QtGui/qscreen.h:150,
-                 from /usr/include/qt6/QtGui/qinputdevice.h:9,
-                 from /usr/include/qt6/QtGui/qpointingdevice.h:9,
-                 from /usr/include/qt6/QtGui/qeventpoint.h:9,
-                 from /usr/include/qt6/QtGui/qevent.h:20,
-                 from /usr/include/qt6/QtQuick/qquickitem.h:14,
-                 from /usr/include/qt6/QtQuick/qquickpainteditem.h:7,
-                 from /usr/include/qt6/QtQuick/QQuickPaintedItem:1,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/paintedsymbolitem.h:8,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/paintedsymbolitem.cpp:5:
-/usr/include/qt6/QtGui/qguiapplication.h:162:87: note: declared here
-  162 |     QT_DEPRECATED_VERSION_X_6_0("Handle QEvent::ApplicationFontChange instead")  void fontChanged(const QFont &font);
-      |                                                                                       ^~~~~~~~~~~
-[48/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_InlineIconLabelContent_qml.cpp.o
-[49/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/qquickicon.cpp.o
-[50/207] Building CXX object kirigami-plasmadesktop-integration/CMakeFiles/org.kde.breeze.dir/kirigamiplasmafactory.cpp.o
-[51/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/BreezeImpl_org_kde_breeze_implPlugin.cpp.o
-[52/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_CursorDelegate_qml.cpp.o
-[53/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_qmlcache_loader.cpp.o
-[54/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/breezedial.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/breezedial.cpp: In constructor ‘BreezeDial::BreezeDial(QQuickItem*)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/breezedial.cpp:36:40: warning: ‘void QGuiApplication::fontChanged(const QFont&)’ is deprecated: Handle QEvent::ApplicationFontChange instead [-Wdeprecated-declarations]
+[42/207] Building CXX object kirigami-plasmadesktop-integration/CMakeFiles/org.kde.breeze.dir/units.cpp.o
+[43/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_qmlcache_loader.cpp.o
+[44/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_IconLabelShortcutContent_qml.cpp.o
+[45/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/breezedial.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/breezedial.cpp: In constructor ‘BreezeDial::BreezeDial(QQuickItem*)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/breezedial.cpp:36:40: warning: ‘void QGuiApplication::fontChanged(const QFont&)’ is deprecated: Handle QEvent::ApplicationFontChange instead [-Wdeprecated-declarations]
    36 |     connect(qGuiApp, &QGuiApplication::fontChanged, this, [this, d]() {
       |                                        ^~~~~~~~~~~
 In file included from /usr/include/qt6/QtGui/qscreen_platform.h:19,
@@ -325,23 +298,50 @@ In file included from /usr/include/qt6/QtGui/qscreen_platform.h:19,
                  from /usr/include/qt6/QtQuick/qquickitem.h:14,
                  from /usr/include/qt6/QtQuick/qquickpainteditem.h:7,
                  from /usr/include/qt6/QtQuick/QQuickPaintedItem:1,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/breezedial.h:9,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/breezedial.cpp:5:
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/breezedial.h:9,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/breezedial.cpp:5:
 /usr/include/qt6/QtGui/qguiapplication.h:162:87: note: declared here
   162 |     QT_DEPRECATED_VERSION_X_6_0("Handle QEvent::ApplicationFontChange instead")  void fontChanged(const QFont &font);
       |                                                                                       ^~~~~~~~~~~
-[55/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_FocusRect_qml.cpp.o
-[56/207] Building CXX object kirigami-plasmadesktop-integration/CMakeFiles/org.kde.breeze.dir/units.cpp.o
-[57/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_IconLabelShortcutContent_qml.cpp.o
+[46/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_ButtonBackground_qml.cpp.o
+[47/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/qquickicon.cpp.o
+[48/207] Building CXX object kirigami-plasmadesktop-integration/CMakeFiles/org.kde.breeze.dir/kirigamiplasmafactory.cpp.o
+[49/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/BreezeImpl_org_kde_breeze_implPlugin.cpp.o
+[50/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/paintedsymbolitem.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/paintedsymbolitem.cpp: In constructor ‘PaintedSymbolItem::PaintedSymbolItem(QQuickItem*)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/paintedsymbolitem.cpp:15:40: warning: ‘void QGuiApplication::fontChanged(const QFont&)’ is deprecated: Handle QEvent::ApplicationFontChange instead [-Wdeprecated-declarations]
+   15 |     connect(qGuiApp, &QGuiApplication::fontChanged, this, [this, d]() {
+      |                                        ^~~~~~~~~~~
+In file included from /usr/include/qt6/QtGui/qscreen_platform.h:19,
+                 from /usr/include/qt6/QtGui/qscreen.h:150,
+                 from /usr/include/qt6/QtGui/qinputdevice.h:9,
+                 from /usr/include/qt6/QtGui/qpointingdevice.h:9,
+                 from /usr/include/qt6/QtGui/qeventpoint.h:9,
+                 from /usr/include/qt6/QtGui/qevent.h:20,
+                 from /usr/include/qt6/QtQuick/qquickitem.h:14,
+                 from /usr/include/qt6/QtQuick/qquickpainteditem.h:7,
+                 from /usr/include/qt6/QtQuick/QQuickPaintedItem:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/paintedsymbolitem.h:8,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/style/impl/paintedsymbolitem.cpp:5:
+/usr/include/qt6/QtGui/qguiapplication.h:162:87: note: declared here
+  162 |     QT_DEPRECATED_VERSION_X_6_0("Handle QEvent::ApplicationFontChange instead")  void fontChanged(const QFont &font);
+      |                                                                                       ^~~~~~~~~~~
+[51/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_CursorDelegate_qml.cpp.o
+[52/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_FocusRect_qml.cpp.o
+[53/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_LargeShadow_qml.cpp.o
+[54/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_ComboBoxBackground_qml.cpp.o
+[55/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_IconLabelContent_qml.cpp.o
+[56/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/kcolorutilssingleton.cpp.o
+[57/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/iconlabellayout.cpp.o
 [58/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.qt/rcc/qrc_BreezeImpl_raw_qml_0.cpp.o
-[59/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_ButtonBackground_qml.cpp.o
-[60/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_IconLabelContent_qml.cpp.o
+[59/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/breezeimpl_qmltyperegistrations.cpp.o
+[60/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_CursorHandle_qml.cpp.o
 [61/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_CheckIndicator_qml.cpp.o
 [62/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_DelegateBackground_qml.cpp.o
-[63/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/iconlabellayout.cpp.o
+[63/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_InlineIconLabelContent_qml.cpp.o
 [64/207] Building CXX object kirigami-plasmadesktop-integration/CMakeFiles/org.kde.breeze.dir/plasmadesktoptheme.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.cpp: In constructor ‘StyleSingleton::StyleSingleton()’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.cpp:42:44: warning: ‘void QGuiApplication::paletteChanged(const QPalette&)’ is deprecated: Handle QEvent::ApplicationPaletteChange instead [-Wdeprecated-declarations]
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.cpp: In constructor ‘StyleSingleton::StyleSingleton()’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.cpp:42:44: warning: ‘void QGuiApplication::paletteChanged(const QPalette&)’ is deprecated: Handle QEvent::ApplicationPaletteChange instead [-Wdeprecated-declarations]
    42 |         connect(qGuiApp, &QGuiApplication::paletteChanged, this, &StyleSingleton::refresh);
       |                                            ^~~~~~~~~~~~~~
 In file included from /usr/include/qt6/QtGui/qscreen_platform.h:19,
@@ -354,259 +354,259 @@ In file included from /usr/include/qt6/QtGui/qscreen_platform.h:19,
                  from /usr/include/qt6/QtQuick/QQuickItem:1,
                  from /usr/include/KF6/Kirigami/Platform/platformtheme.h:14,
                  from /usr/include/KF6/Kirigami/Platform/PlatformTheme:1,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.h:11,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.cpp:8:
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.h:11,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.cpp:8:
 /usr/include/qt6/QtGui/qguiapplication.h:161:89: note: declared here
   161 |     QT_DEPRECATED_VERSION_X_6_0("Handle QEvent::ApplicationPaletteChange instead") void paletteChanged(const QPalette &pal);
       |                                                                                         ^~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.cpp:57:44: warning: ‘void QGuiApplication::fontChanged(const QFont&)’ is deprecated: Handle QEvent::ApplicationFontChange instead [-Wdeprecated-declarations]
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/work/qqc2-breeze-style-6.3.5/kirigami-plasmadesktop-integration/plasmadesktoptheme.cpp:57:44: warning: ‘void QGuiApplication::fontChanged(const QFont&)’ is deprecated: Handle QEvent::ApplicationFontChange instead [-Wdeprecated-declarations]
    57 |         connect(qGuiApp, &QGuiApplication::fontChanged, this, &StyleSingleton::notifyWatchersConfigurationChange);
       |                                            ^~~~~~~~~~~
 /usr/include/qt6/QtGui/qguiapplication.h:162:87: note: declared here
   162 |     QT_DEPRECATED_VERSION_X_6_0("Handle QEvent::ApplicationFontChange instead")  void fontChanged(const QFont &font);
       |                                                                                       ^~~~~~~~~~~
 [65/207] Linking CXX shared module bin/org.kde.breeze.so
-[66/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_ListViewHighlight_qml.cpp.o
-[67/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_OverlayDimBackground_qml.cpp.o
-[68/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_OverlayModalBackground_qml.cpp.o
-[69/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_MediumShadow_qml.cpp.o
-[70/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SliderHandle_qml.cpp.o
-[71/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SliderGroove_qml.cpp.o
-[72/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_TextEditBackground_qml.cpp.o
-[73/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_MenuItemBackground_qml.cpp.o
-[74/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_Units_qml.cpp.o
-[75/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SmallBoxShadow_qml.cpp.o
-[76/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_ScrollHandle_qml.cpp.o
-[77/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_Theme_qml.cpp.o
-[78/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SwitchIndicator_qml.cpp.o
-[79/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_RadioIndicator_qml.cpp.o
-[80/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SpinBoxIndicator_qml.cpp.o
+[66/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_OverlayDimBackground_qml.cpp.o
+[67/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SliderHandle_qml.cpp.o
+[68/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_MenuItemBackground_qml.cpp.o
+[69/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_TextEditBackground_qml.cpp.o
+[70/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_OverlayModalBackground_qml.cpp.o
+[71/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_MediumShadow_qml.cpp.o
+[72/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SliderGroove_qml.cpp.o
+[73/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SmallBoxShadow_qml.cpp.o
+[74/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_ListViewHighlight_qml.cpp.o
+[75/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_ScrollHandle_qml.cpp.o
+[76/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_RadioIndicator_qml.cpp.o
+[77/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_Units_qml.cpp.o
+[78/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_Theme_qml.cpp.o
+[79/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SpinBoxIndicator_qml.cpp.o
+[80/207] Building CXX object style/impl/CMakeFiles/BreezeImpl.dir/.rcc/qmlcache/BreezeImpl_SwitchIndicator_qml.cpp.o
 [81/207] Linking CXX shared module bin/org/kde/breeze/impl/libBreezeImpl.so
 [82/207] Automatic MOC for target BreezeStyle
 [83/207] Running AUTOMOC file extraction for target BreezeStyle
 [84/207] Running rcc for resource qmake_org_kde_breeze
-[85/207] Generating .rcc/qmlcache/BreezeStyle_qmlcache_loader.cpp
-[86/207] Running moc --collect-json for target BreezeStyle
+[85/207] Running moc --collect-json for target BreezeStyle
+[86/207] Generating .rcc/qmlcache/BreezeStyle_qmlcache_loader.cpp
 [87/207] Automatic QML type registration for target BreezeStyle
 [88/207] Running rcc for resource BreezeStyle_raw_qml_0
-[89/207] Generating .rcc/qmlcache/BreezeStyle_Container_qml.cpp
-[90/207] Generating .rcc/qmlcache/BreezeStyle_Control_qml.cpp
-[91/207] Generating .rcc/qmlcache/BreezeStyle_BusyIndicator_qml.cpp
-[92/207] Generating .rcc/qmlcache/BreezeStyle_ApplicationWindow_qml.cpp
-[93/207] Generating .rcc/qmlcache/BreezeStyle_ButtonGroup_qml.cpp
-[94/207] Generating .rcc/qmlcache/BreezeStyle_AbstractButton_qml.cpp
-[95/207] Generating .rcc/qmlcache/BreezeStyle_DialogButtonBox_qml.cpp
-[96/207] Generating .rcc/qmlcache/BreezeStyle_Frame_qml.cpp
-[97/207] Generating .rcc/qmlcache/BreezeStyle_ItemDelegate_qml.cpp
-[98/207] Generating .rcc/qmlcache/BreezeStyle_DelayButton_qml.cpp
-[99/207] Generating .rcc/qmlcache/BreezeStyle_Dialog_qml.cpp
-[100/207] Generating .rcc/qmlcache/BreezeStyle_Drawer_qml.cpp
-[101/207] Generating .rcc/qmlcache/BreezeStyle_HorizontalHeaderView_qml.cpp
+[89/207] Generating .rcc/qmlcache/BreezeStyle_Control_qml.cpp
+[90/207] Generating .rcc/qmlcache/BreezeStyle_ButtonGroup_qml.cpp
+[91/207] Generating .rcc/qmlcache/BreezeStyle_Container_qml.cpp
+[92/207] Generating .rcc/qmlcache/BreezeStyle_AbstractButton_qml.cpp
+[93/207] Generating .rcc/qmlcache/BreezeStyle_GroupBox_qml.cpp
+[94/207] Generating .rcc/qmlcache/BreezeStyle_HorizontalHeaderView_qml.cpp
+[95/207] Generating .rcc/qmlcache/BreezeStyle_BusyIndicator_qml.cpp
+[96/207] Generating .rcc/qmlcache/BreezeStyle_MenuBar_qml.cpp
+[97/207] Generating .rcc/qmlcache/BreezeStyle_ApplicationWindow_qml.cpp
+[98/207] Generating .rcc/qmlcache/BreezeStyle_Frame_qml.cpp
+[99/207] Generating .rcc/qmlcache/BreezeStyle_Drawer_qml.cpp
+[100/207] Generating .rcc/qmlcache/BreezeStyle_DialogButtonBox_qml.cpp
+[101/207] Generating .rcc/qmlcache/BreezeStyle_DelayButton_qml.cpp
 [102/207] Generating .rcc/qmlcache/BreezeStyle_Label_qml.cpp
-[103/207] Generating .rcc/qmlcache/BreezeStyle_MenuBar_qml.cpp
-[104/207] Generating .rcc/qmlcache/BreezeStyle_Button_qml.cpp
-[105/207] Generating .rcc/qmlcache/BreezeStyle_ComboBox_qml.cpp
+[103/207] Generating .rcc/qmlcache/BreezeStyle_CheckDelegate_qml.cpp
+[104/207] Generating .rcc/qmlcache/BreezeStyle_CheckBox_qml.cpp
+[105/207] Generating .rcc/qmlcache/BreezeStyle_Button_qml.cpp
 [106/207] Generating .rcc/qmlcache/BreezeStyle_Dial_qml.cpp
-[107/207] Generating .rcc/qmlcache/BreezeStyle_GroupBox_qml.cpp
-[108/207] Generating .rcc/qmlcache/BreezeStyle_CheckDelegate_qml.cpp
-[109/207] Generating .rcc/qmlcache/BreezeStyle_CheckBox_qml.cpp
-[110/207] Generating .rcc/qmlcache/BreezeStyle_Page_qml.cpp
-[111/207] Generating .rcc/qmlcache/BreezeStyle_Menu_qml.cpp
-[112/207] Generating .rcc/qmlcache/BreezeStyle_PageIndicator_qml.cpp
-[113/207] Generating .rcc/qmlcache/BreezeStyle_MenuBarItem_qml.cpp
+[107/207] Generating .rcc/qmlcache/BreezeStyle_ItemDelegate_qml.cpp
+[108/207] Generating .rcc/qmlcache/BreezeStyle_Menu_qml.cpp
+[109/207] Generating .rcc/qmlcache/BreezeStyle_ComboBox_qml.cpp
+[110/207] Generating .rcc/qmlcache/BreezeStyle_Dialog_qml.cpp
+[111/207] Generating .rcc/qmlcache/BreezeStyle_Page_qml.cpp
+[112/207] Generating .rcc/qmlcache/BreezeStyle_Pane_qml.cpp
+[113/207] Generating .rcc/qmlcache/BreezeStyle_PageIndicator_qml.cpp
 [114/207] Generating .rcc/qmlcache/BreezeStyle_MenuSeparator_qml.cpp
-[115/207] Generating .rcc/qmlcache/BreezeStyle_SplitView_qml.cpp
-[116/207] Generating .rcc/qmlcache/BreezeStyle_StackView_qml.cpp
-[117/207] Generating .rcc/qmlcache/BreezeStyle_ScrollIndicator_qml.cpp
-[118/207] Generating .rcc/qmlcache/BreezeStyle_MobileTextActionsToolBar_qml.cpp
-[119/207] Generating .rcc/qmlcache/BreezeStyle_Pane_qml.cpp
-[120/207] Generating .rcc/qmlcache/BreezeStyle_MenuItem_qml.cpp
-[121/207] Generating .rcc/qmlcache/BreezeStyle_ProgressBar_qml.cpp
-[122/207] Generating .rcc/qmlcache/BreezeStyle_Popup_qml.cpp
-[123/207] Generating .rcc/qmlcache/BreezeStyle_RadioButton_qml.cpp
-[124/207] Generating .rcc/qmlcache/BreezeStyle_RadioDelegate_qml.cpp
-[125/207] Generating .rcc/qmlcache/BreezeStyle_RoundButton_qml.cpp
-[126/207] Generating .rcc/qmlcache/BreezeStyle_ScrollBar_qml.cpp
-[127/207] Generating .rcc/qmlcache/BreezeStyle_ScrollView_qml.cpp
-[128/207] Generating .rcc/qmlcache/BreezeStyle_SwipeDelegate_qml.cpp
-[129/207] Generating .rcc/qmlcache/BreezeStyle_SwipeView_qml.cpp
-[130/207] Generating .rcc/qmlcache/BreezeStyle_RangeSlider_qml.cpp
-[131/207] Generating .rcc/qmlcache/BreezeStyle_Switch_qml.cpp
-[132/207] Generating .rcc/qmlcache/BreezeStyle_Slider_qml.cpp
-[133/207] Generating .rcc/qmlcache/BreezeStyle_SwitchDelegate_qml.cpp
-[134/207] Generating .rcc/qmlcache/BreezeStyle_SpinBox_qml.cpp
-[135/207] Generating .rcc/qmlcache/BreezeStyle_TabBar_qml.cpp
-[136/207] Generating .rcc/qmlcache/BreezeStyle_VerticalHeaderView_qml.cpp
-[137/207] Generating .rcc/qmlcache/BreezeStyle_ToolSeparator_qml.cpp
-[138/207] Generating .rcc/qmlcache/BreezeStyle_ToolBar_qml.cpp
-[139/207] Generating .rcc/qmlcache/BreezeStyle_ToolTip_qml.cpp
-[140/207] Generating .rcc/qmlcache/BreezeStyle_Tumbler_qml.cpp
-[141/207] Generating .rcc/qmlcache/BreezeStyle_TabButton_qml.cpp
-[142/207] Generating .rcc/qmlcache/BreezeStyle_ToolButton_qml.cpp
-[143/207] Generating .rcc/qmlcache/BreezeStyle_TextArea_qml.cpp
+[115/207] Generating .rcc/qmlcache/BreezeStyle_MenuBarItem_qml.cpp
+[116/207] Generating .rcc/qmlcache/BreezeStyle_Popup_qml.cpp
+[117/207] Generating .rcc/qmlcache/BreezeStyle_RadioDelegate_qml.cpp
+[118/207] Generating .rcc/qmlcache/BreezeStyle_ProgressBar_qml.cpp
+[119/207] Generating .rcc/qmlcache/BreezeStyle_RangeSlider_qml.cpp
+[120/207] Generating .rcc/qmlcache/BreezeStyle_RadioButton_qml.cpp
+[121/207] Generating .rcc/qmlcache/BreezeStyle_ScrollBar_qml.cpp
+[122/207] Generating .rcc/qmlcache/BreezeStyle_MenuItem_qml.cpp
+[123/207] Generating .rcc/qmlcache/BreezeStyle_RoundButton_qml.cpp
+[124/207] Generating .rcc/qmlcache/BreezeStyle_ScrollIndicator_qml.cpp
+[125/207] Generating .rcc/qmlcache/BreezeStyle_StackView_qml.cpp
+[126/207] Generating .rcc/qmlcache/BreezeStyle_ScrollView_qml.cpp
+[127/207] Generating .rcc/qmlcache/BreezeStyle_MobileTextActionsToolBar_qml.cpp
+[128/207] Generating .rcc/qmlcache/BreezeStyle_SplitView_qml.cpp
+[129/207] Generating .rcc/qmlcache/BreezeStyle_Slider_qml.cpp
+[130/207] Generating .rcc/qmlcache/BreezeStyle_SpinBox_qml.cpp
+[131/207] Generating .rcc/qmlcache/BreezeStyle_SwipeView_qml.cpp
+[132/207] Generating .rcc/qmlcache/BreezeStyle_Switch_qml.cpp
+[133/207] Generating .rcc/qmlcache/BreezeStyle_SwipeDelegate_qml.cpp
+[134/207] Generating .rcc/qmlcache/BreezeStyle_TabBar_qml.cpp
+[135/207] Generating .rcc/qmlcache/BreezeStyle_SwitchDelegate_qml.cpp
+[136/207] Generating .rcc/qmlcache/BreezeStyle_Tumbler_qml.cpp
+[137/207] Generating .rcc/qmlcache/BreezeStyle_ToolBar_qml.cpp
+[138/207] Generating .rcc/qmlcache/BreezeStyle_ToolSeparator_qml.cpp
+[139/207] Generating .rcc/qmlcache/BreezeStyle_VerticalHeaderView_qml.cpp
+[140/207] Generating .rcc/qmlcache/BreezeStyle_TabButton_qml.cpp
+[141/207] Generating .rcc/qmlcache/BreezeStyle_ToolButton_qml.cpp
+[142/207] Generating .rcc/qmlcache/BreezeStyle_TextArea_qml.cpp
+[143/207] Generating .rcc/qmlcache/BreezeStyle_ToolTip_qml.cpp
 [144/207] Generating .rcc/qmlcache/BreezeStyle_TextField_qml.cpp
 [145/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/BreezeStyle_autogen/mocs_compilation.cpp.o
 [146/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.qt/rcc/qrc_qmake_org_kde_breeze.cpp.o
-[147/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/breezestyle_qmltyperegistrations.cpp.o
-[148/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ButtonGroup_qml.cpp.o
-[149/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ApplicationWindow_qml.cpp.o
-[150/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_AbstractButton_qml.cpp.o
-[151/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_HorizontalHeaderView_qml.cpp.o
-[152/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Container_qml.cpp.o
-[153/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ItemDelegate_qml.cpp.o
-[154/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Control_qml.cpp.o
-[155/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Frame_qml.cpp.o
-[156/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/BreezeStyle_org_kde_breezePlugin.cpp.o
+[147/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Container_qml.cpp.o
+[148/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Frame_qml.cpp.o
+[149/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Drawer_qml.cpp.o
+[150/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ApplicationWindow_qml.cpp.o
+[151/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Control_qml.cpp.o
+[152/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_HorizontalHeaderView_qml.cpp.o
+[153/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_AbstractButton_qml.cpp.o
+[154/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_CheckDelegate_qml.cpp.o
+[155/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_CheckBox_qml.cpp.o
+[156/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_BusyIndicator_qml.cpp.o
 [157/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_GroupBox_qml.cpp.o
-[158/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Drawer_qml.cpp.o
-[159/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Button_qml.cpp.o
-[160/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_BusyIndicator_qml.cpp.o
-[161/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Dial_qml.cpp.o
-[162/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_CheckBox_qml.cpp.o
-[163/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_DialogButtonBox_qml.cpp.o
-[164/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Dialog_qml.cpp.o
-[165/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_CheckDelegate_qml.cpp.o
-[166/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_qmlcache_loader.cpp.o
-[167/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_DelayButton_qml.cpp.o
-[168/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ComboBox_qml.cpp.o
-[169/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Label_qml.cpp.o
-[170/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Page_qml.cpp.o
-[171/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MenuBarItem_qml.cpp.o
-[172/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_PageIndicator_qml.cpp.o
-[173/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Menu_qml.cpp.o
-[174/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MenuBar_qml.cpp.o
-[175/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MobileTextActionsToolBar_qml.cpp.o
-[176/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Popup_qml.cpp.o
-[177/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Pane_qml.cpp.o
-[178/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_RadioButton_qml.cpp.o
+[158/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_qmlcache_loader.cpp.o
+[159/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ButtonGroup_qml.cpp.o
+[160/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_DelayButton_qml.cpp.o
+[161/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/BreezeStyle_org_kde_breezePlugin.cpp.o
+[162/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/breezestyle_qmltyperegistrations.cpp.o
+[163/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ItemDelegate_qml.cpp.o
+[164/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_DialogButtonBox_qml.cpp.o
+[165/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ComboBox_qml.cpp.o
+[166/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Dialog_qml.cpp.o
+[167/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Button_qml.cpp.o
+[168/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Dial_qml.cpp.o
+[169/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MobileTextActionsToolBar_qml.cpp.o
+[170/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Pane_qml.cpp.o
+[171/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Page_qml.cpp.o
+[172/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MenuBarItem_qml.cpp.o
+[173/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ScrollBar_qml.cpp.o
+[174/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Menu_qml.cpp.o
+[175/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MenuItem_qml.cpp.o
+[176/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Label_qml.cpp.o
+[177/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MenuBar_qml.cpp.o
+[178/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_RangeSlider_qml.cpp.o
 [179/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MenuSeparator_qml.cpp.o
-[180/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_MenuItem_qml.cpp.o
+[180/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_RoundButton_qml.cpp.o
 [181/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_RadioDelegate_qml.cpp.o
-[182/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ScrollIndicator_qml.cpp.o
-[183/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ScrollBar_qml.cpp.o
-[184/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_RangeSlider_qml.cpp.o
-[185/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ProgressBar_qml.cpp.o
-[186/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_RoundButton_qml.cpp.o
+[182/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ScrollView_qml.cpp.o
+[183/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ScrollIndicator_qml.cpp.o
+[184/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_PageIndicator_qml.cpp.o
+[185/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Slider_qml.cpp.o
+[186/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_RadioButton_qml.cpp.o
 [187/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.qt/rcc/qrc_BreezeStyle_raw_qml_0.cpp.o
-[188/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SplitView_qml.cpp.o
-[189/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Slider_qml.cpp.o
-[190/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ScrollView_qml.cpp.o
-[191/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SpinBox_qml.cpp.o
-[192/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_StackView_qml.cpp.o
-[193/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SwipeView_qml.cpp.o
-[194/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SwipeDelegate_qml.cpp.o
-[195/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_TextField_qml.cpp.o
-[196/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Switch_qml.cpp.o
-[197/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_TabBar_qml.cpp.o
-[198/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SwitchDelegate_qml.cpp.o
-[199/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ToolButton_qml.cpp.o
-[200/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_TextArea_qml.cpp.o
-[201/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ToolBar_qml.cpp.o
+[188/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Popup_qml.cpp.o
+[189/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ProgressBar_qml.cpp.o
+[190/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SpinBox_qml.cpp.o
+[191/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_StackView_qml.cpp.o
+[192/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SplitView_qml.cpp.o
+[193/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ToolBar_qml.cpp.o
+[194/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SwitchDelegate_qml.cpp.o
+[195/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ToolSeparator_qml.cpp.o
+[196/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Tumbler_qml.cpp.o
+[197/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SwipeView_qml.cpp.o
+[198/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_TabButton_qml.cpp.o
+[199/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_SwipeDelegate_qml.cpp.o
+[200/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ToolTip_qml.cpp.o
+[201/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_TabBar_qml.cpp.o
 [202/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_VerticalHeaderView_qml.cpp.o
-[203/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ToolSeparator_qml.cpp.o
-[204/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Tumbler_qml.cpp.o
-[205/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_TabButton_qml.cpp.o
-[206/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ToolTip_qml.cpp.o
+[203/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_TextArea_qml.cpp.o
+[204/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_Switch_qml.cpp.o
+[205/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_TextField_qml.cpp.o
+[206/207] Building CXX object style/qtquickcontrols/CMakeFiles/BreezeStyle.dir/.rcc/qmlcache/BreezeStyle_ToolButton_qml.cpp.o
 [207/207] Linking CXX shared module bin/org/kde/breeze/libBreezeStyle.so
 -- Install configuration: "RelWithDebInfo"
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/libBreezeImpl.so
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/libBreezeImpl.so" to "$ORIGIN/../../../../../lib64"
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/qmldir
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/BreezeImpl.qmltypes
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/ButtonBackground.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/CheckIndicator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/ComboBoxBackground.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/CursorDelegate.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/CursorHandle.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/DelegateBackground.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/FocusRect.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/IconLabelContent.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/IconLabelShortcutContent.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/InlineIconLabelContent.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/LargeShadow.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/ListViewHighlight.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/MediumShadow.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/MenuItemBackground.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/OverlayDimBackground.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/OverlayModalBackground.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/RadioIndicator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/ScrollHandle.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SliderGroove.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SliderHandle.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SmallBoxShadow.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SpinBoxIndicator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SwitchIndicator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/TextEditBackground.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/Theme.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/Units.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/kde-qmlmodule.version
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/libBreezeStyle.so
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/libBreezeStyle.so" to "$ORIGIN/../../../../lib64"
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/qmldir
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/BreezeStyle.qmltypes
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/AbstractButton.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ApplicationWindow.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/BusyIndicator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Button.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ButtonGroup.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/CheckBox.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/CheckDelegate.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ComboBox.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Container.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Control.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/DelayButton.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Dial.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Dialog.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/DialogButtonBox.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Drawer.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Frame.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/GroupBox.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/HorizontalHeaderView.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ItemDelegate.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Label.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Menu.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MenuBar.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MenuBarItem.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MenuItem.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MenuSeparator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MobileTextActionsToolBar.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Page.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/PageIndicator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Pane.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Popup.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ProgressBar.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/RadioButton.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/RadioDelegate.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/RangeSlider.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/RoundButton.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ScrollBar.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ScrollIndicator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ScrollView.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Slider.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SpinBox.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SplitView.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/StackView.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SwipeDelegate.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SwipeView.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Switch.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SwitchDelegate.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/TabBar.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/TabButton.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/TextArea.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/TextField.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ToolBar.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ToolButton.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ToolSeparator.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ToolTip.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Tumbler.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/VerticalHeaderView.qml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/kde-qmlmodule.version
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/plugins/kf6/kirigami/platform/org.kde.breeze.so
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/cmake/QQC2BreezeStyle/QQC2BreezeStyleTargets.cmake
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/cmake/QQC2BreezeStyle/QQC2BreezeStyleTargets-relwithdebinfo.cmake
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/cmake/QQC2BreezeStyle/QQC2BreezeStyleConfig.cmake
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/cmake/QQC2BreezeStyle/QQC2BreezeStyleConfigVersion.cmake
-The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/libBreezeImpl.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/libBreezeImpl.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/qmldir
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/BreezeImpl.qmltypes
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/ButtonBackground.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/CheckIndicator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/ComboBoxBackground.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/CursorDelegate.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/CursorHandle.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/DelegateBackground.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/FocusRect.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/IconLabelContent.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/IconLabelShortcutContent.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/InlineIconLabelContent.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/LargeShadow.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/ListViewHighlight.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/MediumShadow.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/MenuItemBackground.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/OverlayDimBackground.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/OverlayModalBackground.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/RadioIndicator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/ScrollHandle.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SliderGroove.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SliderHandle.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SmallBoxShadow.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SpinBoxIndicator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/SwitchIndicator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/TextEditBackground.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/Theme.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/Units.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/impl/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/libBreezeStyle.so
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/libBreezeStyle.so" to "$ORIGIN/../../../../lib64"
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/qmldir
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/BreezeStyle.qmltypes
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/AbstractButton.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ApplicationWindow.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/BusyIndicator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Button.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ButtonGroup.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/CheckBox.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/CheckDelegate.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ComboBox.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Container.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Control.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/DelayButton.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Dial.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Dialog.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/DialogButtonBox.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Drawer.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Frame.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/GroupBox.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/HorizontalHeaderView.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ItemDelegate.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Label.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Menu.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MenuBar.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MenuBarItem.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MenuItem.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MenuSeparator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/MobileTextActionsToolBar.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Page.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/PageIndicator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Pane.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Popup.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ProgressBar.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/RadioButton.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/RadioDelegate.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/RangeSlider.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/RoundButton.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ScrollBar.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ScrollIndicator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ScrollView.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Slider.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SpinBox.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SplitView.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/StackView.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SwipeDelegate.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SwipeView.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Switch.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/SwitchDelegate.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/TabBar.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/TabButton.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/TextArea.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/TextField.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ToolBar.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ToolButton.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ToolSeparator.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/ToolTip.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/Tumbler.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/VerticalHeaderView.qml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/qml/org/kde/breeze/kde-qmlmodule.version
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/qt6/plugins/kf6/kirigami/platform/org.kde.breeze.so
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/cmake/QQC2BreezeStyle/QQC2BreezeStyleTargets.cmake
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/cmake/QQC2BreezeStyle/QQC2BreezeStyleTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/cmake/QQC2BreezeStyle/QQC2BreezeStyleConfig.cmake
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/package-qqc2-breeze-style/usr/lib64/cmake/QQC2BreezeStyle/QQC2BreezeStyleConfigVersion.cmake
+[32mThe main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..[0m
 cp: cannot stat 'AUTHORS': No such file or directory
 cp: cannot stat 'ChangeLog*': No such file or directory
 cp: cannot stat 'COPYING': No such file or directory
@@ -616,7 +616,7 @@ cp: cannot stat 'MAINTAINERS': No such file or directory
 cp: cannot stat 'NEWS': No such file or directory
 cp: cannot stat 'docs': No such file or directory
 cp: cannot stat 'DOCS': No such file or directory
-grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/qqc2-breeze-style/qqc2-breeze-style.info: No such file or directory
+grep: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qqc2-breeze-style/qqc2-breeze-style.info: No such file or directory
 extra-cmake-modules
 kconfig
 kconfigwidgets
@@ -624,8 +624,8 @@ kguiaddons
 kiconthemes
 kirigami
 kquickcharts
-Packaging compiled for slackware installation...
-MAKEPKG_FLAGS is empty or unset, using default
+[32mPackaging compiled for slackware installation...[0m
+[32mMAKEPKG_FLAGS is empty or unset, using default[0m
 
 Slackware package maker, version 3.14159265.
 
@@ -780,14 +780,14 @@ qqc2-breeze-style-6.3.5-x86_64-1_rtz.tlz.md5
 qqc2-breeze-style-6.3.5-x86_64-1_rtz.tlz.so.file
 qqc2-breeze-style-6.3.5-x86_64-1_rtz.tlz.txt
 qqc2-breeze-style.dep
-qqc2-breeze-style build finished. Procced to installation...
+[32mqqc2-breeze-style build finished. Procced to installation...[0m
 
 +==============================================================================================================================+
 | Upgrading qqc2-breeze-style-6.3.5-x86_64-1_rtz package using /tmp/qqc2-breeze-style/qqc2-breeze-style-6.3.5-x86_64-1_rtz.tlz |
 +==============================================================================================================================+
 
 Pre-installing package qqc2-breeze-style-6.3.5-x86_64-1_rtz...
-Removing package: qqc2-breeze-style-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,23:05:07
+Removing package: qqc2-breeze-style-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,14:48:00
 Installing package qqc2-breeze-style-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # qqc2-breeze-style (Breeze inspired QQC2 style)
@@ -817,6 +817,5 @@ Font directories:
 /usr/bin/fc-cache: succeeded
 Package qqc2-breeze-style-6.3.5-x86_64-1_rtz.tlz installed.
 Package qqc2-breeze-style-6.3.5-x86_64-1_rtz upgraded with new package /tmp/qqc2-breeze-style/qqc2-breeze-style-6.3.5-x86_64-1_rtz.tlz.
-Cleaning environmet: Removing source code, and work-space...
+[32mCleaning environmet: Removing source code, and work-space...[0m
 rm: cannot remove 'qqc2-breeze-style-6.3.5.tar.xz': No such file or directory
-Build process completed in 0 minutes and 56 seconds.

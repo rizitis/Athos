@@ -1,19 +1,5 @@
 FRAMES="extra-cmake-modules kapidox karchive kcalendarcore kcodecs kconfig kcoreaddons kcrash kdbusaddons kdnssd kdoctools kglobalaccel kguiaddons kholidays ki18n kidletime kimageformats kirigami kitemmodels kitemviews knotifications kpackage kplotting kpty kquickcharts krunner kservice ktexttemplate kunitconversion kuserfeedback kwidgetsaddons kwindowsystem modemmanager-qt networkmanager-qt prison qqc2-desktop-style solid sonnet syndication syntax-highlighting threadweaver"
 
-echo "APK: clean /tmp and reboot..."
-echo ""
-read -p "Do you want to clen and reboot first? (y/n): " answer
-answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
-if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-    echo "You chose yes"
-    rm -r /tmp/*
-    wait
-    reboot
-elif [[ "$answer" == "n" || "$answer" == "no" ]]; then
-    echo "Skip clean /tmp , keep going for build..."
-else
-    echo "Invalid input. Please enter 'y' or 'n'."
-fi
 
 for frame in $FRAMES; do
 echo "======== $frame ========"

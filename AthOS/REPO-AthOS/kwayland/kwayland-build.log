@@ -1,4 +1,4 @@
-Starting build process...
+[32mStarting build process...[0m
 Detected architecture: x86_64
 Required dependencies: doxygen	extra-cmake-modules	plasma-wayland-protocols
 doxygen is already installed!
@@ -6,12 +6,12 @@ extra-cmake-modules is already installed!
 plasma-wayland-protocols is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-10 22:35:10--  https://download.kde.org/stable/plasma/6.3.5/kwayland-6.3.5.tar.xz
+--2025-05-21 14:19:38--  https://download.kde.org/stable/plasma/6.3.5/kwayland-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kwayland-6.3.5.tar.xz [following]
---2025-05-10 22:35:10--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kwayland-6.3.5.tar.xz
+--2025-05-21 14:19:38--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kwayland-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
@@ -19,10 +19,10 @@ Length: 134072 (131K) [application/octet-stream]
 Saving to: ‘kwayland-6.3.5.tar.xz’
 
      0K .......... .......... .......... .......... .......... 38% 1.35M 0s
-    50K .......... .......... .......... .......... .......... 76% 1.54M 0s
-   100K .......... .......... ..........                      100% 6.13M=0.07s
+    50K .......... .......... .......... .......... .......... 76% 1.39M 0s
+   100K .......... .......... ..........                      100% 11.6M=0.07s
 
-2025-05-10 22:35:10 (1.76 MB/s) - ‘kwayland-6.3.5.tar.xz’ saved [134072/134072]
+2025-05-21 14:19:39 (1.73 MB/s) - ‘kwayland-6.3.5.tar.xz’ saved [134072/134072]
 
 Found file: kwayland-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -172,7 +172,7 @@ kwayland-6.3.5/src/CMakeLists.txt
 kwayland-6.3.5/CMakeLists.txt
 kwayland-6.3.5/metainfo.yaml
 kwayland-6.3.5/README.md
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
 -- The C compiler identification is GNU 14.2.0
@@ -224,7 +224,7 @@ hm...lets continue and see what happens
 -- No such target Qt6Gui_QCH defined when calling ecm_add_qch(), ignored.
 
 
-Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/build/src/KWayland_ECMQchDoxygen.config' updated.
+Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/build/src/KWayland_ECMQchDoxygen.config' updated.
 
 -- The following features have been enabled:
 
@@ -257,8 +257,8 @@ Configuration file '/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/wor
  * Qt6
 
 -- Configuring done (1.5s)
--- Generating done (0.0s)
--- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/build
+-- Generating done (0.1s)
+-- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/build
 [1/117] Generating src/KWayland.qch, src/KWayland.tags
 Building up file structure...
 Insert custom filters...
@@ -268,262 +268,262 @@ Insert contents...
 Insert indices...
 Documentation successfully generated.
 [2/117] Automatic MOC for target KWaylandClient
-[3/117] Generating wayland-fake-input-client-protocol.h
-[4/117] Generating wayland-blur-client-protocol.h
-[5/117] Generating wayland-contrast-client-protocol.h
-[6/117] Generating wayland-slide-client-protocol.h
-[7/117] Generating wayland-shadow-client-protocol.h
-[8/117] Generating wayland-xdg-foreign-unstable-v2-client-protocol.h
-[9/117] Generating wayland-plasma-window-management-client-protocol.h
+[3/117] Generating wayland-plasma-shell-client-protocol.h
+[4/117] Generating wayland-plasma-virtual-desktop-client-protocol.h
+[5/117] Generating wayland-fake-input-client-protocol.h
+[6/117] Generating wayland-blur-client-protocol.h
+[7/117] Generating wayland-contrast-client-protocol.h
+[8/117] Generating wayland-plasma-window-management-client-protocol.h
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
 
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
 
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
 
-[10/117] Generating wayland-appmenu-client-protocol.h
-[11/117] Generating wayland-plasma-virtual-desktop-client-protocol.h
-[12/117] Generating wayland-dpms-client-protocol.h
-[13/117] Generating wayland-plasma-shell-client-protocol.h
-[14/117] Generating wayland-relativepointer-unstable-v1-client-protocol.h
-[15/117] Generating wayland-pointer-gestures-unstable-v1-client-protocol.h
-[16/117] Generating wayland-pointer-constraints-unstable-v1-client-protocol.h
-[17/117] Generating wayland-xdg-decoration-unstable-v1-client-protocol.h
-[18/117] Generating wayland-contrast-protocol.c
-[19/117] Generating wayland-text-input-v0-client-protocol.h
-[20/117] Generating wayland-text-input-v2-client-protocol.h
-[21/117] Generating wayland-idle-inhibit-unstable-v1-client-protocol.h
-[22/117] Generating wayland-xdg-output-unstable-v1-client-protocol.h
-[23/117] Generating wayland-xdg-shell-client-protocol.h
+[9/117] Generating wayland-shadow-client-protocol.h
+[10/117] Generating wayland-slide-client-protocol.h
+[11/117] Generating wayland-dpms-client-protocol.h
+[12/117] Generating wayland-text-input-v2-client-protocol.h
+[13/117] Generating wayland-relativepointer-unstable-v1-client-protocol.h
+[14/117] Generating wayland-pointer-gestures-unstable-v1-client-protocol.h
+[15/117] Generating wayland-pointer-constraints-unstable-v1-client-protocol.h
+[16/117] Generating wayland-xdg-foreign-unstable-v2-client-protocol.h
+[17/117] Generating wayland-idle-inhibit-unstable-v1-client-protocol.h
+[18/117] Generating wayland-text-input-v0-client-protocol.h
+[19/117] Generating wayland-xdg-shell-v6-client-protocol.h
+[20/117] Generating wayland-appmenu-client-protocol.h
+[21/117] Generating wayland-xdg-output-unstable-v1-client-protocol.h
+[22/117] Generating wayland-xdg-shell-client-protocol.h
+[23/117] Generating wayland-xdg-decoration-unstable-v1-client-protocol.h
 [24/117] Generating wayland-fake-input-protocol.c
 [25/117] Generating wayland-blur-protocol.c
-[26/117] Generating wayland-slide-protocol.c
-[27/117] Generating wayland-xdg-shell-v6-client-protocol.h
-[28/117] Generating wayland-shadow-protocol.c
-[29/117] Generating wayland-xdg-foreign-unstable-v2-protocol.c
-[30/117] Generating wayland-dpms-protocol.c
-[31/117] Generating wayland-plasma-window-management-protocol.c
+[26/117] Generating wayland-plasma-shell-protocol.c
+[27/117] Generating wayland-plasma-virtual-desktop-protocol.c
+[28/117] Generating wayland-contrast-protocol.c
+[29/117] Generating wayland-slide-protocol.c
+[30/117] Generating wayland-shadow-protocol.c
+[31/117] Generating wayland-dpms-protocol.c
+[32/117] Generating wayland-relativepointer-unstable-v1-protocol.c
+[33/117] Generating wayland-plasma-window-management-protocol.c
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:71: warning: since version not increasing
 
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:216: warning: since version not increasing
 
 /usr/share/plasma-wayland-protocols/plasma-window-management.xml:303: warning: since version not increasing
 
-[32/117] Generating wayland-plasma-virtual-desktop-protocol.c
-[33/117] Generating wayland-appmenu-protocol.c
 [34/117] Generating wayland-pointer-gestures-unstable-v1-protocol.c
-[35/117] Generating wayland-plasma-shell-protocol.c
+[35/117] Generating wayland-text-input-v2-protocol.c
 [36/117] Generating wayland-idle-inhibit-unstable-v1-protocol.c
-[37/117] Generating wayland-text-input-v2-protocol.c
-[38/117] Generating wayland-relativepointer-unstable-v1-protocol.c
-[39/117] Generating wayland-xdg-output-unstable-v1-protocol.c
-[40/117] Generating wayland-xdg-decoration-unstable-v1-protocol.c
-[41/117] Generating wayland-xdg-shell-protocol.c
-[42/117] Generating wayland-pointer-constraints-unstable-v1-protocol.c
-[43/117] Generating wayland-text-input-v0-protocol.c
-[44/117] Generating wayland-xdg-shell-v6-protocol.c
-[45/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/datadevicemanager.cpp.o
+[37/117] Generating wayland-appmenu-protocol.c
+[38/117] Generating wayland-pointer-constraints-unstable-v1-protocol.c
+[39/117] Generating wayland-xdg-foreign-unstable-v2-protocol.c
+[40/117] Generating wayland-xdg-shell-v6-protocol.c
+[41/117] Generating wayland-text-input-v0-protocol.c
+[42/117] Generating wayland-xdg-output-unstable-v1-protocol.c
+[43/117] Generating wayland-xdg-shell-protocol.c
+[44/117] Generating wayland-xdg-decoration-unstable-v1-protocol.c
+[45/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/event_queue.cpp.o
 [46/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/fakeinput.cpp.o
 [47/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/datasource.cpp.o
-[48/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/slide.cpp.o
-[49/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/event_queue.cpp.o
-[50/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/dataoffer.cpp.o
-[51/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/blur.cpp.o
-[52/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/keyboard.cpp.o
-[53/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/appmenu.cpp.o
-[54/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/buffer.cpp.o
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/buffer.cpp:7:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/buffer_p.h:17:29: warning: ‘KWayland::Client::Buffer::Private’ has a field ‘KWayland::Client::WaylandPointer<wl_buffer, wl_buffer_destroy> KWayland::Client::Buffer::Private::nativeBuffer’ whose type has internal linkage [-Wsubobject-linkage]
+[48/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/dataoffer.cpp.o
+[49/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/pointerconstraints.cpp.o
+[50/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/keyboard.cpp.o
+[51/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/contrast.cpp.o
+[52/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/connection_thread.cpp.o
+[53/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/dpms.cpp.o
+[54/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/datadevicemanager.cpp.o
+[55/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmashell.cpp.o
+[56/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/idleinhibit.cpp.o
+[57/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/appmenu.cpp.o
+[58/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/buffer.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/buffer.cpp:7:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/buffer_p.h:17:29: warning: ‘KWayland::Client::Buffer::Private’ has a field ‘KWayland::Client::WaylandPointer<wl_buffer, wl_buffer_destroy> KWayland::Client::Buffer::Private::nativeBuffer’ whose type has internal linkage [-Wsubobject-linkage]
    17 | class Q_DECL_HIDDEN Buffer::Private
       |                             ^~~~~~~
-[55/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/idleinhibit.cpp.o
-[56/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/pointerconstraints.cpp.o
-[57/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/connection_thread.cpp.o
-[58/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/datadevice.cpp.o
 [59/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/pointergestures.cpp.o
 [60/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/KWaylandClient_autogen/mocs_compilation.cpp.o
-[61/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/pointer.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/pointer.cpp:72:155: warning: missing initializer for member ‘wl_pointer_listener::axis_value120’ [-Wmissing-field-initializers]
+[61/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/blur.cpp.o
+[62/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/compositor.cpp.o
+[63/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/datadevice.cpp.o
+[64/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/pointer.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/pointer.cpp:72:155: warning: missing initializer for member ‘wl_pointer_listener::axis_value120’ [-Wmissing-field-initializers]
    72 |     {enterCallback, leaveCallback, motionCallback, buttonCallback, axisCallback, frameCallback, axisSourceCallback, axisStopCallback, axisDiscreteCallback};
       |                                                                                                                                                           ^
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/pointer.cpp:72:155: warning: missing initializer for member ‘wl_pointer_listener::axis_relative_direction’ [-Wmissing-field-initializers]
-[62/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/contrast.cpp.o
-[63/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/dpms.cpp.o
-[64/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/compositor.cpp.o
-[65/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmashell.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/pointer.cpp:72:155: warning: missing initializer for member ‘wl_pointer_listener::axis_relative_direction’ [-Wmissing-field-initializers]
+[65/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/slide.cpp.o
 [66/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/output.cpp.o
 [67/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/region.cpp.o
-[68/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/relativepointer.cpp.o
-[69/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmavirtualdesktop.cpp.o
-[70/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/seat.cpp.o
+[68/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmavirtualdesktop.cpp.o
+[69/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/seat.cpp.o
+[70/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput.cpp.o
 [71/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/__/compat/wayland-xdg-shell-v5-protocol.c.o
-[72/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/shadow.cpp.o
+[72/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/relativepointer.cpp.o
 [73/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/subsurface.cpp.o
 [74/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-plasma-shell-protocol.c.o
-[75/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-plasma-virtual-desktop-protocol.c.o
-[76/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-plasma-window-management-protocol.c.o
-[77/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-fake-input-protocol.c.o
-[78/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-shadow-protocol.c.o
-[79/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-blur-protocol.c.o
-[80/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/subcompositor.cpp.o
-[81/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-contrast-protocol.c.o
-[82/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-dpms-protocol.c.o
-[83/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-slide-protocol.c.o
-[84/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-text-input-v2-protocol.c.o
-[85/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-text-input-v0-protocol.c.o
-[86/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-shell-v6-protocol.c.o
-[87/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-relativepointer-unstable-v1-protocol.c.o
-[88/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o
-[89/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o
-[90/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o
-[91/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o
-[92/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-appmenu-protocol.c.o
-[93/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-output-unstable-v1-protocol.c.o
-[94/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-shell-protocol.c.o
-[95/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-decoration-unstable-v1-protocol.c.o
-[96/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmawindowmodel.cpp.o
-[97/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput.cpp.o
-[98/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/shell.cpp.o
-[99/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgforeign_v2.cpp.o
-[100/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput_v2.cpp.o
-[101/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput_v0.cpp.o
-[102/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/shm_pool.cpp.o
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/shm_pool.cpp:7:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/buffer_p.h:17:29: warning: ‘KWayland::Client::Buffer::Private’ has a field ‘KWayland::Client::WaylandPointer<wl_buffer, wl_buffer_destroy> KWayland::Client::Buffer::Private::nativeBuffer’ whose type has internal linkage [-Wsubobject-linkage]
+[75/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/shm_pool.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/shm_pool.cpp:7:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/buffer_p.h:17:29: warning: ‘KWayland::Client::Buffer::Private’ has a field ‘KWayland::Client::WaylandPointer<wl_buffer, wl_buffer_destroy> KWayland::Client::Buffer::Private::nativeBuffer’ whose type has internal linkage [-Wsubobject-linkage]
    17 | class Q_DECL_HIDDEN Buffer::Private
       |                             ^~~~~~~
-[103/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmawindowmanagement.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/plasmawindowmanagement.cpp: In static member function ‘static void KWayland::Client::PlasmaWindowManagement::Private::stackingOrderCallback(void*, org_kde_plasma_window_management*, wl_array*)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/plasmawindowmanagement.cpp:298:67: warning: unused parameter ‘data’ [-Wunused-parameter]
-  298 | void PlasmaWindowManagement::Private::stackingOrderCallback(void *data, org_kde_plasma_window_management *interface, wl_array *ids)
-      |                                                             ~~~~~~^~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/plasmawindowmanagement.cpp:298:107: warning: unused parameter ‘interface’ [-Wunused-parameter]
-  298 | void PlasmaWindowManagement::Private::stackingOrderCallback(void *data, org_kde_plasma_window_management *interface, wl_array *ids)
-      |                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/plasmawindowmanagement.cpp:298:128: warning: unused parameter ‘ids’ [-Wunused-parameter]
-  298 | void PlasmaWindowManagement::Private::stackingOrderCallback(void *data, org_kde_plasma_window_management *interface, wl_array *ids)
-      |                                                                                                                      ~~~~~~~~~~^~~
-[104/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgdecoration.cpp.o
-[105/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/surface.cpp.o
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface.cpp:9:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface_p.h:18:30: warning: ‘KWayland::Client::Surface::Private’ has a field ‘KWayland::Client::WaylandPointer<wl_surface, wl_surface_destroy> KWayland::Client::Surface::Private::surface’ whose type has internal linkage [-Wsubobject-linkage]
-   18 | class Q_DECL_HIDDEN Surface::Private
-      |                              ^~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface.cpp:86:101: warning: missing initializer for member ‘wl_surface_listener::preferred_buffer_scale’ [-Wmissing-field-initializers]
-   86 | const struct wl_surface_listener Surface::Private::s_surfaceListener = {enterCallback, leaveCallback};
-      |                                                                                                     ^
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface.cpp:86:101: warning: missing initializer for member ‘wl_surface_listener::preferred_buffer_transform’ [-Wmissing-field-initializers]
-[106/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgforeign.cpp.o
-[107/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_v5.cpp.o
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v5.cpp:12:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_p.h:86:28: warning: ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::XdgShellPopup*, const KWayland::Client::XdgPositioner&, QObject*)’ was hidden [-Woverloaded-virtual=]
-   86 |     virtual XdgShellPopup *getXdgPopup(Surface *surface, XdgShellPopup *parentSurface, const XdgPositioner &positioner, QObject *parent)
-      |                            ^~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v5.cpp:26:20: note:   by ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShellUnstableV5::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)’
-   26 |     XdgShellPopup *getXdgPopup(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent) override;
-      |                    ^~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_p.h:76:28: warning: ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::XdgShellSurface*, const KWayland::Client::XdgPositioner&, QObject*)’ was hidden [-Woverloaded-virtual=]
-   76 |     virtual XdgShellPopup *getXdgPopup(Surface *surface, XdgShellSurface *parentSurface, const XdgPositioner &positioner, QObject *parent)
-      |                            ^~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v5.cpp:26:20: note:   by ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShellUnstableV5::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)’
-   26 |     XdgShellPopup *getXdgPopup(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent) override;
-      |                    ^~~~~~~~~~~
-[108/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/touch.cpp.o
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/touch.cpp:127:126: warning: missing initializer for member ‘wl_touch_listener::shape’ [-Wmissing-field-initializers]
+[76/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-plasma-window-management-protocol.c.o
+[77/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-plasma-virtual-desktop-protocol.c.o
+[78/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-shadow-protocol.c.o
+[79/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-fake-input-protocol.c.o
+[80/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-blur-protocol.c.o
+[81/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-dpms-protocol.c.o
+[82/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput_v0.cpp.o
+[83/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-slide-protocol.c.o
+[84/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput_v2.cpp.o
+[85/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-contrast-protocol.c.o
+[86/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-text-input-v0-protocol.c.o
+[87/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-text-input-v2-protocol.c.o
+[88/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-relativepointer-unstable-v1-protocol.c.o
+[89/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-shell-v6-protocol.c.o
+[90/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o
+[91/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/touch.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/touch.cpp:127:126: warning: missing initializer for member ‘wl_touch_listener::shape’ [-Wmissing-field-initializers]
   127 | const wl_touch_listener Touch::Private::s_listener = {downCallback, upCallback, motionCallback, frameCallback, cancelCallback};
       |                                                                                                                              ^
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/touch.cpp:127:126: warning: missing initializer for member ‘wl_touch_listener::orientation’ [-Wmissing-field-initializers]
-[109/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell.cpp.o
-[110/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_stable.cpp.o
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:11:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_p.h:64:28: warning: ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)’ was hidden [-Woverloaded-virtual=]
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/touch.cpp:127:126: warning: missing initializer for member ‘wl_touch_listener::orientation’ [-Wmissing-field-initializers]
+[92/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o
+[93/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgdecoration.cpp.o
+[94/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o
+[95/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o
+[96/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-appmenu-protocol.c.o
+[97/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-output-unstable-v1-protocol.c.o
+[98/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-shell-protocol.c.o
+[99/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/subcompositor.cpp.o
+[100/117] Building C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-decoration-unstable-v1-protocol.c.o
+[101/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgforeign.cpp.o
+[102/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmawindowmodel.cpp.o
+[103/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/shadow.cpp.o
+[104/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/surface.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface.cpp:9:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface_p.h:18:30: warning: ‘KWayland::Client::Surface::Private’ has a field ‘KWayland::Client::WaylandPointer<wl_surface, wl_surface_destroy> KWayland::Client::Surface::Private::surface’ whose type has internal linkage [-Wsubobject-linkage]
+   18 | class Q_DECL_HIDDEN Surface::Private
+      |                              ^~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface.cpp:86:101: warning: missing initializer for member ‘wl_surface_listener::preferred_buffer_scale’ [-Wmissing-field-initializers]
+   86 | const struct wl_surface_listener Surface::Private::s_surfaceListener = {enterCallback, leaveCallback};
+      |                                                                                                     ^
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface.cpp:86:101: warning: missing initializer for member ‘wl_surface_listener::preferred_buffer_transform’ [-Wmissing-field-initializers]
+[105/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/shell.cpp.o
+[106/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell.cpp.o
+[107/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmawindowmanagement.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/plasmawindowmanagement.cpp: In static member function ‘static void KWayland::Client::PlasmaWindowManagement::Private::stackingOrderCallback(void*, org_kde_plasma_window_management*, wl_array*)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/plasmawindowmanagement.cpp:298:67: warning: unused parameter ‘data’ [-Wunused-parameter]
+  298 | void PlasmaWindowManagement::Private::stackingOrderCallback(void *data, org_kde_plasma_window_management *interface, wl_array *ids)
+      |                                                             ~~~~~~^~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/plasmawindowmanagement.cpp:298:107: warning: unused parameter ‘interface’ [-Wunused-parameter]
+  298 | void PlasmaWindowManagement::Private::stackingOrderCallback(void *data, org_kde_plasma_window_management *interface, wl_array *ids)
+      |                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/plasmawindowmanagement.cpp:298:128: warning: unused parameter ‘ids’ [-Wunused-parameter]
+  298 | void PlasmaWindowManagement::Private::stackingOrderCallback(void *data, org_kde_plasma_window_management *interface, wl_array *ids)
+      |                                                                                                                      ~~~~~~~~~~^~~
+[108/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgforeign_v2.cpp.o
+[109/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_stable.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:11:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_p.h:64:28: warning: ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)’ was hidden [-Woverloaded-virtual=]
    64 |     virtual XdgShellPopup *getXdgPopup(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent)
       |                            ^~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:28:20: note:   by ‘KWayland::Client::XdgShellStable::Private::getXdgPopup’
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:28:20: note:   by ‘KWayland::Client::XdgShellStable::Private::getXdgPopup’
    28 |     XdgShellPopup *getXdgPopup(Surface *surface, XdgShellPopup *parentSurface, const XdgPositioner &positioner, QObject *parent) override;
       |                    ^~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:288:118: warning: missing initializer for member ‘xdg_toplevel_listener::configure_bounds’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:288:118: warning: missing initializer for member ‘xdg_toplevel_listener::configure_bounds’ [-Wmissing-field-initializers]
   288 | const struct xdg_toplevel_listener XdgTopLevelStable::Private::s_toplevelListener = {configureCallback, closeCallback};
       |                                                                                                                      ^
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:288:118: warning: missing initializer for member ‘xdg_toplevel_listener::wm_capabilities’ [-Wmissing-field-initializers]
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:527:118: warning: missing initializer for member ‘xdg_popup_listener::repositioned’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:288:118: warning: missing initializer for member ‘xdg_toplevel_listener::wm_capabilities’ [-Wmissing-field-initializers]
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_stable.cpp:527:118: warning: missing initializer for member ‘xdg_popup_listener::repositioned’ [-Wmissing-field-initializers]
   527 | const struct xdg_popup_listener XdgShellPopupStable::Private::s_popupListener = {configureCallback, popupDoneCallback};
       |                                                                                                                      ^
-[111/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_v6.cpp.o
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v6.cpp:11:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_p.h:64:28: warning: ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)’ was hidden [-Woverloaded-virtual=]
+[110/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_v6.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v6.cpp:11:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_p.h:64:28: warning: ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)’ was hidden [-Woverloaded-virtual=]
    64 |     virtual XdgShellPopup *getXdgPopup(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent)
       |                            ^~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v6.cpp:30:20: note:   by ‘KWayland::Client::XdgShellUnstableV6::Private::getXdgPopup’
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v6.cpp:30:20: note:   by ‘KWayland::Client::XdgShellUnstableV6::Private::getXdgPopup’
    30 |     XdgShellPopup *getXdgPopup(Surface *surface, XdgShellPopup *parentSurface, const XdgPositioner &positioner, QObject *parent) override;
+      |                    ^~~~~~~~~~~
+[111/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_v5.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v5.cpp:12:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_p.h:86:28: warning: ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::XdgShellPopup*, const KWayland::Client::XdgPositioner&, QObject*)’ was hidden [-Woverloaded-virtual=]
+   86 |     virtual XdgShellPopup *getXdgPopup(Surface *surface, XdgShellPopup *parentSurface, const XdgPositioner &positioner, QObject *parent)
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v5.cpp:26:20: note:   by ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShellUnstableV5::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)’
+   26 |     XdgShellPopup *getXdgPopup(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent) override;
+      |                    ^~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_p.h:76:28: warning: ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::XdgShellSurface*, const KWayland::Client::XdgPositioner&, QObject*)’ was hidden [-Woverloaded-virtual=]
+   76 |     virtual XdgShellPopup *getXdgPopup(Surface *surface, XdgShellSurface *parentSurface, const XdgPositioner &positioner, QObject *parent)
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/xdgshell_v5.cpp:26:20: note:   by ‘virtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShellUnstableV5::Private::getXdgPopup(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)’
+   26 |     XdgShellPopup *getXdgPopup(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent) override;
       |                    ^~~~~~~~~~~
 [112/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgoutput.cpp.o
 [113/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/logging.cpp.o
-[114/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/surface_p.cpp.o
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface_p.cpp:7:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface_p.h:18:30: warning: ‘KWayland::Client::Surface::Private’ has a field ‘KWayland::Client::WaylandPointer<wl_surface, wl_surface_destroy> KWayland::Client::Surface::Private::surface’ whose type has internal linkage [-Wsubobject-linkage]
+[114/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/registry.cpp.o
+[115/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/surface_p.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface_p.cpp:7:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/work/kwayland-6.3.5/src/client/surface_p.h:18:30: warning: ‘KWayland::Client::Surface::Private’ has a field ‘KWayland::Client::WaylandPointer<wl_surface, wl_surface_destroy> KWayland::Client::Surface::Private::surface’ whose type has internal linkage [-Wsubobject-linkage]
    18 | class Q_DECL_HIDDEN Surface::Private
       |                              ^~~~~~~
-[115/117] Building CXX object src/client/CMakeFiles/KWaylandClient.dir/registry.cpp.o
 [116/117] Linking CXX shared library bin/libKWaylandClient.so.6.3.5
 [117/117] Creating library symlink bin/libKWaylandClient.so.6 bin/libKWaylandClient.so
 -- Install configuration: "RelWithDebInfo"
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/libKWaylandClient.so.6.3.5
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/libKWaylandClient.so.6
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/libKWaylandClient.so
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/kwaylandclient_export.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/appmenu.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/blur.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/buffer.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/compositor.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/connection_thread.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/contrast.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/event_queue.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/datadevice.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/datadevicemanager.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/dataoffer.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/datasource.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/dpms.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/fakeinput.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/idleinhibit.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/keyboard.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/output.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/pointer.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/pointerconstraints.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/plasmashell.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/plasmavirtualdesktop.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/plasmawindowmanagement.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/plasmawindowmodel.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/pointergestures.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/region.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/registry.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/relativepointer.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/seat.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/shadow.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/shell.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/shm_pool.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/slide.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/subcompositor.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/subsurface.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/surface.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/touch.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/textinput.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/xdgdecoration.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/xdgshell.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/xdgforeign.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/xdgoutput.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/share/qlogging-categories6/kwayland.categories
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/share/qlogging-categories6/kwayland.renamecategories
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/doc/qt6-6.8.3_20250319_bab1fecd/KWayland.qch
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/doc/qt6-6.8.3_20250319_bab1fecd/KWayland.tags
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandQchTargets.cmake
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandConfig.cmake
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandConfigVersion.cmake
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandTargets.cmake
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandTargets-relwithdebinfo.cmake
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/kwayland_version.h
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/pkgconfig/KWaylandClient.pc
-The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/libKWaylandClient.so.6.3.5
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/libKWaylandClient.so.6
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/libKWaylandClient.so
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/kwaylandclient_export.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/appmenu.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/blur.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/buffer.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/compositor.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/connection_thread.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/contrast.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/event_queue.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/datadevice.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/datadevicemanager.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/dataoffer.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/datasource.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/dpms.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/fakeinput.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/idleinhibit.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/keyboard.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/output.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/pointer.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/pointerconstraints.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/plasmashell.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/plasmavirtualdesktop.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/plasmawindowmanagement.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/plasmawindowmodel.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/pointergestures.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/region.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/registry.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/relativepointer.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/seat.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/shadow.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/shell.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/shm_pool.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/slide.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/subcompositor.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/subsurface.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/surface.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/touch.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/textinput.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/xdgdecoration.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/xdgshell.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/xdgforeign.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/KWayland/Client/xdgoutput.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/share/qlogging-categories6/kwayland.categories
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/share/qlogging-categories6/kwayland.renamecategories
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/doc/qt6-6.8.3_20250319_bab1fecd/KWayland.qch
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/doc/qt6-6.8.3_20250319_bab1fecd/KWayland.tags
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandQchTargets.cmake
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandConfig.cmake
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandConfigVersion.cmake
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandTargets.cmake
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/cmake/KWayland/KWaylandTargets-relwithdebinfo.cmake
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/include/KWayland/kwayland_version.h
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/package-kwayland/usr/lib64/pkgconfig/KWaylandClient.pc
+[32mThe main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..[0m
 cp: cannot stat 'AUTHORS': No such file or directory
 cp: cannot stat 'ChangeLog*': No such file or directory
 cp: cannot stat 'COPYING': No such file or directory
@@ -532,12 +532,12 @@ cp: cannot stat 'LICENSE': No such file or directory
 cp: cannot stat 'MAINTAINERS': No such file or directory
 cp: cannot stat 'NEWS': No such file or directory
 cp: cannot stat 'DOCS': No such file or directory
-grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kwayland/kwayland.info: No such file or directory
+grep: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kwayland/kwayland.info: No such file or directory
 doxygen
 extra-cmake-modules
 plasma-wayland-protocols
-Packaging compiled for slackware installation...
-MAKEPKG_FLAGS is empty or unset, using default
+[32mPackaging compiled for slackware installation...[0m
+[32mMAKEPKG_FLAGS is empty or unset, using default[0m
 
 Slackware package maker, version 3.14159265.
 
@@ -668,14 +668,14 @@ kwayland-6.3.5-x86_64-1_rtz.tlz.so.file
 kwayland-6.3.5-x86_64-1_rtz.tlz.txt
 kwayland.dep
 makepkg-kwayland.log
-kwayland build finished. Procced to installation...
+[32mkwayland build finished. Procced to installation...[0m
 
 +===================================================================================================+
 | Upgrading kwayland-6.3.5-x86_64-1_rtz package using /tmp/kwayland/kwayland-6.3.5-x86_64-1_rtz.tlz |
 +===================================================================================================+
 
 Pre-installing package kwayland-6.3.5-x86_64-1_rtz...
-Removing package: kwayland-6.3.5-x86_64-1_rtz-upgraded-2025-05-10,22:35:35
+Removing package: kwayland-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,14:20:00
 Installing package kwayland-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kwayland (Server library)
@@ -705,6 +705,5 @@ Font directories:
 /usr/bin/fc-cache: succeeded
 Package kwayland-6.3.5-x86_64-1_rtz.tlz installed.
 Package kwayland-6.3.5-x86_64-1_rtz upgraded with new package /tmp/kwayland/kwayland-6.3.5-x86_64-1_rtz.tlz.
-Cleaning environmet: Removing source code, and work-space...
+[32mCleaning environmet: Removing source code, and work-space...[0m
 rm: cannot remove 'kwayland-6.3.5.tar.xz': No such file or directory
-Build process completed in 0 minutes and 30 seconds.

@@ -1,4 +1,4 @@
-Starting build process...
+[32mStarting build process...[0m
 Detected architecture: x86_64
 Required dependencies: extra-cmake-modules	kcompletion	kconfig	kcoreaddons	kdbusaddons	ki18n	kitemviews	kwidgetsaddons	kxmlgui
 extra-cmake-modules is already installed!
@@ -12,23 +12,23 @@ kwidgetsaddons is already installed!
 kxmlgui is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-11 00:10:53--  https://download.kde.org/stable/release-service/25.04.1/src/kdebugsettings-25.04.1.tar.xz
+--2025-05-21 15:49:22--  https://download.kde.org/stable/release-service/25.04.1/src/kdebugsettings-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kdebugsettings-25.04.1.tar.xz [following]
---2025-05-11 00:10:53--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kdebugsettings-25.04.1.tar.xz
+--2025-05-21 15:49:22--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kdebugsettings-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 121440 (119K) [application/octet-stream]
 Saving to: ‘kdebugsettings-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 42% 1.37M 0s
-    50K .......... .......... .......... .......... .......... 84% 1.44M 0s
-   100K .......... ........                                   100%  255M=0.07s
+     0K .......... .......... .......... .......... .......... 42% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 84% 1.45M 0s
+   100K .......... ........                                   100%  321M=0.07s
 
-2025-05-11 00:10:53 (1.67 MB/s) - ‘kdebugsettings-25.04.1.tar.xz’ saved [121440/121440]
+2025-05-21 15:49:23 (1.66 MB/s) - ‘kdebugsettings-25.04.1.tar.xz’ saved [121440/121440]
 
 Found file: kdebugsettings-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -340,7 +340,7 @@ kdebugsettings-25.04.1/src/apps/
 kdebugsettings-25.04.1/src/apps/main.cpp
 kdebugsettings-25.04.1/src/apps/CMakeLists.txt
 kdebugsettings-25.04.1/.gitignore
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
 -- The C compiler identification is GNU 14.2.0
@@ -436,12 +436,16 @@ Call Stack (most recent call first):
 
 -- Configuring done (1.3s)
 -- Generating done (0.1s)
--- Build files have been written to: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/build
+-- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/build
 [1/144] Generating ts...
 [2/144] Generating mo...
 [3/144] Automatic MOC for target libkdebugsettingscore
 [4/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/libkdebugsettingscore_autogen/mocs_compilation.cpp.o
-[5/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/kdeapplicationloggingcategoryproxymodel.cpp.o
+[5/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/customloggingcategoryproxymodel.cpp.o
+[6/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/categorytypeproxymodel.cpp.o
+[7/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/categorytypemodel.cpp.o
+[8/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/kdeloggingcategory.cpp.o
+[9/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/kdeapplicationloggingcategoryproxymodel.cpp.o
 In file included from /usr/include/c++/14.2.0/bits/stl_pair.h:61,
                  from /usr/include/c++/14.2.0/utility:69,
                  from /usr/include/qt6/QtCore/qglobal.h:15,
@@ -450,270 +454,266 @@ In file included from /usr/include/c++/14.2.0/bits/stl_pair.h:61,
                  from /usr/include/qt6/QtCore/qabstractproxymodel.h:7,
                  from /usr/include/qt6/QtCore/qsortfilterproxymodel.h:7,
                  from /usr/include/qt6/QtCore/QSortFilterProxyModel:1,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.h:8,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:7:
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.h:8,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:7:
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:79:28,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 4 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 32 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 32 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:79:28,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 4 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 32 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 32 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:80:29,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 5 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 40 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 40 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:80:29,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 5 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 40 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 40 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = QTypedArrayData<char16_t>*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = QTypedArrayData<char16_t>*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:78:26,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 6 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 48 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 48 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = QTypedArrayData<char16_t>*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = QTypedArrayData<char16_t>*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:78:26,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 6 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 48 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 48 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:79:28,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 7 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 56 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 56 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:79:28,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 7 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 56 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 56 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:80:29,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 8 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 64 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 64 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:80:29,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 8 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 64 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: at offset 64 into object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategorymodel.h:9,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:8:
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategorymodel.h:9,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:8:
 In constructor ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
    14 | struct LIBKDEBUGSETTINGSCORE_EXPORT LoggingCategory {
       |                                     ^~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: object ‘<anonymous>’ of size 32
-   23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
-      |                           ~~~~~~~~~~~~~~~~^~
-In constructor ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’,
-    inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
-    inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
-   14 | struct LIBKDEBUGSETTINGSCORE_EXPORT LoggingCategory {
-      |                                     ^~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
 In constructor ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
-    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
    14 | struct LIBKDEBUGSETTINGSCORE_EXPORT LoggingCategory {
       |                                     ^~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: object ‘<anonymous>’ of size 32
    23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
       |                           ~~~~~~~~~~~~~~~~^~
-[6/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/loggingmanager.cpp.o
-[7/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/renamecategory.cpp.o
-[8/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/kdebugsettingscore_debug.cpp.o
-[9/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/kdeapplicationloggingcategorymodel.cpp.o
-[10/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/kdeloggingcategory.cpp.o
-[11/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/categorytypemodel.cpp.o
-[12/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/customloggingcategorymodel.cpp.o
-[13/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/customloggingcategoryproxymodel.cpp.o
-[14/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/categorytypeproxymodel.cpp.o
-[15/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/loggingcategory.cpp.o
+In constructor ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’,
+    inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
+    inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:69,
+    inlined from ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:17:6:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
+   14 | struct LIBKDEBUGSETTINGSCORE_EXPORT LoggingCategory {
+      |                                     ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp: In member function ‘virtual bool KDEApplicationLoggingCategoryProxyModel::filterAcceptsRow(int, const QModelIndex&) const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/model/kdeapplicationloggingcategoryproxymodel.cpp:23:43: note: object ‘<anonymous>’ of size 32
+   23 |     const auto category = sourceIndex.data().value<LoggingCategory>();
+      |                           ~~~~~~~~~~~~~~~~^~
+[10/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/loggingcategory.cpp.o
+[11/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/renamecategory.cpp.o
+[12/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/jobs/saverulesjob.cpp.o
+[13/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/kdeapplicationloggingcategorymodel.cpp.o
+[14/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/kdebugsettingscore_debug.cpp.o
+[15/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/loggingmanager.cpp.o
 [16/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/jobs/changedebugmodejob.cpp.o
-[17/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/jobs/saverulesjob.cpp.o
-[18/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/kdebugsettingsloadingcategories.cpp.o
-[19/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/jobs/loadcategoriesjob.cpp.o
+[17/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/model/customloggingcategorymodel.cpp.o
+[18/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/jobs/loadcategoriesjob.cpp.o
+[19/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/kdebugsettingsloadingcategories.cpp.o
 [20/144] Building CXX object src/core/CMakeFiles/libkdebugsettingscore.dir/kdebugsettingsutil.cpp.o
 [21/144] Linking CXX shared library bin/libkdebugsettingscore.so.25.04.1
 [22/144] Creating library symlink bin/libkdebugsettingscore.so.6 bin/libkdebugsettingscore.so
-[23/144] Automatic MOC for target changedebugmodejobtest
+[23/144] Automatic MOC for target saverulesjobtest
 [24/144] Automatic MOC for target loadcategoriesjobtest
-[25/144] Automatic MOC for target saverulesjobtest
+[25/144] Automatic MOC for target renamecategorytest
 [26/144] Automatic MOC for target kdebugsettingutiltest
-[27/144] Building CXX object src/core/autotests/CMakeFiles/changedebugmodejobtest.dir/changedebugmodejobtest_autogen/mocs_compilation.cpp.o
-[28/144] Automatic MOC for target loggingcategorytest
-[29/144] Building CXX object src/core/autotests/CMakeFiles/kdebugsettingutiltest.dir/kdebugsettingutiltest_autogen/mocs_compilation.cpp.o
+[27/144] Automatic MOC for target categorytypemodeltest
+[28/144] Building CXX object src/core/autotests/CMakeFiles/saverulesjobtest.dir/saverulesjobtest_autogen/mocs_compilation.cpp.o
+[29/144] Automatic MOC for target loggingcategorytest
 [30/144] Building CXX object src/core/autotests/CMakeFiles/loadcategoriesjobtest.dir/loadcategoriesjobtest_autogen/mocs_compilation.cpp.o
-[31/144] Building CXX object src/core/autotests/CMakeFiles/saverulesjobtest.dir/saverulesjobtest_autogen/mocs_compilation.cpp.o
-[32/144] Building CXX object src/core/autotests/CMakeFiles/loggingcategorytest.dir/loggingcategorytest_autogen/mocs_compilation.cpp.o
-[33/144] Automatic MOC for target renamecategorytest
-[34/144] Building CXX object src/core/autotests/CMakeFiles/renamecategorytest.dir/renamecategorytest_autogen/mocs_compilation.cpp.o
-[35/144] Automatic MOC for target categorytypemodeltest
-[36/144] Building CXX object src/core/autotests/CMakeFiles/categorytypemodeltest.dir/categorytypemodeltest_autogen/mocs_compilation.cpp.o
+[31/144] Building CXX object src/core/autotests/CMakeFiles/kdebugsettingutiltest.dir/kdebugsettingutiltest_autogen/mocs_compilation.cpp.o
+[32/144] Building CXX object src/core/autotests/CMakeFiles/renamecategorytest.dir/renamecategorytest_autogen/mocs_compilation.cpp.o
+[33/144] Building CXX object src/core/autotests/CMakeFiles/categorytypemodeltest.dir/categorytypemodeltest_autogen/mocs_compilation.cpp.o
+[34/144] Building CXX object src/core/autotests/CMakeFiles/loggingcategorytest.dir/loggingcategorytest_autogen/mocs_compilation.cpp.o
+[35/144] Automatic MOC for target changedebugmodejobtest
+[36/144] Building CXX object src/core/autotests/CMakeFiles/changedebugmodejobtest.dir/changedebugmodejobtest_autogen/mocs_compilation.cpp.o
 [37/144] Automatic MOC for target libkdebugsettings
 [38/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/libkdebugsettings_autogen/mocs_compilation.cpp.o
-[39/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/categorywarning.cpp.o
-[40/144] Building CXX object src/core/autotests/CMakeFiles/changedebugmodejobtest.dir/changedebugmodejobtest.cpp.o
-[41/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdebugsettings_debug.cpp.o
-[42/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/groupmanagementdialog.cpp.o
-[43/144] Building CXX object src/core/autotests/CMakeFiles/categorytypemodeltest.dir/categorytypemodeltest.cpp.o
-[44/144] Building CXX object src/core/autotests/CMakeFiles/renamecategorytest.dir/renamecategorytest.cpp.o
-[45/144] Linking CXX executable bin/changedebugmodejobtest
-[46/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/savetoolbutton.cpp.o
-[47/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/environmentplaintextedit.cpp.o
-[48/144] Linking CXX executable bin/categorytypemodeltest
-[49/144] Linking CXX executable bin/renamecategorytest
-[50/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/configurecustomsettingdialog.cpp.o
-[51/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/loadtoolbutton.cpp.o
-[52/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/categorytypecombobox.cpp.o
-[53/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/environmentsettingsrulespage.cpp.o
-[54/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/loadgroupmenu.cpp.o
-[55/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/configurecustomsettingwidget.cpp.o
-[56/144] Building CXX object src/core/autotests/CMakeFiles/loggingcategorytest.dir/loggingcategorytest.cpp.o
-[57/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdeapplicationdebugsettingpage.cpp.o
-[58/144] Linking CXX executable bin/loggingcategorytest
-[59/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/customdebugsettingspage.cpp.o
-[60/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/groupmanagementwidget.cpp.o
-[61/144] Building CXX object src/core/autotests/CMakeFiles/saverulesjobtest.dir/saverulesjobtest.cpp.o
-[62/144] Linking CXX executable bin/saverulesjobtest
-[63/144] Building CXX object src/core/autotests/CMakeFiles/kdebugsettingutiltest.dir/kdebugsettingutiltest.cpp.o
-[64/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdebugsettingsdialog.cpp.o
-[65/144] Linking CXX executable bin/kdebugsettingutiltest
-[66/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdeapplicationtreeview.cpp.o
-[67/144] Building CXX object src/core/autotests/CMakeFiles/loadcategoriesjobtest.dir/loadcategoriesjobtest.cpp.o
-[68/144] Linking CXX executable bin/loadcategoriesjobtest
-[69/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdeapplicationlistviewdelegate.cpp.o
+[39/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/savetoolbutton.cpp.o
+[40/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdebugsettings_debug.cpp.o
+[41/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/categorytypecombobox.cpp.o
+[42/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/categorywarning.cpp.o
+[43/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/configurecustomsettingdialog.cpp.o
+[44/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/loadtoolbutton.cpp.o
+[45/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/environmentsettingsrulespage.cpp.o
+[46/144] Building CXX object src/core/autotests/CMakeFiles/renamecategorytest.dir/renamecategorytest.cpp.o
+[47/144] Linking CXX executable bin/renamecategorytest
+[48/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdeapplicationdebugsettingpage.cpp.o
+[49/144] Building CXX object src/core/autotests/CMakeFiles/changedebugmodejobtest.dir/changedebugmodejobtest.cpp.o
+[50/144] Building CXX object src/core/autotests/CMakeFiles/categorytypemodeltest.dir/categorytypemodeltest.cpp.o
+[51/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/configurecustomsettingwidget.cpp.o
+[52/144] Linking CXX executable bin/changedebugmodejobtest
+[53/144] Linking CXX executable bin/categorytypemodeltest
+[54/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/groupmanagementdialog.cpp.o
+[55/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/environmentplaintextedit.cpp.o
+[56/144] Building CXX object src/core/autotests/CMakeFiles/saverulesjobtest.dir/saverulesjobtest.cpp.o
+[57/144] Linking CXX executable bin/saverulesjobtest
+[58/144] Building CXX object src/core/autotests/CMakeFiles/loggingcategorytest.dir/loggingcategorytest.cpp.o
+[59/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/loadgroupmenu.cpp.o
+[60/144] Linking CXX executable bin/loggingcategorytest
+[61/144] Building CXX object src/core/autotests/CMakeFiles/kdebugsettingutiltest.dir/kdebugsettingutiltest.cpp.o
+[62/144] Linking CXX executable bin/kdebugsettingutiltest
+[63/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/customdebugsettingspage.cpp.o
+[64/144] Building CXX object src/core/autotests/CMakeFiles/loadcategoriesjobtest.dir/loadcategoriesjobtest.cpp.o
+[65/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdebugsettingsdialog.cpp.o
+[66/144] Linking CXX executable bin/loadcategoriesjobtest
+[67/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/groupmanagementwidget.cpp.o
+[68/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdeapplicationlistviewdelegate.cpp.o
+[69/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/kdeapplicationtreeview.cpp.o
 [70/144] Building CXX object src/widgets/CMakeFiles/libkdebugsettings.dir/customdebuglistview.cpp.o
 In file included from /usr/include/c++/14.2.0/bits/stl_pair.h:61,
                  from /usr/include/c++/14.2.0/utility:69,
@@ -722,417 +722,417 @@ In file included from /usr/include/c++/14.2.0/bits/stl_pair.h:61,
                  from /usr/include/qt6/QtWidgets/qtwidgetsglobal.h:7,
                  from /usr/include/qt6/QtWidgets/qlistview.h:7,
                  from /usr/include/qt6/QtWidgets/QListView:1,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.h:10,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:8:
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.h:10,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:8:
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:79:28,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 4 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 32 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 32 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:79:28,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 4 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 32 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 32 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:80:29,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 5 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 40 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 40 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:80:29,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 5 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 40 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 40 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = QTypedArrayData<char16_t>*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = QTypedArrayData<char16_t>*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:78:26,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 6 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 48 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 48 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = QTypedArrayData<char16_t>*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = QTypedArrayData<char16_t>*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:78:26,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 6 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 48 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 48 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:79:28,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 7 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 56 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 56 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = char16_t*; _Up = std::nullptr_t]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:79:28,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 7 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 56 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 56 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:80:29,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:176:11: warning: array subscript 8 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   176 |       _Tp __old_val = std::move(__obj);
       |           ^~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 64 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 64 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In function ‘_Tp std::__exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’,
     inlined from ‘_Tp std::exchange(_Tp&, _Up&&) [with _Tp = long long int; _Up = int]’ at /usr/include/c++/14.2.0/utility:110:29,
     inlined from ‘QArrayDataPointer<T>::QArrayDataPointer(QArrayDataPointer<T>&&) [with T = char16_t]’ at /usr/include/qt6/QtCore/qarraydatapointer.h:80:29,
     inlined from ‘QString::QString(QString&&)’ at /usr/include/qt6/QtCore/qstring.h:182:12,
-    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
+    inlined from ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
 /usr/include/c++/14.2.0/bits/move.h:177:13: warning: array subscript 8 is outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
   177 |       __obj = std::forward<_Up>(__new_val);
       |       ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 64 into object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: at offset 64 into object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/kdebugsettingsutil.h:12,
-                 from /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:13:
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/kdebugsettingsutil.h:12,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:13:
 In constructor ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
    14 | struct LIBKDEBUGSETTINGSCORE_EXPORT LoggingCategory {
       |                                     ^~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: object ‘<anonymous>’ of size 32
-  100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
-      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In constructor ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’,
-    inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
-    inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
-   14 | struct LIBKDEBUGSETTINGSCORE_EXPORT LoggingCategory {
-      |                                     ^~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In constructor ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’,
     inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
     inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
-    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
    14 | struct LIBKDEBUGSETTINGSCORE_EXPORT LoggingCategory {
       |                                     ^~~~~~~~~~~~~~~
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: object ‘<anonymous>’ of size 32
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: object ‘<anonymous>’ of size 32
+  100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In constructor ‘LoggingCategory::LoggingCategory(LoggingCategory&&)’,
+    inlined from ‘T qvariant_cast(QVariant&&) [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:774:67,
+    inlined from ‘T QVariant::value() && [with T = LoggingCategory]’ at /usr/include/qt6/QtCore/qvariant.h:529:47,
+    inlined from ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’ at /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:144:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/core/loggingcategory.h:14:37: warning: array subscript ‘LoggingCategory[0]’ is partly outside array bounds of ‘QVariant [1]’ [-Warray-bounds=]
+   14 | struct LIBKDEBUGSETTINGSCORE_EXPORT LoggingCategory {
+      |                                     ^~~~~~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp: In member function ‘void CustomDebugListView::slotRemoveRules(const QModelIndexList&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/work/kdebugsettings-25.04.1/src/widgets/customdebuglistview.cpp:100:78: note: object ‘<anonymous>’ of size 32
   100 |         const auto cat = mCustomLoggingCategoryModel->index(index.row()).data(CustomLoggingCategoryModel::CategoryRole).value<LoggingCategory>();
       |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [71/144] Linking CXX shared library bin/libkdebugsettings.so.25.04.1
 [72/144] Creating library symlink bin/libkdebugsettings.so.6 bin/libkdebugsettings.so
 [73/144] Automatic MOC for target kdebugsettings
 [74/144] Building CXX object src/apps/CMakeFiles/kdebugsettings.dir/kdebugsettings_autogen/mocs_compilation.cpp.o
-[75/144] Automatic MOC for target customdebuglistviewgui
-[76/144] Automatic MOC for target loadtoolbuttontest
-[77/144] Building CXX object src/widgets/autotests/CMakeFiles/loadtoolbuttontest.dir/loadtoolbuttontest_autogen/mocs_compilation.cpp.o
-[78/144] Building CXX object src/widgets/tests/CMakeFiles/customdebuglistviewgui.dir/customdebuglistviewgui_autogen/mocs_compilation.cpp.o
-[79/144] Automatic MOC for target savetoolbuttontest
-[80/144] Automatic MOC for target kdeapplicationtreeviewgui
-[81/144] Automatic MOC for target kdeapplicationdebugsettingpagetest
-[82/144] Automatic MOC for target groupmanagementdialogtest
-[83/144] Building CXX object src/widgets/autotests/CMakeFiles/savetoolbuttontest.dir/savetoolbuttontest_autogen/mocs_compilation.cpp.o
-[84/144] Automatic MOC for target kdeapplicationtreeviewtest
-[85/144] Automatic MOC for target environmentsettingsrulespagetest
-[86/144] Automatic MOC for target kdebugsettingsdialogtest
-[87/144] Building CXX object src/widgets/tests/CMakeFiles/kdeapplicationtreeviewgui.dir/kdeapplicationtreeviewgui_autogen/mocs_compilation.cpp.o
-[88/144] Automatic MOC for target categorywarningtest
-[89/144] Automatic MOC for target groupmanagementwidgettest
-[90/144] Automatic MOC for target customdebuglistviewtest
-[91/144] Building CXX object src/widgets/autotests/CMakeFiles/groupmanagementdialogtest.dir/groupmanagementdialogtest_autogen/mocs_compilation.cpp.o
-[92/144] Automatic MOC for target configurecustomsettingdialogtest
-[93/144] Automatic MOC for target customdebugsettingspagetest
-[94/144] Building CXX object src/widgets/autotests/CMakeFiles/kdeapplicationdebugsettingpagetest.dir/kdeapplicationdebugsettingpagetest_autogen/mocs_compilation.cpp.o
-[95/144] Automatic MOC for target categorytypecomboboxtest
-[96/144] Building CXX object src/widgets/autotests/CMakeFiles/environmentsettingsrulespagetest.dir/environmentsettingsrulespagetest_autogen/mocs_compilation.cpp.o
-[97/144] Building CXX object src/widgets/autotests/CMakeFiles/kdebugsettingsdialogtest.dir/kdebugsettingsdialogtest_autogen/mocs_compilation.cpp.o
-[98/144] Building CXX object src/widgets/autotests/CMakeFiles/kdeapplicationtreeviewtest.dir/kdeapplicationtreeviewtest_autogen/mocs_compilation.cpp.o
-[99/144] Automatic MOC for target loadgroupmenutest
-[100/144] Automatic MOC for target configurecustomsettingwidgettest
+[75/144] Automatic MOC for target environmentsettingsrulespagetest
+[76/144] Building CXX object src/widgets/autotests/CMakeFiles/environmentsettingsrulespagetest.dir/environmentsettingsrulespagetest_autogen/mocs_compilation.cpp.o
+[77/144] Automatic MOC for target kdeapplicationtreeviewtest
+[78/144] Building CXX object src/widgets/autotests/CMakeFiles/kdeapplicationtreeviewtest.dir/kdeapplicationtreeviewtest_autogen/mocs_compilation.cpp.o
+[79/144] Automatic MOC for target groupmanagementdialogtest
+[80/144] Building CXX object src/widgets/autotests/CMakeFiles/groupmanagementdialogtest.dir/groupmanagementdialogtest_autogen/mocs_compilation.cpp.o
+[81/144] Automatic MOC for target categorytypecomboboxtest
+[82/144] Automatic MOC for target configurecustomsettingwidgettest
+[83/144] Building CXX object src/widgets/autotests/CMakeFiles/categorytypecomboboxtest.dir/categorytypecomboboxtest_autogen/mocs_compilation.cpp.o
+[84/144] Building CXX object src/widgets/autotests/CMakeFiles/configurecustomsettingwidgettest.dir/configurecustomsettingwidgettest_autogen/mocs_compilation.cpp.o
+[85/144] Automatic MOC for target loadtoolbuttontest
+[86/144] Automatic MOC for target customdebuglistviewtest
+[87/144] Automatic MOC for target loadgroupmenutest
+[88/144] Automatic MOC for target groupmanagementwidgettest
+[89/144] Automatic MOC for target customdebugsettingspagetest
+[90/144] Building CXX object src/widgets/autotests/CMakeFiles/loadtoolbuttontest.dir/loadtoolbuttontest_autogen/mocs_compilation.cpp.o
+[91/144] Automatic MOC for target categorywarningtest
+[92/144] Building CXX object src/widgets/autotests/CMakeFiles/customdebuglistviewtest.dir/customdebuglistviewtest_autogen/mocs_compilation.cpp.o
+[93/144] Automatic MOC for target savetoolbuttontest
+[94/144] Automatic MOC for target kdeapplicationdebugsettingpagetest
+[95/144] Building CXX object src/widgets/autotests/CMakeFiles/loadgroupmenutest.dir/loadgroupmenutest_autogen/mocs_compilation.cpp.o
+[96/144] Building CXX object src/widgets/autotests/CMakeFiles/groupmanagementwidgettest.dir/groupmanagementwidgettest_autogen/mocs_compilation.cpp.o
+[97/144] Building CXX object src/widgets/autotests/CMakeFiles/customdebugsettingspagetest.dir/customdebugsettingspagetest_autogen/mocs_compilation.cpp.o
+[98/144] Automatic MOC for target configurecustomsettingdialogtest
+[99/144] Automatic MOC for target kdebugsettingsdialogtest
+[100/144] Building CXX object src/widgets/autotests/CMakeFiles/savetoolbuttontest.dir/savetoolbuttontest_autogen/mocs_compilation.cpp.o
 [101/144] Building CXX object src/widgets/autotests/CMakeFiles/categorywarningtest.dir/categorywarningtest_autogen/mocs_compilation.cpp.o
-[102/144] Building CXX object src/widgets/autotests/CMakeFiles/customdebugsettingspagetest.dir/customdebugsettingspagetest_autogen/mocs_compilation.cpp.o
-[103/144] Building CXX object src/widgets/autotests/CMakeFiles/groupmanagementwidgettest.dir/groupmanagementwidgettest_autogen/mocs_compilation.cpp.o
-[104/144] Building CXX object src/widgets/autotests/CMakeFiles/configurecustomsettingdialogtest.dir/configurecustomsettingdialogtest_autogen/mocs_compilation.cpp.o
-[105/144] Building CXX object src/widgets/autotests/CMakeFiles/categorytypecomboboxtest.dir/categorytypecomboboxtest_autogen/mocs_compilation.cpp.o
-[106/144] Building CXX object src/widgets/autotests/CMakeFiles/loadgroupmenutest.dir/loadgroupmenutest_autogen/mocs_compilation.cpp.o
-[107/144] Building CXX object src/widgets/autotests/CMakeFiles/configurecustomsettingwidgettest.dir/configurecustomsettingwidgettest_autogen/mocs_compilation.cpp.o
-[108/144] Building CXX object src/widgets/autotests/CMakeFiles/customdebuglistviewtest.dir/customdebuglistviewtest_autogen/mocs_compilation.cpp.o
+[102/144] Building CXX object src/widgets/autotests/CMakeFiles/kdeapplicationdebugsettingpagetest.dir/kdeapplicationdebugsettingpagetest_autogen/mocs_compilation.cpp.o
+[103/144] Building CXX object src/widgets/autotests/CMakeFiles/configurecustomsettingdialogtest.dir/configurecustomsettingdialogtest_autogen/mocs_compilation.cpp.o
+[104/144] Automatic MOC for target kdeapplicationtreeviewgui
+[105/144] Building CXX object src/widgets/autotests/CMakeFiles/kdebugsettingsdialogtest.dir/kdebugsettingsdialogtest_autogen/mocs_compilation.cpp.o
+[106/144] Automatic MOC for target customdebuglistviewgui
+[107/144] Building CXX object src/widgets/tests/CMakeFiles/kdeapplicationtreeviewgui.dir/kdeapplicationtreeviewgui_autogen/mocs_compilation.cpp.o
+[108/144] Building CXX object src/widgets/tests/CMakeFiles/customdebuglistviewgui.dir/customdebuglistviewgui_autogen/mocs_compilation.cpp.o
 [109/144] Building CXX object src/apps/CMakeFiles/kdebugsettings.dir/main.cpp.o
-[110/144] Building CXX object src/widgets/tests/CMakeFiles/customdebuglistviewgui.dir/customdebuglistviewgui.cpp.o
-[111/144] Linking CXX executable bin/kdebugsettings
-[112/144] Building CXX object src/widgets/autotests/CMakeFiles/savetoolbuttontest.dir/savetoolbuttontest.cpp.o
-[113/144] Building CXX object src/widgets/autotests/CMakeFiles/loadgroupmenutest.dir/loadgroupmenutest.cpp.o
-[114/144] Building CXX object src/widgets/autotests/CMakeFiles/configurecustomsettingwidgettest.dir/configurecustomsettingwidgettest.cpp.o
-[115/144] Linking CXX executable bin/customdebuglistviewgui
-[116/144] Linking CXX executable bin/savetoolbuttontest
-[117/144] Linking CXX executable bin/loadgroupmenutest
-[118/144] Linking CXX executable bin/configurecustomsettingwidgettest
+[110/144] Building CXX object src/widgets/autotests/CMakeFiles/savetoolbuttontest.dir/savetoolbuttontest.cpp.o
+[111/144] Building CXX object src/widgets/autotests/CMakeFiles/environmentsettingsrulespagetest.dir/environmentsettingsrulespagetest.cpp.o
+[112/144] Linking CXX executable bin/kdebugsettings
+[113/144] Building CXX object src/widgets/tests/CMakeFiles/kdeapplicationtreeviewgui.dir/kdeapplicationtreeviewgui.cpp.o
+[114/144] Linking CXX executable bin/savetoolbuttontest
+[115/144] Linking CXX executable bin/kdeapplicationtreeviewgui
+[116/144] Linking CXX executable bin/environmentsettingsrulespagetest
+[117/144] Building CXX object src/widgets/autotests/CMakeFiles/groupmanagementdialogtest.dir/groupmanagementdialogtest.cpp.o
+[118/144] Building CXX object src/widgets/autotests/CMakeFiles/categorytypecomboboxtest.dir/categorytypecomboboxtest.cpp.o
 [119/144] Building CXX object src/widgets/autotests/CMakeFiles/loadtoolbuttontest.dir/loadtoolbuttontest.cpp.o
-[120/144] Building CXX object src/widgets/tests/CMakeFiles/kdeapplicationtreeviewgui.dir/kdeapplicationtreeviewgui.cpp.o
-[121/144] Building CXX object src/widgets/autotests/CMakeFiles/categorywarningtest.dir/categorywarningtest.cpp.o
-[122/144] Building CXX object src/widgets/autotests/CMakeFiles/categorytypecomboboxtest.dir/categorytypecomboboxtest.cpp.o
-[123/144] Linking CXX executable bin/loadtoolbuttontest
-[124/144] Building CXX object src/widgets/autotests/CMakeFiles/customdebugsettingspagetest.dir/customdebugsettingspagetest.cpp.o
-[125/144] Linking CXX executable bin/kdeapplicationtreeviewgui
-[126/144] Building CXX object src/widgets/autotests/CMakeFiles/groupmanagementwidgettest.dir/groupmanagementwidgettest.cpp.o
-[127/144] Linking CXX executable bin/categorywarningtest
-[128/144] Linking CXX executable bin/categorytypecomboboxtest
-[129/144] Building CXX object src/widgets/autotests/CMakeFiles/groupmanagementdialogtest.dir/groupmanagementdialogtest.cpp.o
-[130/144] Linking CXX executable bin/customdebugsettingspagetest
-[131/144] Building CXX object src/widgets/autotests/CMakeFiles/customdebuglistviewtest.dir/customdebuglistviewtest.cpp.o
-[132/144] Linking CXX executable bin/groupmanagementwidgettest
-[133/144] Linking CXX executable bin/groupmanagementdialogtest
-[134/144] Building CXX object src/widgets/autotests/CMakeFiles/kdeapplicationtreeviewtest.dir/kdeapplicationtreeviewtest.cpp.o
-[135/144] Building CXX object src/widgets/autotests/CMakeFiles/kdebugsettingsdialogtest.dir/kdebugsettingsdialogtest.cpp.o
-[136/144] Building CXX object src/widgets/autotests/CMakeFiles/configurecustomsettingdialogtest.dir/configurecustomsettingdialogtest.cpp.o
-[137/144] Linking CXX executable bin/customdebuglistviewtest
-[138/144] Building CXX object src/widgets/autotests/CMakeFiles/environmentsettingsrulespagetest.dir/environmentsettingsrulespagetest.cpp.o
-[139/144] Linking CXX executable bin/kdeapplicationtreeviewtest
-[140/144] Building CXX object src/widgets/autotests/CMakeFiles/kdeapplicationdebugsettingpagetest.dir/kdeapplicationdebugsettingpagetest.cpp.o
-[141/144] Linking CXX executable bin/kdebugsettingsdialogtest
-[142/144] Linking CXX executable bin/configurecustomsettingdialogtest
-[143/144] Linking CXX executable bin/environmentsettingsrulespagetest
+[120/144] Building CXX object src/widgets/autotests/CMakeFiles/configurecustomsettingdialogtest.dir/configurecustomsettingdialogtest.cpp.o
+[121/144] Linking CXX executable bin/categorytypecomboboxtest
+[122/144] Linking CXX executable bin/groupmanagementdialogtest
+[123/144] Building CXX object src/widgets/autotests/CMakeFiles/loadgroupmenutest.dir/loadgroupmenutest.cpp.o
+[124/144] Linking CXX executable bin/configurecustomsettingdialogtest
+[125/144] Linking CXX executable bin/loadtoolbuttontest
+[126/144] Building CXX object src/widgets/tests/CMakeFiles/customdebuglistviewgui.dir/customdebuglistviewgui.cpp.o
+[127/144] Building CXX object src/widgets/autotests/CMakeFiles/kdebugsettingsdialogtest.dir/kdebugsettingsdialogtest.cpp.o
+[128/144] Building CXX object src/widgets/autotests/CMakeFiles/kdeapplicationtreeviewtest.dir/kdeapplicationtreeviewtest.cpp.o
+[129/144] Building CXX object src/widgets/autotests/CMakeFiles/configurecustomsettingwidgettest.dir/configurecustomsettingwidgettest.cpp.o
+[130/144] Linking CXX executable bin/loadgroupmenutest
+[131/144] Linking CXX executable bin/customdebuglistviewgui
+[132/144] Building CXX object src/widgets/autotests/CMakeFiles/groupmanagementwidgettest.dir/groupmanagementwidgettest.cpp.o
+[133/144] Linking CXX executable bin/kdebugsettingsdialogtest
+[134/144] Linking CXX executable bin/kdeapplicationtreeviewtest
+[135/144] Building CXX object src/widgets/autotests/CMakeFiles/customdebugsettingspagetest.dir/customdebugsettingspagetest.cpp.o
+[136/144] Linking CXX executable bin/configurecustomsettingwidgettest
+[137/144] Linking CXX executable bin/groupmanagementwidgettest
+[138/144] Building CXX object src/widgets/autotests/CMakeFiles/categorywarningtest.dir/categorywarningtest.cpp.o
+[139/144] Building CXX object src/widgets/autotests/CMakeFiles/customdebuglistviewtest.dir/customdebuglistviewtest.cpp.o
+[140/144] Linking CXX executable bin/customdebugsettingspagetest
+[141/144] Building CXX object src/widgets/autotests/CMakeFiles/kdeapplicationdebugsettingpagetest.dir/kdeapplicationdebugsettingpagetest.cpp.o
+[142/144] Linking CXX executable bin/customdebuglistviewtest
+[143/144] Linking CXX executable bin/categorywarningtest
 [144/144] Linking CXX executable bin/kdeapplicationdebugsettingpagetest
 -- Install configuration: "RelWithDebInfo"
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettingscore.so.25.04.1
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettingscore.so.6
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/bin/kdebugsettings
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/bin/kdebugsettings" to ""
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/applications/org.kde.kdebugsettings.desktop
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/metainfo/org.kde.kdebugsettings.appdata.xml
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettings.so.25.04.1
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettings.so.6
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettings.so.25.04.1" to ""
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/qlogging-categories6/kdebugsettings.categories
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/kdebugsettings/groups/Full Debug Ruqola
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/qlogging-categories6/kde.renamecategories
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/da
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/da/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/da/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/cs
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/cs/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/cs/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ja
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ja/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ja/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavian
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavian/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavian/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/de
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/de/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/de/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/el
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/el/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/el/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nn
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nn/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nn/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hi
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hi/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hi/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt_BR
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt_BR/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt_BR/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/lt
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/lt/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/lt/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavianlatin
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sl
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sl/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sl/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ro
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ro/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ro/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@latin
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@latin/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@latin/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/he
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/he/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/he/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_TW
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_TW/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_TW/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pl
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pl/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pl/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/az
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/az/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/az/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/tr
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/tr/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/tr/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fr
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fr/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fr/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ast
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ast/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ast/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ka
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ka/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ka/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/gl
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/gl/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/gl/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ia
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ia/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ia/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hu
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hu/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hu/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eo/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eo/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/uk
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/uk/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/uk/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/en_GB
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/en_GB/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/en_GB/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_CN
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_CN/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_CN/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nl
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nl/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nl/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sa
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sa/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sa/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fi
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fi/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fi/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ko
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ko/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ko/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ru
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ru/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ru/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca@valencia
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca@valencia/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca@valencia/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/es
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/es/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/es/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eu
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eu/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eu/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/et
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/et/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/et/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/it
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/it/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/it/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ar
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ar/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ar/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sk
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sk/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sk/LC_MESSAGES/kdebugsettings.mo
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sv
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sv/LC_MESSAGES
--- Installing: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sv/LC_MESSAGES/kdebugsettings.mo
-The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettingscore.so.25.04.1
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettingscore.so.6
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/bin/kdebugsettings
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/bin/kdebugsettings" to ""
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/applications/org.kde.kdebugsettings.desktop
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/metainfo/org.kde.kdebugsettings.appdata.xml
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettings.so.25.04.1
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettings.so.6
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/lib64/libkdebugsettings.so.25.04.1" to ""
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/qlogging-categories6/kdebugsettings.categories
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/kdebugsettings/groups/Full Debug Ruqola
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/qlogging-categories6/kde.renamecategories
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/da
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/da/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/da/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/cs
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/cs/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ja
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ja/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavian
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavian/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/de
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/de/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/de/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/el
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/el/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/el/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nn
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nn/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hi
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hi/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt_BR
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt_BR/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/lt
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/lt/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavianlatin
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sl
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sl/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ro
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ro/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@latin
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sr@latin/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/he
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/he/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/he/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_TW
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_TW/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pl
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pl/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/pt/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/az
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/az/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/az/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/tr
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/tr/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fr
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fr/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ast
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ast/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ka
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ka/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/gl
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/gl/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ia
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ia/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hu
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/hu/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eo/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/uk
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/uk/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/en_GB
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/en_GB/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_CN
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/zh_CN/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nl
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/nl/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sa
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sa/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fi
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/fi/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ko
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ko/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ru
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ru/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca@valencia
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ca@valencia/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/es
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/es/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/es/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eu
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/eu/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/et
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/et/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/et/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/it
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/it/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/it/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ar
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/ar/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sk
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sk/LC_MESSAGES/kdebugsettings.mo
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sv
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/package-kdebugsettings/usr/share/locale/sv/LC_MESSAGES/kdebugsettings.mo
+[32mThe main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..[0m
 cp: cannot stat 'AUTHORS': No such file or directory
 cp: cannot stat 'ChangeLog*': No such file or directory
 cp: cannot stat 'COPYING': No such file or directory
@@ -1143,7 +1143,7 @@ cp: cannot stat 'NEWS': No such file or directory
 cp: cannot stat 'README*': No such file or directory
 cp: cannot stat 'docs': No such file or directory
 cp: cannot stat 'DOCS': No such file or directory
-grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/kdebugsettings/kdebugsettings.info: No such file or directory
+grep: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdebugsettings/kdebugsettings.info: No such file or directory
 extra-cmake-modules
 kcompletion
 kconfig
@@ -1153,8 +1153,8 @@ ki18n
 kitemviews
 kwidgetsaddons
 kxmlgui
-Packaging compiled for slackware installation...
-MAKEPKG_FLAGS is empty or unset, using default
+[32mPackaging compiled for slackware installation...[0m
+[32mMAKEPKG_FLAGS is empty or unset, using default[0m
 
 Slackware package maker, version 3.14159265.
 
@@ -1370,14 +1370,14 @@ kdebugsettings-25.04.1-x86_64-1_rtz.tlz.so.file
 kdebugsettings-25.04.1-x86_64-1_rtz.tlz.txt
 kdebugsettings.dep
 makepkg-kdebugsettings.log
-kdebugsettings build finished. Procced to installation...
+[32mkdebugsettings build finished. Procced to installation...[0m
 
 +=========================================================================================================================+
 | Upgrading kdebugsettings-25.04.1-x86_64-1_rtz package using /tmp/kdebugsettings/kdebugsettings-25.04.1-x86_64-1_rtz.tlz |
 +=========================================================================================================================+
 
 Pre-installing package kdebugsettings-25.04.1-x86_64-1_rtz...
-Removing package: kdebugsettings-25.04.1-x86_64-1_rtz-upgraded-2025-05-11,00:11:14
+Removing package: kdebugsettings-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,15:49:45
 Installing package kdebugsettings-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kdebugsettings (Application to enable/disable qCDebug)
@@ -1407,6 +1407,5 @@ Font directories:
 /usr/bin/fc-cache: succeeded
 Package kdebugsettings-25.04.1-x86_64-1_rtz.tlz installed.
 Package kdebugsettings-25.04.1-x86_64-1_rtz upgraded with new package /tmp/kdebugsettings/kdebugsettings-25.04.1-x86_64-1_rtz.tlz.
-Cleaning environmet: Removing source code, and work-space...
+[32mCleaning environmet: Removing source code, and work-space...[0m
 rm: cannot remove 'kdebugsettings-25.04.1.tar.xz': No such file or directory
-Build process completed in 0 minutes and 27 seconds.
