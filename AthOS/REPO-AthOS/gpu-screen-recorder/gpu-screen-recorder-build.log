@@ -1,0 +1,438 @@
+[32mStarting build process...[0m
+Detected architecture: x86_64
+Required dependencies: intel-media-driver libvdpau-va-gl
+intel-media-driver is already installed!
+libvdpau-va-gl is already installed!
+No optional dependencies found.
+Downloading source code tar.gz file
+--2025-05-23 22:35:34--  https://dec05eba.com/snapshot/gpu-screen-recorder.git.r942.b68400c.tar.gz
+Resolving dec05eba.com (dec05eba.com)... 77.53.97.52
+Connecting to dec05eba.com (dec05eba.com)|77.53.97.52|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 236507 (231K) [application/gzip]
+Saving to: ‘gpu-screen-recorder-r942.b68400c.tar.gz’
+
+     0K .......... .......... .......... .......... .......... 21%  574K 0s
+    50K .......... .......... .......... .......... .......... 43%  603K 0s
+   100K .......... .......... .......... .......... .......... 64% 6.75M 0s
+   150K .......... .......... .......... .......... .......... 86% 5.24M 0s
+   200K .......... .......... ..........                      100% 1.18M=0.2s
+
+2025-05-23 22:35:35 (1.06 MB/s) - ‘gpu-screen-recorder-r942.b68400c.tar.gz’ saved [236507/236507]
+
+Found file: gpu-screen-recorder-r942.b68400c.tar.gz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+.gitignore
+LICENSE
+README.md
+TODO
+external/
+external/NvFBC.h
+external/nvEncodeAPI.h
+extra/
+extra/gpu-screen-recorder.env
+extra/gpu-screen-recorder.service
+extra/gsr-nvidia.conf
+extra/meson_post_install.sh
+include/
+include/capture/
+include/capture/capture.h
+include/capture/kms.h
+include/capture/nvfbc.h
+include/capture/portal.h
+include/capture/xcomposite.h
+include/codec_query/
+include/codec_query/codec_query.h
+include/codec_query/nvenc.h
+include/codec_query/vaapi.h
+include/codec_query/vulkan.h
+include/color_conversion.h
+include/cuda.h
+include/cursor.h
+include/damage.h
+include/dbus.h
+include/defs.h
+include/egl.h
+include/encoder/
+include/encoder/video/
+include/encoder/video/nvenc.h
+include/encoder/video/software.h
+include/encoder/video/vaapi.h
+include/encoder/video/video.h
+include/encoder/video/vulkan.h
+include/library_loader.h
+include/overclock.h
+include/pipewire_audio.h
+include/pipewire_video.h
+include/shader.h
+include/sound.hpp
+include/utils.h
+include/vec2.h
+include/window/
+include/window/window.h
+include/window/window_wayland.h
+include/window/window_x11.h
+include/window_texture.h
+include/xnvctrl.h
+install.sh
+kms/
+kms/client/
+kms/client/kms_client.c
+kms/client/kms_client.h
+kms/kms_shared.h
+kms/server/
+kms/server/.gitignore
+kms/server/kms_server.c
+kms/server/project.conf
+meson.build
+meson_options.txt
+project.conf
+scripts/
+scripts/interactive.sh
+scripts/list-sinks.sh
+scripts/record-application-name.sh
+scripts/record-save-application-name.sh
+scripts/replay-application-name.sh
+scripts/save-recording.sh
+scripts/save-replay.sh
+scripts/start-recording.sh
+scripts/start-replay.sh
+scripts/start-stop-recording.sh
+scripts/stop-replay.sh
+scripts/toggle-recording-selected.sh
+scripts/twitch-stream-local-copy.sh
+scripts/twitch-stream.sh
+scripts/youtube-hls-stream.sh
+src/
+src/capture/
+src/capture/capture.c
+src/capture/kms.c
+src/capture/nvfbc.c
+src/capture/portal.c
+src/capture/xcomposite.c
+src/codec_query/
+src/codec_query/nvenc.c
+src/codec_query/vaapi.c
+src/codec_query/vulkan.c
+src/color_conversion.c
+src/cuda.c
+src/cursor.c
+src/damage.c
+src/dbus.c
+src/egl.c
+src/encoder/
+src/encoder/video/
+src/encoder/video/nvenc.c
+src/encoder/video/software.c
+src/encoder/video/vaapi.c
+src/encoder/video/video.c
+src/encoder/video/vulkan.c
+src/library_loader.c
+src/main.cpp
+src/overclock.c
+src/pipewire_audio.c
+src/pipewire_video.c
+src/shader.c
+src/sound.cpp
+src/utils.c
+src/window/
+src/window/window.c
+src/window/window_wayland.c
+src/window/window_x11.c
+src/window_texture.c
+src/xnvctrl.c
+study/
+study/color_space_transform_matrix.png
+study/create_matrix.py
+uninstall.sh
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/work
+README or README.md already exists, skipping creation.
+BIN_PKG = YES
+hm...lets continue and see what happens
+The Meson build system
+Version: 1.8.0
+Source dir: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/work
+Build dir: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/work/build
+Build type: native build
+Project name: gpu-screen-recorder
+Project version: 5.0.0
+C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+C linker for the host machine: cc ld.bfd 2.44-slack151
+C++ compiler for the host machine: ccache c++ (gcc 14.2.0 "c++ (GCC) 14.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.44-slack151
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Run-time dependency threads found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Run-time dependency libavcodec found: YES 61.19.101
+Run-time dependency libavformat found: YES 61.7.100
+Run-time dependency libavutil found: YES 59.39.100
+Run-time dependency x11 found: YES 1.8.12
+Run-time dependency xcomposite found: YES 0.4.6
+Run-time dependency xrandr found: YES 1.5.4
+Run-time dependency xfixes found: YES 6.0.1
+Run-time dependency xdamage found: YES 1.1.6
+Run-time dependency libpulse found: YES 17.0
+Run-time dependency libswresample found: YES 5.3.100
+Run-time dependency libavfilter found: YES 10.4.100
+Run-time dependency libva found: YES 1.22.0
+Run-time dependency libva-drm found: YES 1.22.0
+Run-time dependency libcap found: YES 2.76
+Run-time dependency libdrm found: YES 2.4.124
+Run-time dependency wayland-egl found: YES 18.1.0
+Run-time dependency wayland-client found: YES 1.23.1
+Run-time dependency dbus-1 found: YES 1.16.2
+Run-time dependency libpipewire-0.3 found: YES 1.4.2
+Run-time dependency libspa-0.2 found: YES 0.2
+Dependency libdrm found: YES 2.4.124 (cached)
+Build targets in project: 2
+
+gpu-screen-recorder 5.0.0
+
+  User defined options
+    buildtype    : release
+    infodir      : /usr/info
+    libdir       : /usr/lib64
+    localstatedir: /var
+    mandir       : /usr/man
+    prefix       : /usr
+    strip        : true
+    sysconfdir   : /etc
+    systemd      : false
+
+Found ninja-1.12.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+[1/36] Compiling C object gpu-screen-recorder.p/src_capture_capture.c.o
+[2/36] Compiling C object gpu-screen-recorder.p/src_capture_xcomposite.c.o
+[3/36] Compiling C object gpu-screen-recorder.p/src_encoder_video_video.c.o
+[4/36] Compiling C object gsr-kms-server.p/kms_server_kms_server.c.o
+[5/36] Compiling C object gpu-screen-recorder.p/kms_client_kms_client.c.o
+../kms/client/kms_client.c: In function ‘gsr_kms_client_init’:
+../kms/client/kms_client.c:284:65: warning: ‘%s’ directive output may be truncated writing up to 4095 bytes into a region of size 108 [-Wformat-truncation=]
+  284 |     snprintf(local_addr.sun_path, sizeof(local_addr.sun_path), "%s", (const char*)self->initial_socket_path);
+      |                                                                 ^~
+../kms/client/kms_client.c:284:5: note: ‘snprintf’ output between 1 and 4096 bytes into a destination of size 108
+  284 |     snprintf(local_addr.sun_path, sizeof(local_addr.sun_path), "%s", (const char*)self->initial_socket_path);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6/36] Compiling C object gpu-screen-recorder.p/src_capture_kms.c.o
+[7/36] Compiling C object gpu-screen-recorder.p/src_encoder_video_nvenc.c.o
+../src/encoder/video/nvenc.c: In function ‘gsr_video_encoder_nvenc_copy_textures_to_frame’:
+../src/encoder/video/nvenc.c:177:126: warning: unused parameter ‘color_conversion’ [-Wunused-parameter]
+  177 | static void gsr_video_encoder_nvenc_copy_textures_to_frame(gsr_video_encoder *encoder, AVFrame *frame, gsr_color_conversion *color_conversion) {
+      |                                                                                                        ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+[8/36] Compiling C object gpu-screen-recorder.p/src_encoder_video_software.c.o
+../src/encoder/video/software.c: In function ‘gsr_video_encoder_software_copy_textures_to_frame’:
+../src/encoder/video/software.c:87:129: warning: unused parameter ‘color_conversion’ [-Wunused-parameter]
+   87 | static void gsr_video_encoder_software_copy_textures_to_frame(gsr_video_encoder *encoder, AVFrame *frame, gsr_color_conversion *color_conversion) {
+      |                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+[9/36] Compiling C object gpu-screen-recorder.p/src_codec_query_vaapi.c.o
+[10/36] Compiling C object gpu-screen-recorder.p/src_window_window.c.o
+[11/36] Compiling C object gpu-screen-recorder.p/src_capture_nvfbc.c.o
+[12/36] Compiling C object gpu-screen-recorder.p/src_encoder_video_vaapi.c.o
+[13/36] Compiling C object gpu-screen-recorder.p/src_codec_query_nvenc.c.o
+[14/36] Compiling C object gpu-screen-recorder.p/src_codec_query_vulkan.c.o
+../src/codec_query/vulkan.c: In function ‘gsr_get_supported_video_codecs_vulkan’:
+../src/codec_query/vulkan.c:24:98: warning: unused parameter ‘card_path’ [-Wunused-parameter]
+   24 | bool gsr_get_supported_video_codecs_vulkan(gsr_supported_video_codecs *video_codecs, const char *card_path, bool cleanup) {
+      |                                                                                      ~~~~~~~~~~~~^~~~~~~~~
+../src/codec_query/vulkan.c:24:114: warning: unused parameter ‘cleanup’ [-Wunused-parameter]
+   24 | bool gsr_get_supported_video_codecs_vulkan(gsr_supported_video_codecs *video_codecs, const char *card_path, bool cleanup) {
+      |                                                                                                                  ^
+../src/codec_query/vulkan.c: At top level:
+../src/codec_query/vulkan.c:22:12: warning: ‘num_required_device_extensions’ defined but not used [-Wunused-variable]
+   22 | static int num_required_device_extensions = 8;
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/codec_query/vulkan.c:12:20: warning: ‘required_device_extensions’ defined but not used [-Wunused-variable]
+   12 | static const char *required_device_extensions[] = {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[15/36] Compiling C object gpu-screen-recorder.p/src_window_window_x11.c.o
+[16/36] Compiling C object gpu-screen-recorder.p/src_window_window_wayland.c.o
+[17/36] Compiling C object gpu-screen-recorder.p/src_encoder_video_vulkan.c.o
+../src/encoder/video/vulkan.c: In function ‘nop_free’:
+../src/encoder/video/vulkan.c:192:28: warning: unused parameter ‘opaque’ [-Wunused-parameter]
+  192 | static void nop_free(void *opaque, uint8_t *data) {
+      |                      ~~~~~~^~~~~~
+../src/encoder/video/vulkan.c:192:45: warning: unused parameter ‘data’ [-Wunused-parameter]
+  192 | static void nop_free(void *opaque, uint8_t *data) {
+      |                                    ~~~~~~~~~^~~~
+../src/encoder/video/vulkan.c: At top level:
+../src/encoder/video/vulkan.c:192:13: warning: ‘nop_free’ defined but not used [-Wunused-function]
+  192 | static void nop_free(void *opaque, uint8_t *data) {
+      |             ^~~~~~~~
+[18/36] Compiling C object gpu-screen-recorder.p/src_egl.c.o
+[19/36] Compiling C object gpu-screen-recorder.p/src_cuda.c.o
+[20/36] Compiling C object gpu-screen-recorder.p/src_xnvctrl.c.o
+[21/36] Compiling C object gpu-screen-recorder.p/src_overclock.c.o
+[22/36] Compiling C object gpu-screen-recorder.p/src_shader.c.o
+[23/36] Compiling C object gpu-screen-recorder.p/src_color_conversion.c.o
+[24/36] Compiling C object gpu-screen-recorder.p/src_damage.c.o
+[25/36] Compiling C object gpu-screen-recorder.p/src_cursor.c.o
+[26/36] Compiling C object gpu-screen-recorder.p/src_window_texture.c.o
+[27/36] Compiling C object gpu-screen-recorder.p/src_utils.c.o
+[28/36] Compiling C object gpu-screen-recorder.p/src_library_loader.c.o
+[29/36] Compiling C object gpu-screen-recorder.p/src_pipewire_video.c.o
+[30/36] Compiling C object gpu-screen-recorder.p/src_dbus.c.o
+[31/36] Compiling C++ object gpu-screen-recorder.p/src_sound.cpp.o
+[32/36] Compiling C++ object gpu-screen-recorder.p/src_main.cpp.o
+../src/main.cpp: In lambda function:
+../src/main.cpp:3352:39: warning: declaration of ‘app_audio_names’ shadows a previous local [-Wshadow]
+ 3352 |             std::vector<std::string> *app_audio_names = (std::vector<std::string>*)userdata;
+      |                                       ^~~~~~~~~~~~~~~
+../src/main.cpp:3336:30: note: shadowed declaration is here
+ 3336 |     std::vector<std::string> app_audio_names;
+      |                              ^~~~~~~~~~~~~~~
+[33/36] Compiling C object gpu-screen-recorder.p/src_capture_portal.c.o
+[34/36] Compiling C object gpu-screen-recorder.p/src_pipewire_audio.c.o
+../src/pipewire_audio.c: In function ‘on_core_info_cb’:
+../src/pipewire_audio.c:6:25: warning: unused variable ‘self’ [-Wunused-variable]
+    6 |     gsr_pipewire_audio *self = user_data;
+      |                         ^~~~
+../src/pipewire_audio.c:5:73: warning: unused parameter ‘info’ [-Wunused-parameter]
+    5 | static void on_core_info_cb(void *user_data, const struct pw_core_info *info) {
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+../src/pipewire_audio.c: In function ‘on_core_error_cb’:
+../src/pipewire_audio.c:10:56: warning: unused parameter ‘id’ [-Wunused-parameter]
+   10 | static void on_core_error_cb(void *user_data, uint32_t id, int seq, int res, const char *message) {
+      |                                               ~~~~~~~~~^~
+../src/pipewire_audio.c:10:64: warning: unused parameter ‘seq’ [-Wunused-parameter]
+   10 | static void on_core_error_cb(void *user_data, uint32_t id, int seq, int res, const char *message) {
+      |                                                            ~~~~^~~
+../src/pipewire_audio.c:10:73: warning: unused parameter ‘res’ [-Wunused-parameter]
+   10 | static void on_core_error_cb(void *user_data, uint32_t id, int seq, int res, const char *message) {
+      |                                                                     ~~~~^~~
+../src/pipewire_audio.c:10:90: warning: unused parameter ‘message’ [-Wunused-parameter]
+   10 | static void on_core_error_cb(void *user_data, uint32_t id, int seq, int res, const char *message) {
+      |                                                                              ~~~~~~~~~~~~^~~~~~~
+../src/pipewire_audio.c: In function ‘gsr_pipewire_audio_create_link’:
+../src/pipewire_audio.c:128:30: warning: unused variable ‘proxy’ [-Wunused-variable]
+  128 |             struct pw_proxy *proxy = pw_core_create_object(self->core, "link-factory", PW_TYPE_INTERFACE_Link, PW_VERSION_LINK, &props->dict, 0);
+      |                              ^~~~~
+../src/pipewire_audio.c:138:30: warning: unused variable ‘proxy’ [-Wunused-variable]
+  138 |             struct pw_proxy *proxy = pw_core_create_object(self->core, "link-factory", PW_TYPE_INTERFACE_Link, PW_VERSION_LINK, &props->dict, 0);
+      |                              ^~~~~
+../src/pipewire_audio.c: In function ‘registry_event_global’:
+../src/pipewire_audio.c:151:69: warning: unused parameter ‘permissions’ [-Wunused-parameter]
+  151 | static void registry_event_global(void *data, uint32_t id, uint32_t permissions,
+      |                                                            ~~~~~~~~~^~~~~~~~~~~
+../src/pipewire_audio.c:152:46: warning: unused parameter ‘version’ [-Wunused-parameter]
+  152 |                   const char *type, uint32_t version,
+      |                                     ~~~~~~~~~^~~~~~~
+[35/36] Linking target gsr-kms-server
+[36/36] Linking target gpu-screen-recorder
+[0/1] Installing files
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/work/extra/meson_post_install.sh: line 4: /usr/sbin/setcap: No such file or directory
+\n!!! Please re-run install as root\n
+Installing gsr-kms-server to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/package-gpu-screen-recorder/usr/bin
+Stripping target 'gsr-kms-server'.
+Installing gpu-screen-recorder to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/package-gpu-screen-recorder/usr/bin
+Stripping target 'gpu-screen-recorder'.
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/work/extra/gsr-nvidia.conf to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/package-gpu-screen-recorder/usr/lib/modprobe.d
+Running custom install script '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/work/extra/meson_post_install.sh'
+[32mThe main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..[0m
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'COPYING': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'NEWS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/gpu-screen-recorder/gpu-screen-recorder.info: No such file or directory
+intel-media-driver
+libvdpau-va-gl
+[32mPackaging compiled for slackware installation...[0m
+[32mMAKEPKG_FLAGS is empty or unset, using default[0m
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/gpu-screen-recorder/gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/bin/
+usr/bin/gpu-screen-recorder
+usr/bin/gsr-kms-server
+usr/doc/
+usr/doc/gpu-screen-recorder-r942.b68400c/
+usr/doc/gpu-screen-recorder-r942.b68400c/LICENSE
+usr/doc/gpu-screen-recorder-r942.b68400c/README.md
+usr/doc/gpu-screen-recorder-r942.b68400c/gpu-screen-recorder.ini
+usr/doc/gpu-screen-recorder-r942.b68400c/slack-required
+usr/lib/
+usr/lib/modprobe.d/
+usr/lib/modprobe.d/gsr-nvidia.conf
+
+Slackware package /tmp/gpu-screen-recorder/gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz created.
+
+Create shared object file for gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz
+Creating /tmp/gpu-screen-recorder/gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz.so.file using /tmp/gpu-screen-recorder/gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz
+Successfully created /tmp/gpu-screen-recorder/gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in gpu-screen-recorder.tar.lz4 format.
+/tmp/gpu-screen-recorder /tmp/gpu-screen-recorder
+/tmp/gpu-screen-recorder
+BIN_NAME
+README
+gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz
+gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz.md5
+gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz.so.file
+gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz.txt
+gpu-screen-recorder.dep
+makepkg-gpu-screen-recorder.log
+[32mgpu-screen-recorder build finished. Procced to installation...[0m
+
++==================================================================================================================================================+
+| Upgrading gpu-screen-recorder-r942.b68400c-x86_64-1_rtz package using /tmp/gpu-screen-recorder/gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz |
++==================================================================================================================================================+
+
+Pre-installing package gpu-screen-recorder-r942.b68400c-x86_64-1_rtz...
+Removing package: gpu-screen-recorder-r942.b68400c-x86_64-1_rtz-upgraded-2025-05-23,22:35:37
+Installing package gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# gpu-screen-recorder (screen recorder for Linux)
+#
+# A shadowplay-like screen recorder for Linux. The fastest screen
+# recorder for Linux.
+#
+# https://git.dec05eba.com/gpu-screen-recorder
+Executing install script for gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz installed.
+Package gpu-screen-recorder-r942.b68400c-x86_64-1_rtz upgraded with new package /tmp/gpu-screen-recorder/gpu-screen-recorder-r942.b68400c-x86_64-1_rtz.tlz.
+[32mCleaning environmet: Removing source code, and work-space...[0m
+rm: cannot remove 'gpu-screen-recorder-r942.b68400c.tar.gz': No such file or directory

@@ -1,0 +1,998 @@
+[32mStarting build process...[0m
+Detected architecture: x86_64
+Required dependencies: gsettings-desktop-schemas xdg-desktop-portal
+gsettings-desktop-schemas is already installed!
+xdg-desktop-portal is already installed!
+No optional dependencies found.
+Downloading source code tar.xz file
+--2025-05-26 13:28:37--  https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.15.3/xdg-desktop-portal-gtk-1.15.3.tar.xz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/61550529/bb30366a-b745-44f8-ac42-c8ddd40c4c40?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250526T102733Z&X-Amz-Expires=300&X-Amz-Signature=d1f3429f297866726957d43f70ee9f0377e1db8e6a7341434b21c177f6acb06b&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dxdg-desktop-portal-gtk-1.15.3.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2025-05-26 13:28:37--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/61550529/bb30366a-b745-44f8-ac42-c8ddd40c4c40?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250526T102733Z&X-Amz-Expires=300&X-Amz-Signature=d1f3429f297866726957d43f70ee9f0377e1db8e6a7341434b21c177f6acb06b&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dxdg-desktop-portal-gtk-1.15.3.tar.xz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 94556 (92K) [application/octet-stream]
+Saving to: ‘xdg-desktop-portal-gtk-1.15.3.tar.xz’
+
+     0K .......... .......... .......... .......... .......... 54%  803K 0s
+    50K .......... .......... .......... .......... ..        100% 2.64M=0.08s
+
+2025-05-26 13:28:38 (1.16 MB/s) - ‘xdg-desktop-portal-gtk-1.15.3.tar.xz’ saved [94556/94556]
+
+Found file: xdg-desktop-portal-gtk-1.15.3.tar.xz
+No checksum provided. Skipping checksum verification and proceeding...
+Creating working directories and exporting source code in...
+xdg-desktop-portal-gtk-1.15.3/
+xdg-desktop-portal-gtk-1.15.3/.github/
+xdg-desktop-portal-gtk-1.15.3/.github/workflows/
+xdg-desktop-portal-gtk-1.15.3/.github/workflows/Containerfile
+xdg-desktop-portal-gtk-1.15.3/.github/workflows/build-and-test.yml
+xdg-desktop-portal-gtk-1.15.3/.github/workflows/container.yml
+xdg-desktop-portal-gtk-1.15.3/.github/workflows/main.yml
+xdg-desktop-portal-gtk-1.15.3/.github/workflows/release.yml
+xdg-desktop-portal-gtk-1.15.3/.gitignore
+xdg-desktop-portal-gtk-1.15.3/COPYING
+xdg-desktop-portal-gtk-1.15.3/NEWS
+xdg-desktop-portal-gtk-1.15.3/README.md
+xdg-desktop-portal-gtk-1.15.3/SECURITY.md
+xdg-desktop-portal-gtk-1.15.3/data/
+xdg-desktop-portal-gtk-1.15.3/data/gtk.portal.in
+xdg-desktop-portal-gtk-1.15.3/data/meson.build
+xdg-desktop-portal-gtk-1.15.3/data/org.freedesktop.Accounts.User.xml
+xdg-desktop-portal-gtk-1.15.3/data/org.freedesktop.Accounts.xml
+xdg-desktop-portal-gtk-1.15.3/data/org.freedesktop.ScreenSaver.xml
+xdg-desktop-portal-gtk-1.15.3/data/org.freedesktop.impl.portal.desktop.gtk.service.in
+xdg-desktop-portal-gtk-1.15.3/data/org.gnome.ScreenSaver.xml
+xdg-desktop-portal-gtk-1.15.3/data/org.gnome.SessionManager.xml
+xdg-desktop-portal-gtk-1.15.3/data/xdg-desktop-portal-gtk.desktop.in.in
+xdg-desktop-portal-gtk-1.15.3/data/xdg-desktop-portal-gtk.service.in
+xdg-desktop-portal-gtk-1.15.3/meson.build
+xdg-desktop-portal-gtk-1.15.3/meson_options.txt
+xdg-desktop-portal-gtk-1.15.3/po/
+xdg-desktop-portal-gtk-1.15.3/po/LINGUAS
+xdg-desktop-portal-gtk-1.15.3/po/POTFILES.in
+xdg-desktop-portal-gtk-1.15.3/po/be.po
+xdg-desktop-portal-gtk-1.15.3/po/ca.po
+xdg-desktop-portal-gtk-1.15.3/po/cs.po
+xdg-desktop-portal-gtk-1.15.3/po/da.po
+xdg-desktop-portal-gtk-1.15.3/po/de.po
+xdg-desktop-portal-gtk-1.15.3/po/en_GB.po
+xdg-desktop-portal-gtk-1.15.3/po/es.po
+xdg-desktop-portal-gtk-1.15.3/po/fr.po
+xdg-desktop-portal-gtk-1.15.3/po/gl.po
+xdg-desktop-portal-gtk-1.15.3/po/he.po
+xdg-desktop-portal-gtk-1.15.3/po/hi.po
+xdg-desktop-portal-gtk-1.15.3/po/hr.po
+xdg-desktop-portal-gtk-1.15.3/po/hu.po
+xdg-desktop-portal-gtk-1.15.3/po/id.po
+xdg-desktop-portal-gtk-1.15.3/po/ie.po
+xdg-desktop-portal-gtk-1.15.3/po/it.po
+xdg-desktop-portal-gtk-1.15.3/po/ja.po
+xdg-desktop-portal-gtk-1.15.3/po/ka.po
+xdg-desktop-portal-gtk-1.15.3/po/lt.po
+xdg-desktop-portal-gtk-1.15.3/po/meson.build
+xdg-desktop-portal-gtk-1.15.3/po/nl.po
+xdg-desktop-portal-gtk-1.15.3/po/oc.po
+xdg-desktop-portal-gtk-1.15.3/po/pl.po
+xdg-desktop-portal-gtk-1.15.3/po/pt.po
+xdg-desktop-portal-gtk-1.15.3/po/pt_BR.po
+xdg-desktop-portal-gtk-1.15.3/po/ro.po
+xdg-desktop-portal-gtk-1.15.3/po/ru.po
+xdg-desktop-portal-gtk-1.15.3/po/sk.po
+xdg-desktop-portal-gtk-1.15.3/po/sl.po
+xdg-desktop-portal-gtk-1.15.3/po/sr.po
+xdg-desktop-portal-gtk-1.15.3/po/sv.po
+xdg-desktop-portal-gtk-1.15.3/po/tr.po
+xdg-desktop-portal-gtk-1.15.3/po/uk.po
+xdg-desktop-portal-gtk-1.15.3/po/zh_CN.po
+xdg-desktop-portal-gtk-1.15.3/po/zh_TW.po
+xdg-desktop-portal-gtk-1.15.3/src/
+xdg-desktop-portal-gtk-1.15.3/src/access.c
+xdg-desktop-portal-gtk-1.15.3/src/access.h
+xdg-desktop-portal-gtk-1.15.3/src/account.c
+xdg-desktop-portal-gtk-1.15.3/src/account.h
+xdg-desktop-portal-gtk-1.15.3/src/accountdialog.c
+xdg-desktop-portal-gtk-1.15.3/src/accountdialog.h
+xdg-desktop-portal-gtk-1.15.3/src/accountdialog.ui
+xdg-desktop-portal-gtk-1.15.3/src/appchooser.c
+xdg-desktop-portal-gtk-1.15.3/src/appchooser.h
+xdg-desktop-portal-gtk-1.15.3/src/appchooserdialog.c
+xdg-desktop-portal-gtk-1.15.3/src/appchooserdialog.h
+xdg-desktop-portal-gtk-1.15.3/src/appchooserdialog.ui
+xdg-desktop-portal-gtk-1.15.3/src/appchooserrow.c
+xdg-desktop-portal-gtk-1.15.3/src/appchooserrow.h
+xdg-desktop-portal-gtk-1.15.3/src/appchooserrow.ui
+xdg-desktop-portal-gtk-1.15.3/src/dynamic-launcher.c
+xdg-desktop-portal-gtk-1.15.3/src/dynamic-launcher.h
+xdg-desktop-portal-gtk-1.15.3/src/email.c
+xdg-desktop-portal-gtk-1.15.3/src/email.h
+xdg-desktop-portal-gtk-1.15.3/src/externalwindow-wayland.c
+xdg-desktop-portal-gtk-1.15.3/src/externalwindow-wayland.h
+xdg-desktop-portal-gtk-1.15.3/src/externalwindow-x11.c
+xdg-desktop-portal-gtk-1.15.3/src/externalwindow-x11.h
+xdg-desktop-portal-gtk-1.15.3/src/externalwindow.c
+xdg-desktop-portal-gtk-1.15.3/src/externalwindow.h
+xdg-desktop-portal-gtk-1.15.3/src/fc-monitor.c
+xdg-desktop-portal-gtk-1.15.3/src/fc-monitor.h
+xdg-desktop-portal-gtk-1.15.3/src/fdonotification.c
+xdg-desktop-portal-gtk-1.15.3/src/fdonotification.h
+xdg-desktop-portal-gtk-1.15.3/src/filechooser.c
+xdg-desktop-portal-gtk-1.15.3/src/filechooser.h
+xdg-desktop-portal-gtk-1.15.3/src/gtkbackports.c
+xdg-desktop-portal-gtk-1.15.3/src/gtkbackports.h
+xdg-desktop-portal-gtk-1.15.3/src/inhibit.c
+xdg-desktop-portal-gtk-1.15.3/src/inhibit.h
+xdg-desktop-portal-gtk-1.15.3/src/lockdown.c
+xdg-desktop-portal-gtk-1.15.3/src/lockdown.h
+xdg-desktop-portal-gtk-1.15.3/src/meson.build
+xdg-desktop-portal-gtk-1.15.3/src/notification.c
+xdg-desktop-portal-gtk-1.15.3/src/notification.h
+xdg-desktop-portal-gtk-1.15.3/src/print.c
+xdg-desktop-portal-gtk-1.15.3/src/print.h
+xdg-desktop-portal-gtk-1.15.3/src/request.c
+xdg-desktop-portal-gtk-1.15.3/src/request.h
+xdg-desktop-portal-gtk-1.15.3/src/session.c
+xdg-desktop-portal-gtk-1.15.3/src/session.h
+xdg-desktop-portal-gtk-1.15.3/src/settings.c
+xdg-desktop-portal-gtk-1.15.3/src/settings.h
+xdg-desktop-portal-gtk-1.15.3/src/testappchooser.c
+xdg-desktop-portal-gtk-1.15.3/src/utils.c
+xdg-desktop-portal-gtk-1.15.3/src/utils.h
+xdg-desktop-portal-gtk-1.15.3/src/wallpaper.c
+xdg-desktop-portal-gtk-1.15.3/src/wallpaper.h
+xdg-desktop-portal-gtk-1.15.3/src/wallpaperdialog.c
+xdg-desktop-portal-gtk-1.15.3/src/wallpaperdialog.h
+xdg-desktop-portal-gtk-1.15.3/src/wallpaperdialog.ui
+xdg-desktop-portal-gtk-1.15.3/src/wallpaperpreview.c
+xdg-desktop-portal-gtk-1.15.3/src/wallpaperpreview.css
+xdg-desktop-portal-gtk-1.15.3/src/wallpaperpreview.h
+xdg-desktop-portal-gtk-1.15.3/src/wallpaperpreview.ui
+xdg-desktop-portal-gtk-1.15.3/src/xdg-desktop-portal-gtk.c
+xdg-desktop-portal-gtk-1.15.3/src/xdg-desktop-portal-gtk.gresource.xml
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/work
+README or README.md already exists, skipping creation.
+hm...lets continue and see what happens
+chown: changing ownership of './po/es.po': Operation not permitted
+chown: changing ownership of './po/pl.po': Operation not permitted
+chown: changing ownership of './po/ja.po': Operation not permitted
+chown: changing ownership of './po/sk.po': Operation not permitted
+chown: changing ownership of './po/lt.po': Operation not permitted
+chown: changing ownership of './po/he.po': Operation not permitted
+chown: changing ownership of './po/tr.po': Operation not permitted
+chown: changing ownership of './po/gl.po': Operation not permitted
+chown: changing ownership of './po/it.po': Operation not permitted
+chown: changing ownership of './po/en_GB.po': Operation not permitted
+chown: changing ownership of './po/cs.po': Operation not permitted
+chown: changing ownership of './po/pt_BR.po': Operation not permitted
+chown: changing ownership of './po/hi.po': Operation not permitted
+chown: changing ownership of './po/be.po': Operation not permitted
+chown: changing ownership of './po/POTFILES.in': Operation not permitted
+chown: changing ownership of './po/hu.po': Operation not permitted
+chown: changing ownership of './po/meson.build': Operation not permitted
+chown: changing ownership of './po/sr.po': Operation not permitted
+chown: changing ownership of './po/LINGUAS': Operation not permitted
+chown: changing ownership of './po/ie.po': Operation not permitted
+chown: changing ownership of './po/ru.po': Operation not permitted
+chown: changing ownership of './po/ro.po': Operation not permitted
+chown: changing ownership of './po/uk.po': Operation not permitted
+chown: changing ownership of './po/ka.po': Operation not permitted
+chown: changing ownership of './po/de.po': Operation not permitted
+chown: changing ownership of './po/nl.po': Operation not permitted
+chown: changing ownership of './po/ca.po': Operation not permitted
+chown: changing ownership of './po/pt.po': Operation not permitted
+chown: changing ownership of './po/da.po': Operation not permitted
+chown: changing ownership of './po/sv.po': Operation not permitted
+chown: changing ownership of './po/zh_TW.po': Operation not permitted
+chown: changing ownership of './po/fr.po': Operation not permitted
+chown: changing ownership of './po/sl.po': Operation not permitted
+chown: changing ownership of './po/hr.po': Operation not permitted
+chown: changing ownership of './po/id.po': Operation not permitted
+chown: changing ownership of './po/zh_CN.po': Operation not permitted
+chown: changing ownership of './po/oc.po': Operation not permitted
+chown: changing ownership of './po': Operation not permitted
+chown: changing ownership of './src/wallpaperpreview.ui': Operation not permitted
+chown: changing ownership of './src/session.c': Operation not permitted
+chown: changing ownership of './src/access.h': Operation not permitted
+chown: changing ownership of './src/wallpaper.h': Operation not permitted
+chown: changing ownership of './src/request.h': Operation not permitted
+chown: changing ownership of './src/wallpaperdialog.c': Operation not permitted
+chown: changing ownership of './src/session.h': Operation not permitted
+chown: changing ownership of './src/externalwindow-wayland.c': Operation not permitted
+chown: changing ownership of './src/lockdown.c': Operation not permitted
+chown: changing ownership of './src/appchooserdialog.c': Operation not permitted
+chown: changing ownership of './src/wallpaperpreview.css': Operation not permitted
+chown: changing ownership of './src/accountdialog.c': Operation not permitted
+chown: changing ownership of './src/xdg-desktop-portal-gtk.c': Operation not permitted
+chown: changing ownership of './src/fdonotification.c': Operation not permitted
+chown: changing ownership of './src/filechooser.h': Operation not permitted
+chown: changing ownership of './src/externalwindow.h': Operation not permitted
+chown: changing ownership of './src/gtkbackports.h': Operation not permitted
+chown: changing ownership of './src/filechooser.c': Operation not permitted
+chown: changing ownership of './src/wallpaperdialog.h': Operation not permitted
+chown: changing ownership of './src/fdonotification.h': Operation not permitted
+chown: changing ownership of './src/utils.c': Operation not permitted
+chown: changing ownership of './src/wallpaperpreview.h': Operation not permitted
+chown: changing ownership of './src/request.c': Operation not permitted
+chown: changing ownership of './src/appchooserrow.ui': Operation not permitted
+chown: changing ownership of './src/email.c': Operation not permitted
+chown: changing ownership of './src/inhibit.c': Operation not permitted
+chown: changing ownership of './src/externalwindow-wayland.h': Operation not permitted
+chown: changing ownership of './src/account.c': Operation not permitted
+chown: changing ownership of './src/meson.build': Operation not permitted
+chown: changing ownership of './src/accountdialog.ui': Operation not permitted
+chown: changing ownership of './src/testappchooser.c': Operation not permitted
+chown: changing ownership of './src/notification.c': Operation not permitted
+chown: changing ownership of './src/fc-monitor.c': Operation not permitted
+chown: changing ownership of './src/utils.h': Operation not permitted
+chown: changing ownership of './src/print.h': Operation not permitted
+chown: changing ownership of './src/fc-monitor.h': Operation not permitted
+chown: changing ownership of './src/appchooserdialog.ui': Operation not permitted
+chown: changing ownership of './src/notification.h': Operation not permitted
+chown: changing ownership of './src/dynamic-launcher.c': Operation not permitted
+chown: changing ownership of './src/wallpaperdialog.ui': Operation not permitted
+chown: changing ownership of './src/appchooser.h': Operation not permitted
+chown: changing ownership of './src/lockdown.h': Operation not permitted
+chown: changing ownership of './src/externalwindow-x11.h': Operation not permitted
+chown: changing ownership of './src/access.c': Operation not permitted
+chown: changing ownership of './src/accountdialog.h': Operation not permitted
+chown: changing ownership of './src/settings.c': Operation not permitted
+chown: changing ownership of './src/xdg-desktop-portal-gtk.gresource.xml': Operation not permitted
+chown: changing ownership of './src/appchooserrow.h': Operation not permitted
+chown: changing ownership of './src/appchooserdialog.h': Operation not permitted
+chown: changing ownership of './src/dynamic-launcher.h': Operation not permitted
+chown: changing ownership of './src/settings.h': Operation not permitted
+chown: changing ownership of './src/account.h': Operation not permitted
+chown: changing ownership of './src/externalwindow.c': Operation not permitted
+chown: changing ownership of './src/print.c': Operation not permitted
+chown: changing ownership of './src/wallpaper.c': Operation not permitted
+chown: changing ownership of './src/email.h': Operation not permitted
+chown: changing ownership of './src/appchooser.c': Operation not permitted
+chown: changing ownership of './src/wallpaperpreview.c': Operation not permitted
+chown: changing ownership of './src/gtkbackports.c': Operation not permitted
+chown: changing ownership of './src/inhibit.h': Operation not permitted
+chown: changing ownership of './src/externalwindow-x11.c': Operation not permitted
+chown: changing ownership of './src/appchooserrow.c': Operation not permitted
+chown: changing ownership of './src': Operation not permitted
+chown: changing ownership of './meson.build': Operation not permitted
+chown: changing ownership of './.gitignore': Operation not permitted
+chown: changing ownership of './meson_options.txt': Operation not permitted
+chown: changing ownership of './README.md': Operation not permitted
+chown: changing ownership of './NEWS': Operation not permitted
+chown: changing ownership of './.github/workflows/container.yml': Operation not permitted
+chown: changing ownership of './.github/workflows/release.yml': Operation not permitted
+chown: changing ownership of './.github/workflows/Containerfile': Operation not permitted
+chown: changing ownership of './.github/workflows/build-and-test.yml': Operation not permitted
+chown: changing ownership of './.github/workflows/main.yml': Operation not permitted
+chown: changing ownership of './.github/workflows': Operation not permitted
+chown: changing ownership of './.github': Operation not permitted
+chown: changing ownership of './COPYING': Operation not permitted
+chown: changing ownership of './SECURITY.md': Operation not permitted
+chown: changing ownership of './data/org.freedesktop.impl.portal.desktop.gtk.service.in': Operation not permitted
+chown: changing ownership of './data/org.gnome.SessionManager.xml': Operation not permitted
+chown: changing ownership of './data/xdg-desktop-portal-gtk.desktop.in.in': Operation not permitted
+chown: changing ownership of './data/meson.build': Operation not permitted
+chown: changing ownership of './data/org.freedesktop.Accounts.User.xml': Operation not permitted
+chown: changing ownership of './data/gtk.portal.in': Operation not permitted
+chown: changing ownership of './data/xdg-desktop-portal-gtk.service.in': Operation not permitted
+chown: changing ownership of './data/org.freedesktop.ScreenSaver.xml': Operation not permitted
+chown: changing ownership of './data/org.freedesktop.Accounts.xml': Operation not permitted
+chown: changing ownership of './data/org.gnome.ScreenSaver.xml': Operation not permitted
+chown: changing ownership of './data': Operation not permitted
+chown: changing ownership of '.': Operation not permitted
+The Meson build system
+Version: 1.8.1
+Source dir: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/work/xdg-desktop-portal-gtk-1.15.3
+Build dir: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/work/xdg-desktop-portal-gtk-1.15.3/build
+Build type: native build
+Project name: xdg-desktop-portal-gtk
+Project version: 1.15.3
+C compiler for the host machine: ccache cc (gcc 14.3.0 "cc (GCC) 14.3.0")
+C linker for the host machine: cc ld.bfd 2.44-slack151
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
+Run-time dependency xdg-desktop-portal found: YES 1.20.3
+Run-time dependency glib-2.0 found: YES 2.84.2
+Run-time dependency gio-unix-2.0 found: YES 2.84.2
+Run-time dependency gtk+-3.0 found: YES 3.24.49
+Run-time dependency gtk+-unix-print-3.0 found: YES 3.24.49
+Run-time dependency gtk+-x11-3.0 found: YES 3.24.49
+Run-time dependency gtk+-wayland-3.0 found: YES 3.24.49
+Configuring config.h using configuration
+Configuring gtk.portal using configuration
+Configuring org.freedesktop.impl.portal.desktop.gtk.service using configuration
+Configuring xdg-desktop-portal-gtk.service using configuration
+Configuring xdg-desktop-portal-gtk.desktop.in using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Run-time dependency gsettings-desktop-schemas found: YES 48.0
+Run-time dependency fontconfig found: YES 2.16.2
+Build-time dependency gio-2.0 found: YES 2.84.2
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency gio-2.0 found: YES 2.84.2 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Dependency gio-2.0 found: YES 2.84.2 (cached)
+Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Build targets in project: 46
+
+xdg-desktop-portal-gtk 1.15.3
+
+  Directories
+    DBus service dir     : /usr/share/dbus-1/services
+    Portal interfaces dir: /usr/share/dbus-1/interfaces/
+    systemd user unit dir: /usr/lib/systemd/user
+
+  Dependencies
+    X11                  : YES
+    Wayland              : YES
+
+  Portals
+    Wallpaper            : disabled
+    Settings             : enabled
+    AppChooser           : enabled
+    Lockdown             : disabled
+
+  User defined options
+    appchooser           : enabled
+    buildtype            : release
+    infodir              : /usr/info
+    libdir               : /usr/lib64
+    localstatedir        : /var
+    lockdown             : disabled
+    mandir               : /usr/man
+    prefix               : /usr
+    settings             : enabled
+    strip                : true
+    sysconfdir           : /etc
+    wallpaper            : disabled
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Generating targets:   0%|          | 0/46 eta ?                                               Writing build.ninja:   0%|          | 0/112 eta ?                                                 [1/73] Generating src/xdg-desktop-portal-gtk-resources_h with a custom command
+[2/73] Building translation po/be/LC_MESSAGES/xdg-desktop-portal-gtk-be.mo
+[3/73] Building translation po/ca/LC_MESSAGES/xdg-desktop-portal-gtk-ca.mo
+[4/73] Building translation po/cs/LC_MESSAGES/xdg-desktop-portal-gtk-cs.mo
+[5/73] Building translation po/de/LC_MESSAGES/xdg-desktop-portal-gtk-de.mo
+[6/73] Building translation po/en_GB/LC_MESSAGES/xdg-desktop-portal-gtk-en_GB.mo
+[7/73] Building translation po/fr/LC_MESSAGES/xdg-desktop-portal-gtk-fr.mo
+[8/73] Generating src/xdg-desktop-portal-gtk-resources_c with a custom command
+[9/73] Building translation po/da/LC_MESSAGES/xdg-desktop-portal-gtk-da.mo
+[10/73] Building translation po/es/LC_MESSAGES/xdg-desktop-portal-gtk-es.mo
+[11/73] Building translation po/he/LC_MESSAGES/xdg-desktop-portal-gtk-he.mo
+[12/73] Building translation po/hi/LC_MESSAGES/xdg-desktop-portal-gtk-hi.mo
+[13/73] Building translation po/gl/LC_MESSAGES/xdg-desktop-portal-gtk-gl.mo
+[14/73] Building translation po/hr/LC_MESSAGES/xdg-desktop-portal-gtk-hr.mo
+[15/73] Building translation po/hu/LC_MESSAGES/xdg-desktop-portal-gtk-hu.mo
+[16/73] Building translation po/id/LC_MESSAGES/xdg-desktop-portal-gtk-id.mo
+[17/73] Building translation po/ie/LC_MESSAGES/xdg-desktop-portal-gtk-ie.mo
+[18/73] Building translation po/it/LC_MESSAGES/xdg-desktop-portal-gtk-it.mo
+[19/73] Building translation po/ja/LC_MESSAGES/xdg-desktop-portal-gtk-ja.mo
+[20/73] Building translation po/ka/LC_MESSAGES/xdg-desktop-portal-gtk-ka.mo
+[21/73] Building translation po/lt/LC_MESSAGES/xdg-desktop-portal-gtk-lt.mo
+[22/73] Building translation po/nl/LC_MESSAGES/xdg-desktop-portal-gtk-nl.mo
+[23/73] Building translation po/oc/LC_MESSAGES/xdg-desktop-portal-gtk-oc.mo
+[24/73] Building translation po/pl/LC_MESSAGES/xdg-desktop-portal-gtk-pl.mo
+[25/73] Building translation po/pt/LC_MESSAGES/xdg-desktop-portal-gtk-pt.mo
+[26/73] Building translation po/ro/LC_MESSAGES/xdg-desktop-portal-gtk-ro.mo
+[27/73] Building translation po/pt_BR/LC_MESSAGES/xdg-desktop-portal-gtk-pt_BR.mo
+[28/73] Building translation po/sk/LC_MESSAGES/xdg-desktop-portal-gtk-sk.mo
+[29/73] Building translation po/sl/LC_MESSAGES/xdg-desktop-portal-gtk-sl.mo
+[30/73] Building translation po/ru/LC_MESSAGES/xdg-desktop-portal-gtk-ru.mo
+[31/73] Building translation po/sr/LC_MESSAGES/xdg-desktop-portal-gtk-sr.mo
+[32/73] Building translation po/tr/LC_MESSAGES/xdg-desktop-portal-gtk-tr.mo
+[33/73] Building translation po/sv/LC_MESSAGES/xdg-desktop-portal-gtk-sv.mo
+[34/73] Building translation po/zh_CN/LC_MESSAGES/xdg-desktop-portal-gtk-zh_CN.mo
+[35/73] Building translation po/zh_TW/LC_MESSAGES/xdg-desktop-portal-gtk-zh_TW.mo
+[36/73] Building translation po/uk/LC_MESSAGES/xdg-desktop-portal-gtk-uk.mo
+[37/73] Generating gdbus header src/xdg-desktop-portal-dbus.h
+[38/73] Merging translations for data/xdg-desktop-portal-gtk.desktop
+[39/73] Generating gdbus source src/shell-dbus.c
+[40/73] Generating gdbus header src/shell-dbus.h
+[41/73] Generating gdbus source src/xdg-desktop-portal-dbus.c
+[42/73] Compiling C object src/testappchooser.p/meson-generated_.._xdg-desktop-portal-gtk-resources.c.o
+[43/73] Compiling C object src/xdg-desktop-portal-gtk.p/meson-generated_.._xdg-desktop-portal-gtk-resources.c.o
+[44/73] Compiling C object src/xdg-desktop-portal-gtk.p/request.c.o
+../src/request.c: In function ‘request_init’:
+../src/request.c:53:24: warning: unused parameter ‘request’ [-Wunused-parameter]
+   53 | request_init (Request *request)
+      |               ~~~~~~~~~^~~~~~~
+[45/73] Compiling C object src/xdg-desktop-portal-gtk.p/utils.c.o
+[46/73] Compiling C object src/xdg-desktop-portal-gtk.p/session.c.o
+../src/session.c: In function ‘session_init’:
+../src/session.c:169:24: warning: unused parameter ‘session’ [-Wunused-parameter]
+  169 | session_init (Session *session)
+      |               ~~~~~~~~~^~~~~~~
+[47/73] Compiling C object src/testappchooser.p/testappchooser.c.o
+../src/testappchooser.c: In function ‘close_cb’:
+../src/testappchooser.c:6:22: warning: unused parameter ‘data’ [-Wunused-parameter]
+    6 |           gpointer   data)
+      |           ~~~~~~~~~~~^~~~
+[48/73] Compiling C object src/xdg-desktop-portal-gtk.p/notification.c.o
+../src/notification.c: In function ‘activate_action’:
+../src/notification.c:51:27: warning: unused parameter ‘data’ [-Wunused-parameter]
+   51 |                  gpointer data)
+      |                  ~~~~~~~~~^~~~
+[49/73] Compiling C object src/testappchooser.p/appchooserrow.c.o
+[50/73] Compiling C object src/xdg-desktop-portal-gtk.p/gtkbackports.c.o
+[51/73] Compiling C object src/xdg-desktop-portal-gtk.p/accountdialog.c.o
+../src/accountdialog.c: In function ‘account_dialog_delete_event’:
+../src/accountdialog.c:61:62: warning: unused parameter ‘event’ [-Wunused-parameter]
+   61 | account_dialog_delete_event (GtkWidget *dialog, GdkEventAny *event)
+      |                                                 ~~~~~~~~~~~~~^~~~~
+[52/73] Compiling C object src/xdg-desktop-portal-gtk.p/appchooserrow.c.o
+[53/73] Compiling C object src/testappchooser.p/appchooserdialog.c.o
+../src/appchooserdialog.c: In function ‘update_header’:
+../src/appchooserdialog.c:79:31: warning: unused parameter ‘data’ [-Wunused-parameter]
+   79 |                gpointer       data)
+      |                ~~~~~~~~~~~~~~~^~~~
+../src/appchooserdialog.c: In function ‘row_activated’:
+../src/appchooserdialog.c:150:28: warning: unused parameter ‘list’ [-Wunused-parameter]
+  150 | row_activated (GtkListBox *list,
+      |                ~~~~~~~~~~~~^~~~
+../src/appchooserdialog.c: In function ‘row_selected’:
+../src/appchooserdialog.c:168:27: warning: unused parameter ‘list’ [-Wunused-parameter]
+  168 | row_selected (GtkListBox *list,
+      |               ~~~~~~~~~~~~^~~~
+../src/appchooserdialog.c: In function ‘cancel_clicked’:
+../src/appchooserdialog.c:177:28: warning: unused parameter ‘button’ [-Wunused-parameter]
+  177 | cancel_clicked (GtkWidget *button,
+      |                 ~~~~~~~~~~~^~~~~~
+../src/appchooserdialog.c: In function ‘open_clicked’:
+../src/appchooserdialog.c:184:26: warning: unused parameter ‘button’ [-Wunused-parameter]
+  184 | open_clicked (GtkWidget *button,
+      |               ~~~~~~~~~~~^~~~~~
+../src/appchooserdialog.c: In function ‘find_in_software’:
+../src/appchooserdialog.c:233:30: warning: unused parameter ‘button’ [-Wunused-parameter]
+  233 | find_in_software (GtkWidget *button,
+      |                   ~~~~~~~~~~~^~~~~~
+../src/appchooserdialog.c: In function ‘app_chooser_delete_event’:
+../src/appchooserdialog.c:240:59: warning: unused parameter ‘event’ [-Wunused-parameter]
+  240 | app_chooser_delete_event (GtkWidget *dialog, GdkEventAny *event)
+      |                                              ~~~~~~~~~~~~~^~~~~
+../src/appchooserdialog.c: In function ‘ensure_default_in_initial_list’:
+../src/appchooserdialog.c:338:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘guint’ {aka ‘unsigned int’} [-Wsign-compare]
+  338 |   for (i = INITIAL_LIST_SIZE; i < n_choices; i++)
+      |                                 ^
+../src/appchooserdialog.c: In function ‘more_pressed’:
+../src/appchooserdialog.c:353:37: warning: unused parameter ‘gesture’ [-Wunused-parameter]
+  353 | more_pressed (GtkGestureMultiPress *gesture,
+      |               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/appchooserdialog.c:355:22: warning: unused parameter ‘x’ [-Wunused-parameter]
+  355 |               double x,
+      |               ~~~~~~~^
+[54/73] Compiling C object src/xdg-desktop-portal-gtk.p/fdonotification.c.o
+../src/fdonotification.c: In function ‘notify_signal’:
+../src/fdonotification.c:94:28: warning: unused parameter ‘sender_name’ [-Wunused-parameter]
+   94 |                const char *sender_name,
+      |                ~~~~~~~~~~~~^~~~~~~~~~~
+../src/fdonotification.c:95:28: warning: unused parameter ‘object_path’ [-Wunused-parameter]
+   95 |                const char *object_path,
+      |                ~~~~~~~~~~~~^~~~~~~~~~~
+../src/fdonotification.c:96:28: warning: unused parameter ‘interface_name’ [-Wunused-parameter]
+   96 |                const char *interface_name,
+      |                ~~~~~~~~~~~~^~~~~~~~~~~~~~
+../src/fdonotification.c:99:25: warning: unused parameter ‘user_data’ [-Wunused-parameter]
+   99 |                gpointer user_data)
+      |                ~~~~~~~~~^~~~~~~~~
+[55/73] Compiling C object src/xdg-desktop-portal-gtk.p/account.c.o
+../src/account.c: In function ‘account_dialog_done’:
+../src/account.c:87:33: warning: unused parameter ‘widget’ [-Wunused-parameter]
+   87 | account_dialog_done (GtkWidget *widget,
+      |                      ~~~~~~~~~~~^~~~~~
+../src/account.c: In function ‘handle_close’:
+../src/account.c:126:31: warning: unused parameter ‘object’ [-Wunused-parameter]
+  126 | handle_close (XdpImplRequest *object,
+      |               ~~~~~~~~~~~~~~~~^~~~~~
+../src/account.c:127:38: warning: unused parameter ‘invocation’ [-Wunused-parameter]
+  127 |               GDBusMethodInvocation *invocation,
+      |               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+[56/73] Compiling C object src/xdg-desktop-portal-gtk.p/externalwindow.c.o
+../src/externalwindow.c: In function ‘external_window_init’:
+../src/externalwindow.c:142:39: warning: unused parameter ‘external_window’ [-Wunused-parameter]
+  142 | external_window_init (ExternalWindow *external_window)
+      |                       ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+[57/73] Compiling C object src/xdg-desktop-portal-gtk.p/filechooser.c.o
+../src/filechooser.c: In function ‘deserialize_choice’:
+../src/filechooser.c:309:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘gsize’ {aka ‘long unsigned int’} [-Wsign-compare]
+  309 |       for (i = 0; i < g_variant_n_children (choices); i++)
+      |                     ^
+../src/filechooser.c: In function ‘handle_open’:
+../src/filechooser.c:530:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘gsize’ {aka ‘long unsigned int’} [-Wsign-compare]
+  530 |       for (i = 0; i < g_variant_n_children (choices); i++)
+      |                     ^
+[58/73] Compiling C object src/xdg-desktop-portal-gtk.p/print.c.o
+../src/print.c: In function ‘handle_print_response’:
+../src/print.c:375:35: warning: unused parameter ‘dialog’ [-Wunused-parameter]
+  375 | handle_print_response (GtkDialog *dialog,
+      |                        ~~~~~~~~~~~^~~~~~
+../src/print.c: In function ‘handle_prepare_print_response’:
+../src/print.c:605:43: warning: unused parameter ‘dialog’ [-Wunused-parameter]
+  605 | handle_prepare_print_response (GtkDialog *dialog,
+      |                                ~~~~~~~~~~~^~~~~~
+[59/73] Compiling C object src/xdg-desktop-portal-gtk.p/email.c.o
+../src/email.c: In function ‘handle_compose_email’:
+../src/email.c:127:35: warning: unused parameter ‘arg_parent_window’ [-Wunused-parameter]
+  127 |                       const char *arg_parent_window,
+      |                       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[60/73] Compiling C object src/xdg-desktop-portal-gtk.p/fc-monitor.c.o
+[61/73] Compiling C object src/xdg-desktop-portal-gtk.p/appchooserdialog.c.o
+../src/appchooserdialog.c: In function ‘update_header’:
+../src/appchooserdialog.c:79:31: warning: unused parameter ‘data’ [-Wunused-parameter]
+   79 |                gpointer       data)
+      |                ~~~~~~~~~~~~~~~^~~~
+../src/appchooserdialog.c: In function ‘row_activated’:
+../src/appchooserdialog.c:150:28: warning: unused parameter ‘list’ [-Wunused-parameter]
+  150 | row_activated (GtkListBox *list,
+      |                ~~~~~~~~~~~~^~~~
+../src/appchooserdialog.c: In function ‘row_selected’:
+../src/appchooserdialog.c:168:27: warning: unused parameter ‘list’ [-Wunused-parameter]
+  168 | row_selected (GtkListBox *list,
+      |               ~~~~~~~~~~~~^~~~
+../src/appchooserdialog.c: In function ‘cancel_clicked’:
+../src/appchooserdialog.c:177:28: warning: unused parameter ‘button’ [-Wunused-parameter]
+  177 | cancel_clicked (GtkWidget *button,
+      |                 ~~~~~~~~~~~^~~~~~
+../src/appchooserdialog.c: In function ‘open_clicked’:
+../src/appchooserdialog.c:184:26: warning: unused parameter ‘button’ [-Wunused-parameter]
+  184 | open_clicked (GtkWidget *button,
+      |               ~~~~~~~~~~~^~~~~~
+../src/appchooserdialog.c: In function ‘find_in_software’:
+../src/appchooserdialog.c:233:30: warning: unused parameter ‘button’ [-Wunused-parameter]
+  233 | find_in_software (GtkWidget *button,
+      |                   ~~~~~~~~~~~^~~~~~
+../src/appchooserdialog.c: In function ‘app_chooser_delete_event’:
+../src/appchooserdialog.c:240:59: warning: unused parameter ‘event’ [-Wunused-parameter]
+  240 | app_chooser_delete_event (GtkWidget *dialog, GdkEventAny *event)
+      |                                              ~~~~~~~~~~~~~^~~~~
+../src/appchooserdialog.c: In function ‘ensure_default_in_initial_list’:
+../src/appchooserdialog.c:338:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘guint’ {aka ‘unsigned int’} [-Wsign-compare]
+  338 |   for (i = INITIAL_LIST_SIZE; i < n_choices; i++)
+      |                                 ^
+../src/appchooserdialog.c: In function ‘more_pressed’:
+../src/appchooserdialog.c:353:37: warning: unused parameter ‘gesture’ [-Wunused-parameter]
+  353 | more_pressed (GtkGestureMultiPress *gesture,
+      |               ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/appchooserdialog.c:355:22: warning: unused parameter ‘x’ [-Wunused-parameter]
+  355 |               double x,
+      |               ~~~~~~~^
+[62/73] Compiling C object src/xdg-desktop-portal-gtk.p/access.c.o
+../src/access.c: In function ‘access_dialog_response’:
+../src/access.c:113:36: warning: unused parameter ‘widget’ [-Wunused-parameter]
+  113 | access_dialog_response (GtkWidget *widget,
+      |                         ~~~~~~~~~~~^~~~~~
+../src/access.c: In function ‘handle_close’:
+../src/access.c:141:31: warning: unused parameter ‘object’ [-Wunused-parameter]
+  141 | handle_close (XdpImplRequest *object,
+      |               ~~~~~~~~~~~~~~~~^~~~~~
+../src/access.c:142:38: warning: unused parameter ‘invocation’ [-Wunused-parameter]
+  142 |               GDBusMethodInvocation *invocation,
+      |               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../src/access.c: In function ‘add_choice’:
+../src/access.c:193:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘gsize’ {aka ‘long unsigned int’} [-Wsign-compare]
+  193 |       for (i = 0; i < g_variant_n_children (options); i++)
+      |                     ^
+../src/access.c: In function ‘handle_access_dialog’:
+../src/access.c:321:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘gsize’ {aka ‘long unsigned int’} [-Wsign-compare]
+  321 |       for (i = 0; i < g_variant_n_children (choices); i++)
+      |                     ^
+[63/73] Linking target src/testappchooser
+[64/73] Compiling C object src/xdg-desktop-portal-gtk.p/xdg-desktop-portal-gtk.c.o
+../src/xdg-desktop-portal-gtk.c: In function ‘message_handler’:
+../src/xdg-desktop-portal-gtk.c:87:31: warning: unused parameter ‘log_domain’ [-Wunused-parameter]
+   87 | message_handler (const gchar *log_domain,
+      |                  ~~~~~~~~~~~~~^~~~~~~~~~
+../src/xdg-desktop-portal-gtk.c:90:27: warning: unused parameter ‘user_data’ [-Wunused-parameter]
+   90 |                  gpointer user_data)
+      |                  ~~~~~~~~~^~~~~~~~~
+../src/xdg-desktop-portal-gtk.c: In function ‘on_bus_acquired’:
+../src/xdg-desktop-portal-gtk.c:115:35: warning: unused parameter ‘name’ [-Wunused-parameter]
+  115 |                  const gchar     *name,
+      |                  ~~~~~~~~~~~~~~~~~^~~~
+../src/xdg-desktop-portal-gtk.c:116:35: warning: unused parameter ‘user_data’ [-Wunused-parameter]
+  116 |                  gpointer         user_data)
+      |                  ~~~~~~~~~~~~~~~~~^~~~~~~~~
+../src/xdg-desktop-portal-gtk.c: In function ‘on_name_acquired’:
+../src/xdg-desktop-portal-gtk.c:202:36: warning: unused parameter ‘connection’ [-Wunused-parameter]
+  202 | on_name_acquired (GDBusConnection *connection,
+      |                   ~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../src/xdg-desktop-portal-gtk.c:203:36: warning: unused parameter ‘name’ [-Wunused-parameter]
+  203 |                   const gchar     *name,
+      |                   ~~~~~~~~~~~~~~~~~^~~~
+../src/xdg-desktop-portal-gtk.c:204:36: warning: unused parameter ‘user_data’ [-Wunused-parameter]
+  204 |                   gpointer         user_data)
+      |                   ~~~~~~~~~~~~~~~~~^~~~~~~~~
+../src/xdg-desktop-portal-gtk.c: In function ‘on_name_lost’:
+../src/xdg-desktop-portal-gtk.c:210:32: warning: unused parameter ‘connection’ [-Wunused-parameter]
+  210 | on_name_lost (GDBusConnection *connection,
+      |               ~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../src/xdg-desktop-portal-gtk.c:211:32: warning: unused parameter ‘name’ [-Wunused-parameter]
+  211 |               const gchar     *name,
+      |               ~~~~~~~~~~~~~~~~~^~~~
+../src/xdg-desktop-portal-gtk.c:212:32: warning: unused parameter ‘user_data’ [-Wunused-parameter]
+  212 |               gpointer         user_data)
+      |               ~~~~~~~~~~~~~~~~~^~~~~~~~~
+[65/73] Compiling C object src/xdg-desktop-portal-gtk.p/dynamic-launcher.c.o
+../src/dynamic-launcher.c: In function ‘handle_prepare_install_response’:
+../src/dynamic-launcher.c:140:45: warning: unused parameter ‘dialog’ [-Wunused-parameter]
+  140 | handle_prepare_install_response (GtkDialog *dialog,
+      |                                  ~~~~~~~~~~~^~~~~~
+../src/dynamic-launcher.c: In function ‘handle_request_install_token’:
+../src/dynamic-launcher.c:355:55: warning: unused parameter ‘arg_options’ [-Wunused-parameter]
+  355 |                               GVariant               *arg_options)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+[66/73] Compiling C object src/xdg-desktop-portal-gtk.p/inhibit.c.o
+../src/inhibit.c: In function ‘uninhibit_done_gnome’:
+../src/inhibit.c:41:32: warning: unused parameter ‘source’ [-Wunused-parameter]
+   41 | uninhibit_done_gnome (GObject *source,
+      |                       ~~~~~~~~~^~~~~~
+../src/inhibit.c:43:32: warning: unused parameter ‘data’ [-Wunused-parameter]
+   43 |                       gpointer data)
+      |                       ~~~~~~~~~^~~~
+../src/inhibit.c: In function ‘handle_close_gnome’:
+../src/inhibit.c:54:30: warning: unused parameter ‘data’ [-Wunused-parameter]
+   54 |                     gpointer data)
+      |                     ~~~~~~~~~^~~~
+../src/inhibit.c: In function ‘inhibit_done_gnome’:
+../src/inhibit.c:77:30: warning: unused parameter ‘source’ [-Wunused-parameter]
+   77 | inhibit_done_gnome (GObject *source,
+      |                     ~~~~~~~~~^~~~~~
+../src/inhibit.c: In function ‘handle_inhibit_gnome’:
+../src/inhibit.c:102:36: warning: unused parameter ‘arg_window’ [-Wunused-parameter]
+  102 |                       const gchar *arg_window,
+      |                       ~~~~~~~~~~~~~^~~~~~~~~~
+../src/inhibit.c: In function ‘query_end_response’:
+../src/inhibit.c:188:30: warning: unused parameter ‘data’ [-Wunused-parameter]
+  188 | query_end_response (gpointer data)
+      |                     ~~~~~~~~~^~~~
+../src/inhibit.c: In function ‘client_proxy_signal’:
+../src/inhibit.c:229:35: warning: unused parameter ‘sender_name’ [-Wunused-parameter]
+  229 |                      const gchar *sender_name,
+      |                      ~~~~~~~~~~~~~^~~~~~~~~~~
+../src/inhibit.c:231:35: warning: unused parameter ‘parameters’ [-Wunused-parameter]
+  231 |                      GVariant    *parameters,
+      |                      ~~~~~~~~~~~~~^~~~~~~~~~
+../src/inhibit.c:232:35: warning: unused parameter ‘user_data’ [-Wunused-parameter]
+  232 |                      gpointer     user_data)
+      |                      ~~~~~~~~~~~~~^~~~~~~~~
+../src/inhibit.c: In function ‘uninhibit_done_fdo’:
+../src/inhibit.c:263:30: warning: unused parameter ‘source’ [-Wunused-parameter]
+  263 | uninhibit_done_fdo (GObject *source,
+      |                     ~~~~~~~~~^~~~~~
+../src/inhibit.c:265:30: warning: unused parameter ‘data’ [-Wunused-parameter]
+  265 |                     gpointer data)
+      |                     ~~~~~~~~~^~~~
+../src/inhibit.c: In function ‘handle_close_fdo’:
+../src/inhibit.c:278:28: warning: unused parameter ‘data’ [-Wunused-parameter]
+  278 |                   gpointer data)
+      |                   ~~~~~~~~~^~~~
+../src/inhibit.c: In function ‘inhibit_done_fdo’:
+../src/inhibit.c:305:28: warning: unused parameter ‘source’ [-Wunused-parameter]
+  305 | inhibit_done_fdo (GObject *source,
+      |                   ~~~~~~~~~^~~~~~
+../src/inhibit.c: In function ‘handle_inhibit_fdo’:
+../src/inhibit.c:337:34: warning: unused parameter ‘arg_window’ [-Wunused-parameter]
+  337 |                     const gchar *arg_window,
+      |                     ~~~~~~~~~~~~~^~~~~~~~~~
+../src/inhibit.c: In function ‘inhibit_session_init’:
+../src/inhibit.c:460:39: warning: unused parameter ‘inhibit_session’ [-Wunused-parameter]
+  460 | inhibit_session_init (InhibitSession *inhibit_session)
+      |                       ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../src/inhibit.c: In function ‘inhibit_session_new’:
+../src/inhibit.c:478:34: warning: unused parameter ‘app_id’ [-Wunused-parameter]
+  478 | inhibit_session_new (const char *app_id,
+      |                      ~~~~~~~~~~~~^~~~~~
+../src/inhibit.c: In function ‘handle_create_monitor’:
+../src/inhibit.c:497:36: warning: unused parameter ‘arg_handle’ [-Wunused-parameter]
+  497 |                        const char *arg_handle,
+      |                        ~~~~~~~~~~~~^~~~~~~~~~
+../src/inhibit.c:500:36: warning: unused parameter ‘arg_window’ [-Wunused-parameter]
+  500 |                        const char *arg_window)
+      |                        ~~~~~~~~~~~~^~~~~~~~~~
+../src/inhibit.c: In function ‘global_active_changed_cb’:
+../src/inhibit.c:547:36: warning: unused parameter ‘object’ [-Wunused-parameter]
+  547 | global_active_changed_cb (GObject *object,
+      |                           ~~~~~~~~~^~~~~~
+[67/73] Compiling C object src/xdg-desktop-portal-gtk.p/settings.c.o
+../src/settings.c: In function ‘settings_handle_read_all’:
+../src/settings.c:120:50: warning: unused parameter ‘object’ [-Wunused-parameter]
+  120 | settings_handle_read_all (XdpImplSettings       *object,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/settings.c:123:50: warning: unused parameter ‘data’ [-Wunused-parameter]
+  123 |                           gpointer               data)
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+../src/settings.c: In function ‘settings_handle_read’:
+../src/settings.c:185:46: warning: unused parameter ‘object’ [-Wunused-parameter]
+  185 | settings_handle_read (XdpImplSettings       *object,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+../src/settings.c:189:46: warning: unused parameter ‘data’ [-Wunused-parameter]
+  189 |                       gpointer               data)
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+../src/settings.c: In function ‘changed_signal_user_data_destroy’:
+../src/settings.c:261:45: warning: unused parameter ‘closure’ [-Wunused-parameter]
+  261 |                                   GClosure *closure)
+      |                                   ~~~~~~~~~~^~~~~~~
+../src/settings.c: In function ‘fontconfig_changed’:
+../src/settings.c:342:38: warning: unused parameter ‘monitor’ [-Wunused-parameter]
+  342 | fontconfig_changed (FcMonitor       *monitor,
+      |                     ~~~~~~~~~~~~~~~~~^~~~~~~
+[68/73] Compiling C object src/xdg-desktop-portal-gtk.p/appchooser.c.o
+../src/appchooser.c: In function ‘handle_update_choices’:
+../src/appchooser.c:231:43: warning: unused parameter ‘object’ [-Wunused-parameter]
+  231 | handle_update_choices (XdpImplAppChooser *object,
+      |                        ~~~~~~~~~~~~~~~~~~~^~~~~~
+[69/73] Compiling C object src/xdg-desktop-portal-gtk.p/externalwindow-x11.c.o
+../src/externalwindow-x11.c: In function ‘external_window_x11_init’:
+../src/externalwindow-x11.c:123:46: warning: unused parameter ‘external_window_x11’ [-Wunused-parameter]
+  123 | external_window_x11_init (ExternalWindowX11 *external_window_x11)
+      |                           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+[70/73] Compiling C object src/xdg-desktop-portal-gtk.p/externalwindow-wayland.c.o
+../src/externalwindow-wayland.c: In function ‘external_window_wayland_init’:
+../src/externalwindow-wayland.c:105:54: warning: unused parameter ‘external_window_wayland’ [-Wunused-parameter]
+  105 | external_window_wayland_init (ExternalWindowWayland *external_window_wayland)
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+[71/73] Compiling C object src/xdg-desktop-portal-gtk.p/meson-generated_.._shell-dbus.c.o
+[72/73] Compiling C object src/xdg-desktop-portal-gtk.p/meson-generated_.._xdg-desktop-portal-dbus.c.o
+[73/73] Linking target src/xdg-desktop-portal-gtk
+[0/1] Installing files
+Installing data/xdg-desktop-portal-gtk.desktop to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/applications
+Installing src/xdg-desktop-portal-gtk to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/libexec
+Stripping target 'src/xdg-desktop-portal-gtk'.
+Installing po/be/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/be/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/ca/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/de/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/es/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/es/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/fr/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/gl/LC_MESSAGES
+Installing po/he/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/id/LC_MESSAGES
+Installing po/ie/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/ie/LC_MESSAGES
+Installing po/it/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/ka/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/lt/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/nl/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/oc/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/sl/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/sr/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/sv/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/uk/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/xdg-desktop-portal-gtk.mo to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/locale/zh_TW/LC_MESSAGES
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/work/xdg-desktop-portal-gtk-1.15.3/build/data/gtk.portal to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/xdg-desktop-portal/portals
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/work/xdg-desktop-portal-gtk-1.15.3/build/data/org.freedesktop.impl.portal.desktop.gtk.service to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/share/dbus-1/services
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/work/xdg-desktop-portal-gtk-1.15.3/build/data/xdg-desktop-portal-gtk.service to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/package-xdg-desktop-portal-gtk/usr/lib/systemd/user
+[32mThe main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..[0m
+cp: cannot stat 'AUTHORS': No such file or directory
+cp: cannot stat 'ChangeLog*': No such file or directory
+cp: cannot stat 'CREDITS': No such file or directory
+cp: cannot stat 'LICENSE': No such file or directory
+cp: cannot stat 'MAINTAINERS': No such file or directory
+cp: cannot stat 'docs': No such file or directory
+cp: cannot stat 'DOCS': No such file or directory
+grep: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk.info: No such file or directory
+gsettings-desktop-schemas
+xdg-desktop-portal
+[32mPackaging compiled for slackware installation...[0m
+[32mMAKEPKG_FLAGS is empty or unset, using default[0m
+
+Slackware package maker, version 3.14159265.
+
+Searching for symbolic links:
+
+No symbolic links were found, so we won't make an installation script.
+You can make your own later in ./install/doinst.sh and rebuild the
+package if you like.
+
+This next step is optional - you can set the directories in your package
+to some sane permissions. If any of the directories in your package have
+special permissions, then DO NOT reset them here!
+
+Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
+directory ownerships to root:root ([y]es, [n]o)? n
+
+
+Creating Slackware package:  /tmp/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz
+
+./
+install/
+install/doinst.sh
+install/slack-desc
+usr/
+usr/doc/
+usr/doc/xdg-desktop-portal-gtk-1.15.3/
+usr/doc/xdg-desktop-portal-gtk-1.15.3/COPYING
+usr/doc/xdg-desktop-portal-gtk-1.15.3/NEWS
+usr/doc/xdg-desktop-portal-gtk-1.15.3/README.md
+usr/doc/xdg-desktop-portal-gtk-1.15.3/slack-required
+usr/doc/xdg-desktop-portal-gtk-1.15.3/xdg-desktop-portal-gtk.ini
+usr/lib/
+usr/lib/systemd/
+usr/lib/systemd/user/
+usr/lib/systemd/user/xdg-desktop-portal-gtk.service
+usr/libexec/
+usr/libexec/xdg-desktop-portal-gtk
+usr/share/
+usr/share/applications/
+usr/share/applications/xdg-desktop-portal-gtk.desktop
+usr/share/dbus-1/
+usr/share/dbus-1/services/
+usr/share/dbus-1/services/org.freedesktop.impl.portal.desktop.gtk.service
+usr/share/locale/
+usr/share/locale/be/
+usr/share/locale/be/LC_MESSAGES/
+usr/share/locale/be/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/ca/
+usr/share/locale/ca/LC_MESSAGES/
+usr/share/locale/ca/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/cs/
+usr/share/locale/cs/LC_MESSAGES/
+usr/share/locale/cs/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/da/
+usr/share/locale/da/LC_MESSAGES/
+usr/share/locale/da/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/de/
+usr/share/locale/de/LC_MESSAGES/
+usr/share/locale/de/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/en_GB/
+usr/share/locale/en_GB/LC_MESSAGES/
+usr/share/locale/en_GB/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/es/
+usr/share/locale/es/LC_MESSAGES/
+usr/share/locale/es/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/fr/
+usr/share/locale/fr/LC_MESSAGES/
+usr/share/locale/fr/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/gl/
+usr/share/locale/gl/LC_MESSAGES/
+usr/share/locale/gl/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/he/
+usr/share/locale/he/LC_MESSAGES/
+usr/share/locale/he/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/hi/
+usr/share/locale/hi/LC_MESSAGES/
+usr/share/locale/hi/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/hr/
+usr/share/locale/hr/LC_MESSAGES/
+usr/share/locale/hr/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/hu/
+usr/share/locale/hu/LC_MESSAGES/
+usr/share/locale/hu/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/id/
+usr/share/locale/id/LC_MESSAGES/
+usr/share/locale/id/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/ie/
+usr/share/locale/ie/LC_MESSAGES/
+usr/share/locale/ie/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/it/
+usr/share/locale/it/LC_MESSAGES/
+usr/share/locale/it/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/ja/
+usr/share/locale/ja/LC_MESSAGES/
+usr/share/locale/ja/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/ka/
+usr/share/locale/ka/LC_MESSAGES/
+usr/share/locale/ka/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/lt/
+usr/share/locale/lt/LC_MESSAGES/
+usr/share/locale/lt/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/nl/
+usr/share/locale/nl/LC_MESSAGES/
+usr/share/locale/nl/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/oc/
+usr/share/locale/oc/LC_MESSAGES/
+usr/share/locale/oc/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/pl/
+usr/share/locale/pl/LC_MESSAGES/
+usr/share/locale/pl/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/pt/
+usr/share/locale/pt/LC_MESSAGES/
+usr/share/locale/pt/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/pt_BR/
+usr/share/locale/pt_BR/LC_MESSAGES/
+usr/share/locale/pt_BR/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/ro/
+usr/share/locale/ro/LC_MESSAGES/
+usr/share/locale/ro/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/ru/
+usr/share/locale/ru/LC_MESSAGES/
+usr/share/locale/ru/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/sk/
+usr/share/locale/sk/LC_MESSAGES/
+usr/share/locale/sk/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/sl/
+usr/share/locale/sl/LC_MESSAGES/
+usr/share/locale/sl/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/sr/
+usr/share/locale/sr/LC_MESSAGES/
+usr/share/locale/sr/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/sv/
+usr/share/locale/sv/LC_MESSAGES/
+usr/share/locale/sv/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/tr/
+usr/share/locale/tr/LC_MESSAGES/
+usr/share/locale/tr/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/uk/
+usr/share/locale/uk/LC_MESSAGES/
+usr/share/locale/uk/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/zh_CN/
+usr/share/locale/zh_CN/LC_MESSAGES/
+usr/share/locale/zh_CN/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/locale/zh_TW/
+usr/share/locale/zh_TW/LC_MESSAGES/
+usr/share/locale/zh_TW/LC_MESSAGES/xdg-desktop-portal-gtk.mo
+usr/share/xdg-desktop-portal/
+usr/share/xdg-desktop-portal/portals/
+usr/share/xdg-desktop-portal/portals/gtk.portal
+
+Slackware package /tmp/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz created.
+
+Create shared object file for xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz
+Creating /tmp/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz.so.file using /tmp/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz
+Successfully created /tmp/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz.so.file
+Packaging of executable and meta-data in xdg-desktop-portal-gtk.tar.lz4 format.
+/tmp/xdg-desktop-portal-gtk /tmp/xdg-desktop-portal-gtk
+/tmp/xdg-desktop-portal-gtk
+BIN_NAME
+README
+makepkg-xdg-desktop-portal-gtk.log
+xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz
+xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz.md5
+xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz.so.file
+xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz.txt
+xdg-desktop-portal-gtk.dep
+[32mxdg-desktop-portal-gtk build finished. Procced to installation...[0m
+
++===============================================================================================================================================+
+| Upgrading xdg-desktop-portal-gtk-1.15.3-x86_64-1_gfs package using /tmp/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz |
++===============================================================================================================================================+
+
+Pre-installing package xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz...
+Removing package: xdg-desktop-portal-gtk-1.15.3-x86_64-1_gfs-upgraded-2025-05-26,13:28:42
+Installing package xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz:
+PACKAGE DESCRIPTION:
+# xdg-desktop-portal-gtk ()
+#
+# Gtk implementation of xdg-desktop-portal.
+#
+# https://github.com/flatpak/xdg-desktop-portal-gtk
+Executing install script for xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz.
+Font directories:
+	/usr/share/fonts
+/usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
+/usr/share/fonts/100dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/75dpi: caching, new cache contents: 238 fonts, 0 dirs
+/usr/share/fonts/OTF: caching, new cache contents: 124 fonts, 0 dirs
+/usr/share/fonts/Speedo: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/TTF: caching, new cache contents: 1132 fonts, 0 dirs
+/usr/share/fonts/Type1: caching, new cache contents: 64 fonts, 0 dirs
+/usr/share/fonts/cyrillic: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/encodings: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/encodings/large: caching, new cache contents: 0 fonts, 0 dirs
+/usr/share/fonts/kanjistrokeorders: caching, new cache contents: 1 fonts, 0 dirs
+/usr/share/fonts/misc: caching, new cache contents: 143 fonts, 0 dirs
+/usr/share/fonts/util: caching, new cache contents: 0 fonts, 0 dirs
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+/usr/bin/fc-cache: succeeded
+Package xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz installed.
+Package xdg-desktop-portal-gtk-1.15.3-x86_64-1_gfs upgraded with new package /tmp/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk-1.15.3-x86_64-1_rtz.tlz.
+[32mCleaning environmet: Removing source code, and work-space...[0m
+rm: cannot remove 'xdg-desktop-portal-gtk-1.15.3.tar.xz': No such file or directory
