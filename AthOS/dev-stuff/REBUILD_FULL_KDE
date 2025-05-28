@@ -15,6 +15,8 @@ else
     echo "Invalid input. Please enter 'y' or 'n'."
 fi
 
+stat /tmp > /tmp-perms-before.txt
+
 bash ./PLASMA5_NEED
 sleep 2
 bash ./FRAMEWORKS-UPDATE
@@ -25,3 +27,5 @@ bash ./KDE_APPS
 sleep 2
 bash ./TA_LIMA
 
+stat /tmp > /tmp-perms-after.txt
+echo "Run: diff /tmp-perms-before.txt /tmp-perms-after.txt"

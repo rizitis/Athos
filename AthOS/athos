@@ -1108,6 +1108,7 @@ fi
 
 # fix permissions
 find "$W_DIR"/"$package" -type f -exec chmod 0644 {} \; && find "$W_DIR"/"$package" -type d -exec chmod 0775 {} \;
+#chmod 1777 /tmp
 
 # Calculate and display build time
 end_time=$(date +%s)
