@@ -18,27 +18,27 @@ lmdb is already installed!
 solid is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 14:08:25--  https://download.kde.org/stable/frameworks/6.14/baloo-6.14.0.tar.xz
+--2025-05-28 18:29:02--  https://download.kde.org/stable/frameworks/6.14/baloo-6.14.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/baloo-6.14.0.tar.xz [following]
---2025-05-21 14:08:25--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/baloo-6.14.0.tar.xz
+--2025-05-28 18:29:02--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/baloo-6.14.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 326884 (319K) [application/octet-stream]
 Saving to: ‘baloo-6.14.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 15% 1.23M 0s
-    50K .......... .......... .......... .......... .......... 31% 1.30M 0s
-   100K .......... .......... .......... .......... .......... 46% 6.37M 0s
-   150K .......... .......... .......... .......... .......... 62% 1.82M 0s
-   200K .......... .......... .......... .......... .......... 78% 6.25M 0s
-   250K .......... .......... .......... .......... .......... 93% 4.97M 0s
-   300K .......... .........                                  100% 8.28M=0.1s
+     0K .......... .......... .......... .......... .......... 15% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 31% 1.51M 0s
+   100K .......... .......... .......... .......... .......... 46% 5.17M 0s
+   150K .......... .......... .......... .......... .......... 62% 2.19M 0s
+   200K .......... .......... .......... .......... .......... 78% 6.81M 0s
+   250K .......... .......... .......... .......... .......... 93% 5.44M 0s
+   300K .......... .........                                  100% 6.92M=0.1s
 
-2025-05-21 14:08:26 (2.37 MB/s) - ‘baloo-6.14.0.tar.xz’ saved [326884/326884]
+2025-05-28 18:29:02 (2.63 MB/s) - ‘baloo-6.14.0.tar.xz’ saved [326884/326884]
 
 Found file: baloo-6.14.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -985,8 +985,8 @@ baloo-6.14.0/tests/file/util.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -1013,7 +1013,7 @@ hm...lets continue and see what happens
 -- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
 -- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
@@ -1099,168 +1099,166 @@ hm...lets continue and see what happens
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/work/baloo-6.14.0/build
 [1/411] Generating ts...
 [2/411] Automatic MOC for target BalooDBusMainInterface
-[3/411] Automatic MOC for target BalooDBusSchedulerInterface
+[3/411] Automatic MOC for target KF6BalooCodecs
 [4/411] Automatic MOC for target BalooDBusFileIndexerInterface
-[5/411] Automatic MOC for target KF6BalooCodecs
-[6/411] Generating org.kde.baloo.main.xml
+[5/411] Generating org.kde.baloo.main.xml
+[6/411] Automatic MOC for target BalooDBusSchedulerInterface
 [7/411] Generating org.kde.baloo.fileindexer.xml
 [8/411] Generating org.kde.baloo.scheduler.xml
 [9/411] Generating maininterface.cpp, maininterface.h
 [10/411] Generating fileindexerinterface.cpp, fileindexerinterface.h
-[11/411] Generating schedulerinterface.cpp, schedulerinterface.h
+[11/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/KF6BalooCodecs_autogen/mocs_compilation.cpp.o
 [12/411] Generating moc_maininterface.cpp
-[13/411] Generating moc_schedulerinterface.cpp
+[13/411] Generating schedulerinterface.cpp, schedulerinterface.h
 [14/411] Generating moc_fileindexerinterface.cpp
-[15/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/KF6BalooCodecs_autogen/mocs_compilation.cpp.o
+[15/411] Generating moc_schedulerinterface.cpp
 [16/411] Building CXX object src/dbus/CMakeFiles/BalooDBusMainInterface.dir/BalooDBusMainInterface_autogen/mocs_compilation.cpp.o
 [17/411] Building CXX object src/dbus/CMakeFiles/BalooDBusFileIndexerInterface.dir/BalooDBusFileIndexerInterface_autogen/mocs_compilation.cpp.o
 [18/411] Building CXX object src/dbus/CMakeFiles/BalooDBusSchedulerInterface.dir/BalooDBusSchedulerInterface_autogen/mocs_compilation.cpp.o
 [19/411] Generating mo...
 [20/411] Automatic MOC for target baloosearchmodule
-[21/411] Building CXX object src/kioworkers/kded/CMakeFiles/baloosearchmodule.dir/baloosearchmodule_autogen/mocs_compilation.cpp.o
-[22/411] Automatic MOC for target advancedqueryparsertest
+[21/411] Automatic MOC for target advancedqueryparsertest
+[22/411] Building CXX object src/kioworkers/kded/CMakeFiles/baloosearchmodule.dir/baloosearchmodule_autogen/mocs_compilation.cpp.o
 [23/411] Building CXX object autotests/unit/lib/CMakeFiles/advancedqueryparsertest.dir/advancedqueryparsertest_autogen/mocs_compilation.cpp.o
 [24/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/coding.cpp.o
-[25/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/doctermscodec.cpp.o
-[26/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/postingcodec.cpp.o
-[27/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/positioncodec.cpp.o
+[25/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/postingcodec.cpp.o
+[26/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/positioncodec.cpp.o
+[27/411] Building CXX object src/codecs/CMakeFiles/KF6BalooCodecs.dir/doctermscodec.cpp.o
 [28/411] Linking CXX static library lib/libKF6BalooCodecs.a
 [29/411] Automatic MOC for target KF6BalooEngine
 [30/411] Running AUTOMOC file extraction for target KF6BalooEngine
-[31/411] Automatic MOC for target doctermscodectest
-[32/411] Running moc --collect-json for target KF6BalooEngine
-[33/411] Automatic MOC for target positioncodecbenchmark
-[34/411] Building CXX object autotests/unit/codecs/CMakeFiles/doctermscodectest.dir/doctermscodectest_autogen/mocs_compilation.cpp.o
-[35/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/KF6BalooEngine_autogen/mocs_compilation.cpp.o
-[36/411] Automatic MOC for target postingcodectest
-[37/411] Automatic MOC for target positioncodectest
-[38/411] Building CXX object src/kioworkers/kded/CMakeFiles/baloosearchmodule.dir/baloosearchmodule.cpp.o
-[39/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/andpostingiterator.cpp.o
-[40/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/orpostingiterator.cpp.o
-[41/411] Building CXX object src/dbus/CMakeFiles/BalooDBusSchedulerInterface.dir/schedulerinterface.cpp.o
-[42/411] Building CXX object autotests/unit/lib/CMakeFiles/advancedqueryparsertest.dir/__/__/__/src/lib/advancedqueryparser.cpp.o
-[43/411] Building CXX object autotests/unit/lib/CMakeFiles/advancedqueryparsertest.dir/advancedqueryparsertest.cpp.o
-[44/411] Building CXX object src/dbus/CMakeFiles/BalooDBusMainInterface.dir/maininterface.cpp.o
-[45/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/document.cpp.o
-[46/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/indexerstate.cpp.o
-[47/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documenttimedb.cpp.o
-[48/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/idfilenamedb.cpp.o
-[49/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documentdb.cpp.o
-[50/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documentdatadb.cpp.o
-[51/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/database.cpp.o
-[52/411] Linking CXX static library lib/libBalooDBusMainInterface.a
-[53/411] Linking CXX static library lib/libBalooDBusSchedulerInterface.a
-[54/411] Building CXX object autotests/benchmarks/CMakeFiles/positioncodecbenchmark.dir/positioncodecbenchmark_autogen/mocs_compilation.cpp.o
-[55/411] Building CXX object autotests/unit/codecs/CMakeFiles/postingcodectest.dir/postingcodectest_autogen/mocs_compilation.cpp.o
-[56/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/idtreedb.cpp.o
-[57/411] Building CXX object autotests/unit/codecs/CMakeFiles/positioncodectest.dir/positioncodectest_autogen/mocs_compilation.cpp.o
-[58/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documentiddb.cpp.o
-[59/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/enginequery.cpp.o
-[60/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/postingiterator.cpp.o
-[61/411] Linking CXX shared module bin/baloosearchmodule.so
-[62/411] Building CXX object autotests/unit/lib/CMakeFiles/advancedqueryparsertest.dir/__/__/__/src/lib/term.cpp.o
-[63/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/mtimedb.cpp.o
-[64/411] Linking CXX executable bin/advancedqueryparsertest
-[65/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/vectorpostingiterator.cpp.o
-[66/411] Building CXX object src/dbus/CMakeFiles/BalooDBusFileIndexerInterface.dir/fileindexerinterface.cpp.o
-[67/411] Linking CXX static library lib/libBalooDBusFileIndexerInterface.a
-[68/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/phraseanditerator.cpp.o
-[69/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documenturldb.cpp.o
-[70/411] Building CXX object autotests/unit/codecs/CMakeFiles/doctermscodectest.dir/doctermscodectest.cpp.o
-[71/411] Linking CXX executable bin/doctermscodectest
-[72/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/termgenerator.cpp.o
-[73/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/positiondb.cpp.o
-[74/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/enginedebug.cpp.o
-[75/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/global.cpp.o
-[76/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/fsutils.cpp.o
+[31/411] Running moc --collect-json for target KF6BalooEngine
+[32/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/KF6BalooEngine_autogen/mocs_compilation.cpp.o
+[33/411] Automatic MOC for target postingcodectest
+[34/411] Automatic MOC for target positioncodecbenchmark
+[35/411] Automatic MOC for target doctermscodectest
+[36/411] Automatic MOC for target positioncodectest
+[37/411] Building CXX object autotests/unit/lib/CMakeFiles/advancedqueryparsertest.dir/__/__/__/src/lib/advancedqueryparser.cpp.o
+[38/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/andpostingiterator.cpp.o
+[39/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/orpostingiterator.cpp.o
+[40/411] Building CXX object src/dbus/CMakeFiles/BalooDBusMainInterface.dir/maininterface.cpp.o
+[41/411] Building CXX object src/kioworkers/kded/CMakeFiles/baloosearchmodule.dir/baloosearchmodule.cpp.o
+[42/411] Building CXX object src/dbus/CMakeFiles/BalooDBusSchedulerInterface.dir/schedulerinterface.cpp.o
+[43/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documenttimedb.cpp.o
+[44/411] Building CXX object autotests/unit/lib/CMakeFiles/advancedqueryparsertest.dir/advancedqueryparsertest.cpp.o
+[45/411] Building CXX object autotests/unit/lib/CMakeFiles/advancedqueryparsertest.dir/__/__/__/src/lib/term.cpp.o
+[46/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documentiddb.cpp.o
+[47/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documentdatadb.cpp.o
+[48/411] Building CXX object src/dbus/CMakeFiles/BalooDBusFileIndexerInterface.dir/fileindexerinterface.cpp.o
+[49/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/indexerstate.cpp.o
+[50/411] Linking CXX static library lib/libBalooDBusMainInterface.a
+[51/411] Linking CXX static library lib/libBalooDBusSchedulerInterface.a
+[52/411] Linking CXX static library lib/libBalooDBusFileIndexerInterface.a
+[53/411] Building CXX object autotests/benchmarks/CMakeFiles/positioncodecbenchmark.dir/positioncodecbenchmark_autogen/mocs_compilation.cpp.o
+[54/411] Building CXX object autotests/unit/codecs/CMakeFiles/doctermscodectest.dir/doctermscodectest_autogen/mocs_compilation.cpp.o
+[55/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/postingiterator.cpp.o
+[56/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/idfilenamedb.cpp.o
+[57/411] Building CXX object autotests/unit/codecs/CMakeFiles/postingcodectest.dir/postingcodectest_autogen/mocs_compilation.cpp.o
+[58/411] Building CXX object autotests/unit/codecs/CMakeFiles/positioncodectest.dir/positioncodectest_autogen/mocs_compilation.cpp.o
+[59/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/phraseanditerator.cpp.o
+[60/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/database.cpp.o
+[61/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/enginequery.cpp.o
+[62/411] Linking CXX shared module bin/baloosearchmodule.so
+[63/411] Linking CXX executable bin/advancedqueryparsertest
+[64/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/document.cpp.o
+[65/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documentdb.cpp.o
+[66/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/vectorpostingiterator.cpp.o
+[67/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/mtimedb.cpp.o
+[68/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/documenturldb.cpp.o
+[69/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/idtreedb.cpp.o
+[70/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/positiondb.cpp.o
+[71/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/termgenerator.cpp.o
+[72/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/fsutils.cpp.o
+[73/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/postingdb.cpp.o
+[74/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/global.cpp.o
+[75/411] Building CXX object autotests/unit/codecs/CMakeFiles/postingcodectest.dir/postingcodectest.cpp.o
+[76/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/vectorpositioninfoiterator.cpp.o
 [77/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/transaction.cpp.o
-[78/411] Building CXX object autotests/benchmarks/CMakeFiles/positioncodecbenchmark.dir/positioncodecbenchmark.cpp.o
-[79/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/postingdb.cpp.o
-[80/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/vectorpositioninfoiterator.cpp.o
-[81/411] Linking CXX executable bin/positioncodecbenchmark
+[78/411] Linking CXX executable bin/postingcodectest
+[79/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/enginedebug.cpp.o
+[80/411] Building CXX object autotests/unit/codecs/CMakeFiles/doctermscodectest.dir/doctermscodectest.cpp.o
+[81/411] Linking CXX executable bin/doctermscodectest
 [82/411] Building CXX object src/engine/CMakeFiles/KF6BalooEngine.dir/writetransaction.cpp.o
 [83/411] Linking CXX shared library bin/libKF6BalooEngine.so.6.14.0
 [84/411] Creating library symlink bin/libKF6BalooEngine.so.6 bin/libKF6BalooEngine.so
 [85/411] Generating baloosettings.h, baloosettings.cpp
 [86/411] Generating baloosettings.h, baloosettings.cpp
 [87/411] Generating baloosettings.h, baloosettings.cpp
-[88/411] Automatic MOC for target memorytest
-[89/411] Automatic MOC for target documenturldb
-[90/411] Automatic MOC for target writeiotest
+[88/411] Automatic MOC for target documenturldb
+[89/411] Automatic MOC for target writeiotest
+[90/411] Automatic MOC for target memorytest
 [91/411] Building CXX object tests/engine/CMakeFiles/writeiotest.dir/writeiotest_autogen/mocs_compilation.cpp.o
-[92/411] Building CXX object autotests/unit/codecs/CMakeFiles/postingcodectest.dir/postingcodectest.cpp.o
+[92/411] Building CXX object autotests/benchmarks/CMakeFiles/positioncodecbenchmark.dir/positioncodecbenchmark.cpp.o
 [93/411] Building CXX object tests/engine/CMakeFiles/memorytest.dir/memorytest_autogen/mocs_compilation.cpp.o
-[94/411] Automatic MOC for target writetransactiontest
+[94/411] Automatic MOC for target documentdbtest
 [95/411] Building CXX object tests/engine/CMakeFiles/documenturldb.dir/documenturldb_autogen/mocs_compilation.cpp.o
-[96/411] Automatic MOC for target documenttimedbtest
-[97/411] Building CXX object autotests/integration/CMakeFiles/writetransactiontest.dir/writetransactiontest_autogen/mocs_compilation.cpp.o
-[98/411] Automatic MOC for target andpostingiteratortest
-[99/411] Building CXX object autotests/unit/engine/CMakeFiles/documenttimedbtest.dir/documenttimedbtest_autogen/mocs_compilation.cpp.o
-[100/411] Automatic MOC for target baloo_file_extractor
-[101/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/baloo_file_extractor_autogen/mocs_compilation.cpp.o
-[102/411] Automatic MOC for target postingdbtest
-[103/411] Automatic MOC for target documentiddbtest
-[104/411] Automatic MOC for target idtreedbtest
+[96/411] Automatic MOC for target postingdbtest
+[97/411] Building CXX object autotests/unit/engine/CMakeFiles/postingdbtest.dir/postingdbtest_autogen/mocs_compilation.cpp.o
+[98/411] Automatic MOC for target postingiteratortest
+[99/411] Automatic MOC for target idtreedbtest
+[100/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdbtest.dir/documentdbtest_autogen/mocs_compilation.cpp.o
+[101/411] Automatic MOC for target phraseanditeratortest
+[102/411] Automatic MOC for target writetransactiontest
+[103/411] Building CXX object autotests/integration/CMakeFiles/writetransactiontest.dir/writetransactiontest_autogen/mocs_compilation.cpp.o
+[104/411] Automatic MOC for target baloo_file_extractor
 [105/411] Automatic MOC for target documentdatadbtest
-[106/411] Automatic MOC for target mtimedbtest
-[107/411] Automatic MOC for target idfilenamedbtest
-[108/411] Automatic MOC for target phraseanditeratortest
+[106/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/baloo_file_extractor_autogen/mocs_compilation.cpp.o
+[107/411] Automatic MOC for target documenttimedbtest
+[108/411] Building CXX object autotests/unit/codecs/CMakeFiles/positioncodectest.dir/positioncodectest.cpp.o
 [109/411] Automatic MOC for target KF6Baloo
-[110/411] Automatic MOC for target postingiteratortest
-[111/411] Automatic MOC for target documentdbtest
-[112/411] Automatic MOC for target orpostingiteratortest
-[113/411] Automatic MOC for target termgeneratortest
-[114/411] Automatic MOC for target positiondbtest
-[115/411] Automatic MOC for target baloofilecommon
-[116/411] Automatic MOC for target documenturldbtest
-[117/411] Building CXX object autotests/unit/codecs/CMakeFiles/positioncodectest.dir/positioncodectest.cpp.o
-[118/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/resultiterator.cpp.o
-[119/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/priority.cpp.o
-[120/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/queryrunnable.cpp.o
-[121/411] Building CXX object tests/engine/CMakeFiles/documenturldb.dir/documenturldbtest.cpp.o
-[122/411] Building CXX object tests/engine/CMakeFiles/memorytest.dir/memorytest.cpp.o
-[123/411] Building CXX object autotests/unit/engine/CMakeFiles/documenttimedbtest.dir/documenttimedbtest.cpp.o
-[124/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/KF6Baloo_autogen/mocs_compilation.cpp.o
-[125/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/filemonitor.cpp.o
-[126/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/main.cpp.o
-[127/411] Building CXX object tests/engine/CMakeFiles/writeiotest.dir/writeiotest.cpp.o
+[110/411] Automatic MOC for target documenturldbtest
+[111/411] Automatic MOC for target documentiddbtest
+[112/411] Automatic MOC for target baloofilecommon
+[113/411] Automatic MOC for target positiondbtest
+[114/411] Automatic MOC for target orpostingiteratortest
+[115/411] Automatic MOC for target idfilenamedbtest
+[116/411] Automatic MOC for target termgeneratortest
+[117/411] Automatic MOC for target mtimedbtest
+[118/411] Automatic MOC for target andpostingiteratortest
+[119/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/resultiterator.cpp.o
+[120/411] Building CXX object tests/engine/CMakeFiles/memorytest.dir/memorytest.cpp.o
+[121/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/queryrunnable.cpp.o
+[122/411] Building CXX object tests/engine/CMakeFiles/documenturldb.dir/documenturldbtest.cpp.o
+[123/411] Building CXX object tests/engine/CMakeFiles/writeiotest.dir/writeiotest.cpp.o
+[124/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/main.cpp.o
+[125/411] Building CXX object autotests/unit/engine/CMakeFiles/postingdbtest.dir/dbtest.cpp.o
+[126/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/KF6Baloo_autogen/mocs_compilation.cpp.o
+[127/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/filemonitor.cpp.o
 [128/411] Generating baloowatcherapplication_interface.cpp, baloowatcherapplication_interface.h
 [129/411] Generating moc_baloowatcherapplication_interface.cpp
-[130/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/result.cpp.o
-[131/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/commandpipe.cpp.o
-[132/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/query.cpp.o
-[133/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/taglistjob.cpp.o
-[134/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/basicindexingjob.cpp.o
-[135/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/file.cpp.o
-[136/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/advancedqueryparser.cpp.o
-[137/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/storagedevices.cpp.o
-[138/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/fileexcludefilters.cpp.o
-[139/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/app.cpp.o
-[140/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/term.cpp.o
-[141/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/fileindexerconfig.cpp.o
+[130/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/advancedqueryparser.cpp.o
+[131/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/taglistjob.cpp.o
+[132/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/file.cpp.o
+[133/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdbtest.dir/documentdbtest.cpp.o
+[134/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/commandpipe.cpp.o
+[135/411] Building CXX object autotests/unit/engine/CMakeFiles/postingdbtest.dir/postingdbtest.cpp.o
+[136/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/fileexcludefilters.cpp.o
+[137/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/query.cpp.o
+[138/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/result.cpp.o
+[139/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdbtest.dir/dbtest.cpp.o
+[140/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/app.cpp.o
+[141/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/term.cpp.o
 [142/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/baloodebug.cpp.o
-[143/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/propertydata.cpp.o
-[144/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/storagedevices.cpp.o
-[145/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/regexpcache.cpp.o
-[146/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/mainhub.cpp.o
-[147/411] Building CXX object autotests/integration/CMakeFiles/writetransactiontest.dir/writetransactiontest.cpp.o
-[148/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/baloosettings.cpp.o
-[149/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/timeestimator.cpp.o
-[150/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/fileindexerconfig.cpp.o
+[143/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/indexerconfig.cpp.o
+[144/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/propertydata.cpp.o
+[145/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/fileindexerconfig.cpp.o
+[146/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/regexpcache.cpp.o
+[147/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/__/file/storagedevices.cpp.o
+[148/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/timeestimator.cpp.o
+[149/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/powerstatemonitor.cpp.o
+[150/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/xattrindexer.cpp.o
 [151/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/firstrunindexer.cpp.o
-[152/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/baloofilecommon_autogen/mocs_compilation.cpp.o
-[153/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/xattrindexer.cpp.o
-[154/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/fileindexscheduler.cpp.o
-[155/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/powerstatemonitor.cpp.o
-[156/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/modifiedfileindexer.cpp.o
-[157/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/basicindexingjob.cpp.o
-[158/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/filecontentindexerprovider.cpp.o
-[159/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/unindexedfileindexer.cpp.o
-[160/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/newfileindexer.cpp.o
-[161/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/indexerconfig.cpp.o
-[162/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/fileindexerconfig.cpp.o
-[163/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/fileexcludefilters.cpp.o
-[164/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/searchstore.cpp.o
+[152/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/baloosettings.cpp.o
+[153/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/fileindexscheduler.cpp.o
+[154/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/mainhub.cpp.o
+[155/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/filecontentindexerprovider.cpp.o
+[156/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/newfileindexer.cpp.o
+[157/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/unindexedfileindexer.cpp.o
+[158/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/baloofilecommon_autogen/mocs_compilation.cpp.o
+[159/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/modifiedfileindexer.cpp.o
+[160/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/basicindexingjob.cpp.o
+[161/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/filecontentindexer.cpp.o
+[162/411] Building CXX object src/lib/CMakeFiles/KF6Baloo.dir/searchstore.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/work/baloo-6.14.0/src/lib/searchstore.cpp: In member function ‘Baloo::PostingIterator* Baloo::SearchStore::constructQuery(Baloo::Transaction*, const Baloo::Term&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/work/baloo-6.14.0/src/lib/searchstore.cpp:402:39: warning: ‘pcom’ may be used uninitialized [-Wmaybe-uninitialized]
   402 |         return tr->postingCompIterator(prefix, ba, pcom);
@@ -1268,257 +1266,259 @@ hm...lets continue and see what happens
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/work/baloo-6.14.0/src/lib/searchstore.cpp:375:27: note: ‘pcom’ was declared here
   375 |     PostingDB::Comparator pcom;
       |                           ^~~~
-[165/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/extractorprocess.cpp.o
+[163/411] Building CXX object autotests/integration/CMakeFiles/writetransactiontest.dir/writetransactiontest.cpp.o
+[164/411] Linking CXX shared library bin/libKF6Baloo.so.6.14.0
+[165/411] Creating library symlink bin/libKF6Baloo.so.6 bin/libKF6Baloo.so
+[166/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/fileexcludefilters.cpp.o
+[167/411] Automatic MOC for target balooplugin
+[168/411] Running AUTOMOC file extraction for target balooplugin
+[169/411] Running moc --collect-json for target balooplugin
+[170/411] Automatic QML type registration for target balooplugin
+[171/411] Running rcc for resource qmake_org_kde_baloo
+[172/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/extractorprocess.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/work/baloo-6.14.0/src/file/extractorprocess.cpp: In lambda function:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/work/baloo-6.14.0/src/file/extractorprocess.cpp:34:55: warning: implicit capture of ‘this’ via ‘[=]’ is deprecated in C++20 [-Wdeprecated]
    34 |     connect(&m_extractorProcess, &QProcess::finished, [=](int exitCode, QProcess::ExitStatus exitStatus) {
       |                                                       ^
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/work/baloo-6.14.0/src/file/extractorprocess.cpp:34:55: note: add explicit ‘this’ or ‘*this’ capture
-[166/411] Linking CXX shared library bin/libKF6Baloo.so.6.14.0
-[167/411] Creating library symlink bin/libKF6Baloo.so.6 bin/libKF6Baloo.so
-[168/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/filecontentindexer.cpp.o
-[169/411] Automatic MOC for target balooplugin
-[170/411] Running AUTOMOC file extraction for target balooplugin
-[171/411] Running moc --collect-json for target balooplugin
-[172/411] Automatic QML type registration for target balooplugin
-[173/411] Running rcc for resource qmake_org_kde_baloo
-[174/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/indexcleaner.cpp.o
-[175/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/migrator.cpp.o
-[176/411] Automatic MOC for target timeline
-[177/411] Automatic MOC for target baloosearch6
-[178/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/priority.cpp.o
-[179/411] Automatic MOC for target balooshow6
-[180/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/extractor/commandpipe.cpp.o
-[181/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/unindexedfileiterator.cpp.o
-[182/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/regexpcache.cpp.o
-[183/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/balooplugin_autogen/mocs_compilation.cpp.o
-[184/411] Automatic MOC for target tags
-[185/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/fileexcludefilters.cpp.o
-[186/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/filtereddiriterator.cpp.o
-[187/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/.qt/rcc/qrc_qmake_org_kde_baloo.cpp.o
-[188/411] Automatic MOC for target baloomonitorplugin
-[189/411] Automatic MOC for target kio_baloosearch
-[190/411] Running AUTOMOC file extraction for target baloomonitorplugin
-[191/411] Running rcc for resource qmake_org_kde_baloo_experimental
-[192/411] Running moc --collect-json for target baloomonitorplugin
-[193/411] Building CXX object src/kioworkers/timeline/CMakeFiles/timeline.dir/timeline_autogen/mocs_compilation.cpp.o
-[194/411] Automatic QML type registration for target baloomonitorplugin
-[195/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/baloomonitorplugin_autogen/mocs_compilation.cpp.o
-[196/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/storagedevices.cpp.o
-[197/411] Automatic MOC for target queryserializationtest
-[198/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/.qt/rcc/qrc_qmake_org_kde_baloo_experimental.cpp.o
-[199/411] Automatic MOC for target querytest
-[200/411] Automatic MOC for target filemonitortest
-[201/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/baloodebug.cpp.o
-[202/411] Building CXX object src/kioworkers/tags/CMakeFiles/tags.dir/tags_autogen/mocs_compilation.cpp.o
-[203/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/filewatch.cpp.o
-[204/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/pendingfile.cpp.o
-[205/411] Building CXX object src/kioworkers/search/CMakeFiles/kio_baloosearch.dir/kio_baloosearch_autogen/mocs_compilation.cpp.o
-[206/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/propertydata.cpp.o
+[173/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/fileindexerconfig.cpp.o
+[174/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/priority.cpp.o
+[175/411] Automatic MOC for target baloosearch6
+[176/411] Automatic MOC for target balooshow6
+[177/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/indexcleaner.cpp.o
+[178/411] Automatic MOC for target timeline
+[179/411] Automatic MOC for target baloomonitorplugin
+[180/411] Running AUTOMOC file extraction for target baloomonitorplugin
+[181/411] Automatic MOC for target tags
+[182/411] Running rcc for resource qmake_org_kde_baloo_experimental
+[183/411] Running moc --collect-json for target baloomonitorplugin
+[184/411] Automatic MOC for target kio_baloosearch
+[185/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/balooplugin_autogen/mocs_compilation.cpp.o
+[186/411] Automatic QML type registration for target baloomonitorplugin
+[187/411] Automatic MOC for target querytest
+[188/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/.qt/rcc/qrc_qmake_org_kde_baloo.cpp.o
+[189/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/baloomonitorplugin_autogen/mocs_compilation.cpp.o
+[190/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/extractor/commandpipe.cpp.o
+[191/411] Automatic MOC for target queryserializationtest
+[192/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/.qt/rcc/qrc_qmake_org_kde_baloo_experimental.cpp.o
+[193/411] Automatic MOC for target filemonitortest
+[194/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/baloodebug.cpp.o
+[195/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/regexpcache.cpp.o
+[196/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/migrator.cpp.o
+[197/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/storagedevices.cpp.o
+[198/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/pendingfile.cpp.o
+[199/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/unindexedfileiterator.cpp.o
+[200/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/metadatamover.cpp.o
+[201/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/filtereddiriterator.cpp.o
+[202/411] Building CXX object src/kioworkers/timeline/CMakeFiles/timeline.dir/timeline_autogen/mocs_compilation.cpp.o
+[203/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/priority.cpp.o
+[204/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/filewatch.cpp.o
+[205/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/propertydata.cpp.o
+[206/411] Building CXX object src/kioworkers/tags/CMakeFiles/tags.dir/tags_autogen/mocs_compilation.cpp.o
 [207/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/pendingfilequeue.cpp.o
-[208/411] Building CXX object src/tools/baloosearch/CMakeFiles/baloosearch6.dir/baloosearch6_autogen/mocs_compilation.cpp.o
-[209/411] Building CXX object src/tools/balooshow/CMakeFiles/balooshow6.dir/balooshow6_autogen/mocs_compilation.cpp.o
-[210/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/regexpcache.cpp.o
-[211/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/metadatamover.cpp.o
-[212/411] Building CXX object autotests/integration/CMakeFiles/querytest.dir/querytest_autogen/mocs_compilation.cpp.o
-[213/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/baloosettings.cpp.o
-[214/411] Building CXX object autotests/unit/engine/CMakeFiles/positiondbtest.dir/positiondbtest_autogen/mocs_compilation.cpp.o
-[215/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/kinotify.cpp.o
-[216/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/propertydata.cpp.o
-[217/411] Building CXX object autotests/unit/engine/CMakeFiles/postingdbtest.dir/postingdbtest_autogen/mocs_compilation.cpp.o
-[218/411] Building CXX object src/kioworkers/timeline/CMakeFiles/timeline.dir/kio_timeline_debug.cpp.o
-[219/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/baloodebug.cpp.o
-[220/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdbtest.dir/documentdbtest_autogen/mocs_compilation.cpp.o
-[221/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/baloomonitorplugin_org_kde_baloo_experimentalPlugin.cpp.o
-[222/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/balooplugin_org_kde_balooPlugin.cpp.o
-[223/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/baloowatcherapplication_interface.cpp.o
-[224/411] Building CXX object autotests/unit/engine/CMakeFiles/documenturldbtest.dir/documenturldbtest_autogen/mocs_compilation.cpp.o
+[208/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/baloosettings.cpp.o
+[209/411] Building CXX object src/kioworkers/search/CMakeFiles/kio_baloosearch.dir/kio_baloosearch_autogen/mocs_compilation.cpp.o
+[210/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/fileexcludefilters.cpp.o
+[211/411] Building CXX object src/tools/baloosearch/CMakeFiles/baloosearch6.dir/baloosearch6_autogen/mocs_compilation.cpp.o
+[212/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/baloodebug.cpp.o
+[213/411] Building CXX object src/tools/balooshow/CMakeFiles/balooshow6.dir/balooshow6_autogen/mocs_compilation.cpp.o
+[214/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/balooplugin_qmltyperegistrations.cpp.o
+[215/411] Building CXX object autotests/integration/CMakeFiles/querytest.dir/querytest_autogen/mocs_compilation.cpp.o
+[216/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/baloomonitorplugin_org_kde_baloo_experimentalPlugin.cpp.o
+[217/411] Building CXX object autotests/unit/engine/CMakeFiles/positiondbtest.dir/positiondbtest_autogen/mocs_compilation.cpp.o
+[218/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/balooplugin_org_kde_balooPlugin.cpp.o
+[219/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/queryresultsmodel.cpp.o
+[220/411] Building CXX object autotests/unit/engine/CMakeFiles/documenturldbtest.dir/documenturldbtest_autogen/mocs_compilation.cpp.o
+[221/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/kinotify.cpp.o
+[222/411] Building CXX object src/kioworkers/timeline/CMakeFiles/timeline.dir/kio_timeline_debug.cpp.o
+[223/411] Building CXX object autotests/unit/engine/CMakeFiles/documentiddbtest.dir/documentiddbtest_autogen/mocs_compilation.cpp.o
+[224/411] Building CXX object src/file/CMakeFiles/baloofilecommon.dir/baloowatcherapplication_interface.cpp.o
 [225/411] Linking CXX static library lib/libbaloofilecommon.a
 [226/411] Automatic MOC for target baloo_file
-[227/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/baloosettings.cpp.o
+[227/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/storagedevices.cpp.o
 [228/411] Automatic MOC for target unindexedfileiteratorbenchmark
 [229/411] Automatic MOC for target indexerconfigtest
 [230/411] Automatic MOC for target inotifytest
-[231/411] Building CXX object src/kioworkers/tags/CMakeFiles/tags.dir/kio_tags_debug.cpp.o
-[232/411] Automatic MOC for target storagedevicestest
-[233/411] Automatic MOC for target filtereddiriteratorbenchmark
-[234/411] Automatic MOC for target basicindexingbenchmark_bin
-[235/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/queryresultsmodel.cpp.o
-[236/411] Building CXX object src/qml/CMakeFiles/balooplugin.dir/balooplugin_qmltyperegistrations.cpp.o
-[237/411] Automatic MOC for target balooctl6
-[238/411] Automatic MOC for target kinotifytest
-[239/411] Building CXX object src/kioworkers/timeline/CMakeFiles/timeline.dir/timelinetools.cpp.o
-[240/411] Automatic MOC for target pendingfilequeuetest
-[241/411] Automatic MOC for target filtereddiriteratortest
-[242/411] Automatic MOC for target basicindexingjobtest
-[243/411] Automatic MOC for target fileindexerconfigtest
-[244/411] Automatic MOC for target unindexedfileiteratortest
-[245/411] Automatic MOC for target metadatamovertest
-[246/411] Automatic MOC for target extractorprocess_fake
+[231/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/propertydata.cpp.o
+[232/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/basicindexingjob.cpp.o
+[233/411] Automatic MOC for target storagedevicestest
+[234/411] Automatic MOC for target filtereddiriteratorbenchmark
+[235/411] Automatic MOC for target basicindexingbenchmark_bin
+[236/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/fileindexerconfig.cpp.o
+[237/411] Building CXX object src/kioworkers/timeline/CMakeFiles/timeline.dir/timelinetools.cpp.o
+[238/411] Automatic MOC for target balooctl6
+[239/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/baloosettings.cpp.o
+[240/411] Automatic MOC for target kinotifytest
+[241/411] Building CXX object src/file/extractor/CMakeFiles/baloo_file_extractor.dir/__/regexpcache.cpp.o
+[242/411] Building CXX object src/kioworkers/timeline/CMakeFiles/timeline.dir/kio_timeline.cpp.o
+[243/411] Automatic MOC for target pendingfilequeuetest
+[244/411] Automatic MOC for target fileindexerconfigtest
+[245/411] Automatic MOC for target extractorprocess_fake
+[246/411] Building CXX object src/kioworkers/tags/CMakeFiles/tags.dir/kio_tags_debug.cpp.o
 [247/411] Automatic MOC for target extractorcommandpipe_worker
 [248/411] Building CXX object src/file/CMakeFiles/baloo_file.dir/baloo_file_autogen/mocs_compilation.cpp.o
-[249/411] Automatic MOC for target extractorcommandpipetest
-[250/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/balooctl6_autogen/mocs_compilation.cpp.o
-[251/411] Building CXX object src/kioworkers/search/CMakeFiles/kio_baloosearch.dir/kio_search.cpp.o
-[252/411] Building CXX object src/kioworkers/timeline/CMakeFiles/timeline.dir/kio_timeline.cpp.o
-[253/411] Automatic MOC for target propertyserializationtest
-[254/411] Automatic MOC for target filewatchtest
-[255/411] Automatic MOC for target extractorprocesstest
-[256/411] Building CXX object autotests/unit/engine/CMakeFiles/documenttimedbtest.dir/dbtest.cpp.o
-[257/411] Automatic MOC for target filefetchjobtest
-[258/411] Building CXX object src/tools/baloosearch/CMakeFiles/baloosearch6.dir/main.cpp.o
+[249/411] Automatic MOC for target filtereddiriteratortest
+[250/411] Automatic MOC for target basicindexingjobtest
+[251/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/balooctl6_autogen/mocs_compilation.cpp.o
+[252/411] Automatic MOC for target unindexedfileiteratortest
+[253/411] Automatic MOC for target metadatamovertest
+[254/411] Automatic MOC for target extractorcommandpipetest
+[255/411] Automatic MOC for target filewatchtest
+[256/411] Automatic MOC for target extractorprocesstest
+[257/411] Automatic MOC for target propertyserializationtest
+[258/411] Automatic MOC for target filefetchjobtest
 [259/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/baloomonitorplugin_qmltyperegistrations.cpp.o
-[260/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdbtest.dir/dbtest.cpp.o
-[261/411] Building CXX object src/tools/balooshow/CMakeFiles/balooshow6.dir/main.cpp.o
+[260/411] Building CXX object src/kioworkers/search/CMakeFiles/kio_baloosearch.dir/kio_search.cpp.o
+[261/411] Building CXX object src/tools/baloosearch/CMakeFiles/baloosearch6.dir/main.cpp.o
 [262/411] Building CXX object tests/benchmarks/CMakeFiles/unindexedfileiteratorbenchmark.dir/unindexedfileiteratorbenchmark_autogen/mocs_compilation.cpp.o
-[263/411] Building CXX object autotests/unit/engine/CMakeFiles/positiondbtest.dir/positiondbtest.cpp.o
-[264/411] Building CXX object tests/file/CMakeFiles/indexerconfigtest.dir/indexerconfigtest_autogen/mocs_compilation.cpp.o
-[265/411] Building CXX object autotests/unit/engine/CMakeFiles/postingdbtest.dir/dbtest.cpp.o
+[263/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/monitor.cpp.o
+[264/411] Building CXX object autotests/unit/engine/CMakeFiles/positiondbtest.dir/dbtest.cpp.o
+[265/411] Building CXX object tests/file/CMakeFiles/indexerconfigtest.dir/indexerconfigtest_autogen/mocs_compilation.cpp.o
 [266/411] Building CXX object tests/file/CMakeFiles/inotifytest.dir/inotifytest_autogen/mocs_compilation.cpp.o
-[267/411] Building CXX object autotests/unit/engine/CMakeFiles/positiondbtest.dir/dbtest.cpp.o
+[267/411] Building CXX object autotests/unit/engine/CMakeFiles/documenturldbtest.dir/dbtest.cpp.o
 [268/411] Building CXX object tests/file/CMakeFiles/storagedevicestest.dir/storagedevicestest_autogen/mocs_compilation.cpp.o
-[269/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdbtest.dir/documentdbtest.cpp.o
+[269/411] Building CXX object autotests/unit/engine/CMakeFiles/documentiddbtest.dir/documentiddbtest.cpp.o
 [270/411] Building CXX object tests/file/CMakeFiles/filtereddiriteratorbenchmark.dir/filtereddiriteratorbenchmark_autogen/mocs_compilation.cpp.o
-[271/411] Building CXX object autotests/unit/engine/CMakeFiles/documenturldbtest.dir/documenturldbtest.cpp.o
+[271/411] Building CXX object autotests/unit/engine/CMakeFiles/positiondbtest.dir/positiondbtest.cpp.o
 [272/411] Building CXX object autotests/integration/CMakeFiles/basicindexingbenchmark_bin.dir/basicindexingbenchmark_bin_autogen/mocs_compilation.cpp.o
-[273/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/command.cpp.o
-[274/411] Building CXX object autotests/unit/engine/CMakeFiles/postingdbtest.dir/postingdbtest.cpp.o
-[275/411] Building CXX object autotests/unit/engine/CMakeFiles/documentiddbtest.dir/documentiddbtest_autogen/mocs_compilation.cpp.o
-[276/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/indexcommand.cpp.o
-[277/411] Building CXX object src/qml/experimental/CMakeFiles/baloomonitorplugin.dir/monitor.cpp.o
-[278/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdatadbtest.dir/documentdatadbtest_autogen/mocs_compilation.cpp.o
-[279/411] Building CXX object src/kioworkers/tags/CMakeFiles/tags.dir/kio_tags.cpp.o
-[280/411] Building CXX object src/file/CMakeFiles/baloo_file.dir/main.cpp.o
+[273/411] Building CXX object autotests/unit/engine/CMakeFiles/documenturldbtest.dir/documenturldbtest.cpp.o
+[274/411] Building CXX object src/kioworkers/tags/CMakeFiles/tags.dir/kio_tags.cpp.o
+[275/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdatadbtest.dir/documentdatadbtest_autogen/mocs_compilation.cpp.o
+[276/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/command.cpp.o
+[277/411] Building CXX object src/tools/balooshow/CMakeFiles/balooshow6.dir/main.cpp.o
+[278/411] Building CXX object autotests/unit/engine/CMakeFiles/documenttimedbtest.dir/documenttimedbtest_autogen/mocs_compilation.cpp.o
+[279/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/indexentry.cpp.o
+[280/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/indexcommand.cpp.o
 [281/411] Building CXX object autotests/unit/engine/CMakeFiles/idtreedbtest.dir/idtreedbtest_autogen/mocs_compilation.cpp.o
-[282/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/indexer.cpp.o
-[283/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/clearentry.cpp.o
-[284/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/indexentry.cpp.o
-[285/411] Building CXX object autotests/unit/engine/CMakeFiles/idfilenamedbtest.dir/idfilenamedbtest_autogen/mocs_compilation.cpp.o
-[286/411] Building CXX object tests/file/CMakeFiles/indexerconfigtest.dir/indexerconfigtest.cpp.o
+[282/411] Building CXX object src/file/CMakeFiles/baloo_file.dir/main.cpp.o
+[283/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/clearcommand.cpp.o
+[284/411] Building CXX object autotests/unit/engine/CMakeFiles/idfilenamedbtest.dir/idfilenamedbtest_autogen/mocs_compilation.cpp.o
+[285/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/indexer.cpp.o
+[286/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/clearentry.cpp.o
 [287/411] Building CXX object autotests/unit/engine/CMakeFiles/mtimedbtest.dir/mtimedbtest_autogen/mocs_compilation.cpp.o
 [288/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/configcommand.cpp.o
-[289/411] Building CXX object tests/file/CMakeFiles/inotifytest.dir/inotify.cpp.o
+[289/411] Building CXX object autotests/integration/CMakeFiles/querytest.dir/querytest.cpp.o
 [290/411] Building CXX object autotests/unit/engine/CMakeFiles/termgeneratortest.dir/termgeneratortest_autogen/mocs_compilation.cpp.o
-[291/411] Building CXX object tests/file/CMakeFiles/storagedevicestest.dir/storagedevicestest.cpp.o
-[292/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/clearcommand.cpp.o
+[291/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/__/__/file/extractor/result.cpp.o
+[292/411] Building CXX object tests/benchmarks/CMakeFiles/unindexedfileiteratorbenchmark.dir/unindexedfileiteratortest.cpp.o
 [293/411] Building CXX object autotests/unit/engine/CMakeFiles/andpostingiteratortest.dir/andpostingiteratortest_autogen/mocs_compilation.cpp.o
-[294/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/__/__/file/extractor/result.cpp.o
-[295/411] Building CXX object autotests/integration/CMakeFiles/querytest.dir/querytest.cpp.o
-[296/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/monitorcommand.cpp.o
-[297/411] Building CXX object autotests/unit/engine/CMakeFiles/orpostingiteratortest.dir/orpostingiteratortest_autogen/mocs_compilation.cpp.o
-[298/411] Building CXX object tests/benchmarks/CMakeFiles/unindexedfileiteratorbenchmark.dir/unindexedfileiteratortest.cpp.o
+[294/411] Building CXX object tests/file/CMakeFiles/inotifytest.dir/inotify.cpp.o
+[295/411] Building CXX object tests/file/CMakeFiles/indexerconfigtest.dir/indexerconfigtest.cpp.o
+[296/411] Building CXX object autotests/unit/engine/CMakeFiles/orpostingiteratortest.dir/orpostingiteratortest_autogen/mocs_compilation.cpp.o
+[297/411] Building CXX object tests/file/CMakeFiles/storagedevicestest.dir/storagedevicestest.cpp.o
+[298/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/monitorcommand.cpp.o
 [299/411] Building CXX object autotests/unit/engine/CMakeFiles/postingiteratortest.dir/postingiteratortest_autogen/mocs_compilation.cpp.o
-[300/411] Building CXX object tests/file/CMakeFiles/filtereddiriteratorbenchmark.dir/filtereddiriteratorbenchmark.cpp.o
-[301/411] Building CXX object autotests/integration/CMakeFiles/basicindexingbenchmark_bin.dir/basicindexingbenchmark.cpp.o
-[302/411] Building CXX object autotests/unit/engine/CMakeFiles/phraseanditeratortest.dir/phraseanditeratortest_autogen/mocs_compilation.cpp.o
-[303/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/main.cpp.o
-[304/411] Building CXX object autotests/unit/engine/CMakeFiles/documenturldbtest.dir/dbtest.cpp.o
+[300/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/main.cpp.o
+[301/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdatadbtest.dir/documentdatadbtest.cpp.o
+[302/411] Building CXX object autotests/integration/CMakeFiles/basicindexingbenchmark_bin.dir/basicindexingbenchmark.cpp.o
+[303/411] Building CXX object autotests/unit/engine/CMakeFiles/phraseanditeratortest.dir/phraseanditeratortest_autogen/mocs_compilation.cpp.o
+[304/411] Building CXX object tests/file/CMakeFiles/filtereddiriteratorbenchmark.dir/filtereddiriteratorbenchmark.cpp.o
 [305/411] Building CXX object autotests/unit/file/CMakeFiles/kinotifytest.dir/kinotifytest_autogen/mocs_compilation.cpp.o
-[306/411] Building CXX object autotests/unit/engine/CMakeFiles/documentiddbtest.dir/dbtest.cpp.o
+[306/411] Building CXX object autotests/unit/engine/CMakeFiles/documenttimedbtest.dir/dbtest.cpp.o
 [307/411] Building CXX object autotests/unit/file/CMakeFiles/pendingfilequeuetest.dir/pendingfilequeuetest_autogen/mocs_compilation.cpp.o
-[308/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdatadbtest.dir/documentdatadbtest.cpp.o
+[308/411] Building CXX object autotests/unit/engine/CMakeFiles/documentiddbtest.dir/dbtest.cpp.o
 [309/411] Building CXX object autotests/unit/file/CMakeFiles/fileindexerconfigtest.dir/fileindexerconfigtest_autogen/mocs_compilation.cpp.o
-[310/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/statuscommand.cpp.o
+[310/411] Building CXX object autotests/unit/engine/CMakeFiles/documenttimedbtest.dir/documenttimedbtest.cpp.o
 [311/411] Building CXX object autotests/unit/file/CMakeFiles/basicindexingjobtest.dir/basicindexingjobtest_autogen/mocs_compilation.cpp.o
-[312/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdatadbtest.dir/dbtest.cpp.o
+[312/411] Building CXX object src/tools/balooctl/CMakeFiles/balooctl6.dir/statuscommand.cpp.o
 [313/411] Building CXX object autotests/unit/file/CMakeFiles/filtereddiriteratortest.dir/filtereddiriteratortest_autogen/mocs_compilation.cpp.o
-[314/411] Building CXX object autotests/unit/engine/CMakeFiles/documentiddbtest.dir/documentiddbtest.cpp.o
+[314/411] Building CXX object autotests/unit/engine/CMakeFiles/idfilenamedbtest.dir/idfilenamedbtest.cpp.o
 [315/411] Building CXX object autotests/unit/file/CMakeFiles/unindexedfileiteratortest.dir/unindexedfileiteratortest_autogen/mocs_compilation.cpp.o
-[316/411] Building CXX object autotests/unit/engine/CMakeFiles/mtimedbtest.dir/dbtest.cpp.o
+[316/411] Building CXX object autotests/unit/engine/CMakeFiles/idfilenamedbtest.dir/dbtest.cpp.o
 [317/411] Building CXX object autotests/unit/file/CMakeFiles/metadatamovertest.dir/metadatamovertest_autogen/mocs_compilation.cpp.o
-[318/411] Building CXX object autotests/unit/engine/CMakeFiles/idfilenamedbtest.dir/idfilenamedbtest.cpp.o
-[319/411] Building CXX object autotests/unit/engine/CMakeFiles/idtreedbtest.dir/dbtest.cpp.o
-[320/411] Building CXX object autotests/unit/file/CMakeFiles/extractorcommandpipetest.dir/extractorcommandpipetest_autogen/mocs_compilation.cpp.o
+[318/411] Building CXX object autotests/unit/engine/CMakeFiles/idtreedbtest.dir/dbtest.cpp.o
+[319/411] Building CXX object autotests/unit/file/CMakeFiles/extractorcommandpipetest.dir/extractorcommandpipetest_autogen/mocs_compilation.cpp.o
+[320/411] Building CXX object autotests/unit/engine/CMakeFiles/mtimedbtest.dir/dbtest.cpp.o
 [321/411] Building CXX object autotests/unit/file/CMakeFiles/filewatchtest.dir/filewatchtest_autogen/mocs_compilation.cpp.o
-[322/411] Building CXX object autotests/unit/engine/CMakeFiles/idfilenamedbtest.dir/dbtest.cpp.o
+[322/411] Building CXX object autotests/unit/engine/CMakeFiles/termgeneratortest.dir/dbtest.cpp.o
 [323/411] Building CXX object autotests/unit/file/CMakeFiles/propertyserializationtest.dir/propertyserializationtest_autogen/mocs_compilation.cpp.o
-[324/411] Building CXX object autotests/unit/engine/CMakeFiles/termgeneratortest.dir/dbtest.cpp.o
+[324/411] Building CXX object autotests/unit/engine/CMakeFiles/documentdatadbtest.dir/dbtest.cpp.o
 [325/411] Building CXX object autotests/unit/file/CMakeFiles/extractorprocesstest.dir/extractorprocesstest_autogen/mocs_compilation.cpp.o
-[326/411] Building CXX object autotests/unit/engine/CMakeFiles/orpostingiteratortest.dir/dbtest.cpp.o
+[326/411] Building CXX object autotests/unit/engine/CMakeFiles/andpostingiteratortest.dir/andpostingiteratortest.cpp.o
 [327/411] Building CXX object autotests/unit/file/CMakeFiles/extractorprocess_fake.dir/extractorprocess_fake_autogen/mocs_compilation.cpp.o
-[328/411] Building CXX object autotests/unit/engine/CMakeFiles/postingiteratortest.dir/dbtest.cpp.o
+[328/411] Building CXX object autotests/unit/engine/CMakeFiles/mtimedbtest.dir/mtimedbtest.cpp.o
 [329/411] Building CXX object autotests/unit/file/CMakeFiles/extractorcommandpipe_worker.dir/extractorcommandpipe_worker_autogen/mocs_compilation.cpp.o
-[330/411] Building CXX object autotests/unit/engine/CMakeFiles/andpostingiteratortest.dir/dbtest.cpp.o
+[330/411] Building CXX object autotests/unit/engine/CMakeFiles/idtreedbtest.dir/idtreedbtest.cpp.o
 [331/411] Building CXX object autotests/unit/lib/CMakeFiles/queryserializationtest.dir/queryserializationtest_autogen/mocs_compilation.cpp.o
-[332/411] Building CXX object autotests/unit/engine/CMakeFiles/idtreedbtest.dir/idtreedbtest.cpp.o
+[332/411] Building CXX object autotests/unit/engine/CMakeFiles/orpostingiteratortest.dir/dbtest.cpp.o
 [333/411] Building CXX object autotests/unit/lib/CMakeFiles/filemonitortest.dir/filemonitortest_autogen/mocs_compilation.cpp.o
-[334/411] Building CXX object autotests/unit/engine/CMakeFiles/phraseanditeratortest.dir/dbtest.cpp.o
+[334/411] Building CXX object autotests/unit/engine/CMakeFiles/andpostingiteratortest.dir/dbtest.cpp.o
 [335/411] Building CXX object autotests/unit/lib/CMakeFiles/filefetchjobtest.dir/filefetchjobtest_autogen/mocs_compilation.cpp.o
 [336/411] Building CXX object autotests/unit/engine/CMakeFiles/orpostingiteratortest.dir/orpostingiteratortest.cpp.o
-[337/411] Building CXX object autotests/unit/engine/CMakeFiles/andpostingiteratortest.dir/andpostingiteratortest.cpp.o
-[338/411] Building CXX object autotests/unit/engine/CMakeFiles/mtimedbtest.dir/mtimedbtest.cpp.o
-[339/411] Linking CXX shared module bin/org/kde/baloo/libbalooplugin.so
-[340/411] Linking CXX shared module bin/org/kde/baloo/experimental/libbaloomonitorplugin.so
-[341/411] Linking CXX shared module bin/timeline.so
-[342/411] Building CXX object autotests/unit/engine/CMakeFiles/phraseanditeratortest.dir/phraseanditeratortest.cpp.o
-[343/411] Linking CXX executable bin/baloo_file_extractor
-[344/411] Linking CXX executable bin/baloo_file
-[345/411] Building CXX object autotests/unit/engine/CMakeFiles/postingiteratortest.dir/postingiteratortest.cpp.o
-[346/411] Linking CXX shared module bin/baloosearch.so
-[347/411] Linking CXX shared module bin/tags.so
+[337/411] Linking CXX shared module bin/org/kde/baloo/libbalooplugin.so
+[338/411] Linking CXX shared module bin/org/kde/baloo/experimental/libbaloomonitorplugin.so
+[339/411] Building CXX object autotests/unit/engine/CMakeFiles/postingiteratortest.dir/postingiteratortest.cpp.o
+[340/411] Building CXX object autotests/unit/engine/CMakeFiles/phraseanditeratortest.dir/dbtest.cpp.o
+[341/411] Linking CXX executable bin/baloo_file_extractor
+[342/411] Linking CXX executable bin/baloo_file
+[343/411] Linking CXX shared module bin/baloosearch.so
+[344/411] Linking CXX shared module bin/tags.so
+[345/411] Linking CXX shared module bin/timeline.so
+[346/411] Building CXX object autotests/unit/engine/CMakeFiles/termgeneratortest.dir/termgeneratortest.cpp.o
+[347/411] Building CXX object autotests/unit/engine/CMakeFiles/postingiteratortest.dir/dbtest.cpp.o
 [348/411] Linking CXX executable bin/baloosearch6
-[349/411] Linking CXX executable bin/writeiotest
-[350/411] Linking CXX executable bin/memorytest
-[351/411] Linking CXX executable bin/balooshow6
-[352/411] Linking CXX executable bin/balooctl6
-[353/411] Linking CXX executable bin/documenturldb
-[354/411] Linking CXX executable bin/indexerconfigtest
-[355/411] Linking CXX executable bin/unindexedfileiteratorbenchmark
-[356/411] Linking CXX executable bin/storagedevicestest
-[357/411] Linking CXX executable bin/inotifytest
-[358/411] Linking CXX executable bin/filtereddiriteratorbenchmark
-[359/411] Linking CXX executable bin/writetransactiontest
-[360/411] Linking CXX executable bin/querytest
-[361/411] Linking CXX executable bin/positioncodectest
-[362/411] Linking CXX executable bin/postingcodectest
-[363/411] Linking CXX executable bin/basicindexingbenchmark_bin
-[364/411] Linking CXX executable bin/positiondbtest
-[365/411] Linking CXX executable bin/documentiddbtest
+[349/411] Linking CXX executable bin/balooshow6
+[350/411] Linking CXX executable bin/writeiotest
+[351/411] Linking CXX executable bin/balooctl6
+[352/411] Linking CXX executable bin/memorytest
+[353/411] Building CXX object autotests/unit/engine/CMakeFiles/phraseanditeratortest.dir/phraseanditeratortest.cpp.o
+[354/411] Linking CXX executable bin/documenturldb
+[355/411] Linking CXX executable bin/indexerconfigtest
+[356/411] Linking CXX executable bin/positioncodecbenchmark
+[357/411] Linking CXX executable bin/unindexedfileiteratorbenchmark
+[358/411] Linking CXX executable bin/inotifytest
+[359/411] Linking CXX executable bin/filtereddiriteratorbenchmark
+[360/411] Linking CXX executable bin/positioncodectest
+[361/411] Linking CXX executable bin/storagedevicestest
+[362/411] Linking CXX executable bin/positiondbtest
+[363/411] Linking CXX executable bin/writetransactiontest
+[364/411] Linking CXX executable bin/querytest
+[365/411] Linking CXX executable bin/basicindexingbenchmark_bin
 [366/411] Linking CXX executable bin/postingdbtest
 [367/411] Linking CXX executable bin/documenturldbtest
 [368/411] Linking CXX executable bin/documentdbtest
-[369/411] Linking CXX executable bin/documentdatadbtest
-[370/411] Linking CXX executable bin/documenttimedbtest
+[369/411] Linking CXX executable bin/documentiddbtest
+[370/411] Linking CXX executable bin/documentdatadbtest
 [371/411] Linking CXX executable bin/idtreedbtest
-[372/411] Linking CXX executable bin/mtimedbtest
-[373/411] Linking CXX executable bin/idfilenamedbtest
-[374/411] Linking CXX executable bin/andpostingiteratortest
-[375/411] Linking CXX executable bin/postingiteratortest
-[376/411] Linking CXX executable bin/orpostingiteratortest
-[377/411] Linking CXX executable bin/phraseanditeratortest
-[378/411] Building CXX object autotests/unit/file/CMakeFiles/unindexedfileiteratortest.dir/unindexedfileiteratortest.cpp.o
-[379/411] Building CXX object autotests/unit/engine/CMakeFiles/termgeneratortest.dir/termgeneratortest.cpp.o
-[380/411] Linking CXX executable bin/unindexedfileiteratortest
-[381/411] Linking CXX executable bin/termgeneratortest
-[382/411] Building CXX object autotests/unit/file/CMakeFiles/extractorprocess_fake.dir/extractorprocess_fake.cpp.o
-[383/411] Linking CXX executable bin/extractorprocess_fake
-[384/411] Building CXX object autotests/unit/file/CMakeFiles/filtereddiriteratortest.dir/filtereddiriteratortest.cpp.o
-[385/411] Building CXX object autotests/unit/file/CMakeFiles/pendingfilequeuetest.dir/pendingfilequeuetest.cpp.o
-[386/411] Building CXX object autotests/unit/file/CMakeFiles/fileindexerconfigtest.dir/fileindexerconfigtest.cpp.o
-[387/411] Linking CXX executable bin/pendingfilequeuetest
-[388/411] Building CXX object autotests/unit/file/CMakeFiles/extractorprocesstest.dir/extractorprocesstest.cpp.o
-[389/411] Linking CXX executable bin/filtereddiriteratortest
-[390/411] Linking CXX executable bin/fileindexerconfigtest
-[391/411] Linking CXX executable bin/extractorprocesstest
-[392/411] Building CXX object autotests/unit/file/CMakeFiles/metadatamovertest.dir/metadatamovertest.cpp.o
-[393/411] Building CXX object autotests/unit/file/CMakeFiles/extractorcommandpipe_worker.dir/extractorcommandpipe_worker.cpp.o
-[394/411] Linking CXX executable bin/metadatamovertest
-[395/411] Linking CXX executable bin/extractorcommandpipe_worker
-[396/411] Building CXX object autotests/unit/file/CMakeFiles/extractorcommandpipetest.dir/extractorcommandpipetest.cpp.o
-[397/411] Building CXX object autotests/unit/file/CMakeFiles/basicindexingjobtest.dir/basicindexingjobtest.cpp.o
-[398/411] Building CXX object autotests/unit/file/CMakeFiles/kinotifytest.dir/kinotifytest.cpp.o
-[399/411] Linking CXX executable bin/extractorcommandpipetest
-[400/411] Building CXX object autotests/unit/lib/CMakeFiles/queryserializationtest.dir/queryserializationtest.cpp.o
-[401/411] Linking CXX executable bin/basicindexingjobtest
-[402/411] Linking CXX executable bin/kinotifytest
-[403/411] Linking CXX executable bin/queryserializationtest
-[404/411] Building CXX object autotests/unit/file/CMakeFiles/propertyserializationtest.dir/propertyserializationtest.cpp.o
-[405/411] Linking CXX executable bin/propertyserializationtest
-[406/411] Building CXX object autotests/unit/file/CMakeFiles/filewatchtest.dir/filewatchtest.cpp.o
-[407/411] Linking CXX executable bin/filewatchtest
-[408/411] Building CXX object autotests/unit/lib/CMakeFiles/filefetchjobtest.dir/filefetchjobtest.cpp.o
-[409/411] Building CXX object autotests/unit/lib/CMakeFiles/filemonitortest.dir/filemonitortest.cpp.o
-[410/411] Linking CXX executable bin/filefetchjobtest
+[372/411] Linking CXX executable bin/documenttimedbtest
+[373/411] Building CXX object autotests/unit/file/CMakeFiles/pendingfilequeuetest.dir/pendingfilequeuetest.cpp.o
+[374/411] Linking CXX executable bin/idfilenamedbtest
+[375/411] Linking CXX executable bin/mtimedbtest
+[376/411] Linking CXX executable bin/termgeneratortest
+[377/411] Linking CXX executable bin/andpostingiteratortest
+[378/411] Linking CXX executable bin/orpostingiteratortest
+[379/411] Linking CXX executable bin/postingiteratortest
+[380/411] Linking CXX executable bin/phraseanditeratortest
+[381/411] Linking CXX executable bin/pendingfilequeuetest
+[382/411] Building CXX object autotests/unit/file/CMakeFiles/extractorcommandpipe_worker.dir/extractorcommandpipe_worker.cpp.o
+[383/411] Building CXX object autotests/unit/file/CMakeFiles/unindexedfileiteratortest.dir/unindexedfileiteratortest.cpp.o
+[384/411] Building CXX object autotests/unit/file/CMakeFiles/extractorprocess_fake.dir/extractorprocess_fake.cpp.o
+[385/411] Linking CXX executable bin/extractorcommandpipe_worker
+[386/411] Linking CXX executable bin/unindexedfileiteratortest
+[387/411] Linking CXX executable bin/extractorprocess_fake
+[388/411] Building CXX object autotests/unit/file/CMakeFiles/kinotifytest.dir/kinotifytest.cpp.o
+[389/411] Building CXX object autotests/unit/lib/CMakeFiles/queryserializationtest.dir/queryserializationtest.cpp.o
+[390/411] Linking CXX executable bin/kinotifytest
+[391/411] Building CXX object autotests/unit/file/CMakeFiles/basicindexingjobtest.dir/basicindexingjobtest.cpp.o
+[392/411] Linking CXX executable bin/queryserializationtest
+[393/411] Building CXX object autotests/unit/file/CMakeFiles/extractorprocesstest.dir/extractorprocesstest.cpp.o
+[394/411] Linking CXX executable bin/basicindexingjobtest
+[395/411] Building CXX object autotests/unit/file/CMakeFiles/fileindexerconfigtest.dir/fileindexerconfigtest.cpp.o
+[396/411] Linking CXX executable bin/extractorprocesstest
+[397/411] Building CXX object autotests/unit/file/CMakeFiles/filewatchtest.dir/filewatchtest.cpp.o
+[398/411] Linking CXX executable bin/fileindexerconfigtest
+[399/411] Linking CXX executable bin/filewatchtest
+[400/411] Building CXX object autotests/unit/file/CMakeFiles/extractorcommandpipetest.dir/extractorcommandpipetest.cpp.o
+[401/411] Building CXX object autotests/unit/file/CMakeFiles/metadatamovertest.dir/metadatamovertest.cpp.o
+[402/411] Linking CXX executable bin/extractorcommandpipetest
+[403/411] Building CXX object autotests/unit/lib/CMakeFiles/filefetchjobtest.dir/filefetchjobtest.cpp.o
+[404/411] Linking CXX executable bin/metadatamovertest
+[405/411] Building CXX object autotests/unit/file/CMakeFiles/filtereddiriteratortest.dir/filtereddiriteratortest.cpp.o
+[406/411] Linking CXX executable bin/filefetchjobtest
+[407/411] Building CXX object autotests/unit/file/CMakeFiles/propertyserializationtest.dir/propertyserializationtest.cpp.o
+[408/411] Linking CXX executable bin/filtereddiriteratortest
+[409/411] Linking CXX executable bin/propertyserializationtest
+[410/411] Building CXX object autotests/unit/lib/CMakeFiles/filemonitortest.dir/filemonitortest.cpp.o
 [411/411] Linking CXX executable bin/filemonitortest
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/libKF6Baloo.so.6.14.0
@@ -1554,12 +1554,12 @@ hm...lets continue and see what happens
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/qt6/qml/org/kde/baloo/experimental/qmldir
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/qt6/qml/org/kde/baloo/experimental/baloomonitorplugin.qmltypes
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/qt6/qml/org/kde/baloo/experimental/kde-qmlmodule.version
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/libexec/kf6/baloo_file
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/libexec/kf6/baloo_file" to ""
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/libexec/kf6/baloo_file
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/libexec/kf6/baloo_file" to ""
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/etc/xdg/autostart/baloo_file.desktop
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib/systemd/user/kde-baloo.service
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/libexec/kf6/baloo_file_extractor
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/libexec/kf6/baloo_file_extractor" to ""
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/libexec/kf6/baloo_file_extractor
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/libexec/kf6/baloo_file_extractor" to ""
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/share/dbus-1/interfaces/org.kde.BalooWatcherApplication.xml
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/qt6/plugins/kf6/kio/timeline.so
 -- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/baloo/package-baloo/usr/lib64/qt6/plugins/kf6/kio/timeline.so" to ""
@@ -2347,10 +2347,6 @@ usr/lib64/cmake/KF6Baloo/KF6BalooTargets-relwithdebinfo.cmake
 usr/lib64/cmake/KF6Baloo/KF6BalooTargets.cmake
 usr/lib64/libKF6Baloo.so.6.14.0
 usr/lib64/libKF6BalooEngine.so.6.14.0
-usr/lib64/libexec/
-usr/lib64/libexec/kf6/
-usr/lib64/libexec/kf6/baloo_file
-usr/lib64/libexec/kf6/baloo_file_extractor
 usr/lib64/pkgconfig/
 usr/lib64/pkgconfig/KF6Baloo.pc
 usr/lib64/qt6/
@@ -2375,6 +2371,10 @@ usr/lib64/qt6/qml/org/kde/baloo/experimental/qmldir
 usr/lib64/qt6/qml/org/kde/baloo/kde-qmlmodule.version
 usr/lib64/qt6/qml/org/kde/baloo/libbalooplugin.so
 usr/lib64/qt6/qml/org/kde/baloo/qmldir
+usr/libexec/
+usr/libexec/kf6/
+usr/libexec/kf6/baloo_file
+usr/libexec/kf6/baloo_file_extractor
 usr/share/
 usr/share/dbus-1/
 usr/share/dbus-1/interfaces/
@@ -3042,7 +3042,7 @@ makepkg-baloo.log
 +============================================================================================+
 
 Pre-installing package baloo-6.14.0-x86_64-1_rtz...
-Removing package: baloo-6.14.0-x86_64-1_rtz-upgraded-2025-05-21,14:09:48
+Removing package: baloo-6.14.0-x86_64-1_rtz-upgraded-2025-05-28,18:30:22
 Installing package baloo-6.14.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # baloo (searching and managing metadata)

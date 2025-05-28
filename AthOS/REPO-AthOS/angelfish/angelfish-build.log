@@ -19,26 +19,26 @@ kirigami is already installed!
 purpose is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 15:17:35--  https://download.kde.org/stable/release-service/25.04.1/src/angelfish-25.04.1.tar.xz
+--2025-05-28 19:36:11--  https://download.kde.org/stable/release-service/25.04.1/src/angelfish-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/angelfish-25.04.1.tar.xz [following]
---2025-05-21 15:17:35--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/angelfish-25.04.1.tar.xz
+--2025-05-28 19:36:11--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/angelfish-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 296052 (289K) [application/octet-stream]
 Saving to: ‘angelfish-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 17% 1.31M 0s
-    50K .......... .......... .......... .......... .......... 34% 1.44M 0s
-   100K .......... .......... .......... .......... .......... 51% 6.49M 0s
-   150K .......... .......... .......... .......... .......... 69% 1.92M 0s
-   200K .......... .......... .......... .......... .......... 86% 7.66M 0s
-   250K .......... .......... .......... .........            100% 5.41M=0.1s
+     0K .......... .......... .......... .......... .......... 17% 1.29M 0s
+    50K .......... .......... .......... .......... .......... 34% 1.41M 0s
+   100K .......... .......... .......... .......... .......... 51% 7.04M 0s
+   150K .......... .......... .......... .......... .......... 69% 4.88M 0s
+   200K .......... .......... .......... .......... .......... 86% 2.29M 0s
+   250K .......... .......... .......... .........            100% 7.86M=0.1s
 
-2025-05-21 15:17:36 (2.40 MB/s) - ‘angelfish-25.04.1.tar.xz’ saved [296052/296052]
+2025-05-28 19:36:12 (2.45 MB/s) - ‘angelfish-25.04.1.tar.xz’ saved [296052/296052]
 
 Found file: angelfish-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -300,8 +300,8 @@ angelfish-25.04.1/org.kde.angelfish.metainfo.xml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -324,7 +324,7 @@ hm...lets continue and see what happens
 -- Performing Test HAVE_DATE_TIME - Success
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Could NOT find Qt6Feedback (missing: Qt6Feedback_DIR)
 CMake Warning at /usr/lib64/cmake/Qt6/Qt6Config.cmake:263 (message):
@@ -450,7 +450,7 @@ CMake Warning at CMakeLists.txt:88 (message):
  * Corrosion, CMake scripts to seamlessly build and link to targets using cargo, <https://github.com/AndrewGaspar/corrosion>
    Required to build the builtin adblocker
 
--- Configuring done (1.8s)
+-- Configuring done (1.9s)
 -- Generating done (0.1s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/work/angelfish-25.04.1/build
 [1/96] Copying angelfish_settings qml resources into build dir
@@ -463,23 +463,23 @@ CMake Warning at CMakeLists.txt:88 (message):
 [8/96] Automatic MOC for target angelfish_settings
 [9/96] Running AUTOMOC file extraction for target angelfish_settings
 [10/96] Running rcc for resource qmake_org_kde_angelfish_settings
-[11/96] Generating .rcc/qmlcache/angelfish_settings_qmlcache_loader.cpp
+[11/96] Running moc --collect-json for target angelfish_settings
 [12/96] Building CXX object src/settings/CMakeFiles/angelfish_settingsplugin_init.dir/angelfish_settingsplugin_init_autogen/mocs_compilation.cpp.o
 cc1plus: warning: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/work/angelfish-25.04.1/build/src/settings/angelfish_settingsplugin_autogen/include: No such file or directory [-Wmissing-include-dirs]
-[13/96] Running moc --collect-json for target angelfish_settings
-[14/96] Running rcc for resource angelfish_settings_raw_qml_0
-[15/96] Building CXX object src/settings/CMakeFiles/angelfish_settings_resources_2.dir/.qt/rcc/qrc_angelfish_settings_raw_qml_0_init.cpp.o
+[13/96] Generating .rcc/qmlcache/angelfish_settings_qmlcache_loader.cpp
+[14/96] Generating mo...
+[15/96] Running rcc for resource angelfish_settings_raw_qml_0
+[16/96] Building CXX object src/settings/CMakeFiles/angelfish_settings_resources_2.dir/.qt/rcc/qrc_angelfish_settings_raw_qml_0_init.cpp.o
 cc1plus: warning: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/work/angelfish-25.04.1/build/src/settings/angelfish_settings_autogen/include: No such file or directory [-Wmissing-include-dirs]
-[16/96] Generating mo...
 [17/96] Building CXX object src/settings/CMakeFiles/angelfish_settings_resources_1.dir/.qt/rcc/qrc_qmake_org_kde_angelfish_settings_init.cpp.o
 cc1plus: warning: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/work/angelfish-25.04.1/build/src/settings/angelfish_settings_autogen/include: No such file or directory [-Wmissing-include-dirs]
 [18/96] Automatic QML type registration for target angelfish_settings
-[19/96] Generating .rcc/qmlcache/angelfish_settings_SettingsNavigationBarPage_qml.cpp, .rcc/qmlcache/angelfish_settings_SettingsNavigationBarPage_qml.cpp.aotstats
+[19/96] Generating .rcc/qmlcache/angelfish_settings_AngelfishConfigurationView_qml.cpp, .rcc/qmlcache/angelfish_settings_AngelfishConfigurationView_qml.cpp.aotstats
 [20/96] Generating .rcc/qmlcache/angelfish_settings_SettingsGeneral_qml.cpp, .rcc/qmlcache/angelfish_settings_SettingsGeneral_qml.cpp.aotstats
-[21/96] Generating .rcc/qmlcache/angelfish_settings_AngelfishConfigurationView_qml.cpp, .rcc/qmlcache/angelfish_settings_AngelfishConfigurationView_qml.cpp.aotstats
-[22/96] Generating .rcc/qmlcache/angelfish_settings_SettingsWebApps_qml.cpp, .rcc/qmlcache/angelfish_settings_SettingsWebApps_qml.cpp.aotstats
-[23/96] Generating .rcc/qmlcache/angelfish_settings_DesktopHomeSettingsPage_qml.cpp, .rcc/qmlcache/angelfish_settings_DesktopHomeSettingsPage_qml.cpp.aotstats
-[24/96] Generating .rcc/qmlcache/angelfish_settings_SettingsSearchEnginePage_qml.cpp, .rcc/qmlcache/angelfish_settings_SettingsSearchEnginePage_qml.cpp.aotstats
+[21/96] Generating .rcc/qmlcache/angelfish_settings_SettingsWebApps_qml.cpp, .rcc/qmlcache/angelfish_settings_SettingsWebApps_qml.cpp.aotstats
+[22/96] Generating .rcc/qmlcache/angelfish_settings_SettingsNavigationBarPage_qml.cpp, .rcc/qmlcache/angelfish_settings_SettingsNavigationBarPage_qml.cpp.aotstats
+[23/96] Generating .rcc/qmlcache/angelfish_settings_SettingsSearchEnginePage_qml.cpp, .rcc/qmlcache/angelfish_settings_SettingsSearchEnginePage_qml.cpp.aotstats
+[24/96] Generating .rcc/qmlcache/angelfish_settings_DesktopHomeSettingsPage_qml.cpp, .rcc/qmlcache/angelfish_settings_DesktopHomeSettingsPage_qml.cpp.aotstats
 [25/96] Generating .rcc/qmlcache/angelfish_settings_SettingsAdblock_qml.cpp, .rcc/qmlcache/angelfish_settings_SettingsAdblock_qml.cpp.aotstats
 [26/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/angelfish_settings_autogen/mocs_compilation.cpp.o
 [27/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.qt/rcc/qrc_qmake_org_kde_angelfish_settings.cpp.o
@@ -490,29 +490,29 @@ cc1plus: warning: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/work/angelf
 [32/96] Building CXX object src/settings/CMakeFiles/angelfish_settingsplugin_init.dir/angelfish_settingsplugin_init.cpp.o
 cc1plus: warning: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/work/angelfish-25.04.1/build/src/settings/angelfish_settingsplugin_autogen/include: No such file or directory [-Wmissing-include-dirs]
 [33/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/AngelfishCore_autogen/EWIEGA46WW/qrc_resources-angelfish.generated.cpp.o
-[34/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/angelfish_settings_qmltyperegistrations.cpp.o
-[35/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsNavigationBarPage_qml.cpp.o
-[36/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsSearchEnginePage_qml.cpp.o
-[37/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_DesktopHomeSettingsPage_qml.cpp.o
-[38/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/downloadmanager.cpp.o
-[39/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/useragent.cpp.o
-[40/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/urlobserver.cpp.o
-[41/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_qmlcache_loader.cpp.o
-[42/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/urlutils.cpp.o
-[43/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsWebApps_qml.cpp.o
-[44/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsGeneral_qml.cpp.o
-[45/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsAdblock_qml.cpp.o
-[46/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/browsermanager.cpp.o
-[47/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_AngelfishConfigurationView_qml.cpp.o
-[48/96] Linking CXX static library lib/libangelfish_settings.a
-[49/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/angelfishwebprofile.cpp.o
-[50/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/AngelfishCore_autogen/mocs_compilation.cpp.o
-[51/96] Automatic MOC for target angelfish_settingsplugin
-[52/96] Building CXX object src/settings/CMakeFiles/angelfish_settingsplugin.dir/angelfish_settingsplugin_autogen/mocs_compilation.cpp.o
-[53/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/tabsmodel.cpp.o
-[54/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/iconimageprovider.cpp.o
-[55/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/angelfishsettings.cpp.o
-[56/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/bookmarkshistorymodel.cpp.o
+[34/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/useragent.cpp.o
+[35/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/angelfish_settings_qmltyperegistrations.cpp.o
+[36/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsNavigationBarPage_qml.cpp.o
+[37/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/urlutils.cpp.o
+[38/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsGeneral_qml.cpp.o
+[39/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsAdblock_qml.cpp.o
+[40/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/downloadmanager.cpp.o
+[41/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsSearchEnginePage_qml.cpp.o
+[42/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/urlobserver.cpp.o
+[43/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_AngelfishConfigurationView_qml.cpp.o
+[44/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_SettingsWebApps_qml.cpp.o
+[45/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_qmlcache_loader.cpp.o
+[46/96] Building CXX object src/settings/CMakeFiles/angelfish_settings.dir/.rcc/qmlcache/angelfish_settings_DesktopHomeSettingsPage_qml.cpp.o
+[47/96] Linking CXX static library lib/libangelfish_settings.a
+[48/96] Automatic MOC for target angelfish_settingsplugin
+[49/96] Building CXX object src/settings/CMakeFiles/angelfish_settingsplugin.dir/angelfish_settingsplugin_autogen/mocs_compilation.cpp.o
+[50/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/browsermanager.cpp.o
+[51/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/AngelfishCore_autogen/mocs_compilation.cpp.o
+[52/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/angelfishwebprofile.cpp.o
+[53/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/angelfishsettings.cpp.o
+[54/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/tabsmodel.cpp.o
+[55/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/bookmarkshistorymodel.cpp.o
+[56/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/iconimageprovider.cpp.o
 [57/96] Building CXX object src/settings/CMakeFiles/angelfish_settingsplugin.dir/angelfish_settingsplugin_org_kde_angelfish_settingsPlugin.cpp.o
 [58/96] Linking CXX static library bin/org/kde/angelfish/settings/libangelfish_settingsplugin.a
 [59/96] Building CXX object lib/CMakeFiles/AngelfishCore.dir/dbmanager.cpp.o
@@ -521,37 +521,37 @@ cc1plus: warning: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/work/angelf
 [62/96] Automatic RCC for webapp-resources.qrc
 [63/96] Building CXX object angelfish-webapp/CMakeFiles/angelfish-webapp.dir/angelfish-webapp_autogen/mocs_compilation.cpp.o
 [64/96] Building CXX object angelfish-webapp/CMakeFiles/angelfish-webapp.dir/angelfish-webapp_autogen/EWIEGA46WW/qrc_webapp-resources.cpp.o
-[65/96] Automatic MOC for target angelfish
-[66/96] Automatic MOC for target tabsmodeltest
+[65/96] Automatic MOC for target tabsmodeltest
+[66/96] Automatic MOC for target configtest
 [67/96] Building CXX object autotests/CMakeFiles/tabsmodeltest.dir/tabsmodeltest_autogen/mocs_compilation.cpp.o
-[68/96] Automatic MOC for target dbmanagertest
-[69/96] Automatic RCC for angelfish.qrc
-[70/96] Automatic MOC for target configtest
-[71/96] Building CXX object autotests/CMakeFiles/dbmanagertest.dir/dbmanagertest_autogen/mocs_compilation.cpp.o
-[72/96] Building CXX object autotests/CMakeFiles/configtest.dir/configtest_autogen/mocs_compilation.cpp.o
-[73/96] Automatic MOC for target browsermanagertest
-[74/96] Building CXX object autotests/CMakeFiles/browsermanagertest.dir/browsermanagertest_autogen/mocs_compilation.cpp.o
+[68/96] Building CXX object autotests/CMakeFiles/configtest.dir/configtest_autogen/mocs_compilation.cpp.o
+[69/96] Automatic MOC for target angelfish
+[70/96] Automatic MOC for target browsermanagertest
+[71/96] Building CXX object autotests/CMakeFiles/browsermanagertest.dir/browsermanagertest_autogen/mocs_compilation.cpp.o
+[72/96] Automatic RCC for angelfish.qrc
+[73/96] Automatic MOC for target dbmanagertest
+[74/96] Building CXX object autotests/CMakeFiles/dbmanagertest.dir/dbmanagertest_autogen/mocs_compilation.cpp.o
 [75/96] Building CXX object src/CMakeFiles/angelfish.dir/angelfish_autogen/EWIEGA46WW/qrc_angelfish.cpp.o
-[76/96] Building CXX object src/CMakeFiles/angelfish.dir/adblockurlinterceptor.cpp.o
+[76/96] Building CXX object src/CMakeFiles/angelfish.dir/angelfish_autogen/mocs_compilation.cpp.o
 [77/96] Building CXX object src/CMakeFiles/angelfish.dir/webappmanagermodel.cpp.o
-[78/96] Building CXX object src/CMakeFiles/angelfish.dir/downloadsmodel.cpp.o
-[79/96] Building CXX object src/CMakeFiles/angelfish.dir/angelfish_autogen/mocs_compilation.cpp.o
-[80/96] Building CXX object src/CMakeFiles/angelfish.dir/adblockfilterlistsmanager.cpp.o
+[78/96] Building CXX object autotests/CMakeFiles/configtest.dir/configtest.cpp.o
+[79/96] Linking CXX executable bin/configtest
+[80/96] Building CXX object src/CMakeFiles/angelfish.dir/webappcreator.cpp.o
 [81/96] Building CXX object src/CMakeFiles/angelfish.dir/domdistiller.cpp.o
 [82/96] Building CXX object src/CMakeFiles/angelfish.dir/webappmanager.cpp.o
-[83/96] Building CXX object src/CMakeFiles/angelfish.dir/adblockfilterlistsmodel.cpp.o
-[84/96] Building CXX object autotests/CMakeFiles/browsermanagertest.dir/browsermanagertest.cpp.o
-[85/96] Linking CXX executable bin/browsermanagertest
-[86/96] Building CXX object src/CMakeFiles/angelfish.dir/webappcreator.cpp.o
-[87/96] Building CXX object autotests/CMakeFiles/tabsmodeltest.dir/tabsmodeltest.cpp.o
-[88/96] Building CXX object autotests/CMakeFiles/configtest.dir/configtest.cpp.o
-[89/96] Linking CXX executable bin/tabsmodeltest
-[90/96] Linking CXX executable bin/configtest
-[91/96] Building CXX object autotests/CMakeFiles/dbmanagertest.dir/dbmanagertest.cpp.o
-[92/96] Linking CXX executable bin/dbmanagertest
+[83/96] Building CXX object autotests/CMakeFiles/dbmanagertest.dir/dbmanagertest.cpp.o
+[84/96] Building CXX object src/CMakeFiles/angelfish.dir/adblockfilterlistsmanager.cpp.o
+[85/96] Building CXX object src/CMakeFiles/angelfish.dir/adblockurlinterceptor.cpp.o
+[86/96] Linking CXX executable bin/dbmanagertest
+[87/96] Building CXX object src/CMakeFiles/angelfish.dir/adblockfilterlistsmodel.cpp.o
+[88/96] Building CXX object src/CMakeFiles/angelfish.dir/downloadsmodel.cpp.o
+[89/96] Building CXX object autotests/CMakeFiles/browsermanagertest.dir/browsermanagertest.cpp.o
+[90/96] Building CXX object autotests/CMakeFiles/tabsmodeltest.dir/tabsmodeltest.cpp.o
+[91/96] Linking CXX executable bin/browsermanagertest
+[92/96] Linking CXX executable bin/tabsmodeltest
 [93/96] Building CXX object angelfish-webapp/CMakeFiles/angelfish-webapp.dir/main.cpp.o
-[94/96] Building CXX object src/CMakeFiles/angelfish.dir/main.cpp.o
-[95/96] Linking CXX executable bin/angelfish-webapp
+[94/96] Linking CXX executable bin/angelfish-webapp
+[95/96] Building CXX object src/CMakeFiles/angelfish.dir/main.cpp.o
 [96/96] Linking CXX executable bin/angelfish
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/angelfish/package-angelfish/usr/share/config.kcfg/angelfishsettings.kcfg
@@ -924,7 +924,7 @@ makepkg-angelfish.log
 +==========================================================================================================+
 
 Pre-installing package angelfish-25.04.1-x86_64-1_rtz...
-Removing package: angelfish-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,15:18:00
+Removing package: angelfish-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,19:36:37
 Installing package angelfish-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # angelfish (Small Webbrowser for Plasma Mobile)

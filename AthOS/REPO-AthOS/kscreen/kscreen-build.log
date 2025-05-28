@@ -19,25 +19,25 @@ libkscreen is already installed!
 libplasma is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 15:03:27--  https://download.kde.org/stable/plasma/6.3.5/kscreen-6.3.5.tar.xz
+--2025-05-28 19:21:29--  https://download.kde.org/stable/plasma/6.3.5/kscreen-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kscreen-6.3.5.tar.xz [following]
---2025-05-21 15:03:27--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kscreen-6.3.5.tar.xz
+--2025-05-28 19:21:30--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kscreen-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 226848 (222K) [application/octet-stream]
 Saving to: ‘kscreen-6.3.5.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 22% 1.34M 0s
-    50K .......... .......... .......... .......... .......... 45% 1.45M 0s
-   100K .......... .......... .......... .......... .......... 67% 5.26M 0s
-   150K .......... .......... .......... .......... .......... 90% 2.17M 0s
-   200K .......... .......... .                               100% 9.73M=0.1s
+     0K .......... .......... .......... .......... .......... 22% 1.38M 0s
+    50K .......... .......... .......... .......... .......... 45% 1.54M 0s
+   100K .......... .......... .......... .......... .......... 67% 5.18M 0s
+   150K .......... .......... .......... .......... .......... 90% 5.26M 0s
+   200K .......... .......... .                               100% 1.39M=0.1s
 
-2025-05-21 15:03:27 (2.08 MB/s) - ‘kscreen-6.3.5.tar.xz’ saved [226848/226848]
+2025-05-28 19:21:30 (2.14 MB/s) - ‘kscreen-6.3.5.tar.xz’ saved [226848/226848]
 
 Found file: kscreen-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -398,8 +398,8 @@ kscreen-6.3.5/README.md
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -426,7 +426,7 @@ hm...lets continue and see what happens
 -- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.14.0")
 -- Found KF6Svg: /usr/lib64/cmake/KF6Svg/KF6SvgConfig.cmake (found version "6.14.0")
@@ -489,7 +489,7 @@ hm...lets continue and see what happens
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/build
 [0/2] Re-checking globbed directories...
-[1/89] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/build/kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/kcm/kcm_kscreen.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/build/kcm/kcm_kscreen.desktop
+[1/89] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/build/kcm && /usr/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/kcm/kcm_kscreen.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/build/kcm/kcm_kscreen.desktop
 [2/89] Generating kwincompositing_setting.h, kwincompositing_setting.cpp
 [3/89] Generating ts...
 [4/89] Generating globalscalesettings.h, globalscalesettings.cpp
@@ -503,44 +503,43 @@ hm...lets continue and see what happens
 [12/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/kscreen_osd_service_autogen/mocs_compilation.cpp.o
 [13/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/kscreen_osd_service_autogen/EWIEGA46WW/qrc_qml.cpp.o
 [14/89] Automatic MOC for target kscreen
-[15/89] Automatic MOC for target org.kde.kscreen
+[15/89] Generating freedesktop_interface.cpp, freedesktop_interface.h
 [16/89] Generating osdservice_interface.cpp, osdservice_interface.h
-[17/89] Generating freedesktop_interface.cpp, freedesktop_interface.h
+[17/89] Generating moc_freedesktop_interface.cpp
 [18/89] Generating moc_osdservice_interface.cpp
-[19/89] Generating moc_freedesktop_interface.cpp
+[19/89] Automatic MOC for target org.kde.kscreen
 [20/89] Automatic MOC for target kcm_kscreen
-[21/89] Building CXX object plasmoid/CMakeFiles/org.kde.kscreen.dir/org.kde.kscreen_autogen/mocs_compilation.cpp.o
+[21/89] Generating qrc_kcm_kscreen.cpp
 [22/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/globals.cpp.o
-[23/89] Building CXX object kded/CMakeFiles/kscreen.dir/kscreen_daemon_debug.cpp.o
-[24/89] Generating qrc_kcm_kscreen.cpp
-[25/89] Building CXX object console/CMakeFiles/kscreen-console.dir/main.cpp.o
+[23/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/qrc_kcm_kscreen.cpp.o
+[24/89] Building CXX object kded/CMakeFiles/kscreen.dir/kscreen_daemon_debug.cpp.o
+[25/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/orientation_sensor.cpp.o
 [26/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/main.cpp.o
-[27/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/qrc_kcm_kscreen.cpp.o
-[28/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/utils.cpp.o
-[29/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/orientation_sensor.cpp.o
-[30/89] Building CXX object kded/CMakeFiles/kscreen.dir/kscreen_autogen/mocs_compilation.cpp.o
+[27/89] Building CXX object kded/CMakeFiles/kscreen.dir/kscreen_autogen/mocs_compilation.cpp.o
+[28/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/kcm_kscreen_autogen/mocs_compilation.cpp.o
+[29/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/utils.cpp.o
+[30/89] Building CXX object console/CMakeFiles/kscreen-console.dir/main.cpp.o
 [31/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/__/common/osdaction.cpp.o
-[32/89] Building CXX object plasmoid/CMakeFiles/org.kde.kscreen.dir/__/common/osdaction.cpp.o
-[33/89] Building CXX object kded/CMakeFiles/kscreen.dir/config.cpp.o
-[34/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/osdaction.cpp.o
-[35/89] Building CXX object console/CMakeFiles/kscreen-console.dir/console.cpp.o
-[36/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/__/common/globals.cpp.o
-[37/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/osd.cpp.o
-[38/89] Linking CXX executable bin/kscreen-console
-[39/89] Building CXX object kded/CMakeFiles/kscreen.dir/generator.cpp.o
-[40/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/control.cpp.o
-[41/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/kcm_kscreen_autogen/mocs_compilation.cpp.o
-[42/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/osdserviceadaptor.cpp.o
-[43/89] Building CXX object plasmoid/CMakeFiles/org.kde.kscreen.dir/kscreenapplet.cpp.o
-[44/89] Linking CXX shared module bin/org.kde.kscreen.so
-[45/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/__/common/utils.cpp.o
-[46/89] Building CXX object kded/CMakeFiles/kscreen.dir/freedesktop_interface.cpp.o
-[47/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/kcm_screen_debug.cpp.o
-[48/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/osdmanager.cpp.o
+[32/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/osdaction.cpp.o
+[33/89] Building CXX object console/CMakeFiles/kscreen-console.dir/console.cpp.o
+[34/89] Building CXX object plasmoid/CMakeFiles/org.kde.kscreen.dir/org.kde.kscreen_autogen/mocs_compilation.cpp.o
+[35/89] Building CXX object kded/CMakeFiles/kscreen.dir/__/common/control.cpp.o
+[36/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/osd.cpp.o
+[37/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/__/common/globals.cpp.o
+[38/89] Building CXX object kded/CMakeFiles/kscreen.dir/config.cpp.o
+[39/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/osdserviceadaptor.cpp.o
+[40/89] Linking CXX executable bin/kscreen-console
+[41/89] Building CXX object kded/CMakeFiles/kscreen.dir/osdservice_interface.cpp.o
+[42/89] Building CXX object kded/CMakeFiles/kscreen.dir/freedesktop_interface.cpp.o
+[43/89] Building CXX object kded/CMakeFiles/kscreen.dir/output.cpp.o
+[44/89] Building CXX object kded/CMakeFiles/kscreen.dir/device.cpp.o
+[45/89] Building CXX object osd/CMakeFiles/kscreen_osd_service.dir/osdmanager.cpp.o
+[46/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/__/common/utils.cpp.o
+[47/89] Building CXX object kded/CMakeFiles/kscreen.dir/generator.cpp.o
+[48/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/kcm_screen_debug.cpp.o
 [49/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/__/common/orientation_sensor.cpp.o
 [50/89] Linking CXX executable bin/kscreen_osd_service
-[51/89] Building CXX object kded/CMakeFiles/kscreen.dir/device.cpp.o
-[52/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/config_handler.cpp.o
+[51/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/config_handler.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/kcm/config_handler.cpp: In lambda function:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/kcm/config_handler.cpp:48:87: warning: unused parameter ‘topLeft’ [-Wunused-parameter]
    48 |     connect(m_outputModel, &OutputModel::dataChanged, this, [this](const QModelIndex &topLeft, const QModelIndex &bottomRight, const QList<int> &roles) {
@@ -548,47 +547,48 @@ hm...lets continue and see what happens
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/work/kscreen-6.3.5/kcm/config_handler.cpp:48:146: warning: unused parameter ‘roles’ [-Wunused-parameter]
    48 |     connect(m_outputModel, &OutputModel::dataChanged, this, [this](const QModelIndex &topLeft, const QModelIndex &bottomRight, const QList<int> &roles) {
       |                                                                                                                                ~~~~~~~~~~~~~~~~~~^~~~~
-[53/89] Building CXX object kded/CMakeFiles/kscreen.dir/output.cpp.o
+[52/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/globalscalesettings.cpp.o
+[53/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/kwincompositing_setting.cpp.o
 [54/89] Building CXX object kded/CMakeFiles/kscreen.dir/daemon.cpp.o
-[55/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/globalscalesettings.cpp.o
-[56/89] Building CXX object kded/CMakeFiles/kscreen.dir/osdservice_interface.cpp.o
-[57/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/__/common/control.cpp.o
-[58/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/kwincompositing_setting.cpp.o
-[59/89] Linking CXX shared module bin/kf6/kded/kscreen.so
-[60/89] Generating freedesktop_interface.cpp, freedesktop_interface.h
-[61/89] Generating moc_freedesktop_interface.cpp
-[62/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/kcm.cpp.o
+[55/89] Building CXX object plasmoid/CMakeFiles/org.kde.kscreen.dir/__/common/osdaction.cpp.o
+[56/89] Linking CXX shared module bin/kf6/kded/kscreen.so
+[57/89] Generating freedesktop_interface.cpp, freedesktop_interface.h
+[58/89] Generating moc_freedesktop_interface.cpp
+[59/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/__/common/control.cpp.o
+[60/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/kcm.cpp.o
+[61/89] Automatic MOC for target testgenerator
+[62/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/testgenerator_autogen/mocs_compilation.cpp.o
 [63/89] Automatic MOC for target configtest
 [64/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/configtest_autogen/mocs_compilation.cpp.o
-[65/89] Automatic MOC for target testgenerator
-[66/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/testgenerator_autogen/mocs_compilation.cpp.o
-[67/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/common/globals.cpp.o
-[68/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/common/globals.cpp.o
-[69/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/output_model.cpp.o
-[70/89] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_kscreen.so
+[65/89] Building CXX object plasmoid/CMakeFiles/org.kde.kscreen.dir/kscreenapplet.cpp.o
+[66/89] Building CXX object kcm/CMakeFiles/kcm_kscreen.dir/output_model.cpp.o
+[67/89] Linking CXX shared module bin/org.kde.kscreen.so
+[68/89] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_kscreen.so
+[69/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/common/globals.cpp.o
+[70/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/common/globals.cpp.o
 [71/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/kscreen_daemon_debug.cpp.o
 [72/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/kscreen_daemon_debug.cpp.o
 [73/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/kded/config.cpp.o
-[74/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/common/control.cpp.o
-[75/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/kded/output.cpp.o
-[76/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/kded/generator.cpp.o
-[77/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/freedesktop_interface.cpp.o
-[78/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/kded/output.cpp.o
+[74/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/kded/generator.cpp.o
+[75/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/freedesktop_interface.cpp.o
+[76/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/common/control.cpp.o
+[77/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/kded/output.cpp.o
+[78/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/kded/config.cpp.o
 [79/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/kded/device.cpp.o
 [80/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/common/control.cpp.o
-[81/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/kded/generator.cpp.o
-[82/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/__/__/kded/config.cpp.o
+[81/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/kded/output.cpp.o
+[82/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/kded/device.cpp.o
 [83/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/freedesktop_interface.cpp.o
-[84/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/configtest.cpp.o
-[85/89] Linking CXX executable bin/configtest
-[86/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/testgenerator.cpp.o
-[87/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/kded/device.cpp.o
+[84/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/__/__/kded/generator.cpp.o
+[85/89] Building CXX object tests/kded/CMakeFiles/configtest.dir/configtest.cpp.o
+[86/89] Linking CXX executable bin/configtest
+[87/89] Building CXX object tests/kded/CMakeFiles/testgenerator.dir/testgenerator.cpp.o
 [88/89] Linking CXX executable bin/testgenerator
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/package-kscreen/usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_kscreen.so
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/package-kscreen/usr/share/applications/kcm_kscreen.desktop
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/package-kscreen/usr/lib64/qt6/plugins/kf6/kded/kscreen.so
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/package-kscreen/usr/lib64/libexec/kscreen_osd_service
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/package-kscreen/usr/libexec/kscreen_osd_service
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/package-kscreen/usr/share/dbus-1/services/org.kde.kscreen.osdService.service
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/package-kscreen/usr/lib/systemd/user/plasma-kscreen-osd.service
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kscreen/package-kscreen/usr/share/kglobalaccel/org.kde.kscreen.desktop
@@ -940,8 +940,6 @@ usr/doc/kscreen-6.3.5/kscreen.ini
 usr/doc/kscreen-6.3.5/slack-required
 usr/lib/
 usr/lib64/
-usr/lib64/libexec/
-usr/lib64/libexec/kscreen_osd_service
 usr/lib64/qt6/
 usr/lib64/qt6/plugins/
 usr/lib64/qt6/plugins/kf6/
@@ -953,6 +951,8 @@ usr/lib64/qt6/plugins/plasma/applets/org.kde.kscreen.so
 usr/lib64/qt6/plugins/plasma/kcms/
 usr/lib64/qt6/plugins/plasma/kcms/systemsettings/
 usr/lib64/qt6/plugins/plasma/kcms/systemsettings/kcm_kscreen.so
+usr/libexec/
+usr/libexec/kscreen_osd_service
 usr/share/
 usr/share/applications/
 usr/share/applications/kcm_kscreen.desktop
@@ -1273,7 +1273,7 @@ makepkg-kscreen.log
 +================================================================================================+
 
 Pre-installing package kscreen-6.3.5-x86_64-1_rtz...
-Removing package: kscreen-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,15:03:58
+Removing package: kscreen-6.3.5-x86_64-1_rtz-upgraded-2025-05-28,19:22:00
 Installing package kscreen-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kscreen (KDE's screen management software)

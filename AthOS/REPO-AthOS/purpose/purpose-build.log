@@ -9,24 +9,24 @@ kirigami is already installed!
 extra-cmake-modules is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 14:07:46--  https://download.kde.org/stable/frameworks/6.14/purpose-6.14.0.tar.xz
+--2025-05-28 18:28:27--  https://download.kde.org/stable/frameworks/6.14/purpose-6.14.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/purpose-6.14.0.tar.xz [following]
---2025-05-21 14:07:46--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/purpose-6.14.0.tar.xz
+--2025-05-28 18:28:27--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/purpose-6.14.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 188272 (184K) [application/octet-stream]
 Saving to: ‘purpose-6.14.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 27% 1.22M 0s
-    50K .......... .......... .......... .......... .......... 54% 1.31M 0s
-   100K .......... .......... .......... .......... .......... 81% 5.42M 0s
-   150K .......... .......... .......... ...                  100% 12.6M=0.09s
+     0K .......... .......... .......... .......... .......... 27% 1.37M 0s
+    50K .......... .......... .......... .......... .......... 54% 1.60M 0s
+   100K .......... .......... .......... .......... .......... 81% 5.24M 0s
+   150K .......... .......... .......... ...                  100% 5.73M=0.08s
 
-2025-05-21 14:07:47 (2.01 MB/s) - ‘purpose-6.14.0.tar.xz’ saved [188272/188272]
+2025-05-28 18:28:28 (2.20 MB/s) - ‘purpose-6.14.0.tar.xz’ saved [188272/188272]
 
 Found file: purpose-6.14.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -947,8 +947,8 @@ purpose-6.14.0/tests/tool/sharetool-resources.qrc
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -980,7 +980,7 @@ Call Stack (most recent call first):
 
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
 -- Found Gettext: /usr/bin/msgmerge (found version "0.25")
@@ -1064,7 +1064,7 @@ CMake Warning at src/plugins/phabricator/CMakeLists.txt:3 (message):
  * KF6CoreAddons
  * Qt6
 
--- Configuring done (2.3s)
+-- Configuring done (2.2s)
 -- Generating done (0.1s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/work/purpose-6.14.0/build
 [1/178] Copying purposequickplugin qml resources into build dir
@@ -1073,181 +1073,181 @@ CMake Warning at src/plugins/phabricator/CMakeLists.txt:3 (message):
 [4/178] Automatic MOC for target PhabricatorHelpers
 [5/178] Building CXX object src/plugins/phabricator/CMakeFiles/PhabricatorHelpers.dir/PhabricatorHelpers_autogen/mocs_compilation.cpp.o
 [6/178] Automatic MOC for target ReviewboardHelpers
-[7/178] Building CXX object src/plugins/reviewboard/CMakeFiles/ReviewboardHelpers.dir/ReviewboardHelpers_autogen/mocs_compilation.cpp.o
-[8/178] Automatic MOC for target kdeconnectQml
-[9/178] Running AUTOMOC file extraction for target kdeconnectQml
-[10/178] Generating mo...
-[11/178] Generating DaemonDbusInterface.cpp, DaemonDbusInterface.h
-[12/178] Running rcc for resource qmake_org_kde_purpose_kdeconnect
-[13/178] Generating DeviceDbusInterface.cpp, DeviceDbusInterface.h
-[14/178] Generating moc_DaemonDbusInterface.cpp
-[15/178] Generating moc_DeviceDbusInterface.cpp
-[16/178] Running moc --collect-json for target kdeconnectQml
-[17/178] Automatic QML type registration for target kdeconnectQml
-[18/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/kdeconnectQml_autogen/mocs_compilation.cpp.o
-[19/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/.qt/rcc/qrc_qmake_org_kde_purpose_kdeconnect.cpp.o
-[20/178] Automatic MOC for target KF6Purpose
-[21/178] Running AUTOMOC file extraction for target KF6Purpose
-[22/178] Generating qrc_standard-plugin-types.cpp
-[23/178] Running moc --collect-json for target KF6Purpose
-[24/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/KF6Purpose_autogen/mocs_compilation.cpp.o
-[25/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/qrc_standard-plugin-types.cpp.o
-[26/178] Building CXX object src/plugins/reviewboard/CMakeFiles/ReviewboardHelpers.dir/debug.cpp.o
-[27/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/purpose_external_process_debug.cpp.o
-[28/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/pluginbase.cpp.o
-[29/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/job.cpp.o
-[30/178] Building CXX object src/plugins/phabricator/CMakeFiles/PhabricatorHelpers.dir/debug.cpp.o
-[31/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/helper.cpp.o
-[32/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/externalprocess/processjob.cpp.o
-[33/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/kdeconnectqml_qmltyperegistrations.cpp.o
-[34/178] Building CXX object src/plugins/reviewboard/CMakeFiles/ReviewboardHelpers.dir/reviewboardjobs.cpp.o
-[35/178] Linking CXX static library lib/libReviewboardHelpers.a
-[36/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/kdeconnectQml_org_kde_purpose_kdeconnectPlugin.cpp.o
-[37/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/jobcontroller.cpp.o
-[38/178] Building CXX object src/plugins/phabricator/CMakeFiles/PhabricatorHelpers.dir/phabricatorjobs.cpp.o
-[39/178] Linking CXX static library lib/libPhabricatorHelpers.a
-[40/178] Automatic MOC for target testphabricator
-[41/178] Building CXX object src/plugins/phabricator/CMakeFiles/testphabricator.dir/testphabricator_autogen/mocs_compilation.cpp.o
-[42/178] Automatic MOC for target rbpurposequickplugin
-[43/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/rbpurposequickplugin_autogen/mocs_compilation.cpp.o
-[44/178] Automatic MOC for target phabricatorquickplugin
-[45/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorquickplugin.dir/phabricatorquickplugin_autogen/mocs_compilation.cpp.o
-[46/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/DeviceDbusInterface.cpp.o
-[47/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/configuration.cpp.o
-[48/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/DaemonDbusInterface.cpp.o
-[49/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/devicesmodel.cpp.o
-[50/178] Linking CXX shared module bin/org/kde/purpose/kdeconnect/libkdeconnectQml.so
-[51/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorquickplugin.dir/quick/phabricatorrc.cpp.o
-[52/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/quick/reviewboardquickplugin.cpp.o
-[53/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/alternativesmodel.cpp.o
-[54/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorquickplugin.dir/quick/phabricatorquickplugin.cpp.o
-[55/178] Linking CXX shared library bin/libKF6Purpose.so.6.14.0
-[56/178] Creating library symlink bin/libKF6Purpose.so.6 bin/libKF6Purpose.so
-[57/178] Automatic MOC for target sharetool
-[58/178] Building CXX object src/plugins/phabricator/CMakeFiles/testphabricator.dir/tests/testphabricator.cpp.o
-[59/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/quick/rbrepositoriesmodel.cpp.o
-[60/178] Generating qrc_sharetool-resources.cpp
-[61/178] Building CXX object tests/tool/CMakeFiles/sharetool.dir/sharetool_autogen/mocs_compilation.cpp.o
-[62/178] Automatic MOC for target kdeconnectsmsplugin
-[63/178] Building CXX object src/plugins/kdeconnect_sms/CMakeFiles/kdeconnectsmsplugin.dir/kdeconnectsmsplugin_autogen/mocs_compilation.cpp.o
-[64/178] Automatic MOC for target saveasplugin
-[65/178] Building CXX object src/plugins/saveas/CMakeFiles/saveasplugin.dir/saveasplugin_autogen/mocs_compilation.cpp.o
-[66/178] Automatic MOC for target telegramplugin
-[67/178] Automatic MOC for target phabricatorplugin
-[68/178] Building CXX object src/plugins/telegram/CMakeFiles/telegramplugin.dir/telegramplugin_autogen/mocs_compilation.cpp.o
-[69/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorplugin.dir/phabricatorplugin_autogen/mocs_compilation.cpp.o
-[70/178] Automatic MOC for target KF6PurposeWidgets
-[71/178] Generating qrc_purposewidgets-resources.cpp
-[72/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/quick/rbreviewslistmodel.cpp.o
-[73/178] Automatic MOC for target emailplugin
-[74/178] Automatic MOC for target bluetoothplugin
-[75/178] Automatic MOC for target youtubeplugin
-[76/178] Building CXX object src/widgets/CMakeFiles/KF6PurposeWidgets.dir/KF6PurposeWidgets_autogen/mocs_compilation.cpp.o
-[77/178] Building CXX object src/plugins/email/CMakeFiles/emailplugin.dir/emailplugin_autogen/mocs_compilation.cpp.o
-[78/178] Building CXX object src/plugins/youtube/CMakeFiles/youtubeplugin.dir/youtubeplugin_autogen/mocs_compilation.cpp.o
-[79/178] Automatic MOC for target barcodeplugin
-[80/178] Building CXX object src/widgets/CMakeFiles/KF6PurposeWidgets.dir/qrc_purposewidgets-resources.cpp.o
-[81/178] Automatic MOC for target imgurplugin
-[82/178] Automatic MOC for target kdeconnectplugin
-[83/178] Automatic MOC for target clipboardplugin
-[84/178] Building CXX object src/plugins/imgur/CMakeFiles/imgurplugin.dir/imgurplugin_autogen/mocs_compilation.cpp.o
-[85/178] Building CXX object src/plugins/barcode/CMakeFiles/barcodeplugin.dir/barcodeplugin_autogen/mocs_compilation.cpp.o
-[86/178] Automatic MOC for target purposeprocess
-[87/178] Automatic MOC for target reviewboardplugin
-[88/178] Building CXX object src/CMakeFiles/purposeprocess.dir/purposeprocess_autogen/mocs_compilation.cpp.o
-[89/178] Automatic MOC for target alternativesmodeltest
-[90/178] Building CXX object src/plugins/clipboard/CMakeFiles/clipboardplugin.dir/clipboardplugin_autogen/mocs_compilation.cpp.o
-[91/178] Automatic MOC for target pastebinplugin
-[92/178] Automatic MOC for target purposequickplugin
-[93/178] Automatic MOC for target nextcloudplugin
-[94/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectplugin.dir/kdeconnectplugin_autogen/mocs_compilation.cpp.o
-[95/178] Running AUTOMOC file extraction for target purposequickplugin
-[96/178] Running rcc for resource qmake_org_kde_purpose
-[97/178] Building CXX object src/plugins/pastebin/CMakeFiles/pastebinplugin.dir/pastebinplugin_autogen/mocs_compilation.cpp.o
-[98/178] Generating .rcc/qmlcache/purposequickplugin_qmlcache_loader.cpp
-[99/178] Running moc --collect-json for target purposequickplugin
-[100/178] Running rcc for resource purposequickplugin_raw_qml_0
-[101/178] Building CXX object src/plugins/nextcloud/CMakeFiles/nextcloudplugin.dir/nextcloudplugin_autogen/mocs_compilation.cpp.o
-[102/178] Automatic QML type registration for target purposequickplugin
+[7/178] Generating mo...
+[8/178] Building CXX object src/plugins/reviewboard/CMakeFiles/ReviewboardHelpers.dir/ReviewboardHelpers_autogen/mocs_compilation.cpp.o
+[9/178] Automatic MOC for target kdeconnectQml
+[10/178] Running AUTOMOC file extraction for target kdeconnectQml
+[11/178] Running rcc for resource qmake_org_kde_purpose_kdeconnect
+[12/178] Automatic MOC for target KF6Purpose
+[13/178] Generating DaemonDbusInterface.cpp, DaemonDbusInterface.h
+[14/178] Generating DeviceDbusInterface.cpp, DeviceDbusInterface.h
+[15/178] Running AUTOMOC file extraction for target KF6Purpose
+[16/178] Generating moc_DeviceDbusInterface.cpp
+[17/178] Generating moc_DaemonDbusInterface.cpp
+[18/178] Running moc --collect-json for target kdeconnectQml
+[19/178] Generating qrc_standard-plugin-types.cpp
+[20/178] Running moc --collect-json for target KF6Purpose
+[21/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/KF6Purpose_autogen/mocs_compilation.cpp.o
+[22/178] Automatic QML type registration for target kdeconnectQml
+[23/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/qrc_standard-plugin-types.cpp.o
+[24/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/kdeconnectQml_autogen/mocs_compilation.cpp.o
+[25/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/.qt/rcc/qrc_qmake_org_kde_purpose_kdeconnect.cpp.o
+[26/178] Building CXX object src/plugins/phabricator/CMakeFiles/PhabricatorHelpers.dir/debug.cpp.o
+[27/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/helper.cpp.o
+[28/178] Building CXX object src/plugins/reviewboard/CMakeFiles/ReviewboardHelpers.dir/debug.cpp.o
+[29/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/purpose_external_process_debug.cpp.o
+[30/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/job.cpp.o
+[31/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/kdeconnectQml_org_kde_purpose_kdeconnectPlugin.cpp.o
+[32/178] Building CXX object src/plugins/phabricator/CMakeFiles/PhabricatorHelpers.dir/phabricatorjobs.cpp.o
+[33/178] Linking CXX static library lib/libPhabricatorHelpers.a
+[34/178] Automatic MOC for target testphabricator
+[35/178] Building CXX object src/plugins/phabricator/CMakeFiles/testphabricator.dir/testphabricator_autogen/mocs_compilation.cpp.o
+[36/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/kdeconnectqml_qmltyperegistrations.cpp.o
+[37/178] Automatic MOC for target phabricatorquickplugin
+[38/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorquickplugin.dir/phabricatorquickplugin_autogen/mocs_compilation.cpp.o
+[39/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/pluginbase.cpp.o
+[40/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/jobcontroller.cpp.o
+[41/178] Building CXX object src/plugins/reviewboard/CMakeFiles/ReviewboardHelpers.dir/reviewboardjobs.cpp.o
+[42/178] Linking CXX static library lib/libReviewboardHelpers.a
+[43/178] Automatic MOC for target rbpurposequickplugin
+[44/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/rbpurposequickplugin_autogen/mocs_compilation.cpp.o
+[45/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/externalprocess/processjob.cpp.o
+[46/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/configuration.cpp.o
+[47/178] Building CXX object src/CMakeFiles/KF6Purpose.dir/alternativesmodel.cpp.o
+[48/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/DeviceDbusInterface.cpp.o
+[49/178] Linking CXX shared library bin/libKF6Purpose.so.6.14.0
+[50/178] Creating library symlink bin/libKF6Purpose.so.6 bin/libKF6Purpose.so
+[51/178] Automatic MOC for target sharetool
+[52/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorquickplugin.dir/quick/phabricatorrc.cpp.o
+[53/178] Automatic MOC for target kdeconnectplugin
+[54/178] Automatic MOC for target saveasplugin
+[55/178] Automatic MOC for target purposequickplugin
+[56/178] Automatic MOC for target youtubeplugin
+[57/178] Automatic MOC for target reviewboardplugin
+[58/178] Running AUTOMOC file extraction for target purposequickplugin
+[59/178] Automatic MOC for target KF6PurposeWidgets
+[60/178] Running moc --collect-json for target purposequickplugin
+[61/178] Generating qrc_purposewidgets-resources.cpp
+[62/178] Building CXX object src/widgets/CMakeFiles/KF6PurposeWidgets.dir/KF6PurposeWidgets_autogen/mocs_compilation.cpp.o
+[63/178] Automatic MOC for target clipboardplugin
+[64/178] Automatic MOC for target nextcloudplugin
+[65/178] Automatic QML type registration for target purposequickplugin
 Warning: job.h:33: KJob is used as base type but cannot be found.
-[103/178] Generating .rcc/qmlcache/purposequickplugin_AlternativesView_qml.cpp
-[104/178] Generating .rcc/qmlcache/purposequickplugin_JobView_qml.cpp
-[105/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/quick/reviewboardrc.cpp.o
-[106/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorquickplugin.dir/quick/difflistmodel.cpp.o
-[107/178] Building CXX object src/plugins/reviewboard/CMakeFiles/reviewboardplugin.dir/reviewboardplugin_autogen/mocs_compilation.cpp.o
-[108/178] Building CXX object src/CMakeFiles/purposeprocess.dir/purpose_external_process_debug.cpp.o
-[109/178] Building CXX object src/plugins/bluetooth/CMakeFiles/bluetoothplugin.dir/bluetoothplugin_autogen/mocs_compilation.cpp.o
+[66/178] Automatic MOC for target purposeprocess
+[67/178] Automatic MOC for target phabricatorplugin
+[68/178] Running rcc for resource qmake_org_kde_purpose
+[69/178] Automatic MOC for target imgurplugin
+[70/178] Generating .rcc/qmlcache/purposequickplugin_qmlcache_loader.cpp
+[71/178] Running rcc for resource purposequickplugin_raw_qml_0
+[72/178] Generating qrc_sharetool-resources.cpp
+[73/178] Automatic MOC for target pastebinplugin
+[74/178] Building CXX object src/widgets/CMakeFiles/KF6PurposeWidgets.dir/qrc_purposewidgets-resources.cpp.o
+[75/178] Building CXX object src/CMakeFiles/purposeprocess.dir/purposeprocess_autogen/mocs_compilation.cpp.o
+[76/178] Building CXX object src/plugins/saveas/CMakeFiles/saveasplugin.dir/saveasplugin_autogen/mocs_compilation.cpp.o
+[77/178] Automatic MOC for target emailplugin
+[78/178] Generating .rcc/qmlcache/purposequickplugin_JobView_qml.cpp
+[79/178] Building CXX object src/plugins/imgur/CMakeFiles/imgurplugin.dir/imgurplugin_autogen/mocs_compilation.cpp.o
+[80/178] Generating .rcc/qmlcache/purposequickplugin_AlternativesView_qml.cpp
+[81/178] Building CXX object src/plugins/pastebin/CMakeFiles/pastebinplugin.dir/pastebinplugin_autogen/mocs_compilation.cpp.o
+[82/178] Automatic MOC for target kdeconnectsmsplugin
+[83/178] Building CXX object src/plugins/clipboard/CMakeFiles/clipboardplugin.dir/clipboardplugin_autogen/mocs_compilation.cpp.o
+[84/178] Automatic MOC for target telegramplugin
+[85/178] Building CXX object src/plugins/youtube/CMakeFiles/youtubeplugin.dir/youtubeplugin_autogen/mocs_compilation.cpp.o
+[86/178] Automatic MOC for target bluetoothplugin
+[87/178] Automatic MOC for target alternativesmodeltest
+[88/178] Automatic MOC for target barcodeplugin
+[89/178] Building CXX object src/plugins/nextcloud/CMakeFiles/nextcloudplugin.dir/nextcloudplugin_autogen/mocs_compilation.cpp.o
+[90/178] Building CXX object src/plugins/phabricator/CMakeFiles/testphabricator.dir/tests/testphabricator.cpp.o
+[91/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/devicesmodel.cpp.o
+[92/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectplugin.dir/kdeconnectplugin_autogen/mocs_compilation.cpp.o
+[93/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/quick/reviewboardquickplugin.cpp.o
+[94/178] Building CXX object src/plugins/reviewboard/CMakeFiles/reviewboardplugin.dir/reviewboardplugin_autogen/mocs_compilation.cpp.o
+[95/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/quick/rbreviewslistmodel.cpp.o
+[96/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorplugin.dir/phabricatorplugin_autogen/mocs_compilation.cpp.o
+[97/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorquickplugin.dir/quick/phabricatorquickplugin.cpp.o
+[98/178] Building CXX object src/plugins/email/CMakeFiles/emailplugin.dir/emailplugin_autogen/mocs_compilation.cpp.o
+[99/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/quick/reviewboardrc.cpp.o
+[100/178] Building CXX object src/plugins/telegram/CMakeFiles/telegramplugin.dir/telegramplugin_autogen/mocs_compilation.cpp.o
+[101/178] Building CXX object src/plugins/reviewboard/CMakeFiles/rbpurposequickplugin.dir/quick/rbrepositoriesmodel.cpp.o
+[102/178] Building CXX object src/plugins/kdeconnect_sms/CMakeFiles/kdeconnectsmsplugin.dir/kdeconnectsmsplugin_autogen/mocs_compilation.cpp.o
+[103/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectQml.dir/DaemonDbusInterface.cpp.o
+[104/178] Building CXX object src/plugins/barcode/CMakeFiles/barcodeplugin.dir/barcodeplugin_autogen/mocs_compilation.cpp.o
+[105/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorquickplugin.dir/quick/difflistmodel.cpp.o
+[106/178] Building CXX object src/plugins/bluetooth/CMakeFiles/bluetoothplugin.dir/bluetoothplugin_autogen/mocs_compilation.cpp.o
+[107/178] Building CXX object src/CMakeFiles/purposeprocess.dir/purpose_external_process_debug.cpp.o
+[108/178] Building CXX object src/plugins/youtube/CMakeFiles/youtubeplugin.dir/youtubeplugin.cpp.o
+[109/178] Building CXX object src/plugins/imgur/CMakeFiles/imgurplugin.dir/mpform.cpp.o
 [110/178] Building CXX object src/CMakeFiles/purposeprocess.dir/helper.cpp.o
-[111/178] Building CXX object tests/tool/CMakeFiles/sharetool.dir/main.cpp.o
-[112/178] Building CXX object src/plugins/email/CMakeFiles/emailplugin.dir/emailplugin.cpp.o
-[113/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorplugin.dir/phabricatorplugin.cpp.o
-[114/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.qt/rcc/qrc_qmake_org_kde_purpose.cpp.o
-[115/178] Building CXX object src/plugins/imgur/CMakeFiles/imgurplugin.dir/mpform.cpp.o
-[116/178] Building CXX object src/CMakeFiles/purposeprocess.dir/externalprocess/purposeprocess_main.cpp.o
+[111/178] Building CXX object src/plugins/nextcloud/CMakeFiles/nextcloudplugin.dir/nextcloudplugin.cpp.o
+[112/178] Building CXX object src/CMakeFiles/purposeprocess.dir/externalprocess/purposeprocess_main.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/work/purpose-6.14.0/src/externalprocess/purposeprocess_main.cpp: In function ‘int main(int, char**)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/work/purpose-6.14.0/src/externalprocess/purposeprocess_main.cpp:124:76: note: ‘#pragma message: warning: make QGuiApplication, consider QCoreApplication?’
   124 | #pragma message("warning: make QGuiApplication, consider QCoreApplication?")
       |                                                                            ^
-[117/178] Building CXX object src/plugins/youtube/CMakeFiles/youtubeplugin.dir/youtubeplugin.cpp.o
-[118/178] Building CXX object src/plugins/kdeconnect_sms/CMakeFiles/kdeconnectsmsplugin.dir/kdeconnectsmsplugin.cpp.o
-[119/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.qt/rcc/qrc_purposequickplugin_raw_qml_0.cpp.o
-[120/178] Building CXX object autotests/CMakeFiles/alternativesmodeltest.dir/alternativesmodeltest_autogen/mocs_compilation.cpp.o
-[121/178] Building CXX object src/plugins/youtube/CMakeFiles/youtubeplugin.dir/youtubejobcomposite.cpp.o
-[122/178] Building CXX object tests/tool/CMakeFiles/sharetool.dir/qrc_sharetool-resources.cpp.o
-[123/178] Building CXX object src/plugins/nextcloud/CMakeFiles/nextcloudplugin.dir/nextcloudplugin.cpp.o
-[124/178] Linking CXX shared library bin/librbpurposequickplugin.so
-[125/178] Linking CXX executable bin/testphabricator
-[126/178] Linking CXX executable bin/purposeprocess
-[127/178] Building CXX object src/plugins/youtube/CMakeFiles/youtubeplugin.dir/youtubejob.cpp.o
-[128/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectplugin.dir/kdeconnectplugin.cpp.o
-[129/178] Linking CXX shared library bin/libphabricatorquickplugin.so
-[130/178] Building CXX object src/plugins/pastebin/CMakeFiles/pastebinplugin.dir/pastebinplugin.cpp.o
-[131/178] Building CXX object src/plugins/nextcloud/CMakeFiles/nextcloudplugin.dir/nextcloudjob.cpp.o
-[132/178] Linking CXX shared module bin/kf6/purpose/phabricatorplugin.so
-[133/178] Linking CXX shared module bin/kf6/purpose/emailplugin.so
+[113/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.qt/rcc/qrc_qmake_org_kde_purpose.cpp.o
+[114/178] Building CXX object src/plugins/youtube/CMakeFiles/youtubeplugin.dir/youtubejobcomposite.cpp.o
+[115/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.qt/rcc/qrc_purposequickplugin_raw_qml_0.cpp.o
+[116/178] Building CXX object autotests/CMakeFiles/alternativesmodeltest.dir/alternativesmodeltest_autogen/mocs_compilation.cpp.o
+[117/178] Building CXX object src/plugins/pastebin/CMakeFiles/pastebinplugin.dir/pastebinplugin.cpp.o
+[118/178] Building CXX object src/plugins/clipboard/CMakeFiles/clipboardplugin.dir/clipboardplugin.cpp.o
+[119/178] Building CXX object tests/tool/CMakeFiles/sharetool.dir/sharetool_autogen/mocs_compilation.cpp.o
+[120/178] Building CXX object tests/tool/CMakeFiles/sharetool.dir/qrc_sharetool-resources.cpp.o
+[121/178] Linking CXX executable bin/purposeprocess
+[122/178] Linking CXX shared module bin/kf6/purpose/pastebinplugin.so
+[123/178] Building CXX object src/widgets/CMakeFiles/KF6PurposeWidgets.dir/menu.cpp.o
+[124/178] Linking CXX shared module bin/kf6/purpose/clipboardplugin.so
+[125/178] Building CXX object src/plugins/imgur/CMakeFiles/imgurplugin.dir/imgurplugin.cpp.o
+[126/178] Building CXX object src/plugins/youtube/CMakeFiles/youtubeplugin.dir/youtubejob.cpp.o
+[127/178] Linking CXX shared library bin/libKF6PurposeWidgets.so.6.14.0
+[128/178] Creating library symlink bin/libKF6PurposeWidgets.so.6 bin/libKF6PurposeWidgets.so
+[129/178] Linking CXX shared module bin/org/kde/purpose/kdeconnect/libkdeconnectQml.so
+[130/178] Building CXX object src/plugins/saveas/CMakeFiles/saveasplugin.dir/saveasplugin.cpp.o
+[131/178] Automatic MOC for target menudemo
+[132/178] Building CXX object tests/CMakeFiles/menudemo.dir/menudemo_autogen/mocs_compilation.cpp.o
+[133/178] Linking CXX shared module bin/kf6/purpose/imgurplugin.so
 [134/178] Linking CXX shared module bin/kf6/purpose/youtubeplugin.so
-[135/178] Linking CXX shared module bin/kf6/purpose/kdeconnectplugin.so
-[136/178] Linking CXX shared module bin/kf6/purpose/kdeconnectsmsplugin.so
-[137/178] Linking CXX shared module bin/kf6/purpose/pastebinplugin.so
-[138/178] Building CXX object src/plugins/telegram/CMakeFiles/telegramplugin.dir/telegramplugin.cpp.o
-[139/178] Linking CXX shared module bin/kf6/purpose/nextcloudplugin.so
-[140/178] Linking CXX executable bin/sharetool
-[141/178] Linking CXX shared module bin/kf6/purpose/telegramplugin.so
-[142/178] Building CXX object src/plugins/imgur/CMakeFiles/imgurplugin.dir/imgurplugin.cpp.o
-[143/178] Linking CXX shared module bin/kf6/purpose/imgurplugin.so
-[144/178] Building CXX object src/widgets/CMakeFiles/KF6PurposeWidgets.dir/menu.cpp.o
-[145/178] Building CXX object src/plugins/clipboard/CMakeFiles/clipboardplugin.dir/clipboardplugin.cpp.o
-[146/178] Linking CXX shared module bin/kf6/purpose/clipboardplugin.so
+[135/178] Building CXX object src/plugins/nextcloud/CMakeFiles/nextcloudplugin.dir/nextcloudjob.cpp.o
+[136/178] Linking CXX shared module bin/kf6/purpose/saveasplugin.so
+[137/178] Linking CXX shared library bin/librbpurposequickplugin.so
+[138/178] Automatic MOC for target menutest
+[139/178] Linking CXX executable bin/testphabricator
+[140/178] Building CXX object autotests/CMakeFiles/menutest.dir/menutest_autogen/mocs_compilation.cpp.o
+[141/178] Automatic MOC for target sharefileitemaction
+[142/178] Building CXX object src/fileitemactionplugin/CMakeFiles/sharefileitemaction.dir/sharefileitemaction_autogen/mocs_compilation.cpp.o
+[143/178] Linking CXX shared module bin/kf6/purpose/nextcloudplugin.so
+[144/178] Linking CXX shared library bin/libphabricatorquickplugin.so
+[145/178] Building CXX object src/plugins/kdeconnect/CMakeFiles/kdeconnectplugin.dir/kdeconnectplugin.cpp.o
+[146/178] Linking CXX shared module bin/kf6/purpose/kdeconnectplugin.so
 [147/178] Building CXX object src/plugins/barcode/CMakeFiles/barcodeplugin.dir/barcodeplugin.cpp.o
-[148/178] Linking CXX shared library bin/libKF6PurposeWidgets.so.6.14.0
-[149/178] Creating library symlink bin/libKF6PurposeWidgets.so.6 bin/libKF6PurposeWidgets.so
-[150/178] Automatic MOC for target menudemo
-[151/178] Building CXX object src/plugins/saveas/CMakeFiles/saveasplugin.dir/saveasplugin.cpp.o
-[152/178] Building CXX object tests/CMakeFiles/menudemo.dir/menudemo_autogen/mocs_compilation.cpp.o
-[153/178] Linking CXX shared module bin/kf6/purpose/barcodeplugin.so
-[154/178] Linking CXX shared module bin/kf6/purpose/saveasplugin.so
-[155/178] Automatic MOC for target sharefileitemaction
-[156/178] Automatic MOC for target menutest
-[157/178] Building CXX object src/fileitemactionplugin/CMakeFiles/sharefileitemaction.dir/sharefileitemaction_autogen/mocs_compilation.cpp.o
-[158/178] Building CXX object autotests/CMakeFiles/menutest.dir/menutest_autogen/mocs_compilation.cpp.o
-[159/178] Building CXX object src/plugins/reviewboard/CMakeFiles/reviewboardplugin.dir/reviewboardplugin.cpp.o
-[160/178] Building CXX object src/plugins/bluetooth/CMakeFiles/bluetoothplugin.dir/bluetoothplugin.cpp.o
-[161/178] Linking CXX shared module bin/kf6/purpose/bluetoothplugin.so
-[162/178] Linking CXX shared module bin/kf6/purpose/reviewboardplugin.so
+[148/178] Building CXX object src/plugins/email/CMakeFiles/emailplugin.dir/emailplugin.cpp.o
+[149/178] Building CXX object src/plugins/phabricator/CMakeFiles/phabricatorplugin.dir/phabricatorplugin.cpp.o
+[150/178] Linking CXX shared module bin/kf6/purpose/barcodeplugin.so
+[151/178] Building CXX object src/plugins/reviewboard/CMakeFiles/reviewboardplugin.dir/reviewboardplugin.cpp.o
+[152/178] Linking CXX shared module bin/kf6/purpose/emailplugin.so
+[153/178] Linking CXX shared module bin/kf6/purpose/phabricatorplugin.so
+[154/178] Linking CXX shared module bin/kf6/purpose/reviewboardplugin.so
+[155/178] Building CXX object src/plugins/kdeconnect_sms/CMakeFiles/kdeconnectsmsplugin.dir/kdeconnectsmsplugin.cpp.o
+[156/178] Linking CXX shared module bin/kf6/purpose/kdeconnectsmsplugin.so
+[157/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.rcc/qmlcache/purposequickplugin_AlternativesView_qml.cpp.o
+[158/178] Building CXX object src/plugins/telegram/CMakeFiles/telegramplugin.dir/telegramplugin.cpp.o
+[159/178] Linking CXX shared module bin/kf6/purpose/telegramplugin.so
+[160/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/purposequickplugin_org_kde_purposePlugin.cpp.o
+[161/178] Building CXX object src/plugins/bluetooth/CMakeFiles/bluetoothplugin.dir/bluetoothplugin.cpp.o
+[162/178] Linking CXX shared module bin/kf6/purpose/bluetoothplugin.so
 [163/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/purposequickplugin_autogen/mocs_compilation.cpp.o
-[164/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/purposequickplugin_org_kde_purposePlugin.cpp.o
-[165/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.rcc/qmlcache/purposequickplugin_qmlcache_loader.cpp.o
-[166/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.rcc/qmlcache/purposequickplugin_JobView_qml.cpp.o
-[167/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.rcc/qmlcache/purposequickplugin_AlternativesView_qml.cpp.o
-[168/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/purposequickplugin_qmltyperegistrations.cpp.o
-[169/178] Linking CXX shared module bin/org/kde/purpose/libpurposequickplugin.so
-[170/178] Building CXX object tests/CMakeFiles/menudemo.dir/menudemo.cpp.o
-[171/178] Linking CXX executable bin/menudemo
-[172/178] Building CXX object src/fileitemactionplugin/CMakeFiles/sharefileitemaction.dir/purpose_fileitemaction_plugin_debug.cpp.o
-[173/178] Building CXX object autotests/CMakeFiles/alternativesmodeltest.dir/alternativesmodeltest.cpp.o
-[174/178] Linking CXX executable bin/alternativesmodeltest
-[175/178] Building CXX object src/fileitemactionplugin/CMakeFiles/sharefileitemaction.dir/sharefileitemaction.cpp.o
-[176/178] Linking CXX shared module bin/kf6/kfileitemaction/sharefileitemaction.so
+[164/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/purposequickplugin_qmltyperegistrations.cpp.o
+[165/178] Building CXX object tests/CMakeFiles/menudemo.dir/menudemo.cpp.o
+[166/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.rcc/qmlcache/purposequickplugin_qmlcache_loader.cpp.o
+[167/178] Building CXX object src/fileitemactionplugin/CMakeFiles/sharefileitemaction.dir/purpose_fileitemaction_plugin_debug.cpp.o
+[168/178] Linking CXX executable bin/menudemo
+[169/178] Building CXX object src/quick/CMakeFiles/purposequickplugin.dir/.rcc/qmlcache/purposequickplugin_JobView_qml.cpp.o
+[170/178] Linking CXX shared module bin/org/kde/purpose/libpurposequickplugin.so
+[171/178] Building CXX object src/fileitemactionplugin/CMakeFiles/sharefileitemaction.dir/sharefileitemaction.cpp.o
+[172/178] Building CXX object autotests/CMakeFiles/alternativesmodeltest.dir/alternativesmodeltest.cpp.o
+[173/178] Building CXX object tests/tool/CMakeFiles/sharetool.dir/main.cpp.o
+[174/178] Linking CXX shared module bin/kf6/kfileitemaction/sharefileitemaction.so
+[175/178] Linking CXX executable bin/alternativesmodeltest
+[176/178] Linking CXX executable bin/sharetool
 [177/178] Building CXX object autotests/CMakeFiles/menutest.dir/menutest.cpp.o
 [178/178] Linking CXX executable bin/menutest
 -- Install configuration: "RelWithDebInfo"
@@ -1263,8 +1263,8 @@ Warning: job.h:33: KJob is used as base type but cannot be found.
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/include/KF6/Purpose/purpose/alternativesmodel.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/include/KF6/Purpose/purpose/job.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/include/KF6/Purpose/purpose/configuration.h
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/lib64/libexec/kf6/purposeprocess
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/lib64/libexec/kf6/purposeprocess" to ""
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/libexec/kf6/purposeprocess
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/libexec/kf6/purposeprocess" to ""
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/lib64/qt6/plugins/kf6/purpose/saveasplugin.so
 -- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/lib64/qt6/plugins/kf6/purpose/saveasplugin.so" to ""
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/purpose/package-purpose/usr/share/kf6/purpose/saveasplugin_config.qml
@@ -2206,9 +2206,6 @@ usr/lib64/cmake/KF6Purpose/KF6PurposeTargets-relwithdebinfo.cmake
 usr/lib64/cmake/KF6Purpose/KF6PurposeTargets.cmake
 usr/lib64/libKF6Purpose.so.6.14.0
 usr/lib64/libKF6PurposeWidgets.so.6.14.0
-usr/lib64/libexec/
-usr/lib64/libexec/kf6/
-usr/lib64/libexec/kf6/purposeprocess
 usr/lib64/qt6/
 usr/lib64/qt6/plugins/
 usr/lib64/qt6/plugins/kf6/
@@ -2250,6 +2247,9 @@ usr/lib64/qt6/qml/org/kde/purpose/qmldir
 usr/lib64/qt6/qml/org/kde/purpose/reviewboard/
 usr/lib64/qt6/qml/org/kde/purpose/reviewboard/librbpurposequickplugin.so
 usr/lib64/qt6/qml/org/kde/purpose/reviewboard/qmldir
+usr/libexec/
+usr/libexec/kf6/
+usr/libexec/kf6/purposeprocess
 usr/share/
 usr/share/accounts/
 usr/share/accounts/services/
@@ -3066,7 +3066,7 @@ purpose.dep
 +==================================================================================================+
 
 Pre-installing package purpose-6.14.0-x86_64-1_rtz...
-Removing package: purpose-6.14.0-x86_64-1_rtz-upgraded-2025-05-21,14:08:20
+Removing package: purpose-6.14.0-x86_64-1_rtz-upgraded-2025-05-28,18:28:57
 Installing package purpose-6.14.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # purpose (Framework)

@@ -4,22 +4,22 @@ Required dependencies: google-go-lang
 google-go-lang is already installed!
 No optional dependencies found.
 Downloading source code tar.gz file
---2025-05-21 19:18:48--  https://github.com/Nadim147c/ChromaShift/archive/refs/tags/v1.5.0.tar.gz
-Resolving github.com (github.com)... 140.82.121.4
-Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+--2025-05-28 23:23:28--  https://github.com/Nadim147c/ChromaShift/archive/refs/tags/v1.5.0.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://codeload.github.com/Nadim147c/ChromaShift/tar.gz/refs/tags/v1.5.0 [following]
---2025-05-21 19:18:49--  https://codeload.github.com/Nadim147c/ChromaShift/tar.gz/refs/tags/v1.5.0
-Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
-Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
+--2025-05-28 23:23:28--  https://codeload.github.com/Nadim147c/ChromaShift/tar.gz/refs/tags/v1.5.0
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.10|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [application/x-gzip]
 Saving to: ‘ChromaShift-1.5.0.tar.gz’
 
-     0K .......... .......... .......... .......... ..........  429K
-    50K .......... ........                                    7.62M=0.1s
+     0K .......... .......... .......... .......... ..........  439K
+    50K .......... ........                                    5.96M=0.1s
 
-2025-05-21 19:18:49 (578 KB/s) - ‘ChromaShift-1.5.0.tar.gz’ saved [70270]
+2025-05-28 23:23:29 (587 KB/s) - ‘ChromaShift-1.5.0.tar.gz’ saved [70270]
 
 Found file: ChromaShift-1.5.0.tar.gz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -95,6 +95,11 @@ ChromaShift-1.5.0/scripts/install.local.sh
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/chromashift/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
+Installing dependencies...
+go mod download
+go mod verify
+all modules verified
+go get -v
 fatal: No names found, cannot describe anything.
 Building cshift...
 go build -ldflags "-X cshift/cmd.Version=" -o cshift
@@ -174,7 +179,7 @@ makepkg-chromashift.log
 +============================================================================================================+
 
 Pre-installing package chromashift-1.5.0-x86_64-1_rtz...
-Removing package: chromashift-1.5.0-x86_64-1_rtz-upgraded-2025-05-21,19:18:54
+Removing package: chromashift-1.5.0-x86_64-1_rtz-upgraded-2025-05-28,23:23:35
 Installing package chromashift-1.5.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # chromashift (colorizer for commands)

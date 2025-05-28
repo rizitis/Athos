@@ -8,31 +8,31 @@ ki18n is already installed!
 openssl is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 16:04:00--  https://download.kde.org/stable/release-service/25.04.1/src/khealthcertificate-25.04.1.tar.xz
+--2025-05-28 20:22:47--  https://download.kde.org/stable/release-service/25.04.1/src/khealthcertificate-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/khealthcertificate-25.04.1.tar.xz [following]
---2025-05-21 16:04:00--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/khealthcertificate-25.04.1.tar.xz
+--2025-05-28 20:22:48--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/khealthcertificate-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 514588 (503K) [application/octet-stream]
 Saving to: ‘khealthcertificate-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... ..........  9% 1.34M 0s
-    50K .......... .......... .......... .......... .......... 19% 1.42M 0s
-   100K .......... .......... .......... .......... .......... 29% 6.88M 0s
-   150K .......... .......... .......... .......... .......... 39% 1.87M 0s
-   200K .......... .......... .......... .......... .......... 49% 5.65M 0s
-   250K .......... .......... .......... .......... .......... 59% 6.82M 0s
-   300K .......... .......... .......... .......... .......... 69% 5.03M 0s
-   350K .......... .......... .......... .......... .......... 79% 1.04M 0s
-   400K .......... .......... .......... .......... .......... 89%  272M 0s
-   450K .......... .......... .......... .......... .......... 99%  375M 0s
+     0K .......... .......... .......... .......... ..........  9% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 19% 1.45M 0s
+   100K .......... .......... .......... .......... .......... 29% 7.24M 0s
+   150K .......... .......... .......... .......... .......... 39% 2.02M 0s
+   200K .......... .......... .......... .......... .......... 49% 5.19M 0s
+   250K .......... .......... .......... .......... .......... 59% 5.15M 0s
+   300K .......... .......... .......... .......... .......... 69% 6.93M 0s
+   350K .......... .......... .......... .......... .......... 79% 1.15M 0s
+   400K .......... .......... .......... .......... .......... 89%  133M 0s
+   450K .......... .......... .......... .......... .......... 99%  173M 0s
    500K ..                                                    100% 4.71T=0.2s
 
-2025-05-21 16:04:01 (2.77 MB/s) - ‘khealthcertificate-25.04.1.tar.xz’ saved [514588/514588]
+2025-05-28 20:22:48 (2.90 MB/s) - ‘khealthcertificate-25.04.1.tar.xz’ saved [514588/514588]
 
 Found file: khealthcertificate-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -1507,8 +1507,8 @@ khealthcertificate-25.04.1/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -1579,9 +1579,9 @@ hm...lets continue and see what happens
 [4/86] Automatic RCC for icao/certs/icao-csca-certs.qrc
 [5/86] Automatic RCC for shc/certs/shc-certs-manual.qrc
 [6/86] Automatic RCC for shc/data/shc-data.qrc
-[7/86] Automatic RCC for eu-dgc/data/eu-dgc-data.qrc
-[8/86] Automatic RCC for divoc/data/divoc-data.qrc
-[9/86] Automatic RCC for icao/data/icaovds-data.qrc
+[7/86] Automatic RCC for divoc/data/divoc-data.qrc
+[8/86] Automatic RCC for icao/data/icaovds-data.qrc
+[9/86] Automatic RCC for eu-dgc/data/eu-dgc-data.qrc
 [10/86] Automatic RCC for nl-coronacheck/keys/nl-public-keys.qrc
 [11/86] Automatic RCC for shc/certs/shc-certs.qrc
 [12/86] Automatic RCC for eu-dgc/certs/eu-dgc-certs.qrc
@@ -1604,8 +1604,7 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/rsa.h:304:28: note: declared here
   304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
       |                            ^~~~~~~~
-[15/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/cborutils.cpp.o
-[16/86] Building CXX object tests/CMakeFiles/eu-dgc-decoder.dir/eu-dgc-decoder.cpp.o
+[15/86] Building CXX object tests/CMakeFiles/eu-dgc-decoder.dir/eu-dgc-decoder.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp: In function ‘QJsonValue readOneValue(QCborStreamReader&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:35:12: warning: enumeration value ‘ByteString’ not handled in switch [-Wswitch]
    35 |     switch (reader.type()) {
@@ -1625,7 +1624,7 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/eu-dgc-decoder.cpp:79:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
    79 | int main(int argc, char **argv)
       |                    ~~~~~~~^~~~
-[17/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/divocparser.cpp.o
+[16/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/divocparser.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier_p.h:9,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/divocparser.cpp:7:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
@@ -1643,53 +1642,8 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/rsa.h:304:28: note: declared here
   304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
       |                            ^~~~~~~~
-[18/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/QI42YZCEC2/qrc_divoc-data.cpp.o
-[19/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/LXX4422DJD/qrc_eu-dgc-data.cpp.o
-[20/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/nlbase45.cpp.o
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/bignum_p.h:9,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlbase45.cpp:8:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
-   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
-      |                                                                         ^~~~~~~~~~~
-In file included from /usr/include/openssl/ecdh.h:10,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
-/usr/include/openssl/ec.h:1022:28: note: declared here
- 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
-      |                            ^~~~~~~~~~~
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
-   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
-      |                                                                ^~~~~~~~
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
-/usr/include/openssl/rsa.h:304:28: note: declared here
-  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
-      |                            ^~~~~~~~
-[21/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/BAJ4LIKJLE/qrc_icaovds-data.cpp.o
-[22/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/ktestcertificate.cpp.o
-[23/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/HLEO2QW645/qrc_icao-csca-certs.cpp.o
-[24/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/WBKEWDV6B7/qrc_shc-data.cpp.o
-[25/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/kvaccinationcertificate.cpp.o
-[26/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/PNLUAWAU7E/qrc_shc-certs-manual.cpp.o
-[27/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/CXRF6WC7PU/qrc_nl-public-keys.cpp.o
-[28/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/nlcoronacheckparser.cpp.o
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey_p.h:9,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlcoronacheckparser.cpp:9:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
-   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
-      |                                                                         ^~~~~~~~~~~
-In file included from /usr/include/openssl/ecdh.h:10,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
-/usr/include/openssl/ec.h:1022:28: note: declared here
- 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
-      |                            ^~~~~~~~~~~
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
-   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
-      |                                                                ^~~~~~~~
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
-/usr/include/openssl/rsa.h:304:28: note: declared here
-  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
-      |                            ^~~~~~~~
-[29/86] Linking CXX executable bin/eu-dgc-decoder
-[30/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/openssl/verify.cpp.o
+[17/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/cborutils.cpp.o
+[18/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/openssl/verify.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/verify_p.h:9,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/verify.cpp:6:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
@@ -1721,6 +1675,52 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/ec.h:1410:27: note: declared here
  1410 | OSSL_DEPRECATEDIN_3_0 int ECDSA_do_verify(const unsigned char *dgst, int dgst_len,
       |                           ^~~~~~~~~~~~~~~
+[19/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/ktestcertificate.cpp.o
+[20/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/QI42YZCEC2/qrc_divoc-data.cpp.o
+[21/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/khealthcertificateparser.cpp.o
+[22/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/LXX4422DJD/qrc_eu-dgc-data.cpp.o
+[23/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/nlbase45.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/bignum_p.h:9,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlbase45.cpp:8:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[24/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/BAJ4LIKJLE/qrc_icaovds-data.cpp.o
+[25/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/khealthcertificate.cpp.o
+[26/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/HLEO2QW645/qrc_icao-csca-certs.cpp.o
+[27/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/WBKEWDV6B7/qrc_shc-data.cpp.o
+[28/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/PNLUAWAU7E/qrc_shc-certs-manual.cpp.o
+[29/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/CXRF6WC7PU/qrc_nl-public-keys.cpp.o
+[30/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/irmaverifier.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmaverifier_p.h:9,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmaverifier.cpp:6:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
 [31/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/shc/jwkloader.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader_p.h:9,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader.cpp:6:
@@ -1764,8 +1764,45 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/ec.h:1141:27: note: declared here
  1141 | OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_public_key_affine_coordinates(EC_KEY *key,
       |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[32/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/PNLUAWAU7E/qrc_shc-certs.cpp.o
-[33/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/coseparser.cpp.o
+[32/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/shc/jwtparser.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader_p.h:9,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwtparser.cpp:7:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[33/86] Linking CXX executable bin/eu-dgc-decoder
+[34/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/kvaccinationcertificate.cpp.o
+[35/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/krecoverycertificate.cpp.o
+[36/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/icao/icaovdsparser.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/icao/icaovdsparser.cpp:9:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
+      |                                                                         ^~~~~~~~~~~
+In file included from /usr/include/openssl/ecdh.h:10,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
+/usr/include/openssl/ec.h:1022:28: note: declared here
+ 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+      |                            ^~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
+      |                                                                ^~~~~~~~
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
+/usr/include/openssl/rsa.h:304:28: note: declared here
+  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+      |                            ^~~~~~~~
+[37/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/coseparser.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser_p.h:9,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser.cpp:6:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
@@ -1791,12 +1828,10 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/evp.h:1433:19: note: declared here
  1433 | struct ec_key_st *EVP_PKEY_get1_EC_KEY(EVP_PKEY *pkey);
       |                   ^~~~~~~~~~~~~~~~~~~~
-[34/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/khealthcertificateparser.cpp.o
-[35/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/khealthcertificate.cpp.o
-[36/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/krecoverycertificate.cpp.o
-[37/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/irmaverifier.cpp.o
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmaverifier_p.h:9,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmaverifier.cpp:6:
+[38/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/PNLUAWAU7E/qrc_shc-certs.cpp.o
+[39/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/nlcoronacheckparser.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey_p.h:9,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/nlcoronacheckparser.cpp:9:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
    37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
       |                                                                         ^~~~~~~~~~~
@@ -1812,25 +1847,6 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/rsa.h:304:28: note: declared here
   304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
       |                            ^~~~~~~~
-[38/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/shc/jwtparser.cpp.o
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwkloader_p.h:9,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/shc/jwtparser.cpp:7:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
-   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
-      |                                                                         ^~~~~~~~~~~
-In file included from /usr/include/openssl/ecdh.h:10,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
-/usr/include/openssl/ec.h:1022:28: note: declared here
- 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
-      |                            ^~~~~~~~~~~
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
-   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
-      |                                                                ^~~~~~~~
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
-/usr/include/openssl/rsa.h:304:28: note: declared here
-  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
-      |                            ^~~~~~~~
-[39/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/logging.cpp.o
 [40/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/nl-coronacheck/irmapublickey.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey_p.h:9,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/nl-coronacheck/irmapublickey.cpp:6:
@@ -1849,26 +1865,7 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/rsa.h:304:28: note: declared here
   304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
       |                            ^~~~~~~~
-[41/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/zlib/zlib.cpp.o
-[42/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/icao/icaovdsparser.cpp.o
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/icao/icaovdsparser.cpp:9:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
-   37 |     using ec_key_ptr = std::unique_ptr<EC_KEY, detail::deleter<EC_KEY, &EC_KEY_free>>;
-      |                                                                         ^~~~~~~~~~~
-In file included from /usr/include/openssl/ecdh.h:10,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:15:
-/usr/include/openssl/ec.h:1022:28: note: declared here
- 1022 | OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
-      |                            ^~~~~~~~~~~
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:41:64: warning: ‘void RSA_free(RSA*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
-   41 |     using rsa_ptr = std::unique_ptr<RSA, detail::deleter<RSA, &RSA_free>>;
-      |                                                                ^~~~~~~~
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:18:
-/usr/include/openssl/rsa.h:304:28: note: declared here
-  304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
-      |                            ^~~~~~~~
-[43/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/SDCYVD4CTB/qrc_eu-dgc-certs.cpp.o
-[44/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/jwsverifier.cpp.o
+[41/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/jwsverifier.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier_p.h:9,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/divoc/jwsverifier.cpp:6:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
@@ -1894,8 +1891,9 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/pem.h:458:1: note: declared here
   458 | DECLARE_PEM_rw_attr(OSSL_DEPRECATEDIN_3_0, RSA_PUBKEY, RSA)
       | ^~~~~~~~~~~~~~~~~~~
-[45/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/jsonld.cpp.o
-[46/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/eudgcparser.cpp.o
+[42/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/zlib/zlib.cpp.o
+[43/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/KHealthCertificate_autogen/SDCYVD4CTB/qrc_eu-dgc-certs.cpp.o
+[44/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/eu-dgc/eudgcparser.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/coseparser_p.h:9,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/eu-dgc/eudgcparser.cpp:8:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/opensslpp_p.h:37:73: warning: ‘void EC_KEY_free(EC_KEY*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
@@ -1913,28 +1911,30 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /usr/include/openssl/rsa.h:304:28: note: declared here
   304 | OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
       |                            ^~~~~~~~
-[47/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/shc/shcparser.cpp.o
-[48/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/rdf.cpp.o
+[45/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/logging.cpp.o
+[46/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/rdf.cpp.o
+[47/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/divoc/jsonld.cpp.o
+[48/86] Building CXX object src/lib/CMakeFiles/KHealthCertificate.dir/shc/shcparser.cpp.o
 [49/86] Linking CXX shared library bin/libKHealthCertificate.so.25.04.1
 [50/86] Creating library symlink bin/libKHealthCertificate.so.1 bin/libKHealthCertificate.so
 [51/86] Automatic MOC for target nl-decoder
 [52/86] Automatic MOC for target health-certificate-decode
 [53/86] Building CXX object tests/CMakeFiles/nl-decoder.dir/nl-decoder_autogen/mocs_compilation.cpp.o
 [54/86] Building CXX object src/cli/CMakeFiles/health-certificate-decode.dir/health-certificate-decode_autogen/mocs_compilation.cpp.o
-[55/86] Automatic MOC for target divocparsertest
-[56/86] Automatic MOC for target nlcoronacheckparsertest
-[57/86] Automatic MOC for target shcparsertest
-[58/86] Automatic MOC for target khealthcertificateqmlplugin
-[59/86] Automatic RCC for data/shc/shc.qrc
-[60/86] Building CXX object autotests/CMakeFiles/nlcoronacheckparsertest.dir/nlcoronacheckparsertest_autogen/mocs_compilation.cpp.o
-[61/86] Building CXX object autotests/CMakeFiles/divocparsertest.dir/divocparsertest_autogen/mocs_compilation.cpp.o
-[62/86] Automatic MOC for target icaovdsparsertest
-[63/86] Building CXX object src/qml/CMakeFiles/khealthcertificateqmlplugin.dir/khealthcertificateqmlplugin_autogen/mocs_compilation.cpp.o
-[64/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest_autogen/mocs_compilation.cpp.o
-[65/86] Building CXX object autotests/CMakeFiles/icaovdsparsertest.dir/icaovdsparsertest_autogen/mocs_compilation.cpp.o
-[66/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest_autogen/SADZ7WIB52/qrc_shc.cpp.o
-[67/86] Automatic MOC for target eudgcparsertest
-[68/86] Automatic RCC for data/eu-dgc/certs.qrc
+[55/86] Automatic MOC for target khealthcertificateqmlplugin
+[56/86] Building CXX object src/qml/CMakeFiles/khealthcertificateqmlplugin.dir/khealthcertificateqmlplugin_autogen/mocs_compilation.cpp.o
+[57/86] Automatic MOC for target divocparsertest
+[58/86] Automatic MOC for target nlcoronacheckparsertest
+[59/86] Automatic MOC for target shcparsertest
+[60/86] Building CXX object autotests/CMakeFiles/divocparsertest.dir/divocparsertest_autogen/mocs_compilation.cpp.o
+[61/86] Automatic RCC for data/shc/shc.qrc
+[62/86] Building CXX object autotests/CMakeFiles/nlcoronacheckparsertest.dir/nlcoronacheckparsertest_autogen/mocs_compilation.cpp.o
+[63/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest_autogen/mocs_compilation.cpp.o
+[64/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest_autogen/SADZ7WIB52/qrc_shc.cpp.o
+[65/86] Automatic MOC for target eudgcparsertest
+[66/86] Automatic MOC for target icaovdsparsertest
+[67/86] Automatic RCC for data/eu-dgc/certs.qrc
+[68/86] Building CXX object autotests/CMakeFiles/icaovdsparsertest.dir/icaovdsparsertest_autogen/mocs_compilation.cpp.o
 [69/86] Building CXX object autotests/CMakeFiles/eudgcparsertest.dir/eudgcparsertest_autogen/mocs_compilation.cpp.o
 [70/86] Building CXX object autotests/CMakeFiles/eudgcparsertest.dir/eudgcparsertest_autogen/JPSHB5O6TO/qrc_certs.cpp.o
 [71/86] Building CXX object src/cli/CMakeFiles/health-certificate-decode.dir/health-certificate-decode.cpp.o
@@ -1945,12 +1945,7 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/cli/health-certificate-decode.cpp:34:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
    34 | int main(int argc, char **argv)
       |                    ~~~~~~~^~~~
-[72/86] Linking CXX executable bin/health-certificate-decode
-[73/86] Building CXX object src/qml/CMakeFiles/khealthcertificateqmlplugin.dir/khealthcertificateqmlplugin.cpp.o
-[74/86] Linking CXX shared library bin/org/kde/khealthcertificate/libkhealthcertificateqmlplugin.so
-[75/86] Building CXX object autotests/CMakeFiles/divocparsertest.dir/divocparsertest.cpp.o
-[76/86] Building CXX object autotests/CMakeFiles/nlcoronacheckparsertest.dir/nlcoronacheckparsertest.cpp.o
-[77/86] Building CXX object tests/CMakeFiles/nl-decoder.dir/nl-decoder.cpp.o
+[72/86] Building CXX object tests/CMakeFiles/nl-decoder.dir/nl-decoder.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/src/lib/openssl/bignum_p.h:9,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/../src/lib/nl-coronacheck/nlbase45.cpp:8,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/nl-decoder.cpp:6:
@@ -1976,15 +1971,20 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificat
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/work/khealthcertificate-25.04.1/tests/nl-decoder.cpp:117:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
   117 | int main(int argc, char **argv)
       |                    ~~~~~~~^~~~
-[78/86] Linking CXX executable bin/divocparsertest
-[79/86] Linking CXX executable bin/nlcoronacheckparsertest
-[80/86] Linking CXX executable bin/nl-decoder
-[81/86] Building CXX object autotests/CMakeFiles/icaovdsparsertest.dir/icaovdsparsertest.cpp.o
-[82/86] Linking CXX executable bin/icaovdsparsertest
+[73/86] Linking CXX executable bin/health-certificate-decode
+[74/86] Linking CXX executable bin/nl-decoder
+[75/86] Building CXX object src/qml/CMakeFiles/khealthcertificateqmlplugin.dir/khealthcertificateqmlplugin.cpp.o
+[76/86] Linking CXX shared library bin/org/kde/khealthcertificate/libkhealthcertificateqmlplugin.so
+[77/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest.cpp.o
+[78/86] Building CXX object autotests/CMakeFiles/nlcoronacheckparsertest.dir/nlcoronacheckparsertest.cpp.o
+[79/86] Linking CXX executable bin/shcparsertest
+[80/86] Linking CXX executable bin/nlcoronacheckparsertest
+[81/86] Building CXX object autotests/CMakeFiles/divocparsertest.dir/divocparsertest.cpp.o
+[82/86] Linking CXX executable bin/divocparsertest
 [83/86] Building CXX object autotests/CMakeFiles/eudgcparsertest.dir/eudgcparsertest.cpp.o
-[84/86] Building CXX object autotests/CMakeFiles/shcparsertest.dir/shcparsertest.cpp.o
-[85/86] Linking CXX executable bin/eudgcparsertest
-[86/86] Linking CXX executable bin/shcparsertest
+[84/86] Linking CXX executable bin/eudgcparsertest
+[85/86] Building CXX object autotests/CMakeFiles/icaovdsparsertest.dir/icaovdsparsertest.cpp.o
+[86/86] Linking CXX executable bin/icaovdsparsertest
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/libKHealthCertificate.so.25.04.1
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/khealthcertificate/package-khealthcertificate/usr/lib64/libKHealthCertificate.so.1
@@ -2133,7 +2133,7 @@ makepkg-khealthcertificate.log
 +=====================================================================================================================================+
 
 Pre-installing package khealthcertificate-25.04.1-x86_64-1_rtz...
-Removing package: khealthcertificate-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,16:04:15
+Removing package: khealthcertificate-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,20:23:03
 Installing package khealthcertificate-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # khealthcertificate (test and recovery certificates)

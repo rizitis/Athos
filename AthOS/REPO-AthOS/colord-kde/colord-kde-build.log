@@ -12,23 +12,23 @@ kitemmodels is already installed!
 kwidgetsaddons is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 15:24:26--  https://download.kde.org/stable/release-service/25.04.1/src/colord-kde-25.04.1.tar.xz
+--2025-05-28 19:42:49--  https://download.kde.org/stable/release-service/25.04.1/src/colord-kde-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/colord-kde-25.04.1.tar.xz [following]
---2025-05-21 15:24:27--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/colord-kde-25.04.1.tar.xz
+--2025-05-28 19:42:49--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/colord-kde-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 120032 (117K) [application/octet-stream]
 Saving to: ‘colord-kde-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 42% 1.35M 0s
-    50K .......... .......... .......... .......... .......... 85% 1.37M 0s
-   100K .......... .......                                    100%  228M=0.07s
+     0K .......... .......... .......... .......... .......... 42% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 85% 1.44M 0s
+   100K .......... .......                                    100%  259M=0.07s
 
-2025-05-21 15:24:27 (1.59 MB/s) - ‘colord-kde-25.04.1.tar.xz’ saved [120032/120032]
+2025-05-28 19:42:50 (1.64 MB/s) - ‘colord-kde-25.04.1.tar.xz’ saved [120032/120032]
 
 Found file: colord-kde-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -201,8 +201,8 @@ colord-kde-25.04.1/.gitignore
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -226,7 +226,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found X11: /usr/include
 -- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
@@ -299,7 +299,7 @@ hm...lets continue and see what happens
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/build
 [0/2] Re-checking globbed directories...
-[1/56] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/build/colord-kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/kcm_colord.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/build/colord-kcm/kcm_colord.desktop
+[1/56] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/build/colord-kcm && /usr/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/kcm_colord.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/build/colord-kcm/kcm_colord.desktop
 [2/56] Generating ts...
 [3/56] Automatic MOC for target colord-kde-icc-importer
 [4/56] Generating CdInterface.cpp, CdInterface.h
@@ -315,12 +315,13 @@ hm...lets continue and see what happens
 [5/56] Generating moc_CdInterface.cpp
 [6/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/colord-kde-icc-importer_autogen/mocs_compilation.cpp.o
 [7/56] Generating mo...
-[8/56] Automatic MOC for target kded_colord
-[9/56] Generating CdProfileInterface.cpp, CdProfileInterface.h
+[8/56] Automatic MOC for target kcm_colord
+[9/56] Generating CdSensorInterface.cpp, CdSensorInterface.h
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Sensor.xml:282:8: warning: Unknown element 'doc' while checking for signal arguments
+[10/56] Generating CdProfileInterface.cpp, CdProfileInterface.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Profile.xml:231:8: warning: Unknown element 'doc' while checking for signal arguments
-[10/56] Generating CdDeviceInterface.cpp, CdDeviceInterface.h
+[11/56] Generating CdDeviceInterface.cpp, CdDeviceInterface.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Device.xml:275:8: warning: Unknown element 'doc' while checking for signal arguments
-[11/56] Automatic MOC for target kcm_colord
 [12/56] Generating CdInterface.cpp, CdInterface.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:695:8: warning: Unknown element 'doc' while checking for signal arguments
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:707:8: warning: Unknown element 'doc' while checking for signal arguments
@@ -331,10 +332,15 @@ hm...lets continue and see what happens
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:807:8: warning: Unknown element 'doc' while checking for signal arguments
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:827:8: warning: Unknown element 'doc' while checking for signal arguments
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:847:8: warning: Unknown element 'doc' while checking for signal arguments
-[13/56] Generating moc_CdProfileInterface.cpp
-[14/56] Generating moc_CdDeviceInterface.cpp
-[15/56] Generating moc_CdInterface.cpp
-[16/56] Generating CdInterface.cpp, CdInterface.h
+[13/56] Generating moc_CdSensorInterface.cpp
+[14/56] Generating moc_CdInterface.cpp
+[15/56] Generating moc_CdDeviceInterface.cpp
+[16/56] Generating moc_CdProfileInterface.cpp
+[17/56] Generating qrc_kcm_colord.cpp
+[18/56] Automatic MOC for target kded_colord
+[19/56] Generating CdProfileInterface.cpp, CdProfileInterface.h
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Profile.xml:231:8: warning: Unknown element 'doc' while checking for signal arguments
+[20/56] Generating CdInterface.cpp, CdInterface.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:695:8: warning: Unknown element 'doc' while checking for signal arguments
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:707:8: warning: Unknown element 'doc' while checking for signal arguments
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:727:8: warning: Unknown element 'doc' while checking for signal arguments
@@ -344,21 +350,40 @@ hm...lets continue and see what happens
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:807:8: warning: Unknown element 'doc' while checking for signal arguments
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:827:8: warning: Unknown element 'doc' while checking for signal arguments
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.xml:847:8: warning: Unknown element 'doc' while checking for signal arguments
-[17/56] Generating CdDeviceInterface.cpp, CdDeviceInterface.h
+[21/56] Generating CdDeviceInterface.cpp, CdDeviceInterface.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Device.xml:275:8: warning: Unknown element 'doc' while checking for signal arguments
-[18/56] Generating CdProfileInterface.cpp, CdProfileInterface.h
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Profile.xml:231:8: warning: Unknown element 'doc' while checking for signal arguments
-[19/56] Generating CdSensorInterface.cpp, CdSensorInterface.h
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-tmp-interfaces/org.freedesktop.ColorManager.Sensor.xml:282:8: warning: Unknown element 'doc' while checking for signal arguments
-[20/56] Generating moc_CdInterface.cpp
-[21/56] Generating moc_CdDeviceInterface.cpp
 [22/56] Generating moc_CdProfileInterface.cpp
-[23/56] Generating moc_CdSensorInterface.cpp
-[24/56] Generating qrc_kcm_colord.cpp
-[25/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/kded_colord_autogen/mocs_compilation.cpp.o
-[26/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/kcm_colord_autogen/mocs_compilation.cpp.o
-[27/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/XEventHandler.cpp.o
-[28/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/Edid.cpp.o
+[23/56] Generating moc_CdInterface.cpp
+[24/56] Generating moc_CdDeviceInterface.cpp
+[25/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/kcm_colord_autogen/mocs_compilation.cpp.o
+[26/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/kded_colord_autogen/mocs_compilation.cpp.o
+[27/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/qrc_kcm_colord.cpp.o
+[28/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/DmiUtils.cpp.o
+[29/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/__/colord-kcm/Profile.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp: In member function ‘void Profile::parseProfile(const uint*, size_t)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:330:17: warning: ‘void QCryptographicHash::addData(const char*, qsizetype)’ is deprecated: Use the QByteArrayView overload instead [-Wdeprecated-declarations]
+  330 |     hash.addData(reinterpret_cast<const char *>(data), length);
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QCryptographicHash:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:22:
+/usr/include/qt6/QtCore/qcryptographichash.h:80:10: note: declared here
+   80 |     void addData(const char *data, qsizetype length);
+      |          ^~~~~~~
+[30/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/XEventHandler.cpp.o
+[31/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ProfileUtils.cpp.o
+[32/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileNamedColorsModel.cpp.o
+[33/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileMetaDataModel.cpp.o
+[34/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/Profile.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp: In member function ‘void Profile::parseProfile(const uint*, size_t)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:330:17: warning: ‘void QCryptographicHash::addData(const char*, qsizetype)’ is deprecated: Use the QByteArrayView overload instead [-Wdeprecated-declarations]
+  330 |     hash.addData(reinterpret_cast<const char *>(data), length);
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/QCryptographicHash:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:22:
+/usr/include/qt6/QtCore/qcryptographichash.h:80:10: note: declared here
+   80 |     void addData(const char *data, qsizetype length);
+      |          ^~~~~~~
+[35/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/Edid.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kded/Edid.cpp: In member function ‘bool Edid::parse(const quint8*, size_t)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kded/Edid.cpp:301:17: warning: ‘void QCryptographicHash::addData(const char*, qsizetype)’ is deprecated: Use the QByteArrayView overload instead [-Wdeprecated-declarations]
   301 |     hash.addData(reinterpret_cast<const char *>(data), length);
@@ -368,53 +393,28 @@ In file included from /usr/include/qt6/QtCore/QCryptographicHash:1,
 /usr/include/qt6/QtCore/qcryptographichash.h:80:10: note: declared here
    80 |     void addData(const char *data, qsizetype length);
       |          ^~~~~~~
-[29/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/DmiUtils.cpp.o
-[30/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ProfileUtils.cpp.o
-[31/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/qrc_kcm_colord.cpp.o
-[32/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/__/colord-kcm/Profile.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp: In member function ‘void Profile::parseProfile(const uint*, size_t)’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:330:17: warning: ‘void QCryptographicHash::addData(const char*, qsizetype)’ is deprecated: Use the QByteArrayView overload instead [-Wdeprecated-declarations]
-  330 |     hash.addData(reinterpret_cast<const char *>(data), length);
-      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /usr/include/qt6/QtCore/QCryptographicHash:1,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:22:
-/usr/include/qt6/QtCore/qcryptographichash.h:80:10: note: declared here
-   80 |     void addData(const char *data, qsizetype length);
-      |          ^~~~~~~
-[33/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/Profile.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp: In member function ‘void Profile::parseProfile(const uint*, size_t)’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:330:17: warning: ‘void QCryptographicHash::addData(const char*, qsizetype)’ is deprecated: Use the QByteArrayView overload instead [-Wdeprecated-declarations]
-  330 |     hash.addData(reinterpret_cast<const char *>(data), length);
-      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /usr/include/qt6/QtCore/QCryptographicHash:1,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/Profile.cpp:22:
-/usr/include/qt6/QtCore/qcryptographichash.h:80:10: note: declared here
-   80 |     void addData(const char *data, qsizetype length);
-      |          ^~~~~~~
-[34/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileNamedColorsModel.cpp.o
-[35/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileMetaDataModel.cpp.o
 [36/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/Output.cpp.o
 [37/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/main.cpp.o
-[38/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileDescription.cpp.o
-[39/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdProfileInterface.cpp.o
-[40/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/CdInterface.cpp.o
-[41/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileModel.cpp.o
-[42/56] Linking CXX executable bin/colord-kde-icc-importer
-[43/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdDeviceInterface.cpp.o
-[44/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdSensorInterface.cpp.o
-[45/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdInterface.cpp.o
-[46/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdDeviceInterface.cpp.o
-[47/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ProfilesWatcher.cpp.o
-[48/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/DeviceModel.cpp.o
-[49/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ColordKCM.cpp.o
+[38/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdProfileInterface.cpp.o
+[39/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdSensorInterface.cpp.o
+[40/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/DeviceDescription.cpp.o
+[41/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ProfilesWatcher.cpp.o
+[42/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdDeviceInterface.cpp.o
+[43/56] Building CXX object icc-importer/CMakeFiles/colord-kde-icc-importer.dir/CdInterface.cpp.o
+[44/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdProfileInterface.cpp.o
+[45/56] Linking CXX executable bin/colord-kde-icc-importer
+[46/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileDescription.cpp.o
+[47/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdInterface.cpp.o
+[48/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ProfileModel.cpp.o
+[49/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdInterface.cpp.o
+[50/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/ColordKCM.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/ColordKCM.cpp: In constructor ‘KCMColord::KCMColord(QObject*, const KPluginMetaData&, const QVariantList&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/colord-kde/work/colord-kde-25.04.1/colord-kcm/ColordKCM.cpp:43:88: warning: unused parameter ‘args’ [-Wunused-parameter]
    43 | KCMColord::KCMColord(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
       |                                                                    ~~~~~~~~~~~~~~~~~~~~^~~~
-[50/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/DeviceDescription.cpp.o
-[51/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ColorD.cpp.o
-[52/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdInterface.cpp.o
-[53/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/CdProfileInterface.cpp.o
+[51/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/CdDeviceInterface.cpp.o
+[52/56] Building CXX object colord-kded/CMakeFiles/kded_colord.dir/ColorD.cpp.o
+[53/56] Building CXX object colord-kcm/CMakeFiles/kcm_colord.dir/DeviceModel.cpp.o
 [54/56] Linking CXX shared module bin/kf6/kded/colord.so
 [55/56] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_colord.so
 -- Install configuration: "RelWithDebInfo"
@@ -822,7 +822,7 @@ makepkg-colord-kde.log
 +=============================================================================================================+
 
 Pre-installing package colord-kde-25.04.1-x86_64-1_rtz...
-Removing package: colord-kde-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,15:24:44
+Removing package: colord-kde-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,19:43:05
 Installing package colord-kde-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # colord-kde (daemon)

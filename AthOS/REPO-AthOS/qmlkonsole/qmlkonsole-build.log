@@ -8,24 +8,24 @@ kirigami is already installed!
 kpty is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 17:03:14--  https://download.kde.org/stable/release-service/25.04.1/src/qmlkonsole-25.04.1.tar.xz
+--2025-05-28 21:21:59--  https://download.kde.org/stable/release-service/25.04.1/src/qmlkonsole-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/qmlkonsole-25.04.1.tar.xz [following]
---2025-05-21 17:03:15--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/qmlkonsole-25.04.1.tar.xz
+--2025-05-28 21:21:59--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/qmlkonsole-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 199820 (195K) [application/octet-stream]
 Saving to: ‘qmlkonsole-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 25% 1.35M 0s
-    50K .......... .......... .......... .......... .......... 51% 1.45M 0s
-   100K .......... .......... .......... .......... .......... 76% 6.69M 0s
-   150K .......... .......... .......... .......... .....     100% 6.04M=0.08s
+     0K .......... .......... .......... .......... .......... 25% 1.33M 0s
+    50K .......... .......... .......... .......... .......... 51% 1.44M 0s
+   100K .......... .......... .......... .......... .......... 76% 7.07M 0s
+   150K .......... .......... .......... .......... .....     100% 6.36M=0.08s
 
-2025-05-21 17:03:15 (2.26 MB/s) - ‘qmlkonsole-25.04.1.tar.xz’ saved [199820/199820]
+2025-05-28 21:21:59 (2.25 MB/s) - ‘qmlkonsole-25.04.1.tar.xz’ saved [199820/199820]
 
 Found file: qmlkonsole-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -257,8 +257,8 @@ qmlkonsole-25.04.1/.gitignore
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qmlkonsole/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -281,7 +281,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found OpenMP_C: -fopenmp (found version "4.5")
 -- Found OpenMP_CXX: -fopenmp (found version "4.5")
@@ -356,23 +356,16 @@ hm...lets continue and see what happens
 [3/39] Automatic MOC for target KonsoleQML
 [4/39] Automatic RCC for terminal.qrc
 [5/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KonsoleQML_autogen/EWIEGA46WW/qrc_terminal.cpp.o
-[6/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/TerminalCharacterDecoder.cpp.o
-[7/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ShellCommand.cpp.o
-[8/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/tools.cpp.o
-[9/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ScreenWindow.cpp.o
-[10/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/HistorySearch.cpp.o
-[11/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/BlockArray.cpp.o
-[12/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ProcessInfo.cpp.o
-[13/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/History.cpp.o
-[14/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Pty.cpp.o
-[15/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Filter.cpp.o
-[16/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KonsoleQML.cpp.o
-[17/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/TerminalSession.cpp.o
-[18/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ColorScheme.cpp.o
-[19/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Screen.cpp.o
-[20/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KeyboardTranslator.cpp.o
-[21/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Emulation.cpp.o
-[22/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Vt102Emulation.cpp.o
+[6/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ShellCommand.cpp.o
+[7/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/TerminalCharacterDecoder.cpp.o
+[8/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Pty.cpp.o
+[9/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/BlockArray.cpp.o
+[10/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/tools.cpp.o
+[11/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ScreenWindow.cpp.o
+[12/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/HistorySearch.cpp.o
+[13/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Emulation.cpp.o
+[14/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/TerminalSession.cpp.o
+[15/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Vt102Emulation.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/Vt102Emulation.cpp: In member function ‘virtual void Konsole::Vt102Emulation::sendMouseEvent(int, int, int, int)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/Vt102Emulation.cpp:1517:56: warning: ‘%d’ directive output may be truncated writing between 1 and 10 bytes into a region of size between 7 and 26 [-Wformat-truncation=]
  1517 |         snprintf(command, sizeof(command), "\033[%d;%d;%dM", cb + 0x20, cx, cy);
@@ -383,8 +376,15 @@ hm...lets continue and see what happens
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/Vt102Emulation.cpp:1517:17: note: ‘snprintf’ output between 9 and 37 bytes into a destination of size 32
  1517 |         snprintf(command, sizeof(command), "\033[%d;%d;%dM", cb + 0x20, cx, cy);
       |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[23/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KonsoleQML_autogen/mocs_compilation.cpp.o
-[24/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Session.cpp.o
+[16/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/History.cpp.o
+[17/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Filter.cpp.o
+[18/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ProcessInfo.cpp.o
+[19/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Screen.cpp.o
+[20/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/ColorScheme.cpp.o
+[21/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KonsoleQML.cpp.o
+[22/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KonsoleQML_autogen/mocs_compilation.cpp.o
+[23/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/Session.cpp.o
+[24/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/KeyboardTranslator.cpp.o
 [25/39] Building CXX object lib/CMakeFiles/KonsoleQML.dir/TerminalDisplay.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp: In member function ‘void Konsole::TerminalDisplay::simulateMouseMove(int, int, int, int, int)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/lib/TerminalDisplay.cpp:3025:141: warning: ‘QMouseEvent::QMouseEvent(QEvent::Type, const QPointF&, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, const QPointingDevice*)’ is deprecated: Use another constructor [-Wdeprecated-declarations]
@@ -425,12 +425,9 @@ In file included from /usr/include/qt6/QtQuick/qquickitem.h:14,
 [29/39] Automatic RCC for resources.qrc
 [30/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/qmlkonsole_autogen/EWIEGA46WW/qrc_resources.cpp.o
 [31/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/shellcommand.cpp.o
-[32/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/fontlistmodel.cpp.o
-[33/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/savedcommandsmodel.cpp.o
-[34/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/terminaltabmodel.cpp.o
-[35/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/terminalsettings.cpp.o
-[36/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/qmlkonsole_autogen/mocs_compilation.cpp.o
-[37/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/util.cpp.o
+[32/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/terminalsettings.cpp.o
+[33/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/fontlistmodel.cpp.o
+[34/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/util.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/src/util.cpp: In member function ‘uint Util::getKeyFromString(QString)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/qmlkonsole/work/qmlkonsole-25.04.1/src/util.cpp:18:39: warning: ‘constexpr QKeyCombination::operator int() const’ is deprecated: Use QKeyCombination instead of int [-Wdeprecated-declarations]
    18 |     return seq.count() > 0 ? seq[0] : 0;
@@ -446,6 +443,9 @@ In file included from /usr/include/qt6/QtCore/qbytearray.h:9,
 /usr/include/qt6/QtCore/qnamespace.h:1912:26: note: declared here
  1912 |     constexpr Q_IMPLICIT operator int() const noexcept
       |                          ^~~~~~~~
+[35/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/qmlkonsole_autogen/mocs_compilation.cpp.o
+[36/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/terminaltabmodel.cpp.o
+[37/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/savedcommandsmodel.cpp.o
 [38/39] Building CXX object src/CMakeFiles/qmlkonsole.dir/main.cpp.o
 [39/39] Linking CXX executable bin/qmlkonsole
 -- Install configuration: "RelWithDebInfo"
@@ -775,7 +775,7 @@ qmlkonsole.dep
 +=============================================================================================================+
 
 Pre-installing package qmlkonsole-25.04.1-x86_64-1_rtz...
-Removing package: qmlkonsole-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,17:03:35
+Removing package: qmlkonsole-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,21:22:18
 Installing package qmlkonsole-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # qmlkonsole (Terminal app for Plasma Mobile)

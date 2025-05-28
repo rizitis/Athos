@@ -9,22 +9,22 @@ kpty is already installed!
 kservice is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 13:55:42--  https://download.kde.org/stable/frameworks/6.14/kdesu-6.14.0.tar.xz
+--2025-05-28 18:16:55--  https://download.kde.org/stable/frameworks/6.14/kdesu-6.14.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kdesu-6.14.0.tar.xz [following]
---2025-05-21 13:55:42--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kdesu-6.14.0.tar.xz
+--2025-05-28 18:16:56--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kdesu-6.14.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 56688 (55K) [application/octet-stream]
 Saving to: ‘kdesu-6.14.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 90% 1.30M 0s
-    50K .....                                                 100% 9.98T=0.04s
+     0K .......... .......... .......... .......... .......... 90% 1.45M 0s
+    50K .....                                                 100% 9.98T=0.03s
 
-2025-05-21 13:55:43 (1.44 MB/s) - ‘kdesu-6.14.0.tar.xz’ saved [56688/56688]
+2025-05-28 18:16:56 (1.60 MB/s) - ‘kdesu-6.14.0.tar.xz’ saved [56688/56688]
 
 Found file: kdesu-6.14.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -212,8 +212,8 @@ kdesu-6.14.0/src/suprocess.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -279,7 +279,7 @@ Using su as default (set KDESU_USE_SUDO_DEFAULT=On to use sudo)
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
 
 
@@ -311,7 +311,7 @@ Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/work/kdesu-6.
  * Qt6Core
  * Qt6Test
 
--- Configuring done (2.5s)
+-- Configuring done (2.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/work/kdesu-6.14.0/build
 [1/36] Generating ts...
@@ -320,7 +320,13 @@ Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/work/kdesu-6.
 [4/36] Building CXX object src/CMakeFiles/KF6Su.dir/KF6Su_autogen/mocs_compilation.cpp.o
 [5/36] Building CXX object src/CMakeFiles/kdesu_stub.dir/kdesu_stub_autogen/mocs_compilation.cpp.o
 [6/36] Generating mo...
-[7/36] Generating src/KF6Su.qch, src/KF6Su.tags
+[7/36] Building C object src/CMakeFiles/kdesu_stub.dir/kdesu_stub.c.o
+In file included from /usr/include/errno.h:25,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/work/kdesu-6.14.0/src/kdesu_stub.c:31:
+/usr/include/features.h:199:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  199 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+[8/36] Generating src/KF6Su.qch, src/KF6Su.tags
 error: When enabling GENERATE_QHP the TAGFILES option should be empty. I'll adjust it for you.
 Building up file structure...
 Insert custom filters...
@@ -329,40 +335,34 @@ Insert files...
 Insert contents...
 Insert indices...
 Documentation successfully generated.
-[8/36] Building C object src/CMakeFiles/kdesu_stub.dir/kdesu_stub.c.o
-In file included from /usr/include/errno.h:25,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/work/kdesu-6.14.0/src/kdesu_stub.c:31:
-/usr/include/features.h:199:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
-  199 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
-      |   ^~~~~~~
 [9/36] Linking CXX executable bin/kdesu_stub
 [10/36] Automatic MOC for target kdesudtest
 [11/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/kdesudtest_autogen/mocs_compilation.cpp.o
 [12/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/__/lexer.cpp.o
-[13/36] Building CXX object src/CMakeFiles/KF6Su.dir/sshprocess.cpp.o
-[14/36] Building CXX object src/CMakeFiles/KF6Su.dir/client.cpp.o
-[15/36] Building CXX object src/CMakeFiles/KF6Su.dir/suprocess.cpp.o
-[16/36] Building CXX object src/CMakeFiles/KF6Su.dir/stubprocess.cpp.o
-[17/36] Building CXX object src/CMakeFiles/KF6Su.dir/ptyprocess.cpp.o
-[18/36] Building CXX object src/CMakeFiles/KF6Su.dir/ksu_debug.cpp.o
-[19/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/kdesudtest.cpp.o
-[20/36] Building CXX object src/CMakeFiles/KF6Su.dir/kcookie.cpp.o
-[21/36] Linking CXX executable bin/kdesudtest
-[22/36] Linking CXX shared library bin/libKF6Su.so.6.14.0
-[23/36] Creating library symlink bin/libKF6Su.so.6 bin/libKF6Su.so
-[24/36] Automatic MOC for target kdesud
-[25/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/kdesud_autogen/mocs_compilation.cpp.o
+[13/36] Building CXX object src/CMakeFiles/KF6Su.dir/ksu_debug.cpp.o
+[14/36] Building CXX object src/CMakeFiles/KF6Su.dir/kcookie.cpp.o
+[15/36] Building CXX object src/CMakeFiles/KF6Su.dir/stubprocess.cpp.o
+[16/36] Building CXX object src/CMakeFiles/KF6Su.dir/ptyprocess.cpp.o
+[17/36] Building CXX object src/CMakeFiles/KF6Su.dir/client.cpp.o
+[18/36] Building CXX object src/CMakeFiles/KF6Su.dir/suprocess.cpp.o
+[19/36] Building CXX object src/CMakeFiles/KF6Su.dir/sshprocess.cpp.o
+[20/36] Linking CXX shared library bin/libKF6Su.so.6.14.0
+[21/36] Creating library symlink bin/libKF6Su.so.6 bin/libKF6Su.so
+[22/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/kdesudtest.cpp.o
+[23/36] Automatic MOC for target kdesud
+[24/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/kdesud_autogen/mocs_compilation.cpp.o
+[25/36] Linking CXX executable bin/kdesudtest
 [26/36] Automatic MOC for target kdesutest
 [27/36] Building CXX object autotests/CMakeFiles/kdesutest.dir/kdesutest_autogen/mocs_compilation.cpp.o
 [28/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/lexer.cpp.o
-[29/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/ksud_debug.cpp.o
-[30/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/secure.cpp.o
-[31/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/kdesud.cpp.o
-[32/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/repo.cpp.o
-[33/36] Building CXX object autotests/CMakeFiles/kdesutest.dir/kdesutest.cpp.o
-[34/36] Linking CXX executable bin/kdesutest
-[35/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/handler.cpp.o
-[36/36] Linking CXX executable bin/kdesud
+[29/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/secure.cpp.o
+[30/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/ksud_debug.cpp.o
+[31/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/handler.cpp.o
+[32/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/kdesud.cpp.o
+[33/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/repo.cpp.o
+[34/36] Linking CXX executable bin/kdesud
+[35/36] Building CXX object autotests/CMakeFiles/kdesutest.dir/kdesutest.cpp.o
+[36/36] Linking CXX executable bin/kdesutest
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/share/locale
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/share/locale/da
@@ -542,8 +542,8 @@ In file included from /usr/include/errno.h:25,
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/share/locale/sv
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/share/locale/sv/LC_MESSAGES
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/share/locale/sv/LC_MESSAGES/kdesud6.mo
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/lib64/libexec/kf6/kdesud
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/lib64/libexec/kf6/kdesud" to ""
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/libexec/kf6/kdesud
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/libexec/kf6/kdesud" to ""
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/include/KF6/KDESu/KDESu/PtyProcess
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/include/KF6/KDESu/KDESu/SuProcess
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/include/KF6/KDESu/KDESu/SshProcess
@@ -552,7 +552,7 @@ In file included from /usr/include/errno.h:25,
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/lib64/libKF6Su.so.6.14.0
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/lib64/libKF6Su.so.6
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/lib64/libKF6Su.so
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/lib64/libexec/kf6/kdesu_stub
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/libexec/kf6/kdesu_stub
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/include/KF6/KDESu/kdesu/defaults.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/include/KF6/KDESu/kdesu/kdesu_export.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu/package-kdesu/usr/include/KF6/KDESu/kdesu/ptyprocess.h
@@ -666,10 +666,10 @@ usr/lib64/cmake/KF6Su/KF6SuQchTargets.cmake
 usr/lib64/cmake/KF6Su/KF6SuTargets-relwithdebinfo.cmake
 usr/lib64/cmake/KF6Su/KF6SuTargets.cmake
 usr/lib64/libKF6Su.so.6.14.0
-usr/lib64/libexec/
-usr/lib64/libexec/kf6/
-usr/lib64/libexec/kf6/kdesu_stub
-usr/lib64/libexec/kf6/kdesud
+usr/libexec/
+usr/libexec/kf6/
+usr/libexec/kf6/kdesu_stub
+usr/libexec/kf6/kdesud
 usr/share/
 usr/share/locale/
 usr/share/locale/ar/
@@ -875,7 +875,7 @@ makepkg-kdesu.log
 +============================================================================================+
 
 Pre-installing package kdesu-6.14.0-x86_64-1_rtz...
-Removing package: kdesu-6.14.0-x86_64-1_rtz-upgraded-2025-05-21,13:55:54
+Removing package: kdesu-6.14.0-x86_64-1_rtz-upgraded-2025-05-28,18:17:07
 Installing package kdesu-6.14.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kdesu (Integration su for elevated privileges)

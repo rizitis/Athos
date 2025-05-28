@@ -3,17 +3,17 @@ Detected architecture: x86_64
 No required dependencies specified.
 No optional dependencies found.
 Downloading source code tar.gz file
---2025-05-21 19:03:17--  https://gitlab.com/postmarketOS/openrc-settingsd/-/archive/v1.5.0/openrc-settingsd-v1.5.0.tar.gz
+--2025-05-28 23:17:28--  https://gitlab.com/postmarketOS/openrc-settingsd/-/archive/v1.5.0/openrc-settingsd-v1.5.0.tar.gz
 Resolving gitlab.com (gitlab.com)... 172.65.251.78, 2606:4700:90:0:f22e:fbec:5bed:a9b9
 Connecting to gitlab.com (gitlab.com)|172.65.251.78|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [application/octet-stream]
 Saving to: ‘openrc-settingsd-v1.5.0-1.5.0.tar.gz’
 
-     0K .......... .......... .......... .......... .......... 1.81M
-    50K                                                        14.1M=0.03s
+     0K .......... .......... .......... .......... .......... 3.88M
+    50K                                                        15.6M=0.01s
 
-2025-05-21 19:03:18 (1.84 MB/s) - ‘openrc-settingsd-v1.5.0-1.5.0.tar.gz’ saved [51920]
+2025-05-28 23:17:29 (3.92 MB/s) - ‘openrc-settingsd-v1.5.0-1.5.0.tar.gz’ saved [51920]
 
 Found file: openrc-settingsd-v1.5.0-1.5.0.tar.gz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -87,28 +87,28 @@ patching file src/timedated.c
 patching file src/timedated.c
 patch unexpectedly ends in middle of line
 The Meson build system
-Version: 1.8.0
+Version: 1.8.1
 Source dir: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openrc-settingsd/work/openrc-settingsd-v1.5.0
 Build dir: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openrc-settingsd/work/openrc-settingsd-v1.5.0/build
 Build type: native build
 Project name: openrc-settingsd
 Project version: 1.5.0
-C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+C compiler for the host machine: ccache cc (gcc 14.3.0 "cc (GCC) 14.3.0")
 C linker for the host machine: cc ld.bfd 2.44-slack151
 Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Found pkg-config: YES (/usr/bin/pkg-config) 0.29.2
-Run-time dependency glib-2.0 found: YES 2.84.1
-Run-time dependency gio-2.0 found: YES 2.84.1
-Run-time dependency gio-unix-2.0 found: YES 2.84.1
+Run-time dependency glib-2.0 found: YES 2.84.2
+Run-time dependency gio-2.0 found: YES 2.84.2
+Run-time dependency gio-unix-2.0 found: YES 2.84.2
 Run-time dependency dbus-1 found: YES 1.16.2
 Run-time dependency polkit-gobject-1 found: YES 126
 Dependency openrc skipped: feature openrc disabled
-Dependency gio-2.0 found: YES 2.84.1 (cached)
+Dependency gio-2.0 found: YES 2.84.2 (cached)
 Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
-Dependency gio-2.0 found: YES 2.84.1 (cached)
+Dependency gio-2.0 found: YES 2.84.2 (cached)
 Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
-Dependency gio-2.0 found: YES 2.84.1 (cached)
+Dependency gio-2.0 found: YES 2.84.2 (cached)
 Program /usr/bin/gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
 Configuring config.h using configuration
 ../meson.build:104: WARNING: Project does not target a minimum version but uses feature deprecated since '0.56.0': dependency.get_pkgconfig_variable. use dependency.get_variable(pkgconfig : ...) instead
@@ -142,21 +142,12 @@ openrc-settingsd 1.5.0
 Found ninja-1.12.1 at /usr/bin/ninja
 WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
 [1/18] Generating gdbus header timedate1-generated.h
-[2/18] Generating gdbus header hostname1-generated.h
-[3/18] Generating gdbus source hostname1-generated.c
-[4/18] Generating gdbus header locale1-generated.h
-[5/18] Generating gdbus source locale1-generated.c
-[6/18] Compiling C object openrc-settingsd.p/src_main.c.o
-[7/18] Generating gdbus source timedate1-generated.c
-[8/18] Compiling C object openrc-settingsd.p/src_timedated.c.o
-[9/18] Compiling C object openrc-settingsd.p/meson-generated_.._hostname1-generated.c.o
-[10/18] Compiling C object openrc-settingsd.p/src_localed.c.o
-[11/18] Compiling C object openrc-settingsd.p/src_bus-utils.c.o
-[12/18] Compiling C object openrc-settingsd.p/src_utils.c.o
-[13/18] Compiling C object openrc-settingsd.p/src_hostnamed.c.o
-[14/18] Compiling C object openrc-settingsd.p/meson-generated_.._locale1-generated.c.o
-[15/18] Compiling C object openrc-settingsd.p/meson-generated_.._timedate1-generated.c.o
-[16/18] Compiling C object openrc-settingsd.p/src_copypaste_hwclock.c.o
+[2/18] Generating gdbus source timedate1-generated.c
+[3/18] Generating gdbus header locale1-generated.h
+[4/18] Generating gdbus header hostname1-generated.h
+[5/18] Generating gdbus source hostname1-generated.c
+[6/18] Generating gdbus source locale1-generated.c
+[7/18] Compiling C object openrc-settingsd.p/src_copypaste_hwclock.c.o
 ../src/copypaste/hwclock.c: In function ‘rtc_open’:
 ../src/copypaste/hwclock.c:65:17: warning: ‘readdir_r’ is deprecated [-Wdeprecated-declarations]
    65 |                 r = readdir_r(d, &buf, &de);
@@ -167,7 +158,16 @@ In file included from /usr/include/features.h:524,
 /usr/include/dirent.h:191:12: note: declared here
   191 | extern int __REDIRECT (readdir_r,
       |            ^~~~~~~~~~
-[17/18] Compiling C object openrc-settingsd.p/src_copypaste_util.c.o
+[8/18] Compiling C object openrc-settingsd.p/src_copypaste_util.c.o
+[9/18] Compiling C object openrc-settingsd.p/src_bus-utils.c.o
+[10/18] Compiling C object openrc-settingsd.p/src_main.c.o
+[11/18] Compiling C object openrc-settingsd.p/src_hostnamed.c.o
+[12/18] Compiling C object openrc-settingsd.p/src_utils.c.o
+[13/18] Compiling C object openrc-settingsd.p/src_timedated.c.o
+[14/18] Compiling C object openrc-settingsd.p/src_localed.c.o
+[15/18] Compiling C object openrc-settingsd.p/meson-generated_.._locale1-generated.c.o
+[16/18] Compiling C object openrc-settingsd.p/meson-generated_.._timedate1-generated.c.o
+[17/18] Compiling C object openrc-settingsd.p/meson-generated_.._hostname1-generated.c.o
 [18/18] Linking target openrc-settingsd
 [0/1] Installing files
 Installing openrc-settingsd to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openrc-settingsd/package-openrc-settingsd/usr/libexec
@@ -297,7 +297,7 @@ openrc-settingsd-1.5.0-x86_64-1_rtz.tlz.txt
 +===========================================================================================================================+
 
 Pre-installing package openrc-settingsd-1.5.0-x86_64-1_rtz...
-Removing package: openrc-settingsd-1.5.0-x86_64-1_rtz-upgraded-2025-05-21,19:03:20
+Removing package: openrc-settingsd-1.5.0-x86_64-1_rtz-upgraded-2025-05-28,23:17:32
 Installing package openrc-settingsd-1.5.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # openrc-settingsd (D-Bus services for OpenRC-based systems)

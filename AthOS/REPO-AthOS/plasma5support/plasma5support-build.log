@@ -13,25 +13,25 @@ kxmlgui is already installed!
 libksysguard is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 14:45:30--  https://download.kde.org/stable/plasma/6.3.5/plasma5support-6.3.5.tar.xz
+--2025-05-28 19:04:24--  https://download.kde.org/stable/plasma/6.3.5/plasma5support-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma5support-6.3.5.tar.xz [following]
---2025-05-21 14:45:30--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma5support-6.3.5.tar.xz
+--2025-05-28 19:04:24--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma5support-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 229720 (224K) [application/octet-stream]
 Saving to: ‘plasma5support-6.3.5.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 22% 1.34M 0s
-    50K .......... .......... .......... .......... .......... 44% 1.44M 0s
-   100K .......... .......... .......... .......... .......... 66% 7.03M 0s
-   150K .......... .......... .......... .......... .......... 89% 5.02M 0s
-   200K .......... .......... ....                            100% 1.38M=0.1s
+     0K .......... .......... .......... .......... .......... 22% 1.37M 0s
+    50K .......... .......... .......... .......... .......... 44% 1.46M 0s
+   100K .......... .......... .......... .......... .......... 66% 6.75M 0s
+   150K .......... .......... .......... .......... .......... 89% 1.86M 0s
+   200K .......... .......... ....                            100% 10.9M=0.1s
 
-2025-05-21 14:45:31 (2.10 MB/s) - ‘plasma5support-6.3.5.tar.xz’ saved [229720/229720]
+2025-05-28 19:04:25 (2.09 MB/s) - ‘plasma5support-6.3.5.tar.xz’ saved [229720/229720]
 
 Found file: plasma5support-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -672,8 +672,8 @@ plasma5support-6.3.5/README.md
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma5support/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -696,7 +696,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
 -- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
@@ -731,7 +731,7 @@ hm...lets continue and see what happens
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- No such target Qt6Gui_QCH defined when calling ecm_add_qch(), ignored.
 -- No such target KF6Package_QCH defined when calling ecm_add_qch(), ignored.
 -- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
@@ -805,154 +805,126 @@ Documentation successfully generated.
 [5/129] Running AUTOMOC file extraction for target Plasma5Support
 [6/129] Running moc --collect-json for target Plasma5Support
 [7/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/Plasma5Support_autogen/mocs_compilation.cpp.o
-[8/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/version.cpp.o
-[9/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/debug_p.cpp.o
-[10/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/dataengineconsumer.cpp.o
+[8/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/servicejob.cpp.o
+[9/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/datacontainer_p.cpp.o
+[10/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/debug_p.cpp.o
+[11/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/plasma5support.cpp.o
+[12/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/dataengineconsumer.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/plasma5support/dataengineconsumer.cpp: In member function ‘void Plasma5Support::DataEngineConsumerPrivate::slotJobFinished(Plasma5Support::ServiceJob*)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/plasma5support/dataengineconsumer.cpp:22:77: warning: unused parameter ‘job’ [-Wunused-parameter]
    22 | void DataEngineConsumerPrivate::slotJobFinished(Plasma5Support::ServiceJob *job)
       |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
-[11/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/servicejob.cpp.o
-[12/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/storagethread.cpp.o
-[13/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/dataengine.cpp.o
-[14/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/service.cpp.o
-[15/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/plasma5support.cpp.o
-[16/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/storage.cpp.o
+[13/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/version.cpp.o
+[14/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/datacontainer.cpp.o
+[15/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/dataengine.cpp.o
+[16/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/storagethread.cpp.o
 [17/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/pluginloader.cpp.o
-[18/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/datacontainer_p.cpp.o
+[18/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/storage.cpp.o
 [19/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/private/dataenginemanager.cpp.o
-[20/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/datacontainer.cpp.o
+[20/129] Building CXX object src/plasma5support/CMakeFiles/Plasma5Support.dir/service.cpp.o
 [21/129] Linking CXX shared library bin/libPlasma5Support.so.6.3.5
 [22/129] Creating library symlink bin/libPlasma5Support.so.6 bin/libPlasma5Support.so
 [23/129] Automatic MOC for target plasma-geolocation-interface
-[24/129] Automatic MOC for target pluginloadertest
-[25/129] Building CXX object autotests/CMakeFiles/pluginloadertest.dir/pluginloadertest_autogen/mocs_compilation.cpp.o
+[24/129] Automatic MOC for target plasma_engine_mouse
+[25/129] Automatic MOC for target plasma_engine_favicons
 [26/129] Automatic MOC for target plasma_engine_filebrowser
-[27/129] Automatic MOC for target plasma_engine_packagekit
-[28/129] Automatic MOC for target plasma_engine_mouse
-[29/129] Automatic MOC for target plasma_engine_keystate
-[30/129] Automatic MOC for target plasma_engine_devicenotifications
-[31/129] Automatic MOC for target plasma_engine_favicons
-[32/129] Automatic MOC for target plasma_engine_soliddevice
-[33/129] Automatic MOC for target plasma_engine_activities
-[34/129] Automatic MOC for target plasma_engine_powermanagement
-[35/129] Automatic MOC for target plasma_engine_apps
-[36/129] Generating ActivityRankingInterface.cpp, ActivityRankingInterface.h
-[37/129] Generating moc_ActivityRankingInterface.cpp
-[38/129] Automatic MOC for target plasma_engine_hotplug
-[39/129] Automatic MOC for target plasma_engine_places
+[27/129] Automatic MOC for target pluginloadertest
+[28/129] Building CXX object autotests/CMakeFiles/pluginloadertest.dir/pluginloadertest_autogen/mocs_compilation.cpp.o
+[29/129] Automatic MOC for target plasma_engine_devicenotifications
+[30/129] Automatic MOC for target plasma_engine_packagekit
+[31/129] Automatic MOC for target plasma_engine_activities
+[32/129] Generating ActivityRankingInterface.cpp, ActivityRankingInterface.h
+[33/129] Automatic MOC for target plasma_engine_apps
+[34/129] Generating moc_ActivityRankingInterface.cpp
+[35/129] Automatic MOC for target plasma_engine_soliddevice
+[36/129] Automatic MOC for target plasma_engine_powermanagement
+[37/129] Automatic MOC for target plasma_engine_hotplug
+[38/129] Automatic MOC for target plasma_engine_places
+[39/129] Automatic MOC for target plasma_engine_keystate
 [40/129] Automatic MOC for target plasma5supportplugin
 [41/129] Running AUTOMOC file extraction for target plasma5supportplugin
 [42/129] Running moc --collect-json for target plasma5supportplugin
 [43/129] Automatic QML type registration for target plasma5supportplugin
 [44/129] Running rcc for resource qmake_org_kde_plasma_plasma5support
-[45/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitservice.cpp.o
-[46/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/plasma_engine_devicenotifications_autogen/mocs_compilation.cpp.o
-<command-line>: warning: "TRANSLATION_DOMAIN" redefined
-<command-line>: note: this is the location of the previous definition
-[47/129] Building CXX object src/dataengines/filebrowser/CMakeFiles/plasma_engine_filebrowser.dir/plasma_engine_filebrowser_autogen/mocs_compilation.cpp.o
+[45/129] Building CXX object src/dataengines/filebrowser/CMakeFiles/plasma_engine_filebrowser.dir/plasma_engine_filebrowser_autogen/mocs_compilation.cpp.o
+[46/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/cursornotificationhandler.cpp.o
+[47/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/plasma_engine_favicons_autogen/mocs_compilation.cpp.o
 [48/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/.qt/rcc/qrc_qmake_org_kde_plasma_plasma5support.cpp.o
 [49/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/plasma_engine_packagekit_autogen/mocs_compilation.cpp.o
-[50/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitjob.cpp.o
-[51/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_autogen/mocs_compilation.cpp.o
-[52/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/favicons.cpp.o
-[53/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/plasma_engine_favicons_autogen/mocs_compilation.cpp.o
-[54/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/plasma_engine_mouse_autogen/mocs_compilation.cpp.o
-[55/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-interface.dir/plasma-geolocation-interface_autogen/mocs_compilation.cpp.o
-[56/129] Building CXX object src/dataengines/filebrowser/CMakeFiles/plasma_engine_filebrowser.dir/filebrowserengine.cpp.o
-[57/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/plasma_engine_keystate_autogen/mocs_compilation.cpp.o
+[50/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/devicenotificationsengine.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[58/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitengine.cpp.o
-[59/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/cursornotificationhandler.cpp.o
-[60/129] Building CXX object autotests/CMakeFiles/pluginloadertest.dir/pluginloadertest.cpp.o
-[61/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/faviconprovider.cpp.o
-[62/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/mouseengine.cpp.o
-[63/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-interface.dir/geolocationprovider.cpp.o
-[64/129] Linking CXX shared library bin/libplasma-geolocation-interface.so.6.3.5
-[65/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/devicenotificationsengine.cpp.o
+[51/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-interface.dir/plasma-geolocation-interface_autogen/mocs_compilation.cpp.o
+[52/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/plasma_engine_devicenotifications_autogen/mocs_compilation.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[66/129] Creating library symlink bin/libplasma-geolocation-interface.so.6 bin/libplasma-geolocation-interface.so
-[67/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/ActivityData.cpp.o
-[68/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/ksolidnotify.cpp.o
+[53/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/faviconprovider.cpp.o
+[54/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-interface.dir/geolocationprovider.cpp.o
+[55/129] Building CXX object src/dataengines/filebrowser/CMakeFiles/plasma_engine_filebrowser.dir/filebrowserengine.cpp.o
+[56/129] Linking CXX shared library bin/libplasma-geolocation-interface.so.6.3.5
+[57/129] Creating library symlink bin/libplasma-geolocation-interface.so.6 bin/libplasma-geolocation-interface.so
+[58/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_autogen/mocs_compilation.cpp.o
+[59/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/plasma_engine_mouse_autogen/mocs_compilation.cpp.o
+[60/129] Building CXX object src/dataengines/mouse/CMakeFiles/plasma_engine_mouse.dir/mouseengine.cpp.o
+[61/129] Building CXX object src/dataengines/favicons/CMakeFiles/plasma_engine_favicons.dir/favicons.cpp.o
+[62/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityjob.cpp.o
+[63/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/ActivityData.cpp.o
+[64/129] Automatic MOC for target plasma_engine_geolocation
+[65/129] Building CXX object autotests/CMakeFiles/pluginloadertest.dir/pluginloadertest.cpp.o
+[66/129] Automatic MOC for target plasma-geolocation-ip
+[67/129] Building CXX object src/dataengines/devicenotifications/CMakeFiles/plasma_engine_devicenotifications.dir/ksolidnotify.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[69/129] Automatic MOC for target plasma_engine_geolocation
-[70/129] Automatic MOC for target plasma-geolocation-ip
-[71/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/serviceoperationstatus.cpp.o
-[72/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_org_kde_plasma_plasma5supportPlugin.cpp.o
-[73/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/keyservice.cpp.o
+[68/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/plasma_engine_activities_autogen/mocs_compilation.cpp.o
+[69/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityservice.cpp.o
+[70/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_org_kde_plasma_plasma5supportPlugin.cpp.o
+[71/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/keyservice.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[74/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/plasma_engine_activities_autogen/mocs_compilation.cpp.o
-[75/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityjob.cpp.o
-[76/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugservice.cpp.o
+[72/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/ActivityRankingInterface.cpp.o
+[73/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/plasma_engine_hotplug_autogen/mocs_compilation.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[77/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/deviceserviceaction.cpp.o
+[74/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/serviceoperationstatus.cpp.o
+[75/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/deviceserviceaction.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[78/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/devicesignalmapper.cpp.o
+[76/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_qmltyperegistrations.cpp.o
+[77/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugjob.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[79/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/plasma5supportplugin_qmltyperegistrations.cpp.o
-[80/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/plasma_engine_hotplug_autogen/mocs_compilation.cpp.o
+[78/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/plasma_engine_keystate_autogen/mocs_compilation.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[81/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugjob.cpp.o
+[79/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma_engine_geolocation.dir/plasma_engine_geolocation_autogen/mocs_compilation.cpp.o
+[80/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/keystate.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[82/129] Building CXX object src/dataengines/keystate/CMakeFiles/plasma_engine_keystate.dir/keystate.cpp.o
+[81/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-ip.dir/plasma-geolocation-ip_autogen/mocs_compilation.cpp.o
+[82/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/datasource.cpp.o
+[83/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugservice.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[83/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/ActivityRankingInterface.cpp.o
-[84/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/datasource.cpp.o
+[84/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityengine.cpp.o
 [85/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-ip.dir/geolocdebug.cpp.o
-[86/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-ip.dir/plasma-geolocation-ip_autogen/mocs_compilation.cpp.o
-[87/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/datamodel.cpp.o
-[88/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/plasma_engine_soliddevice_autogen/mocs_compilation.cpp.o
+[86/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/plasma_engine_soliddevice_autogen/mocs_compilation.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[89/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/devicesignalmapmanager.cpp.o
+[87/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma_engine_geolocation.dir/geolocation.cpp.o
+[88/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugengine.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[90/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma_engine_geolocation.dir/plasma_engine_geolocation_autogen/mocs_compilation.cpp.o
+[89/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/devicesignalmapper.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[90/129] Building CXX object src/declarativeimports/CMakeFiles/plasma5supportplugin.dir/datamodel.cpp.o
 [91/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/hddtemp.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[92/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityservice.cpp.o
-[93/129] Linking CXX shared module bin/org/kde/plasma/plasma5support/libplasma5supportplugin.so
-[94/129] Building CXX object src/dataengines/hotplug/CMakeFiles/plasma_engine_hotplug.dir/hotplugengine.cpp.o
+[92/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/devicesignalmapmanager.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[95/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddeviceservice.cpp.o
-<command-line>: warning: "TRANSLATION_DOMAIN" redefined
-<command-line>: note: this is the location of the previous definition
-[96/129] Linking CXX shared module bin/plasma_engine_devicenotifications.so
-[97/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddevicejob.cpp.o
-<command-line>: warning: "TRANSLATION_DOMAIN" redefined
-<command-line>: note: this is the location of the previous definition
-[98/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_keystate.so
-[99/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_favicons.so
-[100/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_packagekit.so
-[101/129] Building CXX object src/dataengines/activities/CMakeFiles/plasma_engine_activities.dir/activityengine.cpp.o
-[102/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_filebrowser.so
-[103/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_hotplug.so
-[104/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_mouse.so
-[105/129] Linking CXX executable bin/pluginloadertest
-[106/129] Linking CXX shared module bin/plasma_engine_activities.so
-[107/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/plasma_engine_places_autogen/mocs_compilation.cpp.o
-[108/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/powermanagementservice.cpp.o
-<command-line>: warning: "TRANSLATION_DOMAIN" redefined
-<command-line>: note: this is the location of the previous definition
-[109/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma_engine_geolocation.dir/geolocation.cpp.o
-[110/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_geolocation.so
-[111/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddeviceengine.cpp.o
-<command-line>: warning: "TRANSLATION_DOMAIN" redefined
-<command-line>: note: this is the location of the previous definition
-[112/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placesengine.cpp.o
-[113/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/powermanagementjob.cpp.o
+[93/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/powermanagementjob.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementjob.cpp: In member function ‘virtual void PowerManagementJob::start()’:
@@ -962,21 +934,49 @@ Documentation successfully generated.
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma5support/work/plasma5support-6.3.5/src/dataengines/powermanagement/powermanagementjob.cpp:77:36: warning: comparison of integer expressions of different signedness: ‘uint’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
    77 |         if (m_lockInhibitionCookie != -1) { // an inhibition request is already active; don't trigger another one
       |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
-[114/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_soliddevice.so
-[115/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placeservice.cpp.o
-[116/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-ip.dir/location_ip.cpp.o
-[117/129] Linking CXX shared module bin/plasma5support/geolocationprovider/plasma-geolocation-ip.so
-[118/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/setupdevicejob.cpp.o
-[119/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appjob.cpp.o
-[120/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placesproxymodel.cpp.o
-[121/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appsource.cpp.o
-[122/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appsengine.cpp.o
-[123/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/plasma_engine_apps_autogen/mocs_compilation.cpp.o
-[124/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_places.so
-[125/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/plasma_engine_powermanagement_autogen/mocs_compilation.cpp.o
+[94/129] Linking CXX shared module bin/org/kde/plasma/plasma5support/libplasma5supportplugin.so
+[95/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddevicejob.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
 <command-line>: note: this is the location of the previous definition
-[126/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appservice.cpp.o
+[96/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitengine.cpp.o
+[97/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitjob.cpp.o
+[98/129] Linking CXX shared module bin/plasma_engine_devicenotifications.so
+[99/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/powermanagementservice.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[100/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_geolocation.so
+[101/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddeviceservice.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[102/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_keystate.so
+[103/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_favicons.so
+[104/129] Building CXX object src/dataengines/packagekit/CMakeFiles/plasma_engine_packagekit.dir/packagekitservice.cpp.o
+[105/129] Linking CXX shared module bin/plasma_engine_activities.so
+[106/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_hotplug.so
+[107/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_filebrowser.so
+[108/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_mouse.so
+[109/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_packagekit.so
+[110/129] Linking CXX executable bin/pluginloadertest
+[111/129] Building CXX object src/dataengines/geolocation/CMakeFiles/plasma-geolocation-ip.dir/location_ip.cpp.o
+[112/129] Linking CXX shared module bin/plasma5support/geolocationprovider/plasma-geolocation-ip.so
+[113/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placeservice.cpp.o
+[114/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/plasma_engine_places_autogen/mocs_compilation.cpp.o
+[115/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placesengine.cpp.o
+[116/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/plasma_engine_powermanagement_autogen/mocs_compilation.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[117/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/plasma_engine_apps_autogen/mocs_compilation.cpp.o
+[118/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appservice.cpp.o
+[119/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appjob.cpp.o
+[120/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/setupdevicejob.cpp.o
+[121/129] Building CXX object src/dataengines/soliddevice/CMakeFiles/plasma_engine_soliddevice.dir/soliddeviceengine.cpp.o
+<command-line>: warning: "TRANSLATION_DOMAIN" redefined
+<command-line>: note: this is the location of the previous definition
+[122/129] Building CXX object src/dataengines/places/CMakeFiles/plasma_engine_places.dir/placesproxymodel.cpp.o
+[123/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_soliddevice.so
+[124/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appsource.cpp.o
+[125/129] Linking CXX shared module bin/plasma5support/dataengine/plasma_engine_places.so
+[126/129] Building CXX object src/dataengines/apps/CMakeFiles/plasma_engine_apps.dir/appsengine.cpp.o
 [127/129] Linking CXX shared module bin/plasma_engine_apps.so
 [128/129] Building CXX object src/dataengines/powermanagement/CMakeFiles/plasma_engine_powermanagement.dir/powermanagementengine.cpp.o
 <command-line>: warning: "TRANSLATION_DOMAIN" redefined
@@ -2243,7 +2243,7 @@ plasma5support.dep
 +=====================================================================================================================+
 
 Pre-installing package plasma5support-6.3.5-x86_64-1_rtz...
-Removing package: plasma5support-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,14:46:09
+Removing package: plasma5support-6.3.5-x86_64-1_rtz-upgraded-2025-05-28,19:05:01
 Installing package plasma5support-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # plasma5support (components )

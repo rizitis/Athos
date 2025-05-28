@@ -14,24 +14,24 @@ ktextwidgets is already installed!
 kxmlgui is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 17:15:19--  https://download.kde.org/stable/release-service/25.04.1/src/kidentitymanagement-25.04.1.tar.xz
+--2025-05-28 21:34:33--  https://download.kde.org/stable/release-service/25.04.1/src/kidentitymanagement-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kidentitymanagement-25.04.1.tar.xz [following]
---2025-05-21 17:15:19--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kidentitymanagement-25.04.1.tar.xz
+--2025-05-28 21:34:33--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kidentitymanagement-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 198096 (193K) [application/octet-stream]
 Saving to: ‘kidentitymanagement-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 25% 1.33M 0s
-    50K .......... .......... .......... .......... .......... 51% 1.43M 0s
-   100K .......... .......... .......... .......... .......... 77% 6.53M 0s
-   150K .......... .......... .......... .......... ...       100% 8.87M=0.08s
+     0K .......... .......... .......... .......... .......... 25% 1.26M 0s
+    50K .......... .......... .......... .......... .......... 51% 1.54M 0s
+   100K .......... .......... .......... .......... .......... 77% 5.83M 0s
+   150K .......... .......... .......... .......... ...       100% 8.89M=0.08s
 
-2025-05-21 17:15:20 (2.27 MB/s) - ‘kidentitymanagement-25.04.1.tar.xz’ saved [198096/198096]
+2025-05-28 21:34:33 (2.26 MB/s) - ‘kidentitymanagement-25.04.1.tar.xz’ saved [198096/198096]
 
 Found file: kidentitymanagement-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -257,8 +257,8 @@ kidentitymanagement-25.04.1/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kidentitymanagement/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -290,7 +290,7 @@ Call Stack (most recent call first):
 -- Skipping execution of outbound license tests.
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found X11: /usr/include
 -- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
@@ -369,8 +369,12 @@ Call Stack (most recent call first):
 [6/85] Generating identitymanageradaptor.cpp, identitymanageradaptor.h
 [7/85] Generating moc_identitymanageradaptor.cpp
 [8/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/KPim6IdentityManagementCore_autogen/mocs_compilation.cpp.o
-[9/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identityactivitiesabstract.cpp.o
-[10/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitytreemodel.cpp.o
+[9/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/kidentitymanagementcore_debug.cpp.o
+[10/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitytreesortproxymodel.cpp.o
+[11/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identityactivitiesabstract.cpp.o
+[12/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/utils.cpp.o
+[13/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitymodel.cpp.o
+[14/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitytreemodel.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kidentitymanagement/work/kidentitymanagement-25.04.1/src/core/identitytreemodel.cpp: In member function ‘void KIdentityManagementCore::IdentityTreeModel::removeIdentities(const QStringList&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kidentitymanagement/work/kidentitymanagement-25.04.1/src/core/identitytreemodel.cpp:188:41: warning: ignoring return value of ‘bool KIdentityManagementCore::IdentityManager::removeIdentity(const QString&)’, declared with attribute ‘nodiscard’ [-Wunused-result]
   188 |         mIdentityManager->removeIdentity(name);
@@ -380,59 +384,55 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kidentitymanageme
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kidentitymanagement/work/kidentitymanagement-25.04.1/src/core/identitymanager.h:161:24: note: declared here
   161 |     [[nodiscard]] bool removeIdentity(const QString &identityName);
       |                        ^~~~~~~~~~~~~~
-[11/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitymodel.cpp.o
-[12/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/kidentitymanagementcore_debug.cpp.o
-[13/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitytreesortproxymodel.cpp.o
-[14/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/utils.cpp.o
-[15/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/signature.cpp.o
-[16/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitymanageradaptor.cpp.o
+[15/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitymanageradaptor.cpp.o
+[16/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/signature.cpp.o
 [17/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identity.cpp.o
 [18/85] Building CXX object src/core/CMakeFiles/KPim6IdentityManagementCore.dir/identitymanager.cpp.o
 [19/85] Linking CXX shared library bin/libKPim6IdentityManagementCore.so.6.4.1
 [20/85] Creating library symlink bin/libKPim6IdentityManagementCore.so.6 bin/libKPim6IdentityManagementCore.so
-[21/85] Automatic MOC for target signaturetest
-[22/85] Building CXX object src/core/autotests/CMakeFiles/signaturetest.dir/signaturetest_autogen/mocs_compilation.cpp.o
-[23/85] Automatic MOC for target identitymodeltest
-[24/85] Automatic MOC for target identitytest
-[25/85] Building CXX object src/core/autotests/CMakeFiles/identitymodeltest.dir/identitymodeltest_autogen/mocs_compilation.cpp.o
-[26/85] Building CXX object src/core/autotests/CMakeFiles/identitytest.dir/identitytest_autogen/mocs_compilation.cpp.o
+[21/85] Automatic MOC for target identitytest
+[22/85] Building CXX object src/core/autotests/CMakeFiles/identitytest.dir/identitytest_autogen/mocs_compilation.cpp.o
+[23/85] Automatic MOC for target signaturetest
+[24/85] Building CXX object src/core/autotests/CMakeFiles/signaturetest.dir/signaturetest_autogen/mocs_compilation.cpp.o
+[25/85] Automatic MOC for target identitymodeltest
+[26/85] Building CXX object src/core/autotests/CMakeFiles/identitymodeltest.dir/identitymodeltest_autogen/mocs_compilation.cpp.o
 [27/85] Automatic MOC for target identitymanagentprivate
 [28/85] Automatic MOC for target KPim6IdentityManagementWidgets
 [29/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/KPim6IdentityManagementWidgets_autogen/mocs_compilation.cpp.o
 [30/85] Building CXX object src/quick/CMakeFiles/identitymanagentprivate.dir/identityutils.cpp.o
-[31/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/identitycombo.cpp.o
-[32/85] Building CXX object src/quick/CMakeFiles/identitymanagentprivate.dir/identityeditorbackend.cpp.o
-[33/85] Building CXX object src/quick/CMakeFiles/identitymanagentprivate.dir/identitymanagentprivate_autogen/mocs_compilation.cpp.o
-[34/85] Linking CXX static library lib/libidentitymanagentprivate.a
-[35/85] Automatic MOC for target KPim6IdentityManagementQuick
-[36/85] Building CXX object src/quick/CMakeFiles/KPim6IdentityManagementQuick.dir/KPim6IdentityManagementQuick_autogen/mocs_compilation.cpp.o
-[37/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/identitytreeview.cpp.o
-[38/85] Building CXX object src/core/autotests/CMakeFiles/identitymodeltest.dir/identitymodeltest.cpp.o
-[39/85] Linking CXX executable bin/identitymodeltest
-[40/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/signaturerichtexteditor.cpp.o
-[41/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/identitytreedelegate.cpp.o
-[42/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/signatureconfigurator.cpp.o
-[43/85] Building CXX object src/core/autotests/CMakeFiles/identitytest.dir/identitytest.cpp.o
-[44/85] Linking CXX shared library bin/libKPim6IdentityManagementWidgets.so.6.4.1
-[45/85] Creating library symlink bin/libKPim6IdentityManagementWidgets.so.6 bin/libKPim6IdentityManagementWidgets.so
-[46/85] Automatic MOC for target identitytreeview_gui
-[47/85] Automatic MOC for target identitycombo_gui
-[48/85] Building CXX object src/widgets/tests/CMakeFiles/identitytreeview_gui.dir/identitytreeview_gui_autogen/mocs_compilation.cpp.o
-[49/85] Building CXX object src/widgets/tests/CMakeFiles/identitycombo_gui.dir/identitycombo_gui_autogen/mocs_compilation.cpp.o
-[50/85] Linking CXX executable bin/identitytest
-[51/85] Automatic MOC for target identitytreeviewtest
-[52/85] Building CXX object src/widgets/autotests/CMakeFiles/identitytreeviewtest.dir/identitytreeviewtest_autogen/mocs_compilation.cpp.o
+[31/85] Building CXX object src/quick/CMakeFiles/identitymanagentprivate.dir/identitymanagentprivate_autogen/mocs_compilation.cpp.o
+[32/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/identitytreeview.cpp.o
+[33/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/identitycombo.cpp.o
+[34/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/identitytreedelegate.cpp.o
+[35/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/signaturerichtexteditor.cpp.o
+[36/85] Building CXX object src/quick/CMakeFiles/identitymanagentprivate.dir/identityeditorbackend.cpp.o
+[37/85] Linking CXX static library lib/libidentitymanagentprivate.a
+[38/85] Automatic MOC for target KPim6IdentityManagementQuick
+[39/85] Building CXX object src/quick/CMakeFiles/KPim6IdentityManagementQuick.dir/KPim6IdentityManagementQuick_autogen/mocs_compilation.cpp.o
+[40/85] Building CXX object src/core/autotests/CMakeFiles/signaturetest.dir/signaturetest.cpp.o
+[41/85] Building CXX object src/core/autotests/CMakeFiles/identitytest.dir/identitytest.cpp.o
+[42/85] Building CXX object src/core/autotests/CMakeFiles/identitymodeltest.dir/identitymodeltest.cpp.o
+[43/85] Linking CXX executable bin/signaturetest
+[44/85] Linking CXX executable bin/identitytest
+[45/85] Linking CXX executable bin/identitymodeltest
+[46/85] Building CXX object src/widgets/CMakeFiles/KPim6IdentityManagementWidgets.dir/signatureconfigurator.cpp.o
+[47/85] Linking CXX shared library bin/libKPim6IdentityManagementWidgets.so.6.4.1
+[48/85] Creating library symlink bin/libKPim6IdentityManagementWidgets.so.6 bin/libKPim6IdentityManagementWidgets.so
+[49/85] Automatic MOC for target identitytreeview_gui
+[50/85] Automatic MOC for target identitycombo_gui
+[51/85] Building CXX object src/widgets/tests/CMakeFiles/identitytreeview_gui.dir/identitytreeview_gui_autogen/mocs_compilation.cpp.o
+[52/85] Building CXX object src/widgets/tests/CMakeFiles/identitycombo_gui.dir/identitycombo_gui_autogen/mocs_compilation.cpp.o
 [53/85] Building CXX object src/quick/CMakeFiles/KPim6IdentityManagementQuick.dir/cryptographyeditorbackend.cpp.o
-[54/85] Building CXX object src/core/autotests/CMakeFiles/signaturetest.dir/signaturetest.cpp.o
-[55/85] Linking CXX shared library bin/libKPim6IdentityManagementQuick.so.6.4.1
-[56/85] Creating library symlink bin/libKPim6IdentityManagementQuick.so.6 bin/libKPim6IdentityManagementQuick.so
-[57/85] Linking CXX executable bin/signaturetest
+[54/85] Automatic MOC for target identitytreeviewtest
+[55/85] Building CXX object src/widgets/autotests/CMakeFiles/identitytreeviewtest.dir/identitytreeviewtest_autogen/mocs_compilation.cpp.o
+[56/85] Linking CXX shared library bin/libKPim6IdentityManagementQuick.so.6.4.1
+[57/85] Creating library symlink bin/libKPim6IdentityManagementQuick.so.6 bin/libKPim6IdentityManagementQuick.so
 [58/85] Automatic MOC for target kidentitymanagement_quick_plugin
 [59/85] Running AUTOMOC file extraction for target kidentitymanagement_quick_plugin
 [60/85] Running rcc for resource qmake_org_kde_kidentitymanagement
-[61/85] Running moc --collect-json for target kidentitymanagement_quick_plugin
-[62/85] Running rcc for resource kidentitymanagement_quick_plugin_raw_qml_0
-[63/85] Generating .rcc/qmlcache/kidentitymanagement_quick_plugin_qmlcache_loader.cpp
+[61/85] Running rcc for resource kidentitymanagement_quick_plugin_raw_qml_0
+[62/85] Generating .rcc/qmlcache/kidentitymanagement_quick_plugin_qmlcache_loader.cpp
+[63/85] Running moc --collect-json for target kidentitymanagement_quick_plugin
 [64/85] Automatic QML type registration for target kidentitymanagement_quick_plugin
 [65/85] Generating .rcc/qmlcache/kidentitymanagement_quick_plugin_qml/IdentityConfigurationForm_qml.cpp
 [66/85] Generating .rcc/qmlcache/kidentitymanagement_quick_plugin_qml/BasicIdentityEditorCard_qml.cpp
@@ -447,16 +447,16 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kidentitymanageme
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kidentitymanagement/work/kidentitymanagement-25.04.1/src/widgets/tests/identitycombo_gui.cpp:34:154: warning: unused parameter ‘id’ [-Wunused-parameter]
    34 |     connect(combobox, &KIdentityManagementWidgets::IdentityCombo::identityChanged, this, [combobox, labelIdentity](KIdentityManagementCore::Identity::Id id) {
       |                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
-[74/85] Linking CXX executable bin/identitytreeview_gui
-[75/85] Linking CXX executable bin/identitycombo_gui
-[76/85] Building CXX object src/widgets/autotests/CMakeFiles/identitytreeviewtest.dir/identitytreeviewtest.cpp.o
-[77/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/kidentitymanagement_quick_plugin_qmltyperegistrations.cpp.o
-[78/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qml/BasicIdentityEditorCard_qml.cpp.o
-[79/85] Linking CXX executable bin/identitytreeviewtest
-[80/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qml/IdentityConfigurationForm_qml.cpp.o
-[81/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qmlcache_loader.cpp.o
-[82/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qml/CryptographyEditorCard_qml.cpp.o
-[83/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qml/IdentityEditorPage_qml.cpp.o
+[74/85] Linking CXX executable bin/identitycombo_gui
+[75/85] Linking CXX executable bin/identitytreeview_gui
+[76/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qml/IdentityEditorPage_qml.cpp.o
+[77/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qml/IdentityConfigurationForm_qml.cpp.o
+[78/85] Building CXX object src/widgets/autotests/CMakeFiles/identitytreeviewtest.dir/identitytreeviewtest.cpp.o
+[79/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qmlcache_loader.cpp.o
+[80/85] Linking CXX executable bin/identitytreeviewtest
+[81/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/kidentitymanagement_quick_plugin_qmltyperegistrations.cpp.o
+[82/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qml/BasicIdentityEditorCard_qml.cpp.o
+[83/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/.rcc/qmlcache/kidentitymanagement_quick_plugin_qml/CryptographyEditorCard_qml.cpp.o
 [84/85] Building CXX object src/quick/CMakeFiles/kidentitymanagement_quick_plugin.dir/kidentitymanagementquickplugin.cpp.o
 [85/85] Linking CXX shared module bin/org/kde/kidentitymanagement/libkidentitymanagement_quick_plugin.so
 -- Install configuration: "RelWithDebInfo"
@@ -1093,7 +1093,7 @@ makepkg-kidentitymanagement.log
 +========================================================================================================================================+
 
 Pre-installing package kidentitymanagement-25.04.1-x86_64-1_rtz...
-Removing package: kidentitymanagement-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,17:15:38
+Removing package: kidentitymanagement-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,21:34:53
 Installing package kidentitymanagement-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kidentitymanagement (KDE PIM libraries)

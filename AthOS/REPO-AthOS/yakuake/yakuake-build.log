@@ -3,28 +3,28 @@ Detected architecture: x86_64
 No required dependencies specified.
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 17:10:14--  https://download.kde.org/stable/release-service/25.04.1/src/yakuake-25.04.1.tar.xz
+--2025-05-28 21:29:19--  https://download.kde.org/stable/release-service/25.04.1/src/yakuake-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/yakuake-25.04.1.tar.xz [following]
---2025-05-21 17:10:14--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/yakuake-25.04.1.tar.xz
+--2025-05-28 21:29:19--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/yakuake-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 404028 (395K) [application/octet-stream]
 Saving to: ‘yakuake-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 12% 1.33M 0s
-    50K .......... .......... .......... .......... .......... 25% 1.44M 0s
-   100K .......... .......... .......... .......... .......... 38% 6.77M 0s
-   150K .......... .......... .......... .......... .......... 50% 1.95M 0s
-   200K .......... .......... .......... .......... .......... 63% 6.79M 0s
-   250K .......... .......... .......... .......... .......... 76% 5.43M 0s
-   300K .......... .......... .......... .......... .......... 88% 5.41M 0s
-   350K .......... .......... .......... .......... ....      100%  601K=0.2s
+     0K .......... .......... .......... .......... .......... 12% 1.35M 0s
+    50K .......... .......... .......... .......... .......... 25% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 38% 6.94M 0s
+   150K .......... .......... .......... .......... .......... 50% 4.93M 0s
+   200K .......... .......... .......... .......... .......... 63% 2.14M 0s
+   250K .......... .......... .......... .......... .......... 76% 6.89M 0s
+   300K .......... .......... .......... .......... .......... 88% 4.91M 0s
+   350K .......... .......... .......... .......... ....      100%  606K=0.2s
 
-2025-05-21 17:10:15 (1.91 MB/s) - ‘yakuake-25.04.1.tar.xz’ saved [404028/404028]
+2025-05-28 21:29:20 (1.92 MB/s) - ‘yakuake-25.04.1.tar.xz’ saved [404028/404028]
 
 Found file: yakuake-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -377,8 +377,8 @@ yakuake-25.04.1/.gitignore
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/yakuake/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -401,7 +401,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6Archive: /usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake (found version "6.14.0")
 -- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
@@ -479,23 +479,23 @@ hm...lets continue and see what happens
 [2/25] Generating mo...
 [3/25] Automatic MOC for target yakuake
 [4/25] Generating settings.h, settings.cpp
-[5/25] Generating ui_appearancesettings.h
+[5/25] Generating ui_windowsettings.h
 [6/25] Generating ui_firstrundialog.h
 [7/25] Generating ui_behaviorsettings.h
-[8/25] Generating ui_windowsettings.h
+[8/25] Generating ui_appearancesettings.h
 [9/25] Building CXX object app/CMakeFiles/yakuake.dir/yakuake_autogen/mocs_compilation.cpp.o
 [10/25] Building CXX object app/CMakeFiles/yakuake.dir/main.cpp.o
 [11/25] Building CXX object app/CMakeFiles/yakuake.dir/config/windowsettings.cpp.o
-[12/25] Building CXX object app/CMakeFiles/yakuake.dir/config/skinlistdelegate.cpp.o
+[12/25] Building CXX object app/CMakeFiles/yakuake.dir/visualeventoverlay.cpp.o
 [13/25] Building CXX object app/CMakeFiles/yakuake.dir/skin.cpp.o
-[14/25] Building CXX object app/CMakeFiles/yakuake.dir/session.cpp.o
-[15/25] Building CXX object app/CMakeFiles/yakuake.dir/settings.cpp.o
-[16/25] Building CXX object app/CMakeFiles/yakuake.dir/titlebar.cpp.o
-[17/25] Building CXX object app/CMakeFiles/yakuake.dir/splitter.cpp.o
-[18/25] Building CXX object app/CMakeFiles/yakuake.dir/terminal.cpp.o
+[14/25] Building CXX object app/CMakeFiles/yakuake.dir/splitter.cpp.o
+[15/25] Building CXX object app/CMakeFiles/yakuake.dir/config/skinlistdelegate.cpp.o
+[16/25] Building CXX object app/CMakeFiles/yakuake.dir/settings.cpp.o
+[17/25] Building CXX object app/CMakeFiles/yakuake.dir/tabbar.cpp.o
+[18/25] Building CXX object app/CMakeFiles/yakuake.dir/session.cpp.o
 [19/25] Building CXX object app/CMakeFiles/yakuake.dir/firstrundialog.cpp.o
-[20/25] Building CXX object app/CMakeFiles/yakuake.dir/visualeventoverlay.cpp.o
-[21/25] Building CXX object app/CMakeFiles/yakuake.dir/tabbar.cpp.o
+[20/25] Building CXX object app/CMakeFiles/yakuake.dir/titlebar.cpp.o
+[21/25] Building CXX object app/CMakeFiles/yakuake.dir/terminal.cpp.o
 [22/25] Building CXX object app/CMakeFiles/yakuake.dir/sessionstack.cpp.o
 [23/25] Building CXX object app/CMakeFiles/yakuake.dir/config/appearancesettings.cpp.o
 [24/25] Building CXX object app/CMakeFiles/yakuake.dir/mainwindow.cpp.o
@@ -1293,7 +1293,7 @@ yakuake-25.04.1-x86_64-1_rtz.tlz.txt
 +====================================================================================================+
 
 Pre-installing package yakuake-25.04.1-x86_64-1_rtz...
-Removing package: yakuake-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,17:10:28
+Removing package: yakuake-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,21:29:34
 Installing package yakuake-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # yakuake (drop-down terminal emulator)

@@ -15,24 +15,24 @@ libkgapi is already installed!
 qtkeychain is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 17:16:50--  https://download.kde.org/stable/release-service/25.04.1/src/kmailtransport-25.04.1.tar.xz
+--2025-05-28 21:36:07--  https://download.kde.org/stable/release-service/25.04.1/src/kmailtransport-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kmailtransport-25.04.1.tar.xz [following]
---2025-05-21 17:16:50--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kmailtransport-25.04.1.tar.xz
+--2025-05-28 21:36:08--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kmailtransport-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 191632 (187K) [application/octet-stream]
 Saving to: ‘kmailtransport-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 26% 1.38M 0s
-    50K .......... .......... .......... .......... .......... 53% 1.44M 0s
-   100K .......... .......... .......... .......... .......... 80% 6.82M 0s
-   150K .......... .......... .......... .......              100% 7.71M=0.08s
+     0K .......... .......... .......... .......... .......... 26% 1.37M 0s
+    50K .......... .......... .......... .......... .......... 53% 1.49M 0s
+   100K .......... .......... .......... .......... .......... 80% 6.36M 0s
+   150K .......... .......... .......... .......              100% 7.67M=0.08s
 
-2025-05-21 17:16:50 (2.25 MB/s) - ‘kmailtransport-25.04.1.tar.xz’ saved [191632/191632]
+2025-05-28 21:36:08 (2.26 MB/s) - ‘kmailtransport-25.04.1.tar.xz’ saved [191632/191632]
 
 Found file: kmailtransport-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -283,8 +283,8 @@ kmailtransport-25.04.1/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -316,7 +316,7 @@ Call Stack (most recent call first):
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found Gettext: /usr/bin/msgmerge (found version "0.25")
 -- Found X11: /usr/include
@@ -374,8 +374,8 @@ Call Stack (most recent call first):
  * ReuseTool
    Required to run tests of module ECMCheckOutboundLicense
 
--- Configuring done (1.8s)
--- Generating done (0.0s)
+-- Configuring done (1.7s)
+-- Generating done (0.1s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/build
 [1/85] Generating transportbase.h, transportbase.cpp
 [2/85] Generating ts...
@@ -384,27 +384,28 @@ Call Stack (most recent call first):
 [5/85] Generating ui_transportmanagementwidgetng.h
 [6/85] Generating ui_addtransportdialog.h
 [7/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/plugins/transportabstractplugin.cpp.o
-[8/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/mailtransport_debug.cpp.o
-[9/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportsortproxymodel.cpp.o
+[8/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/precommandjob.cpp.o
+[9/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportactivitiesabstractplugin.cpp.o
 [10/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportactivitiesabstract.cpp.o
-[11/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportactivitiesabstractplugin.cpp.o
-[12/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportjob.cpp.o
-[13/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transporttype.cpp.o
+[11/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/mailtransport_debug.cpp.o
+[12/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/socket.cpp.o
+[13/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportsortproxymodel.cpp.o
 [14/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transporttreeview.cpp.o
-[15/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/socket.cpp.o
-[16/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportconfigwidget.cpp.o
-[17/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/precommandjob.cpp.o
-[18/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transporttreedelegate.cpp.o
-[19/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/KPim6MailTransport_autogen/mocs_compilation.cpp.o
-[20/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportcombobox.cpp.o
-[21/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/addtransportdialogng.cpp.o
-[22/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportmodel.cpp.o
-[23/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportmanagementwidgetng.cpp.o
-[24/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/plugins/transportpluginmanager.cpp.o
-[25/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transport.cpp.o
-[26/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/outlookoauthtokenrequester.cpp.o
+[15/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transporttype.cpp.o
+[16/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportjob.cpp.o
+[17/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transporttreedelegate.cpp.o
+[18/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportcombobox.cpp.o
+[19/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportmodel.cpp.o
+[20/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/outlookoauthtokenrequester.cpp.o
+[21/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/KPim6MailTransport_autogen/mocs_compilation.cpp.o
+[22/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportconfigwidget.cpp.o
+[23/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/plugins/transportpluginmanager.cpp.o
+[24/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transport.cpp.o
+[25/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/transportmanagementwidgetng.cpp.o
+[26/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/widgets/addtransportdialogng.cpp.o
 [27/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportbase.cpp.o
-[28/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportmanager.cpp.o
+[28/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/servertest.cpp.o
+[29/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/transportmanager.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.cpp:68:24: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
    68 |     QList<TransportJob *> walletQueue;
       |                        ^
@@ -459,44 +460,45 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/wo
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
    30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
       |                                       ^~~~~~~~~~~~
-[29/85] Building CXX object src/CMakeFiles/KPim6MailTransport.dir/servertest.cpp.o
 [30/85] Linking CXX shared library bin/libKPim6MailTransport.so.6.4.1
 [31/85] Creating library symlink bin/libKPim6MailTransport.so.6 bin/libKPim6MailTransport.so
 [32/85] Automatic MOC for target transportmanagementwidgetng_gui
-[33/85] Automatic MOC for target transportcombobox_gui
-[34/85] Automatic MOC for target transporttreeview_gui
-[35/85] Automatic MOC for target servertest
+[33/85] Automatic MOC for target servertest
+[34/85] Automatic MOC for target transportcombobox_gui
+[35/85] Automatic MOC for target transporttreeview_gui
 [36/85] Building CXX object src/tests/CMakeFiles/transportmanagementwidgetng_gui.dir/transportmanagementwidgetng_gui_autogen/mocs_compilation.cpp.o
-[37/85] Building CXX object src/tests/CMakeFiles/transportcombobox_gui.dir/transportcombobox_gui_autogen/mocs_compilation.cpp.o
-[38/85] Building CXX object src/tests/CMakeFiles/transporttreeview_gui.dir/transporttreeview_gui_autogen/mocs_compilation.cpp.o
-[39/85] Building CXX object src/tests/CMakeFiles/servertest.dir/servertest_autogen/mocs_compilation.cpp.o
+[37/85] Building CXX object src/tests/CMakeFiles/transporttreeview_gui.dir/transporttreeview_gui_autogen/mocs_compilation.cpp.o
+[38/85] Building CXX object src/tests/CMakeFiles/servertest.dir/servertest_autogen/mocs_compilation.cpp.o
+[39/85] Building CXX object src/tests/CMakeFiles/transportcombobox_gui.dir/transportcombobox_gui_autogen/mocs_compilation.cpp.o
 [40/85] Automatic MOC for target transporttreeviewtest
 [41/85] Building CXX object src/autotests/CMakeFiles/transporttreeviewtest.dir/transporttreeviewtest_autogen/mocs_compilation.cpp.o
 [42/85] Automatic MOC for target transportmanagertest
 [43/85] Building CXX object src/plugins/tests/CMakeFiles/transportmanagertest.dir/transportmanagertest_autogen/mocs_compilation.cpp.o
-[44/85] Automatic MOC for target addtransportdialogng_gui
-[45/85] Automatic MOC for target transportmgr
-[46/85] Automatic MOC for target mailtransport_smtpplugin
+[44/85] Automatic MOC for target mailtransport_smtpplugin
+[45/85] Automatic MOC for target addtransportdialogng_gui
+[46/85] Generating ui_smtpsettings.h
 [47/85] Building CXX object src/tests/CMakeFiles/addtransportdialogng_gui.dir/addtransportdialogng_gui_autogen/mocs_compilation.cpp.o
-[48/85] Generating ui_smtpsettings.h
-[49/85] Building CXX object src/tests/CMakeFiles/transportmgr.dir/transportmgr_autogen/mocs_compilation.cpp.o
+[48/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/mailtransport_smtpplugin_autogen/mocs_compilation.cpp.o
+[49/85] Automatic MOC for target transportmgr
 [50/85] Automatic MOC for target smtpjobtest
-[51/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/smtpjobtest_autogen/mocs_compilation.cpp.o
-[52/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/mailtransport_smtpplugin_autogen/mocs_compilation.cpp.o
-[53/85] Building CXX object src/plugins/tests/CMakeFiles/transportmanagertest.dir/transportmanagertest.cpp.o
-[54/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/mailtransportplugin_smtp_debug.cpp.o
-[55/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/xoauthpasswordrequester.cpp.o
-[56/85] Building CXX object src/tests/CMakeFiles/transportmanagementwidgetng_gui.dir/transportmanagementwidgetng_gui.cpp.o
-[57/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/mailtransportplugin_smtp_debug.cpp.o
-[58/85] Building CXX object src/tests/CMakeFiles/transportcombobox_gui.dir/transportcombobox_gui.cpp.o
+[51/85] Building CXX object src/tests/CMakeFiles/transportmgr.dir/transportmgr_autogen/mocs_compilation.cpp.o
+[52/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/smtpjobtest_autogen/mocs_compilation.cpp.o
+[53/85] Building CXX object src/tests/CMakeFiles/transportmanagementwidgetng_gui.dir/transportmanagementwidgetng_gui.cpp.o
+[54/85] Building CXX object src/plugins/tests/CMakeFiles/transportmanagertest.dir/transportmanagertest.cpp.o
+[55/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/mailtransportplugin_smtp_debug.cpp.o
+[56/85] Building CXX object src/tests/CMakeFiles/addtransportdialogng_gui.dir/addtransportdialogng_gui.cpp.o
+[57/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/mailtransportplugin_smtp_debug.cpp.o
+[58/85] Linking CXX executable bin/addtransportdialogng_gui
 [59/85] Linking CXX executable bin/transportmanagertest
-[60/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/gmailpasswordrequester.cpp.o
-[61/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/gmailpasswordrequester.cpp.o
-[62/85] Linking CXX executable bin/transportcombobox_gui
-[63/85] Linking CXX executable bin/transportmanagementwidgetng_gui
-[64/85] Building CXX object src/tests/CMakeFiles/servertest.dir/servertest.cpp.o
-[65/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpconfigdialog.cpp.o
-[66/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpmailtransportplugin.cpp.o
+[60/85] Linking CXX executable bin/transportmanagementwidgetng_gui
+[61/85] Building CXX object src/tests/CMakeFiles/transporttreeview_gui.dir/transporttreeview_gui.cpp.o
+[62/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpconfigdialog.cpp.o
+[63/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/gmailpasswordrequester.cpp.o
+[64/85] Building CXX object src/tests/CMakeFiles/transportcombobox_gui.dir/transportcombobox_gui.cpp.o
+[65/85] Linking CXX executable bin/transporttreeview_gui
+[66/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/xoauthpasswordrequester.cpp.o
+[67/85] Building CXX object src/tests/CMakeFiles/servertest.dir/servertest.cpp.o
+[68/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpmailtransportplugin.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpmailtransportplugin.cpp:44:128: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
    44 | MailTransport::TransportJob *SMTPMailTransportPlugin::createTransportJob(MailTransport::Transport *t, const QString &identifier)
       |                                                                                                                                ^
@@ -505,33 +507,13 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/wo
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
    30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
       |                                       ^~~~~~~~~~~~
-[67/85] Building CXX object src/tests/CMakeFiles/addtransportdialogng_gui.dir/addtransportdialogng_gui.cpp.o
-[68/85] Building CXX object src/tests/CMakeFiles/transporttreeview_gui.dir/transporttreeview_gui.cpp.o
-[69/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/xoauthpasswordrequester.cpp.o
-[70/85] Linking CXX executable bin/servertest
-[71/85] Linking CXX executable bin/addtransportdialogng_gui
-[72/85] Linking CXX executable bin/transporttreeview_gui
-[73/85] Building CXX object src/autotests/CMakeFiles/transporttreeviewtest.dir/transporttreeviewtest.cpp.o
-[74/85] Linking CXX executable bin/transporttreeviewtest
-[75/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/outlookpasswordrequester.cpp.o
-[76/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/outlookpasswordrequester.cpp.o
-[77/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpjob.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp: In member function ‘virtual void MailTransport::SmtpJob::slotResult(KJob*)’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:379:23: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
-  379 |         TransportJob::slotResult(job);
-      |                       ^~~~~~~~~~
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.h:12,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:10:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
-   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
-      |                                       ^~~~~~~~~~~~
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:383:19: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
-  383 |     TransportJob::slotResult(job);
-      |                   ^~~~~~~~~~
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
-   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
-      |                                       ^~~~~~~~~~~~
-[78/85] Building CXX object src/tests/CMakeFiles/transportmgr.dir/transportmgr.cpp.o
+[69/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/gmailpasswordrequester.cpp.o
+[70/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/xoauthpasswordrequester.cpp.o
+[71/85] Linking CXX executable bin/transportcombobox_gui
+[72/85] Linking CXX executable bin/servertest
+[73/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/outlookpasswordrequester.cpp.o
+[74/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/outlookpasswordrequester.cpp.o
+[75/85] Building CXX object src/tests/CMakeFiles/transportmgr.dir/transportmgr.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp: In member function ‘void TransportMgr::sendBtnClicked()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/tests/transportmgr.cpp:85:19: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
    85 |     TransportJob *job = TransportManager::self()->createTransportJob(mComboBox->currentTransportId());
@@ -559,8 +541,8 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/wo
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportmanager.h:137:35: note: declared here
   137 |     MAILTRANSPORT_DEPRECATED void schedule(TransportJob *job);
       |                                   ^~~~~~~~
-[79/85] Linking CXX executable bin/transportmgr
-[80/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/smtpjob.cpp.o
+[76/85] Building CXX object src/autotests/CMakeFiles/transporttreeviewtest.dir/transporttreeviewtest.cpp.o
+[77/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpjob.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp: In member function ‘virtual void MailTransport::SmtpJob::slotResult(KJob*)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:379:23: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
   379 |         TransportJob::slotResult(job);
@@ -576,8 +558,26 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/wo
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
    30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
       |                                       ^~~~~~~~~~~~
-[81/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/smtpjobtest.cpp.o
-[82/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpconfigwidget.cpp.o
+[78/85] Building CXX object src/plugins/smtp/CMakeFiles/mailtransport_smtpplugin.dir/smtpconfigwidget.cpp.o
+[79/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/__/smtpjob.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp: In member function ‘virtual void MailTransport::SmtpJob::slotResult(KJob*)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:379:23: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  379 |         TransportJob::slotResult(job);
+      |                       ^~~~~~~~~~
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.h:12,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:10:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/plugins/smtp/smtpjob.cpp:383:19: warning: ‘TransportJob’ is deprecated [-Wdeprecated-declarations]
+  383 |     TransportJob::slotResult(job);
+      |                   ^~~~~~~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kmailtransport/work/kmailtransport-25.04.1/src/transportjob.h:30:39: note: declared here
+   30 | class MAILTRANSPORT_DEPRECATED_EXPORT TransportJob : public KCompositeJob
+      |                                       ^~~~~~~~~~~~
+[80/85] Linking CXX executable bin/transportmgr
+[81/85] Linking CXX executable bin/transporttreeviewtest
+[82/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/smtpjobtest.cpp.o
 [83/85] Linking CXX shared module bin/pim6/mailtransport/mailtransport_smtpplugin.so
 [84/85] Building CXX object src/plugins/smtp/autotests/CMakeFiles/smtpjobtest.dir/fakeserver.cpp.o
 [85/85] Linking CXX executable bin/smtpjobtest
@@ -1147,7 +1147,7 @@ makepkg-kmailtransport.log
 +=========================================================================================================================+
 
 Pre-installing package kmailtransport-25.04.1-x86_64-1_rtz...
-Removing package: kmailtransport-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,17:17:10
+Removing package: kmailtransport-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,21:36:28
 Installing package kmailtransport-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kmailtransport (Manage mail transport)

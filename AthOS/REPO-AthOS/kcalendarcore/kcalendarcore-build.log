@@ -5,27 +5,27 @@ doxygen is already installed!
 extra-cmake-modules is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 13:12:45--  https://download.kde.org/stable/frameworks/6.14/kcalendarcore-6.14.0.tar.xz
+--2025-05-28 17:38:52--  https://download.kde.org/stable/frameworks/6.14/kcalendarcore-6.14.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kcalendarcore-6.14.0.tar.xz [following]
---2025-05-21 13:12:45--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kcalendarcore-6.14.0.tar.xz
+--2025-05-28 17:38:52--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kcalendarcore-6.14.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 311748 (304K) [application/octet-stream]
 Saving to: ‘kcalendarcore-6.14.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 16% 1.22M 0s
-    50K .......... .......... .......... .......... .......... 32% 1.27M 0s
-   100K .......... .......... .......... .......... .......... 49% 7.21M 0s
-   150K .......... .......... .......... .......... .......... 65% 1.71M 0s
-   200K .......... .......... .......... .......... .......... 82% 4.91M 0s
-   250K .......... .......... .......... .......... .......... 98% 6.67M 0s
-   300K ....                                                  100% 78.8M=0.1s
+     0K .......... .......... .......... .......... .......... 16% 1.37M 0s
+    50K .......... .......... .......... .......... .......... 32% 1.45M 0s
+   100K .......... .......... .......... .......... .......... 49% 6.65M 0s
+   150K .......... .......... .......... .......... .......... 65% 5.21M 0s
+   200K .......... .......... .......... .......... .......... 82% 2.24M 0s
+   250K .......... .......... .......... .......... .......... 98% 5.21M 0s
+   300K ....                                                  100% 83.2M=0.1s
 
-2025-05-21 13:12:45 (2.27 MB/s) - ‘kcalendarcore-6.14.0.tar.xz’ saved [311748/311748]
+2025-05-28 17:38:52 (2.54 MB/s) - ‘kcalendarcore-6.14.0.tar.xz’ saved [311748/311748]
 
 Found file: kcalendarcore-6.14.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -948,8 +948,8 @@ kcalendarcore-6.14.0/src/xcalformat.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kcalendarcore/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -976,7 +976,7 @@ hm...lets continue and see what happens
 -- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found LibIcal: /usr/lib64/libical.so;/usr/lib64/libicalss.so;/usr/lib64/libicalvcal.so (found suitable version "3.0.20", minimum required is "3.0")
 -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
@@ -985,7 +985,7 @@ hm...lets continue and see what happens
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
 -- No such target Qt6Gui_QCH defined when calling ecm_add_qch(), ignored.
 
@@ -1018,7 +1018,7 @@ Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kcalendarcore/work/
  * Qt6 (required version >= 6.7.0)
  * Qt6Test (required version >= 6.7.0)
 
--- Configuring done (1.3s)
+-- Configuring done (1.4s)
 -- Generating done (0.1s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kcalendarcore/work/kcalendarcore-6.14.0/build
 [1/233] Generating src/KF6CalendarCore.qch, src/KF6CalendarCore.tags
@@ -1034,176 +1034,167 @@ Documentation successfully generated.
 [4/233] Running moc --collect-json for target KF6CalendarCore
 [5/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/KF6CalendarCore_autogen/mocs_compilation.cpp.o
 [6/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/conference.cpp.o
-[7/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/attachment.cpp.o
-[8/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/duration.cpp.o
-[9/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendarplugin.cpp.o
-[10/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/exceptions.cpp.o
-[11/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/attendee.cpp.o
-[12/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/event.cpp.o
-[13/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/compat.cpp.o
-[14/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calfilter.cpp.o
-[15/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/alarm.cpp.o
-[16/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusycache.cpp.o
-[17/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calformat.cpp.o
-[18/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calstorage.cpp.o
-[19/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusyperiod.cpp.o
-[20/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/customproperties.cpp.o
+[7/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/attendee.cpp.o
+[8/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/attachment.cpp.o
+[9/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusyperiod.cpp.o
+[10/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusycache.cpp.o
+[11/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calformat.cpp.o
+[12/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendarplugin.cpp.o
+[13/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/filestorage.cpp.o
+[14/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/duration.cpp.o
+[15/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/exceptions.cpp.o
+[16/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/compat.cpp.o
+[17/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/event.cpp.o
+[18/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/customproperties.cpp.o
+[19/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calstorage.cpp.o
+[20/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendarpluginloader.cpp.o
 [21/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendarlistmodel.cpp.o
-[22/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusy.cpp.o
-[23/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/filestorage.cpp.o
-[24/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendarpluginloader.cpp.o
+[22/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calfilter.cpp.o
+[23/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/alarm.cpp.o
+[24/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/freebusy.cpp.o
 [25/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/icalformat.cpp.o
-[26/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/person.cpp.o
-[27/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/journal.cpp.o
-[28/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/period.cpp.o
-[29/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/schedulemessage.cpp.o
-[30/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendar.cpp.o
+[26/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/period.cpp.o
+[27/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/person.cpp.o
+[28/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/calendar.cpp.o
+[29/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/journal.cpp.o
+[30/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/schedulemessage.cpp.o
 [31/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/utils.cpp.o
 [32/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/sorting.cpp.o
-[33/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/kcalendarcore_debug.cpp.o
-[34/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/occurrenceiterator.cpp.o
-[35/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/todo.cpp.o
-[36/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/visitor.cpp.o
+[33/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/occurrenceiterator.cpp.o
+[34/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/kcalendarcore_debug.cpp.o
+[35/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/visitor.cpp.o
+[36/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/todo.cpp.o
 [37/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/incidencebase.cpp.o
-[38/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/memorycalendar.cpp.o
-[39/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/xcalformat.cpp.o
+[38/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/icaltimezones.cpp.o
+[39/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/recurrencerule.cpp.o
 [40/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/icalformat_p.cpp.o
-[41/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/icaltimezones.cpp.o
-[42/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/vcalformat.cpp.o
-[43/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/incidence.cpp.o
-[44/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/recurrencerule.cpp.o
+[41/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/memorycalendar.cpp.o
+[42/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/incidence.cpp.o
+[43/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/xcalformat.cpp.o
+[44/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/vcalformat.cpp.o
 [45/233] Building CXX object src/CMakeFiles/KF6CalendarCore.dir/recurrence.cpp.o
 [46/233] Linking CXX shared library bin/libKF6CalendarCore.so.6.14.0
 [47/233] Creating library symlink bin/libKF6CalendarCore.so.6 bin/libKF6CalendarCore.so
 [48/233] Automatic MOC for target testattendee
-[49/233] Automatic MOC for target testconference
-[50/233] Automatic MOC for target testevent
-[51/233] Automatic MOC for target testmemorycalendar
-[52/233] Automatic MOC for target testincidencerelation
-[53/233] Automatic MOC for target testalarm
-[54/233] Automatic MOC for target testcustomproperties
-[55/233] Automatic MOC for target testjournal
-[56/233] Automatic MOC for target testicalformat
-[57/233] Automatic MOC for target testexception
+[49/233] Automatic MOC for target testattachment
+[50/233] Automatic MOC for target testconference
+[51/233] Automatic MOC for target testincidence
+[52/233] Automatic MOC for target testicalformat
+[53/233] Automatic MOC for target testfreebusyperiod
+[54/233] Automatic MOC for target testjournal
+[55/233] Automatic MOC for target testcalfilter
+[56/233] Automatic MOC for target testfreebusy
+[57/233] Automatic MOC for target testperson
 [58/233] Automatic MOC for target testdateserialization
-[59/233] Automatic MOC for target testcalfilter
-[60/233] Automatic MOC for target testattachment
-[61/233] Automatic MOC for target testincidence
-[62/233] Automatic MOC for target testfilestorage
-[63/233] Automatic MOC for target loadcalendar
-[64/233] Automatic MOC for target fbrecurring
-[65/233] Automatic MOC for target testfreebusyperiod
+[59/233] Automatic MOC for target testduration
+[60/233] Automatic MOC for target testevent
+[61/233] Automatic MOC for target testfilestorage
+[62/233] Automatic MOC for target testincidencerelation
+[63/233] Automatic MOC for target testcustomproperties
+[64/233] Automatic MOC for target loadcalendar
+[65/233] Automatic MOC for target testmemorycalendar
 [66/233] Automatic MOC for target testperiod
-[67/233] Automatic MOC for target readandwrite
-[68/233] Automatic MOC for target testperson
-[69/233] Automatic MOC for target testrecurrence
-[70/233] Automatic MOC for target testrecurrencetype
-[71/233] Automatic MOC for target testrecurprevious
-[72/233] Automatic MOC for target testrecurson
-[73/233] Automatic MOC for target testduration
-[74/233] Building CXX object autotests/CMakeFiles/testalarm.dir/testalarm_autogen/mocs_compilation.cpp.o
-[75/233] Building CXX object autotests/CMakeFiles/testattachment.dir/testattachment_autogen/mocs_compilation.cpp.o
+[67/233] Automatic MOC for target testexception
+[68/233] Automatic MOC for target testrecurprevious
+[69/233] Automatic MOC for target readandwrite
+[70/233] Automatic MOC for target fbrecurring
+[71/233] Automatic MOC for target testrecurrence
+[72/233] Automatic MOC for target testrecurrencetype
+[73/233] Automatic MOC for target testrecurson
+[74/233] Building CXX object autotests/CMakeFiles/testattachment.dir/testattachment_autogen/mocs_compilation.cpp.o
+[75/233] Automatic MOC for target testalarm
 [76/233] Automatic MOC for target testvcalexport
-[77/233] Automatic MOC for target testfreebusy
-[78/233] Building CXX object autotests/CMakeFiles/testattendee.dir/testattendee_autogen/mocs_compilation.cpp.o
-[79/233] Building CXX object autotests/CMakeFiles/testcalfilter.dir/testcalfilter_autogen/mocs_compilation.cpp.o
-[80/233] Building CXX object autotests/CMakeFiles/testconference.dir/testconference_autogen/mocs_compilation.cpp.o
-[81/233] Automatic MOC for target kcalendarcoreqml
-[82/233] Running AUTOMOC file extraction for target kcalendarcoreqml
+[77/233] Building CXX object autotests/CMakeFiles/testattendee.dir/testattendee_autogen/mocs_compilation.cpp.o
+[78/233] Building CXX object autotests/CMakeFiles/testalarm.dir/testalarm_autogen/mocs_compilation.cpp.o
+[79/233] Automatic MOC for target kcalendarcoreqml
+[80/233] Building CXX object autotests/CMakeFiles/testcalfilter.dir/testcalfilter_autogen/mocs_compilation.cpp.o
+[81/233] Running AUTOMOC file extraction for target kcalendarcoreqml
+[82/233] Running rcc for resource qmake_org_kde_calendarcore
 [83/233] Running moc --collect-json for target kcalendarcoreqml
-[84/233] Automatic MOC for target testoccurrenceiterator
-[85/233] Automatic MOC for target testidentical
-[86/233] Automatic MOC for target testrecurtodo
-[87/233] Running rcc for resource qmake_org_kde_calendarcore
-[88/233] Automatic MOC for target testtodo
-[89/233] Automatic MOC for target testtimesininterval
-[90/233] Automatic QML type registration for target kcalendarcoreqml
-[91/233] Automatic MOC for target testreadrecurrenceid
-[92/233] Building CXX object autotests/CMakeFiles/testcustomproperties.dir/testcustomproperties_autogen/mocs_compilation.cpp.o
-[93/233] Building CXX object autotests/CMakeFiles/testdateserialization.dir/testdateserialization_autogen/mocs_compilation.cpp.o
+[84/233] Building CXX object autotests/CMakeFiles/testconference.dir/testconference_autogen/mocs_compilation.cpp.o
+[85/233] Automatic QML type registration for target kcalendarcoreqml
+[86/233] Automatic MOC for target testidentical
+[87/233] Automatic MOC for target testrecurtodo
+[88/233] Building CXX object src/qml/CMakeFiles/kcalendarcoreqml.dir/.qt/rcc/qrc_qmake_org_kde_calendarcore.cpp.o
+[89/233] Automatic MOC for target testtodo
+[90/233] Automatic MOC for target testoccurrenceiterator
+[91/233] Building CXX object autotests/CMakeFiles/testcustomproperties.dir/testcustomproperties_autogen/mocs_compilation.cpp.o
+[92/233] Building CXX object autotests/CMakeFiles/testdateserialization.dir/testdateserialization_autogen/mocs_compilation.cpp.o
+[93/233] Automatic MOC for target testcreateddatecompat
 [94/233] Building CXX object autotests/CMakeFiles/testduration.dir/testduration_autogen/mocs_compilation.cpp.o
-[95/233] Automatic MOC for target testrecurrenceexception
-[96/233] Building CXX object src/qml/CMakeFiles/kcalendarcoreqml.dir/.qt/rcc/qrc_qmake_org_kde_calendarcore.cpp.o
-[97/233] Automatic MOC for target testcreateddatecompat
-[98/233] Building CXX object autotests/CMakeFiles/testevent.dir/testevent_autogen/mocs_compilation.cpp.o
+[95/233] Automatic MOC for target testtimesininterval
+[96/233] Building CXX object autotests/CMakeFiles/testevent.dir/testevent_autogen/mocs_compilation.cpp.o
+[97/233] Automatic MOC for target testrecurrenceexception
+[98/233] Automatic MOC for target testreadrecurrenceid
 [99/233] Building CXX object autotests/CMakeFiles/testincidence.dir/testincidence_autogen/mocs_compilation.cpp.o
 [100/233] Building CXX object autotests/CMakeFiles/testexception.dir/testexception_autogen/mocs_compilation.cpp.o
 [101/233] Automatic MOC for target testicaltimezones
 [102/233] Building CXX object autotests/CMakeFiles/testfilestorage.dir/testfilestorage_autogen/mocs_compilation.cpp.o
-[103/233] Automatic MOC for target teststartdatetimesfordate
-[104/233] Building CXX object autotests/CMakeFiles/testfreebusy.dir/testfreebusy_autogen/mocs_compilation.cpp.o
-[105/233] Automatic MOC for target calendarlistmodeltest
-[106/233] Automatic MOC for target testcalendarobserver
-[107/233] Automatic MOC for target incidencestest
-[108/233] Building CXX object autotests/CMakeFiles/testincidencerelation.dir/testincidencerelation_autogen/mocs_compilation.cpp.o
-[109/233] Automatic MOC for target testfb
-[110/233] Building CXX object autotests/CMakeFiles/testicalformat.dir/testicalformat_autogen/mocs_compilation.cpp.o
-[111/233] Building CXX object autotests/CMakeFiles/testidentical.dir/testidentical_autogen/mocs_compilation.cpp.o
-[112/233] Automatic MOC for target teststatus
+[103/233] Automatic MOC for target testfb
+[104/233] Automatic MOC for target teststartdatetimesfordate
+[105/233] Building CXX object autotests/CMakeFiles/testfreebusy.dir/testfreebusy_autogen/mocs_compilation.cpp.o
+[106/233] Automatic MOC for target teststatus
+[107/233] Building CXX object autotests/CMakeFiles/testincidencerelation.dir/testincidencerelation_autogen/mocs_compilation.cpp.o
+[108/233] Building CXX object autotests/CMakeFiles/testicalformat.dir/testicalformat_autogen/mocs_compilation.cpp.o
+[109/233] Automatic MOC for target incidencestest
+[110/233] Building CXX object autotests/CMakeFiles/testidentical.dir/testidentical_autogen/mocs_compilation.cpp.o
+[111/233] Automatic MOC for target calendarlistmodeltest
+[112/233] Automatic MOC for target testtostring
 [113/233] Building CXX object autotests/CMakeFiles/testjournal.dir/testjournal_autogen/mocs_compilation.cpp.o
 [114/233] Building CXX object autotests/CMakeFiles/testmemorycalendar.dir/testmemorycalendar_autogen/mocs_compilation.cpp.o
-[115/233] Automatic MOC for target testtostring
+[115/233] Automatic MOC for target testcalendarobserver
 [116/233] Building CXX object autotests/CMakeFiles/testperiod.dir/testperiod_autogen/mocs_compilation.cpp.o
-[117/233] Building CXX object autotests/CMakeFiles/testexception.dir/testexception.cpp.o
+[117/233] Building CXX object src/qml/CMakeFiles/kcalendarcoreqml.dir/kcalendarcoreqml_autogen/mocs_compilation.cpp.o
 [118/233] Building CXX object autotests/CMakeFiles/testfreebusyperiod.dir/testfreebusyperiod_autogen/mocs_compilation.cpp.o
-[119/233] Building CXX object autotests/CMakeFiles/testduration.dir/testduration.cpp.o
+[119/233] Building CXX object src/qml/CMakeFiles/kcalendarcoreqml.dir/kcalendarcoreqml_qmltyperegistrations.cpp.o
 [120/233] Building CXX object autotests/CMakeFiles/testperson.dir/testperson_autogen/mocs_compilation.cpp.o
-[121/233] Building CXX object autotests/CMakeFiles/testconference.dir/testconference.cpp.o
+[121/233] Building CXX object autotests/CMakeFiles/testduration.dir/testduration.cpp.o
 [122/233] Building CXX object autotests/CMakeFiles/testrecurtodo.dir/testrecurtodo_autogen/mocs_compilation.cpp.o
-[123/233] Building CXX object src/qml/CMakeFiles/kcalendarcoreqml.dir/kcalendarcoreqml_autogen/mocs_compilation.cpp.o
-[124/233] Building CXX object src/qml/CMakeFiles/kcalendarcoreqml.dir/kcalendarcoreqml_qmltyperegistrations.cpp.o
-[125/233] Building CXX object autotests/CMakeFiles/teststartdatetimesfordate.dir/teststartdatetimesfordate_autogen/mocs_compilation.cpp.o
-[126/233] Building CXX object autotests/CMakeFiles/teststatus.dir/teststatus_autogen/mocs_compilation.cpp.o
-[127/233] Building CXX object autotests/CMakeFiles/testdateserialization.dir/testdateserialization.cpp.o
-[128/233] Building CXX object autotests/CMakeFiles/testtodo.dir/testtodo_autogen/mocs_compilation.cpp.o
-[129/233] Building CXX object src/qml/CMakeFiles/kcalendarcoreqml.dir/kcalendarcoreqmlplugin.cpp.o
+[123/233] Building CXX object autotests/CMakeFiles/testperiod.dir/testperiod.cpp.o
+[124/233] Building CXX object autotests/CMakeFiles/teststartdatetimesfordate.dir/teststartdatetimesfordate_autogen/mocs_compilation.cpp.o
+[125/233] Building CXX object autotests/CMakeFiles/testexception.dir/testexception.cpp.o
+[126/233] Building CXX object autotests/CMakeFiles/testcalfilter.dir/testcalfilter.cpp.o
+[127/233] Building CXX object autotests/CMakeFiles/teststatus.dir/teststatus_autogen/mocs_compilation.cpp.o
+[128/233] Building CXX object src/qml/CMakeFiles/kcalendarcoreqml.dir/kcalendarcoreqmlplugin.cpp.o
+[129/233] Building CXX object autotests/CMakeFiles/testtodo.dir/testtodo_autogen/mocs_compilation.cpp.o
 [130/233] Building CXX object autotests/CMakeFiles/testtimesininterval.dir/testtimesininterval_autogen/mocs_compilation.cpp.o
-[131/233] Building CXX object autotests/CMakeFiles/testidentical.dir/testidentical.cpp.o
+[131/233] Building CXX object autotests/CMakeFiles/testdateserialization.dir/testdateserialization.cpp.o
 [132/233] Building CXX object autotests/CMakeFiles/testcreateddatecompat.dir/testcreateddatecompat_autogen/mocs_compilation.cpp.o
-[133/233] Building CXX object autotests/CMakeFiles/testjournal.dir/testjournal.cpp.o
-[134/233] Building CXX object autotests/CMakeFiles/testfreebusy.dir/testfreebusy.cpp.o
+[133/233] Building CXX object autotests/CMakeFiles/testidentical.dir/testidentical.cpp.o
+[134/233] Building CXX object autotests/CMakeFiles/testcustomproperties.dir/testcustomproperties.cpp.o
 [135/233] Building CXX object autotests/CMakeFiles/testrecurrenceexception.dir/testrecurrenceexception_autogen/mocs_compilation.cpp.o
 [136/233] Building CXX object autotests/CMakeFiles/testoccurrenceiterator.dir/testoccurrenceiterator_autogen/mocs_compilation.cpp.o
-[137/233] Building CXX object autotests/CMakeFiles/testcalfilter.dir/testcalfilter.cpp.o
+[137/233] Building CXX object autotests/CMakeFiles/testincidencerelation.dir/testincidencerelation.cpp.o
 [138/233] Building CXX object autotests/CMakeFiles/testreadrecurrenceid.dir/testreadrecurrenceid_autogen/mocs_compilation.cpp.o
-[139/233] Building CXX object autotests/CMakeFiles/testfilestorage.dir/testfilestorage.cpp.o
+[139/233] Building CXX object autotests/CMakeFiles/testattendee.dir/testattendee.cpp.o
 [140/233] Building CXX object autotests/CMakeFiles/incidencestest.dir/incidencestest_autogen/mocs_compilation.cpp.o
 [141/233] Building CXX object autotests/CMakeFiles/testattachment.dir/testattachment.cpp.o
-[142/233] Building CXX object autotests/CMakeFiles/loadcalendar.dir/loadcalendar_autogen/mocs_compilation.cpp.o
-[143/233] Building CXX object autotests/CMakeFiles/testcustomproperties.dir/testcustomproperties.cpp.o
+[142/233] Building CXX object autotests/CMakeFiles/testconference.dir/testconference.cpp.o
+[143/233] Building CXX object autotests/CMakeFiles/loadcalendar.dir/loadcalendar_autogen/mocs_compilation.cpp.o
 [144/233] Building CXX object autotests/CMakeFiles/fbrecurring.dir/fbrecurring_autogen/mocs_compilation.cpp.o
-[145/233] Building CXX object autotests/CMakeFiles/testincidencerelation.dir/testincidencerelation.cpp.o
+[145/233] Building CXX object autotests/CMakeFiles/testalarm.dir/testalarm.cpp.o
 [146/233] Building CXX object autotests/CMakeFiles/readandwrite.dir/readandwrite_autogen/mocs_compilation.cpp.o
-[147/233] Building CXX object autotests/CMakeFiles/testattendee.dir/testattendee.cpp.o
+[147/233] Building CXX object autotests/CMakeFiles/testfilestorage.dir/testfilestorage.cpp.o
 [148/233] Building CXX object autotests/CMakeFiles/testfb.dir/testfb_autogen/mocs_compilation.cpp.o
-[149/233] Building CXX object autotests/CMakeFiles/testperiod.dir/testperiod.cpp.o
+[149/233] Building CXX object autotests/CMakeFiles/testfreebusy.dir/testfreebusy.cpp.o
 [150/233] Building CXX object autotests/CMakeFiles/testrecurprevious.dir/testrecurprevious_autogen/mocs_compilation.cpp.o
-[151/233] Building CXX object autotests/CMakeFiles/testalarm.dir/testalarm.cpp.o
+[151/233] Building CXX object autotests/CMakeFiles/testjournal.dir/testjournal.cpp.o
 [152/233] Building CXX object autotests/CMakeFiles/testrecurrence.dir/testrecurrence_autogen/mocs_compilation.cpp.o
 [153/233] Building CXX object autotests/CMakeFiles/testevent.dir/testevent.cpp.o
 [154/233] Building CXX object autotests/CMakeFiles/testrecurrencetype.dir/testrecurrencetype_autogen/mocs_compilation.cpp.o
-[155/233] Building CXX object autotests/CMakeFiles/testincidence.dir/testincidence.cpp.o
+[155/233] Building CXX object autotests/CMakeFiles/testmemorycalendar.dir/testmemorycalendar.cpp.o
 [156/233] Building CXX object autotests/CMakeFiles/testrecurson.dir/testrecurson_autogen/mocs_compilation.cpp.o
-[157/233] Building CXX object autotests/CMakeFiles/testmemorycalendar.dir/testmemorycalendar.cpp.o
+[157/233] Building CXX object autotests/CMakeFiles/testincidence.dir/testincidence.cpp.o
 [158/233] Building CXX object autotests/CMakeFiles/testtostring.dir/testtostring_autogen/mocs_compilation.cpp.o
-[159/233] Building CXX object autotests/CMakeFiles/testfreebusyperiod.dir/testfreebusyperiod.cpp.o
+[159/233] Building CXX object autotests/CMakeFiles/testicalformat.dir/testicalformat.cpp.o
 [160/233] Building CXX object autotests/CMakeFiles/testvcalexport.dir/testvcalexport_autogen/mocs_compilation.cpp.o
-[161/233] Building CXX object autotests/CMakeFiles/testperson.dir/testperson.cpp.o
+[161/233] Building CXX object autotests/CMakeFiles/testfreebusyperiod.dir/testfreebusyperiod.cpp.o
 [162/233] Building CXX object autotests/CMakeFiles/testcalendarobserver.dir/testcalendarobserver_autogen/mocs_compilation.cpp.o
-[163/233] Building CXX object autotests/CMakeFiles/testrecurtodo.dir/testrecurtodo.cpp.o
+[163/233] Building CXX object autotests/CMakeFiles/testperson.dir/testperson.cpp.o
 [164/233] Building CXX object autotests/CMakeFiles/calendarlistmodeltest.dir/calendarlistmodeltest_autogen/mocs_compilation.cpp.o
-[165/233] Building CXX object autotests/CMakeFiles/testicalformat.dir/testicalformat.cpp.o
-[166/233] Building CXX object autotests/CMakeFiles/teststartdatetimesfordate.dir/teststartdatetimesfordate.cpp.o
-[167/233] Building CXX object autotests/CMakeFiles/testicaltimezones.dir/testicaltimezones_autogen/mocs_compilation.cpp.o
-[168/233] Building CXX object autotests/CMakeFiles/testcreateddatecompat.dir/testcreateddatecompat.cpp.o
-[169/233] Linking CXX executable bin/testalarm
-[170/233] Linking CXX shared module bin/org/kde/calendarcore/libkcalendarcoreqml.so
-[171/233] Building CXX object autotests/CMakeFiles/incidencestest.dir/incidencestest.cpp.o
-[172/233] Linking CXX executable bin/testattachment
-[173/233] Building CXX object autotests/CMakeFiles/testtimesininterval.dir/testtimesininterval.cpp.o
-[174/233] Building CXX object autotests/CMakeFiles/testrecurprevious.dir/testrecurprevious.cpp.o
-[175/233] Building CXX object autotests/CMakeFiles/testrecurrenceexception.dir/testrecurrenceexception.cpp.o
-[176/233] Building CXX object autotests/CMakeFiles/fbrecurring.dir/fbrecurring.cpp.o
+[165/233] Building CXX object autotests/CMakeFiles/teststartdatetimesfordate.dir/teststartdatetimesfordate.cpp.o
+[166/233] Building CXX object autotests/CMakeFiles/testicaltimezones.dir/testicaltimezones_autogen/mocs_compilation.cpp.o
+[167/233] Building CXX object autotests/CMakeFiles/fbrecurring.dir/fbrecurring.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kcalendarcore/work/kcalendarcore-6.14.0/autotests/fbrecurring.cpp: In function ‘int main(int, char**)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kcalendarcore/work/kcalendarcore-6.14.0/autotests/fbrecurring.cpp:22:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
    22 | int main(int argc, char **argv)
@@ -1211,62 +1202,71 @@ Documentation successfully generated.
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kcalendarcore/work/kcalendarcore-6.14.0/autotests/fbrecurring.cpp:22:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
    22 | int main(int argc, char **argv)
       |                    ~~~~~~~^~~~
-[177/233] Building CXX object autotests/CMakeFiles/testreadrecurrenceid.dir/testreadrecurrenceid.cpp.o
-[178/233] Linking CXX executable bin/testcalfilter
+[168/233] Building CXX object autotests/CMakeFiles/testrecurrenceexception.dir/testrecurrenceexception.cpp.o
+[169/233] Building CXX object autotests/CMakeFiles/teststatus.dir/teststatus.cpp.o
+[170/233] Building CXX object autotests/CMakeFiles/loadcalendar.dir/loadcalendar.cpp.o
+[171/233] Building CXX object autotests/CMakeFiles/testreadrecurrenceid.dir/testreadrecurrenceid.cpp.o
+[172/233] Linking CXX shared module bin/org/kde/calendarcore/libkcalendarcoreqml.so
+[173/233] Linking CXX executable bin/testalarm
+[174/233] Linking CXX executable bin/testattachment
+[175/233] Building CXX object autotests/CMakeFiles/testcreateddatecompat.dir/testcreateddatecompat.cpp.o
+[176/233] Building CXX object autotests/CMakeFiles/testrecurprevious.dir/testrecurprevious.cpp.o
+[177/233] Linking CXX executable bin/testattendee
+[178/233] Linking CXX executable bin/testcustomproperties
 [179/233] Linking CXX executable bin/testconference
-[180/233] Linking CXX executable bin/testattendee
-[181/233] Linking CXX executable bin/testcustomproperties
-[182/233] Linking CXX executable bin/testdateserialization
-[183/233] Building CXX object autotests/CMakeFiles/testrecurrence.dir/testrecurrence.cpp.o
-[184/233] Linking CXX executable bin/testexception
-[185/233] Linking CXX executable bin/testincidence
-[186/233] Linking CXX executable bin/testfilestorage
-[187/233] Linking CXX executable bin/testevent
-[188/233] Linking CXX executable bin/testduration
-[189/233] Linking CXX executable bin/testfreebusy
-[190/233] Building CXX object autotests/CMakeFiles/teststatus.dir/teststatus.cpp.o
+[180/233] Linking CXX executable bin/testdateserialization
+[181/233] Linking CXX executable bin/testcalfilter
+[182/233] Building CXX object autotests/CMakeFiles/testrecurtodo.dir/testrecurtodo.cpp.o
+[183/233] Linking CXX executable bin/testduration
+[184/233] Linking CXX executable bin/testevent
+[185/233] Linking CXX executable bin/testfilestorage
+[186/233] Linking CXX executable bin/testincidence
+[187/233] Building CXX object autotests/CMakeFiles/readandwrite.dir/readandwrite.cpp.o
+[188/233] Linking CXX executable bin/testfreebusy
+[189/233] Linking CXX executable bin/testexception
+[190/233] Linking CXX executable bin/testincidencerelation
 [191/233] Linking CXX executable bin/testidentical
-[192/233] Linking CXX executable bin/testincidencerelation
-[193/233] Linking CXX executable bin/testicalformat
+[192/233] Linking CXX executable bin/testicalformat
+[193/233] Building CXX object autotests/CMakeFiles/testtimesininterval.dir/testtimesininterval.cpp.o
 [194/233] Linking CXX executable bin/testjournal
-[195/233] Building CXX object autotests/CMakeFiles/testfb.dir/testfb.cpp.o
+[195/233] Linking CXX executable bin/testmemorycalendar
 [196/233] Linking CXX executable bin/testperiod
-[197/233] Linking CXX executable bin/testmemorycalendar
-[198/233] Linking CXX executable bin/testperson
-[199/233] Linking CXX executable bin/testfreebusyperiod
-[200/233] Linking CXX executable bin/teststatus
-[201/233] Linking CXX executable bin/testtimesininterval
+[197/233] Linking CXX executable bin/testfreebusyperiod
+[198/233] Linking CXX executable bin/teststartdatetimesfordate
+[199/233] Linking CXX executable bin/teststatus
+[200/233] Linking CXX executable bin/testperson
+[201/233] Linking CXX executable bin/testcreateddatecompat
 [202/233] Linking CXX executable bin/testrecurtodo
-[203/233] Linking CXX executable bin/teststartdatetimesfordate
-[204/233] Linking CXX executable bin/testcreateddatecompat
-[205/233] Linking CXX executable bin/incidencestest
-[206/233] Linking CXX executable bin/fbrecurring
-[207/233] Linking CXX executable bin/testreadrecurrenceid
-[208/233] Linking CXX executable bin/testrecurrenceexception
-[209/233] Linking CXX executable bin/testrecurprevious
-[210/233] Linking CXX executable bin/testfb
-[211/233] Building CXX object autotests/CMakeFiles/loadcalendar.dir/loadcalendar.cpp.o
-[212/233] Linking CXX executable bin/testrecurrence
-[213/233] Building CXX object autotests/CMakeFiles/testrecurrencetype.dir/testrecurrencetype.cpp.o
-[214/233] Linking CXX executable bin/loadcalendar
-[215/233] Linking CXX executable bin/testrecurrencetype
-[216/233] Building CXX object autotests/CMakeFiles/readandwrite.dir/readandwrite.cpp.o
+[203/233] Linking CXX executable bin/testtimesininterval
+[204/233] Building CXX object autotests/CMakeFiles/incidencestest.dir/incidencestest.cpp.o
+[205/233] Building CXX object autotests/CMakeFiles/testrecurrence.dir/testrecurrence.cpp.o
+[206/233] Linking CXX executable bin/testrecurrenceexception
+[207/233] Linking CXX executable bin/loadcalendar
+[208/233] Linking CXX executable bin/testreadrecurrenceid
+[209/233] Linking CXX executable bin/fbrecurring
+[210/233] Building CXX object autotests/CMakeFiles/testtodo.dir/testtodo.cpp.o
+[211/233] Linking CXX executable bin/testrecurprevious
+[212/233] Linking CXX executable bin/readandwrite
+[213/233] Building CXX object autotests/CMakeFiles/testfb.dir/testfb.cpp.o
+[214/233] Linking CXX executable bin/incidencestest
+[215/233] Linking CXX executable bin/testrecurrence
+[216/233] Linking CXX executable bin/testtodo
 [217/233] Building CXX object autotests/CMakeFiles/testoccurrenceiterator.dir/testoccurrenceiterator.cpp.o
-[218/233] Linking CXX executable bin/readandwrite
-[219/233] Linking CXX executable bin/testoccurrenceiterator
-[220/233] Building CXX object autotests/CMakeFiles/testvcalexport.dir/testvcalexport.cpp.o
-[221/233] Building CXX object autotests/CMakeFiles/testrecurson.dir/testrecurson.cpp.o
-[222/233] Linking CXX executable bin/testvcalexport
-[223/233] Building CXX object autotests/CMakeFiles/testtodo.dir/testtodo.cpp.o
-[224/233] Linking CXX executable bin/testrecurson
-[225/233] Linking CXX executable bin/testtodo
-[226/233] Building CXX object autotests/CMakeFiles/testtostring.dir/testtostring.cpp.o
-[227/233] Linking CXX executable bin/testtostring
-[228/233] Building CXX object autotests/CMakeFiles/testicaltimezones.dir/testicaltimezones.cpp.o
-[229/233] Building CXX object autotests/CMakeFiles/calendarlistmodeltest.dir/calendarlistmodeltest.cpp.o
-[230/233] Building CXX object autotests/CMakeFiles/testcalendarobserver.dir/testcalendarobserver.cpp.o
+[218/233] Linking CXX executable bin/testfb
+[219/233] Building CXX object autotests/CMakeFiles/testrecurson.dir/testrecurson.cpp.o
+[220/233] Building CXX object autotests/CMakeFiles/testrecurrencetype.dir/testrecurrencetype.cpp.o
+[221/233] Linking CXX executable bin/testoccurrenceiterator
+[222/233] Linking CXX executable bin/testrecurson
+[223/233] Linking CXX executable bin/testrecurrencetype
+[224/233] Building CXX object autotests/CMakeFiles/testtostring.dir/testtostring.cpp.o
+[225/233] Linking CXX executable bin/testtostring
+[226/233] Building CXX object autotests/CMakeFiles/testvcalexport.dir/testvcalexport.cpp.o
+[227/233] Linking CXX executable bin/testvcalexport
+[228/233] Building CXX object autotests/CMakeFiles/calendarlistmodeltest.dir/calendarlistmodeltest.cpp.o
+[229/233] Linking CXX executable bin/calendarlistmodeltest
+[230/233] Building CXX object autotests/CMakeFiles/testicaltimezones.dir/testicaltimezones.cpp.o
 [231/233] Linking CXX executable bin/testicaltimezones
-[232/233] Linking CXX executable bin/calendarlistmodeltest
+[232/233] Building CXX object autotests/CMakeFiles/testcalendarobserver.dir/testcalendarobserver.cpp.o
 [233/233] Linking CXX executable bin/testcalendarobserver
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kcalendarcore/package-kcalendarcore/usr/lib64/libKF6CalendarCore.so.6.14.0
@@ -1548,7 +1548,7 @@ makepkg-kcalendarcore.log
 +====================================================================================================================+
 
 Pre-installing package kcalendarcore-6.14.0-x86_64-1_rtz...
-Removing package: kcalendarcore-6.14.0-x86_64-1_rtz-upgraded-2025-05-21,13:13:29
+Removing package: kcalendarcore-6.14.0-x86_64-1_rtz-upgraded-2025-05-28,17:39:40
 Installing package kcalendarcore-6.14.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kcalendarcore (library)

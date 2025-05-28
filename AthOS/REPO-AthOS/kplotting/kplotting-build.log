@@ -4,21 +4,21 @@ Required dependencies: extra-cmake-modules
 extra-cmake-modules is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 13:21:49--  https://download.kde.org/stable/frameworks/6.14/kplotting-6.14.0.tar.xz
+--2025-05-28 17:48:02--  https://download.kde.org/stable/frameworks/6.14/kplotting-6.14.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kplotting-6.14.0.tar.xz [following]
---2025-05-21 13:21:49--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kplotting-6.14.0.tar.xz
+--2025-05-28 17:48:02--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kplotting-6.14.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 33704 (33K) [application/octet-stream]
 Saving to: ‘kplotting-6.14.0.tar.xz’
 
-     0K .......... .......... .......... ..                   100% 15.7M=0.002s
+     0K .......... .......... .......... ..                   100% 18.0M=0.002s
 
-2025-05-21 13:21:50 (15.7 MB/s) - ‘kplotting-6.14.0.tar.xz’ saved [33704/33704]
+2025-05-28 17:48:02 (18.0 MB/s) - ‘kplotting-6.14.0.tar.xz’ saved [33704/33704]
 
 Found file: kplotting-6.14.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -62,8 +62,8 @@ kplotting-6.14.0/src/kplotwidget.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kplotting/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -90,7 +90,7 @@ hm...lets continue and see what happens
 -- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
 -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
@@ -98,7 +98,7 @@ hm...lets continue and see what happens
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- No such target Qt6Widgets_QCH defined when calling ecm_add_qch(), ignored.
 
 
@@ -131,7 +131,7 @@ Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kplotting/work/kplo
    Needed for API dox QCH file generation
  * Qt6 (required version >= 6.7.0)
 
--- Configuring done (1.2s)
+-- Configuring done (1.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kplotting/work/kplotting-6.14.0/build
 [1/34] Generating src/KF6Plotting.qch, src/KF6Plotting.tags
@@ -151,30 +151,30 @@ Documentation successfully generated.
 [8/34] Linking CXX shared library bin/libKF6Plotting.so.6.14.0
 [9/34] Creating library symlink bin/libKF6Plotting.so.6 bin/libKF6Plotting.so
 [10/34] Automatic MOC for target kplottingwidgets
-[11/34] Automatic MOC for target kplottest
-[12/34] Building CXX object src/designer/CMakeFiles/kplottingwidgets.dir/kplottingwidgets_autogen/mocs_compilation.cpp.o
+[11/34] Building CXX object src/designer/CMakeFiles/kplottingwidgets.dir/kplottingwidgets_autogen/mocs_compilation.cpp.o
+[12/34] Automatic MOC for target kplottest
 [13/34] Building CXX object examples/CMakeFiles/kplottest.dir/kplottest_autogen/mocs_compilation.cpp.o
-[14/34] Automatic MOC for target kplotwidgettest
-[15/34] Automatic MOC for target kplotpointtest
-[16/34] Building CXX object autotests/CMakeFiles/kplotwidgettest.dir/kplotwidgettest_autogen/mocs_compilation.cpp.o
-[17/34] Building CXX object autotests/CMakeFiles/kplotpointtest.dir/kplotpointtest_autogen/mocs_compilation.cpp.o
-[18/34] Automatic MOC for target kplotobjecttest
-[19/34] Building CXX object autotests/CMakeFiles/kplotobjecttest.dir/kplotobjecttest_autogen/mocs_compilation.cpp.o
-[20/34] Automatic MOC for target kplotaxistest
-[21/34] Building CXX object autotests/CMakeFiles/kplotaxistest.dir/kplotaxistest_autogen/mocs_compilation.cpp.o
+[14/34] Automatic MOC for target kplotaxistest
+[15/34] Automatic MOC for target kplotwidgettest
+[16/34] Building CXX object autotests/CMakeFiles/kplotaxistest.dir/kplotaxistest_autogen/mocs_compilation.cpp.o
+[17/34] Building CXX object autotests/CMakeFiles/kplotwidgettest.dir/kplotwidgettest_autogen/mocs_compilation.cpp.o
+[18/34] Automatic MOC for target kplotpointtest
+[19/34] Automatic MOC for target kplotobjecttest
+[20/34] Building CXX object autotests/CMakeFiles/kplotpointtest.dir/kplotpointtest_autogen/mocs_compilation.cpp.o
+[21/34] Building CXX object autotests/CMakeFiles/kplotobjecttest.dir/kplotobjecttest_autogen/mocs_compilation.cpp.o
 [22/34] Building CXX object examples/CMakeFiles/kplottest.dir/testplot_main.cpp.o
 [23/34] Building CXX object src/designer/CMakeFiles/kplottingwidgets.dir/kplottingwidgets_ECMQtDesignerPlugin/designerplugin.cpp.o
-[24/34] Linking CXX shared module bin/kplotting6widgets.so
-[25/34] Building CXX object examples/CMakeFiles/kplottest.dir/testplot_widget.cpp.o
+[24/34] Building CXX object examples/CMakeFiles/kplottest.dir/testplot_widget.cpp.o
+[25/34] Linking CXX shared module bin/kplotting6widgets.so
 [26/34] Linking CXX executable bin/kplottest
-[27/34] Building CXX object autotests/CMakeFiles/kplotwidgettest.dir/kplotwidgettest.cpp.o
-[28/34] Building CXX object autotests/CMakeFiles/kplotaxistest.dir/kplotaxistest.cpp.o
+[27/34] Building CXX object autotests/CMakeFiles/kplotpointtest.dir/kplotpointtest.cpp.o
+[28/34] Building CXX object autotests/CMakeFiles/kplotwidgettest.dir/kplotwidgettest.cpp.o
 [29/34] Building CXX object autotests/CMakeFiles/kplotobjecttest.dir/kplotobjecttest.cpp.o
-[30/34] Linking CXX executable bin/kplotwidgettest
-[31/34] Linking CXX executable bin/kplotaxistest
+[30/34] Linking CXX executable bin/kplotpointtest
+[31/34] Linking CXX executable bin/kplotwidgettest
 [32/34] Linking CXX executable bin/kplotobjecttest
-[33/34] Building CXX object autotests/CMakeFiles/kplotpointtest.dir/kplotpointtest.cpp.o
-[34/34] Linking CXX executable bin/kplotpointtest
+[33/34] Building CXX object autotests/CMakeFiles/kplotaxistest.dir/kplotaxistest.cpp.o
+[34/34] Linking CXX executable bin/kplotaxistest
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kplotting/package-kplotting/usr/lib64/libKF6Plotting.so.6.14.0
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kplotting/package-kplotting/usr/lib64/libKF6Plotting.so.6
@@ -311,7 +311,7 @@ makepkg-kplotting.log
 +========================================================================================================+
 
 Pre-installing package kplotting-6.14.0-x86_64-1_rtz...
-Removing package: kplotting-6.14.0-x86_64-1_rtz-upgraded-2025-05-21,13:22:00
+Removing package: kplotting-6.14.0-x86_64-1_rtz-upgraded-2025-05-28,17:48:12
 Installing package kplotting-6.14.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kplotting (Lightweight plotting framework)

@@ -15,22 +15,22 @@ kwindowsystem is already installed!
 polkit-qt-1 is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 14:46:27--  https://download.kde.org/stable/plasma/6.3.5/polkit-kde-agent-1-6.3.5.tar.xz
+--2025-05-28 19:05:18--  https://download.kde.org/stable/plasma/6.3.5/polkit-kde-agent-1-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/polkit-kde-agent-1-6.3.5.tar.xz [following]
---2025-05-21 14:46:27--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/polkit-kde-agent-1-6.3.5.tar.xz
+--2025-05-28 19:05:19--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/polkit-kde-agent-1-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 58272 (57K) [application/octet-stream]
 Saving to: ‘polkit-kde-agent-1-6.3.5.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 87% 1.33M 0s
+     0K .......... .......... .......... .......... .......... 87% 1.37M 0s
     50K ......                                                100% 12.9T=0.04s
 
-2025-05-21 14:46:27 (1.51 MB/s) - ‘polkit-kde-agent-1-6.3.5.tar.xz’ saved [58272/58272]
+2025-05-28 19:05:19 (1.56 MB/s) - ‘polkit-kde-agent-1-6.3.5.tar.xz’ saved [58272/58272]
 
 Found file: polkit-kde-agent-1-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -203,8 +203,8 @@ polkit-kde-agent-1-6.3.5/config.h.cmake
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/polkit-kde-agent-1/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -227,7 +227,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found Gettext: /usr/bin/msgmerge (found version "0.25")
 -- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.14.0")
@@ -290,7 +290,7 @@ hm...lets continue and see what happens
  * KF6 (required version >= 6.10.0)
  * PolkitQt6-1
 
--- Configuring done (1.5s)
+-- Configuring done (1.6s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/polkit-kde-agent-1/work/polkit-kde-agent-1-6.3.5/build
 [1/14] Generating ts...
@@ -308,7 +308,7 @@ hm...lets continue and see what happens
 [13/14] Building CXX object CMakeFiles/polkit-kde-authentication-agent-1.dir/policykitlistener.cpp.o
 [14/14] Linking CXX executable bin/polkit-kde-authentication-agent-1
 -- Install configuration: "RelWithDebInfo"
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/polkit-kde-agent-1/package-polkit-kde-agent-1/usr/lib64/libexec/polkit-kde-authentication-agent-1
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/polkit-kde-agent-1/package-polkit-kde-agent-1/usr/libexec/polkit-kde-authentication-agent-1
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/polkit-kde-agent-1/package-polkit-kde-agent-1/etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/polkit-kde-agent-1/package-polkit-kde-agent-1/usr/share/applications/org.kde.polkit-kde-authentication-agent-1.desktop
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/polkit-kde-agent-1/package-polkit-kde-agent-1/usr/lib/systemd/user/plasma-polkit-agent.service
@@ -572,9 +572,8 @@ usr/doc/polkit-kde-agent-1-6.3.5/
 usr/doc/polkit-kde-agent-1-6.3.5/polkit-kde-agent-1.ini
 usr/doc/polkit-kde-agent-1-6.3.5/slack-required
 usr/lib/
-usr/lib64/
-usr/lib64/libexec/
-usr/lib64/libexec/polkit-kde-authentication-agent-1
+usr/libexec/
+usr/libexec/polkit-kde-authentication-agent-1
 usr/share/
 usr/share/applications/
 usr/share/applications/org.kde.polkit-kde-authentication-agent-1.desktop
@@ -806,7 +805,7 @@ polkit-kde-agent-1.dep
 +=================================================================================================================================+
 
 Pre-installing package polkit-kde-agent-1-6.3.5-x86_64-1_rtz...
-Removing package: polkit-kde-agent-1-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,14:46:35
+Removing package: polkit-kde-agent-1-6.3.5-x86_64-1_rtz-upgraded-2025-05-28,19:05:27
 Installing package polkit-kde-agent-1-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # polkit-kde-agent-1 (Daemon)

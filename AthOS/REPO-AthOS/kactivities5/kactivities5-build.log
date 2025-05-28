@@ -9,22 +9,22 @@ kcoreaddons5 is already installed!
 kwindowsystem5 is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 12:49:22--  https://download.kde.org/stable/frameworks/5.116/kactivities-5.116.0.tar.xz
+--2025-05-28 17:13:44--  https://download.kde.org/stable/frameworks/5.116/kactivities-5.116.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kactivities-5.116.0.tar.xz [following]
---2025-05-21 12:49:22--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kactivities-5.116.0.tar.xz
+--2025-05-28 17:13:45--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kactivities-5.116.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 73556 (72K) [application/octet-stream]
 Saving to: ‘kactivities-5.116.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 69% 1.12M 0s
-    50K .......... .......... .                               100% 8.98M=0.05s
+     0K .......... .......... .......... .......... .......... 69% 1.38M 0s
+    50K .......... .......... .                               100% 9.00M=0.04s
 
-2025-05-21 12:49:22 (1.53 MB/s) - ‘kactivities-5.116.0.tar.xz’ saved [73556/73556]
+2025-05-28 17:13:45 (1.86 MB/s) - ‘kactivities-5.116.0.tar.xz’ saved [73556/73556]
 
 Found file: kactivities-5.116.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -170,8 +170,8 @@ kactivities-5.116.0/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -208,7 +208,7 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- Found QHelpGenerator executable: /usr/lib64/qt5/bin/qhelpgenerator
 -- No such target Qt5Core_QCH defined when calling ecm_add_qch(), ignored.
 
@@ -243,9 +243,9 @@ Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/work/k
    Needed for API dox QCH file generation
  * QHelpGenerator, Part of Qt5 tools
    Needed for API dox QCH file generation
- * Qt5Network (required version >= 5.15.16)
+ * Qt5Network (required version >= 5.15.17)
  * Qt5Qml
- * Qt5QmlModels (required version >= 5.15.16)
+ * Qt5QmlModels (required version >= 5.15.17)
  * Qt5Quick
  * Qt5Sql
  * KF5Config (required version >= 5.116.0)
@@ -259,7 +259,7 @@ Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/work/k
  * KF5WindowSystem
  * KF5
 
--- Configuring done (1.4s)
+-- Configuring done (1.3s)
 -- Generating done (0.0s)
 CMake Warning:
   Manually-specified variables were not used by the project:
@@ -279,33 +279,33 @@ Insert indices...
 Documentation successfully generated.
 [2/58] Automatic MOC for target KF5Activities
 [3/58] Generating activities_interface.cpp, activities_interface.h
-[4/58] Generating features_interface.cpp, features_interface.h
-[5/58] Generating resources_interface.cpp, resources_interface.h
+[4/58] Generating resources_interface.cpp, resources_interface.h
+[5/58] Generating features_interface.cpp, features_interface.h
 [6/58] Generating application_interface.cpp, application_interface.h
 [7/58] Generating resources_linking_interface.cpp, resources_linking_interface.h
-[8/58] Generating features_interface.moc
-[9/58] Generating activities_interface.moc
-[10/58] Generating resources_interface.moc
+[8/58] Generating resources_linking_interface.moc
+[9/58] Generating resources_interface.moc
+[10/58] Generating features_interface.moc
 [11/58] Generating application_interface.moc
-[12/58] Generating resources_linking_interface.moc
+[12/58] Generating activities_interface.moc
 [13/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/KF5Activities_autogen/mocs_compilation.cpp.o
 [14/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/version.cpp.o
-[15/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/debug_p.cpp.o
+[15/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/mainthreadexecutor_p.cpp.o
 [16/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/__/utils/dbusfuture_p.cpp.o
-[17/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/application_interface.cpp.o
-[18/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/mainthreadexecutor_p.cpp.o
+[17/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/debug_p.cpp.o
+[18/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/__/common/dbus/org.kde.ActivityManager.Activities.cpp.o
 [19/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/resources_interface.cpp.o
-[20/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/info.cpp.o
+[20/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/features_interface.cpp.o
 [21/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/resources_linking_interface.cpp.o
-[22/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/__/common/dbus/org.kde.ActivityManager.Activities.cpp.o
-[23/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/activities_interface.cpp.o
-[24/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/controller.cpp.o
-[25/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/features_interface.cpp.o
-[26/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/activitiesmodel.cpp.o
-[27/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/consumer.cpp.o
-[28/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/resourceinstance.cpp.o
-[29/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/manager_p.cpp.o
-[30/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/activitiescache_p.cpp.o
+[22/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/activitiesmodel.cpp.o
+[23/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/application_interface.cpp.o
+[24/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/manager_p.cpp.o
+[25/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/consumer.cpp.o
+[26/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/resourceinstance.cpp.o
+[27/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/activities_interface.cpp.o
+[28/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/info.cpp.o
+[29/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/activitiescache_p.cpp.o
+[30/58] Building CXX object src/lib/CMakeFiles/KF5Activities.dir/controller.cpp.o
 [31/58] Linking CXX shared library bin/libKF5Activities.so.5.116.0
 [32/58] Creating library symlink bin/libKF5Activities.so.5 bin/libKF5Activities.so
 [33/58] Automatic MOC for target kactivities-cli
@@ -314,22 +314,22 @@ Documentation successfully generated.
 [36/58] Generating ui_window.h
 [37/58] Building CXX object tests/activities-model/CMakeFiles/KActivitiesModelTestApp.dir/KActivitiesModelTestApp_autogen/mocs_compilation.cpp.o
 [38/58] Automatic MOC for target KActivitiesTest
-[39/58] Automatic MOC for target kactivitiesextensionplugin
-[40/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/KActivitiesTest_autogen/mocs_compilation.cpp.o
+[39/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/KActivitiesTest_autogen/mocs_compilation.cpp.o
+[40/58] Automatic MOC for target kactivitiesextensionplugin
 [41/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/kactivitiesextensionplugin_autogen/mocs_compilation.cpp.o
-[42/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/__/utils/dbusfuture_p.cpp.o
-[43/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/activityinfo.cpp.o
-[44/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/main.cpp.o
-[45/58] Building CXX object src/cli/CMakeFiles/kactivities-cli.dir/main.cpp.o
-[46/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/Process.cpp.o
-[47/58] Linking CXX executable bin/kactivities-cli
-[48/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/activitiesextensionplugin.cpp.o
-[49/58] Building CXX object tests/activities-model/CMakeFiles/KActivitiesModelTestApp.dir/main.cpp.o
-[50/58] Building CXX object tests/activities-model/CMakeFiles/KActivitiesModelTestApp.dir/window.cpp.o
-[51/58] Linking CXX executable bin/KActivitiesModelTestApp
-[52/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/__/common/test.cpp.o
-[53/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/OfflineTest.cpp.o
-[54/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/resourceinstance.cpp.o
+[42/58] Building CXX object tests/activities-model/CMakeFiles/KActivitiesModelTestApp.dir/main.cpp.o
+[43/58] Building CXX object src/cli/CMakeFiles/kactivities-cli.dir/main.cpp.o
+[44/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/resourceinstance.cpp.o
+[45/58] Building CXX object tests/activities-model/CMakeFiles/KActivitiesModelTestApp.dir/window.cpp.o
+[46/58] Linking CXX executable bin/kactivities-cli
+[47/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/__/utils/dbusfuture_p.cpp.o
+[48/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/main.cpp.o
+[49/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/Process.cpp.o
+[50/58] Linking CXX executable bin/KActivitiesModelTestApp
+[51/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/OfflineTest.cpp.o
+[52/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/activityinfo.cpp.o
+[53/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/__/common/test.cpp.o
+[54/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/activitiesextensionplugin.cpp.o
 [55/58] Building CXX object autotests/core/CMakeFiles/KActivitiesTest.dir/CleanOnlineTest.cpp.o
 [56/58] Linking CXX executable bin/KActivitiesTest
 [57/58] Building CXX object src/imports/CMakeFiles/kactivitiesextensionplugin.dir/activitymodel.cpp.o
@@ -351,8 +351,8 @@ Documentation successfully generated.
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/lib64/libKF5Activities.so.5.116.0
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/lib64/libKF5Activities.so.5
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/lib64/libKF5Activities.so
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Activities.qch
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Activities.tags
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Activities.qch
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Activities.tags
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/lib64/pkgconfig/libKActivities.pc
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/lib64/qt5/mkspecs/modules/qt_KActivities.pri
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kactivities5/package-kactivities5/usr/lib64/qt5/qml/org/kde/activities/qmldir
@@ -440,9 +440,9 @@ usr/doc/kactivities5-5.116.0/docs/
 usr/doc/kactivities5-5.116.0/docs/Doxyfile.local
 usr/doc/kactivities5-5.116.0/kactivities5.ini
 usr/doc/kactivities5-5.116.0/slack-required
-usr/doc/qt5-5.15.16_20250408_6cb26397/
-usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Activities.qch
-usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Activities.tags
+usr/doc/qt5-5.15.17_20250522_355dc72e/
+usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Activities.qch
+usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Activities.tags
 usr/include/
 usr/include/KF5/
 usr/include/KF5/KActivities/
@@ -511,7 +511,7 @@ makepkg-kactivities5.log
 +===================================================================================================================+
 
 Pre-installing package kactivities5-5.116.0-x86_64-1_rtz...
-Removing package: kactivities5-5.116.0-x86_64-1_rtz-upgraded-2025-05-21,12:49:32
+Removing package: kactivities5-5.116.0-x86_64-1_rtz-upgraded-2025-05-28,17:13:55
 Installing package kactivities5-5.116.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kactivities5 (Core components for KDE's Activities)

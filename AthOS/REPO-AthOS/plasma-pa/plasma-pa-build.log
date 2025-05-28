@@ -20,24 +20,24 @@ kquickcharts is already installed!
 pulseaudio is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 14:40:27--  https://download.kde.org/stable/plasma/6.3.5/plasma-pa-6.3.5.tar.xz
+--2025-05-28 18:59:29--  https://download.kde.org/stable/plasma/6.3.5/plasma-pa-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-pa-6.3.5.tar.xz [following]
---2025-05-21 14:40:27--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-pa-6.3.5.tar.xz
+--2025-05-28 18:59:29--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/plasma-pa-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 192972 (188K) [application/octet-stream]
 Saving to: ‘plasma-pa-6.3.5.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 26% 1.33M 0s
-    50K .......... .......... .......... .......... .......... 53% 1.41M 0s
-   100K .......... .......... .......... .......... .......... 79% 6.30M 0s
-   150K .......... .......... .......... ........             100% 7.51M=0.08s
+     0K .......... .......... .......... .......... .......... 26% 1.38M 0s
+    50K .......... .......... .......... .......... .......... 53% 1.57M 0s
+   100K .......... .......... .......... .......... .......... 79% 5.19M 0s
+   150K .......... .......... .......... ........             100% 7.79M=0.08s
 
-2025-05-21 14:40:27 (2.19 MB/s) - ‘plasma-pa-6.3.5.tar.xz’ saved [192972/192972]
+2025-05-28 18:59:30 (2.28 MB/s) - ‘plasma-pa-6.3.5.tar.xz’ saved [192972/192972]
 
 Found file: plasma-pa-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -375,8 +375,8 @@ plasma-pa-6.3.5/appiumtests/CMakeLists.txt
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma-pa/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -400,7 +400,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
 -- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
@@ -432,7 +432,7 @@ hm...lets continue and see what happens
 -- Checking for module 'libpulse-mainloop-glib'
 --   Found libpulse-mainloop-glib, version 17.0
 -- Checking for module 'gio-2.0'
---   Found gio-2.0, version 2.84.1
+--   Found gio-2.0, version 2.84.2
 -- Found CanberraPulse: /usr/lib64/libcanberra-0.30/libcanberra-pulse.so
 -- Found SoundThemeFreedesktop: /usr/share/sounds/freedesktop/index.theme
 -- Found OpenMP_C: -fopenmp (found version "4.5")
@@ -499,7 +499,7 @@ hm...lets continue and see what happens
  * KItemModels, Set of item models extending the Qt model-view framework
    Required at runtime for the KCM and applet
 
--- Configuring done (2.4s)
+-- Configuring done (2.5s)
 -- Generating done (0.0s)
 CMake Warning:
   Manually-specified variables were not used by the project:
@@ -509,32 +509,32 @@ CMake Warning:
 
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma-pa/work/plasma-pa-6.3.5/build
 [0/2] Re-checking globbed directories...
-[1/90] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma-pa/work/plasma-pa-6.3.5/build/src/kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma-pa/work/plasma-pa-6.3.5/src/kcm/kcm_pulseaudio.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma-pa/work/plasma-pa-6.3.5/build/src/kcm/kcm_pulseaudio.desktop
+[1/90] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma-pa/work/plasma-pa-6.3.5/build/src/kcm && /usr/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma-pa/work/plasma-pa-6.3.5/src/kcm/kcm_pulseaudio.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/plasma-pa/work/plasma-pa-6.3.5/build/src/kcm/kcm_pulseaudio.desktop
 [2/90] Generating osdservice.cpp, osdservice.h
 [3/90] Generating globalconfig.h, globalconfig.cpp
 [4/90] Copying plasma-volume-declarative qml resources into build dir
 [5/90] Copying plasma-volume-declarative qml sources into build dir
 [6/90] Generating moc_osdservice.cpp
 [7/90] Generating ts...
-[8/90] Generating mo...
-[9/90] Generating po/de/docs/kcontrol/plasma-pa/index.cache.bz2
-[10/90] Generating po/sl/docs/kcontrol/plasma-pa/index.cache.bz2
-[11/90] Generating po/ru/docs/kcontrol/plasma-pa/index.cache.bz2
-[12/90] Generating index.cache.bz2
+[8/90] Generating po/tr/docs/kcontrol/plasma-pa/index.cache.bz2
+[9/90] Generating po/nl/docs/kcontrol/plasma-pa/index.cache.bz2
+[10/90] Generating po/sv/docs/kcontrol/plasma-pa/index.cache.bz2
+[11/90] Generating po/it/docs/kcontrol/plasma-pa/index.cache.bz2
+[12/90] Generating po/ru/docs/kcontrol/plasma-pa/index.cache.bz2
 [13/90] Generating po/id/docs/kcontrol/plasma-pa/index.cache.bz2
-[14/90] Generating po/pt_BR/docs/kcontrol/plasma-pa/index.cache.bz2
+[14/90] Generating po/uk/docs/kcontrol/plasma-pa/index.cache.bz2
+[15/90] Generating mo...
+[16/90] Generating po/pt_BR/docs/kcontrol/plasma-pa/index.cache.bz2
 I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/pt-BR.xml": No such file or directory
 No "pt_br" localization of "footer-doc-comment" exists; using "en".
 No "pt_br" localization of "footer-doc-feedback" exists; using "en".
 No "pt_br" localization of "footer-doc-teamname" exists; using "en".
-[15/90] Generating po/nl/docs/kcontrol/plasma-pa/index.cache.bz2
-[16/90] Generating po/it/docs/kcontrol/plasma-pa/index.cache.bz2
-[17/90] Generating po/es/docs/kcontrol/plasma-pa/index.cache.bz2
-[18/90] Generating po/ca/docs/kcontrol/plasma-pa/index.cache.bz2
-[19/90] Generating po/pt/docs/kcontrol/plasma-pa/index.cache.bz2
-[20/90] Generating po/uk/docs/kcontrol/plasma-pa/index.cache.bz2
-[21/90] Generating po/sv/docs/kcontrol/plasma-pa/index.cache.bz2
-[22/90] Generating po/tr/docs/kcontrol/plasma-pa/index.cache.bz2
+[17/90] Generating po/de/docs/kcontrol/plasma-pa/index.cache.bz2
+[18/90] Generating index.cache.bz2
+[19/90] Generating po/es/docs/kcontrol/plasma-pa/index.cache.bz2
+[20/90] Generating po/ca/docs/kcontrol/plasma-pa/index.cache.bz2
+[21/90] Generating po/sl/docs/kcontrol/plasma-pa/index.cache.bz2
+[22/90] Generating po/pt/docs/kcontrol/plasma-pa/index.cache.bz2
 [23/90] Automatic MOC for target kcm_pulseaudio
 [24/90] Generating qrc_kcm_pulseaudio.cpp
 [25/90] Building CXX object src/kcm/CMakeFiles/kcm_pulseaudio.dir/kcm_pulseaudio_autogen/mocs_compilation.cpp.o
@@ -550,56 +550,56 @@ No "pt_br" localization of "footer-doc-teamname" exists; using "en".
 [35/90] Generating .rcc/qmlcache/plasma-volume-declarative_qml/PulseObjectFilterModel_qml.cpp
 [36/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/.qt/rcc/qrc_qmake_org_kde_plasma_private_volume.cpp.o
 [37/90] Building CXX object src/CMakeFiles/plasma-volume.dir/canberracontext.cpp.o
-[38/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/canberracontext.cpp.o
+[38/90] Building CXX object src/CMakeFiles/plasma-volume.dir/debug.cpp.o
 [39/90] Building CXX object src/CMakeFiles/plasma-volume.dir/volumefeedback.cpp.o
-[40/90] Building CXX object src/CMakeFiles/plasma-volume.dir/percentvalidator.cpp.o
-[41/90] Building CXX object src/CMakeFiles/plasma-volume.dir/soundthemeconfig.cpp.o
-[42/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/plasma-volume-declarative_autogen/mocs_compilation.cpp.o
-[43/90] Building CXX object src/kcm/CMakeFiles/kcm_pulseaudio.dir/module.cpp.o
-[44/90] Building CXX object src/CMakeFiles/plasma-volume.dir/debug.cpp.o
-[45/90] Building CXX object src/CMakeFiles/plasma-volume.dir/audioicon.cpp.o
-[46/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/volumemonitor.cpp.o
-[47/90] Building CXX object src/CMakeFiles/plasma-volume.dir/volumemonitor.cpp.o
-[48/90] Building CXX object src/CMakeFiles/plasma-volume.dir/devicerenamemodel.cpp.o
-[49/90] Building CXX object src/CMakeFiles/plasma-volume.dir/gsettingsitem.cpp.o
-[50/90] Building CXX object src/CMakeFiles/plasma-volume.dir/globalconfig.cpp.o
-[51/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/plasma-volume-declarative_qmltyperegistrations.cpp.o
-[52/90] Building CXX object src/CMakeFiles/plasma-volume.dir/speakertest.cpp.o
-[53/90] Building CXX object src/CMakeFiles/plasma-volume.dir/plasma-volume_autogen/mocs_compilation.cpp.o
-[54/90] Building CXX object src/CMakeFiles/plasma-volume.dir/preferreddevice.cpp.o
-[55/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/.qt/rcc/qrc_plasma-volume-declarative_raw_qml_0.cpp.o
-[56/90] Building CXX object src/CMakeFiles/plasma-volume.dir/modulemanager.cpp.o
-[57/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/modulemanager.cpp.o
+[40/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/canberracontext.cpp.o
+[41/90] Building CXX object src/CMakeFiles/plasma-volume.dir/preferreddevice.cpp.o
+[42/90] Building CXX object src/CMakeFiles/plasma-volume.dir/globalconfig.cpp.o
+[43/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/plasma-volume-declarative_qmltyperegistrations.cpp.o
+[44/90] Building CXX object src/CMakeFiles/plasma-volume.dir/gsettingsitem.cpp.o
+[45/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/plasma-volume-declarative_autogen/mocs_compilation.cpp.o
+[46/90] Building CXX object src/CMakeFiles/plasma-volume.dir/percentvalidator.cpp.o
+[47/90] Building CXX object src/CMakeFiles/plasma-volume.dir/speakertest.cpp.o
+[48/90] Building CXX object src/CMakeFiles/plasma-volume.dir/volumemonitor.cpp.o
+[49/90] Building CXX object src/CMakeFiles/plasma-volume.dir/plasma-volume_autogen/mocs_compilation.cpp.o
+[50/90] Building CXX object src/CMakeFiles/plasma-volume.dir/soundthemeconfig.cpp.o
+[51/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/modulemanager.cpp.o
+[52/90] Building CXX object src/CMakeFiles/plasma-volume.dir/modulemanager.cpp.o
+[53/90] Building CXX object src/kcm/CMakeFiles/kcm_pulseaudio.dir/module.cpp.o
+[54/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/.qt/rcc/qrc_plasma-volume-declarative_raw_qml_0.cpp.o
+[55/90] Building CXX object src/CMakeFiles/plasma-volume.dir/audioicon.cpp.o
+[56/90] Building CXX object src/CMakeFiles/plasma-volume.dir/devicerenamemodel.cpp.o
+[57/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/volumemonitor.cpp.o
 [58/90] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_pulseaudio.so
-[59/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/gsettingsitem.cpp.o
-[60/90] Building CXX object src/CMakeFiles/plasma-volume.dir/devicerenamesaver.cpp.o
-[61/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/soundthemeconfig.cpp.o
+[59/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/soundthemeconfig.cpp.o
+[60/90] Building CXX object src/CMakeFiles/plasma-volume.dir/osdservice.cpp.o
+[61/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/volumefeedback.cpp.o
 [62/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/speakertest.cpp.o
-[63/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/percentvalidator.cpp.o
-[64/90] Building CXX object src/CMakeFiles/plasma-volume.dir/osdservice.cpp.o
-[65/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/volumefeedback.cpp.o
-[66/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/globalservice.cpp.o
-[67/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/preferreddevice.cpp.o
-[68/90] Linking CXX shared library bin/libplasma-volume.so.6.3.5
-[69/90] Creating library symlink bin/libplasma-volume.so.6 bin/libplasma-volume.so
-[70/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/debug.cpp.o
-[71/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/.rcc/qmlcache/plasma-volume-declarative_qml/PulseObjectFilterModel_qml.cpp.o
-[72/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/devicerenamemodel.cpp.o
-[73/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/audioicon.cpp.o
-[74/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/globalconfig.cpp.o
-[75/90] Automatic MOC for target percentvalidatortest
-[76/90] Building CXX object autotests/CMakeFiles/percentvalidatortest.dir/percentvalidatortest_autogen/mocs_compilation.cpp.o
-[77/90] Automatic MOC for target audioshortcutsservice
-[78/90] Building CXX object src/kded/CMakeFiles/audioshortcutsservice.dir/audioshortcutsservice_autogen/mocs_compilation.cpp.o
-[79/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/.rcc/qmlcache/plasma-volume-declarative_qmlcache_loader.cpp.o
+[63/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/gsettingsitem.cpp.o
+[64/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/globalservice.cpp.o
+[65/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/audioicon.cpp.o
+[66/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/debug.cpp.o
+[67/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/devicerenamemodel.cpp.o
+[68/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/globalconfig.cpp.o
+[69/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/preferreddevice.cpp.o
+[70/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/.rcc/qmlcache/plasma-volume-declarative_qmlcache_loader.cpp.o
+[71/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/percentvalidator.cpp.o
+[72/90] Building CXX object src/CMakeFiles/plasma-volume.dir/devicerenamesaver.cpp.o
+[73/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/.rcc/qmlcache/plasma-volume-declarative_qml/PulseObjectFilterModel_qml.cpp.o
+[74/90] Linking CXX shared library bin/libplasma-volume.so.6.3.5
+[75/90] Creating library symlink bin/libplasma-volume.so.6 bin/libplasma-volume.so
+[76/90] Automatic MOC for target percentvalidatortest
+[77/90] Building CXX object autotests/CMakeFiles/percentvalidatortest.dir/percentvalidatortest_autogen/mocs_compilation.cpp.o
+[78/90] Automatic MOC for target audioshortcutsservice
+[79/90] Building CXX object src/kded/CMakeFiles/audioshortcutsservice.dir/audioshortcutsservice_autogen/mocs_compilation.cpp.o
 [80/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/osdservice.cpp.o
-[81/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/listitemmenu.cpp.o
-[82/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/devicerenamesaver.cpp.o
-[83/90] Building CXX object autotests/CMakeFiles/percentvalidatortest.dir/percentvalidatortest.cpp.o
+[81/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/devicerenamesaver.cpp.o
+[82/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/listitemmenu.cpp.o
+[83/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/microphoneindicator.cpp.o
 [84/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/plugin.cpp.o
-[85/90] Linking CXX executable bin/percentvalidatortest
-[86/90] Building CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/microphoneindicator.cpp.o
-[87/90] Linking CXX shared module bin/org/kde/plasma/private/volume/libplasma-volume-declarative.so
+[85/90] Building CXX object autotests/CMakeFiles/percentvalidatortest.dir/percentvalidatortest.cpp.o
+[86/90] Linking CXX shared module bin/org/kde/plasma/private/volume/libplasma-volume-declarative.so
+[87/90] Linking CXX executable bin/percentvalidatortest
 [88/90] Building CXX object src/kded/CMakeFiles/audioshortcutsservice.dir/audioshortcutsservice.cpp.o
 [89/90] Linking CXX shared module bin/kf6/kded/audioshortcutsservice.so
 -- Install configuration: "RelWithDebInfo"
@@ -1303,7 +1303,7 @@ plasma-pa.dep
 +======================================================================================================+
 
 Pre-installing package plasma-pa-6.3.5-x86_64-1_rtz...
-Removing package: plasma-pa-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,14:40:53
+Removing package: plasma-pa-6.3.5-x86_64-1_rtz-upgraded-2025-05-28,18:59:54
 Installing package plasma-pa-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # plasma-pa (audio volume management)

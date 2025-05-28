@@ -6,22 +6,22 @@ ki18n is already installed!
 extra-cmake-modules is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 14:16:28--  https://download.kde.org/stable/plasma/6.3.5/kdecoration-6.3.5.tar.xz
+--2025-05-28 18:36:44--  https://download.kde.org/stable/plasma/6.3.5/kdecoration-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kdecoration-6.3.5.tar.xz [following]
---2025-05-21 14:16:28--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kdecoration-6.3.5.tar.xz
+--2025-05-28 18:36:45--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/kdecoration-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 57576 (56K) [application/octet-stream]
 Saving to: ‘kdecoration-6.3.5.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 88% 1.36M 0s
+     0K .......... .......... .......... .......... .......... 88% 1.38M 0s
     50K ......                                                100% 11.6T=0.04s
 
-2025-05-21 14:16:28 (1.53 MB/s) - ‘kdecoration-6.3.5.tar.xz’ saved [57576/57576]
+2025-05-28 18:36:45 (1.56 MB/s) - ‘kdecoration-6.3.5.tar.xz’ saved [57576/57576]
 
 Found file: kdecoration-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -190,8 +190,8 @@ kdecoration-6.3.5/README.md
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdecoration/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -214,7 +214,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found Gettext: /usr/bin/msgmerge (found version "0.25")
 -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
@@ -242,7 +242,7 @@ hm...lets continue and see what happens
  * Gettext
  * KF6I18n (required version >= 6.10.0)
 
--- Configuring done (1.1s)
+-- Configuring done (1.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdecoration/work/kdecoration-6.3.5/build
 [1/42] Generating ts...
@@ -256,45 +256,45 @@ hm...lets continue and see what happens
 [9/42] Creating library symlink bin/libkdecorations3private.so.2 bin/libkdecorations3private.so
 [10/42] Automatic MOC for target kdecorations3
 [11/42] Building CXX object src/CMakeFiles/kdecorations3.dir/kdecorations3_autogen/mocs_compilation.cpp.o
-[12/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationsettings.cpp.o
+[12/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationthemeprovider.cpp.o
 [13/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decoratedwindow.cpp.o
-[14/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationthemeprovider.cpp.o
-[15/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationbuttongroup.cpp.o
-[16/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationbutton.cpp.o
-[17/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationshadow.cpp.o
+[14/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationshadow.cpp.o
+[15/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationsettings.cpp.o
+[16/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationbuttongroup.cpp.o
+[17/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decorationbutton.cpp.o
 [18/42] Building CXX object src/CMakeFiles/kdecorations3.dir/decoration.cpp.o
 [19/42] Linking CXX shared library bin/libkdecorations3.so.6.3.5
 [20/42] Creating library symlink bin/libkdecorations3.so.6 bin/libkdecorations3.so
 [21/42] Automatic MOC for target decorationShadowTest
-[22/42] Building CXX object autotests/CMakeFiles/decorationShadowTest.dir/decorationShadowTest_autogen/mocs_compilation.cpp.o
+[22/42] Automatic MOC for target decorationTest
 [23/42] Automatic MOC for target decorationButtonTest
-[24/42] Automatic MOC for target decorationTest
-[25/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/decorationButtonTest_autogen/mocs_compilation.cpp.o
-[26/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/decorationTest_autogen/mocs_compilation.cpp.o
-[27/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mockbutton.cpp.o
-[28/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mocksettings.cpp.o
-[29/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mockbridge.cpp.o
-[30/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mockdecoration.cpp.o
-[31/42] Building CXX object autotests/CMakeFiles/decorationShadowTest.dir/shadowtest.cpp.o
-[32/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mocksettings.cpp.o
+[24/42] Building CXX object autotests/CMakeFiles/decorationShadowTest.dir/decorationShadowTest_autogen/mocs_compilation.cpp.o
+[25/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/decorationTest_autogen/mocs_compilation.cpp.o
+[26/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/decorationButtonTest_autogen/mocs_compilation.cpp.o
+[27/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mockbutton.cpp.o
+[28/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mockbutton.cpp.o
+[29/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mockdecoration.cpp.o
+[30/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mockbridge.cpp.o
+[31/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mockbridge.cpp.o
+[32/42] Building CXX object autotests/CMakeFiles/decorationShadowTest.dir/shadowtest.cpp.o
 [33/42] Linking CXX executable bin/decorationShadowTest
-[34/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mockbridge.cpp.o
+[34/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mocksettings.cpp.o
 [35/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mockwindow.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdecoration/work/kdecoration-6.3.5/autotests/mockwindow.cpp: In member function ‘virtual void MockWindow::requestShowWindowMenu(const QRect&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdecoration/work/kdecoration-6.3.5/autotests/mockwindow.cpp:175:53: warning: unused parameter ‘rect’ [-Wunused-parameter]
   175 | void MockWindow::requestShowWindowMenu(const QRect &rect)
       |                                        ~~~~~~~~~~~~~^~~~
-[36/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mockdecoration.cpp.o
+[36/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mocksettings.cpp.o
 [37/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/mockwindow.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdecoration/work/kdecoration-6.3.5/autotests/mockwindow.cpp: In member function ‘virtual void MockWindow::requestShowWindowMenu(const QRect&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdecoration/work/kdecoration-6.3.5/autotests/mockwindow.cpp:175:53: warning: unused parameter ‘rect’ [-Wunused-parameter]
   175 | void MockWindow::requestShowWindowMenu(const QRect &rect)
       |                                        ~~~~~~~~~~~~~^~~~
-[38/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mockbutton.cpp.o
-[39/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/decorationbuttontest.cpp.o
-[40/42] Linking CXX executable bin/decorationButtonTest
-[41/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/decorationtest.cpp.o
-[42/42] Linking CXX executable bin/decorationTest
+[38/42] Building CXX object autotests/CMakeFiles/decorationTest.dir/decorationtest.cpp.o
+[39/42] Linking CXX executable bin/decorationTest
+[40/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/mockdecoration.cpp.o
+[41/42] Building CXX object autotests/CMakeFiles/decorationButtonTest.dir/decorationbuttontest.cpp.o
+[42/42] Linking CXX executable bin/decorationButtonTest
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdecoration/package-kdecoration/usr/include/KDecoration3/KDecoration3/Private/DecoratedWindowPrivate
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdecoration/package-kdecoration/usr/include/KDecoration3/KDecoration3/Private/DecorationBridge
@@ -767,7 +767,7 @@ makepkg-kdecoration.log
 +============================================================================================================+
 
 Pre-installing package kdecoration-6.3.5-x86_64-1_rtz...
-Removing package: kdecoration-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,14:16:45
+Removing package: kdecoration-6.3.5-x86_64-1_rtz-upgraded-2025-05-28,18:36:59
 Installing package kdecoration-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kdecoration (Plugin)

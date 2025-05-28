@@ -4,35 +4,35 @@ Required dependencies: extra-cmake-modules
 extra-cmake-modules is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 15:19:50--  https://download.kde.org/stable/release-service/25.04.1/src/audex-25.04.1.tar.xz
+--2025-05-28 19:38:31--  https://download.kde.org/stable/release-service/25.04.1/src/audex-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/audex-25.04.1.tar.xz [following]
---2025-05-21 15:19:51--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/audex-25.04.1.tar.xz
+--2025-05-28 19:38:31--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/audex-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 741636 (724K) [application/octet-stream]
 Saving to: ‘audex-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... ..........  6% 1.35M 0s
-    50K .......... .......... .......... .......... .......... 13% 1.43M 0s
-   100K .......... .......... .......... .......... .......... 20% 6.54M 0s
-   150K .......... .......... .......... .......... .......... 27% 5.48M 0s
-   200K .......... .......... .......... .......... .......... 34% 2.21M 0s
-   250K .......... .......... .......... .......... .......... 41% 4.89M 0s
-   300K .......... .......... .......... .......... .......... 48% 6.80M 0s
-   350K .......... .......... .......... .......... .......... 55%  935K 0s
-   400K .......... .......... .......... .......... .......... 62% 21.3M 0s
-   450K .......... .......... .......... .......... .......... 69%  353M 0s
+     0K .......... .......... .......... .......... ..........  6% 1.37M 0s
+    50K .......... .......... .......... .......... .......... 13% 1.48M 0s
+   100K .......... .......... .......... .......... .......... 20% 6.46M 0s
+   150K .......... .......... .......... .......... .......... 27% 2.10M 0s
+   200K .......... .......... .......... .......... .......... 34% 6.46M 0s
+   250K .......... .......... .......... .......... .......... 41% 5.06M 0s
+   300K .......... .......... .......... .......... .......... 48% 6.83M 0s
+   350K .......... .......... .......... .......... .......... 55%  964K 0s
+   400K .......... .......... .......... .......... .......... 62%  307M 0s
+   450K .......... .......... .......... .......... .......... 69%  355M 0s
    500K .......... .......... .......... .......... .......... 75%  348M 0s
-   550K .......... .......... .......... .......... .......... 82% 2.56M 0s
-   600K .......... .......... .......... .......... .......... 89% 8.25M 0s
-   650K .......... .......... .......... .......... .......... 96% 7.30M 0s
-   700K .......... .......... ....                            100%  249M=0.2s
+   550K .......... .......... .......... .......... .......... 82% 2.08M 0s
+   600K .......... .......... .......... .......... .......... 89% 10.7M 0s
+   650K .......... .......... .......... .......... .......... 96% 9.98M 0s
+   700K .......... .......... ....                            100% 10.1M=0.2s
 
-2025-05-21 15:19:51 (3.30 MB/s) - ‘audex-25.04.1.tar.xz’ saved [741636/741636]
+2025-05-28 19:38:32 (3.34 MB/s) - ‘audex-25.04.1.tar.xz’ saved [741636/741636]
 
 Found file: audex-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -299,8 +299,8 @@ audex-25.04.1/widgets/cddaheaderwidget.cpp
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -323,7 +323,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
 -- Found KF6Completion: /usr/lib64/cmake/KF6Completion/KF6CompletionConfig.cmake (found version "6.14.0")
@@ -401,48 +401,50 @@ hm...lets continue and see what happens
 
  * Qt6QmlCompilerPlusPrivateTools (required version >= 6.8.3)
 
--- Configuring done (1.4s)
+-- Configuring done (1.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/build
 [1/86] Generating ts...
 [2/86] Generating mo...
 [3/86] Automatic MOC for target devicestest
 [4/86] Automatic MOC for target audex
-[5/86] Generating ui_wavewidgetUI.h
-[6/86] Generating ui_lamewidgetUI.h
-[7/86] Generating ui_opusencwidgetUI.h
-[8/86] Generating ui_faacwidgetUI.h
-[9/86] Generating ui_profiledatainfowidgetUI.h
-[10/86] Generating ui_generalsettingswidgetUI.h
-[11/86] Generating ui_profilewidgetUI.h
+[5/86] Generating ui_profilewidgetUI.h
+[6/86] Generating ui_remoteserversettingswidgetUI.h
+[7/86] Generating ui_lamewidgetUI.h
+[8/86] Generating ui_oggencwidgetUI.h
+[9/86] Generating ui_faacwidgetUI.h
+[10/86] Generating ui_customwidgetUI.h
+[11/86] Generating ui_cddaheaderdatawidgetUI.h
 [12/86] Generating ui_profiledatawidgetUI.h
-[13/86] Generating ui_profiledatacoverwidgetUI.h
-[14/86] Generating ui_profiledatahashlistwidgetUI.h
-[15/86] Generating ui_devicewidgetUI.h
-[16/86] Generating ui_oggencwidgetUI.h
-[17/86] Generating ui_flacwidgetUI.h
-[18/86] Generating ui_cddaheaderdatawidgetUI.h
-[19/86] Generating ui_customwidgetUI.h
-[20/86] Generating ui_profiledataplaylistwidgetUI.h
-[21/86] Generating ui_remoteserversettingswidgetUI.h
-[22/86] Generating ui_profiledatacuesheetwidgetUI.h
-[23/86] Generating ui_profiledatasinglefilewidgetUI.h
-[24/86] Generating preferences.h, preferences.cpp
-[25/86] Generating ui_profiledatalogfilewidgetUI.h
-[26/86] Generating qrc_audex.cpp
-[27/86] Generating ui_filenameschemewizardwidgetUI.h
+[13/86] Generating ui_profiledatainfowidgetUI.h
+[14/86] Generating ui_devicewidgetUI.h
+[15/86] Generating ui_opusencwidgetUI.h
+[16/86] Generating ui_flacwidgetUI.h
+[17/86] Generating ui_profiledatacoverwidgetUI.h
+[18/86] Generating ui_profiledatahashlistwidgetUI.h
+[19/86] Generating ui_profiledataplaylistwidgetUI.h
+[20/86] Generating ui_generalsettingswidgetUI.h
+[21/86] Generating ui_wavewidgetUI.h
+[22/86] Building CXX object test/CMakeFiles/devicestest.dir/devicestest_autogen/mocs_compilation.cpp.o
+[23/86] Generating preferences.h, preferences.cpp
+[24/86] Generating qrc_audex.cpp
+[25/86] Generating ui_profiledatacuesheetwidgetUI.h
+[26/86] Generating ui_profiledatalogfilewidgetUI.h
+[27/86] Generating ui_profiledatasinglefilewidgetUI.h
 [28/86] Generating ui_schemewizardwidgetUI.h
 [29/86] Generating ui_commandwizardwidgetUI.h
-[30/86] Generating ui_logviewwidgetUI.h
-[31/86] Generating ui_textviewwidgetUI.h
-[32/86] Generating ui_extractingprogresswidgetUI.h
-[33/86] Building CXX object test/CMakeFiles/devicestest.dir/devicestest_autogen/mocs_compilation.cpp.o
+[30/86] Generating ui_filenameschemewizardwidgetUI.h
+[31/86] Generating ui_extractingprogresswidgetUI.h
+[32/86] Generating ui_logviewwidgetUI.h
+[33/86] Generating ui_textviewwidgetUI.h
 [34/86] Building CXX object test/CMakeFiles/devicestest.dir/devicestest.cpp.o
 [35/86] Building CXX object CMakeFiles/audex.dir/utils/discidcalculator.cpp.o
-[36/86] Building CXX object CMakeFiles/audex.dir/utils/hashlist.cpp.o
+[36/86] Building CXX object CMakeFiles/audex.dir/utils/crc32hash.cpp.o
 [37/86] Building CXX object CMakeFiles/audex.dir/utils/upload.cpp.o
-[38/86] Building CXX object CMakeFiles/audex.dir/utils/wavefilewriter.cpp.o
-[39/86] Building CXX object CMakeFiles/audex.dir/utils/parameters.cpp.o
+[38/86] Building CXX object CMakeFiles/audex.dir/utils/hashlist.cpp.o
+[39/86] Building CXX object CMakeFiles/audex.dir/utils/cddadevices.cpp.o
+[40/86] Building CXX object CMakeFiles/audex.dir/utils/wavefilewriter.cpp.o
+[41/86] Building CXX object CMakeFiles/audex.dir/utils/parameters.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.cpp: In member function ‘const QString Parameters::toString(const QChar&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/parameters.cpp:138:23: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
   138 |         if (value.type() == QVariant::String || value.type() == QVariant::DateTime || value.type() == QVariant::Date || value.type() == QVariant::Time)
@@ -471,12 +473,24 @@ In file included from /usr/include/qt6/QtCore/QVariant:1,
 /usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
   432 |     Type type() const
       |          ^~~~
-[40/86] Building CXX object CMakeFiles/audex.dir/utils/cddadevices.cpp.o
-[41/86] Building CXX object CMakeFiles/audex.dir/utils/crc32hash.cpp.o
-[42/86] Building CXX object CMakeFiles/audex.dir/utils/cddacdio.cpp.o
+[42/86] Building CXX object CMakeFiles/audex.dir/utils/encoderwrapper.cpp.o
 [43/86] Building CXX object CMakeFiles/audex.dir/utils/cddaextractthread.cpp.o
-[44/86] Building CXX object CMakeFiles/audex.dir/utils/encoderwrapper.cpp.o
-[45/86] Building CXX object CMakeFiles/audex.dir/widgets/cddaheaderwidget.cpp.o
+[44/86] Building CXX object CMakeFiles/audex.dir/widgets/generalsettingswidget.cpp.o
+[45/86] Building CXX object CMakeFiles/audex.dir/utils/cddacdio.cpp.o
+[46/86] Building CXX object CMakeFiles/audex.dir/utils/playlist.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp: In member function ‘void Playlist::p_add_XSPF(const QByteArray&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp:263:24: warning: ‘bool QDomDocument::setContent(const QString&, QString*, int*, int*)’ is deprecated: Use the overload returning ParseResult instead. [-Wdeprecated-declarations]
+  263 |     if (!doc.setContent(QString(playlist), &errorMsg, &errorRow, &errorCol))
+      |          ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtXml/QDomDocument:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.h:12,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp:8:
+/usr/include/qt6/QtXml/qdom.h:328:10: note: declared here
+  328 |     bool setContent(const QString &text, QString *errorMsg, int *errorLine = nullptr, int *errorColumn = nullptr);
+      |          ^~~~~~~~~~
+[47/86] Building CXX object CMakeFiles/audex.dir/utils/cuesheetwriter.cpp.o
+[48/86] Building CXX object CMakeFiles/audex.dir/widgets/devicewidget.cpp.o
+[49/86] Building CXX object CMakeFiles/audex.dir/widgets/cddaheaderwidget.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/widgets/cddaheaderwidget.cpp: In member function ‘void CDDAHeaderWidget::context_menu(const QPoint&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/widgets/cddaheaderwidget.cpp:327:121: warning: ‘QMouseEvent::QMouseEvent(QEvent::Type, const QPointF&, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, const QPointingDevice*)’ is deprecated: Use another constructor [-Wdeprecated-declarations]
   327 |         auto *mevent = new QMouseEvent(QEvent::MouseButtonPress, point, Qt::RightButton, Qt::RightButton, Qt::NoModifier);
@@ -493,53 +507,17 @@ In file included from /usr/include/qt6/QtGui/QMouseEvent:1,
 /usr/include/qt6/QtGui/qevent.h:225:19: note: declared here
   225 |     inline QPoint globalPos() const { return globalPosition().toPoint(); }
       |                   ^~~~~~~~~
-[46/86] Building CXX object CMakeFiles/audex.dir/widgets/generalsettingswidget.cpp.o
-[47/86] Building CXX object CMakeFiles/audex.dir/widgets/devicewidget.cpp.o
-[48/86] Building CXX object CMakeFiles/audex.dir/utils/playlist.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp: In member function ‘void Playlist::p_add_XSPF(const QByteArray&)’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp:263:24: warning: ‘bool QDomDocument::setContent(const QString&, QString*, int*, int*)’ is deprecated: Use the overload returning ParseResult instead. [-Wdeprecated-declarations]
-  263 |     if (!doc.setContent(QString(playlist), &errorMsg, &errorRow, &errorCol))
-      |          ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /usr/include/qt6/QtXml/QDomDocument:1,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.h:12,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/playlist.cpp:8:
-/usr/include/qt6/QtXml/qdom.h:328:10: note: declared here
-  328 |     bool setContent(const QString &text, QString *errorMsg, int *errorLine = nullptr, int *errorColumn = nullptr);
-      |          ^~~~~~~~~~
-[49/86] Building CXX object CMakeFiles/audex.dir/widgets/remoteserversettingswidget.cpp.o
-[50/86] Building CXX object CMakeFiles/audex.dir/utils/schemeparser.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp: In member function ‘const QString SchemeParser::replace_char_list(const QString&, const QString&, const QString&)’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:554:19: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
-  554 |     if (from.count() != to.count()) {
-      |         ~~~~~~~~~~^~
-In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
-                 from /usr/include/qt6/QtCore/qfloat16.h:10,
-                 from /usr/include/qt6/QtCore/qmetatype.h:14,
-                 from /usr/include/qt6/QtCore/qvariant.h:10,
-                 from /usr/include/qt6/QtCore/qlocale.h:7,
-                 from /usr/include/qt6/QtCore/qcalendar.h:10,
-                 from /usr/include/qt6/QtCore/qdatetime.h:8,
-                 from /usr/include/qt6/QtCore/QDate:1,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.h:11,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:8:
-/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
-  195 |     inline qsizetype count() const { return d.size; }
-      |                      ^~~~~
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:554:33: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
-  554 |     if (from.count() != to.count()) {
-      |                         ~~~~~~~~^~
-/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
-  195 |     inline qsizetype count() const { return d.size; }
-      |                      ^~~~~
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:560:35: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
-  560 |     for (int i = 0; i < from.count(); i++) {
-      |                         ~~~~~~~~~~^~
-/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
-  195 |     inline qsizetype count() const { return d.size; }
-      |                      ^~~~~
-[51/86] Building CXX object CMakeFiles/audex.dir/widgets/profilewidget.cpp.o
-[52/86] Building CXX object CMakeFiles/audex.dir/utils/cuesheetwriter.cpp.o
-[53/86] Building CXX object CMakeFiles/audex.dir/mainwindow.cpp.o
+[50/86] Building CXX object CMakeFiles/audex.dir/utils/encoderassistant.cpp.o
+[51/86] Building CXX object CMakeFiles/audex.dir/models/cddamodel.cpp.o
+[52/86] Building CXX object CMakeFiles/audex.dir/widgets/remoteserversettingswidget.cpp.o
+[53/86] Building CXX object CMakeFiles/audex.dir/models/profilemodel.cpp.o
+[54/86] Building CXX object CMakeFiles/audex.dir/main.cpp.o
+[55/86] Building CXX object CMakeFiles/audex.dir/widgets/opusencwidget.cpp.o
+[56/86] Building CXX object CMakeFiles/audex.dir/widgets/lamewidget.cpp.o
+[57/86] Building CXX object CMakeFiles/audex.dir/widgets/faacwidget.cpp.o
+[58/86] Building CXX object CMakeFiles/audex.dir/widgets/oggencwidget.cpp.o
+[59/86] Building CXX object CMakeFiles/audex.dir/widgets/wavewidget.cpp.o
+[60/86] Building CXX object CMakeFiles/audex.dir/mainwindow.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp: In member function ‘void MainWindow::setup_actions()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/mainwindow.cpp:445:72: warning: ‘constexpr QKeyCombination Qt::operator+(Modifier, Key)’ is deprecated: Use operator| instead [-Wdeprecated-declarations]
   445 |     actionCollection()->setDefaultShortcut(ejectAction, Qt::CTRL + Qt::Key_E);
@@ -578,38 +556,60 @@ In file included from /usr/include/qt6/QtCore/qobjectdefs.h:12,
 /usr/include/qt6/QtCore/qnamespace.h:1972:27: note: declared here
  1972 | constexpr QKeyCombination operator+(Qt::Modifier modifier, Qt::Key key) noexcept
       |                           ^~~~~~~~
-[54/86] Building CXX object CMakeFiles/audex.dir/widgets/lamewidget.cpp.o
-[55/86] Building CXX object CMakeFiles/audex.dir/main.cpp.o
-[56/86] Building CXX object CMakeFiles/audex.dir/widgets/faacwidget.cpp.o
-[57/86] Building CXX object CMakeFiles/audex.dir/utils/encoderassistant.cpp.o
-[58/86] Building CXX object CMakeFiles/audex.dir/widgets/wavewidget.cpp.o
-[59/86] Building CXX object CMakeFiles/audex.dir/widgets/flacwidget.cpp.o
-[60/86] Building CXX object CMakeFiles/audex.dir/models/cddamodel.cpp.o
-[61/86] Building CXX object CMakeFiles/audex.dir/widgets/opusencwidget.cpp.o
-[62/86] Building CXX object CMakeFiles/audex.dir/widgets/oggencwidget.cpp.o
+[61/86] Building CXX object CMakeFiles/audex.dir/widgets/flacwidget.cpp.o
+[62/86] Building CXX object CMakeFiles/audex.dir/widgets/customwidget.cpp.o
 [63/86] Building CXX object CMakeFiles/audex.dir/qrc_audex.cpp.o
-[64/86] Building CXX object CMakeFiles/audex.dir/widgets/customwidget.cpp.o
-[65/86] Building CXX object CMakeFiles/audex.dir/models/profilemodel.cpp.o
+[64/86] Building CXX object CMakeFiles/audex.dir/utils/schemeparser.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp: In member function ‘const QString SchemeParser::replace_char_list(const QString&, const QString&, const QString&)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:554:19: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+  554 |     if (from.count() != to.count()) {
+      |         ~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
+                 from /usr/include/qt6/QtCore/qfloat16.h:10,
+                 from /usr/include/qt6/QtCore/qmetatype.h:14,
+                 from /usr/include/qt6/QtCore/qvariant.h:10,
+                 from /usr/include/qt6/QtCore/qlocale.h:7,
+                 from /usr/include/qt6/QtCore/qcalendar.h:10,
+                 from /usr/include/qt6/QtCore/qdatetime.h:8,
+                 from /usr/include/qt6/QtCore/QDate:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.h:11,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:8:
+/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
+  195 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:554:33: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+  554 |     if (from.count() != to.count()) {
+      |                         ~~~~~~~~^~
+/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
+  195 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/work/audex-25.04.1/utils/schemeparser.cpp:560:35: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+  560 |     for (int i = 0; i < from.count(); i++) {
+      |                         ~~~~~~~~~~^~
+/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
+  195 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+[65/86] Building CXX object CMakeFiles/audex.dir/widgets/profilewidget.cpp.o
 [66/86] Linking CXX executable bin/devicestest
-[67/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatacoverdialog.cpp.o
-[68/86] Building CXX object CMakeFiles/audex.dir/dialogs/cddaheaderdatadialog.cpp.o
-[69/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatahashlistdialog.cpp.o
-[70/86] Building CXX object CMakeFiles/audex.dir/dialogs/errordialog.cpp.o
-[71/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatalogfiledialog.cpp.o
-[72/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatainfodialog.cpp.o
-[73/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledataplaylistdialog.cpp.o
-[74/86] Building CXX object CMakeFiles/audex.dir/audex_autogen/mocs_compilation.cpp.o
-[75/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatadialog.cpp.o
-[76/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatasinglefiledialog.cpp.o
-[77/86] Building CXX object CMakeFiles/audex.dir/dialogs/filenameschemewizarddialog.cpp.o
-[78/86] Building CXX object CMakeFiles/audex.dir/dialogs/logviewdialog.cpp.o
-[79/86] Building CXX object CMakeFiles/audex.dir/dialogs/schemewizarddialog.cpp.o
-[80/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatacuesheetdialog.cpp.o
-[81/86] Building CXX object CMakeFiles/audex.dir/preferences.cpp.o
-[82/86] Building CXX object CMakeFiles/audex.dir/dialogs/textviewdialog.cpp.o
-[83/86] Building CXX object CMakeFiles/audex.dir/dialogs/commandwizarddialog.cpp.o
-[84/86] Building CXX object CMakeFiles/audex.dir/core/audex.cpp.o
-[85/86] Building CXX object CMakeFiles/audex.dir/dialogs/extractingprogressdialog.cpp.o
+[67/86] Building CXX object CMakeFiles/audex.dir/dialogs/cddaheaderdatadialog.cpp.o
+[68/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledataplaylistdialog.cpp.o
+[69/86] Building CXX object CMakeFiles/audex.dir/audex_autogen/mocs_compilation.cpp.o
+[70/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatainfodialog.cpp.o
+[71/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatadialog.cpp.o
+[72/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatahashlistdialog.cpp.o
+[73/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatasinglefiledialog.cpp.o
+[74/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatacuesheetdialog.cpp.o
+[75/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatacoverdialog.cpp.o
+[76/86] Building CXX object CMakeFiles/audex.dir/dialogs/filenameschemewizarddialog.cpp.o
+[77/86] Building CXX object CMakeFiles/audex.dir/dialogs/errordialog.cpp.o
+[78/86] Building CXX object CMakeFiles/audex.dir/preferences.cpp.o
+[79/86] Building CXX object CMakeFiles/audex.dir/dialogs/profiledatalogfiledialog.cpp.o
+[80/86] Building CXX object CMakeFiles/audex.dir/dialogs/schemewizarddialog.cpp.o
+[81/86] Building CXX object CMakeFiles/audex.dir/dialogs/logviewdialog.cpp.o
+[82/86] Building CXX object CMakeFiles/audex.dir/dialogs/commandwizarddialog.cpp.o
+[83/86] Building CXX object CMakeFiles/audex.dir/dialogs/textviewdialog.cpp.o
+[84/86] Building CXX object CMakeFiles/audex.dir/dialogs/extractingprogressdialog.cpp.o
+[85/86] Building CXX object CMakeFiles/audex.dir/core/audex.cpp.o
 [86/86] Linking CXX executable bin/audex
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/audex/package-audex/usr/bin/audex
@@ -971,7 +971,7 @@ makepkg-audex.log
 +==============================================================================================+
 
 Pre-installing package audex-25.04.1-x86_64-1_rtz...
-Removing package: audex-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,15:20:16
+Removing package: audex-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,19:38:55
 Installing package audex-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # audex (ripping discs)

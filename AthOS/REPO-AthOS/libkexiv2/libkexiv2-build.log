@@ -5,22 +5,22 @@ exiv2 is already installed!
 extra-cmake-modules is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 16:45:41--  https://download.kde.org/stable/release-service/25.04.1/src/libkexiv2-25.04.1.tar.xz
+--2025-05-28 21:02:31--  https://download.kde.org/stable/release-service/25.04.1/src/libkexiv2-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkexiv2-25.04.1.tar.xz [following]
---2025-05-21 16:45:42--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkexiv2-25.04.1.tar.xz
+--2025-05-28 21:02:31--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkexiv2-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 60676 (59K) [application/octet-stream]
 Saving to: ‘libkexiv2-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 84% 1.35M 0s
+     0K .......... .......... .......... .......... .......... 84% 1.38M 0s
     50K .........                                             100% 17.2T=0.04s
 
-2025-05-21 16:45:42 (1.60 MB/s) - ‘libkexiv2-25.04.1.tar.xz’ saved [60676/60676]
+2025-05-28 21:02:32 (1.63 MB/s) - ‘libkexiv2-25.04.1.tar.xz’ saved [60676/60676]
 
 Found file: libkexiv2-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -73,8 +73,8 @@ libkexiv2-25.04.1/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkexiv2/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -99,7 +99,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found LibExiv2: /usr/lib64/libexiv2.so (found suitable version "0.28.5", minimum required is "0.25")
 -- DEPRECATED_BASE_VERSION (0) was lower than EXCLUDE_DEPRECATED_BEFORE_AND_AT (5.1.0) when calling ecm_generate_export_header(), raising to that.
@@ -132,7 +132,9 @@ hm...lets continue and see what happens
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/build
 [1/44] Automatic MOC for target KExiv2
 [2/44] Building CXX object src/CMakeFiles/KExiv2.dir/KExiv2_autogen/mocs_compilation.cpp.o
-[3/44] Building CXX object src/CMakeFiles/KExiv2.dir/rotationmatrix.cpp.o
+[3/44] Building CXX object src/CMakeFiles/KExiv2.dir/libkexiv2_debug.cpp.o
+[4/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2data.cpp.o
+[5/44] Building CXX object src/CMakeFiles/KExiv2.dir/rotationmatrix.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/rotationmatrix.cpp: In member function ‘KExiv2Iface::RotationMatrix& KExiv2Iface::RotationMatrix::operator*=(QList<TransformationAction>)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/rotationmatrix.cpp:175:55: warning: ‘constexpr typename std::add_const<_Tp>::type& qAsConst(T&) [with T = QList<KExiv2Iface::RotationMatrix::TransformationAction>; typename std::add_const<_Tp>::type = const QList<KExiv2Iface::RotationMatrix::TransformationAction>]’ is deprecated: Use std::as_const() instead. [-Wdeprecated-declarations]
   175 |     for (const TransformationAction& action : qAsConst(actions))
@@ -148,8 +150,6 @@ In file included from /usr/include/qt6/QtCore/qforeach.h:11,
 /usr/include/qt6/QtCore/qttypetraits.h:36:45: note: declared here
    36 | constexpr typename std::add_const<T>::type &qAsConst(T &t) noexcept { return t; }
       |                                             ^~~~~~~~
-[4/44] Building CXX object src/CMakeFiles/KExiv2.dir/libkexiv2_debug.cpp.o
-[5/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2data.cpp.o
 [6/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2comments.cpp.o
 [7/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2.cpp: In static member function ‘static bool KExiv2Iface::KExiv2::initializeExiv2()’:
@@ -162,10 +162,10 @@ In file included from /usr/include/exiv2/exiv2.hpp:9,
 /usr/include/exiv2/bmffimage.hpp:16:30: note: declared here
    16 | [[deprecated]] EXIV2API bool enableBMFF(bool enable = true);
       |                              ^~~~~~~~~~
-[8/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2image.cpp.o
-[9/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2gps.cpp.o
-[10/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2_p.cpp.o
-[11/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2previews.cpp.o
+[8/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2gps.cpp.o
+[9/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2previews.cpp.o
+[10/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2image.cpp.o
+[11/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2_p.cpp.o
 [12/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2iptc.cpp.o
 [13/44] Building CXX object src/CMakeFiles/KExiv2.dir/kexiv2exif.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkexiv2/work/libkexiv2-25.04.1/src/kexiv2exif.cpp: In member function ‘QVariant KExiv2Iface::KExiv2::getExifTagVariant(const char*, bool, bool, int) const’:
@@ -197,34 +197,34 @@ In file included from /usr/include/exiv2/exiv2.hpp:9,
       |                                   ~~^~~~~~~~~~~~~
 [15/44] Linking CXX shared library bin/libKExiv2Qt6.so.5.1.0
 [16/44] Creating library symlink bin/libKExiv2Qt6.so.0 bin/libKExiv2Qt6.so
-[17/44] Automatic MOC for target readimagewritexmpsidecar
-[18/44] Automatic MOC for target setiptcpreview
-[19/44] Automatic MOC for target erasetag
-[20/44] Automatic MOC for target usexmpsidecar
-[21/44] Automatic MOC for target printtagslist
+[17/44] Automatic MOC for target setxmpface
+[18/44] Automatic MOC for target printtagslist
+[19/44] Automatic MOC for target readimagewritexmpsidecar
+[20/44] Automatic MOC for target erasetag
+[21/44] Automatic MOC for target setiptcpreview
 [22/44] Automatic MOC for target loadfromba
-[23/44] Automatic MOC for target setxmpface
-[24/44] Building CXX object tests/CMakeFiles/readimagewritexmpsidecar.dir/readimagewritexmpsidecar_autogen/mocs_compilation.cpp.o
-[25/44] Building CXX object tests/CMakeFiles/setiptcpreview.dir/setiptcpreview_autogen/mocs_compilation.cpp.o
-[26/44] Building CXX object tests/CMakeFiles/erasetag.dir/erasetag_autogen/mocs_compilation.cpp.o
-[27/44] Building CXX object tests/CMakeFiles/usexmpsidecar.dir/usexmpsidecar_autogen/mocs_compilation.cpp.o
-[28/44] Building CXX object tests/CMakeFiles/setxmpface.dir/setxmpface_autogen/mocs_compilation.cpp.o
-[29/44] Building CXX object tests/CMakeFiles/printtagslist.dir/printtagslist_autogen/mocs_compilation.cpp.o
+[23/44] Automatic MOC for target usexmpsidecar
+[24/44] Building CXX object tests/CMakeFiles/erasetag.dir/erasetag_autogen/mocs_compilation.cpp.o
+[25/44] Building CXX object tests/CMakeFiles/usexmpsidecar.dir/usexmpsidecar_autogen/mocs_compilation.cpp.o
+[26/44] Building CXX object tests/CMakeFiles/setxmpface.dir/setxmpface_autogen/mocs_compilation.cpp.o
+[27/44] Building CXX object tests/CMakeFiles/printtagslist.dir/printtagslist_autogen/mocs_compilation.cpp.o
+[28/44] Building CXX object tests/CMakeFiles/readimagewritexmpsidecar.dir/readimagewritexmpsidecar_autogen/mocs_compilation.cpp.o
+[29/44] Building CXX object tests/CMakeFiles/setiptcpreview.dir/setiptcpreview_autogen/mocs_compilation.cpp.o
 [30/44] Building CXX object tests/CMakeFiles/loadfromba.dir/loadfromba_autogen/mocs_compilation.cpp.o
-[31/44] Building CXX object tests/CMakeFiles/erasetag.dir/erasetag.cpp.o
-[32/44] Building CXX object tests/CMakeFiles/loadfromba.dir/loadfromba.cpp.o
-[33/44] Building CXX object tests/CMakeFiles/setiptcpreview.dir/setiptcpreview.cpp.o
-[34/44] Building CXX object tests/CMakeFiles/printtagslist.dir/printtagslist.cpp.o
-[35/44] Linking CXX executable bin/erasetag
-[36/44] Building CXX object tests/CMakeFiles/usexmpsidecar.dir/usexmpsidecar.cpp.o
-[37/44] Linking CXX executable bin/setiptcpreview
-[38/44] Linking CXX executable bin/loadfromba
-[39/44] Linking CXX executable bin/printtagslist
+[31/44] Building CXX object tests/CMakeFiles/loadfromba.dir/loadfromba.cpp.o
+[32/44] Building CXX object tests/CMakeFiles/setiptcpreview.dir/setiptcpreview.cpp.o
+[33/44] Building CXX object tests/CMakeFiles/printtagslist.dir/printtagslist.cpp.o
+[34/44] Building CXX object tests/CMakeFiles/readimagewritexmpsidecar.dir/readimagewritexmpsidecar.cpp.o
+[35/44] Linking CXX executable bin/setiptcpreview
+[36/44] Linking CXX executable bin/loadfromba
+[37/44] Building CXX object tests/CMakeFiles/usexmpsidecar.dir/usexmpsidecar.cpp.o
+[38/44] Linking CXX executable bin/printtagslist
+[39/44] Linking CXX executable bin/readimagewritexmpsidecar
 [40/44] Linking CXX executable bin/usexmpsidecar
 [41/44] Building CXX object tests/CMakeFiles/setxmpface.dir/setxmpface.cpp.o
-[42/44] Linking CXX executable bin/setxmpface
-[43/44] Building CXX object tests/CMakeFiles/readimagewritexmpsidecar.dir/readimagewritexmpsidecar.cpp.o
-[44/44] Linking CXX executable bin/readimagewritexmpsidecar
+[42/44] Building CXX object tests/CMakeFiles/erasetag.dir/erasetag.cpp.o
+[43/44] Linking CXX executable bin/setxmpface
+[44/44] Linking CXX executable bin/erasetag
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/libKExiv2Qt6.so.5.1.0
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkexiv2/package-libkexiv2/usr/lib64/libKExiv2Qt6.so.0
@@ -355,7 +355,7 @@ makepkg-libkexiv2.log
 +==========================================================================================================+
 
 Pre-installing package libkexiv2-25.04.1-x86_64-1_rtz...
-Removing package: libkexiv2-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,16:45:54
+Removing package: libkexiv2-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,21:02:43
 Installing package libkexiv2-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # libkexiv2 (Library)

@@ -11,29 +11,29 @@ kio is already installed!
 kwidgetsaddons is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 16:43:35--  https://download.kde.org/stable/release-service/25.04.1/src/libkcddb-25.04.1.tar.xz
+--2025-05-28 21:00:33--  https://download.kde.org/stable/release-service/25.04.1/src/libkcddb-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkcddb-25.04.1.tar.xz [following]
---2025-05-21 16:43:35--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkcddb-25.04.1.tar.xz
+--2025-05-28 21:00:34--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/libkcddb-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 450224 (440K) [application/octet-stream]
 Saving to: ‘libkcddb-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 11% 1.33M 0s
-    50K .......... .......... .......... .......... .......... 22% 1.44M 0s
-   100K .......... .......... .......... .......... .......... 34% 5.10M 0s
-   150K .......... .......... .......... .......... .......... 45% 2.14M 0s
-   200K .......... .......... .......... .......... .......... 56% 5.04M 0s
-   250K .......... .......... .......... .......... .......... 68% 5.31M 0s
-   300K .......... .......... .......... .......... .......... 79% 6.97M 0s
-   350K .......... .......... .......... .......... .......... 90% 1.11M 0s
-   400K .......... .......... .......... .........            100%  383M=0.2s
+     0K .......... .......... .......... .......... .......... 11% 1.40M 0s
+    50K .......... .......... .......... .......... .......... 22% 1.48M 0s
+   100K .......... .......... .......... .......... .......... 34% 5.05M 0s
+   150K .......... .......... .......... .......... .......... 45% 2.09M 0s
+   200K .......... .......... .......... .......... .......... 56% 6.94M 0s
+   250K .......... .......... .......... .......... .......... 68% 5.19M 0s
+   300K .......... .......... .......... .......... .......... 79% 7.04M 0s
+   350K .......... .......... .......... .......... .......... 90% 1.18M 0s
+   400K .......... .......... .......... .........            100%  405M=0.2s
 
-2025-05-21 16:43:36 (2.48 MB/s) - ‘libkcddb-25.04.1.tar.xz’ saved [450224/450224]
+2025-05-28 21:00:34 (2.59 MB/s) - ‘libkcddb-25.04.1.tar.xz’ saved [450224/450224]
 
 Found file: libkcddb-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -426,8 +426,8 @@ libkcddb-25.04.1/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -450,7 +450,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
 -- Found Gettext: /usr/bin/msgmerge (found version "0.25")
@@ -512,21 +512,25 @@ hm...lets continue and see what happens
  * MusicBrainz5, Music metadata lookup for KDE multimedia applications through libkcddb. You need version 5.x of libmusicbrainz, <https://www.musicbrainz.org>
    A library that provides access to metadata lookup on the MusicBrainz server
 
--- Configuring done (1.8s)
+-- Configuring done (1.7s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/build
-[1/50] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/build/kcmcddb && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/kcmcddb/kcm_cddb.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/build/kcmcddb/kcm_cddb.desktop
+[1/50] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/build/kcmcddb && /usr/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/kcmcddb/kcm_cddb.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/build/kcmcddb/kcm_cddb.desktop
 [2/50] Generating ts...
-[3/50] Generating po/sv/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[4/50] Generating po/pt/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[5/50] Generating po/es/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[6/50] Generating po/uk/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[7/50] Generating po/fr/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[8/50] Generating po/sr/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[9/50] Generating po/ru/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[10/50] Generating index.cache.bz2
-[11/50] Generating po/de/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[12/50] Generating po/pt_BR/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[3/50] Generating po/fr/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[4/50] Generating po/sr@latin/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[5/50] Generating po/uk/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[6/50] Generating po/nl/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[7/50] Generating po/ru/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[8/50] Generating po/ca/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[9/50] Generating po/sr/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[10/50] Generating po/es/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[11/50] Generating index.cache.bz2
+[12/50] Generating po/pt/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[13/50] Generating mo...
+[14/50] Generating po/de/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[15/50] Generating po/sv/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[16/50] Generating po/pt_BR/docs/kcontrol/cddbretrieval5/index.cache.bz2
 I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/pt-BR.xml": No such file or directory
 No "pt_br" localization of "footer-doc-comment" exists; using "en".
 No "pt_br" localization of "footer-doc-feedback" exists; using "en".
@@ -537,37 +541,20 @@ No "pt_br" localization of "footer-doc-teamname" exists; using "en".
 No "pt_br" localization of "footer-doc-comment" exists; using "en".
 No "pt_br" localization of "footer-doc-feedback" exists; using "en".
 No "pt_br" localization of "footer-doc-teamname" exists; using "en".
-[13/50] Generating mo...
-[14/50] Generating po/it/docs/kcontrol/cddbretrieval5/index.cache.bz2
+[17/50] Generating po/it/docs/kcontrol/cddbretrieval5/index.cache.bz2
 Link element has no content and no Endterm. Nothing to show in the link to cddb-page
 Link element has no content and no Endterm. Nothing to show in the link to cddb-editor
 Link element has no content and no Endterm. Nothing to show in the link to cddb-editor
-[15/50] Generating po/sr@latin/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[16/50] Generating po/nl/docs/kcontrol/cddbretrieval5/index.cache.bz2
-[17/50] Generating po/ca/docs/kcontrol/cddbretrieval5/index.cache.bz2
 [18/50] Automatic MOC for target KCddb
 [19/50] Generating configbase.h, configbase.cpp
 [20/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/KCddb_autogen/mocs_compilation.cpp.o
-[21/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/logging.cpp.o
-[22/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/kcddb.cpp.o
-[23/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/asynchttpsubmit.cpp.o
-[24/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/cddbplookup.cpp.o
-[25/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/config.cpp.o
-[26/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/synchttpsubmit.cpp.o
-[27/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/categories.cpp.o
-[28/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/httpsubmit.cpp.o
-[29/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/synchttplookup.cpp.o
-[30/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/submit.cpp.o
-[31/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/asynchttplookup.cpp.o
-[32/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/client.cpp.o
-[33/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/asynccddbplookup.cpp.o
-[34/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/httplookup.cpp.o
-[35/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/cache.cpp.o
-[36/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/sites.cpp.o
-[37/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/synccddbplookup.cpp.o
-[38/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/configbase.cpp.o
-[39/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/lookup.cpp.o
-[40/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/cddb.cpp.o
+[21/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/kcddb.cpp.o
+[22/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/logging.cpp.o
+[23/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/config.cpp.o
+[24/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/synchttplookup.cpp.o
+[25/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/categories.cpp.o
+[26/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/submit.cpp.o
+[27/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/cddb.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/libkcddb/cddb.cpp: In static member function ‘static KCDDB::CDInfoList KCDDB::CDDB::cacheFiles(const KCDDB::TrackOffsetList&, const KCDDB::Config&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libkcddb/work/libkcddb-25.04.1/libkcddb/cddb.cpp:113:46: warning: ‘constexpr typename std::add_const<_Tp>::type& qAsConst(T&) [with T = QList<QString>; typename std::add_const<_Tp>::type = const QList<QString>]’ is deprecated: Use std::as_const() instead. [-Wdeprecated-declarations]
   113 |       for (const QString &category : qAsConst(categories)) {
@@ -586,8 +573,21 @@ In file included from /usr/include/qt6/QtCore/qforeach.h:11,
 /usr/include/qt6/QtCore/qttypetraits.h:36:45: note: declared here
    36 | constexpr typename std::add_const<T>::type &qAsConst(T &t) noexcept { return t; }
       |                                             ^~~~~~~~
-[41/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/cdinfo.cpp.o
-[42/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/genres.cpp.o
+[28/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/synchttpsubmit.cpp.o
+[29/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/httplookup.cpp.o
+[30/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/asynchttplookup.cpp.o
+[31/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/client.cpp.o
+[32/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/cddbplookup.cpp.o
+[33/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/cache.cpp.o
+[34/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/lookup.cpp.o
+[35/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/asynchttpsubmit.cpp.o
+[36/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/genres.cpp.o
+[37/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/configbase.cpp.o
+[38/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/httpsubmit.cpp.o
+[39/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/sites.cpp.o
+[40/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/asynccddbplookup.cpp.o
+[41/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/synccddbplookup.cpp.o
+[42/50] Building CXX object libkcddb/CMakeFiles/KCddb.dir/cdinfo.cpp.o
 [43/50] Linking CXX shared library bin/libKCddb6.so.5.1.0
 [44/50] Creating library symlink bin/libKCddb6.so.5 bin/libKCddb6.so
 [45/50] Automatic MOC for target kcm_cddb
@@ -1440,7 +1440,7 @@ makepkg-libkcddb.log
 +=======================================================================================================+
 
 Pre-installing package libkcddb-25.04.1-x86_64-1_rtz...
-Removing package: libkcddb-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,16:43:51
+Removing package: libkcddb-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,21:00:45
 Installing package libkcddb-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # libkcddb (KDE CDDB library)

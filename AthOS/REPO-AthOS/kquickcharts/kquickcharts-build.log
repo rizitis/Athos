@@ -4,23 +4,23 @@ Required dependencies: extra-cmake-modules
 extra-cmake-modules is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 13:22:16--  https://download.kde.org/stable/frameworks/6.14/kquickcharts-6.14.0.tar.xz
+--2025-05-28 17:48:28--  https://download.kde.org/stable/frameworks/6.14/kquickcharts-6.14.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kquickcharts-6.14.0.tar.xz [following]
---2025-05-21 13:22:17--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kquickcharts-6.14.0.tar.xz
+--2025-05-28 17:48:28--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/kquickcharts-6.14.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 110256 (108K) [application/octet-stream]
 Saving to: ‘kquickcharts-6.14.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 46% 1.13M 0s
-    50K .......... .......... .......... .......... .......... 92% 1.27M 0s
-   100K .......                                               100% 14.3T=0.08s
+     0K .......... .......... .......... .......... .......... 46% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 92% 1.52M 0s
+   100K .......                                               100% 14.3T=0.07s
 
-2025-05-21 13:22:17 (1.29 MB/s) - ‘kquickcharts-6.14.0.tar.xz’ saved [110256/110256]
+2025-05-28 17:48:29 (1.54 MB/s) - ‘kquickcharts-6.14.0.tar.xz’ saved [110256/110256]
 
 Found file: kquickcharts-6.14.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -163,8 +163,8 @@ kquickcharts-6.14.0/src/shaders/sdf.glsl
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kquickcharts/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -191,7 +191,7 @@ hm...lets continue and see what happens
 -- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 shaders/barchart.vert -> barchart.vert.qsb exposed as :/qt/qml/org/kde/quickcharts/shaders//barchart.vert.qsb
 shaders/barchart.frag -> barchart.frag.qsb exposed as :/qt/qml/org/kde/quickcharts/shaders//barchart.frag.qsb
@@ -228,26 +228,26 @@ shaders/piechart.frag -> piechart.frag.qsb exposed as :/qt/qml/org/kde/quickchar
  * ECM (required version >= 6.14.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
  * Qt6
 
--- Configuring done (1.3s)
+-- Configuring done (1.2s)
 -- Generating done (0.1s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kquickcharts/work/kquickcharts-6.14.0/build
 [1/105] Copying QuickChartsControls qml sources into build dir
 [2/105] Copying QuickChartsControls qml resources into build dir
 [3/105] Generating .qsb/piechart.vert.qsb
-spirv-opt -O /tmp/qsb-PSBFUQ/qsb_spv_temp -o /tmp/qsb-PSBFUQ/qsb_spv_temp_out
-spirv-opt -O /tmp/qsb-PSBFUQ/qsb_spv_temp -o /tmp/qsb-PSBFUQ/qsb_spv_temp_out
-[4/105] Generating .qsb/barchart.vert.qsb
-spirv-opt -O /tmp/qsb-gtvfRy/qsb_spv_temp -o /tmp/qsb-gtvfRy/qsb_spv_temp_out
-spirv-opt -O /tmp/qsb-gtvfRy/qsb_spv_temp -o /tmp/qsb-gtvfRy/qsb_spv_temp_out
-[5/105] Generating .qsb/piechart.frag.qsb
-spirv-opt -O /tmp/qsb-NicZpv/qsb_spv_temp -o /tmp/qsb-NicZpv/qsb_spv_temp_out
-[6/105] Generating .qsb/barchart.frag.qsb
-spirv-opt -O /tmp/qsb-utMxvl/qsb_spv_temp -o /tmp/qsb-utMxvl/qsb_spv_temp_out
-[7/105] Generating .qsb/linechart.vert.qsb
-spirv-opt -O /tmp/qsb-QPRveJ/qsb_spv_temp -o /tmp/qsb-QPRveJ/qsb_spv_temp_out
-spirv-opt -O /tmp/qsb-QPRveJ/qsb_spv_temp -o /tmp/qsb-QPRveJ/qsb_spv_temp_out
+spirv-opt -O /tmp/qsb-QlkuoW/qsb_spv_temp -o /tmp/qsb-QlkuoW/qsb_spv_temp_out
+spirv-opt -O /tmp/qsb-QlkuoW/qsb_spv_temp -o /tmp/qsb-QlkuoW/qsb_spv_temp_out
+[4/105] Generating .qsb/linechart.vert.qsb
+spirv-opt -O /tmp/qsb-hNGHra/qsb_spv_temp -o /tmp/qsb-hNGHra/qsb_spv_temp_out
+spirv-opt -O /tmp/qsb-hNGHra/qsb_spv_temp -o /tmp/qsb-hNGHra/qsb_spv_temp_out
+[5/105] Generating .qsb/barchart.frag.qsb
+spirv-opt -O /tmp/qsb-myoDCb/qsb_spv_temp -o /tmp/qsb-myoDCb/qsb_spv_temp_out
+[6/105] Generating .qsb/barchart.vert.qsb
+spirv-opt -O /tmp/qsb-iidZQj/qsb_spv_temp -o /tmp/qsb-iidZQj/qsb_spv_temp_out
+spirv-opt -O /tmp/qsb-iidZQj/qsb_spv_temp -o /tmp/qsb-iidZQj/qsb_spv_temp_out
+[7/105] Generating .qsb/piechart.frag.qsb
+spirv-opt -O /tmp/qsb-wqQZOo/qsb_spv_temp -o /tmp/qsb-wqQZOo/qsb_spv_temp_out
 [8/105] Generating .qsb/linechart.frag.qsb
-spirv-opt -O /tmp/qsb-aXtZRB/qsb_spv_temp -o /tmp/qsb-aXtZRB/qsb_spv_temp_out
+spirv-opt -O /tmp/qsb-llwOPd/qsb_spv_temp -o /tmp/qsb-llwOPd/qsb_spv_temp_out
 [9/105] Automatic MOC for target QuickCharts
 [10/105] Running AUTOMOC file extraction for target QuickCharts
 [11/105] Running rcc for resource qmake_org_kde_quickcharts
@@ -256,93 +256,93 @@ spirv-opt -O /tmp/qsb-aXtZRB/qsb_spv_temp -o /tmp/qsb-aXtZRB/qsb_spv_temp_out
 [14/105] Automatic QML type registration for target QuickCharts
 [15/105] Building CXX object src/CMakeFiles/QuickCharts.dir/QuickCharts_autogen/mocs_compilation.cpp.o
 [16/105] Building CXX object src/CMakeFiles/QuickCharts.dir/.qt/rcc/qrc_qmake_org_kde_quickcharts.cpp.o
-[17/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/BarChartMaterial.cpp.o
-[18/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/SingleValueSource.cpp.o
-[19/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/MapProxySource.cpp.o
-[20/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ChartDataSource.cpp.o
-[21/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ColorGradientSource.cpp.o
-[22/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/BarChartNode.cpp.o
-[23/105] Building CXX object src/CMakeFiles/QuickCharts.dir/.qt/rcc/qrc_shaders.cpp.o
-[24/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/PieChartMaterial.cpp.o
-[25/105] Building CXX object src/CMakeFiles/QuickCharts.dir/Chart.cpp.o
-[26/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/LineSegmentNode.cpp.o
-[27/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ArraySource.cpp.o
-[28/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/LineChartNode.cpp.o
-[29/105] Building CXX object src/CMakeFiles/QuickCharts.dir/RangeGroup.cpp.o
-[30/105] Building CXX object src/CMakeFiles/QuickCharts.dir/XYChart.cpp.o
-[31/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/HistoryProxySource.cpp.o
-[32/105] Building CXX object src/CMakeFiles/QuickCharts.dir/BarChart.cpp.o
-[33/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ChartAxisSource.cpp.o
-[34/105] Building CXX object src/CMakeFiles/QuickCharts.dir/ItemBuilder.cpp.o
-[35/105] Building CXX object src/CMakeFiles/QuickCharts.dir/PieChart.cpp.o
-[36/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/LineChartMaterial.cpp.o
-[37/105] Building CXX object src/CMakeFiles/QuickCharts.dir/charts_datasource_logging.cpp.o
-[38/105] Building CXX object src/CMakeFiles/QuickCharts.dir/charts_general_logging.cpp.o
-[39/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ModelSource.cpp.o
-[40/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/PieChartNode.cpp.o
-[41/105] Building CXX object src/CMakeFiles/QuickCharts.dir/charts_deprecated_logging.cpp.o
-[42/105] Building CXX object src/CMakeFiles/QuickCharts.dir/LineChart.cpp.o
-[43/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/SDFShader.cpp.o
-[44/105] Building CXX object src/CMakeFiles/QuickCharts.dir/quickcharts_qmltyperegistrations.cpp.o
+[17/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ChartDataSource.cpp.o
+[18/105] Building CXX object src/CMakeFiles/QuickCharts.dir/RangeGroup.cpp.o
+[19/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/LineChartMaterial.cpp.o
+[20/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/SingleValueSource.cpp.o
+[21/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/MapProxySource.cpp.o
+[22/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ColorGradientSource.cpp.o
+[23/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ArraySource.cpp.o
+[24/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/HistoryProxySource.cpp.o
+[25/105] Building CXX object src/CMakeFiles/QuickCharts.dir/.qt/rcc/qrc_shaders.cpp.o
+[26/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/BarChartMaterial.cpp.o
+[27/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/LineSegmentNode.cpp.o
+[28/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ChartAxisSource.cpp.o
+[29/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/LineChartNode.cpp.o
+[30/105] Building CXX object src/CMakeFiles/QuickCharts.dir/datasource/ModelSource.cpp.o
+[31/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/BarChartNode.cpp.o
+[32/105] Building CXX object src/CMakeFiles/QuickCharts.dir/Chart.cpp.o
+[33/105] Building CXX object src/CMakeFiles/QuickCharts.dir/ItemBuilder.cpp.o
+[34/105] Building CXX object src/CMakeFiles/QuickCharts.dir/BarChart.cpp.o
+[35/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/PieChartMaterial.cpp.o
+[36/105] Building CXX object src/CMakeFiles/QuickCharts.dir/PieChart.cpp.o
+[37/105] Building CXX object src/CMakeFiles/QuickCharts.dir/XYChart.cpp.o
+[38/105] Building CXX object src/CMakeFiles/QuickCharts.dir/LineChart.cpp.o
+[39/105] Building CXX object src/CMakeFiles/QuickCharts.dir/charts_datasource_logging.cpp.o
+[40/105] Building CXX object src/CMakeFiles/QuickCharts.dir/quickcharts_qmltyperegistrations.cpp.o
+[41/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/PieChartNode.cpp.o
+[42/105] Building CXX object src/CMakeFiles/QuickCharts.dir/charts_deprecated_logging.cpp.o
+[43/105] Building CXX object src/CMakeFiles/QuickCharts.dir/charts_general_logging.cpp.o
+[44/105] Building CXX object src/CMakeFiles/QuickCharts.dir/scenegraph/SDFShader.cpp.o
 [45/105] Linking CXX shared library bin/libQuickCharts.so.6.14.0
 [46/105] Creating library symlink bin/libQuickCharts.so.1 bin/libQuickCharts.so
 [47/105] Automatic MOC for target qmltest
 [48/105] Building CXX object autotests/CMakeFiles/qmltest.dir/qmltest_autogen/mocs_compilation.cpp.o
-[49/105] Automatic MOC for target QuickChartsplugin
-[50/105] Building CXX object src/CMakeFiles/QuickChartsplugin.dir/QuickChartsplugin_autogen/mocs_compilation.cpp.o
+[49/105] Automatic MOC for target HistoryProxySourceTest
+[50/105] Automatic MOC for target MapProxySourceTest
 [51/105] Automatic MOC for target ArraySourceTest
-[52/105] Building CXX object autotests/CMakeFiles/ArraySourceTest.dir/ArraySourceTest_autogen/mocs_compilation.cpp.o
-[53/105] Automatic MOC for target MapProxySourceTest
+[52/105] Automatic MOC for target QuickChartsplugin
+[53/105] Building CXX object autotests/CMakeFiles/HistoryProxySourceTest.dir/HistoryProxySourceTest_autogen/mocs_compilation.cpp.o
 [54/105] Building CXX object autotests/CMakeFiles/MapProxySourceTest.dir/MapProxySourceTest_autogen/mocs_compilation.cpp.o
-[55/105] Automatic MOC for target QuickChartsControls
-[56/105] Running AUTOMOC file extraction for target QuickChartsControls
-[57/105] Running rcc for resource qmake_org_kde_quickcharts_controls
-[58/105] Generating .rcc/qmlcache/QuickChartsControls_qmlcache_loader.cpp
-[59/105] Automatic MOC for target ItemBuilderTest
-[60/105] Running rcc for resource QuickChartsControls_raw_qml_0
-[61/105] Running moc --collect-json for target QuickChartsControls
-[62/105] Automatic MOC for target HistoryProxySourceTest
-[63/105] Building CXX object autotests/CMakeFiles/ItemBuilderTest.dir/ItemBuilderTest_autogen/mocs_compilation.cpp.o
-[64/105] Building CXX object autotests/CMakeFiles/HistoryProxySourceTest.dir/HistoryProxySourceTest_autogen/mocs_compilation.cpp.o
+[55/105] Building CXX object autotests/CMakeFiles/ArraySourceTest.dir/ArraySourceTest_autogen/mocs_compilation.cpp.o
+[56/105] Building CXX object src/CMakeFiles/QuickChartsplugin.dir/QuickChartsplugin_autogen/mocs_compilation.cpp.o
+[57/105] Automatic MOC for target ItemBuilderTest
+[58/105] Automatic MOC for target QuickChartsControls
+[59/105] Building CXX object autotests/CMakeFiles/ItemBuilderTest.dir/ItemBuilderTest_autogen/mocs_compilation.cpp.o
+[60/105] Running AUTOMOC file extraction for target QuickChartsControls
+[61/105] Running rcc for resource qmake_org_kde_quickcharts_controls
+[62/105] Generating .rcc/qmlcache/QuickChartsControls_qmlcache_loader.cpp
+[63/105] Running rcc for resource QuickChartsControls_raw_qml_0
+[64/105] Running moc --collect-json for target QuickChartsControls
 [65/105] Automatic QML type registration for target QuickChartsControls
-[66/105] Generating .rcc/qmlcache/QuickChartsControls_LegendDelegate_qml.cpp
-[67/105] Generating .rcc/qmlcache/QuickChartsControls_Theme_qml.cpp
-[68/105] Generating .rcc/qmlcache/QuickChartsControls_Legend_qml.cpp
-[69/105] Generating .rcc/qmlcache/QuickChartsControls_LineChartControl_qml.cpp
-[70/105] Generating .rcc/qmlcache/QuickChartsControls_PieChartControl_qml.cpp
-[71/105] Generating .rcc/qmlcache/QuickChartsControls_KirigamiTheme_qml.cpp
+[66/105] Generating .rcc/qmlcache/QuickChartsControls_Theme_qml.cpp
+[67/105] Generating .rcc/qmlcache/QuickChartsControls_Legend_qml.cpp
+[68/105] Generating .rcc/qmlcache/QuickChartsControls_PieChartControl_qml.cpp
+[69/105] Generating .rcc/qmlcache/QuickChartsControls_LegendDelegate_qml.cpp
+[70/105] Generating .rcc/qmlcache/QuickChartsControls_KirigamiTheme_qml.cpp
+[71/105] Generating .rcc/qmlcache/QuickChartsControls_LineChartControl_qml.cpp
 [72/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/QuickChartsControls_autogen/mocs_compilation.cpp.o
 [73/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.qt/rcc/qrc_qmake_org_kde_quickcharts_controls.cpp.o
 [74/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.qt/rcc/qrc_QuickChartsControls_raw_qml_0.cpp.o
-[75/105] Building CXX object src/CMakeFiles/QuickChartsplugin.dir/QuickChartsplugin_org_kde_quickchartsPlugin.cpp.o
-[76/105] Linking CXX shared module bin/org/kde/quickcharts/libQuickChartsplugin.so
+[75/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_PieChartControl_qml.cpp.o
+[76/105] Building CXX object src/CMakeFiles/QuickChartsplugin.dir/QuickChartsplugin_org_kde_quickchartsPlugin.cpp.o
 [77/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_LegendDelegate_qml.cpp.o
-[78/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/LineGridNode.cpp.o
-[79/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_PieChartControl_qml.cpp.o
-[80/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_LineChartControl_qml.cpp.o
-[81/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_Theme_qml.cpp.o
-[82/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/LegendLayout.cpp.o
-[83/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/GridLines.cpp.o
-[84/105] Building CXX object autotests/CMakeFiles/ArraySourceTest.dir/ArraySourceTest.cpp.o
-[85/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/AxisLabels.cpp.o
-[86/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_Legend_qml.cpp.o
-[87/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_KirigamiTheme_qml.cpp.o
-[88/105] Linking CXX executable bin/ArraySourceTest
-[89/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_qmlcache_loader.cpp.o
-[90/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/quickchartscontrols_qmltyperegistrations.cpp.o
-[91/105] Building CXX object autotests/CMakeFiles/MapProxySourceTest.dir/MapProxySourceTest.cpp.o
+[78/105] Linking CXX shared module bin/org/kde/quickcharts/libQuickChartsplugin.so
+[79/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_Theme_qml.cpp.o
+[80/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_Legend_qml.cpp.o
+[81/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/LineGridNode.cpp.o
+[82/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/GridLines.cpp.o
+[83/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/LegendLayout.cpp.o
+[84/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_qmlcache_loader.cpp.o
+[85/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_KirigamiTheme_qml.cpp.o
+[86/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/.rcc/qmlcache/QuickChartsControls_LineChartControl_qml.cpp.o
+[87/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/AxisLabels.cpp.o
+[88/105] Building CXX object autotests/CMakeFiles/MapProxySourceTest.dir/MapProxySourceTest.cpp.o
+[89/105] Building CXX object autotests/CMakeFiles/ArraySourceTest.dir/ArraySourceTest.cpp.o
+[90/105] Linking CXX executable bin/MapProxySourceTest
+[91/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/LegendModel.cpp.o
 [92/105] Building CXX object autotests/CMakeFiles/HistoryProxySourceTest.dir/HistoryProxySourceTest.cpp.o
-[93/105] Linking CXX executable bin/MapProxySourceTest
+[93/105] Linking CXX executable bin/ArraySourceTest
 [94/105] Linking CXX executable bin/HistoryProxySourceTest
-[95/105] Building CXX object autotests/CMakeFiles/ItemBuilderTest.dir/ItemBuilderTest.cpp.o
-[96/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/LegendModel.cpp.o
-[97/105] Building CXX object autotests/CMakeFiles/qmltest.dir/qmltest.cpp.o
-[98/105] Linking CXX executable bin/ItemBuilderTest
-[99/105] Linking CXX shared library bin/libQuickChartsControls.so.6.14.0
-[100/105] Creating library symlink bin/libQuickChartsControls.so.1 bin/libQuickChartsControls.so
-[101/105] Linking CXX executable bin/qmltest
-[102/105] Automatic MOC for target QuickChartsControlsplugin
-[103/105] Building CXX object controls/CMakeFiles/QuickChartsControlsplugin.dir/QuickChartsControlsplugin_autogen/mocs_compilation.cpp.o
+[95/105] Building CXX object autotests/CMakeFiles/qmltest.dir/qmltest.cpp.o
+[96/105] Building CXX object controls/CMakeFiles/QuickChartsControls.dir/quickchartscontrols_qmltyperegistrations.cpp.o
+[97/105] Linking CXX executable bin/qmltest
+[98/105] Linking CXX shared library bin/libQuickChartsControls.so.6.14.0
+[99/105] Creating library symlink bin/libQuickChartsControls.so.1 bin/libQuickChartsControls.so
+[100/105] Building CXX object autotests/CMakeFiles/ItemBuilderTest.dir/ItemBuilderTest.cpp.o
+[101/105] Automatic MOC for target QuickChartsControlsplugin
+[102/105] Building CXX object controls/CMakeFiles/QuickChartsControlsplugin.dir/QuickChartsControlsplugin_autogen/mocs_compilation.cpp.o
+[103/105] Linking CXX executable bin/ItemBuilderTest
 [104/105] Building CXX object controls/CMakeFiles/QuickChartsControlsplugin.dir/QuickChartsControlsplugin_org_kde_quickcharts_controlsPlugin.cpp.o
 [105/105] Linking CXX shared module bin/org/kde/quickcharts/controls/libQuickChartsControlsplugin.so
 -- Install configuration: "RelWithDebInfo"
@@ -504,7 +504,7 @@ makepkg-kquickcharts.log
 +=================================================================================================================+
 
 Pre-installing package kquickcharts-6.14.0-x86_64-1_rtz...
-Removing package: kquickcharts-6.14.0-x86_64-1_rtz-upgraded-2025-05-21,13:22:43
+Removing package: kquickcharts-6.14.0-x86_64-1_rtz-upgraded-2025-05-28,17:48:51
 Installing package kquickcharts-6.14.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kquickcharts (QtQuick plugin)

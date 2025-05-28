@@ -9,22 +9,22 @@ kpty5 is already installed!
 kservice5 is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 12:54:09--  https://download.kde.org/stable/frameworks/5.116/kdesu-5.116.0.tar.xz
+--2025-05-28 17:18:53--  https://download.kde.org/stable/frameworks/5.116/kdesu-5.116.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kdesu-5.116.0.tar.xz [following]
---2025-05-21 12:54:09--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kdesu-5.116.0.tar.xz
+--2025-05-28 17:18:54--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kdesu-5.116.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 57072 (56K) [application/octet-stream]
 Saving to: ‘kdesu-5.116.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 89% 1.20M 0s
-    50K .....                                                 100% 10.7T=0.04s
+     0K .......... .......... .......... .......... .......... 89% 1.45M 0s
+    50K .....                                                 100% 10.7T=0.03s
 
-2025-05-21 12:54:10 (1.34 MB/s) - ‘kdesu-5.116.0.tar.xz’ saved [57072/57072]
+2025-05-28 17:18:54 (1.62 MB/s) - ‘kdesu-5.116.0.tar.xz’ saved [57072/57072]
 
 Found file: kdesu-5.116.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -211,8 +211,8 @@ kdesu-5.116.0/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -275,7 +275,7 @@ Using su as default (set KDESU_USE_SUDO_DEFAULT=On to use sudo)
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- Found QHelpGenerator executable: /usr/lib64/qt5/bin/qhelpgenerator
 -- No such target Qt5Core_QCH defined when calling ecm_add_qch(), ignored.
 
@@ -315,8 +315,8 @@ CMake Warning:
 
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/work/kdesu-5.116.0/build
 [1/36] Generating ts...
-[2/36] Automatic MOC for target kdesu_stub
-[3/36] Automatic MOC for target KF5Su
+[2/36] Automatic MOC for target KF5Su
+[3/36] Automatic MOC for target kdesu_stub
 [4/36] Building CXX object src/CMakeFiles/kdesu_stub.dir/kdesu_stub_autogen/mocs_compilation.cpp.o
 [5/36] Building CXX object src/CMakeFiles/KF5Su.dir/KF5Su_autogen/mocs_compilation.cpp.o
 [6/36] Generating mo...
@@ -330,40 +330,40 @@ Insert files...
 Insert contents...
 Insert indices...
 Documentation successfully generated.
-[8/36] Automatic MOC for target kdesudtest
-[9/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/kdesudtest_autogen/mocs_compilation.cpp.o
-[10/36] Building C object src/CMakeFiles/kdesu_stub.dir/kdesu_stub.c.o
+[8/36] Building C object src/CMakeFiles/kdesu_stub.dir/kdesu_stub.c.o
 In file included from /usr/include/errno.h:25,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/work/kdesu-5.116.0/src/kdesu_stub.c:31:
 /usr/include/features.h:199:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
   199 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
       |   ^~~~~~~
-[11/36] Linking CXX executable bin/kdesu_stub
+[9/36] Automatic MOC for target kdesudtest
+[10/36] Linking CXX executable bin/kdesu_stub
+[11/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/kdesudtest_autogen/mocs_compilation.cpp.o
 [12/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/__/lexer.cpp.o
 [13/36] Building CXX object src/CMakeFiles/KF5Su.dir/ksu_debug.cpp.o
 [14/36] Building CXX object src/CMakeFiles/KF5Su.dir/sshprocess.cpp.o
 [15/36] Building CXX object src/CMakeFiles/KF5Su.dir/kcookie.cpp.o
 [16/36] Building CXX object src/CMakeFiles/KF5Su.dir/suprocess.cpp.o
-[17/36] Building CXX object src/CMakeFiles/KF5Su.dir/ptyprocess.cpp.o
-[18/36] Building CXX object src/CMakeFiles/KF5Su.dir/stubprocess.cpp.o
-[19/36] Building CXX object src/CMakeFiles/KF5Su.dir/client.cpp.o
-[20/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/kdesudtest.cpp.o
-[21/36] Linking CXX shared library bin/libKF5Su.so.5.116.0
-[22/36] Creating library symlink bin/libKF5Su.so.5 bin/libKF5Su.so
-[23/36] Automatic MOC for target kdesud
-[24/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/kdesud_autogen/mocs_compilation.cpp.o
-[25/36] Linking CXX executable bin/kdesudtest
+[17/36] Building CXX object src/CMakeFiles/KF5Su.dir/stubprocess.cpp.o
+[18/36] Building CXX object src/CMakeFiles/KF5Su.dir/ptyprocess.cpp.o
+[19/36] Building CXX object src/kdesud/autotests/CMakeFiles/kdesudtest.dir/kdesudtest.cpp.o
+[20/36] Linking CXX executable bin/kdesudtest
+[21/36] Building CXX object src/CMakeFiles/KF5Su.dir/client.cpp.o
+[22/36] Linking CXX shared library bin/libKF5Su.so.5.116.0
+[23/36] Creating library symlink bin/libKF5Su.so.5 bin/libKF5Su.so
+[24/36] Automatic MOC for target kdesud
+[25/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/kdesud_autogen/mocs_compilation.cpp.o
 [26/36] Automatic MOC for target kdesutest
 [27/36] Building CXX object autotests/CMakeFiles/kdesutest.dir/kdesutest_autogen/mocs_compilation.cpp.o
 [28/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/lexer.cpp.o
 [29/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/ksud_debug.cpp.o
 [30/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/secure.cpp.o
 [31/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/repo.cpp.o
-[32/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/kdesud.cpp.o
-[33/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/handler.cpp.o
-[34/36] Building CXX object autotests/CMakeFiles/kdesutest.dir/kdesutest.cpp.o
-[35/36] Linking CXX executable bin/kdesud
-[36/36] Linking CXX executable bin/kdesutest
+[32/36] Building CXX object autotests/CMakeFiles/kdesutest.dir/kdesutest.cpp.o
+[33/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/kdesud.cpp.o
+[34/36] Building CXX object src/kdesud/CMakeFiles/kdesud.dir/handler.cpp.o
+[35/36] Linking CXX executable bin/kdesutest
+[36/36] Linking CXX executable bin/kdesud
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/share/locale
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/share/locale/da
@@ -534,8 +534,8 @@ In file included from /usr/include/errno.h:25,
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/share/locale/sv
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/share/locale/sv/LC_MESSAGES
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/share/locale/sv/LC_MESSAGES/kdesud5.mo
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/lib64/libexec/kf5/kdesud
--- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/lib64/libexec/kf5/kdesud" to ""
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/libexec/kf5/kdesud
+-- Set non-toolchain portion of runtime path of "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/libexec/kf5/kdesud" to ""
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/KDESu/PtyProcess
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/KDESu/SuProcess
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/KDESu/SshProcess
@@ -544,7 +544,7 @@ In file included from /usr/include/errno.h:25,
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/lib64/libKF5Su.so.5.116.0
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/lib64/libKF5Su.so.5
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/lib64/libKF5Su.so
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/lib64/libexec/kf5/kdesu_stub
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/libexec/kf5/kdesu_stub
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/kdesu/su.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/kdesu/ssh.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/kdesu/stub.h
@@ -556,8 +556,8 @@ In file included from /usr/include/errno.h:25,
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/kdesu/sshprocess.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/kdesu/stubprocess.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/include/KF5/KDESu/kdesu/client.h
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Su.qch
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Su.tags
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Su.qch
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Su.tags
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/lib64/qt5/mkspecs/modules/qt_KDESu.pri
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/share/qlogging-categories5/ksu.categories
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kdesu5/package-kdesu5/usr/lib64/cmake/KF5Su/KF5SuQchTargets.cmake
@@ -633,9 +633,9 @@ usr/doc/kdesu5-5.116.0/docs/
 usr/doc/kdesu5-5.116.0/docs/Doxyfile.local
 usr/doc/kdesu5-5.116.0/kdesu5.ini
 usr/doc/kdesu5-5.116.0/slack-required
-usr/doc/qt5-5.15.16_20250408_6cb26397/
-usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Su.qch
-usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Su.tags
+usr/doc/qt5-5.15.17_20250522_355dc72e/
+usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Su.qch
+usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Su.tags
 usr/include/
 usr/include/KF5/
 usr/include/KF5/KDESu/
@@ -667,14 +667,14 @@ usr/lib64/cmake/KF5Su/KF5SuQchTargets.cmake
 usr/lib64/cmake/KF5Su/KF5SuTargets-relwithdebinfo.cmake
 usr/lib64/cmake/KF5Su/KF5SuTargets.cmake
 usr/lib64/libKF5Su.so.5.116.0
-usr/lib64/libexec/
-usr/lib64/libexec/kf5/
-usr/lib64/libexec/kf5/kdesu_stub
-usr/lib64/libexec/kf5/kdesud
 usr/lib64/qt5/
 usr/lib64/qt5/mkspecs/
 usr/lib64/qt5/mkspecs/modules/
 usr/lib64/qt5/mkspecs/modules/qt_KDESu.pri
+usr/libexec/
+usr/libexec/kf5/
+usr/libexec/kf5/kdesu_stub
+usr/libexec/kf5/kdesud
 usr/share/
 usr/share/locale/
 usr/share/locale/ar/
@@ -871,7 +871,7 @@ makepkg-kdesu5.log
 +=================================================================================================+
 
 Pre-installing package kdesu5-5.116.0-x86_64-1_rtz...
-Removing package: kdesu5-5.116.0-x86_64-1_rtz-upgraded-2025-05-21,12:54:16
+Removing package: kdesu5-5.116.0-x86_64-1_rtz-upgraded-2025-05-28,17:19:00
 Installing package kdesu5-5.116.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kdesu5 (Integration with su)

@@ -20,30 +20,30 @@ kservice is already installed!
 libkdepim is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 17:39:26--  https://download.kde.org/stable/release-service/25.04.1/src/eventviews-25.04.1.tar.xz
+--2025-05-28 21:58:41--  https://download.kde.org/stable/release-service/25.04.1/src/eventviews-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/eventviews-25.04.1.tar.xz [following]
---2025-05-21 17:39:27--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/eventviews-25.04.1.tar.xz
+--2025-05-28 21:58:41--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/eventviews-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 510360 (498K) [application/octet-stream]
 Saving to: ‘eventviews-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 10% 1.35M 0s
-    50K .......... .......... .......... .......... .......... 20% 1.50M 0s
-   100K .......... .......... .......... .......... .......... 30% 5.31M 0s
-   150K .......... .......... .......... .......... .......... 40% 5.20M 0s
-   200K .......... .......... .......... .......... .......... 50% 2.15M 0s
-   250K .......... .......... .......... .......... .......... 60% 6.75M 0s
-   300K .......... .......... .......... .......... .......... 70% 4.77M 0s
-   350K .......... .......... .......... .......... .......... 80% 1.13M 0s
-   400K .......... .......... .......... .......... .......... 90% 23.5M 0s
-   450K .......... .......... .......... .......... ........  100%  377M=0.2s
+     0K .......... .......... .......... .......... .......... 10% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 20% 1.45M 0s
+   100K .......... .......... .......... .......... .......... 30% 6.60M 0s
+   150K .......... .......... .......... .......... .......... 40% 6.56M 0s
+   200K .......... .......... .......... .......... .......... 50% 2.06M 0s
+   250K .......... .......... .......... .......... .......... 60% 5.40M 0s
+   300K .......... .......... .......... .......... .......... 70% 6.31M 0s
+   350K .......... .......... .......... .......... .......... 80% 1.11M 0s
+   400K .......... .......... .......... .......... .......... 90%  297M 0s
+   450K .......... .......... .......... .......... ........  100%  371M=0.2s
 
-2025-05-21 17:39:27 (2.81 MB/s) - ‘eventviews-25.04.1.tar.xz’ saved [510360/510360]
+2025-05-28 21:58:42 (2.88 MB/s) - ‘eventviews-25.04.1.tar.xz’ saved [510360/510360]
 
 Found file: eventviews-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -271,8 +271,8 @@ eventviews-25.04.1/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/eventviews/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -304,7 +304,7 @@ Call Stack (most recent call first):
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found Gettext: /usr/bin/msgmerge (found version "0.25")
 -- Found Cups: /usr/lib64/libcups.so (found version "2.4.12")
@@ -314,7 +314,7 @@ Call Stack (most recent call first):
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- No such target Qt6Core_QCH defined when calling ecm_add_qch(), ignored.
 -- No such target Qt6Gui_QCH defined when calling ecm_add_qch(), ignored.
 -- No such target Qt6Widgets_QCH defined when calling ecm_add_qch(), ignored.
@@ -394,31 +394,34 @@ Documentation successfully generated.
 [6/52] Generating ui_timescaleedit_base.h
 [7/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/KPim6EventViews_autogen/mocs_compilation.cpp.o
 [8/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/alternatelabel.cpp.o
-[9/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timelabelszone.cpp.o
-[10/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/decorationlabel.cpp.o
-[11/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/calendardecoration.cpp.o
-[12/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/helper.cpp.o
-[13/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/journal/journalview.cpp.o
+[9/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/decorationlabel.cpp.o
+[10/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/calendardecoration.cpp.o
+[11/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/helper.cpp.o
+[12/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/eventview_p.cpp.o
+[13/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/viewcalendar.cpp.o
 [14/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/journal/journalframe.cpp.o
-[15/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/prefs.cpp.o
-[16/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/eventview_p.cpp.o
-[17/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthscene.cpp.o
-[18/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthgraphicsitems.cpp.o
-[19/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timescaleconfigdialog.cpp.o
-[20/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agendaitem.cpp.o
-[21/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/viewcalendar.cpp.o
-[22/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timelabels.cpp.o
-[23/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthitem.cpp.o
-[24/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/tododelegates.cpp.o
-[25/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewquickaddline.cpp.o
-[26/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/list/listview.cpp.o
-[27/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewview.cpp.o
+[15/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timelabels.cpp.o
+[16/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timelabelszone.cpp.o
+[17/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthgraphicsitems.cpp.o
+[18/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthscene.cpp.o
+[19/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/journal/journalview.cpp.o
+[20/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/prefs.cpp.o
+[21/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/timescaleconfigdialog.cpp.o
+[22/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthitem.cpp.o
+[23/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agendaitem.cpp.o
+[24/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewquickaddline.cpp.o
+[25/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthview.cpp.o
+[26/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/tododelegates.cpp.o
+[27/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/list/listview.cpp.o
 [28/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/coloredtodoproxymodel.cpp.o
-[29/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/month/monthview.cpp.o
-[30/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewquicksearch.cpp.o
-[31/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewsortfilterproxymodel.cpp.o
-[32/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/calendarview_debug.cpp.o
-[33/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agenda.cpp.o
+[29/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/eventview.cpp.o
+[30/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewview.cpp.o
+[31/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/calendarview_debug.cpp.o
+[32/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/multiagenda/multiagendaview.cpp.o
+[33/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewsortfilterproxymodel.cpp.o
+[34/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoviewquicksearch.cpp.o
+[35/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineview_p.cpp.o
+[36/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agenda.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/src/agenda/agenda.cpp: In member function ‘void EventViews::Agenda::endItemAction()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/src/agenda/agenda.cpp:1206:60: warning: ignoring return value of ‘bool EventViews::AgendaItem::dissociateFromMultiItem()’, declared with attribute ‘nodiscard’ [-Wunused-result]
  1206 |                     d->mActionItem->dissociateFromMultiItem();
@@ -428,15 +431,12 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/eventviews/work/e
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/eventviews/work/eventviews-25.04.1/src/agenda/agendaitem.h:187:24: note: declared here
   187 |     [[nodiscard]] bool dissociateFromMultiItem();
       |                        ^~~~~~~~~~~~~~~~~~~~~~~
-[34/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/multiagenda/multiagendaview.cpp.o
-[35/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/eventview.cpp.o
-[36/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agendaview.cpp.o
-[37/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineview_p.cpp.o
-[38/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineitem.cpp.o
-[39/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineview.cpp.o
-[40/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/whatsnext/whatsnextview.cpp.o
-[41/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoview.cpp.o
-[42/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/prefs_base.cpp.o
+[37/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineitem.cpp.o
+[38/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/agenda/agendaview.cpp.o
+[39/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/whatsnext/whatsnextview.cpp.o
+[40/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/timeline/timelineview.cpp.o
+[41/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/prefs_base.cpp.o
+[42/52] Building CXX object src/CMakeFiles/KPim6EventViews.dir/todo/todoview.cpp.o
 [43/52] Linking CXX shared library bin/libKPim6EventViews.so.6.4.1
 [44/52] Creating library symlink bin/libKPim6EventViews.so.6 bin/libKPim6EventViews.so
 [45/52] Automatic MOC for target createcolorgui_test
@@ -444,8 +444,8 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/eventviews/work/e
 [47/52] Automatic MOC for target monthitemordertest
 [48/52] Building CXX object src/month/autotests/CMakeFiles/monthitemordertest.dir/monthitemordertest_autogen/mocs_compilation.cpp.o
 [49/52] Building CXX object tests/CMakeFiles/createcolorgui_test.dir/createcolorgui_test.cpp.o
-[50/52] Building CXX object src/month/autotests/CMakeFiles/monthitemordertest.dir/monthitemordertest.cpp.o
-[51/52] Linking CXX executable bin/createcolorgui_test
+[50/52] Linking CXX executable bin/createcolorgui_test
+[51/52] Building CXX object src/month/autotests/CMakeFiles/monthitemordertest.dir/monthitemordertest.cpp.o
 [52/52] Linking CXX executable bin/monthitemordertest
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/eventviews/package-eventviews/usr/lib64/libKPim6EventViews.so.6.4.1
@@ -956,7 +956,7 @@ makepkg-eventviews.log
 +=============================================================================================================+
 
 Pre-installing package eventviews-25.04.1-x86_64-1_rtz...
-Removing package: eventviews-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,17:39:58
+Removing package: eventviews-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,21:59:14
 Installing package eventviews-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # eventviews (Library for creating events)

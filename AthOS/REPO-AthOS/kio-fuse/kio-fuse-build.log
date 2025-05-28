@@ -8,25 +8,25 @@ kdbusaddons is already installed!
 kio is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 13:11:47--  https://download.kde.org/stable/kio-fuse/kio-fuse-5.1.0.tar.xz
+--2025-05-28 17:37:51--  https://download.kde.org/stable/kio-fuse/kio-fuse-5.1.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://download.kde.org/Attic/kio-fuse/kio-fuse-5.1.0.tar.xz [following]
---2025-05-21 13:11:48--  https://download.kde.org/Attic/kio-fuse/kio-fuse-5.1.0.tar.xz
+--2025-05-28 17:37:51--  https://download.kde.org/Attic/kio-fuse/kio-fuse-5.1.0.tar.xz
 Reusing existing connection to download.kde.org:443.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/Attic/kio-fuse/kio-fuse-5.1.0.tar.xz [following]
---2025-05-21 13:11:48--  https://ftp.cc.uoc.gr/mirrors/kde/Attic/kio-fuse/kio-fuse-5.1.0.tar.xz
+--2025-05-28 17:37:51--  https://ftp.cc.uoc.gr/mirrors/kde/Attic/kio-fuse/kio-fuse-5.1.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 48820 (48K) [application/octet-stream]
 Saving to: ‘kio-fuse-5.1.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......   100% 1.16M=0.04s
+     0K .......... .......... .......... .......... .......   100% 1.39M=0.03s
 
-2025-05-21 13:11:48 (1.16 MB/s) - ‘kio-fuse-5.1.0.tar.xz’ saved [48820/48820]
+2025-05-28 17:37:52 (1.39 MB/s) - ‘kio-fuse-5.1.0.tar.xz’ saved [48820/48820]
 
 Found file: kio-fuse-5.1.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -63,8 +63,8 @@ kio-fuse-5.1.0/.gitlab-ci.yml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kio-fuse/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -89,7 +89,7 @@ hm...lets continue and see what happens
 -- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found X11: /usr/include
 -- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
@@ -131,7 +131,7 @@ hm...lets continue and see what happens
  * Qt6Test
  * Qt6DBus
 
--- Configuring done (1.6s)
+-- Configuring done (1.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kio-fuse/work/kio-fuse-5.1.0/build
 [1/23] Generating kiofuseprivate_interface.cpp, kiofuseprivate_interface.h
@@ -139,26 +139,26 @@ hm...lets continue and see what happens
 [3/23] Generating moc_kiofuseprivate_interface.cpp
 [4/23] Generating moc_kiofuse_interface.cpp
 [5/23] Automatic MOC for target kio-fuse
-[6/23] Automatic MOC for target fileopstest-cache
-[7/23] Automatic MOC for target fileopstest-filejob
-[8/23] Building CXX object tests/CMakeFiles/fileopstest-cache.dir/fileopstest-cache_autogen/mocs_compilation.cpp.o
-[9/23] Building CXX object tests/CMakeFiles/fileopstest-filejob.dir/fileopstest-filejob_autogen/mocs_compilation.cpp.o
+[6/23] Automatic MOC for target fileopstest-filejob
+[7/23] Building CXX object tests/CMakeFiles/fileopstest-filejob.dir/fileopstest-filejob_autogen/mocs_compilation.cpp.o
+[8/23] Automatic MOC for target fileopstest-cache
+[9/23] Building CXX object tests/CMakeFiles/fileopstest-cache.dir/fileopstest-cache_autogen/mocs_compilation.cpp.o
 [10/23] Building CXX object CMakeFiles/kio-fuse.dir/debug.cpp.o
-[11/23] Building CXX object CMakeFiles/kio-fuse.dir/kiofuseservice.cpp.o
-[12/23] Building CXX object CMakeFiles/kio-fuse.dir/kio-fuse_autogen/mocs_compilation.cpp.o
-[13/23] Building CXX object CMakeFiles/kio-fuse.dir/main.cpp.o
-[14/23] Building CXX object tests/CMakeFiles/fileopstest-filejob.dir/kiofuse_interface.cpp.o
-[15/23] Building CXX object tests/CMakeFiles/fileopstest-cache.dir/kiofuseprivate_interface.cpp.o
+[11/23] Building CXX object CMakeFiles/kio-fuse.dir/kio-fuse_autogen/mocs_compilation.cpp.o
+[12/23] Building CXX object CMakeFiles/kio-fuse.dir/main.cpp.o
+[13/23] Building CXX object CMakeFiles/kio-fuse.dir/kiofuseservice.cpp.o
+[14/23] Building CXX object tests/CMakeFiles/fileopstest-cache.dir/kiofuseprivate_interface.cpp.o
+[15/23] Building CXX object tests/CMakeFiles/fileopstest-filejob.dir/kiofuseprivate_interface.cpp.o
 [16/23] Building CXX object tests/CMakeFiles/fileopstest-cache.dir/kiofuse_interface.cpp.o
-[17/23] Building CXX object tests/CMakeFiles/fileopstest-filejob.dir/kiofuseprivate_interface.cpp.o
+[17/23] Building CXX object tests/CMakeFiles/fileopstest-filejob.dir/kiofuse_interface.cpp.o
 [18/23] Building CXX object tests/CMakeFiles/fileopstest-cache.dir/fileopstest.cpp.o
 [19/23] Linking CXX executable bin/fileopstest-cache
-[20/23] Building CXX object tests/CMakeFiles/fileopstest-filejob.dir/fileopstest.cpp.o
-[21/23] Linking CXX executable bin/fileopstest-filejob
-[22/23] Building CXX object CMakeFiles/kio-fuse.dir/kiofusevfs.cpp.o
-[23/23] Linking CXX executable bin/kio-fuse
+[20/23] Building CXX object CMakeFiles/kio-fuse.dir/kiofusevfs.cpp.o
+[21/23] Building CXX object tests/CMakeFiles/fileopstest-filejob.dir/fileopstest.cpp.o
+[22/23] Linking CXX executable bin/kio-fuse
+[23/23] Linking CXX executable bin/fileopstest-filejob
 -- Install configuration: "RelWithDebInfo"
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kio-fuse/package-kio-fuse/usr/lib64/libexec/kio-fuse
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kio-fuse/package-kio-fuse/usr/libexec/kio-fuse
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kio-fuse/package-kio-fuse/usr/lib/tmpfiles.d/kio-fuse-tmpfiles.conf
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kio-fuse/package-kio-fuse/usr/share/dbus-1/services/org.kde.KIOFuse.service
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kio-fuse/package-kio-fuse/usr/lib/systemd/user/kio-fuse.service
@@ -214,9 +214,8 @@ usr/doc/kio-fuse-5.1.0/README.md
 usr/doc/kio-fuse-5.1.0/kio-fuse.ini
 usr/doc/kio-fuse-5.1.0/slack-required
 usr/lib/
-usr/lib64/
-usr/lib64/libexec/
-usr/lib64/libexec/kio-fuse
+usr/libexec/
+usr/libexec/kio-fuse
 usr/share/
 usr/share/dbus-1/
 usr/share/dbus-1/services/
@@ -245,7 +244,7 @@ makepkg-kio-fuse.log
 +===================================================================================================+
 
 Pre-installing package kio-fuse-5.1.0-x86_64-1_rtz...
-Removing package: kio-fuse-5.1.0-x86_64-1_rtz-upgraded-2025-05-21,13:11:57
+Removing package: kio-fuse-5.1.0-x86_64-1_rtz-upgraded-2025-05-28,17:38:02
 Installing package kio-fuse-5.1.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kio-fuse (FUSE interface for KIO)

@@ -12,22 +12,22 @@ plasma-framework5 is already installed!
 threadweaver5 is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 13:02:44--  https://download.kde.org/stable/frameworks/5.116/krunner-5.116.0.tar.xz
+--2025-05-28 17:28:06--  https://download.kde.org/stable/frameworks/5.116/krunner-5.116.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/krunner-5.116.0.tar.xz [following]
---2025-05-21 13:02:44--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/krunner-5.116.0.tar.xz
+--2025-05-28 17:28:06--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/krunner-5.116.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 89076 (87K) [application/octet-stream]
 Saving to: ‘krunner-5.116.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 57%  305K 0s
-    50K .......... .......... .......... ......               100%  456K=0.2s
+     0K .......... .......... .......... .......... .......... 57% 1.34M 0s
+    50K .......... .......... .......... ......               100% 7.75M=0.04s
 
-2025-05-21 13:02:45 (355 KB/s) - ‘krunner-5.116.0.tar.xz’ saved [89076/89076]
+2025-05-28 17:28:06 (2.06 MB/s) - ‘krunner-5.116.0.tar.xz’ saved [89076/89076]
 
 Found file: krunner-5.116.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -141,8 +141,8 @@ krunner-5.116.0/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -184,7 +184,7 @@ hm...lets continue and see what happens
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- Found QHelpGenerator executable: /usr/lib64/qt5/bin/qhelpgenerator
 -- No such target Qt5Core_QCH defined when calling ecm_add_qch(), ignored.
 
@@ -211,8 +211,8 @@ Call Stack (most recent call first):
 -- The following REQUIRED packages have been found:
 
  * ECM (required version >= 5.116.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
- * Qt5Qml (required version >= 5.15.16)
- * Qt5QmlModels (required version >= 5.15.16)
+ * Qt5Qml (required version >= 5.15.17)
+ * Qt5QmlModels (required version >= 5.15.17)
  * Qt5Quick
  * Gettext
  * KF5I18n (required version >= 5.116.0)
@@ -233,7 +233,7 @@ Call Stack (most recent call first):
  * Qt5Test
  * Qt5 (required version >= 5.15.2)
 
--- Configuring done (1.4s)
+-- Configuring done (1.3s)
 -- Generating done (0.0s)
 CMake Warning:
   Manually-specified variables were not used by the project:
@@ -261,11 +261,11 @@ Documentation successfully generated.
 [8/66] Building CXX object src/CMakeFiles/KF5Runner.dir/krunner_debug.cpp.o
 [9/66] Building CXX object src/CMakeFiles/KF5Runner.dir/runnersyntax.cpp.o
 [10/66] Building CXX object src/CMakeFiles/KF5Runner.dir/querymatch.cpp.o
-[11/66] Building CXX object src/CMakeFiles/KF5Runner.dir/runnerjobs.cpp.o
-[12/66] Building CXX object src/CMakeFiles/KF5Runner.dir/runnercontext.cpp.o
-[13/66] Building CXX object src/CMakeFiles/KF5Runner.dir/abstractrunner.cpp.o
-[14/66] Building CXX object src/CMakeFiles/KF5Runner.dir/runnermanager.cpp.o
-[15/66] Building CXX object src/CMakeFiles/KF5Runner.dir/dbusrunner.cpp.o
+[11/66] Building CXX object src/CMakeFiles/KF5Runner.dir/abstractrunner.cpp.o
+[12/66] Building CXX object src/CMakeFiles/KF5Runner.dir/runnerjobs.cpp.o
+[13/66] Building CXX object src/CMakeFiles/KF5Runner.dir/runnercontext.cpp.o
+[14/66] Building CXX object src/CMakeFiles/KF5Runner.dir/dbusrunner.cpp.o
+[15/66] Building CXX object src/CMakeFiles/KF5Runner.dir/runnermanager.cpp.o
 [16/66] Linking CXX shared library bin/libKF5Runner.so.5.116.0
 [17/66] Creating library symlink bin/libKF5Runner.so.5 bin/libKF5Runner.so
 [18/66] Generating metadatafile1.json
@@ -284,44 +284,44 @@ Found property definition "X-Plasma-Runner-Unique-Results" with type "bool"
 Found property definition "X-Plasma-Runner-Weak-Results" with type "bool"
 Generated  "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/work/krunner-5.116.0/build/autotests/metadatafile1.json"
 [19/66] Automatic MOC for target testremoterunner
-[20/66] Generating krunner1adaptor.cpp, krunner1adaptor.h
-[21/66] Generating krunner1adaptor.moc
-[22/66] Automatic MOC for target runnercontexttest
-[23/66] Automatic MOC for target testmetadataconversion
-[24/66] Automatic MOC for target fakerunnerplugin
-[25/66] Building CXX object autotests/CMakeFiles/testremoterunner.dir/testremoterunner_autogen/mocs_compilation.cpp.o
-[26/66] Building CXX object autotests/CMakeFiles/runnercontexttest.dir/runnercontexttest_autogen/mocs_compilation.cpp.o
+[20/66] Automatic MOC for target runnermodelplugin
+[21/66] Generating krunner1adaptor.cpp, krunner1adaptor.h
+[22/66] Automatic MOC for target testmetadataconversion
+[23/66] Generating krunner1adaptor.moc
+[24/66] Automatic MOC for target runnercontexttest
+[25/66] Building CXX object src/declarative/CMakeFiles/runnermodelplugin.dir/runnermodelplugin_autogen/mocs_compilation.cpp.o
+[26/66] Automatic MOC for target fakerunnerplugin
 [27/66] Building CXX object autotests/CMakeFiles/testmetadataconversion.dir/testmetadataconversion_autogen/mocs_compilation.cpp.o
-[28/66] Building CXX object autotests/CMakeFiles/fakerunnerplugin.dir/fakerunnerplugin_autogen/mocs_compilation.cpp.o
-[29/66] Automatic MOC for target runnermatchmethodstest
-[30/66] Automatic MOC for target runnermodelplugin
-[31/66] Building CXX object autotests/CMakeFiles/runnermatchmethodstest.dir/runnermatchmethodstest_autogen/mocs_compilation.cpp.o
-[32/66] Building CXX object src/declarative/CMakeFiles/runnermodelplugin.dir/runnermodelplugin_autogen/mocs_compilation.cpp.o
-[33/66] Building CXX object src/declarative/CMakeFiles/runnermodelplugin.dir/krunner_debug.cpp.o
-[34/66] Building CXX object autotests/CMakeFiles/fakerunnerplugin.dir/fakerunnerplugin.cpp.o
-[35/66] Linking CXX static library lib/libfakerunnerplugin.a
-[36/66] Automatic MOC for target runnermanagerhistorytest
+[28/66] Building CXX object autotests/CMakeFiles/testremoterunner.dir/testremoterunner_autogen/mocs_compilation.cpp.o
+[29/66] Building CXX object autotests/CMakeFiles/runnercontexttest.dir/runnercontexttest_autogen/mocs_compilation.cpp.o
+[30/66] Building CXX object autotests/CMakeFiles/fakerunnerplugin.dir/fakerunnerplugin_autogen/mocs_compilation.cpp.o
+[31/66] Automatic MOC for target runnermatchmethodstest
+[32/66] Building CXX object autotests/CMakeFiles/runnermatchmethodstest.dir/runnermatchmethodstest_autogen/mocs_compilation.cpp.o
+[33/66] Building CXX object autotests/CMakeFiles/fakerunnerplugin.dir/fakerunnerplugin.cpp.o
+[34/66] Linking CXX static library lib/libfakerunnerplugin.a
+[35/66] Automatic MOC for target runnermanagerhistorytest
+[36/66] Building CXX object autotests/CMakeFiles/runnercontexttest.dir/runnercontexttest.cpp.o
 [37/66] Building CXX object autotests/CMakeFiles/runnermanagerhistorytest.dir/runnermanagerhistorytest_autogen/mocs_compilation.cpp.o
-[38/66] Building CXX object autotests/CMakeFiles/testmetadataconversion.dir/testmetadataconversion.cpp.o
-[39/66] Building CXX object src/declarative/CMakeFiles/runnermodelplugin.dir/runnermodelplugin.cpp.o
-[40/66] Building CXX object src/declarative/CMakeFiles/runnermodelplugin.dir/runnermodel.cpp.o
+[38/66] Building CXX object src/declarative/CMakeFiles/runnermodelplugin.dir/krunner_debug.cpp.o
+[39/66] Building CXX object src/declarative/CMakeFiles/runnermodelplugin.dir/runnermodel.cpp.o
+[40/66] Linking CXX executable bin/runnercontexttest
 [41/66] Building CXX object autotests/CMakeFiles/testremoterunner.dir/krunner1adaptor.cpp.o
-[42/66] Linking CXX shared library bin/librunnermodelplugin.so
-[43/66] Linking CXX executable bin/testmetadataconversion
-[44/66] Building CXX object autotests/CMakeFiles/runnercontexttest.dir/runnercontexttest.cpp.o
-[45/66] Linking CXX executable bin/runnercontexttest
+[42/66] Building CXX object src/declarative/CMakeFiles/runnermodelplugin.dir/runnermodelplugin.cpp.o
+[43/66] Building CXX object autotests/CMakeFiles/testmetadataconversion.dir/testmetadataconversion.cpp.o
+[44/66] Building CXX object autotests/CMakeFiles/runnermatchmethodstest.dir/runnermatchmethodstest.cpp.o
+[45/66] Linking CXX shared library bin/librunnermodelplugin.so
 [46/66] Building CXX object autotests/CMakeFiles/runnermanagerhistorytest.dir/kcoreaddons_static_krunnertest_plugins.cpp.o
-[47/66] Building CXX object autotests/CMakeFiles/testremoterunner.dir/testremoterunner.cpp.o
-[48/66] Building CXX object autotests/CMakeFiles/runnermatchmethodstest.dir/runnermatchmethodstest.cpp.o
-[49/66] Linking CXX executable bin/testremoterunner
-[50/66] Linking CXX executable bin/runnermatchmethodstest
+[47/66] Linking CXX executable bin/testmetadataconversion
+[48/66] Linking CXX executable bin/runnermatchmethodstest
+[49/66] Building CXX object autotests/CMakeFiles/testremoterunner.dir/testremoterunner.cpp.o
+[50/66] Linking CXX executable bin/testremoterunner
 [51/66] Automatic MOC for target runnermanagersinglerunnermodetest
-[52/66] Automatic MOC for target runnermanagertest
-[53/66] Automatic MOC for target dbusrunnertest
+[52/66] Automatic MOC for target dbusrunnertest
+[53/66] Automatic MOC for target runnermanagertest
 [54/66] Building CXX object autotests/CMakeFiles/runnermanagersinglerunnermodetest.dir/runnermanagersinglerunnermodetest_autogen/mocs_compilation.cpp.o
-[55/66] Building CXX object autotests/CMakeFiles/runnermanagertest.dir/runnermanagertest_autogen/mocs_compilation.cpp.o
-[56/66] Building CXX object autotests/CMakeFiles/dbusrunnertest.dir/dbusrunnertest_autogen/mocs_compilation.cpp.o
-[57/66] Building CXX object autotests/CMakeFiles/runnermanagerhistorytest.dir/runnermanagerhistorytest.cpp.o
+[55/66] Building CXX object autotests/CMakeFiles/runnermanagerhistorytest.dir/runnermanagerhistorytest.cpp.o
+[56/66] Building CXX object autotests/CMakeFiles/runnermanagertest.dir/runnermanagertest_autogen/mocs_compilation.cpp.o
+[57/66] Building CXX object autotests/CMakeFiles/dbusrunnertest.dir/dbusrunnertest_autogen/mocs_compilation.cpp.o
 [58/66] Linking CXX executable bin/runnermanagerhistorytest
 [59/66] Building CXX object autotests/CMakeFiles/runnermanagertest.dir/kcoreaddons_static_krunnertest_plugins.cpp.o
 [60/66] Building CXX object autotests/CMakeFiles/runnermanagertest.dir/runnermanagertest.cpp.o
@@ -353,8 +353,8 @@ Generated  "/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/work/krunner-5.116
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/share/kservicetypes5/plasma-runner.desktop
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/share/qlogging-categories5/krunner.categories
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/share/qlogging-categories5/krunner.renamecategories
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Runner.qch
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Runner.tags
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Runner.qch
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Runner.tags
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/lib64/qt5/mkspecs/modules/qt_KRunner.pri
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/share/dbus-1/interfaces/kf5_org.kde.krunner1.xml
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/krunner5/package-krunner5/usr/share/kdevappwizard/templates/runner.tar.bz2
@@ -437,9 +437,9 @@ usr/doc/krunner5-5.116.0/docs/
 usr/doc/krunner5-5.116.0/docs/Doxyfile.local
 usr/doc/krunner5-5.116.0/krunner5.ini
 usr/doc/krunner5-5.116.0/slack-required
-usr/doc/qt5-5.15.16_20250408_6cb26397/
-usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Runner.qch
-usr/doc/qt5-5.15.16_20250408_6cb26397/KF5Runner.tags
+usr/doc/qt5-5.15.17_20250522_355dc72e/
+usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Runner.qch
+usr/doc/qt5-5.15.17_20250522_355dc72e/KF5Runner.tags
 usr/include/
 usr/include/KF5/
 usr/include/KF5/KRunner/
@@ -516,7 +516,7 @@ makepkg-krunner5.log
 +=======================================================================================================+
 
 Pre-installing package krunner5-5.116.0-x86_64-1_rtz...
-Removing package: krunner5-5.116.0-x86_64-1_rtz-upgraded-2025-05-21,13:02:57
+Removing package: krunner5-5.116.0-x86_64-1_rtz-upgraded-2025-05-28,17:28:19
 Installing package krunner5-5.116.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # krunner5 (Framework)

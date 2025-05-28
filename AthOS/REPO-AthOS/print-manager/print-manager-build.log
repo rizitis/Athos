@@ -18,28 +18,28 @@ kwindowsystem is already installed!
 libplasma is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 14:46:40--  https://download.kde.org/stable/plasma/6.3.5/print-manager-6.3.5.tar.xz
+--2025-05-28 19:05:32--  https://download.kde.org/stable/plasma/6.3.5/print-manager-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/print-manager-6.3.5.tar.xz [following]
---2025-05-21 14:46:40--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/print-manager-6.3.5.tar.xz
+--2025-05-28 19:05:33--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/print-manager-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 392304 (383K) [application/octet-stream]
 Saving to: ‘print-manager-6.3.5.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 13% 1.33M 0s
-    50K .......... .......... .......... .......... .......... 26% 1.42M 0s
-   100K .......... .......... .......... .......... .......... 39% 7.28M 0s
-   150K .......... .......... .......... .......... .......... 52% 5.21M 0s
-   200K .......... .......... .......... .......... .......... 65% 2.06M 0s
-   250K .......... .......... .......... .......... .......... 78% 5.25M 0s
-   300K .......... .......... .......... .......... .......... 91% 7.31M 0s
-   350K .......... .......... .......... ...                  100%  458K=0.2s
+     0K .......... .......... .......... .......... .......... 13% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 26% 1.41M 0s
+   100K .......... .......... .......... .......... .......... 39% 5.02M 0s
+   150K .......... .......... .......... .......... .......... 52% 2.02M 0s
+   200K .......... .......... .......... .......... .......... 65% 6.68M 0s
+   250K .......... .......... .......... .......... .......... 78% 5.29M 0s
+   300K .......... .......... .......... .......... .......... 91% 6.47M 0s
+   350K .......... .......... .......... ...                  100% 80.8K=0.5s
 
-2025-05-21 14:46:41 (1.88 MB/s) - ‘print-manager-6.3.5.tar.xz’ saved [392304/392304]
+2025-05-28 19:05:33 (712 KB/s) - ‘print-manager-6.3.5.tar.xz’ saved [392304/392304]
 
 Found file: print-manager-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -447,8 +447,8 @@ print-manager-6.3.5/config.h.cmake
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -471,7 +471,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.14.0")
 -- Found KF6ConfigWidgets: /usr/lib64/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.14.0")
@@ -581,27 +581,28 @@ CMake Warning at CMakeLists.txt:60 (find_package):
  * PackageKitQt6, Software Manager integration
    Needed to automatically install the system-config-printer package.
 
--- Configuring done (2.0s)
+-- Configuring done (2.2s)
 -- Generating done (0.1s)
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/build
 [0/2] Re-checking globbed directories...
-[1/101] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/build/src/kcm && /usr/lib64/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/kcm_printer_manager.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/build/src/kcm/kcm_printer_manager.desktop
+[1/101] cd /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/build/src/kcm && /usr/libexec/kf6/kcmdesktopfilegenerator /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/kcm_printer_manager.json /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/build/src/kcm/kcm_printer_manager.desktop
 [2/101] Generating ts...
 [3/101] Generating mo...
 [4/101] Automatic MOC for target kcupslib
-[5/101] Running rcc for resource qmake_org_kde_plasma_printmanager
-[6/101] Running AUTOMOC file extraction for target kcupslib
+[5/101] Running AUTOMOC file extraction for target kcupslib
+[6/101] Running rcc for resource qmake_org_kde_plasma_printmanager
 [7/101] Generating ui_SelectMakeModel.h
 [8/101] Running moc --collect-json for target kcupslib
 [9/101] Automatic QML type registration for target kcupslib
 [10/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/kcupslib_autogen/mocs_compilation.cpp.o
 [11/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/.qt/rcc/qrc_qmake_org_kde_plasma_printmanager.cpp.o
 [12/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/ProcessRunner.cpp.o
-[13/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/kcupslib_log.cpp.o
-[14/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/JobSortFilterModel.cpp.o
-[15/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/NoSelectionRectDelegate.cpp.o
+[13/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/NoSelectionRectDelegate.cpp.o
+[14/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/kcupslib_log.cpp.o
+[15/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/JobSortFilterModel.cpp.o
 [16/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsPrinter.cpp.o
-[17/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KIppRequest.cpp.o
+[17/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsPasswordDialog.cpp.o
+[18/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KIppRequest.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KIppRequest.cpp: In member function ‘void KIppRequest::addVariantValues(const QVariantMap&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KIppRequest.cpp:108:27: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
   108 |         switch (value.type()) {
@@ -621,11 +622,15 @@ In file included from /usr/include/qt6/QtCore/qmetaobject.h:10,
 /usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
   432 |     Type type() const
       |          ^~~~
-[18/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsJob.cpp.o
-[19/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsPasswordDialog.cpp.o
-[20/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/ClassListWidget.cpp.o
-[21/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsServer.cpp.o
-[22/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsRequest.cpp.o
+[19/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsJob.cpp.o
+[20/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsServer.cpp.o
+[21/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/PrinterModel.cpp.o
+[22/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/ClassListWidget.cpp.o
+[23/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/PPDModel.cpp.o
+[24/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/JobModel.cpp.o
+[25/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/kcupslib_qmltyperegistrations.cpp.o
+[26/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsConnection.cpp.o
+[27/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsRequest.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsRequest.cpp: In member function ‘void KCupsRequest::getDevices(int, QStringList, QStringList)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/libkcups/KCupsRequest.cpp:105:27: warning: ‘ipp_status_t cupsGetDevices(http_t*, int, const char*, const char*, cups_device_cb_t, void*)’ is deprecated [-Wdeprecated-declarations]
   105 |             cupsGetDevices(CUPS_HTTP_DEFAULT, timeout, include, exclude, (cups_device_cb_t)choose_device_cb, this);
@@ -642,62 +647,60 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/wor
 /usr/include/cups/ppd.h:360:26: note: declared here
   360 | extern const char       *cupsGetPPD2(http_t *http, const char *name) _CUPS_DEPRECATED_1_6_MSG("Use cupsCopyDestInfo and friends instead.");
       |                          ^~~~~~~~~~~
-[23/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/JobModel.cpp.o
-[24/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/PPDModel.cpp.o
-[25/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/PrinterModel.cpp.o
-[26/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/kcupslib_qmltyperegistrations.cpp.o
-[27/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/SelectMakeModel.cpp.o
-[28/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/KCupsConnection.cpp.o
+[28/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/SelectMakeModel.cpp.o
 [29/101] Building CXX object src/libkcups/CMakeFiles/kcupslib.dir/DevicesModel.cpp.o
 [30/101] Linking CXX shared library bin/libkcupslib.so.6.3.5
 [31/101] Creating library symlink bin/libkcupslib.so
 [32/101] Automatic MOC for target kcupslibplugin
-[33/101] Automatic MOC for target kde-print-queue
-[34/101] Building CXX object src/libkcups/CMakeFiles/kcupslibplugin.dir/kcupslibplugin_autogen/mocs_compilation.cpp.o
-[35/101] Generating ui_PrintQueueUi.h
+[33/101] Automatic MOC for target kded_printmanager
+[34/101] Generating newprinternotificationadaptor.cpp, newprinternotificationadaptor.h
+[35/101] Building CXX object src/libkcups/CMakeFiles/kcupslibplugin.dir/kcupslibplugin_autogen/mocs_compilation.cpp.o
+[36/101] Generating moc_newprinternotificationadaptor.cpp
+[37/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/kded_printmanager_autogen/mocs_compilation.cpp.o
+[38/101] Automatic MOC for target configure-printer
+[39/101] Generating configureprinteradaptor.cpp, configureprinteradaptor.h
+[40/101] Generating moc_configureprinteradaptor.cpp
+[41/101] Generating ui_PrinterBehavior.h
+[42/101] Generating ui_PrinterOptions.h
+[43/101] Automatic MOC for target kde-print-queue
+[44/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/configure-printer_autogen/mocs_compilation.cpp.o
+[45/101] Automatic MOC for target kcm_printer_manager
+[46/101] Generating ui_PrintQueueUi.h
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/printqueue/PrintQueueUi.ui: Warning: The name 'kseparator' (KSeparator) is already in use, defaulting to 'kseparator1'.
-[36/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/kde-print-queue_autogen/mocs_compilation.cpp.o
-[37/101] Automatic MOC for target kded_printmanager
-[38/101] Automatic MOC for target kcm_printer_manager
-[39/101] Generating newprinternotificationadaptor.cpp, newprinternotificationadaptor.h
-[40/101] Generating moc_newprinternotificationadaptor.cpp
-[41/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/kded_printmanager_autogen/mocs_compilation.cpp.o
-[42/101] Generating qrc_kcm_printer_manager.cpp
-[43/101] Automatic MOC for target configure-printer
-[44/101] Generating configureprinteradaptor.cpp, configureprinteradaptor.h
-[45/101] Generating moc_configureprinteradaptor.cpp
-[46/101] Generating ui_PrinterBehavior.h
-[47/101] Generating ui_PrinterOptions.h
-[48/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/configure-printer_autogen/mocs_compilation.cpp.o
+[47/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/kde-print-queue_autogen/mocs_compilation.cpp.o
+[48/101] Generating qrc_kcm_printer_manager.cpp
 [49/101] Automatic MOC for target kde-add-printer
-[50/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/qrc_kcm_printer_manager.cpp.o
-[51/101] Generating ui_PageDestinations.h
+[50/101] Generating ui_PageDestinations.h
+[51/101] Generating ui_ChooseLpd.h
 [52/101] Generating ui_ChooseSamba.h
-[53/101] Generating ui_ChooseLpd.h
+[53/101] Generating ui_ChooseSerial.h
 [54/101] Generating ui_ChooseSocket.h
-[55/101] Generating ui_ChooseSerial.h
+[55/101] Generating ui_ChooseUri.h
 [56/101] Generating ui_PageChoosePrinters.h
-[57/101] Generating ui_ChooseUri.h
+[57/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/qrc_kcm_printer_manager.cpp.o
 [58/101] Generating ui_PageChoosePPD.h
 [59/101] Generating ui_PageAddPrinter.h
 [60/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/kde-add-printer_autogen/mocs_compilation.cpp.o
-[61/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/Debug.cpp.o
-[62/101] Building CXX object src/libkcups/CMakeFiles/kcupslibplugin.dir/kcupslibplugin_org_kde_plasma_printmanagerPlugin.cpp.o
-[63/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/pmkded_log.cpp.o
-[64/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterPage.cpp.o
-[65/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/pmkcm_log.cpp.o
+[61/101] Building CXX object src/libkcups/CMakeFiles/kcupslibplugin.dir/kcupslibplugin_org_kde_plasma_printmanagerPlugin.cpp.o
+[62/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/Debug.cpp.o
+[63/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/PrintManagerKded.cpp.o
+[64/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/pmkcm_log.cpp.o
+[65/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/pmkded_log.cpp.o
 [66/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/main.cpp.o
 [67/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/main.cpp.o
-[68/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/PrintQueue.cpp.o
-[69/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/PrintManagerKded.cpp.o
-[70/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/main.cpp.o
-[71/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigurePrinter.cpp.o
-[72/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/kcm_printer_manager_autogen/mocs_compilation.cpp.o
-[73/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/configureprinteradaptor.cpp.o
-[74/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/newprinternotificationadaptor.cpp.o
-[75/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/AddPrinter.cpp.o
-[76/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterBehavior.cpp.o
-[77/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterOptions.cpp.o
+[68/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/main.cpp.o
+[69/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigurePrinter.cpp.o
+[70/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/kcm_printer_manager_autogen/mocs_compilation.cpp.o
+[71/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterPage.cpp.o
+[72/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterBehavior.cpp.o
+[73/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/PrintQueue.cpp.o
+[74/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigureDialog.cpp.o
+[75/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/GenericPage.cpp.o
+[76/101] Linking CXX shared module bin/org/kde/plasma/printmanager/libkcupslibplugin.so
+[77/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/configureprinteradaptor.cpp.o
+[78/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/newprinternotificationadaptor.cpp.o
+[79/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/AddPrinter.cpp.o
+[80/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/PrinterOptions.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp: In member function ‘void PrinterOptions::reloadPPD()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:94:24: warning: ‘ppd_file_t* ppdOpenFile(const char*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
    94 |     m_ppd = ppdOpenFile(qUtf8Printable(m_filename));
@@ -769,34 +772,17 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/wor
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/configure-printer/PrinterOptions.cpp:605:13: note: here
   605 |             case PPD_CUSTOM_PASSWORD:
       |             ^~~~
-[78/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigureDialog.cpp.o
-[79/101] Linking CXX shared module bin/org/kde/plasma/printmanager/libkcupslibplugin.so
-[80/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/GenericPage.cpp.o
 [81/101] Building CXX object src/printqueue/CMakeFiles/kde-print-queue.dir/PrintQueueUi.cpp.o
-[82/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/kde-add-printer_log.cpp.o
+[82/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/NewPrinterNotification.cpp.o
 [83/101] Linking CXX executable bin/kde-print-queue
-[84/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigurePrinterInterface.cpp.o
-[85/101] Building CXX object src/kded/CMakeFiles/kded_printmanager.dir/NewPrinterNotification.cpp.o
-[86/101] Linking CXX executable bin/configure-printer
-[87/101] Linking CXX shared module bin/printmanager.so
-[88/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageChoosePrinters.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp: In member function ‘virtual bool PageChoosePrinters::canProceed() const’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp:68:51: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
-   68 |     return ui->membersLV->selectedPrinters().count() > 0;
-      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
-In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
-                 from /usr/include/qt6/QtCore/qhash.h:10,
-                 from /usr/include/qt6/QtCore/QHash:1,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/GenericPage.h:10,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.h:10,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp:7:
-/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
-  195 |     inline qsizetype count() const { return d.size; }
-      |                      ^~~~~
-[89/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageChoosePPD.cpp.o
-[90/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseLpd.cpp.o
-[91/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseSocket.cpp.o
-[92/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/printermanager.cpp.o
+[84/101] Linking CXX shared module bin/printmanager.so
+[85/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseLpd.cpp.o
+[86/101] Building CXX object src/configure-printer/CMakeFiles/configure-printer.dir/ConfigurePrinterInterface.cpp.o
+[87/101] Linking CXX executable bin/configure-printer
+[88/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/kde-add-printer_log.cpp.o
+[89/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseSocket.cpp.o
+[90/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseSerial.cpp.o
+[91/101] Building CXX object src/kcm/CMakeFiles/kcm_printer_manager.dir/printermanager.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/printermanager.cpp: In lambda function:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/kcm/printermanager.cpp:279:30: warning: ‘ppd_file_t* ppdOpenFile(const char*)’ is deprecated: Use cupsCopyDestInfo and friends instead. [-Wdeprecated-declarations]
   279 |             ppd = ppdOpenFile(qUtf8Printable(filename));
@@ -823,10 +809,27 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/wor
 /usr/include/cups/ppd.h:400:26: note: declared here
   400 | extern ppd_attr_t       *ppdFindAttr(ppd_file_t *ppd, const char *name,
       |                          ^~~~~~~~~~~
-[93/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseUri.cpp.o
-[94/101] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_printer_manager.so
+[92/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageChoosePrinters.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp: In member function ‘virtual bool PageChoosePrinters::canProceed() const’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp:68:51: warning: ‘qsizetype QString::count() const’ is deprecated: Use size() or length() instead. [-Wdeprecated-declarations]
+   68 |     return ui->membersLV->selectedPrinters().count() > 0;
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/qt6/QtCore/qhashfunctions.h:9,
+                 from /usr/include/qt6/QtCore/qhash.h:10,
+                 from /usr/include/qt6/QtCore/QHash:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/GenericPage.h:10,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.h:10,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageChoosePrinters.cpp:7:
+/usr/include/qt6/QtCore/qstring.h:195:22: note: declared here
+  195 |     inline qsizetype count() const { return d.size; }
+      |                      ^~~~~
+[93/101] Linking CXX shared module bin/plasma/kcms/systemsettings/kcm_printer_manager.so
+[94/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/AddPrinterAssistant.cpp.o
 [95/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseSamba.cpp.o
-[96/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageDestinations.cpp.o
+[96/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseUri.cpp.o
+[97/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageAddPrinter.cpp.o
+[98/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageChoosePPD.cpp.o
+[99/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageDestinations.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.cpp: In member function ‘void PageDestinations::deviceChanged()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/work/print-manager-6.3.5/src/add-printer/PageDestinations.cpp:158:29: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
   158 |         } else if (uris.type() == QVariant::StringList) {
@@ -851,9 +854,6 @@ In file included from /usr/include/qt6/QtCore/QVariant:1,
 /usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
   432 |     Type type() const
       |          ^~~~
-[97/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/PageAddPrinter.cpp.o
-[98/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/ChooseSerial.cpp.o
-[99/101] Building CXX object src/add-printer/CMakeFiles/kde-add-printer.dir/AddPrinterAssistant.cpp.o
 [100/101] Linking CXX executable bin/kde-add-printer
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/print-manager/package-print-manager/usr/share/metainfo/org.kde.print-manager.metainfo.xml
@@ -1592,7 +1592,7 @@ print-manager.dep
 +==================================================================================================================+
 
 Pre-installing package print-manager-6.3.5-x86_64-1_rtz...
-Removing package: print-manager-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,14:47:14
+Removing package: print-manager-6.3.5-x86_64-1_rtz-upgraded-2025-05-28,19:06:04
 Installing package print-manager-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # print-manager (managing print jobs and printers)

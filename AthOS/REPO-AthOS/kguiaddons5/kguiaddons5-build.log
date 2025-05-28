@@ -6,22 +6,22 @@ extra-cmake-modules is already installed!
 doxygen is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 12:55:43--  https://download.kde.org/stable/frameworks/5.116/kguiaddons-5.116.0.tar.xz
+--2025-05-28 17:20:27--  https://download.kde.org/stable/frameworks/5.116/kguiaddons-5.116.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kguiaddons-5.116.0.tar.xz [following]
---2025-05-21 12:55:43--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kguiaddons-5.116.0.tar.xz
+--2025-05-28 17:20:27--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/5.116/kguiaddons-5.116.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 78472 (77K) [application/octet-stream]
 Saving to: ‘kguiaddons-5.116.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 65% 1.14M 0s
-    50K .......... .......... ......                          100% 11.7M=0.05s
+     0K .......... .......... .......... .......... .......... 65% 1.37M 0s
+    50K .......... .......... ......                          100% 10.8M=0.04s
 
-2025-05-21 12:55:43 (1.66 MB/s) - ‘kguiaddons-5.116.0.tar.xz’ saved [78472/78472]
+2025-05-28 17:20:28 (1.96 MB/s) - ‘kguiaddons-5.116.0.tar.xz’ saved [78472/78472]
 
 Found file: kguiaddons-5.116.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -152,8 +152,8 @@ kguiaddons-5.116.0/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -199,7 +199,7 @@ hm...lets continue and see what happens
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- Found QHelpGenerator executable: /usr/lib64/qt5/bin/qhelpgenerator
 -- No such target Qt5Gui_QCH defined when calling ecm_add_qch(), ignored.
 
@@ -233,7 +233,7 @@ Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/work/kg
  * Qt5Widgets
  * Qt5 (required version >= 5.15.2)
 
--- Configuring done (1.3s)
+-- Configuring done (1.4s)
 -- Generating done (0.0s)
 CMake Warning:
   Manually-specified variables were not used by the project:
@@ -260,55 +260,53 @@ Documentation successfully generated.
 [8/111] Generating wayland-wlr-data-control-unstable-v1-client-protocol.h
 [9/111] Generating wayland-keystate-client-protocol.h
 [10/111] Generating qwayland-keyboard-shortcuts-inhibit-unstable-v1.h
-[11/111] Generating qwayland-wlr-data-control-unstable-v1.h
-[12/111] Generating qwayland-keystate.h
-[13/111] Generating wayland-keyboard-shortcuts-inhibit-unstable-v1-protocol.c
-[14/111] Generating wayland-wlr-data-control-unstable-v1-protocol.c
-[15/111] Generating wayland-keystate-protocol.c
-[16/111] Generating wayland-wayland-client-protocol.h
-[17/111] Generating qwayland-wayland.h
-[18/111] Generating qwayland-keystate.cpp
+[11/111] Generating wayland-keyboard-shortcuts-inhibit-unstable-v1-protocol.c
+[12/111] Generating wayland-wayland-client-protocol.h
+[13/111] Generating qwayland-wlr-data-control-unstable-v1.h
+[14/111] Generating qwayland-keystate.h
+[15/111] Generating wayland-wlr-data-control-unstable-v1-protocol.c
+[16/111] Generating qwayland-wayland.h
+[17/111] Generating wayland-keystate-protocol.c
+[18/111] Generating qwayland-keyboard-shortcuts-inhibit-unstable-v1.cpp
 [19/111] Generating qwayland-wlr-data-control-unstable-v1.cpp
-[20/111] Generating qwayland-keyboard-shortcuts-inhibit-unstable-v1.cpp
-[21/111] Generating wayland-wayland-protocol.c
+[20/111] Generating wayland-wayland-protocol.c
+[21/111] Generating qwayland-keystate.cpp
 [22/111] Generating qwayland-wayland.cpp
 [23/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/KF5GuiAddons_autogen/mocs_compilation.cpp.o
 [24/111] Building CXX object src/geo-scheme-handler/CMakeFiles/kde-geo-uri-handler.dir/kgeourihandler.cpp.o
-[25/111] Building CXX object src/geo-scheme-handler/CMakeFiles/kde-geo-uri-handler.dir/main.cpp.o
-[26/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/systemclipboard/qtclipboard.cpp.o
-[27/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kcursorsaver.cpp.o
-[28/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/recorder/keyboardgrabber.cpp.o
-[29/111] Building C object src/CMakeFiles/KF5GuiAddons.dir/wayland-keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o
-[30/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorschemewatcher.cpp.o
-[31/111] Building C object src/CMakeFiles/KF5GuiAddons.dir/wayland-wlr-data-control-unstable-v1-protocol.c.o
-[32/111] Building C object src/CMakeFiles/KF5GuiAddons.dir/wayland-keystate-protocol.c.o
-[33/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kmodifierkeyinfoprovider.cpp.o
-[34/111] Building C object src/CMakeFiles/KF5GuiAddons.dir/wayland-wayland-protocol.c.o
-[35/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kmodifierkeyinfo.cpp.o
-[36/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolormimedata.cpp.o
-[37/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorspaces.cpp.o
-[38/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kurlhandler_p.cpp.o
-[39/111] Building CXX object autotests/CMakeFiles/kgeourihandlertest.dir/kgeourihandlertest.cpp.o
-[40/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kiconutils.cpp.o
-[41/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorschemewatcherbackend.cpp.o
-[42/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/systemclipboard/ksystemclipboard.cpp.o
-[43/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/klocalimagecacheimpl.cpp.o
-[44/111] Linking CXX executable bin/kde-geo-uri-handler
-[45/111] Linking CXX executable bin/kgeourihandlertest
-[46/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/text/kdatevalidator.cpp.o
-[47/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/kguiaddons_debug.cpp.o
-[48/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/qwayland-keystate.cpp.o
-[49/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/qwayland-keyboard-shortcuts-inhibit-unstable-v1.cpp.o
+[25/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorschemewatcherbackend.cpp.o
+[26/111] Building CXX object src/geo-scheme-handler/CMakeFiles/kde-geo-uri-handler.dir/main.cpp.o
+[27/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/systemclipboard/qtclipboard.cpp.o
+[28/111] Building C object src/CMakeFiles/KF5GuiAddons.dir/wayland-keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o
+[29/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kmodifierkeyinfoprovider.cpp.o
+[30/111] Building C object src/CMakeFiles/KF5GuiAddons.dir/wayland-wlr-data-control-unstable-v1-protocol.c.o
+[31/111] Building C object src/CMakeFiles/KF5GuiAddons.dir/wayland-keystate-protocol.c.o
+[32/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kmodifierkeyinfo.cpp.o
+[33/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kiconutils.cpp.o
+[34/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/systemclipboard/ksystemclipboard.cpp.o
+[35/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/text/kdatevalidator.cpp.o
+[36/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/klocalimagecacheimpl.cpp.o
+[37/111] Building C object src/CMakeFiles/KF5GuiAddons.dir/wayland-wayland-protocol.c.o
+[38/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorschemewatcher.cpp.o
+[39/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/recorder/keyboardgrabber.cpp.o
+[40/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kurlhandler_p.cpp.o
+[41/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kcursorsaver.cpp.o
+[42/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorcollection.cpp.o
+[43/111] Building CXX object autotests/CMakeFiles/kgeourihandlertest.dir/kgeourihandlertest.cpp.o
+[44/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolormimedata.cpp.o
+[45/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorspaces.cpp.o
+[46/111] Linking CXX executable bin/kde-geo-uri-handler
+[47/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/fonts/kfontutils.cpp.o
+[48/111] Linking CXX executable bin/kgeourihandlertest
+[49/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/kguiaddons_debug.cpp.o
 [50/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/qwayland-wlr-data-control-unstable-v1.cpp.o
 [51/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/text/kwordwrap.cpp.o
 [52/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorutils.cpp.o
-[53/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/fonts/kfontutils.cpp.o
-[54/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorschemewatcher_xdg.cpp.o
-[55/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorcollection.cpp.o
+[53/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/qwayland-keyboard-shortcuts-inhibit-unstable-v1.cpp.o
+[54/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/qwayland-keystate.cpp.o
+[55/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/colors/kcolorschemewatcher_xdg.cpp.o
 [56/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/recorder/keysequencerecorder.cpp.o
-[57/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/qwayland-wayland.cpp.o
-[58/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/recorder/waylandinhibition.cpp.o
-[59/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kmodifierkeyinfoprovider_wayland.cpp.o
+[57/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kmodifierkeyinfoprovider_wayland.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/work/kguiaddons-5.116.0/src/util/kmodifierkeyinfoprovider_wayland.cpp: In member function ‘KModifierKeyInfoProvider::ModifierState KeyState::toState(QtWayland::org_kde_kwin_keystate::state)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/work/kguiaddons-5.116.0/src/util/kmodifierkeyinfoprovider_wayland.cpp:39:16: warning: enumeration value ‘state_pressed’ not handled in switch [-Wswitch]
    39 |         switch (state) {
@@ -321,58 +319,60 @@ Documentation successfully generated.
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/work/kguiaddons-5.116.0/src/util/kmodifierkeyinfoprovider_wayland.cpp:53:16: warning: enumeration value ‘key_shift’ not handled in switch [-Wswitch]
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/work/kguiaddons-5.116.0/src/util/kmodifierkeyinfoprovider_wayland.cpp:53:16: warning: enumeration value ‘key_meta’ not handled in switch [-Wswitch]
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/work/kguiaddons-5.116.0/src/util/kmodifierkeyinfoprovider_wayland.cpp:53:16: warning: enumeration value ‘key_altgr’ not handled in switch [-Wswitch]
-[60/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kmodifierkeyinfoprovider_xcb.cpp.o
+[58/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/qwayland-wayland.cpp.o
+[59/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/util/kmodifierkeyinfoprovider_xcb.cpp.o
+[60/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/recorder/waylandinhibition.cpp.o
 [61/111] Building CXX object src/CMakeFiles/KF5GuiAddons.dir/systemclipboard/waylandclipboard.cpp.o
 [62/111] Linking CXX shared library bin/libKF5GuiAddons.so.5.116.0
 [63/111] Creating library symlink bin/libKF5GuiAddons.so.5 bin/libKF5GuiAddons.so
 [64/111] Automatic MOC for target kcolorcollectiontest
-[65/111] Automatic MOC for target openurltest
-[66/111] Automatic MOC for target kcolorschemewatchertest
-[67/111] Automatic MOC for target pasteclient
-[68/111] Building CXX object tests/CMakeFiles/kcolorcollectiontest.dir/kcolorcollectiontest_autogen/mocs_compilation.cpp.o
-[69/111] Building CXX object tests/CMakeFiles/kcolorschemewatchertest.dir/kcolorschemewatchertest_autogen/mocs_compilation.cpp.o
-[70/111] Building CXX object tests/CMakeFiles/openurltest.dir/openurltest_autogen/mocs_compilation.cpp.o
-[71/111] Building CXX object src/CMakeFiles/pasteclient.dir/pasteclient_autogen/mocs_compilation.cpp.o
-[72/111] Automatic MOC for target kurlhandlertest
-[73/111] Automatic MOC for target kcolorutilstest
-[74/111] Building CXX object autotests/CMakeFiles/kurlhandlertest.dir/kurlhandlertest_autogen/mocs_compilation.cpp.o
-[75/111] Automatic MOC for target kmodifierkeyinfotest
-[76/111] Building CXX object autotests/CMakeFiles/kcolorutilstest.dir/kcolorutilstest_autogen/mocs_compilation.cpp.o
-[77/111] Automatic MOC for target kcursorsavergui_test
-[78/111] Automatic MOC for target keysequencerecordertest
-[79/111] Building CXX object tests/CMakeFiles/kmodifierkeyinfotest.dir/kmodifierkeyinfotest_autogen/mocs_compilation.cpp.o
-[80/111] Building CXX object autotests/CMakeFiles/keysequencerecordertest.dir/keysequencerecordertest_autogen/mocs_compilation.cpp.o
-[81/111] Building CXX object tests/CMakeFiles/kcursorsavergui_test.dir/kcursorsavergui_test_autogen/mocs_compilation.cpp.o
-[82/111] Automatic MOC for target kcursorsavertest
-[83/111] Automatic MOC for target kiconutilstest
-[84/111] Building CXX object autotests/CMakeFiles/kcursorsavertest.dir/kcursorsavertest_autogen/mocs_compilation.cpp.o
-[85/111] Building CXX object autotests/CMakeFiles/kiconutilstest.dir/kiconutilstest_autogen/mocs_compilation.cpp.o
-[86/111] Automatic MOC for target kwordwraptest
+[65/111] Automatic MOC for target kcolorschemewatchertest
+[66/111] Automatic MOC for target pasteclient
+[67/111] Automatic MOC for target openurltest
+[68/111] Building CXX object tests/CMakeFiles/kcolorschemewatchertest.dir/kcolorschemewatchertest_autogen/mocs_compilation.cpp.o
+[69/111] Building CXX object tests/CMakeFiles/kcolorcollectiontest.dir/kcolorcollectiontest_autogen/mocs_compilation.cpp.o
+[70/111] Building CXX object src/CMakeFiles/pasteclient.dir/pasteclient_autogen/mocs_compilation.cpp.o
+[71/111] Building CXX object tests/CMakeFiles/openurltest.dir/openurltest_autogen/mocs_compilation.cpp.o
+[72/111] Automatic MOC for target kcursorsavertest
+[73/111] Automatic MOC for target keysequencerecordertest
+[74/111] Automatic MOC for target kurlhandlertest
+[75/111] Building CXX object autotests/CMakeFiles/keysequencerecordertest.dir/keysequencerecordertest_autogen/mocs_compilation.cpp.o
+[76/111] Building CXX object autotests/CMakeFiles/kurlhandlertest.dir/kurlhandlertest_autogen/mocs_compilation.cpp.o
+[77/111] Building CXX object autotests/CMakeFiles/kcursorsavertest.dir/kcursorsavertest_autogen/mocs_compilation.cpp.o
+[78/111] Automatic MOC for target kcursorsavergui_test
+[79/111] Building CXX object tests/CMakeFiles/kcursorsavergui_test.dir/kcursorsavergui_test_autogen/mocs_compilation.cpp.o
+[80/111] Automatic MOC for target kcolorutilstest
+[81/111] Automatic MOC for target kiconutilstest
+[82/111] Building CXX object autotests/CMakeFiles/kcolorutilstest.dir/kcolorutilstest_autogen/mocs_compilation.cpp.o
+[83/111] Building CXX object autotests/CMakeFiles/kiconutilstest.dir/kiconutilstest_autogen/mocs_compilation.cpp.o
+[84/111] Automatic MOC for target kmodifierkeyinfotest
+[85/111] Automatic MOC for target kwordwraptest
+[86/111] Building CXX object tests/CMakeFiles/kmodifierkeyinfotest.dir/kmodifierkeyinfotest_autogen/mocs_compilation.cpp.o
 [87/111] Building CXX object autotests/CMakeFiles/kwordwraptest.dir/kwordwraptest_autogen/mocs_compilation.cpp.o
-[88/111] Building CXX object src/CMakeFiles/pasteclient.dir/systemclipboard/tests/paste.cpp.o
-[89/111] Building CXX object tests/CMakeFiles/openurltest.dir/openurltest.cpp.o
-[90/111] Linking CXX executable bin/pasteclient
-[91/111] Building CXX object tests/CMakeFiles/kcolorcollectiontest.dir/kcolorcollectiontest.cpp.o
-[92/111] Linking CXX executable bin/openurltest
-[93/111] Building CXX object autotests/CMakeFiles/kurlhandlertest.dir/kurlhandlertest.cpp.o
-[94/111] Linking CXX executable bin/kcolorcollectiontest
-[95/111] Linking CXX executable bin/kurlhandlertest
-[96/111] Building CXX object tests/CMakeFiles/kmodifierkeyinfotest.dir/kmodifierkeyinfotest.cpp.o
-[97/111] Building CXX object autotests/CMakeFiles/kcolorutilstest.dir/kcolorutilstest.cpp.o
-[98/111] Building CXX object tests/CMakeFiles/kcolorschemewatchertest.dir/kcolorschemewatchertest.cpp.o
-[99/111] Linking CXX executable bin/kmodifierkeyinfotest
-[100/111] Building CXX object autotests/CMakeFiles/keysequencerecordertest.dir/keysequencerecordertest.cpp.o
-[101/111] Building CXX object autotests/CMakeFiles/kwordwraptest.dir/kwordwraptest.cpp.o
-[102/111] Linking CXX executable bin/kcolorutilstest
-[103/111] Building CXX object tests/CMakeFiles/kcursorsavergui_test.dir/kcursorsavergui_test.cpp.o
-[104/111] Linking CXX executable bin/kcolorschemewatchertest
-[105/111] Linking CXX executable bin/keysequencerecordertest
-[106/111] Linking CXX executable bin/kwordwraptest
-[107/111] Building CXX object autotests/CMakeFiles/kiconutilstest.dir/kiconutilstest.cpp.o
-[108/111] Linking CXX executable bin/kcursorsavergui_test
-[109/111] Building CXX object autotests/CMakeFiles/kcursorsavertest.dir/kcursorsavertest.cpp.o
-[110/111] Linking CXX executable bin/kiconutilstest
-[111/111] Linking CXX executable bin/kcursorsavertest
+[88/111] Building CXX object tests/CMakeFiles/kcolorschemewatchertest.dir/kcolorschemewatchertest.cpp.o
+[89/111] Building CXX object tests/CMakeFiles/kcolorcollectiontest.dir/kcolorcollectiontest.cpp.o
+[90/111] Linking CXX executable bin/kcolorschemewatchertest
+[91/111] Linking CXX executable bin/kcolorcollectiontest
+[92/111] Building CXX object autotests/CMakeFiles/kcursorsavertest.dir/kcursorsavertest.cpp.o
+[93/111] Linking CXX executable bin/kcursorsavertest
+[94/111] Building CXX object src/CMakeFiles/pasteclient.dir/systemclipboard/tests/paste.cpp.o
+[95/111] Building CXX object autotests/CMakeFiles/kwordwraptest.dir/kwordwraptest.cpp.o
+[96/111] Building CXX object tests/CMakeFiles/kcursorsavergui_test.dir/kcursorsavergui_test.cpp.o
+[97/111] Building CXX object tests/CMakeFiles/openurltest.dir/openurltest.cpp.o
+[98/111] Linking CXX executable bin/pasteclient
+[99/111] Linking CXX executable bin/kwordwraptest
+[100/111] Building CXX object tests/CMakeFiles/kmodifierkeyinfotest.dir/kmodifierkeyinfotest.cpp.o
+[101/111] Linking CXX executable bin/kcursorsavergui_test
+[102/111] Building CXX object autotests/CMakeFiles/kurlhandlertest.dir/kurlhandlertest.cpp.o
+[103/111] Linking CXX executable bin/openurltest
+[104/111] Building CXX object autotests/CMakeFiles/keysequencerecordertest.dir/keysequencerecordertest.cpp.o
+[105/111] Linking CXX executable bin/kmodifierkeyinfotest
+[106/111] Building CXX object autotests/CMakeFiles/kcolorutilstest.dir/kcolorutilstest.cpp.o
+[107/111] Linking CXX executable bin/kurlhandlertest
+[108/111] Linking CXX executable bin/keysequencerecordertest
+[109/111] Linking CXX executable bin/kcolorutilstest
+[110/111] Building CXX object autotests/CMakeFiles/kiconutilstest.dir/kiconutilstest.cpp.o
+[111/111] Linking CXX executable bin/kiconutilstest
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/lib64/libKF5GuiAddons.so.5.116.0
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/lib64/libKF5GuiAddons.so.5
@@ -406,8 +406,8 @@ Documentation successfully generated.
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/include/KF5/KGuiAddons/keysequencerecorder.h
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/include/KF5/KGuiAddons/KSystemClipboard
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/include/KF5/KGuiAddons/ksystemclipboard.h
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5GuiAddons.qch
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/doc/qt5-5.15.16_20250408_6cb26397/KF5GuiAddons.tags
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/doc/qt5-5.15.17_20250522_355dc72e/KF5GuiAddons.qch
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/doc/qt5-5.15.17_20250522_355dc72e/KF5GuiAddons.tags
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/lib64/qt5/mkspecs/modules/qt_KGuiAddons.pri
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/share/qlogging-categories5/kguiaddons.categories
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kguiaddons5/package-kguiaddons5/usr/bin/kde-geo-uri-handler
@@ -487,9 +487,9 @@ usr/doc/kguiaddons5-5.116.0/README.md
 usr/doc/kguiaddons5-5.116.0/README.md.license
 usr/doc/kguiaddons5-5.116.0/kguiaddons5.ini
 usr/doc/kguiaddons5-5.116.0/slack-required
-usr/doc/qt5-5.15.16_20250408_6cb26397/
-usr/doc/qt5-5.15.16_20250408_6cb26397/KF5GuiAddons.qch
-usr/doc/qt5-5.15.16_20250408_6cb26397/KF5GuiAddons.tags
+usr/doc/qt5-5.15.17_20250522_355dc72e/
+usr/doc/qt5-5.15.17_20250522_355dc72e/KF5GuiAddons.qch
+usr/doc/qt5-5.15.17_20250522_355dc72e/KF5GuiAddons.tags
 usr/include/
 usr/include/KF5/
 usr/include/KF5/KGuiAddons/
@@ -568,7 +568,7 @@ makepkg-kguiaddons5.log
 +================================================================================================================+
 
 Pre-installing package kguiaddons5-5.116.0-x86_64-1_rtz...
-Removing package: kguiaddons5-5.116.0-x86_64-1_rtz-upgraded-2025-05-21,12:55:52
+Removing package: kguiaddons5-5.116.0-x86_64-1_rtz-upgraded-2025-05-28,17:20:37
 Installing package kguiaddons5-5.116.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kguiaddons5 (Addons to QtGui)

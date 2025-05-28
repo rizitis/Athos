@@ -15,24 +15,24 @@ plasma-wayland-protocols is already installed!
 xdg-desktop-portal is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 14:50:07--  https://download.kde.org/stable/plasma/6.3.5/xdg-desktop-portal-kde-6.3.5.tar.xz
+--2025-05-28 19:08:48--  https://download.kde.org/stable/plasma/6.3.5/xdg-desktop-portal-kde-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/xdg-desktop-portal-kde-6.3.5.tar.xz [following]
---2025-05-21 14:50:07--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/xdg-desktop-portal-kde-6.3.5.tar.xz
+--2025-05-28 19:08:49--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/xdg-desktop-portal-kde-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 192136 (188K) [application/octet-stream]
 Saving to: ‘xdg-desktop-portal-kde-6.3.5.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 26% 1.33M 0s
-    50K .......... .......... .......... .......... .......... 53% 1.39M 0s
-   100K .......... .......... .......... .......... .......... 79% 5.41M 0s
-   150K .......... .......... .......... .......              100% 7.62M=0.09s
+     0K .......... .......... .......... .......... .......... 26% 1.34M 0s
+    50K .......... .......... .......... .......... .......... 53% 1.49M 0s
+   100K .......... .......... .......... .......... .......... 79% 6.55M 0s
+   150K .......... .......... .......... .......              100% 8.11M=0.08s
 
-2025-05-21 14:50:08 (2.14 MB/s) - ‘xdg-desktop-portal-kde-6.3.5.tar.xz’ saved [192136/192136]
+2025-05-28 19:08:49 (2.26 MB/s) - ‘xdg-desktop-portal-kde-6.3.5.tar.xz’ saved [192136/192136]
 
 Found file: xdg-desktop-portal-kde-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -301,8 +301,8 @@ xdg-desktop-portal-kde-6.3.5/README.md
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -326,7 +326,7 @@ hm...lets continue and see what happens
 -- Found Cups: /usr/lib64/libcups.so (found version "2.4.12")
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found Wayland_Client: /usr/lib64/libwayland-client.so (found version "1.23.1")
 -- Found Wayland_Server: /usr/lib64/libwayland-server.so (found version "1.23.1")
@@ -371,12 +371,12 @@ hm...lets continue and see what happens
 -- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so;/usr/lib64/libwayland-cursor.so;/usr/lib64/libwayland-egl.so (found suitable version "1.23.1", minimum required is "1.15") found components: Client
 -- Found WaylandProtocols: //usr/share/wayland-protocols (found suitable version "1.44", minimum required is "1.25")
 -- Warning: Property URL already set to "https://wayland.freedesktop.org/", overriding it with "https://gitlab.freedesktop.org/wayland/wayland-protocols/"
-Failed to open connection to "session" message bus: Failed to connect to socket /tmp/dbus-MpvSuU2WdC: No such file or directory
+Failed to open connection to "session" message bus: Failed to connect to socket /tmp/dbus-FiVmXpafNm: No such file or directory
 -- Could NOT find KIOFuse (missing: KIOFuse_FOUND) 
     Reason given by package: Could not find DBus service org.kde.KIOFuse in org.freedesktop.DBus.ListActivatableNames
 
 -- Checking for module 'xkbcommon'
---   Found xkbcommon, version 1.9.2
+--   Found xkbcommon, version 1.10.0
 -- The following features have been enabled:
 
  * XKB (required version >= 0.5.0), Required for converting keysyms into keycodes, <http://xkbcommon.org>
@@ -446,22 +446,16 @@ Failed to open connection to "session" message bus: Failed to connect to socket 
 [2/138] Generating mo...
 [3/138] Automatic MOC for target KirigamiFilepicker
 [4/138] Automatic RCC for declarative/filepicker.qrc
-[5/138] Automatic MOC for target inputcapturebarriertest
-[6/138] Automatic MOC for target xdgshortcuttest
-[7/138] Building CXX object autotests/CMakeFiles/inputcapturebarriertest.dir/inputcapturebarriertest_autogen/mocs_compilation.cpp.o
-[8/138] Building CXX object autotests/CMakeFiles/xdgshortcuttest.dir/xdgshortcuttest_autogen/mocs_compilation.cpp.o
-[9/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/KirigamiFilepicker_autogen/MWCENOVT7V/qrc_filepicker.cpp.o
-[10/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/declarative/filechooserqmlcallback.cpp.o
-[11/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/declarative/fileplacesmodel.cpp.o
-[12/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/declarative/dirmodelutils.cpp.o
-[13/138] Building CXX object autotests/CMakeFiles/inputcapturebarriertest.dir/__/src/inputcapturebarrier.cpp.o
-[14/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/KirigamiFilepicker_autogen/mocs_compilation.cpp.o
-[15/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/mobilefiledialog_debug.cpp.o
-[16/138] Building CXX object autotests/CMakeFiles/inputcapturebarriertest.dir/inputcapturebarriertest.cpp.o
-[17/138] Linking CXX executable bin/inputcapturebarriertest
-[18/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/api/mobilefiledialog.cpp.o
-[19/138] Building CXX object autotests/CMakeFiles/xdgshortcuttest.dir/__/src/xdgshortcut.cpp.o
-[20/138] Building CXX object autotests/CMakeFiles/xdgshortcuttest.dir/xdgshortcuttest.cpp.o
+[5/138] Automatic MOC for target xdgshortcuttest
+[6/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/KirigamiFilepicker_autogen/MWCENOVT7V/qrc_filepicker.cpp.o
+[7/138] Building CXX object autotests/CMakeFiles/xdgshortcuttest.dir/xdgshortcuttest_autogen/mocs_compilation.cpp.o
+[8/138] Automatic MOC for target inputcapturebarriertest
+[9/138] Building CXX object autotests/CMakeFiles/inputcapturebarriertest.dir/inputcapturebarriertest_autogen/mocs_compilation.cpp.o
+[10/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/mobilefiledialog_debug.cpp.o
+[11/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/declarative/dirmodelutils.cpp.o
+[12/138] Building CXX object autotests/CMakeFiles/xdgshortcuttest.dir/__/src/xdgshortcut.cpp.o
+[13/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/declarative/dirmodel.cpp.o
+[14/138] Building CXX object autotests/CMakeFiles/xdgshortcuttest.dir/xdgshortcuttest.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/autotests/xdgshortcuttest.cpp: In member function ‘void XdgShortcutTest::testCheckShortcut_data()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/autotests/xdgshortcuttest.cpp:34:109: warning: ‘constexpr QKeyCombination::operator int() const’ is deprecated: Use QKeyCombination instead of int [-Wdeprecated-declarations]
    34 |         QTest::newRow("ctrlshifta") << "CTRL+SHIFT+a" << QKeySequence(Qt::Key_A | Qt::ControlModifier | Qt::ShiftModifier);
@@ -482,41 +476,47 @@ In file included from /usr/include/qt6/QtCore/qarraydataops.h:10,
 /usr/include/qt6/QtCore/qnamespace.h:1912:26: note: declared here
  1912 |     constexpr Q_IMPLICIT operator int() const noexcept
       |                          ^~~~~~~~
-[21/138] Linking CXX executable bin/xdgshortcuttest
-[22/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/declarative/dirmodel.cpp.o
+[15/138] Linking CXX executable bin/xdgshortcuttest
+[16/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/declarative/filechooserqmlcallback.cpp.o
+[17/138] Building CXX object autotests/CMakeFiles/inputcapturebarriertest.dir/__/src/inputcapturebarrier.cpp.o
+[18/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/declarative/fileplacesmodel.cpp.o
+[19/138] Building CXX object autotests/CMakeFiles/inputcapturebarriertest.dir/inputcapturebarriertest.cpp.o
+[20/138] Linking CXX executable bin/inputcapturebarriertest
+[21/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/KirigamiFilepicker_autogen/mocs_compilation.cpp.o
+[22/138] Building CXX object src/kirigami-filepicker/CMakeFiles/KirigamiFilepicker.dir/api/mobilefiledialog.cpp.o
 [23/138] Linking CXX static library lib/libKirigamiFilepicker.a
-[24/138] Generating wayland-zkde-screencast-unstable-v1-protocol.c
-[25/138] Generating wayland-fake-input-client-protocol.h
-[26/138] Generating wayland-zkde-screencast-unstable-v1-client-protocol.h
-[27/138] Generating wayland-fake-input-protocol.c
-[28/138] Generating qwayland-zkde-screencast-unstable-v1.h
-[29/138] Generating wayland-wayland-client-protocol.h
-[30/138] Generating qwayland-fake-input.h
-[31/138] Generating qwayland-fake-input.cpp
-[32/138] Generating wayland-wayland-protocol.c
-[33/138] Generating qwayland-zkde-screencast-unstable-v1.cpp
-[34/138] Generating qwayland-wayland.cpp
-[35/138] Generating qwayland-wayland.h
+[24/138] Generating wayland-fake-input-client-protocol.h
+[25/138] Generating wayland-fake-input-protocol.c
+[26/138] Generating wayland-zkde-screencast-unstable-v1-protocol.c
+[27/138] Generating wayland-zkde-screencast-unstable-v1-client-protocol.h
+[28/138] Generating qwayland-fake-input.h
+[29/138] Generating qwayland-zkde-screencast-unstable-v1.cpp
+[30/138] Generating wayland-wayland-protocol.c
+[31/138] Generating qwayland-zkde-screencast-unstable-v1.h
+[32/138] Generating qwayland-fake-input.cpp
+[33/138] Generating wayland-wayland-client-protocol.h
+[34/138] Generating qwayland-wayland.h
+[35/138] Generating qwayland-wayland.cpp
 [36/138] Automatic MOC for target xdg-desktop-portal-kde
-[37/138] Generating tabletmodemanager_interface.cpp, tabletmodemanager_interface.h
+[37/138] Generating user_interface.cpp, user_interface.h
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/data/org.freedesktop.Accounts.User.xml:34:6: warning: Unknown element 'doc' while checking for signal arguments
 [38/138] Generating documents_interface.cpp, documents_interface.h
 [39/138] Generating fuse_interface.cpp, fuse_interface.h
-[40/138] Generating virtualkeyboard_interface.cpp, virtualkeyboard_interface.h
-[41/138] Generating fdo_application_interface.cpp, fdo_application_interface.h
-[42/138] Generating user_interface.cpp, user_interface.h
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/data/org.freedesktop.Accounts.User.xml:34:6: warning: Unknown element 'doc' while checking for signal arguments
+[40/138] Generating fdo_application_interface.cpp, fdo_application_interface.h
+[41/138] Generating permission_store.cpp, permission_store.h
+[42/138] Generating tabletmodemanager_interface.cpp, tabletmodemanager_interface.h
 [43/138] Generating kglobalaccel_interface.cpp, kglobalaccel_interface.h
 [44/138] Generating kglobalaccel_component_interface.cpp, kglobalaccel_component_interface.h
-[45/138] Generating permission_store.cpp, permission_store.h
-[46/138] Generating moc_tabletmodemanager_interface.cpp
+[45/138] Generating virtualkeyboard_interface.cpp, virtualkeyboard_interface.h
+[46/138] Generating moc_user_interface.cpp
 [47/138] Generating moc_documents_interface.cpp
-[48/138] Generating moc_virtualkeyboard_interface.cpp
+[48/138] Generating moc_fuse_interface.cpp
 [49/138] Generating moc_fdo_application_interface.cpp
-[50/138] Generating moc_fuse_interface.cpp
-[51/138] Generating moc_kglobalaccel_component_interface.cpp
-[52/138] Generating moc_user_interface.cpp
+[50/138] Generating moc_permission_store.cpp
+[51/138] Generating moc_virtualkeyboard_interface.cpp
+[52/138] Generating moc_kglobalaccel_component_interface.cpp
 [53/138] Generating moc_kglobalaccel_interface.cpp
-[54/138] Generating moc_permission_store.cpp
+[54/138] Generating moc_tabletmodemanager_interface.cpp
 [55/138] Automatic RCC for resources.qrc
 [56/138] Building C object src/CMakeFiles/xdg-desktop-portal-kde.dir/wayland-zkde-screencast-unstable-v1-protocol.c.o
 [57/138] Building C object src/CMakeFiles/xdg-desktop-portal-kde.dir/wayland-fake-input-protocol.c.o
@@ -524,33 +524,31 @@ In file included from /usr/include/qt6/QtCore/qarraydataops.h:10,
 [59/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/qwayland-fake-input.cpp.o
 [60/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/qwayland-zkde-screencast-unstable-v1.cpp.o
 [61/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/qwayland-wayland.cpp.o
-[62/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inputcapturedialog.cpp.o
+[62/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dbushelpers.cpp.o
+[63/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inputcapturebarrier.cpp.o
+[64/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/notificationinhibition.cpp.o
+[65/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/access.cpp.o
+[66/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inputcapturedialog.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/inputcapturedialog.cpp: In constructor ‘InputCaptureDialog::InputCaptureDialog(const QString&, InputCapturePortal::Capabilities, QObject*)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/inputcapturedialog.cpp:12:95: warning: unused parameter ‘capabilties’ [-Wunused-parameter]
    12 | InputCaptureDialog::InputCaptureDialog(const QString &appId, InputCapturePortal::Capabilities capabilties, QObject *parent)
       |                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
-[63/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inhibit.cpp.o
-[64/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/account.cpp.o
-[65/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dbushelpers.cpp.o
-[66/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/email.cpp.o
-[67/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inputcapturebarrier.cpp.o
-[68/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/notificationinhibition.cpp.o
+[67/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/account.cpp.o
+[68/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/email.cpp.o
 [69/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/accessdialog.cpp.o
-[70/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/desktopportal.cpp.o
-[71/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/access.cpp.o
-[72/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/background.cpp.o
-[73/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/quickdialog.cpp.o
-[74/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/outputsmodel.cpp.o
-[75/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/appchooser.cpp.o
+[70/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inhibit.cpp.o
+[71/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/outputsmodel.cpp.o
+[72/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/desktopportal.cpp.o
+[73/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/background.cpp.o
+[74/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/appchooser.cpp.o
+[75/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/globalshortcuts.cpp.o
 [76/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/request.cpp.o
-[77/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/globalshortcuts.cpp.o
-[78/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/restoredata.cpp.o
-[79/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/print.cpp.o
-[80/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/appchooserdialog.cpp.o
-[81/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/remotedesktopdialog.cpp.o
-[82/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inputcapture.cpp.o
-[83/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screencasting.cpp.o
-[84/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/notification.cpp.o
+[77/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/restoredata.cpp.o
+[78/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/quickdialog.cpp.o
+[79/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/remotedesktopdialog.cpp.o
+[80/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screencasting.cpp.o
+[81/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/appchooserdialog.cpp.o
+[82/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/notification.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/notification.cpp: In member function ‘void NotificationPortal::AddNotification(const QString&, const QString&, const QVariantMap&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/notification.cpp:52:29: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
    52 |         if (iconVariant.type() == QVariant::String) {
@@ -575,20 +573,33 @@ In file included from /usr/include/qt6/QtDBus/qtdbusglobal.h:9,
 /usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
   432 |     Type type() const
       |          ^~~~
-[85/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenshot.cpp.o
-[86/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/xdg-desktop-portal-kde.cpp.o
-[87/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenchooserdialog.cpp.o
-[88/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenshotdialog.cpp.o
-[89/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dynamiclauncherdialog.cpp.o
-[90/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/background_debug.cpp.o
+[83/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inputcapture.cpp.o
+[84/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/utils.cpp.o
+[85/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenshotdialog.cpp.o
+[86/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/print.cpp.o
+[87/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenshot.cpp.o
+[88/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/xdg-desktop-portal-kde.cpp.o
+[89/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenchooserdialog.cpp.o
+[90/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/portalicon.cpp.o
 [91/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screencast.cpp.o
-[92/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/xdgshortcut.cpp.o
-[93/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/utils.cpp.o
-[94/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/portalicon.cpp.o
-[95/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/xdg-desktop-portal-kde_autogen/mocs_compilation.cpp.o
-[96/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/waylandintegration.cpp.o
-[97/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/access_debug.cpp.o
-[98/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dynamiclauncher.cpp.o
+[92/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/xdg-desktop-portal-kde_autogen/mocs_compilation.cpp.o
+[93/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/xdgshortcut.cpp.o
+[94/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/background_debug.cpp.o
+[95/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dynamiclauncherdialog.cpp.o
+[96/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/access_debug.cpp.o
+[97/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/filechooser.cpp.o
+[98/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/notificationinhibition_debug.cpp.o
+[99/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/userinfodialog.cpp.o
+[100/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/account_debug.cpp.o
+[101/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/region-select/SelectionEditor.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/region-select/SelectionEditor.cpp: In member function ‘virtual bool SelectionEditor::eventFilter(QObject*, QEvent*)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/region-select/SelectionEditor.cpp:159:44: warning: unused parameter ‘watched’ [-Wunused-parameter]
+  159 | bool SelectionEditor::eventFilter(QObject *watched, QEvent *event)
+      |                                   ~~~~~~~~~^~~~~~~
+[102/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dynamiclauncher_debug.cpp.o
+[103/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/waylandintegration.cpp.o
+[104/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/settings_debug.cpp.o
+[105/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dynamiclauncher.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/dynamiclauncher.cpp: In function ‘QIcon extractIcon(const QDBusVariant&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/dynamiclauncher.cpp:64:61: warning: ‘QVariant::Type QVariant::type() const’ is deprecated: Use typeId() or metaType(). [-Wdeprecated-declarations]
    64 |     if (icon.str == QStringLiteral("bytes") && iconData.type() == QVariant::ByteArray) {
@@ -608,26 +619,16 @@ In file included from /usr/include/qt6/QtDBus/qtdbusglobal.h:9,
 /usr/include/qt6/QtCore/qvariant.h:432:10: note: declared here
   432 |     Type type() const
       |          ^~~~
-[99/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/filechooser.cpp.o
-[100/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/remotedesktop.cpp.o
-[101/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/userinfodialog.cpp.o
-[102/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/region-select/SelectionEditor.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/region-select/SelectionEditor.cpp: In member function ‘virtual bool SelectionEditor::eventFilter(QObject*, QEvent*)’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/region-select/SelectionEditor.cpp:159:44: warning: unused parameter ‘watched’ [-Wunused-parameter]
-  159 | bool SelectionEditor::eventFilter(QObject *watched, QEvent *event)
-      |                                   ~~~~~~~~~^~~~~~~
-[103/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/notificationinhibition_debug.cpp.o
-[104/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/account_debug.cpp.o
-[105/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/settings_debug.cpp.o
-[106/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dynamiclauncher_debug.cpp.o
+[106/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/remotedesktop.cpp.o
 [107/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/dynamiclauncherdialog_debug.cpp.o
 [108/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/appchooser_debug.cpp.o
 [109/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/email_debug.cpp.o
-[110/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/filechooser_debug.cpp.o
-[111/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/desktopportal_debug.cpp.o
-[112/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/remotedesktopdialog_debug.cpp.o
-[113/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inhibit_debug.cpp.o
-[114/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/settings.cpp.o
+[110/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/desktopportal_debug.cpp.o
+[111/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inhibit_debug.cpp.o
+[112/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/filechooser_debug.cpp.o
+[113/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/print_debug.cpp.o
+[114/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/remotedesktop_debug.cpp.o
+[115/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/settings.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/settings.cpp: In constructor ‘FdoAppearanceSettings::FdoAppearanceSettings(QObject*)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/settings.cpp:219:44: warning: ‘void QGuiApplication::paletteChanged(const QPalette&)’ is deprecated: Handle QEvent::ApplicationPaletteChange instead [-Wdeprecated-declarations]
   219 |         connect(qGuiApp, &QGuiApplication::paletteChanged, this, &FdoAppearanceSettings::onPaletteChanged);
@@ -638,30 +639,29 @@ In file included from /usr/include/qt6/QtWidgets/qapplication.h:13,
 /usr/include/qt6/QtGui/qguiapplication.h:161:89: note: declared here
   161 |     QT_DEPRECATED_VERSION_X_6_0("Handle QEvent::ApplicationPaletteChange instead") void paletteChanged(const QPalette &pal);
       |                                                                                         ^~~~~~~~~~~~~~
-[115/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/notification_debug.cpp.o
-[116/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/remotedesktop_debug.cpp.o
+[116/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/notification_debug.cpp.o
 [117/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/xdg-desktop-portal-kde_autogen/EWIEGA46WW/qrc_resources.cpp.o
-[118/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenshot_debug.cpp.o
-[119/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/debug.cpp.o
-[120/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/request_debug.cpp.o
-[121/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/print_debug.cpp.o
-[122/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/session_debug.cpp.o
-[123/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenshotdialog_debug.cpp.o
-[124/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/accessdialog_debug.cpp.o
-[125/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screencast_debug.cpp.o
-[126/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inputcapture_debug.cpp.o
-[127/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/waylandintegration_debug.cpp.o
+[118/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/remotedesktopdialog_debug.cpp.o
+[119/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/request_debug.cpp.o
+[120/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenshotdialog_debug.cpp.o
+[121/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/session_debug.cpp.o
+[122/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/debug.cpp.o
+[123/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/waylandintegration_debug.cpp.o
+[124/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screencast_debug.cpp.o
+[125/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/accessdialog_debug.cpp.o
+[126/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/screenshot_debug.cpp.o
+[127/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/inputcapture_debug.cpp.o
 [128/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/session.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/session.cpp: In member function ‘void RemoteDesktopSession::setOptions(const QVariantMap&)’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/xdg-desktop-portal-kde/work/xdg-desktop-portal-kde-6.3.5/src/session.cpp:232:58: warning: unused parameter ‘options’ [-Wunused-parameter]
   232 | void RemoteDesktopSession::setOptions(const QVariantMap &options)
       |                                       ~~~~~~~~~~~~~~~~~~~^~~~~~~
-[129/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/virtualkeyboard_interface.cpp.o
-[130/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/fuse_interface.cpp.o
-[131/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/user_interface.cpp.o
-[132/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/fdo_application_interface.cpp.o
+[129/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/tabletmodemanager_interface.cpp.o
+[130/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/user_interface.cpp.o
+[131/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/fdo_application_interface.cpp.o
+[132/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/virtualkeyboard_interface.cpp.o
 [133/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/kglobalaccel_component_interface.cpp.o
-[134/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/tabletmodemanager_interface.cpp.o
+[134/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/fuse_interface.cpp.o
 [135/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/documents_interface.cpp.o
 [136/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/permission_store.cpp.o
 [137/138] Building CXX object src/CMakeFiles/xdg-desktop-portal-kde.dir/kglobalaccel_interface.cpp.o
@@ -1087,7 +1087,7 @@ xdg-desktop-portal-kde.dep
 +=============================================================================================================================================+
 
 Pre-installing package xdg-desktop-portal-kde-6.3.5-x86_64-1_rtz...
-Removing package: xdg-desktop-portal-kde-6.3.5-x86_64-1_rtz-upgraded-2025-05-21,14:50:49
+Removing package: xdg-desktop-portal-kde-6.3.5-x86_64-1_rtz-upgraded-2025-05-28,19:09:28
 Installing package xdg-desktop-portal-kde-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # xdg-desktop-portal-kde (backend Qt/KDE for xdg-desktop-portal)

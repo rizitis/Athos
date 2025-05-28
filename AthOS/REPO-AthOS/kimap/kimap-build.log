@@ -9,23 +9,23 @@ kio is already installed!
 kmime is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 17:15:43--  https://download.kde.org/stable/release-service/25.04.1/src/kimap-25.04.1.tar.xz
+--2025-05-28 21:34:58--  https://download.kde.org/stable/release-service/25.04.1/src/kimap-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kimap-25.04.1.tar.xz [following]
---2025-05-21 17:15:43--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kimap-25.04.1.tar.xz
+--2025-05-28 21:34:59--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kimap-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 133912 (131K) [application/octet-stream]
 Saving to: ‘kimap-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 38% 1.34M 0s
-    50K .......... .......... .......... .......... .......... 76% 1.42M 0s
-   100K .......... .......... ..........                      100% 12.6M=0.07s
+     0K .......... .......... .......... .......... .......... 38% 1.36M 0s
+    50K .......... .......... .......... .......... .......... 76% 1.47M 0s
+   100K .......... .......... ..........                      100% 13.2M=0.07s
 
-2025-05-21 17:15:43 (1.75 MB/s) - ‘kimap-25.04.1.tar.xz’ saved [133912/133912]
+2025-05-28 21:34:59 (1.79 MB/s) - ‘kimap-25.04.1.tar.xz’ saved [133912/133912]
 
 Found file: kimap-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -317,8 +317,8 @@ kimap-25.04.1/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -354,7 +354,7 @@ Call Stack (most recent call first):
 -- Found Gettext: /usr/bin/msgmerge (found version "0.25")
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found X11: /usr/include
 -- Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so
@@ -418,42 +418,51 @@ Call Stack (most recent call first):
 [3/182] Automatic MOC for target KPim6IMAP
 [4/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/KPim6IMAP_autogen/mocs_compilation.cpp.o
 [5/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/acl.cpp.o
-[6/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getquotajob.cpp.o
-[7/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/closejob.cpp.o
-[8/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/createjob.cpp.o
-[9/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/idlejob.cpp.o
+[6/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/deletejob.cpp.o
+[7/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/deleteacljob.cpp.o
+[8/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/copyjob.cpp.o
+[9/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/capabilitiesjob.cpp.o
 [10/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/imapstreamparser.cpp.o
-[11/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/imapset.cpp.o
-[12/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/job.cpp.o
-[13/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/acljobbase.cpp.o
-[14/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/expungejob.cpp.o
-[15/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/capabilitiesjob.cpp.o
-[16/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/deletejob.cpp.o
-[17/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/enablejob.cpp.o
-[18/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/appendjob.cpp.o
-[19/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getquotarootjob.cpp.o
-[20/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/idjob.cpp.o
-[21/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/copyjob.cpp.o
-[22/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/deleteacljob.cpp.o
-[23/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getacljob.cpp.o
-[24/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/listjob.cpp.o
-[25/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/rfccodecs.cpp.o
-[26/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getmetadatajob.cpp.o
-[27/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/listrightsjob.cpp.o
-[28/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/myrightsjob.cpp.o
-[29/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/logoutjob.cpp.o
-[30/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/metadatajobbase.cpp.o
-[31/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/renamejob.cpp.o
-[32/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionuiproxy.cpp.o
-[33/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/loginjob.cpp.o
-[34/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/quotajobbase.cpp.o
-[35/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionlogger.cpp.o
-[36/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setacljob.cpp.o
-[37/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/movejob.cpp.o
-[38/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setquotajob.cpp.o
-[39/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/namespacejob.cpp.o
-[40/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/session.cpp.o
-[41/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/fetchjob.cpp.o
+[11/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/expungejob.cpp.o
+[12/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/idjob.cpp.o
+[13/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/job.cpp.o
+[14/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/closejob.cpp.o
+[15/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/idlejob.cpp.o
+[16/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/acljobbase.cpp.o
+[17/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/createjob.cpp.o
+[18/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getacljob.cpp.o
+[19/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/enablejob.cpp.o
+[20/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getquotajob.cpp.o
+[21/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/appendjob.cpp.o
+[22/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/rfccodecs.cpp.o
+[23/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/imapset.cpp.o
+[24/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getquotarootjob.cpp.o
+[25/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/listjob.cpp.o
+[26/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/metadatajobbase.cpp.o
+[27/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/getmetadatajob.cpp.o
+[28/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/listrightsjob.cpp.o
+[29/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionuiproxy.cpp.o
+[30/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/logoutjob.cpp.o
+[31/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionlogger.cpp.o
+[32/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/movejob.cpp.o
+[33/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/quotajobbase.cpp.o
+[34/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/myrightsjob.cpp.o
+[35/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/renamejob.cpp.o
+[36/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/loginjob.cpp.o
+[37/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/namespacejob.cpp.o
+[38/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/statusjob.cpp.o
+[39/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/session.cpp.o
+[40/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setacljob.cpp.o
+[41/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setquotajob.cpp.o
+[42/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/subscribejob.cpp.o
+[43/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/unsubscribejob.cpp.o
+[44/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/kimap_debug.cpp.o
+[45/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionthread.cpp.o
+[46/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/selectjob.cpp.o
+[47/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/storejob.cpp.o
+[48/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setmetadatajob.cpp.o
+[49/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/searchjob.cpp.o
+[50/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/fetchjob.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp: In member function ‘void KIMAP::FetchJobPrivate::emitPendings()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.cpp:47:36: warning: ‘void KIMAP::FetchJob::partsReceived(const QString&, const QMap<long long int, long long int>&, const QMap<long long int, QMap<QByteArray, QSharedPointer<KMime::Content> > >&)’ is deprecated [-Wdeprecated-declarations]
    47 |             Q_EMIT q->partsReceived(selectedMailBox, pendingUids, pendingParts);
@@ -492,15 +501,6 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/src/fetchjob.h:391:10: note: declared here
   391 |     void messagesReceived(const QString &mailBox,
       |          ^~~~~~~~~~~~~~~~
-[42/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/sessionthread.cpp.o
-[43/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/setmetadatajob.cpp.o
-[44/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/selectjob.cpp.o
-[45/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/subscribejob.cpp.o
-[46/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/searchjob.cpp.o
-[47/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/kimap_debug.cpp.o
-[48/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/statusjob.cpp.o
-[49/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/storejob.cpp.o
-[50/182] Building CXX object src/CMakeFiles/KPim6IMAP.dir/unsubscribejob.cpp.o
 [51/182] Linking CXX shared library bin/libKPim6IMAP.so.6.4.1
 [52/182] Creating library symlink bin/libKPim6IMAP.so.6 bin/libKPim6IMAP.so
 [53/182] Automatic MOC for target testimapidle
@@ -516,52 +516,52 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-
 [63/182] Building CXX object autotests/kimaptest/CMakeFiles/kimaptest6.dir/fakeserver.cpp.o
 [64/182] Linking CXX static library lib/libkimaptest6.a
 [65/182] Automatic MOC for target testrfccodecs
-[66/182] Automatic MOC for target expungejobtest
-[67/182] Automatic MOC for target deletejobtest
-[68/182] Automatic MOC for target fakeservertest
-[69/182] Automatic MOC for target fetchjobtest
+[66/182] Automatic MOC for target testsession
+[67/182] Automatic MOC for target loginjobtest
+[68/182] Automatic MOC for target renamejobtest
+[69/182] Automatic MOC for target enablejobtest
 [70/182] Automatic MOC for target selectjobtest
-[71/182] Automatic MOC for target logoutjobtest
-[72/182] Automatic MOC for target storejobtest
-[73/182] Automatic MOC for target renamejobtest
-[74/182] Automatic MOC for target idjobtest
-[75/182] Automatic MOC for target subscribejobtest
-[76/182] Automatic MOC for target closejobtest
-[77/182] Automatic MOC for target capabilitiesjobtest
-[78/182] Automatic MOC for target imapsettest
-[79/182] Building CXX object autotests/CMakeFiles/fakeservertest.dir/fakeservertest_autogen/mocs_compilation.cpp.o
-[80/182] Building CXX object autotests/CMakeFiles/testrfccodecs.dir/testrfccodecs_autogen/mocs_compilation.cpp.o
-[81/182] Automatic MOC for target unsubscribejobtest
-[82/182] Automatic MOC for target enablejobtest
-[83/182] Automatic MOC for target listjobtest
-[84/182] Automatic MOC for target loginjobtest
-[85/182] Automatic MOC for target idlejobtest
-[86/182] Building CXX object autotests/CMakeFiles/logoutjobtest.dir/logoutjobtest_autogen/mocs_compilation.cpp.o
-[87/182] Building CXX object autotests/CMakeFiles/capabilitiesjobtest.dir/capabilitiesjobtest_autogen/mocs_compilation.cpp.o
-[88/182] Building CXX object autotests/CMakeFiles/closejobtest.dir/closejobtest_autogen/mocs_compilation.cpp.o
-[89/182] Automatic MOC for target testsession
+[71/182] Automatic MOC for target createjobtest
+[72/182] Automatic MOC for target listjobtest
+[73/182] Automatic MOC for target subscribejobtest
+[74/182] Automatic MOC for target fakeservertest
+[75/182] Automatic MOC for target unsubscribejobtest
+[76/182] Automatic MOC for target expungejobtest
+[77/182] Building CXX object autotests/CMakeFiles/testrfccodecs.dir/testrfccodecs_autogen/mocs_compilation.cpp.o
+[78/182] Automatic MOC for target closejobtest
+[79/182] Automatic MOC for target logoutjobtest
+[80/182] Automatic MOC for target idlejobtest
+[81/182] Building CXX object autotests/CMakeFiles/fakeservertest.dir/fakeservertest_autogen/mocs_compilation.cpp.o
+[82/182] Automatic MOC for target idjobtest
+[83/182] Automatic MOC for target storejobtest
+[84/182] Building CXX object autotests/CMakeFiles/testsession.dir/testsession_autogen/mocs_compilation.cpp.o
+[85/182] Automatic MOC for target capabilitiesjobtest
+[86/182] Automatic MOC for target deletejobtest
+[87/182] Building CXX object autotests/CMakeFiles/loginjobtest.dir/loginjobtest_autogen/mocs_compilation.cpp.o
+[88/182] Building CXX object autotests/CMakeFiles/logoutjobtest.dir/logoutjobtest_autogen/mocs_compilation.cpp.o
+[89/182] Building CXX object autotests/CMakeFiles/capabilitiesjobtest.dir/capabilitiesjobtest_autogen/mocs_compilation.cpp.o
 [90/182] Building CXX object autotests/CMakeFiles/selectjobtest.dir/selectjobtest_autogen/mocs_compilation.cpp.o
-[91/182] Building CXX object autotests/CMakeFiles/loginjobtest.dir/loginjobtest_autogen/mocs_compilation.cpp.o
-[92/182] Building CXX object autotests/CMakeFiles/deletejobtest.dir/deletejobtest_autogen/mocs_compilation.cpp.o
-[93/182] Building CXX object autotests/CMakeFiles/testsession.dir/testsession_autogen/mocs_compilation.cpp.o
-[94/182] Automatic MOC for target createjobtest
-[95/182] Building CXX object autotests/CMakeFiles/enablejobtest.dir/enablejobtest_autogen/mocs_compilation.cpp.o
-[96/182] Building CXX object autotests/CMakeFiles/expungejobtest.dir/expungejobtest_autogen/mocs_compilation.cpp.o
-[97/182] Building CXX object autotests/CMakeFiles/createjobtest.dir/createjobtest_autogen/mocs_compilation.cpp.o
+[91/182] Building CXX object autotests/CMakeFiles/closejobtest.dir/closejobtest_autogen/mocs_compilation.cpp.o
+[92/182] Automatic MOC for target imapsettest
+[93/182] Building CXX object autotests/CMakeFiles/createjobtest.dir/createjobtest_autogen/mocs_compilation.cpp.o
+[94/182] Building CXX object autotests/CMakeFiles/deletejobtest.dir/deletejobtest_autogen/mocs_compilation.cpp.o
+[95/182] Automatic MOC for target fetchjobtest
+[96/182] Building CXX object autotests/CMakeFiles/enablejobtest.dir/enablejobtest_autogen/mocs_compilation.cpp.o
+[97/182] Building CXX object autotests/CMakeFiles/expungejobtest.dir/expungejobtest_autogen/mocs_compilation.cpp.o
 [98/182] Building CXX object autotests/CMakeFiles/fetchjobtest.dir/fetchjobtest_autogen/mocs_compilation.cpp.o
 [99/182] Automatic MOC for target quotarootjobtest
 [100/182] Building CXX object autotests/CMakeFiles/renamejobtest.dir/renamejobtest_autogen/mocs_compilation.cpp.o
-[101/182] Automatic MOC for target streamparsertest
+[101/182] Automatic MOC for target searchjobtest
 [102/182] Building CXX object autotests/CMakeFiles/subscribejobtest.dir/subscribejobtest_autogen/mocs_compilation.cpp.o
-[103/182] Automatic MOC for target searchjobtest
-[104/182] Automatic MOC for target appendjobtest
-[105/182] Automatic MOC for target getmetadatajobtest
-[106/182] Building CXX object autotests/CMakeFiles/unsubscribejobtest.dir/unsubscribejobtest_autogen/mocs_compilation.cpp.o
-[107/182] Automatic MOC for target setmetadatajobtest
-[108/182] Automatic MOC for target movejobtest
-[109/182] Building CXX object autotests/CMakeFiles/listjobtest.dir/listjobtest_autogen/mocs_compilation.cpp.o
-[110/182] Building CXX object autotests/CMakeFiles/storejobtest.dir/storejobtest_autogen/mocs_compilation.cpp.o
-[111/182] Building CXX object autotests/CMakeFiles/imapsettest.dir/imapsettest_autogen/mocs_compilation.cpp.o
+[103/182] Automatic MOC for target getmetadatajobtest
+[104/182] Automatic MOC for target movejobtest
+[105/182] Building CXX object autotests/CMakeFiles/unsubscribejobtest.dir/unsubscribejobtest_autogen/mocs_compilation.cpp.o
+[106/182] Automatic MOC for target setmetadatajobtest
+[107/182] Building CXX object autotests/CMakeFiles/listjobtest.dir/listjobtest_autogen/mocs_compilation.cpp.o
+[108/182] Automatic MOC for target streamparsertest
+[109/182] Building CXX object autotests/CMakeFiles/storejobtest.dir/storejobtest_autogen/mocs_compilation.cpp.o
+[110/182] Building CXX object autotests/CMakeFiles/imapsettest.dir/imapsettest_autogen/mocs_compilation.cpp.o
+[111/182] Automatic MOC for target appendjobtest
 [112/182] Automatic MOC for target statusjobtest
 [113/182] Building CXX object autotests/CMakeFiles/idjobtest.dir/idjobtest_autogen/mocs_compilation.cpp.o
 [114/182] Building CXX object autotests/CMakeFiles/idlejobtest.dir/idlejobtest_autogen/mocs_compilation.cpp.o
@@ -705,55 +705,89 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-
   415 |     void partsReceived(const QString &mailBox, const QMap<qint64, qint64> &uids, const QMap<qint64, KIMAP::MessageParts> &parts);
       |          ^~~~~~~~~~~~~
 [116/182] Building CXX object autotests/CMakeFiles/quotarootjobtest.dir/quotarootjobtest_autogen/mocs_compilation.cpp.o
-[117/182] Building CXX object autotests/CMakeFiles/testrfccodecs.dir/testrfccodecs.cpp.o
+[117/182] Building CXX object autotests/CMakeFiles/logoutjobtest.dir/logoutjobtest.cpp.o
 [118/182] Building CXX object autotests/CMakeFiles/searchjobtest.dir/searchjobtest_autogen/mocs_compilation.cpp.o
 [119/182] Building CXX object autotests/CMakeFiles/renamejobtest.dir/renamejobtest.cpp.o
-[120/182] Building CXX object autotests/CMakeFiles/logoutjobtest.dir/logoutjobtest.cpp.o
-[121/182] Building CXX object autotests/CMakeFiles/getmetadatajobtest.dir/getmetadatajobtest_autogen/mocs_compilation.cpp.o
+[120/182] Building CXX object autotests/CMakeFiles/getmetadatajobtest.dir/getmetadatajobtest_autogen/mocs_compilation.cpp.o
+[121/182] Building CXX object autotests/CMakeFiles/testrfccodecs.dir/testrfccodecs.cpp.o
 [122/182] Building CXX object autotests/CMakeFiles/streamparsertest.dir/streamparsertest_autogen/mocs_compilation.cpp.o
-[123/182] Building CXX object autotests/CMakeFiles/enablejobtest.dir/enablejobtest.cpp.o
-[124/182] Building CXX object autotests/CMakeFiles/expungejobtest.dir/expungejobtest.cpp.o
-[125/182] Building CXX object autotests/CMakeFiles/setmetadatajobtest.dir/setmetadatajobtest_autogen/mocs_compilation.cpp.o
+[123/182] Building CXX object autotests/CMakeFiles/capabilitiesjobtest.dir/capabilitiesjobtest.cpp.o
+[124/182] Building CXX object autotests/CMakeFiles/setmetadatajobtest.dir/setmetadatajobtest_autogen/mocs_compilation.cpp.o
+[125/182] Building CXX object autotests/CMakeFiles/deletejobtest.dir/deletejobtest.cpp.o
 [126/182] Building CXX object autotests/CMakeFiles/appendjobtest.dir/appendjobtest_autogen/mocs_compilation.cpp.o
-[127/182] Building CXX object autotests/CMakeFiles/unsubscribejobtest.dir/unsubscribejobtest.cpp.o
-[128/182] Building CXX object autotests/CMakeFiles/testsession.dir/testsession.cpp.o
-[129/182] Building CXX object autotests/CMakeFiles/statusjobtest.dir/statusjobtest_autogen/mocs_compilation.cpp.o
-[130/182] Building CXX object autotests/CMakeFiles/movejobtest.dir/movejobtest_autogen/mocs_compilation.cpp.o
-[131/182] Building CXX object autotests/CMakeFiles/storejobtest.dir/storejobtest.cpp.o
-[132/182] Building CXX object autotests/CMakeFiles/loginjobtest.dir/loginjobtest.cpp.o
-[133/182] Building CXX object autotests/CMakeFiles/closejobtest.dir/closejobtest.cpp.o
-[134/182] Linking CXX executable bin/testsession
-[135/182] Linking CXX executable bin/testrfccodecs
-[136/182] Linking CXX executable bin/loginjobtest
-[137/182] Building CXX object autotests/CMakeFiles/createjobtest.dir/createjobtest.cpp.o
-[138/182] Linking CXX executable bin/closejobtest
-[139/182] Linking CXX executable bin/logoutjobtest
-[140/182] Linking CXX executable bin/enablejobtest
-[141/182] Building CXX object autotests/CMakeFiles/imapsettest.dir/imapsettest.cpp.o
-[142/182] Linking CXX executable bin/createjobtest
-[143/182] Building CXX object autotests/CMakeFiles/subscribejobtest.dir/subscribejobtest.cpp.o
-[144/182] Linking CXX executable bin/renamejobtest
-[145/182] Linking CXX executable bin/expungejobtest
-[146/182] Building CXX object autotests/CMakeFiles/capabilitiesjobtest.dir/capabilitiesjobtest.cpp.o
-[147/182] Building CXX object autotests/CMakeFiles/fakeservertest.dir/fakeservertest.cpp.o
-[148/182] Building CXX object autotests/CMakeFiles/deletejobtest.dir/deletejobtest.cpp.o
+[127/182] Building CXX object autotests/CMakeFiles/createjobtest.dir/createjobtest.cpp.o
+[128/182] Building CXX object autotests/CMakeFiles/statusjobtest.dir/statusjobtest_autogen/mocs_compilation.cpp.o
+[129/182] Building CXX object autotests/CMakeFiles/expungejobtest.dir/expungejobtest.cpp.o
+[130/182] Building CXX object autotests/CMakeFiles/enablejobtest.dir/enablejobtest.cpp.o
+[131/182] Building CXX object autotests/CMakeFiles/closejobtest.dir/closejobtest.cpp.o
+[132/182] Building CXX object autotests/CMakeFiles/movejobtest.dir/movejobtest_autogen/mocs_compilation.cpp.o
+[133/182] Building CXX object autotests/CMakeFiles/fakeservertest.dir/fakeservertest.cpp.o
+[134/182] Linking CXX executable bin/testrfccodecs
+[135/182] Linking CXX executable bin/logoutjobtest
+[136/182] Building CXX object autotests/CMakeFiles/unsubscribejobtest.dir/unsubscribejobtest.cpp.o
+[137/182] Linking CXX executable bin/fakeservertest
+[138/182] Building CXX object autotests/CMakeFiles/subscribejobtest.dir/subscribejobtest.cpp.o
+[139/182] Linking CXX executable bin/closejobtest
+[140/182] Building CXX object autotests/CMakeFiles/storejobtest.dir/storejobtest.cpp.o
+[141/182] Linking CXX executable bin/capabilitiesjobtest
+[142/182] Building CXX object autotests/CMakeFiles/imapsettest.dir/imapsettest.cpp.o
+[143/182] Linking CXX executable bin/enablejobtest
+[144/182] Linking CXX executable bin/createjobtest
+[145/182] Building CXX object autotests/CMakeFiles/testsession.dir/testsession.cpp.o
+[146/182] Linking CXX executable bin/deletejobtest
+[147/182] Linking CXX executable bin/expungejobtest
+[148/182] Linking CXX executable bin/renamejobtest
 [149/182] Linking CXX executable bin/unsubscribejobtest
-[150/182] Linking CXX executable bin/storejobtest
-[151/182] Linking CXX executable bin/imapsettest
-[152/182] Linking CXX executable bin/subscribejobtest
-[153/182] Linking CXX executable bin/testimapserver
-[154/182] Linking CXX executable bin/capabilitiesjobtest
-[155/182] Linking CXX executable bin/deletejobtest
-[156/182] Linking CXX executable bin/fakeservertest
-[157/182] Building CXX object autotests/CMakeFiles/listjobtest.dir/listjobtest.cpp.o
-[158/182] Building CXX object autotests/CMakeFiles/idlejobtest.dir/idlejobtest.cpp.o
+[150/182] Linking CXX executable bin/subscribejobtest
+[151/182] Linking CXX executable bin/testsession
+[152/182] Linking CXX executable bin/imapsettest
+[153/182] Building CXX object autotests/CMakeFiles/loginjobtest.dir/loginjobtest.cpp.o
+[154/182] Linking CXX executable bin/storejobtest
+[155/182] Linking CXX executable bin/testimapserver
+[156/182] Building CXX object autotests/CMakeFiles/listjobtest.dir/listjobtest.cpp.o
+[157/182] Linking CXX executable bin/loginjobtest
+[158/182] Building CXX object autotests/CMakeFiles/idjobtest.dir/idjobtest.cpp.o
 [159/182] Linking CXX executable bin/listjobtest
-[160/182] Building CXX object autotests/CMakeFiles/idjobtest.dir/idjobtest.cpp.o
-[161/182] Linking CXX executable bin/idlejobtest
-[162/182] Linking CXX executable bin/idjobtest
-[163/182] Building CXX object autotests/CMakeFiles/quotarootjobtest.dir/quotarootjobtest.cpp.o
+[160/182] Linking CXX executable bin/idjobtest
+[161/182] Building CXX object autotests/CMakeFiles/selectjobtest.dir/selectjobtest.cpp.o
+[162/182] Building CXX object autotests/CMakeFiles/quotarootjobtest.dir/quotarootjobtest.cpp.o
+[163/182] Linking CXX executable bin/selectjobtest
 [164/182] Linking CXX executable bin/quotarootjobtest
-[165/182] Building CXX object autotests/CMakeFiles/searchjobtest.dir/searchjobtest.cpp.o
+[165/182] Building CXX object autotests/CMakeFiles/idlejobtest.dir/idlejobtest.cpp.o
+[166/182] Linking CXX executable bin/idlejobtest
+[167/182] Building CXX object autotests/CMakeFiles/streamparsertest.dir/streamparsertest.cpp.o
+[168/182] Building CXX object autotests/CMakeFiles/movejobtest.dir/movejobtest.cpp.o
+[169/182] Linking CXX executable bin/streamparsertest
+[170/182] Linking CXX executable bin/movejobtest
+[171/182] Building CXX object autotests/CMakeFiles/statusjobtest.dir/statusjobtest.cpp.o
+[172/182] Linking CXX executable bin/statusjobtest
+[173/182] Building CXX object autotests/CMakeFiles/appendjobtest.dir/appendjobtest.cpp.o
+[174/182] Building CXX object autotests/CMakeFiles/getmetadatajobtest.dir/getmetadatajobtest.cpp.o
+In file included from /usr/include/qt6/QtTest/qtest.h:13,
+                 from /usr/include/qt6/QtTest/QTest:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:7:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp: In member function ‘void GetMetadataJobTest::metadata()’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:90:46: warning: ‘QByteArray KIMAP::GetMetaDataJob::metaData(const QString&, const QByteArray&, const QByteArray&) const’ is deprecated [-Wdeprecated-declarations]
+   90 |             QCOMPARE(getMetadataJob->metaData(mailbox, entry), expectedAnnotations.value(entry));
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/getmetadatajob.h:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:9:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/getmetadatajob.h:162:33: note: declared here
+  162 |     KIMAP_DEPRECATED QByteArray metaData(const QString &mailBox, const QByteArray &entry, const QByteArray &attribute = QByteArray()) const;
+      |                                 ^~~~~~~~
+[175/182] Linking CXX executable bin/appendjobtest
+[176/182] Linking CXX executable bin/getmetadatajobtest
+[177/182] Building CXX object autotests/CMakeFiles/setmetadatajobtest.dir/setmetadatajobtest.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp: In member function ‘void SetMetadataJobTest::annotatemore()’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp:140:41: warning: ‘void KIMAP::SetMetaDataJob::setEntry(const QByteArray&)’ is deprecated [-Wdeprecated-declarations]
+  140 |                 setMetadataJob->setEntry(entry);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/setmetadatajob.h:1,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp:10:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/setmetadatajob.h:161:27: note: declared here
+  161 |     KIMAP_DEPRECATED void setEntry(const QByteArray &entry);
+      |                           ^~~~~~~~
+[178/182] Building CXX object autotests/CMakeFiles/searchjobtest.dir/searchjobtest.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/searchjobtest.cpp: In member function ‘void SearchJobTest::testSearch()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/searchjobtest.cpp:90:28: warning: ‘void KIMAP::SearchJob::setSearchLogic(SearchLogic)’ is deprecated [-Wdeprecated-declarations]
    90 |         job->setSearchLogic(searchLogic);
@@ -775,43 +809,9 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/searchjob.h:188:27: note: declared here
   188 |     KIMAP_DEPRECATED void addSearchCriteria(SearchCriteria criteria, const QByteArray &argument);
       |                           ^~~~~~~~~~~~~~~~~
-[166/182] Linking CXX executable bin/searchjobtest
-[167/182] Building CXX object autotests/CMakeFiles/selectjobtest.dir/selectjobtest.cpp.o
-[168/182] Building CXX object autotests/CMakeFiles/statusjobtest.dir/statusjobtest.cpp.o
-[169/182] Linking CXX executable bin/selectjobtest
-[170/182] Building CXX object autotests/CMakeFiles/movejobtest.dir/movejobtest.cpp.o
-[171/182] Linking CXX executable bin/statusjobtest
-[172/182] Linking CXX executable bin/movejobtest
-[173/182] Building CXX object autotests/CMakeFiles/getmetadatajobtest.dir/getmetadatajobtest.cpp.o
-In file included from /usr/include/qt6/QtTest/qtest.h:13,
-                 from /usr/include/qt6/QtTest/QTest:1,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:7:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp: In member function ‘void GetMetadataJobTest::metadata()’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:90:46: warning: ‘QByteArray KIMAP::GetMetaDataJob::metaData(const QString&, const QByteArray&, const QByteArray&) const’ is deprecated [-Wdeprecated-declarations]
-   90 |             QCOMPARE(getMetadataJob->metaData(mailbox, entry), expectedAnnotations.value(entry));
-      |                      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/getmetadatajob.h:1,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/getmetadatajobtest.cpp:9:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/getmetadatajob.h:162:33: note: declared here
-  162 |     KIMAP_DEPRECATED QByteArray metaData(const QString &mailBox, const QByteArray &entry, const QByteArray &attribute = QByteArray()) const;
-      |                                 ^~~~~~~~
-[174/182] Building CXX object autotests/CMakeFiles/setmetadatajobtest.dir/setmetadatajobtest.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp: In member function ‘void SetMetadataJobTest::annotatemore()’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp:140:41: warning: ‘void KIMAP::SetMetaDataJob::setEntry(const QByteArray&)’ is deprecated [-Wdeprecated-declarations]
-  140 |                 setMetadataJob->setEntry(entry);
-      |                 ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/setmetadatajob.h:1,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/autotests/setmetadatajobtest.cpp:10:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/work/kimap-25.04.1/build/src/kimap/../../../src/setmetadatajob.h:161:27: note: declared here
-  161 |     KIMAP_DEPRECATED void setEntry(const QByteArray &entry);
-      |                           ^~~~~~~~
-[175/182] Building CXX object autotests/CMakeFiles/streamparsertest.dir/streamparsertest.cpp.o
-[176/182] Building CXX object autotests/CMakeFiles/appendjobtest.dir/appendjobtest.cpp.o
-[177/182] Linking CXX executable bin/getmetadatajobtest
-[178/182] Building CXX object autotests/CMakeFiles/fetchjobtest.dir/fetchjobtest.cpp.o
 [179/182] Linking CXX executable bin/setmetadatajobtest
-[180/182] Linking CXX executable bin/streamparsertest
-[181/182] Linking CXX executable bin/appendjobtest
+[180/182] Linking CXX executable bin/searchjobtest
+[181/182] Building CXX object autotests/CMakeFiles/fetchjobtest.dir/fetchjobtest.cpp.o
 [182/182] Linking CXX executable bin/fetchjobtest
 -- Install configuration: "RelWithDebInfo"
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kimap/package-kimap/usr/lib64/libKPim6IMAP.so.6.4.1
@@ -1533,7 +1533,7 @@ makepkg-kimap.log
 +==============================================================================================+
 
 Pre-installing package kimap-25.04.1-x86_64-1_rtz...
-Removing package: kimap-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,17:16:29
+Removing package: kimap-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,21:35:47
 Installing package kimap-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kimap (Job-based API)

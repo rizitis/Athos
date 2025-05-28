@@ -8,34 +8,34 @@ ki18n is already installed!
 kwidgetsaddons is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 16:27:33--  https://download.kde.org/stable/release-service/25.04.1/src/kpmcore-25.04.1.tar.xz
+--2025-05-28 20:46:17--  https://download.kde.org/stable/release-service/25.04.1/src/kpmcore-25.04.1.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kpmcore-25.04.1.tar.xz [following]
---2025-05-21 16:27:34--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kpmcore-25.04.1.tar.xz
+--2025-05-28 20:46:18--  https://ftp.cc.uoc.gr/mirrors/kde/stable/release-service/25.04.1/src/kpmcore-25.04.1.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 670356 (655K) [application/octet-stream]
 Saving to: ‘kpmcore-25.04.1.tar.xz’
 
-     0K .......... .......... .......... .......... ..........  7% 1.32M 0s
-    50K .......... .......... .......... .......... .......... 15% 1.45M 0s
-   100K .......... .......... .......... .......... .......... 22% 4.90M 0s
-   150K .......... .......... .......... .......... .......... 30% 2.14M 0s
-   200K .......... .......... .......... .......... .......... 38% 5.07M 0s
-   250K .......... .......... .......... .......... .......... 45% 6.91M 0s
-   300K .......... .......... .......... .......... .......... 53% 5.11M 0s
-   350K .......... .......... .......... .......... .......... 61%  682K 0s
-   400K .......... .......... .......... .......... .......... 68%  257M 0s
-   450K .......... .......... .......... .......... .......... 76%  327M 0s
-   500K .......... .......... .......... .......... .......... 84%  327M 0s
-   550K .......... .......... .......... .......... .......... 91% 19.9M 0s
-   600K .......... .......... .......... .......... .......... 99% 10.9M 0s
+     0K .......... .......... .......... .......... ..........  7% 1.34M 0s
+    50K .......... .......... .......... .......... .......... 15% 1.43M 0s
+   100K .......... .......... .......... .......... .......... 22% 6.94M 0s
+   150K .......... .......... .......... .......... .......... 30% 1.99M 0s
+   200K .......... .......... .......... .......... .......... 38% 5.35M 0s
+   250K .......... .......... .......... .......... .......... 45% 6.43M 0s
+   300K .......... .......... .......... .......... .......... 53% 5.20M 0s
+   350K .......... .......... .......... .......... .......... 61% 1.03M 0s
+   400K .......... .......... .......... .......... .......... 68%  278M 0s
+   450K .......... .......... .......... .......... .......... 76%  380M 0s
+   500K .......... .......... .......... .......... .......... 84%  596M 0s
+   550K .......... .......... .......... .......... .......... 91% 1.78M 0s
+   600K .......... .......... .......... .......... .......... 99% 10.2M 0s
    650K ....                                                  100% 8.65T=0.2s
 
-2025-05-21 16:27:34 (3.04 MB/s) - ‘kpmcore-25.04.1.tar.xz’ saved [670356/670356]
+2025-05-28 20:46:18 (3.07 MB/s) - ‘kpmcore-25.04.1.tar.xz’ saved [670356/670356]
 
 Found file: kpmcore-25.04.1.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -524,8 +524,8 @@ kpmcore-25.04.1/metainfo.yaml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -548,7 +548,7 @@ hm...lets continue and see what happens
 -- Found WrapAtomic: TRUE
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.14.0")
 -- Found Gettext: /usr/bin/msgmerge (found version "0.25")
@@ -605,76 +605,80 @@ hm...lets continue and see what happens
 [8/180] Generating moc_externalcommandhelper_interface.cpp
 [9/180] Building CXX object src/CMakeFiles/kpmcore.dir/kpmcore_autogen/mocs_compilation.cpp.o
 [10/180] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackenddevice.cpp.o
-[11/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/extended.cpp.o
-[12/180] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackendpartitiontable.cpp.o
-[13/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/apfs.cpp.o
-[14/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/fat16.cpp.o
-[15/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/bitlocker.cpp.o
-[16/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/f2fs.cpp.o
-[17/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext4.cpp.o
-[18/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/fat32.cpp.o
+[11/180] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackendpartitiontable.cpp.o
+[12/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/apfs.cpp.o
+[13/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/extended.cpp.o
+[14/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/bitlocker.cpp.o
+[15/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/fat32.cpp.o
+[16/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hfsplus.cpp.o
+[17/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext3.cpp.o
+[18/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hfs.cpp.o
 [19/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/exfat.cpp.o
-[20/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hfs.cpp.o
-[21/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/filesystemfactory.cpp.o
-[22/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hfsplus.cpp.o
-[23/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/fat12.cpp.o
-[24/180] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackendmanager.cpp.o
-[25/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext3.cpp.o
-[26/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/bcachefs.cpp.o
-[27/180] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackend.cpp.o
-[28/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hpfs.cpp.o
-[29/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/btrfs.cpp.o
-[30/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/iso9660.cpp.o
-[31/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext2.cpp.o
+[20/180] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackend.cpp.o
+[21/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext4.cpp.o
+[22/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/fat16.cpp.o
+[23/180] Building CXX object src/CMakeFiles/kpmcore.dir/backend/corebackendmanager.cpp.o
+[24/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/bcachefs.cpp.o
+[25/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/filesystemfactory.cpp.o
+[26/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/fat12.cpp.o
+[27/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ext2.cpp.o
+[28/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/iso9660.cpp.o
+[29/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/linuxraidmember.cpp.o
+[30/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/f2fs.cpp.o
+[31/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/hpfs.cpp.o
 [32/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysource.cpp.o
-[33/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/linuxraidmember.cpp.o
-[34/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/filesystem.cpp.o
-[35/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytarget.cpp.o
-[36/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/minix.cpp.o
-[37/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ufs.cpp.o
-[38/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/unformatted.cpp.o
-[39/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ntfs.cpp.o
-[40/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/unknown.cpp.o
-[41/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/luks2.cpp.o
-[42/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/jfs.cpp.o
-[43/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ocfs2.cpp.o
-[44/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/lvm2_pv.cpp.o
-[45/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/reiserfs.cpp.o
-[46/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/reiser4.cpp.o
-[47/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytargetbytearray.cpp.o
-[48/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourceshred.cpp.o
-[49/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/udf.cpp.o
-[50/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/linuxswap.cpp.o
-[51/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourcefile.cpp.o
-[52/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourcedevice.cpp.o
-[53/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/zfs.cpp.o
-[54/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/xfs.cpp.o
-[55/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/nilfs2.cpp.o
-[56/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/device.cpp.o
-[57/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytargetfile.cpp.o
-[58/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytargetdevice.cpp.o
-[59/180] Building CXX object src/CMakeFiles/kpmcore_externalcommand.dir/util/externalcommandhelper.cpp.o
+[33/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ufs.cpp.o
+[34/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/unknown.cpp.o
+[35/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/unformatted.cpp.o
+[36/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/btrfs.cpp.o
+[37/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/minix.cpp.o
+[38/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/filesystem.cpp.o
+[39/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/jfs.cpp.o
+[40/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ocfs2.cpp.o
+[41/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/reiser4.cpp.o
+[42/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytarget.cpp.o
+[43/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/linuxswap.cpp.o
+[44/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/nilfs2.cpp.o
+[45/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/luks2.cpp.o
+[46/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/udf.cpp.o
+[47/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/reiserfs.cpp.o
+[48/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/zfs.cpp.o
+[49/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytargetbytearray.cpp.o
+[50/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/ntfs.cpp.o
+[51/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourcedevice.cpp.o
+[52/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/xfs.cpp.o
+[53/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/lvm2_pv.cpp.o
+[54/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourceshred.cpp.o
+[55/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytargetfile.cpp.o
+[56/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copysourcefile.cpp.o
+[57/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/copytargetdevice.cpp.o
+[58/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/device.cpp.o
+[59/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitionrole.cpp.o
 [60/180] Building CXX object src/CMakeFiles/kpmcore.dir/fs/luks.cpp.o
-[61/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/devicescanner.cpp.o
-[62/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitionrole.cpp.o
-[63/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/diskdevice.cpp.o
-[64/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitionalignment.cpp.o
+[61/180] Building CXX object src/CMakeFiles/kpmcore_externalcommand.dir/util/externalcommandhelper.cpp.o
+[62/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitionalignment.cpp.o
+[63/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/devicescanner.cpp.o
+[64/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/diskdevice.cpp.o
 [65/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/operationrunner.cpp.o
 [66/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitionnode.cpp.o
-[67/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartdiskinformation.cpp.o
-[68/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/operationstack.cpp.o
-[69/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartparser.cpp.o
-[70/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartattribute.cpp.o
-[71/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/volumemanagerdevice.cpp.o
-[72/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/deleteoperation.cpp.o
-[73/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/newoperation.cpp.o
-[74/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partition.cpp.o
-[75/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/fstab.cpp.o
+[67/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartstatus.cpp.o
+[68/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/volumemanagerdevice.cpp.o
+[69/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartattribute.cpp.o
+[70/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartdiskinformation.cpp.o
+[71/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/deleteoperation.cpp.o
+[72/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/operationstack.cpp.o
+[73/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partition.cpp.o
+[74/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/newoperation.cpp.o
+[75/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/createpartitiontableoperation.cpp.o
 [76/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/createfilesystemoperation.cpp.o
-[77/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/resizeoperation.cpp.o
-[78/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartstatus.cpp.o
-[79/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/operation.cpp.o
-[80/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitiontable.cpp.o
+[77/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/restoreoperation.cpp.o
+[78/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/removevolumegroupoperation.cpp.o
+[79/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/resizeoperation.cpp.o
+[80/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/operation.cpp.o
+[81/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/createvolumegroupoperation.cpp.o
+[82/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartattributeparseddata.cpp.o
+[83/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartparser.cpp.o
+[84/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/partitiontable.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/work/kpmcore-25.04.1/src/core/partitiontable.cpp:471:74: warning: ‘PartitionTable::msdos_sectorbased’ is deprecated [-Wdeprecated-declarations]
   471 |     { QLatin1String("msdos"), 4, true, false, PartitionTable::TableType::msdos_sectorbased },
       |                                                                          ^~~~~~~~~~~~~~~~~
@@ -700,55 +704,51 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/work/kpmc
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/work/kpmcore-25.04.1/src/core/partitiontable.h:52:9: note: declared here
    52 |         msdos_sectorbased [[deprecated]],
       |         ^~~~~~~~~~~~~~~~~
-[81/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/createpartitiontableoperation.cpp.o
-[82/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/createvolumegroupoperation.cpp.o
-[83/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/removevolumegroupoperation.cpp.o
-[84/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/restoreoperation.cpp.o
-[85/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/smartattributeparseddata.cpp.o
+[85/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/deactivatevolumegroupoperation.cpp.o
 [86/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/setfilesystemlabeloperation.cpp.o
 [87/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/setpartlabeloperation.cpp.o
-[88/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/deactivatevolumegroupoperation.cpp.o
-[89/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/setpartflagsoperation.cpp.o
-[90/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/raid/softwareraid.cpp.o
-[91/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/backupoperation.cpp.o
-[92/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/checkoperation.cpp.o
-[93/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/resizefilesystemjob.cpp.o
-[94/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/checkfilesystemjob.cpp.o
-[95/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/shredfilesystemjob.cpp.o
+[88/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/setpartflagsoperation.cpp.o
+[89/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/backupoperation.cpp.o
+[90/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/fstab.cpp.o
+[91/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/checkoperation.cpp.o
+[92/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/resizevolumegroupoperation.cpp.o
+[93/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createfilesystemjob.cpp.o
+[94/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/resizefilesystemjob.cpp.o
+[95/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/checkfilesystemjob.cpp.o
 [96/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createpartitiontablejob.cpp.o
-[97/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/resizevolumegroupoperation.cpp.o
+[97/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartitionuuidjob.cpp.o
 [98/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createpartitionjob.cpp.o
 [99/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartitionlabeljob.cpp.o
-[100/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createvolumegroupjob.cpp.o
-[101/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createfilesystemjob.cpp.o
-[102/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/removevolumegroupjob.cpp.o
-[103/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/copyoperation.cpp.o
-[104/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartitionattributesjob.cpp.o
-[105/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartitionuuidjob.cpp.o
-[106/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/job.cpp.o
-[107/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartgeometryjob.cpp.o
-[108/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deactivatevolumegroupjob.cpp.o
-[109/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deactivatelogicalvolumejob.cpp.o
-[110/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/movephysicalvolumejob.cpp.o
-[111/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/resizevolumegroupjob.cpp.o
-[112/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deletepartitionjob.cpp.o
+[100/180] Building CXX object src/CMakeFiles/kpmcore.dir/ops/copyoperation.cpp.o
+[101/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/job.cpp.o
+[102/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartitionattributesjob.cpp.o
+[103/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/createvolumegroupjob.cpp.o
+[104/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/removevolumegroupjob.cpp.o
+[105/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deactivatevolumegroupjob.cpp.o
+[106/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/raid/softwareraid.cpp.o
+[107/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deactivatelogicalvolumejob.cpp.o
+[108/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/shredfilesystemjob.cpp.o
+[109/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/lvmdevice.cpp.o
+[110/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/resizevolumegroupjob.cpp.o
+[111/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deletepartitionjob.cpp.o
+[112/180] Linking CXX executable bin/kpmcore_externalcommand
 [113/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setfilesystemlabeljob.cpp.o
-[114/180] Building CXX object src/CMakeFiles/kpmcore.dir/core/lvmdevice.cpp.o
-[115/180] Linking CXX executable bin/kpmcore_externalcommand
-[116/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/restorefilesystemjob.cpp.o
-[117/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/copyfilesystemjob.cpp.o
-[118/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/globallog.cpp.o
-[119/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/movefilesystemjob.cpp.o
-[120/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/capacity.cpp.o
-[121/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/changepermissionsjob.cpp.o
-[122/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartflagsjob.cpp.o
-[123/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/backupfilesystemjob.cpp.o
+[114/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/restorefilesystemjob.cpp.o
+[115/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/movephysicalvolumejob.cpp.o
+[116/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/changepermissionsjob.cpp.o
+[117/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/globallog.cpp.o
+[118/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/copyfilesystemjob.cpp.o
+[119/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartgeometryjob.cpp.o
+[120/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/setpartflagsjob.cpp.o
+[121/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/movefilesystemjob.cpp.o
+[122/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/backupfilesystemjob.cpp.o
+[123/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/capacity.cpp.o
 [124/180] Building CXX object src/CMakeFiles/kpmcore.dir/jobs/deletefilesystemjob.cpp.o
-[125/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/htmlreport.cpp.o
-[126/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/helpers.cpp.o
-[127/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/report.cpp.o
-[128/180] Building CXX object src/CMakeFiles/kpmcore.dir/gui/partwidgetbase.cpp.o
-[129/180] Building CXX object src/CMakeFiles/kpmcore.dir/gui/partwidget.cpp.o
+[125/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/report.cpp.o
+[126/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/htmlreport.cpp.o
+[127/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/helpers.cpp.o
+[128/180] Building CXX object src/CMakeFiles/kpmcore.dir/gui/partwidget.cpp.o
+[129/180] Building CXX object src/CMakeFiles/kpmcore.dir/gui/partwidgetbase.cpp.o
 [130/180] Building CXX object src/CMakeFiles/kpmcore.dir/gui/partresizerwidget.cpp.o
 [131/180] Building CXX object src/CMakeFiles/kpmcore.dir/externalcommandhelper_interface.cpp.o
 [132/180] Building CXX object src/CMakeFiles/kpmcore.dir/util/externalcommand.cpp.o
@@ -760,48 +760,48 @@ In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/work/kpmc
 [138/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/pmdummybackendplugin_autogen/mocs_compilation.cpp.o
 [139/180] Automatic MOC for target pmsfdiskbackendplugin
 [140/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/pmsfdiskbackendplugin_autogen/mocs_compilation.cpp.o
-[141/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/__/__/backend/corebackenddevice.cpp.o
-[142/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/__/__/backend/corebackenddevice.cpp.o
-[143/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/sfdiskdevice.cpp.o
-[144/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/__/__/core/copytargetbytearray.cpp.o
-[145/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummybackend.cpp.o
-[146/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/__/__/core/copysourcedevice.cpp.o
-[147/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummypartitiontable.cpp.o
-[148/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/sfdiskgptattributes.cpp.o
-[149/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummydevice.cpp.o
-[150/180] Building CXX object test/CMakeFiles/testhelpers.dir/helpers.cpp.o
+[141/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/__/__/backend/corebackenddevice.cpp.o
+[142/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/__/__/core/copytargetbytearray.cpp.o
+[143/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/sfdiskgptattributes.cpp.o
+[144/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/__/__/backend/corebackenddevice.cpp.o
+[145/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/__/__/core/copytargetdevice.cpp.o
+[146/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/sfdiskdevice.cpp.o
+[147/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/__/__/core/copysourcedevice.cpp.o
+[148/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummydevice.cpp.o
+[149/180] Building CXX object test/CMakeFiles/testhelpers.dir/helpers.cpp.o
+[150/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummypartitiontable.cpp.o
 [151/180] Linking CXX static library lib/libtesthelpers.a
-[152/180] Automatic MOC for target testinit
-[153/180] Automatic MOC for target testexternalcommand
-[154/180] Automatic MOC for target testdevice
-[155/180] Automatic MOC for target testlist
+[152/180] Automatic MOC for target testdevice
+[153/180] Automatic MOC for target testlist
+[154/180] Automatic MOC for target testinit
+[155/180] Automatic MOC for target testexternalcommand
 [156/180] Automatic MOC for target testdevicescanner
-[157/180] Building CXX object test/CMakeFiles/testinit.dir/testinit_autogen/mocs_compilation.cpp.o
-[158/180] Building CXX object test/CMakeFiles/testexternalcommand.dir/testexternalcommand_autogen/mocs_compilation.cpp.o
-[159/180] Building CXX object test/CMakeFiles/testdevice.dir/testdevice_autogen/mocs_compilation.cpp.o
-[160/180] Building CXX object test/CMakeFiles/testlist.dir/testlist_autogen/mocs_compilation.cpp.o
+[157/180] Building CXX object test/CMakeFiles/testdevice.dir/testdevice_autogen/mocs_compilation.cpp.o
+[158/180] Building CXX object test/CMakeFiles/testlist.dir/testlist_autogen/mocs_compilation.cpp.o
+[159/180] Building CXX object test/CMakeFiles/testinit.dir/testinit_autogen/mocs_compilation.cpp.o
+[160/180] Building CXX object test/CMakeFiles/testexternalcommand.dir/testexternalcommand_autogen/mocs_compilation.cpp.o
 [161/180] Building CXX object test/CMakeFiles/testdevicescanner.dir/testdevicescanner_autogen/mocs_compilation.cpp.o
-[162/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/__/__/core/copytargetdevice.cpp.o
+[162/180] Building CXX object src/plugins/dummy/CMakeFiles/pmdummybackendplugin.dir/dummybackend.cpp.o
 [163/180] Linking CXX shared module bin/kpmcore/pmdummybackendplugin.so
 [164/180] Automatic MOC for target test_fstab
 [165/180] Building CXX object test/CMakeFiles/test_fstab.dir/test_fstab_autogen/mocs_compilation.cpp.o
 [166/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/sfdiskpartitiontable.cpp.o
 [167/180] Building CXX object test/CMakeFiles/testinit.dir/testinit.cpp.o
-[168/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/sfdiskbackend.cpp.o
-[169/180] Linking CXX shared module bin/kpmcore/pmsfdiskbackendplugin.so
-[170/180] Linking CXX executable bin/testinit
-[171/180] Building CXX object test/CMakeFiles/testexternalcommand.dir/testexternalcommand.cpp.o
-[172/180] Linking CXX executable bin/testexternalcommand
-[173/180] Building CXX object test/CMakeFiles/testdevice.dir/testdevice.cpp.o
-[174/180] Linking CXX executable bin/testdevice
-[175/180] Building CXX object test/CMakeFiles/testlist.dir/testlist.cpp.o
+[168/180] Linking CXX executable bin/testinit
+[169/180] Building CXX object src/plugins/sfdisk/CMakeFiles/pmsfdiskbackendplugin.dir/sfdiskbackend.cpp.o
+[170/180] Building CXX object test/CMakeFiles/testexternalcommand.dir/testexternalcommand.cpp.o
+[171/180] Building CXX object test/CMakeFiles/testdevice.dir/testdevice.cpp.o
+[172/180] Linking CXX shared module bin/kpmcore/pmsfdiskbackendplugin.so
+[173/180] Building CXX object test/CMakeFiles/testlist.dir/testlist.cpp.o
+[174/180] Linking CXX executable bin/testexternalcommand
+[175/180] Linking CXX executable bin/testdevice
 [176/180] Linking CXX executable bin/testlist
 [177/180] Building CXX object test/CMakeFiles/testdevicescanner.dir/testdevicescanner.cpp.o
 [178/180] Linking CXX executable bin/testdevicescanner
 [179/180] Building CXX object test/CMakeFiles/test_fstab.dir/test_fstab.cpp.o
 [180/180] Linking CXX executable bin/test_fstab
 -- Install configuration: "RelWithDebInfo"
--- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/package-kpmcore/usr/lib64/libexec/kpmcore_externalcommand
+-- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/package-kpmcore/usr/libexec/kpmcore_externalcommand
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/package-kpmcore/usr/share/dbus-1/system.d/org.kde.kpmcore.helperinterface.conf
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/package-kpmcore/usr/share/polkit-1/actions/org.kde.kpmcore.externalcommand.policy
 -- Installing: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/kpmcore/package-kpmcore/usr/share/dbus-1/system-services/org.kde.kpmcore.helperinterface.service
@@ -1274,14 +1274,14 @@ usr/lib64/cmake/KPMcore/KPMcoreConfig.cmake
 usr/lib64/cmake/KPMcore/KPMcoreConfigVersion.cmake
 usr/lib64/cmake/KPMcore/KPMcoreTargets-relwithdebinfo.cmake
 usr/lib64/cmake/KPMcore/KPMcoreTargets.cmake
-usr/lib64/libexec/
-usr/lib64/libexec/kpmcore_externalcommand
 usr/lib64/libkpmcore.so.25.04.1
 usr/lib64/qt6/
 usr/lib64/qt6/plugins/
 usr/lib64/qt6/plugins/kpmcore/
 usr/lib64/qt6/plugins/kpmcore/pmdummybackendplugin.so
 usr/lib64/qt6/plugins/kpmcore/pmsfdiskbackendplugin.so
+usr/libexec/
+usr/libexec/kpmcore_externalcommand
 usr/share/
 usr/share/dbus-1/
 usr/share/dbus-1/system-services/
@@ -1529,7 +1529,7 @@ makepkg-kpmcore.log
 +====================================================================================================+
 
 Pre-installing package kpmcore-25.04.1-x86_64-1_rtz...
-Removing package: kpmcore-25.04.1-x86_64-1_rtz-upgraded-2025-05-21,16:28:18
+Removing package: kpmcore-25.04.1-x86_64-1_rtz-upgraded-2025-05-28,20:46:54
 Installing package kpmcore-25.04.1-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # kpmcore (Library for managing partitions)

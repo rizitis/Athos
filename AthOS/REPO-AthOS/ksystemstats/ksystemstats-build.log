@@ -12,23 +12,23 @@ networkmanager-qt is already installed!
 solid is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-26 23:40:49--  https://download.kde.org/stable/plasma/6.3.5/ksystemstats-6.3.5.tar.xz
+--2025-05-28 19:20:55--  https://download.kde.org/stable/plasma/6.3.5/ksystemstats-6.3.5.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/ksystemstats-6.3.5.tar.xz [following]
---2025-05-26 23:40:49--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/ksystemstats-6.3.5.tar.xz
+--2025-05-28 19:20:56--  https://ftp.cc.uoc.gr/mirrors/kde/stable/plasma/6.3.5/ksystemstats-6.3.5.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 151704 (148K) [application/octet-stream]
 Saving to: ‘ksystemstats-6.3.5.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 33% 1.35M 0s
-    50K .......... .......... .......... .......... .......... 67% 1.59M 0s
-   100K .......... .......... .......... .......... ........  100% 6.42M=0.07s
+     0K .......... .......... .......... .......... .......... 33% 1.33M 0s
+    50K .......... .......... .......... .......... .......... 67% 1.42M 0s
+   100K .......... .......... .......... .......... ........  100% 6.37M=0.08s
 
-2025-05-26 23:40:50 (1.96 MB/s) - ‘ksystemstats-6.3.5.tar.xz’ saved [151704/151704]
+2025-05-28 19:20:56 (1.85 MB/s) - ‘ksystemstats-6.3.5.tar.xz’ saved [151704/151704]
 
 Found file: ksystemstats-6.3.5.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -371,59 +371,40 @@ hm...lets continue and see what happens
 -- Build files have been written to: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/build
 [1/91] Generating ts...
 [2/91] Generating mo...
-[3/91] Automatic MOC for target nvidiatest
-[4/91] Building CXX object plugins/gpu/autotests/CMakeFiles/nvidiatest.dir/nvidiatest_autogen/mocs_compilation.cpp.o
-[5/91] Automatic MOC for target ksystemstats_core
-[6/91] Automatic MOC for target ksystemstats_plugin_disk
-[7/91] Generating ksystemstats1adaptor.cpp, ksystemstats1adaptor.h
-[8/91] Generating moc_ksystemstats1adaptor.cpp
-[9/91] Building CXX object plugins/disks/CMakeFiles/ksystemstats_plugin_disk.dir/ksystemstats_plugin_disk_autogen/mocs_compilation.cpp.o
-[10/91] Building CXX object src/CMakeFiles/ksystemstats_core.dir/ksystemstats_core_autogen/mocs_compilation.cpp.o
-[11/91] Automatic MOC for target ksystemstats_plugin_cpu
-[12/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/ksystemstats_plugin_cpu_autogen/mocs_compilation.cpp.o
-[13/91] Automatic MOC for target ksystemstats_plugin_osinfo
-[14/91] Automatic MOC for target ksystemstats_plugin_pressure
-[15/91] Building CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/ksystemstats_plugin_osinfo_autogen/mocs_compilation.cpp.o
-[16/91] Automatic MOC for target ksystemstats_plugin_memory
-[17/91] Automatic MOC for target ksystemstats_plugin_network
-[18/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/ksystemstats_plugin_memory_autogen/mocs_compilation.cpp.o
+[3/91] Automatic MOC for target ksystemstats_plugin_memory
+[4/91] Automatic MOC for target nvidiatest
+[5/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/ksystemstats_plugin_memory_autogen/mocs_compilation.cpp.o
+[6/91] Building CXX object plugins/gpu/autotests/CMakeFiles/nvidiatest.dir/nvidiatest_autogen/mocs_compilation.cpp.o
+[7/91] Automatic MOC for target ksystemstats_plugin_pressure
+[8/91] Automatic MOC for target ksystemstats_plugin_network
+[9/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/ksystemstats_plugin_network_autogen/mocs_compilation.cpp.o
+[10/91] Automatic MOC for target ksystemstats_plugin_cpu
+[11/91] Automatic MOC for target ksystemstats_plugin_lmsensors
+[12/91] Automatic MOC for target ksystemstats_core
+[13/91] Generating ksystemstats1adaptor.cpp, ksystemstats1adaptor.h
+[14/91] Generating moc_ksystemstats1adaptor.cpp
+[15/91] Automatic MOC for target ksystemstats_plugin_osinfo
+[16/91] Building CXX object src/CMakeFiles/ksystemstats_core.dir/ksystemstats_core_autogen/mocs_compilation.cpp.o
+[17/91] Automatic MOC for target ksystemstats_plugin_gpu
+[18/91] Automatic MOC for target ksystemstats_plugin_disk
 [19/91] Automatic MOC for target ksystemstats_plugin_power
-[20/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/ksystemstats_plugin_network_autogen/mocs_compilation.cpp.o
-[21/91] Automatic MOC for target ksystemstats_plugin_gpu
-[22/91] Automatic MOC for target ksystemstats_plugin_lmsensors
-[23/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/usagecomputer.cpp.o
-[24/91] Automatic MOC for target kstatsviewer
-[25/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/debug.cpp.o
-[26/91] Building CXX object plugins/power/CMakeFiles/ksystemstats_plugin_power.dir/ksystemstats_plugin_power_autogen/mocs_compilation.cpp.o
-[27/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/debug.cpp.o
-[28/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkBackend.cpp.o
-[29/91] Building CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/debug.cpp.o
-[30/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/AllDevicesObject.cpp.o
-[31/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkDevice.cpp.o
-[32/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/loadaverages.cpp.o
-[33/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkPlugin.cpp.o
-[34/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/ksystemstats_plugin_gpu_autogen/mocs_compilation.cpp.o
-[35/91] Building CXX object plugins/gpu/autotests/CMakeFiles/nvidiatest.dir/__/NvidiaSmiProcess.cpp.o
-[36/91] Building CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/ksystemstats_plugin_pressure_autogen/mocs_compilation.cpp.o
-[37/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/RtNetlinkBackend.cpp.o
-[38/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/cpuplugin.cpp.o
-[39/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/cpu.cpp.o
-[40/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/linuxcpu.cpp.o
-[41/91] Building CXX object plugins/gpu/autotests/CMakeFiles/nvidiatest.dir/nvidia.cpp.o
-[42/91] Building CXX object plugins/disks/CMakeFiles/ksystemstats_plugin_disk.dir/disks.cpp.o
-[43/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/linuxcpuplugin.cpp.o
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/plugins/cpu/linuxcpuplugin.cpp: In member function ‘void LinuxCpuPluginPrivate::addSensorsAmd(const sensors_chip_name*)’:
-/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/plugins/cpu/linuxcpuplugin.cpp:241:29: warning: variable ‘tccd’ set but not used [-Wunused-but-set-variable]
-  241 |     sensors_feature const * tccd[8] = {nullptr};
-      |                             ^~~~
-[44/91] Building CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/osinfo.cpp.o
-[45/91] Building CXX object plugins/lmsensors/CMakeFiles/ksystemstats_plugin_lmsensors.dir/ksystemstats_plugin_lmsensors_autogen/mocs_compilation.cpp.o
-[46/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/backend.cpp.o
-[47/91] Building CXX object tools/kstatsviewer/CMakeFiles/kstatsviewer.dir/kstatsviewer_autogen/mocs_compilation.cpp.o
-[48/91] Building CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/pressure_logging.cpp.o
-[49/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/memory.cpp.o
-[50/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkManagerBackend.cpp.o
-[51/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/linuxbackend.cpp.o
+[20/91] Building CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/ksystemstats_plugin_osinfo_autogen/mocs_compilation.cpp.o
+[21/91] Automatic MOC for target kstatsviewer
+[22/91] Building CXX object plugins/power/CMakeFiles/ksystemstats_plugin_power.dir/ksystemstats_plugin_power_autogen/mocs_compilation.cpp.o
+[23/91] Building CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/pressure_logging.cpp.o
+[24/91] Building CXX object plugins/disks/CMakeFiles/ksystemstats_plugin_disk.dir/ksystemstats_plugin_disk_autogen/mocs_compilation.cpp.o
+[25/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/memory.cpp.o
+[26/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/backend.cpp.o
+[27/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/ksystemstats_plugin_cpu_autogen/mocs_compilation.cpp.o
+[28/91] Building CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/debug.cpp.o
+[29/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkBackend.cpp.o
+[30/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/debug.cpp.o
+[31/91] Building CXX object plugins/gpu/autotests/CMakeFiles/nvidiatest.dir/__/NvidiaSmiProcess.cpp.o
+[32/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/AllDevicesObject.cpp.o
+[33/91] Building CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/ksystemstats_plugin_pressure_autogen/mocs_compilation.cpp.o
+[34/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/usagecomputer.cpp.o
+[35/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/ksystemstats_plugin_gpu_autogen/mocs_compilation.cpp.o
+[36/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/linuxbackend.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/plugins/memory/linuxbackend.cpp: In member function ‘virtual void LinuxMemoryBackend::update()’:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/plugins/memory/linuxbackend.cpp:58:21: warning: ‘total’ may be used uninitialized [-Wmaybe-uninitialized]
    58 |     m_used->setValue(total - available);
@@ -473,35 +454,54 @@ hm...lets continue and see what happens
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/plugins/memory/linuxbackend.cpp:32:80: note: ‘swapFree’ was declared here
    32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
       |                                                                                ^~~~~~~~
-[52/91] Linking CXX shared module bin/ksystemstats_plugin_osinfo.so
-[53/91] Building CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/debug.cpp.o
-[54/91] Linking CXX shared module bin/ksystemstats_plugin_disk.so
-[55/91] Linking CXX shared module bin/ksystemstats_plugin_network.so
+[37/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkDevice.cpp.o
+[38/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/debug.cpp.o
+[39/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkPlugin.cpp.o
+[40/91] Building CXX object plugins/gpu/autotests/CMakeFiles/nvidiatest.dir/nvidia.cpp.o
+[41/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/RtNetlinkBackend.cpp.o
+[42/91] Building CXX object plugins/power/CMakeFiles/ksystemstats_plugin_power.dir/power.cpp.o
+[43/91] Building CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/pressure.cpp.o
+[44/91] Building CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkManagerBackend.cpp.o
+[45/91] Building CXX object plugins/lmsensors/CMakeFiles/ksystemstats_plugin_lmsensors.dir/ksystemstats_plugin_lmsensors_autogen/mocs_compilation.cpp.o
+[46/91] Building CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/osinfo.cpp.o
+[47/91] Building CXX object tools/kstatsviewer/CMakeFiles/kstatsviewer.dir/kstatsviewer_autogen/mocs_compilation.cpp.o
+[48/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuBackend.cpp.o
+[49/91] Linking CXX shared module bin/ksystemstats_plugin_osinfo.so
+[50/91] Linking CXX shared module bin/ksystemstats_plugin_network.so
+[51/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/debug.cpp.o
+[52/91] Linking CXX shared module bin/ksystemstats_plugin_memory.so
+[53/91] Linking CXX shared module bin/ksystemstats_plugin_power.so
+[54/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/cpuplugin.cpp.o
+[55/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuDevice.cpp.o
 [56/91] Linking CXX executable bin/nvidiatest
-[57/91] Linking CXX shared module bin/ksystemstats_plugin_cpu.so
-[58/91] Linking CXX shared module bin/ksystemstats_plugin_memory.so
-[59/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/AllGpus.cpp.o
-[60/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxAmdGpu.cpp.o
-[61/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuBackend.cpp.o
-[62/91] Building CXX object src/CMakeFiles/ksystemstats_core.dir/ksystemstats1adaptor.cpp.o
-[63/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxNvidiaGpu.cpp.o
-[64/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuDevice.cpp.o
-[65/91] Building CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/pressure.cpp.o
-[66/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/debug.cpp.o
-[67/91] Building CXX object plugins/power/CMakeFiles/ksystemstats_plugin_power.dir/power.cpp.o
-[68/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/NvidiaSmiProcess.cpp.o
-[69/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxBackend.cpp.o
+[57/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/linuxcpu.cpp.o
+[58/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/loadaverages.cpp.o
+[59/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/cpu.cpp.o
+[60/91] Linking CXX shared module bin/ksystemstats_plugin_pressure.so
+[61/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuPlugin.cpp.o
+[62/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxNvidiaGpu.cpp.o
+[63/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/AllGpus.cpp.o
+[64/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/debug.cpp.o
+[65/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/NvidiaSmiProcess.cpp.o
+[66/91] Building CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/linuxcpuplugin.cpp.o
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/plugins/cpu/linuxcpuplugin.cpp: In member function ‘void LinuxCpuPluginPrivate::addSensorsAmd(const sensors_chip_name*)’:
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/plugins/cpu/linuxcpuplugin.cpp:241:29: warning: variable ‘tccd’ set but not used [-Wunused-but-set-variable]
+  241 |     sensors_feature const * tccd[8] = {nullptr};
+      |                             ^~~~
+[67/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxAmdGpu.cpp.o
+[68/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxBackend.cpp.o
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/ksystemstats/work/ksystemstats-6.3.5/plugins/gpu/LinuxBackend.cpp:20:20: warning: ‘intelVendor’ defined but not used [-Wunused-variable]
    20 | static const char *intelVendor = "0x8086";
       |                    ^~~~~~~~~~~
-[70/91] Linking CXX shared module bin/ksystemstats_plugin_pressure.so
-[71/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuPlugin.cpp.o
-[72/91] Linking CXX shared module bin/ksystemstats_plugin_power.so
-[73/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/NvidiaGpu.cpp.o
-[74/91] Linking CXX shared module bin/ksystemstats_plugin_gpu.so
-[75/91] Building CXX object plugins/lmsensors/CMakeFiles/ksystemstats_plugin_lmsensors.dir/lmsensors.cpp.o
-[76/91] Building CXX object src/CMakeFiles/ksystemstats_core.dir/client.cpp.o
-[77/91] Linking CXX shared module bin/ksystemstats_plugin_lmsensors.so
+[69/91] Building CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/NvidiaGpu.cpp.o
+[70/91] Linking CXX shared module bin/ksystemstats_plugin_cpu.so
+[71/91] Building CXX object src/CMakeFiles/ksystemstats_core.dir/ksystemstats1adaptor.cpp.o
+[72/91] Linking CXX shared module bin/ksystemstats_plugin_gpu.so
+[73/91] Building CXX object plugins/disks/CMakeFiles/ksystemstats_plugin_disk.dir/disks.cpp.o
+[74/91] Building CXX object plugins/lmsensors/CMakeFiles/ksystemstats_plugin_lmsensors.dir/lmsensors.cpp.o
+[75/91] Linking CXX shared module bin/ksystemstats_plugin_disk.so
+[76/91] Linking CXX shared module bin/ksystemstats_plugin_lmsensors.so
+[77/91] Building CXX object src/CMakeFiles/ksystemstats_core.dir/client.cpp.o
 [78/91] Building CXX object src/CMakeFiles/ksystemstats_core.dir/daemon.cpp.o
 [79/91] Linking CXX static library lib/libksystemstats_core.a
 [80/91] Automatic MOC for target ksystemstats
@@ -901,7 +901,7 @@ makepkg-ksystemstats.log
 +===============================================================================================================+
 
 Pre-installing package ksystemstats-6.3.5-x86_64-1_rtz...
-Removing package: ksystemstats-6.3.5-x86_64-1_rtz-upgraded-2025-05-26,23:41:13
+Removing package: ksystemstats-6.3.5-x86_64-1_rtz-upgraded-2025-05-28,19:21:24
 Installing package ksystemstats-6.3.5-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # ksystemstats (daemon)

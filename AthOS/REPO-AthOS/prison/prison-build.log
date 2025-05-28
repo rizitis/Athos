@@ -9,22 +9,22 @@ Error: Build file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/libqrencode/libqrenc
 libdmtx is already installed!
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-21 13:31:15--  https://download.kde.org/stable/frameworks/6.14/prison-6.14.0.tar.xz
+--2025-05-28 17:57:17--  https://download.kde.org/stable/frameworks/6.14/prison-6.14.0.tar.xz
 Resolving download.kde.org (download.kde.org)... 49.12.122.15, 2a01:4f8:242:53eb::4
 Connecting to download.kde.org (download.kde.org)|49.12.122.15|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/prison-6.14.0.tar.xz [following]
---2025-05-21 13:31:16--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/prison-6.14.0.tar.xz
+--2025-05-28 17:57:17--  https://ftp.cc.uoc.gr/mirrors/kde/stable/frameworks/6.14/prison-6.14.0.tar.xz
 Resolving ftp.cc.uoc.gr (ftp.cc.uoc.gr)... 147.52.159.50, 2001:648:2c00:6c08::2
 Connecting to ftp.cc.uoc.gr (ftp.cc.uoc.gr)|147.52.159.50|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 56636 (55K) [application/octet-stream]
 Saving to: ‘prison-6.14.0.tar.xz’
 
-     0K .......... .......... .......... .......... .......... 90% 1.16M 0s
-    50K .....                                                 100% 9.89T=0.04s
+     0K .......... .......... .......... .......... .......... 90% 1.45M 0s
+    50K .....                                                 100% 9.89T=0.03s
 
-2025-05-21 13:31:16 (1.28 MB/s) - ‘prison-6.14.0.tar.xz’ saved [56636/56636]
+2025-05-28 17:57:18 (1.60 MB/s) - ‘prison-6.14.0.tar.xz’ saved [56636/56636]
 
 Found file: prison-6.14.0.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
@@ -174,8 +174,8 @@ prison-6.14.0/tests/scanner-qt6.qml
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work
 README or README.md already exists, skipping creation.
 hm...lets continue and see what happens
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: /usr/bin/cc - skipped
@@ -202,7 +202,7 @@ hm...lets continue and see what happens
 -- Performing Test BSYMBOLICFUNCTIONS_AVAILABLE - Success
 -- Found OpenGL: /usr/lib64/libOpenGL.so
 -- Found WrapOpenGL: TRUE
--- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.9.2", minimum required is "0.5.0")
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.10.0", minimum required is "0.5.0")
 -- Found WrapVulkanHeaders: /usr/include
 -- Found QRencode: /usr/lib64/libqrencode.so
 -- Found Dmtx: /usr/lib64/libdmtx.so
@@ -212,7 +212,7 @@ hm...lets continue and see what happens
 -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
 -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
--- Found Doxygen: /usr/bin/doxygen (found suitable version "1.13.2", minimum required is "1.8.13") found components: doxygen dot
+-- Found Doxygen: /usr/bin/doxygen (found suitable version "1.14.0", minimum required is "1.8.13") found components: doxygen dot
 -- No such target Qt6Gui_QCH defined when calling ecm_add_qch(), ignored.
 
 
@@ -271,8 +271,7 @@ Configuration file '/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-
 [1/122] Automatic MOC for target KF6Prison
 [2/122] Running AUTOMOC file extraction for target KF6Prison
 [3/122] Running moc --collect-json for target KF6Prison
-[4/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/KF6Prison_autogen/mocs_compilation.cpp.o
-[5/122] Generating src/scanner/KF6PrisonScanner.qch, src/scanner/KF6PrisonScanner.tags
+[4/122] Generating src/scanner/KF6PrisonScanner.qch, src/scanner/KF6PrisonScanner.tags
 Building up file structure...
 Insert custom filters...
 Insert help data for filter section (1 of 1)...
@@ -280,7 +279,7 @@ Insert files...
 Insert contents...
 Insert indices...
 Documentation successfully generated.
-[6/122] Generating src/lib/KF6Prison.qch, src/lib/KF6Prison.tags
+[5/122] Generating src/lib/KF6Prison.qch, src/lib/KF6Prison.tags
 Building up file structure...
 Insert custom filters...
 Insert help data for filter section (1 of 1)...
@@ -288,25 +287,26 @@ Insert files...
 Insert contents...
 Insert indices...
 Documentation successfully generated.
+[6/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/KF6Prison_autogen/mocs_compilation.cpp.o
 [7/122] Automatic MOC for target KF6PrisonScanner
 [8/122] Running AUTOMOC file extraction for target KF6PrisonScanner
 [9/122] Running moc --collect-json for target KF6PrisonScanner
 [10/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/KF6PrisonScanner_autogen/mocs_compilation.cpp.o
-[11/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/videoscannerframe.cpp.o
-[12/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/bitvector.cpp.o
-[13/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/format.cpp.o
-[14/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/pdf417barcode.cpp.o
-[15/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/reedsolomon.cpp.o
+[11/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/format.cpp.o
+[12/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/prison_debug.cpp.o
+[13/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/videoscannerframe.cpp.o
+[14/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/reedsolomon.cpp.o
+[15/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/bitvector.cpp.o
 [16/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/qrcodebarcode.cpp.o
-[17/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/prison_debug.cpp.o
+[17/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/datamatrixbarcode.cpp.o
 [18/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/code128barcode.cpp.o
-[19/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/barcodeutil.cpp.o
-[20/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/code39barcode.cpp.o
-[21/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/zxingutil.cpp.o
-[22/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/code93barcode.cpp.o
-[23/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/datamatrixbarcode.cpp.o
-[24/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/barcode.cpp.o
-[25/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/abstractbarcode_p.cpp.o
+[19/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/code39barcode.cpp.o
+[20/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/abstractbarcode_p.cpp.o
+[21/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/barcodeutil.cpp.o
+[22/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/zxingutil.cpp.o
+[23/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/barcode.cpp.o
+[24/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/videoscanner.cpp.o
+[25/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/pdf417barcode.cpp.o
 [26/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/videoscannerworker.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/imagescanner_p.h:12,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/videoscannerworker.cpp:8:
@@ -372,18 +372,7 @@ In file included from /usr/include/ZXing/Barcode.h:15:
 /usr/include/ZXing/ImageView.h:27:9: note: declared here
    27 |         RGBX [[deprecated("use RGBA")]] = RGBA,
       |         ^~~~
-[27/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/videoscanner.cpp.o
-[28/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/aztecbarcode.cpp.o
-[29/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/scanresult.cpp.o
-In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/scanresult_p.h:15,
-                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/scanresult.cpp:10:
-/usr/include/ZXing/Result.h:10:110: note: ‘#pragma message: Header `Result.h` is deprecated, please include `Barcode.h` and use the new name `Barcode`.’
-   10 | #pragma message("Header `Result.h` is deprecated, please include `Barcode.h` and use the new name `Barcode`.")
-      |                                                                                                              ^
-[30/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/mecard.cpp.o
-[31/122] Linking CXX shared library bin/libKF6Prison.so.6.14.0
-[32/122] Creating library symlink bin/libKF6Prison.so.6 bin/libKF6Prison.so
-[33/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/imagescanner.cpp.o
+[27/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/imagescanner.cpp.o
 In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/imagescanner_p.h:12,
                  from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/imagescanner.cpp:11:
 /usr/include/ZXing/Result.h:10:110: note: ‘#pragma message: Header `Result.h` is deprecated, please include `Barcode.h` and use the new name `Barcode`.’
@@ -427,93 +416,104 @@ In file included from /usr/include/ZXing/Barcode.h:15:
 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/imagescanner.cpp:30:12: warning: enumeration value ‘Format_CMYK8888’ not handled in switch [-Wswitch]
    30 |     switch (image.format()) {
       |            ^
-[34/122] Automatic MOC for target prison-datamatrix
-[35/122] Building CXX object src/tools/CMakeFiles/prison-datamatrix.dir/prison-datamatrix_autogen/mocs_compilation.cpp.o
-[36/122] Linking CXX shared library bin/libKF6PrisonScanner.so.6.14.0
-[37/122] Creating library symlink bin/libKF6PrisonScanner.so.6 bin/libKF6PrisonScanner.so
-[38/122] Automatic MOC for target prison-code128barcodetest
-[39/122] Automatic RCC for code128/code128.qrc
-[40/122] Automatic MOC for target prison-reedsolomontest
-[41/122] Automatic MOC for target prisonquickplugin
-[42/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/prison-code128barcodetest_autogen/mocs_compilation.cpp.o
-[43/122] Running AUTOMOC file extraction for target prisonquickplugin
-[44/122] Running rcc for resource qmake_org_kde_prison
-[45/122] Running moc --collect-json for target prisonquickplugin
-[46/122] Building CXX object autotests/CMakeFiles/prison-reedsolomontest.dir/prison-reedsolomontest_autogen/mocs_compilation.cpp.o
-[47/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/prison-code128barcodetest_autogen/XJA2T35LKC/qrc_code128.cpp.o
-[48/122] Automatic MOC for target prison-zxingutiltest
-[49/122] Building CXX object autotests/CMakeFiles/prison-zxingutiltest.dir/prison-zxingutiltest_autogen/mocs_compilation.cpp.o
-[50/122] Automatic MOC for target prison-datamatrixtest
-[51/122] Automatic MOC for target prison-test
+[28/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/aztecbarcode.cpp.o
+[29/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/mecard.cpp.o
+[30/122] Building CXX object src/scanner/CMakeFiles/KF6PrisonScanner.dir/scanresult.cpp.o
+In file included from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/scanresult_p.h:15,
+                 from /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/prison/work/prison-6.14.0/src/scanner/scanresult.cpp:10:
+/usr/include/ZXing/Result.h:10:110: note: ‘#pragma message: Header `Result.h` is deprecated, please include `Barcode.h` and use the new name `Barcode`.’
+   10 | #pragma message("Header `Result.h` is deprecated, please include `Barcode.h` and use the new name `Barcode`.")
+      |                                                                                                              ^
+[31/122] Building CXX object src/lib/CMakeFiles/KF6Prison.dir/code93barcode.cpp.o
+[32/122] Linking CXX shared library bin/libKF6PrisonScanner.so.6.14.0
+[33/122] Creating library symlink bin/libKF6PrisonScanner.so.6 bin/libKF6PrisonScanner.so
+[34/122] Linking CXX shared library bin/libKF6Prison.so.6.14.0
+[35/122] Creating library symlink bin/libKF6Prison.so.6 bin/libKF6Prison.so
+[36/122] Automatic MOC for target prison-datamatrix
+[37/122] Building CXX object src/tools/CMakeFiles/prison-datamatrix.dir/prison-datamatrix_autogen/mocs_compilation.cpp.o
+[38/122] Automatic MOC for target prison-test
+[39/122] Automatic MOC for target prison-aztecbarcodetest
+[40/122] Building CXX object tests/CMakeFiles/prison-test.dir/prison-test_autogen/mocs_compilation.cpp.o
+[41/122] Automatic RCC for aztec/aztec.qrc
+[42/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/prison-aztecbarcodetest_autogen/mocs_compilation.cpp.o
+[43/122] Automatic MOC for target prison-code128barcodetest
+[44/122] Automatic RCC for code128/code128.qrc
+[45/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/prison-aztecbarcodetest_autogen/ZX7QRBVEBI/qrc_aztec.cpp.o
+[46/122] Automatic MOC for target prisonscannerquickplugin
+[47/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/prison-code128barcodetest_autogen/mocs_compilation.cpp.o
+[48/122] Running AUTOMOC file extraction for target prisonscannerquickplugin
+[49/122] Running moc --collect-json for target prisonscannerquickplugin
+[50/122] Running rcc for resource qmake_org_kde_prison_scanner
+[51/122] Automatic MOC for target prison-datamatrixtest
 [52/122] Automatic RCC for datamatrix/datamatrix.qrc
-[53/122] Building CXX object tests/CMakeFiles/prison-test.dir/prison-test_autogen/mocs_compilation.cpp.o
-[54/122] Automatic QML type registration for target prisonquickplugin
-[55/122] Building CXX object autotests/CMakeFiles/prison-datamatrixtest.dir/prison-datamatrixtest_autogen/mocs_compilation.cpp.o
-[56/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/prisonquickplugin_autogen/mocs_compilation.cpp.o
-[57/122] Automatic MOC for target prison-qrtest
-[58/122] Automatic MOC for target prison-aztecbarcodetest
+[53/122] Automatic MOC for target prisonquickplugin
+[54/122] Automatic MOC for target prison-reedsolomontest
+[55/122] Automatic MOC for target prison-qrtest
+[56/122] Running AUTOMOC file extraction for target prisonquickplugin
+[57/122] Running rcc for resource qmake_org_kde_prison
+[58/122] Running moc --collect-json for target prisonquickplugin
 [59/122] Automatic RCC for qr/qr.qrc
-[60/122] Automatic MOC for target prisonscannerquickplugin
-[61/122] Automatic RCC for aztec/aztec.qrc
-[62/122] Running AUTOMOC file extraction for target prisonscannerquickplugin
-[63/122] Running rcc for resource qmake_org_kde_prison_scanner
-[64/122] Running moc --collect-json for target prisonscannerquickplugin
-[65/122] Automatic MOC for target prison-mecardtest
-[66/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/.qt/rcc/qrc_qmake_org_kde_prison.cpp.o
-[67/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/prison-aztecbarcodetest_autogen/mocs_compilation.cpp.o
-[68/122] Automatic QML type registration for target prisonscannerquickplugin
-[69/122] Automatic MOC for target prison-imagescannertest
-[70/122] Automatic RCC for qr/qr.qrc
-[71/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/prison_debug.cpp.o
-[72/122] Building CXX object src/tools/CMakeFiles/prison-datamatrix.dir/prison-datamatrix.cpp.o
-[73/122] Building CXX object src/scanner-quick/CMakeFiles/prisonscannerquickplugin.dir/.qt/rcc/qrc_qmake_org_kde_prison_scanner.cpp.o
-[74/122] Building CXX object tests/CMakeFiles/prison-test.dir/prisontest.cpp.o
-[75/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/prisonquickplugin_org_kde_prisonPlugin.cpp.o
-[76/122] Building CXX object tests/CMakeFiles/prison-test.dir/barcodeexamplewidget.cpp.o
-[77/122] Building CXX object autotests/CMakeFiles/prison-reedsolomontest.dir/__/src/lib/bitvector.cpp.o
-[78/122] Building CXX object autotests/CMakeFiles/prison-reedsolomontest.dir/__/src/lib/reedsolomon.cpp.o
-[79/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/prison-aztecbarcodetest_autogen/ZX7QRBVEBI/qrc_aztec.cpp.o
-[80/122] Building CXX object autotests/CMakeFiles/prison-zxingutiltest.dir/__/src/lib/zxingutil.cpp.o
-[81/122] Building CXX object src/scanner-quick/CMakeFiles/prisonscannerquickplugin.dir/prisonscannerquickplugin_org_kde_prison_scannerPlugin.cpp.o
-[82/122] Building CXX object autotests/CMakeFiles/prison-qrtest.dir/prison-qrtest_autogen/mocs_compilation.cpp.o
-[83/122] Building CXX object autotests/CMakeFiles/prison-datamatrixtest.dir/prison-datamatrixtest_autogen/Y2WYM5XSLP/qrc_datamatrix.cpp.o
-[84/122] Building CXX object autotests/CMakeFiles/prison-qrtest.dir/prison-qrtest_autogen/M7PMRY5XDL/qrc_qr.cpp.o
-[85/122] Building CXX object autotests/CMakeFiles/prison-imagescannertest.dir/prison-imagescannertest_autogen/mocs_compilation.cpp.o
-[86/122] Building CXX object autotests/CMakeFiles/prison-imagescannertest.dir/prison-imagescannertest_autogen/M7PMRY5XDL/qrc_qr.cpp.o
-[87/122] Building CXX object autotests/CMakeFiles/prison-mecardtest.dir/prison-mecardtest_autogen/mocs_compilation.cpp.o
-[88/122] Building CXX object autotests/CMakeFiles/prison-zxingutiltest.dir/zxingutiltest.cpp.o
-[89/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/code128barcode.cpp.o
-[90/122] Linking CXX executable bin/prison-datamatrix
-[91/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/bitvector.cpp.o
-[92/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/abstractbarcode_p.cpp.o
-[93/122] Building CXX object autotests/CMakeFiles/prison-datamatrixtest.dir/datamatrixtest.cpp.o
-[94/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/barcodeutil.cpp.o
-[95/122] Building CXX object src/scanner-quick/CMakeFiles/prisonscannerquickplugin.dir/prisonscannerquickplugin_autogen/mocs_compilation.cpp.o
-[96/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/aztecbarcode.cpp.o
-[97/122] Linking CXX executable bin/prison-zxingutiltest
-[98/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/barcodequickitem.cpp.o
-[99/122] Linking CXX executable bin/prison-datamatrixtest
-[100/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/code128barcodetest.cpp.o
-[101/122] Building CXX object autotests/CMakeFiles/prison-reedsolomontest.dir/reedsolomontest.cpp.o
-[102/122] Linking CXX executable bin/prison-code128barcodetest
-[103/122] Linking CXX executable bin/prison-reedsolomontest
-[104/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/prisonquickplugin_qmltyperegistrations.cpp.o
-[105/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/barcodeutil.cpp.o
-[106/122] Building CXX object src/scanner-quick/CMakeFiles/prisonscannerquickplugin.dir/prisonscannerquickplugin_qmltyperegistrations.cpp.o
-[107/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/prison_debug.cpp.o
-[108/122] Linking CXX shared module bin/org/kde/prison/libprisonquickplugin.so
-[109/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/bitvector.cpp.o
-[110/122] Linking CXX shared module bin/org/kde/prison/scanner/libprisonscannerquickplugin.so
-[111/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/abstractbarcode_p.cpp.o
-[112/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/reedsolomon.cpp.o
-[113/122] Building CXX object tests/CMakeFiles/prison-test.dir/main.cpp.o
-[114/122] Linking CXX executable bin/prison-test
-[115/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/aztecbarcodetest.cpp.o
-[116/122] Linking CXX executable bin/prison-aztecbarcodetest
-[117/122] Building CXX object autotests/CMakeFiles/prison-mecardtest.dir/mecardtest.cpp.o
-[118/122] Building CXX object autotests/CMakeFiles/prison-qrtest.dir/qrtest.cpp.o
-[119/122] Linking CXX executable bin/prison-mecardtest
-[120/122] Linking CXX executable bin/prison-qrtest
+[60/122] Automatic QML type registration for target prisonscannerquickplugin
+[61/122] Automatic MOC for target prison-zxingutiltest
+[62/122] Automatic MOC for target prison-mecardtest
+[63/122] Automatic QML type registration for target prisonquickplugin
+[64/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/prisonquickplugin_autogen/mocs_compilation.cpp.o
+[65/122] Automatic MOC for target prison-imagescannertest
+[66/122] Automatic RCC for qr/qr.qrc
+[67/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/reedsolomon.cpp.o
+[68/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/.qt/rcc/qrc_qmake_org_kde_prison.cpp.o
+[69/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/bitvector.cpp.o
+[70/122] Building CXX object src/scanner-quick/CMakeFiles/prisonscannerquickplugin.dir/.qt/rcc/qrc_qmake_org_kde_prison_scanner.cpp.o
+[71/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/prison-code128barcodetest_autogen/XJA2T35LKC/qrc_code128.cpp.o
+[72/122] Building CXX object autotests/CMakeFiles/prison-datamatrixtest.dir/prison-datamatrixtest_autogen/mocs_compilation.cpp.o
+[73/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/abstractbarcode_p.cpp.o
+[74/122] Building CXX object autotests/CMakeFiles/prison-datamatrixtest.dir/prison-datamatrixtest_autogen/Y2WYM5XSLP/qrc_datamatrix.cpp.o
+[75/122] Building CXX object autotests/CMakeFiles/prison-qrtest.dir/prison-qrtest_autogen/mocs_compilation.cpp.o
+[76/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/abstractbarcode_p.cpp.o
+[77/122] Building CXX object autotests/CMakeFiles/prison-qrtest.dir/prison-qrtest_autogen/M7PMRY5XDL/qrc_qr.cpp.o
+[78/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/bitvector.cpp.o
+[79/122] Building CXX object autotests/CMakeFiles/prison-imagescannertest.dir/prison-imagescannertest_autogen/mocs_compilation.cpp.o
+[80/122] Building CXX object autotests/CMakeFiles/prison-imagescannertest.dir/prison-imagescannertest_autogen/M7PMRY5XDL/qrc_qr.cpp.o
+[81/122] Building CXX object autotests/CMakeFiles/prison-reedsolomontest.dir/prison-reedsolomontest_autogen/mocs_compilation.cpp.o
+[82/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/prison_debug.cpp.o
+[83/122] Building CXX object tests/CMakeFiles/prison-test.dir/barcodeexamplewidget.cpp.o
+[84/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/barcodeutil.cpp.o
+[85/122] Building CXX object autotests/CMakeFiles/prison-zxingutiltest.dir/prison-zxingutiltest_autogen/mocs_compilation.cpp.o
+[86/122] Building CXX object src/scanner-quick/CMakeFiles/prisonscannerquickplugin.dir/prisonscannerquickplugin_autogen/mocs_compilation.cpp.o
+[87/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/prison_debug.cpp.o
+[88/122] Building CXX object autotests/CMakeFiles/prison-mecardtest.dir/prison-mecardtest_autogen/mocs_compilation.cpp.o
+[89/122] Building CXX object src/tools/CMakeFiles/prison-datamatrix.dir/prison-datamatrix.cpp.o
+[90/122] Building CXX object tests/CMakeFiles/prison-test.dir/prisontest.cpp.o
+[91/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/__/src/lib/aztecbarcode.cpp.o
+[92/122] Building CXX object tests/CMakeFiles/prison-test.dir/main.cpp.o
+[93/122] Linking CXX executable bin/prison-datamatrix
+[94/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/prisonquickplugin_org_kde_prisonPlugin.cpp.o
+[95/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/prisonquickplugin_qmltyperegistrations.cpp.o
+[96/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/barcodeutil.cpp.o
+[97/122] Building CXX object src/scanner-quick/CMakeFiles/prisonscannerquickplugin.dir/prisonscannerquickplugin_org_kde_prison_scannerPlugin.cpp.o
+[98/122] Linking CXX executable bin/prison-test
+[99/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/code128barcodetest.cpp.o
+[100/122] Building CXX object autotests/CMakeFiles/prison-aztecbarcodetest.dir/aztecbarcodetest.cpp.o
+[101/122] Building CXX object autotests/CMakeFiles/prison-code128barcodetest.dir/__/src/lib/code128barcode.cpp.o
+[102/122] Linking CXX executable bin/prison-aztecbarcodetest
+[103/122] Linking CXX executable bin/prison-code128barcodetest
+[104/122] Building CXX object src/scanner-quick/CMakeFiles/prisonscannerquickplugin.dir/prisonscannerquickplugin_qmltyperegistrations.cpp.o
+[105/122] Linking CXX shared module bin/org/kde/prison/scanner/libprisonscannerquickplugin.so
+[106/122] Building CXX object autotests/CMakeFiles/prison-reedsolomontest.dir/__/src/lib/reedsolomon.cpp.o
+[107/122] Building CXX object autotests/CMakeFiles/prison-reedsolomontest.dir/__/src/lib/bitvector.cpp.o
+[108/122] Building CXX object autotests/CMakeFiles/prison-datamatrixtest.dir/datamatrixtest.cpp.o
+[109/122] Linking CXX executable bin/prison-datamatrixtest
+[110/122] Building CXX object autotests/CMakeFiles/prison-zxingutiltest.dir/zxingutiltest.cpp.o
+[111/122] Building CXX object src/quick/CMakeFiles/prisonquickplugin.dir/barcodequickitem.cpp.o
+[112/122] Linking CXX shared module bin/org/kde/prison/libprisonquickplugin.so
+[113/122] Building CXX object autotests/CMakeFiles/prison-reedsolomontest.dir/reedsolomontest.cpp.o
+[114/122] Linking CXX executable bin/prison-reedsolomontest
+[115/122] Building CXX object autotests/CMakeFiles/prison-zxingutiltest.dir/__/src/lib/zxingutil.cpp.o
+[116/122] Linking CXX executable bin/prison-zxingutiltest
+[117/122] Building CXX object autotests/CMakeFiles/prison-qrtest.dir/qrtest.cpp.o
+[118/122] Building CXX object autotests/CMakeFiles/prison-mecardtest.dir/mecardtest.cpp.o
+[119/122] Linking CXX executable bin/prison-qrtest
+[120/122] Linking CXX executable bin/prison-mecardtest
 [121/122] Building CXX object autotests/CMakeFiles/prison-imagescannertest.dir/imagescannertest.cpp.o
 [122/122] Linking CXX executable bin/prison-imagescannertest
 -- Install configuration: "RelWithDebInfo"
@@ -714,7 +714,7 @@ prison.dep
 +===============================================================================================+
 
 Pre-installing package prison-6.14.0-x86_64-1_rtz...
-Removing package: prison-6.14.0-x86_64-1_rtz-upgraded-2025-05-21,13:31:41
+Removing package: prison-6.14.0-x86_64-1_rtz-upgraded-2025-05-28,17:57:41
 Installing package prison-6.14.0-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # prison (API)
