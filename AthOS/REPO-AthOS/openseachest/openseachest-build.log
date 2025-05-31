@@ -1,717 +1,804 @@
-Starting build process...
+[32mStarting build process...[0m
 Detected architecture: x86_64
 No required dependencies specified.
 No optional dependencies found.
 Downloading source code tar.xz file
---2025-05-15 02:14:28--  https://github.com/Seagate/openSeaChest/releases/download/v24.08.1/SourceCode_With_Submodules.tar.xz
-Resolving github.com (github.com)... 140.82.121.3
-Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+--2025-05-31 10:27:49--  https://github.com/Seagate/openSeaChest/releases/download/v25.05/SourceCode_With_Submodules.tar.xz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/110262805/a591621f-444b-47de-95a5-e00c646b4f90?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250514%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250514T231327Z&X-Amz-Expires=300&X-Amz-Signature=647f54f98224c2fa6d51804a6d6bb649f14d345ba2ac8f8a3ef50786e366a177&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DSourceCode_With_Submodules.tar.xz&response-content-type=application%2Foctet-stream [following]
---2025-05-15 02:14:29--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/110262805/a591621f-444b-47de-95a5-e00c646b4f90?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250514%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250514T231327Z&X-Amz-Expires=300&X-Amz-Signature=647f54f98224c2fa6d51804a6d6bb649f14d345ba2ac8f8a3ef50786e366a177&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DSourceCode_With_Submodules.tar.xz&response-content-type=application%2Foctet-stream
-Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.110.133, ...
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/110262805/b2c866ab-9904-4786-82b6-99a9a3587142?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250531%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250531T072644Z&X-Amz-Expires=300&X-Amz-Signature=07324c7ba81a02eb9cf542a6a4b0513d21a76918094c1eb1e9ed02d8f06ea13d&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DSourceCode_With_Submodules.tar.xz&response-content-type=application%2Foctet-stream [following]
+--2025-05-31 10:27:50--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/110262805/b2c866ab-9904-4786-82b6-99a9a3587142?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250531%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250531T072644Z&X-Amz-Expires=300&X-Amz-Signature=07324c7ba81a02eb9cf542a6a4b0513d21a76918094c1eb1e9ed02d8f06ea13d&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DSourceCode_With_Submodules.tar.xz&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
 Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 1309216 (1.2M) [application/octet-stream]
-Saving to: ‘openSeaChest-v24.08.1-24.08.1.tar.xz’
+Length: 1494280 (1.4M) [application/octet-stream]
+Saving to: ‘openSeaChest-v25.05-25.05.tar.xz’
 
-     0K .......... .......... .......... .......... ..........  3%  796K 2s
-    50K .......... .......... .......... .......... ..........  7%  803K 1s
-   100K .......... .......... .......... .......... .......... 11% 4.09M 1s
-   150K .......... .......... .......... .......... .......... 15% 4.32M 1s
-   200K .......... .......... .......... .......... .......... 19% 1.55M 1s
-   250K .......... .......... .......... .......... .......... 23% 5.04M 1s
-   300K .......... .......... .......... .......... .......... 27% 4.05M 1s
-   350K .......... .......... .......... .......... .......... 31% 5.61M 0s
-   400K .......... .......... .......... .......... .......... 35% 2.46M 0s
-   450K .......... .......... .......... .......... .......... 39% 6.51M 0s
-   500K .......... .......... .......... .......... .......... 43% 5.04M 0s
-   550K .......... .......... .......... .......... .......... 46% 6.53M 0s
-   600K .......... .......... .......... .......... .......... 50%  662K 0s
-   650K .......... .......... .......... .......... .......... 54% 10.9M 0s
-   700K .......... .......... .......... .......... .......... 58% 10.2M 0s
-   750K .......... .......... .......... .......... .......... 62% 9.49M 0s
-   800K .......... .......... .......... .......... .......... 66% 10.8M 0s
-   850K .......... .......... .......... .......... .......... 70% 8.74M 0s
-   900K .......... .......... .......... .......... .......... 74% 14.2M 0s
-   950K .......... .......... .......... .......... .......... 78%  368M 0s
-  1000K .......... .......... .......... .......... .......... 82%  444M 0s
-  1050K .......... .......... .......... .......... .......... 86%  450M 0s
-  1100K .......... .......... .......... .......... .......... 89% 2.36M 0s
-  1150K .......... .......... .......... .......... .......... 93% 10.1M 0s
-  1200K .......... .......... .......... .......... .......... 97% 10.9M 0s
-  1250K .......... .......... ........                        100% 11.0M=0.4s
+     0K .......... .......... .......... .......... ..........  3%  733K 2s
+    50K .......... .......... .......... .......... ..........  6%  936K 2s
+   100K .......... .......... .......... .......... .......... 10% 3.74M 1s
+   150K .......... .......... .......... .......... .......... 13% 1.29M 1s
+   200K .......... .......... .......... .......... .......... 17% 5.01M 1s
+   250K .......... .......... .......... .......... .......... 20% 6.51M 1s
+   300K .......... .......... .......... .......... .......... 23% 6.50M 1s
+   350K .......... .......... .......... .......... .......... 27% 5.08M 1s
+   400K .......... .......... .......... .......... .......... 30% 1.91M 1s
+   450K .......... .......... .......... .......... .......... 34% 6.58M 0s
+   500K .......... .......... .......... .......... .......... 37% 6.48M 0s
+   550K .......... .......... .......... .......... .......... 41% 5.01M 0s
+   600K .......... .......... .......... .......... .......... 44%  242K 1s
+   650K .......... .......... .......... .......... .......... 47% 40.1M 1s
+   700K .......... .......... .......... .......... .......... 51%  115M 0s
+   750K .......... .......... .......... .......... .......... 54% 97.8M 0s
+   800K .......... .......... .......... .......... .......... 58%  117M 0s
+   850K .......... .......... .......... .......... .......... 61%  123M 0s
+   900K .......... .......... .......... .......... .......... 65%  137M 0s
+   950K .......... .......... .......... .......... .......... 68%  145M 0s
+  1000K .......... .......... .......... .......... .......... 71%  137M 0s
+  1050K .......... .......... .......... .......... .......... 75%  138M 0s
+  1100K .......... .......... .......... .......... .......... 78%  163M 0s
+  1150K .......... .......... .......... .......... .......... 82%  120M 0s
+  1200K .......... .......... .......... .......... .......... 85%  152M 0s
+  1250K .......... .......... .......... .......... .......... 89%  157M 0s
+  1300K .......... .......... .......... .......... .......... 92%  162M 0s
+  1350K .......... .......... .......... .......... .......... 95%  177M 0s
+  1400K .......... .......... .......... .......... .......... 99%  179M 0s
+  1450K .........                                             100%  111M=0.5s
 
-2025-05-15 02:14:30 (3.19 MB/s) - ‘openSeaChest-v24.08.1-24.08.1.tar.xz’ saved [1309216/1309216]
+2025-05-31 10:27:51 (3.03 MB/s) - ‘openSeaChest-v25.05-25.05.tar.xz’ saved [1494280/1494280]
 
-Found file: openSeaChest-v24.08.1-24.08.1.tar.xz
+Found file: openSeaChest-v25.05-25.05.tar.xz
 No checksum provided. Skipping checksum verification and proceeding...
 Creating working directories and exporting source code in...
-openSeaChest-v24.08.1/.gitattributes
-openSeaChest-v24.08.1/.gitignore
-openSeaChest-v24.08.1/.gitmodules
-openSeaChest-v24.08.1/BUILDING.md
-openSeaChest-v24.08.1/BUILDING_OLD.md
-openSeaChest-v24.08.1/CODE_OF_CONDUCT.md
-openSeaChest-v24.08.1/CONTRIBUTING.md
-openSeaChest-v24.08.1/LICENSE.md
-openSeaChest-v24.08.1/Make/UEFI/copy_files.sh
-openSeaChest-v24.08.1/Make/UEFI/openSeaChestPkg.dec
-openSeaChest-v24.08.1/Make/UEFI/openSeaChestPkg.dsc
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Basics.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Configure.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Erase.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Firmware.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Format.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_GenericTests.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Info.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Logs.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_NVMe.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_PowerControl.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_SMART.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Sample.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_Security.inf
-openSeaChest-v24.08.1/Make/UEFI/openSeaChest_ZBD.inf
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest.sln
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Format.c/OpenSeaChest_Format.c.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Format.c/OpenSeaChest_Format.c.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_GenericTests.c/OpenSeaChest_GenericTests.c.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_GenericTests.c/OpenSeaChest_GenericTests.c.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_PowerControl.c/OpenSeaChest_PowerControl.c.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_PowerControl.c/OpenSeaChest_PowerControl.c.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
-openSeaChest-v24.08.1/Make/VS.2013/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest.sln
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
-openSeaChest-v24.08.1/Make/VS.2015/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest.sln
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
-openSeaChest-v24.08.1/Make/VS.2017/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest.sln
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Raw/OpenSeaChest_Raw.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Raw/OpenSeaChest_Raw.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
-openSeaChest-v24.08.1/Make/VS.2019/openSeaChest_Defect/openSeaChest_Defect.vcxproj
-openSeaChest-v24.08.1/Make/VS.2019/openSeaChest_Defect/openSeaChest_Defect.vcxproj.filters
-openSeaChest-v24.08.1/Make/gcc/Makefile
-openSeaChest-v24.08.1/Make/gcc/build_recipes/rpm/OpenSeaChest.spec
-openSeaChest-v24.08.1/Make/gcc/build_recipes/rpm/mkrpm.sh
-openSeaChest-v24.08.1/Make/gccWin/Makefile.gccWin
-openSeaChest-v24.08.1/Make/gccWin/rename_seachest.sh
-openSeaChest-v24.08.1/Make/prj/openSeaChest.vpj
-openSeaChest-v24.08.1/Make/prj/openSeaChest.vpw
-openSeaChest-v24.08.1/Make/vmware/Makefile
-openSeaChest-v24.08.1/Make/vmware/Makefile.openSeaChest_firmware
-openSeaChest-v24.08.1/README.md
-openSeaChest-v24.08.1/SECURITY.md
-openSeaChest-v24.08.1/cirrus_ci_post_freebsd_release.sh
-openSeaChest-v24.08.1/commit_template.txt
-openSeaChest-v24.08.1/docs/Feature_Docs/About_ATA_Security_Frozen.txt
-openSeaChest-v24.08.1/docs/Feature_Docs/About_Bad_LBAs.txt
-openSeaChest-v24.08.1/docs/Feature_Docs/About_Fast_Format.txt
-openSeaChest-v24.08.1/docs/Feature_Docs/About_Format_Unit.txt
-openSeaChest-v24.08.1/docs/Feature_Docs/About_PowerChoice.txt
-openSeaChest-v24.08.1/docs/Feature_Docs/Enabling_TCG_Commands_In_Linux.txt
-openSeaChest-v24.08.1/docs/Feature_Docs/Interpretting_Head_Health.txt
-openSeaChest-v24.08.1/docs/Feature_Docs/Windows_Firmware_Download_Restrictions.txt
-openSeaChest-v24.08.1/docs/General_Docs/About_openSeaChest_Tools.txt
-openSeaChest-v24.08.1/docs/General_Docs/General_Usage_Hints_Linux.txt
-openSeaChest-v24.08.1/docs/General_Docs/General_Usage_Hints_Windows.txt
-openSeaChest-v24.08.1/docs/General_Docs/Open_Source_Licenses.txt
-openSeaChest-v24.08.1/docs/General_Docs/Sample_Output.txt
-openSeaChest-v24.08.1/docs/General_Docs/Tool_Usage_Hints.txt
-openSeaChest-v24.08.1/docs/generate_openSeaChest_docs.sh
-openSeaChest-v24.08.1/docs/generate_openSeaChest_man.sh
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Basics.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Configure.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Defect.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Erase.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Firmware.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Format.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_GenericTests.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Info.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Logs.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_NVMe.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_PassthroughTest.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_PowerControl.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Raw.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Reservations.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_SMART.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Security.8
-openSeaChest-v24.08.1/docs/man/man8/openSeaChest_ZBD.8
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Basics_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Basics_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Configure_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Configure_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Defect_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Defect_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Erase_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Erase_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Firmware_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Firmware_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Format_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Format_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_GenericTests_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_GenericTests_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Info_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Info_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Logs_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Logs_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_NVMe_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_NVMe_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_PassthroughTest_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_PassthroughTest_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_PowerControl_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_PowerControl_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Raw_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Raw_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Reservations_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Reservations_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_SMART_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_SMART_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Security_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_Security_Version_History.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_ZBD_About.txt
-openSeaChest-v24.08.1/docs/openSeaChest/openSeaChest_ZBD_Version_History.txt
-openSeaChest-v24.08.1/example/OpenSeaChest_FARM_Log_Pull-Parser.sh
-openSeaChest-v24.08.1/example/OpenSeaChest_LogParser_Readme.txt
-openSeaChest-v24.08.1/example/OpenSeaChest_Logs_Readme.txt
-openSeaChest-v24.08.1/example/fromPipe.csv
-openSeaChest-v24.08.1/example/fromPipe.json
-openSeaChest-v24.08.1/example/fromPipe.prom
-openSeaChest-v24.08.1/example/fromPipe.txt
-openSeaChest-v24.08.1/include/EULA.h
-openSeaChest-v24.08.1/include/openseachest_util_options.h
-openSeaChest-v24.08.1/meson.build
-openSeaChest-v24.08.1/meson_crosscompile/Windows-Clang.txt
-openSeaChest-v24.08.1/meson_crosscompile/aarch64-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/armv5l-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/armv5lhf-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/armv6-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/armv6hf-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/armv7l-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/armv7r-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/i486-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/i686-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/install-muslcc.sh
-openSeaChest-v24.08.1/meson_crosscompile/mips-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/mips64-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/mips64el-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/mipsel-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/msvc_arm64.txt
-openSeaChest-v24.08.1/meson_crosscompile/powerpc-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/powerpc64-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/powerpc64le-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/powerpcle-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/riscv64-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/s390x-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_aarch64.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_armhf.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_mips.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_mips64.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_mips64el.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_mipsel.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_mipsisa32r6.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_mipsisa32r6el.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_mipsisa64r6.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_mipsisa64r6el.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_ppc.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_ppc64.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_ppc64le.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_riscv64.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_s390x.txt
-openSeaChest-v24.08.1/meson_crosscompile/ubuntu_sparc64.txt
-openSeaChest-v24.08.1/meson_crosscompile/x86_64-linux-musl-cross.txt
-openSeaChest-v24.08.1/meson_options.txt
-openSeaChest-v24.08.1/nfpm.yaml
-openSeaChest-v24.08.1/openSeaChest.manifest
-openSeaChest-v24.08.1/openSeaChest.rc
-openSeaChest-v24.08.1/src/EULA.c
-openSeaChest-v24.08.1/src/openseachest_util_options.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Basics.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Configure.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Defect.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Erase.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Firmware.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Format.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_GenericTests.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Info.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Logs.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_NVMe.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_PassthroughTest.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_PowerControl.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Raw.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Reservations.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_SMART.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Sample.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_Security.c
-openSeaChest-v24.08.1/utils/C/openSeaChest/openSeaChest_ZBD.c
-openSeaChest-v24.08.1/whitesource.config
-openSeaChest-v24.08.1/subprojects/opensea-common/.gitattributes
-openSeaChest-v24.08.1/subprojects/opensea-common/.gitignore
-openSeaChest-v24.08.1/subprojects/opensea-common/BUILDING.md
-openSeaChest-v24.08.1/subprojects/opensea-common/CODE_OF_CONDUCT.md
-openSeaChest-v24.08.1/subprojects/opensea-common/CONTRIBUTING.md
-openSeaChest-v24.08.1/subprojects/opensea-common/LICENSE.md
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/UEFI/copy_files.sh
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/UEFI/opensea-common.dec
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/UEFI/opensea-common.dsc
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/UEFI/opensea-common.inf
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2013/opensea-common/opensea-common.sln
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2013/opensea-common/opensea-common/opensea-common.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2013/opensea-common/opensea-common/opensea-common.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2015/opensea-common/opensea-common.sln
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2015/opensea-common/opensea-common/opensea-common.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2015/opensea-common/opensea-common/opensea-common.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2017/opensea-common/opensea-common.sln
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2017/opensea-common/opensea-common/opensea-common.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2017/opensea-common/opensea-common/opensea-common.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2017/opensea-common/opensea-common/opensea-common.vpj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2019/opensea-common/opensea-common.sln
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2019/opensea-common/opensea-common/opensea-common.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2019/opensea-common/opensea-common/opensea-common.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2019/opensea-common/opensea-common/opensea-common.vpj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2022/opensea-common/opensea-common.sln
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2022/opensea-common/opensea-common/opensea-common.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2022/opensea-common/opensea-common/opensea-common.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/VS.2022/opensea-common/opensea-common/opensea-common.vpj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/gcc/Makefile
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/gccWin/Makefile.gccWin
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/prj/opensea-common.vpj
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/prj/opensea-common.vpw
-openSeaChest-v24.08.1/subprojects/opensea-common/Make/vmware/Makefile
-openSeaChest-v24.08.1/subprojects/opensea-common/README.md
-openSeaChest-v24.08.1/subprojects/opensea-common/SECURITY.md
-openSeaChest-v24.08.1/subprojects/opensea-common/commit_template.txt
-openSeaChest-v24.08.1/subprojects/opensea-common/include/bit_manip.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/code_attributes.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/common_types.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/env_detect.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/error_translation.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/io_utils.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/math_utils.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/memory_safety.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/opensea_common_version.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/pattern_utils.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/precision_timer.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/predef_env_detect.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/prng.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/secure_file.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/secured_env_vars.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/sleep.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/string_utils.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/time_utils.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/type_conversion.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/unit_conversion.h
-openSeaChest-v24.08.1/subprojects/opensea-common/include/windows_version_detect.h
-openSeaChest-v24.08.1/subprojects/opensea-common/meson.build
-openSeaChest-v24.08.1/subprojects/opensea-common/meson_options.txt
-openSeaChest-v24.08.1/subprojects/opensea-common/opensea-common-doxygen-generator
-openSeaChest-v24.08.1/subprojects/opensea-common/src/bit_manip.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/env_detect.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/error_translation.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/io_utils.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/math_utils.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/memory_safety.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/pattern_utils.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/posix_env_detect.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/posix_secure_file.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/precision_timer.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/prng.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/secure_file.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/secured_env_vars.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/sleep.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/string_utils.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/time_utils.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/type_conversion.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/uefi_env_detect.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/unit_conversion.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/validate_format.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/windows_env_detect.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/windows_secure_file.c
-openSeaChest-v24.08.1/subprojects/opensea-common/src/windows_version_detect.c
-openSeaChest-v24.08.1/subprojects/opensea-common/update-version.sh
-openSeaChest-v24.08.1/subprojects/opensea-operations/.gitattributes
-openSeaChest-v24.08.1/subprojects/opensea-operations/.gitignore
-openSeaChest-v24.08.1/subprojects/opensea-operations/BUILDING.md
-openSeaChest-v24.08.1/subprojects/opensea-operations/CODE_OF_CONDUCT.md
-openSeaChest-v24.08.1/subprojects/opensea-operations/CONTRIBUTING.md
-openSeaChest-v24.08.1/subprojects/opensea-operations/LICENSE.md
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/UEFI/copy_files.sh
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/UEFI/opensea-operations.dec
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/UEFI/opensea-operations.dsc
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/UEFI/opensea-operations.inf
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations.sln
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations/opensea-operations.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations.sln
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations/opensea-operations.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations.sln
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations/opensea-operations.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations.sln
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations/opensea-operations.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/gcc/Makefile
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/gccWin/Makefile.gccWin
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/prj/opensea-operations.vpj
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/prj/opensea-operations.vpw
-openSeaChest-v24.08.1/subprojects/opensea-operations/Make/vmware/Makefile
-openSeaChest-v24.08.1/subprojects/opensea-operations/README.md
-openSeaChest-v24.08.1/subprojects/opensea-operations/SECURITY.md
-openSeaChest-v24.08.1/subprojects/opensea-operations/commit_template.txt
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/ata_Security.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/ata_device_config_overlay.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/buffer_test.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/defect.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/depopulate.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/device_statistics.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/drive_info.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/dst.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/farm_log.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/firmware_download.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/format.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/generic_tests.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/host_erase.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/logs.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/nvme_operations.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/opensea_operation_version.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/operations.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/operations_Common.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/partition_info.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/power_control.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/reservations.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/sanitize.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/sas_phy.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/sata_phy.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/seagate_operations.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/sector_repair.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/set_max_lba.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/smart.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/trim_unmap.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/writesame.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/include/zoned_operations.h
-openSeaChest-v24.08.1/subprojects/opensea-operations/meson.build
-openSeaChest-v24.08.1/subprojects/opensea-operations/opensea-operations-doxygen-generator
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/ata_Security.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/ata_device_config_overlay.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/buffer_test.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/defect.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/depopulate.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/device_statistics.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/drive_info.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/dst.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/farm_log.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/firmware_download.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/format.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/generic_tests.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/host_erase.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/logs.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/nvme_operations.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/operations.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/partition_info.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/power_control.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/reservations.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/sanitize.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/sas_phy.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/sata_phy.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/seagate_operations.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/sector_repair.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/set_max_lba.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/smart.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/trim_unmap.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/writesame.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/src/zoned_operations.c
-openSeaChest-v24.08.1/subprojects/opensea-operations/update-version.sh
-openSeaChest-v24.08.1/subprojects/opensea-transport/.gitattributes
-openSeaChest-v24.08.1/subprojects/opensea-transport/.gitignore
-openSeaChest-v24.08.1/subprojects/opensea-transport/BUILDING.md
-openSeaChest-v24.08.1/subprojects/opensea-transport/CODE_OF_CONDUCT.md
-openSeaChest-v24.08.1/subprojects/opensea-transport/CONTRIBUTING.md
-openSeaChest-v24.08.1/subprojects/opensea-transport/LICENSE.md
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/UEFI/copy_files.sh
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/UEFI/opensea-transport.dec
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/UEFI/opensea-transport.dsc
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/UEFI/opensea-transport.inf
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport.sln
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport/opensea-transport.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport.sln
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport/opensea-transport.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport.sln
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport/opensea-transport.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport.sln
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport/opensea-transport.vcxproj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/gcc/Makefile
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/gccWin/Makefile.gccWin
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/prj/opensea-transport.vpj
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/prj/opensea-transport.vpw
-openSeaChest-v24.08.1/subprojects/opensea-transport/Make/vmware/Makefile
-openSeaChest-v24.08.1/subprojects/opensea-transport/README.md
-openSeaChest-v24.08.1/subprojects/opensea-transport/SECURITY.md
-openSeaChest-v24.08.1/subprojects/opensea-transport/commit_template.txt
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/aix_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/asmedia_nvme_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/ata_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/ata_helper_func.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/cam_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/ciss_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/ciss_helper_func.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/cmds.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/common_public.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/csmi_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/csmi_helper_func.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/csmi_legacy_pt_cdb_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/cypress_legacy_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/README.md
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/ciss/freebsd/NOTE
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/ciss/freebsd/cissio.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/ciss/freebsd/smartpqi_ioctl.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/ciss/solaris/NOTE
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/ciss/solaris/cpqary3.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/ciss/solaris/cpqary3_ciss.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/ciss/solaris/cpqary3_ioctl.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/external/csmi/csmisas.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/intel_rst_defs.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/intel_rst_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/jmicron_nvme_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/nec_legacy_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/nvme_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/nvme_helper_func.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/of_nvmeIoctl.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/of_nvme_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/of_nvme_helper_func.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/platform_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/prolific_legacy_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/psp_legacy_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/raid_scan_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/sat_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/sat_helper_func.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/sata_helper_func.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/sata_types.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/scsi_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/scsi_helper_func.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/sg_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/sntl_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/ti_legacy_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/uefi_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/usb_hacks.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/uscsi_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/vendor/seagate/seagate_ata_types.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/vendor/seagate/seagate_common_types.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/vendor/seagate/seagate_scsi_types.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/version.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/vm_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/vm_nvme.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/vm_nvme_drv_config.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/vm_nvme_lib.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/vm_nvme_mgmt.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/include/win_helper.h
-openSeaChest-v24.08.1/subprojects/opensea-transport/meson.build
-openSeaChest-v24.08.1/subprojects/opensea-transport/meson_options.txt
-openSeaChest-v24.08.1/subprojects/opensea-transport/opensea-transport-doxygen-generator
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/aix_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/asmedia_nvme_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/ata_cmds.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/ata_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/ata_legacy_cmds.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/cam_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/ciss_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/cmds.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/common_public.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/csmi_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/csmi_legacy_pt_cdb_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/cypress_legacy_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/intel_rst_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/jmicron_nvme_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/nec_legacy_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/nvme_cmds.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/nvme_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/of_nvme_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/prolific_legacy_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/psp_legacy_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/raid_scan_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/sat_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/sata_helper_func.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/scsi_cmds.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/scsi_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/sg_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/sntl_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/ti_legacy_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/uefi_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/usb_hacks.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/uscsi_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/vm_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/vm_nvme_lib.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/vm_nvme_mgmt_common.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/src/win_helper.c
-openSeaChest-v24.08.1/subprojects/opensea-transport/update-version.sh
-openSeaChest-v24.08.1/subprojects/wingetopt/.gitattributes
-openSeaChest-v24.08.1/subprojects/wingetopt/.gitignore
-openSeaChest-v24.08.1/subprojects/wingetopt/CMakeLists.txt
-openSeaChest-v24.08.1/subprojects/wingetopt/GNUmakefile
-openSeaChest-v24.08.1/subprojects/wingetopt/LICENSE
-openSeaChest-v24.08.1/subprojects/wingetopt/README.md
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2013/Win_getopt.sln
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2013/Win_getopt.vcxproj
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2013/Win_getopt.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2015/Win_getopt.vcxproj
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2015/Win_getopt.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2015/wingetopt.sln
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2017/Win_getopt.vcxproj
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2017/Win_getopt.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2017/wingetopt.sln
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2019/Win_getopt.vcxproj
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2019/Win_getopt.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2019/wingetopt.sln
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2022/Win_getopt.vcxproj
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2022/Win_getopt.vcxproj.filters
-openSeaChest-v24.08.1/subprojects/wingetopt/VS.2022/wingetopt.sln
-openSeaChest-v24.08.1/subprojects/wingetopt/meson.build
-openSeaChest-v24.08.1/subprojects/wingetopt/src/getopt.c
-openSeaChest-v24.08.1/subprojects/wingetopt/src/getopt.h
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work
+openSeaChest-v25.05/.clang-format
+openSeaChest-v25.05/.clang-tidy
+openSeaChest-v25.05/.gitattributes
+openSeaChest-v25.05/.gitignore
+openSeaChest-v25.05/.gitmodules
+openSeaChest-v25.05/BUILDING.md
+openSeaChest-v25.05/BUILDING_OLD.md
+openSeaChest-v25.05/CODE_OF_CONDUCT.md
+openSeaChest-v25.05/CONTRIBUTING.md
+openSeaChest-v25.05/LICENSE.md
+openSeaChest-v25.05/Make/UEFI/copy_files.sh
+openSeaChest-v25.05/Make/UEFI/openSeaChestPkg.dec
+openSeaChest-v25.05/Make/UEFI/openSeaChestPkg.dsc
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Basics.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Configure.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Erase.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Firmware.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Format.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_GenericTests.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Info.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Logs.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_NVMe.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_PowerControl.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_SMART.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Sample.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_Security.inf
+openSeaChest-v25.05/Make/UEFI/openSeaChest_ZBD.inf
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest.sln
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Format.c/OpenSeaChest_Format.c.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Format.c/OpenSeaChest_Format.c.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_GenericTests.c/OpenSeaChest_GenericTests.c.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_GenericTests.c/OpenSeaChest_GenericTests.c.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_PowerControl.c/OpenSeaChest_PowerControl.c.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_PowerControl.c/OpenSeaChest_PowerControl.c.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
+openSeaChest-v25.05/Make/VS.2013/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest.sln
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
+openSeaChest-v25.05/Make/VS.2015/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest.sln
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
+openSeaChest-v25.05/Make/VS.2017/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest.sln
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Raw/OpenSeaChest_Raw.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Raw/OpenSeaChest_Raw.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
+openSeaChest-v25.05/Make/VS.2019/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2019/openSeaChest_Defect/openSeaChest_Defect.vcxproj
+openSeaChest-v25.05/Make/VS.2019/openSeaChest_Defect/openSeaChest_Defect.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest.sln
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Basics/OpenSeaChest_Basics.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Configure/OpenSeaChest_Configure.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Erase/OpenSeaChest_Erase.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Firmware/OpenSeaChest_Firmware.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Format/OpenSeaChest_Format.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_GenericTests/OpenSeaChest_GenericTests.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Info/OpenSeaChest_Info.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Logs/OpenSeaChest_Logs.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_NVMe/OpenSeaChest_NVMe.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_PassthroughTest/OpenSeaChest_PassthroughTest.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_PowerControl/OpenSeaChest_PowerControl.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Raw/OpenSeaChest_Raw.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Raw/OpenSeaChest_Raw.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Reservations/OpenSeaChest_Reservations.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_SMART/OpenSeaChest_SMART.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Sample/OpenSeaChest_Sample.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_Security/OpenSeaChest_Security.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj
+openSeaChest-v25.05/Make/VS.2022/OpenSeaChest_ZBD/OpenSeaChest_ZBD.vcxproj.filters
+openSeaChest-v25.05/Make/VS.2022/openSeaChest_Defect/openSeaChest_Defect.vcxproj
+openSeaChest-v25.05/Make/VS.2022/openSeaChest_Defect/openSeaChest_Defect.vcxproj.filters
+openSeaChest-v25.05/Make/gcc/Makefile
+openSeaChest-v25.05/Make/gcc/build_recipes/rpm/OpenSeaChest.spec
+openSeaChest-v25.05/Make/gcc/build_recipes/rpm/mkrpm.sh
+openSeaChest-v25.05/Make/gccWin/Makefile.gccWin
+openSeaChest-v25.05/Make/gccWin/rename_seachest.sh
+openSeaChest-v25.05/Make/prj/openSeaChest.vpj
+openSeaChest-v25.05/Make/prj/openSeaChest.vpw
+openSeaChest-v25.05/Make/vmware/Makefile
+openSeaChest-v25.05/Make/vmware/Makefile.openSeaChest_firmware
+openSeaChest-v25.05/README.md
+openSeaChest-v25.05/SECURITY.md
+openSeaChest-v25.05/cirrus_ci_post_freebsd_release.sh
+openSeaChest-v25.05/commit_template.txt
+openSeaChest-v25.05/docs/Feature_Docs/About_ATA_Security_Frozen.txt
+openSeaChest-v25.05/docs/Feature_Docs/About_Bad_LBAs.txt
+openSeaChest-v25.05/docs/Feature_Docs/About_Fast_Format.txt
+openSeaChest-v25.05/docs/Feature_Docs/About_Format_Unit.txt
+openSeaChest-v25.05/docs/Feature_Docs/About_PowerChoice.txt
+openSeaChest-v25.05/docs/Feature_Docs/Enabling_TCG_Commands_In_Linux.txt
+openSeaChest-v25.05/docs/Feature_Docs/Interpretting_Head_Health.txt
+openSeaChest-v25.05/docs/Feature_Docs/Windows_Firmware_Download_Restrictions.txt
+openSeaChest-v25.05/docs/General_Docs/About_openSeaChest_Tools.txt
+openSeaChest-v25.05/docs/General_Docs/General_Usage_Hints_Linux.txt
+openSeaChest-v25.05/docs/General_Docs/General_Usage_Hints_Windows.txt
+openSeaChest-v25.05/docs/General_Docs/Open_Source_Licenses.txt
+openSeaChest-v25.05/docs/General_Docs/Sample_Output.txt
+openSeaChest-v25.05/docs/General_Docs/Tool_Usage_Hints.txt
+openSeaChest-v25.05/docs/generate_openSeaChest_docs.sh
+openSeaChest-v25.05/docs/generate_openSeaChest_man.sh
+openSeaChest-v25.05/docs/man/man8/openSeaChest.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Basics.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Configure.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Defect.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Erase.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Firmware.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Format.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_GenericTests.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Info.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Logs.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_NVMe.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_PassthroughTest.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_PowerControl.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Raw.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Reservations.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_SMART.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_Security.8
+openSeaChest-v25.05/docs/man/man8/openSeaChest_ZBD.8
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Basics_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Basics_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Configure_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Configure_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Defect_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Defect_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Erase_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Erase_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Firmware_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Firmware_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Format_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Format_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_GenericTests_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_GenericTests_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Info_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Info_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Logs_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Logs_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_NVMe_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_NVMe_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_PassthroughTest_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_PassthroughTest_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_PowerControl_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_PowerControl_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Raw_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Raw_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Reservations_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Reservations_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_SMART_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_SMART_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Security_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_Security_Version_History.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_ZBD_About.txt
+openSeaChest-v25.05/docs/openSeaChest/openSeaChest_ZBD_Version_History.txt
+openSeaChest-v25.05/example/OpenSeaChest_FARM_Log_Pull-Parser.sh
+openSeaChest-v25.05/example/OpenSeaChest_LogParser_Readme.txt
+openSeaChest-v25.05/example/OpenSeaChest_Logs_Readme.txt
+openSeaChest-v25.05/example/fromPipe.csv
+openSeaChest-v25.05/example/fromPipe.json
+openSeaChest-v25.05/example/fromPipe.prom
+openSeaChest-v25.05/example/fromPipe.txt
+openSeaChest-v25.05/include/EULA.h
+openSeaChest-v25.05/include/openseachest_util_options.h
+openSeaChest-v25.05/meson.build
+openSeaChest-v25.05/meson_crosscompile/Windows-Clang.txt
+openSeaChest-v25.05/meson_crosscompile/aarch64-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/armv5l-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/armv5lhf-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/armv6-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/armv6hf-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/armv7l-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/armv7r-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/dockerfile
+openSeaChest-v25.05/meson_crosscompile/i486-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/i686-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/install-muslcc.sh
+openSeaChest-v25.05/meson_crosscompile/mips-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/mips64-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/mips64el-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/mipsel-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/msvc_arm64.txt
+openSeaChest-v25.05/meson_crosscompile/powerpc-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/powerpc64-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/powerpc64le-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/powerpcle-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/riscv64-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/s390x-linux-musl-cross.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_aarch64.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_armhf.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_mips.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_mips64.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_mips64el.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_mipsel.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_mipsisa32r6.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_mipsisa32r6el.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_mipsisa64r6.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_mipsisa64r6el.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_ppc.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_ppc64.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_ppc64le.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_riscv64.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_s390x.txt
+openSeaChest-v25.05/meson_crosscompile/ubuntu_sparc64.txt
+openSeaChest-v25.05/meson_crosscompile/x86_64-linux-musl-cross.txt
+openSeaChest-v25.05/meson_options.txt
+openSeaChest-v25.05/nfpm.yaml
+openSeaChest-v25.05/openSeaChest.manifest
+openSeaChest-v25.05/openSeaChest.rc
+openSeaChest-v25.05/src/EULA.c
+openSeaChest-v25.05/src/openseachest_util_options.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Basics.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Configure.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Defect.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Erase.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Firmware.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Format.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_GenericTests.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Info.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Logs.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_NVMe.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_PassthroughTest.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_PowerControl.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Raw.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Reservations.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_SMART.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Sample.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_Security.c
+openSeaChest-v25.05/utils/C/openSeaChest/openSeaChest_ZBD.c
+openSeaChest-v25.05/whitesource.config
+openSeaChest-v25.05/subprojects/opensea-common/.clang-format
+openSeaChest-v25.05/subprojects/opensea-common/.clang-tidy
+openSeaChest-v25.05/subprojects/opensea-common/.gitattributes
+openSeaChest-v25.05/subprojects/opensea-common/.gitignore
+openSeaChest-v25.05/subprojects/opensea-common/BUILDING.md
+openSeaChest-v25.05/subprojects/opensea-common/CODE_OF_CONDUCT.md
+openSeaChest-v25.05/subprojects/opensea-common/CONTRIBUTING.md
+openSeaChest-v25.05/subprojects/opensea-common/LICENSE.md
+openSeaChest-v25.05/subprojects/opensea-common/Make/UEFI/copy_files.sh
+openSeaChest-v25.05/subprojects/opensea-common/Make/UEFI/opensea-common.dec
+openSeaChest-v25.05/subprojects/opensea-common/Make/UEFI/opensea-common.dsc
+openSeaChest-v25.05/subprojects/opensea-common/Make/UEFI/opensea-common.inf
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2013/opensea-common/opensea-common.sln
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2013/opensea-common/opensea-common/opensea-common.vcxproj
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2013/opensea-common/opensea-common/opensea-common.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2015/opensea-common/opensea-common.sln
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2015/opensea-common/opensea-common/opensea-common.vcxproj
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2015/opensea-common/opensea-common/opensea-common.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2017/opensea-common/opensea-common.sln
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2017/opensea-common/opensea-common/opensea-common.vcxproj
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2017/opensea-common/opensea-common/opensea-common.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2017/opensea-common/opensea-common/opensea-common.vpj
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2019/opensea-common/opensea-common.sln
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2019/opensea-common/opensea-common/opensea-common.vcxproj
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2019/opensea-common/opensea-common/opensea-common.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2019/opensea-common/opensea-common/opensea-common.vpj
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2022/opensea-common/opensea-common.sln
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2022/opensea-common/opensea-common/opensea-common.vcxproj
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2022/opensea-common/opensea-common/opensea-common.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-common/Make/VS.2022/opensea-common/opensea-common/opensea-common.vpj
+openSeaChest-v25.05/subprojects/opensea-common/Make/gcc/Makefile
+openSeaChest-v25.05/subprojects/opensea-common/Make/gccWin/Makefile.gccWin
+openSeaChest-v25.05/subprojects/opensea-common/Make/prj/opensea-common.vpj
+openSeaChest-v25.05/subprojects/opensea-common/Make/prj/opensea-common.vpw
+openSeaChest-v25.05/subprojects/opensea-common/Make/vmware/Makefile
+openSeaChest-v25.05/subprojects/opensea-common/README.md
+openSeaChest-v25.05/subprojects/opensea-common/SECURITY.md
+openSeaChest-v25.05/subprojects/opensea-common/commit_template.txt
+openSeaChest-v25.05/subprojects/opensea-common/include/bit_manip.h
+openSeaChest-v25.05/subprojects/opensea-common/include/code_attributes.h
+openSeaChest-v25.05/subprojects/opensea-common/include/common_types.h
+openSeaChest-v25.05/subprojects/opensea-common/include/constraint_handling.h
+openSeaChest-v25.05/subprojects/opensea-common/include/env_detect.h
+openSeaChest-v25.05/subprojects/opensea-common/include/error_translation.h
+openSeaChest-v25.05/subprojects/opensea-common/include/impl_io_utils.h
+openSeaChest-v25.05/subprojects/opensea-common/include/impl_memory_safety.h
+openSeaChest-v25.05/subprojects/opensea-common/include/impl_sort_and_search.h
+openSeaChest-v25.05/subprojects/opensea-common/include/impl_string_utils.h
+openSeaChest-v25.05/subprojects/opensea-common/include/impl_time_utils.h
+openSeaChest-v25.05/subprojects/opensea-common/include/io_utils.h
+openSeaChest-v25.05/subprojects/opensea-common/include/math_utils.h
+openSeaChest-v25.05/subprojects/opensea-common/include/memory_safety.h
+openSeaChest-v25.05/subprojects/opensea-common/include/opensea_common_version.h
+openSeaChest-v25.05/subprojects/opensea-common/include/pattern_utils.h
+openSeaChest-v25.05/subprojects/opensea-common/include/precision_timer.h
+openSeaChest-v25.05/subprojects/opensea-common/include/predef_env_detect.h
+openSeaChest-v25.05/subprojects/opensea-common/include/prng.h
+openSeaChest-v25.05/subprojects/opensea-common/include/secure_file.h
+openSeaChest-v25.05/subprojects/opensea-common/include/secured_env_vars.h
+openSeaChest-v25.05/subprojects/opensea-common/include/sleep.h
+openSeaChest-v25.05/subprojects/opensea-common/include/sort_and_search.h
+openSeaChest-v25.05/subprojects/opensea-common/include/string_utils.h
+openSeaChest-v25.05/subprojects/opensea-common/include/time_utils.h
+openSeaChest-v25.05/subprojects/opensea-common/include/type_conversion.h
+openSeaChest-v25.05/subprojects/opensea-common/include/unit_conversion.h
+openSeaChest-v25.05/subprojects/opensea-common/include/windows_version_detect.h
+openSeaChest-v25.05/subprojects/opensea-common/meson.build
+openSeaChest-v25.05/subprojects/opensea-common/meson_options.txt
+openSeaChest-v25.05/subprojects/opensea-common/opensea-common-doxygen-generator
+openSeaChest-v25.05/subprojects/opensea-common/src/bit_manip.c
+openSeaChest-v25.05/subprojects/opensea-common/src/constraint_handling.c
+openSeaChest-v25.05/subprojects/opensea-common/src/env_detect.c
+openSeaChest-v25.05/subprojects/opensea-common/src/error_translation.c
+openSeaChest-v25.05/subprojects/opensea-common/src/io_utils.c
+openSeaChest-v25.05/subprojects/opensea-common/src/math_utils.c
+openSeaChest-v25.05/subprojects/opensea-common/src/memory_safety.c
+openSeaChest-v25.05/subprojects/opensea-common/src/pattern_utils.c
+openSeaChest-v25.05/subprojects/opensea-common/src/posix_env_detect.c
+openSeaChest-v25.05/subprojects/opensea-common/src/posix_secure_file.c
+openSeaChest-v25.05/subprojects/opensea-common/src/precision_timer.c
+openSeaChest-v25.05/subprojects/opensea-common/src/prng.c
+openSeaChest-v25.05/subprojects/opensea-common/src/safe_bsearch.c
+openSeaChest-v25.05/subprojects/opensea-common/src/safe_lsearch.c
+openSeaChest-v25.05/subprojects/opensea-common/src/safe_qsort.c
+openSeaChest-v25.05/subprojects/opensea-common/src/safe_strtok.c
+openSeaChest-v25.05/subprojects/opensea-common/src/secure_file.c
+openSeaChest-v25.05/subprojects/opensea-common/src/secured_env_vars.c
+openSeaChest-v25.05/subprojects/opensea-common/src/sleep.c
+openSeaChest-v25.05/subprojects/opensea-common/src/sort_and_search.c
+openSeaChest-v25.05/subprojects/opensea-common/src/string_utils.c
+openSeaChest-v25.05/subprojects/opensea-common/src/time_utils.c
+openSeaChest-v25.05/subprojects/opensea-common/src/type_conversion.c
+openSeaChest-v25.05/subprojects/opensea-common/src/uefi_env_detect.c
+openSeaChest-v25.05/subprojects/opensea-common/src/unit_conversion.c
+openSeaChest-v25.05/subprojects/opensea-common/src/validate_format.c
+openSeaChest-v25.05/subprojects/opensea-common/src/windows_env_detect.c
+openSeaChest-v25.05/subprojects/opensea-common/src/windows_secure_file.c
+openSeaChest-v25.05/subprojects/opensea-common/src/windows_version_detect.c
+openSeaChest-v25.05/subprojects/opensea-common/update-version.sh
+openSeaChest-v25.05/subprojects/opensea-operations/.clang-format
+openSeaChest-v25.05/subprojects/opensea-operations/.clang-tidy
+openSeaChest-v25.05/subprojects/opensea-operations/.gitattributes
+openSeaChest-v25.05/subprojects/opensea-operations/.gitignore
+openSeaChest-v25.05/subprojects/opensea-operations/BUILDING.md
+openSeaChest-v25.05/subprojects/opensea-operations/CODE_OF_CONDUCT.md
+openSeaChest-v25.05/subprojects/opensea-operations/CONTRIBUTING.md
+openSeaChest-v25.05/subprojects/opensea-operations/LICENSE.md
+openSeaChest-v25.05/subprojects/opensea-operations/Make/UEFI/copy_files.sh
+openSeaChest-v25.05/subprojects/opensea-operations/Make/UEFI/opensea-operations.dec
+openSeaChest-v25.05/subprojects/opensea-operations/Make/UEFI/opensea-operations.dsc
+openSeaChest-v25.05/subprojects/opensea-operations/Make/UEFI/opensea-operations.inf
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations.sln
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations/opensea-operations.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2013/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations.sln
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations/opensea-operations.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2015/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations.sln
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations/opensea-operations.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2017/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations.sln
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations/opensea-operations.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2019/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2022/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2022/opensea-operations/opensea-operations-DLL/opensea-operations-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2022/opensea-operations/opensea-operations.sln
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2022/opensea-operations/opensea-operations/opensea-operations.vcxproj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/VS.2022/opensea-operations/opensea-operations/opensea-operations.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-operations/Make/gcc/Makefile
+openSeaChest-v25.05/subprojects/opensea-operations/Make/gccWin/Makefile.gccWin
+openSeaChest-v25.05/subprojects/opensea-operations/Make/prj/opensea-operations.vpj
+openSeaChest-v25.05/subprojects/opensea-operations/Make/prj/opensea-operations.vpw
+openSeaChest-v25.05/subprojects/opensea-operations/Make/vmware/Makefile
+openSeaChest-v25.05/subprojects/opensea-operations/README.md
+openSeaChest-v25.05/subprojects/opensea-operations/SECURITY.md
+openSeaChest-v25.05/subprojects/opensea-operations/commit_template.txt
+openSeaChest-v25.05/subprojects/opensea-operations/include/ata_Security.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/ata_device_config_overlay.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/buffer_test.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/cdl.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/defect.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/depopulate.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/device_statistics.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/drive_info.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/dst.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/farm_log.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/firmware_download.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/format.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/generic_tests.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/host_erase.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/logs.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/nvme_operations.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/opensea_operation_version.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/operations.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/operations_Common.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/partition_info.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/power_control.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/reservations.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/sanitize.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/sas_phy.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/sata_phy.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/seagate_operations.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/sector_repair.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/set_max_lba.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/smart.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/trim_unmap.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/writesame.h
+openSeaChest-v25.05/subprojects/opensea-operations/include/zoned_operations.h
+openSeaChest-v25.05/subprojects/opensea-operations/meson.build
+openSeaChest-v25.05/subprojects/opensea-operations/opensea-operations-doxygen-generator
+openSeaChest-v25.05/subprojects/opensea-operations/src/ata_Security.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/ata_device_config_overlay.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/buffer_test.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/cdl.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/defect.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/depopulate.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/device_statistics.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/drive_info.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/dst.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/farm_log.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/firmware_download.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/format.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/generic_tests.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/host_erase.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/logs.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/nvme_operations.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/operations.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/partition_info.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/power_control.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/reservations.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/sanitize.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/sas_phy.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/sata_phy.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/seagate_operations.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/sector_repair.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/set_max_lba.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/smart.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/trim_unmap.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/writesame.c
+openSeaChest-v25.05/subprojects/opensea-operations/src/zoned_operations.c
+openSeaChest-v25.05/subprojects/opensea-operations/update-version.sh
+openSeaChest-v25.05/subprojects/opensea-transport/.clang-format
+openSeaChest-v25.05/subprojects/opensea-transport/.clang-tidy
+openSeaChest-v25.05/subprojects/opensea-transport/.gitattributes
+openSeaChest-v25.05/subprojects/opensea-transport/.gitignore
+openSeaChest-v25.05/subprojects/opensea-transport/BUILDING.md
+openSeaChest-v25.05/subprojects/opensea-transport/CODE_OF_CONDUCT.md
+openSeaChest-v25.05/subprojects/opensea-transport/CONTRIBUTING.md
+openSeaChest-v25.05/subprojects/opensea-transport/LICENSE.md
+openSeaChest-v25.05/subprojects/opensea-transport/Make/UEFI/copy_files.sh
+openSeaChest-v25.05/subprojects/opensea-transport/Make/UEFI/opensea-transport.dec
+openSeaChest-v25.05/subprojects/opensea-transport/Make/UEFI/opensea-transport.dsc
+openSeaChest-v25.05/subprojects/opensea-transport/Make/UEFI/opensea-transport.inf
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport.sln
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport/opensea-transport.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2013/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport.sln
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport/opensea-transport.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2015/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport.sln
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport/opensea-transport.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2017/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport.sln
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport/opensea-transport.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2019/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2022/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2022/opensea-transport/opensea-transport-DLL/opensea-transport-DLL.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2022/opensea-transport/opensea-transport.sln
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2022/opensea-transport/opensea-transport/opensea-transport.vcxproj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/VS.2022/opensea-transport/opensea-transport/opensea-transport.vcxproj.filters
+openSeaChest-v25.05/subprojects/opensea-transport/Make/gcc/Makefile
+openSeaChest-v25.05/subprojects/opensea-transport/Make/gccWin/Makefile.gccWin
+openSeaChest-v25.05/subprojects/opensea-transport/Make/prj/opensea-transport.vpj
+openSeaChest-v25.05/subprojects/opensea-transport/Make/prj/opensea-transport.vpw
+openSeaChest-v25.05/subprojects/opensea-transport/Make/vmware/Makefile
+openSeaChest-v25.05/subprojects/opensea-transport/README.md
+openSeaChest-v25.05/subprojects/opensea-transport/SECURITY.md
+openSeaChest-v25.05/subprojects/opensea-transport/commit_template.txt
+openSeaChest-v25.05/subprojects/opensea-transport/include/aix_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/asmedia_nvme_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/ata_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/ata_helper_func.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/bsd_ata_passthrough.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/bsd_mount_info.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/bsd_scsi_passthrough.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/cam_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/ciss_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/ciss_helper_func.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/cmds.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/common_public.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/csmi_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/csmi_helper_func.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/csmi_legacy_pt_cdb_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/cypress_legacy_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/README.md
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/ciss/freebsd/NOTE
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/ciss/freebsd/cissio.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/ciss/freebsd/smartpqi_ioctl.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/ciss/solaris/NOTE
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/ciss/solaris/cpqary3.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/ciss/solaris/cpqary3_ciss.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/ciss/solaris/cpqary3_ioctl.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/external/csmi/csmisas.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/intel_rst_defs.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/intel_rst_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/jmicron_nvme_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/nec_legacy_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/netbsd_openbsd_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/nvme_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/nvme_helper_func.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/of_nvmeIoctl.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/of_nvme_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/of_nvme_helper_func.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/platform_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/prolific_legacy_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/psp_legacy_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/raid_scan_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/realtek_nvme_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/sat_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/sat_helper_func.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/sata_helper_func.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/sata_types.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/scsi_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/scsi_helper_func.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/sg_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/sntl_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/ti_legacy_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/uefi_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/usb_hacks.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/uscsi_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/vendor/seagate/seagate_ata_types.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/vendor/seagate/seagate_common_types.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/vendor/seagate/seagate_scsi_types.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/version.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/vm_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/vm_nvme.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/vm_nvme_drv_config.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/vm_nvme_lib.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/vm_nvme_mgmt.h
+openSeaChest-v25.05/subprojects/opensea-transport/include/win_helper.h
+openSeaChest-v25.05/subprojects/opensea-transport/meson.build
+openSeaChest-v25.05/subprojects/opensea-transport/meson_options.txt
+openSeaChest-v25.05/subprojects/opensea-transport/opensea-transport-doxygen-generator
+openSeaChest-v25.05/subprojects/opensea-transport/src/aix_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/asmedia_nvme_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/ata_cmds.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/ata_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/ata_legacy_cmds.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/bsd_ata_passthrough.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/bsd_mount_info.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/bsd_scsi_passthrough.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/cam_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/ciss_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/cmds.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/common_public.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/csmi_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/csmi_legacy_pt_cdb_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/cypress_legacy_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/intel_rst_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/jmicron_nvme_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/nec_legacy_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/netbsd_openbsd_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/nvme_cmds.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/nvme_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/of_nvme_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/prolific_legacy_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/psp_legacy_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/raid_scan_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/realtek_nvme_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/sat_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/sata_helper_func.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/scsi_cmds.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/scsi_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/sg_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/sntl_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/ti_legacy_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/uefi_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/usb_hacks.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/uscsi_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/vm_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/vm_nvme_lib.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/vm_nvme_mgmt_common.c
+openSeaChest-v25.05/subprojects/opensea-transport/src/win_helper.c
+openSeaChest-v25.05/subprojects/opensea-transport/update-version.sh
+openSeaChest-v25.05/subprojects/wingetopt/.clang-format
+openSeaChest-v25.05/subprojects/wingetopt/.clang-tidy
+openSeaChest-v25.05/subprojects/wingetopt/.gitattributes
+openSeaChest-v25.05/subprojects/wingetopt/.gitignore
+openSeaChest-v25.05/subprojects/wingetopt/CMakeLists.txt
+openSeaChest-v25.05/subprojects/wingetopt/GNUmakefile
+openSeaChest-v25.05/subprojects/wingetopt/LICENSE
+openSeaChest-v25.05/subprojects/wingetopt/README.md
+openSeaChest-v25.05/subprojects/wingetopt/VS.2013/Win_getopt.sln
+openSeaChest-v25.05/subprojects/wingetopt/VS.2013/Win_getopt.vcxproj
+openSeaChest-v25.05/subprojects/wingetopt/VS.2013/Win_getopt.vcxproj.filters
+openSeaChest-v25.05/subprojects/wingetopt/VS.2015/Win_getopt.vcxproj
+openSeaChest-v25.05/subprojects/wingetopt/VS.2015/Win_getopt.vcxproj.filters
+openSeaChest-v25.05/subprojects/wingetopt/VS.2015/wingetopt.sln
+openSeaChest-v25.05/subprojects/wingetopt/VS.2017/Win_getopt.vcxproj
+openSeaChest-v25.05/subprojects/wingetopt/VS.2017/Win_getopt.vcxproj.filters
+openSeaChest-v25.05/subprojects/wingetopt/VS.2017/wingetopt.sln
+openSeaChest-v25.05/subprojects/wingetopt/VS.2019/Win_getopt.vcxproj
+openSeaChest-v25.05/subprojects/wingetopt/VS.2019/Win_getopt.vcxproj.filters
+openSeaChest-v25.05/subprojects/wingetopt/VS.2019/wingetopt.sln
+openSeaChest-v25.05/subprojects/wingetopt/VS.2022/Win_getopt.vcxproj
+openSeaChest-v25.05/subprojects/wingetopt/VS.2022/Win_getopt.vcxproj.filters
+openSeaChest-v25.05/subprojects/wingetopt/VS.2022/wingetopt.sln
+openSeaChest-v25.05/subprojects/wingetopt/meson.build
+openSeaChest-v25.05/subprojects/wingetopt/src/getopt.c
+openSeaChest-v25.05/subprojects/wingetopt/src/getopt.h
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work
 README or README.md already exists, skipping creation.
-/usr/local/bin/athos: line 901: cd: openSeaChest-v24.08.1-24.08.1: No such file or directory
-/usr/local/bin/athos: line 901: cd: openseachest-24.08.1: No such file or directory
+/usr/local/bin/athos: line 925: cd: openSeaChest-v25.05-25.05: No such file or directory
+/usr/local/bin/athos: line 925: cd: openseachest-25.05: No such file or directory
 hm...lets continue and see what happens
 The Meson build system
-Version: 1.8.0
-Source dir: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1
-Build dir: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/build
+Version: 1.8.1
+Source dir: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05
+Build dir: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/build
 Build type: native build
 ../meson_options.txt:22: WARNING: Project does not target a minimum version but uses feature deprecated since '1.1.0': "boolean option" keyword argument "value" of type str. use a boolean, not a string
 Project name: openSeaChest
-Project version: undefined
-C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+Project version: 25.05
+C compiler for the host machine: ccache cc (gcc 14.3.0 "cc (GCC) 14.3.0")
 C linker for the host machine: cc ld.bfd 2.44-slack151
 Host machine cpu family: x86_64
 Host machine cpu: x86_64
@@ -747,7 +834,6 @@ Compiler for C supports arguments -Wint-to-pointer-cast: YES
 Compiler for C supports arguments -Wimplicit-fallthrough: YES 
 Compiler for C supports arguments -D_GLIBCXX_ASSERTIONS: YES 
 Compiler for C supports arguments -fstrict-flex-arrays=1: YES 
-Compiler for C supports arguments -fstack-protector-strong: YES 
 Compiler for C supports arguments -fno-delete-null-pointer-checks: YES 
 Compiler for C supports arguments -fno-strict-overflow: YES 
 Compiler for C supports arguments -fno-strict-aliasing: YES 
@@ -777,8 +863,10 @@ Compiler for C supports arguments -Wunreachable-code: YES
 Compiler for C supports arguments -Wcomment: YES 
 Compiler for C supports arguments -Wsequence-point: YES 
 Compiler for C supports arguments -Wreturn-type: YES 
+Compiler for C supports arguments -Wpointer-bool-conversion: NO 
 Compiler for C supports arguments -fvisibility=hidden: YES 
 Compiler for C supports arguments -Wsign-conversion: YES 
+Compiler for C supports arguments -fstack-protector-strong: YES 
 Compiler for C supports arguments -fstack-clash-protection: YES 
 Compiler for C supports arguments -fcf-protection=full: YES 
 Compiler for C supports link arguments -Wl,-z,nodlopen: YES 
@@ -793,7 +881,7 @@ Executing subproject wingetopt
 
 wingetopt| Project name: wingetopt
 wingetopt| Project version: 0.98
-wingetopt| C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+wingetopt| C compiler for the host machine: ccache cc (gcc 14.3.0 "cc (GCC) 14.3.0")
 wingetopt| C linker for the host machine: cc ld.bfd 2.44-slack151
 wingetopt| Checking if "_FORTIFY_SOURCE override" compiles: NO (cached)
 wingetopt| Compiler for C supports arguments -Wshadow=compatible-local: YES (cached)
@@ -827,7 +915,6 @@ wingetopt| Compiler for C supports arguments -Wint-to-pointer-cast: YES (cached)
 wingetopt| Compiler for C supports arguments -Wimplicit-fallthrough: YES (cached)
 wingetopt| Compiler for C supports arguments -D_GLIBCXX_ASSERTIONS: YES (cached)
 wingetopt| Compiler for C supports arguments -fstrict-flex-arrays=1: YES (cached)
-wingetopt| Compiler for C supports arguments -fstack-protector-strong: YES (cached)
 wingetopt| Compiler for C supports arguments -fno-delete-null-pointer-checks: YES (cached)
 wingetopt| Compiler for C supports arguments -fno-strict-overflow: YES (cached)
 wingetopt| Compiler for C supports arguments -fno-strict-aliasing: YES (cached)
@@ -859,6 +946,7 @@ wingetopt| Compiler for C supports arguments -Wsequence-point: YES (cached)
 wingetopt| Compiler for C supports arguments -Wreturn-type: YES (cached)
 wingetopt| Compiler for C supports arguments -fvisibility=hidden: YES (cached)
 wingetopt| Compiler for C supports arguments -Wsign-conversion: YES (cached)
+wingetopt| Compiler for C supports arguments -fstack-protector-strong: YES (cached)
 wingetopt| Compiler for C supports arguments -fstack-clash-protection: YES (cached)
 wingetopt| Compiler for C supports arguments -fcf-protection=full: YES (cached)
 wingetopt| Compiler for C supports link arguments -Wl,-z,nodlopen: YES (cached)
@@ -866,10 +954,8 @@ wingetopt| Compiler for C supports link arguments -Wl,-z,noexecstack: YES (cache
 wingetopt| Compiler for C supports link arguments -Wl,-z,relro: YES (cached)
 wingetopt| Compiler for C supports link arguments -Wl,-z,now: YES (cached)
 wingetopt| Has header "stdint.h" : YES
+wingetopt| Header "stddef.h" has symbol "__STDC_LIB_EXT1__" : NO
 wingetopt| Header "stdlib.h" has symbol "__STDC_LIB_EXT1__" : NO
-wingetopt| Checking for function "fprintf_s" : NO
-wingetopt| Checking for function "vfprintf_s" : NO
-wingetopt| Checking for function "getenv_s" : NO
 wingetopt| Checking for function "secure_getenv" : YES
 wingetopt| Build targets in project: 1
 wingetopt| Subproject wingetopt finished.
@@ -879,8 +965,8 @@ Program help2man found: YES (/usr/bin/help2man)
 Executing subproject opensea-common 
 
 opensea-common| Project name: opensea-common
-opensea-common| Project version: 4.1.0
-opensea-common| C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+opensea-common| Project version: 6.0.1
+opensea-common| C compiler for the host machine: ccache cc (gcc 14.3.0 "cc (GCC) 14.3.0")
 opensea-common| C linker for the host machine: cc ld.bfd 2.44-slack151
 opensea-common| Checking if "_FORTIFY_OVERRIDE" compiles: NO (cached)
 opensea-common| Compiler for C supports arguments -Wshadow=compatible-local: YES (cached)
@@ -914,7 +1000,6 @@ opensea-common| Compiler for C supports arguments -Wint-to-pointer-cast: YES (ca
 opensea-common| Compiler for C supports arguments -Wimplicit-fallthrough: YES (cached)
 opensea-common| Compiler for C supports arguments -D_GLIBCXX_ASSERTIONS: YES (cached)
 opensea-common| Compiler for C supports arguments -fstrict-flex-arrays=1: YES (cached)
-opensea-common| Compiler for C supports arguments -fstack-protector-strong: YES (cached)
 opensea-common| Compiler for C supports arguments -fno-delete-null-pointer-checks: YES (cached)
 opensea-common| Compiler for C supports arguments -fno-strict-overflow: YES (cached)
 opensea-common| Compiler for C supports arguments -fno-strict-aliasing: YES (cached)
@@ -944,8 +1029,10 @@ opensea-common| Compiler for C supports arguments -Wunreachable-code: YES (cache
 opensea-common| Compiler for C supports arguments -Wcomment: YES (cached)
 opensea-common| Compiler for C supports arguments -Wsequence-point: YES (cached)
 opensea-common| Compiler for C supports arguments -Wreturn-type: YES (cached)
+opensea-common| Compiler for C supports arguments -Wpointer-bool-conversion: NO (cached)
 opensea-common| Compiler for C supports arguments -fvisibility=hidden: YES (cached)
 opensea-common| Compiler for C supports arguments -Wsign-conversion: YES (cached)
+opensea-common| Compiler for C supports arguments -fstack-protector-strong: YES (cached)
 opensea-common| Compiler for C supports arguments -fstack-clash-protection: YES (cached)
 opensea-common| Compiler for C supports arguments -fcf-protection=full: YES (cached)
 opensea-common| Compiler for C supports link arguments -Wl,-z,nodlopen: YES (cached)
@@ -953,7 +1040,7 @@ opensea-common| Compiler for C supports link arguments -Wl,-z,noexecstack: YES (
 opensea-common| Compiler for C supports link arguments -Wl,-z,relro: YES (cached)
 opensea-common| Compiler for C supports link arguments -Wl,-z,now: YES (cached)
 opensea-common| Header "stdlib.h" has symbol "__STDC_LIB_EXT1__" : NO (cached)
-opensea-common| Checking for function "getenv_s" : NO (cached)
+opensea-common| Checking for function "getenv_s" : NO
 opensea-common| Checking for function "secure_getenv" : YES (cached)
 opensea-common| Checking for function "memset_explicit" : NO
 opensea-common| Checking for function "memset_s" : NO
@@ -970,8 +1057,8 @@ opensea-common| Subproject opensea-common finished.
 Executing subproject opensea-transport 
 
 opensea-transport| Project name: opensea-transport
-opensea-transport| Project version: 8.0.1
-opensea-transport| C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+opensea-transport| Project version: 10.0.0
+opensea-transport| C compiler for the host machine: ccache cc (gcc 14.3.0 "cc (GCC) 14.3.0")
 opensea-transport| C linker for the host machine: cc ld.bfd 2.44-slack151
 opensea-transport| Checking if "_FORTIFY_SOURCE override" compiles: NO (cached)
 opensea-transport| Compiler for C supports arguments -Wshadow=compatible-local: YES (cached)
@@ -1005,7 +1092,6 @@ opensea-transport| Compiler for C supports arguments -Wint-to-pointer-cast: YES 
 opensea-transport| Compiler for C supports arguments -Wimplicit-fallthrough: YES (cached)
 opensea-transport| Compiler for C supports arguments -D_GLIBCXX_ASSERTIONS: YES (cached)
 opensea-transport| Compiler for C supports arguments -fstrict-flex-arrays=1: YES (cached)
-opensea-transport| Compiler for C supports arguments -fstack-protector-strong: YES (cached)
 opensea-transport| Compiler for C supports arguments -fno-delete-null-pointer-checks: YES (cached)
 opensea-transport| Compiler for C supports arguments -fno-strict-overflow: YES (cached)
 opensea-transport| Compiler for C supports arguments -fno-strict-aliasing: YES (cached)
@@ -1035,8 +1121,10 @@ opensea-transport| Compiler for C supports arguments -Wunreachable-code: YES (ca
 opensea-transport| Compiler for C supports arguments -Wcomment: YES (cached)
 opensea-transport| Compiler for C supports arguments -Wsequence-point: YES (cached)
 opensea-transport| Compiler for C supports arguments -Wreturn-type: YES (cached)
+opensea-transport| Compiler for C supports arguments -Wpointer-bool-conversion: NO (cached)
 opensea-transport| Compiler for C supports arguments -fvisibility=hidden: YES (cached)
 opensea-transport| Compiler for C supports arguments -Wsign-conversion: YES (cached)
+opensea-transport| Compiler for C supports arguments -fstack-protector-strong: YES (cached)
 opensea-transport| Compiler for C supports arguments -fstack-clash-protection: YES (cached)
 opensea-transport| Compiler for C supports arguments -fcf-protection=full: YES (cached)
 opensea-transport| Compiler for C supports link arguments -Wl,-z,nodlopen: YES (cached)
@@ -1051,8 +1139,8 @@ opensea-transport| Subproject opensea-transport finished.
 Executing subproject opensea-operations 
 
 opensea-operations| Project name: opensea-operations
-opensea-operations| Project version: 8.0.1
-opensea-operations| C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+opensea-operations| Project version: 9.1.0
+opensea-operations| C compiler for the host machine: ccache cc (gcc 14.3.0 "cc (GCC) 14.3.0")
 opensea-operations| C linker for the host machine: cc ld.bfd 2.44-slack151
 opensea-operations| Checking if "_FORTIFY_SOURCE override" compiles: NO (cached)
 opensea-operations| Compiler for C supports arguments -Wshadow=compatible-local: YES (cached)
@@ -1086,7 +1174,6 @@ opensea-operations| Compiler for C supports arguments -Wint-to-pointer-cast: YES
 opensea-operations| Compiler for C supports arguments -Wimplicit-fallthrough: YES (cached)
 opensea-operations| Compiler for C supports arguments -D_GLIBCXX_ASSERTIONS: YES (cached)
 opensea-operations| Compiler for C supports arguments -fstrict-flex-arrays=1: YES (cached)
-opensea-operations| Compiler for C supports arguments -fstack-protector-strong: YES (cached)
 opensea-operations| Compiler for C supports arguments -fno-delete-null-pointer-checks: YES (cached)
 opensea-operations| Compiler for C supports arguments -fno-strict-overflow: YES (cached)
 opensea-operations| Compiler for C supports arguments -fno-strict-aliasing: YES (cached)
@@ -1116,8 +1203,10 @@ opensea-operations| Compiler for C supports arguments -Wunreachable-code: YES (c
 opensea-operations| Compiler for C supports arguments -Wcomment: YES (cached)
 opensea-operations| Compiler for C supports arguments -Wsequence-point: YES (cached)
 opensea-operations| Compiler for C supports arguments -Wreturn-type: YES (cached)
+opensea-operations| Compiler for C supports arguments -Wpointer-bool-conversion: NO (cached)
 opensea-operations| Compiler for C supports arguments -fvisibility=hidden: YES (cached)
 opensea-operations| Compiler for C supports arguments -Wsign-conversion: YES (cached)
+opensea-operations| Compiler for C supports arguments -fstack-protector-strong: YES (cached)
 opensea-operations| Compiler for C supports arguments -fstack-clash-protection: YES (cached)
 opensea-operations| Compiler for C supports arguments -fcf-protection=full: YES (cached)
 opensea-operations| Compiler for C supports link arguments -Wl,-z,nodlopen: YES (cached)
@@ -1131,7 +1220,7 @@ Build targets in project: 21
 WARNING: Deprecated features used:
  * 1.1.0: {'"boolean option" keyword argument "value" of type str'}
 
-openSeaChest undefined
+openSeaChest 25.05
 
   Subprojects
     opensea-common    : YES
@@ -1151,226 +1240,287 @@ openSeaChest undefined
 
 Found ninja-1.12.1 at /usr/bin/ninja
 WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
-[1/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_sleep.c.o
-[2/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_error_translation.c.o
-[3/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_math_utils.c.o
-[4/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_prng.c.o
-[5/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_secured_env_vars.c.o
-[6/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_unit_conversion.c.o
-[7/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_pattern_utils.c.o
-[8/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_env_detect.c.o
-[9/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_precision_timer.c.o
-[10/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_intel_rst_helper.c.o
-[11/148] Compiling C object subprojects/wingetopt/libwingetopt.a.p/src_getopt.c.o
-[12/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_type_conversion.c.o
-[13/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_posix_secure_file.c.o
-[14/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_bit_manip.c.o
-[15/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_memory_safety.c.o
-[16/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_time_utils.c.o
-[17/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_of_nvme_helper.c.o
-[18/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_validate_format.c.o
-[19/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_asmedia_nvme_helper.c.o
-[20/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_posix_env_detect.c.o
-[21/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_secure_file.c.o
-[22/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_cypress_legacy_helper.c.o
-[23/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_csmi_legacy_pt_cdb_helper.c.o
-[24/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_string_utils.c.o
-[25/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_jmicron_nvme_helper.c.o
-[26/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_raid_scan_helper.c.o
-[27/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_nec_legacy_helper.c.o
-[28/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_prolific_legacy_helper.c.o
-[29/148] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_io_utils.c.o
-[30/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_sata_helper_func.c.o
-[31/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_usb_hacks.c.o
-[32/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_psp_legacy_helper.c.o
-[33/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ciss_helper.c.o
-[34/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ata_legacy_cmds.c.o
-[35/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ti_legacy_helper.c.o
-[36/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_nvme_helper.c.o
-[37/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_cmds.c.o
-[38/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_nvme_cmds.c.o
-[39/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_buffer_test.c.o
-[40/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_ata_Security.c.o
-[41/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_host_erase.c.o
-[42/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ata_helper.c.o
-[43/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_depopulate.c.o
-[44/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_firmware_download.c.o
-[45/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_nvme_operations.c.o
-[46/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_format.c.o
-[47/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_csmi_helper.c.o
-[48/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_sanitize.c.o
-[49/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_defect.c.o
-[50/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_dst.c.o
-[51/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_common_public.c.o
-[52/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_sas_phy.c.o
-[53/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ata_cmds.c.o
-[54/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_sg_helper.c.o
-[55/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_sector_repair.c.o
-[56/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_writesame.c.o
-[57/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_scsi_helper.c.o
-[58/148] Linking static target subprojects/wingetopt/libwingetopt.a
-[59/148] Linking static target subprojects/opensea-common/libopensea-common.a
-[60/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_trim_unmap.c.o
-[61/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_zoned_operations.c.o
-[62/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_reservations.c.o
-[63/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_generic_tests.c.o
-[64/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_set_max_lba.c.o
-[65/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_scsi_cmds.c.o
-[66/148] Compiling C object openSeaChest_Basics.p/src_EULA.c.o
-[67/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_operations.c.o
-[68/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_ata_device_config_overlay.c.o
-[69/148] Compiling C object openSeaChest_Erase.p/src_EULA.c.o
-[70/148] Compiling C object openSeaChest_Configure.p/src_EULA.c.o
-[71/148] Compiling C object openSeaChest_Firmware.p/src_EULA.c.o
-[72/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_sata_phy.c.o
-[73/148] Compiling C object openSeaChest_Format.p/src_EULA.c.o
-[74/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_farm_log.c.o
-[75/148] Compiling C object openSeaChest_Defect.p/src_EULA.c.o
-[76/148] Compiling C object openSeaChest_GenericTests.p/src_EULA.c.o
-[77/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_power_control.c.o
-[78/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_partition_info.c.o
-[79/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_seagate_operations.c.o
-[80/148] Compiling C object openSeaChest_Info.p/src_EULA.c.o
-[81/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_logs.c.o
-[82/148] Compiling C object openSeaChest_Logs.p/src_EULA.c.o
-[83/148] Compiling C object openSeaChest_Defect.p/utils_C_openSeaChest_openSeaChest_Defect.c.o
-[84/148] Compiling C object openSeaChest_Firmware.p/utils_C_openSeaChest_openSeaChest_Firmware.c.o
-[85/148] Compiling C object openSeaChest_NVMe.p/src_EULA.c.o
-[86/148] Compiling C object openSeaChest_Basics.p/utils_C_openSeaChest_openSeaChest_Basics.c.o
-[87/148] Compiling C object openSeaChest_Info.p/utils_C_openSeaChest_openSeaChest_Info.c.o
-[88/148] Compiling C object openSeaChest_PassthroughTest.p/src_EULA.c.o
-[89/148] Compiling C object openSeaChest_GenericTests.p/utils_C_openSeaChest_openSeaChest_GenericTests.c.o
-[90/148] Compiling C object openSeaChest_Logs.p/utils_C_openSeaChest_openSeaChest_Logs.c.o
-[91/148] Compiling C object openSeaChest_PowerControl.p/src_EULA.c.o
-[92/148] Compiling C object openSeaChest_Format.p/utils_C_openSeaChest_openSeaChest_Format.c.o
-[93/148] Compiling C object openSeaChest_Defect.p/src_openseachest_util_options.c.o
-[94/148] Compiling C object openSeaChest_Format.p/src_openseachest_util_options.c.o
-[95/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_sntl_helper.c.o
-[96/148] Compiling C object openSeaChest_Basics.p/src_openseachest_util_options.c.o
-[97/148] Compiling C object openSeaChest_Erase.p/utils_C_openSeaChest_openSeaChest_Erase.c.o
-[98/148] Compiling C object openSeaChest_Configure.p/src_openseachest_util_options.c.o
-[99/148] Compiling C object openSeaChest_Raw.p/src_EULA.c.o
-[100/148] Compiling C object openSeaChest_Reservations.p/src_EULA.c.o
-[101/148] Compiling C object openSeaChest_Security.p/src_EULA.c.o
-[102/148] Compiling C object openSeaChest_Raw.p/src_openseachest_util_options.c.o
-[103/148] Compiling C object openSeaChest_Security.p/src_openseachest_util_options.c.o
-[104/148] Compiling C object openSeaChest_Reservations.p/src_openseachest_util_options.c.o
-[105/148] Compiling C object openSeaChest_Erase.p/src_openseachest_util_options.c.o
-[106/148] Compiling C object openSeaChest_SMART.p/src_EULA.c.o
-[107/148] Compiling C object openSeaChest_ZBD.p/src_EULA.c.o
-[108/148] Compiling C object openSeaChest_GenericTests.p/src_openseachest_util_options.c.o
-[109/148] Compiling C object openSeaChest_SMART.p/src_openseachest_util_options.c.o
-[110/148] Compiling C object openSeaChest_Firmware.p/src_openseachest_util_options.c.o
-[111/148] Compiling C object openSeaChest_ZBD.p/src_openseachest_util_options.c.o
-[112/148] Compiling C object openSeaChest_NVMe.p/utils_C_openSeaChest_openSeaChest_NVMe.c.o
-[113/148] Compiling C object openSeaChest_Info.p/src_openseachest_util_options.c.o
-[114/148] Compiling C object openSeaChest_NVMe.p/src_openseachest_util_options.c.o
-[115/148] Compiling C object openSeaChest_Security.p/utils_C_openSeaChest_openSeaChest_Security.c.o
-[116/148] Compiling C object openSeaChest_ZBD.p/utils_C_openSeaChest_openSeaChest_ZBD.c.o
-[117/148] Compiling C object openSeaChest_Configure.p/utils_C_openSeaChest_openSeaChest_Configure.c.o
-[118/148] Compiling C object openSeaChest_Logs.p/src_openseachest_util_options.c.o
-[119/148] Compiling C object openSeaChest_Reservations.p/utils_C_openSeaChest_openSeaChest_Reservations.c.o
-[120/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_smart.c.o
-[121/148] Compiling C object openSeaChest_SMART.p/utils_C_openSeaChest_openSeaChest_SMART.c.o
-[122/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_drive_info.c.o
-[123/148] Compiling C object openSeaChest_Raw.p/utils_C_openSeaChest_openSeaChest_Raw.c.o
-[124/148] Compiling C object openSeaChest_PowerControl.p/utils_C_openSeaChest_openSeaChest_PowerControl.c.o
-[125/148] Compiling C object openSeaChest_PassthroughTest.p/src_openseachest_util_options.c.o
-[126/148] Compiling C object openSeaChest_PowerControl.p/src_openseachest_util_options.c.o
-[127/148] Compiling C object openSeaChest_PassthroughTest.p/utils_C_openSeaChest_openSeaChest_PassthroughTest.c.o
-[128/148] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_sat_helper.c.o
-[129/148] Linking static target subprojects/opensea-transport/libopensea-transport.a
-[130/148] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_device_statistics.c.o
-[131/148] Linking static target subprojects/opensea-operations/libopensea-operations.a
-[132/148] Linking target openSeaChest_Configure
-[133/148] Linking target openSeaChest_Security
-[134/148] Linking target openSeaChest_Defect
-[135/148] Linking target openSeaChest_Raw
-[136/148] Linking target openSeaChest_PassthroughTest
-[137/148] Linking target openSeaChest_PowerControl
-[138/148] Linking target openSeaChest_Firmware
-[139/148] Linking target openSeaChest_Reservations
-[140/148] Linking target openSeaChest_NVMe
-[141/148] Linking target openSeaChest_Logs
-[142/148] Linking target openSeaChest_Format
-[143/148] Linking target openSeaChest_Erase
-[144/148] Linking target openSeaChest_GenericTests
-[145/148] Linking target openSeaChest_ZBD
-[146/148] Linking target openSeaChest_Info
-[147/148] Linking target openSeaChest_Basics
-[148/148] Linking target openSeaChest_SMART
+[1/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_math_utils.c.o
+[2/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_prng.c.o
+[3/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_secured_env_vars.c.o
+[4/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_sort_and_search.c.o
+[5/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_safe_strtok.c.o
+[6/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_error_translation.c.o
+[7/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_constraint_handling.c.o
+[8/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_precision_timer.c.o
+[9/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_safe_bsearch.c.o
+[10/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_sleep.c.o
+[11/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_pattern_utils.c.o
+[12/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_safe_lsearch.c.o
+[13/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_env_detect.c.o
+[14/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_safe_qsort.c.o
+[15/156] Compiling C object subprojects/wingetopt/libwingetopt.a.p/src_getopt.c.o
+[16/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_type_conversion.c.o
+[17/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_intel_rst_helper.c.o
+[18/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_bit_manip.c.o
+[19/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_unit_conversion.c.o
+[20/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_time_utils.c.o
+[21/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_validate_format.c.o
+[22/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_csmi_legacy_pt_cdb_helper.c.o
+[23/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_asmedia_nvme_helper.c.o
+[24/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_secure_file.c.o
+[25/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_posix_secure_file.c.o
+[26/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_of_nvme_helper.c.o
+[27/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_memory_safety.c.o
+[28/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_posix_env_detect.c.o
+[29/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_cypress_legacy_helper.c.o
+[30/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_nec_legacy_helper.c.o
+[31/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_realtek_nvme_helper.c.o
+[32/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ciss_helper.c.o
+[33/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_jmicron_nvme_helper.c.o
+[34/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_raid_scan_helper.c.o
+[35/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_psp_legacy_helper.c.o
+[36/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ti_legacy_helper.c.o
+[37/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_string_utils.c.o
+[38/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_sata_helper_func.c.o
+[39/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_nvme_helper.c.o
+[40/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_prolific_legacy_helper.c.o
+[41/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_usb_hacks.c.o
+[42/156] Compiling C object subprojects/opensea-common/libopensea-common.a.p/src_io_utils.c.o
+[43/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ata_legacy_cmds.c.o
+[44/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_cmds.c.o
+[45/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_nvme_cmds.c.o
+[46/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_buffer_test.c.o
+[47/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ata_helper.c.o
+[48/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_host_erase.c.o
+[49/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_ata_Security.c.o
+[50/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_depopulate.c.o
+[51/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_cdl.c.o
+[52/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_common_public.c.o
+[53/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_firmware_download.c.o
+[54/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_csmi_helper.c.o
+[55/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_nvme_operations.c.o
+[56/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_sas_phy.c.o
+[57/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_dst.c.o
+[58/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_sanitize.c.o
+[59/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_format.c.o
+[60/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_defect.c.o
+[61/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_sg_helper.c.o
+[62/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_scsi_helper.c.o
+[63/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_set_max_lba.c.o
+[64/156] Linking static target subprojects/wingetopt/libwingetopt.a
+[65/156] Linking static target subprojects/opensea-common/libopensea-common.a
+[66/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_sector_repair.c.o
+[67/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_trim_unmap.c.o
+[68/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_scsi_cmds.c.o
+../subprojects/opensea-transport/src/scsi_cmds.c: In function ‘scsi_Zone_Activate’:
+../subprojects/opensea-transport/src/scsi_cmds.c:5235:12: warning: ‘ptrData’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5235 |     return scsi_Zone_Management_In_ZD(device, ZM_ACTION_ZONE_ACTIVATE, all, zoneID, numberOfZones, otherZoneDomainID,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 5236 |                                       allocationLength, ptrData);
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+../subprojects/opensea-transport/src/scsi_cmds.c:5233:43: note: accessing argument 7 of a function declared with attribute ‘access (write_only, 7, 6)’
+ 5233 |                                  uint8_t* ptrData)
+      |                                  ~~~~~~~~~^~~~~~~
+../subprojects/opensea-transport/src/scsi_cmds.c: In function ‘scsi_Zone_Query’:
+../subprojects/opensea-transport/src/scsi_cmds.c:5247:12: warning: ‘ptrData’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5247 |     return scsi_Zone_Management_In_ZD(device, ZM_ACTION_ZONE_QUERY, all, zoneID, numberOfZones, otherZoneDomainID,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 5248 |                                       allocationLength, ptrData);
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+../subprojects/opensea-transport/src/scsi_cmds.c:5245:40: note: accessing argument 7 of a function declared with attribute ‘access (write_only, 7, 6)’
+ 5245 |                               uint8_t* ptrData)
+      |                               ~~~~~~~~~^~~~~~~
+[69/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_writesame.c.o
+[70/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_reservations.c.o
+[71/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_zoned_operations.c.o
+[72/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_ata_device_config_overlay.c.o
+[73/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_sata_phy.c.o
+[74/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_operations.c.o
+[75/156] Compiling C object openSeaChest_Basics.p/src_EULA.c.o
+[76/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_generic_tests.c.o
+[77/156] Compiling C object openSeaChest_Erase.p/src_EULA.c.o
+[78/156] Compiling C object openSeaChest_Firmware.p/src_EULA.c.o
+[79/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_partition_info.c.o
+[80/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_power_control.c.o
+[81/156] Compiling C object openSeaChest_Defect.p/src_EULA.c.o
+[82/156] Compiling C object openSeaChest_Configure.p/src_EULA.c.o
+[83/156] Compiling C object openSeaChest_Format.p/src_EULA.c.o
+[84/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_ata_cmds.c.o
+In file included from ../subprojects/opensea-transport/include/ata_helper_func.h:15,
+                 from ../subprojects/opensea-transport/src/ata_cmds.c:27:
+In function ‘create_ata_dma_read_lba_cmd’,
+    inlined from ‘ata_Read_DMA’ at ../subprojects/opensea-transport/src/ata_cmds.c:1481:47:
+../subprojects/opensea-transport/include/ata_helper.h:1247:16: warning: ‘ptrData’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1247 |         return create_ata_dma_lba_cmd(device, opcode, ext, M_ACCESS_ENUM(eDataTransferDirection, XFER_DATA_IN),
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1248 |                                       sectorCount, lba, ptrdata, dataSize);
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../subprojects/opensea-transport/src/ata_cmds.c: In function ‘ata_Read_DMA’:
+../subprojects/opensea-transport/src/ata_cmds.c:1475:51: note: accessing argument 3 of a function declared with attribute ‘access (write_only, 3, 5)’
+ 1475 |                            uint8_t*               ptrData,
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In function ‘create_ata_pio_read_lba_cmd’,
+    inlined from ‘ata_Read_Multiple’ at ../subprojects/opensea-transport/src/ata_cmds.c:1530:47:
+../subprojects/opensea-transport/include/ata_helper.h:1050:16: warning: ‘ptrData’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1050 |         return create_ata_pio_lba_cmd(device, opcode, ext, M_ACCESS_ENUM(eDataTransferDirection, XFER_DATA_IN),
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1051 |                                       sectorCount, lba, ptrdata, dataSize);
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../subprojects/opensea-transport/src/ata_cmds.c: In function ‘ata_Read_Multiple’:
+../subprojects/opensea-transport/src/ata_cmds.c:1524:56: note: accessing argument 3 of a function declared with attribute ‘access (write_only, 3, 5)’
+ 1524 |                                 uint8_t*               ptrData,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In function ‘create_ata_pio_read_lba_cmd’,
+    inlined from ‘ata_Read_Sectors’ at ../subprojects/opensea-transport/src/ata_cmds.c:1580:47:
+../subprojects/opensea-transport/include/ata_helper.h:1050:16: warning: ‘ptrData’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1050 |         return create_ata_pio_lba_cmd(device, opcode, ext, M_ACCESS_ENUM(eDataTransferDirection, XFER_DATA_IN),
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1051 |                                       sectorCount, lba, ptrdata, dataSize);
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../subprojects/opensea-transport/src/ata_cmds.c: In function ‘ata_Read_Sectors’:
+../subprojects/opensea-transport/src/ata_cmds.c:1574:55: note: accessing argument 3 of a function declared with attribute ‘access (write_only, 3, 5)’
+ 1574 |                                uint8_t*               ptrData,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[85/156] Compiling C object openSeaChest_GenericTests.p/src_EULA.c.o
+[86/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_logs.c.o
+[87/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_seagate_operations.c.o
+[88/156] Compiling C object openSeaChest_Info.p/src_EULA.c.o
+[89/156] Compiling C object openSeaChest_Firmware.p/utils_C_openSeaChest_openSeaChest_Firmware.c.o
+[90/156] Compiling C object openSeaChest_Defect.p/utils_C_openSeaChest_openSeaChest_Defect.c.o
+[91/156] Compiling C object openSeaChest_Logs.p/src_EULA.c.o
+[92/156] Compiling C object openSeaChest_Basics.p/utils_C_openSeaChest_openSeaChest_Basics.c.o
+[93/156] Compiling C object openSeaChest_NVMe.p/src_EULA.c.o
+[94/156] Compiling C object openSeaChest_GenericTests.p/utils_C_openSeaChest_openSeaChest_GenericTests.c.o
+[95/156] Compiling C object openSeaChest_Format.p/utils_C_openSeaChest_openSeaChest_Format.c.o
+[96/156] Compiling C object openSeaChest_PassthroughTest.p/src_EULA.c.o
+[97/156] Compiling C object openSeaChest_Info.p/utils_C_openSeaChest_openSeaChest_Info.c.o
+[98/156] Compiling C object openSeaChest_Configure.p/src_openseachest_util_options.c.o
+[99/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_farm_log.c.o
+[100/156] Compiling C object openSeaChest_PowerControl.p/src_EULA.c.o
+[101/156] Compiling C object openSeaChest_PassthroughTest.p/src_openseachest_util_options.c.o
+[102/156] Compiling C object openSeaChest_Basics.p/src_openseachest_util_options.c.o
+[103/156] Compiling C object openSeaChest_PowerControl.p/src_openseachest_util_options.c.o
+[104/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_sntl_helper.c.o
+[105/156] Compiling C object openSeaChest_Raw.p/src_EULA.c.o
+[106/156] Compiling C object openSeaChest_Reservations.p/src_EULA.c.o
+[107/156] Compiling C object openSeaChest_Raw.p/src_openseachest_util_options.c.o
+[108/156] Compiling C object openSeaChest_Reservations.p/src_openseachest_util_options.c.o
+[109/156] Compiling C object openSeaChest_Security.p/src_EULA.c.o
+[110/156] Compiling C object openSeaChest_Logs.p/utils_C_openSeaChest_openSeaChest_Logs.c.o
+[111/156] Compiling C object openSeaChest_Format.p/src_openseachest_util_options.c.o
+[112/156] Compiling C object openSeaChest_Erase.p/src_openseachest_util_options.c.o
+[113/156] Compiling C object openSeaChest_Defect.p/src_openseachest_util_options.c.o
+[114/156] Compiling C object openSeaChest_SMART.p/src_EULA.c.o
+[115/156] Compiling C object openSeaChest_ZBD.p/src_EULA.c.o
+[116/156] Compiling C object openSeaChest_Firmware.p/src_openseachest_util_options.c.o
+[117/156] Compiling C object openSeaChest_Security.p/src_openseachest_util_options.c.o
+[118/156] Compiling C object openSeaChest_SMART.p/src_openseachest_util_options.c.o
+[119/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_drive_info.c.o
+[120/156] Compiling C object openSeaChest_ZBD.p/src_openseachest_util_options.c.o
+[121/156] Compiling C object openSeaChest_GenericTests.p/src_openseachest_util_options.c.o
+[122/156] Compiling C object openSeaChest_Erase.p/utils_C_openSeaChest_openSeaChest_Erase.c.o
+[123/156] Compiling C object openSeaChest_Info.p/src_openseachest_util_options.c.o
+[124/156] Compiling C object openSeaChest_Reservations.p/utils_C_openSeaChest_openSeaChest_Reservations.c.o
+[125/156] Compiling C object openSeaChest_ZBD.p/utils_C_openSeaChest_openSeaChest_ZBD.c.o
+[126/156] Compiling C object openSeaChest_Security.p/utils_C_openSeaChest_openSeaChest_Security.c.o
+[127/156] Compiling C object openSeaChest_Configure.p/utils_C_openSeaChest_openSeaChest_Configure.c.o
+[128/156] Compiling C object openSeaChest_Logs.p/src_openseachest_util_options.c.o
+[129/156] Compiling C object openSeaChest_NVMe.p/utils_C_openSeaChest_openSeaChest_NVMe.c.o
+[130/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_smart.c.o
+[131/156] Compiling C object openSeaChest_Raw.p/utils_C_openSeaChest_openSeaChest_Raw.c.o
+[132/156] Compiling C object openSeaChest_NVMe.p/src_openseachest_util_options.c.o
+[133/156] Compiling C object openSeaChest_PowerControl.p/utils_C_openSeaChest_openSeaChest_PowerControl.c.o
+[134/156] Compiling C object openSeaChest_SMART.p/utils_C_openSeaChest_openSeaChest_SMART.c.o
+[135/156] Compiling C object subprojects/opensea-transport/libopensea-transport.a.p/src_sat_helper.c.o
+[136/156] Linking static target subprojects/opensea-transport/libopensea-transport.a
+[137/156] Compiling C object openSeaChest_PassthroughTest.p/utils_C_openSeaChest_openSeaChest_PassthroughTest.c.o
+[138/156] Compiling C object subprojects/opensea-operations/libopensea-operations.a.p/src_device_statistics.c.o
+[139/156] Linking static target subprojects/opensea-operations/libopensea-operations.a
+[140/156] Linking target openSeaChest_Basics
+[141/156] Linking target openSeaChest_Firmware
+[142/156] Linking target openSeaChest_SMART
+[143/156] Linking target openSeaChest_GenericTests
+[144/156] Linking target openSeaChest_Raw
+[145/156] Linking target openSeaChest_Defect
+[146/156] Linking target openSeaChest_Info
+[147/156] Linking target openSeaChest_ZBD
+[148/156] Linking target openSeaChest_Reservations
+[149/156] Linking target openSeaChest_Logs
+[150/156] Linking target openSeaChest_Security
+[151/156] Linking target openSeaChest_PowerControl
+[152/156] Linking target openSeaChest_PassthroughTest
+[153/156] Linking target openSeaChest_Format
+[154/156] Linking target openSeaChest_Configure
+[155/156] Linking target openSeaChest_NVMe
+[156/156] Linking target openSeaChest_Erase
 [0/1] Installing files
-Installing openSeaChest_Basics to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Basics to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Basics'.
-Installing openSeaChest_Configure to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Configure to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Configure'.
-Installing openSeaChest_Defect to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Defect to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Defect'.
-Installing openSeaChest_Erase to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Erase to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Erase'.
-Installing openSeaChest_Firmware to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Firmware to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Firmware'.
-Installing openSeaChest_Format to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Format to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Format'.
-Installing openSeaChest_GenericTests to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_GenericTests to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_GenericTests'.
-Installing openSeaChest_Info to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Info to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Info'.
-Installing openSeaChest_Logs to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Logs to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Logs'.
-Installing openSeaChest_NVMe to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_NVMe to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_NVMe'.
-Installing openSeaChest_PassthroughTest to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_PassthroughTest to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_PassthroughTest'.
-Installing openSeaChest_PowerControl to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_PowerControl to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_PowerControl'.
-Installing openSeaChest_Raw to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Raw to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Raw'.
-Installing openSeaChest_Reservations to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Reservations to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Reservations'.
-Installing openSeaChest_Security to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_Security to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_Security'.
-Installing openSeaChest_SMART to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_SMART to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_SMART'.
-Installing openSeaChest_ZBD to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
+Installing openSeaChest_ZBD to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/bin
 Stripping target 'openSeaChest_ZBD'.
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Basics.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Configure.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Defect.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Erase.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Firmware.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Format.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_GenericTests.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Info.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Logs.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_NVMe.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_PassthroughTest.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_PowerControl.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Raw.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Reservations.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_Security.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_SMART.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest_ZBD.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-Installing /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1/docs/man/man8/openSeaChest.8 to /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/doc/openseachest-24.08.1 /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1
---2025-05-15 02:14:37--  https://github.com/Seagate/openSeaChest/blob/develop/LICENSE.md
-Resolving github.com (github.com)... 140.82.121.3
-Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Basics.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Configure.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Defect.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Erase.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Firmware.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Format.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_GenericTests.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Info.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Logs.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_NVMe.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_PassthroughTest.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_PowerControl.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Raw.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Reservations.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_Security.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_SMART.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest_ZBD.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+Installing /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05/docs/man/man8/openSeaChest.8 to /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/man/man8
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/package-openseachest/usr/doc/openseachest-25.05 /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05
+--2025-05-31 10:27:58--  https://github.com/Seagate/openSeaChest/blob/develop/LICENSE.md
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: ‘LICENSE.md’
 
-     0K .......... .......... .......... .......... ..........  437K
-    50K .......... .......... .......... .......... ..........  892K
-   100K .......... .......... .......... .......... .......... 5.66M
-   150K .......... .......... .......... .......... .......... 5.28M
-   200K .......... .......... .......... .......... .......... 1.03M
-   250K .......                                                3.49M=0.2s
+     0K .......... .......... .......... .......... ..........  445K
+    50K .......... .......... .......... .......... ..........  895K
+   100K .......... .......... .......... .......... .......... 5.70M
+   150K .......... .......... .......... .......... .......... 5.11M
+   200K .......... .......... .......... .......... .......... 1.05M
+   250K .......... ...                                         5.74M=0.2s
 
-2025-05-15 02:14:38 (1.06 MB/s) - ‘LICENSE.md’ saved [264092]
+2025-05-31 10:27:59 (1.09 MB/s) - ‘LICENSE.md’ saved [269456]
 
-/home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v24.08.1
-The main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..
+/home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/work/openSeaChest-v25.05
+[32mThe main part of source code is ready. We are moving on to preparing post install scripts, docs, license, man pages etc..[0m
 cp: cannot stat 'AUTHORS': No such file or directory
 cp: cannot stat 'ChangeLog*': No such file or directory
 cp: cannot stat 'COPYING': No such file or directory
@@ -1379,9 +1529,9 @@ cp: cannot stat 'LICENSE': No such file or directory
 cp: cannot stat 'MAINTAINERS': No such file or directory
 cp: cannot stat 'NEWS': No such file or directory
 cp: cannot stat 'DOCS': No such file or directory
-grep: /home/omen/GITHUB/PLASMA_WORLD/AthOS/REPO-AthOS/openseachest/openseachest.info: No such file or directory
-Packaging compiled for slackware installation...
-MAKEPKG_FLAGS is empty or unset, using default
+grep: /home/omen/GITHUB/Athos/AthOS/REPO-AthOS/openseachest/openseachest.info: No such file or directory
+[32mPackaging compiled for slackware installation...[0m
+[32mMAKEPKG_FLAGS is empty or unset, using default[0m
 
 Slackware package maker, version 3.14159265.
 
@@ -1399,7 +1549,7 @@ Would you like to reset all directory permissions to 755 (drwxr-xr-x) and
 directory ownerships to root:root ([y]es, [n]o)? n
 
 
-Creating Slackware package:  /tmp/openseachest/openseachest-24.08.1-x86_64-1_rtz.tlz
+Creating Slackware package:  /tmp/openseachest/openseachest-25.05-x86_64-1_rtz.tlz
 
 ./
 install/
@@ -1425,84 +1575,84 @@ usr/bin/openSeaChest_SMART
 usr/bin/openSeaChest_Security
 usr/bin/openSeaChest_ZBD
 usr/doc/
-usr/doc/openseachest-24.08.1/
-usr/doc/openseachest-24.08.1/LICENSE.md
-usr/doc/openseachest-24.08.1/README.md
-usr/doc/openseachest-24.08.1/docs/
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/About_ATA_Security_Frozen.txt
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/About_Bad_LBAs.txt
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/About_Fast_Format.txt
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/About_Format_Unit.txt
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/About_PowerChoice.txt
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/Enabling_TCG_Commands_In_Linux.txt
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/Interpretting_Head_Health.txt
-usr/doc/openseachest-24.08.1/docs/Feature_Docs/Windows_Firmware_Download_Restrictions.txt
-usr/doc/openseachest-24.08.1/docs/General_Docs/
-usr/doc/openseachest-24.08.1/docs/General_Docs/About_openSeaChest_Tools.txt
-usr/doc/openseachest-24.08.1/docs/General_Docs/General_Usage_Hints_Linux.txt
-usr/doc/openseachest-24.08.1/docs/General_Docs/General_Usage_Hints_Windows.txt
-usr/doc/openseachest-24.08.1/docs/General_Docs/Open_Source_Licenses.txt
-usr/doc/openseachest-24.08.1/docs/General_Docs/Sample_Output.txt
-usr/doc/openseachest-24.08.1/docs/General_Docs/Tool_Usage_Hints.txt
-usr/doc/openseachest-24.08.1/docs/generate_openSeaChest_docs.sh
-usr/doc/openseachest-24.08.1/docs/generate_openSeaChest_man.sh
-usr/doc/openseachest-24.08.1/docs/man/
-usr/doc/openseachest-24.08.1/docs/man/man8/
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Basics.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Configure.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Defect.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Erase.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Firmware.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Format.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_GenericTests.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Info.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Logs.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_NVMe.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_PassthroughTest.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_PowerControl.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Raw.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Reservations.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_SMART.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_Security.8
-usr/doc/openseachest-24.08.1/docs/man/man8/openSeaChest_ZBD.8
-usr/doc/openseachest-24.08.1/docs/openSeaChest/
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Basics_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Basics_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Configure_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Configure_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Defect_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Defect_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Erase_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Erase_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Firmware_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Firmware_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Format_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Format_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_GenericTests_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_GenericTests_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Info_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Info_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Logs_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Logs_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_NVMe_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_NVMe_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_PassthroughTest_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_PassthroughTest_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_PowerControl_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_PowerControl_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Raw_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Raw_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Reservations_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Reservations_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_SMART_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_SMART_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Security_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_Security_Version_History.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_ZBD_About.txt
-usr/doc/openseachest-24.08.1/docs/openSeaChest/openSeaChest_ZBD_Version_History.txt
-usr/doc/openseachest-24.08.1/openseachest.ini
+usr/doc/openseachest-25.05/
+usr/doc/openseachest-25.05/LICENSE.md
+usr/doc/openseachest-25.05/README.md
+usr/doc/openseachest-25.05/docs/
+usr/doc/openseachest-25.05/docs/Feature_Docs/
+usr/doc/openseachest-25.05/docs/Feature_Docs/About_ATA_Security_Frozen.txt
+usr/doc/openseachest-25.05/docs/Feature_Docs/About_Bad_LBAs.txt
+usr/doc/openseachest-25.05/docs/Feature_Docs/About_Fast_Format.txt
+usr/doc/openseachest-25.05/docs/Feature_Docs/About_Format_Unit.txt
+usr/doc/openseachest-25.05/docs/Feature_Docs/About_PowerChoice.txt
+usr/doc/openseachest-25.05/docs/Feature_Docs/Enabling_TCG_Commands_In_Linux.txt
+usr/doc/openseachest-25.05/docs/Feature_Docs/Interpretting_Head_Health.txt
+usr/doc/openseachest-25.05/docs/Feature_Docs/Windows_Firmware_Download_Restrictions.txt
+usr/doc/openseachest-25.05/docs/General_Docs/
+usr/doc/openseachest-25.05/docs/General_Docs/About_openSeaChest_Tools.txt
+usr/doc/openseachest-25.05/docs/General_Docs/General_Usage_Hints_Linux.txt
+usr/doc/openseachest-25.05/docs/General_Docs/General_Usage_Hints_Windows.txt
+usr/doc/openseachest-25.05/docs/General_Docs/Open_Source_Licenses.txt
+usr/doc/openseachest-25.05/docs/General_Docs/Sample_Output.txt
+usr/doc/openseachest-25.05/docs/General_Docs/Tool_Usage_Hints.txt
+usr/doc/openseachest-25.05/docs/generate_openSeaChest_docs.sh
+usr/doc/openseachest-25.05/docs/generate_openSeaChest_man.sh
+usr/doc/openseachest-25.05/docs/man/
+usr/doc/openseachest-25.05/docs/man/man8/
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Basics.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Configure.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Defect.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Erase.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Firmware.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Format.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_GenericTests.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Info.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Logs.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_NVMe.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_PassthroughTest.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_PowerControl.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Raw.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Reservations.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_SMART.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_Security.8
+usr/doc/openseachest-25.05/docs/man/man8/openSeaChest_ZBD.8
+usr/doc/openseachest-25.05/docs/openSeaChest/
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Basics_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Basics_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Configure_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Configure_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Defect_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Defect_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Erase_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Erase_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Firmware_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Firmware_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Format_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Format_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_GenericTests_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_GenericTests_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Info_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Info_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Logs_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Logs_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_NVMe_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_NVMe_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_PassthroughTest_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_PassthroughTest_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_PowerControl_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_PowerControl_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Raw_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Raw_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Reservations_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Reservations_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_SMART_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_SMART_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Security_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_Security_Version_History.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_ZBD_About.txt
+usr/doc/openseachest-25.05/docs/openSeaChest/openSeaChest_ZBD_Version_History.txt
+usr/doc/openseachest-25.05/openseachest.ini
 usr/man/
 usr/man/man8/
 usr/man/man8/openSeaChest.8.gz
@@ -1524,30 +1674,30 @@ usr/man/man8/openSeaChest_SMART.8.gz
 usr/man/man8/openSeaChest_Security.8.gz
 usr/man/man8/openSeaChest_ZBD.8.gz
 
-Slackware package /tmp/openseachest/openseachest-24.08.1-x86_64-1_rtz.tlz created.
+Slackware package /tmp/openseachest/openseachest-25.05-x86_64-1_rtz.tlz created.
 
-Create shared object file for openseachest-24.08.1-x86_64-1_rtz.tlz
-Creating /tmp/openseachest/openseachest-24.08.1-x86_64-1_rtz.tlz.so.file using /tmp/openseachest/openseachest-24.08.1-x86_64-1_rtz.tlz
-Successfully created /tmp/openseachest/openseachest-24.08.1-x86_64-1_rtz.tlz.so.file
+Create shared object file for openseachest-25.05-x86_64-1_rtz.tlz
+Creating /tmp/openseachest/openseachest-25.05-x86_64-1_rtz.tlz.so.file using /tmp/openseachest/openseachest-25.05-x86_64-1_rtz.tlz
+Successfully created /tmp/openseachest/openseachest-25.05-x86_64-1_rtz.tlz.so.file
 Packaging of executable and meta-data in openseachest.tar.lz4 format.
 /tmp/openseachest /tmp/openseachest
 /tmp/openseachest
 BIN_NAME
 README
 makepkg-openseachest.log
-openseachest-24.08.1-x86_64-1_rtz.tlz
-openseachest-24.08.1-x86_64-1_rtz.tlz.md5
-openseachest-24.08.1-x86_64-1_rtz.tlz.so.file
-openseachest-24.08.1-x86_64-1_rtz.tlz.txt
-openseachest build finished. Procced to installation...
+openseachest-25.05-x86_64-1_rtz.tlz
+openseachest-25.05-x86_64-1_rtz.tlz.md5
+openseachest-25.05-x86_64-1_rtz.tlz.so.file
+openseachest-25.05-x86_64-1_rtz.tlz.txt
+[32mopenseachest build finished. Procced to installation...[0m
 
-+===================================================================================================================+
-| Upgrading openseachest-24.08.1-x86_64-1_rtz package using /tmp/openseachest/openseachest-24.08.1-x86_64-1_rtz.tlz |
-+===================================================================================================================+
++=================================================================================================================+
+| Upgrading openseachest-24.08.1-x86_64-1_rtz package using /tmp/openseachest/openseachest-25.05-x86_64-1_rtz.tlz |
++=================================================================================================================+
 
-Pre-installing package openseachest-24.08.1-x86_64-1_rtz...
-Removing package: openseachest-24.08.1-x86_64-1_rtz-upgraded-2025-05-15,02:14:45
-Installing package openseachest-24.08.1-x86_64-1_rtz.tlz:
+Pre-installing package openseachest-25.05-x86_64-1_rtz...
+Removing package: openseachest-24.08.1-x86_64-1_rtz-upgraded-2025-05-31,10:28:06
+Installing package openseachest-25.05-x86_64-1_rtz.tlz:
 PACKAGE DESCRIPTION:
 # openseachest (Cross platform utilities)
 #
@@ -1555,7 +1705,7 @@ PACKAGE DESCRIPTION:
 # SATA, SAS, NVMe, and USB storage devices.
 #
 # https://github.com/Seagate/openSeaChest
-Executing install script for openseachest-24.08.1-x86_64-1_rtz.tlz.
+Executing install script for openseachest-25.05-x86_64-1_rtz.tlz.
 Font directories:
 	/usr/share/fonts
 /usr/share/fonts: caching, new cache contents: 0 fonts, 11 dirs
@@ -1575,7 +1725,7 @@ Font directories:
 /root/.cache/fontconfig: not cleaning non-existent cache directory
 /root/.fontconfig: not cleaning non-existent cache directory
 /usr/bin/fc-cache: succeeded
-Package openseachest-24.08.1-x86_64-1_rtz.tlz installed.
-Package openseachest-24.08.1-x86_64-1_rtz upgraded with new package /tmp/openseachest/openseachest-24.08.1-x86_64-1_rtz.tlz.
-Cleaning environmet: Removing source code, and work-space...
-rm: cannot remove 'openSeaChest-v24.08.1-24.08.1.tar.xz': No such file or directory
+Package openseachest-25.05-x86_64-1_rtz.tlz installed.
+Package openseachest-24.08.1-x86_64-1_rtz upgraded with new package /tmp/openseachest/openseachest-25.05-x86_64-1_rtz.tlz.
+[32mCleaning environmet: Removing source code, and work-space...[0m
+rm: cannot remove 'openSeaChest-v25.05-25.05.tar.xz': No such file or directory
